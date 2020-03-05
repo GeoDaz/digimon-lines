@@ -1,0 +1,34 @@
+{
+	"ref": "agumon",
+	"name": "Agumon",
+	"evo": [
+		{
+			"to": "agumonBoC",
+			"type": "biomerge",
+			"level": "mega"
+		},
+		{
+			"to": "greymon",
+			"regular": true
+		},
+		{
+			"to": "geogreymon",
+			"regular": true
+		},
+		{
+			"to": "agumonBM",
+			"type": "mode",
+			"level": "mega"
+		},
+		{
+			"to": "agumonX",
+			"type": "x",
+			"level": "rookie"
+		}
+	],
+	"attribute": {
+		"cat": "antivirus",
+		"el": "fire"
+	},
+	"legend": ""
+}
