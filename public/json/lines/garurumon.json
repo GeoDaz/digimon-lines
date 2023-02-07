@@ -1,0 +1,284 @@
+{
+	"size": 16,
+	"baby1": [
+		null,
+		{
+			"ref": "punimon",
+			"size": 2
+		},
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		{
+			"ref": "botamon"
+		}
+	],
+	"baby2": [
+		null,
+		{
+			"ref": "tsunomon",
+			"size": 2,
+			"from": [0,-1]
+		},
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		{
+			"ref": "wanyamon",
+			"from": [0,-1]
+		}
+	],
+	"rookie": [
+		{
+			"ref": "gabumonx",
+			"from": [1.5,0],
+			"color": "x"
+		},
+		{
+			"ref": "gabumon",
+			"size": 2,
+			"from": [0,-1]
+		},
+		null,
+		null,
+		null,
+		{
+			"ref": "gabumonb",
+			"from": [-4,-1],
+			"color": "dark"
+		},
+		{
+			"ref": "psychemon",
+			"from": [-5,-1],
+			"color": "dark"
+		},
+		null,
+		{
+			"ref": "gaomon",
+			"size": 1,
+			"from": [0,-1]
+		},
+		null,
+		null,
+		{
+			"ref": "strabimon",
+			"size": 2,
+			"from": [-3,-1]
+		}
+	],
+	"champion": [
+		{
+			"ref": "garurumonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "garurumon",
+			"size": 2,
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "drimogemon",
+			"from": [-2,-1]
+		},
+		{
+			"ref": "dorulumon",
+			"from": [-3,-1]
+		},
+		{
+			"ref": "garurumonb",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref": "gururumon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "nisedrimogemon",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "gaogamon",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "gaogamonb",
+			"from": [-2,-1]
+		},
+		{
+			"ref": "wolfmon",
+			"size": 2,
+			"from": [0,-1]
+		}
+	],
+	"ultimate": [
+		{
+			"ref": "weregarurumonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "weregarurumon",
+			"size": 2,
+			"from": [0,-1]
+		},
+		{
+			"ref":"weregarurumonam",
+			"color": "mode",
+			"from": [-1.5,0]
+		},
+		{
+			"ref": "skullbaluchimon",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref": "jaegerdorulumon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "weregarurumonb",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref": "astamon",
+			"from": [0,-1],
+			"color": "dark"
+		},
+		null,
+		{
+			"ref": "machgaogamon",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "machgaogamonb",
+			"from": [0,-1]
+		},
+		{
+			"ref": "beowolfmon",
+			"from": [0.5,-1]
+		},
+		{
+			"ref": "kendogarurumon",
+			"from": [-0.5,-1]
+		}
+	],
+	"mega": [
+		{
+			"ref": "metalgarurumonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "metalgarurumon",
+			"size": 2,
+			"from": [0,-1]
+		},
+		{
+			"ref": "cresgarurumon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "mercurymon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "marsmon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "metalgarurumonb",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		null,
+		null,
+		{
+			"ref": "miragegaogamon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "zeedgarurumon",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "miragegaogamonb",
+			"from": [0,-1]
+		},
+		{
+			"ref": "magnagarurumon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "ancientgarurumon",
+			"from": [0,-1]
+		}
+	],
+	"ultra": [
+		{
+			"ref": "omegamonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "gabumonbf",
+			"color": "mode",
+			"from": [0.5,-1]
+		},
+		{
+			"ref": "omegamon",
+			"color": "fusion",
+			"from": [-0.5,-1]
+		},
+		{
+			"ref": "omegamonam",
+			"color": "fusion",
+			"from": [0,-1]
+		},
+		null,
+		null,
+		{
+			"ref": "omegamonb",
+			"color": "fusion",
+			"from": [0,-1]
+		},
+		{
+			"ref": "omegamonbam",
+			"color": "mode",
+			"from": [-1,0]
+		},
+		null,
+		{
+			"ref": "miragegaogamonbm",
+			"color": "mode",
+			"from": [0,-1]
+		},
+		null,
+		null,
+		{
+			"ref": "susanoomon",
+			"color": "fusion",
+			"from": [0,-1]
+		}
+	],
+	"supra": [
+		null,
+		null,
+		{
+			"ref": "omegamonmm",
+			"color": "fusion",
+			"from": [0,-1]
+		}
+	]
+}

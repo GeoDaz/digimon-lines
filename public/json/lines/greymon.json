@@ -1,0 +1,326 @@
+{
+	"size": 16,
+	"baby1": [
+		null,
+		{
+			"ref": "botamon",
+			"size": 2
+		}
+	],
+	"baby2": [
+		null,
+		{
+			"ref": "koromon",
+			"size": 2,
+			"from": [0,-1]
+		}
+	],
+	"rookie": [
+		{
+			"ref": "agumonx",
+			"from": [1.5,0],
+			"color": "x"
+		},
+		{
+			"ref": "agumon",
+			"size": 2,
+			"from": [0,-1],
+			"skins": [
+				"bushiagumon",
+				"hakaseagumon"
+			]
+		},
+		null,
+		null,
+		null,
+		{
+			"ref": "agumon2",
+			"from": [-4,-1]
+		},
+		null,
+		{
+			"ref": "agumonb",
+			"from": [-6,-1],
+			"color": "dark",
+			"skins": [
+				"agumonb2",
+				"hakaseagumonb"
+			]
+		},
+		{
+			"ref": "agumonbx",
+			"color": "x",
+			"from": [-1,0]
+		},
+		{
+			"ref": "snowagumon",
+			"color": "ice",
+			"from": [-8,-1],
+			"skins": [
+				"snowagumon2"
+			]
+		},
+		{
+			"ref": "gaossmonb",
+			"color": "dark",
+			"from": [-9,-1]
+		},
+		{
+			"ref": "gaossmon",
+			"from": [-10,-1]
+		},
+		{
+			"ref": "flamon",
+			"size": 2,
+			"from": [-11.5,-1]
+		}
+	],
+	"champion": [
+		{
+			"ref": "greymonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "greymon",
+			"size": 2,
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "cyclomon",
+			"color": "dark",
+			"from": [-2,-1]
+		},
+		null,
+		{
+			"ref": "geogreymon",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "greymonb",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref": "greymonbx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "ashgreymon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "greymonb3",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref": "greymon3",
+			"from": [0,-1]
+		},
+		{
+			"ref": "agunimon",
+			"size": 2,
+			"from": [0,-1]
+		}
+	],
+	"ultimate": [
+		{
+			"ref": "metalgreymonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "metalgreymon",
+			"size": 2,
+			"from": [0,-1]
+		},
+		{
+			"ref":"metalgreymonam",
+			"color": "mode",
+			"from": [-1.5,0]
+		},
+		{
+			"ref": "skullgreymon",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "rizegreymon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "rizegreymonx",
+			"color": "x",
+			"from": [-1,0]
+		},
+		{
+			"ref": "metalgreymonb",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref": "metalgreymonbx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "metalgreymonb3",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "aldamon",
+			"from": [0.5,-1]
+		},
+		{
+			"ref": "vitramon",
+			"from": [-0.5,-1]
+		}
+	],
+	"mega": [
+		{
+			"ref": "wargreymonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "wargreymon",
+			"size": 2,
+			"from": [0,-1]
+		},
+		{
+			"ref": "blitzgreymon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "machinedramon",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "shinegreymon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "victorygreymon",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "wargreymonb",
+			"color": "dark",
+			"from": [0,-1],
+			"skins":["chaoswargreymon"]
+		},
+		{
+			"ref": "wargreymonbx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "gaiomon",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "zeekgreymon",
+			"color": "armor",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "emperorgreymon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "ancientgreymon",
+			"from": [0,-1]
+		}
+	],
+	"ultra": [
+		{
+			"ref": "omegamonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "agumonbc",
+			"color": "mode",
+			"from": [0.5,-1]
+		},
+		{
+			"ref": "omegamon",
+			"color": "fusion",
+			"from": [-0.5,-1]
+		},
+		{
+			"ref": "omegamonam",
+			"color": "fusion",
+			"from": [0,-1]
+		},
+		{
+			"ref": "chaosdramon",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref": "chaosdramonx",
+			"color": "x",
+			"from": [-1,0]
+		},
+		{
+			"ref": "shinegreymonBM",
+			"color": "mode",
+			"from": [0,-1]
+		},
+		{
+			"ref": "shinegreymonRM",
+			"color": "dark",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "omegamonb",
+			"color": "fusion",
+			"from": [0,-1],
+			"skins": ["omegamonbrm"]
+		},
+		{
+			"ref": "omegamonbam",
+			"color": "mode",
+			"from": [-1,0]
+		},
+		{
+			"ref": "gaiomonbm",
+			"color": "mode",
+			"from": [0,-1]
+		},
+		null,
+		null,
+		{
+			"ref": "susanoomon",
+			"color": "fusion",
+			"from": [0,-1]
+		}
+	],
+	"supra": [
+		null,
+		null,
+		{
+			"ref": "omegamonmm",
+			"color": "fusion",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref":"neocrimson",
+			"color": "fusion",
+			"from": [0,-1]
+		}
+	]
+}

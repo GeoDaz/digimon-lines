@@ -1,0 +1,83 @@
+html {
+  color-scheme: dark;
+  font-size: 15px;
+}
+
+body {
+  font-size: 15px;
+}
+
+.app {
+  /* background-color: #282c34; */
+  background-color: #2f3136;
+  min-height: 100vh;
+  color: white;
+}
+
+.click {
+  cursor: pointer;
+  transition: all .3s;
+}
+
+i.click:hover {
+  color: var(--bs-primary);
+}
+
+.page,
+.page.container,
+.page.container-fluid {
+  padding: 1.5em;
+  overflow: auto;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+.line-wrapper {
+  overflow: auto hidden;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+.line-row.row {
+  flex-wrap: nowrap;
+  margin-bottom: 2em;
+  justify-content: flex-start;
+}
+
+.line-row:last-child {
+  margin-bottom: 0;
+}
+
+.line-row .col {
+  flex: 0;
+}
+
+.line-point {
+  width: 10rem;
+  text-align: center;
+  position: relative;
+}
+
+.line-point .line-img {
+  max-width: 10rem;
+  position: relative;
+  z-index: 2;
+}
+
+.line-point .line-svg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.line-point .line-svg.left {
+  right: 0;
+}
+
+.line-point .line-svg.right {
+  left: 0;
+}
