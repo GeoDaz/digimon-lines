@@ -59,25 +59,53 @@ const LineRow: React.FC<RowProps> = ({ list }) => {
 	);
 };
 
+const xUnit: number = 174; // 150 + 12 * 2
+const yUnit: number = 180; // 150 + 15 * 2
+const pointWidth: number = 150;
+const pointHeight: number = 150;
 const LineCol: React.FC<{ point: LinePoint }> = ({ point }) => {
-	const { ref, from, size, color } = point;
+	const { ref, from, from2, size, color } = point;
 	const style: React.CSSProperties = {};
+	let width = pointWidth;
+	if (size) {
+		width += (size ? size - 1 : 0) * xUnit; // 150 + 12 * 2
+		style.width = width + 'px';
+	}
+	return (
+		<div className="line-point pictured" style={style}>
+			<Image
+				src={`/images/digimon/${ref}.jpg`}
+				title={ref}
+				rounded
+				className="line-img"
+			/>
+			{!!from && <SvgLine from={from} color={color} baseWidth={width} />}
+			{!!from2 && <SvgLine from={from2} color={color} baseWidth={width} />}
+		</div>
+	);
+};
+
+// TODO retravailler pour que les lignes s'arretent en haut des images avec pour coord, top left, top center ou top right
+interface SvgLineProps {
+	from: Array<number>;
+	color?: string;
+	baseWidth?: number;
+	baseHeight?: number;
+}
+const SvgLine: React.FC<SvgLineProps> = ({
+	from,
+	color,
+	baseWidth = pointWidth,
+	baseHeight = pointHeight,
+}) => {
 	const svgStyle: React.CSSProperties = {};
 	let x: number = 0;
 	let y: number = 0;
-	const xUnit: number = 174; // 150 + 12 * 2
-	const yUnit: number = 180; // 150 + 15 * 2
 	let left: boolean = false;
 	if (from) {
 		x = xUnit * Math.abs(from[0]); // 150 + 12 * 2
 		y = yUnit * Math.abs(from[1]); // 150 + 15 * 2
 		left = from[0] < 0;
-	}
-	const baseHeight: number = 150;
-	let baseWidth: number = 150;
-	if (size) {
-		baseWidth += (size ? size - 1 : 0) * xUnit; // 150 + 12 * 2
-		style.width = baseWidth + 'px';
 	}
 	const halfHeight: number = baseHeight / 2;
 	const halfWidth: number = baseWidth / 2;
@@ -91,31 +119,26 @@ const LineCol: React.FC<{ point: LinePoint }> = ({ point }) => {
 		yOrigin = baseHeight;
 	}
 	return (
-		<div className="line-point" style={style}>
-			<Image src={`/images/digimon/${ref}.jpg`} rounded className="line-img" />
-			{!!from && (
-				<svg
-					className={'line-svg ' + (left ? 'left' : 'right')}
-					width={baseWidth + x}
-					height={baseWidth + y}
-					style={svgStyle}
-				>
-					<line
-						x1={xOrigin}
-						y1={left ? halfHeight + y : yOrigin}
-						x2={xOrigin + x}
-						y2={left ? yOrigin : halfHeight + y}
-						style={{
-							stroke: color
-								? digicolors[color]
-								: '#fff' /* digicolors['default'] */,
-							strokeWidth,
-							strokeLinecap: 'round',
-						}}
-					/>
-				</svg>
-			)}
-		</div>
+		<svg
+			className={'line-svg ' + (left ? 'left' : 'right')}
+			width={baseWidth + x}
+			height={baseWidth + y}
+			style={svgStyle}
+		>
+			<line
+				x1={xOrigin}
+				y1={left ? halfHeight + y : yOrigin}
+				x2={xOrigin + x}
+				y2={left ? yOrigin : halfHeight + y}
+				style={{
+					stroke: color
+						? digicolors[color]
+						: '#fff' /* digicolors['default'] */,
+					strokeWidth,
+					strokeLinecap: 'round',
+				}}
+			/>
+		</svg>
 	);
 };
 

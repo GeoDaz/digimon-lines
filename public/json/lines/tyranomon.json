@@ -1,0 +1,153 @@
+{
+	"size": 16,
+	"baby1": [
+		null,
+		{
+			"ref": "botamon"
+		}
+	],
+	"baby2": [
+		null,
+		{
+			"ref": "koromon",
+			"from": [0,-1]
+		}
+	],
+	"rookie": [
+		{
+			"ref": "agumonx",
+			"from": [1,0],
+			"color": "x"
+		},
+		{
+			"ref": "agumon",
+			"from": [0,-1]
+		},
+		null,
+		null,
+		{
+			"ref": "agumonbx",
+			"color": "x",
+			"from": [1,0]
+		},
+		{
+			"ref": "agumonb",
+			"from": [-4,-1],
+			"color": "dark"
+		}
+	],
+	"champion": [
+		{
+			"ref": "tyranomonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "tyranomon",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "tuskmon",
+			"from": [-2,-1]
+		},
+		{
+			"ref": "darktyranomonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "darktyranomon",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref": "deltamon",
+			"from": [-1,-1]
+		}
+	],
+	"ultimate": [
+		{
+			"ref":"extyranomon",
+			"from": [1,-1]
+		},
+		{
+			"ref": "mastertyranomon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "mametyramon",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "stegomon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "metaltyranomonx",
+			"color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "metaltyranomon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "chimeramon",
+			"from": [0,-1]
+		}
+	],
+	"mega": [
+		null,
+		{
+			"ref": "rusttyranomon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "dinorexmon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "spinomon",
+			"from": [0,-1]
+		},
+		null,
+		{
+			"ref": "machinedramon",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref": "millenniumon",
+			"color": "fusion",
+			"from": [0,-1]
+		}
+	],
+	"ultra": [
+		null,null,
+		{
+			"ref": "huanglongmon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "huanglongmonrm",
+			"color": "dark",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "chaosdramonx",
+			"color": "x",
+			"from": [1,0]
+		},
+		{
+			"ref": "chaosdramon",
+			"color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref": "zeedmillenniumon",
+			"color": "dark",
+			"from": [0,-1]
+		}
+	]
+}

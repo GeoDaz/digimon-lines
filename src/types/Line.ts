@@ -16,5 +16,6 @@ export interface LinePoint {
 	size: number | undefined;
 	skins: string[] | undefined;
 	from: number[] | undefined;
+	from2: number[] | undefined;
 }
 export default Line;

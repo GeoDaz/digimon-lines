@@ -8,4 +8,5 @@ export const digicolors: { [key: string]: string } = {
 	human: '#F966DE', // pink
 	// warp: '#000', // yellow
 	ice: '#87C7C6', // white blue
+	fire: '#db2828', // white blue
 };
