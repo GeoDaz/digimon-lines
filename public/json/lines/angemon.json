@@ -1,0 +1,153 @@
+{
+	"baby1": [
+        null,
+        null,
+		{"ref": "poyomon"},
+        null,
+		{"ref": "puttimon"}
+	],
+	"baby2": [
+        null,
+        {
+            "ref": "tokomonx",
+            "color": "x",
+            "from": [-1,0]
+        },
+		{
+			"ref": "tokomon",
+			"from": [0,-1]
+		},
+        {
+			"ref": "cupimon",
+			"from": [-1,0]
+		}
+	],
+	"rookie": [
+		{
+			"ref": "luxmon",
+			"from": [2,-1]
+		},
+        null,
+		{
+			"ref": "patamon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "tukaimon",
+            "color": "dark",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "lucemon",
+			"from": [0,-1]
+		}
+	],
+	"champion": [
+		{
+			"ref": "pidmon",
+			"from": [1,0]
+		},
+		{
+			"ref": "pegasmonx",
+            "color": "x",
+			"from": [1,0]
+		},
+		{
+			"ref": "pegasmon",
+            "color": "armor",
+			"from": [0,-1]
+		},
+		{
+			"ref": "angemon",
+			"from": [0,-1]
+		}
+	],
+	"ultimate": [
+		{
+			"ref":"archangemon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "rhinomonx",
+            "color": "x",
+			"from": [1,0]
+		},
+		{
+			"ref": "rhinomon",
+            "color": "armor",
+			"from": [0,-1]
+		},
+		{
+			"ref": "magnaangemon",
+			"from": [0,-1],
+            "skins": ["magnaangemonpm"]
+		},
+        null,
+		{
+			"ref": "shakomon",
+            "color": "fusion",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "lucemonfm",
+            "color": "default",
+            "color2": "fusion",
+			"from": [0,-1],
+			"from2": [-2,-1]
+		}
+	],
+	"mega": [
+		{
+			"ref": "dominimon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "goddramonx",
+            "color": "x",
+			"from": [1,0]
+		},
+		{
+			"ref": "goddramon",
+			"from": [1,-1]
+		},
+		{
+			"ref": "seraphimon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "seraphimonb",
+            "color": "dark",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "clavisangemon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "lucemonlarva",
+			"from": [0,-1]
+		},
+		{
+			"ref": "lucemonx",
+            "color": "x",
+			"from": [-1,-1]
+		}
+	],
+	"ultra": [
+		{
+			"ref": "lucemonsm",
+			"from": [0,-1]
+		}
+	],
+	"supra": [
+		{
+			"ref": "ogudomon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "ogudomonx",
+            "color": "x",
+			"from": [-1,0]
+		}
+	]
+}

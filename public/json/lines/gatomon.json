@@ -1,0 +1,47 @@
+{
+	"baby1": [
+		{"ref": "mon"}
+	],
+	"baby2": [
+		{
+			"ref": "mon",
+			"from": [0,-1]
+		}
+	],
+	"rookie": [
+		{
+			"ref": "mon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "monx",
+            "color": "x",
+			"from": [-1,0]
+		}
+	],
+	"champion": [
+		{
+			"ref": "mon",
+			"from": [0,-1]
+		}
+	],
+	"ultimate": [
+		{
+			"ref":"mon",
+			"from": [0,-1]
+		}
+	],
+	"mega": [
+		{
+			"ref": "mon",
+			"from": [0,-1]
+		}
+	],
+	"ultra": [
+		{
+			"ref": "mon",
+            "color": "mode",
+			"from": [0,-1]
+		}
+	]
+}

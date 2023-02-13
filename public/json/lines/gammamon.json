@@ -1,5 +1,4 @@
 {
-	"size": 16,
 	"baby1": [
 		null,
 		{
@@ -123,8 +122,9 @@
 		null,
 		{
 			"ref": "proximamon",
-			"color": "fusion",
 			"size": 2,
+			"color": "fusion",
+			"color2": "fusion",
 			"from": [-0.5,-1],
 			"from2": [0.5,-1]
 		},

@@ -1,5 +1,5 @@
 export const digicolors: { [key: string]: string } = {
-	// default: '#bdc3d1', // grey
+	default: "#fff", //white // '#bdc3d1', // grey
 	dark: "#000", // black '#484848', 
 	x: '#3082E6', // light_blue
 	fusion: '#a333c8', // purple

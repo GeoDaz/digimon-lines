@@ -1,5 +1,4 @@
 export interface Line {
-	size: number | undefined;
 	baby1: Array<LinePoint | null> | undefined;
 	baby2: Array<LinePoint | null> | undefined;
 	rookie: Array<LinePoint | null>;
@@ -13,6 +12,7 @@ export interface Line {
 export interface LinePoint {
 	ref: string;
 	color: string | undefined;
+	color2: string | undefined;
 	size: number | undefined;
 	skins: string[] | undefined;
 	from: number[] | undefined;

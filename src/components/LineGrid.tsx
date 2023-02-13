@@ -64,7 +64,7 @@ const yUnit: number = 180; // 150 + 15 * 2
 const pointWidth: number = 150;
 const pointHeight: number = 150;
 const LineCol: React.FC<{ point: LinePoint }> = ({ point }) => {
-	const { ref, from, from2, size, color } = point;
+	const { ref, from, from2, size, color, color2 } = point;
 	const style: React.CSSProperties = {};
 	let width = pointWidth;
 	if (size) {
@@ -80,7 +80,7 @@ const LineCol: React.FC<{ point: LinePoint }> = ({ point }) => {
 				className="line-img"
 			/>
 			{!!from && <SvgLine from={from} color={color} baseWidth={width} />}
-			{!!from2 && <SvgLine from={from2} color={color} baseWidth={width} />}
+			{!!from2 && <SvgLine from={from2} color={color2} baseWidth={width} />}
 		</div>
 	);
 };
