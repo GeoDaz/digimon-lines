@@ -1,47 +1,202 @@
 {
 	"baby1": [
-		{"ref": "mon"}
+		{"ref": "snowbotamon"}
 	],
 	"baby2": [
 		{
-			"ref": "mon",
+			"ref": "nyaromon",
 			"from": [0,-1]
 		}
 	],
 	"rookie": [
-		{
-			"ref": "mon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "monx",
-            "color": "x",
-			"from": [-1,0]
-		}
+    {
+        "ref": "plotmonx",
+        "color": "x",
+        "from": [-1,0]
+    },
+    {
+        "ref": "plotmon",
+        "from": [0,-1]
+    },
+    {
+        "ref": "plotmon2",
+        "from": [0,-1]
+    }
 	],
 	"champion": [
 		{
-			"ref": "mon",
+			"ref": "gatomonx",
+            "color": "x",
 			"from": [0,-1]
+		},
+		{
+			"ref": "gatomon",
+			"from": [0,-1]
+		},
+        null,
+		{
+			"ref": "gatomonb",
+            "color": "dark",
+			"from": [0,-1],
+            "skins": ["gatomonbuver"]
+		},
+        null,
+		{
+			"ref": "mikemon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "lynxmon",
+            "color": "fire",
+			"from": [0,-1]
+		},
+		{
+			"ref": "meicoomon",
+			"from": [0,-1],
+            "size": 2
 		}
 	],
 	"ultimate": [
 		{
-			"ref":"mon",
+			"ref":"nefertimonx",
+            "color": "x",
+			"from": [1,-1]
+		},
+		{
+			"ref":"angewomonx",
+            "color": "x",
 			"from": [0,-1]
+		},
+		{
+			"ref":"nefertimon",
+            "color": "armor",
+			"from": [1,-1]
+		},
+		{
+			"ref":"angewomon",
+			"from": [0,-1]
+		},
+		{
+			"ref":"bestumon",
+			"from": [-1,-1]
+		},
+		{
+			"ref":"silphymon",
+            "color": "fusion",
+			"from": [0,-1]
+		},
+		{
+			"ref":"ladydevimon",
+            "color": "dark",
+			"from": [0,-1]
+		},
+		{
+			"ref":"ladydevimonx",
+            "color": "x",
+			"from": [-1,0]
+		},
+		{
+			"ref":"bastemon",
+			"from": [0,-1]
+		},
+		{
+			"ref":"mihiramon",
+			"from": [0,-1]
+		},
+        null,
+		{
+			"ref":"meicrackmonvm",
+            "color": "dark",
+			"from": [0.5,-1]
+		},
+		{
+			"ref":"meicrackmon",
+			"from": [-0.5,-1]
 		}
 	],
 	"mega": [
 		{
-			"ref": "mon",
+			"ref":"magnadramonx",
+            "color": "x",
+			"from": [1,-1]
+		},
+		{
+			"ref":"ophanimonx",
+            "color": "x",
 			"from": [0,-1]
-		}
+		},
+		{
+			"ref":"ophanimonfmx",
+            "color": "dark",
+			"from": [1,-1]
+		},
+		{
+			"ref":"magnadramon",
+			"from": [1,-1]
+		},
+		{
+			"ref":"ophanimon",
+			"from": [0,-1]
+		},
+		{
+			"ref":"ophanimonfm",
+            "color": "dark",
+			"from": [1,-1]
+		},
+        {
+			"ref":"valkyrimon",
+			"from": [0,-1]
+        },
+        {
+			"ref":"lilithmon",
+            "color": "dark",
+			"from": [0,-1]
+        },
+        {
+			"ref":"lilithmonx",
+            "color": "x",
+			"from": [0,-1]
+        },
+        {
+			"ref":"junomon",
+			"from": [0,-1]
+        },
+        {
+			"ref":"duftmon",
+			"from": [0,-1],
+            "skin": ["duftmonlm"]
+        },
+        {
+			"ref":"duftmonx",
+            "color": "x",
+			"from": [-1,0]
+        },
+        {
+			"ref":"raguelmon",
+            "color": "dark",
+			"from": [0,-1]
+        },
+        {
+			"ref":"rasielmon",
+			"from": [0,-1]
+        }
 	],
 	"ultra": [
 		{
-			"ref": "mon",
+			"ref": "ordinemon",
+            "color": "fusion",
+			"from": [-3,-1],
+            "color2": "fusion",
+			"from2": [3,-1]
+		},
+        {
+			"ref":"junomonrm",
             "color": "mode",
 			"from": [0,-1]
-		}
-	]
+        }
+	],
+    "related": [
+        "hawkmon",
+        "iguneetmon"
+    ]
 }
