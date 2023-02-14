@@ -123,7 +123,8 @@
 		}
 	],
 	"ultra": [
-		null,null,
+		null,
+		null,
 		{
 			"ref": "huanglongmon",
 			"from": [0,-1]
@@ -133,16 +134,7 @@
 			"color": "dark",
 			"from": [-1,-1]
 		},
-		{
-			"ref": "chaosdramonx",
-			"color": "x",
-			"from": [1,0]
-		},
-		{
-			"ref": "chaosdramon",
-			"color": "dark",
-			"from": [0,-1]
-		},
+		null,
 		{
 			"ref": "zeedmillenniumon",
 			"color": "dark",
@@ -150,8 +142,8 @@
 		}
 	],
     "related": [
-        "greymon",
+		"gammamon",
         "flarelizamon",
-        "gammamon"
+        "greymon"
     ]
 }

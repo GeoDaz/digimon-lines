@@ -4,6 +4,17 @@
 		{
 			"ref": "botamon",
 			"size": 2
+		},
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		{
+			"ref": "mokumon"
 		}
 	],
 	"baby2": [
@@ -11,6 +22,18 @@
 		{
 			"ref": "koromon",
 			"size": 2,
+			"from": [0,-1]
+		},
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		{
+			"ref": "sunmon",
 			"from": [0,-1]
 		}
 	],
@@ -25,6 +48,7 @@
 			"size": 2,
 			"from": [0,-1],
 			"skins": [
+				"agumon2",
 				"bushiagumon",
 				"hakaseagumon"
 			]
@@ -33,17 +57,20 @@
 		{
 			"ref": "snowagumon",
 			"color": "ice",
-			"from": [-2,-1],
+			"from": [-2.5,-1],
 			"skins": ["snowagumon2"]
 		},
 		{
 			"ref": "agumon2",
-			"from": [-4,-1]
+			"from": [-3.5,-1],
+			"skins": [
+				"agumon"
+			]
 		},
 		null,
 		{
 			"ref": "agumonb",
-			"from": [-6,-1],
+			"from": [-4.5,-1],
 			"color": "dark",
 			"skins": [
 				"agumonb2",
@@ -55,6 +82,7 @@
 			"color": "x",
 			"from": [-1,0]
 		},
+		null,
 		{
 			"ref": "gaossmonb",
 			"color": "dark",

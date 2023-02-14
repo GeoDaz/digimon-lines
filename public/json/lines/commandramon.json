@@ -1,0 +1,87 @@
+{
+	"baby1": [
+		null,
+		{
+			"ref": "bommon"
+		}
+	],
+	"baby2": [
+		{
+			"ref": "missimon"
+		}
+	],
+	"rookie": [
+		{
+			"ref": "commandramon",
+			"from": [0,-1]
+		}
+	],
+	"champion": [
+		{
+			"ref": "sealsdramon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "tankmon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "troopmon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "revolmon",
+			"from": [0,-1]
+		}
+	],
+	"ultimate": [
+		{
+			"ref": "tankdramon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "deckerdramon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "assaultmon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "vulturemon",
+			"from": [0,-1]
+		}
+	],
+	"mega": [
+		{
+			"ref": "darkdramon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "gundramon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "commandramon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "avengekidmon",
+			"from": [0,-1],
+            "skins": ["magnukidmon"]
+		}
+	],
+	"ultra": [
+		{
+			"ref": "chaosmon",
+            "color": "fusion",
+			"from": [0,-1]
+		}
+    ],
+    "supra": [],
+    "related": [
+        "seadramon",
+        "tyranomon",
+        "greymon"
+    ]
+}
