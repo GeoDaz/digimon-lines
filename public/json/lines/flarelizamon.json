@@ -1,0 +1,76 @@
+{
+	"baby1": [
+		{
+			"ref": "botamon",
+            "size": 2
+		}
+	],
+	"baby2": [
+		{
+			"ref": "koromon",
+            "size": 2
+		}
+	],
+	"rookie": [
+		{
+			"ref": "toyagumon",
+			"from": [0.5,-1]
+		},
+		{
+			"ref": "toyagumonb",
+			"from": [-0.5,-1],
+			"color": "dark"
+		}
+	],
+	"champion": [
+		{
+			"ref": "flarelizamon",
+			"color": "fire",
+			"from": [0,-1]
+		},
+		{
+			"ref": "darklizamon",
+			"color": "dark",
+			"from": [0,-1]
+		}
+	],
+	"ultimate": [
+		{
+			"ref": "megadramon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "gigadramon",
+			"color": "dark",
+			"from": [0,-1]
+		}
+	],
+	"mega": [
+		{
+			"ref": "machinedramon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "chaosdramon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "chaosdramonx",
+			"color": "x",
+			"from": [-1,0]
+		}
+	],
+	"ultra": [
+        null,
+        {
+            "ref":"neocrimson",
+            "color": "fusion",
+            "from": [0,-1]
+        }
+    ],
+    "related": [
+        "seadramon",
+        "tyranomon",
+        "greymon"
+    ]
+}

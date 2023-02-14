@@ -30,8 +30,12 @@
 			]
 		},
 		null,
-		null,
-		null,
+		{
+			"ref": "snowagumon",
+			"color": "ice",
+			"from": [-2,-1],
+			"skins": ["snowagumon2"]
+		},
 		{
 			"ref": "agumon2",
 			"from": [-4,-1]
@@ -52,26 +56,15 @@
 			"from": [-1,0]
 		},
 		{
-			"ref": "snowagumon",
-			"color": "ice",
-			"from": [-8,-1],
-			"skins": [
-				"snowagumon2"
-			]
-		},
-		{
 			"ref": "gaossmonb",
 			"color": "dark",
-			"from": [-9,-1]
-		},
-		{
-			"ref": "gaossmon",
-			"from": [-10,-1]
+			"from": [-9,-1],
+			"skins": ["gaossmon"]
 		},
 		{
 			"ref": "flamon",
 			"size": 2,
-			"from": [-11.5,-1]
+			"from": [0,-1]
 		}
 	],
 	"champion": [
@@ -91,7 +84,6 @@
 			"color": "dark",
 			"from": [-2,-1]
 		},
-		null,
 		{
 			"ref": "geogreymon",
 			"from": [0,-1]
@@ -107,18 +99,12 @@
 			"color": "x",
 			"from": [0,-1]
 		},
-		{
-			"ref": "ashgreymon",
-			"from": [0,-1]
-		},
+		null,
 		{
 			"ref": "greymonb3",
 			"color": "dark",
-			"from": [0,-1]
-		},
-		{
-			"ref": "greymon3",
-			"from": [0,-1]
+			"from": [0,-1],
+			"skins": ["greymon3", "ashgreymon"]
 		},
 		{
 			"ref": "agunimon",
@@ -147,7 +133,6 @@
 			"color": "dark",
 			"from": [0,-1]
 		},
-		null,
 		{
 			"ref": "rizegreymon",
 			"from": [0,-1]
@@ -173,7 +158,6 @@
 			"color": "dark",
 			"from": [0,-1]
 		},
-		null,
 		{
 			"ref": "aldamon",
 			"from": [0.5,-1]
@@ -203,7 +187,6 @@
 			"color": "dark",
 			"from": [0,-1]
 		},
-		null,
 		{
 			"ref": "shinegreymon",
 			"from": [0,-1]
@@ -232,7 +215,6 @@
 			"color": "armor",
 			"from": [0,-1]
 		},
-		null,
 		{
 			"ref": "emperorgreymon",
 			"from": [0,-1]
@@ -263,16 +245,7 @@
 			"color": "fusion",
 			"from": [0,-1]
 		},
-		{
-			"ref": "chaosdramon",
-			"color": "dark",
-			"from": [0,-1]
-		},
-		{
-			"ref": "chaosdramonx",
-			"color": "x",
-			"from": [-1,0]
-		},
+		null,
 		{
 			"ref": "shinegreymonBM",
 			"color": "mode",
@@ -314,12 +287,11 @@
 			"ref": "omegamonmm",
 			"color": "fusion",
 			"from": [0,-1]
-		},
-		null,
-		{
-			"ref":"neocrimson",
-			"color": "fusion",
-			"from": [0,-1]
 		}
-	]
+	],
+    "related": [
+        "tyranomon",
+        "flarelizamon",
+        "garurumon"
+    ]
 }

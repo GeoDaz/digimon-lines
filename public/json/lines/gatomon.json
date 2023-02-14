@@ -148,6 +148,13 @@
 			"from": [0,-1]
         },
         {
+			"ref":"mastemon",
+			"color":"fusion",
+			"from": [-3,-1],
+			"color2":"fusion",
+			"from2": [1,-1]
+        },
+        {
 			"ref":"lilithmon",
             "color": "dark",
 			"from": [0,-1]
@@ -196,7 +203,9 @@
         }
 	],
     "related": [
+        "angemon",
         "hawkmon",
-        "iguneetmon"
+        "iguneetmon",
+        "wizardmon"
     ]
 }

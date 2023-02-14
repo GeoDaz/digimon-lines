@@ -7,6 +7,7 @@ export interface Line {
 	mega: Array<LinePoint | null>;
 	ultra: Array<LinePoint | null> | undefined;
 	supra: Array<LinePoint | null> | undefined;
+	related: Array<string> | undefined;
 }
 
 export interface LinePoint {

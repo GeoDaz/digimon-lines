@@ -102,12 +102,12 @@
 			"from": [0,-1]
 		},
 		{
-			"ref": "goddramonx",
+			"ref": "goldramonx",
             "color": "x",
 			"from": [1,0]
 		},
 		{
-			"ref": "goddramon",
+			"ref": "goldramon",
 			"from": [1,-1]
 		},
 		{
@@ -150,5 +150,10 @@
             "color": "x",
 			"from": [-1,0]
 		}
-	]
+	],
+    "related": [
+        "armadillomon",
+        "devimon",
+        "gatomon"
+    ]
 }
