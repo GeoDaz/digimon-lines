@@ -1,8 +1,9 @@
 import React from 'react';
-import Layout from '../Layout';
-import { Row, Col, Image } from 'react-bootstrap';
-import LineGrid, { LineLoading } from '../LineGrid';
 import { useParams } from 'react-router-dom';
+import { Row, Col, Image } from 'react-bootstrap';
+import Layout from '../Layout';
+import LineGrid, { LineLoading } from '../LineGrid';
+import { Line } from '../types/Line';
 
 const PageLine: React.FC = () => {
 	const { name } = useParams();
