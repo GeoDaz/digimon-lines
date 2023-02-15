@@ -2,7 +2,10 @@
 	"baby1": [
         null,
         null,
-		{"ref": "keemon", "size": 2}
+		{
+			"ref": "keemon", 
+			"size": 2
+		}
 	],
 	"baby2": [
         null,
@@ -18,14 +21,16 @@
 			"ref": "impmonx",
             "color": "x",
             "size": 2,
-			"from": [-1,0]
-		},{
+			"from": [2,0]
+		},
+		{
 			"ref": "impmon",
             "size": 2,
 			"from": [0,-1]
 		}
 	],
 	"champion": [
+        null,
         null,
 		{
 			"ref": "boogiemon",
@@ -38,7 +43,7 @@
 			"ref": "baalmonx",
             "color": "x",
             "size": 2,
-			"from": [-1,0]
+			"from": [2,0]
 		},
 		{
 			"ref":"baalmon",
@@ -54,21 +59,21 @@
 		{
 			"ref": "beelzemonx",
             "color": "x",
-			"from": [0,-1]
+			"from": [0.5,-1]
 		},
 		{
 			"ref": "beelstarmonx",
             "color": "x",
-			"from": [0,-1]
+			"from": [-0.5,-1]
 		},
 		{
 			"ref": "beelzemon",
-			"from": [0,-1],
+			"from": [0.5,-1],
             "skins": ["beelzemon2"]
 		},
 		{
 			"ref": "beelstarmon",
-			"from": [0,-1]
+			"from": [-0.5,-1]
 		},
 		{
 			"ref":"demon",
@@ -87,6 +92,8 @@
             "color": "mode",
 			"from": [0,-1]
 		},
+		null,
+		null,
 		{
 			"ref": "demonsu",
             "color": "fusion",

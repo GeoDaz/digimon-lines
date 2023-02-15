@@ -2,7 +2,9 @@
 	"baby1": [
         null,
         null,
+        null,
 		{"ref": "poyomon"},
+        null,
         null,
 		{"ref": "puttimon"}
 	],
@@ -11,15 +13,18 @@
         {
             "ref": "tokomonx",
             "color": "x",
-            "from": [-1,0]
+            "from": [2,0]
         },
+		null,
 		{
 			"ref": "tokomon",
 			"from": [0,-1]
 		},
+		null,
+		null,
         {
 			"ref": "cupimon",
-			"from": [-1,0]
+			"from": [0,-1]
 		}
 	],
 	"rookie": [
@@ -27,6 +32,7 @@
 			"ref": "luxmon",
 			"from": [2,-1]
 		},
+        null,
         null,
 		{
 			"ref": "patamon",
@@ -37,6 +43,7 @@
             "color": "dark",
 			"from": [-1,-1]
 		},
+		null,
 		{
 			"ref": "lucemon",
 			"from": [0,-1]
@@ -45,7 +52,7 @@
 	"champion": [
 		{
 			"ref": "pidmon",
-			"from": [1,0]
+			"from": [0,-1]
 		},
 		{
 			"ref": "pegasmonx",
@@ -55,7 +62,7 @@
 		{
 			"ref": "pegasmon",
             "color": "armor",
-			"from": [0,-1]
+			"from": [1,-1]
 		},
 		{
 			"ref": "angemon",
@@ -67,16 +74,8 @@
 			"ref":"archangemon",
 			"from": [0,-1]
 		},
-		{
-			"ref": "rhinomonx",
-            "color": "x",
-			"from": [1,0]
-		},
-		{
-			"ref": "rhinomon",
-            "color": "armor",
-			"from": [0,-1]
-		},
+		null,
+		null,
 		{
 			"ref": "magnaangemon",
 			"from": [0,-1],
@@ -86,14 +85,14 @@
 		{
 			"ref": "shakomon",
             "color": "fusion",
-			"from": [-1,-1]
+			"from": [-2,-1]
 		},
 		{
 			"ref": "lucemonfm",
-            "color": "default",
+            "color": "armor",
             "color2": "fusion",
-			"from": [0,-1],
-			"from2": [-2,-1]
+			"from": [0,-2],
+			"from2": [-3,-1]
 		}
 	],
 	"mega": [
@@ -135,6 +134,12 @@
 		}
 	],
 	"ultra": [
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
 		{
 			"ref": "lucemonsm",
 			"from": [0,-1]
@@ -145,6 +150,12 @@
 			"ref": "ogudomon",
 			"from": [0,-1]
 		},
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
 		{
 			"ref": "ogudomonx",
             "color": "x",
