@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Row, Col, Image } from 'react-bootstrap';
 import Layout from '../Layout';
 import LineGrid, { LineLoading } from '../LineGrid';
-import { Line } from '../types/Line';
+import { Line } from '../../types/Line';
 
 const PageLine: React.FC = () => {
 	const { name } = useParams();
@@ -31,20 +31,23 @@ const PageLine: React.FC = () => {
 			{loading && <LineLoading />}
 			{!!line && <LineGrid line={line} />}
 			{line?.related ? (
-				<Row className="line-row">
-					{line.related.map((name, i) => (
-						<Col key={i}>
-							<div className="line-point pictured">
-								<Image
-									src={`/images/digimon/${name}.jpg`}
-									title={name}
-									rounded
-									className="line-img"
-								/>
-							</div>
-						</Col>
-					))}
-				</Row>
+				<div>
+					<h2>Related lines</h2>
+					<Row className="line-row">
+						{line.related.map((name, i) => (
+							<Col key={i}>
+								<div className="line-point pictured">
+									<Image
+										src={`/images/digimon/${name}.jpg`}
+										title={name}
+										rounded
+										className="line-img"
+									/>
+								</div>
+							</Col>
+						))}
+					</Row>
+				</div>
 			) : null}
 		</Layout>
 	);
