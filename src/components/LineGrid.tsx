@@ -1,25 +1,13 @@
 import React, { useEffect } from 'react';
 import { Row, Col, Image, Spinner } from 'react-bootstrap';
-import { Line, LinePoint } from '../types/Line';
+import { Line, LinePoint as LinePointInterface } from '../types/Line';
 import useFetch from '../hooks/useFetch';
 import { digicolors } from '../consts/digivolutions';
 
 interface GridProps {
-	name: string;
+	line: Line;
 }
-const LineGrid: React.FC<GridProps> = ({ name }) => {
-	const [line, setLine] = React.useState<Line>({} as Line);
-	const [load, loading] = useFetch(setLine);
-
-	useEffect(() => {
-		if (name) {
-			load(`/json/lines/${name}.json`);
-		}
-	}, [name]);
-
-	if (loading) {
-		return <LineLoading />;
-	}
+const LineGrid: React.FC<GridProps> = ({ line }) => {
 	return (
 		<div className="line-wrapper">
 			<LineRow list={line.supra} />
@@ -35,7 +23,7 @@ const LineGrid: React.FC<GridProps> = ({ name }) => {
 };
 
 interface RowProps {
-	list: Array<LinePoint | null> | undefined;
+	list: Array<LinePointInterface | null> | undefined;
 }
 const LineRow: React.FC<RowProps> = ({ list }) => {
 	if (!list) return null;
@@ -51,7 +39,7 @@ const LineRow: React.FC<RowProps> = ({ list }) => {
 				}
 				return (
 					<Col key={i}>
-						<LineCol point={point} />
+						<LinePoint point={point} />
 					</Col>
 				);
 			})}
@@ -63,7 +51,7 @@ const xUnit: number = 174; // 150 + 12 * 2
 const yUnit: number = 180; // 150 + 15 * 2
 const pointWidth: number = 150;
 const pointHeight: number = 150;
-const LineCol: React.FC<{ point: LinePoint }> = ({ point }) => {
+const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 	const { ref, from, from2, size, color, color2 } = point;
 	const style: React.CSSProperties = {};
 	let width = pointWidth;
@@ -142,7 +130,7 @@ const SvgLine: React.FC<SvgLineProps> = ({
 	);
 };
 
-const LineLoading: React.FC = () => (
+export const LineLoading: React.FC = () => (
 	<div className="line-wrapper">
 		<Row className="line-row">
 			<Col>
