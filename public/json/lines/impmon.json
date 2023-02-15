@@ -1,0 +1,96 @@
+{
+	"baby1": [
+        null,
+        null,
+		{"ref": "keemon", "size": 2}
+	],
+	"baby2": [
+        null,
+        null,
+		{
+			"ref": "yarmon", 
+            "size": 2,
+			"from": [0,-1]
+		}
+	],
+	"rookie": [
+		{
+			"ref": "impmonx",
+            "color": "x",
+            "size": 2,
+			"from": [-1,0]
+		},{
+			"ref": "impmon",
+            "size": 2,
+			"from": [0,-1]
+		}
+	],
+	"champion": [
+        null,
+		{
+			"ref": "boogiemon",
+            "size": 2,
+			"from": [0,-1]
+		}
+	],
+	"ultimate": [
+		{
+			"ref": "baalmonx",
+            "color": "x",
+            "size": 2,
+			"from": [-1,0]
+		},
+		{
+			"ref":"baalmon",
+            "size": 2,
+			"from": [0,-1]
+		},
+		{
+			"ref":"phelesmon",
+			"from": [-1,-1]
+		}
+	],
+	"mega": [
+		{
+			"ref": "beelzemonx",
+            "color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "beelstarmonx",
+            "color": "x",
+			"from": [0,-1]
+		},
+		{
+			"ref": "beelzemon",
+			"from": [0,-1],
+            "skins": ["beelzemon2"]
+		},
+		{
+			"ref": "beelstarmon",
+			"from": [0,-1]
+		},
+		{
+			"ref":"demon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "demonx",
+            "color": "x",
+			"from": [-1,0]
+		}
+	],
+	"ultra": [
+        null,
+		{
+			"ref": "beelzemonbm",
+            "color": "mode",
+			"from": [0,-1]
+		},
+		{
+			"ref": "demonsu",
+            "color": "fusion",
+			"from": [0,-1]
+		}
+	]
+}

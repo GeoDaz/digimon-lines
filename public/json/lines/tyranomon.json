@@ -113,13 +113,14 @@
 		null,
 		{
 			"ref": "machinedramon",
-			"color": "dark",
 			"from": [0,-1]
 		},
 		{
 			"ref": "millenniumon",
 			"color": "fusion",
-			"from": [0,-1]
+			"from": [0,-1],
+			"color2": "fusion",
+			"from2": [-1,0]
 		}
 	],
 	"ultra": [
@@ -134,6 +135,7 @@
 			"color": "dark",
 			"from": [-1,-1]
 		},
+		null,
 		null,
 		{
 			"ref": "zeedmillenniumon",

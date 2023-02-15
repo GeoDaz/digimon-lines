@@ -1,13 +1,13 @@
 {
 	"baby1": [
-		null,
 		{
 			"ref": "bommon"
 		}
 	],
 	"baby2": [
 		{
-			"ref": "missimon"
+			"ref": "missimon",
+			"from": [0,-1]
 		}
 	],
 	"rookie": [
@@ -78,10 +78,16 @@
 			"from": [0,-1]
 		}
     ],
-    "supra": [],
+    "supra": [
+		{
+			"ref": "ultimatechaosmon",
+            "color": "fusion",
+			"from": [0,-1]
+		}],
     "related": [
         "seadramon",
         "tyranomon",
-        "greymon"
+        "greymon",
+        "impmon"
     ]
 }
