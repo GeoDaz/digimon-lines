@@ -8,6 +8,7 @@ export interface Line {
 	ultra: Array<LinePoint | null> | undefined;
 	supra: Array<LinePoint | null> | undefined;
 	related: Array<string> | undefined;
+	notes: Array<string> | undefined;
 }
 
 export interface LinePoint {

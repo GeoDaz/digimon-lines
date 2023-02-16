@@ -57,7 +57,7 @@
 	],
 	"mega": [
 		{
-			"ref": "beelzemonx",
+			"ref": "beelzebumonx",
             "color": "x",
 			"from": [0.5,-1]
 		},
@@ -67,9 +67,9 @@
 			"from": [-0.5,-1]
 		},
 		{
-			"ref": "beelzemon",
+			"ref": "beelzebumon",
 			"from": [0.5,-1],
-            "skins": ["beelzemon2"]
+            "skins": ["beelzebumon2"]
 		},
 		{
 			"ref": "beelstarmon",
@@ -88,7 +88,7 @@
 	"ultra": [
         null,
 		{
-			"ref": "beelzemonbm",
+			"ref": "beelzebumonbm",
             "color": "mode",
 			"from": [0,-1]
 		},
@@ -99,5 +99,7 @@
             "color": "fusion",
 			"from": [0,-1]
 		}
-	]
+	],
+	"related": ["devimon", "belphemon", "wizardmon"],
+	"notes": ["We don't choose to use Wizardmon as Beelzebumon Champion stage because Impmon, Baalmon and Beelzebumon are based on demons and not Wizardmon. Beside that, Wizardmon is already used in Dynasmon line that come from Ghostmon and not Impmon. Boogiemon match the demon theme of this line. Astar is demon close to Beelzebub in the demonology but Astamon is already taken as an Ultimate on Belphemon line."]
 }

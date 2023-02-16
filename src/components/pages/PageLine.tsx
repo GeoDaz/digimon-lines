@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Row, Col, Image } from 'react-bootstrap';
+import useFetch from '../../hooks/useFetch';
 import Layout from '../Layout';
 import LineGrid, { LineLoading } from '../LineGrid';
 import { Line } from '../../types/Line';
 
 const PageLine: React.FC = () => {
 	const { name } = useParams();
-	const [line, setLine] = React.useState<Line | undefined>();
+	const [line, setLine] = useState<Line | undefined>();
 	const [load, loading] = useFetch(setLine);
 
 	useEffect(() => {
