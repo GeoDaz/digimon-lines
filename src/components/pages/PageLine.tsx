@@ -37,14 +37,18 @@ const PageLine: React.FC = () => {
 					<Row className="line-row">
 						{line.related.map((name, i) => (
 							<Col key={i}>
-								<div className="line-point pictured">
+								<Link
+									to={`/lines/${name}`}
+									title={name}
+									className="line-point pictured"
+								>
 									<Image
 										src={`/images/digimon/${name}.jpg`}
-										title={name}
+										alt={name}
 										rounded
 										className="line-img"
 									/>
-								</div>
+								</Link>
 							</Col>
 						))}
 					</Row>

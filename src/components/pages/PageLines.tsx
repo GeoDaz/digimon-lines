@@ -19,20 +19,26 @@ const PageLines: React.FC = () => {
 					<Spinner animation="border" />
 				</div>
 			) : (
-				<Row className="line-row">
-					{lines.map((ref, i) => (
-						<Col key={i}>
-							<Link to={`/lines/${ref}`} className="line-point" title={ref}>
-								<Image
-									src={`/images/digimon/${ref}.jpg`}
-									alt={ref}
-									rounded
-									className="line-img"
-								/>
-							</Link>
-						</Col>
-					))}
-				</Row>
+				<div className="line-wrapper">
+					<Row className="line-row">
+						{lines.map((ref, i) => (
+							<Col key={i}>
+								<Link
+									to={`/lines/${ref}`}
+									className="line-point"
+									title={ref}
+								>
+									<Image
+										src={`/images/digimon/${ref}.jpg`}
+										alt={ref}
+										rounded
+										className="line-img"
+									/>
+								</Link>
+							</Col>
+						))}
+					</Row>
+				</div>
 			)}
 		</Layout>
 	);
