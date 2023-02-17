@@ -9,7 +9,8 @@ body {
 
 .app {
   /* background-color: #282c34; */
-  background-color: #2f3136;
+  /* background-color: #2f3136; */
+  background-color: var(--bs-bg-dark);
   min-height: 100vh;
   color: white;
 }
@@ -84,6 +85,7 @@ h1 {
   max-height: 10rem;
   position: relative;
   z-index: 2;
+  color: var(--bs-bg-dark);
 }
 
 .line-point .line-svg {

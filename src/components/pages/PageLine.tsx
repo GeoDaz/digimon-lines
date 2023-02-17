@@ -32,7 +32,7 @@ const PageLine: React.FC = () => {
 			{loading && <LineLoading />}
 			{!!line && <LineGrid line={line} />}
 			{line?.related ? (
-				<div>
+				<div className="line-wrapper">
 					<h2>Related lines</h2>
 					<Row className="line-row">
 						{line.related.map((name, i) => (
