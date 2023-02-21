@@ -14,7 +14,8 @@
 		null,
 		null,
 		{
-			"ref": "mokumon"
+			"ref": "mokumon",
+			"size": 2
 		}
 	],
 	"baby2": [
@@ -34,6 +35,8 @@
 		null,
 		{
 			"ref": "sunmon",
+			"size": 2,
+			"color": "fire",
 			"from": [0,-1]
 		}
 	],
@@ -70,7 +73,7 @@
 		null,
 		{
 			"ref": "agumonb",
-			"from": [-4.5,-1],
+			"from": [-5.5,-1],
 			"color": "dark",
 			"skins": [
 				"agumonb2",
@@ -86,11 +89,12 @@
 		{
 			"ref": "gaossmonb",
 			"color": "dark",
-			"from": [-9,-1],
+			"from": [-8.5,-1],
 			"skins": ["gaossmon"]
 		},
 		{
 			"ref": "flamon",
+			"color": "fire",
 			"size": 2,
 			"from": [0,-1]
 		}
@@ -136,6 +140,7 @@
 		},
 		{
 			"ref": "agunimon",
+			"color": "fire",
 			"size": 2,
 			"from": [0,-1]
 		}
@@ -188,10 +193,12 @@
 		},
 		{
 			"ref": "aldamon",
+			"color": "fire",
 			"from": [0.5,-1]
 		},
 		{
 			"ref": "vitramon",
+			"color": "fire",
 			"from": [-0.5,-1]
 		}
 	],
@@ -245,10 +252,12 @@
 		},
 		{
 			"ref": "emperorgreymon",
+			"color": "fire",
 			"from": [0,-1]
 		},
 		{
 			"ref": "ancientgreymon",
+			"color": "fire",
 			"from": [0,-1]
 		}
 	],
@@ -259,13 +268,13 @@
 			"from": [0,-1]
 		},
 		{
-			"ref": "agumonbc",
-			"color": "mode",
+			"ref": "omegamon",
+			"color": "fusion",
 			"from": [0.5,-1]
 		},
 		{
-			"ref": "omegamon",
-			"color": "fusion",
+			"ref": "agumonbc",
+			"color": "mode",
 			"from": [-0.5,-1]
 		},
 		{
@@ -275,12 +284,12 @@
 		},
 		null,
 		{
-			"ref": "shinegreymonBM",
+			"ref": "shinegreymonbm",
 			"color": "mode",
 			"from": [0,-1]
 		},
 		{
-			"ref": "shinegreymonRM",
+			"ref": "shinegreymonrm",
 			"color": "dark",
 			"from": [-1,-1]
 		},
@@ -301,7 +310,6 @@
 			"from": [0,-1]
 		},
 		null,
-		null,
 		{
 			"ref": "susanoomon",
 			"color": "fusion",
@@ -309,7 +317,6 @@
 		}
 	],
 	"supra": [
-		null,
 		null,
 		{
 			"ref": "omegamonmm",
@@ -319,7 +326,8 @@
 	],
     "related": [
         "tyranomon",
-        "flarelizamon",
+        "flarelizardmon",
+        "commandramon",
         "garurumon"
     ]
 }

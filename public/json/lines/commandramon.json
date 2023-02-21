@@ -1,16 +1,19 @@
 {
 	"baby1": [
+		null,
 		{
 			"ref": "bommon"
 		}
 	],
 	"baby2": [
+		null,
 		{
 			"ref": "missimon",
 			"from": [0,-1]
 		}
 	],
 	"rookie": [
+		null,
 		{
 			"ref": "commandramon",
 			"from": [0,-1]
@@ -18,29 +21,30 @@
 	],
 	"champion": [
 		{
+			"ref": "tankmon",
+			"from": [1,-1]
+		},
+		{
 			"ref": "sealsdramon",
 			"from": [0,-1]
 		},
 		{
-			"ref": "tankmon",
+			"ref": "troopmon",
+			"color": "dark",
 			"from": [-1,-1]
 		},
 		{
-			"ref": "troopmon",
-			"from": [-2,-1]
-		},
-		{
 			"ref": "revolmon",
-			"from": [-3,-1]
+			"from": [-2,-1]
 		}
 	],
 	"ultimate": [
 		{
-			"ref": "tankdramon",
+			"ref": "deckerdramon",
 			"from": [0,-1]
 		},
 		{
-			"ref": "deckerdramon",
+			"ref": "tankdramon",
 			"from": [0,-1]
 		},
 		{
@@ -54,24 +58,25 @@
 	],
 	"mega": [
 		{
-			"ref": "darkdramon",
-			"from": [0,-1]
-		},
-		{
 			"ref": "gundramon",
 			"from": [0,-1]
 		},
 		{
-			"ref": "commandramon",
+			"ref": "darkdramon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "cannondramon",
 			"from": [0,-1]
 		},
 		{
 			"ref": "avengekidmon",
 			"from": [0,-1],
-            "skins": ["magnukidmon"]
+            "skins": ["magnakidmon"]
 		}
 	],
 	"ultra": [
+		null,
 		{
 			"ref": "chaosmon",
             "color": "fusion",
@@ -79,13 +84,13 @@
 		}
     ],
     "supra": [
+		null,
 		{
 			"ref": "ultimatechaosmon",
             "color": "fusion",
 			"from": [0,-1]
 		}],
     "related": [
-        "seadramon",
         "tyranomon",
         "greymon",
         "impmon"

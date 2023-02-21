@@ -59,7 +59,7 @@
 			"from": [0,-1]
 		},
 		{
-			"ref": "waruseadrmon",
+			"ref": "waruseadramon",
 			"color": "dark",
 			"from": [-1,-1]
 		},
@@ -92,6 +92,7 @@
 		},
 		{
 			"ref": "leviamon",
+			"color": "dark",
 			"from": [-1,-1]
 		},
 		{
@@ -111,8 +112,6 @@
 	],
 	"ultra": [],
     "related": [
-        "seadramon",
-        "tyranomon",
-        "greymon"
+        "flarelizardmon"
     ]
 }

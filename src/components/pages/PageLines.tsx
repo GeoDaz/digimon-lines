@@ -25,7 +25,7 @@ const PageLines: React.FC = () => {
 							<Col key={i}>
 								<Link
 									to={`/lines/${ref}`}
-									className="line-point"
+									className="line-point pictured"
 									title={ref}
 								>
 									<Image

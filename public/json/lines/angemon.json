@@ -24,12 +24,14 @@
 		null,
         {
 			"ref": "cupimon",
+            "color": "light",
 			"from": [0,-1]
 		}
 	],
 	"rookie": [
 		{
 			"ref": "luxmon",
+            "color": "light",
 			"from": [3,-1]
 		},
         null,
@@ -46,12 +48,14 @@
 		null,
 		{
 			"ref": "lucemon",
+            "color": "light",
 			"from": [0,-1]
 		}
 	],
 	"champion": [
 		{
 			"ref": "pidmon",
+            "color": "light",
 			"from": [0,-1]
 		},
 		{
@@ -66,24 +70,27 @@
 		},
 		{
 			"ref": "angemon",
+            "color": "light",
 			"from": [0,-1]
 		}
 	],
 	"ultimate": [
 		{
 			"ref":"archangemon",
+            "color": "light",
 			"from": [0,-1]
 		},
 		null,
 		null,
 		{
 			"ref": "magnaangemon",
+            "color": "light",
 			"from": [0,-1],
             "skins": ["magnaangemonpm"]
 		},
         null,
 		{
-			"ref": "shakomon",
+			"ref": "shakkoumon",
             "color": "fusion",
 			"from": [-2,-1]
 		},
@@ -98,6 +105,7 @@
 	"mega": [
 		{
 			"ref": "dominimon",
+            "color": "light",
 			"from": [0,-1]
 		},
 		{
@@ -111,6 +119,7 @@
 		},
 		{
 			"ref": "seraphimon",
+            "color": "light",
 			"from": [0,-1]
 		},
 		{
@@ -121,10 +130,12 @@
 		},
 		{
 			"ref": "clavisangemon",
+            "color": "light",
 			"from": [0,-1]
 		},
 		{
 			"ref": "lucemonlarva",
+            "color": "dark",
 			"from": [0,-1]
 		},
 		{
@@ -142,6 +153,7 @@
 		null,
 		{
 			"ref": "lucemonsm",
+            "color": "dark",
 			"from": [0,-1]
 		}
 	],
@@ -154,6 +166,7 @@
 		null,
 		{
 			"ref": "ogudomon",
+            "color": "dark",
 			"from": [0,-1]
 		},
 		{

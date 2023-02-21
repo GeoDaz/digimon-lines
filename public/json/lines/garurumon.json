@@ -54,8 +54,8 @@
 		},
 		{
 			"ref": "psychemon",
-			"from": [-5,-1],
-			"color": "dark"
+			"color": "psychic",
+			"from": [-5,-1]
 		},
 		null,
 		{
@@ -85,11 +85,11 @@
 		null,
 		{
 			"ref": "drimogemon",
-			"from": [-2,-1]
+			"from": [-2.5,-1]
 		},
 		{
 			"ref": "dorulumon",
-			"from": [-3,-1]
+			"from": [-3.5,-1]
 		},
 		{
 			"ref": "garurumonb",
@@ -102,6 +102,7 @@
 		},
 		{
 			"ref": "nisedrimogemon",
+			"color": "psychic",
 			"from": [-1,-1]
 		},
 		{
@@ -111,10 +112,12 @@
 		null,
 		{
 			"ref": "gaogamonb",
+			"color": "dark",
 			"from": [-2,-1]
 		},
 		{
 			"ref": "wolfmon",
+			"color": "light",
 			"size": 2,
 			"from": [0,-1]
 		}
@@ -142,6 +145,7 @@
 		},
 		{
 			"ref": "jaegerdorulumon",
+			"color": "armor",
 			"from": [0,-1]
 		},
 		{
@@ -162,14 +166,17 @@
 		null,
 		{
 			"ref": "machgaogamonb",
+			"color": "dark",
 			"from": [0,-1]
 		},
 		{
 			"ref": "beowolfmon",
+			"color": "light",
 			"from": [0.5,-1]
 		},
 		{
 			"ref": "kendogarurumon",
+			"color": "light",
 			"from": [-0.5,-1]
 		}
 	],
@@ -186,14 +193,17 @@
 		},
 		{
 			"ref": "cresgarurumon",
+			"color": "armor",
 			"from": [0,-1]
 		},
 		{
 			"ref": "mercurymon",
+			"color": "dark",
 			"from": [0,-1]
 		},
 		{
 			"ref": "marsmon",
+			"color": "fire",
 			"from": [0,-1]
 		},
 		{
@@ -213,14 +223,17 @@
 		},
 		{
 			"ref": "miragegaogamonb",
+			"color": "dark",
 			"from": [0,-1]
 		},
 		{
 			"ref": "magnagarurumon",
+			"color": "light",
 			"from": [0,-1]
 		},
 		{
 			"ref": "ancientgarurumon",
+			"color": "light",
 			"from": [0,-1]
 		}
 	],
@@ -231,13 +244,13 @@
 			"from": [0,-1]
 		},
 		{
-			"ref": "gabumonbf",
-			"color": "mode",
+			"ref": "omegamon",
+			"color": "fusion",
 			"from": [0.5,-1]
 		},
 		{
-			"ref": "omegamon",
-			"color": "fusion",
+			"ref": "gabumonbf",
+			"color": "mode",
 			"from": [-0.5,-1]
 		},
 		{
@@ -273,7 +286,6 @@
 	],
 	"supra": [
 		null,
-		null,
 		{
 			"ref": "omegamonmm",
 			"color": "fusion",
@@ -281,6 +293,7 @@
 		}
 	],
     "related": [
-        "greymon"
+        "greymon",
+        "bearmon"
     ]
 }

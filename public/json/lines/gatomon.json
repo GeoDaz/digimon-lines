@@ -14,6 +14,19 @@
 		{
 			"ref": "nyaromon",
 			"from": [0,-1]
+		},
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		{
+			"ref": "meicoonyaromon",
+			"size": 2,
+			"from": [-9,-1]
 		}
 	],
 	"rookie": [
@@ -27,6 +40,7 @@
 		null,
 		{
 			"ref": "plotmon",
+            "color": "light",
 			"from": [0,-1]
 		},
 		null,
@@ -38,7 +52,7 @@
 		null,
 		null,
 		{
-			"ref": "plotmon2",
+			"ref": "meicooplotmon",
 			"size": 2,
 			"from": [0,-1]
 		}
@@ -54,6 +68,7 @@
 		null,
 		{
 			"ref": "gatomon",
+            "color": "light",
 			"from": [0,-1]
 		},
         null,
@@ -62,18 +77,18 @@
 		{
 			"ref": "gatomonb",
             "color": "dark",
-			"from": [0,-1],
+			"from": [-4,-1],
             "skins": ["gatomonbuver"]
 		},
         null,
 		{
 			"ref": "mikemon",
-			"from": [0,-1]
+			"from": [-6,-1]
 		},
 		{
 			"ref": "lynxmon",
             "color": "fire",
-			"from": [0,-1]
+			"from": [-7,-1]
 		},
 		null,
 		{
@@ -101,13 +116,18 @@
 		},
 		{
 			"ref":"angewomon",
+            "color": "light",
 			"from": [0,-1]
 		},
 		{
-			"ref":"bestumon",
+			"ref":"betsumon",
 			"from": [-1,-1]
 		},
-		null,
+		{
+			"ref":"butterflamon",
+            "color": "armor",
+			"from": [-2,-1]
+		},
 		{
 			"ref":"silphymon",
             "color": "fusion",
@@ -139,6 +159,7 @@
 		},
 		{
 			"ref":"meicrackmon",
+            "color": "light",
 			"from": [-0.5,-1]
 		}
 	],
@@ -164,6 +185,7 @@
 		},
 		{
 			"ref":"ophanimon",
+            "color": "light",
 			"from": [0,-1]
 		},
 		{
@@ -194,15 +216,17 @@
         },
         {
 			"ref":"junomon",
+            "color": "light",
 			"from": [0,-1]
         },
         {
-			"ref":"duftmon",
+			"ref":"leopardmon",
+            "color": "light",
 			"from": [0,-1],
-            "skin": ["duftmonlm"]
+            "skin": ["leopardmonlm"]
         },
         {
-			"ref":"duftmonx",
+			"ref":"leopardmonx",
             "color": "x",
 			"from": [-1,0]
         },
@@ -213,6 +237,7 @@
         },
         {
 			"ref":"rasielmon",
+            "color": "light",
 			"from": [0,-1]
         }
 	],
@@ -226,15 +251,12 @@
 		null,
 		null,
 		null,
-		null,
-		null,
 		{
 			"ref": "ordinemon",
-			"size": 2,
             "color": "fusion",
-			"from": [-3,-1],
+			"from": [-4,-1],
             "color2": "fusion",
-			"from2": [3,-1]
+			"from2": [4,-1]
 		},
         {
 			"ref":"junomonrm",

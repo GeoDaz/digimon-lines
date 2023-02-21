@@ -2,11 +2,13 @@
 	"size": 16,
 	"baby1": [
 		null,
+		null,
 		{
 			"ref": "puyomon"
 		}
 	],
 	"baby2": [
+		null,
 		null,
 		{
 			"ref": "puyoyomon",
@@ -14,6 +16,7 @@
 		}
 	],
 	"rookie": [
+		null,
 		null,
 		{
 			"ref": "jellymon",
@@ -23,113 +26,73 @@
 	"champion": [
 		null,
 		{
+			"ref": "ranamon",
+			"from": [1,-1]
+		},
+		{
 			"ref": "teslajellymon",
 			"from": [0,-1]
 		},
 		{
-			"ref": "ranamon",
+			"ref": "gesomon",
 			"from": [-1,-1]
 		},
 		{
-			"ref": "kausgammamon",
-			"from": [-1.5,-1]
-		},
-		{
-			"ref": "wezengammamon",
-			"from": [-2.5,-1]
-		},
-		null,
-		null,
-		{
-			"ref": "monochromon",
-			"from": [-5.5,-1]
-		},
-		{
-			"ref": "monochromonx",
+			"ref": "gesomonx",
 			"color": "x",
 			"from": [-1,0]
+		},
+		{
+			"ref": "octomon",
+			"from": [-3,-1]
 		}
 	],
 	"ultimate": [
+		{
+			"ref":"mermaimon",
+			"from": [1,-1]
+		},
+		{
+			"ref":"calamaramon",
+			"from": [0,-1]
+		},
 		{
 			"ref":"thetismon",
 			"from": [0,-1]
 		},
 		{
-			"ref":"canoweissmon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "regulusmon",
+			"ref": "marinedevimon",
 			"color": "dark",
 			"from": [0,-1]
 		},
+		null,
 		{
-			"ref": "fumamon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "ghilliedhumon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "zanmetsumon",
-			"color": "fusion",
-			"from": [-1,-1]
-		},
-		{
-			"ref": "vermillimon",
-			"color": "fire",
-			"from": [1,-1]
-		},
-		{
-			"ref": "triceramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "triceramonx",
-			"color": "x",
+			"ref": "dagomon",
 			"from": [0,-1]
 		}
 	],
 	"mega": [
-		null,
+		{
+			"ref": "marineangemon",
+			"color": "light",
+			"from": [0,-1]
+		},
+		{
+			"ref": "ancientmermaimon",
+			"from": [0,-1]
+		},
 		{
 			"ref": "amphimon",
 			"from": [0,-1]
 		},
 		{
-			"ref": "arcturusmon",
+			"ref": "cthyllamon",
 			"color": "dark",
 			"from": [0,-1]
 		},
 		null,
-		null,
-		null,
 		{
-			"ref": "dorbickmon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "ultimatebrachimon",
-			"from": [0,-1]
-		}
-	],
-	"ultra": [
-		null,
-		{
-			"ref": "proximamon",
-			"color": "fusion",
-			"size": 2,
-			"from": [-0.5,-1],
-			"from2": [0.5,-1]
-		},
-		null,
-		null,
-		null,
-		{
-			"ref": "dorbickmondm",
-			"color": "fusion",
+			"ref": "neptunemon",
 			"from": [0,-1]
 		}
 	]

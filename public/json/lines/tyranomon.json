@@ -33,6 +33,12 @@
 			"ref": "agumonb",
 			"from": [-4,-1],
 			"color": "dark"
+		},
+		null,
+		{
+			"ref": "gaossmonb",
+			"color": "dark",
+			"from": [-6,-1]
 		}
 	],
 	"champion": [
@@ -62,7 +68,17 @@
 		},
 		{
 			"ref": "deltamon",
+            "color": "dark",
 			"from": [-1,-1]
+		},
+		{
+			"ref": "allomon",
+			"from": [0,-1]
+		},
+		{
+			"ref": "allomonx",
+            "color": "x",
+			"from": [-1,0]
 		}
 	],
 	"ultimate": [
@@ -93,6 +109,7 @@
 		},
 		{
 			"ref": "chimeramon",
+            "color": "dark",
 			"from": [0,-1]
 		}
 	],
@@ -113,6 +130,7 @@
 		null,
 		{
 			"ref": "machinedramon",
+            "color": "dark",
 			"from": [0,-1]
 		},
 		{
@@ -145,7 +163,7 @@
 	],
     "related": [
 		"gammamon",
-        "flarelizamon",
+        "flarelizardmon",
         "greymon"
     ]
 }

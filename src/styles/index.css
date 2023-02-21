@@ -41,12 +41,21 @@ h1 {
   padding-bottom: 2em;
   position: relative;
   z-index: 1;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.line-grid .line-row {
+  flex-wrap: nowrap;
 }
 
 .line-row.row {
-  flex-wrap: nowrap;
   margin-bottom: 2em;
   justify-content: flex-start;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .line-row:last-child {
@@ -55,6 +64,11 @@ h1 {
 
 .line-row .col {
   flex: 0;
+  margin-bottom: 1.5rem;
+}
+
+.line-grid .line-row .col {
+  margin-bottom: 0;
 }
 
 .line-point {

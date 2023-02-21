@@ -41,15 +41,14 @@
 			"ref": "wezengammamon",
 			"from": [-2.5,-1]
 		},
-		null,
-		{
-			"ref": "monochromon",
-			"from": [-4.5,-1]
-		},
 		{
 			"ref": "monochromonx",
 			"color": "x",
-			"from": [-1,0]
+			"from": [1,0]
+		},
+		{
+			"ref": "monochromon",
+			"from": [-4.5,-1]
 		}
 	],
 	"ultimate": [
@@ -75,18 +74,22 @@
 			"from": [0,-1]
 		},
 		{
-			"ref": "vermillimon",
-			"color": "fire",
-			"from": [1,-1]
+			"ref": "triceramonx",
+			"color": "x",
+			"from": [0,-1]
 		},
 		{
 			"ref": "triceramon",
 			"from": [0,-1]
 		},
 		{
-			"ref": "triceramonx",
-			"color": "x",
-			"from": [0,-1]
+			"ref": "brachiomon",
+			"from": [-1,-1]
+		},
+		{
+			"ref": "vermillimon",
+			"color": "fire",
+			"from": [-2,-1]
 		}
 	],
 	"mega": [
@@ -103,11 +106,18 @@
 		null,
 		null,
 		{
-			"ref": "dorbickmon",
+			"ref": "ultimatebrachimon",
+			"color": "x",
 			"from": [0,-1]
 		},
 		{
-			"ref": "ultimatebrachimon",
+			"ref": "cannondramon",
+			"from": [0,-1],
+			"from2": [1,-1]
+		},
+		null,
+		{
+			"ref": "dorbickmon",
 			"from": [0,-1]
 		}
 	],
@@ -123,10 +133,14 @@
 		},
 		null,
 		null,
+		null,
+		null,
+		null,
 		{
 			"ref": "dorbickmondm",
 			"color": "fusion",
 			"from": [0,-1]
 		}
-	]
+	],
+	"related": ["gammamon"]
 }

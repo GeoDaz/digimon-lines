@@ -25,7 +25,7 @@ const PageLine: React.FC = () => {
 		<Layout
 			title={
 				<>
-					Digimon : <span className="text-capitalize">{name}</span>
+					Digimon&nbsp;: <span className="text-capitalize">{name}</span>
 				</>
 			}
 		>
@@ -33,7 +33,7 @@ const PageLine: React.FC = () => {
 			{!!line && <LineGrid line={line} />}
 			{line?.related ? (
 				<div className="line-wrapper">
-					<h2>Related lines</h2>
+					<h2>Related lines&nbsp;:</h2>
 					<Row className="line-row">
 						{line.related.map((name, i) => (
 							<Col key={i}>

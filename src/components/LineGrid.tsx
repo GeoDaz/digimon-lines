@@ -9,7 +9,7 @@ interface GridProps {
 }
 const LineGrid: React.FC<GridProps> = ({ line }) => {
 	return (
-		<div className="line-wrapper">
+		<div className="line-wrapper line-grid">
 			<LineRow list={line.supra} />
 			<LineRow list={line.ultra} />
 			<LineRow list={line.mega} />
@@ -74,6 +74,7 @@ const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 };
 
 // TODO retravailler pour que les lignes s'arretent en haut des images avec pour coord, top left, top center ou top right
+const white = '#fff';
 interface SvgLineProps {
 	from: Array<number>;
 	color?: string;
@@ -119,9 +120,7 @@ const SvgLine: React.FC<SvgLineProps> = ({
 				x2={xOrigin + x}
 				y2={left ? yOrigin : halfHeight + y}
 				style={{
-					stroke: color
-						? digicolors[color]
-						: '#fff' /* digicolors['default'] */,
+					stroke: color ? digicolors[color] : white /* digicolors['default'] */,
 					strokeWidth,
 					strokeLinecap: 'round',
 				}}
