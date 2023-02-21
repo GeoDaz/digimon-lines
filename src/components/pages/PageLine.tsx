@@ -9,7 +9,23 @@ import { Line } from '../../types/Line';
 const PageLine: React.FC = () => {
 	const { name } = useParams();
 	const [line, setLine] = useState<Line | undefined>();
-	const [load, loading] = useFetch(setLine);
+
+	const setLineBuffer = (line: Line) => {
+		setLine({
+			...line,
+			columns: line.columns.map(col => {
+				if (col[0]) {
+					col[0] = { ...col[0], from: null };
+				}
+				while (col.length < line.size) {
+					col.push(null);
+				}
+				return col.reverse();
+			}),
+		});
+	};
+
+	const [load, loading] = useFetch(setLineBuffer);
 
 	useEffect(() => {
 		if (name) {
@@ -20,7 +36,6 @@ const PageLine: React.FC = () => {
 	if (loading) {
 		return <LineLoading />;
 	}
-
 	return (
 		<Layout
 			title={

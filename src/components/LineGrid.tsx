@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Row, Col, Image, Spinner } from 'react-bootstrap';
 import { Line, LinePoint as LinePointInterface } from '../types/Line';
-import useFetch from '../hooks/useFetch';
 import { digicolors } from '../consts/digivolutions';
 
 interface GridProps {
@@ -10,20 +9,15 @@ interface GridProps {
 const LineGrid: React.FC<GridProps> = ({ line }) => {
 	return (
 		<div className="line-wrapper line-grid">
-			<LineRow list={line.supra} />
-			<LineRow list={line.ultra} />
-			<LineRow list={line.mega} />
-			<LineRow list={line.ultimate} />
-			<LineRow list={line.champion} />
-			<LineRow list={line.rookie} />
-			<LineRow list={line.baby2} />
-			<LineRow list={line.baby1} />
+			{line.columns.map((column, i) => (
+				<LineRow key={i} list={column.reverse()} />
+			))}
 		</div>
 	);
 };
 
 interface RowProps {
-	list: Array<LinePointInterface | null> | undefined;
+	list: Array<LinePointInterface | LinePointInterface[] | null> | undefined;
 }
 const LineRow: React.FC<RowProps> = ({ list }) => {
 	if (!list) return null;
@@ -37,6 +31,9 @@ const LineRow: React.FC<RowProps> = ({ list }) => {
 						</Col>
 					);
 				}
+				if (Array.isArray(point)) {
+					return <LineRow key={i} list={point} />;
+				}
 				return (
 					<Col key={i}>
 						<LinePoint point={point} />
@@ -47,8 +44,10 @@ const LineRow: React.FC<RowProps> = ({ list }) => {
 	);
 };
 
-const xUnit: number = 174; // 150 + 12 * 2
-const yUnit: number = 180; // 150 + 15 * 2
+const xMargin = 24;
+const yMargin = 30;
+const xUnit: number = 174; // 150 + xMargin
+const yUnit: number = 180; // 150 + yMargin
 const pointWidth: number = 150;
 const pointHeight: number = 150;
 const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
@@ -56,7 +55,7 @@ const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 	const style: React.CSSProperties = {};
 	let width = pointWidth;
 	if (size) {
-		width += (size ? size - 1 : 0) * xUnit; // 150 + 12 * 2
+		width += (size ? size - 1 : 0) * xUnit; // 150 + xMargin
 		style.width = width + 'px';
 	}
 	return (
@@ -67,8 +66,10 @@ const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 				rounded
 				className="line-img"
 			/>
-			{!!from && <SvgLine from={from} color={color} baseWidth={width} />}
-			{!!from2 && <SvgLine from={from2} color={color2} baseWidth={width} />}
+			<SvgLine from={from} color={color} baseWidth={width} size={size} />
+			{!!from2 && (
+				<SvgLine from={from2} color={color2} baseWidth={width} size={size} />
+			)}
 		</div>
 	);
 };
@@ -76,36 +77,43 @@ const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 // TODO retravailler pour que les lignes s'arretent en haut des images avec pour coord, top left, top center ou top right
 const white = '#fff';
 interface SvgLineProps {
-	from: Array<number>;
+	from?: Array<number> | null;
 	color?: string;
+	size?: number;
 	baseWidth?: number;
 	baseHeight?: number;
 }
 const SvgLine: React.FC<SvgLineProps> = ({
-	from,
+	from = [0, -1],
 	color,
+	size = 0,
 	baseWidth = pointWidth,
 	baseHeight = pointHeight,
 }) => {
+	if (!from) {
+		return null;
+	}
 	const svgStyle: React.CSSProperties = {};
 	let x: number = 0;
 	let y: number = 0;
 	let left: boolean = false;
-	if (from) {
-		x = xUnit * Math.abs(from[0]); // 150 + 12 * 2
-		y = yUnit * Math.abs(from[1]); // 150 + 15 * 2
-		left = from[0] < 0;
-	}
+	x = xUnit * Math.abs(from[0]); // 150 + 12 * 2
+	y = yUnit * Math.abs(from[1]); // 150 + 15 * 2
+	left = from[0] < 0;
 	const halfHeight: number = baseHeight / 2;
 	const halfWidth: number = baseWidth / 2;
 	let yOrigin: number = halfHeight;
 	let xOrigin: number = halfWidth;
 	const strokeWidth = 12;
-	if (from && Math.abs(from[0]) >= 2 && from[1] < 0) {
+	if (Math.abs(from[0]) > 1 && from[1] < 0) {
 		if (from[0] < 0) {
 			svgStyle.zIndex = Math.floor(from[0]);
 		}
-		yOrigin = baseHeight;
+		xOrigin =
+			(left ? strokeWidth : pointWidth - strokeWidth) + pointWidth * (size / 2);
+		yOrigin = pointHeight - strokeWidth / 2;
+		x -= pointWidth - xMargin - strokeWidth;
+		// y -= halfHeight - strokeWidth / 2;
 	}
 	return (
 		<svg
@@ -171,4 +179,4 @@ export const LineLoading: React.FC = () => (
 		</Row>
 	</div>
 );
-export default LineGrid;
+export default React.memo(LineGrid);

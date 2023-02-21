@@ -47,12 +47,21 @@ h1 {
   padding-right: 0.75rem;
 }
 
+.line-grid {
+  display: flex;
+}
+
 .line-grid .line-row {
   flex-wrap: nowrap;
+  margin-bottom: 2em;
+}
+
+.line-grid>.line-row {
+  flex-direction: column;
+  margin-bottom: 0;
 }
 
 .line-row.row {
-  margin-bottom: 2em;
   justify-content: flex-start;
   margin-left: 0;
   margin-right: 0;
@@ -69,6 +78,10 @@ h1 {
 
 .line-grid .line-row .col {
   margin-bottom: 0;
+}
+
+.line-grid>.line-row>.col {
+  margin-bottom: 2em;
 }
 
 .line-point {
