@@ -1,273 +1,362 @@
 {
-	"baby1": [
-		null,
-		null,
-		null,
-		null,
-		{"ref": "snowbotamon"}
+	"size": 7,
+	"related": [
+		"angemon",
+		"hawkmon",
+		"iguneetmon",
+		"wizardmon"
 	],
-	"baby2": [
-		null,
-		null,
-		null,
-		null,
-		{
-			"ref": "nyaromon",
-			"from": [0,-1]
-		},
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		{
-			"ref": "meicoonyaromon",
-			"size": 2,
-			"from": [-9,-1]
-		}
-	],
-	"rookie": [
-		null,
-		{
-			"ref": "plotmonx",
-			"color": "x",
-			"from": [3,0]
-		},
-		null,
-		null,
-		{
-			"ref": "plotmon",
-            "color": "light",
-			"from": [0,-1]
-		},
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		{
-			"ref": "meicooplotmon",
-			"size": 2,
-			"from": [0,-1]
-		}
-	],
-	"champion": [
-		null,
-		{
-			"ref": "gatomonx",
-            "color": "x",
-			"from": [0,-1]
-		},
-		null,
-		null,
-		{
-			"ref": "gatomon",
-            "color": "light",
-			"from": [0,-1]
-		},
-        null,
-        null,
-        null,
-		{
-			"ref": "gatomonb",
-            "color": "dark",
-			"from": [-4,-1],
-            "skins": ["gatomonbuver"]
-		},
-        null,
-		{
-			"ref": "mikemon",
-			"from": [-6,-1]
-		},
-		{
-			"ref": "lynxmon",
-            "color": "fire",
-			"from": [-7,-1]
-		},
-		null,
-		{
-			"ref": "meicoomon",
-			"from": [0,-1],
-            "size": 2
-		}
-	],
-	"ultimate": [
-		{
-			"ref":"nefertimonx",
-            "color": "x",
-			"from": [1,-1]
-		},
-		{
-			"ref":"angewomonx",
-            "color": "x",
-			"from": [0,-1]
-		},
-		null,
-		{
-			"ref":"nefertimon",
-            "color": "armor",
-			"from": [1,-1]
-		},
-		{
-			"ref":"angewomon",
-            "color": "light",
-			"from": [0,-1]
-		},
-		{
-			"ref":"betsumon",
-			"from": [-1,-1]
-		},
-		{
-			"ref":"butterflamon",
-            "color": "armor",
-			"from": [-2,-1]
-		},
-		{
-			"ref":"silphymon",
-            "color": "fusion",
-			"from": [-3,-1]
-		},
-		{
-			"ref":"ladydevimon",
-            "color": "dark",
-			"from": [0,-1]
-		},
-		{
-			"ref":"ladydevimonx",
-            "color": "x",
-			"from": [-1,0]
-		},
-		{
-			"ref":"bastemon",
-			"from": [0,-1]
-		},
-		{
-			"ref":"mihiramon",
-			"from": [0,-1]
-		},
-        null,
-		{
-			"ref":"meicrackmonvm",
-            "color": "dark",
-			"from": [0.5,-1]
-		},
-		{
-			"ref":"meicrackmon",
-            "color": "light",
-			"from": [-0.5,-1]
-		}
-	],
-	"mega": [
-		{
-			"ref":"magnadramonx",
-            "color": "x",
-			"from": [1,-1]
-		},
-		{
-			"ref":"ophanimonx",
-            "color": "x",
-			"from": [0,-1]
-		},
-		{
-			"ref":"ophanimonfmx",
-            "color": "dark",
-			"from": [-1,-1]
-		},
-		{
-			"ref":"magnadramon",
-			"from": [1,-1]
-		},
-		{
-			"ref":"ophanimon",
-            "color": "light",
-			"from": [0,-1]
-		},
-		{
-			"ref":"ophanimonfm",
-            "color": "dark",
-			"from": [-1,-1]
-		},
-        {
-			"ref":"mastemon",
-			"color":"fusion",
-			"from": [-2,-1],
-			"color2":"fusion",
-			"from2": [2,-1]
-        },
-        {
-			"ref":"valkyrimon",
-			"from": [0,-1]
-        },
-        {
-			"ref":"lilithmon",
-            "color": "dark",
-			"from": [0,-1]
-        },
-        {
-			"ref":"lilithmonx",
-            "color": "x",
-			"from": [0,-1]
-        },
-        {
-			"ref":"junomon",
-            "color": "light",
-			"from": [0,-1]
-        },
-        {
-			"ref":"leopardmon",
-            "color": "light",
-			"from": [0,-1],
-            "skin": ["leopardmonlm"]
-        },
-        {
-			"ref":"leopardmonx",
-            "color": "x",
-			"from": [-1,0]
-        },
-        {
-			"ref":"raguelmon",
-            "color": "dark",
-			"from": [0,-1]
-        },
-        {
-			"ref":"rasielmon",
-            "color": "light",
-			"from": [0,-1]
-        }
-	],
-	"ultra": [
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		{
-			"ref": "ordinemon",
-            "color": "fusion",
-			"from": [-4,-1],
-            "color2": "fusion",
-			"from2": [4,-1]
-		},
-        {
-			"ref":"junomonrm",
-            "color": "mode",
-			"from": [0,-1]
-        }
-	],
-    "related": [
-        "angemon",
-        "hawkmon",
-        "iguneetmon",
-        "wizardmon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "nefertimonx",
+				"color": "x",
+				"from": [
+					1,
+					-1
+				]
+			},
+			{
+				"ref": "magnadramonx",
+				"color": "x",
+				"from": [
+					1,
+					-1
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"ref": "plotmonx",
+				"color": "x",
+				"from": [
+					3,
+					0
+				]
+			},
+			{
+				"ref": "gatomonx",
+				"color": "x"
+			},
+			{
+				"ref": "angewomonx",
+				"color": "x"
+			},
+			{
+				"ref": "ophanimonx",
+				"color": "x"
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "ophanimonfmx",
+				"color": "dark",
+				"from": [
+					-1,
+					-1
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "nefertimon",
+				"color": "armor",
+				"from": [
+					1,
+					-1
+				]
+			},
+			{
+				"ref": "magnadramon",
+				"from": [
+					1,
+					-1
+				]
+			},
+			null
+		],
+		[
+			{
+				"ref": "snowbotamon"
+			},
+			{
+				"ref": "nyaromon"
+			},
+			{
+				"ref": "plotmon",
+				"color": "light"
+			},
+			{
+				"ref": "gatomon",
+				"color": "light"
+			},
+			{
+				"ref": "angewomon",
+				"color": "light"
+			},
+			{
+				"ref": "ophanimon",
+				"color": "light"
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "betsumon",
+				"from": [
+					-1,
+					-1
+				]
+			},
+			{
+				"ref": "ophanimonfm",
+				"color": "dark",
+				"from": [
+					-1,
+					-1
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "butterflamon",
+				"color": "armor",
+				"from": [
+					-2,
+					-1
+				]
+			},
+			{
+				"ref": "mastemon",
+				"color": "fusion",
+				"from": [
+					-2,
+					-1
+				],
+				"color2": "fusion",
+				"from2": [
+					2,
+					-1
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "silphymon",
+				"color": "fusion",
+				"from": [
+					-3,
+					-1
+				]
+			},
+			{
+				"ref": "valkyrimon"
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"ref": "gatomonb",
+				"color": "dark",
+				"from": [
+					-4,
+					-1
+				],
+				"skins": [
+					"gatomonbuver"
+				]
+			},
+			{
+				"ref": "ladydevimon",
+				"color": "dark"
+			},
+			{
+				"ref": "lilithmon",
+				"color": "dark"
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "ladydevimonx",
+				"color": "x",
+				"from": [
+					-1,
+					0
+				]
+			},
+			{
+				"ref": "lilithmonx",
+				"color": "x"
+			},
+			{
+				"ref": "ordinemon",
+				"color": "fusion",
+				"from": [
+					-4,
+					-1
+				],
+				"color2": "fusion",
+				"from2": [
+					4,
+					-1
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"ref": "mikemon",
+				"from": [
+					-6,
+					-1
+				]
+			},
+			{
+				"ref": "bastemon"
+			},
+			{
+				"ref": "junomon",
+				"color": "light"
+			},
+			{
+				"ref": "junomonrm",
+				"color": "mode"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"ref": "lynxmon",
+				"color": "fire",
+				"from": [
+					-7,
+					-1
+				]
+			},
+			{
+				"ref": "mihiramon"
+			},
+			{
+				"ref": "leopardmon",
+				"color": "light",
+				"skin": [
+					"leopardmonlm"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "leopardmonx",
+				"color": "x",
+				"from": [
+					-1,
+					0
+				]
+			}
+		],
+		[
+			null,
+			{
+				"ref": "meicoonyaromon",
+				"size": 2,
+				"from": [
+					-10,
+					-1
+				]
+			},
+			{
+				"ref": "meicooplotmon",
+				"size": 2
+			},
+			{
+				"ref": "meicoomon",
+				"size": 2
+			},
+			[
+				{
+					"ref": "meicrackmonvm",
+					"color": "dark",
+					"from": [
+						0.5,
+						-1
+					]
+				},
+				{
+					"ref": "meicrackmon",
+					"color": "light",
+					"from": [
+						-0.5,
+						-1
+					]
+				}
+			],
+			[
+				{
+					"ref": "raguelmon",
+					"color": "dark",
+					"from": [
+						0,
+						-1
+					]
+				},
+				{
+					"ref": "rasielmon",
+					"color": "light",
+					"from": [
+						0,
+						-1
+					]
+				}
+			]
+		]
+	]
 }
