@@ -5,10 +5,11 @@ import { digicolors } from '../consts/digivolutions';
 
 interface GridProps {
 	line: Line;
+	zoom?: number;
 }
-const LineGrid: React.FC<GridProps> = ({ line }) => {
+const LineGrid: React.FC<GridProps> = ({ line, zoom = 100 }) => {
 	return (
-		<div className="line-wrapper line-grid">
+		<div className="line-wrapper line-grid" style={{ zoom: `${zoom}%` }}>
 			{line.columns.map((column, i) => (
 				<LineRow key={i} list={column.reverse()} />
 			))}

@@ -1,98 +1,149 @@
 {
-	"baby1": [
-		null,
-		{
-			"ref": "bommon"
-		}
-	],
-	"baby2": [
-		null,
-		{
-			"ref": "missimon",
-			"from": [0,-1]
-		}
-	],
-	"rookie": [
-		null,
-		{
-			"ref": "commandramon",
-			"from": [0,-1]
-		}
-	],
-	"champion": [
-		{
-			"ref": "tankmon",
-			"from": [1,-1]
-		},
-		{
-			"ref": "sealsdramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "troopmon",
-			"color": "dark",
-			"from": [-1,-1]
-		},
-		{
-			"ref": "revolmon",
-			"from": [-2,-1]
-		}
-	],
-	"ultimate": [
-		{
-			"ref": "deckerdramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "tankdramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "assaultmon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "vulturemon",
-			"from": [0,-1]
-		}
-	],
-	"mega": [
-		{
-			"ref": "gundramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "darkdramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "cannondramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "avengekidmon",
-			"from": [0,-1],
-            "skins": ["magnakidmon"]
-		}
-	],
-	"ultra": [
-		null,
-		{
-			"ref": "chaosmon",
-            "color": "fusion",
-			"from": [0,-1]
-		}
-    ],
-    "supra": [
-		null,
-		{
-			"ref": "ultimatechaosmon",
-            "color": "fusion",
-			"from": [0,-1]
-		}],
     "related": [
         "tyranomon",
         "greymon",
         "impmon"
+    ],
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "tankmon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "ref": "deckerdramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "gundramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            {
+                "ref": "bommon"
+            },
+            {
+                "ref": "missimon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "commandramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "sealsdramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "tankdramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "darkdramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "chaosmon",
+                "color": "fusion",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "ultimatechaosmon",
+                "color": "fusion",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "troopmon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "ref": "assaultmon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "cannondramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "revolmon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "ref": "vulturemon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "avengekidmon",
+                "from": [
+                    0,
+                    -1
+                ],
+                "skins": [
+                    "magnakidmon"
+                ]
+            }
+        ]
     ]
 }

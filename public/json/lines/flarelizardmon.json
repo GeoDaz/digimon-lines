@@ -1,81 +1,124 @@
 {
-	"baby1": [
-		{
-			"ref": "botamon",
-            "size": 2
-		}
+	"related": [
+		"seadramon",
+		"tyranomon",
+		"greymon"
 	],
-	"baby2": [
-		{
-			"ref": "koromon",
-			"from": [0,-1],
-            "size": 2
-		}
-	],
-	"rookie": [
-		{
-			"ref": "toyagumon",
-			"from": [0.5,-1]
-		},
-		{
-			"ref": "toyagumonb",
-			"from": [-0.5,-1],
-			"color": "dark"
-		}
-	],
-	"champion": [
-		{
-			"ref": "flarelizardmon",
-			"color": "fire",
-			"from": [0,-1]
-		},
-		{
-			"ref": "darklizardmon",
-			"color": "dark",
-			"from": [0,-1]
-		}
-	],
-	"ultimate": [
-		{
-			"ref": "megadramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "gigadramon",
-			"color": "dark",
-			"from": [0,-1]
-		}
-	],
-	"mega": [
-		{
-			"ref": "machinedramon",
-			"color": "dark",
-			"from": [0,-1]
-		},
-		{
-			"ref": "chaosdramon",
-			"color": "dark",
-			"from": [0,-1],
-			"color2": "dark",
-			"from2": [-1,0]
-		},
-		{
-			"ref": "chaosdramonx",
-			"color": "x",
-			"from": [-1,0]
-		}
-	],
-	"ultra": [
-        null,
-        {
-            "ref":"neocrimson",
-            "color": "fusion",
-            "from": [0,-1]
-        }
-    ],
-    "related": [
-        "seadramon",
-        "tyranomon",
-        "greymon"
-    ]
+	"columns": [
+		[
+			{
+				"ref": "botamon",
+				"size": 2
+			},
+			{
+				"ref": "koromon",
+				"from": [
+					0,
+					-1
+				],
+				"size": 2
+			},
+			[
+				{
+					"ref": "toyagumon",
+					"from": [
+						0.5,
+						-1
+					]
+				},
+				{
+					"ref": "toyagumonb",
+					"from": [
+						-0.5,
+						-1
+					],
+					"color": "dark"
+				}
+			],
+			[
+				{
+					"ref": "flarelizardmon",
+					"color": "fire",
+					"from": [
+						0,
+						-1
+					]
+				},
+				{
+					"ref": "darklizardmon",
+					"color": "dark",
+					"from": [
+						0,
+						-1
+					]
+				}
+			],
+			[
+				{
+					"ref": "megadramon",
+					"from": [
+						0,
+						-1
+					]
+				},
+				{
+					"ref": "gigadramon",
+					"color": "dark",
+					"from": [
+						0,
+						-1
+					]
+				}
+			],
+			[
+				{
+					"ref": "machinedramon",
+					"color": "dark",
+					"from": [
+						0,
+						-1
+					]
+				},
+				{
+					"ref": "chaosdramon",
+					"color": "dark",
+					"from": [
+						0,
+						-1
+					],
+					"color2": "dark",
+					"from2": [
+						-1,
+						0
+					]
+				}
+			],
+			[
+				null,
+				{
+					"ref": "neocrimson",
+					"color": "fusion",
+					"from": [
+						0,
+						-1
+					]
+				}
+			]
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "chaosdramonx",
+				"color": "x",
+				"from": [
+					-1,
+					0
+				]
+			}
+		]
+	]
 }

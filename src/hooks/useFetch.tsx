@@ -13,6 +13,7 @@ const useFetch = (callback: Function): any[] => {
 			})
 			.catch(error => {
 				console.log(error);
+				callback(undefined);
 				setLoading(false);
 			});
 	}, []);

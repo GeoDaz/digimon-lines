@@ -1,117 +1,189 @@
 {
-	"baby1": [
-		null,
-		{
-			"ref": "botamon"
-		}
-	],
-	"baby2": [
-		null,
-		{
-			"ref": "koromon",
-			"from": [0,-1]
-		}
-	],
-	"rookie": [
-		{
-			"ref": "betamonx",
-			"color": "x",
-			"from": [1,0]
-		},
-		{
-			"ref": "betamon",
-			"from": [0,-1]
-		},
-		null,
-		null,
-		null,
-		{
-			"ref": "modokibetamon",
-			"from": [-4,-1]
-		}
-	],
-	"champion": [
-		{
-			"ref": "seadramonx",
-			"color": "x",
-			"from": [0,-1]
-		},
-		{
-			"ref": "seadramon",
-			"from": [0,-1]
-		},
-		null,
-		null,
-		null,
-		{
-			"ref": "airdramon",
-			"from": [0,-1]
-		}
-	],
-	"ultimate": [
-		{
-			"ref": "megaseadramonx",
-			"color": "x",
-			"from": [0,-1]
-		},
-		{
-			"ref": "megaseadramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "waruseadramon",
-			"color": "dark",
-			"from": [-1,-1]
-		},
-		null,
-		null,
-		{
-			"ref": "megadramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "gigadramon",
-			"color": "dark",
-			"from": [-1,-1]
-		}
-	],
-	"mega": [
-		{
-			"ref": "gigaseadramon",
-			"color": "x",
-			"from": [0,-1]
-		},
-		{
-			"ref": "metalseadramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "chaosmetalseadramon",
-			"color": "dark",
-			"from": [0,-1]
-		},
-		{
-			"ref": "leviamon",
-			"color": "dark",
-			"from": [-1,-1]
-		},
-		{
-			"ref": "leviamonx",
-			"color": "x",
-			"from": [-1,0]
-		},
-		{
-			"ref": "goldramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "goldramonx",
-			"color": "x",
-			"from": [-1,0]
-		}
-	],
-	"ultra": [],
     "related": [
         "flarelizardmon"
+    ],
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "ref": "betamonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            },
+            {
+                "ref": "seadramonx",
+                "color": "x",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "megaseadramonx",
+                "color": "x",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "gigaseadramon",
+                "color": "x",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "ref": "botamon"
+            },
+            {
+                "ref": "koromon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "betamon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "seadramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "megaseadramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "metalseadramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "waruseadramon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "ref": "chaosmetalseadramon",
+                "color": "dark",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "leviamon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "leviamonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "ref": "modokibetamon",
+                "from": [
+                    -4,
+                    -1
+                ]
+            },
+            {
+                "ref": "airdramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "megadramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "goldramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "gigadramon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "ref": "goldramonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ]
     ]
 }

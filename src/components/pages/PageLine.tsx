@@ -5,24 +5,38 @@ import useFetch from '../../hooks/useFetch';
 import Layout from '../Layout';
 import LineGrid, { LineLoading } from '../LineGrid';
 import { Line } from '../../types/Line';
+import { zooms, zoomOptions } from '../../consts/zooms';
+import ProgressBarSteps from '../ProgressBarSteps';
+import Icon from '../Icon';
 
 const PageLine: React.FC = () => {
 	const { name } = useParams();
 	const [line, setLine] = useState<Line | undefined>();
+	const [zoom, setZoom] = useState(0);
 
-	const setLineBuffer = (line: Line) => {
-		setLine({
-			...line,
-			columns: line.columns.map(col => {
-				if (col[0]) {
-					col[0] = { ...col[0], from: null };
+	const setLineBuffer = (line: Line | undefined) => {
+		if (line) {
+			let size = 6;
+			line.columns.forEach(column => {
+				if (column.length > size) {
+					size = column.length;
 				}
-				while (col.length < line.size) {
-					col.push(null);
-				}
-				return col.reverse();
-			}),
-		});
+			});
+			setLine({
+				...line,
+				columns: line.columns.map(col => {
+					if (col[0]) {
+						col[0] = { ...col[0], from: null };
+					}
+					while (col.length < size) {
+						col.push(null);
+					}
+					return col.reverse();
+				}),
+			});
+		} else {
+			setLine(line);
+		}
 	};
 
 	const [load, loading] = useFetch(setLineBuffer);
@@ -33,9 +47,6 @@ const PageLine: React.FC = () => {
 		}
 	}, [name]);
 
-	if (loading) {
-		return <LineLoading />;
-	}
 	return (
 		<Layout
 			title={
@@ -44,8 +55,18 @@ const PageLine: React.FC = () => {
 				</>
 			}
 		>
+			<div className="d-flex mb-4 align-items-center">
+				<ProgressBarSteps
+					steps={zoomOptions}
+					selected={zoom}
+					progress={zooms[zoom] / 1.5}
+					onChange={setZoom}
+					className="progress-zoom"
+				/>
+				<Icon name="zoom-in lead d-inline-block ms-3" />
+			</div>
 			{loading && <LineLoading />}
-			{!!line && <LineGrid line={line} />}
+			{!!line && <LineGrid line={line} zoom={zooms[zoom]} />}
 			{line?.related ? (
 				<div className="line-wrapper">
 					<h2>Related lines&nbsp;:</h2>

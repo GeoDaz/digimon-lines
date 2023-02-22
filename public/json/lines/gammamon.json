@@ -1,146 +1,254 @@
 {
-	"baby1": [
-		null,
-		{
-			"ref": "curimon",
-			"size": 2
-		}
+	"related": [
+		"tyranomon"
 	],
-	"baby2": [
-		null,
-		{
-			"ref": "gurimon",
-			"size": 2,
-			"from": [0,-1]
-		}
-	],
-	"rookie": [
-		null,
-		{
-			"ref": "gammamon",
-			"size": 2,
-			"from": [0,-1]
-		}
-	],
-	"champion": [
-		null,
-		{
-			"ref": "betelgammamon",
-			"from": [0.5,-1]
-		},
-		{
-			"ref": "gulusgammamon",
-			"color": "dark",
-			"from": [-0.5,-1]
-		},
-		{
-			"ref": "kausgammamon",
-			"from": [-1.5,-1]
-		},
-		{
-			"ref": "wezengammamon",
-			"from": [-2.5,-1]
-		},
-		{
-			"ref": "monochromonx",
-			"color": "x",
-			"from": [1,0]
-		},
-		{
-			"ref": "monochromon",
-			"from": [-4.5,-1]
-		}
-	],
-	"ultimate": [
-		{
-			"ref":"bombermon",
-			"from": [1,-1]
-		},
-		{
-			"ref":"canoweissmon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "regulusmon",
-			"color": "dark",
-			"from": [0,-1]
-		},
-		{
-			"ref": "fumamon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "ghilliedhumon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "triceramonx",
-			"color": "x",
-			"from": [0,-1]
-		},
-		{
-			"ref": "triceramon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "brachiomon",
-			"from": [-1,-1]
-		},
-		{
-			"ref": "vermillimon",
-			"color": "fire",
-			"from": [-2,-1]
-		}
-	],
-	"mega": [
-		null,
-		{
-			"ref": "siriusmon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "arcturusmon",
-			"color": "dark",
-			"from": [0,-1]
-		},
-		null,
-		null,
-		{
-			"ref": "ultimatebrachimon",
-			"color": "x",
-			"from": [0,-1]
-		},
-		{
-			"ref": "cannondramon",
-			"from": [0,-1],
-			"from2": [1,-1]
-		},
-		null,
-		{
-			"ref": "dorbickmon",
-			"from": [0,-1]
-		}
-	],
-	"ultra": [
-		null,
-		{
-			"ref": "proximamon",
-			"size": 2,
-			"color": "fusion",
-			"color2": "fusion",
-			"from": [-0.5,-1],
-			"from2": [0.5,-1]
-		},
-		null,
-		null,
-		null,
-		null,
-		null,
-		{
-			"ref": "dorbickmondm",
-			"color": "fusion",
-			"from": [0,-1]
-		}
-	],
-	"related": ["tyranomon"]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "bombermon",
+				"from": [
+					1,
+					-1
+				]
+			},
+			null,
+			null
+		],
+		[
+			{
+				"ref": "curimon",
+				"size": 2
+			},
+			{
+				"ref": "gurimon",
+				"size": 2,
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "gammamon",
+				"size": 2,
+				"from": [
+					0,
+					-1
+				]
+			},
+			[
+				{
+					"ref": "betelgammamon",
+					"from": [
+						0.5,
+						-1
+					]
+				},
+				{
+					"ref": "gulusgammamon",
+					"color": "dark",
+					"from": [
+						-0.5,
+						-1
+					]
+				}
+			],
+			[
+				{
+					"ref": "canoweissmon",
+					"from": [
+						0,
+						-1
+					]
+				},
+				{
+					"ref": "regulusmon",
+					"color": "dark",
+					"from": [
+						0,
+						-1
+					]
+				}
+			],
+			[
+				{
+					"ref": "siriusmon",
+					"from": [
+						0,
+						-1
+					]
+				},
+				{
+					"ref": "arcturusmon",
+					"color": "dark",
+					"from": [
+						0,
+						-1
+					]
+				}
+			],
+			{
+				"ref": "proximamon",
+				"size": 2,
+				"color": "fusion",
+				"color2": "fusion",
+				"from": [
+					-0.5,
+					-1
+				],
+				"from2": [
+					0.5,
+					-1
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"ref": "kausgammamon",
+				"from": [
+					-1.5,
+					-1
+				]
+			},
+			{
+				"ref": "fumamon",
+				"from": [
+					0,
+					-1
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"ref": "wezengammamon",
+				"from": [
+					-2.5,
+					-1
+				]
+			},
+			{
+				"ref": "ghilliedhumon",
+				"from": [
+					0,
+					-1
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"ref": "monochromonx",
+				"color": "x",
+				"from": [
+					1,
+					0
+				]
+			},
+			{
+				"ref": "triceramonx",
+				"color": "x",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "ultimatebrachimon",
+				"color": "x",
+				"from": [
+					0,
+					-1
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"ref": "monochromon",
+				"from": [
+					-4.5,
+					-1
+				]
+			},
+			{
+				"ref": "triceramon",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "cannondramon",
+				"from": [
+					0,
+					-1
+				],
+				"from2": [
+					1,
+					-1
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "brachiomon",
+				"from": [
+					-1,
+					-1
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "vermillimon",
+				"color": "fire",
+				"from": [
+					-2,
+					-1
+				]
+			},
+			{
+				"ref": "dorbickmon",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "dorbickmondm",
+				"color": "fusion",
+				"from": [
+					0,
+					-1
+				]
+			}
+		]
+	]
 }
