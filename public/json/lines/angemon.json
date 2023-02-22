@@ -1,183 +1,271 @@
 {
-	"baby1": [
-        null,
-        null,
-        null,
-		{"ref": "poyomon"},
-        null,
-        null,
-		{"ref": "puttimon"}
+	"related": [
+		"armadillomon",
+		"devimon",
+		"gatomon"
 	],
-	"baby2": [
-        null,
-        {
-            "ref": "tokomonx",
-            "color": "x",
-            "from": [2,0]
-        },
-		null,
-		{
-			"ref": "tokomon",
-			"from": [0,-1]
-		},
-		null,
-		null,
-        {
-			"ref": "cupimon",
-            "color": "light",
-			"from": [0,-1]
-		}
-	],
-	"rookie": [
-		{
-			"ref": "luxmon",
-            "color": "light",
-			"from": [3,-1]
-		},
-        null,
-        null,
-		{
-			"ref": "patamon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "tukaimon",
-            "color": "dark",
-			"from": [-1,-1]
-		},
-		null,
-		{
-			"ref": "lucemon",
-            "color": "light",
-			"from": [0,-1]
-		}
-	],
-	"champion": [
-		{
-			"ref": "pidmon",
-            "color": "light",
-			"from": [0,-1]
-		},
-		{
-			"ref": "pegasmonx",
-            "color": "x",
-			"from": [1,0]
-		},
-		{
-			"ref": "pegasmon",
-            "color": "armor",
-			"from": [1,-1]
-		},
-		{
-			"ref": "angemon",
-            "color": "light",
-			"from": [0,-1]
-		}
-	],
-	"ultimate": [
-		{
-			"ref":"archangemon",
-            "color": "light",
-			"from": [0,-1]
-		},
-		null,
-		null,
-		{
-			"ref": "magnaangemon",
-            "color": "light",
-			"from": [0,-1],
-            "skins": ["magnaangemonpm"]
-		},
-        null,
-		{
-			"ref": "shakkoumon",
-            "color": "fusion",
-			"from": [-2,-1]
-		},
-		{
-			"ref": "lucemonfm",
-            "color": "armor",
-            "color2": "fusion",
-			"from": [0,-2],
-			"from2": [-3,-1]
-		}
-	],
-	"mega": [
-		{
-			"ref": "dominimon",
-            "color": "light",
-			"from": [0,-1]
-		},
-		{
-			"ref": "goldramonx",
-            "color": "x",
-			"from": [1,0]
-		},
-		{
-			"ref": "goldramon",
-			"from": [1,-1]
-		},
-		{
-			"ref": "seraphimon",
-            "color": "light",
-			"from": [0,-1]
-		},
-		{
-			"ref": "seraphimonb",
-            "color": "dark",
-			"from": [-1,-1],
-            "skins": ["seraphimonb2"]
-		},
-		{
-			"ref": "clavisangemon",
-            "color": "light",
-			"from": [0,-1]
-		},
-		{
-			"ref": "lucemonlarva",
-            "color": "dark",
-			"from": [0,-1]
-		},
-		{
-			"ref": "lucemonx",
-            "color": "x",
-			"from": [-1,-1]
-		}
-	],
-	"ultra": [
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		{
-			"ref": "lucemonsm",
-            "color": "dark",
-			"from": [0,-1]
-		}
-	],
-	"supra": [
-		null,
-		null,
-		null,
-		null,
-		null,
-		null,
-		{
-			"ref": "ogudomon",
-            "color": "dark",
-			"from": [0,-1]
-		},
-		{
-			"ref": "ogudomonx",
-            "color": "x",
-			"from": [-1,0]
-		}
-	],
-    "related": [
-        "armadillomon",
-        "devimon",
-        "gatomon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"ref": "luxmon",
+				"color": "light",
+				"from": [
+					3,
+					-1
+				]
+			},
+			{
+				"ref": "pidmon",
+				"color": "light",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "archangemon",
+				"color": "light",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "dominimon",
+				"color": "light",
+				"from": [
+					0,
+					-1
+				]
+			}
+		],
+		[
+			null,
+			{
+				"ref": "tokomonx",
+				"color": "x",
+				"from": [
+					2,
+					0
+				]
+			},
+			null,
+			{
+				"ref": "pegasmonx",
+				"color": "x",
+				"from": [
+					1,
+					0
+				]
+			},
+			null,
+			{
+				"ref": "goldramonx",
+				"color": "x",
+				"from": [
+					1,
+					0
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"ref": "pegasmon",
+				"color": "armor",
+				"from": [
+					1,
+					-1
+				]
+			},
+			null,
+			{
+				"ref": "goldramon",
+				"from": [
+					1,
+					-1
+				]
+			}
+		],
+		[
+			{
+				"ref": "poyomon"
+			},
+			{
+				"ref": "tokomon",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "patamon",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "angemon",
+				"color": "light",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "magnaangemon",
+				"color": "light",
+				"from": [
+					0,
+					-1
+				],
+				"skins": [
+					"magnaangemonpm"
+				]
+			},
+			{
+				"ref": "seraphimon",
+				"color": "light",
+				"from": [
+					0,
+					-1
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"ref": "tukaimon",
+				"color": "dark",
+				"from": [
+					-1,
+					-1
+				]
+			},
+			null,
+			null,
+			{
+				"ref": "seraphimonb",
+				"color": "dark",
+				"from": [
+					-1,
+					-1
+				],
+				"skins": [
+					"seraphimonb2"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "shakkoumon",
+				"color": "fusion",
+				"from": [
+					-2,
+					-1
+				]
+			},
+			{
+				"ref": "clavisangemon",
+				"color": "light",
+				"from": [
+					0,
+					-1
+				]
+			}
+		],
+		[
+			{
+				"ref": "puttimon"
+			},
+			{
+				"ref": "cupimon",
+				"color": "light",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "lucemon",
+				"color": "light",
+				"from": [
+					0,
+					-1
+				]
+			},
+			null,
+			{
+				"ref": "lucemonfm",
+				"color": "armor",
+				"color2": "fusion",
+				"from": [
+					0,
+					-2
+				],
+				"from2": [
+					-3,
+					-1
+				]
+			},
+			{
+				"ref": "lucemonlarva",
+				"color": "dark",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "lucemonsm",
+				"color": "dark",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "ogudomon",
+				"color": "dark",
+				"from": [
+					0,
+					-1
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "lucemonx",
+				"color": "x",
+				"from": [
+					-1,
+					-1
+				]
+			},
+			null,
+			{
+				"ref": "ogudomonx",
+				"color": "x",
+				"from": [
+					-1,
+					0
+				]
+			}
+		]
+	]
 }

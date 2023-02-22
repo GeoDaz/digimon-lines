@@ -1,114 +1,176 @@
 {
-	"baby1": [
-        null,
-        null,
-		{
-			"ref": "keemon", 
-			"size": 2
-		}
+	"related": [
+		"devimon",
+		"belphemon",
+		"wizardmon"
 	],
-	"baby2": [
-        null,
-        null,
-		{
-			"ref": "yarmon", 
-            "color": "dark",
-            "size": 2,
-			"from": [0,-1]
-		}
+	"notes": [
+		"We don't choose to use Wizardmon as Beelzebumon Champion stage because Impmon, Baalmon and Beelzebumon are based on demons and not Wizardmon. Beside that, Wizardmon is already used in Dynasmon line that come from Ghostmon and not Impmon. Boogiemon match the demon theme of this line. Astar is demon close to Beelzebub in the demonology but Astamon is already taken as an Ultimate on Belphemon line."
 	],
-	"rookie": [
-		{
-			"ref": "impmonx",
-            "color": "x",
-            "size": 2,
-			"from": [2,0]
-		},
-		{
-			"ref": "impmon",
-            "color": "dark",
-            "size": 2,
-			"from": [0,-1]
-		}
-	],
-	"champion": [
-        null,
-        null,
-		{
-			"ref": "boogiemon",
-            "color": "dark",
-            "size": 2,
-			"from": [0,-1]
-		}
-	],
-	"ultimate": [
-		{
-			"ref": "baalmonx",
-            "color": "x",
-            "size": 2,
-			"from": [2,0]
-		},
-		{
-			"ref":"baalmon",
-            "color": "dark",
-            "size": 2,
-			"from": [0,-1]
-		},
-		{
-			"ref":"phelesmon",
-            "color": "dark",
-			"from": [-1.5,-1]
-		}
-	],
-	"mega": [
-		{
-			"ref": "beelzebumonx",
-            "color": "x",
-			"from": [0.5,-1]
-		},
-		{
-			"ref": "beelstarmonx",
-            "color": "x",
-			"from": [-0.5,-1]
-		},
-		{
-            "color": "dark",
-			"ref": "beelzebumon",
-			"from": [0.5,-1],
-            "skins": ["beelzebumon2"]
-		},
-		{
-			"ref": "beelstarmon",
-            "color": "dark",
-			"from": [-0.5,-1]
-		},
-		{
-			"ref":"demon",
-            "color": "dark",
-			"from": [0,-1]
-		},
-		{
-			"ref": "demonx",
-            "color": "x",
-			"from": [-1,0],
-			"skins": ["demon2"]
-		}
-	],
-	"ultra": [
-        null,
-        null,
-		{
-			"ref": "beelzebumonbm",
-            "color": "mode",
-			"from": [0,-1]
-		},
-		null,
-		{
-			"ref": "demonsu",
-            "color": "fusion",
-			"from": [0,-1]
-		}
-	],
-	"related": ["devimon", "belphemon", "wizardmon"],
-	"notes": ["We don't choose to use Wizardmon as Beelzebumon Champion stage because Impmon, Baalmon and Beelzebumon are based on demons and not Wizardmon. Beside that, Wizardmon is already used in Dynasmon line that come from Ghostmon and not Impmon. Boogiemon match the demon theme of this line. Astar is demon close to Beelzebub in the demonology but Astamon is already taken as an Ultimate on Belphemon line."]
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"ref": "impmonx",
+				"color": "x",
+				"size": 2,
+				"from": [
+					2,
+					0
+				]
+			},
+			null,
+			{
+				"ref": "baalmonx",
+				"color": "x",
+				"size": 2,
+				"from": [
+					2,
+					0
+				]
+			},
+			[
+				{
+					"ref": "beelzebumonx",
+					"color": "x",
+					"from": [
+						0.5,
+						-1
+					]
+				},
+				{
+					"ref": "beelstarmonx",
+					"color": "x",
+					"from": [
+						-0.5,
+						-1
+					]
+				}
+			],
+			null
+		],
+		[
+			{
+				"ref": "keemon",
+				"size": 2
+			},
+			{
+				"ref": "yarmon",
+				"color": "dark",
+				"size": 2,
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "impmon",
+				"color": "dark",
+				"size": 2,
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "boogiemon",
+				"color": "dark",
+				"size": 2,
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "baalmon",
+				"color": "dark",
+				"size": 2,
+				"from": [
+					0,
+					-1
+				]
+			},
+			[
+				{
+					"color": "dark",
+					"ref": "beelzebumon",
+					"from": [
+						0.5,
+						-1
+					],
+					"skins": [
+						"beelzebumon2"
+					]
+				},
+				{
+					"ref": "beelstarmon",
+					"color": "dark",
+					"from": [
+						-0.5,
+						-1
+					]
+				}
+			],
+			[
+				{
+					"ref": "beelzebumonbm",
+					"color": "mode",
+					"from": [
+						0,
+						-1
+					]
+				},
+				null
+			]
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "phelesmon",
+				"color": "dark",
+				"from": [
+					-1.5,
+					-1
+				]
+			},
+			{
+				"ref": "demon",
+				"color": "dark",
+				"from": [
+					0,
+					-1
+				]
+			},
+			{
+				"ref": "demonsu",
+				"color": "fusion",
+				"from": [
+					0,
+					-1
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"ref": "demonx",
+				"color": "x",
+				"from": [
+					-1,
+					0
+				],
+				"skins": [
+					"demon2"
+				]
+			}
+		]
+	]
 }

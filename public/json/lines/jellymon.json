@@ -1,99 +1,160 @@
 {
-	"size": 16,
-	"baby1": [
-		null,
-		null,
-		{
-			"ref": "puyomon"
-		}
-	],
-	"baby2": [
-		null,
-		null,
-		{
-			"ref": "puyoyomon",
-			"from": [0,-1]
-		}
-	],
-	"rookie": [
-		null,
-		null,
-		{
-			"ref": "jellymon",
-			"from": [0,-1]
-		}
-	],
-	"champion": [
-		null,
-		{
-			"ref": "ranamon",
-			"from": [1,-1]
-		},
-		{
-			"ref": "teslajellymon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "gesomon",
-			"from": [-1,-1]
-		},
-		{
-			"ref": "gesomonx",
-			"color": "x",
-			"from": [-1,0]
-		},
-		{
-			"ref": "octomon",
-			"from": [-3,-1]
-		}
-	],
-	"ultimate": [
-		{
-			"ref":"mermaimon",
-			"from": [1,-1]
-		},
-		{
-			"ref":"calamaramon",
-			"from": [0,-1]
-		},
-		{
-			"ref":"thetismon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "marinedevimon",
-			"color": "dark",
-			"from": [0,-1]
-		},
-		null,
-		{
-			"ref": "dagomon",
-			"from": [0,-1]
-		}
-	],
-	"mega": [
-		{
-			"ref": "marineangemon",
-			"color": "light",
-			"from": [0,-1]
-		},
-		{
-			"ref": "ancientmermaimon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "amphimon",
-			"from": [0,-1]
-		},
-		{
-			"ref": "cthyllamon",
-			"color": "dark",
-			"from": [0,-1]
-		},
-		null,
-		{
-			"ref": "neptunemon",
-			"from": [0,-1]
-		}
-	]
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "mermaimon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "ref": "marineangemon",
+                "color": "light",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "ranamon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "ref": "calamaramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "ancientmermaimon",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "ref": "puyomon"
+            },
+            {
+                "ref": "puyoyomon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "jellymon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "teslajellymon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "thetismon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "amphimon",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "gesomon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "ref": "marinedevimon",
+                "color": "dark",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "cthyllamon",
+                "color": "dark",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "gesomonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "octomon",
+                "from": [
+                    -3,
+                    -1
+                ]
+            },
+            {
+                "ref": "dagomon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "neptunemon",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ]
+    ]
 }
