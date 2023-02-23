@@ -9,10 +9,12 @@ interface GridProps {
 }
 const LineGrid: React.FC<GridProps> = ({ line, zoom = 100 }) => {
 	return (
-		<div className="line-wrapper line-grid" style={{ zoom: `${zoom}%` }}>
-			{line.columns.map((column, i) => (
-				<LineRow key={i} list={column.reverse()} />
-			))}
+		<div className="frame">
+			<div className="line-wrapper line-grid" style={{ zoom: `${zoom}%` }}>
+				{line.columns.map((column, i) => (
+					<LineRow key={i} list={column.reverse()} />
+				))}
+			</div>
 		</div>
 	);
 };

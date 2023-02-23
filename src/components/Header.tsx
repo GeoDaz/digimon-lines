@@ -3,7 +3,7 @@ import { Container, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => (
-	<header>
+	<header className="sticky-top">
 		<Navbar bg="dark" variant="dark" /* expand="lg" */>
 			<Container fluid>
 				<Navbar.Brand as={Link} to="/">

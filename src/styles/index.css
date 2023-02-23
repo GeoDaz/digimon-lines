@@ -1,3 +1,9 @@
+:root {
+  --dl-snd-dark: #141516;
+  --dl-box-shadow: 0 0 3px 0 rgb(0, 0, 0, 0.3);
+  --dl-border: 2px solid var(--dl-snd-dark);
+}
+
 html {
   color-scheme: dark;
   font-size: 15px;
@@ -5,14 +11,43 @@ html {
 
 body {
   font-size: 15px;
-}
-
-.app {
   /* background-color: #282c34; */
   /* background-color: #2f3136; */
   background-color: var(--bs-dark);
+  color: var(--bs-gray-200);
+}
+
+body ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+body ::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--dl-snd-dark);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, .25);
+}
+
+body ::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.app {
   min-height: 100vh;
-  color: white;
+}
+
+.navbar.navbar-dark{
+  border-bottom: var(--dl-border);
+  box-shadow: var(--dl-box-shadow)
 }
 
 .click {
@@ -35,10 +70,21 @@ h1 {
   margin-bottom: 1em;
 }
 
+h2 {
+  margin-bottom: 0.5em;
+}
+
+.frame {
+  border-radius: var(--bs-border-radius);
+  border: var(--dl-border);
+  box-shadow: var(--dl-box-shadow);
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
 /* line */
 
 .line-wrapper {
-  overflow: auto hidden;
   padding-top: 1em;
   padding-bottom: 2em;
   position: relative;
@@ -51,6 +97,11 @@ h1 {
 
 .line-grid {
   display: flex;
+  overflow: auto hidden;
+}
+
+.frame .line-grid {
+  padding: 2em 2em 0;
 }
 
 .line-grid .line-row {
@@ -63,7 +114,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.line-row.row {
+.line-grid .line-row.row {
   justify-content: flex-start;
   margin-left: 0;
   margin-right: 0;
@@ -144,11 +195,22 @@ h1 {
   align-items: center;
 }
 
+.progress-bar::before,
 .progress-bar .progress {
   position: absolute;
   left: 20px;
   right: 20px;
   height: 5px;
+}
+
+.progress-bar::before {
+  content: '';
+  background-color: var(--bs-gray-200);
+  left: 20px;
+  right: 20px;
+}
+
+.progress-bar .progress {
   transition: all .3s;
   background-color: var(--bs-blue);
 }
@@ -167,7 +229,7 @@ h1 {
   border-radius: 100%;
   height: 15px;
   width: 15px;
-  background-color: white;
+  background-color: var(--bs-gray-200);
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -183,6 +245,5 @@ h1 {
   top: 0;
   left: 50%;
   transform: translate(-33%, -125%);
-  opacity: 0.5;
   font-size: 0.9em;
 }
