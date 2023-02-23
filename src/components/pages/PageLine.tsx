@@ -25,6 +25,7 @@ const PageLine: React.FC = () => {
 			setLine({
 				...line,
 				columns: line.columns.map(col => {
+					col = col.slice();
 					if (col[0]) {
 						col[0] = { ...col[0], from: null };
 					}
