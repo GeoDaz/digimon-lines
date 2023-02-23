@@ -45,7 +45,7 @@ body ::-webkit-scrollbar-track {
   min-height: 100vh;
 }
 
-.navbar.navbar-dark{
+.navbar.navbar-dark {
   border-bottom: var(--dl-border);
   box-shadow: var(--dl-box-shadow)
 }
@@ -101,7 +101,7 @@ h2 {
 }
 
 .frame .line-grid {
-  padding: 2em 2em 0;
+  padding: 2em 2em 1em;
 }
 
 .line-grid .line-row {
@@ -135,6 +135,10 @@ h2 {
 
 .line-grid>.line-row>.col {
   margin-bottom: 2em;
+}
+
+.line-grid>.line-row>.line-row {
+  padding: 0;
 }
 
 .line-point {
@@ -171,7 +175,8 @@ h2 {
 .line-point .line-svg {
   position: absolute;
   z-index: -2;
-  top: 0;
+  /* top: 0; */
+  bottom: 0;
 }
 
 .line-point .line-svg.left {

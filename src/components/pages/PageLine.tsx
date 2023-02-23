@@ -22,22 +22,23 @@ const PageLine: React.FC = () => {
 					size = column.length;
 				}
 			});
-			setLine({
-				...line,
-				columns: line.columns.map(col => {
-					col = col.slice();
-					if (col[0]) {
-						col[0] = { ...col[0], from: null };
-					}
-					while (col.length < size) {
-						col.push(null);
-					}
-					return col.reverse();
-				}),
+			const columns = line.columns.map(col => {
+				col = col.slice();
+				if (col[0]) {
+					col[0] = { ...col[0], from: null };
+				}
+				while (col.length < size) {
+					col.push(null);
+				}
+				// col.reverse();
+				return col;
 			});
-		} else {
-			setLine(line);
+			line = {
+				...line,
+				columns,
+			};
 		}
+		setLine(line);
 	};
 
 	const [load, loading] = useFetch(setLineBuffer);

@@ -47,7 +47,7 @@ const LineRow: React.FC<RowProps> = ({ list }) => {
 	);
 };
 
-const xMargin = 24;
+const xMargin = 22.5;
 const yMargin = 30;
 const xUnit: number = 174; // 150 + xMargin
 const yUnit: number = 180; // 150 + yMargin
@@ -96,40 +96,52 @@ const SvgLine: React.FC<SvgLineProps> = ({
 	if (!from) {
 		return null;
 	}
-	const svgStyle: React.CSSProperties = {};
-	let x: number = 0;
-	let y: number = 0;
-	let left: boolean = false;
-	x = xUnit * Math.abs(from[0]); // 150 + 12 * 2
-	y = yUnit * Math.abs(from[1]); // 150 + 15 * 2
-	left = from[0] < 0;
+	const left: boolean = from[0] < 0;
 	const halfHeight: number = baseHeight / 2;
 	const halfWidth: number = baseWidth / 2;
-	let yOrigin: number = halfHeight;
+	let x: number = 0;
+	let y: number = 0;
+	const xGap = Math.abs(from[0]);
+	const yGap = Math.abs(from[1]);
+	x = xUnit * xGap; // 150 + 12 * 2
+	if (size > 1 && xGap >= 1) {
+		x -= pointWidth / 2;
+	}
+	y = yUnit * yGap; // 150 + 15 * 2
+	let yOrigin: number = halfHeight; // halfHeight;
 	let xOrigin: number = halfWidth;
+	let xDest = x;
+	let yDest = y;
 	const strokeWidth = 12;
-	if (Math.abs(from[0]) > 1 && from[1] < 0) {
+	const svgStyle: React.CSSProperties = {};
+	if (xGap > 1 && yGap > 0) {
 		if (from[0] < 0) {
 			svgStyle.zIndex = Math.floor(from[0]);
 		}
-		xOrigin =
-			(left ? strokeWidth : pointWidth - strokeWidth) + pointWidth * (size / 2);
+		xDest +=
+			(size ? size - 1 : 0) * (pointWidth / 2) * (from[0] < 0 ? 1 : -1) +
+			strokeWidth;
+		xOrigin = pointWidth - strokeWidth / 2;
 		yOrigin = pointHeight - strokeWidth / 2;
-		x -= pointWidth - xMargin - strokeWidth;
-		// y -= halfHeight - strokeWidth / 2;
+		xDest -= pointWidth - strokeWidth;
+		yDest -= pointHeight - strokeWidth;
+	}
+	if (xGap < 1 && xGap > 0 && yGap > 0) {
+		yOrigin = pointHeight - strokeWidth / 2;
+		yDest -= pointHeight - strokeWidth;
 	}
 	return (
 		<svg
 			className={'line-svg ' + (left ? 'left' : 'right')}
 			width={baseWidth + x}
-			height={baseWidth + y}
+			height={baseHeight + y}
 			style={svgStyle}
 		>
 			<line
 				x1={xOrigin}
-				y1={left ? halfHeight + y : yOrigin}
-				x2={xOrigin + x}
-				y2={left ? yOrigin : halfHeight + y}
+				y1={left ? yOrigin : yOrigin + yDest}
+				x2={xOrigin + xDest}
+				y2={left ? yOrigin + yDest : yOrigin}
 				style={{
 					stroke: color ? digicolors[color] : white /* digicolors['default'] */,
 					strokeWidth,

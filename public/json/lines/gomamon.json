@@ -1,0 +1,82 @@
+{
+    "columns": [
+        [
+            {
+                "ref": "pitchmon",
+                "size": 2
+            },
+            {
+                "ref": "pukamon",
+                "size": 2
+            },
+            {
+                "ref": "gomamon",
+                "size": 2
+            },
+            {
+                "ref": "ikkakumon",
+                "size": 2
+            },
+            {
+                "ref": "zudomon",
+                "size": 2
+            },
+            [
+                {
+                    "ref": "vikemon",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "ref": "plesiomon",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                null,
+                {
+                    "ref": "aegisdramon",
+                    "color": "fusion"
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "dolphmon",
+                "from": [
+                    -1.5,
+                    -1
+                ]
+            },
+            {
+                "ref": "whamon"
+            },
+            {
+                "ref": "kingwhamon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "orcamon",
+                "from": [
+                    -2.5,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "seadramon"
+    ]
+}
