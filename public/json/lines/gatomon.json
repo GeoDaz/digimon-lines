@@ -12,6 +12,51 @@
 			null,
 			null,
 			null,
+            {
+                "ref": "skullbaluchimon",
+                "color": "dark",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+			{
+				"ref": "leopardmonx",
+				"color": "x",
+				"from": [
+					1,
+					0
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"ref": "tobucatmon",
+				"color": "x",
+				"from": [
+					2,
+					-1
+				]
+			},
+			{
+				"ref": "mihiramon"
+			},
+			{
+				"ref": "leopardmon",
+				"color": "light",
+				"skin": [
+					"leopardmonlm"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
 			{
 				"ref": "nefertimonx",
 				"color": "x",
@@ -37,7 +82,7 @@
 				"ref": "plotmonx",
 				"color": "x",
 				"from": [
-					3,
+					4,
 					0
 				]
 			},
@@ -77,6 +122,28 @@
 			null,
 			null,
 			{
+				"ref": "lynxmon",
+				"color": "fire",
+				"from": [
+					2,
+					-1
+				]
+			},
+			{
+				"ref": "magnadramon",
+				"from": [
+					2,
+					-1
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
 				"ref": "nefertimon",
 				"color": "armor",
 				"from": [
@@ -85,7 +152,8 @@
 				]
 			},
 			{
-				"ref": "magnadramon",
+				"ref": "lovelyangemon",
+				"color": "light",
 				"from": [
 					1,
 					-1
@@ -209,7 +277,19 @@
 				"ref": "lilithmon",
 				"color": "dark"
 			},
-			null
+			{
+				"ref": "ordinemon",
+				"color": "fusion",
+				"from": [
+					-3,
+					-1
+				],
+				"color2": "fusion",
+				"from2": [
+					3,
+					-1
+				]
+			}
 		],
 		[
 			null,
@@ -227,19 +307,6 @@
 			{
 				"ref": "lilithmonx",
 				"color": "x"
-			},
-			{
-				"ref": "ordinemon",
-				"color": "fusion",
-				"from": [
-					-4,
-					-1
-				],
-				"color2": "fusion",
-				"from2": [
-					4,
-					-1
-				]
 			}
 		],
 		[
@@ -267,49 +334,11 @@
 		],
 		[
 			null,
-			null,
-			null,
-			{
-				"ref": "lynxmon",
-				"color": "fire",
-				"from": [
-					-7,
-					-1
-				]
-			},
-			{
-				"ref": "mihiramon"
-			},
-			{
-				"ref": "leopardmon",
-				"color": "light",
-				"skin": [
-					"leopardmonlm"
-				]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"ref": "leopardmonx",
-				"color": "x",
-				"from": [
-					-1,
-					0
-				]
-			}
-		],
-		[
-			null,
 			{
 				"ref": "meicoonyaromon",
 				"size": 2,
 				"from": [
-					-9.5,
+					-7.5,
 					-1
 				]
 			},

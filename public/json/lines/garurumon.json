@@ -128,7 +128,13 @@
             null,
             null,
             null,
-            null,
+            {
+                "ref": "drimogemon",
+                "from": [
+                    -1.5,
+                    -1
+                ]
+            },
             {
                 "ref": "weregarurumonam",
                 "color": "mode",
@@ -159,38 +165,9 @@
             null,
             null,
             {
-                "ref": "drimogemon",
-                "from": [
-                    -2.5,
-                    -1
-                ]
-            },
-            {
-                "ref": "skullbaluchimon",
-                "color": "dark",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "ref": "mercurymon",
-                "color": "dark",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
                 "ref": "dorulumon",
                 "from": [
-                    -3.5,
+                    -2.5,
                     -1
                 ]
             },
@@ -218,7 +195,7 @@
             {
                 "ref": "gabumonb",
                 "from": [
-                    -4.5,
+                    -3.5,
                     -1
                 ],
                 "color": "dark"
@@ -263,7 +240,7 @@
                 "ref": "psychemon",
                 "color": "psychic",
                 "from": [
-                    -5.5,
+                    -4.5,
                     -1
                 ]
             },
@@ -282,7 +259,14 @@
                 ],
                 "color": "dark"
             },
-            null,
+            {
+                "ref": "mercurymon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
             {
                 "ref": "omegamonbam",
                 "color": "mode",

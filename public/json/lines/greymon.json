@@ -141,8 +141,9 @@
 			null,
 			{
 				"ref": "agumon2",
+				"size": 2,
 				"from": [
-					-3.5,
+					-4,
 					-1
 				],
 				"skins": [
@@ -150,18 +151,35 @@
 				]
 			},
 			{
-				"ref": "geogreymon"
+				"ref": "geogreymon",
+				"size": 2
 			},
 			{
-				"ref": "rizegreymon"
+				"ref": "rizegreymon",
+				"size": 2
 			},
 			{
-				"ref": "shinegreymon"
+				"ref": "shinegreymon",
+				"size": 2
 			},
-			{
-				"ref": "shinegreymonbm",
-				"color": "mode"
-			}
+			[
+				{
+					"ref": "shinegreymonbm",
+					"color": "mode",
+					"from": [
+						0.5,
+						-1
+					]
+				},
+				{
+					"ref": "shinegreymonrm",
+					"color": "dark",
+					"from": [
+						-0.5,
+						-1
+					]
+				}
+			]
 		],
 		[
 			null,
@@ -172,22 +190,14 @@
 				"ref": "rizegreymonx",
 				"color": "x",
 				"from": [
-					-1,
+					-1.5,
 					0
 				]
 			},
 			{
 				"ref": "victorygreymon",
 				"from": [
-					-1,
-					-1
-				]
-			},
-			{
-				"ref": "shinegreymonrm",
-				"color": "dark",
-				"from": [
-					-1,
+					-1.5,
 					-1
 				]
 			}
@@ -198,7 +208,7 @@
 			{
 				"ref": "agumonb",
 				"from": [
-					-5.5,
+					-6.5,
 					-1
 				],
 				"color": "dark",
@@ -287,7 +297,7 @@
 				"ref": "gaossmonb",
 				"color": "dark",
 				"from": [
-					-8.5,
+					-9.5,
 					-1
 				],
 				"skins": [

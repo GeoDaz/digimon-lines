@@ -1,13 +1,73 @@
 {
     "columns": [
         [
+            {
+                "ref": "popomon",
+                "size": 2
+            },
+            {
+                "ref": "frimon",
+                "size": 2
+            },
+            {
+                "ref": "liolmon",
+                "size": 2
+            },
+            {
+                "ref": "liamon",
+                "size": 2
+            },
+            {
+                "ref": "loaderliomon",
+                "size": 2
+            },
+            {
+                "ref": "bancholeomon",
+                "size": 2
+            },
+            [
+                [
+                    {
+                        "ref": "chaosmon",
+                        "color": "fusion",
+                        "from": [
+                            0.5,
+                            -1
+                        ]
+                    },
+                    {
+                        "ref": "chaosmonvm",
+                        "color": "fusion",
+                        "from": [
+                            -0.5,
+                            -1
+                        ]
+                    }
+                ]
+            ],
+            {
+                "ref": "ultimatechaosmon",
+                "size": 2,
+                "color": "fusion",
+                "color2": "fusion",
+                "from": [
+                    -0.5,
+                    -1
+                ],
+                "from2": [
+                    0.5,
+                    -1
+                ]
+            }
+        ],
+        [
             null,
             null,
             {
                 "ref": "spadamon",
                 "color": "ice",
                 "from": [
-                    1.5,
+                    -2,
                     -1
                 ]
             },
@@ -156,66 +216,6 @@
                     "color": "dark"
                 }
             ]
-        ],
-        [
-            {
-                "ref": "popomon",
-                "size": 2
-            },
-            {
-                "ref": "frimon",
-                "size": 2
-            },
-            {
-                "ref": "liolmon",
-                "size": 2
-            },
-            {
-                "ref": "liamon",
-                "size": 2
-            },
-            {
-                "ref": "loaderliomon",
-                "size": 2
-            },
-            {
-                "ref": "bancholeomon",
-                "size": 2
-            },
-            [
-                [
-                    {
-                        "ref": "chaosmon",
-                        "color": "fusion",
-                        "from": [
-                            0.5,
-                            -1
-                        ]
-                    },
-                    {
-                        "ref": "chaosmonvm",
-                        "color": "fusion",
-                        "from": [
-                            -0.5,
-                            -1
-                        ]
-                    }
-                ]
-            ],
-            {
-                "ref": "ultimatechaosmon",
-                "size": 2,
-                "color": "fusion",
-                "color2": "fusion",
-                "from": [
-                    -0.5,
-                    -1
-                ],
-                "from2": [
-                    0.5,
-                    -1
-                ]
-            }
         ],
         [
             {
