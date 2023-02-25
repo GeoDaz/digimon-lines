@@ -12,14 +12,14 @@
 			null,
 			null,
 			null,
-            {
-                "ref": "skullbaluchimon",
-                "color": "dark",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
+			{
+				"ref": "skullbaluchimon",
+				"color": "dark",
+				"from": [
+					1,
+					-1
+				]
+			},
 			{
 				"ref": "leopardmonx",
 				"color": "x",
@@ -47,7 +47,7 @@
 			{
 				"ref": "leopardmon",
 				"color": "light",
-				"skin": [
+				"skins": [
 					"leopardmonlm"
 				]
 			}

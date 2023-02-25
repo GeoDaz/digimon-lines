@@ -1,0 +1,121 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "toucanmon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "ref": "tempomon"
+            }
+        ],
+        [
+            {
+                "ref": "snowbotamon"
+            },
+            {
+                "ref": "hiyarimon",
+                "color": "ice"
+            },
+            {
+                "ref": "penmon",
+                "color": "ice"
+            },
+            {
+                "ref": "swanmon"
+            },
+            {
+                "ref": "daipenmon",
+                "color": "ice"
+            },
+            {
+                "ref": "frosvelgrmon",
+                "color": "ice"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "thunderbirdmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "ref": "peacockmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "cockatrimon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "ref": "parrotmon",
+                "from2": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "ref": "crossmon"
+            },
+            {
+                "ref": "aegisdramon",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "ref": "muchomon",
+                "color": "fire",
+                "from": [
+                    -3,
+                    -1
+                ]
+            },
+            {
+                "ref": "akatorimon",
+                "color": "fire",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "sinduramon"
+            },
+            {
+                "ref": "zhuqiaomon",
+                "color": "fire"
+            }
+        ]
+    ],
+    "related": [
+        "bearmon",
+        "falcomon",
+        "biyomon",
+        "hawkmon"
+    ]
+}

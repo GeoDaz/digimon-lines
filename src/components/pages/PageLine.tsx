@@ -8,6 +8,7 @@ import { Line } from '../../types/Line';
 import { zooms, zoomOptions } from '../../consts/zooms';
 import ProgressBarSteps from '../ProgressBarSteps';
 import Icon from '../Icon';
+import ColorLegend from '../ColorLegend';
 
 const PageLine: React.FC = () => {
 	const { name } = useParams();
@@ -57,15 +58,16 @@ const PageLine: React.FC = () => {
 				</>
 			}
 		>
-			<div className="d-flex mb-4 align-items-center">
+			<div className="d-flex mb-4 align-items-end">
+				<Icon name="zoom-in lead d-inline-block mb-1" />
 				<ProgressBarSteps
 					steps={zoomOptions}
 					selected={zoom}
 					progress={zooms[zoom] / 1.5}
 					onChange={setZoom}
-					className="progress-zoom"
+					className="progress-zoom me-4"
 				/>
-				<Icon name="zoom-in lead d-inline-block ms-3" />
+				<ColorLegend className="ms-4 mb-1" />
 			</div>
 			{loading && <LineLoading />}
 			{!!line && <LineGrid line={line} zoom={zooms[zoom]} />}
@@ -80,12 +82,14 @@ const PageLine: React.FC = () => {
 									title={name}
 									className="line-point pictured"
 								>
-									<Image
-										src={`/images/digimon/${name}.jpg`}
-										alt={name}
-										rounded
-										className="line-img"
-									/>
+									<div className="line-point-safe-zone">
+										<Image
+											src={`/images/digimon/${name}.jpg`}
+											alt={name}
+											rounded
+											className="line-img"
+										/>
+									</div>
 								</Link>
 							</Col>
 						))}

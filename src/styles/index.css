@@ -2,6 +2,7 @@
   --dl-snd-dark: #141516;
   --dl-box-shadow: 0 0 3px 0 rgb(0, 0, 0, 0.3);
   --dl-border: 2px solid var(--dl-snd-dark);
+  scroll-behavior: auto;
 }
 
 html {
@@ -50,6 +51,11 @@ body ::-webkit-scrollbar-track {
   box-shadow: var(--dl-box-shadow)
 }
 
+.navbar .navbar-brand img {
+  max-height: 27px;
+  margin-right: 0.5em;
+}
+
 .click {
   cursor: pointer;
   transition: all .3s;
@@ -80,6 +86,10 @@ h2 {
   box-shadow: var(--dl-box-shadow);
   overflow: hidden;
   margin-bottom: 1em;
+}
+
+.tooltip {
+  font-size: 0.95em;
 }
 
 /* line */
@@ -141,26 +151,21 @@ h2 {
   padding: 0;
 }
 
-.line-point {
+.line-point,
+.line-point-safe-zone {
   min-width: 10rem;
   min-height: 10rem;
-  text-align: center;
   position: relative;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.line-point.pictured::before {
-  content: '';
+.line-point-safe-zone {
   background-color: white;
   width: 10rem;
   height: 10rem;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  z-index: -1;
   border-radius: var(--bs-border-radius);
 }
 
@@ -170,6 +175,40 @@ h2 {
   position: relative;
   z-index: 2;
   color: var(--bs-dark);
+  transition: all .3s;
+}
+
+.line-point .line-skin {
+  max-width: 3rem;
+  max-height: 3rem;
+  position: relative;
+  z-index: 3;
+  color: var(--bs-dark);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all .3s;
+  opacity: 1;
+}
+
+.line-point .line-skin:hover,
+.line-point .line-skin:focus {
+  max-width: 10rem;
+  max-height: 10rem;
+  bottom: 0 !important;
+  z-index: 4;
+}
+
+.line-point .line-img:hover,
+.line-point .line-img:focus {
+  z-index: 4;
+}
+
+.line-point .line-img:hover~.line-skin,
+.line-point .line-img:focus~.line-skin,
+.line-point .line-skin:hover~.line-skin,
+.line-point .line-skin:focus~.line-skin {
+  opacity: 0;
 }
 
 .line-point .line-svg {
@@ -198,6 +237,9 @@ h2 {
   flex-wrap: nowrap;
   overflow: visible;
   align-items: center;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  /* margin-left: -1.2em; */
 }
 
 .progress-bar::before,

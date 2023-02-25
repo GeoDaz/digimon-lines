@@ -1,6 +1,7 @@
 {
     "related": [
         "greymon",
+        "leomon",
         "bearmon"
     ],
     "columns": [
@@ -230,7 +231,10 @@
                 "from": [
                     0,
                     -1
-                ]
+                ],
+				"skins": [
+					"omegamonbrm"
+				]
             }
         ],
         [
@@ -238,7 +242,6 @@
             null,
             {
                 "ref": "psychemon",
-                "color": "psychic",
                 "from": [
                     -4.5,
                     -1
@@ -282,7 +285,6 @@
             null,
             {
                 "ref": "nisedrimogemon",
-                "color": "psychic",
                 "from": [
                     -1,
                     -1

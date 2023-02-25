@@ -1,0 +1,154 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "panbachimon",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            {
+                "ref": "pandamon"
+            },
+            {
+                "ref": "justimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "monzaemonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            },
+            {
+                "ref": "justimonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
+        [
+            {
+                "ref": "snowbotamon"
+            },
+            {
+                "ref": "hiyarimon",
+                "color": "ice"
+            },
+            {
+                "ref": "bearmon"
+            },
+            {
+                "ref": "grizzlymon"
+            },
+            {
+                "ref": "monzaemon"
+            },
+            {
+                "ref": "shinmonzaemon",
+                "from2": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "porcupamon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "ref": "warumonzaemon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "chackmon",
+                "color": "ice",
+                "size": 2,
+                "from": [
+                    -2.5,
+                    -1
+                ]
+            },
+            [
+                {
+                    "ref": "blizzarmon",
+                    "color": "ice",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "ref": "daipenmon",
+                    "color": "ice",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                {
+                    "ref": "ancientmegatheriumon",
+                    "color": "ice"
+                },
+                null
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "frigimon",
+                "color": "ice",
+                "from": [
+                    -4,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "mudfrigimon",
+                "from": [
+                    -5,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "leomon",
+        "garurumon"
+    ]
+}

@@ -7,7 +7,7 @@ const Header: React.FC = () => (
 		<Navbar bg="dark" variant="dark" /* expand="lg" */>
 			<Container fluid>
 				<Navbar.Brand as={Link} to="/">
-					Digimon Lines
+					<img src="/images/icon.png" alt="logo" /> Digimon Lines
 				</Navbar.Brand>
 			</Container>
 		</Navbar>

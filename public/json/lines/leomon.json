@@ -132,7 +132,14 @@
             null,
             null,
             null,
-            null,
+            {
+                "ref": "madleomon",
+                "color": "dark",
+                "from": [
+                    2.5,
+                    -1
+                ]
+            },
             {
                 "ref": "grapleomon",
                 "size": 2,
@@ -164,33 +171,17 @@
             null,
             {
                 "ref": "elecmonb",
-                "from": [
-                    -4,
-                    -1
-                ],
-                "color": "dark"
-            },
-            {
-                "ref": "madleomon",
-                "color": "dark"
-            },
-            {
-                "ref": "madleomonarmed",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "ref": "loweemon",
                 "color": "dark",
                 "size": 2,
                 "from": [
-                    -1.5,
+                    -4,
                     -1
                 ]
+            },
+            {
+                "ref": "loweemon",
+                "color": "dark",
+                "size": 2
             },
             [
                 {

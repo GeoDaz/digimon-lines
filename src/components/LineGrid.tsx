@@ -54,7 +54,7 @@ const yUnit: number = 180; // 150 + yMargin
 const pointWidth: number = 150;
 const pointHeight: number = 150;
 const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
-	const { ref, from, from2, size, color, color2 } = point;
+	const { ref, from, from2, size, color, color2, skins = [] } = point;
 	const style: React.CSSProperties = {};
 	let width = pointWidth;
 	if (size) {
@@ -63,12 +63,24 @@ const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 	}
 	return (
 		<div className="line-point pictured" style={style}>
-			<Image
-				src={`/images/digimon/${ref}.jpg`}
-				title={ref}
-				rounded
-				className="line-img"
-			/>
+			<div className="line-point-safe-zone">
+				<Image
+					src={`/images/digimon/${ref}.jpg`}
+					title={ref}
+					rounded
+					className="line-img"
+				/>
+				{skins.map((skin, i) => (
+					<Image
+						key={i}
+						src={`/images/digimon/${skin}.jpg`}
+						title={skin}
+						rounded
+						className="line-skin"
+						style={{ bottom: 3.3 * i + 'em' }}
+					/>
+				))}
+			</div>
 			<SvgLine from={from} color={color} baseWidth={width} size={size} />
 			{!!from2 && (
 				<SvgLine from={from2} color={color2} baseWidth={width} size={size} />
@@ -143,7 +155,7 @@ const SvgLine: React.FC<SvgLineProps> = ({
 				x2={xOrigin + xDest}
 				y2={left ? yOrigin + yDest : yOrigin}
 				style={{
-					stroke: color ? digicolors[color] : white /* digicolors['default'] */,
+					stroke: (color && digicolors[color]) || white,
 					strokeWidth,
 					strokeLinecap: 'round',
 				}}
