@@ -58,7 +58,7 @@ const PageLine: React.FC = () => {
 				</>
 			}
 		>
-			<div className="d-flex mb-4 align-items-end">
+			<div className="d-flex flex-wrap mb-4 align-items-end">
 				<Icon name="zoom-in lead d-inline-block mb-1" />
 				<ProgressBarSteps
 					steps={zoomOptions}
