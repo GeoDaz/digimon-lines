@@ -58,8 +58,8 @@ const PageLine: React.FC = () => {
 				</>
 			}
 		>
-			<div className="d-flex flex-wrap mb-4 align-items-end">
-				<Icon name="zoom-in lead d-inline-block mb-1" />
+			<div className="line-filters">
+				<Icon name="zoom-in lead d-inline-block d-max-xs-none" />
 				<ProgressBarSteps
 					steps={zoomOptions}
 					selected={zoom}
@@ -67,7 +67,7 @@ const PageLine: React.FC = () => {
 					onChange={setZoom}
 					className="progress-zoom me-4"
 				/>
-				<ColorLegend className="ms-4 mb-1" />
+				<ColorLegend className="ms-4" />
 			</div>
 			{loading && <LineLoading />}
 			{!!line && <LineGrid line={line} zoom={zooms[zoom]} />}
