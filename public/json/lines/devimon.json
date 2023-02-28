@@ -1,0 +1,222 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "devidramon",
+                "color": "dark",
+                "from": [
+                    2,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "icedevimon",
+                "color": "ice",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "ref": "marinedevimon",
+                "color": "dark"
+            },
+            {
+                "ref": "cthyllamon",
+                "color": "dark"
+            }
+        ],
+        [
+            {
+                "ref": "zurumon"
+            },
+            {
+                "ref": "pagumon",
+                "color": "dark"
+            },
+            {
+                "ref": "demidevimon",
+                "color": "dark"
+            },
+            {
+                "ref": "devimon",
+                "color": "dark"
+            },
+            {
+                "ref": "neodevimon",
+                "color": "dark"
+            },
+            {
+                "ref": "donedevimon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "myotismonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            },
+            {
+                "ref": "neomyotismon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "color2": "dark",
+                "from2": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "ref": "neomyotismondm",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "pipismon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "ref": "myotismon",
+                "color": "dark",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "ref": "venommyotismon",
+                "color": "dark"
+            },
+            {
+                "ref": "malomyotismon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "skullsatamon",
+                "color": "dark",
+                "from": [
+                    -3,
+                    -1
+                ]
+            },
+            {
+                "ref": "barbamon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "barbamonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "lucemonfm",
+                "color": "fusion",
+                "from": [
+                    -5,
+                    -1
+                ]
+            },
+            {
+                "ref": "lucemonlarva",
+                "color": "dark",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "lucemonsm",
+                "color": "dark",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "ogudomon",
+                "color": "dark",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "lucemonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            null,
+            {
+                "ref": "ogudomonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "impmon",
+        "gatomon",
+        "bakemon"
+    ]
+}

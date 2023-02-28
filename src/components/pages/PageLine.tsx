@@ -69,8 +69,13 @@ const PageLine: React.FC = () => {
 				/>
 				<ColorLegend className="ms-4" />
 			</div>
-			{loading && <LineLoading />}
-			{!!line && <LineGrid line={line} zoom={zooms[zoom]} />}
+			{loading ? (
+				<LineLoading />
+			) : line ? (
+				<LineGrid line={line} zoom={zooms[zoom]} />
+			) : (
+				<p>Line not found</p>
+			)}
 			{line?.related ? (
 				<div className="line-wrapper">
 					<h2>Related lines&nbsp;:</h2>

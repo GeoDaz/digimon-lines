@@ -1,0 +1,64 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "ref": "meramonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            {
+                "ref": "mokumon"
+            },
+            {
+                "ref": "demimeramon",
+                "color": "fire"
+            },
+            {
+                "ref": "candmon",
+                "color": "fire"
+            },
+            {
+                "ref": "meramon",
+                "color": "fire"
+            },
+            {
+                "ref": "deathmeramon",
+                "color": "dark"
+            },
+            {
+                "ref": "boltmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "bluemeramon",
+                "color": "fire",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "ref": "shroudmon",
+                "color": "fire"
+            }
+        ]
+    ],
+    "related": [
+        "bakemon",
+        "wizardmon",
+        "flarelizardmon"
+    ]
+}
