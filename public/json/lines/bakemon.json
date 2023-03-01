@@ -1,0 +1,103 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "ref": "ghostmon",
+                "color": "fire",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "ref": "soulmon",
+                "color": "dark"
+            },
+            {
+                "ref": "metalphantomon",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            },
+            {
+                "ref": "Gokumon",
+                "color": "dark"
+            }
+        ],
+        [
+            {
+                "ref": "mokumon"
+            },
+            {
+                "ref": "demimeramon",
+                "color": "fire"
+            },
+            {
+                "ref": "candmon",
+                "color": "fire"
+            },
+            {
+                "ref": "bakemon",
+                "color": "dark"
+            },
+            {
+                "ref": "phantomon",
+                "color": "dark"
+            },
+            {
+                "ref": "piemon",
+                "color": "dark",
+                "skins": ["chaospiemon"]
+            },
+            {
+                "ref": "apocalymon",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "pumpmon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "ref": "noblepumpmon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "mummymon",
+                "color": "dark",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "ref": "pharaohmon",
+                "color": "dark"
+            }
+        ]
+    ],
+    "related": [
+        "devimon",
+        "meramon",
+        "wizardmon"
+    ]
+}

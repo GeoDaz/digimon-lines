@@ -133,7 +133,11 @@
 			{
 				"ref": "machinedramon",
 				"color": "dark"
-			}
+			},
+            {
+                "ref": "apocalymon",
+                "color": "fusion"
+            }
 		],
 		[
 			null,
@@ -199,7 +203,15 @@
 					-1.5,
 					-1
 				]
-			}
+			},
+            {
+                "ref": "neocrimson",
+                "color": "fusion",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
 		],
 		[
 			null,
@@ -319,6 +331,15 @@
 			{
 				"ref": "zeekgreymon",
 				"color": "armor"
+			},
+			{
+				"ref": "shoutmonx7",
+				"color": "fusion",
+				"skins": ["shoutmonex6"]
+			},
+			{
+				"ref": "shoutmonx7sm",
+				"color": "fusion"
 			}
 		],
 		[

@@ -2,7 +2,8 @@
     "related": [
         "gammamon",
         "flarelizardmon",
-        "greymon"
+        "greymon",
+		"commandramon"
     ],
     "columns": [
         [
@@ -18,11 +19,7 @@
             },
             {
                 "ref": "tyranomonx",
-                "color": "x",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "x"
             },
             {
                 "ref": "extyranomon",
@@ -39,39 +36,19 @@
                 "ref": "botamon"
             },
             {
-                "ref": "koromon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "ref": "koromon"
             },
             {
-                "ref": "agumon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "ref": "agumon"
             },
             {
-                "ref": "tyranomon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "ref": "tyranomon"
             },
             {
-                "ref": "mastertyranomon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "ref": "mastertyranomon"
             },
             {
-                "ref": "rusttyranomon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "ref": "rusttyranomon"
             },
             null
         ],
@@ -88,18 +65,10 @@
                 ]
             },
             {
-                "ref": "dinorexmon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "ref": "dinorexmon"
             },
             {
-                "ref": "huanglongmon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "ref": "huanglongmon"
             }
         ],
         [
@@ -114,18 +83,10 @@
                 ]
             },
             {
-                "ref": "stegomon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "ref": "stegomon"
             },
             {
-                "ref": "spinomon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "ref": "spinomon"
             },
             {
                 "ref": "huanglongmonrm",
@@ -149,19 +110,11 @@
             },
             {
                 "ref": "darktyranomonx",
-                "color": "x",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "x"
             },
             {
                 "ref": "metaltyranomonx",
-                "color": "x",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "x"
             },
             null,
             null
@@ -179,70 +132,18 @@
             },
             {
                 "ref": "darktyranomon",
-                "color": "dark",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "dark"
             },
             {
-                "ref": "metaltyranomon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "ref": "metaltyranomon"
             },
             {
                 "ref": "machinedramon",
-                "color": "dark",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "ref": "deltamon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
+                "color": "dark"
             },
             {
-                "ref": "chimeramon",
-                "color": "dark",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "ref": "millenniumon",
-                "color": "fusion",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color2": "fusion",
-                "from2": [
-                    -1,
-                    0
-                ]
-            },
-            {
-                "ref": "zeedmillenniumon",
-                "color": "dark",
-                "from": [
-                    0,
-                    -1
-                ],
-                "skins": ["moonmillenniumon"]
+                "ref": "apocalymon",
+                "color": "fusion"
             }
         ],
         [
@@ -252,14 +153,41 @@
                 "ref": "gaossmonb",
                 "color": "dark",
                 "from": [
-                    -6,
+                    -5,
                     -1
                 ]
             },
             {
+                "ref": "deltamon",
+                "color": "dark"
+            },
+            {
+                "ref": "chimeramon",
+                "color": "dark"
+            },
+            {
+                "ref": "millenniumon",
+                "color": "fusion",
+                "color2": "fusion",
+                "from2": [
+                    -1,
+                    0
+                ]
+            },
+            {
+                "ref": "zeedmillenniumon",
+                "color": "dark",
+                "skins": ["moonmillenniumon"]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
                 "ref": "allomon",
                 "from": [
-                    0,
+                    -1,
                     -1
                 ]
             }

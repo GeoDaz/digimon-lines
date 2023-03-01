@@ -4,6 +4,24 @@
             null,
             null,
             null,
+            null,
+            {
+                "ref": "ladydevimonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            },
+            {
+                "ref": "lilithmonx",
+                "color": "x"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
             {
                 "ref": "devidramon",
                 "color": "dark",
@@ -11,6 +29,14 @@
                     2,
                     -1
                 ]
+            },
+            {
+                "ref": "ladydevimon",
+                "color": "dark"
+            },
+            {
+                "ref": "lilithmon",
+                "color": "dark"
             }
         ],
         [
@@ -64,14 +90,7 @@
             null,
             null,
             null,
-            {
-                "ref": "myotismonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
+            null,
             {
                 "ref": "neomyotismon",
                 "color": "dark",
@@ -124,10 +143,32 @@
             null,
             null,
             {
+                "ref": "myotismonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            },
+            {
+                "ref": "boltboutamon",
+                "color": "fusion",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
                 "ref": "skullsatamon",
                 "color": "dark",
                 "from": [
-                    -3,
+                    -4,
                     -1
                 ]
             },
@@ -160,7 +201,7 @@
                 "ref": "lucemonfm",
                 "color": "fusion",
                 "from": [
-                    -5,
+                    -6,
                     -1
                 ]
             },
@@ -182,10 +223,15 @@
             },
             {
                 "ref": "ogudomon",
-                "color": "dark",
+                "color": "fusion",
                 "from": [
                     0,
                     -1
+                ],
+                "color2": "fusion",
+                "from2": [
+                    -2,
+                    -2
                 ]
             }
         ],
@@ -215,8 +261,9 @@
         ]
     ],
     "related": [
+        "bakemon",
         "impmon",
-        "gatomon",
-        "bakemon"
+        "angemon",
+        "gatomon"
     ]
 }
