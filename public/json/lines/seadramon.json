@@ -1,7 +1,9 @@
 {
     "related": [
-        "gomamon",
-        "flarelizardmon"
+		"apocalymon",
+		"ogudomon",
+        "flarelizardmon",
+        "gomamon"
     ],
     "columns": [
         [
@@ -78,10 +80,6 @@
                     0,
                     -1
                 ]
-            },
-            {
-                "ref": "apocalymon",
-                "color": "fusion"
             }
         ],
         [
@@ -104,14 +102,6 @@
                     0,
                     -1
                 ]
-            },
-            {
-                "ref": "neocrimson",
-                "color": "fusion",
-                "from": [
-                    0,
-                    -1
-                ]
             }
         ],
         [
@@ -127,16 +117,7 @@
                     -1,
                     -1
                 ]
-            },
-            null,
-			{
-				"ref": "ogudomon",
-				"color": "fusion",
-				"from": [
-					0,
-					-2
-				]
-			}
+            }
         ],
         [
             null,
@@ -151,16 +132,7 @@
                     -1,
                     0
                 ]
-            },
-            null,
-			{
-				"ref": "ogudomonx",
-				"color": "x",
-				"from": [
-					0,
-					-2
-				]
-			}
+            }
         ],
         [
             null,
@@ -188,6 +160,7 @@
             },
             {
                 "ref": "goldramon",
+				"color": "light",
                 "from": [
                     0,
                     -1

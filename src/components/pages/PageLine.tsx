@@ -25,8 +25,13 @@ const PageLine: React.FC = () => {
 			});
 			const columns = line.columns.map(col => {
 				col = col.slice();
-				if (col[0]) {
-					col[0] = { ...col[0], from: null };
+				let first = col[0];
+				if (first) {
+					if (Array.isArray(first)) {
+						col[0] = first.map(point => point && { ...point, from: null });
+					} else {
+						col[0] = { ...first, from: null };
+					}
 				}
 				while (col.length < size) {
 					col.push(null);

@@ -1,0 +1,161 @@
+{
+    "columns": [
+        [
+            {
+                "ref": "bommon"
+            },
+            {
+                "ref": "missimon"
+            },
+            {
+                "ref": "commandramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "sealsdramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "tankdramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "darkdramon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "ref": "chaosmon",
+                "color": "fusion",
+                "color2": "fusion",
+                "from2": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            [
+                {
+                    "ref": "popomon"
+                },
+                {
+                    "ref": "puwamon"
+                }
+            ],
+            [
+                {
+                    "ref": "frimon"
+                },
+                {
+                    "ref": "pinamon"
+                }
+            ],
+            [
+                {
+                    "ref": "liolmon"
+                },
+                {
+                    "ref": "falcomon"
+                }
+            ],
+            [
+                {
+                    "ref": "liamon"
+                },
+                {
+                    "ref": "diatrymon"
+                }
+            ],
+            [
+                {
+                    "ref": "loaderliomon"
+                },
+                {
+                    "ref": "yatagaramon"
+                }
+            ],
+            [
+                {
+                    "ref": "bancholeomon"
+                },
+                {
+                    "ref": "valdurmon"
+                }
+            ],
+                {
+                    "ref": "chaosmonvm",
+                    "color": "fusion",
+                    "from": null,
+                    "size": 2,
+                    "fusionFrom": [
+                        [
+                            -0.5,
+                            -1
+                        ],
+                        [
+                            0.5,
+                            -1
+                        ]
+                    ]
+                },
+            {
+                "ref": "ultimatechaosmon",
+                "color": "fusion",
+                "from": null,
+                "size": 2,
+                "fusionFrom": [
+                    [
+                        -1.5,
+                        -2
+                    ],
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1.5,
+                        -2
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "ref": "pafumon"
+            },
+            {
+                "ref": "kyaromon"
+            },
+            {
+                "ref": "kudamon"
+            },
+            {
+                "ref": "reppamon"
+            },
+            {
+                "ref": "chirinmon"
+            },
+            {
+                "ref": "sleipmon"
+            }
+        ]
+    ],
+    "related": [
+        "commandramon",
+        "leomon",
+        "falcomon",
+        "kudamon"
+    ]
+}

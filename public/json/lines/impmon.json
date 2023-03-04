@@ -1,7 +1,7 @@
 {
 	"related": [
+		"ogudomon",
 		"devimon",
-		"belphemon",
 		"wizardmon"
 	],
 	"notes": [
@@ -122,22 +122,6 @@
 					]
 				},
 				null
-			],
-			[
-				null,
-				{
-					"ref": "ogudomon",
-					"color": "fusion",
-					"from": [
-						-1,
-						-2
-					],
-					"color2": "fusion",
-					"from2": [
-						1,
-						-2
-					]
-				}
 			]
 		],
 		[
@@ -171,15 +155,7 @@
 					0,
 					-1
 				]
-			},
-            {
-                "ref": "ogudomonx",
-                "color": "x",
-                "from": [
-                    -1,
-                    0
-                ]
-            }
+			}
 		],
 		[
 			null,

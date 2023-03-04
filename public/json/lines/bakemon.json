@@ -51,11 +51,30 @@
             {
                 "ref": "piemon",
                 "color": "dark",
-                "skins": ["chaospiemon"]
+                "color2": "dark",
+                "from2": [1,-1]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "ref": "jokermon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
-                "ref": "apocalymon",
-                "color": "fusion"
+                "ref": "chaospiemon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ],
         [
@@ -67,7 +86,7 @@
                 "ref": "pumpmon",
                 "color": "dark",
                 "from": [
-                    -1,
+                    -2,
                     -1
                 ]
             },
@@ -85,7 +104,7 @@
                 "ref": "mummymon",
                 "color": "dark",
                 "from": [
-                    -2,
+                    -3,
                     -1
                 ]
             },
@@ -96,6 +115,7 @@
         ]
     ],
     "related": [
+		"apocalymon",
         "devimon",
         "meramon",
         "wizardmon"

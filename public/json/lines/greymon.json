@@ -133,11 +133,7 @@
 			{
 				"ref": "machinedramon",
 				"color": "dark"
-			},
-            {
-                "ref": "apocalymon",
-                "color": "fusion"
-            }
+			}
 		],
 		[
 			null,
@@ -331,15 +327,6 @@
 			{
 				"ref": "zeekgreymon",
 				"color": "armor"
-			},
-			{
-				"ref": "shoutmonx7",
-				"color": "fusion",
-				"skins": ["shoutmonex6"]
-			},
-			{
-				"ref": "shoutmonx7sm",
-				"color": "fusion"
 			}
 		],
 		[
@@ -403,7 +390,9 @@
 		"tyranomon",
 		"flarelizardmon",
 		"commandramon",
-		"garurumon"
+		"omegamon",
+		"apocalymon",
+        "neocrimson"
 	],
 	"notes": [
 		"DoruGreymon does not belong to the family of Greymon. It's VO name is DoruGuremon, while Greymon is still Greymon."

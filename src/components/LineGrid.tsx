@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Image, Spinner } from 'react-bootstrap';
 import { Line, LinePoint as LinePointInterface } from '../types/Line';
-import { digicolors } from '../consts/digivolutions';
+import { colors } from '../consts/colors';
 
 interface GridProps {
 	line: Line;
@@ -137,18 +137,21 @@ const SvgLine: React.FC<SvgLineProps> = ({
 	const strokeWidth = 12;
 	const svgStyle: React.CSSProperties = {};
 	if (xGap > 1 && yGap > 0) {
-		if (from[0] < 0) {
-			svgStyle.zIndex = Math.floor(from[0]);
-		}
-		xDest +=
-			(size ? size - 1 : 0) * (pointWidth / 2) * (from[0] < 0 ? 1 : -1) +
-			strokeWidth;
+		// prettier-ignore
+		xDest += (size ? size - 1 : 0)
+		* (pointWidth / 2 + strokeWidth);
+
 		xOrigin = pointWidth - strokeWidth / 2;
 		yOrigin = pointHeight - strokeWidth / 2;
+		if (from[0] < 0) {
+			svgStyle.zIndex = Math.floor(from[0]);
+		}else if(size > 1){
+			xOrigin += pointWidth / 2;
+		}
 		xDest -= pointWidth - strokeWidth;
 		yDest -= pointHeight - strokeWidth;
 	}
-	if (xGap < 1 && xGap > 0 && yGap > 0) {
+	if (xGap == 0.5 && yGap > 0) {
 		yOrigin = pointHeight - strokeWidth / 2;
 		yDest -= pointHeight - strokeWidth;
 	}
@@ -165,7 +168,7 @@ const SvgLine: React.FC<SvgLineProps> = ({
 				x2={xOrigin + xDest}
 				y2={left ? yOrigin + yDest : yOrigin}
 				style={{
-					stroke: (color && digicolors[color]) || white,
+					stroke: (color && colors[color]) || white,
 					strokeWidth,
 					strokeLinecap: 'round',
 				}}

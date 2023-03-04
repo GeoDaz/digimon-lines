@@ -1,8 +1,10 @@
 {
 	"related": [
+        "neocrimson",
+		"apocalymon",
 		"seadramon",
-		"tyranomon",
-		"greymon"
+		"greymon",
+		"tyranomon"
 	],
 	"columns": [
 		[
@@ -73,7 +75,6 @@
 			[
 				{
 					"ref": "machinedramon",
-					"color": "dark",
 					"from": [
 						0,
 						-1
@@ -94,10 +95,7 @@
 				}
 			],
 			[
-				{
-					"ref": "apocalymon",
-					"color": "fusion"
-				},
+				null,
 				{
 					"ref": "neocrimson",
 					"color": "fusion",

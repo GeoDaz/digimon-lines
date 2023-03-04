@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Row, Col, Image, Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import colors from '../../consts/colors';
 import useFetch from '../../hooks/useFetch';
 import Layout from '../Layout';
 
@@ -45,7 +46,7 @@ const PageLines: React.FC = () => {
 			)}
 			{fusions.length > 0 && (
 				<div>
-					<h2>Fusions</h2>
+					<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
 					<div className="line-wrapper">
 						<Row className="line-row">
 							{fusions.map((ref, i) => (

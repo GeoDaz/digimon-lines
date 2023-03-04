@@ -4,20 +4,24 @@
             null,
             null,
             {
-                "ref": "modokibetamon",
+                "ref": "toyagumonb",
+                "color": "dark",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "ref": "airdramon"
+                "ref": "darklizardmon",
+                "color": "dark"
             },
             {
-                "ref": "megadramon"
+                "ref": "gigadramon",
+                "color": "dark"
             },
             {
-                "ref": "machinedramon"
+                "ref": "chaosdramon",
+                "color": "dark"
             }
         ],
         [
@@ -25,57 +29,57 @@
                 {
                     "ref": "botamon"
                 },
-                {
-                    "ref": "mokumon"
-                }
+                null
             ],
             [
                 {
                     "ref": "koromon"
                 },
-                {
-                    "ref": "demimeramon",
-                    "color": "fire"
-                }
+                null
             ],
             [
                 {
-                    "ref": "betamon"
+                    "ref": "agumonb",
+                    "color": "dark"
                 },
                 {
-                    "ref": "candmon",
-                    "color": "fire"
+                    "ref": "betamon",
+                    "from": [
+                        -1,
+                        -1
+                    ]
                 }
             ],
             [
+                {
+                    "ref": "greymonb",
+                    "color": "dark"
+                },
                 {
                     "ref": "seadramon"
+                }
+            ],
+            [
+                {
+                    "ref": "metalgreymonb",
+                    "color": "dark"
                 },
                 {
-                    "ref": "bakemon",
+                    "ref": "waruseadramon",
                     "color": "dark"
                 }
             ],
             [
                 {
-                    "ref": "megaseadramon"
+                    "ref": "chaoswargreymon"
                 },
                 {
-                    "ref": "phantomon",
-                    "color": "dark"
-                }
-            ],
-            [
-                {
-                    "ref": "metalseadramon"
-                },
-                {
-                    "ref": "piemon",
+                    "ref": "chaosmetalseadramon",
                     "color": "dark"
                 }
             ],
             {
-                "ref": "apocalymon",
+                "ref": "neocrimson",
                 "size": 2,
                 "color": "fusion",
                 "from": null,
@@ -101,30 +105,35 @@
         ],
         [
             {
-                "ref": "yuramon"
+                "ref": "mokumon"
             },
             {
-                "ref": "tanemon"
+                "ref": "demimeramon",
+                "color": "fire"
             },
             {
-                "ref": "mushmon"
+                "ref": "candmon",
+                "color": "fire"
             },
             {
-                "ref": "woodmon"
+                "ref": "bakemon",
+                "color": "dark"
             },
             {
-                "ref": "cherrymon"
+                "ref": "phantomon",
+                "color": "dark"
             },
             {
-                "ref": "puppetmon"
+                "ref": "chaospiemon",
+                "color": "dark"
             }
         ]
     ],
     "related": [
-        "bakemon",
         "flarelizardmon",
+        "greymon",
         "seadramon",
-        "woodmon",
-        "neocrimson"
+        "bakemon",
+        "apocalymon"
     ]
 }

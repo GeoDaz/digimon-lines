@@ -1,5 +1,5 @@
 import React from 'react';
-import { legend } from '../consts/digivolutions';
+import { legend } from '../consts/colors';
 import Icon from './Icon';
 import Popup from './Popup';
 
