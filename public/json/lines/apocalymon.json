@@ -1,0 +1,130 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "ref": "modokibetamon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "ref": "airdramon"
+            },
+            {
+                "ref": "megadramon"
+            },
+            {
+                "ref": "machinedramon",
+                "color": "dark"
+            }
+        ],
+        [
+            [
+                {
+                    "ref": "botamon"
+                },
+                {
+                    "ref": "mokumon"
+                }
+            ],
+            [
+                {
+                    "ref": "koromon"
+                },
+                {
+                    "ref": "demimeramon",
+                    "color": "fire"
+                }
+            ],
+            [
+                {
+                    "ref": "betamon"
+                },
+                {
+                    "ref": "candmon",
+                    "color": "fire"
+                }
+            ],
+            [
+                {
+                    "ref": "seadramon"
+                },
+                {
+                    "ref": "bakemon",
+                    "color": "dark"
+                }
+            ],
+            [
+                {
+                    "ref": "megaseadramon"
+                },
+                {
+                    "ref": "phantomon",
+                    "color": "dark"
+                }
+            ],
+            [
+                {
+                    "ref": "metalseadramon"
+                },
+                {
+                    "ref": "piemon",
+                    "color": "dark"
+                }
+            ],
+            {
+                "ref": "apocalymon",
+                "size": 2,
+                "color": "fusion",
+                "from": null,
+                "fusionFrom": [
+                    [
+                        -1.5,
+                        -1
+                    ],
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ],
+                    [
+                        1.5,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "ref": "yuramon"
+            },
+            {
+                "ref": "tanemon"
+            },
+            {
+                "ref": "mushmon"
+            },
+            {
+                "ref": "woodmon"
+            },
+            {
+                "ref": "cherrymon"
+            },
+            {
+                "ref": "puppetmon"
+            }
+        ]
+    ],
+    "related": [
+        "bakemon",
+        "flarelizardmon",
+        "seadramon",
+        "woodmon"
+    ]
+}

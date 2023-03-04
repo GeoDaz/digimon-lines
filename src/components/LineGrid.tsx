@@ -54,7 +54,7 @@ const yUnit: number = 180; // 150 + yMargin
 const pointWidth: number = 150;
 const pointHeight: number = 150;
 const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
-	const { ref, from, from2, size, color, color2, skins = [] } = point;
+	const { ref, from, from2, fusionFrom, size, color, color2, skins = [] } = point;
 	const style: React.CSSProperties = {};
 	let width = pointWidth;
 	if (size) {
@@ -85,6 +85,16 @@ const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 			{!!from2 && (
 				<SvgLine from={from2} color={color2} baseWidth={width} size={size} />
 			)}
+			{!!fusionFrom &&
+				fusionFrom.map((coord, i) => (
+					<SvgLine
+						key={i}
+						from={coord}
+						color={color}
+						baseWidth={width}
+						size={size}
+					/>
+				))}
 		</div>
 	);
 };
