@@ -3,29 +3,23 @@
         [
             null,
             null,
+            null,
             {
-                "ref": "ghostmon",
-                "color": "fire",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "ref": "soulmon",
-                "color": "dark"
-            },
-            {
-                "ref": "metalphantomon",
+                "ref": "wizardmonx",
                 "color": "x",
                 "from": [
                     1,
                     0
                 ]
             },
+            null,
             {
-                "ref": "gokumon",
-                "color": "dark"
+                "ref": "dynasmonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
             }
         ],
         [
@@ -37,87 +31,72 @@
                 "color": "fire"
             },
             {
-                "ref": "candmon",
+                "ref": "ghostmon",
                 "color": "fire"
             },
             {
-                "ref": "bakemon",
-                "color": "dark"
+                "ref": "wizardmon"
             },
             {
-                "ref": "phantomon",
-                "color": "dark"
+                "ref": "mistymon"
             },
             {
-                "ref": "piemon",
-                "color": "dark",
-                "color2": "dark",
-                "from2": [1,-1]
+                "ref": "dynasmon"
             }
         ],
         [
             null,
             null,
             null,
-            null,
             {
-                "ref": "jokermon",
-                "color": "dark",
+                "ref": "sorcerymon",
+                "color": "ice",
                 "from": [
                     -1,
                     -1
                 ]
             },
             {
-                "ref": "chaospiemon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
+                "ref": "wisemon"
+            },
+            {
+                "ref": "ancientwisemon"
             }
         ],
         [
             null,
             null,
             null,
-            null,
             {
-                "ref": "pumpmon",
-                "color": "dark",
+                "ref": "witchmon",
                 "from": [
                     -2,
                     -1
                 ]
-            },
-            {
-                "ref": "noblepumpmon",
-                "color": "dark"
             }
         ],
         [
             null,
             null,
-            null,
-            null,
             {
-                "ref": "mummymon",
-                "color": "dark",
+                "ref": "candmon",
+                "color": "fire",
                 "from": [
                     -3,
                     -1
                 ]
             },
             {
-                "ref": "pharaohmon",
-                "color": "dark"
+                "ref": "flamewizardmon",
+                "color": "fire"
             }
         ]
     ],
     "related": [
-		"apocalymon",
-        "devimon",
+        "mercuremon",
+        "bakemon",
         "meramon",
-        "wizardmon"
+        "impmon",
+        "gatomon"
     ]
 }
