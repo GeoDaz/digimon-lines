@@ -132,14 +132,17 @@
             null,
             null,
             null,
-            {
-                "ref": "madleomon",
-                "color": "dark",
-                "from": [
-                    2.5,
-                    -1
-                ]
-            },
+            [
+                null,
+                {
+                    "ref": "madleomon",
+                    "color": "dark",
+                    "from": [
+                        2,
+                        -1
+                    ]
+                }
+            ],
             {
                 "ref": "grapleomon",
                 "size": 2,
