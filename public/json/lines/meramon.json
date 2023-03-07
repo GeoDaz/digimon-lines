@@ -5,7 +5,7 @@
             null,
             null,
             {
-                "ref": "meramonx",
+                "name": "meramonx",
                 "color": "x",
                 "from": [
                     1,
@@ -15,26 +15,26 @@
         ],
         [
             {
-                "ref": "mokumon"
+                "name": "mokumon"
             },
             {
-                "ref": "demimeramon",
+                "name": "demimeramon",
                 "color": "fire"
             },
             {
-                "ref": "candmon",
+                "name": "candmon",
                 "color": "fire"
             },
             {
-                "ref": "meramon",
+                "name": "meramon",
                 "color": "fire"
             },
             {
-                "ref": "deathmeramon",
+                "name": "deathmeramon",
                 "color": "dark"
             },
             {
-                "ref": "boltmon"
+                "name": "boltmon"
             }
         ],
         [
@@ -43,7 +43,7 @@
             null,
             null,
             {
-                "ref": "bluemeramon",
+                "name": "bluemeramon",
                 "color": "fire",
                 "from": [
                     -1,
@@ -51,7 +51,7 @@
                 ]
             },
             {
-                "ref": "shroudmon",
+                "name": "shroudmon",
                 "color": "fire"
             }
         ]

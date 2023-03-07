@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
-import { Row, Col, Image, Spinner } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Row, Col, Spinner } from 'react-bootstrap';
 import colors from '../../consts/colors';
 import useFetch from '../../hooks/useFetch';
 import Layout from '../Layout';
+import PointImage from '../PointImage';
 
 const PageLines: React.FC = () => {
 	const [lines, setLines] = React.useState<string[]>([]);
 	const [fusions, setFusions] = React.useState<string[]>([]);
 	const [load, loading] = useFetch(setLines);
-	const [loadFusions, loadingFusions] = useFetch(setFusions);
+	const [loadFusions] = useFetch(setFusions);
 
 	useEffect(() => {
 		load(`/json/lines/_index.json`);
@@ -25,20 +25,9 @@ const PageLines: React.FC = () => {
 			) : (
 				<div className="line-wrapper">
 					<Row className="line-row">
-						{lines.map((ref, i) => (
+						{lines.map((name, i) => (
 							<Col key={i}>
-								<Link
-									to={`/lines/${ref}`}
-									className="line-point pictured"
-									title={ref}
-								>
-									<Image
-										src={`/images/digimon/${ref}.jpg`}
-										alt={ref}
-										rounded
-										className="line-img"
-									/>
-								</Link>
+								<PointImage name={name} />
 							</Col>
 						))}
 					</Row>
@@ -49,20 +38,9 @@ const PageLines: React.FC = () => {
 					<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
 					<div className="line-wrapper">
 						<Row className="line-row">
-							{fusions.map((ref, i) => (
+							{fusions.map((name, i) => (
 								<Col key={i}>
-									<Link
-										to={`/lines/${ref}`}
-										className="line-point pictured"
-										title={ref}
-									>
-										<Image
-											src={`/images/digimon/${ref}.jpg`}
-											alt={ref}
-											rounded
-											className="line-img"
-										/>
-									</Link>
+									<PointImage name={name} />
 								</Col>
 							))}
 						</Row>

@@ -2,35 +2,35 @@
     "columns": [
         [
             {
-                "ref": "pitchmon",
+                "name": "pitchmon",
                 "size": 2
             },
             {
-                "ref": "pukamon",
+                "name": "pukamon",
                 "size": 2
             },
             {
-                "ref": "gomamon",
+                "name": "gomamon",
                 "size": 2
             },
             {
-                "ref": "ikkakumon",
+                "name": "ikkakumon",
                 "size": 2
             },
             {
-                "ref": "zudomon",
+                "name": "zudomon",
                 "size": 2
             },
             [
                 {
-                    "ref": "vikemon",
+                    "name": "vikemon",
                     "from": [
                         0.5,
                         -1
                     ]
                 },
                 {
-                    "ref": "plesiomon",
+                    "name": "plesiomon",
                     "from": [
                         -0.5,
                         -1
@@ -40,7 +40,7 @@
             [
                 null,
                 {
-                    "ref": "aegisdramon",
+                    "name": "aegisdramon",
                     "color": "fusion"
                 }
             ]
@@ -50,17 +50,17 @@
             null,
             null,
             {
-                "ref": "dolphmon",
+                "name": "dolphmon",
                 "from": [
                     -1.5,
                     -1
                 ]
             },
             {
-                "ref": "whamon"
+                "name": "whamon"
             },
             {
-                "ref": "kingwhamon"
+                "name": "kingwhamon"
             }
         ],
         [
@@ -68,7 +68,7 @@
             null,
             null,
             {
-                "ref": "orcamon",
+                "name": "orcamon",
                 "from": [
                     -2.5,
                     -1

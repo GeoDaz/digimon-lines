@@ -5,37 +5,37 @@
             null,
             null,
             {
-                "ref": "toucanmon",
+                "name": "toucanmon",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "ref": "tempomon"
+                "name": "tempomon"
             }
         ],
         [
             {
-                "ref": "snowbotamon"
+                "name": "snowbotamon"
             },
             {
-                "ref": "hiyarimon",
+                "name": "hiyarimon",
                 "color": "ice"
             },
             {
-                "ref": "penmon",
+                "name": "penmon",
                 "color": "ice"
             },
             {
-                "ref": "swanmon"
+                "name": "swanmon"
             },
             {
-                "ref": "daipenmon",
+                "name": "daipenmon",
                 "color": "ice"
             },
             {
-                "ref": "frosvelgrmon",
+                "name": "frosvelgrmon",
                 "color": "ice"
             }
         ],
@@ -44,14 +44,14 @@
             null,
             null,
             {
-                "ref": "thunderbirdmon",
+                "name": "thunderbirdmon",
                 "from": [
                     -1,
                     -1
                 ]
             },
             {
-                "ref": "peacockmon",
+                "name": "peacockmon",
                 "from": [
                     -1,
                     -1
@@ -63,24 +63,24 @@
             null,
             null,
             {
-                "ref": "cockatrimon",
+                "name": "cockatrimon",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "ref": "parrotmon",
+                "name": "parrotmon",
                 "from2": [
                     -1,
                     -1
                 ]
             },
             {
-                "ref": "crossmon"
+                "name": "crossmon"
             },
             {
-                "ref": "aegisdramon",
+                "name": "aegisdramon",
                 "color": "fusion"
             }
         ],
@@ -88,7 +88,7 @@
             null,
             null,
             {
-                "ref": "muchomon",
+                "name": "muchomon",
                 "color": "fire",
                 "from": [
                     -3,
@@ -96,7 +96,7 @@
                 ]
             },
             {
-                "ref": "akatorimon",
+                "name": "akatorimon",
                 "color": "fire",
                 "from": [
                     0,
@@ -104,10 +104,10 @@
                 ]
             },
             {
-                "ref": "sinduramon"
+                "name": "sinduramon"
             },
             {
-                "ref": "zhuqiaomon",
+                "name": "zhuqiaomon",
                 "color": "fire"
             }
         ]

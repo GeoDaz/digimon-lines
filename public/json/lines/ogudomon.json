@@ -6,7 +6,7 @@
             null,
             null,
             {
-                "ref": "ladydevimonx",
+                "name": "ladydevimonx",
                 "color": "x",
                 "from": [
                     1,
@@ -14,31 +14,31 @@
                 ]
             },
             {
-                "ref": "lilithmonx",
+                "name": "lilithmonx",
                 "color": "x"
             }
         ],
         [
             {
-                "ref": "snowbotamon"
+                "name": "snowbotamon"
             },
             {
-                "ref": "nyaromon"
+                "name": "nyaromon"
             },
             {
-                "ref": "plotmon",
+                "name": "plotmon",
                 "color": "light"
             },
             {
-                "ref": "gatomonb",
+                "name": "gatomonb",
                 "color": "dark"
             },
             {
-                "ref": "ladydevimon",
+                "name": "ladydevimon",
                 "color": "dark"
             },
             {
-                "ref": "lilithmon",
+                "name": "lilithmon",
                 "color": "dark"
             }
         ],
@@ -49,7 +49,7 @@
             null,
             null,
             {
-                "ref": "leviamonx",
+                "name": "leviamonx",
                 "color": "x",
                 "from": [
                     1,
@@ -62,7 +62,7 @@
             null,
             null,
             {
-                "ref": "icedevimon",
+                "name": "icedevimon",
                 "color": "ice",
                 "from": [
                     1,
@@ -70,36 +70,36 @@
                 ]
             },
             {
-                "ref": "marinedevimon",
+                "name": "marinedevimon",
                 "color": "dark"
             },
             {
-                "ref": "leviamon",
+                "name": "leviamon",
                 "color": "dark"
             }
         ],
         [
             {
-                "ref": "zurumon"
+                "name": "zurumon"
             },
             {
-                "ref": "pagumon",
+                "name": "pagumon",
                 "color": "dark"
             },
             {
-                "ref": "demidevimon",
+                "name": "demidevimon",
                 "color": "dark"
             },
             {
-                "ref": "devimon",
+                "name": "devimon",
                 "color": "dark"
             },
             {
-                "ref": "skullsatamon",
+                "name": "skullsatamon",
                 "color": "dark"
             },
             {
-                "ref": "barbamon",
+                "name": "barbamon",
                 "color": "dark"
             }
         ],
@@ -110,7 +110,7 @@
             null,
             null,
             {
-                "ref": "barbamonx",
+                "name": "barbamonx",
                 "color": "x",
                 "from": [
                     -1,
@@ -120,10 +120,10 @@
         ],
         [
             {
-                "ref": "puttimon"
+                "name": "puttimon"
             },
             {
-                "ref": "cupimon",
+                "name": "cupimon",
                 "color": "light",
                 "from": [
                     0,
@@ -131,7 +131,7 @@
                 ]
             },
             {
-                "ref": "lucemon",
+                "name": "lucemon",
                 "color": "light",
                 "from": [
                     0,
@@ -140,7 +140,7 @@
             },
             null,
             {
-                "ref": "lucemonfm",
+                "name": "lucemonfm",
                 "color": "armor",
                 "from": [
                     0,
@@ -148,7 +148,7 @@
                 ]
             },
             {
-                "ref": "lucemonlarva",
+                "name": "lucemonlarva",
                 "color": "dark",
                 "from": [
                     0,
@@ -156,7 +156,7 @@
                 ]
             },
             {
-                "ref": "lucemonsm",
+                "name": "lucemonsm",
                 "color": "dark",
                 "from": [
                     0,
@@ -164,7 +164,7 @@
                 ]
             },
             {
-                "ref": "ogudomon",
+                "name": "ogudomon",
                 "color": "fusion",
                 "from": null,
                 "fusionFrom": [
@@ -185,7 +185,7 @@
             null,
             null,
             {
-                "ref": "lucemonx",
+                "name": "lucemonx",
                 "color": "x",
                 "from": [
                     -1,
@@ -194,7 +194,7 @@
             },
             null,
             {
-                "ref": "ogudomonx",
+                "name": "ogudomonx",
                 "color": "x",
                 "from": [
                     -1,
@@ -206,7 +206,7 @@
             null,
             null,
             {
-                "ref": "impmonx",
+                "name": "impmonx",
                 "color": "x",
                 "from": [
                     1,
@@ -215,7 +215,7 @@
             },
             null,
             {
-                "ref": "baalmonx",
+                "name": "baalmonx",
                 "color": "x",
                 "from": [
                     1,
@@ -223,33 +223,33 @@
                 ]
             },
             {
-                "ref": "beelzebumonx",
+                "name": "beelzebumonx",
                 "color": "x"
             }
         ],
         [
             {
-                "ref": "keemon"
+                "name": "keemon"
             },
             {
-                "ref": "yarmon",
+                "name": "yarmon",
                 "color": "dark"
             },
             {
-                "ref": "impmon",
+                "name": "impmon",
                 "color": "dark"
             },
             {
-                "ref": "boogiemon",
+                "name": "boogiemon",
                 "color": "dark"
             },
             {
-                "ref": "baalmon",
+                "name": "baalmon",
                 "color": "dark"
             },
             {
                 "color": "dark",
-                "ref": "beelzebumon"
+                "name": "beelzebumon"
             }
         ],
         [
@@ -258,7 +258,7 @@
             null,
             null,
             {
-                "ref": "phelesmon",
+                "name": "phelesmon",
                 "color": "dark",
                 "from": [
                     -1.5,
@@ -266,7 +266,7 @@
                 ]
             },
             {
-                "ref": "demon",
+                "name": "demon",
                 "color": "dark",
                 "from": [
                     0,
@@ -284,7 +284,7 @@
 			null,
 			null,
 			{
-				"ref": "demonx",
+				"name": "demonx",
 				"color": "x",
 				"from": [
 					-1,
@@ -296,20 +296,20 @@
             null,
             null,
             {
-                "ref": "phascomon",
+                "name": "phascomon",
                 "color": "dark",
                 "from": [-3,-1]
             },
             {
-                "ref": "porcupamon",
+                "name": "porcupamon",
                 "color": "dark"
             },
             {
-                "ref": "astamon",
+                "name": "astamon",
                 "color": "dark"
             },
             {
-                "ref": "belphemonrm",
+                "name": "belphemonrm",
                 "color": "dark",
                 "skins": [
                     "belphemon"
@@ -323,7 +323,7 @@
             null,
             null,
             {
-                "ref": "belphemonrmx",
+                "name": "belphemonrmx",
                 "color": "x",
                 "from": [
                     -1,

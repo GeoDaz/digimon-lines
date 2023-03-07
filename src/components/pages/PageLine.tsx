@@ -9,6 +9,7 @@ import { zooms, zoomOptions } from '../../consts/zooms';
 import ProgressBarSteps from '../ProgressBarSteps';
 import Icon from '../Icon';
 import ColorLegend from '../ColorLegend';
+import PointImage from '../PointImage';
 
 const PageLine: React.FC = () => {
 	const { name } = useParams();
@@ -87,20 +88,7 @@ const PageLine: React.FC = () => {
 					<Row className="line-row">
 						{line.related.map((name, i) => (
 							<Col key={i}>
-								<Link
-									to={`/lines/${name}`}
-									title={name}
-									className="line-point pictured"
-								>
-									<div className="line-point-safe-zone">
-										<Image
-											src={`/images/digimon/${name}.jpg`}
-											alt={name}
-											rounded
-											className="line-img"
-										/>
-									</div>
-								</Link>
+								<PointImage name={name} />
 							</Col>
 						))}
 					</Row>

@@ -54,7 +54,7 @@ const yUnit: number = 180; // 150 + yMargin
 const pointWidth: number = 150;
 const pointHeight: number = 150;
 const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
-	const { ref, from, from2, fusionFrom, size, color, color2, skins = [] } = point;
+	const { name, from, from2, fusionFrom, size, color, color2, skins = [] } = point;
 	const style: React.CSSProperties = {};
 	let width = pointWidth;
 	if (size) {
@@ -65,8 +65,8 @@ const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 		<div className="line-point pictured" style={style}>
 			<div className="line-point-safe-zone">
 				<Image
-					src={`/images/digimon/${ref}.jpg`}
-					title={ref}
+					src={`/images/digimon/${name}.jpg`}
+					title={name}
 					rounded
 					className="line-img"
 				/>

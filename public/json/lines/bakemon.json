@@ -4,7 +4,7 @@
             null,
             null,
             {
-                "ref": "ghostmon",
+                "name": "ghostmon",
                 "color": "fire",
                 "from": [
                     1,
@@ -12,11 +12,11 @@
                 ]
             },
             {
-                "ref": "soulmon",
+                "name": "soulmon",
                 "color": "dark"
             },
             {
-                "ref": "metalphantomon",
+                "name": "metalphantomon",
                 "color": "x",
                 "from": [
                     1,
@@ -24,32 +24,32 @@
                 ]
             },
             {
-                "ref": "gokumon",
+                "name": "gokumon",
                 "color": "dark"
             }
         ],
         [
             {
-                "ref": "mokumon"
+                "name": "mokumon"
             },
             {
-                "ref": "demimeramon",
+                "name": "demimeramon",
                 "color": "fire"
             },
             {
-                "ref": "candmon",
+                "name": "candmon",
                 "color": "fire"
             },
             {
-                "ref": "bakemon",
+                "name": "bakemon",
                 "color": "dark"
             },
             {
-                "ref": "phantomon",
+                "name": "phantomon",
                 "color": "dark"
             },
             {
-                "ref": "piemon",
+                "name": "piemon",
                 "color": "dark",
                 "color2": "dark",
                 "from2": [1,-1]
@@ -61,7 +61,7 @@
             null,
             null,
             {
-                "ref": "jokermon",
+                "name": "jokermon",
                 "color": "dark",
                 "from": [
                     -1,
@@ -69,7 +69,7 @@
                 ]
             },
             {
-                "ref": "chaospiemon",
+                "name": "chaospiemon",
                 "color": "dark",
                 "from": [
                     -1,
@@ -83,7 +83,7 @@
             null,
             null,
             {
-                "ref": "pumpmon",
+                "name": "pumpmon",
                 "color": "dark",
                 "from": [
                     -2,
@@ -91,7 +91,7 @@
                 ]
             },
             {
-                "ref": "noblepumpmon",
+                "name": "noblepumpmon",
                 "color": "dark"
             }
         ],
@@ -101,7 +101,7 @@
             null,
             null,
             {
-                "ref": "mummymon",
+                "name": "mummymon",
                 "color": "dark",
                 "from": [
                     -3,
@@ -109,7 +109,7 @@
                 ]
             },
             {
-                "ref": "pharaohmon",
+                "name": "pharaohmon",
                 "color": "dark"
             }
         ]

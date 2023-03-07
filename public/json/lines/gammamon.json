@@ -9,7 +9,7 @@
 			null,
 			null,
 			{
-				"ref": "bombermon",
+				"name": "bombermon",
 				"from": [
 					1,
 					-1
@@ -20,11 +20,11 @@
 		],
 		[
 			{
-				"ref": "curimon",
+				"name": "curimon",
 				"size": 2
 			},
 			{
-				"ref": "gurimon",
+				"name": "gurimon",
 				"size": 2,
 				"from": [
 					0,
@@ -32,7 +32,7 @@
 				]
 			},
 			{
-				"ref": "gammamon",
+				"name": "gammamon",
 				"size": 2,
 				"from": [
 					0,
@@ -41,14 +41,14 @@
 			},
 			[
 				{
-					"ref": "betelgammamon",
+					"name": "betelgammamon",
 					"from": [
 						0.5,
 						-1
 					]
 				},
 				{
-					"ref": "gulusgammamon",
+					"name": "gulusgammamon",
 					"color": "dark",
 					"from": [
 						-0.5,
@@ -58,14 +58,14 @@
 			],
 			[
 				{
-					"ref": "canoweissmon",
+					"name": "canoweissmon",
 					"from": [
 						0,
 						-1
 					]
 				},
 				{
-					"ref": "regulusmon",
+					"name": "regulusmon",
 					"color": "dark",
 					"from": [
 						0,
@@ -75,14 +75,14 @@
 			],
 			[
 				{
-					"ref": "siriusmon",
+					"name": "siriusmon",
 					"from": [
 						0,
 						-1
 					]
 				},
 				{
-					"ref": "arcturusmon",
+					"name": "arcturusmon",
 					"color": "dark",
 					"from": [
 						0,
@@ -91,7 +91,7 @@
 				}
 			],
 			{
-				"ref": "proximamon",
+				"name": "proximamon",
 				"size": 2,
 				"color": "fusion",
 				"color2": "fusion",
@@ -110,14 +110,14 @@
 			null,
 			null,
 			{
-				"ref": "kausgammamon",
+				"name": "kausgammamon",
 				"from": [
 					-1.5,
 					-1
 				]
 			},
 			{
-				"ref": "fumamon",
+				"name": "fumamon",
 				"from": [
 					0,
 					-1
@@ -131,14 +131,14 @@
 			null,
 			null,
 			{
-				"ref": "wezengammamon",
+				"name": "wezengammamon",
 				"from": [
 					-2.5,
 					-1
 				]
 			},
 			{
-				"ref": "ghilliedhumon",
+				"name": "ghilliedhumon",
 				"from": [
 					0,
 					-1
@@ -152,7 +152,7 @@
 			null,
 			null,
 			{
-				"ref": "monochromonx",
+				"name": "monochromonx",
 				"color": "x",
 				"from": [
 					1,
@@ -160,7 +160,7 @@
 				]
 			},
 			{
-				"ref": "triceramonx",
+				"name": "triceramonx",
 				"color": "x",
 				"from": [
 					0,
@@ -168,7 +168,7 @@
 				]
 			},
 			{
-				"ref": "ultimatebrachimon",
+				"name": "ultimatebrachimon",
 				"color": "x",
 				"from": [
 					0,
@@ -182,21 +182,21 @@
 			null,
 			null,
 			{
-				"ref": "monochromon",
+				"name": "monochromon",
 				"from": [
 					-4.5,
 					-1
 				]
 			},
 			{
-				"ref": "triceramon",
+				"name": "triceramon",
 				"from": [
 					0,
 					-1
 				]
 			},
 			{
-				"ref": "cannondramon",
+				"name": "cannondramon",
 				"from": [
 					0,
 					-1
@@ -214,7 +214,7 @@
 			null,
 			null,
 			{
-				"ref": "brachiomon",
+				"name": "brachiomon",
 				"from": [
 					-1,
 					-1
@@ -227,7 +227,7 @@
 			null,
 			null,
 			{
-				"ref": "vermillimon",
+				"name": "vermillimon",
 				"color": "fire",
 				"from": [
 					-2,
@@ -235,14 +235,14 @@
 				]
 			},
 			{
-				"ref": "dorbickmon",
+				"name": "dorbickmon",
 				"from": [
 					0,
 					-1
 				]
 			},
 			{
-				"ref": "dorbickmondm",
+				"name": "dorbickmondm",
 				"color": "fusion",
 				"from": [
 					0,

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let DigimonSchema = new Schema({
-	ref: {
+	name: {
 		type: String,
 		required: true,
 		unique: true,

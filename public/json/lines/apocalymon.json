@@ -4,78 +4,78 @@
             null,
             null,
             {
-                "ref": "modokibetamon",
+                "name": "modokibetamon",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "ref": "airdramon"
+                "name": "airdramon"
             },
             {
-                "ref": "megadramon"
+                "name": "megadramon"
             },
             {
-                "ref": "machinedramon"
+                "name": "machinedramon"
             }
         ],
         [
             [
                 {
-                    "ref": "botamon"
+                    "name": "botamon"
                 },
                 {
-                    "ref": "mokumon"
+                    "name": "mokumon"
                 }
             ],
             [
                 {
-                    "ref": "koromon"
+                    "name": "koromon"
                 },
                 {
-                    "ref": "demimeramon",
+                    "name": "demimeramon",
                     "color": "fire"
                 }
             ],
             [
                 {
-                    "ref": "betamon"
+                    "name": "betamon"
                 },
                 {
-                    "ref": "candmon",
+                    "name": "candmon",
                     "color": "fire"
                 }
             ],
             [
                 {
-                    "ref": "seadramon"
+                    "name": "seadramon"
                 },
                 {
-                    "ref": "bakemon",
+                    "name": "bakemon",
                     "color": "dark"
                 }
             ],
             [
                 {
-                    "ref": "megaseadramon"
+                    "name": "megaseadramon"
                 },
                 {
-                    "ref": "phantomon",
+                    "name": "phantomon",
                     "color": "dark"
                 }
             ],
             [
                 {
-                    "ref": "metalseadramon"
+                    "name": "metalseadramon"
                 },
                 {
-                    "ref": "piemon",
+                    "name": "piemon",
                     "color": "dark"
                 }
             ],
             {
-                "ref": "apocalymon",
+                "name": "apocalymon",
                 "size": 2,
                 "color": "fusion",
                 "from": null,
@@ -101,22 +101,22 @@
         ],
         [
             {
-                "ref": "yuramon"
+                "name": "yuramon"
             },
             {
-                "ref": "tanemon"
+                "name": "tanemon"
             },
             {
-                "ref": "mushmon"
+                "name": "mushmon"
             },
             {
-                "ref": "woodmon"
+                "name": "woodmon"
             },
             {
-                "ref": "cherrymon"
+                "name": "cherrymon"
             },
             {
-                "ref": "puppetmon"
+                "name": "puppetmon"
             }
         ]
     ],

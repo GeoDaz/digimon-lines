@@ -2,41 +2,41 @@
     "columns": [
         [
             {
-                "ref": "bommon"
+                "name": "bommon"
             },
             {
-                "ref": "missimon"
+                "name": "missimon"
             },
             {
-                "ref": "commandramon",
+                "name": "commandramon",
                 "from": [
                     0,
                     -1
                 ]
             },
             {
-                "ref": "sealsdramon",
+                "name": "sealsdramon",
                 "from": [
                     0,
                     -1
                 ]
             },
             {
-                "ref": "tankdramon",
+                "name": "tankdramon",
                 "from": [
                     0,
                     -1
                 ]
             },
             {
-                "ref": "darkdramon",
+                "name": "darkdramon",
                 "from": [
                     0,
                     -1
                 ]
             },
             {
-                "ref": "chaosmon",
+                "name": "chaosmon",
                 "color": "fusion",
                 "color2": "fusion",
                 "from2": [
@@ -48,54 +48,54 @@
         [
             [
                 {
-                    "ref": "popomon"
+                    "name": "popomon"
                 },
                 {
-                    "ref": "puwamon"
+                    "name": "puwamon"
                 }
             ],
             [
                 {
-                    "ref": "frimon"
+                    "name": "frimon"
                 },
                 {
-                    "ref": "pinamon"
+                    "name": "pinamon"
                 }
             ],
             [
                 {
-                    "ref": "liolmon"
+                    "name": "liolmon"
                 },
                 {
-                    "ref": "falcomon"
+                    "name": "falcomon"
                 }
             ],
             [
                 {
-                    "ref": "liamon"
+                    "name": "liamon"
                 },
                 {
-                    "ref": "diatrymon"
+                    "name": "diatrymon"
                 }
             ],
             [
                 {
-                    "ref": "loaderliomon"
+                    "name": "loaderliomon"
                 },
                 {
-                    "ref": "yatagaramon"
+                    "name": "yatagaramon"
                 }
             ],
             [
                 {
-                    "ref": "bancholeomon"
+                    "name": "bancholeomon"
                 },
                 {
-                    "ref": "valdurmon"
+                    "name": "valdurmon"
                 }
             ],
                 {
-                    "ref": "chaosmonvm",
+                    "name": "chaosmonvm",
                     "color": "fusion",
                     "from": null,
                     "size": 2,
@@ -111,7 +111,7 @@
                     ]
                 },
             {
-                "ref": "ultimatechaosmon",
+                "name": "ultimatechaosmon",
                 "color": "fusion",
                 "from": null,
                 "size": 2,
@@ -133,22 +133,22 @@
         ],
         [
             {
-                "ref": "pafumon"
+                "name": "pafumon"
             },
             {
-                "ref": "kyaromon"
+                "name": "kyaromon"
             },
             {
-                "ref": "kudamon"
+                "name": "kudamon"
             },
             {
-                "ref": "reppamon"
+                "name": "reppamon"
             },
             {
-                "ref": "chirinmon"
+                "name": "chirinmon"
             },
             {
-                "ref": "sleipmon"
+                "name": "sleipmon"
             }
         ]
     ],

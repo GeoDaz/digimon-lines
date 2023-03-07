@@ -10,7 +10,7 @@
             null,
             null,
             {
-                "ref": "gabumonx",
+                "name": "gabumonx",
                 "from": [
                     1.5,
                     0
@@ -18,7 +18,7 @@
                 "color": "x"
             },
             {
-                "ref": "garurumonx",
+                "name": "garurumonx",
                 "color": "x",
                 "from": [
                     0,
@@ -26,7 +26,7 @@
                 ]
             },
             {
-                "ref": "weregarurumonx",
+                "name": "weregarurumonx",
                 "color": "x",
                 "from": [
                     0,
@@ -34,7 +34,7 @@
                 ]
             },
             {
-                "ref": "metalgarurumonx",
+                "name": "metalgarurumonx",
                 "color": "x",
                 "from": [
                     0,
@@ -42,7 +42,7 @@
                 ]
             },
             {
-                "ref": "omegamonx",
+                "name": "omegamonx",
                 "color": "x",
                 "from": [
                     0,
@@ -53,11 +53,11 @@
         ],
         [
             {
-                "ref": "punimon",
+                "name": "punimon",
                 "size": 2
             },
             {
-                "ref": "tsunomon",
+                "name": "tsunomon",
                 "size": 2,
                 "from": [
                     0,
@@ -65,7 +65,7 @@
                 ]
             },
             {
-                "ref": "gabumon",
+                "name": "gabumon",
                 "size": 2,
                 "from": [
                     0,
@@ -73,7 +73,7 @@
                 ]
             },
             {
-                "ref": "garurumon",
+                "name": "garurumon",
                 "size": 2,
                 "from": [
                     0,
@@ -81,7 +81,7 @@
                 ]
             },
             {
-                "ref": "weregarurumon",
+                "name": "weregarurumon",
                 "size": 2,
                 "from": [
                     0,
@@ -89,7 +89,7 @@
                 ]
             },
             {
-                "ref": "metalgarurumon",
+                "name": "metalgarurumon",
                 "size": 2,
                 "from": [
                     0,
@@ -98,7 +98,7 @@
             },
             [
                 {
-                    "ref": "omegamon",
+                    "name": "omegamon",
                     "color": "fusion",
                     "from": [
                         0.5,
@@ -106,7 +106,7 @@
                     ]
                 },
                 {
-                    "ref": "gabumonbf",
+                    "name": "gabumonbf",
                     "color": "mode",
                     "from": [
                         -0.5,
@@ -116,7 +116,7 @@
             ],
             [
                 {
-                    "ref": "omegamonmm",
+                    "name": "omegamonmm",
                     "color": "fusion",
                     "from": [
                         0,
@@ -131,14 +131,14 @@
             null,
             null,
             {
-                "ref": "drimogemon",
+                "name": "drimogemon",
                 "from": [
                     -1.5,
                     -1
                 ]
             },
             {
-                "ref": "weregarurumonam",
+                "name": "weregarurumonam",
                 "color": "mode",
                 "from": [
                     -1.5,
@@ -146,7 +146,7 @@
                 ]
             },
             {
-                "ref": "cresgarurumon",
+                "name": "cresgarurumon",
                 "color": "armor",
                 "from": [
                     0,
@@ -154,7 +154,7 @@
                 ]
             },
             {
-                "ref": "omegamonam",
+                "name": "omegamonam",
                 "color": "fusion",
                 "from": [
                     0,
@@ -167,14 +167,14 @@
             null,
             null,
             {
-                "ref": "dorulumon",
+                "name": "dorulumon",
                 "from": [
                     -2.5,
                     -1
                 ]
             },
             {
-                "ref": "jaegerdorulumon",
+                "name": "jaegerdorulumon",
                 "color": "armor",
                 "from": [
                     0,
@@ -182,7 +182,7 @@
                 ]
             },
             {
-                "ref": "marsmon",
+                "name": "marsmon",
                 "color": "fire",
                 "from": [
                     0,
@@ -195,7 +195,7 @@
             null,
             null,
             {
-                "ref": "gabumonb",
+                "name": "gabumonb",
                 "from": [
                     -3.5,
                     -1
@@ -203,7 +203,7 @@
                 "color": "dark"
             },
             {
-                "ref": "garurumonb",
+                "name": "garurumonb",
                 "color": "dark",
                 "from": [
                     0,
@@ -211,7 +211,7 @@
                 ]
             },
             {
-                "ref": "weregarurumonb",
+                "name": "weregarurumonb",
                 "color": "dark",
                 "from": [
                     0,
@@ -219,7 +219,7 @@
                 ]
             },
             {
-                "ref": "metalgarurumonb",
+                "name": "metalgarurumonb",
                 "color": "dark",
                 "from": [
                     0,
@@ -227,7 +227,7 @@
                 ]
             },
             {
-                "ref": "omegamonb",
+                "name": "omegamonb",
                 "color": "fusion",
                 "from": [
                     0,
@@ -242,21 +242,21 @@
             null,
             null,
             {
-                "ref": "psychemon",
+                "name": "psychemon",
                 "from": [
                     -4.5,
                     -1
                 ]
             },
             {
-                "ref": "gururumon",
+                "name": "gururumon",
                 "from": [
                     0,
                     -1
                 ]
             },
             {
-                "ref": "astamon",
+                "name": "astamon",
                 "from": [
                     0,
                     -1
@@ -264,7 +264,7 @@
                 "color": "dark"
             },
             {
-                "ref": "mercurymon",
+                "name": "mercurymon",
                 "color": "dark",
                 "from": [
                     -1,
@@ -272,7 +272,7 @@
                 ]
             },
             {
-                "ref": "omegamonbam",
+                "name": "omegamonbam",
                 "color": "mode",
                 "from": [
                     -1,
@@ -285,7 +285,7 @@
             null,
             null,
             {
-                "ref": "nisedrimogemon",
+                "name": "nisedrimogemon",
                 "from": [
                     -1,
                     -1
@@ -297,17 +297,17 @@
         ],
         [
             {
-                "ref": "botamon"
+                "name": "botamon"
             },
             {
-                "ref": "wanyamon",
+                "name": "wanyamon",
                 "from": [
                     0,
                     -1
                 ]
             },
             {
-                "ref": "gaomon",
+                "name": "gaomon",
                 "size": 1,
                 "from": [
                     0,
@@ -315,28 +315,28 @@
                 ]
             },
             {
-                "ref": "gaogamon",
+                "name": "gaogamon",
                 "from": [
                     0,
                     -1
                 ]
             },
             {
-                "ref": "machgaogamon",
+                "name": "machgaogamon",
                 "from": [
                     0,
                     -1
                 ]
             },
             {
-                "ref": "miragegaogamon",
+                "name": "miragegaogamon",
                 "from": [
                     0,
                     -1
                 ]
             },
             {
-                "ref": "miragegaogamonbm",
+                "name": "miragegaogamonbm",
                 "color": "mode",
                 "from": [
                     0,
@@ -351,7 +351,7 @@
             null,
             null,
             {
-                "ref": "zeedgarurumon",
+                "name": "zeedgarurumon",
                 "from": [
                     -1,
                     -1
@@ -364,7 +364,7 @@
             null,
             null,
             {
-                "ref": "gaogamonb",
+                "name": "gaogamonb",
                 "color": "dark",
                 "from": [
                     -2,
@@ -372,7 +372,7 @@
                 ]
             },
             {
-                "ref": "machgaogamonb",
+                "name": "machgaogamonb",
                 "color": "dark",
                 "from": [
                     0,
@@ -380,7 +380,7 @@
                 ]
             },
             {
-                "ref": "miragegaogamonb",
+                "name": "miragegaogamonb",
                 "color": "dark",
                 "from": [
                     0,
@@ -393,7 +393,7 @@
             null,
             null,
             {
-                "ref": "strabimon",
+                "name": "strabimon",
                 "size": 2,
                 "from": [
                     -4,
@@ -401,7 +401,7 @@
                 ]
             },
             {
-                "ref": "wolfmon",
+                "name": "wolfmon",
                 "color": "light",
                 "size": 2,
                 "from": [
@@ -411,7 +411,7 @@
             },
             [
                 {
-                    "ref": "beowolfmon",
+                    "name": "beowolfmon",
                     "color": "light",
                     "from": [
                         0.5,
@@ -419,7 +419,7 @@
                     ]
                 },
                 {
-                    "ref": "kendogarurumon",
+                    "name": "kendogarurumon",
                     "color": "light",
                     "from": [
                         -0.5,
@@ -429,7 +429,7 @@
             ],
             [
                 {
-                    "ref": "magnagarurumon",
+                    "name": "magnagarurumon",
                     "color": "light",
                     "from": [
                         0,
@@ -437,7 +437,7 @@
                     ]
                 },
                 {
-                    "ref": "ancientgarurumon",
+                    "name": "ancientgarurumon",
                     "color": "light",
                     "from": [
                         0,
@@ -447,7 +447,7 @@
             ],
             [
                 {
-                    "ref": "susanoomon",
+                    "name": "susanoomon",
                     "color": "fusion",
                     "from": [
                         0,

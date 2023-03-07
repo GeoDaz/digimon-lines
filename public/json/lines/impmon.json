@@ -12,7 +12,7 @@
 			null,
 			null,
 			{
-				"ref": "impmonx",
+				"name": "impmonx",
 				"color": "x",
 				"size": 2,
 				"from": [
@@ -22,7 +22,7 @@
 			},
 			null,
 			{
-				"ref": "baalmonx",
+				"name": "baalmonx",
 				"color": "x",
 				"size": 2,
 				"from": [
@@ -32,7 +32,7 @@
 			},
 			[
 				{
-					"ref": "beelzebumonx",
+					"name": "beelzebumonx",
 					"color": "x",
 					"from": [
 						0.5,
@@ -40,7 +40,7 @@
 					]
 				},
 				{
-					"ref": "beelstarmonx",
+					"name": "beelstarmonx",
 					"color": "x",
 					"from": [
 						-0.5,
@@ -52,11 +52,11 @@
 		],
 		[
 			{
-				"ref": "keemon",
+				"name": "keemon",
 				"size": 2
 			},
 			{
-				"ref": "yarmon",
+				"name": "yarmon",
 				"color": "dark",
 				"size": 2,
 				"from": [
@@ -65,7 +65,7 @@
 				]
 			},
 			{
-				"ref": "impmon",
+				"name": "impmon",
 				"color": "dark",
 				"size": 2,
 				"from": [
@@ -74,7 +74,7 @@
 				]
 			},
 			{
-				"ref": "boogiemon",
+				"name": "boogiemon",
 				"color": "dark",
 				"size": 2,
 				"from": [
@@ -83,7 +83,7 @@
 				]
 			},
 			{
-				"ref": "baalmon",
+				"name": "baalmon",
 				"color": "dark",
 				"size": 2,
 				"from": [
@@ -94,7 +94,7 @@
 			[
 				{
 					"color": "dark",
-					"ref": "beelzebumon",
+					"name": "beelzebumon",
 					"from": [
 						0.5,
 						-1
@@ -104,7 +104,7 @@
 					]
 				},
 				{
-					"ref": "beelstarmon",
+					"name": "beelstarmon",
 					"color": "dark",
 					"from": [
 						-0.5,
@@ -114,7 +114,7 @@
 			],
 			[
 				{
-					"ref": "beelzebumonbm",
+					"name": "beelzebumonbm",
 					"color": "mode",
 					"from": [
 						0,
@@ -130,7 +130,7 @@
 			null,
 			null,
 			{
-				"ref": "phelesmon",
+				"name": "phelesmon",
 				"color": "dark",
 				"from": [
 					-1.5,
@@ -138,7 +138,7 @@
 				]
 			},
 			{
-				"ref": "demon",
+				"name": "demon",
 				"color": "dark",
 				"from": [
 					0,
@@ -149,7 +149,7 @@
 				]
 			},
 			{
-				"ref": "demonsu",
+				"name": "demonsu",
 				"color": "fusion",
 				"from": [
 					0,
@@ -164,7 +164,7 @@
 			null,
 			null,
 			{
-				"ref": "demonx",
+				"name": "demonx",
 				"color": "x",
 				"from": [
 					-1,

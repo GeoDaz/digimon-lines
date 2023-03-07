@@ -4,7 +4,7 @@
             null,
             null,
             {
-                "ref": "toyagumonb",
+                "name": "toyagumonb",
                 "color": "dark",
                 "from": [
                     1,
@@ -12,38 +12,38 @@
                 ]
             },
             {
-                "ref": "darklizardmon",
+                "name": "darklizardmon",
                 "color": "dark"
             },
             {
-                "ref": "gigadramon",
+                "name": "gigadramon",
                 "color": "dark"
             },
             {
-                "ref": "chaosdramon",
+                "name": "chaosdramon",
                 "color": "dark"
             }
         ],
         [
             [
                 {
-                    "ref": "botamon"
+                    "name": "botamon"
                 },
                 null
             ],
             [
                 {
-                    "ref": "koromon"
+                    "name": "koromon"
                 },
                 null
             ],
             [
                 {
-                    "ref": "agumonb",
+                    "name": "agumonb",
                     "color": "dark"
                 },
                 {
-                    "ref": "betamon",
+                    "name": "betamon",
                     "from": [
                         -1,
                         -1
@@ -52,34 +52,34 @@
             ],
             [
                 {
-                    "ref": "greymonb",
+                    "name": "greymonb",
                     "color": "dark"
                 },
                 {
-                    "ref": "seadramon"
+                    "name": "seadramon"
                 }
             ],
             [
                 {
-                    "ref": "metalgreymonb",
+                    "name": "metalgreymonb",
                     "color": "dark"
                 },
                 {
-                    "ref": "waruseadramon",
+                    "name": "waruseadramon",
                     "color": "dark"
                 }
             ],
             [
                 {
-                    "ref": "chaoswargreymon"
+                    "name": "chaoswargreymon"
                 },
                 {
-                    "ref": "chaosmetalseadramon",
+                    "name": "chaosmetalseadramon",
                     "color": "dark"
                 }
             ],
             {
-                "ref": "neocrimson",
+                "name": "neocrimson",
                 "size": 2,
                 "color": "fusion",
                 "from": null,
@@ -105,26 +105,26 @@
         ],
         [
             {
-                "ref": "mokumon"
+                "name": "mokumon"
             },
             {
-                "ref": "demimeramon",
+                "name": "demimeramon",
                 "color": "fire"
             },
             {
-                "ref": "candmon",
+                "name": "candmon",
                 "color": "fire"
             },
             {
-                "ref": "bakemon",
+                "name": "bakemon",
                 "color": "dark"
             },
             {
-                "ref": "phantomon",
+                "name": "phantomon",
                 "color": "dark"
             },
             {
-                "ref": "chaospiemon",
+                "name": "chaospiemon",
                 "color": "dark"
             }
         ]

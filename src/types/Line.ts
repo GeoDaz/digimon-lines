@@ -6,7 +6,7 @@ export interface Line {
 }
 
 export interface LinePoint {
-	ref: string;
+	name: string;
 	color: string | undefined;
 	color2: string | undefined;
 	size: number | undefined;

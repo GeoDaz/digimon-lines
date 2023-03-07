@@ -5,17 +5,17 @@
             null,
             null,
             {
-                "ref": "panbachimon",
+                "name": "panbachimon",
                 "from": [
                     2,
                     -1
                 ]
             },
             {
-                "ref": "pandamon"
+                "name": "pandamon"
             },
             {
-                "ref": "justimon"
+                "name": "justimon"
             }
         ],
         [
@@ -24,7 +24,7 @@
             null,
             null,
             {
-                "ref": "monzaemonx",
+                "name": "monzaemonx",
                 "color": "x",
                 "from": [
                     1,
@@ -32,7 +32,7 @@
                 ]
             },
             {
-                "ref": "justimonx",
+                "name": "justimonx",
                 "color": "x",
                 "from": [
                     -1,
@@ -42,23 +42,23 @@
         ],
         [
             {
-                "ref": "snowbotamon"
+                "name": "snowbotamon"
             },
             {
-                "ref": "hiyarimon",
+                "name": "hiyarimon",
                 "color": "ice"
             },
             {
-                "ref": "bearmon"
+                "name": "bearmon"
             },
             {
-                "ref": "grizzlymon"
+                "name": "grizzlymon"
             },
             {
-                "ref": "monzaemon"
+                "name": "monzaemon"
             },
             {
-                "ref": "shinmonzaemon",
+                "name": "shinmonzaemon",
                 "from2": [
                     1,
                     -1
@@ -70,7 +70,7 @@
             null,
             null,
             {
-                "ref": "porcupamon",
+                "name": "porcupamon",
                 "color": "dark",
                 "from": [
                     -1,
@@ -78,7 +78,7 @@
                 ]
             },
             {
-                "ref": "warumonzaemon",
+                "name": "warumonzaemon",
                 "color": "dark"
             }
         ],
@@ -87,7 +87,7 @@
             null,
             null,
             {
-                "ref": "chackmon",
+                "name": "chackmon",
                 "color": "ice",
                 "size": 2,
                 "from": [
@@ -97,7 +97,7 @@
             },
             [
                 {
-                    "ref": "blizzarmon",
+                    "name": "blizzarmon",
                     "color": "ice",
                     "from": [
                         0.5,
@@ -105,7 +105,7 @@
                     ]
                 },
                 {
-                    "ref": "daipenmon",
+                    "name": "daipenmon",
                     "color": "ice",
                     "from": [
                         -0.5,
@@ -115,7 +115,7 @@
             ],
             [
                 {
-                    "ref": "ancientmegatheriumon",
+                    "name": "ancientmegatheriumon",
                     "color": "ice"
                 },
                 null
@@ -126,7 +126,7 @@
             null,
             null,
             {
-                "ref": "frigimon",
+                "name": "frigimon",
                 "color": "ice",
                 "from": [
                     -4,

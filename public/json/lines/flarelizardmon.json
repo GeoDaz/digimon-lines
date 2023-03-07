@@ -4,16 +4,17 @@
 		"apocalymon",
 		"seadramon",
 		"greymon",
-		"tyranomon"
+		"tyranomon",
+		"chimeramon"
 	],
 	"columns": [
 		[
 			{
-				"ref": "botamon",
+				"name": "botamon",
 				"size": 2
 			},
 			{
-				"ref": "koromon",
+				"name": "koromon",
 				"from": [
 					0,
 					-1
@@ -22,14 +23,14 @@
 			},
 			[
 				{
-					"ref": "toyagumon",
+					"name": "toyagumon",
 					"from": [
 						0.5,
 						-1
 					]
 				},
 				{
-					"ref": "toyagumonb",
+					"name": "toyagumonb",
 					"from": [
 						-0.5,
 						-1
@@ -39,7 +40,7 @@
 			],
 			[
 				{
-					"ref": "flarelizardmon",
+					"name": "flarelizardmon",
 					"color": "fire",
 					"from": [
 						0,
@@ -47,7 +48,7 @@
 					]
 				},
 				{
-					"ref": "darklizardmon",
+					"name": "darklizardmon",
 					"color": "dark",
 					"from": [
 						0,
@@ -57,14 +58,14 @@
 			],
 			[
 				{
-					"ref": "megadramon",
+					"name": "megadramon",
 					"from": [
 						0,
 						-1
 					]
 				},
 				{
-					"ref": "gigadramon",
+					"name": "gigadramon",
 					"color": "dark",
 					"from": [
 						0,
@@ -74,14 +75,14 @@
 			],
 			[
 				{
-					"ref": "machinedramon",
+					"name": "machinedramon",
 					"from": [
 						0,
 						-1
 					]
 				},
 				{
-					"ref": "chaosdramon",
+					"name": "chaosdramon",
 					"color": "dark",
 					"from": [
 						0,
@@ -97,7 +98,7 @@
 			[
 				null,
 				{
-					"ref": "neocrimson",
+					"name": "neocrimson",
 					"color": "fusion",
 					"from": [
 						0,
@@ -113,7 +114,7 @@
 			null,
 			null,
 			{
-				"ref": "chaosdramonx",
+				"name": "chaosdramonx",
 				"color": "x",
 				"from": [
 					-1,

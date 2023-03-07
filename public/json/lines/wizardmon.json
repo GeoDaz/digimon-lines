@@ -5,7 +5,7 @@
             null,
             null,
             {
-                "ref": "wizardmonx",
+                "name": "wizardmonx",
                 "color": "x",
                 "from": [
                     1,
@@ -14,7 +14,7 @@
             },
             null,
             {
-                "ref": "dynasmonx",
+                "name": "dynasmonx",
                 "color": "x",
                 "from": [
                     1,
@@ -24,24 +24,24 @@
         ],
         [
             {
-                "ref": "mokumon"
+                "name": "mokumon"
             },
             {
-                "ref": "demimeramon",
+                "name": "demimeramon",
                 "color": "fire"
             },
             {
-                "ref": "ghostmon",
+                "name": "ghostmon",
                 "color": "fire"
             },
             {
-                "ref": "wizardmon"
+                "name": "wizardmon"
             },
             {
-                "ref": "mistymon"
+                "name": "mistymon"
             },
             {
-                "ref": "dynasmon"
+                "name": "dynasmon"
             }
         ],
         [
@@ -49,7 +49,7 @@
             null,
             null,
             {
-                "ref": "sorcerymon",
+                "name": "sorcerymon",
                 "color": "ice",
                 "from": [
                     -1,
@@ -57,10 +57,10 @@
                 ]
             },
             {
-                "ref": "wisemon"
+                "name": "wisemon"
             },
             {
-                "ref": "ancientwisemon"
+                "name": "ancientwisemon"
             }
         ],
         [
@@ -68,7 +68,7 @@
             null,
             null,
             {
-                "ref": "witchmon",
+                "name": "witchmon",
                 "from": [
                     -2,
                     -1
@@ -79,7 +79,7 @@
             null,
             null,
             {
-                "ref": "candmon",
+                "name": "candmon",
                 "color": "fire",
                 "from": [
                     -3,
@@ -87,7 +87,7 @@
                 ]
             },
             {
-                "ref": "flamewizardmon",
+                "name": "flamewizardmon",
                 "color": "fire"
             }
         ]

@@ -4,7 +4,7 @@
 			null,
 			null,
 			{
-				"ref": "agumonx",
+				"name": "agumonx",
 				"from": [
 					1.5,
 					0
@@ -12,33 +12,33 @@
 				"color": "x"
 			},
 			{
-				"ref": "greymonx",
+				"name": "greymonx",
 				"color": "x"
 			},
 			{
-				"ref": "metalgreymonx",
+				"name": "metalgreymonx",
 				"color": "x"
 			},
 			{
-				"ref": "wargreymonx",
+				"name": "wargreymonx",
 				"color": "x"
 			},
 			{
-				"ref": "omegamonx",
+				"name": "omegamonx",
 				"color": "x"
 			}
 		],
 		[
 			{
-				"ref": "botamon",
+				"name": "botamon",
 				"size": 2
 			},
 			{
-				"ref": "koromon",
+				"name": "koromon",
 				"size": 2
 			},
 			{
-				"ref": "agumon",
+				"name": "agumon",
 				"size": 2,
 				"skins": [
 					"agumon2",
@@ -47,20 +47,20 @@
 				]
 			},
 			{
-				"ref": "greymon",
+				"name": "greymon",
 				"size": 2
 			},
 			{
-				"ref": "metalgreymon",
+				"name": "metalgreymon",
 				"size": 2
 			},
 			{
-				"ref": "wargreymon",
+				"name": "wargreymon",
 				"size": 2
 			},
 			[
 				{
-					"ref": "omegamon",
+					"name": "omegamon",
 					"color": "fusion",
 					"from": [
 						0.5,
@@ -68,7 +68,7 @@
 					]
 				},
 				{
-					"ref": "agumonbc",
+					"name": "agumonbc",
 					"color": "mode",
 					"from": [
 						-0.5,
@@ -78,7 +78,7 @@
 			],
 			[
 				{
-					"ref": "omegamonmm",
+					"name": "omegamonmm",
 					"color": "fusion"
 				},
 				null
@@ -90,7 +90,7 @@
 			null,
 			null,
 			{
-				"ref": "metalgreymonam",
+				"name": "metalgreymonam",
 				"color": "mode",
 				"from": [
 					-1.5,
@@ -98,10 +98,10 @@
 				]
 			},
 			{
-				"ref": "blitzgreymon"
+				"name": "blitzgreymon"
 			},
 			{
-				"ref": "omegamonam",
+				"name": "omegamonam",
 				"color": "fusion"
 			}
 		],
@@ -109,7 +109,7 @@
 			null,
 			null,
 			{
-				"ref": "snowagumon",
+				"name": "snowagumon",
 				"color": "ice",
 				"from": [
 					-2.5,
@@ -120,18 +120,18 @@
 				]
 			},
 			{
-				"ref": "cyclomon",
+				"name": "cyclomon",
 				"from": [
 					-2.5,
 					-1
 				]
 			},
 			{
-				"ref": "skullgreymon",
+				"name": "skullgreymon",
 				"color": "dark"
 			},
 			{
-				"ref": "machinedramon",
+				"name": "machinedramon",
 				"color": "dark"
 			}
 		],
@@ -139,7 +139,7 @@
 			null,
 			null,
 			{
-				"ref": "agumon2",
+				"name": "agumon2",
 				"size": 2,
 				"from": [
 					-4,
@@ -150,20 +150,20 @@
 				]
 			},
 			{
-				"ref": "geogreymon",
+				"name": "geogreymon",
 				"size": 2
 			},
 			{
-				"ref": "rizegreymon",
+				"name": "rizegreymon",
 				"size": 2
 			},
 			{
-				"ref": "shinegreymon",
+				"name": "shinegreymon",
 				"size": 2
 			},
 			[
 				{
-					"ref": "shinegreymonbm",
+					"name": "shinegreymonbm",
 					"color": "mode",
 					"from": [
 						0.5,
@@ -171,7 +171,7 @@
 					]
 				},
 				{
-					"ref": "shinegreymonrm",
+					"name": "shinegreymonrm",
 					"color": "dark",
 					"from": [
 						-0.5,
@@ -186,7 +186,7 @@
 			null,
 			null,
 			{
-				"ref": "rizegreymonx",
+				"name": "rizegreymonx",
 				"color": "x",
 				"from": [
 					-1.5,
@@ -194,14 +194,14 @@
 				]
 			},
 			{
-				"ref": "victorygreymon",
+				"name": "victorygreymon",
 				"from": [
 					-1.5,
 					-1
 				]
 			},
             {
-                "ref": "neocrimson",
+                "name": "neocrimson",
                 "color": "fusion",
                 "from": [
                     1,
@@ -213,7 +213,7 @@
 			null,
 			null,
 			{
-				"ref": "agumonb",
+				"name": "agumonb",
 				"from": [
 					-6.5,
 					-1
@@ -225,22 +225,22 @@
 				]
 			},
 			{
-				"ref": "greymonb",
+				"name": "greymonb",
 				"color": "dark"
 			},
 			{
-				"ref": "metalgreymonb",
+				"name": "metalgreymonb",
 				"color": "dark"
 			},
 			{
-				"ref": "wargreymonb",
+				"name": "wargreymonb",
 				"color": "dark",
 				"skins": [
 					"chaoswargreymon"
 				]
 			},
 			{
-				"ref": "omegamonb",
+				"name": "omegamonb",
 				"color": "fusion",
 				"skins": [
 					"omegamonbrm"
@@ -251,7 +251,7 @@
 			null,
 			null,
 			{
-				"ref": "agumonbx",
+				"name": "agumonbx",
 				"color": "x",
 				"from": [
 					-1,
@@ -259,19 +259,19 @@
 				]
 			},
 			{
-				"ref": "greymonbx",
+				"name": "greymonbx",
 				"color": "x"
 			},
 			{
-				"ref": "metalgreymonbx",
+				"name": "metalgreymonbx",
 				"color": "x"
 			},
 			{
-				"ref": "wargreymonbx",
+				"name": "wargreymonbx",
 				"color": "x"
 			},
 			{
-				"ref": "omegamonbam",
+				"name": "omegamonbam",
 				"color": "mode",
 				"from": [
 					-1,
@@ -286,7 +286,7 @@
 			null,
 			null,
 			{
-				"ref": "gaiomon",
+				"name": "gaiomon",
 				"color": "x",
 				"from": [
 					-1,
@@ -294,7 +294,7 @@
 				]
 			},
 			{
-				"ref": "gaiomonbm",
+				"name": "gaiomonbm",
 				"color": "mode"
 			}
 		],
@@ -302,7 +302,7 @@
 			null,
 			null,
 			{
-				"ref": "gaossmonb",
+				"name": "gaossmonb",
 				"color": "dark",
 				"from": [
 					-9.5,
@@ -313,7 +313,7 @@
 				]
 			},
 			{
-				"ref": "greymonb3",
+				"name": "greymonb3",
 				"color": "dark",
 				"skins": [
 					"greymon3",
@@ -321,37 +321,37 @@
 				]
 			},
 			{
-				"ref": "metalgreymonb3",
+				"name": "metalgreymonb3",
 				"color": "dark"
 			},
 			{
-				"ref": "zeekgreymon",
+				"name": "zeekgreymon",
 				"color": "armor"
 			}
 		],
 		[
 			{
-				"ref": "mokumon",
+				"name": "mokumon",
 				"size": 2
 			},
 			{
-				"ref": "sunmon",
+				"name": "sunmon",
 				"size": 2,
 				"color": "fire"
 			},
 			{
-				"ref": "flamon",
+				"name": "flamon",
 				"color": "fire",
 				"size": 2
 			},
 			{
-				"ref": "agunimon",
+				"name": "agunimon",
 				"color": "fire",
 				"size": 2
 			},
 			[
 				{
-					"ref": "aldamon",
+					"name": "aldamon",
 					"color": "fire",
 					"from": [
 						0.5,
@@ -359,7 +359,7 @@
 					]
 				},
 				{
-					"ref": "burninggreymon",
+					"name": "burninggreymon",
 					"color": "fire",
 					"from": [
 						-0.5,
@@ -369,17 +369,17 @@
 			],
 			[
 				{
-					"ref": "emperorgreymon",
+					"name": "emperorgreymon",
 					"color": "fire"
 				},
 				{
-					"ref": "ancientgreymon",
+					"name": "ancientgreymon",
 					"color": "fire"
 				}
 			],
 			[
 				{
-					"ref": "susanoomon",
+					"name": "susanoomon",
 					"color": "fusion"
 				},
 				null
