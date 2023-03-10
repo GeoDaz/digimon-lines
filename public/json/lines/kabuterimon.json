@@ -1,0 +1,131 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "herculeskabuterimonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            {
+                "name": "bubbmon"
+            },
+            {
+                "name": "mochimon"
+            },
+            {
+                "name": "tentomon"
+            },
+            {
+                "name": "kabuterimon"
+            },
+            {
+                "name": "megakabuterimon"
+            },
+            {
+                "name": "herculeskabuterimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gokimon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "megakabuterimonblue"
+            },
+            {
+                "name": "tyrantkabuterimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "climbmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "kokabuterimon",
+                "size": 2,
+                "from": [
+                    -3.5,
+                    -1
+                ]
+            },
+            {
+                "name": "blitzmon",
+                "size": 2
+            },
+            [
+                {
+                    "name": "bolgmon",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "rhinokabuterimon",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                null,
+                {
+                    "name": "ancientbeatmon"
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "ballistamon",
+                "from": [
+                    -1.5,
+                    -1
+                ],
+                "skins": [
+                    "darkvolumon"
+                ]
+            },
+            {
+                "name": "atlurballistamon"
+            }
+        ]
+    ],
+    "related": [
+        "kuwagamon",
+        "pulsemon"
+    ]
+}
