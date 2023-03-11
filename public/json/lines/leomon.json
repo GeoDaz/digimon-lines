@@ -75,7 +75,7 @@
                 "name": "leomonx",
                 "color": "x",
                 "from": [
-                    1.5,
+                    2,
                     0
                 ]
             },
@@ -89,44 +89,54 @@
             }
         ],
         [
+            null,
+            null,
+            null,
+            null,
+            null,
             {
-                "name": "punimon",
-                "size": 2
+                "name": "regulumon",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "name": "punimon"
             },
             {
-                "name": "tsunomon",
-                "size": 2
+                "name": "tsunomon"
             },
             {
-                "name": "elecmon",
-                "size": 2
+                "name": "elecmon"
             },
             {
-                "name": "leomon",
-                "size": 2
+                "name": "leomon"
             },
             {
                 "name": "panjyamon",
-                "color": "ice",
-                "size": 2
+                "color": "ice"
             },
-            [
-                {
-                    "name": "saberleomon",
-                    "from": [
-                        0.5,
-                        -1
-                    ]
-                },
-                {
-                    "name": "baihumon",
-                    "color": "ice",
-                    "from": [
-                        -0.5,
-                        -1
-                    ]
-                }
-            ]
+            {
+                "name": "saberleomon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "baihumon",
+                "color": "ice",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
         ],
         [
             null,
@@ -147,7 +157,7 @@
                 "name": "grapleomon",
                 "size": 2,
                 "from": [
-                    -2,
+                    -2.5,
                     -1
                 ]
             },
@@ -177,7 +187,7 @@
                 "color": "dark",
                 "size": 2,
                 "from": [
-                    -4,
+                    -4.5,
                     -1
                 ]
             },
@@ -265,6 +275,7 @@
         ]
     ],
     "related": [
+        "ultimatechaosmon",
         "bearmon",
         "gatomon",
         "garurumon"
