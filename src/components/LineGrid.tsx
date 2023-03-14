@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Image, Spinner } from 'react-bootstrap';
-import { Line, LinePoint as LinePointInterface } from '../types/Line';
-import { colors } from '../consts/colors';
+import { Line, LinePoint as LinePointInterface } from '@/types/Line';
+import { colors } from '@/consts/colors';
 
 interface GridProps {
 	line: Line;

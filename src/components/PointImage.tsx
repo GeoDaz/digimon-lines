@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Image } from 'react-bootstrap';
 
 interface Props {
@@ -10,7 +10,7 @@ interface Props {
 const PointImage: React.FC<Props> = ({ name, className, style }) => {
 	return (
 		<Link
-			to={`/lines/${name}`}
+			href={`/lines/${name}`}
 			title={name}
 			className="line-point pictured"
 			style={style}

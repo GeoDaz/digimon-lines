@@ -1,32 +1,31 @@
 // modules
 import React from 'react';
+import { useRouter } from 'next/router';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import { useNavigate } from 'react-router';
 // components
-import Icon from '../Icon';
+import Icon from './Icon';
 
 interface Props {
 	clearError: Function;
 }
 const PageError: React.FC<Props> = ({ clearError }) => {
-	const navigate = useNavigate();
+	const router = useRouter();
 
 	const handleGoBack = () => {
 		clearError();
-		navigate(-1);
+		router.back();
 	};
 
 	return (
 		<Container>
-			<h1>Une erreur est survenue</h1>
+			<h1>An error occured</h1>
 			<p>
-				Nous sommes désolé pour le désagrément, une erreur est venue corrompre
-				l'interface.
-				<br /> Nous faisons notre maximum pour la corriger au plus vite.
+				We are sorry for the inconvenience, an error occurred in the interface.
+				<br /> We are doing our best to fix it as soon as possible.
 			</p>
 			<Button variant="primary" onClick={handleGoBack}>
-				<Icon name="arrow-down-circle-fill" /> Revenir en lieu sûr
+				<Icon name="arrow-down-circle-fill" /> Return to safety
 			</Button>
 		</Container>
 	);

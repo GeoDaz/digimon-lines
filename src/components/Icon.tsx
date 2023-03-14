@@ -1,5 +1,5 @@
 import React, { MouseEventHandler } from 'react';
-import { makeClassName } from '../functions';
+import { makeClassName } from '@/functions';
 
 interface Props {
 	name: string;

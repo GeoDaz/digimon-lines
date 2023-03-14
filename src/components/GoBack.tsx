@@ -1,12 +1,17 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/router';
 import Icon from './Icon';
 
 const GoBack: React.FC = () => {
-	const navigate = useNavigate();
-	const handleGoBack = () => navigate(-1);
+	const router = useRouter();
 
-	return <Icon name="arrow-left-circle-fill" onClick={handleGoBack} className="click" />;
+	return (
+		<Icon
+			name="arrow-left-circle-fill"
+			onClick={() => router.back()}
+			className="click"
+		/>
+	);
 };
 
 export default GoBack;

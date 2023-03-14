@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
 import { Row, Col, Image } from 'react-bootstrap';
-import useFetch from '../../hooks/useFetch';
-import Layout from '../Layout';
-import LineGrid, { LineLoading } from '../LineGrid';
-import { Line } from '../../types/Line';
-import { zooms, zoomOptions } from '../../consts/zooms';
-import ProgressBarSteps from '../ProgressBarSteps';
-import Icon from '../Icon';
-import ColorLegend from '../ColorLegend';
-import PointImage from '../PointImage';
+import { useRouter } from 'next/router';
+import useFetch from '@/hooks/useFetch';
+import Layout from '@/components/Layout';
+import LineGrid, { LineLoading } from '@/components/LineGrid';
+import { Line } from '@/types/Line';
+import { zooms, zoomOptions } from '@/consts/zooms';
+import ProgressBarSteps from '@/components/ProgressBarSteps';
+import Icon from '@/components/Icon';
+import ColorLegend from '@/components/ColorLegend';
+import PointImage from '@/components/PointImage';
+import { capitalize } from '@/functions';
 
 const PageLine: React.FC = () => {
-	const { name } = useParams();
+	const router = useRouter();
+	const name = Array.isArray(router.query.name)
+		? router.query.name.join()
+		: router.query.name;
 	const [line, setLine] = useState<Line | undefined>();
 	const [zoom, setZoom] = useState(0);
 
@@ -37,7 +41,6 @@ const PageLine: React.FC = () => {
 				while (col.length < size) {
 					col.push(null);
 				}
-				// col.reverse();
 				return col;
 			});
 			line = {
@@ -56,6 +59,10 @@ const PageLine: React.FC = () => {
 		}
 	}, [name]);
 
+	if (!name) {
+		router.push('/404');
+		return null;
+	}
 	return (
 		<Layout
 			title={
@@ -63,6 +70,7 @@ const PageLine: React.FC = () => {
 					Digimon&nbsp;: <span className="text-capitalize">{name}</span>
 				</>
 			}
+			metatitle={capitalize(name) + ' Line'}
 		>
 			<div className="line-filters">
 				<Icon name="zoom-in lead d-inline-block d-max-xs-none" />

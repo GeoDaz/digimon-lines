@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Row, Col, Spinner } from 'react-bootstrap';
-import colors from '../../consts/colors';
-import useFetch from '../../hooks/useFetch';
-import Layout from '../Layout';
-import PointImage from '../PointImage';
+import colors from '@/consts/colors';
+import useFetch from '@/hooks/useFetch';
+import Layout from '@/components/Layout';
+import PointImage from '@/components/PointImage';
 
 const PageLines: React.FC = () => {
 	const [lines, setLines] = React.useState<string[]>([]);

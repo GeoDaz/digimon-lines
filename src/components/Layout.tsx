@@ -1,27 +1,31 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import useScrollRestoration from '../hooks/useScrollRestoration';
-import GoBack from './GoBack';
-import Header from './Header';
+import GoBack from '@/components/GoBack';
+import Head from 'next/head';
 
 interface Props {
 	title: string | React.ReactNode;
 	children: React.ReactNode;
+	metatitle?: string;
+	metadescription?: string;
 }
-const Layout: React.FC<Props> = ({ title, children }) => {
-	useScrollRestoration();
-	return (
-		<>
-			<Header />
-			<main>
-				<Container className="page" fluid>
-					<h1>
-						<GoBack /> {title}
-					</h1>
-					{children}
-				</Container>
-			</main>
-		</>
-	);
-};
+const Layout: React.FC<Props> = ({ title, children, metatitle, metadescription }) => (
+	<>
+		<Head>
+			<title>{metatitle ? `${metatitle} | Digimon Lines` : 'Digimon Lines'}</title>
+			<meta
+				name="description"
+				content={metadescription || 'List lines of Digimon species'}
+			/>
+		</Head>
+		<main>
+			<Container className="page" fluid>
+				<h1>
+					<GoBack /> {title}
+				</h1>
+				{children}
+			</Container>
+		</main>
+	</>
+);
 export default Layout;

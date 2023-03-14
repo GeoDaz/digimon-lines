@@ -1,6 +1,6 @@
 import React from 'react';
-import { makeClassName } from '../functions';
-import Option from '../types/Option';
+import { makeClassName } from '@/functions';
+import Option from '@/types/Option';
 
 interface Props {
 	onChange: Function;
