@@ -60,7 +60,8 @@ const PageLine: React.FC = () => {
 	}, [name]);
 
 	if (!name) {
-		router.push('/404');
+		console.log(name);
+		// router.replace('/404');
 		return null;
 	}
 	return (
