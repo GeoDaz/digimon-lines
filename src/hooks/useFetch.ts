@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 
 const useFetch = (callback: Function): any[] => {
-	const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(false);
 
 	const load: Function = useCallback((url: string, params: object | undefined) => {
 		setLoading(true);

@@ -1,68 +1,52 @@
+// modules
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import { useRouter } from 'next/router';
-import useFetch from '@/hooks/useFetch';
+// components
 import Layout from '@/components/Layout';
 import LineGrid, { LineLoading } from '@/components/LineGrid';
-import { Line } from '@/types/Line';
-import { zooms, zoomOptions } from '@/consts/zooms';
+import Page404 from '@/pages/404';
 import ProgressBarSteps from '@/components/ProgressBarSteps';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
 import PointImage from '@/components/PointImage';
+// functions
+import useFetch from '@/hooks/useFetch';
 import { capitalize } from '@/functions';
+// constants
+import { Line } from '@/types/Line';
+import { zooms, zoomOptions } from '@/consts/zooms';
+import { GetStaticProps } from 'next';
+import transformLine from '@/functions/transformer/line';
 
-const PageLine: React.FC = () => {
+interface StaticProps {
+	line?: Line;
+	name?: string;
+}
+interface Props {
+	ssr: StaticProps;
+}
+const PageLine: React.FC<Props> = ({ ssr }) => {
 	const router = useRouter();
-	const name = Array.isArray(router.query.name)
-		? router.query.name.join()
-		: router.query.name;
-	const [line, setLine] = useState<Line | undefined>();
+	const name =
+		(Array.isArray(router.query.name)
+			? router.query.name.join()
+			: router.query.name) || ssr.name;
+	const [line, setLine] = useState<Line | undefined>(ssr.line);
 	const [zoom, setZoom] = useState(0);
 
-	const setLineBuffer = (line: Line | undefined) => {
-		if (line) {
-			let size = 6;
-			line.columns.forEach(column => {
-				if (column.length > size) {
-					size = column.length;
-				}
-			});
-			const columns = line.columns.map(col => {
-				col = col.slice();
-				let first = col[0];
-				if (first) {
-					if (Array.isArray(first)) {
-						col[0] = first.map(point => point && { ...point, from: null });
-					} else {
-						col[0] = { ...first, from: null };
-					}
-				}
-				while (col.length < size) {
-					col.push(null);
-				}
-				return col;
-			});
-			line = {
-				...line,
-				columns,
-			};
-		}
-		setLine(line);
-	};
-
-	const [load, loading] = useFetch(setLineBuffer);
+	const [load, loading] = useFetch((line: Line | undefined): void =>
+		setLine(transformLine(line))
+	);
 
 	useEffect(() => {
-		if (name) {
+		if (name != ssr.name) {
 			load(`/json/lines/${name}.json`);
 		}
 	}, [name]);
 
 	if (!name) {
-		console.log(name);
-		// router.replace('/404');
-		return null;
+		return <Page404 />;
 	}
 	return (
 		<Layout
@@ -106,4 +90,36 @@ const PageLine: React.FC = () => {
 		</Layout>
 	);
 };
+
+export async function getStaticPaths() {
+	try {
+		const res = await fetch(`${process.env.JSON_PATH}/lines/_index.json`);
+		const lines = await res.json();
+		const res2 = await fetch(`${process.env.JSON_PATH}/lines/_fusion.json`);
+		const fusions = await res2.json();
+
+		const paths = [...lines, ...fusions].map(name => ({
+			params: { name },
+		}));
+
+		return { paths, fallback: false };
+	} catch {
+		return { notFound: true };
+	}
+}
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+	if (!params || !params.name) {
+		return { notFound: true };
+	}
+	try {
+		const res = await fetch(`${process.env.JSON_PATH}/lines/${params.name}.json`);
+		const line: Line | undefined = transformLine(await res.json());
+
+		return { props: { ssr: { name: params.name, line } } };
+	} catch {
+		return { props: { ssr: { name: params.name } } };
+	}
+};
+
 export default PageLine;
