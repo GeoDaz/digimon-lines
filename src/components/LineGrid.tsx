@@ -67,16 +67,22 @@ const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 				<Image
 					src={`/images/digimon/${name}.jpg`}
 					title={name}
+					alt={name}
 					rounded
 					className="line-img"
+					width="150"
+					height="150"
 				/>
 				{skins.map((skin, i) => (
 					<Image
 						key={i}
 						src={`/images/digimon/${skin}.jpg`}
 						title={skin}
+						alt={skin}
 						rounded
 						className="line-skin"
+						width="150"
+						height="150"
 						style={{ bottom: 3.3 * i + 'em' }}
 					/>
 				))}
@@ -145,7 +151,7 @@ const SvgLine: React.FC<SvgLineProps> = ({
 		yOrigin = pointHeight - strokeWidth / 2;
 		if (from[0] < 0) {
 			svgStyle.zIndex = Math.floor(from[0]);
-		}else if(size > 1){
+		} else if (size > 1) {
 			xOrigin += pointWidth / 2;
 		}
 		xDest -= pointWidth - strokeWidth;

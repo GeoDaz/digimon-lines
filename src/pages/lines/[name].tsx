@@ -18,6 +18,7 @@ import { Line } from '@/types/Line';
 import { zooms, zoomOptions } from '@/consts/zooms';
 import { GetStaticProps } from 'next';
 import transformLine from '@/functions/transformer/line';
+import useQueryParam from '@/hooks/useQueryParam';
 
 interface StaticProps {
 	line?: Line;
@@ -26,12 +27,8 @@ interface StaticProps {
 interface Props {
 	ssr: StaticProps;
 }
-const PageLine: React.FC<Props> = ({ ssr }) => {
-	const router = useRouter();
-	const name =
-		(Array.isArray(router.query.name)
-			? router.query.name.join()
-			: router.query.name) || ssr.name;
+const PageLine: React.FC<Props> = ({ ssr = {} }) => {
+	const name = useQueryParam('name', ssr);
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
 	const [zoom, setZoom] = useState(0);
 

@@ -21,6 +21,8 @@ const PointImage: React.FC<Props> = ({ name, className, style }) => {
 					alt={name}
 					rounded
 					className="line-img"
+					width="150"
+					height="150"
 				/>
 			</div>
 		</Link>
