@@ -90,9 +90,9 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 
 export async function getStaticPaths() {
 	try {
-		const res = await fetch(`${process.env.JSON_PATH}/lines/_index.json`);
+		const res = await fetch(`${process.env.URL}/json/lines/_index.json`);
 		const lines = await res.json();
-		const res2 = await fetch(`${process.env.JSON_PATH}/lines/_fusion.json`);
+		const res2 = await fetch(`${process.env.URL}/json/lines/_fusion.json`);
 		const fusions = await res2.json();
 
 		const paths = [...lines, ...fusions].map(name => ({
@@ -110,7 +110,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		return { notFound: true };
 	}
 	try {
-		const res = await fetch(`${process.env.JSON_PATH}/lines/${params.name}.json`);
+		const res = await fetch(`${process.env.URL}/json/lines/${params.name}.json`);
 		const line: Line | undefined = transformLine(await res.json());
 
 		return { props: { ssr: { name: params.name, line } } };
