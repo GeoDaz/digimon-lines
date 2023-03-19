@@ -5,11 +5,8 @@ const useQueryParam = (
 	ssr: { [key: string]: string | undefined }
 ): string | undefined => {
 	const query = useRouter().query;
-	// there is no ts error here
-	const name =
-		query[key] && Array.isArray(query[key])
-			? query[key].join()
-			: query[key] || ssr[key];
+	const param = query[key];
+	const name = Array.isArray(param) ? param.join() : param || ssr[key];
 
 	return name;
 };
