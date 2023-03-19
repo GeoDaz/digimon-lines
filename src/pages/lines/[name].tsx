@@ -38,7 +38,7 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 
 	useEffect(() => {
 		if (name != ssr.name) {
-			load(`/json/lines/${name}.json`);
+			load(`${process.env.URL}/json/lines/${name}.json`);
 		}
 	}, [name]);
 

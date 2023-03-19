@@ -24,8 +24,8 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 
 	useEffect(() => {
 		if (!lines.length) {
-			load(`/json/lines/_index.json`);
-			loadFusions(`/json/lines/_fusion.json`);
+			load(`${process.env.URL}/json/lines/_index.json`);
+			loadFusions(`${process.env.URL}/json/lines/_fusion.json`);
 		}
 	}, []);
 
