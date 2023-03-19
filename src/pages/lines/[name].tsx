@@ -28,7 +28,7 @@ interface Props {
 	ssr: StaticProps;
 }
 const PageLine: React.FC<Props> = ({ ssr = {} }) => {
-	const name = useQueryParam('name', ssr);
+	const name = useQueryParam('name') || ssr.name;
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
 	const [zoom, setZoom] = useState(0);
 
