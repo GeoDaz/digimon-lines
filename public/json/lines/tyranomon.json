@@ -1,10 +1,11 @@
 {
     "related": [
         "gammamon",
+        "armadillomon",
         "flarelizardmon",
         "greymon",
         "chimeramon",
-		"commandramon"
+        "commandramon"
     ],
     "columns": [
         [
@@ -57,7 +58,13 @@
             null,
             null,
             null,
-            null,
+            {
+                "name": "tuskmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
             {
                 "name": "mametyramon",
                 "from": [
@@ -69,32 +76,9 @@
                 "name": "dinorexmon"
             },
             {
-                "name": "huanglongmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "tuskmon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "stegomon"
-            },
-            {
-                "name": "spinomon"
-            },
-            {
-                "name": "huanglongmonrm",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
+                "name": "huanglongmon",
+                "skins": [
+                    "huanglongmonrm"
                 ]
             }
         ],
@@ -173,7 +157,9 @@
             {
                 "name": "zeedmillenniumon",
                 "color": "dark",
-                "skins": ["moonmillenniumon"]
+                "skins": [
+                    "moonmillenniumon"
+                ]
             }
         ],
         [

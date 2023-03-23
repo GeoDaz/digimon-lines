@@ -25,7 +25,7 @@ const PageError: React.FC<Props> = ({ clearError }) => {
 				<br /> We are doing our best to fix it as soon as possible.
 			</p>
 			<Button variant="primary" onClick={handleGoBack}>
-				<Icon name="arrow-down-circle-fill" /> Return to safety
+				<Icon name="arrow-left-circle-fill" /> Return to safety
 			</Button>
 		</Container>
 	);

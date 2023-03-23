@@ -1,0 +1,51 @@
+{
+    "columns": [
+        [
+            {
+                "name": "tsubumon"
+            },
+            {
+                "name": "upamon"
+            },
+            {
+                "name": "armadillomon"
+            },
+            {
+                "name": "ankylomon"
+            },
+            {
+                "name": "shakkoumon",
+                "color": "fusion"
+            },
+            {
+                "name": "clavisangemon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "stegomon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            null,
+            {
+                "name": "spinomon",
+                "from": [
+                    0,
+                    -2
+                ]
+            },
+            {
+                "name": "huanglongmon",
+                "skins": [
+                    "huanglongmonrm"
+                ]
+            }
+        ]
+    ]
+}

@@ -9,7 +9,7 @@ import Page404 from '@/pages/404';
 import ProgressBarSteps from '@/components/ProgressBarSteps';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
-import PointImage from '@/components/PointImage';
+import PointImage from '@/components/LinePoint';
 // functions
 import useFetch from '@/hooks/useFetch';
 import { capitalize } from '@/functions';
@@ -20,6 +20,7 @@ import { GetStaticProps } from 'next';
 import transformLine from '@/functions/transformer/line';
 import useQueryParam from '@/hooks/useQueryParam';
 
+const NAME = 'name';
 interface StaticProps {
 	line?: Line;
 	name?: string;
@@ -28,7 +29,7 @@ interface Props {
 	ssr: StaticProps;
 }
 const PageLine: React.FC<Props> = ({ ssr = {} }) => {
-	const name = useQueryParam('name') || ssr.name;
+	const name = useQueryParam(NAME) || ssr.name;
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
 	const [zoom, setZoom] = useState(0);
 
@@ -41,6 +42,12 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 			load(`${process.env.URL}/json/lines/${name}.json`);
 		}
 	}, [name]);
+
+	useEffect(() => {
+		if (line !== ssr.line) {
+			setLine(ssr.line);
+		}
+	}, [ssr.line]);
 
 	if (!name) {
 		return <Page404 />;

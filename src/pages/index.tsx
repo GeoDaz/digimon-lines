@@ -3,7 +3,7 @@ import { Row, Col, Spinner } from 'react-bootstrap';
 import colors from '@/consts/colors';
 import useFetch from '@/hooks/useFetch';
 import Layout from '@/components/Layout';
-import PointImage from '@/components/PointImage';
+import PointImage from '@/components/LinePoint';
 import { GetStaticProps } from 'next';
 
 // TODO rename this page lines.tsx when there will be a home

@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Image, Spinner } from 'react-bootstrap';
 import { Line, LinePoint as LinePointInterface } from '@/types/Line';
 import { colors } from '@/consts/colors';
+import { LineImage } from './LinePoint';
 
 interface GridProps {
 	line: Line;
@@ -64,26 +65,14 @@ const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 	return (
 		<div className="line-point pictured" style={style}>
 			<div className="line-point-safe-zone">
-				<Image
-					src={`/images/digimon/${name}.jpg`}
-					title={name}
-					alt={name}
-					rounded
-					className="line-img"
-					width="150"
-					height="150"
-				/>
+				<LineImage name={name} title={name} />
 				{skins.map((skin, i) => (
-					<Image
+					<LineImage
 						key={i}
-						src={`/images/digimon/${skin}.jpg`}
+						name={skin}
 						title={skin}
-						alt={skin}
-						rounded
-						className="line-skin"
-						width="150"
-						height="150"
 						style={{ bottom: 3.3 * i + 'em' }}
+						className="line-skin"
 					/>
 				))}
 			</div>

@@ -39,16 +39,13 @@
             null,
             null,
             null,
+            null,
             {
-                "name": "gokimon",
-                "color": "dark",
+                "name": "megakabuterimonblue",
                 "from": [
                     -1,
                     -1
                 ]
-            },
-            {
-                "name": "megakabuterimonblue"
             },
             {
                 "name": "tyrantkabuterimon"
@@ -58,13 +55,16 @@
             null,
             null,
             null,
-            null,
             {
-                "name": "climbmon",
+                "name": "gokimon",
+                "color": "dark",
                 "from": [
-                    -1,
+                    -2,
                     -1
                 ]
+            },
+            {
+                "name": "climbmon"
             }
         ],
         [
