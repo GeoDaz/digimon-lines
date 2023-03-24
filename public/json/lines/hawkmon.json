@@ -1,0 +1,120 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "darcmon",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            {
+                "name": "hippogriffomon"
+            },
+            {
+                "name": "murmukusmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "halsemon",
+                "from": [
+                    1,
+                    -1
+                ],
+                "color": "armor"
+            },
+            null,
+            {
+                "name": "griffomon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "name": "pururumon"
+            },
+            {
+                "name": "poromon"
+            },
+            {
+                "name": "hawkmon"
+            },
+            {
+                "name": "aquilamon"
+            },
+            {
+                "name": "silphymon"
+            },
+            {
+                "name": "valkyrimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "harpymon",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "color": "armor"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shurimon",
+                "from": [
+                    -2,
+                    -1
+                ],
+                "color": "armor"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "owlmon",
+                "from": [
+                    -3,
+                    -1
+                ],
+                "color": "armor"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "biyomon",
+            "for": "garudamon"
+        },
+        {
+            "name": "gatomon",
+            "for": "silphymon"
+        },
+        {
+            "name": "penmon",
+            "for": "peacockmon"
+        },
+        {
+            "name": "falcomon",
+            "for": "valdurmon"
+        }
+    ]
+}
