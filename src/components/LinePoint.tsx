@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { Image } from 'react-bootstrap';
+import Image from 'next/image';
 
 interface Props extends React.ImgHTMLAttributes<any> {
 	name: string;
+	title?: string;
+	style?: object;
 }
 const LinePoint: React.FC<Props> = ({ name, style, ...props }) => {
 	return (
@@ -21,21 +23,22 @@ const LinePoint: React.FC<Props> = ({ name, style, ...props }) => {
 };
 
 // TODO faire les images d'erreurs en CSS ?
-export const LineImage: React.FC<Props> = ({ name, ...props }) => (
-	<Image
-		src={`/images/digimon/${name}.jpg`}
-		onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-			console.log('img on error');
-			e.currentTarget.onerror = null;
-			e.currentTarget.src = '/images/digimon/unknown.jpg';
-		}}
-		alt={name}
-		rounded
-		className="line-img"
-		width="150"
-		height="150"
-		{...props}
-	/>
-);
+export const LineImage: React.FC<Props> = ({ name, title, style }) => {
+	const [src, setSrc] = useState(`/images/digimon/${name}.jpg`);
+	return (
+		<Image
+			src={src}
+			onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+				setSrc('/images/digimon/unknown.jpg');
+			}}
+			alt={name}
+			className="line-img rounded"
+			width={150}
+			height={150}
+			title={title}
+			style={style}
+		/>
+	);
+};
 
 export default LinePoint;
