@@ -275,9 +275,29 @@
         ]
     ],
     "related": [
-        "ultimatechaosmon",
-        "bearmon",
-        "gatomon",
-        "garurumon"
+        {
+            "name": "ultimatechaosmon",
+            "for": "chaosmon"
+        },
+        {
+            "name": "commandramon",
+            "for": "chaosmon"
+        },
+        {
+            "name": "dianamon",
+            "for": "gracenovamon"
+        },
+        {
+            "name": "bearmon",
+            "for": "grapleomon"
+        },
+        {
+            "name": "gatomon",
+            "for": "leopardmon"
+        },
+        {
+            "name": "garurumon",
+            "for": "marsmon"
+        }
     ]
 }

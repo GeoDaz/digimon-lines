@@ -1,9 +1,30 @@
 {
     "related": [
         "omegamon",
-        "leomon",
-        "bearmon",
-		"belphemonrm"
+        {
+            "name": "greymon",
+            "for": "omegamon"
+        },
+        {
+            "name": "leomon",
+            "for": "marsmon"
+        },
+        {
+            "name": "bearmon",
+            "for": "marsmon"
+        },
+        {
+            "name": "belphemonrm",
+            "for": "astamon"
+        },
+        {
+            "name": "chimeramon",
+            "for": "garurumon"
+        },
+        {
+            "name": "armadillomon",
+            "for": "drimogemon"
+        }
     ],
     "columns": [
         [
@@ -233,9 +254,9 @@
                     0,
                     -1
                 ],
-				"skins": [
-					"omegamonbrm"
-				]
+                "skins": [
+                    "omegamonbrm"
+                ]
             }
         ],
         [

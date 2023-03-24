@@ -1,7 +1,7 @@
 export interface Line {
 	columns: Array<Array<LinePoint | LinePoint[] | null>>;
 	size: number;
-	related: Array<string> | undefined;
+	related: Array<string | LineRelation> | undefined;
 	notes: Array<string> | undefined;
 }
 
@@ -15,4 +15,10 @@ export interface LinePoint {
 	from2: number[] | undefined;
 	fusionFrom: Array<number[]> | undefined;
 }
+
+export interface LineRelation {
+	name: string;
+	for: string;
+}
+
 export default Line;

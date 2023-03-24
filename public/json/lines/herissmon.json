@@ -1,0 +1,61 @@
+{
+    "columns": [
+        [
+            {
+                "name": "pusumon",
+                "size": 2
+            },
+            {
+                "name": "pusurimon",
+                "size": 2
+            },
+            {
+                "name": "herissmon",
+                "size": 2
+            },
+            {
+                "name": "filmon",
+                "size": 2
+            },
+            {
+                "name": "stefilmon",
+                "size": 2
+            },
+            [
+                {
+                    "name": "rasenmon",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "rasenmonfm",
+                    "color": "dark",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "togemogumon",
+                "from": [
+                    -1.5,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "armadillomon",
+            "for": "togemogumon"
+        }
+    ]
+}

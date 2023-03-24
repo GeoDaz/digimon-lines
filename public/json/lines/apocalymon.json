@@ -122,7 +122,10 @@
     ],
     "related": [
         "bakemon",
-        "flarelizardmon",
+        {
+            "name": "flarelizardmon",
+            "for": "machinedramon"
+        },
         "seadramon",
         "woodmon",
         "neocrimson"

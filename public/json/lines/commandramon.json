@@ -1,9 +1,4 @@
 {
-    "related": [
-        "tyranomon",
-        "greymon",
-        "impmon"
-    ],
     "columns": [
         [
             null,
@@ -145,5 +140,27 @@
                 ]
             }
         ]
+    ],
+    "related": [
+        {
+            "name": "gammamon",
+            "for": "cannondramon"
+        },
+        {
+            "name": "tyranomon",
+            "for": "metaltyranomon"
+        },
+        {
+            "name": "leomon",
+            "for": "chaosmon"
+        },
+        {
+            "name": "greymon",
+            "for": "agumon"
+        },
+        {
+            "name": "impmon",
+            "for": "beelstarmon"
+        }
     ]
 }

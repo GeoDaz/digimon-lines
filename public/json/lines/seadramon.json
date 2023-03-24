@@ -1,10 +1,4 @@
 {
-    "related": [
-		"apocalymon",
-		"ogudomon",
-        "flarelizardmon",
-        "gomamon"
-    ],
     "columns": [
         [
             null,
@@ -160,7 +154,7 @@
             },
             {
                 "name": "goldramon",
-				"color": "light",
+                "color": "light",
                 "from": [
                     0,
                     -1
@@ -189,5 +183,27 @@
                 ]
             }
         ]
+    ],
+    "related": [
+        {
+            "name": "apocalymon",
+            "for": "metalseadramon"
+        },
+        {
+            "name": "ogudomon",
+            "for": "leviamon"
+        },
+        {
+            "name": "flarelizardmon",
+            "for": "megadramon"
+        },
+        {
+            "name": "angemon",
+            "for": "goldramon"
+        },
+        {
+            "name": "gomamon",
+            "for": "aegisdramon"
+        }
     ]
 }

@@ -36,7 +36,12 @@
             },
             {
                 "name": "frosvelgrmon",
-                "color": "ice"
+                "color": "ice",
+                "color2": "ice",
+                "from2": [
+                    1,
+                    -1
+                ]
             }
         ],
         [
@@ -113,9 +118,29 @@
         ]
     ],
     "related": [
-        "bearmon",
-        "falcomon",
-        "biyomon",
-        "hawkmon"
+        {
+            "name":"bearmon",
+            "for": "daipenmon"
+        },
+        {
+            "name":"pulsemon",
+            "for": "tempomon"
+        },
+        {
+            "name":"falcomon",
+            "for": "xiquemon"
+        },
+        {
+            "name": "biyomon",
+            "for": "cockatrimon"
+        },
+        {
+            "name": "hawkmon",
+            "for": "peacockmon"
+        },
+        {
+            "name": "gomamon",
+            "for": "aegisdramon"
+        }
     ]
 }

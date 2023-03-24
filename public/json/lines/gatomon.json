@@ -1,13 +1,4 @@
 {
-	"related": [
-		"ogudomon",
-		"angemon",
-		"devimon",
-		"hawkmon",
-		"leomon",
-		"iguneetmon",
-		"wizardmon"
-	],
 	"columns": [
 		[
 			null,
@@ -390,5 +381,32 @@
 				}
 			]
 		]
+	],
+	"related": [
+		{
+			"name": "ogudomon",
+			"for": "lilithmon"
+		},
+		"angemon",
+		{
+			"name": "devimon",
+			"for": "ladydevimon"
+		},
+		{
+			"name": "hawkmon",
+			"for": "silphymon"
+		},
+		{
+			"name": "leomon",
+			"for": "ancientsphinxmon"
+		},
+		{
+			"name": "iguneetmon",
+			"for": "minervamon"
+		},
+		{
+			"name": "wizardmon",
+			"for": "witchmon"
+		}
 	]
 }

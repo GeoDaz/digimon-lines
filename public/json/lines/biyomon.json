@@ -1,0 +1,77 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "garudamonx",
+                "color": "x",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "phoenixmonx",
+                "color": "x"
+            }
+        ],
+        [
+            {
+                "name": "nyokimon"
+            },
+            {
+                "name": "yokomon"
+            },
+            {
+                "name": "biyomon"
+            },
+            {
+                "name": "birdramon"
+            },
+            {
+                "name": "garudamon"
+            },
+            {
+                "name": "phoenixmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "saberdramon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "karatenmon",
+                "color": "dark"
+            },
+            {
+                "name": "ornismon",
+                "color": "dark"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "penmon",
+            "for": "cockatrimon"
+        },
+        {
+            "name": "hawkmon",
+            "for": "aquilamon"
+        },
+        {
+            "name": "falcomon",
+            "for": "karatenmon"
+        }
+    ]
+}

@@ -68,11 +68,11 @@ const LinePoint: React.FC<{ point: LinePointInterface }> = ({ point }) => {
 				<LineImage name={name} title={name} />
 				{skins.map((skin, i) => (
 					<LineImage
+						className="line-skin"
 						key={i}
 						name={skin}
 						title={skin}
 						style={{ bottom: 3.3 * i + 'em' }}
-						className="line-skin"
 					/>
 				))}
 			</div>

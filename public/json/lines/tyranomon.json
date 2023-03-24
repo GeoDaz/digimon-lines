@@ -1,12 +1,4 @@
 {
-    "related": [
-        "gammamon",
-        "armadillomon",
-        "flarelizardmon",
-        "greymon",
-        "chimeramon",
-        "commandramon"
-    ],
     "columns": [
         [
             null,
@@ -110,7 +102,7 @@
             {
                 "name": "agumonb",
                 "from": [
-                    -4,
+                    -3,
                     -1
                 ],
                 "color": "dark"
@@ -133,7 +125,7 @@
                 "name": "gaossmonb",
                 "color": "dark",
                 "from": [
-                    -5,
+                    -4,
                     -1
                 ]
             },
@@ -187,5 +179,13 @@
                 ]
             }
         ]
+    ],
+    "related": [
+        {"name": "gammamon", "for": "triceramon"},
+        {"name": "armadillomon", "for": "spinomon"},
+        {"name":"flarelizardmon", "for": "machinedramon"},
+        "greymon",
+        {"name":"chimeramon", "for": "machinedramon"},
+        {"name": "commandramon", "for": "gundramon"}
     ]
 }

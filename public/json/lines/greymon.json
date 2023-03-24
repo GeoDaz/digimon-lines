@@ -200,14 +200,14 @@
 					-1
 				]
 			},
-            {
-                "name": "neocrimson",
-                "color": "fusion",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
+			{
+				"name": "neocrimson",
+				"color": "fusion",
+				"from": [
+					1,
+					-1
+				]
+			}
 		],
 		[
 			null,
@@ -387,12 +387,40 @@
 		]
 	],
 	"related": [
-		"tyranomon",
-		"flarelizardmon",
-		"commandramon",
+		{
+			"name": "tyranomon",
+			"for": "agumon"
+		},
+		{
+			"name": "flarelizardmon",
+			"for": "toyagumon"
+		},
+		"neocrimson",
+		{
+			"name": "commandramon",
+			"for": "agumon"
+		},
 		"omegamon",
-		"apocalymon",
-        "neocrimson"
+		{
+			"name": "garurumon",
+			"for": "omegamon"
+		},
+		{
+			"name": "shoutmon",
+			"for": "shoutmondx"
+		},
+		{
+			"name": "apocalymon",
+			"for": "machinedramon"
+		},
+		{
+			"name": "seadramon",
+			"for": "snowagumon"
+		},
+		{
+			"name": "chimeramon",
+			"for": "greymon"
+		}
 	],
 	"notes": [
 		"DoruGreymon does not belong to the family of Greymon. It's VO name is DoruGuremon, while Greymon is still Greymon."

@@ -1,0 +1,97 @@
+{
+    "columns": [
+        [
+            {
+                "name": "puwamon"
+            },
+            {
+                "name": "pinamon"
+            },
+            {
+                "name": "falcomon"
+            },
+            {
+                "name": "diatrymon"
+            },
+            {
+                "name": "yatagaramon"
+            },
+            {
+                "name": "valdurmon"
+            },
+            {
+                "name": "chaosmonvm",
+                "color": "fusion"
+            },
+            {
+                "name": "ultimatechaosmon",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "falcomon2",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "peckmon"
+            },
+            {
+                "name": "yatagaramon2"
+            },
+            {
+                "name": "ravemon"
+            },
+            {
+                "name": "ravemonbm",
+                "color": "mode"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "xiquemon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "huankunmon"
+            },
+            {
+                "name": "xiangpengmon"
+            }
+        ]
+    ],
+    "related": [
+        "ultimatechaosmon",
+        {
+            "name": "leomon",
+            "for": "chaosmonvm"
+        },
+        {
+            "name": "penmon",
+            "for": "xiquemon"
+        },
+        {
+            "name": "swimmon",
+            "for": "huankunmon"
+        },
+        {
+            "name": "biyomon",
+            "for": "karatenmon"
+        },
+        {
+            "name": "hawkmon",
+            "for": "hippogriffomon"
+        }
+    ]
+}

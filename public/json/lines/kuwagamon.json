@@ -125,8 +125,11 @@
     ],
     "related": [
         "kabuterimon",
-        "fanbeemon",
-        "wormmon",
-        "hagurumon"
+        {"name": "fanbeemon", "for": "flymon"},
+        {"name": "hagurumon", "for": "kokuwamon"},
+		{
+			"name": "chimeramon",
+			"for": "kuwagamon"
+		}
     ]
 }

@@ -9,7 +9,7 @@ import Page404 from '@/pages/404';
 import ProgressBarSteps from '@/components/ProgressBarSteps';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
-import PointImage from '@/components/LinePoint';
+import LinePoint, { LineImage } from '@/components/LinePoint';
 // functions
 import useFetch from '@/hooks/useFetch';
 import { capitalize } from '@/functions';
@@ -83,11 +83,26 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 				<div className="line-wrapper">
 					<h2>Related lines&nbsp;:</h2>
 					<Row className="line-row">
-						{line.related.map((name, i) => (
-							<Col key={i}>
-								<PointImage name={name} />
-							</Col>
-						))}
+						{line.related.map((relation, i) => {
+							if (typeof relation == 'string') {
+								return (
+									<Col key={i}>
+										<LinePoint name={relation} />
+									</Col>
+								);
+							}
+							return (
+								<Col key={i}>
+									<LinePoint name={relation.name}>
+										<LineImage
+											className="line-skin"
+											name={relation.for}
+											title={relation.for}
+										/>
+									</LinePoint>
+								</Col>
+							);
+						})}
 					</Row>
 				</div>
 			) : null}

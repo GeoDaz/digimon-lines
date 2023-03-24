@@ -46,11 +46,54 @@
                     "huanglongmonrm"
                 ]
             }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "digmon",
+                "color": "armor",
+                "from": [
+                    -2,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "submarimon",
+                "color": "armor",
+                "from": [
+                    -3,
+                    -1
+                ]
+            }
         ]
     ],
     "related": [
-        "angemon",
-        "tyranomon",
-        "gammamon"
+        {
+            "name": "angemon",
+            "for": "shakkoumon"
+        },
+        {
+            "name": "tyranomon",
+            "for": "spinomon"
+        },
+        {
+            "name": "gammamon",
+            "for": "brachiomon"
+        },
+        {
+            "name": "garurumon",
+            "for": "drimogemon"
+        },
+        {
+            "name": "herissmon",
+            "for": "togemogumon"
+        }
     ]
 }

@@ -1,12 +1,4 @@
 {
-	"related": [
-        "neocrimson",
-		"apocalymon",
-		"seadramon",
-		"greymon",
-		"tyranomon",
-		"chimeramon"
-	],
 	"columns": [
 		[
 			{
@@ -122,5 +114,28 @@
 				]
 			}
 		]
+	],
+	"related": [
+		"neocrimson",
+		{
+			"name": "apocalymon",
+			"for": "machinedramon"
+		},
+		{
+			"name": "seadramon",
+			"for": "airdramon"
+		},
+		{
+			"name": "greymon",
+			"for": "metalgreymon"
+		},
+		{
+			"name": "tyranomon",
+			"for": "metaltyranomon"
+		},
+		{
+			"name": "chimeramon",
+			"for": "machinedramon"
+		}
 	]
 }

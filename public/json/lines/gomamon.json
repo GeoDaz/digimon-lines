@@ -77,6 +77,13 @@
         ]
     ],
     "related": [
-        "seadramon"
+        {
+            "name": "seadramon",
+            "for": "megaseadramon"
+        },
+        {
+            "name": "penmon",
+            "for": "crossmon"
+        }
     ]
 }
