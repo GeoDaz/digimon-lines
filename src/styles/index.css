@@ -276,6 +276,23 @@ h2 {
   left: 0;
 }
 
+.line-point .spinner-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.line-point .spinner-wrapper .spinner-border {
+  color: var(--bs-gray-400);
+  border-right-color: var(--bs-gray-600);
+}
+
 /* Progress Bar */
 
 .progress-bar {
