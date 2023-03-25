@@ -1,10 +1,37 @@
 {
 	"related": [
-		"armadillomon",
-		"devimon",
-		"gatomon"
+		{
+			"name": "armadillomon",
+			"for": "shakkoumon"
+		},
+		{
+			"name": "devimon",
+			"for": "lucemonfm"
+		},
+		{
+			"name": "gatomon",
+			"for": "angewomon"
+		}
 	],
 	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "piccolomon",
+				"color": "light",
+				"from": [
+					1,
+					-1
+				]
+			},
+			{
+				"name": "marineangemon",
+				"color": "light"
+			}
+		],
 		[
 			null,
 			null,

@@ -1,0 +1,80 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "sleipmonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            {
+                "name": "pafumon",
+                "size": 2
+            },
+            {
+                "name": "kyaromon",
+                "size": 2
+            },
+            {
+                "name": "kudamon",
+                "size": 2,
+                "skins": [
+                    "kudamon2"
+                ]
+            },
+            {
+                "name": "reppamon",
+                "size": 2
+            },
+            {
+                "name": "chirinmon",
+                "size": 2
+            },
+            [
+                {
+                    "name": "sleipmon",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "mitamamon",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "kyukimon",
+                "from": [
+                    -1.5,
+                    -1
+                ]
+            },
+            {
+                "name": "gokumon",
+                "color": "dark"
+            }
+        ]
+    ],
+    "related": [
+        "renamon"
+    ]
+}

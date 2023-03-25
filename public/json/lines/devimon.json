@@ -239,10 +239,19 @@
         ]
     ],
     "related": [
-		"ogudomon",
+        "ogudomon",
         "bakemon",
-        "impmon",
-        "angemon",
-        "gatomon"
+        {
+            "name": "impmon",
+            "for": "boogiemon"
+        },
+        {
+            "name": "angemon",
+            "for": "lucemonfm"
+        },
+        {
+            "name": "gatomon",
+            "for": "ladydevimon"
+        }
     ]
 }

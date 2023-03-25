@@ -16,11 +16,11 @@ export const colors: { [key: string]: string } = {
 export const legend: Array<{ [key: string]: string }> = [
 	{ color: colors.default, text: 'Default color' },
 	{ color: colors.x, text: 'X antibody' },
+	{ color: colors.dark, text: 'Dark, death, black, chaos, demon, ... evolution' },
 	{ color: colors.fusion, text: 'Fusion (DNA, Xros)' },
 	{ color: colors.mode, text: 'Mode change (Burst Mode,\u00A0...)' },
 	{ color: colors.human, text: 'Fusion with a human' },
 	{ color: colors.armor, text: 'Armor, warp evolution or gold digimon' },
-	{ color: colors.dark, text: 'Dark, death, black, chaos, demon, ... evolution' },
 	{ color: colors.light, text: 'Holy, angel evolution' },
 	{ color: colors.fire, text: 'Fire, lava made digimon' },
 	{ color: colors.ice, text: 'Ice, snow made digimon' },

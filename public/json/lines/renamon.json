@@ -1,0 +1,81 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "renamonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            },
+            null,
+            null,
+            {
+                "name": "sakuyamonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            {
+                "name": "relemon"
+            },
+            {
+                "name": "pokomon"
+            },
+            {
+                "name": "renamon"
+            },
+            {
+                "name": "kyubimon"
+            },
+            {
+                "name": "taomon"
+            },
+            {
+                "name": "sakuyamon",
+                "color": "human",
+                "skins": [
+                    "sakuyamonmm"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "youkomon",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "skins": [
+                    "kyubimonsilver"
+                ]
+            },
+            {
+                "name": "doumon"
+            },
+            {
+                "name": "kuzuhamon",
+                "color": "dark",
+                "skins": [
+                    "kuzuhamonmm"
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "kudamon",
+            "for": "reppamon"
+        }
+    ]
+}

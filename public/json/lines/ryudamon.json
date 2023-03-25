@@ -1,0 +1,60 @@
+{
+    "columns": [
+        [
+            {
+                "name": "fufumon"
+            },
+            {
+                "name": "kyokyomon"
+            },
+            {
+                "name": "ryudamon"
+            },
+            {
+                "name": "ginryumon"
+            },
+            {
+                "name": "hisyaryumon"
+            },
+            {
+                "name": "ouryumon"
+            },
+            {
+                "name": "alphamonouryuken",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "zanmetsumon",
+                "color": "fusion",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "majiramon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "dorumon",
+        "loogamon",
+        "kotemon"
+    ]
+}

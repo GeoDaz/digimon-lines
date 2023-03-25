@@ -1,6 +1,18 @@
 {
     "columns": [
         [
+            null,
+            null,
+            {
+                "name": "gomamonx",
+                "color": "x",
+                "from": [
+                    1.5,
+                    0
+                ]
+            }
+        ],
+        [
             {
                 "name": "pitchmon",
                 "size": 2
@@ -84,6 +96,7 @@
         {
             "name": "penmon",
             "for": "crossmon"
-        }
+        },
+        "swimmon"
     ]
 }
