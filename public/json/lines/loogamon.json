@@ -13,15 +13,6 @@
             {
                 "name": "fangmon",
                 "color": "dark"
-            },
-            null,
-            {
-                "name": "anubimon",
-                "color": "light",
-                "from": [
-                    1,
-                    -1
-                ]
             }
         ],
         [
@@ -44,9 +35,28 @@
                 "from2": [
                     -1,
                     -1
-                ],
-                "skins": [
-                    "cerberumonwm"
+                ]
+            },
+            {
+                "name": "anubimon",
+                "color": "light",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "cerberumonwm",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
                 ]
             },
             {
@@ -62,7 +72,7 @@
                 "name": "dobermonx",
                 "color": "x",
                 "from": [
-                    -1,
+                    -2,
                     0
                 ]
             },
@@ -78,7 +88,7 @@
             {
                 "name": "siesamon",
                 "from": [
-                    -2,
+                    -3,
                     -1
                 ]
             },
@@ -109,7 +119,7 @@
             {
                 "name": "dogmon",
                 "from": [
-                    -4,
+                    -5,
                     -1
                 ]
             }
