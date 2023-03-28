@@ -51,6 +51,7 @@ export const LineImage: React.FC<Props> = ({ name, title, className, style }) =>
 				src={src}
 				onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
 					setSrc('/images/digimon/unknown.jpg');
+					setLoading(false);
 				}}
 				onLoad={e => setLoading(false)}
 				alt={name}

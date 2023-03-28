@@ -1,0 +1,117 @@
+{
+    "columns": [
+        [
+            {
+                "name": "cocomon"
+            },
+            {
+                "name": "chocomon"
+            },
+            {
+                "name": "tyumon"
+            },
+            {
+                "name": "opossummon"
+            },
+            {
+                "name": "chohakkaimon"
+            },
+            null
+        ],
+        [
+            [
+                {
+                    "name": "zerimon"
+                },
+                {
+                    "name": "snowbotamon"
+                }
+            ],
+            [
+                {
+                    "name": "gummymon"
+                },
+                {
+                    "name": "nyaromon"
+                }
+            ],
+            [
+                {
+                    "name": "monmon"
+                },
+                {
+                    "name": "plotmon"
+                }
+            ],
+            [
+                {
+                    "name": "hapemon"
+                },
+                {
+                    "name": "gatomon",
+                    "color": "dark"
+                }
+            ],
+            [
+                {
+                    "name": "gokuwmon"
+                },
+                {
+                    "name": "sanzomon"
+                }
+            ],
+            [
+                null,
+                null
+            ],
+            {
+                "name": "shakamon",
+                "size": 2,
+                "color": "fusion",
+                "from": null,
+                "fusionFrom": [
+                    [
+                        -1.5,
+                        -2
+                    ],
+                    [
+                        -0.5,
+                        -2
+                    ],
+                    [
+                        0.5,
+                        -2
+                    ],
+                    [
+                        1.5,
+                        -2
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "pipimon"
+            },
+            {
+                "name": "chapmon"
+            },
+            {
+                "name": "kamemon"
+            },
+            {
+                "name": "gawappamon"
+            },
+            {
+                "name": "shawujinmon"
+            },
+            null
+        ]
+    ],
+    "related": [
+        "gatomon",
+        "monmon",
+        "sukamon",
+        "kamemon"
+    ]
+}

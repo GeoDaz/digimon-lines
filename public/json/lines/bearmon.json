@@ -15,7 +15,7 @@
                 "name": "pandamon"
             },
             {
-                "name": "justimon"
+                "name": "gankoomon"
             }
         ],
         [
@@ -32,7 +32,7 @@
                 ]
             },
             {
-                "name": "justimonx",
+                "name": "gankoomonx",
                 "color": "x",
                 "from": [
                     -1,
@@ -151,6 +151,10 @@
         {
             "name": "belphemonrm",
             "for": "porcupamon"
+        },
+        {
+            "name": "hackmon",
+            "for": "jesmongx"
         },
         {
             "name": "monodramon",

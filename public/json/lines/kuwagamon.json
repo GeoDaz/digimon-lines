@@ -5,6 +5,19 @@
             null,
             null,
             {
+                "name": "kuwagamoncorrupted",
+                "color": "dark",
+                "from": [
+                    2,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
                 "name": "kuwagamonx",
                 "color": "x",
                 "from": [
@@ -125,11 +138,17 @@
     ],
     "related": [
         "kabuterimon",
-        {"name": "fanbeemon", "for": "flymon"},
-        {"name": "hagurumon", "for": "kokuwamon"},
-		{
-			"name": "chimeramon",
-			"for": "kuwagamon"
-		}
+        {
+            "name": "fanbeemon",
+            "for": "flymon"
+        },
+        {
+            "name": "hagurumon",
+            "for": "kokuwamon"
+        },
+        {
+            "name": "chimeramon",
+            "for": "kuwagamon"
+        }
     ]
 }

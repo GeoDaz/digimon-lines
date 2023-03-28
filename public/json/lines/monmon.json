@@ -1,0 +1,88 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "lianpumon"
+            },
+            {
+                "name": "xingtianmon"
+            },
+            {
+                "name": "dijiangmon"
+            }
+        ],
+        [
+            {
+                "name": "zerimon"
+            },
+            {
+                "name": "gummymon"
+            },
+            {
+                "name": "monmon"
+            },
+            {
+                "name": "sepikmon"
+            },
+            {
+                "name": "makuramon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "hapemon"
+            },
+            {
+                "name": "gokuwmon"
+            },
+            {
+                "name": "shakamon",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gorimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "baboongamon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "mojyamon",
+                "skins": [
+                    "junglemojyamon"
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "impmon",
+            "for": "dijiangmon"
+        },
+        {
+            "name": "sukamon",
+            "for": "etemon"
+        },
+        "shakamon"
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "chamblemon",
+                "color": "dark"
+            },
+            null,
+            {
+                "name": "xuanwumon"
+            }
+        ],
+        [
+            {
+                "name": "yuramon"
+            },
+            {
+                "name": "budmon"
+            },
+            {
+                "name": "mushmon"
+            },
+            {
+                "name": "woodmon"
+            },
+            {
+                "name": "cherrymon"
+            },
+            {
+                "name": "puppetmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "arbormon"
+            },
+            {
+                "name": "petaldramon"
+            },
+            {
+                "name": "ancienttroiamon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "entmon"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "palmon",
+            "for": "ceresmonbird"
+        },
+        {
+            "name": "kamemon",
+            "for": "xuanwumon"
+        }
+    ]
+}

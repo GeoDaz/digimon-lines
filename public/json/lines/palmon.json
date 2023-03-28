@@ -80,18 +80,11 @@
                     -1
                 ]
             },
-            {
-                "name": "oleamon",
-                "color": "dark"
-            },
+            null,
             null,
             {
                 "name": "rafflesimon",
                 "from": null,
-                "from2": [
-                    0,
-                    -2
-                ],
                 "color": "fusion",
                 "fusionFrom": [
                     [
@@ -134,9 +127,6 @@
                 "from": [
                     1,
                     -1
-                ],
-                "skins": [
-                    "vegimonred"
                 ]
             },
             {
@@ -175,9 +165,34 @@
             null,
             null,
             {
-                "name": "kiwimon",
+                "name": "vegimonred",
                 "from": [
                     -1,
+                    -1
+                ]
+            },
+            {
+                "name": "oleamon",
+                "color": "dark"
+            },
+            null,
+            {
+                "name": "rafflesimoncorrupted",
+                "color": "dark",
+                "from": [
+                    0,
+                    -2
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "kiwimon",
+                "from": [
+                    -2,
                     -1
                 ]
             },
@@ -207,7 +222,7 @@
             {
                 "name": "pomumon",
                 "from": [
-                    -3,
+                    -4,
                     -1
                 ]
             },

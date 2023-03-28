@@ -1,6 +1,20 @@
 {
     "columns": [
         [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "zanmetsumon",
+                "color": "fusion",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
             {
                 "name": "fufumon"
             },
@@ -30,23 +44,9 @@
             null,
             null,
             {
-                "name": "zanmetsumon",
-                "color": "fusion",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
                 "name": "majiramon",
                 "from": [
-                    -2,
+                    -1,
                     -1
                 ]
             }

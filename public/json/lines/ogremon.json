@@ -1,0 +1,121 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "grumblemon",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            {
+                "name": "gigasmon"
+            },
+            {
+                "name": "ancientvolcamon",
+                "color": "fire"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "ogremonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            {
+                "name": "zurumon"
+            },
+            {
+                "name": "pagumon"
+            },
+            {
+                "name": "goblimon"
+            },
+            {
+                "name": "ogremon"
+            },
+            {
+                "name": "rebellimon"
+            },
+            {
+                "name": "titamon"
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "shamamon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "fugamon"
+            },
+            {
+                "name": "digitamamon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "devitamamon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "baromon",
+                "color": "fire",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "xingtianmon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "snowgoblimon",
+                "color": "ice",
+                "from": [
+                    -3,
+                    -1
+                ]
+            },
+            {
+                "name": "hyogamon"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "golemon",
+            "for": "ancientvolcamon"
+        }
+    ]
+}
