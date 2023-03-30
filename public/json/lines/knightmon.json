@@ -1,0 +1,64 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "rockchessmonwhite"
+            }
+        ],
+        [
+            {
+                "name": "choromon",
+                "size": 2
+            },
+            {
+                "name": "caprimon",
+                "size": 2
+            },
+            [
+                {
+                    "name": "pawnchessmonwhite"
+                },
+                {
+                    "name": "pawnchessmonblack"
+                }
+            ],
+            [
+                {
+                    "name": "knightchessmonwhite"
+                },
+                {
+                    "name": "knightchessmonblack"
+                }
+            ],
+            [
+                {
+                    "name": "bishopchessmonwhite"
+                },
+                {
+                    "name": "rockchessmonblack"
+                }
+            ],
+            [
+                {
+                    "name": "kingchessmon"
+                },
+                {
+                    "name": "queenchessmon"
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "bishopchessmonblack"
+            }
+        ]
+    ]
+}

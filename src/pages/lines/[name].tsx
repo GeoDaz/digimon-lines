@@ -136,7 +136,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		const line: Line | undefined = transformLine(await res.json());
 
 		return { props: { ssr: { name: params.name, line } } };
-	} catch {
+	} catch (e) {
+		if (process.env.NODE_ENV === 'development') {
+			console.error(e);
+		}
 		return { props: { ssr: { name: params.name } } };
 	}
 };
