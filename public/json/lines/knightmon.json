@@ -5,8 +5,75 @@
             null,
             null,
             null,
+            null,
             {
-                "name": "rockchessmonwhite"
+                "name": "lordknightmonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gladimon",
+                "from": [
+                    3.5,
+                    -1
+                ],
+                "size": 2
+            },
+            {
+                "name": "knightmon",
+                "size": 2
+            },
+            [
+                {
+                    "name": "lordknightmon",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "craniummon",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "craniummonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "rockchessmonwhite",
+                "from": [
+                    1,
+                    -1
+                ]
             }
         ],
         [
@@ -20,10 +87,18 @@
             },
             [
                 {
-                    "name": "pawnchessmonwhite"
+                    "name": "pawnchessmonwhite",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
                 },
                 {
-                    "name": "pawnchessmonblack"
+                    "name": "pawnchessmonblack",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
                 }
             ],
             [
@@ -44,10 +119,18 @@
             ],
             [
                 {
-                    "name": "kingchessmon"
+                    "name": "kingchessmon",
+                    "from2": [
+                        -1,
+                        -1
+                    ]
                 },
                 {
-                    "name": "queenchessmon"
+                    "name": "queenchessmon",
+                    "from2": [
+                        1,
+                        -1
+                    ]
                 }
             ]
         ],
@@ -57,7 +140,40 @@
             null,
             null,
             {
-                "name": "bishopchessmonblack"
+                "name": "bishopchessmonblack",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "skullknightmon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "darkknightmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "darkknightmonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
             }
         ]
     ]
