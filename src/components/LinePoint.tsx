@@ -4,17 +4,19 @@ import Image from 'next/image';
 import { makeClassName } from '@/functions';
 import { Spinner } from 'react-bootstrap';
 
+const LINE = 'line';
 interface Props extends React.ImgHTMLAttributes<any> {
 	name: string;
 	title?: string;
+	type?: string;
 	className?: string;
 	style?: object;
 	children?: React.ReactNode;
 }
-const LinePoint: React.FC<Props> = ({ name, style, children, ...props }) => {
+const LinePoint: React.FC<Props> = ({ name, type = LINE, style, children, ...props }) => {
 	return (
 		<Link
-			href={`/lines/${name}`}
+			href={`/${type}s/${name}`}
 			title={name}
 			className="line-point pictured"
 			style={style}

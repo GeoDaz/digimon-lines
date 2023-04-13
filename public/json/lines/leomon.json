@@ -275,13 +275,14 @@
         ]
     ],
     "related": [
-        {
-            "name": "ultimatechaosmon",
-            "for": "chaosmon"
-        },
+        "ultimatechaosmon",
         {
             "name": "commandramon",
             "for": "chaosmon"
+        },
+        {
+            "name": "falcomon",
+            "for": "chaosmonvm"
         },
         {
             "name": "dianamon",

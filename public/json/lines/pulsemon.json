@@ -11,6 +11,9 @@
                     1,
                     -1
                 ]
+            },
+            {
+                "name": "surfimon"
             }
         ],
         [
@@ -83,7 +86,8 @@
                 ]
             },
             {
-                "name": "shroudmon"
+                "name": "shroudmon",
+                "color": "dark"
             }
         ],
         [
@@ -102,12 +106,30 @@
             },
             {
                 "name": "achillesmon",
+                "color": "light",
+                "color2": "light",
                 "from2": [
                     -1,
                     -1
                 ]
             }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "footmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
         ]
+    ],
+    "notes": [
+        "We add Surfimon in this line because it belongs to sport theme and it is a really cool evolution for divemon."
     ],
     "related": [
         "kotemon",

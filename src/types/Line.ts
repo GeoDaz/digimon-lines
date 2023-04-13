@@ -1,19 +1,19 @@
 export interface Line {
 	columns: Array<Array<LinePoint | LinePoint[] | null>>;
 	size: number;
-	related: Array<string | LineRelation> | undefined;
-	notes: Array<string> | undefined;
+	related?: Array<string | LineRelation>;
+	notes?: Array<string>;
 }
 
 export interface LinePoint {
 	name: string;
-	color: string | undefined;
-	color2: string | undefined;
-	size: number | undefined;
-	skins: string[] | undefined;
-	from: number[] | null | undefined;
-	from2: number[] | undefined;
-	fusionFrom: Array<number[]> | undefined;
+	color?: string;
+	color2?: string;
+	size?: number;
+	skins?: string[];
+	from?: number[] | null;
+	from2?: number[];
+	fusionFrom?: Array<number[]>;
 }
 
 export interface LineRelation {

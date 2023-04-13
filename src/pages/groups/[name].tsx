@@ -14,40 +14,37 @@ import LinePoint, { LineImage } from '@/components/LinePoint';
 import useFetch from '@/hooks/useFetch';
 import { capitalize } from '@/functions';
 // constants
-import { Line } from '@/types/Line';
+import { Group } from '@/types/Group';
 import { zooms, zoomOptions } from '@/consts/zooms';
 import { GetStaticProps } from 'next';
-import transformLine from '@/functions/transformer/line';
 import useQueryParam from '@/hooks/useQueryParam';
 
 const NAME = 'name';
 interface StaticProps {
-	line?: Line;
+	group?: Group;
 	name?: string;
 }
 interface Props {
 	ssr: StaticProps;
 }
-const PageLine: React.FC<Props> = ({ ssr = {} }) => {
+const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 	const name = useQueryParam(NAME) || ssr.name;
-	const [line, setLine] = useState<Line | undefined>(ssr.line);
+	const [group, setGroup] = useState<Group | undefined>(ssr.group);
 	const [zoom, setZoom] = useState(0);
 
-	const [load, loading] = useFetch((line: Line | undefined): void =>
-		setLine(transformLine(line))
-	);
+	const [load, loading] = useFetch((group: Group | undefined): void => setGroup(group));
 
 	useEffect(() => {
 		if (name != ssr.name) {
-			load(`${process.env.URL}/json/lines/${name}.json`);
+			load(`${process.env.URL}/json/groups/${name}.json`);
 		}
 	}, [name]);
 
 	useEffect(() => {
-		if (line !== ssr.line) {
-			setLine(ssr.line);
+		if (group !== ssr.group) {
+			setGroup(ssr.group);
 		}
-	}, [ssr.line]);
+	}, [ssr.group]);
 
 	if (!name) {
 		return <Page404 />;
@@ -56,10 +53,11 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 		<Layout
 			title={
 				<>
-					Digimon&nbsp;: <span className="text-capitalize">{name}</span>
+					Group&nbsp;:{' '}
+					<span className="text-capitalize">{group?.title || name}</span>
 				</>
 			}
-			metatitle={capitalize(name) + ' Line'}
+			metatitle={capitalize(name) + ' Group'}
 		>
 			<div className="line-filters">
 				<Icon name="zoom-in lead d-inline-block d-max-xs-none" />
@@ -70,64 +68,58 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 					onChange={setZoom}
 					className="progress-zoom me-4"
 				/>
-				<ColorLegend className="ms-4" />
 			</div>
 			{loading ? (
 				<LineLoading />
-			) : line ? (
-				<LineGrid line={line} zoom={zooms[zoom]} />
-			) : (
-				<p>Line not found</p>
-			)}
-			{!!line?.notes && (
-				<>
-					<h2>Notes&nbsp;:</h2>
-					{line.notes.map((note, i) => (
-						<p key={i} className="mb-1">
-							{note}
-						</p>
+			) : group ? (
+				<Row className="line-row">
+					{group.main.map((point, i) => (
+						<Col key={i}>
+							<LinePoint name={point.name}>
+								{!!point.line && (
+									<LineImage
+										className="line-skin"
+										name={point.line}
+										title={point.line}
+									/>
+								)}
+							</LinePoint>
+						</Col>
 					))}
-				</>
+				</Row>
+			) : (
+				<p>Group not found</p>
 			)}
-			{!!line?.related && (
+			{group?.related ? (
 				<div className="line-wrapper">
-					<h2>Related lines&nbsp;:</h2>
+					<h2>Related to the group&nbsp;:</h2>
 					<Row className="line-row">
-						{line.related.map((relation, i) => {
-							if (typeof relation == 'string') {
-								return (
-									<Col key={i}>
-										<LinePoint name={relation} />
-									</Col>
-								);
-							}
-							return (
-								<Col key={i}>
-									<LinePoint name={relation.name}>
+						{group.related.map((relation, i) => (
+							<Col key={i}>
+								<LinePoint name={relation.name}>
+									{!!relation.line && (
 										<LineImage
 											className="line-skin"
-											name={relation.for}
-											title={relation.for}
+											name={relation.line}
+											title={relation.line}
 										/>
-									</LinePoint>
-								</Col>
-							);
-						})}
+									)}
+								</LinePoint>
+							</Col>
+						))}
 					</Row>
 				</div>
-			)}
+			) : null}
 		</Layout>
 	);
 };
 
 export async function getStaticPaths() {
 	try {
-		const res = await fetch(`${process.env.URL}/json/lines/_index.json`);
-		const lines = await res.json();
-		const res2 = await fetch(`${process.env.URL}/json/lines/_fusion.json`);
-		const fusions = await res2.json();
+		const res = await fetch(`${process.env.URL}/json/groups/_index.json`);
+		const groups: string[] = await res.json();
 
-		const paths = [...lines, ...fusions].map(name => ({
+		const paths = groups.map(name => ({
 			params: { name },
 		}));
 
@@ -142,10 +134,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		return { notFound: true };
 	}
 	try {
-		const res = await fetch(`${process.env.URL}/json/lines/${params.name}.json`);
-		const line: Line | undefined = transformLine(await res.json());
+		const res = await fetch(`${process.env.URL}/json/groups/${params.name}.json`);
+		const group: Group | undefined = await res.json();
 
-		return { props: { ssr: { name: params.name, line } } };
+		return { props: { ssr: { name: params.name, group } } };
 	} catch (e) {
 		if (process.env.NODE_ENV === 'development') {
 			console.error(e);
@@ -154,4 +146,4 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	}
 };
 
-export default PageLine;
+export default PageGroup;
