@@ -37,7 +37,8 @@
                 "name": "zurumon"
             },
             {
-                "name": "pagumon"
+                "name": "pagumon",
+                "color": "dark"
             },
             {
                 "name": "goblimon"
@@ -67,13 +68,15 @@
             },
             {
                 "name": "digitamamon",
+                "color": "dark",
                 "from": [
                     -1,
                     -1
                 ]
             },
             {
-                "name": "devitamamon"
+                "name": "devitamamon",
+                "color": "dark"
             }
         ],
         [
@@ -108,7 +111,8 @@
                 ]
             },
             {
-                "name": "hyogamon"
+                "name": "hyogamon",
+                "color": "ice"
             }
         ]
     ],

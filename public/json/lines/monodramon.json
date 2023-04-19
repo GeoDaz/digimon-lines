@@ -1,0 +1,69 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "cyberdramonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            },
+            {
+                "name": "justimonx",
+                "color": "x"
+            }
+        ],
+        [
+            {
+                "name": "ketomon"
+            },
+            {
+                "name": "hopmon"
+            },
+            {
+                "name": "monodramon"
+            },
+            {
+                "name": "strikedramon"
+            },
+            {
+                "name": "cyberdramon",
+                "skins": [
+                    "cyberdramon2"
+                ]
+            },
+            {
+                "name": "justimon",
+                "color": "human",
+                "skins": [
+                    "justimonca",
+                    "justimonaa"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "darkdramon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "commandramon",
+        "chaosmon",
+        "starmon"
+    ]
+}

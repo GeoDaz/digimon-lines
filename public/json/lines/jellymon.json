@@ -6,6 +6,20 @@
             null,
             null,
             {
+                "name": "splashmon",
+                "from": [
+                    2,
+                    -1
+                ],
+                "skins": ["splashmondm"]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
                 "name": "mermaimon",
                 "from": [
                     1,
@@ -92,11 +106,39 @@
             null,
             null,
             {
-                "name": "gesomon",
+                "name": "octomon",
                 "from": [
-                    -1,
+                    1,
                     -1
                 ]
+            },
+            {
+                "name": "dagomon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "name": "neptunemon",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "shakomon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "gesomon"
             },
             {
                 "name": "marinedevimon",
@@ -118,43 +160,20 @@
         [
             null,
             null,
-            null,
             {
-                "name": "gesomonx",
+                "name": "shakomonx",
                 "color": "x",
                 "from": [
                     -1,
                     0
                 ]
             },
+            {
+                "name": "gesomonx",
+                "color": "x"
+            },
             null,
             null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "octomon",
-                "from": [
-                    -3,
-                    -1
-                ]
-            },
-            {
-                "name": "dagomon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "neptunemon",
-                "from": [
-                    0,
-                    -1
-                ]
-            }
         ]
     ],
     "related": [

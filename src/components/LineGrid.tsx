@@ -1,7 +1,8 @@
-import React from 'react';
-import { Row, Col, Image, Spinner } from 'react-bootstrap';
+import React, { Fragment } from 'react';
+import { Row, Col, Spinner } from 'react-bootstrap';
 import { Line, LinePoint as LinePointInterface } from '@/types/Line';
 import { colors } from '@/consts/colors';
+import { levels } from '@/consts/levels';
 import { LineImage } from './LinePoint';
 
 interface GridProps {
@@ -12,6 +13,16 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100 }) => {
 	return (
 		<div className="frame">
 			<div className="line-wrapper line-grid" style={{ zoom: `${zoom}%` }}>
+				<div className="levels">
+					{levels.map(
+						(level, i) =>
+							line.size >= i + 1 && (
+								<div key={i} className="level">
+									<span>{level}</span>
+								</div>
+							)
+					)}
+				</div>
 				{line.columns.map((column, i) => (
 					<LineRow key={i} list={column} />
 				))}
@@ -36,7 +47,11 @@ const LineRow: React.FC<RowProps> = ({ list }) => {
 					);
 				}
 				if (Array.isArray(point)) {
-					return <LineRow key={i} list={point} />;
+					return (
+						<Fragment key={i}>
+							<LineRow list={point} />
+						</Fragment>
+					);
 				}
 				return (
 					<Col key={i}>

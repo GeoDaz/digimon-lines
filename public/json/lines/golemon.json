@@ -79,11 +79,26 @@
             null,
             null,
             null,
+            null,
+            {
+                "name": "ancientvolcamon",
+                "color": "fire",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
             {
                 "name": "volcamon",
                 "color": "fire",
                 "from": [
-                    -1,
+                    -2,
                     -1
                 ]
             },
@@ -99,25 +114,10 @@
             null,
             null,
             {
-                "name": "ancientvolcamon",
-                "color": "fire",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
                 "name": "vulcanusmon",
                 "color": "fire",
                 "from": [
-                    -2,
+                    -1,
                     -1
                 ]
             }

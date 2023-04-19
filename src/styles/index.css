@@ -161,7 +161,7 @@ h2 {
 }
 
 .frame .line-grid {
-  padding: 2em 2em 1em;
+  padding: 2em 2em 0 5em;
 }
 
 .line-grid .line-row {
@@ -291,6 +291,36 @@ h2 {
 .line-point .spinner-wrapper .spinner-border {
   color: var(--bs-gray-400);
   border-right-color: var(--bs-gray-600);
+}
+
+.line-grid .levels {
+  position: absolute;
+  top: 1em;
+  bottom: 0;
+  left: 1em;
+  margin-left: -3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.line-grid .levels .level {
+  height: 12rem;
+  border-right: var(--dl-border);
+  border-top: var(--dl-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-grid .levels .level:last-child {
+  border-bottom: var(--dl-border);
+}
+
+.line-grid .levels .level span {
+  position: relative;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 /* Progress Bar */

@@ -25,6 +25,7 @@ const transformLine = (line: Line | undefined): Line | undefined => {
 		});
 		line = {
 			...line,
+			size,
 			columns,
 		};
 	}
