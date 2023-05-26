@@ -8,7 +8,10 @@
             null,
             {
                 "name": "shivamon",
-                "from": [1,-1]
+                "from": [
+                    1,
+                    -1
+                ]
             }
         ],
         [
@@ -19,7 +22,10 @@
             {
                 "name": "asuramon",
                 "color": "fire",
-                "from": [1,-1]
+                "from": [
+                    1,
+                    -1
+                ]
             },
             {
                 "name": "vulcanusmon",
@@ -53,7 +59,10 @@
             null,
             {
                 "name": "yaksamon",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
                 "name": "boutmon"
@@ -70,14 +79,26 @@
             null,
             {
                 "name": "kazuchimon",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ]
     ],
     "related": [
-        "pulsemon",
-        {"name": "knightmon", "for": "gladimon"},
+        {
+            "name": "knightmon",
+            "for": "gladimon"
+        },
+        {
+            "name": "pulsemon",
+            "for": "kazuchimon"
+        },
         "ryudamon",
-        {"name": "golemon", "for": "vulcanusmon"}
+        {
+            "name": "golemon",
+            "for": "vulcanusmon"
+        }
     ]
 }

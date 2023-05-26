@@ -29,7 +29,6 @@ const LinePoint: React.FC<Props> = ({ name, type = LINE, style, children, ...pro
 	);
 };
 
-// TODO faire les images d'erreurs en CSS ?
 export const LineImage: React.FC<Props> = ({ name, title, className, style }) => {
 	const [src, setSrc] = useState(`/images/digimon/${name}.jpg`);
 	const [loading, setLoading] = useState(true);

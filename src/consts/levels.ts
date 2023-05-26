@@ -2,9 +2,9 @@ export const levels: string[] = [
 	'baby I',
 	'baby II',
 	'rookie',
-	'adult',
-	'perfect',
+	'champion',
+	'ultimate',
 	'mega',
-	'mega+',
+	'mega+ / BM',
 	'ultra',
 ];
