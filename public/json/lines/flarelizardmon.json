@@ -1,6 +1,20 @@
 {
 	"columns": [
 		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "helloogarmon",
+				"color": "fire",
+				"from": [
+					1,
+					-1
+				]
+			}
+		],
+		[
 			{
 				"name": "botamon",
 				"size": 2
@@ -120,6 +134,10 @@
 		{
 			"name": "apocalymon",
 			"for": "machinedramon"
+		},
+		{
+			"name": "loogamon",
+			"for": "helloogarmon"
 		},
 		{
 			"name": "seadramon",

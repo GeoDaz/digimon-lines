@@ -12,6 +12,16 @@
             },
             {
                 "name": "loogarmon"
+            },
+            {
+                "name": "soloogarmon"
+            },
+            {
+                "name": "fenriloogamon"
+            },
+            {
+                "name": "fenriloogamonbm",
+                "color": "fusion"
             }
         ],
         [
@@ -25,26 +35,11 @@
                     -1,
                     -1
                 ]
-            }
-        ],
-        [
-            {
-                "name": "paomon"
             },
             {
-                "name": "xiaomon"
-            },
-            {
-                "name": "labramon"
-            },
-            {
-                "name": "dobermon"
-            },
-            {
-                "name": "cerberumon",
-                "color": "dark",
-                "color2": "dark",
-                "from2": [
+                "name": "helloogarmon",
+                "color": "fire",
+                "from": [
                     -1,
                     -1
                 ]
@@ -53,88 +48,14 @@
                 "name": "anubimon",
                 "color": "light"
             }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "cerberumonwm",
-                "color": "mode",
-                "from": [
-                    -1,
-                    0
-                ]
-            },
-            {
-                "name": "plutomon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "dobermonx",
-                "color": "x",
-                "from": [
-                    -2,
-                    0
-                ]
-            },
-            {
-                "name": "cerberumonx",
-                "color": "x"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "siesamon",
-                "from": [
-                    -3,
-                    -1
-                ]
-            },
-            {
-                "name": "caturamon"
-            },
-            {
-                "name": "baihumon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "siesamonx",
-                "color": "x",
-                "from": [
-                    -1,
-                    0
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "dogmon",
-                "from": [
-                    -5,
-                    -1
-                ]
-            }
         ]
     ],
     "related": [
-        "dorumon",
-        "ryudamon"
+        "labramon",
+        {
+            "name": "gabumon",
+            "for": "gaomon"
+        },
+        "flarelizardmon"
     ]
 }
