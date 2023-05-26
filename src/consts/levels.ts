@@ -5,6 +5,6 @@ export const levels: string[] = [
 	'champion',
 	'ultimate',
 	'mega',
-	'mega+ / BM',
+	'mega+',
 	'ultra',
 ];
