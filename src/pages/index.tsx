@@ -5,6 +5,7 @@ import useFetch from '@/hooks/useFetch';
 import Layout from '@/components/Layout';
 import PointImage from '@/components/LinePoint';
 import { GetStaticProps } from 'next';
+import { DEV } from '@/consts/env';
 
 // TODO rename this page lines.tsx when there will be a home
 
@@ -66,13 +67,14 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
 	try {
-		const res = await fetch(`${process.env.URL}/json/lines/_index.json`);
-		const lines = await res.json();
-		const res2 = await fetch(`${process.env.URL}/json/lines/_fusion.json`);
-		const fusions = await res2.json();
+		const lines = require('../../public/json/lines/_index.json');
+		const fusions = require('../../public/json/lines/_fusion.json');
 
 		return { props: { ssr: { lines, fusions } } };
-	} catch {
+	} catch (e) {
+		if (process.env.NODE_ENV === DEV) {
+			console.error(e);
+		}
 		return { props: { ssr: defaultData } };
 	}
 };

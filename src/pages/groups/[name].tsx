@@ -18,6 +18,7 @@ import { Group } from '@/types/Group';
 import { zooms, zoomOptions } from '@/consts/zooms';
 import { GetStaticProps } from 'next';
 import useQueryParam from '@/hooks/useQueryParam';
+import { DEV } from '@/consts/env';
 
 const NAME = 'name';
 interface StaticProps {
@@ -134,12 +135,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		return { notFound: true };
 	}
 	try {
-		const res = await fetch(`${process.env.URL}/json/groups/${params.name}.json`);
-		const group: Group | undefined = await res.json();
+		// prettier-ignore
+		const group: Group | undefined = require(
+			`../../../public/json/groups/${params.name}.json`
+		);
 
 		return { props: { ssr: { name: params.name, group } } };
 	} catch (e) {
-		if (process.env.NODE_ENV === 'development') {
+		if (process.env.NODE_ENV === DEV) {
 			console.error(e);
 		}
 		return { props: { ssr: { name: params.name } } };

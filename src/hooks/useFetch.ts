@@ -13,7 +13,7 @@ const useFetch = (callback: Function): any[] => {
 					setLoading(false);
 				})
 				.catch(error => {
-					console.log(error);
+					console.error(error);
 					callback(undefined);
 					setLoading(false);
 				});

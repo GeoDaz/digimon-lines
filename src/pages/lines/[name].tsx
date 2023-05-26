@@ -19,6 +19,7 @@ import { zooms, zoomOptions } from '@/consts/zooms';
 import { GetStaticProps } from 'next';
 import transformLine from '@/functions/transformer/line';
 import useQueryParam from '@/hooks/useQueryParam';
+import { DEV } from '@/consts/env';
 
 const NAME = 'name';
 interface StaticProps {
@@ -122,10 +123,8 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 
 export async function getStaticPaths() {
 	try {
-		const res = await fetch(`${process.env.URL}/json/lines/_index.json`);
-		const lines = await res.json();
-		const res2 = await fetch(`${process.env.URL}/json/lines/_fusion.json`);
-		const fusions = await res2.json();
+		const lines = require('/json/lines/_index.json');
+		const fusions = require('/json/lines/_fusion.json');
 
 		const paths = [...lines, ...fusions].map(name => ({
 			params: { name },
@@ -142,12 +141,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		return { notFound: true };
 	}
 	try {
-		const res = await fetch(`${process.env.URL}/json/lines/${params.name}.json`);
-		const line: Line | undefined = transformLine(await res.json());
+		const line: Line | undefined = transformLine(
+			require(`../../../public/json/lines/${params.name}.json`)
+		);
 
 		return { props: { ssr: { name: params.name, line } } };
 	} catch (e) {
-		if (process.env.NODE_ENV === 'development') {
+		if (process.env.NODE_ENV === DEV) {
 			console.error(e);
 		}
 		return { props: { ssr: { name: params.name } } };

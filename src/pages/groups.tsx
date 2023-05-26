@@ -4,6 +4,7 @@ import useFetch from '@/hooks/useFetch';
 import Layout from '@/components/Layout';
 import PointImage from '@/components/LinePoint';
 import { GetStaticProps } from 'next';
+import { DEV } from '@/consts/env';
 
 // TODO rename this page groups.tsx when there will be a home
 
@@ -48,11 +49,13 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
 	try {
-		const res = await fetch(`${process.env.URL}/json/groups/_index.json`);
-		const groups = await res.json();
+		const groups: string[] = require('../../public/json/groups/_index.json');
 
 		return { props: { ssr: { groups } } };
-	} catch {
+	} catch (e) {
+		if (process.env.NODE_ENV === DEV) {
+			console.error(e);
+		}
 		return { props: { ssr: defaultData } };
 	}
 };
