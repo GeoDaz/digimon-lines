@@ -4,81 +4,14 @@
             null,
             null,
             null,
-            {
-                "name": "tankmon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
+            null,
             null,
             {
-                "name": "gundramon",
+                "name": "chaosdramonx",
+                "color": "x",
                 "from": [
                     1,
-                    -1
-                ]
-            },
-            null,
-            null
-        ],
-        [
-            {
-                "name": "bommon"
-            },
-            {
-                "name": "missimon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "commandramon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "sealsdramon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "tankdramon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "from2": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "darkdramon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "chaosmon",
-                "color": "fusion",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "ultimatechaosmon",
-                "color": "fusion",
-                "from": [
-                    0,
-                    -1
+                    0
                 ]
             }
         ],
@@ -87,8 +20,53 @@
             null,
             null,
             {
-                "name": "troopmon",
-                "color": "dark",
+                "name": "hicommandramon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "cargodramon"
+            },
+            {
+                "name": "chaosdramon"
+            }
+        ],
+        [
+            {
+                "name": "bommon"
+            },
+            {
+                "name": "missimon"
+            },
+            {
+                "name": "commandramon"
+            },
+            {
+                "name": "sealsdramon"
+            },
+            {
+                "name": "tankdramon"
+            },
+            {
+                "name": "darkdramon"
+            },
+            {
+                "name": "chaosmon",
+                "color": "fusion"
+            },
+            {
+                "name": "ultimatechaosmon",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tankmon",
                 "from": [
                     -1,
                     -1
@@ -97,49 +75,46 @@
             {
                 "name": "assaultmon",
                 "from": [
-                    0,
+                    -1,
                     -1
                 ]
             },
             {
-                "name": "cannondramon",
+                "name": "gundramon",
                 "from": [
-                    0,
+                    -1,
                     -1
                 ]
-            }
+            },
+            null,
+            null
         ],
         [
             null,
             null,
             null,
             {
-                "name": "revolmon",
+                "name": "troopmon",
                 "from": [
                     -2,
                     -1
                 ]
             },
+            null,
             {
-                "name": "vulturemon",
+                "name": "cannondramon",
                 "from": [
-                    0,
+                    -1,
                     -1
-                ]
-            },
-            {
-                "name": "avengekidmon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "skins": [
-                    "magnakidmon"
                 ]
             }
         ]
     ],
     "related": [
+        {
+            "name": "flarelizardmon",
+            "for": "chaosdramon"
+        },
         {
             "name": "gammamon",
             "for": "cannondramon"
@@ -155,10 +130,6 @@
         {
             "name": "greymon",
             "for": "agumon"
-        },
-        {
-            "name": "impmon",
-            "for": "beelstarmon"
         }
     ]
 }

@@ -6,7 +6,7 @@
 			{
 				"name": "agumonx",
 				"from": [
-					1.5,
+					2.5,
 					0
 				],
 				"color": "x"
@@ -26,6 +26,27 @@
 			{
 				"name": "omegamonx",
 				"color": "x"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metalgreymonam",
+				"color": "mode",
+				"from": [
+					1.5,
+					0
+				]
+			},
+			{
+				"name": "blitzgreymon"
+			},
+			{
+				"name": "omegamonam",
+				"color": "fusion"
 			}
 		],
 		[
@@ -87,32 +108,11 @@
 		[
 			null,
 			null,
-			null,
-			null,
-			{
-				"name": "metalgreymonam",
-				"color": "mode",
-				"from": [
-					-1.5,
-					0
-				]
-			},
-			{
-				"name": "blitzgreymon"
-			},
-			{
-				"name": "omegamonam",
-				"color": "fusion"
-			}
-		],
-		[
-			null,
-			null,
 			{
 				"name": "snowagumon",
 				"color": "ice",
 				"from": [
-					-2.5,
+					-1.5,
 					-1
 				],
 				"skins": [
@@ -121,18 +121,28 @@
 			},
 			{
 				"name": "cyclomon",
+				"color": "dark",
 				"from": [
-					-2.5,
+					-1.5,
 					-1
 				]
 			},
 			{
 				"name": "skullgreymon",
-				"color": "dark"
+				"color": "dark",
+				"color2": "dark",
+				"from2": [
+					-1.5,
+					-1
+				]
 			},
 			{
 				"name": "machinedramon",
-				"color": "dark"
+				"color": "dark",
+				"from": [
+					-1.5,
+					-1
+				]
 			}
 		],
 		[
@@ -142,7 +152,7 @@
 				"name": "agumon2",
 				"size": 2,
 				"from": [
-					-4,
+					-3,
 					-1
 				],
 				"skins": [
@@ -199,7 +209,15 @@
 					-1.5,
 					-1
 				]
-			},
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
 			{
 				"name": "neocrimson",
 				"color": "fusion",
