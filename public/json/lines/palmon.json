@@ -145,10 +145,10 @@
                 "name": "nyokimon"
             },
             {
-                "name": "yokomon"
+                "name": "tanemon"
             },
             {
-                "name": "floramon"
+                "name": "alraumon"
             },
             {
                 "name": "zassoumon"
@@ -187,14 +187,18 @@
         ],
         [
             null,
-            null,
-            null,
             {
-                "name": "kiwimon",
+                "name": "yokomon",
                 "from": [
                     -2,
                     -1
                 ]
+            },
+            {
+                "name": "floramon"
+            },
+            {
+                "name": "kiwimon"
             },
             {
                 "name": "sirenmon"
@@ -222,7 +226,7 @@
             {
                 "name": "pomumon",
                 "from": [
-                    -4,
+                    -2,
                     -1
                 ]
             },
