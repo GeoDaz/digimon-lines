@@ -47,7 +47,11 @@
                 "name": "sealsdramon"
             },
             {
-                "name": "tankdramon"
+                "name": "tankdramon",
+                "from2": [
+                    1,
+                    -1
+                ]
             },
             {
                 "name": "darkdramon"
@@ -67,13 +71,6 @@
             null,
             {
                 "name": "tankmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "assaultmon",
                 "from": [
                     -1,
                     -1
@@ -100,13 +97,11 @@
                     -1
                 ]
             },
-            null,
             {
-                "name": "cannondramon",
-                "from": [
-                    -1,
-                    -1
-                ]
+                "name": "assaultmon"
+            },
+            {
+                "name": "cannondramon"
             }
         ]
     ],
