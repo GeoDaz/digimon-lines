@@ -11,7 +11,7 @@
             {
                 "name": "goldrapidmon",
                 "color": "armor",
-                "from": [-2,-2]
+                "from": [1,-2]
             },
             {
                 "name": "goldrapidmonx",
@@ -110,6 +110,7 @@
             [
                 {
                     "name": "turuiemon",
+                    "color": "light",
                     "from": [0.5, -1]
                 },
                 {
@@ -121,7 +122,9 @@
             {
                 "name": "andiramon",
                 "from": [-0.5, -1],
+                "color": "light",
                 "from2": [0.5, -1],
+                "color2": "dark",
                 "size": 2
             },
             [
