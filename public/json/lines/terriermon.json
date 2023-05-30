@@ -7,6 +7,15 @@
                 "name": "terriermonx",
                 "color": "x",
                 "from": [1,0]
+            },
+            {
+                "name": "goldrapidmon",
+                "color": "armor",
+                "from": [-2,-2]
+            },
+            {
+                "name": "goldrapidmonx",
+                "color": "x"
             }
         ],
         [
@@ -56,15 +65,6 @@
                 "name": "prairiemon",
                 "color": "armor",
                 "from": [-2,-1]
-            },
-            {
-                "name": "goldrapidmon",
-                "color": "armor",
-                "from": [-2,-2]
-            },
-            {
-                "name": "goldrapidmonx",
-                "color": "x"
             }
         ],
         [
@@ -120,8 +120,9 @@
             ],
             {
                 "name": "andiramon",
-                "from": [0.5, -1],
-                "from2": [-0.5, -1]
+                "from": [-0.5, -1],
+                "from2": [0.5, -1],
+                "size": 2
             },
             [
                 {
