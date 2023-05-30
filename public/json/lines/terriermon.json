@@ -8,6 +8,7 @@
                 "color": "x",
                 "from": [1,0]
             },
+            null,
             {
                 "name": "goldrapidmon",
                 "color": "armor",
@@ -104,13 +105,11 @@
             },
             {
                 "name": "lopmon",
-                "color": "light",
                 "size": 2
             },
             [
                 {
                     "name": "turuiemon",
-                    "color": "light",
                     "from": [0.5, -1]
                 },
                 {
@@ -122,7 +121,6 @@
             {
                 "name": "andiramon",
                 "from": [-0.5, -1],
-                "color": "light",
                 "from2": [0.5, -1],
                 "color2": "dark",
                 "size": 2
@@ -152,5 +150,6 @@
                 "from": [-1,0]
             }
         ]
-    ]
+    ],
+    "related": ["lunamon"]
 }
