@@ -12,7 +12,7 @@
             {
                 "name": "goldrapidmon",
                 "color": "armor",
-                "from": [1,0]
+                "from": [1,-2]
             },
             {
                 "name": "goldrapidmonx",
@@ -63,8 +63,9 @@
             null,
             null,
             {
-                "name": "prairemon",
-                "from": [-1,-1]
+                "name": "praiemon",
+                "color": "armor",
+                "from": [-2,-1]
             }
         ],
         [
@@ -72,8 +73,9 @@
             null,
             null,
             {
-                "name": "bitmon",
-                "from": [1,-1]
+                "name": "rabbitmon",
+                "color": "armor",
+                "from": [3,-1]
             }
         ],
         [
@@ -112,13 +114,13 @@
                     "from": [0.5, -1]
                 },
                 {
-                    "name": "wendigomon",
+                    "name": "wendimon",
                     "color": "dark",
                     "from": [-0.5, -1]
                 }
             ],
             {
-                "name": "antylamon",
+                "name": "andiramon",
                 "from": [-0.5, -1],
                 "from2": [0.5, -1]
             },
@@ -133,19 +135,19 @@
                     "color": "dark",
                     "from": [-0.5, -1]
                 }
-            ],
-            [
-                null,
-                null,
-                null,
-                null,
-                null,
-                {
-                    "name": "cherubimonbx",
-                    "color": "x",
-                    "from": [-1,0]
-                }
             ]
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "cherubimonbx",
+                "color": "x",
+                "from": [-1,0]
+            }
         ]
     ]
 }
