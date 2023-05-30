@@ -5,7 +5,8 @@
             null,
             {
                 "name": "tyutyumon",
-                "color": "armor"
+                "color": "armor",
+                "from": [1,-1]
             },
             {
                 "name": "damemon",
@@ -44,7 +45,8 @@
             null,
             null,
             {
-                "name": "targetmon"
+                "name": "targetmon",
+                "from": [-1,-1]
             },
             {
                 "name": "etemon"
@@ -58,7 +60,8 @@
             null,
             null,
             {
-                "name": "opossummon"
+                "name": "opossummon",
+                "from": [-2,-1]
             },
             {
                 "name": "chohakkaimon"
@@ -70,13 +73,14 @@
             null,
             null,
             {
-                "name": "kumbhiramon"
+                "name": "kumbhiramon",
+                "from": [-1,-1]
             }
         ]
     ],
     "related": [
-        "monmon",
+        {"name": "monmon", "for": "etemon"},
         "numemon",
-        "shakamon"
+        {"name": "shakamon", "for": "chohakkaimon"}
     ]
 }
