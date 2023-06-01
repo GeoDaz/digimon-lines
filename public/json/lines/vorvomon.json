@@ -1,0 +1,41 @@
+{
+    "columns": [
+        [
+            {
+                "name": "mokumon"
+            },
+            {
+                "name": "demimeramon",
+                "color": "fire"
+            },
+            {
+                "name": "vorvomon",
+                "color": "fire"
+            },
+            {
+                "name": "lavorvomon",
+                "color": "fire"
+            },
+            {
+                "name": "lavogaritamon",
+                "color": "fire"
+            },
+            {
+                "name": "volcanicdramon",
+                "color": "fire"
+            }
+        ]
+    ],
+    "related": [
+        "jazamon",
+        "blucomon",
+        {
+            "name": "golemon",
+            "for": "ancientvolcamon"
+        },
+        {
+            "name": "gammamon",
+            "for": "volcdramon"
+        }
+    ]
+}

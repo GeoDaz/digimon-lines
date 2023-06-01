@@ -1,0 +1,32 @@
+{
+    "columns": [
+        [
+            {
+                "name": "bommon"
+            },
+            {
+                "name": "missimon"
+            },
+            {
+                "name": "jazamon"
+            },
+            {
+                "name": "jazardmon"
+            },
+            {
+                "name": "jazarichmon"
+            },
+            {
+                "name": "metallicdramon"
+            }
+        ]
+    ],
+    "related": [
+        "vorvomon",
+        "blucomon",
+        {
+            "name": "espimon",
+            "for": "mailbirdramon"
+        }
+    ]
+}

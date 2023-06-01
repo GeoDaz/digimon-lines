@@ -1,0 +1,100 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "solarmon",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            {
+                "name": "guardromongold",
+                "color": "armor"
+            },
+            {
+                "name": "frozomon",
+                "from": [
+                    2,
+                    1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "hagurumonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            },
+            null,
+            {
+                "name": "blimpmon",
+                "from": [
+                    1,
+                    1
+                ]
+            }
+        ],
+        [
+            {
+                "name": "choromon"
+            },
+            {
+                "name": "caprimon"
+            },
+            {
+                "name": "hagurumon"
+            },
+            {
+                "name": "guardromon"
+            },
+            {
+                "name": "andromon"
+            },
+            {
+                "name": "hiandromon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "mechanorimon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "nanomon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "valvemon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "flarelizardmon",
+            "for": "machinedramon"
+        }
+    ]
+}
