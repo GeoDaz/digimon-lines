@@ -5,14 +5,11 @@
             null,
             null,
             {
-                "name": "hapemon"
+                "name": "hapemon",
+                "from": [1,-1]
             },
             {
                 "name": "gokuwmon"
-            },
-            {
-                "name": "shakamon",
-                "color": "fusion"
             }
         ],
         [
@@ -37,7 +34,8 @@
             null,
             null,
             {
-                "name": "lianpumon"
+                "name": "lianpumon",
+                "from": [-1,-1]
             },
             {
                 "name": "xingtianmon"
@@ -51,7 +49,8 @@
             null,
             null,
             {
-                "name": "gorimon"
+                "name": "gorimon",
+                "from": [-2,-1]
             }
         ],
         [
@@ -59,7 +58,8 @@
             null,
             null,
             {
-                "name": "baboongamon"
+                "name": "baboongamon",
+                "from": [-3,-1]
             }
         ],
         [
@@ -68,6 +68,7 @@
             null,
             {
                 "name": "mojyamon",
+                "from": [-4,-1],
                 "skins": [
                     "junglemojyamon"
                 ]
@@ -76,13 +77,17 @@
     ],
     "related": [
         {
-            "name": "impmon",
-            "for": "dijiangmon"
-        },
-        {
             "name": "sukamon",
             "for": "etemon"
         },
-        "shakamon"
+        {"name": "shakamon", "for": "gokuwmon"},
+        {
+            "name": "bearmon",
+            "for": "mojyamon"
+        },
+        {
+            "name": "impmon",
+            "for": "dijiangmon"
+        }
     ]
 }

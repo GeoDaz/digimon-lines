@@ -1,0 +1,155 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "terriermonx",
+                "color": "x",
+                "from": [1,0]
+            },
+            null,
+            {
+                "name": "goldrapidmon",
+                "color": "armor",
+                "from": [1,-2]
+            },
+            {
+                "name": "goldrapidmonx",
+                "color": "x"
+            }
+        ],
+        [
+            {
+                "name": "zerimon"
+            },
+            {
+                "name": "gummymon"
+            },
+            {
+                "name": "terriermon",
+                "skins": ["terriermonassistant"]
+            },
+            {
+                "name": "gargomon"
+            },
+            {
+                "name": "rapidmon"
+            },
+            {
+                "name": "megagargomon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gargomonb",
+                "color": "dark",
+                "from": [-1,-1]
+            },
+            {
+                "name": "rapidmonb",
+                "color": "dark"
+            },
+            {
+                "name": "megagargomonb",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "prairiemon",
+                "color": "armor",
+                "from": [-2,-1]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "rabbitmon",
+                "color": "armor",
+                "from": [3,-1]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "lopmonx",
+                "color": "x",
+                "from": [1.5,0]
+            },
+            null,
+            null,
+            {
+                "name": "cherubimonx",
+                "color": "x",
+                "from": [1,0]
+            }
+        ],
+        [
+            {
+                "name": "cocomon",
+                "size": 2
+            },
+            {
+                "name": "chocomon",
+                "size": 2
+            },
+            {
+                "name": "lopmon",
+                "size": 2
+            },
+            [
+                {
+                    "name": "turuiemon",
+                    "from": [0.5, -1]
+                },
+                {
+                    "name": "wendimon",
+                    "color": "dark",
+                    "from": [-0.5, -1]
+                }
+            ],
+            {
+                "name": "andiramon",
+                "from": [-0.5, -1],
+                "from2": [0.5, -1],
+                "color2": "dark",
+                "size": 2
+            },
+            [
+                {
+                    "name": "cherubimon",
+                    "color": "light",
+                    "from": [0.5, -1]
+                },
+                {
+                    "name": "cherubimonb",
+                    "color": "dark",
+                    "from": [-0.5, -1]
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "cherubimonbx",
+                "color": "x",
+                "from": [-1,0]
+            }
+        ]
+    ],
+    "related": ["lunamon"]
+}
