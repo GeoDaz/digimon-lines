@@ -4,21 +4,6 @@
             null,
             null,
             null,
-            null,
-            null,
-            {
-                "name": "chaosdramonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
             {
                 "name": "hicommandramon",
                 "from": [
@@ -30,7 +15,7 @@
                 "name": "cargodramon"
             },
             {
-                "name": "chaosdramon"
+                "name": "brigadramon"
             }
         ],
         [
@@ -106,10 +91,6 @@
     ],
     "related": [
         "ultimatechaosmon",
-        {
-            "name": "flarelizardmon",
-            "for": "chaosdramon"
-        },
         {
             "name": "gammamon",
             "for": "cannondramon"
