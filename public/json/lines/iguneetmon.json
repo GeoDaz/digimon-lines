@@ -1,0 +1,82 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "minervamonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            {
+                "name": "sunamon"
+            },
+            {
+                "name": "goromon"
+            },
+            {
+                "name": "iguneetmon"
+            },
+            {
+                "name": "coatlmon",
+                "color": "light",
+                "from2": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "sandiramon"
+            },
+            {
+                "name": "minervamon",
+                "color": "light",
+                "skins": [
+                    "mervamon"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "hubmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            null,
+            {
+                "name": "orochimon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "nidhoggmon",
+                "color": "dark"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "gatomon",
+            "for": "minervamon"
+        },
+        {
+            "name": "negamon",
+            "for": "nidhoggmon"
+        }
+    ]
+}

@@ -1,6 +1,32 @@
 {
     "columns": [
         [
+            null,
+            null,
+            null,
+            {
+                "name": "stegomon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            null,
+            {
+                "name": "spinomon",
+                "from": [
+                    0,
+                    -2
+                ]
+            },
+            {
+                "name": "huanglongmon",
+                "skins": [
+                    "huanglongmonrm"
+                ]
+            }
+        ],
+        [
             {
                 "name": "tsubumon"
             },
@@ -27,36 +53,10 @@
             null,
             null,
             {
-                "name": "stegomon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            null,
-            {
-                "name": "spinomon",
-                "from": [
-                    0,
-                    -2
-                ]
-            },
-            {
-                "name": "huanglongmon",
-                "skins": [
-                    "huanglongmonrm"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
                 "name": "digmon",
                 "color": "armor",
                 "from": [
-                    -2,
+                    -1,
                     -1
                 ]
             }
@@ -69,7 +69,7 @@
                 "name": "submarimon",
                 "color": "armor",
                 "from": [
-                    -3,
+                    -2,
                     -1
                 ]
             }
