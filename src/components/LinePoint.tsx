@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { makeClassName } from '@/functions';
 import { Spinner } from 'react-bootstrap';
+import Icon from './Icon';
 
 const LINE = 'line';
 interface Props extends React.ImgHTMLAttributes<any> {
@@ -12,18 +13,45 @@ interface Props extends React.ImgHTMLAttributes<any> {
 	className?: string;
 	style?: object;
 	children?: React.ReactNode;
+	available?: boolean;
 }
-const LinePoint: React.FC<Props> = ({ name, type = LINE, style, children, ...props }) => {
+const LinePoint: React.FC<Props> = ({
+	name,
+	type = LINE,
+	style,
+	available,
+	children,
+	...props
+}) => {
+	if (available === false) {
+		return (
+			<div title={name} className={'line-point pictured unavailable'} style={style}>
+				<div className="line-point-safe-zone">
+					<LineImage name={name} {...props} />
+				</div>
+				<span className="hover-only text-warning fw-bold">
+					<Icon name="exclamation-triangle-fill" /> Work in progress...
+				</span>
+				{children}
+			</div>
+		);
+	}
 	return (
 		<Link
 			href={`/${type}s/${name}`}
 			title={name}
-			className="line-point pictured"
+			className={makeClassName('line-point pictured', available && 'available')}
 			style={style}
 		>
 			<div className="line-point-safe-zone">
 				<LineImage name={name} {...props} />
 			</div>
+			{available && (
+				<Icon
+					name="arrow-right-circle-fill"
+					className="text-primary hover-only"
+				/>
+			)}
 			{children}
 		</Link>
 	);
