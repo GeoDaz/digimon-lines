@@ -39,6 +39,14 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 	);
 
 	useEffect(() => {
+		if(window.innerWidth < 576){
+			setZoom(-2)
+		} else if(window.innerWidth < 992){
+			setZoom(-1)
+		}
+	}, []);
+	
+	useEffect(() => {
 		if (name != ssr.name) {
 			load(`${process.env.URL}/json/lines/${name}.json`);
 		}
