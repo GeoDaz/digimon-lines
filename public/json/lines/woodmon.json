@@ -5,7 +5,26 @@
             null,
             null,
             {
+                "name": "nohemon",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            {
+                "name": "zamielmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
                 "name": "chamblemon",
+                "from": [
+                    2,
+                    -1
+                ],
                 "color": "dark"
             },
             null,
@@ -38,7 +57,11 @@
             null,
             null,
             {
-                "name": "arbormon"
+                "name": "arbormon",
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
                 "name": "petaldramon"
@@ -53,7 +76,11 @@
             null,
             null,
             {
-                "name": "entmon"
+                "name": "entmon",
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ]
     ],
