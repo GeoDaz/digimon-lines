@@ -78,7 +78,13 @@
             null,
             null,
             null,
-            null,
+            {
+                "name": "tortamon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
             null,
             {
                 "name": "ancientvolcamon",
@@ -139,6 +145,10 @@
         {
             "name": "gammamon",
             "for": "volcdramon"
+        },
+        {
+            "name": "kamemon",
+            "for": "tortamon"
         }
     ]
 }
