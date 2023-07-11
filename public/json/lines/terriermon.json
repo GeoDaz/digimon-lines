@@ -6,13 +6,19 @@
             {
                 "name": "terriermonx",
                 "color": "x",
-                "from": [1,0]
+                "from": [
+                    1,
+                    0
+                ]
             },
             null,
             {
                 "name": "goldrapidmon",
                 "color": "armor",
-                "from": [1,-2]
+                "from": [
+                    1,
+                    -2
+                ]
             },
             {
                 "name": "goldrapidmonx",
@@ -28,7 +34,9 @@
             },
             {
                 "name": "terriermon",
-                "skins": ["terriermonassistant"]
+                "skins": [
+                    "terriermonassistant"
+                ]
             },
             {
                 "name": "gargomon"
@@ -47,7 +55,10 @@
             {
                 "name": "gargomonb",
                 "color": "dark",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
                 "name": "rapidmonb",
@@ -65,7 +76,10 @@
             {
                 "name": "prairiemon",
                 "color": "armor",
-                "from": [-2,-1]
+                "from": [
+                    -2,
+                    -1
+                ]
             }
         ],
         [
@@ -75,7 +89,10 @@
             {
                 "name": "rabbitmon",
                 "color": "armor",
-                "from": [3,-1]
+                "from": [
+                    3,
+                    -1
+                ]
             }
         ],
         [
@@ -84,14 +101,20 @@
             {
                 "name": "lopmonx",
                 "color": "x",
-                "from": [1.5,0]
+                "from": [
+                    1.5,
+                    0
+                ]
             },
             null,
             null,
             {
                 "name": "cherubimonx",
                 "color": "x",
-                "from": [1,0]
+                "from": [
+                    1,
+                    0
+                ]
             }
         ],
         [
@@ -110,18 +133,30 @@
             [
                 {
                     "name": "turuiemon",
-                    "from": [0.5, -1]
+                    "from": [
+                        0.5,
+                        -1
+                    ]
                 },
                 {
                     "name": "wendimon",
                     "color": "dark",
-                    "from": [-0.5, -1]
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
                 }
             ],
             {
                 "name": "andiramon",
-                "from": [-0.5, -1],
-                "from2": [0.5, -1],
+                "from": [
+                    -0.5,
+                    -1
+                ],
+                "from2": [
+                    0.5,
+                    -1
+                ],
                 "color2": "dark",
                 "size": 2
             },
@@ -129,12 +164,18 @@
                 {
                     "name": "cherubimon",
                     "color": "light",
-                    "from": [0.5, -1]
+                    "from": [
+                        0.5,
+                        -1
+                    ]
                 },
                 {
                     "name": "cherubimonb",
                     "color": "dark",
-                    "from": [-0.5, -1]
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
                 }
             ]
         ],
@@ -147,9 +188,15 @@
             {
                 "name": "cherubimonbx",
                 "color": "x",
-                "from": [-1,0]
+                "from": [
+                    -1,
+                    0
+                ]
             }
         ]
     ],
-    "related": ["lunamon"]
+    "related": [
+        "lunamon",
+        "angoramon"
+    ]
 }
