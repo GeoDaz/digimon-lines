@@ -20,6 +20,11 @@
   --bs-lg: 992px;
   --bs-xl: 1200px;
   --bs-xxl: 1400px;
+
+  --dl-img-size: 10rem;
+  --dl-skin-img-size: 3rem;
+  --dl-sm-img-size: 7.5rem;
+  --dl-sm-skin-img-size: 2.5rem;
 }
 
 .text-teal {
@@ -216,8 +221,8 @@ h2 {
 
 .line-point,
 .line-point-safe-zone {
-  min-width: 10rem;
-  min-height: 10rem;
+  min-width: var(--dl-img-size);
+  min-height: var(--dl-img-size);
   position: relative;
   text-align: center;
   display: flex;
@@ -258,14 +263,14 @@ h2 {
 
 .line-point-safe-zone {
   background-color: white;
-  width: 10rem;
-  height: 10rem;
+  width: var(--dl-img-size);
+  height: var(--dl-img-size);
   border-radius: var(--bs-border-radius);
 }
 
 .line-point .line-img {
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: var(--dl-img-size);
+  max-height: var(--dl-img-size);
   position: relative;
   z-index: 2;
   color: var(--bs-dark);
@@ -273,8 +278,8 @@ h2 {
 }
 
 .line-point .line-skin {
-  max-width: 3rem;
-  max-height: 3rem;
+  max-width: var(--dl-skin-img-size);
+  max-height: var(--dl-skin-img-size);
   position: relative;
   z-index: 3;
   color: var(--bs-dark);
@@ -287,8 +292,8 @@ h2 {
 
 .line-point .line-skin:hover,
 .line-point .line-skin:focus {
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: var(--dl-img-size);
+  max-height: var(--dl-img-size);
   bottom: 0 !important;
   z-index: 4;
 }
@@ -440,14 +445,25 @@ h2 {
 
   .line-wrapper:not(.line-grid) .line-row .col .line-point,
   .line-wrapper:not(.line-grid) .line-row .col .line-point .line-point-safe-zone {
-    min-width: 90px;
-    width: 90px;
-    min-height: 90px;
-    height: 90px;
+    min-width: var(--dl-sm-img-size);
+    width: var(--dl-sm-img-size);
+    min-height: var(--dl-sm-img-size);
+    height: var(--dl-sm-img-size);
   }
 
   .line-wrapper:not(.line-grid) .line-row .col .line-point .line-img {
-    max-width: 90px;
-    max-height: 90px;
+    max-width: var(--dl-sm-img-size);
+    max-height: var(--dl-sm-img-size);
+  }
+
+  .line-wrapper:not(.line-grid) .line-row .col .line-point .line-skin {
+    max-width: var(--dl-sm-skin-img-size);
+    max-height: var(--dl-sm-skin-img-size);
+  }
+
+  .line-wrapper:not(.line-grid) .line-row .col .line-point .line-skin:hover,
+  .line-wrapper:not(.line-grid) .line-row .col .line-point .line-skin:focus {
+    max-width: var(--dl-sm-img-size);
+    max-height: var(--dl-sm-img-size);
   }
 }
