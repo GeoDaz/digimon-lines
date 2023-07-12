@@ -8,6 +8,7 @@ import Icon from './Icon';
 const LINE = 'line';
 interface Props extends React.ImgHTMLAttributes<any> {
 	name: string;
+	line?: string;
 	title?: string;
 	type?: string;
 	className?: string;
@@ -17,6 +18,7 @@ interface Props extends React.ImgHTMLAttributes<any> {
 }
 const LinePoint: React.FC<Props> = ({
 	name,
+	line = name,
 	type = LINE,
 	style,
 	available,
@@ -38,7 +40,7 @@ const LinePoint: React.FC<Props> = ({
 	}
 	return (
 		<Link
-			href={`/${type}s/${name}`}
+			href={`/${type}s/${line}`}
 			title={name}
 			className={makeClassName('line-point pictured', available && 'available')}
 			style={style}

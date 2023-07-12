@@ -49,7 +49,7 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
 	try {
-		const groups: string[] = require('../../public/json/groups/_index.json');
+		const groups: string[] = require('../../../public/json/groups/_index.json');
 
 		return { props: { ssr: { groups } } };
 	} catch (e) {

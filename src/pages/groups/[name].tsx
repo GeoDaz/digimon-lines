@@ -15,7 +15,7 @@ import useFetch from '@/hooks/useFetch';
 import { capitalize } from '@/functions';
 // constants
 import { Group } from '@/types/Group';
-import { zooms, zoomOptions } from '@/consts/zooms';
+// import { zooms, zoomOptions } from '@/consts/zooms';
 import { GetStaticProps } from 'next';
 import useQueryParam from '@/hooks/useQueryParam';
 import { DEV } from '@/consts/env';
@@ -31,7 +31,7 @@ interface Props {
 const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 	const name = useQueryParam(NAME) || ssr.name;
 	const [group, setGroup] = useState<Group | undefined>(ssr.group);
-	const [zoom, setZoom] = useState(0);
+	// const [zoom, setZoom] = useState(0);
 
 	const [load, loading] = useFetch((group: Group | undefined): void => setGroup(group));
 
@@ -60,7 +60,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 			}
 			metatitle={capitalize(name) + ' Group'}
 		>
-			<div className="line-filters">
+			{/* <div className="line-filters">
 				<Icon name="zoom-in lead d-inline-block d-max-xs-none" />
 				<ProgressBarSteps
 					steps={zoomOptions}
@@ -69,14 +69,14 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 					onChange={setZoom}
 					className="progress-zoom me-4"
 				/>
-			</div>
+			</div> */}
 			{loading ? (
 				<LineLoading />
 			) : group ? (
 				<Row className="line-row">
 					{group.main.map((point, i) => (
 						<Col key={i}>
-							<LinePoint name={point.name}>
+							<LinePoint name={point.name} line={point.line}>
 								{!!point.line && (
 									<LineImage
 										className="line-skin"
@@ -97,7 +97,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 					<Row className="line-row">
 						{group.related.map((relation, i) => (
 							<Col key={i}>
-								<LinePoint name={relation.name}>
+								<LinePoint name={relation.name} line={relation.line}>
 									{!!relation.line && (
 										<LineImage
 											className="line-skin"

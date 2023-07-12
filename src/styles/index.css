@@ -47,12 +47,16 @@ body {
 
 @media (max-width: 768px) {
 
-  main {
+  body {
     font-size: var(--bs-body-font-size-sm);
   }
 
   .line-wrapper {
     font-size: var(--bs-body-font-size);
+  }
+
+  .blockquote {
+    font-size: 1.15rem;
   }
 }
 
@@ -436,14 +440,14 @@ h2 {
 
   .line-wrapper:not(.line-grid) .line-row .col .line-point,
   .line-wrapper:not(.line-grid) .line-row .col .line-point .line-point-safe-zone {
-    min-width: 100px;
-    width: 100px;
-    min-height: 100px;
-    height: 100px;
+    min-width: 90px;
+    width: 90px;
+    min-height: 90px;
+    height: 90px;
   }
 
   .line-wrapper:not(.line-grid) .line-row .col .line-point .line-img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 90px;
+    max-height: 90px;
   }
 }
