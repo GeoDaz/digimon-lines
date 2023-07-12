@@ -76,13 +76,34 @@
             null,
             null,
             {
-                "name": "sethmon",
+                "name": "elephantmon",
                 "color": "armor",
                 "from": [
                     -3,
                     -1
                 ]
             }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sethmon",
+                "color": "armor",
+                "from": [
+                    -4,
+                    -1
+                ]
+            }
         ]
+    ],
+    "related": [
+        {
+            "name": "meramon"
+        },
+        {
+            "name": "armadillomon"
+        }
     ]
 }
