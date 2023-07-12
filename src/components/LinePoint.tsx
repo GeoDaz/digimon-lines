@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { makeClassName } from '@/functions';
 import { Spinner } from 'react-bootstrap';
 import Icon from './Icon';
+import { GROUP, LINE } from '@/consts/ui';
 
-const LINE = 'line';
 interface Props extends React.ImgHTMLAttributes<any> {
 	name: string;
 	line?: string;
@@ -29,7 +29,7 @@ const LinePoint: React.FC<Props> = ({
 		return (
 			<div title={name} className={'line-point pictured unavailable'} style={style}>
 				<div className="line-point-safe-zone">
-					<LineImage name={name} {...props} />
+					<LineImage name={name} type={type} {...props} />
 				</div>
 				<span className="hover-only text-warning fw-bold">
 					<Icon name="exclamation-triangle-fill" /> Work in progress...
@@ -46,7 +46,7 @@ const LinePoint: React.FC<Props> = ({
 			style={style}
 		>
 			<div className="line-point-safe-zone">
-				<LineImage name={name} {...props} />
+				<LineImage name={name} type={type} {...props} />
 			</div>
 			{available && (
 				<Icon
@@ -59,12 +59,12 @@ const LinePoint: React.FC<Props> = ({
 	);
 };
 
-export const LineImage: React.FC<Props> = ({ name, title, className, style }) => {
-	const [src, setSrc] = useState(`/images/digimon/${name}.jpg`);
+export const LineImage: React.FC<Props> = ({ name, title, className, style, type }) => {
+	const [src, setSrc] = useState(`/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`);
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		const nextSrc = `/images/digimon/${name}.jpg`;
+		const nextSrc = `/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`;
 		if (src != nextSrc) {
 			setLoading(true);
 			setSrc(nextSrc);

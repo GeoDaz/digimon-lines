@@ -75,19 +75,29 @@
             },
             {
                 "name": "nanomon"
+            },
+            {
+                "name": "quantumon",
+                "color": "light"
             }
         ],
         [
             null,
             null,
             null,
-            null,
             {
-                "name": "valvemon",
+                "name": "clockmon",
                 "from": [
-                    -1,
+                    -2,
                     -1
                 ]
+            },
+            {
+                "name": "valvemon"
+            },
+            {
+                "name": "quartzmon",
+                "color": "dark"
             }
         ]
     ],
@@ -95,6 +105,10 @@
         {
             "name": "flarelizardmon",
             "for": "machinedramon"
+        },
+        {
+            "name": "kokuwamon",
+            "for": "kuwagamon"
         }
     ]
 }

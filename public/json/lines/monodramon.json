@@ -62,8 +62,14 @@
         ]
     ],
     "related": [
-        "commandramon",
-        "chaosmon",
+        {
+            "name": "commandramon",
+            "for": "darkdramon"
+        },
+        {
+            "name": "ultimatechaosmon",
+            "for": "chaosmon"
+        },
         "starmon"
     ]
 }

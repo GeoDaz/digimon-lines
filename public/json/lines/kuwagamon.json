@@ -65,7 +65,14 @@
                     -1
                 ]
             },
-            null,
+            {
+                "name": "anomalocarimonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            },
             {
                 "name": "ancientbeetlemon",
                 "from": [
@@ -88,6 +95,9 @@
                 "skins": [
                     "sandyanmamon"
                 ]
+            },
+            {
+                "name": "anomalocarimon"
             }
         ],
         [
@@ -149,6 +159,11 @@
         {
             "name": "chimeramon",
             "for": "kuwagamon"
-        }
+        },
+        {
+            "name": "crabmon",
+            "for": "anomalocarimon"
+        },
+        "dokugumon"
     ]
 }

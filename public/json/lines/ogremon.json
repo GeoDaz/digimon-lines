@@ -30,6 +30,16 @@
                     1,
                     0
                 ]
+            },
+            {
+                "name": "xingtianmon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "olegmon"
             }
         ],
         [
@@ -90,16 +100,6 @@
                     -1,
                     -1
                 ]
-            },
-            {
-                "name": "xingtianmon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "olegmon"
             }
         ],
         [
@@ -123,6 +123,10 @@
         {
             "name": "golemon",
             "for": "ancientvolcamon"
+        },
+        {
+            "name": "monmon",
+            "for": "xingtianmon"
         },
         {
             "name": "hookmon",

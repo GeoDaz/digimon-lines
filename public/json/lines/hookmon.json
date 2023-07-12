@@ -1,0 +1,100 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "mermaimon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "olegmon",
+                "from": [
+                    1,
+                    -1
+                ],
+                "color": "armor"
+            }
+        ],
+        [
+            {
+                "name": "bommon2"
+            },
+            {
+                "name": "missimon"
+            },
+            {
+                "name": "unknown"
+            },
+            {
+                "name": "hookmon"
+            },
+            {
+                "name": "captainhookmon"
+            },
+            {
+                "name": "boltboutamon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "revolmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "vulturemon"
+            },
+            {
+                "name": "magnakidmon",
+                "skins": [
+                    "avengekidmon"
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "impmon",
+            "for": "beelstarmon"
+        },
+        {
+            "name": "commandramon",
+            "for": "gundramon"
+        },
+        {
+            "name": "devimon",
+            "for": "boltboutamon"
+        },
+        {
+            "name": "bakemon",
+            "for": "piemon"
+        },
+        {
+            "name": "jellymon",
+            "for": "mermaimon"
+        },
+        {
+            "name": "ogremon",
+            "for": "olegmon"
+        },
+        {
+            "name": "gomamon",
+            "for": "vikemon"
+        },
+        {
+            "name": "starmon",
+            "for": "revolmon"
+        }
+    ]
+}
