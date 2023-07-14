@@ -1,19 +1,4 @@
 {
-	"related": [
-		{
-			"name": "armadillomon",
-			"for": "shakkoumon"
-		},
-		{
-			"name": "devimon",
-			"for": "lucemonfm"
-		},
-		{
-			"name": "gatomon",
-			"for": "angewomon"
-		},
-		"omegamonmm"
-	],
 	"columns": [
 		[
 			null,
@@ -279,5 +264,24 @@
 				]
 			}
 		]
+	],
+	"related": [
+		{
+			"name": "armadillomon",
+			"for": "shakkoumon"
+		},
+		{
+			"name": "devimon",
+			"for": "lucemonfm"
+		},
+		{
+			"name": "gatomon",
+			"for": "angewomon"
+		},
+		{
+			"name": "dracmon",
+			"for": "slashangemon"
+		},
+		"omegamonmm"
 	]
 }

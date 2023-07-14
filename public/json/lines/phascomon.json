@@ -1,0 +1,78 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "belphemonrmx",
+                "color": "x",
+                "from": [1,0]
+            }
+        ],
+        [
+            {
+                "name": "keemon"
+            },
+            {
+                "name": "yarmon",
+                "color": "dark"
+            },
+            {
+                "name": "phascomon",
+                "color": "dark"
+            },
+            {
+                "name": "porcupamon",
+                "color": "dark"
+            },
+            {
+                "name": "astamon",
+                "color": "dark"
+            },
+            {
+                "name": "belphemonrm",
+                "color": "dark",
+                "skins": ["belphemon"]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "mephismon",
+                "color": "dark",
+                "from": [-1,-1]
+            },
+            {
+                "name": "gulfmon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "mephismonx",
+                "color": "x",
+                "from": [-1,0]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "garurumon",
+            "for": "psychemon"
+        },
+        {
+            "name": "bearmon",
+            "for": "porcupamon"
+        }
+    ]
+}

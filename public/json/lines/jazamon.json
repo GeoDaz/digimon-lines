@@ -1,6 +1,19 @@
 {
     "columns": [
         [
+            null,
+            null,
+            null,
+            {
+                "name": "mailbirdramon",
+                "color": "dark",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
             {
                 "name": "bommon"
             },
@@ -19,14 +32,26 @@
             {
                 "name": "metallicdramon"
             }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "sparrowmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "raptorsparrowmon",
+                "color": "armor"
+            }
         ]
     ],
     "related": [
         "vorvomon",
         "blucomon",
-        {
-            "name": "espimon",
-            "for": "mailbirdramon"
-        }
+        "espimon"
     ]
 }

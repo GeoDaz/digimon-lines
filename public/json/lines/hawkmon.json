@@ -4,8 +4,32 @@
             null,
             null,
             null,
+            null,
+            {
+                "name": "sanzomon",
+                "color": "light",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            null,
+            {
+                "name": "shakamon",
+                "from": [
+                    0,
+                    -2
+                ],
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
             {
                 "name": "darcmon",
+                "color": "light",
                 "from": [
                     2,
                     -1
@@ -15,7 +39,8 @@
                 "name": "hippogriffomon"
             },
             {
-                "name": "murmukusmon"
+                "name": "murmukusmon",
+                "color": "dark"
             }
         ],
         [
@@ -53,7 +78,8 @@
                 "name": "aquilamon"
             },
             {
-                "name": "silphymon"
+                "name": "silphymon",
+                "color": "fusion"
             },
             {
                 "name": "valkyrimon"
@@ -100,6 +126,7 @@
         ]
     ],
     "related": [
+        "shakamon",
         {
             "name": "biyomon",
             "for": "garudamon"

@@ -1,31 +1,4 @@
 {
-    "related": [
-        "omegamonmm",
-        {
-            "name": "greymon",
-            "for": "omegamon"
-        },
-        {
-            "name": "leomon",
-            "for": "marsmon"
-        },
-        {
-            "name": "bearmon",
-            "for": "marsmon"
-        },
-        {
-            "name": "belphemonrm",
-            "for": "astamon"
-        },
-        {
-            "name": "chimeramon",
-            "for": "garurumon"
-        },
-        {
-            "name": "armadillomon",
-            "for": "drimogemon"
-        }
-    ],
     "columns": [
         [
             null,
@@ -285,7 +258,7 @@
                 "color": "dark"
             },
             {
-                "name": "mercurymon",
+                "name": "merukymon",
                 "color": "dark",
                 "from": [
                     -1,
@@ -480,6 +453,38 @@
         ]
     ],
     "notes": [
-        "Gaogamon line is in Garurumon line, because it includes ZeedGarurumon they look very similar"
+        "Gaogamon line is in Garurumon line, because it includes ZeedGarurumon they look very similar.",
+        "Merukymon is here because his headdress looks like a Garurumon and Mars because his looks like Gabumon."
+    ],
+    "related": [
+        "omegamonmm",
+        {
+            "name": "greymon",
+            "for": "omegamon"
+        },
+        {
+            "name": "chimeramon",
+            "for": "garurumon"
+        },
+        {
+            "name": "leomon",
+            "for": "marsmon"
+        },
+        {
+            "name": "bearmon",
+            "for": "marsmon"
+        },
+        {
+            "name": "phascomon",
+            "for": "astamon"
+        },
+        {
+            "name": "loogamon",
+            "for": "soloogarmon"
+        },
+        {
+            "name": "armadillomon",
+            "for": "drimogemon"
+        }
     ]
 }

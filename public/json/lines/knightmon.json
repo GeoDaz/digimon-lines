@@ -151,25 +151,65 @@
             null,
             null,
             null,
+            null,
+            null,
+            {
+                "name": "greyknightmon",
+                "color": "fusion",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
             {
                 "name": "skullknightmon",
                 "color": "dark",
                 "from": [
-                    -2,
+                    -3,
                     -1
+                ],
+                "skins": [
+                    "skullknightmonred",
+                    "skullknightmonblue"
                 ]
             },
             {
                 "name": "darkknightmon",
-                "color": "dark"
+                "color": "dark",
+                "skins": [
+                    "skullknightmonaxe",
+                    "skullknightmoncavalier"
+                ]
             },
             {
+                "name": "superdarkknightmon",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
                 "name": "darkknightmonx",
-                "color": "x"
+                "color": "x",
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ]
     ],
     "related": [
-        "kotemon"
+        "kotemon",
+        {"name": "greymon", "for": "greyknightmon"},
+        {"name": "duskmon", "for": "bagramon"}
     ]
 }

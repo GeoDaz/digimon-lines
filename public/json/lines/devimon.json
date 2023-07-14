@@ -240,8 +240,14 @@
     ],
     "related": [
         "ogudomon",
-        "bakemon",
-        "dracmon",
+        {
+            "name": "bakemon",
+            "for": "piemon"
+        },
+        {
+            "name": "dracmon",
+            "for": "myotismon"
+        },
         {
             "name": "impmon",
             "for": "boogiemon"

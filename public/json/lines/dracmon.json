@@ -1,0 +1,62 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "slashangemon",
+                "color": "light",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "name": "keemon"
+            },
+            {
+                "name": "yarmon",
+                "color": "dark"
+            },
+            {
+                "name": "dracmon",
+                "color": "dark"
+            },
+            {
+                "name": "sangloupmon",
+                "color": "dark"
+            },
+            {
+                "name": "matadormon",
+                "color": "dark"
+            },
+            {
+                "name": "grandracmon",
+                "color": "dark"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "phascomon",
+            "for": "astamon"
+        },
+        {
+            "name": "garurumon",
+            "for": "astamon"
+        },
+        {
+            "name": "devimon",
+            "for": "myotismon"
+        },
+        {
+            "name": "angemon",
+            "for": "slashangemon"
+        }
+    ]
+}

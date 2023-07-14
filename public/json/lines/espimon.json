@@ -37,52 +37,22 @@
             {
                 "name": "ebemon"
             }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "sparrowmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            null,
-            {
-                "name": "raptorsparrowmon",
-                "color": "armor",
-                "from": [
-                    0,
-                    -2
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "mailbirdramon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
         ]
     ],
     "related": [
+        "bearmon",
         {
             "name": "garurumon",
             "for": "machgaogamon"
         },
         {
+            "name": "jazamon",
+            "for": "sparrowmon"
+        },
+        {
             "name": "terriermon",
             "for": "megagargomon"
         },
-        "bearmon",
-        "jazamon",
         {
             "name": "aegiomon",
             "for": "aegiochusmonblue"

@@ -7,27 +7,18 @@
             {
                 "name": "veedramonb",
                 "from": [
-                    3,
-                    -1
-                ],
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "redveedramon",
-                "from": [
                     2,
                     -1
                 ],
-                "color": "fire"
+                "color": "dark"
             },
             {
                 "name": "goldveedramon",
-                "color": "armor"
+                "color": "armor",
+                "from": [
+                    2,
+                    -2
+                ]
             },
             {
                 "name": "ulforceveedramonx",
@@ -47,7 +38,8 @@
                 "from": [
                     1,
                     -1
-                ]
+                ],
+                "skins": ["redveedramon"]
             },
             {
                 "name": "aeroveedramon"
@@ -55,9 +47,14 @@
             {
                 "name": "ulforceveedramon"
             },
+            null,
             {
                 "name": "ulforceveedramonfm",
-                "color": "mode"
+                "color": "mode",
+                "from": [
+                    0,
+                    -2
+                ]
             }
         ],
         [

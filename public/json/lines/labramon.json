@@ -44,8 +44,7 @@
             null,
             null,
             {
-                "name": "fangmon",
-                "color": "dark",
+                "name": "dogmon",
                 "from": [
                     -1,
                     -1
@@ -94,22 +93,10 @@
                     0
                 ]
             }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "dogmon",
-                "from": [
-                    -4,
-                    -1
-                ]
-            }
         ]
     ],
     "related": [
-        "loogamon",
+        {"name": "loogamon", "for": "fangmon"},
         {"name": "leomon", "for": "baihumon"}
     ]
 }

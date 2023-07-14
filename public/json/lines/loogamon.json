@@ -51,16 +51,20 @@
         ]
     ],
     "related": [
-        "labramon",
+        {"name": "labramon", "for": "anubimon"},
         {
             "name": "pulsemon",
             "for": "kazuchimon"
         },
         {
             "name": "garurumon",
-            "for": "gaomon"
+            "for": "machgaogamon"
         },
-        "flarelizardmon",
+        {
+            "name": "dracmon",
+            "for": "sangloupmon"
+        },
+        {"name": "flarelizardmon", "for": "helloogarmon"},
         "dorumon",
         "ryudamon"
     ]

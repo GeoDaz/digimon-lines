@@ -207,19 +207,7 @@
 					0,
 					-1
 				]
-			},
-			{
-				"name": "cannondramon",
-				"from": [
-					0,
-					-1
-				],
-				"from2": [
-					1,
-					-1
-				]
-			},
-			null
+			}
 		],
 		[
 			null,
@@ -229,6 +217,13 @@
 			{
 				"name": "brachiomon",
 				"from": [
+					-1,
+					-1
+				]
+			},
+			{
+				"name": "cannondramon",
+				"from2": [
 					-1,
 					-1
 				]
@@ -263,8 +258,10 @@
 			},
 			{
 				"name": "dorbickmon",
-				"from": [
-					0,
+				"color": "fire",
+				"color2": "fire",
+				"from2": [
+					1,
 					-1
 				]
 			},
