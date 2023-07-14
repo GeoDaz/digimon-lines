@@ -1,14 +1,11 @@
 // modules
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
-import { useRouter } from 'next/router';
+import { Row, Col } from 'react-bootstrap';
+import { GetStaticProps } from 'next';
+import { redirect } from 'next/navigation';
 // components
 import Layout from '@/components/Layout';
-import LineGrid, { LineLoading } from '@/components/LineGrid';
-import Page404 from '@/pages/404';
-import ProgressBarSteps from '@/components/ProgressBarSteps';
-import Icon from '@/components/Icon';
-import ColorLegend from '@/components/ColorLegend';
+import { LineLoading } from '@/components/LineGrid';
 import LinePoint, { LineImage } from '@/components/LinePoint';
 // functions
 import useFetch from '@/hooks/useFetch';
@@ -16,7 +13,6 @@ import { capitalize } from '@/functions';
 // constants
 import { Group } from '@/types/Group';
 // import { zooms, zoomOptions } from '@/consts/zooms';
-import { GetStaticProps } from 'next';
 import useQueryParam from '@/hooks/useQueryParam';
 import { DEV } from '@/consts/env';
 
@@ -48,7 +44,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 	}, [ssr.group]);
 
 	if (!name) {
-		return <Page404 />;
+		redirect('/groups');
 	}
 	return (
 		<Layout

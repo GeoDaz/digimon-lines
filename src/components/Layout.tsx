@@ -8,8 +8,15 @@ interface Props {
 	children: React.ReactNode;
 	metatitle?: string;
 	metadescription?: string;
+	noGoBack?: boolean;
 }
-const Layout: React.FC<Props> = ({ title, children, metatitle, metadescription }) => (
+const Layout: React.FC<Props> = ({
+	title,
+	children,
+	metatitle,
+	metadescription,
+	noGoBack = false,
+}) => (
 	<>
 		<Head>
 			<title>{metatitle ? `${metatitle} | Digimon Lines` : 'Digimon Lines'}</title>
@@ -21,7 +28,7 @@ const Layout: React.FC<Props> = ({ title, children, metatitle, metadescription }
 		<main>
 			<Container className="page" fluid>
 				<h1>
-					<GoBack /> {title}
+					{!noGoBack && <GoBack />} {title}
 				</h1>
 				{children}
 			</Container>

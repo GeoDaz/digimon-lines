@@ -35,7 +35,11 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	}, []);
 
 	return (
-		<Layout title="Available lines">
+		<Layout
+			noGoBack
+			title="Available lines"
+			metadescription="The aim of this site is to present evolutionary lines designed to group together members of the same species."
+		>
 			<blockquote className="blockquote">
 				The aim of this site is to present evolutionary lines designed to group
 				together members of the same species.

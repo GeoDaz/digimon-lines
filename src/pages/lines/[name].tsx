@@ -1,11 +1,11 @@
 // modules
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
-import { useRouter } from 'next/router';
+import { Row, Col } from 'react-bootstrap';
+import { redirect } from 'next/navigation'
+import { GetStaticProps } from 'next';
 // components
 import Layout from '@/components/Layout';
 import LineGrid, { LineLoading } from '@/components/LineGrid';
-import Page404 from '@/pages/404';
 import ProgressBarSteps from '@/components/ProgressBarSteps';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
@@ -16,7 +16,6 @@ import { capitalize } from '@/functions';
 // constants
 import { Line } from '@/types/Line';
 import { zooms, zoomOptions } from '@/consts/zooms';
-import { GetStaticProps } from 'next';
 import transformLine from '@/functions/transformer/line';
 import useQueryParam from '@/hooks/useQueryParam';
 import { DEV } from '@/consts/env';
@@ -59,7 +58,7 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 	}, [ssr.line]);
 
 	if (!name) {
-		return <Page404 />;
+		redirect('/');
 	}
 	return (
 		<Layout

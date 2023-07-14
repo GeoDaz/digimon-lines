@@ -27,7 +27,14 @@ const LinePoint: React.FC<Props> = ({
 }) => {
 	if (available === false) {
 		return (
-			<div title={name} className={'line-point pictured unavailable'} style={style}>
+			<div
+				title={name}
+				className={makeClassName(
+					'line-point pictured unavailable',
+					type === GROUP && 'group'
+				)}
+				style={style}
+			>
 				<div className="line-point-safe-zone">
 					<LineImage name={name} type={type} {...props} />
 				</div>
@@ -42,7 +49,11 @@ const LinePoint: React.FC<Props> = ({
 		<Link
 			href={`/${type}s/${line}`}
 			title={name}
-			className={makeClassName('line-point pictured', available && 'available')}
+			className={makeClassName(
+				'line-point pictured',
+				available && 'available',
+				type === GROUP && 'group'
+			)}
 			style={style}
 		>
 			<div className="line-point-safe-zone">
@@ -51,7 +62,7 @@ const LinePoint: React.FC<Props> = ({
 			{available && (
 				<Icon
 					name="arrow-right-circle-fill"
-					className="text-primary hover-only"
+					className="text-primary hover-only circle"
 				/>
 			)}
 			{children}
@@ -60,8 +71,12 @@ const LinePoint: React.FC<Props> = ({
 };
 
 export const LineImage: React.FC<Props> = ({ name, title, className, style, type }) => {
-	const [src, setSrc] = useState(`/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`);
+	const [src, setSrc] = useState(
+		`/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`
+	);
 	const [loading, setLoading] = useState(true);
+	const [ratioWidth, setRatioWidth] = useState(1);
+	const [ratioHeight, setRatioHeight] = useState(1);
 
 	useEffect(() => {
 		const nextSrc = `/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`;
@@ -85,13 +100,21 @@ export const LineImage: React.FC<Props> = ({ name, title, className, style, type
 					setLoading(false);
 				}}
 				onLoad={e => setLoading(false)}
+				onLoadingComplete={({ naturalWidth, naturalHeight }) => {
+					if (naturalWidth > naturalHeight) {
+						setRatioHeight(naturalWidth / naturalHeight);
+					} else {
+						setRatioWidth(naturalHeight / naturalWidth);
+					}
+				}}
 				alt={name}
 				className={makeClassName('line-img rounded', className)}
-				width={150}
-				height={150}
+				width={150 / ratioWidth}
+				height={150 / ratioHeight}
 				title={title}
 				style={style}
 			/>
+			<span className="sr-only">{name}</span>
 		</>
 	);
 };
