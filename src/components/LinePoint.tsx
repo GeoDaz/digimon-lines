@@ -77,11 +77,13 @@ export const LineImage: React.FC<Props> = ({ name, title, className, style, type
 	const [loading, setLoading] = useState(true);
 	const [ratioWidth, setRatioWidth] = useState(1);
 	const [ratioHeight, setRatioHeight] = useState(1);
+	const [zIndex, setZIndex] = useState(2);
 
 	useEffect(() => {
 		const nextSrc = `/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`;
 		if (src != nextSrc) {
 			setLoading(true);
+			setZIndex(5);
 			setSrc(nextSrc);
 		}
 	}, [name]);
@@ -89,7 +91,7 @@ export const LineImage: React.FC<Props> = ({ name, title, className, style, type
 	return (
 		<>
 			{loading && (
-				<div className="spinner-wrapper">
+				<div className="spinner-wrapper" style={{ zIndex }}>
 					<Spinner animation="border" />
 				</div>
 			)}

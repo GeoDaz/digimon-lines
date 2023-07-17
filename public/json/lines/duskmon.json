@@ -1,0 +1,51 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "gazimonx",
+                "color": "x",
+                "from": [1,0]
+            }
+        ],
+        [
+            {
+                "name": "zurumon"
+            },
+            {
+                "name": "pagumon"
+            },
+            {
+                "name": "gazimon"
+            },
+            {
+                "name": "duskmon"
+            },
+            {
+                "name": "velgrmon"
+            },
+            {
+                "name": "bagramon"
+            },
+            {
+                "name": "darkknightmonbagramon",
+                "color": "fusion"
+            },
+            {
+                "name": "darknessbagramon",
+                "color": "fusion"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "pawnchessmonwhite",
+            "for": "darkknightmon"
+        },
+        {
+            "name": "garurumon",
+            "for": "gaomon"
+        }
+    ]
+}
