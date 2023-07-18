@@ -107,15 +107,17 @@
 				"name": "proximamon",
 				"size": 2,
 				"color": "fusion",
-				"color2": "fusion",
-				"from": [
-					-0.5,
-					-1
-				],
-				"from2": [
-					0.5,
-					-1
-				]
+                "from": null,
+                "fusionFrom": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
 			}
 		],
 		[

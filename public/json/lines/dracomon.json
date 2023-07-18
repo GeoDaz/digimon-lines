@@ -1,0 +1,90 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "dracomonx",
+                "color": "x",
+                "from": [
+                    1.5,
+                    0
+                ]
+            },
+            null,
+            null,
+            null,
+            {
+                "name": "examonx",
+                "color": "x",
+                "from": [
+                    1.5,
+                    0
+                ]
+            }
+        ],
+        [
+            {
+                "name": "petitmon",
+                "size": 2
+            },
+            {
+                "name": "babydramon",
+                "size": 2
+            },
+            {
+                "name": "dracomon",
+                "size": 2
+            },
+            [
+                {
+                    "name": "coredramonblue",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "coredramongreen",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "wingdramon"
+                },
+                {
+                    "name": "groundramon"
+                }
+            ],
+            [
+                {
+                    "name": "slayerdramon"
+                },
+                {
+                    "name": "breakdramon",
+                    "skins": ["gigabreakdramon"]
+                }
+            ],
+            {
+                "name": "examon",
+                "size": 2,
+                "color": "fusion",
+                "from": null,
+                "fusionFrom": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
+            }
+        ]
+    ]
+}

@@ -183,9 +183,9 @@
     "related": [
         {"name": "gammamon", "for": "triceramon"},
         {"name": "armadillomon", "for": "spinomon"},
-        {"name":"flarelizardmon", "for": "machinedramon"},
-        "greymon",
-        {"name":"chimeramon", "for": "machinedramon"},
+        {"name":"flarelizardmon", "from": "machinedramon"},
+        {"name": "greymon", "from": "agumon"},
+        {"name":"chimeramon", "from": "machinedramon"},
         {"name": "commandramon", "for": "gundramon"}
     ]
 }

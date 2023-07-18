@@ -92,28 +92,28 @@
     "related": [
         "ultimatechaosmon",
         {
-            "name": "gammamon",
-            "for": "cannondramon"
-        },
-        {
             "name": "leomon",
-            "for": "chaosmon"
+            "from": "chaosmon"
         },
         {
             "name": "greymon",
-            "for": "brigadramon"
+            "from": "brigadramon"
+        },
+        {
+            "name": "monodramon",
+            "from": "darkdramon"
         },
         {
             "name": "tyranomon",
-            "for": "gundramon"
-        },
-        {
-            "name": "monochromon",
-            "for": "darkdramon"
+            "from": "gundramon"
         },
         {
             "name": "hookmon",
-            "for": "gundramon"
+            "for": "magnakidmon"
+        },
+        {
+            "name": "gammamon",
+            "from": "cannondramon"
         },
         {
             "name": "impmon",

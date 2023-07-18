@@ -1,0 +1,43 @@
+{
+    "columns": [
+        [
+            {
+                "name": "zurumon"
+            },
+            {
+                "name": "arkadimon0",
+                "color": "dark"
+            },
+            {
+                "name": "arkadimon",
+                "color": "dark"
+            },
+            {
+                "name": "arkadimon2",
+                "color": "dark"
+            },
+            {
+                "name": "arkadimon3",
+                "color": "dark"
+            },
+            {
+                "name": "arkadimon4",
+                "color": "dark"
+            },
+            null,
+            {
+                "name": "arkadimon5",
+                "color": "dark",
+                "from": [
+                    0,
+                    -2
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {"name":"impmon", "for": "demonsu"},
+        {"name": "duskmon", "for": "bagramon"},
+        "keramon"
+    ]
+}
