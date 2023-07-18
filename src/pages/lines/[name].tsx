@@ -95,11 +95,8 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 				<div className="row mb-4">
 					<div className="col-6 d-flex justify-content-start">
 						{!!prev && (
-							<LinePoint
-								className="move-link"
-								name={prev}
-							>
-								<span className='absolute-legend'>
+							<LinePoint className="move-link" name={prev}>
+								<span className="absolute-legend">
 									<Icon name="arrow-left-circle-fill" /> Previous
 								</span>
 							</LinePoint>
@@ -107,11 +104,8 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 					</div>
 					<div className="col-6 d-flex justify-content-end">
 						{!!next && (
-							<LinePoint
-								name={next}
-								className="move-link"
-							>
-								<span className='absolute-legend'>
+							<LinePoint name={next} className="move-link">
+								<span className="absolute-legend">
 									Next <Icon name="arrow-right-circle-fill" />
 								</span>
 							</LinePoint>
@@ -191,33 +185,34 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	if (!params || !params.name) {
 		return { notFound: true };
 	}
+	let line: Line | null = null;
 	try {
-		const line: Line | undefined = transformLine(
-			require(`../../../public/json/lines/${params.name}.json`)
-		);
-		const lines = require('../../../public/json/lines/_index.json');
-		const fusions = require('../../../public/json/lines/_fusion.json');
-
-		let prev = null;
-		let next = null;
-		let index = lines.findIndex((name: string) => name == params.name);
-		if (index < 0) {
-			index = fusions.findIndex((name: string) => name == params.name);
-		}
-		if (index > 0) {
-			prev = lines[index - 1];
-		}
-		if (index > -1 && index < lines.length - 1) {
-			next = lines[index + 1];
-		}
-
-		return { props: { ssr: { name: params.name, line, prev, next } } };
+		line =
+			transformLine(require(`../../../public/json/lines/${params.name}.json`)) ||
+			null;
 	} catch (e) {
 		if (process.env.NODE_ENV === DEV) {
 			console.error(e);
 		}
-		return { props: { ssr: { name: params.name } } };
 	}
+
+	const lines = require('../../../public/json/lines/_index.json');
+	const fusions = require('../../../public/json/lines/_fusion.json');
+
+	let prev = null;
+	let next = null;
+	let index = lines.findIndex((name: string) => name == params.name);
+	if (index < 0) {
+		index = fusions.findIndex((name: string) => name == params.name);
+	}
+	if (index > 0) {
+		prev = lines[index - 1];
+	}
+	if (index > -1 && index < lines.length - 1) {
+		next = lines[index + 1];
+	}
+
+	return { props: { ssr: { name: params.name, line, prev, next } } };
 };
 
 export default PageLine;

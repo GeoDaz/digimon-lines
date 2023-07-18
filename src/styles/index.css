@@ -91,8 +91,11 @@ body ::-webkit-scrollbar-track {
   border-radius: 5px;
 }
 
-a,
-.text-primary{
+a {
+  color: var(--bs-primary);
+}
+
+.text-primary {
   color: var(--bs-primary) !important;
 }
 
@@ -289,11 +292,12 @@ a.line-point {
 }
 
 .line-point.move-link:hover .absolute-legend .bi-arrow-left-circle-fill::before,
-.line-point.move-link:focus .absolute-legend .bi-arrow-left-circle-fill::before{
+.line-point.move-link:focus .absolute-legend .bi-arrow-left-circle-fill::before {
   content: "\f12a";
 }
+
 .line-point.move-link:hover .absolute-legend .bi-arrow-right-circle-fill::before,
-.line-point.move-link:focus .absolute-legend .bi-arrow-right-circle-fill::before{
+.line-point.move-link:focus .absolute-legend .bi-arrow-right-circle-fill::before {
   content: "\f134";
 }
 
