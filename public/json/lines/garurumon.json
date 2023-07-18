@@ -460,27 +460,27 @@
         "omegamonmm",
         {
             "name": "greymon",
-            "for": "omegamon"
+            "from": "omegamon"
         },
         {
             "name": "chimeramon",
-            "for": "garurumon"
+            "from": "garurumon"
         },
         {
             "name": "leomon",
-            "for": "marsmon"
+            "from": "marsmon"
         },
         {
             "name": "bearmon",
-            "for": "marsmon"
+            "from": "marsmon"
         },
         {
             "name": "phascomon",
-            "for": "astamon"
+            "from": "astamon"
         },
         {
-            "name": "gazimon",
-            "for": "gaomon"
+            "name": "duskmon",
+            "for": "gazimon"
         },
         {
             "name": "loogamon",
@@ -488,7 +488,7 @@
         },
         {
             "name": "armadillomon",
-            "for": "drimogemon"
+            "from": "drimogemon"
         }
     ]
 }

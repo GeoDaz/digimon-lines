@@ -278,27 +278,31 @@
         "ultimatechaosmon",
         {
             "name": "commandramon",
-            "for": "chaosmon"
+            "for": "darkdramon"
         },
         {
             "name": "falcomon",
-            "for": "chaosmonvm"
+            "for": "valdurmon"
         },
         {
-            "name": "dianamon",
-            "for": "gracenovamon"
-        },
-        {
-            "name": "bearmon",
-            "for": "grapleomon"
+            "name": "lunamon",
+            "for": "dianamon"
         },
         {
             "name": "gatomon",
             "for": "leopardmon"
         },
         {
+            "name": "pulsemon",
+            "for": "achillesmon"
+        },
+        {
+            "name": "bearmon",
+            "from": "grapleomon"
+        },
+        {
             "name": "garurumon",
-            "for": "marsmon"
+            "from": "marsmon"
         }
     ]
 }

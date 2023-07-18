@@ -140,9 +140,21 @@
             "name": "loogamon",
             "for": "fenriloogamon"
         },
-        "kotemon",
-        "meramon",
-        "leomon",
-        "penmon"
+        {
+            "name": "kotemon",
+            "from": "kazuchimon"
+        },
+        {
+            "name": "meramon",
+            "from": "shroudmon"
+        },
+        {
+            "name": "leomon",
+            "from": "achillesmon"
+        },
+        {
+            "name": "penmon",
+            "from": "tempomon"
+        }
     ]
 }

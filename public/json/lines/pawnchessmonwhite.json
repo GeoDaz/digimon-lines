@@ -209,7 +209,9 @@
     ],
     "related": [
         "kotemon",
+        {"name": "duskmon", "for": "bagramon"},
         {"name": "greymon", "for": "greyknightmon"},
-        {"name": "duskmon", "for": "bagramon"}
+        {"name": "greymon", "for": "skullgreymon"},
+        {"name": "devimon", "for": "skullsatamon"}
     ]
 }
