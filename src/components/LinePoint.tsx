@@ -23,6 +23,7 @@ const LinePoint: React.FC<Props> = ({
 	style,
 	available,
 	children,
+	className,
 	...props
 }) => {
 	if (available === false) {
@@ -31,14 +32,15 @@ const LinePoint: React.FC<Props> = ({
 				title={name}
 				className={makeClassName(
 					'line-point pictured unavailable',
-					type === GROUP && 'group'
+					type === GROUP && 'group',
+					className
 				)}
 				style={style}
 			>
 				<div className="line-point-safe-zone">
 					<LineImage name={name} type={type} {...props} />
 				</div>
-				<span className="hover-only text-warning fw-bold">
+				<span className="absolute-legend hover-only text-warning fw-bold">
 					<Icon name="exclamation-triangle-fill" /> Work in progress...
 				</span>
 				{children}
@@ -52,7 +54,8 @@ const LinePoint: React.FC<Props> = ({
 			className={makeClassName(
 				'line-point pictured',
 				available && 'available',
-				type === GROUP && 'group'
+				type === GROUP && 'group',
+				className
 			)}
 			style={style}
 		>

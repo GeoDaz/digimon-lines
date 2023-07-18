@@ -1,7 +1,7 @@
 // modules
 import React, { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { redirect } from 'next/navigation'
+import { redirect } from 'next/navigation';
 import { GetStaticProps } from 'next';
 // components
 import Layout from '@/components/Layout';
@@ -19,11 +19,14 @@ import { zooms, zoomOptions } from '@/consts/zooms';
 import transformLine from '@/functions/transformer/line';
 import useQueryParam from '@/hooks/useQueryParam';
 import { DEV } from '@/consts/env';
+import Link from 'next/link';
 
 const NAME = 'name';
 interface StaticProps {
 	line?: Line;
 	name?: string;
+	next?: string;
+	prev?: string;
 }
 interface Props {
 	ssr: StaticProps;
@@ -60,6 +63,7 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 	if (!name) {
 		redirect('/');
 	}
+	const { next, prev } = ssr;
 	return (
 		<Layout
 			title={
@@ -70,7 +74,7 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 			metatitle={capitalize(name) + ' Line'}
 		>
 			<div className="line-filters">
-				<Icon name="zoom-in lead d-inline-block d-max-xs-none" />
+				<Icon name="zoom-in" className="lead d-inline-block d-max-xs-none" />
 				<ProgressBarSteps
 					steps={zoomOptions}
 					selected={zoom}
@@ -86,6 +90,34 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 				<LineGrid line={line} zoom={zooms[zoom]} />
 			) : (
 				<p>Line not found</p>
+			)}
+			{(!!prev || !!next) && (
+				<div className="row mb-4">
+					<div className="col-6 d-flex justify-content-start">
+						{!!prev && (
+							<LinePoint
+								className="move-link"
+								name={prev}
+							>
+								<span className='absolute-legend'>
+									<Icon name="arrow-left-circle-fill" /> Previous
+								</span>
+							</LinePoint>
+						)}
+					</div>
+					<div className="col-6 d-flex justify-content-end">
+						{!!next && (
+							<LinePoint
+								name={next}
+								className="move-link"
+							>
+								<span className='absolute-legend'>
+									Next <Icon name="arrow-right-circle-fill" />
+								</span>
+							</LinePoint>
+						)}
+					</div>
+				</div>
 			)}
 			{!!line?.notes && (
 				<>
@@ -111,12 +143,22 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 							}
 							return (
 								<Col key={i}>
-									<LinePoint name={relation.name}>
+									<LinePoint
+										name={relation.for || relation.name}
+										line={relation.name}
+									>
 										{!!relation.for && (
 											<LineImage
 												className="line-skin"
-												name={relation.for}
-												title={relation.for}
+												name={relation.name}
+												title={relation.name}
+											/>
+										)}
+										{!!relation.from && (
+											<LineImage
+												className="line-skin" /* from */
+												name={relation.from}
+												title={relation.from}
 											/>
 										)}
 									</LinePoint>
@@ -153,8 +195,23 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		const line: Line | undefined = transformLine(
 			require(`../../../public/json/lines/${params.name}.json`)
 		);
+		const lines = require('../../../public/json/lines/_index.json');
+		const fusions = require('../../../public/json/lines/_fusion.json');
 
-		return { props: { ssr: { name: params.name, line } } };
+		let prev = null;
+		let next = null;
+		let index = lines.findIndex((name: string) => name == params.name);
+		if (index < 0) {
+			index = fusions.findIndex((name: string) => name == params.name);
+		}
+		if (index > 0) {
+			prev = lines[index - 1];
+		}
+		if (index > -1 && index < lines.length - 1) {
+			next = lines[index + 1];
+		}
+
+		return { props: { ssr: { name: params.name, line, prev, next } } };
 	} catch (e) {
 		if (process.env.NODE_ENV === DEV) {
 			console.error(e);

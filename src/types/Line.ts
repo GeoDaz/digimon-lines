@@ -18,7 +18,8 @@ export interface LinePoint {
 
 export interface LineRelation {
 	name: string;
-	for: string;
+	for?: string;
+	from?: string;
 }
 
 export default Line;
