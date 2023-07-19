@@ -150,7 +150,7 @@
                 "name": "goromon"
             },
             {
-                "name": "gotsumon"
+                "name": "gottsumon"
             },
             {
                 "name": "monochromon"
@@ -320,8 +320,11 @@
             }
         ]
     ],
+    "notes": [
+        "We choose to use Gottsumon and not Gammamon for Monochromon this time, because we wanted to use digimons that already existed when Chimeramon was released.",
+        "MachineDramon can simply evolve from digimons given as its fusions, but is body is made of parts of each of them"
+    ],
     "related": [
-        "tyranomon",
         "greymon",
         "garurumon",
         "kabuterimon",
@@ -330,9 +333,18 @@
             "name": "seadramon",
             "for": "airdramon"
         },
+        {
+            "name": "gammamon",
+            "for": "monochromon"
+        },
+        {
+            "name": "golemon",
+            "for": "gottsumon"
+        },
         "angemon",
         "devimon",
         "flarelizardmon",
+        "tyranomon",
         "hagurumon",
         {
             "name": "mamemon",
