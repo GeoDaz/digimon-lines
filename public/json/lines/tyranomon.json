@@ -93,8 +93,13 @@
                 "name": "metaltyranomonx",
                 "color": "x"
             },
-            null,
-            null
+            {
+                "name": "machinedramon",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
         ],
         [
             null,
@@ -181,11 +186,33 @@
         ]
     ],
     "related": [
-        {"name": "gammamon", "for": "triceramon"},
-        {"name": "armadillomon", "for": "spinomon"},
-        {"name":"flarelizardmon", "from": "machinedramon"},
-        {"name": "greymon", "from": "agumon"},
-        {"name":"chimeramon", "from": "machinedramon"},
-        {"name": "commandramon", "for": "gundramon"}
+        {
+            "name": "gammamon",
+            "for": "triceramon"
+        },
+        {
+            "name": "armadillomon",
+            "for": "spinomon"
+        },
+        {
+            "name": "flarelizardmon",
+            "from": "machinedramon"
+        },
+        {
+            "name": "greymon",
+            "from": "agumon"
+        },
+        {
+            "name": "chimeramon",
+            "from": "machinedramon"
+        },
+        {
+            "name": "apocalymon",
+            "from": "machinedramon"
+        },
+        {
+            "name": "commandramon",
+            "for": "gundramon"
+        }
     ]
 }
