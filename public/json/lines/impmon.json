@@ -12,15 +12,15 @@
 					0
 				]
 			},
-			null,
+			{
+				"name": "wizardmonx",
+				"color": "x",
+				"size": 2
+			},
 			{
 				"name": "baalmonx",
 				"color": "x",
-				"size": 2,
-				"from": [
-					2,
-					0
-				]
+				"size": 2
 			},
 			[
 				{
@@ -39,8 +39,7 @@
 						-1
 					]
 				}
-			],
-			null
+			]
 		],
 		[
 			{
@@ -50,38 +49,20 @@
 			{
 				"name": "yarmon",
 				"color": "dark",
-				"size": 2,
-				"from": [
-					0,
-					-1
-				]
+				"size": 2
 			},
 			{
 				"name": "impmon",
 				"color": "dark",
-				"size": 2,
-				"from": [
-					0,
-					-1
-				]
+				"size": 2
 			},
 			{
-				"name": "boogiemon",
-				"color": "dark",
-				"size": 2,
-				"from": [
-					0,
-					-1
-				]
+				"name": "wizardmon",
+				"size": 2
 			},
 			{
 				"name": "baalmon",
-				"color": "dark",
-				"size": 2,
-				"from": [
-					0,
-					-1
-				]
+				"size": 2
 			},
 			[
 				{
@@ -107,22 +88,15 @@
 			[
 				{
 					"name": "beelzebumonbm",
-					"color": "mode",
-					"from": [
-						0,
-						-1
-					]
-				},
-				null
+					"color": "mode"
+				}
 			]
 		],
 		[
 			null,
 			null,
-			null,
-			null,
 			{
-				"name": "phelesmon",
+				"name": "petitmamon",
 				"color": "dark",
 				"from": [
 					-1.5,
@@ -130,12 +104,20 @@
 				]
 			},
 			{
-				"name": "demon",
+				"name": "boogiemon",
 				"color": "dark",
 				"from": [
-					0,
+					-1.5,
 					-1
-				],
+				]
+			},
+			{
+				"name": "phelesmon",
+				"color": "dark"
+			},
+			{
+				"name": "demon",
+				"color": "dark",
 				"skins": [
 					"demon2"
 				]
@@ -168,8 +150,12 @@
 	],
 	"related": [
 		"ogudomon",
-		"devimon",
 		"wizardmon",
+		{
+			"name": "meramon",
+			"for": "deathmeramon"
+		},
+		"devimon",
 		{
 			"name": "sistermonblanc",
 			"for": "sistermonnoirawake"
@@ -184,8 +170,6 @@
 		}
 	],
 	"notes": [
-		"We don't choose to use Wizardmon as Beelzebumon Champion stage because Impmon, Baalmon and Beelzebumon are based on demons and not Wizardmon. Beside that, Wizardmon is already used in Dynasmon line that come from Ghostmon and not Impmon. ",
-		"Boogiemon match the demon theme of this line.",
 		"Astar is demon close to Beelzebub in the demonology but Astamon is already taken as an Ultimate/Perfect on Belphemon line."
 	]
 }

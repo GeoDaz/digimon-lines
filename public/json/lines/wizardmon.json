@@ -93,10 +93,10 @@
         ]
     ],
     "related": [
-        {"name": "mercurymon", "from": "ancientwisemon"},
+        "impmon",
         "bakemon",
         "meramon",
-        "impmon",
-        "gatomon"
+        {"name": "mercurymon", "from": "ancientwisemon"},
+        {"name": "gatomon", "from": "witchmon"}
     ]
 }
