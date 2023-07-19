@@ -201,15 +201,19 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 	let prev = null;
 	let next = null;
+	let list = lines;
 	let index = lines.findIndex((name: string) => name == params.name);
 	if (index < 0) {
 		index = fusions.findIndex((name: string) => name == params.name);
+		if (index > -1) {
+			list = fusions;
+		}
 	}
 	if (index > 0) {
-		prev = lines[index - 1];
+		prev = list[index - 1];
 	}
-	if (index > -1 && index < lines.length - 1) {
-		next = lines[index + 1];
+	if (index > -1 && index < list.length - 1) {
+		next = list[index + 1];
 	}
 
 	return { props: { ssr: { name: params.name, line, prev, next } } };

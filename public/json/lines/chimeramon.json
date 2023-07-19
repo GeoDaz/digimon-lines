@@ -325,11 +325,18 @@
         "greymon",
         "garurumon",
         "kabuterimon",
-        "seadramon",
+        "kuwagamon",
+        {
+            "name": "seadramon",
+            "for": "airdramon"
+        },
         "angemon",
         "devimon",
         "flarelizardmon",
         "hagurumon",
-        "mamemon"
+        {
+            "name": "mamemon",
+            "for": "metalmamemon"
+        }
     ]
 }
