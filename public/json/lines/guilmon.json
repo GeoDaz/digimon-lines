@@ -9,7 +9,10 @@
             {
                 "name": "medievalgallantmon",
                 "color": "x",
-                "from": [1,-1]
+                "from": [
+                    1,
+                    -1
+                ]
             }
         ],
         [
@@ -18,7 +21,10 @@
             {
                 "name": "guilmonx",
                 "color": "x",
-                "from": [2,0]
+                "from": [
+                    2,
+                    0
+                ]
             },
             {
                 "name": "growlmonx",
@@ -42,7 +48,10 @@
             {
                 "name": "megidramonx",
                 "color": "dark",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ],
         [
@@ -76,7 +85,10 @@
             null,
             {
                 "name": "growlmonorange",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
                 "name": "wargrowlmonorange"
@@ -84,7 +96,10 @@
             {
                 "name": "megidramon",
                 "color": "dark",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ],
         [
@@ -93,7 +108,10 @@
             {
                 "name": "guilmonb",
                 "color": "dark",
-                "from": [-2,-1]
+                "from": [
+                    -2,
+                    -1
+                ]
             },
             {
                 "name": "growlmonb",
@@ -106,12 +124,20 @@
             {
                 "name": "chaosgallantmon",
                 "color": "dark",
-                "skins": ["chaosgallantmoncore"]
+                "skins": [
+                    "chaosgallantmoncore"
+                ]
             },
             {
                 "name": "chaosgallantmoncm",
                 "color": "mode"
             }
         ]
+    ],
+    "related": [
+        {
+            "name": "raidenmon",
+            "for": "suijinmon"
+        }
     ]
 }
