@@ -241,18 +241,6 @@
     "related": [
         "ogudomon",
         {
-            "name": "bakemon",
-            "for": "piemon"
-        },
-        {
-            "name": "dracmon",
-            "from": "myotismon"
-        },
-        {
-            "name": "impmon",
-            "for": "boogiemon"
-        },
-        {
             "name": "angemon",
             "from": "lucemonfm"
         },
@@ -261,8 +249,28 @@
             "from": "ladydevimon"
         },
         {
+            "name": "dracmon",
+            "from": "myotismon"
+        },
+        {
+            "name": "jellymon",
+            "from": "marinedevimon"
+        },
+        {
+            "name": "impmon",
+            "for": "demon"
+        },
+        {
             "name": "hookmon",
             "from": "boltboutamon"
+        },
+        {
+            "name": "bakemon",
+            "for": "piemon"
+        },
+        {
+            "name": "seadramon",
+            "for": "leviamon"
         }
     ]
 }

@@ -97,8 +97,15 @@
             "name": "penmon",
             "for": "crossmon"
         },
-        {"name": "swimmon", "from": "dolphmon"},
-		"omegamonmm",
+        {
+            "name": "swimmon",
+            "from": "dolphmon"
+        },
+        {
+            "name": "jellymon",
+            "for": "neptunemon"
+        },
+        "omegamonmm",
         {
             "name": "hookmon",
             "for": "olegmon"

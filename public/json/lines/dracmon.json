@@ -43,20 +43,12 @@
     ],
     "related": [
         {
-            "name": "phascomon",
-            "for": "astamon"
-        },
-        {
-            "name": "garurumon",
-            "for": "astamon"
-        },
-        {
             "name": "devimon",
             "for": "myotismon"
         },
         {
             "name": "angemon",
-            "for": "slashangemon"
+            "from": "slashangemon"
         }
     ]
 }

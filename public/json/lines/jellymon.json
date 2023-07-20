@@ -11,7 +11,9 @@
                     2,
                     -1
                 ],
-                "skins": ["splashmondm"]
+                "skins": [
+                    "splashmondm"
+                ]
             }
         ],
         [
@@ -177,8 +179,21 @@
         ]
     ],
     "related": [
-        "devimon",
-        "angemon",
-        "swimmon"
+        {
+            "name": "devimon",
+            "from": "marinedevimon"
+        },
+        {
+            "name": "angemon",
+            "from": "marineangemon"
+        },
+        {
+            "name": "seadramon",
+            "for": "leviamon"
+        },
+        {
+            "name": "swimmon",
+            "from": "neptunemon"
+        }
     ]
 }

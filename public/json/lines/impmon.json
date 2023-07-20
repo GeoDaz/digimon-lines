@@ -155,7 +155,18 @@
 			"name": "meramon",
 			"for": "deathmeramon"
 		},
-		"devimon",
+		{
+			"name": "devimon",
+			"from": "demon"
+		},
+		{
+			"name": "arkadimon",
+			"from": "demonsu"
+		},
+		{
+			"name": "gatomon",
+			"for": "ladydevimon"
+		},
 		{
 			"name": "sistermonblanc",
 			"for": "sistermonnoirawake"
