@@ -48,7 +48,8 @@
                 ]
             },
             {
-                "name": "tyrantkabuterimon"
+                "name": "tyrantkabuterimon",
+                "color": "dark"
             }
         ],
         [
@@ -126,11 +127,14 @@
     ],
     "related": [
         "kuwagamon",
-        {"name": "pulsemon", "from": "climbmon"},
-		{
-			"name": "chimeramon",
-			"from": "kabuterimon"
-		},
-		"omegamonmm"
+        {
+            "name": "pulsemon",
+            "from": "climbmon"
+        },
+        {
+            "name": "chimeramon",
+            "from": "kabuterimon"
+        },
+        "omegamonmm"
     ]
 }

@@ -53,9 +53,18 @@
         ]
     ],
     "related": [
-        "dorumon",
-        "loogamon",
+        {
+            "name": "dorumon",
+            "for": "alphamon"
+        },
         "kotemon",
-        "gammamon"
+        {
+            "name": "veemon",
+            "for": "qinglongmon"
+        },
+        {
+            "name": "gammamon",
+            "from": "zanmetsumon"
+        }
     ]
 }

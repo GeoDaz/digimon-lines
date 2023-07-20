@@ -83,8 +83,10 @@
         ]
     ],
     "related": [
-        "ryudamon",
-        "loogamon",
+        {
+            "name": "ryudamon",
+            "for": "ouryumon"
+        },
         {
             "name": "greymon",
             "for": "gaiomon"

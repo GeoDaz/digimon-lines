@@ -1,0 +1,89 @@
+{
+    "columns": [
+        [
+            {
+                "name": "jyarimon"
+            },
+            {
+                "name": "gigimon"
+            },
+            {
+                "name": "guilmon"
+            },
+            {
+                "name": "growlmon"
+            },
+            {
+                "name": "wargrowlmon"
+            },
+            {
+                "name": "suijinmon"
+            }
+        ],
+        [
+            {
+                "name": "zerimon"
+            },
+            {
+                "name": "gummymon"
+            },
+            {
+                "name": "terriermon"
+            },
+            {
+                "name": "gargomon"
+            },
+            {
+                "name": "rapidmon"
+            },
+            {
+                "name": "fujinmon"
+            },
+            {
+                "name": "raidenmon",
+                "color": "fusion",
+                "from": null,
+                "fusionFrom": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "relemon"
+            },
+            {
+                "name": "pokomon"
+            },
+            {
+                "name": "renamon"
+            },
+            {
+                "name": "kyubimon"
+            },
+            {
+                "name": "taomon"
+            },
+            {
+                "name": "raijinmon"
+            }
+        ]
+    ],
+    "related": [
+        "guilmon",
+        "terriermon",
+        "renamon",
+        "monodramon"
+    ]
+}

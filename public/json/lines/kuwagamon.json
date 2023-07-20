@@ -116,6 +116,7 @@
             {
                 "name": "scorpiomon",
                 "color": "dark",
+                "color2": "dark",
                 "from2": [
                     -1,
                     -1
@@ -136,10 +137,12 @@
                 "name": "bladekuwagamon"
             },
             {
-                "name": "metallifekuwagamon"
+                "name": "metallifekuwagamon",
+                "color": "armor"
             },
             {
-                "name": "tyrantkabuterimon"
+                "name": "tyrantkabuterimon",
+                "color": "dark"
             }
         ]
     ],
