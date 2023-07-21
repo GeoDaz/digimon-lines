@@ -57,12 +57,7 @@
                 "name": "aegiochusmon"
             },
             {
-                "name": "jupitermon",
-                "color": "light"
-            },
-            {
-                "name": "jupitermonwrath",
-                "color": "mode"
+                "name": "bacchusmon"
             }
         ],
         [
@@ -77,6 +72,14 @@
                     -1,
                     0
                 ]
+            },
+            {
+                "name": "jupitermon",
+                "color": "light"
+            },
+            {
+                "name": "jupitermonwrath",
+                "color": "mode"
             }
         ],
         [
@@ -91,6 +94,10 @@
                     -1,
                     0
                 ]
+            },
+            {
+                "name": "plutomon",
+                "color": "dark"
             }
         ],
         [
@@ -104,6 +111,9 @@
                     -1,
                     0
                 ]
+            },
+            {
+                "name": "ceresmon"
             }
         ],
         [
@@ -117,8 +127,16 @@
                     -1,
                     0
                 ]
+            },
+            {
+                "name": "vulcanusmon",
+                "color": "fire"
             }
         ]
+    ],
+    "_commented": [
+        "If Bacchusmon had respected the lore of its god inspiration, it should be part of this line. But, the digimon is not inspired on satyr unlike Aegiomon",
+        "Aegiochusmon forms can make think to other gods, Light still to Jupitermon, but Dark to Plutomon, Green to Ceresmon and Blue to Vulcanusmon."
     ],
     "related": [
         {
@@ -128,6 +146,18 @@
         {
             "name": "gatomon",
             "for": "junomon"
+        },
+        {
+            "name": "labramon",
+            "from": "plutomon"
+        },
+        {
+            "name": "palmon",
+            "from": "caresmon"
+        },
+        {
+            "name": "golemon",
+            "from": "vulcanusmon"
         }
     ]
 }
