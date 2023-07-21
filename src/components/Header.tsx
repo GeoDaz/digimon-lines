@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Navbar } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
+import Icon from './Icon';
 
 const Header: React.FC = () => (
 	<header className="sticky-top">
@@ -11,7 +12,7 @@ const Header: React.FC = () => (
 					<Image src="/images/icon.png" alt="logo" height="26" width="32" />{' '}
 					Digimon Lines
 				</Navbar.Brand>
-				<div className="navbar-nav">
+				<div className="navbar-nav flex-grow-1">
 					<Link className="nav-link" href="/">
 						Lines
 					</Link>
@@ -19,6 +20,15 @@ const Header: React.FC = () => (
 						Groups
 					</Link>
 				</div>
+				<Link
+					href="https://discord.gg/GkGd8ED8Nc"
+					target="_blank"
+					rel="nofollow noopener noreferrer"
+					title="discord"
+					className="fs-4"
+				>
+					<Icon name="discord" />
+				</Link>
 			</Container>
 		</Navbar>
 	</header>

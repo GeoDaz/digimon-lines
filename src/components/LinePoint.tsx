@@ -80,13 +80,13 @@ export const LineImage: React.FC<Props> = ({ name, title, className, style, type
 	const [loading, setLoading] = useState(true);
 	const [ratioWidth, setRatioWidth] = useState(1);
 	const [ratioHeight, setRatioHeight] = useState(1);
-	const [zIndex, setZIndex] = useState(2);
+	const [loadingStyle, setLoadingStyle] = useState({ opacity: 1, zIndex: 2 });
 
 	useEffect(() => {
 		const nextSrc = `/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`;
 		if (src != nextSrc) {
 			setLoading(true);
-			setZIndex(5);
+			setLoadingStyle({ opacity: 1, zIndex: 5 });
 			setSrc(nextSrc);
 		}
 	}, [name]);
@@ -94,7 +94,7 @@ export const LineImage: React.FC<Props> = ({ name, title, className, style, type
 	return (
 		<>
 			{loading && (
-				<div className="spinner-wrapper" style={{ zIndex }}>
+				<div className="spinner-wrapper" style={loadingStyle}>
 					<Spinner animation="border" />
 				</div>
 			)}
@@ -104,7 +104,13 @@ export const LineImage: React.FC<Props> = ({ name, title, className, style, type
 					setSrc('/images/digimon/unknown.jpg');
 					setLoading(false);
 				}}
-				onLoad={e => setLoading(false)}
+				onLoad={e => {
+					setTimeout(() => {
+						setLoading(false);
+						setLoadingStyle({ opacity: 0, zIndex: 2 });
+					}, 300);
+					setLoadingStyle({ zIndex: loadingStyle.zIndex, opacity: 0 });
+				}}
 				onLoadingComplete={({ naturalWidth, naturalHeight }) => {
 					if (naturalWidth > naturalHeight) {
 						setRatioHeight(naturalWidth / naturalHeight);

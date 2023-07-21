@@ -410,6 +410,8 @@ a.line-point {
 
 .line-point .line-img:hover~.line-skin,
 .line-point .line-img:focus~.line-skin,
+.line-point .line-point-safe-zone:hover~.line-skin,
+.line-point .line-point-safe-zone:focus~.line-skin,
 .line-point .line-skin:hover~.line-skin,
 .line-point .line-skin:focus~.line-skin {
   opacity: 0;
@@ -440,6 +442,9 @@ a.line-point {
   justify-content: center;
   align-items: center;
   z-index: 2;
+  background-color: white;
+  border-radius: var(--bs-border-radius);
+  transition: all .3s;
 }
 
 .line-point .spinner-wrapper .spinner-border {
