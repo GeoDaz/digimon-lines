@@ -2,7 +2,7 @@
     "columns": [
         [
             {
-                "name": "dokugumon"
+                "name": "leafmon"
             },
             {
                 "name": "kodokugumon"
@@ -29,7 +29,7 @@
                 "name": "gyukimon",
                 "color": "fusion",
                 "from": [
-                    0,
+                    -1,
                     -1
                 ]
             }
