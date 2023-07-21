@@ -16,6 +16,10 @@
             {
                 "name": "gyukimon",
                 "color": "fusion"
+            },
+            {
+                "name": "gulfmon",
+                "color": "dark"
             }
         ],
         [
@@ -39,12 +43,16 @@
     ],
     "related": [
         {
-            "name": "kotemon",
-            "from": "zanbamon"
-        },
-        {
             "name": "dokugumon",
             "from": "gyukimon"
+        },
+        {
+            "name": "phascomon",
+            "from": "gulfmon"
+        },
+        {
+            "name": "kotemon",
+            "from": "zanbamon"
         }
     ]
 }
