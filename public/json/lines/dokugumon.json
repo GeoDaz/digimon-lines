@@ -1,0 +1,52 @@
+{
+    "columns": [
+        [
+            {
+                "name": "dokugumon"
+            },
+            {
+                "name": "kodokugumon"
+            },
+            {
+                "name": "kodokugumon2"
+            },
+            {
+                "name": "dokugumon"
+            },
+            {
+                "name": "arukenimon"
+            },
+            {
+                "name": "parasitemon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "gyukimon",
+                "color": "fusion",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "minotarumon",
+            "from": "gyukimon"
+        },
+        {
+            "name": "keramon",
+            "from": "armageddemon"
+        },
+        {
+            "name": "bakemon",
+            "from": "mummymon"
+        }
+    ]
+}
