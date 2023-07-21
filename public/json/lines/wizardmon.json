@@ -95,8 +95,17 @@
     "related": [
         "impmon",
         "bakemon",
-        "meramon",
-        {"name": "mercurymon", "from": "ancientwisemon"},
-        {"name": "gatomon", "from": "witchmon"}
+        {
+            "name": "meramon",
+            "from": "demimeramon"
+        },
+        {
+            "name": "mercurymon",
+            "from": "ancientwisemon"
+        },
+        {
+            "name": "gatomon",
+            "from": "witchmon"
+        }
     ]
 }

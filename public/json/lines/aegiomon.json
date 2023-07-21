@@ -1,0 +1,133 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "moosemon",
+                "color": "ice",
+                "from": [
+                    3,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "oryxmon",
+                "from": [
+                    2,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sheepmon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "pajiramon"
+            }
+        ],
+        [
+            {
+                "name": "punimon"
+            },
+            {
+                "name": "tsunomon"
+            },
+            {
+                "name": "pillowmon"
+            },
+            {
+                "name": "aegiomon"
+            },
+            {
+                "name": "aegiochusmon"
+            },
+            {
+                "name": "jupitermon",
+                "color": "light"
+            },
+            {
+                "name": "jupitermonwrath",
+                "color": "mode"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "aegiochusmonholly",
+                "color": "light",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "aegiochusmondark",
+                "color": "dark",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "aegiochusmongreen",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "aegiochusmonblue",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "phascomon",
+            "for": "mephismon"
+        },
+        {
+            "name": "gatomon",
+            "for": "junomon"
+        }
+    ]
+}

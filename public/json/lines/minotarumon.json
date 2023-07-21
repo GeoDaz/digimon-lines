@@ -1,0 +1,50 @@
+{
+    "columns": [
+        [
+            {
+                "name": "punimon"
+            },
+            {
+                "name": "tsunomon"
+            },
+            {
+                "name": "elecmon"
+            },
+            {
+                "name": "minotarumon"
+            },
+            {
+                "name": "gyukimon",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "bullmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "vajramon"
+            },
+            {
+                "name": "zanbamon"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "kotemon",
+            "from": "zanbamon"
+        },
+        {
+            "name": "dokugumon",
+            "from": "gyukimon"
+        }
+    ]
+}

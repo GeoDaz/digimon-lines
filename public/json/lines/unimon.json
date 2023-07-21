@@ -1,0 +1,109 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shimaunimon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "indaramon"
+            }
+        ],
+        [
+            {
+                "name": "poyomon"
+            },
+            {
+                "name": "tokomon"
+            },
+            {
+                "name": "patamon"
+            },
+            {
+                "name": "unimon"
+            },
+            {
+                "name": "hippogriffomon"
+            },
+            {
+                "name": "griffomon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "centarumon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "assaultmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "pegasmon",
+                "color": "armor",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "chirinmon",
+                "color": "light"
+            },
+            {
+                "name": "kentaurosmon",
+                "from2": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "pegasmonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "angemon",
+            "from": "pegasmon"
+        },
+        {
+            "name": "kudamon",
+            "from": "chirinmon"
+        },
+        {
+            "name": "hawkmon",
+            "from": "hippogriffomon"
+        },
+        {
+            "name": "commandramon",
+            "from": "assaultmon"
+        }
+    ]
+}
