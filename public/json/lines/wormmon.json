@@ -1,0 +1,149 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "jewelbeemon",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            {
+                "name": "banchostingmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "dinobeemon",
+                "color": "fusion",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "grankuwagamon"
+            }
+        ],
+        [
+            {
+                "name": "leafmon"
+            },
+            {
+                "name": "minomon"
+            },
+            {
+                "name": "wormmon"
+            },
+            {
+                "name": "stingmon"
+            },
+            {
+                "name": "paildramon",
+                "color": "fusion"
+            },
+            {
+                "name": "imperialdramon"
+            },
+            {
+                "name": "imperialdramonfm",
+                "color": "mode"
+            },
+            {
+                "name": "imperialdramonpm",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "stingmonb",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            null,
+            {
+                "name": "imperialdramonb",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "imperialdramonfmb",
+                "color": "mode"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "hudiemon",
+                "color": "human",
+                "from": [
+                    -2,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shadramon",
+                "color": "fire",
+                "from": [
+                    -3,
+                    -1
+                ]
+            },
+            {
+                "name": "kongoumon",
+                "color": "armor"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "pucchiemon",
+                "color": "armor",
+                "skins": [
+                    "pucchiemongreen"
+                ],
+                "from": [
+                    -4,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "veemon",
+        {
+            "name": "kuwagamon",
+            "from": "grankuwagamon"
+        },
+        {
+            "name": "fanbeemon",
+            "for": "morphomon"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "petermon",
+                "from": [
+                    1.5,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "name": "pupumon",
+                "size": 2
+            },
+            {
+                "name": "puroromon",
+                "size": 2
+            },
+            {
+                "name": "tinkermon",
+                "size": 2
+            },
+            {
+                "name": "fairymon",
+                "color": "human",
+                "size": 2
+            },
+            [
+                {
+                    "name": "shutumon",
+                    "color": "human",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "jetsilphymon",
+                    "color": "human",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "ancientirismon"
+                }
+            ]
+        ]
+    ],
+    "related": [
+        {
+            "name": "fanbeemon",
+            "for": "hudiemon"
+        },
+        {
+            "name": "hawkmon",
+            "for": "silphymon"
+        },
+        {
+            "name": "jazamon",
+            "for": "sparrowmon"
+        },
+        {
+            "name": "woodmon",
+            "for": "zamielmon"
+        }
+    ]
+}

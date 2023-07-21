@@ -52,6 +52,14 @@
     "related": [
         "vorvomon",
         "blucomon",
-        "espimon"
+        "espimon",
+        {
+            "name": "fairymon",
+            "for": "jetsilphymon"
+        },
+        {
+            "name": "shoutmon",
+            "for": "shoutmonx5"
+        }
     ]
 }

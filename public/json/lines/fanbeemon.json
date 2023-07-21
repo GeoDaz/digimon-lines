@@ -1,0 +1,91 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "flybeemon",
+                "from": [
+                    2,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "honeybeemon",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "name": "pupumon"
+            },
+            {
+                "name": "puroromon"
+            },
+            {
+                "name": "fanbeemon"
+            },
+            {
+                "name": "waspmon"
+            },
+            {
+                "name": "cannonbeemon"
+            },
+            {
+                "name": "tigervespamon"
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "morphomon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "eosmon"
+            },
+            {
+                "name": "eosmon2"
+            },
+            {
+                "name": "eosmon3"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "hudiemon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "kuwagamon",
+            "for": "flymon"
+        },
+        {
+            "name": "wormmon",
+            "from": "hudiemon"
+        },
+        "fairymon"
+    ]
+}
