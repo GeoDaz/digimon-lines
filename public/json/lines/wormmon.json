@@ -20,7 +20,14 @@
             null,
             null,
             null,
-            null,
+            {
+                "name": "hudiemon",
+                "color": "human",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
             {
                 "name": "dinobeemon",
                 "color": "fusion",
@@ -93,8 +100,11 @@
             null,
             null,
             {
-                "name": "hudiemon",
-                "color": "human",
+                "name": "pucchiemon",
+                "color": "armor",
+                "skins": [
+                    "pucchiemongreen"
+                ],
                 "from": [
                     -2,
                     -1
@@ -112,6 +122,19 @@
                     -3,
                     -1
                 ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "searchmon",
+                "color": "armor",
+                "from": [
+                    -4,
+                    -1
+                ]
             },
             {
                 "name": "kongoumon",
@@ -123,15 +146,14 @@
             null,
             null,
             {
-                "name": "pucchiemon",
-                "color": "armor",
-                "skins": [
-                    "pucchiemongreen"
-                ],
+                "name": "mothmon",
                 "from": [
-                    -4,
+                    -5,
                     -1
                 ]
+            },
+            {
+                "name": "butterflamon"
             }
         ]
     ],
@@ -144,6 +166,10 @@
         {
             "name": "fanbeemon",
             "for": "morphomon"
+        },
+        {
+            "name": "gatomon",
+            "from": "butterflamon"
         }
     ]
 }
