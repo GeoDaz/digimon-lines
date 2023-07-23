@@ -6,20 +6,20 @@ import Layout from '@/components/Layout';
 import PointImage from '@/components/LinePoint';
 import { GetStaticProps } from 'next';
 import { DEV } from '@/consts/env';
-import Thumbnail from '@/types/Thumbnail';
+import { LineThumb } from '@/types/Line';
 import { GROUP } from '@/consts/ui';
 
 // TODO rename this page groups.tsx when there will be a home
 
 const defaultData = { groups: [], fusions: [] };
 interface StaticProps {
-	groups: string[] | Array<Thumbnail>;
+	groups: string[] | Array<LineThumb>;
 }
 interface Props {
 	ssr: StaticProps;
 }
 const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
-	const [groups, setLines] = React.useState<string[] | Array<Thumbnail>>(ssr.groups);
+	const [groups, setLines] = React.useState<string[] | Array<LineThumb>>(ssr.groups);
 	const [load, loading] = useFetch(setLines);
 
 	useEffect(() => {
@@ -59,12 +59,12 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	);
 };
 
-const checkGroupAvailability = (group: string): Thumbnail => {
+const checkGroupAvailability = (group: string): LineThumb => {
 	try {
 		const available = fs.existsSync(`public/json/groups/${group}.json`);
-		return { name: group, available } as Thumbnail;
+		return { name: group, available } as LineThumb;
 	} catch (e) {
-		return { name: group, available: false } as Thumbnail;
+		return { name: group, available: false } as LineThumb;
 	}
 };
 

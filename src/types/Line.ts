@@ -22,4 +22,16 @@ export interface LineRelation {
 	from?: string;
 }
 
+export interface LineThumb {
+	name: string;
+	available?: boolean;
+	found?: LineFound;
+}
+
+export interface LineFound {
+	name: string;
+	found: string;
+	priority: number;
+}
+
 export default Line;

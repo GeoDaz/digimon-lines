@@ -113,9 +113,9 @@ export const LineImage: React.FC<Props> = ({ name, title, className, style, type
 				}}
 				onLoadingComplete={({ naturalWidth, naturalHeight }) => {
 					if (naturalWidth > naturalHeight) {
-						setRatioHeight(naturalWidth / naturalHeight);
+						setRatioHeight(naturalWidth / naturalHeight || 1);
 					} else {
-						setRatioWidth(naturalHeight / naturalWidth);
+						setRatioWidth(naturalHeight / naturalWidth || 1);
 					}
 				}}
 				alt={name}
