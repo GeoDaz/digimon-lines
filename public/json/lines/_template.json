@@ -6,7 +6,10 @@
             {
                 "name": "monx",
                 "color": "x",
-                "from": [1,0]
+                "from": [
+                    1,
+                    0
+                ]
             }
         ],
         [
@@ -33,5 +36,15 @@
                 "color": "mode"
             }
         ]
+    ],
+    "related": [
+        {
+            "name": "mon",
+            "for": "mon"
+        },
+        {
+            "name": "mon",
+            "from": "mon"
+        }
     ]
 }

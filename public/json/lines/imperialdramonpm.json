@@ -67,30 +67,6 @@
             }
         ],
         [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "imperialdramonpm",
-                "color": "fusion",
-                "from": null,
-                "fusionFrom": [
-                    [
-                        1.5,
-                        -1
-                    ],
-                    [
-                        -1.5,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
             [
                 {
                     "name": "chicomon"
@@ -128,7 +104,9 @@
                 "color": "fusion",
                 "size": 2,
                 "from": null,
-                "skins": ["dinobeemon"],
+                "skins": [
+                    "dinobeemon"
+                ],
                 "fusionFrom": [
                     [
                         0.5,
@@ -148,6 +126,13 @@
                 "name": "imperialdramonfm",
                 "color": "mode",
                 "size": 2
+            },
+            {
+                "name": "imperialdramonpm",
+                "size": 2,
+                "color": "fusion",
+                "color2": "fusion",
+                "from2": [-2,-1]
             }
         ]
     ],

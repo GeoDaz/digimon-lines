@@ -1,0 +1,221 @@
+{
+    "columns": [
+        [
+            {
+                "name": "curimon"
+            },
+            {
+                "name": "gurimon"
+            },
+            {
+                "name": "gammamon"
+            },
+            {
+                "name": "monochromon"
+            },
+            {
+                "name": "vermillimon",
+                "color": "fire"
+            },
+            {
+                "name": "dorbickmon",
+                "color": "fire"
+            }
+        ],
+        [
+            {
+                "name": "zurumon"
+            },
+            {
+                "name": "pagumon",
+                "color": "dark"
+            },
+            {
+                "name": "demidevimon",
+                "color": "dark"
+            },
+            {
+                "name": "devimon",
+                "color": "dark"
+            },
+            {
+                "name": "neodevimon",
+                "color": "dark"
+            },
+            {
+                "name": "neomyotismon",
+                "color": "dark"
+            }
+        ],
+        [
+            {
+                "name": "puyomon"
+            },
+            {
+                "name": "puyoyomon"
+            },
+            {
+                "name": "jellymon"
+            },
+            {
+                "name": "ranamon"
+            },
+            {
+                "name": "splashmon",
+                "skins": [
+                    "splashmondm"
+                ]
+            }
+        ],
+        [
+            {
+                "name": "sunamon"
+            },
+            {
+                "name": "goromon"
+            },
+            {
+                "name": "gottsumon"
+            },
+            {
+                "name": "icemon",
+                "color": "ice"
+            },
+            {
+                "name": "gravimon"
+            },
+            null,
+            null,
+            {
+                "name": "grandgeneramon",
+                "color": "fusion",
+                "fusionFrom": [
+                    [
+                        -3,
+                        -2
+                    ],
+                    [
+                        -2,
+                        -2
+                    ],
+                    [
+                        -1,
+                        -3
+                    ],
+                    [
+                        0,
+                        -3
+                    ],
+                    [
+                        1,
+                        -3
+                    ],
+                    [
+                        2,
+                        -2
+                    ],
+                    [
+                        3,
+                        -2
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "yuramon"
+            },
+            {
+                "name": "tanemon"
+            },
+            {
+                "name": "mushmon"
+            },
+            {
+                "name": "nohemon"
+            },
+            {
+                "name": "zamielmon"
+            }
+        ],
+        [
+            {
+                "name": "bommon2"
+            },
+            {
+                "name": "missimon"
+            },
+            {
+                "name": "monmon"
+            },
+            {
+                "name": "hookmon"
+            },
+            {
+                "name": "captainhookmon"
+            },
+            {
+                "name": "olegmon",
+                "color": "armor"
+            }
+        ],
+        [
+            {
+                "name": "mokumon"
+            },
+            {
+                "name": "sunmon",
+                "color": "fire"
+            },
+            {
+                "name": "coronamon",
+                "color": "fire"
+            },
+            {
+                "name": "firamon",
+                "color": "fire"
+            },
+            {
+                "name": "flaremon",
+                "color": "fire"
+            },
+            {
+                "name": "apollomon",
+                "color": "fire",
+                "skins": [
+                    "apollomonwhispered"
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "from": "neomyotismon",
+            "name": "devimon"
+        },
+        {
+            "from": "dorbickmon",
+            "name": "gammamon"
+        },
+        {
+            "from": "splashmon",
+            "name": "jellymon"
+        },
+        {
+            "from": "zamielmon",
+            "name": "woodmon"
+        },
+        {
+            "from": "olegmon",
+            "name": "hookmon"
+        },
+        {
+            "from": "gravimon",
+            "name": "golemon"
+        },
+        {
+            "from": "apollomon",
+            "name": "leomon"
+        }
+    ]
+}

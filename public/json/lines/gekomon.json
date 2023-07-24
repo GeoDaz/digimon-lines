@@ -6,7 +6,10 @@
             {
                 "name": "otamamonx",
                 "color": "x",
-                "from": [1,0]
+                "from": [
+                    1,
+                    0
+                ]
             }
         ],
         [
@@ -31,7 +34,10 @@
             null,
             {
                 "name": "otamamonred",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
                 "name": "salamandermon",
@@ -43,12 +49,24 @@
             null,
             {
                 "name": "gizamon",
-                "from": [-2,-1]
+                "from": [
+                    -2,
+                    -1
+                ]
             },
             {
                 "name": "frogmon"
             }
         ]
     ],
-    "related": [{"name": "seadramon", "for": "betamon"}]
+    "related": [
+        {
+            "name": "seadramon",
+            "for": "betamon"
+        },
+        {
+            "name": "swimmon",
+            "for": "hangyomon"
+        }
+    ]
 }

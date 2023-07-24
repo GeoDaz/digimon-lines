@@ -10,6 +10,16 @@
                     1.5,
                     0
                 ]
+            },
+            null,
+            null,
+            {
+                "name": "plesiomonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
             }
         ],
         [
@@ -34,15 +44,15 @@
                 "size": 2
             },
             [
+            {
+                "name": "plesiomon",
+                "from": [
+                    0.5,
+                    -1
+                ]
+            },
                 {
                     "name": "vikemon",
-                    "from": [
-                        0.5,
-                        -1
-                    ]
-                },
-                {
-                    "name": "plesiomon",
                     "from": [
                         -0.5,
                         -1
@@ -50,7 +60,6 @@
                 }
             ],
             [
-                null,
                 {
                     "name": "aegisdramon",
                     "color": "fusion"
@@ -90,12 +99,24 @@
     ],
     "related": [
         {
-            "name": "seadramon",
-            "for": "megaseadramon"
+            "name": "aegisdramon"
+        },
+        "omegamonmm",
+        {
+            "name": "hookmon",
+            "for": "olegmon"
         },
         {
-            "name": "penmon",
-            "for": "crossmon"
+            "name": "bearmon",
+            "for": "blizzarmon"
+        },
+        {
+            "name": "seadramon",
+            "from": "plesiomon"
+        },
+        {
+            "name": "crabmon",
+            "for": "anomalocarimon"
         },
         {
             "name": "swimmon",
@@ -104,15 +125,6 @@
         {
             "name": "jellymon",
             "for": "neptunemon"
-        },
-        "omegamonmm",
-        {
-            "name": "hookmon",
-            "for": "olegmon"
-        },
-        {
-            "name": "crabmon",
-            "for": "anomalocarimon"
         }
     ]
 }

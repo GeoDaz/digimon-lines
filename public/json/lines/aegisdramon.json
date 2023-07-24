@@ -1,0 +1,87 @@
+{
+    "columns": [
+        [
+            {
+                "name": "pitchmon"
+            },
+            {
+                "name": "pukamon"
+            },
+            {
+                "name": "gomamon"
+            },
+            {
+                "name": "ikkakumon"
+            },
+            {
+                "name": "zudomon"
+            },
+            {
+                "name": "plesiomon"
+            }
+        ],
+        [
+            {
+                "name": "botamon"
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "betamon"
+            },
+            {
+                "name": "seadramon"
+            },
+            {
+                "name": "megaseadramon"
+            },
+            null,
+            {
+                "name": "aegisdramon",
+                "color": "fusion",
+                "fusionFrom": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -2
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "snowbotamon"
+            },
+            {
+                "name": "hiyarimon",
+                "color": "ice"
+            },
+            {
+                "name": "penmon",
+                "color": "ice"
+            },
+            {
+                "name": "cockatrimon"
+            },
+            {
+                "name": "parrotmon"
+            },
+            {
+                "name": "crossmon"
+            }
+        ]
+    ],
+    "related": [
+        "gomamon",
+        "penmon",
+        "seadramon"
+    ]
+}

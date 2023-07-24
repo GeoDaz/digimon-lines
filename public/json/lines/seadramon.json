@@ -13,27 +13,15 @@
             },
             {
                 "name": "seadramonx",
-                "color": "x",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "x"
             },
             {
                 "name": "megaseadramonx",
-                "color": "x",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "x"
             },
             {
                 "name": "gigaseadramon",
-                "color": "x",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "x"
             }
         ],
         [
@@ -41,39 +29,19 @@
                 "name": "botamon"
             },
             {
-                "name": "koromon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "name": "koromon"
             },
             {
-                "name": "betamon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "name": "betamon"
             },
             {
-                "name": "seadramon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "name": "seadramon"
             },
             {
-                "name": "megaseadramon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "name": "megaseadramon"
             },
             {
-                "name": "metalseadramon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "name": "metalseadramon"
             }
         ],
         [
@@ -91,11 +59,7 @@
             },
             {
                 "name": "chaosmetalseadramon",
-                "color": "dark",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "dark"
             }
         ],
         [
@@ -139,26 +103,14 @@
                 ]
             },
             {
-                "name": "airdramon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "name": "airdramon"
             },
             {
-                "name": "megadramon",
-                "from": [
-                    0,
-                    -1
-                ]
+                "name": "megadramon"
             },
             {
                 "name": "goldramon",
-                "color": "light",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "light"
             }
         ],
         [
@@ -202,8 +154,12 @@
             "from": "goldramon"
         },
         {
+            "name": "aegisdramon",
+            "from": "megaseadramon"
+        },
+        {
             "name": "gomamon",
-            "for": "aegisdramon"
+            "for": "plesiomon"
         }
     ]
 }

@@ -38,7 +38,8 @@
                 "name": "captainhookmon"
             },
             {
-                "name": "boltboutamon"
+                "name": "boltboutamon",
+                "color": "dark"
             }
         ],
         [
@@ -91,6 +92,10 @@
         {
             "name": "gomamon",
             "for": "vikemon"
+        },
+        {
+            "name": "bearmon",
+            "for": "blizzarmon"
         },
         {
             "name": "starmon",

@@ -102,11 +102,7 @@
             },
             {
                 "name": "akatorimon",
-                "color": "fire",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "fire"
             },
             {
                 "name": "sinduramon"
@@ -120,11 +116,11 @@
     "related": [
         {
             "name":"bearmon",
-            "for": "daipenmon"
+            "from": "daipenmon"
         },
         {
             "name":"pulsemon",
-            "for": "tempomon"
+            "from": "tempomon"
         },
         {
             "name":"falcomon",
@@ -132,15 +128,14 @@
         },
         {
             "name": "biyomon",
-            "for": "cockatrimon"
+            "from": "cockatrimon"
         },
         {
             "name": "hawkmon",
-            "for": "peacockmon"
+            "from": "peacockmon"
         },
         {
-            "name": "gomamon",
-            "for": "aegisdramon"
+            "name": "aegisdramon"
         }
     ]
 }

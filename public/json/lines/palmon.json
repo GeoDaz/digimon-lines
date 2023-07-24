@@ -7,7 +7,7 @@
                 "name": "palmonx",
                 "color": "x",
                 "from": [
-                    2,
+                    1,
                     0
                 ]
             },
@@ -25,29 +25,8 @@
             }
         ],
         [
-            null,
-            null,
-            null,
             {
-                "name": "ponchomon",
-                "color": "dark",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            null,
-            {
-                "name": "bancholilimon",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "nyokimon"
+                "name": "yuramon"
             },
             {
                 "name": "tanemon"
@@ -74,14 +53,21 @@
             null,
             null,
             {
-                "name": "kabukimon",
+                "name": "ponchomon",
+                "color": "dark",
                 "from": [
-                    1,
+                    -1,
                     -1
                 ]
             },
             null,
-            null,
+            {
+                "name": "bancholilimon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
             {
                 "name": "rafflesimon",
                 "from": null,
@@ -100,7 +86,7 @@
         ],
         [
             {
-                "name": "yuramon"
+                "name": "nyokimon"
             },
             {
                 "name": "budmon"
@@ -123,26 +109,31 @@
             null,
             null,
             {
-                "name": "vegimon",
+                "name": "kabukimon",
                 "from": [
-                    1,
+                    -1,
                     -1
                 ]
             },
             {
                 "name": "blossomon",
+                "from": [
+                    1,
+                    -1
+                ],
                 "from2": [
                     -1,
                     -1
                 ]
             },
             {
-                "name": "ceresmon"
+                "name": "ceresmon",
+                "skins": ["ceresmonbird"]
             }
         ],
         [
             {
-                "name": "nyokimon"
+                "name": "yuramon"
             },
             {
                 "name": "tanemon"
@@ -151,7 +142,10 @@
                 "name": "alraumon"
             },
             {
-                "name": "zassoumon"
+                "name": "vegimon",
+                "skins": [
+                    "zassoumon"
+                ]
             },
             {
                 "name": "ajatarmon"
@@ -187,12 +181,30 @@
         ],
         [
             null,
+            null,
             {
-                "name": "yokomon",
+                "name": "pomumon",
                 "from": [
-                    -2,
+                    1,
                     -1
                 ]
+            },
+            {
+                "name": "parasaumon"
+            },
+            {
+                "name": "tropiamon"
+            },
+            {
+                "name": "bloomlordmon"
+            }
+        ],
+        [
+            {
+                "name": "nyokimon"
+            },
+            {
+                "name": "yokomon"
             },
             {
                 "name": "floramon"
@@ -204,7 +216,8 @@
                 "name": "sirenmon"
             },
             {
-                "name": "ceresmonbird"
+                "name": "ceresmonbird",
+                "skins": ["ceresmon"]
             }
         ],
         [
@@ -219,30 +232,10 @@
                     -1
                 ]
             }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "pomumon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "parasaumon"
-            },
-            {
-                "name": "tropiamon"
-            },
-            {
-                "name": "bloomlordmon"
-            }
         ]
     ],
     "related": [
         "woodmon",
-		"omegamonmm"
+        "omegamonmm"
     ]
 }

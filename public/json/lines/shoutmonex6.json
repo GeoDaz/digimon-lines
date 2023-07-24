@@ -1,0 +1,204 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "shoutmon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "kingshoutmon"
+            },
+            {
+                "name": "omegashoutmon",
+                "color": "armor"
+            },
+            {
+                "name": "shoutmondx",
+                "color": "fusion",
+                "color2": "fusion",
+                "from2": [
+                    1.5,
+                    0
+                ]
+            }
+        ],
+        [
+            [
+                {
+                    "name": "botamon"
+                },
+                {
+                    "name": "bommon"
+                }
+            ],
+            [
+                {
+                    "name": "koromon"
+                },
+                {
+                    "name": "missimon"
+                }
+            ],
+            [
+                {
+                    "name": "gaossmonb",
+                    "color": "dark"
+                },
+                {
+                    "name": "jazamon"
+                }
+            ],
+            [
+                {
+                    "name": "greymonb3",
+                    "color": "dark"
+                },
+                {
+                    "name": "mailbirdramon",
+                    "color": "dark"
+                }
+            ],
+            {
+                "name": "metalgreymonb3",
+                "color": "dark",
+                "size": 2,
+                "from": null,
+                "fusionFrom": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "zeekgreymon",
+                "color": "armor",
+                "size": 2
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "sparrowmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "raptorsparrowmon",
+                "color": "armor"
+            },
+            null,
+            null,
+            {
+                "name": "shoutmonex6",
+                "color": "fusion",
+                "fusionFrom": [
+                    [
+                        -3,
+                        -1
+                    ],
+                    [
+                        0,
+                        -3
+                    ],
+                    [
+                        1,
+                        -2
+                    ],
+                    [
+                        2,
+                        -2
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "bubbmon"
+            },
+            {
+                "name": "mochimon"
+            },
+            {
+                "name": "kokabuterimon"
+            },
+            {
+                "name": "ballistamon"
+            },
+            {
+                "name": "atlurballistamon",
+                "color": "armor"
+            }
+        ],
+        [
+            {
+                "name": "punimon"
+            },
+            {
+                "name": "tsunomon"
+            },
+            {
+                "name": "gabumon"
+            },
+            {
+                "name": "dorulumon"
+            },
+            {
+                "name": "jaegerdorulumon",
+                "color": "armor"
+            }
+        ],
+        [
+            {
+                "name": "chibickmon"
+            },
+            {
+                "name": "pickmon"
+            },
+            {
+                "name": "starmons"
+            },
+            {
+                "name": "shootingstarmon",
+                "color": "armor"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "shoutmon"
+        },
+        {
+            "name": "greymon",
+            "from": "zeekgreymon"
+        },
+        {
+            "name": "kabuterimon",
+            "from": "ballistamon"
+        },
+        {
+            "name": "garurumon",
+            "from": "dorulumon"
+        },
+        {
+            "name": "jazamon",
+            "from": "sparrowmon"
+        },
+        {
+            "name": "starmon",
+            "from": "starmons"
+        }
+    ]
+}

@@ -124,19 +124,11 @@
             },
             {
                 "name": "cupimon",
-                "color": "light",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "light"
             },
             {
                 "name": "lucemon",
-                "color": "light",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "light"
             },
             null,
             {
@@ -149,32 +141,45 @@
             },
             {
                 "name": "lucemonlarva",
-                "color": "dark",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "dark"
             },
             {
                 "name": "lucemonsm",
-                "color": "dark",
-                "from": [
-                    0,
-                    -1
-                ]
+                "color": "dark"
             },
             {
                 "name": "ogudomon",
                 "color": "fusion",
                 "from": null,
                 "fusionFrom": [
-                    [-5,-2],
-                    [-3,-2],
-                    [-2,-2],
-                    [0,-1],
-                    [3,-2],
-                    [4,-2],
-                    [6,-2]
+                    [
+                        -5,
+                        -2
+                    ],
+                    [
+                        -3,
+                        -2
+                    ],
+                    [
+                        -2,
+                        -2
+                    ],
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        3,
+                        -2
+                    ],
+                    [
+                        4,
+                        -2
+                    ],
+                    [
+                        6,
+                        -2
+                    ]
                 ]
             }
         ],
@@ -213,14 +218,13 @@
                     0
                 ]
             },
-            null,
+            {
+                "name": "wizardmonx",
+                "color": "x"
+            },
             {
                 "name": "baalmonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
+                "color": "x"
             },
             {
                 "name": "beelzebumonx",
@@ -240,7 +244,7 @@
                 "color": "dark"
             },
             {
-                "name": "boogiemon",
+                "name": "wizardmon",
                 "color": "dark"
             },
             {
@@ -256,49 +260,51 @@
             null,
             null,
             null,
-            null,
             {
-                "name": "phelesmon",
+                "name": "boogiemon",
                 "color": "dark",
                 "from": [
-                    -1.5,
+                    -1,
                     -1
                 ]
             },
             {
+                "name": "phelesmon",
+                "color": "dark"
+            },
+            {
                 "name": "demon",
                 "color": "dark",
-                "from": [
-                    0,
-                    -1
-                ],
                 "skins": [
                     "demon2"
                 ]
             }
         ],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "demonx",
-				"color": "x",
-				"from": [
-					-1,
-					0
-				]
-			}
-		],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "demonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
         [
             null,
             null,
             {
                 "name": "phascomon",
                 "color": "dark",
-                "from": [-3,-1]
+                "from": [
+                    -3,
+                    -1
+                ]
             },
             {
                 "name": "porcupamon",
@@ -334,7 +340,7 @@
     ],
     "related": [
         "impmon",
-		"phascomon",
+        "phascomon",
         "devimon",
         "angemon",
         "seadramon",
