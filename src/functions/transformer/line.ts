@@ -60,7 +60,7 @@ export const foundLines = (
 		let index = digimon.indexOf(search);
 		if (index > -1) {
 			let priority: number = index * -1;
-			if (priority == 0) priority -= Math.abs(digimon.length - search.length);
+			priority -= Math.abs(digimon.length - search.length);
 			result = result.concat(
 				lines.map(
 					line =>
