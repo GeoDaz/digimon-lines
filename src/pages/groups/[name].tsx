@@ -12,7 +12,6 @@ import useFetch from '@/hooks/useFetch';
 import { capitalize } from '@/functions';
 // constants
 import { Group } from '@/types/Group';
-// import { zooms, zoomOptions } from '@/consts/zooms';
 import useQueryParam from '@/hooks/useQueryParam';
 import { DEV } from '@/consts/env';
 
@@ -25,9 +24,8 @@ interface Props {
 	ssr: StaticProps;
 }
 const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
-	const name = useQueryParam(NAME) || ssr.name;
+	const { name } = useQueryParam(NAME) || ssr;
 	const [group, setGroup] = useState<Group | undefined>(ssr.group);
-	// const [zoom, setZoom] = useState(0);
 
 	const [load, loading] = useFetch((group: Group | undefined): void => setGroup(group));
 
@@ -56,16 +54,6 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 			}
 			metatitle={capitalize(name) + ' Group'}
 		>
-			{/* <div className="line-filters">
-				<Icon name="zoom-in lead d-inline-block d-max-xs-none" />
-				<ProgressBarSteps
-					steps={zoomOptions}
-					selected={zoom}
-					progress={zooms[zoom] / 1.5}
-					onChange={setZoom}
-					className="progress-zoom me-4"
-				/>
-			</div> */}
 			{loading ? (
 				<LineLoading />
 			) : group ? (

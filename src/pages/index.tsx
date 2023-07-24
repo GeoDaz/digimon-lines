@@ -1,32 +1,35 @@
 import React, { useEffect, useState } from 'react';
+import Router from 'next/router';
 import { Row, Col, Spinner } from 'react-bootstrap';
 import colors from '@/consts/colors';
 import useFetch from '@/hooks/useFetch';
 import Layout from '@/components/Layout';
 import PointImage, { LineImage } from '@/components/LinePoint';
-import { GetStaticProps } from 'next';
+import { GetStaticProps, GetStaticPropsContext, PreviewData } from 'next';
 import { DEV } from '@/consts/env';
 import { LineThumb } from '@/types/Line';
 import Line, { LineFound } from '@/types/Line';
 import { filterlinesFound, foundLines, lineToArray } from '@/functions/transformer/line';
 import SearchBar from '@/components/SearchBar';
+import useQueryParam, { addQueryParam, removeQueryParam } from '@/hooks/useQueryParam';
+import { ParsedUrlQuery } from 'querystring';
 
-// TODO rename this page lines.tsx when there will be a home
-
+const SEARCH = 'search';
 const defaultData = { lines: [], fusions: [], searchList: {} };
 interface StaticProps {
 	lines: LineThumb[];
 	fusions: LineThumb[];
-	searchList: { [key: string]: string[] };
+	searchList: Record<string, string[]>;
 }
 interface Props {
 	ssr: StaticProps;
 }
 const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
+	const { search: searchParam } = useQueryParam(SEARCH) || ssr;
 	const [lines, setLines] = useState<LineThumb[]>(ssr.lines);
 	const [fusions, setFusions] = useState<LineThumb[]>(ssr.fusions);
 	const [load, loading] = useFetch(setLines);
-	const [search, setSearch] = useState<string>();
+	const [search, setSearch] = useState<string>(searchParam);
 	const [loadFusions] = useFetch(setFusions);
 
 	useEffect(() => {
@@ -36,19 +39,37 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 		}
 	}, []);
 
+	useEffect(() => {
+		if (!search) {
+			if (searchParam) {
+				setLines(ssr.lines);
+				setFusions(ssr.fusions);
+				Router.push({ pathname: '/', query: null });
+			}
+		} else {
+			const foundList: LineFound[] = foundLines(search, ssr.searchList);
+			setLines(filterlinesFound(ssr.lines, foundList));
+			setFusions(filterlinesFound(ssr.fusions, foundList));
+			if (search != searchParam) {
+				Router.push({ pathname: '/', query: { search } });
+			}
+		}
+	}, [search]);
+
+	useEffect(() => {
+		if (searchParam != search) {
+			setSearch(searchParam);
+		}
+	}, [searchParam]);
+
 	const handleSearch = (value: string) => {
 		// To do lower case, remove spaces
-		const sanitizedSearch = value.toLowerCase().replace(/\s/g, '');
+		let sanitizedSearch = value.toLowerCase().replace(/\s/g, '');
 		if (sanitizedSearch == search) return;
-		setSearch(sanitizedSearch);
-		if (!sanitizedSearch) {
-			setLines(ssr.lines);
-			setFusions(ssr.fusions);
-			return;
+		if (sanitizedSearch.length < 3) {
+			sanitizedSearch = '';
 		}
-		const foundList: LineFound[] = foundLines(sanitizedSearch, ssr.searchList);
-		setLines(filterlinesFound(ssr.lines, foundList));
-		setFusions(filterlinesFound(ssr.fusions, foundList));
+		setSearch(sanitizedSearch);
 	};
 
 	return (
@@ -61,20 +82,23 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 				The aim of this site is to present evolutionary lines designed to group
 				together members of the same species.
 			</blockquote>
-			<SearchBar onSubmit={handleSearch} />
+			<SearchBar onSubmit={handleSearch} defaultValue={search} />
 			{loading ? (
 				<div className="text-center">
 					<Spinner animation="border" />
 				</div>
 			) : (
-				<LineRow lines={lines} />
+				<>
+					{lines.length > 0 && <LineRow lines={lines} />}
+					{fusions.length > 0 && (
+						<div>
+							<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
+							<LineRow lines={fusions} />
+						</div>
+					)}
+				</>
 			)}
-			{fusions.length > 0 && (
-				<div>
-					<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
-					<LineRow lines={fusions} />
-				</div>
-			)}
+			{!lines.length && !fusions.length && <p>No line found.</p>}
 		</Layout>
 	);
 };
