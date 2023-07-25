@@ -317,14 +317,10 @@
 			{
 				"name": "bastemon"
 			},
-			{
-				"name": "junomon",
-				"color": "light"
-			},
-			{
-				"name": "junomonhm",
-				"color": "mode"
-			}
+            {
+                "name": "venusmon",
+                "color": "light"
+            }
 		],
 		[
 			null,
@@ -383,11 +379,11 @@
 		]
 	],
 	"related": [
+		"angemon",
 		{
 			"name": "ogudomon",
 			"from": "lilithmon"
 		},
-		"angemon",
 		{
 			"name": "devimon",
 			"from": "ladydevimon"
@@ -402,7 +398,7 @@
 		},
 		{
 			"name": "shortmon",
-			"for": "venusmon"
+			"for": "junomon"
 		},
 		{
 			"name": "leomon",

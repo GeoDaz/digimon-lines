@@ -23,7 +23,30 @@
                 "name": "burgamon"
             },
             {
-                "name": "potamon"
+                "name": "shortmon"
+            },
+            {
+                "name": "weddinmon"
+            },
+            {
+                "name": "junomon",
+                "color": "light"
+            },
+            {
+                "name": "junomonhm",
+                "color": "mode"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "potamon",
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
                 "name": "jyagamon"
@@ -35,7 +58,7 @@
             {
                 "name": "ebiburgamon",
                 "from": [
-                    -1,
+                    -2,
                     -1
                 ]
             },
@@ -48,6 +71,13 @@
         ]
     ],
     "related": [
-        "shortmon"
+        {
+            "name": "gatomon",
+            "from": "venusmon"
+        },
+        {
+            "name": "sukamon",
+            "for": "chohakkaimon"
+        }
     ]
 }
