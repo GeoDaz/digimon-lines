@@ -1,0 +1,76 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "archelomon",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "name": "pitchmon"
+            },
+            {
+                "name": "chapmon"
+            },
+            {
+                "name": "kamemon"
+            },
+            {
+                "name": "gawappamon"
+            },
+            {
+                "name": "shawujinmon"
+            },
+            {
+                "name": "jumbogamemon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tortamon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "sagomon"
+            },
+            {
+                "name": "eldoradimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "dinohumon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "woodmon",
+            "for": "xuanwumon"
+        },
+        {
+            "name": "golemon",
+            "from": "tortamon"
+        }
+    ]
+}

@@ -67,6 +67,20 @@
                 "name": "nidhoggmon",
                 "color": "dark"
             }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "xuanwumon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
         ]
     ],
     "related": [
@@ -77,6 +91,14 @@
         {
             "name": "negamon",
             "from": "nidhoggmon"
+        },
+        {
+            "name": "woodmon",
+            "from": "xuanwumon"
+        },
+        {
+            "name": "kamemon",
+            "from": "xuanwumon"
         }
     ]
 }

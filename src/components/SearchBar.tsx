@@ -25,12 +25,12 @@ const SearchBar: React.FC<Props> = ({ onSubmit, defaultValue }) => {
 	return (
 		<Form onSubmit={handleSubmit} className="d-flex mb-3">
 			<Form.Label htmlFor="lines-search" visuallyHidden>
-				Rechercher
+				Research
 			</Form.Label>
 			<Form.Control
 				type="text"
 				id="lines-search"
-				placeholder="Rechercher un Digimon"
+				placeholder="Research a Digimon"
 				style={{ width: 300, maxWidth: '100%' }}
 				onChange={e => setSearch(e.target.value)}
 				value={search || ''}
