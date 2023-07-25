@@ -76,11 +76,25 @@
             null,
             null,
             {
-                "name": "octomon",
+                "name": "depthmon",
                 "from": [
                     1,
                     -1
                 ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "sangomon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "octomon"
             },
             {
                 "name": "dagomon"
@@ -92,10 +106,25 @@
         [
             null,
             null,
+            null,
+            {
+                "name": "shellmon",
+                "skins": [
+                    "morishellmon"
+                ],
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
             {
                 "name": "shakomon",
                 "from": [
-                    -2,
+                    -4,
                     -1
                 ]
             },
@@ -147,5 +176,8 @@
             "name": "swimmon",
             "from": "neptunemon"
         }
+    ],
+    "notes": [
+        "This line is about octopus, seashells and mermaids."
     ]
 }

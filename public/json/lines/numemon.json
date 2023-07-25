@@ -1,0 +1,96 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "numemonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            {
+                "name": "bubbmon"
+            },
+            {
+                "name": "mochimon"
+            },
+            {
+                "name": "junkmon"
+            },
+            {
+                "name": "numemon",
+                "skins": [
+                    "geremon"
+                ]
+            },
+            {
+                "name": "goldnumemon",
+                "color": "armor",
+                "skins": [
+                    "platinumnumemon"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "karatukinumemon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "blackkingnumemon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "raremon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "rareraremon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "gerbemon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "sukamon",
+        {
+            "name": "bearmon",
+            "for": "monzaemon"
+        },
+        {
+            "name": "jellymon",
+            "for": "shellmon"
+        }
+    ]
+}
