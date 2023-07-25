@@ -1,21 +1,39 @@
 {
-	"related": [
-		"tyranomon",
-		"armadillomon",
-		{
-			"name": "chimeramon",
-			"for": "monochromon"
-		},
-		{
-			"name": "ryudamon",
-			"for": "zanmetsumon"
-		},
-		{
-			"name": "commandramon",
-			"for": "cannondramon"
-		}
-	],
 	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "wezengammamon",
+				"from": [
+					3.5,
+					-1
+				]
+			},
+			{
+				"name": "ghilliedhumon"
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "kausgammamon",
+				"from": [
+					2.5,
+					-1
+				]
+			},
+			{
+				"name": "fumamon"
+			},
+			null,
+			null
+		],
 		[
 			null,
 			null,
@@ -117,40 +135,6 @@
 			null,
 			null,
 			{
-				"name": "kausgammamon",
-				"from": [
-					-1.5,
-					-1
-				]
-			},
-			{
-				"name": "fumamon"
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "wezengammamon",
-				"from": [
-					-2.5,
-					-1
-				]
-			},
-			{
-				"name": "ghilliedhumon"
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
 				"name": "monochromonx",
 				"color": "x",
 				"from": [
@@ -175,7 +159,7 @@
 			{
 				"name": "monochromon",
 				"from": [
-					-4.5,
+					-2.5,
 					-1
 				]
 			},
@@ -258,5 +242,24 @@
 				]
 			}
 		]
+	],
+	"related": [
+		{
+			"name": "tyranomon",
+			"from": "triceramon"
+		},
+		"armadillomon",
+		{
+			"name": "chimeramon",
+			"from": "monochromon"
+		},
+		{
+			"name": "ryudamon",
+			"for": "zanmetsumon"
+		},
+		{
+			"name": "commandramon",
+			"from": "cannondramon"
+		}
 	]
 }
