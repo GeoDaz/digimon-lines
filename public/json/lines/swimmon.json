@@ -1,0 +1,141 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "manbomon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "hangyomon"
+            },
+            {
+                "name": "pukumon"
+            }
+        ],
+        [
+            {
+                "name": "puwamon"
+            },
+            {
+                "name": "pinamon"
+            },
+            {
+                "name": "swimmon"
+            },
+            {
+                "name": "coelamon"
+            },
+            {
+                "name": "piranimon"
+            },
+            {
+                "name": "metalpiranimon",
+                "color": "x"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tobiumon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "gusokumon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tylomon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "divemon"
+            },
+            {
+                "name": "surfimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tylomonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "mantaraymon",
+                "from": [
+                    -4,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "mantaraymonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "seahomon",
+                "from": [
+                    -6,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "marinechimeramon",
+        {
+            "name": "crabmon",
+            "from": "gusokumon"
+        },
+        {
+            "name": "jellymon",
+            "from": "depthmon"
+        },
+        {
+            "name": "gomamon",
+            "for": "dolphmon"
+        }
+    ]
+}

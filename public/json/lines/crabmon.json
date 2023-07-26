@@ -1,0 +1,82 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "crabmonx",
+                "color": "x",
+                "from": [
+                    2,
+                    0
+                ]
+            },
+            null,
+            {
+                "name": "anomalocarimonx",
+                "color": "x",
+                "from": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "anomalocarimon",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "name": "pitchmon"
+            },
+            {
+                "name": "pukamon"
+            },
+            {
+                "name": "crabmon"
+            },
+            {
+                "name": "ebidramon"
+            },
+            {
+                "name": "marinechimeramon"
+            },
+            {
+                "name": "regalecusmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "gusokumon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "marinechimeramon",
+        {
+            "name": "kuwagamon",
+            "for": "yanmamon"
+        },
+        {
+            "name": "swimmon",
+            "for": "tobiumon"
+        }
+    ]
+}
