@@ -1,0 +1,56 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "burgamon2",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "name": "cocomon"
+            },
+            {
+                "name": "torikaraballmon"
+            },
+            {
+                "name": "burgamon"
+            },
+            {
+                "name": "potamon"
+            },
+            {
+                "name": "jyagamon"
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "ebiburgamon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "yakiimon"
+            },
+            {
+                "name": "burpmon"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "sukamon",
+            "for": "chohakkaimon"
+        }
+    ]
+}

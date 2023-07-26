@@ -1,26 +1,14 @@
 {
     "columns": [
         [
-            null,
-            null,
-            null,
             {
-                "name": "burgamon2",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "cocomon"
+                "name": "snowbotamon"
             },
             {
-                "name": "torikaraballmon"
+                "name": "nyaromon"
             },
             {
-                "name": "burgamon"
+                "name": "salamon"
             },
             {
                 "name": "shortmon"
@@ -36,48 +24,10 @@
                 "name": "junomonhm",
                 "color": "mode"
             }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "potamon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "jyagamon"
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "ebiburgamon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "yakiimon"
-            },
-            {
-                "name": "burpmon"
-            }
         ]
     ],
     "related": [
-        {
-            "name": "gatomon",
-            "from": "venusmon"
-        },
-        {
-            "name": "sukamon",
-            "for": "chohakkaimon"
-        }
+        "burgamon",
+        "gatomon"
     ]
 }

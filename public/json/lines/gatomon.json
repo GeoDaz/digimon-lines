@@ -317,10 +317,10 @@
 			{
 				"name": "bastemon"
 			},
-            {
-                "name": "venusmon",
-                "color": "light"
-            }
+			{
+				"name": "venusmon",
+				"color": "light"
+			}
 		],
 		[
 			null,
@@ -379,26 +379,23 @@
 		]
 	],
 	"related": [
-		"angemon",
 		{
-			"name": "ogudomon",
-			"from": "lilithmon"
-		},
-		{
-			"name": "devimon",
-			"from": "ladydevimon"
-		},
-		{
-			"name": "hawkmon",
-			"from": "silphymon"
+			"name": "shortmon",
+			"for": "junomon"
 		},
 		{
 			"name": "iguneetmon",
 			"for": "minervamon"
 		},
+		"sistermonblanc",
 		{
-			"name": "shortmon",
-			"for": "junomon"
+			"name": "hawkmon",
+			"from": "silphymon"
+		},
+		"angemon",
+		{
+			"name": "devimon",
+			"from": "ladydevimon"
 		},
 		{
 			"name": "leomon",
@@ -408,7 +405,10 @@
 			"name": "wizardmon",
 			"for": "witchmon"
 		},
-		"sistermonblanc",
-		"omegamonmm"
+		"omegamonmm",
+		{
+			"name": "ogudomon",
+			"from": "lilithmon"
+		}
 	]
 }

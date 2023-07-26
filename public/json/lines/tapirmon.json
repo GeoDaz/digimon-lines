@@ -73,25 +73,11 @@
             null,
             null,
             null,
-            null,
-            {
-                "name": "skullbaluchimon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
             {
                 "name": "boarmon",
                 "color": "fire",
                 "from": [
-                    -2,
+                    -1,
                     -1
                 ]
             },
@@ -107,7 +93,7 @@
                 "name": "sethmon",
                 "color": "armor",
                 "from": [
-                    -3,
+                    -2,
                     -1
                 ]
             },
@@ -122,6 +108,10 @@
         ]
     ],
     "related": [
+        {
+            "name": "gatomon",
+            "for": "skullbaluchimon"
+        },
         {
             "name": "meramon",
             "from": "demimeramon"
