@@ -19,7 +19,6 @@ import { zooms, zoomOptions } from '@/consts/zooms';
 import transformLine from '@/functions/transformer/line';
 import useQueryParam from '@/hooks/useQueryParam';
 import { DEV } from '@/consts/env';
-import Link from 'next/link';
 
 const NAME = 'name';
 interface StaticProps {
@@ -64,14 +63,17 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 		redirect('/');
 	}
 	const { next, prev } = ssr;
+	const nameCap = capitalize(name);
 	return (
 		<Layout
 			title={
 				<>
-					Digimon&nbsp;: <span className="text-capitalize">{name}</span>
+					Line for <span className="text-capitalize">{name}</span>
 				</>
 			}
-			metatitle={capitalize(name) + ' Line'}
+			metatitle={nameCap + ' Line'}
+			metadescription={`Evolution lines for ${nameCap} species`}
+			metaimg={`digimon/${name}.jpg`}
 		>
 			<div className="line-filters">
 				<Icon name="zoom-in" className="lead d-inline-block d-max-xs-none" />

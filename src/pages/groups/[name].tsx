@@ -44,6 +44,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 	if (!name) {
 		redirect('/groups');
 	}
+	const nameCap = capitalize(name);
 	return (
 		<Layout
 			title={
@@ -52,7 +53,9 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 					<span className="text-capitalize">{group?.title || name}</span>
 				</>
 			}
-			metatitle={capitalize(name) + ' Group'}
+			metatitle={nameCap + ' Group'}
+			metadescription={`List of Digimon in the ${nameCap} group`}
+			metaimg={`groups/${name}.jpg`}
 		>
 			{loading ? (
 				<LineLoading />
