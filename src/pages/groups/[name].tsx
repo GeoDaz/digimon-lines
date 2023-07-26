@@ -7,12 +7,13 @@ import { redirect } from 'next/navigation';
 import Layout from '@/components/Layout';
 import { LineLoading } from '@/components/LineGrid';
 import LinePoint, { LineImage } from '@/components/LinePoint';
+import CommentLink from '@/components/CommentLink';
 // functions
 import useFetch from '@/hooks/useFetch';
 import { capitalize } from '@/functions';
+import useQueryParam from '@/hooks/useQueryParam';
 // constants
 import { Group } from '@/types/Group';
-import useQueryParam from '@/hooks/useQueryParam';
 import { DEV } from '@/consts/env';
 
 const NAME = 'name';
@@ -98,6 +99,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 					</Row>
 				</div>
 			) : null}
+			{!!group && <CommentLink />}
 		</Layout>
 	);
 };

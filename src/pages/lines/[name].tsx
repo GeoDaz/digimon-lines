@@ -6,18 +6,19 @@ import { GetStaticProps } from 'next';
 // components
 import Layout from '@/components/Layout';
 import LineGrid, { LineLoading } from '@/components/LineGrid';
+import LinePoint, { LineImage } from '@/components/LinePoint';
 import ProgressBarSteps from '@/components/ProgressBarSteps';
+import CommentLink from '@/components/CommentLink';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
-import LinePoint, { LineImage } from '@/components/LinePoint';
 // functions
 import useFetch from '@/hooks/useFetch';
+import useQueryParam from '@/hooks/useQueryParam';
 import { capitalize } from '@/functions';
+import transformLine from '@/functions/transformer/line';
 // constants
 import { Line } from '@/types/Line';
 import { zooms, zoomOptions } from '@/consts/zooms';
-import transformLine from '@/functions/transformer/line';
-import useQueryParam from '@/hooks/useQueryParam';
 import { DEV } from '@/consts/env';
 
 const NAME = 'name';
@@ -89,7 +90,10 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 			{loading ? (
 				<LineLoading />
 			) : line ? (
-				<LineGrid line={line} zoom={zooms[zoom]} />
+				<>
+					<LineGrid line={line} zoom={zooms[zoom]} />
+					<CommentLink />
+				</>
 			) : (
 				<p>Line not found</p>
 			)}
