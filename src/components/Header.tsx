@@ -13,7 +13,7 @@ const Header: React.FC = () => (
 					Digimon Lines
 				</Navbar.Brand>
 				<div className="navbar-nav flex-grow-1">
-					<Link className="nav-link" href="/">
+					<Link className="nav-link d-max-xs-none" href="/">
 						Lines
 					</Link>
 					<Link className="nav-link" href="/groups">

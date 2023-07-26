@@ -67,6 +67,14 @@ body {
   .d-max-xs-none {
     display: none !important;
   }
+
+  .btn.btn-lg {
+    font-size: 1rem;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1rem;
+  }
 }
 
 body ::-webkit-scrollbar {
@@ -183,6 +191,12 @@ h2 {
   min-height: 100vh;
 }
 
+/* Header */
+
+.navbar{
+  font-weight: bold;
+}
+
 .navbar.navbar-dark {
   border-bottom: var(--dl-border);
   box-shadow: var(--dl-box-shadow)
@@ -192,6 +206,8 @@ h2 {
   /* max-height: 27px; */
   margin-right: 0.5em;
 }
+
+/* Page */
 
 .page,
 .page.container,
