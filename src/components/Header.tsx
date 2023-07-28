@@ -3,6 +3,7 @@ import { Container, Navbar } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
 import Icon from './Icon';
+import { DISCORD_URL } from '@/consts/env';
 
 const Header: React.FC = () => (
 	<header className="sticky-top">
@@ -21,7 +22,7 @@ const Header: React.FC = () => (
 					</Link>
 				</div>
 				<Link
-					href="https://discord.gg/RJrEuN7cQs"
+					href={DISCORD_URL}
 					target="_blank"
 					rel="nofollow noopener noreferrer"
 					title="discord"
