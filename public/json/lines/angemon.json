@@ -216,7 +216,7 @@
 	"related": [
 		{
 			"name": "armadillomon",
-			"from": "shakkoumon"
+			"for": "shakkoumon"
 		},
 		{
 			"name": "devimon",
@@ -236,11 +236,19 @@
 		},
 		{
 			"name": "jellymon",
-			"from": "marineangemon"
+			"for": "marineangemon"
+		},
+		{
+			"name": "seadramon",
+			"for": "goldramon"
 		},
 		{
 			"name": "unimon",
 			"from": "patamon"
+		},
+		{
+			"name": "veemon",
+			"for": "azulongmon"
 		},
 		"omegamonmm"
 	]

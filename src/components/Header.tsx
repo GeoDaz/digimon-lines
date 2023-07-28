@@ -21,7 +21,7 @@ const Header: React.FC = () => (
 					</Link>
 				</div>
 				<Link
-					href="https://discord.gg/GkGd8ED8Nc"
+					href="https://discord.gg/RJrEuN7cQs"
 					target="_blank"
 					rel="nofollow noopener noreferrer"
 					title="discord"
