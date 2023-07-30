@@ -1,0 +1,57 @@
+{
+    "columns": [
+        [
+            {
+                "name": "choromon"
+            },
+            {
+                "name": "caprimon"
+            },
+            {
+                "name": "junkmon"
+            },
+            {
+                "name": "machmon"
+            },
+            {
+                "name": "rebellimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "trailmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "locomon"
+            },
+            {
+                "name": "grandlocomon"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "labramon",
+            "for": "dobermon"
+        },
+        {
+            "name": "ogremon",
+            "from": "rebellimon"
+        },
+        {
+            "name": "numemon",
+            "from": "junkmon"
+        },
+        {
+            "name": "hagurumon",
+            "for": "frozomon"
+        }
+    ]
+}
