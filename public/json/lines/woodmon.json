@@ -5,21 +5,6 @@
             null,
             null,
             {
-                "name": "nohemon",
-                "from": [
-                    2,
-                    -1
-                ]
-            },
-            {
-                "name": "zamielmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
                 "name": "chamblemon",
                 "from": [
                     1,
@@ -27,7 +12,10 @@
                 ],
                 "color": "dark"
             },
-            null,
+            {
+                "name": "entmon",
+                "color": "dark"
+            },
             {
                 "name": "xuanwumon",
                 "from": [
@@ -78,13 +66,15 @@
             null,
             null,
             null,
-            null,
             {
-                "name": "entmon",
+                "name": "nohemon",
                 "from": [
-                    -1,
+                    -2,
                     -1
                 ]
+            },
+            {
+                "name": "zamielmon"
             }
         ]
     ],

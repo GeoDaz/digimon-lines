@@ -32,10 +32,7 @@
                 "name": "strikedramon"
             },
             {
-                "name": "cyberdramon",
-                "skins": [
-                    "cyberdramon2"
-                ]
+                "name": "cyberdramon"
             },
             {
                 "name": "justimon",
@@ -51,7 +48,13 @@
             null,
             null,
             null,
-            null,
+            {
+                "name": "cyberdramon2",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
             {
                 "name": "darkdramon",
                 "from": [

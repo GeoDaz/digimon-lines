@@ -2,7 +2,7 @@ export interface Line {
 	columns: Array<Array<LinePoint | LinePoint[] | null>>;
 	size: number;
 	related?: Array<string | LineRelation>;
-	notes?: Array<string>;
+	notes?: string[];
 }
 
 export interface LinePoint {
