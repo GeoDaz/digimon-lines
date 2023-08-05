@@ -130,12 +130,20 @@
             "from": "gusokumon"
         },
         {
-            "name": "jellymon",
-            "from": "depthmon"
+            "name": "falcomon",
+            "for": "huankunmon"
         },
         {
             "name": "gomamon",
             "for": "dolphmon"
+        },
+        {
+            "name": "jellymon",
+            "from": "depthmon"
+        },
+        {
+            "name": "pulsemon",
+            "from": "divemon"
         }
     ]
 }

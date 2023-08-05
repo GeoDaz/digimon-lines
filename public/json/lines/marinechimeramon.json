@@ -1,31 +1,15 @@
 {
     "columns": [
         [
-            {
-                "name": "puwamon"
-            },
-            {
-                "name": "pinamon"
-            },
-            {
-                "name": "swimmon"
-            },
-            {
-                "name": "coelamon"
-            }
-        ],
-        [
+            null,
             null,
             null,
             {
-                "name": "crabmon",
+                "name": "dolphmon",
                 "from": [
                     1,
                     -1
                 ]
-            },
-            {
-                "name": "ebidramon"
             }
         ],
         [
@@ -45,13 +29,29 @@
         [
             null,
             null,
-            null,
             {
-                "name": "dolphmon",
+                "name": "crabmon",
                 "from": [
                     -1,
                     -1
                 ]
+            },
+            {
+                "name": "ebidramon"
+            }
+        ],
+        [
+            {
+                "name": "puwamon"
+            },
+            {
+                "name": "pinamon"
+            },
+            {
+                "name": "swimmon"
+            },
+            {
+                "name": "coelamon"
             },
             {
                 "name": "marinechimeramon",

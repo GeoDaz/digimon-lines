@@ -3,8 +3,26 @@
         [
             null,
             null,
+            null,
+            {
+                "name": "kenkimon",
+                "color": "armor",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "frozomon",
+                "color": "ice"
+            }
+        ],
+        [
+            null,
+            null,
             {
                 "name": "solarmon",
+                "color": "fire",
                 "from": [
                     2,
                     -1
@@ -13,13 +31,6 @@
             {
                 "name": "guardromongold",
                 "color": "armor"
-            },
-            {
-                "name": "frozomon",
-                "from": [
-                    2,
-                    1
-                ]
             }
         ],
         [
@@ -109,6 +120,22 @@
         {
             "name": "kuwagamon",
             "for": "kokuwamon"
+        },
+        {
+            "name": "armadillomon",
+            "from": "kenkimon"
+        },
+        {
+            "name": "machmon",
+            "for": "grandlocomon"
+        },
+        {
+            "name": "dracomon",
+            "for": "breakdramon"
+        },
+        {
+            "name": "leomon",
+            "for": "loaderliomon"
         }
     ]
 }
