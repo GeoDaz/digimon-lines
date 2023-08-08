@@ -1,0 +1,38 @@
+{
+    "columns": [
+        [
+            {
+                "name": "nyokimon"
+            },
+            {
+                "name": "budmon"
+            },
+            {
+                "name": "ekakimon"
+            },
+            {
+                "name": "omekamon"
+            },
+            {
+                "name": "extyranomon"
+            },
+            {
+                "name": "omedamon"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "flarelizardmon",
+            "for": "toyagumon"
+        },
+        {
+            "name": "gatomon",
+            "for": "betsumon"
+        },
+        {
+            "name": "omegamonmm",
+            "for": "omegamon"
+        }
+    ]
+}

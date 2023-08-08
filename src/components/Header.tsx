@@ -20,6 +20,9 @@ const Header: React.FC = () => (
 					<Link className="nav-link" href="/groups">
 						Groups
 					</Link>
+					<Link className="nav-link" href="/vbs">
+						VB
+					</Link>
 				</div>
 				<Link
 					href={DISCORD_URL}

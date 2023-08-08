@@ -73,6 +73,14 @@
                     -2,
                     -1
                 ]
+            },
+            null,
+            {
+                "name": "babamon",
+                "from": [
+                    0,
+                    -2
+                ]
             }
         ],
         [
@@ -106,6 +114,10 @@
         {
             "name": "gatomon",
             "from": "witchmon"
+        },
+        {
+            "name": "monmon",
+            "for": "jijimon"
         }
     ]
 }

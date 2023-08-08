@@ -5,6 +5,21 @@
             null,
             null,
             {
+                "name": "mojyamon",
+                "from": [
+                    2,
+                    -1
+                ],
+                "skins": [
+                    "junglemojyamon"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
                 "name": "hapemon",
                 "from": [
                     1,
@@ -13,6 +28,9 @@
             },
             {
                 "name": "gokuwmon"
+            },
+            {
+                "name": "jijimon"
             }
         ],
         [
@@ -71,21 +89,6 @@
                 "from": [
                     -3,
                     -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "mojyamon",
-                "from": [
-                    -4,
-                    -1
-                ],
-                "skins": [
-                    "junglemojyamon"
                 ]
             }
         ]

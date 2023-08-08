@@ -117,8 +117,13 @@
             null,
             {
                 "name": "nanimon",
-                "from": null,
-                "skins": ["bombernanimon"]
+                "from": [
+                    -3,
+                    -1
+                ],
+                "skins": [
+                    "bombernanimon"
+                ]
             },
             {
                 "name": "bombermon"
@@ -131,7 +136,12 @@
             {
                 "name": "igamon",
                 "from": null,
-                "skins": ["kougamon"]
+                "skins": [
+                    "kougamon"
+                ]
+            },
+            {
+                "name": "fumamon"
             }
         ]
     ],
@@ -147,6 +157,10 @@
         {
             "name": "kuwagamon",
             "from": "kokuwamon"
+        },
+        {
+            "name": "pulsemon",
+            "for": "shootmon"
         }
     ]
 }

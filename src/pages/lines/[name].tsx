@@ -20,6 +20,7 @@ import transformLine from '@/functions/transformer/line';
 import { Line } from '@/types/Line';
 import { zooms, zoomOptions } from '@/consts/zooms';
 import { DEV } from '@/consts/env';
+import { LINE } from '@/consts/ui';
 
 const NAME = 'name';
 interface StaticProps {
@@ -30,8 +31,9 @@ interface StaticProps {
 }
 interface Props {
 	ssr: StaticProps;
+	type: string;
 }
-const PageLine: React.FC<Props> = ({ ssr = {} }) => {
+const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 	const { name } = useQueryParam(NAME) || ssr;
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
 	const [zoom, setZoom] = useState(0);
@@ -101,7 +103,7 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 				<div className="row mb-4">
 					<div className="col-6 d-flex justify-content-start">
 						{!!prev && (
-							<LinePoint className="move-link" name={prev}>
+							<LinePoint className="move-link" name={prev} type={type}>
 								<span className="absolute-legend">
 									<Icon name="arrow-left-circle-fill" /> Previous
 								</span>
@@ -110,7 +112,7 @@ const PageLine: React.FC<Props> = ({ ssr = {} }) => {
 					</div>
 					<div className="col-6 d-flex justify-content-end">
 						{!!next && (
-							<LinePoint name={next} className="move-link">
+							<LinePoint name={next} className="move-link" type={type}>
 								<span className="absolute-legend">
 									Next <Icon name="arrow-right-circle-fill" />
 								</span>

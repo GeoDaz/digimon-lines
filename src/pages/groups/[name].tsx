@@ -106,12 +106,8 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 
 export async function getStaticPaths() {
 	try {
-		const res = await fetch(`${process.env.URL}/json/groups/_index.json`);
-		const groups: string[] = await res.json();
-
-		const paths = groups.map(name => ({
-			params: { name },
-		}));
+		const groups: string[] = require('../../../public/json/groups/_index.json');
+		const paths = groups.map(name => ({ params: { name } }));
 
 		return { paths, fallback: false };
 	} catch {

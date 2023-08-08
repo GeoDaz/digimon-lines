@@ -47,13 +47,15 @@
         [
             null,
             null,
-            null,
             {
-                "name": "arbormon",
+                "name": "bacomon",
                 "from": [
                     -1,
                     -1
                 ]
+            },
+            {
+                "name": "arbormon"
             },
             {
                 "name": "petaldramon"
@@ -69,7 +71,7 @@
             {
                 "name": "nohemon",
                 "from": [
-                    -2,
+                    -1,
                     -1
                 ]
             },

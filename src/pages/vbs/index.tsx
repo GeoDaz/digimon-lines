@@ -7,29 +7,28 @@ import PointImage from '@/components/LinePoint';
 import { GetStaticProps } from 'next';
 import { DEV } from '@/consts/env';
 import { LineThumb } from '@/types/Line';
-import { GROUP } from '@/consts/ui';
+import { VB } from '@/consts/ui';
+import { getDirPaths } from '@/functions/file';
 
-// TODO rename this page groups.tsx when there will be a home
-
-const defaultData = { groups: [], fusions: [] };
+const defaultData = { lines: [] };
 interface StaticProps {
-	groups: string[] | Array<LineThumb>;
+	lines: string[] | Array<LineThumb>;
 }
 interface Props {
 	ssr: StaticProps;
 }
 const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
-	const [groups, setLines] = React.useState<string[] | Array<LineThumb>>(ssr.groups);
+	const [lines, setLines] = React.useState<string[] | Array<LineThumb>>(ssr.lines);
 	const [load, loading] = useFetch(setLines);
 
 	useEffect(() => {
-		if (!groups.length) {
-			load(`${process.env.URL}/json/groups/_index.json`);
+		if (!lines.length) {
+			load(`${process.env.URL}/json/vb/_index.json`);
 		}
 	}, []);
 
 	return (
-		<Layout title="Available groups" metadescription="List of available Digimon groups">
+		<Layout title="Available VB" metadescription="List of available Digimon VB">
 			{loading ? (
 				<div className="text-center">
 					<Spinner animation="border" />
@@ -37,17 +36,17 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 			) : (
 				<div className="line-wrapper">
 					<Row className="line-row">
-						{groups.map((group, i) =>
-							typeof group === 'string' ? (
+						{lines.map((line, i) =>
+							typeof line === 'string' ? (
 								<Col key={i}>
-									<PointImage name={group} type={GROUP} />
+									<PointImage name={line} type={VB} />
 								</Col>
 							) : (
 								<Col key={i}>
 									<PointImage
-										name={group.name}
-										available={group.available}
-										type={GROUP}
+										name={line.name}
+										available={line.available}
+										type={VB}
 									/>
 								</Col>
 							)
@@ -59,21 +58,21 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	);
 };
 
-const checkGroupAvailability = (group: string): LineThumb => {
+const checkGroupAvailability = (line: string): LineThumb => {
 	try {
-		const available = fs.existsSync(`public/json/groups/${group}.json`);
-		return { name: group, available } as LineThumb;
+		const available = fs.existsSync(`public/json/vb/${line}.json`);
+		return { name: line, available } as LineThumb;
 	} catch (e) {
-		return { name: group, available: false } as LineThumb;
+		return { name: line, available: false } as LineThumb;
 	}
 };
 
 export const getStaticProps: GetStaticProps = async () => {
 	try {
-		let groups = require('../../../public/json/groups/_index.json');
-		groups = groups.map(checkGroupAvailability);
+		let lines = require('../../../public/json/vb/_index.json');
+		lines = lines.map(checkGroupAvailability);
 
-		return { props: { ssr: { groups } } };
+		return { props: { ssr: { lines } } };
 	} catch (e) {
 		if (process.env.NODE_ENV === DEV) {
 			console.error(e);
