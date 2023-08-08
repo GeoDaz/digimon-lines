@@ -1,23 +1,23 @@
 // modules
 import { GetStaticProps } from 'next';
 // components
-import PageVB from '../lines/[name]';
+import { PageLine as PageVB } from '../lines/[name]';
 import transformLine from '@/functions/transformer/line';
 // constants
 import { Line } from '@/types/Line';
 import { DEV } from '@/consts/env';
 import { VB } from '@/consts/ui';
 
-// export async function getStaticPaths() {
-// 	try {
-// 		const vbs: string[] = require('../../../public/json/vb/_index.json');
-// 		const paths = vbs.map(name => ({ params: { name } }));
+export async function getStaticPaths() {
+	try {
+		const vbs: string[] = require('../../../public/json/vb/_index.json');
+		const paths = vbs.map(name => ({ params: { name } }));
 
-// 		return { paths, fallback: false };
-// 	} catch {
-// 		return { paths: [], fallback: true };
-// 	}
-// }
+		return { paths, fallback: false };
+	} catch {
+		return { paths: [], fallback: true };
+	}
+}
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
 	if (!params || !params.name) {
