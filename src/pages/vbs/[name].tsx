@@ -1,7 +1,7 @@
 // modules
 import { GetStaticProps } from 'next';
 // components
-import { PageLine as PageVB } from '../lines/[name]';
+import { PageLine as PageVB } from '@/pages/lines/[name]';
 import transformLine from '@/functions/transformer/line';
 // constants
 import { Line } from '@/types/Line';
