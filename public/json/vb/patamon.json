@@ -1,0 +1,122 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "magnaangemonpm",
+                "color": "mode",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "angemon",
+				"color": "light",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "magnaangemon",
+				"color": "light"
+            },
+            {
+                "name": "seraphimon",
+				"color": "light"
+            }
+        ],
+        [
+            {
+                "name": "poyomon"
+            },
+            {
+                "name": "tokomon"
+            },
+            {
+                "name": "patamon",
+				"color": "light"
+            },
+            {
+                "name": "pidmon",
+				"color": "light"
+            },
+            {
+                "name": "archangemon",
+				"color": "light"
+            },
+            {
+                "name": "dominimon",
+				"color": "light"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "unimon",
+				"color": "light",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "piccolomon",
+				"color": "light"
+            },
+            {
+                "name": "slashangemon",
+				"color": "light"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "pegasmon",
+				"color": "light",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "chirinmon",
+				"color": "light"
+            },
+            {
+                "name": "goldramon",
+				"color": "light"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "rhinomon",
+				"color": "light",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "angemon"
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "strikedramon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "cyberdramon"
+            },
+            {
+                "name": "darkdramon"
+            }
+        ],
+        [
+            {
+                "name": "bommon",
+                "size": 2
+            },
+            {
+                "name": "missimon",
+                "size": 2
+            },
+            [
+                {
+                    "name": "bemmon",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "commandramon",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "snatchmon"
+                },
+                {
+                    "name": "hicommandramon"
+                }
+            ],
+            [
+                {
+                    "name": "destromon"
+                },
+                {
+                    "name": "cargodramon"
+                }
+            ],
+            [
+                {
+                    "name": "ragnamon"
+                },
+                {
+                    "name": "brigadramon"
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sealsdramon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "tankdramon"
+            },
+            {
+                "name": "gundramon"
+            }
+        ]
+    ],
+    "related": [
+        "commandramon",
+        "bemmon",
+        "monodramon"
+    ]
+}

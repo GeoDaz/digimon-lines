@@ -1,0 +1,111 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "dorugamon",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            {
+                "name": "dorugreymon"
+            },
+            {
+                "name": "dorugoramon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "raptordramon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "grademon"
+            },
+            {
+                "name": "alphamon"
+            }
+        ],
+        [
+            {
+                "name": "dodomon"
+            },
+            {
+                "name": "dorimon"
+            },
+            {
+                "name": "dorumon"
+            },
+            null,
+            null,
+            {
+                "name": "alphamonouryuken",
+                "color": "fusion",
+                "color2": "fusion",
+                "from": [
+                    -1,
+                    0
+                ],
+                "from2": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "ginryumon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "hisyaryumon"
+            },
+            {
+                "name": "ouryumon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "deathxdorugamon",
+                "color": "dark",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "deathxdorugreymon",
+                "color": "dark"
+            },
+            {
+                "name": "deathxdorugoramon",
+                "color": "dark"
+            }
+        ]
+    ],
+    "related": [
+        "zubamon",
+        "hackmon",
+        "ludomon",
+        "dorumon"
+    ]
+}

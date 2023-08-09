@@ -1,0 +1,124 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "madleomon",
+                "color": "dark",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "jagerloweemon",
+                "color": "dark"
+            },
+            {
+                "name": "leopardmon"
+            }
+        ],
+        [
+            {
+                "name": "zurumon",
+                "color": "dark",
+                "size": 2
+            },
+            {
+                "name": "pagumon",
+                "color": "dark",
+                "size": 2
+            },
+            [
+                {
+                    "name": "elecmonb",
+                    "color": "dark",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "gazimon",
+                    "color": "dark",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "loweemon",
+                    "color": "dark"
+                },
+                {
+                    "name": "duskmon",
+                    "color": "dark"
+                }
+            ],
+            [
+                {
+                    "name": "raihimon",
+                    "color": "dark"
+                },
+                {
+                    "name": "velgrmon",
+                    "color": "dark"
+                }
+            ],
+            [
+                {
+                    "name": "ancientsphinxmon",
+                    "color": "dark"
+                },
+                {
+                    "name": "abbadomoncore",
+                    "color": "dark"
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "skullknightmon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "darkknightmon",
+                "color": "dark"
+            },
+            {
+                "name": "bagramon",
+                "color": "dark"
+            }
+        ]
+    ],
+    "related": [
+        "duskmon",
+        {
+            "name": "leomon",
+            "for": "loweemon"
+        },
+        {
+            "name": "pawnchessmonwhite",
+            "for": "darkknightmon"
+        },
+        {
+            "name": "negamon",
+            "for": "abbadomoncore"
+        },
+        {
+            "name": "gatomon",
+            "for": "leopardmon"
+        }
+    ]
+}

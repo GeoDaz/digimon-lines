@@ -1,0 +1,108 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "astamon",
+				"color": "dark",
+                "from": [1,-1]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sangloupmon",
+				"color": "dark",
+                "from": [1,-1]
+            },
+            {
+                "name": "matadormon",
+				"color": "dark"
+            },
+            {
+                "name": "grandracmon",
+				"color": "dark"
+            }
+        ],
+        [
+            {
+                "name": "punimon"
+            },
+            {
+                "name": "tsunomon"
+            },
+            {
+                "name": "gabumonb",
+				"color": "dark"
+            },
+            {
+                "name": "garurumonb",
+				"color": "dark"
+            },
+            {
+                "name": "weregarurumonb",
+				"color": "dark"
+            },
+            {
+                "name": "metalgarurumonb",
+				"color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gaogamonb",
+				"color": "dark",
+                "from": [-1,-1]
+            },
+            {
+                "name": "machgaogamonb",
+				"color": "dark"
+            },
+            {
+                "name": "miragegaogamonb",
+				"color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "fangmon",
+				"color": "dark",
+                "from": [-2,-1]
+            },
+            {
+                "name": "helloogarmon",
+				"color": "dark"
+            },
+            {
+                "name": "merukymon",
+				"color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "skullbaluchimon",
+				"color": "dark",
+                "from": [-1,-1]
+            }
+        ]
+    ],
+    "related": [
+        "garurumon",
+        "dracmon"
+    ]
+}

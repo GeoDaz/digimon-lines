@@ -1,0 +1,130 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "flarelizardmon",
+                "color": "fire",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "burninggreymon",
+                "color": "fire"
+            },
+            {
+                "name": "ancientgreymon",
+                "color": "fire"
+            }
+        ],
+        [
+            {
+                "name": "mokumon",
+                "color": "fire",
+                "size": 2
+            },
+            {
+                "name": "sunmon",
+                "color": "fire",
+                "size": 2
+            },
+            [
+                {
+                    "name": "flamon",
+                    "color": "fire",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "coronamon",
+                    "color": "fire",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "agunimon",
+                    "color": "fire"
+                },
+                {
+                    "name": "firamon",
+                    "color": "fire"
+                }
+            ],
+            [
+                {
+                    "name": "aldamon",
+                    "color": "fire"
+                },
+                {
+                    "name": "flaremon",
+                    "color": "fire"
+                }
+            ],
+            [
+                {
+                    "name": "emperorgreymon",
+                    "color": "fire"
+                },
+                {
+                    "name": "apollomon",
+                    "color": "fire"
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "lynxmon",
+                "color": "fire",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "helloogarmon",
+                "color": "fire"
+            },
+            {
+                "name": "marsmon",
+                "color": "fire"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "greymon",
+            "for": "agunimon"
+        },
+        {
+            "name": "leomon",
+            "for": "coronamon"
+        },
+        "flarelizardmon",
+        {
+            "name": "gatomon",
+            "for": "lynxmon"
+        },
+        {
+            "name": "loogamon",
+            "for": "helloogarmon"
+        },
+        "meramon",
+        {
+            "name": "biyomon",
+            "for": "birdramon"
+        }
+    ]
+}

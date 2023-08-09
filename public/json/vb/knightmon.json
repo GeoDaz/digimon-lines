@@ -1,0 +1,109 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "andromon",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "skullknightmon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "darkknightmon"
+            },
+            {
+                "name": "craniummon"
+            }
+        ],
+        [
+            {
+                "name": "choromon"
+            },
+            {
+                "name": "caprimon"
+            },
+            {
+                "name": "pawnchessmonwhite"
+            },
+            {
+                "name": "gladimon"
+            },
+            {
+                "name": "knightmon"
+            },
+            {
+                "name": "lordknightmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "leomon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "grapleomon"
+            },
+            {
+                "name": "leopardmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "wizardmon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "mistymon"
+            },
+            {
+                "name": "dynasmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "maildramon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "pawnchessmonwhite",
+        "wizardmon",
+        "leomon"
+    ]
+}

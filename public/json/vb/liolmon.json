@@ -1,0 +1,112 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "monzaemon",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "leomon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "panjyamon",
+                "color": "ice"
+            },
+            {
+                "name": "saberleomon"
+            }
+        ],
+        [
+            {
+                "name": "popomon"
+            },
+            {
+                "name": "frimon"
+            },
+            {
+                "name": "liolmon"
+            },
+            {
+                "name": "liamon"
+            },
+            {
+                "name": "loaderliomon"
+            },
+            {
+                "name": "bancholeomon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "firamon",
+                "color": "fire",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "flaremon",
+                "color": "fire"
+            },
+            {
+                "name": "apollomon",
+                "color": "fire"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "grizzlymon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "grapleomon"
+            },
+            {
+                "name": "heavyleomon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "pandamon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "leomon",
+        "bearmon"
+    ]
+}

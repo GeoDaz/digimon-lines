@@ -4,15 +4,12 @@
             null,
             null,
             null,
+            null,
+            null,
             {
-                "name": "mojyamon",
-                "from": [
-                    2,
-                    -1
-                ],
-                "skins": [
-                    "junglemojyamon"
-                ]
+                "name": "gankoomonx",
+                "color": "x",
+                "from":[1,0]
             }
         ],
         [
@@ -22,7 +19,7 @@
             {
                 "name": "hapemon",
                 "from": [
-                    1,
+                    2,
                     -1
                 ]
             },
@@ -30,7 +27,30 @@
                 "name": "gokuwmon"
             },
             {
-                "name": "jijimon"
+                "name": "gankoomon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "mojyamon",
+                "from": [
+                    1,
+                    -1
+                ],
+                "skins": [
+                    "junglemojyamon"
+                ]
+            },
+            null,
+            {
+                "name": "jijimon",
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ],
         [
@@ -103,6 +123,10 @@
             "from": "gokuwmon"
         },
         {
+            "name": "hackmon",
+            "for": "jesmongx"
+        },
+        {
             "name": "hookmon"
         },
         {
@@ -110,12 +134,16 @@
             "from": "baboongamon"
         },
         {
-            "name": "bearmon",
-            "from": "mojyamon"
-        },
-        {
             "name": "impmon",
             "from": "dijiangmon"
+        },
+        {
+            "name": "bearmon",
+            "for": "pandamon"
+        },
+        {
+            "name": "starmon",
+            "from": "gankoomon"
         }
     ]
 }

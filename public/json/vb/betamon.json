@@ -1,0 +1,94 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "anomalocarimon",
+                "from": [1,-1]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "seadramon",
+                "from": [1,-1]
+            },
+            {
+                "name": "megaseadramon"
+            },
+            {
+                "name": "metalseadramon"
+            }
+        ],
+        [
+            {
+                "name": "botamon"
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "betamon"
+            },
+            {
+                "name": "airdramon"
+            },
+            {
+                "name": "megadramon"
+            },
+            {
+                "name": "machinedramon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tyranomon",
+                "from": [-1,-1]
+            },
+            {
+                "name": "metaltyranomon"
+            },
+            {
+                "name": "rusttyranomon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "monochromon",
+                "from": [-2,-1]
+            },
+            {
+                "name": "triceramon"
+            },
+            {
+                "name": "cannondramon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "brachiomon",
+                "from": [-1,-1]
+            }
+        ]
+    ],
+    "related": [
+        "seadramon",
+        "tyranomon",
+        "gammamon"
+    ]
+}

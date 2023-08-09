@@ -1,0 +1,108 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "skullgreymon",
+                "color": "dark",
+                "from": [1,-1]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "greymonb",
+                "color": "dark",
+                "from": [1,-1]
+            },
+            {
+                "name": "metalgreymonb",
+                "color": "dark"
+            },
+            {
+                "name": "wargreymonb",
+                "color": "dark"
+            }
+        ],
+        [
+            {
+                "name": "botamon"
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "agumonb",
+                "color": "dark"
+            },
+            {
+                "name": "greymonb3",
+                "color": "dark"
+            },
+            {
+                "name": "metalgreymonb3",
+                "color": "dark"
+            },
+            {
+                "name": "zeekgreymon",
+                "color": "armor"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "darktyranomon",
+                "color": "dark",
+                "from": [-1,-1]
+            },
+            {
+                "name": "mastertyranomon"
+            },
+            {
+                "name": "samudramon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "darklizardmon",
+                "color": "dark",
+                "from": [-2,-1]
+            },
+            {
+                "name": "metaltyranomon",
+                "color": "dark"
+            },
+            {
+                "name": "machinedramon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "gigadramon",
+                "color": "dark",
+                "from": [-1,-1]
+            }
+        ]
+    ],
+    "related": [
+        "greymon",
+        "tyranomon",
+        "flarelizardmon"
+    ]
+}

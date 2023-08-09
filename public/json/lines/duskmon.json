@@ -36,13 +36,14 @@
                 "name": "bagramon",
                 "color": "dark"
             },
-            {
-                "name": "darkknightmonbagramon",
-                "color": "fusion"
-            },
+            null,
             {
                 "name": "darknessbagramon",
-                "color": "fusion"
+                "color": "fusion",
+                "from": [
+                    0,
+                    2
+                ]
             }
         ],
         [

@@ -8,7 +8,6 @@ import { GetStaticProps } from 'next';
 import { DEV } from '@/consts/env';
 import { LineThumb } from '@/types/Line';
 import { VB } from '@/consts/ui';
-import { getDirPaths } from '@/functions/file';
 
 const defaultData = { lines: [] };
 interface StaticProps {
@@ -58,27 +57,27 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	);
 };
 
-// const checkGroupAvailability = (line: string): LineThumb => {
-// 	try {
-// 		const available = fs.existsSync(`public/json/vb/${line}.json`);
-// 		return { name: line, available } as LineThumb;
-// 	} catch (e) {
-// 		return { name: line, available: false } as LineThumb;
-// 	}
-// };
+const checkGroupAvailability = (line: string): LineThumb => {
+	try {
+		const available = fs.existsSync(`public/json/vb/${line}.json`);
+		return { name: line, available } as LineThumb;
+	} catch (e) {
+		return { name: line, available: false } as LineThumb;
+	}
+};
 
-// export const getStaticProps: GetStaticProps = async () => {
-// 	try {
-// 		let lines = require('../../../public/json/vb/_index.json');
-// 		lines = lines.map(checkGroupAvailability);
+export const getStaticProps: GetStaticProps = async () => {
+	try {
+		let lines = require('../../../public/json/vb/_index.json');
+		lines = lines.map(checkGroupAvailability);
 
-// 		return { props: { ssr: { lines } } };
-// 	} catch (e) {
-// 		if (process.env.NODE_ENV === DEV) {
-// 			console.error(e);
-// 		}
-// 		return { props: { ssr: defaultData } };
-// 	}
-// };
+		return { props: { ssr: { lines } } };
+	} catch (e) {
+		if (process.env.NODE_ENV === DEV) {
+			console.error(e);
+		}
+		return { props: { ssr: defaultData } };
+	}
+};
 
 export default PageLines;

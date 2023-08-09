@@ -1,0 +1,123 @@
+{
+    "columns": [
+        [null,
+        null,
+        null,
+        {
+            "name": "nefertimon",
+            "from": [
+                2,
+                -1
+            ]
+        }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "darcmon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "angewomon"
+            },
+            {
+                "name": "ophanimon"
+            }
+        ],
+        [
+            {
+                "name": "pururumon",
+                "size": 2
+            },
+            {
+                "name": "poromon",
+                "size": 2
+            },
+            [
+                {
+                    "name": "plotmon",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "hawkmon",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "gatomon"
+                },
+                {
+                    "name": "aquilamon"
+                }
+            ],
+            [
+                {
+                    "name": "silphymon",
+                    "color": "fusion",
+                    "color2": "fusion",
+                    "from2": [1, -1]
+                },
+                {
+                    "name": "hippogriffomon",
+                    "color": "fusion",
+                    "color2": "fusion",
+                    "from2": [-1, -1] 
+                }
+            ],
+            [
+                {
+                    "name": "valkyrimon"
+                },
+                {
+                    "name": "griffomon"
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "harpymon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "shutumon"
+            },
+            {
+                "name": "ancientirismon"
+            }
+        ],
+        [null,
+        null,
+        null,
+        {
+            "name": "halsemon",
+            "from": [
+                -2,
+                -1
+            ]
+        }
+        ]
+    ],
+    "related": [
+        "hawkmon",
+        "gatomon",
+        "fairymon"
+    ]
+}

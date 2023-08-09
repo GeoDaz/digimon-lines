@@ -1,0 +1,122 @@
+{
+    "columns": [
+        [null,
+        null,
+        null,
+        {
+            "name": "flamedramon",
+            "from": [
+                2,
+                -1
+            ]
+        }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "veedramon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "aeroveedramon"
+            },
+            {
+                "name": "ulforceveedramon"
+            }
+        ],
+        [
+            {
+                "name": "chicomon",
+                "size": 2
+            },
+            {
+                "name": "chibimon",
+                "size": 2
+            },
+            [
+                {
+                    "name": "veemon",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "wormmon",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "exveemon"
+                },
+                {
+                    "name": "stingmon"
+                }
+            ],
+            [
+                {
+                    "name": "paildramon",
+                    "color": "fusion",
+                    "color2": "fusion",
+                    "from2": [1, -1]
+                },
+                {
+                    "name": "dinobeemon",
+                    "color": "fusion",
+                    "color2": "fusion",
+                    "from2": [-1, -1] 
+                }
+            ],
+            [
+                {
+                    "name": "imperialdramon"
+                },
+                {
+                    "name": "imperialdramonfm"
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "hudiemon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "jewelbeemon"
+            },
+            {
+                "name": "banchostingmon"
+            }
+        ],
+        [null,
+        null,
+        null,
+        {
+            "name": "shadramon",
+            "from": [
+                -2,
+                -1
+            ]
+        }
+        ]
+    ],
+    "related": [
+        "veemon",
+        "wormmon"
+    ]
+}

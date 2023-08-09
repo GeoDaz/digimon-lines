@@ -1,0 +1,114 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "baohackmon",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            {
+                "name": "saviorhackmon"
+            },
+            {
+                "name": "jesmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "zubaeagermon",
+                "color": "armor",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "duramon",
+                "color": "armor"
+            },
+            {
+                "name": "durandamon",
+                "color": "armor"
+            }
+        ],
+        [
+            {
+                "name": "sakumon",
+                "color": "armor"
+            },
+            {
+                "name": "sakuttomon",
+                "color": "armor"
+            },
+            {
+                "name": "zubamon",
+                "color": "armor"
+            },
+            null,
+            null,
+            {
+                "name": "ragnalordmon",
+                "color": "fusion",
+                "color2": "fusion",
+                "from": [
+                    -1,
+                    0
+                ],
+                "from2": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tialudomon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "raijiludomon"
+            },
+            {
+                "name": "bryweludramon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "raptordramon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "grademon"
+            },
+            {
+                "name": "alphamon"
+            }
+        ]
+    ],
+    "related": [
+        "zubamon",
+        "hackmon",
+        "ludomon",
+        "dorumon"
+    ]
+}

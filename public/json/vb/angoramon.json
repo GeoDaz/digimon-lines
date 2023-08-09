@@ -1,0 +1,95 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "goldrapidmon",
+                "color": "armor",
+                "from": [1,-1]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gargomon",
+                "from": [1,-1]
+            },
+            {
+                "name": "rapidmon"
+            },
+            {
+                "name": "megagargomon"
+            }
+        ],
+        [
+            {
+                "name": "pyonmon"
+            },
+            {
+                "name": "bosamon"
+            },
+            {
+                "name": "angoramon"
+            },
+            {
+                "name": "symbareangoramon"
+            },
+            {
+                "name": "lamortmon"
+            },
+            {
+                "name": "diarbbitmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "turuiemon",
+                "from": [-1,-1]
+            },
+            {
+                "name": "andiramon"
+            },
+            {
+                "name": "cherubimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "lekismon",
+                "from": [-2,-1]
+            },
+            {
+                "name": "crescemon"
+            },
+            {
+                "name": "dianamon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "kumbhiramon",
+                "from": [-1,-1]
+            }
+        ]
+    ],
+    "related": [
+        "angoramon",
+        "terriermon",
+        "lunamon"
+    ]
+}
