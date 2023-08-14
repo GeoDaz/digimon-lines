@@ -1,0 +1,121 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "geogreymon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "rizegreymon"
+            },
+            {
+                "name": "victorygreymon"
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "agumon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "greymon"
+            },
+            {
+                "name": "metalgreymon"
+            },
+            {
+                "name": "wargreymon"
+            }
+        ],
+        [
+            {
+                "name": "botamon"
+            },
+            {
+                "name": "koromon"
+            },
+            null,
+            {
+                "name": "omekamon",
+                "color": "fusion",
+                "color2": "fusion",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "from2": [
+                    1,
+                    -1
+                ]
+            },
+            null,
+            {
+                "name": "omegamon",
+                "color": "fusion",
+                "color2": "fusion",
+                "from": [
+                    -1,
+                    0
+                ],
+                "from2": [
+                    1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "gabumon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "garurumon"
+            },
+            {
+                "name": "weregarurumon"
+            },
+            {
+                "name": "metalgarurumon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gaogamon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "machgaogamon"
+            },
+            {
+                "name": "zeedgarurumon"
+            }
+        ]
+    ],
+    "related": [
+        "greymon",
+        "garurumon",
+        "omegamonmm"
+    ]
+}
