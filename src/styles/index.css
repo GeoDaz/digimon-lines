@@ -8,6 +8,8 @@
 ); */
 
 :root {
+  scroll-behavior: auto;
+  color-scheme: dark;
   /* --dl-snd-dark: #141516; */
   --dl-snd-dark: black;
   --dl-box-shadow: 0 0 3px 0 rgb(0, 0, 0, 0.3);
@@ -30,17 +32,13 @@
   --dl-skin-img-size: 3rem;
   --dl-md-img-size: 7.5rem;
   --dl-md-skin-img-size: 2.5rem;
-  --dl-xs-img-size: 5rem;
+  --dl-xs-img-size: 6rem;
   --dl-xs-skin-img-size: 2rem;
 }
 
 html,
 body {
   font-size: var(--bs-body-font-size);
-}
-
-html {
-  color-scheme: dark;
 }
 
 body {
@@ -193,7 +191,7 @@ h2 {
 
 /* Header */
 
-.navbar{
+.navbar {
   font-weight: bold;
 }
 
