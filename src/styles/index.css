@@ -8,20 +8,29 @@
 ); */
 
 :root {
+  scroll-behavior: auto;
+  color-scheme: dark;
   /* --dl-snd-dark: #141516; */
   --dl-snd-dark: black;
   --dl-box-shadow: 0 0 3px 0 rgb(0, 0, 0, 0.3);
   --dl-border: 2px solid var(--dl-snd-dark);
-  scroll-behavior: auto;
+  --bs-border-color: #495057;
+
+  --bs-body-color: #adb5bd;
+  --bs-body-color-rgb: 173, 181, 189;
+  --bs-body-bg: #212529;
+  --bs-body-bg-rgb: 33, 37, 41;
 
   --bs-body-font-size: 15px;
   --bs-body-font-size-sm: 12px;
+
   --bs-xs: 448px;
   --bs-sm: 576px;
   --bs-md: 768px;
   --bs-lg: 992px;
   --bs-xl: 1200px;
   --bs-xxl: 1400px;
+
   --bs-primary: rgb(100, 53, 201);
   --bs-primary-hover: rgb(78, 43, 155);
   --bs-primary-active: rgb(54, 29, 107);
@@ -30,17 +39,13 @@
   --dl-skin-img-size: 3rem;
   --dl-md-img-size: 7.5rem;
   --dl-md-skin-img-size: 2.5rem;
-  --dl-xs-img-size: 5rem;
+  --dl-xs-img-size: 6rem;
   --dl-xs-skin-img-size: 2rem;
 }
 
 html,
 body {
   font-size: var(--bs-body-font-size);
-}
-
-html {
-  color-scheme: dark;
 }
 
 body {
@@ -140,6 +145,12 @@ a:active:not(.btn) {
   color: var(--bs-teal);
 }
 
+.list-group {
+  --bs-list-group-color: var(--bs-body-color);
+  --bs-list-group-bg: var(--bs-body-bg);
+  --bs-list-group-border-color: var(--bs-border-color);
+}
+
 .hover-only {
   opacity: 0;
   transition: all .3s;
@@ -193,7 +204,7 @@ h2 {
 
 /* Header */
 
-.navbar{
+.navbar {
   font-weight: bold;
 }
 
