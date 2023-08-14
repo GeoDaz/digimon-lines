@@ -8,3 +8,13 @@ export const levels: string[] = [
 	'mega+',
 	'ultra',
 ];
+export const fullLevels: string[] = [
+	'Baby I',
+	'Baby II',
+	'Rookie / Child',
+	'Champion / Adult',
+	'Ultimate / Perfect',
+	'Mega / Ultimate',
+	'Mega + / Ulitmate +',
+	'Ultra / Super Ultimate',
+];

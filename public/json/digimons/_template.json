@@ -1,0 +1,37 @@
+{
+    "key": "mon",
+    "name": "Mon",
+    "name2": "Mon",
+    "name3": "Mon",
+    "level": 1,
+    "attribute": "free",
+    "elements": ["neutral"],
+    "types": ["unknown"],
+    "tags": [],
+    "preEvos": [],
+    "evos": [
+        "mon",
+        {
+            "name": "mon"
+        }
+    ],
+    "modes": [
+        {
+            "name": "monx",
+            "color": "x"
+        }
+    ],
+    "skins": [],
+    "species": [
+        "mon",
+        {
+            "name": "mon",
+            "skins": [
+                "mon"
+            ]
+        }
+    ],
+    "related": [
+        "mon"
+    ]
+}

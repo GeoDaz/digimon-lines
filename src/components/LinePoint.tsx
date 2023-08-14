@@ -15,6 +15,8 @@ interface Props extends React.ImgHTMLAttributes<any> {
 	style?: object;
 	children?: React.ReactNode;
 	available?: boolean;
+	width?: number;
+	height?: number;
 }
 const LinePoint: React.FC<Props> = ({
 	name,
@@ -73,7 +75,15 @@ const LinePoint: React.FC<Props> = ({
 	);
 };
 
-export const LineImage: React.FC<Props> = ({ name, title, className, style, type }) => {
+export const LineImage: React.FC<Props> = ({
+	name,
+	title,
+	className,
+	style,
+	type,
+	width = 150,
+	height = 150,
+}) => {
 	const [src, setSrc] = useState(
 		`/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`
 	);
@@ -120,8 +130,8 @@ export const LineImage: React.FC<Props> = ({ name, title, className, style, type
 				}}
 				alt={name}
 				className={makeClassName('line-img rounded', className)}
-				width={150 / ratioWidth}
-				height={150 / ratioHeight}
+				width={width / ratioWidth}
+				height={height / ratioHeight}
 				title={title}
 				style={style}
 			/>

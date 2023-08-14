@@ -1,0 +1,38 @@
+{
+    "key": "darkdramon",
+    "name": "DarkDramon",
+    "level": 6,
+    "attribute": "virus",
+    "elements": [
+        "dark",
+        "electric"
+    ],
+    "types": [
+        "cybord",
+        "dark dragon"
+    ],
+    "tags": [
+        "d-brigade"
+    ],
+    "preEvos": [
+        "tankdramon",
+        "cyberdramon",
+        "gigadramon"
+    ],
+    "evos": [
+        {
+            "name": "chaosmon",
+            "color": "fusion"
+        },
+        {
+            "name": "ultimatechaosmon",
+            "color": "fusion"
+        }
+    ],
+    "related": [
+        "brigadramon",
+        "bancholeomon",
+        "valdurmon",
+        "kentaurosmon"
+    ]
+}

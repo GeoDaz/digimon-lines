@@ -1,34 +1,76 @@
 {
-	"name": "agumon",
+	"key": "agumon",
 	"name": "Agumon",
-	"evo": [
+	"level": 3,
+	"attribute": "antivirus",
+	"elements": [
+		"fire"
+	],
+	"types": [
+		"reptile"
+	],
+	"tags": [
+		"dinosaur"
+	],
+	"preEvos": [
+		"koromon"
+	],
+	"evos": [
+		"greymon",
+		"geogreymon",
+		"tyranomon",
 		{
-			"to": "agumonBoC",
-			"type": "biomerge",
-			"level": "mega"
-		},
-		{
-			"to": "greymon",
-			"regular": true
-		},
-		{
-			"to": "geogreymon",
-			"regular": true
-		},
-		{
-			"to": "agumonBM",
-			"type": "mode",
-			"level": "mega"
-		},
-		{
-			"to": "agumonX",
-			"type": "x",
-			"level": "rookie"
+			"name": "cyclomon",
+			"color": "dark"
 		}
 	],
-	"attribute": {
-		"cat": "antivirus",
-		"el": "fire"
-	},
-	"legend": ""
+	"modes": [
+		{
+			"name": "agumonx",
+			"color": "x"
+		},
+		{
+			"name": "agumonbc",
+			"color": "mode",
+			"level": 7
+		}
+	],
+	"skins": [
+		"agumon2",
+		"bushiagumon",
+		"hakaseagumon"
+	],
+	"species": [
+		{
+			"name": "snowagumon",
+			"skins": [
+				"snowagumon2"
+			]
+		},
+		{
+			"name": "agumonb",
+			"skins": [
+				"agumonb2",
+				"hakaseagumonb"
+			]
+		},
+		{
+			"name": "gaossmonb",
+			"skins": [
+				"gaossmon"
+			]
+		},
+		{
+			"name": "toyagumon",
+			"skins": [
+				"cleartoyagumon"
+			]
+		},
+		"toyagumonb",
+		"commandramon"
+	],
+	"related": [
+		"agunimon",
+		"gabumon"
+	]
 }
