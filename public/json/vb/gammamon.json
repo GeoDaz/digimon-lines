@@ -16,13 +16,31 @@
             null,
             {
                 "name": "kausgammamon",
-                "from": [1,-1]
+                "from": [2,-1]
             },
             {
                 "name": "fumamon"
             },
             {
-                "name": "dorbickmon"
+                "name": "ultimatebrachimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "betelgammamon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "canoweissmon"
+            },
+            {
+                "name": "siriusmon"
             }
         ],
         [
@@ -35,14 +53,20 @@
             {
                 "name": "gammamon"
             },
+            null,
+            null,
             {
-                "name": "betelgammamon"
-            },
-            {
-                "name": "canoweissmon"
-            },
-            {
-                "name": "siriusmon"
+                "name": "proximamon",
+                "color": "fusion",
+                "color2": "fusion",
+                "from": [
+                    -1,
+                    0
+                ],
+                "from2": [
+                    1,
+                    0
+                ]
             }
         ],
         [
@@ -75,7 +99,7 @@
                 "name": "ghilliedhumon"
             },
             {
-                "name": "ultimatebrachimon"
+                "name": "chaosdramon"
             }
         ],
         [
