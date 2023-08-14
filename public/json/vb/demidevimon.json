@@ -1,5 +1,4 @@
 {
-    "title": "Black Gabumon",
     "columns": [
         [
             null,
@@ -7,9 +6,11 @@
             null,
             null,
             {
-                "name": "astamon",
-				"color": "dark",
-                "from": [1,-1]
+                "name": "skullsatamon",
+                "from": [
+                    1,
+                    -1
+                ]
             }
         ],
         [
@@ -17,58 +18,43 @@
             null,
             null,
             {
-                "name": "sangloupmon",
+                "name": "devidramon",
 				"color": "dark",
-                "from": [1,-1]
+                "from": [
+                    1,
+                    -1
+                ]
             },
             {
-                "name": "matadormon",
+                "name": "neodevimon",
 				"color": "dark"
             },
             {
-                "name": "grandracmon",
+                "name": "donedevimon",
 				"color": "dark"
             }
         ],
         [
             {
-                "name": "punimon"
+                "name": "zurumon"
             },
             {
-                "name": "tsunomon"
+                "name": "pagumon"
             },
             {
-                "name": "gabumonb",
+                "name": "demidevimon",
 				"color": "dark"
             },
             {
-                "name": "garurumonb",
+                "name": "devimon",
 				"color": "dark"
             },
             {
-                "name": "weregarurumonb",
+                "name": "myotismon",
 				"color": "dark"
             },
             {
-                "name": "metalgarurumonb",
-				"color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "gaogamonb",
-				"color": "dark",
-                "from": [-1,-1]
-            },
-            {
-                "name": "machgaogamonb",
-				"color": "dark"
-            },
-            {
-                "name": "miragegaogamonb",
+                "name": "venommyotismon",
 				"color": "dark"
             }
         ],
@@ -77,16 +63,40 @@
             null,
             null,
             {
-                "name": "fangmon",
+                "name": "boogiemon",
 				"color": "dark",
-                "from": [-2,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
-                "name": "helloogarmon",
+                "name": "phelesmon",
 				"color": "dark"
             },
             {
-                "name": "merukimon",
+                "name": "demon",
+				"color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "bakemon",
+				"color": "dark",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "phantomon",
+				"color": "dark"
+            },
+            {
+                "name": "piemon",
 				"color": "dark"
             }
         ],
@@ -96,14 +106,18 @@
             null,
             null,
             {
-                "name": "skullbaluchimon",
+                "name": "jokermon",
 				"color": "dark",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ]
     ],
     "related": [
-        "garurumon",
-        "dracmon"
+        "devimon",
+        "bakemon",
+        "impmon"
     ]
 }

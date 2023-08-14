@@ -29,7 +29,10 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	}, []);
 
 	return (
-		<Layout title="Available groups" metadescription="List of available Digimon groups">
+		<Layout
+			title="Available groups"
+			metadescription="List of available Digimon groups"
+		>
 			{loading ? (
 				<div className="text-center">
 					<Spinner animation="border" />
@@ -75,9 +78,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 		return { props: { ssr: { groups } } };
 	} catch (e) {
-		if (process.env.NODE_ENV === DEV) {
-			console.error(e);
-		}
+		console.error(e);
 		return { props: { ssr: defaultData } };
 	}
 };

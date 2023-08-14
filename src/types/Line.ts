@@ -1,4 +1,5 @@
 export interface Line {
+	title?: string;
 	columns: Array<Array<LinePoint | LinePoint[] | null>>;
 	size: number;
 	related?: Array<string | LineRelation>;

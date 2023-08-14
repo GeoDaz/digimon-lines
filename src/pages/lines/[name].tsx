@@ -19,8 +19,7 @@ import transformLine from '@/functions/transformer/line';
 // constants
 import { Line } from '@/types/Line';
 import { zooms, zoomOptions } from '@/consts/zooms';
-import { DEV } from '@/consts/env';
-import { LINE } from '@/consts/ui';
+import { LINE, titles } from '@/consts/ui';
 
 const NAME = 'name';
 interface StaticProps {
@@ -71,7 +70,7 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 		<Layout
 			title={
 				<>
-					Line for <span className="text-capitalize">{name}</span>
+					{titles[type]} for {line?.title || nameCap}
 				</>
 			}
 			metatitle={nameCap + ' Line'}
@@ -199,9 +198,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 			transformLine(require(`../../../public/json/lines/${params.name}.json`)) ||
 			null;
 	} catch (e) {
-		if (process.env.NODE_ENV === DEV) {
-			console.error(e);
-		}
+		console.error(e);
 	}
 
 	const lines = require('../../../public/json/lines/_index.json');

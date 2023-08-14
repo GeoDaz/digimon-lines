@@ -7,7 +7,7 @@
             {
                 "name": "baohackmon",
                 "from": [
-                    2,
+                    1,
                     -1
                 ]
             },
@@ -21,14 +21,17 @@
         [
             null,
             null,
-            null,
             {
-                "name": "zubaeagermon",
+                "name": "zubamon",
                 "color": "armor",
                 "from": [
                     1,
                     -1
                 ]
+            },
+            {
+                "name": "zubaeagermon",
+                "color": "armor"
             },
             {
                 "name": "duramon",
@@ -48,10 +51,7 @@
                 "name": "sakuttomon",
                 "color": "armor"
             },
-            {
-                "name": "zubamon",
-                "color": "armor"
-            },
+            null,
             null,
             null,
             {
@@ -71,13 +71,15 @@
         [
             null,
             null,
-            null,
             {
-                "name": "tialudomon",
+                "name": "ludomon",
                 "from": [
                     -1,
                     -1
                 ]
+            },
+            {
+                "name": "tialudomon"
             },
             {
                 "name": "raijiludomon"
@@ -91,17 +93,17 @@
             null,
             null,
             {
-                "name": "raptordramon",
+                "name": "gladimon",
                 "from": [
-                    -2,
+                    -1,
                     -1
                 ]
             },
             {
-                "name": "grademon"
+                "name": "knightmon"
             },
             {
-                "name": "alphamon"
+                "name": "gallantmon"
             }
         ]
     ],
@@ -109,6 +111,6 @@
         "zubamon",
         "hackmon",
         "ludomon",
-        "dorumon"
+        "knightmon"
     ]
 }

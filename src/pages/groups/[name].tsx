@@ -127,9 +127,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 		return { props: { ssr: { name: params.name, group } } };
 	} catch (e) {
-		if (process.env.NODE_ENV === DEV) {
-			console.error(e);
-		}
+		console.error(e);
 		return { props: { ssr: { name: params.name } } };
 	}
 };

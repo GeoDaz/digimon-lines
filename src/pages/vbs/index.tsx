@@ -73,9 +73,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 		return { props: { ssr: { lines } } };
 	} catch (e) {
-		if (process.env.NODE_ENV === DEV) {
-			console.error(e);
-		}
+		console.error(e);
 		return { props: { ssr: defaultData } };
 	}
 };

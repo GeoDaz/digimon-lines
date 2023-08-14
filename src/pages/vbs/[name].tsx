@@ -28,9 +28,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		line =
 			transformLine(require(`../../../public/json/vb/${params.name}.json`)) || null;
 	} catch (e) {
-		if (process.env.NODE_ENV === DEV) {
-			console.error(e);
-		}
+		console.error(e);
 	}
 
 	const lines = require('../../../public/json/vb/_index.json');
