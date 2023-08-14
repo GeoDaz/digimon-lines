@@ -8,13 +8,12 @@
 ); */
 
 :root {
-  scroll-behavior: auto;
   color-scheme: dark;
+  scroll-behavior: auto;
   /* --dl-snd-dark: #141516; */
   --dl-snd-dark: black;
   --dl-box-shadow: 0 0 3px 0 rgb(0, 0, 0, 0.3);
   --dl-border: 2px solid var(--dl-snd-dark);
-  scroll-behavior: auto;
 
   --bs-body-font-size: 15px;
   --bs-body-font-size-sm: 12px;
