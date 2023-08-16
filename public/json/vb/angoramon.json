@@ -6,8 +6,11 @@
             null,
             null,
             {
-                "name": "caturamon",
-                "from": [1,-1]
+                "name": "monzaemon",
+                "from": [
+                    1,
+                    -1
+                ]
             }
         ],
         [
@@ -16,7 +19,10 @@
             null,
             {
                 "name": "siesamon",
-                "from": [1,-1]
+                "from": [
+                    1,
+                    -1
+                ]
             },
             {
                 "name": "chirinmon"
@@ -51,13 +57,16 @@
             null,
             {
                 "name": "komondomon",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
-                "name": "monzaemon"
+                "name": "caturamon"
             },
             {
-                "name": "shinmonzaemon"
+                "name": "anubimon"
             }
         ],
         [
@@ -66,7 +75,10 @@
             null,
             {
                 "name": "frigimon",
-                "from": [-2,-1]
+                "from": [
+                    -2,
+                    -1
+                ]
             },
             {
                 "name": "blizzarmon"
@@ -82,13 +94,17 @@
             null,
             {
                 "name": "panjyamon",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ]
     ],
     "related": [
         "angoramon",
-        "terriermon",
-        "lunamon"
+        "kudamon",
+        "labramon",
+        "bearmon"
     ]
 }
