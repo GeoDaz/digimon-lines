@@ -7,7 +7,7 @@
                 "name": "terriermonx",
                 "color": "x",
                 "from": [
-                    1,
+                    2,
                     0
                 ]
             },
@@ -16,13 +16,27 @@
                 "name": "goldrapidmon",
                 "color": "armor",
                 "from": [
-                    1,
+                    2,
                     -2
                 ]
             },
             {
                 "name": "goldrapidmonx",
                 "color": "x"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "fujinmon",
+                "from": [
+                    1,
+                    -1
+                ]
             }
         ],
         [
@@ -68,32 +82,6 @@
             {
                 "name": "megagargomonb",
                 "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "prairiemon",
-                "color": "armor",
-                "from": [
-                    -2,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "rabbitmon",
-                "color": "armor",
-                "from": [
-                    3,
-                    -1
-                ]
             }
         ],
         [
@@ -183,8 +171,16 @@
         [
             null,
             null,
-            null,
-            null,
+            {
+                "name": "pyontomon",
+                "from": [
+                    -1.5,
+                    -1
+                ]
+            },
+            {
+                "name": "prairiemon"
+            },
             null,
             {
                 "name": "cherubimonbx",
@@ -194,6 +190,37 @@
                     0
                 ]
             }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "cutemon",
+                "from": [
+                    -2.5,
+                    -1
+                ]
+            },
+            {
+                "name": "rabbitmon"
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "luminamon",
+                "color": "light",
+                "from": [
+                    -3.5,
+                    -1
+                ]
+            },
+            {
+                "name": "luminamonnene",
+                "color": "human"
+            }
         ]
     ],
     "related": [
@@ -202,6 +229,10 @@
             "for": "fujinmon"
         },
         "lunamon",
-        "angoramon"
+        "angoramon",
+        {
+            "name": "negamon",
+            "for": "shademonnene"
+        }
     ]
 }

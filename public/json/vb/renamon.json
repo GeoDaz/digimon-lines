@@ -5,9 +5,8 @@
             null,
             null,
             null,
-            null,
             {
-                "name": "shivamon",
+                "name": "kabukimon",
                 "from": [
                     1,
                     -1
@@ -18,39 +17,38 @@
             null,
             null,
             null,
-            null,
             {
-                "name": "asuramon",
-                "color": "fire",
+                "name": "kyubimon",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "name": "vulcanusmon",
-                "color": "fire"
+                "name": "taomon"
+            },
+            {
+                "name": "raijinmon"
             }
         ],
         [
             {
-                "name": "choromon"
+                "name": "relemon"
             },
             {
-                "name": "caprimon"
+                "name": "pokomon"
             },
             {
-                "name": "kotemon"
+                "name": "renamon"
             },
             {
-                "name": "musyamon"
+                "name": "kyubimonsilver"
             },
             {
-                "name": "oboromon",
-                "color": "black"
+                "name": "taomonsilver"
             },
             {
-                "name": "zanbamon"
+                "name": "sakuyamon"
             }
         ],
         [
@@ -58,17 +56,38 @@
             null,
             null,
             {
-                "name": "yaksamon",
+                "name": "youkomon",
                 "from": [
                     -1,
                     -1
+                ],
+                "color": "dark"
+            },
+            {
+                "name": "doumon",
+                "color": "dark"
+            },
+            {
+                "name": "kuzuhamon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "reppamon",
+                "from": [
+                    -2,
+                    -1
                 ]
             },
             {
-                "name": "boutmon"
+                "name": "chirinmon"
             },
             {
-                "name": "kazuchimon"
+                "name": "mitamamon"
             }
         ],
         [
@@ -76,10 +95,8 @@
             null,
             null,
             null,
-            null,
             {
-                "name": "tactimon",
-                "color": "dark",
+                "name": "kyukimon",
                 "from": [
                     -1,
                     -1
@@ -88,26 +105,7 @@
         ]
     ],
     "related": [
-        {
-            "name": "pawnchessmonwhite",
-            "for": "gladimon"
-        },
-        {
-            "name": "oboromon",
-            "for": "bakemon"
-        },
-        {
-            "name": "pulsemon",
-            "for": "kazuchimon"
-        },
-        "ryudamon",
-        {
-            "name": "golemon",
-            "for": "vulcanusmon"
-        },
-        {
-            "name": "greymon",
-            "for": "samudramon"
-        }
+        "renamon",
+        "kudamon"
     ]
 }

@@ -19,17 +19,17 @@
             null,
             null,
             {
-                "name": "gargomonb",
+                "name": "gargomon",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "name": "rapidmonb"
+                "name": "rapidmon"
             },
             {
-                "name": "megagargomonb"
+                "name": "fujinmon"
             }
         ],
         [
@@ -43,10 +43,33 @@
                 "name": "terriermon"
             },
             {
-                "name": "gargomon"
+                "name": "gargomonb",
+                "color": "dark"
             },
             {
-                "name": "rapidmon"
+                "name": "rapidmonb",
+                "color": "dark"
+            },
+            {
+                "name": "megagargomonb",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "troopmon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "assaultmon",
+                "color": "dark"
             },
             {
                 "name": "megagargomon"
@@ -59,7 +82,7 @@
             {
                 "name": "turuiemon",
                 "from": [
-                    -1,
+                    -2,
                     -1
                 ]
             },
@@ -67,25 +90,8 @@
                 "name": "andiramon"
             },
             {
-                "name": "cherubimon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "lekismon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "crescemon"
-            },
-            {
-                "name": "dianamon"
+                "name": "cherubimon",
+                "color": "light"
             }
         ],
         [

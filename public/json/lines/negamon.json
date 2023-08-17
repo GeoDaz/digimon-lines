@@ -57,7 +57,14 @@
             null,
             null,
             null,
-            null,
+            {
+                "name": "shademonnene",
+                "color": "human",
+                "from": [
+                    -1,
+                    0
+                ]
+            },
             null,
             {
                 "name": "deathmon",
@@ -72,9 +79,11 @@
     ],
     "related": [
         {"name": "iguneetmon", "from": "nidhoggmon"},
+        {"name": "terriermon", "for": "luminamonnene"},
+        "duskmon",
         "keramon",
         "algomon",
-        "duskmon",
+        {"name": "chimeramon", "for": "moonmillenniumon"},
         {"name": "omegamonmm", "for": "omegamon"}
     ]
 }
