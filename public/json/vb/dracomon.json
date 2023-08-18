@@ -4,6 +4,16 @@
             null,
             null,
             null,
+            null,
+            {
+                "name": "majiramon",
+                "from": [1,-1]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
             {
                 "name": "airdramon",
                 "from": [
@@ -86,16 +96,30 @@
             null,
             {
                 "name": "lavorvomon",
+                "color": "fire",
                 "from": [
                     -2,
                     -1
                 ]
             },
             {
-                "name": "lavogaritamon"
+                "name": "lavogaritamon",
+                "color": "fire"
             },
             {
-                "name": "volcanicdramon"
+                "name": "volcanicdramon",
+                "color": "fire"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "volcdramon",
+                "color": "fire",
+                "from": [-1,-1]
             }
         ]
     ],

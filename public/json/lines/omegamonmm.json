@@ -77,7 +77,8 @@
                 "name": "biyomon"
             },
             {
-                "name": "birdramon"
+                "name": "birdramon",
+                "color": "fire"
             },
             {
                 "name": "garudamon"
@@ -250,6 +251,46 @@
         "palmon",
         "gomamon",
         "angemon",
-        "gatomon"
+        "gatomon",
+        {
+            "name": "greymon",
+            "for": "omegamonx"
+        },
+        {
+            "name": "greymon",
+            "for": "omegamonb"
+        },
+        {
+            "name": "greymon",
+            "for": "omegamonbrm"
+        },
+        {
+            "name": "greymon",
+            "for": "omegamonam"
+        },
+        {
+            "name": "greymon",
+            "for": "omegamonbam"
+        },
+        {
+            "name": "greymon",
+            "for": "susanoomon"
+        },
+        {
+            "name": "ekakimon",
+            "for": "omedamon"
+        },
+        {
+            "name": "veemon",
+            "for": "imperialdramonpm"
+        },
+        {
+            "name": "ultimatechaosmon",
+            "for": "chaosmon"
+        },
+        {
+            "name": "negamon",
+            "for": "abbadomoncore"
+        }
     ]
 }

@@ -7,6 +7,7 @@
             null,
             {
                 "name": "skullsatamon",
+				"color": "dark",
                 "from": [
                     1,
                     -1
@@ -21,7 +22,7 @@
                 "name": "devidramon",
 				"color": "dark",
                 "from": [
-                    1,
+                    2,
                     -1
                 ]
             },
@@ -35,19 +36,16 @@
             }
         ],
         [
-            {
-                "name": "zurumon"
-            },
-            {
-                "name": "pagumon"
-            },
-            {
-                "name": "demidevimon",
-				"color": "dark"
-            },
+            null,
+            null,
+            null,
             {
                 "name": "devimon",
-				"color": "dark"
+				"color": "dark",
+                "from": [
+                    1,
+                    -1
+                ]
             },
             {
                 "name": "myotismon",
@@ -59,6 +57,55 @@
             }
         ],
         [
+            {
+                "name": "zurumon"
+            },
+            {
+                "name": "pagumon",
+				"color": "dark"
+            },
+            {
+                "name": "demidevimon",
+				"color": "dark"
+            },
+            null,
+            null,
+            {
+                "name": "boltboutamon",
+                "color": "fusion",
+                "color2": "fusion",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "from2": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "bakemon",
+				"color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "jokermon",
+				"color": "dark"
+            },
+            {
+                "name": "piemon",
+				"color": "dark"
+            }
+        ],
+        [
             null,
             null,
             null,
@@ -66,7 +113,7 @@
                 "name": "boogiemon",
 				"color": "dark",
                 "from": [
-                    -1,
+                    -2,
                     -1
                 ]
             },
@@ -83,30 +130,9 @@
             null,
             null,
             null,
-            {
-                "name": "bakemon",
-				"color": "dark",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "phantomon",
-				"color": "dark"
-            },
-            {
-                "name": "piemon",
-				"color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
             null,
             {
-                "name": "jokermon",
+                "name": "metalphantomon",
 				"color": "dark",
                 "from": [
                     -1,

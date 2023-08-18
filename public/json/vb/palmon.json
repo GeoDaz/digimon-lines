@@ -16,13 +16,28 @@
             null,
             {
                 "name": "vegimon",
-                "from": [1,-1]
+                "from": [2,-1]
             },
             {
                 "name": "blossomon"
             },
             {
-                "name": "rafflesimon"
+                "name": "bloomlordmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "togemon",
+                "from": [1,-1]
+            },
+            {
+                "name": "lilimon"
+            },
+            {
+                "name": "rosemon"
             }
         ],
         [
@@ -35,14 +50,20 @@
             {
                 "name": "palmon"
             },
+            null,
+            null,
             {
-                "name": "togemon"
-            },
-            {
-                "name": "lilimon"
-            },
-            {
-                "name": "rosemon"
+                "name": "rafflesimon",
+                "color": "fusion",
+                "color2": "fusion",
+                "from": [
+                    -1,
+                    0
+                ],
+                "from2": [
+                    1,
+                    0
+                ]
             }
         ],
         [
@@ -57,7 +78,7 @@
                 "name": "lilamon"
             },
             {
-                "name": "bloomlordmon"
+                "name": "lotusmon"
             }
         ],
         [
