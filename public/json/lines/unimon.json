@@ -13,6 +13,9 @@
             },
             {
                 "name": "indaramon"
+            },
+            {
+                "name": "ancienttroiamon"
             }
         ],
         [
@@ -47,7 +50,14 @@
                 ]
             },
             {
-                "name": "assaultmon"
+                "name": "sagittarimon"
+            },
+            {
+                "name": "kentaurosmon",
+                "from2": [
+                    1,
+                    -1
+                ]
             }
         ],
         [
@@ -65,13 +75,6 @@
             {
                 "name": "chirinmon",
                 "color": "light"
-            },
-            {
-                "name": "kentaurosmon",
-                "from2": [
-                    -1,
-                    -1
-                ]
             }
         ],
         [
@@ -102,8 +105,16 @@
             "from": "hippogriffomon"
         },
         {
+            "name": "woodmon",
+            "from": "ancienttroiamon"
+        },
+        {
+            "name": "veemon",
+            "from": "sagittarimon"
+        },
+        {
             "name": "commandramon",
-            "from": "assaultmon"
+            "for": "assaultmon"
         }
     ]
 }

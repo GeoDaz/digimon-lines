@@ -6,7 +6,7 @@
             null,
             null,
             {
-                "name": "metaltyranomon",
+                "name": "gigadramon",
                 "from": [1,-1]
             }
         ],
@@ -15,14 +15,14 @@
             null,
             null,
             {
-                "name": "tyranomon",
+                "name": "flarelizardmon",
                 "from": [1,-1]
             },
             {
-                "name": "triceramon"
+                "name": "metalgreymonb"
             },
             {
-                "name": "cannondramon"
+                "name": "chaosdramon"
             }
         ],
         [
@@ -33,10 +33,40 @@
                 "name": "koromon"
             },
             {
-                "name": "betamon"
+                "name": "toyagumon"
             },
             {
-                "name": "airdramon"
+                "name": "tyranomon"
+            },
+            {
+                "name": "metaltyranomon"
+            },
+            {
+                "name": "rusttyranomon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tankmon",
+                "from": [-1,-1]
+            },
+            {
+                "name": "tankdramon"
+            },
+            {
+                "name": "gundramon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "guardromon",
+                "from": [-2,-1]
             },
             {
                 "name": "megadramon"
@@ -49,46 +79,16 @@
             null,
             null,
             null,
-            {
-                "name": "seadramon",
-                "from": [-1,-1]
-            },
-            {
-                "name": "megaseadramon"
-            },
-            {
-                "name": "metalseadramon"
-            }
-        ],
-        [
-            null,
-            null,
             null,
             {
-                "name": "tortamon",
-                "from": [-2,-1]
-            },
-            {
-                "name": "groundramon"
-            },
-            {
-                "name": "jumbogamemon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "brachiomon",
+                "name": "andromon",
                 "from": [-1,-1]
             }
         ]
     ],
     "related": [
-        "seadramon",
         "tyranomon",
-        "gammamon"
+        "flarelizardmon",
+        "commandramon"
     ]
 }

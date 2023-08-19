@@ -1,6 +1,20 @@
 {
     "columns": [
         [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "gyukimon",
+                "color": "fusion",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
             {
                 "name": "punimon"
             },
@@ -14,8 +28,12 @@
                 "name": "minotarumon"
             },
             {
-                "name": "gyukimon",
-                "color": "fusion"
+                "name": "blizzarmon",
+                "color": "ice"
+            },
+            {
+                "name": "ancientmegatheriumon",
+                "color": "ice"
             }
         ],
         [
@@ -41,6 +59,10 @@
         {
             "name": "dokugumon",
             "from": "gyukimon"
+        },
+        {
+            "name": "bearmon",
+            "from": "blizzarmon"
         },
         {
             "name": "kotemon",

@@ -52,11 +52,11 @@
             null,
             null,
             {
-                "name": "growlmonorange",
+                "name": "geogreymon",
                 "from": [-1,-1]
             },
             {
-                "name": "wargrowlmonorange"
+                "name": "rizegreymon"
             },
             {
                 "name": "victorygreymon"
@@ -67,11 +67,13 @@
             null,
             null,
             {
-                "name": "geogreymon",
+                "name": "flarelizardmon",
+                "color": "fire",
                 "from": [-2,-1]
             },
             {
-                "name": "rizegreymon"
+                "name": "burninggreymon",
+                "color": "fire"
             },
             {
                 "name": "shinegreymon"
@@ -83,8 +85,7 @@
             null,
             null,
             {
-                "name": "burninggreymon",
-                "color": "fire",
+                "name": "megadramon",
                 "from": [-1,-1]
             }
         ]
