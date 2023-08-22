@@ -10,6 +10,8 @@ import lineReducer, { defaultLine, setLineAction } from '@/reducers/lineReducer'
 import Icon from '@/components/Icon';
 import BoostrapSwitch from '@/components/BoostrapSwitch';
 import { Button } from 'react-bootstrap';
+import ReportABugLink from '@/components/ReportABugLink';
+import useLocalStorage from '@/hooks/useLocalStorage';
 
 interface StaticProps {
 	searchList?: string[];
@@ -19,6 +21,8 @@ interface Props {
 }
 const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	const [line, dispatchState] = useReducer(lineReducer, defaultLine);
+	const setLine = (line: any) => dispatchState(setLineAction(line));
+	const { setItemToStorage } = useLocalStorage('line', line, setLine);
 	const [zoom, setZoom] = useState<number>(100);
 	const [edition, edit] = useState<boolean>(true);
 
@@ -27,7 +31,9 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	};
 
 	const handleVoid = () => {
-		dispatchState(setLineAction(defaultLine));
+		setLine(defaultLine);
+		// default value is not automaticaly stored in localstorage
+		setItemToStorage(defaultLine);
 	};
 
 	return (
@@ -44,29 +50,26 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 				screenshot.
 			</p>
 			<div className="line-filters align-items-center">
-				<div className="me-4">
-					<BoostrapSwitch
-						checked={edition}
-						labelOn={
-							<>
-								Edit <Icon name="pencil-fill" />
-							</>
-						}
-						labelOff={
-							<>
-								<Icon name="eye-fill" /> View
-							</>
-						}
-						toggle={() => edit(!edition)}
-					/>
-				</div>
-				<div className="me-4">
-					<Button variant="danger" onClick={handleVoid}>
-						<Icon name="trash3-fill" /> Void
-					</Button>
-				</div>
+				<BoostrapSwitch
+					checked={edition}
+					labelOn={
+						<>
+							Edit <Icon name="pencil-fill" />
+						</>
+					}
+					labelOff={
+						<>
+							<Icon name="eye-fill" /> View
+						</>
+					}
+					toggle={() => edit(!edition)}
+				/>
+				<Button variant="danger" onClick={handleVoid}>
+					<Icon name="trash3-fill" /> Void
+				</Button>
+				<ReportABugLink />
 				<ZoomBar handleZoom={setZoom} />
-				<ColorLegend className="ms-4" />
+				<ColorLegend />
 			</div>
 			<SearchContext.Provider value={ssr.searchList}>
 				<LineGrid
