@@ -113,7 +113,13 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "ganvivormon",
+				"from": [
+					2,
+					-1
+				]
+			},
 			{
 				"name": "lynxmon",
 				"color": "fire",
@@ -123,7 +129,7 @@
 				]
 			},
 			{
-				"name": "magnadramon",
+				"name": "lovelyangemon",
 				"color": "light",
 				"from": [
 					2,
@@ -146,7 +152,7 @@
 				]
 			},
 			{
-				"name": "lovelyangemon",
+				"name": "magnadramon",
 				"color": "light",
 				"from": [
 					1,

@@ -57,27 +57,9 @@
             null,
             null,
             {
-                "name": "sangloupmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "matadormon"
-            },
-            {
-                "name": "grandracmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
                 "name": "fangmon",
                 "from": [
-                    -2,
+                    -1,
                     -1
                 ]
             },
@@ -92,10 +74,31 @@
             null,
             null,
             null,
+            {
+                "name": "sangloupmon",
+                "color": "dark",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "matadormon",
+                "color": "dark"
+            },
+            {
+                "name": "grandracmon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
             null,
             {
-                "name": "cerberumonwm",
-                "color": "mode",
+                "name": "myotismon",
+                "color": "dark",
                 "from": [
                     -1,
                     -1

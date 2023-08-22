@@ -3,61 +3,63 @@
         [
             null,
             null,
-            null,
             {
-                "name": "paledramon",
+                "name": "ryudamon",
                 "from": [
                     2,
                     -1
                 ]
             },
             {
-                "name": "cryspaledramon"
+                "name": "ginryumon"
             },
             {
-                "name": "hexeblaumon"
+                "name": "majiramon"
+            },
+            {
+                "name": "azulongmon"
             }
         ],
         [
             null,
             null,
-            null,
             {
-                "name": "coredramonblue",
+                "name": "labramon",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "name": "wingdramon"
+                "name": "siesamon"
             },
             {
-                "name": "slayerdramon"
+                "name": "caturamon"
+            },
+            {
+                "name": "baihumon"
             }
         ],
         [
             {
-                "name": "petitmon"
+                "name": "punimon"
             },
             {
-                "name": "babydramon"
-            },
-            {
-                "name": "dracomon"
+                "name": "tsunomon"
             },
             null,
             null,
+            null,
             {
-                "name": "examon",
+                "name": "huanglongmon",
                 "color": "fusion",
                 "color2": "fusion",
                 "from": [
-                    -1,
+                    -2,
                     0
                 ],
                 "from2": [
-                    1,
+                    2,
                     0
                 ]
             }
@@ -65,46 +67,49 @@
         [
             null,
             null,
-            null,
             {
-                "name": "coredramongreen",
+                "name": "muchomon",
                 "from": [
                     -1,
                     -1
                 ]
             },
             {
-                "name": "groundramon"
+                "name": "akatorimon"
             },
             {
-                "name": "breakdramon"
+                "name": "sinduramon"
+            },
+            {
+                "name": "zhuqiaomon"
             }
         ],
         [
             null,
             null,
-            null,
             {
-                "name": "lavorvomon",
-                "color": "fire",
+                "name": "iguneetmon",
                 "from": [
                     -2,
                     -1
                 ]
             },
             {
-                "name": "lavogaritamon",
-                "color": "fire"
+                "name": "coatlmon"
             },
             {
-                "name": "volcanicdramon",
-                "color": "fire"
+                "name": "sandiramon"
+            },
+            {
+                "name": "xuanwumon"
             }
         ]
     ],
     "related": [
-        "dracomon",
-        "vorvomon",
-        "veemon"
+        "ryudamon",
+        "labramon",
+        "penmon",
+        "iguneetmon",
+        "tyranomon"
     ]
 }

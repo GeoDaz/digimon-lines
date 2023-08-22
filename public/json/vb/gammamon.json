@@ -6,8 +6,11 @@
             null,
             null,
             {
-                "name": "bombermon",
-                "from": [1,-1]
+                "name": "zanmetsumon",
+                "from": [
+                    1,
+                    -1
+                ]
             }
         ],
         [
@@ -16,13 +19,16 @@
             null,
             {
                 "name": "kausgammamon",
-                "from": [2,-1]
+                "from": [
+                    2,
+                    -1
+                ]
             },
             {
                 "name": "fumamon"
             },
             {
-                "name": "ultimatebrachimon"
+                "name": "samudramon"
             }
         ],
         [
@@ -76,7 +82,10 @@
             {
                 "name": "gulusgammamon",
                 "color": "dark",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
                 "name": "regulusmon",
@@ -93,13 +102,16 @@
             null,
             {
                 "name": "wezengammamon",
-                "from": [-2,-1]
+                "from": [
+                    -2,
+                    -1
+                ]
             },
             {
                 "name": "ghilliedhumon"
             },
             {
-                "name": "chaosdramon"
+                "name": "ultimatebrachimon"
             }
         ],
         [
@@ -108,8 +120,11 @@
             null,
             null,
             {
-                "name": "zanmetsumon",
-                "from": [-1,-1]
+                "name": "bombermon",
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ]
     ],
