@@ -30,6 +30,12 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 			title="Build your line"
 			metadescription="Build your own Digimon lines. be creative your are free."
 		>
+			<p className='mb-4'>
+				Click on a case from the grid to set a Digimon.
+				<br /> At the moment there is no export button, the only way is to move
+				zoom to 75% (to get the full image), toggle the edit button and get a
+				screenshot.
+			</p>
 			<div className="line-filters align-items-center">
 				<div className="me-4">
 					<BoostrapSwitch

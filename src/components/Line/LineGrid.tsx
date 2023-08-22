@@ -22,18 +22,24 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 	const [drawing, setDrawing] = useState<number[] | undefined>();
 	const [edition, edit] = useState<number[]>();
 
-	const handleTarget = (coord: number[]) => {
+	const handleTarget = (target: number[]) => {
 		if (!handleUpdate || !drawing) return;
-		const from = [coord[0] - drawing[0], coord[1] - drawing[1]];
+		// TODO if target[1] > drawing[1] set from to target and not to drawing
+		let source = drawing;
+		if (target[1] > drawing[1]) {
+			source = target;
+			target = drawing;
+		}
+		const from = [target[0] - source[0], target[1] - source[1]];
 		const nextPoint = {
-			...line.columns[drawing[0]][drawing[1]],
+			...line.columns[source[0]][source[1]],
 		} as LinePoint;
 		if (nextPoint.from) {
 			nextPoint.from2 = from;
 		} else {
 			nextPoint.from = from;
 		}
-		handleUpdate(setLineColumn, drawing, nextPoint);
+		handleUpdate(setLineColumn, source, nextPoint);
 		setDrawing(undefined);
 	};
 
