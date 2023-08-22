@@ -27,7 +27,7 @@ export const ZoomBar: React.FC<{
 	}, [zoom]);
 
 	return (
-		<div className="zoom-bar d-flex">
+		<div className="zoom-bar d-flex ms-3">
 			<Icon
 				name="zoom-in"
 				className="lead d-inline-block d-max-xs-none"
@@ -39,7 +39,7 @@ export const ZoomBar: React.FC<{
 				selected={zoom}
 				progress={zooms[zoom] / 1.5}
 				onChange={setZoom}
-				className="progress-zoom me-4"
+				className="progress-zoom"
 			/>
 		</div>
 	);

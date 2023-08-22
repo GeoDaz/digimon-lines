@@ -233,6 +233,7 @@ input.form-control {
   flex-wrap: wrap;
   align-items: flex-end;
   margin-bottom: 0.75em;
+  gap: 1.25em;
 }
 
 .line-filters>* {
@@ -761,7 +762,7 @@ a.dropdown-item.active {
 
 /* Btn */
 
-.btn.switch{
+.btn.switch {
   min-width: 6rem;
 }
 
@@ -780,6 +781,7 @@ a.dropdown-item.active {
 .btn.switch .switch-on {
   padding-right: 1.5rem;
 }
+
 .btn.switch .switch-on i.bi {
   margin-left: 0.5rem;
 }

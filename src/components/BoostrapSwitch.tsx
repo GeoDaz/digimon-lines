@@ -23,6 +23,7 @@ const BoostrapSwitch: React.FC<Props> = ({
 			)}
 			onClick={toggle}
 		>
+			{label}{' '}
 			<div className="switch-group">
 				<span className="switch-on btn-primary">{labelOn}</span>
 				<span className="switch-off btn-secondary">{labelOff}</span>

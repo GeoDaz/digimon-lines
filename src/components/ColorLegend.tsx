@@ -3,8 +3,8 @@ import { legend } from '@/consts/colors';
 import Icon from './Icon';
 import Popup from './Popup';
 
-const ColorLegend: React.FC<{ className?: string }> = ({ className }) => (
-	<div className={className}>
+const ColorLegend: React.FC = () => (
+	<div className="color-legend ms-3">
 		<p className="mb-1">Legend&nbsp;:</p>
 		<div className="legend">
 			{legend.map(({ color, text }, i) => (

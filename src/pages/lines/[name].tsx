@@ -80,7 +80,7 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 		>
 			<div className="line-filters">
 				<ZoomBar handleZoom={setZoom} />
-				<ColorLegend className="ms-4" />
+				<ColorLegend />
 			</div>
 			{loading ? (
 				<LineLoading />
