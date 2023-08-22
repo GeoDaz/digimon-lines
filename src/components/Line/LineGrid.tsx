@@ -62,7 +62,7 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 							: undefined
 					}
 					coord={edition}
-					handleVoid={() => edit(undefined)}
+					handleClose={() => edit(undefined)}
 				/>
 			)}
 			<div className="frame">

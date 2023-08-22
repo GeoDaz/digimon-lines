@@ -6,9 +6,10 @@ import ColorLegend from '@/components/ColorLegend';
 import LineGrid from '@/components/Line/LineGrid';
 import { GetStaticProps } from 'next';
 import { SearchContext } from '@/context/search';
-import lineReducer, { defaultLine } from '@/reducers/lineReducer';
+import lineReducer, { defaultLine, setLineAction } from '@/reducers/lineReducer';
 import Icon from '@/components/Icon';
 import BoostrapSwitch from '@/components/BoostrapSwitch';
+import { Button } from 'react-bootstrap';
 
 interface StaticProps {
 	searchList?: string[];
@@ -25,12 +26,16 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 		dispatchState(action(...args));
 	};
 
+	const handleVoid = () => {
+		dispatchState(setLineAction(defaultLine));
+	};
+
 	return (
 		<Layout
 			title="Build your line"
 			metadescription="Build your own Digimon lines. be creative your are free."
 		>
-			<p className='mb-4'>
+			<p className="mb-4">
 				Click on a case from the grid to set a Digimon.
 				<br /> At the moment there is no export button, the only way is to move
 				zoom to 75% (to get the full image), toggle the edit button and get a
@@ -52,6 +57,11 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 						}
 						toggle={() => edit(!edition)}
 					/>
+				</div>
+				<div className="me-4">
+					<Button variant="secondary" onClick={handleVoid}>
+						<Icon name="trash3-fill" /> Void
+					</Button>
 				</div>
 				<ZoomBar handleZoom={setZoom} />
 				<ColorLegend className="ms-4" />

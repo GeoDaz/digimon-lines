@@ -9,13 +9,13 @@ import LineImage from './LineImage';
 import colors, { legend } from '@/consts/colors';
 
 interface Props {
-	handleVoid: () => void;
+	handleClose: () => void;
 	point?: LinePoint;
 	coord?: number[];
 	show: boolean;
 }
 const LinePointSettings: React.FC<Props> = ({
-	handleVoid,
+	handleClose,
 	point,
 	coord,
 	show = false,
@@ -35,11 +35,18 @@ const LinePointSettings: React.FC<Props> = ({
 				? { ...point, name: search }
 				: { name: search, from: null };
 			handleUpdate(setLineColumn, coord, nextPoint);
+			handleClose();
 		}
-		handleVoid();
 	};
 
-	const handleSelect = (color: string, number?: number) => {
+	const handleRemove = () => {
+		if (handleUpdate) {
+			handleUpdate(setLineColumn, coord, null);
+			handleClose();
+		}
+	};
+
+	const handleSelectColor = (color: string, number?: number) => {
 		if (handleUpdate && point) {
 			const nextPoint: LinePoint = {
 				...point,
@@ -48,7 +55,8 @@ const LinePointSettings: React.FC<Props> = ({
 			handleUpdate(setLineColumn, coord, nextPoint);
 		}
 	};
-	const handleRemove = (number?: number) => {
+
+	const handleRemoveFrom = (number?: number) => {
 		if (handleUpdate && point) {
 			const nextPoint: LinePoint = {
 				...point,
@@ -59,7 +67,7 @@ const LinePointSettings: React.FC<Props> = ({
 	};
 
 	return (
-		<Modal show={show} onHide={handleVoid}>
+		<Modal show={show} onHide={handleClose}>
 			<Modal.Header closeButton>
 				<Modal.Title>
 					<Icon name="sliders2" /> Element Options
@@ -69,7 +77,12 @@ const LinePointSettings: React.FC<Props> = ({
 				<SearchBar onSubmit={handleChoose} forwardRef={ref} />
 				{point ? (
 					<div>
-						<h4 className="text-capitalize mb-3">{point.name}</h4>
+						<h4 className="text-capitalize mb-3">
+							{point.name}{' '}
+							<Button variant="danger" onClick={handleRemove}>
+								<Icon name="trash3-fill" />
+							</Button>
+						</h4>
 						<LineImage name={point.name} />
 					</div>
 				) : null}
@@ -77,16 +90,16 @@ const LinePointSettings: React.FC<Props> = ({
 					<SettingFrom
 						number={1}
 						color={point.color}
-						handleSelect={handleSelect}
-						handleRemove={handleRemove}
+						handleSelect={handleSelectColor}
+						handleRemove={handleRemoveFrom}
 					/>
 				)}
 				{!!point?.from2 && (
 					<SettingFrom
 						number={2}
 						color={point.color2}
-						handleSelect={handleSelect}
-						handleRemove={handleRemove}
+						handleSelect={handleSelectColor}
+						handleRemove={handleRemoveFrom}
 					/>
 				)}
 			</Modal.Body>
