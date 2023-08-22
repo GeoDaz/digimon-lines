@@ -37,6 +37,8 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 		>
 			<p className="mb-4">
 				Click on a case from the grid to set a Digimon.
+				<br /> You can make up to 2 relation from a Digimon to another one, but a
+				Digimon can receive an unlimited number of relations.
 				<br /> At the moment there is no export button, the only way is to move
 				zoom to 75% (to get the full image), toggle the edit button and get a
 				screenshot.

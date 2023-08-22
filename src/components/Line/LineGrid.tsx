@@ -24,7 +24,6 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 
 	const handleTarget = (target: number[]) => {
 		if (!handleUpdate || !drawing) return;
-		// TODO if target[1] > drawing[1] set from to target and not to drawing
 		let source = drawing;
 		if (target[1] > drawing[1]) {
 			source = target;
@@ -43,12 +42,17 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 		setDrawing(undefined);
 	};
 
+	const handleEdit = (coord: number[]) => {
+		edit(coord);
+		if (drawing) setDrawing(undefined);
+	};
+
 	return (
 		<GridContext.Provider
 			value={{
 				drawing,
 				handleUpdate,
-				handleEdit: handleUpdate ? edit : undefined,
+				handleEdit: handleUpdate ? handleEdit : undefined,
 				handleDraw: setDrawing,
 				handleTarget,
 			}}
