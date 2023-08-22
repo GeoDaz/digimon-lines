@@ -61,7 +61,7 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 					/>
 				</div>
 				<div className="me-4">
-					<Button variant="secondary" onClick={handleVoid}>
+					<Button variant="danger" onClick={handleVoid}>
 						<Icon name="trash3-fill" /> Void
 					</Button>
 				</div>
