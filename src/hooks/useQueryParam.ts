@@ -25,7 +25,6 @@ export const addQueryParam = (key: string, value: string) => {
 export const removeQueryParam = (key: string) => {
 	const urlParams = new URLSearchParams(window.location.search);
 	urlParams.delete(key);
-	console.log(urlParams);
 	window.history.pushState(null, '', urlParams.toString());
 };
 

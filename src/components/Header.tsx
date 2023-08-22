@@ -21,7 +21,10 @@ const Header: React.FC = () => (
 						Groups
 					</Link>
 					<Link className="nav-link" href="/vbs">
-						VB
+						DIM
+					</Link>
+					<Link className="nav-link" href="/build">
+						Build
 					</Link>
 				</div>
 				<Link

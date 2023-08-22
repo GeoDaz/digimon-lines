@@ -5,8 +5,9 @@ import { GetStaticProps } from 'next';
 import { redirect } from 'next/navigation';
 // components
 import Layout from '@/components/Layout';
-import { LineLoading } from '@/components/LineGrid';
-import LinePoint, { LineImage } from '@/components/LinePoint';
+import LineLoading from '@/components/Line/LineLoading';
+import LinePoint from '@/components/Line/LinePoint';
+import LineImage from '@/components/Line/LineImage';
 import CommentLink from '@/components/CommentLink';
 // functions
 import useFetch from '@/hooks/useFetch';
@@ -14,7 +15,6 @@ import { capitalize } from '@/functions';
 import useQueryParam from '@/hooks/useQueryParam';
 // constants
 import { Group } from '@/types/Group';
-import { DEV } from '@/consts/env';
 
 const NAME = 'name';
 interface StaticProps {

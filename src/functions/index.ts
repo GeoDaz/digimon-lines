@@ -25,3 +25,14 @@ export const objectToGETparams = (
 		return `${params}${params ? '&' : '?'}${key}=${encodeURIComponent(value)}`;
 	}, baseParams);
 };
+
+export const stringToKey = (string: string): string =>
+	string.toLowerCase().replace(/\s/g, '');
+
+export const getSearchPriority = (search: string, name: string): number | null => {
+	let index = name.indexOf(search); // digimon string contains search string
+	if (index === -1) return null;
+	let priority: number = index * -1;
+	priority -= Math.abs(name.length - search.length);
+	return priority;
+};

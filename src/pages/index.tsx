@@ -4,15 +4,15 @@ import { Row, Col, Spinner } from 'react-bootstrap';
 import colors from '@/consts/colors';
 import useFetch from '@/hooks/useFetch';
 import Layout from '@/components/Layout';
-import PointImage, { LineImage } from '@/components/LinePoint';
-import { GetStaticProps, GetStaticPropsContext, PreviewData } from 'next';
-import { DEV } from '@/consts/env';
+import LinePoint from '@/components/Line/LinePoint';
+import LineImage from '@/components/Line/LineImage';
+import { GetStaticProps } from 'next';
 import { LineThumb } from '@/types/Line';
 import Line, { LineFound } from '@/types/Line';
 import { filterlinesFound, foundLines, lineToArray } from '@/functions/transformer/line';
 import SearchBar from '@/components/SearchBar';
 import useQueryParam, { addQueryParam, removeQueryParam } from '@/hooks/useQueryParam';
-import { ParsedUrlQuery } from 'querystring';
+import { stringToKey } from '@/functions';
 
 const SEARCH = 'search';
 const defaultData = { lines: [], fusions: [], searchList: {} };
@@ -63,8 +63,7 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	}, [searchParam]);
 
 	const handleSearch = (value: string) => {
-		// To do lower case, remove spaces
-		let sanitizedSearch = value.toLowerCase().replace(/\s/g, '');
+		let sanitizedSearch = stringToKey(value);
 		if (sanitizedSearch == search) return;
 		if (sanitizedSearch.length < 3) {
 			sanitizedSearch = '';
@@ -76,10 +75,10 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 		<Layout
 			noGoBack
 			title="Available lines"
-			metadescription="The aim of this site is to present evolutionary lines designed to group together members of the same species."
+			metadescription="The aim of this site is to present evolutionary lines designed to bring together members of the same species."
 		>
 			<blockquote className="blockquote">
-				The aim of this site is to present evolutionary lines designed to group
+				The aim of this site is to present evolutionary lines designed to bring
 				together members of the same species.
 			</blockquote>
 			<SearchBar onSubmit={handleSearch} defaultValue={search} />
@@ -108,7 +107,7 @@ const LineRow = ({ lines }: { lines: LineThumb[] }) => (
 		<Row className="line-row">
 			{lines.map((line, i) => (
 				<Col key={i}>
-					<PointImage name={line.name} available={line.available}>
+					<LinePoint name={line.name} available={line.available}>
 						{!!line.found && line.found.found != line.name && (
 							<LineImage
 								className="line-skin"
@@ -116,7 +115,7 @@ const LineRow = ({ lines }: { lines: LineThumb[] }) => (
 								title={line.found.found}
 							/>
 						)}
-					</PointImage>
+					</LinePoint>
 				</Col>
 			))}
 		</Row>
@@ -151,6 +150,7 @@ export const getStaticProps: GetStaticProps = async () => {
 		fusions = fusions.map((fusion: string) =>
 			checkLineAvailability(fusion, searchList)
 		);
+		// TODO make a flat searchList for previews
 
 		return { props: { ssr: { lines, fusions, searchList } } };
 	} catch (e) {

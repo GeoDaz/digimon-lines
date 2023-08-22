@@ -5,9 +5,10 @@ import { redirect } from 'next/navigation';
 import { GetStaticProps } from 'next';
 // components
 import Layout from '@/components/Layout';
-import LineGrid, { LineLoading } from '@/components/LineGrid';
-import LinePoint, { LineImage } from '@/components/LinePoint';
-import ProgressBarSteps from '@/components/ProgressBarSteps';
+import LineGrid from '@/components/Line/LineGrid';
+import LineLoading from '@/components/Line/LineLoading';
+import LinePoint from '@/components/Line/LinePoint';
+import LineImage from '@/components/Line/LineImage';
 import CommentLink from '@/components/CommentLink';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
@@ -18,8 +19,8 @@ import { capitalize } from '@/functions';
 import transformLine from '@/functions/transformer/line';
 // constants
 import { Line } from '@/types/Line';
-import { zooms, zoomOptions } from '@/consts/zooms';
 import { LINE, titles } from '@/consts/ui';
+import ZoomBar from '@/components/ZoomBar';
 
 const NAME = 'name';
 interface StaticProps {
@@ -35,7 +36,7 @@ interface Props {
 export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 	const { name } = useQueryParam(NAME) || ssr;
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
-	const [zoom, setZoom] = useState(0);
+	const [zoom, setZoom] = useState(100);
 
 	const [load, loading] = useFetch((line: Line | undefined): void =>
 		setLine(transformLine(line))
@@ -78,21 +79,14 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 			metaimg={`digimon/${name}.jpg`}
 		>
 			<div className="line-filters">
-				<Icon name="zoom-in" className="lead d-inline-block d-max-xs-none" />
-				<ProgressBarSteps
-					steps={zoomOptions}
-					selected={zoom}
-					progress={zooms[zoom] / 1.5}
-					onChange={setZoom}
-					className="progress-zoom me-4"
-				/>
+				<ZoomBar handleZoom={setZoom} />
 				<ColorLegend className="ms-4" />
 			</div>
 			{loading ? (
 				<LineLoading />
 			) : line ? (
 				<>
-					<LineGrid line={line} zoom={zooms[zoom]} />
+					<LineGrid line={line} zoom={zoom} />
 					<CommentLink />
 				</>
 			) : (

@@ -3,9 +3,8 @@ import fs from 'fs';
 import { Row, Col, Spinner } from 'react-bootstrap';
 import useFetch from '@/hooks/useFetch';
 import Layout from '@/components/Layout';
-import PointImage from '@/components/LinePoint';
+import LinePoint from '@/components/Line/LinePoint';
 import { GetStaticProps } from 'next';
-import { DEV } from '@/consts/env';
 import { LineThumb } from '@/types/Line';
 import { VB } from '@/consts/ui';
 
@@ -27,7 +26,7 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	}, []);
 
 	return (
-		<Layout title="Available VB" metadescription="List of available Digimon VB">
+		<Layout title="Available DIM" metadescription="List of available Digimon DIM">
 			{loading ? (
 				<div className="text-center">
 					<Spinner animation="border" />
@@ -38,11 +37,11 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 						{lines.map((line, i) =>
 							typeof line === 'string' ? (
 								<Col key={i}>
-									<PointImage name={line} type={VB} />
+									<LinePoint name={line} type={VB} />
 								</Col>
 							) : (
 								<Col key={i}>
-									<PointImage
+									<LinePoint
 										name={line.name}
 										available={line.available}
 										type={VB}

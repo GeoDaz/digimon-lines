@@ -1,4 +1,5 @@
 import Line, { LineFound, LinePoint, LineThumb } from '@/types/Line';
+import { getSearchPriority } from '..';
 
 const transformLine = (line: Line | undefined): Line | undefined => {
 	if (line) {
@@ -57,10 +58,8 @@ export const foundLines = (
 	searchList: { [key: string]: string[] }
 ): LineFound[] =>
 	Object.entries(searchList).reduce((result, [digimon, lines]) => {
-		let index = digimon.indexOf(search);
-		if (index > -1) {
-			let priority: number = index * -1;
-			priority -= Math.abs(digimon.length - search.length);
+		const priority = getSearchPriority(search, digimon);
+		if (priority != null) {
 			result = result.concat(
 				lines.map(
 					line =>

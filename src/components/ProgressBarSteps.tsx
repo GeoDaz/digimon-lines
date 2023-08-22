@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeClassName } from '@/functions';
-import Option from '@/types/Option';
+import { Option } from '@/types/Ui';
 
 interface Props {
 	onChange: Function;
@@ -8,6 +8,7 @@ interface Props {
 	selected: number | string;
 	progress?: number;
 	className?: string;
+	title?: string;
 }
 const ProgressBarSteps: React.FC<Props> = ({
 	onChange,
@@ -15,8 +16,9 @@ const ProgressBarSteps: React.FC<Props> = ({
 	selected,
 	progress,
 	className,
+	title,
 }) => (
-	<div className={makeClassName('progress-bar', className)}>
+	<div className={makeClassName('progress-bar', className)} title={title}>
 		<div className="progress" style={{ width: `calc(${progress}% - 40px)` }} />
 		{steps.map(step => (
 			<div

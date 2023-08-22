@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import fs from 'fs';
 import { Row, Col, Spinner } from 'react-bootstrap';
 import useFetch from '@/hooks/useFetch';
 import Layout from '@/components/Layout';
-import PointImage from '@/components/LinePoint';
+import LinePoint from '@/components/Line/LinePoint';
 import { GetStaticProps } from 'next';
-import { DEV } from '@/consts/env';
 import { LineThumb } from '@/types/Line';
 import { GROUP } from '@/consts/ui';
 
@@ -19,7 +18,7 @@ interface Props {
 	ssr: StaticProps;
 }
 const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
-	const [groups, setLines] = React.useState<string[] | Array<LineThumb>>(ssr.groups);
+	const [groups, setLines] = useState<string[] | Array<LineThumb>>(ssr.groups);
 	const [load, loading] = useFetch(setLines);
 
 	useEffect(() => {
@@ -43,11 +42,11 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 						{groups.map((group, i) =>
 							typeof group === 'string' ? (
 								<Col key={i}>
-									<PointImage name={group} type={GROUP} />
+									<LinePoint name={group} type={GROUP} />
 								</Col>
 							) : (
 								<Col key={i}>
-									<PointImage
+									<LinePoint
 										name={group.name}
 										available={group.available}
 										type={GROUP}

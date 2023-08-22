@@ -1,4 +1,4 @@
-import Option from '@/types/Option';
+import { Option } from '@/types/Ui';
 
 export const zooms: { [key: number | string]: number } = {
 	'-3': 25,

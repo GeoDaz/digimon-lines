@@ -1,3 +1,5 @@
+import { Legend } from '@/types/Ui';
+
 export const colors: { [key: string]: string } = {
 	default: '#fff', //white // '#bdc3d1', // grey
 	dark: '#6435c9', // violet '#684399' // black #000 ,
@@ -13,16 +15,20 @@ export const colors: { [key: string]: string } = {
 	// psychic: '#a24795', // fushia
 };
 
-export const legend: Array<{ [key: string]: string }> = [
-	{ color: colors.default, text: 'Default color' },
-	{ color: colors.x, text: 'X antibody' },
-	{ color: colors.dark, text: 'Dark, death, black, chaos, demon, ... evolution' },
-	{ color: colors.fusion, text: 'Fusion (DNA, Xros)' },
-	{ color: colors.mode, text: 'Mode change (Burst Mode,\u00A0...)' },
-	{ color: colors.human, text: 'Fusion with a human' },
-	{ color: colors.armor, text: 'Armor, warp evolution or gold digimon' },
-	{ color: colors.light, text: 'Holy, angel evolution' },
-	{ color: colors.fire, text: 'Fire, lava made digimon' },
-	{ color: colors.ice, text: 'Ice, snow made digimon' },
+export const legend: Legend[] = [
+	{ key: 'default', color: colors.default, text: 'Default color' },
+	{ key: 'x', color: colors.x, text: 'X antibody' },
+	{
+		key: 'dark',
+		color: colors.dark,
+		text: 'Dark, death, black, chaos, demon, ... evolution',
+	},
+	{ key: 'fusion', color: colors.fusion, text: 'Fusion (DNA, Xros)' },
+	{ key: 'mode', color: colors.mode, text: 'Mode change (Burst Mode,\u00A0...)' },
+	{ key: 'human', color: colors.human, text: 'Fusion with a human' },
+	{ key: 'armor', color: colors.armor, text: 'Armor, warp evolution or gold digimon' },
+	{ key: 'light', color: colors.light, text: 'Holy, angel evolution' },
+	{ key: 'fire', color: colors.fire, text: 'Fire, lava made digimon' },
+	{ key: 'ice', color: colors.ice, text: 'Ice, snow made digimon' },
 ];
 export default colors;

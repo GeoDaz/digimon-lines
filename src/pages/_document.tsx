@@ -4,7 +4,7 @@ import { SITE_URL } from '@/consts/env';
 
 export default function Document() {
 	return (
-		<Html lang="en">
+		<Html lang="en" data-bs-theme="dark">
 			<Head>
 				<meta charSet="utf-8" />
 				<meta property="og:locale" content="en_US" />
