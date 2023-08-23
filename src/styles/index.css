@@ -265,6 +265,7 @@ input.form-control {
 }
 
 .line-grid .line-row {
+  position: relative;
   flex-wrap: nowrap;
   margin-bottom: 2em;
 }
@@ -578,6 +579,114 @@ a.line-point {
 .line-point .spinner-wrapper .spinner-border {
   color: var(--bs-gray-400);
   border-right-color: var(--bs-gray-600);
+}
+
+.line-grid.editable {
+  padding-top: 3em;
+}
+
+.line-grid.editable .levels {
+  top: 3em;
+}
+
+.line-grid.editable .line-row {
+  border-radius: var(--bs-border-radius);
+  transition: background-color;
+}
+
+.line-grid.editable .line-row:has(>.btn.btn-danger:hover) {
+  background-color: rgba(0, 0, 0, .25);
+}
+.line-grid.editable .line-row:has(>.btn.add:hover)::before {
+  content: '';
+  position: absolute;
+  left: -0.5em;
+  width: 1em;
+  top: 0;
+  bottom: 0;
+  border-radius: var(--bs-border-radius);
+  background-color: rgba(255, 255, 255, .25);
+}
+
+.line-grid.editable .line-row .btn.add {
+  display: inline-block;
+  position: absolute;
+  top: -0.5em;
+  left: -1em;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.3s;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--bs-border-radius);
+  width: min-content;
+}
+
+.line-grid.editable .line-row .btn.btn-danger {
+  display: inline-block;
+  position: absolute;
+  top: -0.5em;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  opacity: 0;
+  transition: all 0.3s;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--bs-border-radius);
+  width: min-content;
+}
+
+.line-grid.editable .line-row .btn.add::before,
+.line-grid.editable .line-row .btn.btn-danger::before {
+  content: "\f229";
+  font-family: bootstrap-icons !important;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(70%);
+}
+
+.line-grid.editable .line-row .btn.add::before {
+  color: var(--bs-primary);
+}
+
+.line-grid.editable .line-row .btn.btn-danger::before {
+  color: var(--bs-danger);
+}
+
+.line-grid.editable .line-row:hover .btn.btn-danger,
+.line-grid.editable .line-row .btn.btn-danger:hover,
+.line-grid.editable .line-row:hover .btn.add,
+.line-grid.editable .line-row .btn.add:hover {
+  opacity: 1;
+}
+
+.line-grid .add-row {
+  flex-grow: 1;
+  padding: 0 calc(var(--bs-gutter-x) * 0.5);
+}
+
+.line-grid .add-row>div {
+  height: calc((var(--dl-img-size) + 2rem) * 6 - 2rem);
+  width: var(--dl-img-size);
+  opacity: 0;
+  border-radius: var(--bs-border-radius);
+  transition: all .3s;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 1em;
+  cursor: pointer;
+}
+
+.line-grid .add-row .size-7 {
+  height: calc((var(--dl-img-size) + 2rem) * 7 - 2rem);
+}
+
+.line-grid .add-row .size-8 {
+  height: calc((var(--dl-img-size) + 2rem) * 8 - 2rem);
+}
+
+.line-grid .add-row>div:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .line-grid .levels {

@@ -1,11 +1,9 @@
 import React, { MouseEventHandler, useMemo, useContext } from 'react';
-import { Col } from 'react-bootstrap';
 import { LinePoint as LinePointInterface } from '@/types/Line';
 import LineImage from '@/components/Line/LineImage';
 import { makeClassName } from '@/functions';
 import Icon from '@/components/Icon';
 import { GridContext } from '@/context/grid';
-import { LineEdition } from './LineGrid';
 import LineSvg, { pointWidth, xUnit } from './LineSvg';
 
 const LineGridPoint: React.FC<{
@@ -21,12 +19,10 @@ const LineGridPoint: React.FC<{
 	const editable = !!handleEdit;
 	if (!point) {
 		return (
-			<Col>
-				<div
-					className={makeClassName('line-point', editable && 'editable')}
-					onClick={editable ? handleEditBuffer : undefined}
-				/>
-			</Col>
+			<div
+				className={makeClassName('line-point', editable && 'editable')}
+				onClick={editable ? handleEditBuffer : undefined}
+			/>
 		);
 	}
 	return (
@@ -97,12 +93,16 @@ const LinePoint: React.FC<{
 						name="bezier2"
 						className={makeClassName('action draw', isDrawing && 'active')}
 						onClick={handleClickDraw}
+						title="link it to another digimon"
 					/>
-					{!!drawing && <Icon
-						name="bullseye"
-						className="action target"
-						onClick={handleClickTarget}
-					/>}
+					{!!drawing && (
+						<Icon
+							name="bullseye"
+							className="action target"
+							onClick={handleClickTarget}
+							title="be the target of the link"
+						/>
+					)}
 				</div>
 			)}
 			<LineSvg from={from} color={color} baseWidth={width} size={size} />

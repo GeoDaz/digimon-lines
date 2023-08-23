@@ -1,12 +1,14 @@
-import React, { Fragment, useState } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import React, { Fragment, useContext, useState } from 'react';
+import { Row, Col, Button } from 'react-bootstrap';
 import { Line, LinePoint } from '@/types/Line';
 import { levels } from '@/consts/levels';
 import { makeClassName } from '@/functions';
-import { setLineColumn } from '@/reducers/lineReducer';
+import { addLineColumn, removeLineColumn, setLineColumn } from '@/reducers/lineReducer';
 import { GridContext } from '@/context/grid';
 import LinePointSettings from './LinePointSettings';
 import LineGridPoint from './LineGridPoint';
+import LineAddRow from './LineAddRow';
+import Icon from '../Icon';
 
 export interface LineEdition {
 	point?: LinePoint;
@@ -90,6 +92,9 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 					{line.columns.map((column, i) => (
 						<LineRow key={i} x={i} list={column} />
 					))}
+					{!!handleUpdate && (
+						<LineAddRow handleUpdate={handleUpdate} length={line.size} />
+					)}
 				</div>
 			</div>
 		</GridContext.Provider>
@@ -99,11 +104,40 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 interface RowProps {
 	list: Array<LinePoint | LinePoint[] | null> | undefined;
 	x: number;
+	y?: number; // for sub rows
 }
-const LineRow: React.FC<RowProps> = ({ list, x }) => {
+const LineRow: React.FC<RowProps> = ({ list, x, y }) => {
+	const { handleEdit, handleUpdate } = useContext(GridContext);
+
+	const handleRemove = (e: any) => {
+		if (handleUpdate) {
+			handleUpdate(removeLineColumn, x);
+		}
+	};
+	const handleAdd = (e: any) => {
+		if (handleUpdate) {
+			handleUpdate(addLineColumn, x);
+		}
+	};
+
 	if (!list) return null;
 	return (
 		<Row className="line-row">
+			{!!handleEdit && (
+				<>
+					<Button
+						variant="primary"
+						className="add"
+						title="insert column"
+						onClick={handleAdd}
+					>
+						<Icon name="plus-lg" />
+					</Button>
+					<Button variant="danger" title="remove column" onClick={handleRemove}>
+						<Icon name="trash3-fill" />
+					</Button>
+				</>
+			)}
 			{list.map((point, i) => {
 				if (Array.isArray(point)) {
 					return (

@@ -120,14 +120,7 @@
 					-1
 				]
 			},
-			{
-				"name": "lynxmon",
-				"color": "fire",
-				"from": [
-					2,
-					-1
-				]
-			},
+			null,
 			{
 				"name": "lovelyangemon",
 				"color": "light",
@@ -142,7 +135,14 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "lynxmon",
+				"color": "fire",
+				"from": [
+					1,
+					-1
+				]
+			},
 			{
 				"name": "nefertimon",
 				"color": "armor",
@@ -184,7 +184,10 @@
 				"name": "ophanimon",
 				"color": "light"
 			},
-			null
+			{
+				"name": "ophanimonbm",
+				"color": "mode"
+			}
 		],
 		[
 			null,
@@ -395,14 +398,18 @@
 		},
 		"sistermonblanc",
 		{
+			"name": "devimon",
+			"from": "ladydevimon"
+		},
+		{
+			"name": "impmon",
+			"for": "beelstarmon"
+		},
+		{
 			"name": "hawkmon",
 			"from": "silphymon"
 		},
 		"angemon",
-		{
-			"name": "devimon",
-			"from": "ladydevimon"
-		},
 		{
 			"name": "leomon",
 			"for": "ancientsphinxmon"
@@ -410,6 +417,10 @@
 		{
 			"name": "wizardmon",
 			"for": "witchmon"
+		},
+		{
+			"name": "pawnchessmonwhite",
+			"for": "skullknightmon"
 		},
 		"omegamonmm",
 		{

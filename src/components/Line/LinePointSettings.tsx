@@ -79,7 +79,11 @@ const LinePointSettings: React.FC<Props> = ({
 					<div>
 						<h4 className="text-capitalize mb-3">
 							{point.name}{' '}
-							<Button variant="danger" onClick={handleRemove}>
+							<Button
+								variant="danger"
+								onClick={handleRemove}
+								title="remove digimon"
+							>
 								<Icon name="trash3-fill" />
 							</Button>
 						</h4>
@@ -141,7 +145,7 @@ const SettingFrom: React.FC<{
 				</Dropdown.Item>
 			))}
 		</DropdownButton>{' '}
-		<Button variant="danger" onClick={e => handleRemove(number)}>
+		<Button variant="danger" onClick={e => handleRemove(number)} title="remove line">
 			<Icon name="trash3-fill" />
 		</Button>
 	</div>
