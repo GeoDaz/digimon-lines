@@ -311,10 +311,13 @@ input.form-control {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .3s;
   border-radius: var(--bs-border-radius);
   outline: 4px solid transparent;
   position: relative;
+}
+
+.line-point {
+  transition: outline-color .3s, outline-width .3s;
 }
 
 a.line-point {
@@ -591,12 +594,13 @@ a.line-point {
 
 .line-grid.editable .line-row {
   border-radius: var(--bs-border-radius);
-  transition: background-color;
+  transition: background-color 0.3s;
 }
 
 .line-grid.editable .line-row:has(>.btn.btn-danger:hover) {
   background-color: rgba(0, 0, 0, .25);
 }
+
 .line-grid.editable .line-row:has(>.btn.add:hover)::before {
   content: '';
   position: absolute;
