@@ -11,6 +11,58 @@
                     1,
                     0
                 ]
+            },
+            {
+                "name": "monzaemonx",
+                "color": "x"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "numemon",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            {
+                "name": "monzaemon",
+                "from2": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "shinmonzaemon",
+                "color": "dark",
+                "color2": "dark",
+                "from2": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "geremon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "warumonzaemon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ],
         [
@@ -24,16 +76,16 @@
                 "name": "junkmon"
             },
             {
-                "name": "numemon",
-                "skins": [
-                    "geremon"
-                ]
-            },
-            {
                 "name": "goldnumemon",
-                "color": "armor",
-                "skins": [
-                    "platinumnumemon"
+                "color": "armor"
+            },
+            null,
+            {
+                "name": "platinumnumemon",
+                "color": "c",
+                "from": [
+                    1,
+                    -1
                 ]
             }
         ],
@@ -50,7 +102,12 @@
             },
             {
                 "name": "blackkingnumemon",
-                "color": "dark"
+                "color": "armor",
+                "color2": "armor",
+                "from2": [
+                    -1,
+                    -1
+                ]
             }
         ],
         [
@@ -86,7 +143,7 @@
         "sukamon",
         {
             "name": "bearmon",
-            "for": "monzaemon"
+            "from": "monzaemon"
         },
         {
             "name": "jellymon",
