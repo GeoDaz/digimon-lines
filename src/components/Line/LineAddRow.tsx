@@ -11,7 +11,8 @@ const LineAddRow: React.FC<Props> = ({ handleUpdate, length }) => {
 	return (
 		<Row className="add-row" onClick={e => handleUpdate(addLineColumn)}>
 			<div className={'size-' + length}>
-				<Icon name="plus-lg" /> Add Row
+				<Icon name="plus-lg" /> 
+				<br/> Add Column
 			</div>
 		</Row>
 	);

@@ -6,6 +6,7 @@ import { SearchContext } from '@/context/search';
 import { getSearchPriority, makeClassName, stringToKey } from '@/functions';
 import { Option } from '@/types/Ui';
 
+const NB_PREVIEW = 10;
 interface Props {
 	onSubmit: Function;
 	defaultValue?: string;
@@ -61,7 +62,7 @@ const SearchBar: React.FC<Props> = ({
 					return result;
 				}, [] as any[]);
 				result.sort((a, b) => b.key - a.key);
-				setPreviews(result.slice(0, 5));
+				setPreviews(result.slice(0, NB_PREVIEW));
 			}
 		}
 	};

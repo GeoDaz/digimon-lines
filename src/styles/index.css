@@ -662,6 +662,9 @@ a.line-point {
 .line-grid .add-row {
   flex-grow: 1;
   padding: 0 calc(var(--bs-gutter-x) * 0.5);
+  font-size: 1.25em;
+  font-weight: 600;
+  text-align: center;
 }
 
 .line-grid .add-row>div {
@@ -670,8 +673,6 @@ a.line-point {
   opacity: 0;
   border-radius: var(--bs-border-radius);
   transition: all .3s;
-  font-size: 1.5em;
-  font-weight: 600;
   padding-top: 1em;
   cursor: pointer;
 }
