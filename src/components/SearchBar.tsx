@@ -11,7 +11,7 @@ interface Props {
 	onSubmit: Function;
 	defaultValue?: string;
 	width?: number;
-    forwardRef?: React.Ref<HTMLInputElement>;
+	forwardRef?: React.Ref<HTMLInputElement>;
 }
 const SearchBar: React.FC<Props> = ({
 	onSubmit,
@@ -39,11 +39,19 @@ const SearchBar: React.FC<Props> = ({
 		} else if (previews.length > 0) {
 			if (e.key == 'ArrowDown') {
 				setSelection(
-					selection === null ? 0 : selection == 4 ? null : selection + 1
+					selection === null
+						? 0
+						: selection == NB_PREVIEW - 1
+						? null
+						: selection + 1
 				);
 			} else if (e.key == 'ArrowUp') {
 				setSelection(
-					selection === null ? 4 : selection === 0 ? null : selection - 1
+					selection === null
+						? NB_PREVIEW - 1
+						: selection === 0
+						? null
+						: selection - 1
 				);
 			}
 		}
