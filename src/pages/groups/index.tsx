@@ -30,6 +30,7 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	return (
 		<Layout
 			title="Available groups"
+			metatitle="Groups"
 			metadescription="List of available Digimon groups"
 		>
 			{loading ? (

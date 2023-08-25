@@ -64,6 +64,7 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	return (
 		<Layout
 			title="Build your line"
+			metatitle="Builder"
 			metadescription="Build your own Digimon lines. be creative your are free."
 		>
 			<p className="mb-4">

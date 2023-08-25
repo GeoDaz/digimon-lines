@@ -26,7 +26,11 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	}, []);
 
 	return (
-		<Layout title="Available DIM" metadescription="List of available Digimon DIM">
+		<Layout
+			title="Available DIM"
+			metatitle="DIM"
+			metadescription="List of available Digimon DIM"
+		>
 			{loading ? (
 				<div className="text-center">
 					<Spinner animation="border" />
