@@ -12,7 +12,8 @@ const ReportABugLink: React.FC = () => (
 		title="discord"
 		color="primary"
 	>
-		<Icon name="bug-fill" /> Report a bug <Icon name="discord" />
+		<Icon name="bug-fill" /> <span className="mx-1">Report a bug</span>{' '}
+		<Icon name="discord" />
 	</Button>
 );
 export default ReportABugLink;

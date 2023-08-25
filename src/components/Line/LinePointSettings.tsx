@@ -7,6 +7,7 @@ import { setLineColumn } from '@/reducers/lineReducer';
 import SearchBar from '@/components/SearchBar';
 import LineImage from './LineImage';
 import colors, { legend } from '@/consts/colors';
+import UploadImage from '../UploadImage';
 
 interface Props {
 	handleClose: () => void;
@@ -31,6 +32,9 @@ const LinePointSettings: React.FC<Props> = ({
 
 	const handleChoose = (search: string) => {
 		if (handleUpdate) {
+			if (point?.image) {
+				URL.revokeObjectURL(point.image);
+			}
 			const nextPoint: LinePoint = point
 				? { ...point, name: search }
 				: { name: search, from: null };
@@ -39,7 +43,18 @@ const LinePointSettings: React.FC<Props> = ({
 		}
 	};
 
+	const handleUpload = (file: string) => {
+		if (handleUpdate) {
+			const newPoint: LinePoint = { name: 'upload', from: null, image: file };
+			handleUpdate(setLineColumn, coord, newPoint);
+			handleClose();
+		}
+	};
+
 	const handleRemove = () => {
+		if (point?.image) {
+			URL.revokeObjectURL(point.image);
+		}
 		if (handleUpdate) {
 			handleUpdate(setLineColumn, coord, null);
 			handleClose();
@@ -75,6 +90,7 @@ const LinePointSettings: React.FC<Props> = ({
 			</Modal.Header>
 			<Modal.Body>
 				<SearchBar onSubmit={handleChoose} forwardRef={ref} />
+				<UploadImage handleUpload={handleUpload} />
 				{point ? (
 					<div>
 						<h4 className="text-capitalize mb-3">
@@ -87,7 +103,9 @@ const LinePointSettings: React.FC<Props> = ({
 								<Icon name="trash3-fill" />
 							</Button>
 						</h4>
-						<LineImage name={point.name} />
+						<div className="line-point width-min-content">
+							<LineImage name={point.name} path={point.image} />
+						</div>
 					</div>
 				) : null}
 				{!!point?.from && (

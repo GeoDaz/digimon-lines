@@ -21,7 +21,6 @@ const useLocalStorage = (key: string, item: any, setItem: CallableFunction): Ret
 	useEffect(() => {
 		// don't save default value
 		if (item && item !== mount.current) {
-			console.log('mounted', item);
 			setItemToStorage(item);
 		}
 	}, [item]);

@@ -143,6 +143,10 @@ a:active:not(.btn) {
   color: var(--bs-teal);
 }
 
+.width-min-content{
+  width: min-content;
+}
+
 .hover-only {
   opacity: 0;
   transition: all .3s;

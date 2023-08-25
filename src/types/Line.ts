@@ -15,6 +15,7 @@ export interface LinePoint {
 	from?: number[] | null;
 	from2?: number[];
 	fusionFrom?: Array<number[]>;
+	image?: string;
 }
 
 export interface LineRelation {

@@ -6,14 +6,15 @@ import { GROUP } from '@/consts/ui';
 
 interface Props extends React.ImgHTMLAttributes<any> {
 	name: string;
+	path?: string;
 	title?: string;
 	type?: string;
 	className?: string;
 	style?: object;
 }
-const LineImage: React.FC<Props> = ({ name, title, className, style, type }) => {
+const LineImage: React.FC<Props> = ({ name, title, className, style, type, path }) => {
 	const [src, setSrc] = useState(
-		`/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`
+		path || `/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`
 	);
 	const [loading, setLoading] = useState(true);
 	const [ratioWidth, setRatioWidth] = useState(1);
@@ -21,13 +22,23 @@ const LineImage: React.FC<Props> = ({ name, title, className, style, type }) => 
 	const [loadingStyle, setLoadingStyle] = useState({ opacity: 1, zIndex: 2 });
 
 	useEffect(() => {
-		const nextSrc = `/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`;
-		if (src != nextSrc) {
-			setLoading(true);
-			setLoadingStyle({ opacity: 1, zIndex: 5 });
-			setSrc(nextSrc);
+		if (path) {
+			if (path != src) {
+				setLoading(true);
+				setLoadingStyle({ opacity: 1, zIndex: 5 });
+				setSrc(path);
+			}
+		} else {
+			const nextSrc = `/images/${
+				type === GROUP ? 'groups' : 'digimon'
+			}/${name}.jpg`;
+			if (src != nextSrc) {
+				setLoading(true);
+				setLoadingStyle({ opacity: 1, zIndex: 5 });
+				setSrc(nextSrc);
+			}
 		}
-	}, [name]);
+	}, [name, path]);
 
 	return (
 		<>

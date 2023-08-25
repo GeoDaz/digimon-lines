@@ -59,7 +59,17 @@ const LinePoint: React.FC<{
 		}
 	};
 
-	const { name, from, from2, fusionFrom, size, color, color2, skins = [] } = point;
+	const {
+		name,
+		from,
+		from2,
+		fusionFrom,
+		size,
+		color,
+		color2,
+		skins = [],
+		image,
+	} = point;
 
 	const width: number = useMemo(() => {
 		if (size) {
@@ -76,7 +86,7 @@ const LinePoint: React.FC<{
 			onClick={handleEdit ? handleEdit : undefined}
 		>
 			<div className="line-point-safe-zone">
-				<LineImage name={name} title={name} />
+				<LineImage name={name} title={name} path={image} />
 				{skins.map((skin, i) => (
 					<LineImage
 						className="line-skin"

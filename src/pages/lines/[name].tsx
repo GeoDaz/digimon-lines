@@ -67,15 +67,16 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 	}
 	const { next, prev } = ssr;
 	const nameCap = capitalize(name);
+	const typeTitle = titles[type]; 
 	return (
 		<Layout
 			title={
 				<>
-					{titles[type]} for {line?.title || nameCap}
+					{typeTitle} for {line?.title || nameCap}
 				</>
 			}
-			metatitle={nameCap + ' Line'}
-			metadescription={`Evolution lines for ${nameCap} species`}
+			metatitle={nameCap + ' ' + typeTitle}
+			metadescription={`Evolution line for ${nameCap} species`}
 			metaimg={`digimon/${name}.jpg`}
 		>
 			<div className="line-filters">
