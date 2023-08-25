@@ -60,10 +60,6 @@ body {
   .line-wrapper {
     font-size: var(--bs-body-font-size);
   }
-
-  .blockquote {
-    font-size: 1.15rem;
-  }
 }
 
 @media (max-width: 448px) {
@@ -143,7 +139,7 @@ a:active:not(.btn) {
   color: var(--bs-teal);
 }
 
-.width-min-content{
+.width-min-content {
   width: min-content;
 }
 
@@ -170,6 +166,15 @@ a:active:not(.btn) {
 
 i.click:hover {
   color: var(--bs-primary);
+}
+
+.blockquote {
+  font-size: 1.1rem;
+  border-radius: var(--bs-border-radius);
+  border: var(--dl-border);
+  box-shadow: var(--dl-box-shadow);
+  padding: 1em 1.75em 1.25em 1.5em;
+  display: inline-block;
 }
 
 h1 {

@@ -67,14 +67,17 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 			metatitle="Builder"
 			metadescription="Build your own Digimon lines. be creative your are free."
 		>
-			<p className="mb-4">
-				Click on a case from the grid to set a Digimon.
+			<blockquote className="blockquote">
+				<b>Click</b> on a case from the grid to set a Digimon.
 				<br /> You can make up to 2 relation from a Digimon to another one, but a
 				Digimon can receive an unlimited number of relations.
-				<br /> At the moment there is no export button, the only way is to move
-				zoom to 75% (to get the full image), toggle the edit button and get a
-				screenshot.
-			</p>
+				<br /> At the moment there is no download button for images, the only way
+				is to move zoom to the percent you need to get the full image, toggle the
+				edit button and get a manual screenshot.
+				<br /> Your work is saved on the browser for one line at a time but you
+				can export it on your computer with the <b>Save</b> button and rework it
+				later with the <b>Import</b> button.
+			</blockquote>
 			<div className="line-filters align-items-center">
 				<BoostrapSwitch
 					checked={edition}
