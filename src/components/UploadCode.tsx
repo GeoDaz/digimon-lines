@@ -33,7 +33,8 @@ const UploadCode: React.FC<{
 	return (
 		<>
 			<label htmlFor="upload-code" className="btn btn-secondary">
-				<Icon name="upload" className="me-2" /> Import
+				<Icon name="upload" className="me-2" /> Import from{' '}
+				<Icon name="braces ms-1" />
 			</label>
 			<input
 				type="file"
