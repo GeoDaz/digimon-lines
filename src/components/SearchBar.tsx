@@ -72,6 +72,8 @@ const SearchBar: React.FC<Props> = ({
 				result.sort((a, b) => b.key - a.key);
 				setPreviews(result.slice(0, NB_PREVIEW));
 			}
+		} else if (previews.length > 0) {
+			setPreviews([]);
 		}
 	};
 

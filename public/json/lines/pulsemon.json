@@ -7,33 +7,41 @@
             null,
             {
                 "name": "divemon",
+                "color": "marine",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "name": "surfimon"
+                "name": "surfimon",
+                "color": "marine"
             }
         ],
         [
             {
-                "name": "dokimon"
+                "name": "dokimon",
+                "color": "electric"
             },
             {
-                "name": "bibimon"
+                "name": "bibimon",
+                "color": "electric"
             },
             {
-                "name": "pulsemon"
+                "name": "pulsemon",
+                "color": "electric"
             },
             {
-                "name": "bulkmon"
+                "name": "bulkmon",
+                "color": "electric"
             },
             {
-                "name": "boutmon"
+                "name": "boutmon",
+                "color": "electric"
             },
             {
-                "name": "kazuchimon"
+                "name": "kazuchimon",
+                "color": "electric"
             },
             {
                 "name": "fenriloogamontakemikazuchi",
@@ -68,6 +76,7 @@
             null,
             {
                 "name": "namakemon",
+                "color": "electric",
                 "from": [
                     -2,
                     -1
@@ -84,6 +93,7 @@
             null,
             {
                 "name": "shootmon",
+                "color": "electric",
                 "from": [
                     -1,
                     -1
@@ -100,13 +110,15 @@
             null,
             {
                 "name": "runnermon",
+                "color": "electric",
                 "from": [
                     -4,
                     -1
                 ]
             },
             {
-                "name": "pistmon"
+                "name": "pistmon",
+                "color": "grass"
             },
             {
                 "name": "achillesmon",

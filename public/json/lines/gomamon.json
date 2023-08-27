@@ -25,27 +25,33 @@
         [
             {
                 "name": "pitchmon",
+                "color": "marine",
                 "size": 2
             },
             {
                 "name": "pukamon",
+                "color": "marine",
                 "size": 2
             },
             {
                 "name": "gomamon",
+                "color": "marine",
                 "size": 2
             },
             {
                 "name": "ikkakumon",
+                "color": "marine",
                 "size": 2
             },
             {
                 "name": "zudomon",
+                "color": "marine",
                 "size": 2
             },
             [
             {
                 "name": "plesiomon",
+                "color": "marine",
                 "from": [
                     0.5,
                     -1
@@ -53,6 +59,7 @@
             },
                 {
                     "name": "vikemon",
+                    "color": "ice",
                     "from": [
                         -0.5,
                         -1
@@ -72,16 +79,19 @@
             null,
             {
                 "name": "dolphmon",
+                "color": "marine",
                 "from": [
                     -1.5,
                     -1
                 ]
             },
             {
-                "name": "whamon"
+                "name": "whamon",
+                "color": "marine"
             },
             {
-                "name": "kingwhamon"
+                "name": "kingwhamon",
+                "color": "marine"
             }
         ],
         [
@@ -90,6 +100,7 @@
             null,
             {
                 "name": "orcamon",
+                "color": "marine",
                 "from": [
                     -2.5,
                     -1

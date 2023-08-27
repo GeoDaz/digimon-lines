@@ -35,13 +35,16 @@
                 "name": "betamon"
             },
             {
-                "name": "seadramon"
+                "name": "seadramon",
+                "color": "marine"
             },
             {
-                "name": "megaseadramon"
+                "name": "megaseadramon",
+                "color": "marine"
             },
             {
-                "name": "metalseadramon"
+                "name": "metalseadramon",
+                "color": "marine"
             }
         ],
         [
@@ -68,6 +71,7 @@
             null,
             {
                 "name": "aequcedramon",
+                "color": "marine",
                 "from": [
                     -2,
                     -1
@@ -76,7 +80,7 @@
             null,
             {
                 "name": "leviamon",
-                "color": "dark",
+                "color": "marine",
                 "from": [
                     -1,
                     -1

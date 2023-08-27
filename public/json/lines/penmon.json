@@ -50,6 +50,7 @@
             null,
             {
                 "name": "thunderbirdmon",
+                "color": "electric",
                 "from": [
                     -1,
                     -1
@@ -76,13 +77,16 @@
             },
             {
                 "name": "parrotmon",
+                "color": "electric",
+                "color2": "electric",
                 "from2": [
                     -1,
                     -1
                 ]
             },
             {
-                "name": "crossmon"
+                "name": "crossmon",
+                "color": "gold"
             },
             {
                 "name": "aegisdramon",
@@ -105,7 +109,8 @@
                 "color": "fire"
             },
             {
-                "name": "sinduramon"
+                "name": "sinduramon",
+                "color": "fire"
             },
             {
                 "name": "zhuqiaomon",

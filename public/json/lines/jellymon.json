@@ -7,6 +7,7 @@
             null,
             {
                 "name": "splashmon",
+                "color": "marine",
                 "from": [
                     2,
                     -1
@@ -23,6 +24,7 @@
             null,
             {
                 "name": "mermaimon",
+                "color": "marine",
                 "from": [
                     1,
                     -1
@@ -39,16 +41,19 @@
             null,
             {
                 "name": "ranamon",
+                "color": "marine",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "name": "calamaramon"
+                "name": "calamaramon",
+                "color": "marine"
             },
             {
-                "name": "ancientmermaimon"
+                "name": "ancientmermaimon",
+                "color": "marine"
             }
         ],
         [
@@ -56,19 +61,24 @@
                 "name": "puyomon"
             },
             {
-                "name": "puyoyomon"
+                "name": "puyoyomon",
+                "color": "marine"
             },
             {
-                "name": "jellymon"
+                "name": "jellymon",
+                "color": "marine"
             },
             {
-                "name": "teslajellymon"
+                "name": "teslajellymon",
+                "color": "marine"
             },
             {
-                "name": "thetismon"
+                "name": "thetismon",
+                "color": "marine"
             },
             {
-                "name": "amphimon"
+                "name": "amphimon",
+                "color": "marine"
             }
         ],
         [
@@ -77,13 +87,15 @@
             null,
             {
                 "name": "depthmon",
+                "color": "marine",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "name": "hangyomon"
+                "name": "hangyomon",
+                "color": "marine"
             }
         ],
         [
@@ -91,19 +103,23 @@
             null,
             {
                 "name": "sangomon",
+                "color": "marine",
                 "from": [
                     -2,
                     -1
                 ]
             },
             {
-                "name": "octomon"
+                "name": "octomon",
+                "color": "marine"
             },
             {
-                "name": "dagomon"
+                "name": "dagomon",
+                "color": "marine"
             },
             {
-                "name": "neptunemon"
+                "name": "neptunemon",
+                "color": "marine"
             }
         ],
         [
@@ -112,6 +128,7 @@
             null,
             {
                 "name": "shellmon",
+                "color": "marine",
                 "skins": [
                     "morishellmon"
                 ],
@@ -126,13 +143,15 @@
             null,
             {
                 "name": "shakomon",
+                "color": "marine",
                 "from": [
                     -4,
                     -1
                 ]
             },
             {
-                "name": "gesomon"
+                "name": "gesomon",
+                "color": "marine"
             },
             {
                 "name": "marinedevimon",

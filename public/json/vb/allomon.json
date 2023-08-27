@@ -1,5 +1,5 @@
 {
-    "title": "Bememory Special Royal Knights",
+    "title": "Bememory Special Dinosaur",
     "columns": [
         [
             null,
@@ -8,111 +8,122 @@
             null,
             null,
             {
-                "name": "gallantmoncm",
-                "color": "mode",
+                "name": "huanglongmon",
                 "from": [
                     1,
                     0
                 ]
-            }
+            },
+            null,
+            null
         ],
         [
             null,
             null,
             {
-                "name": "kamemon",
+                "name": "gaossmonb",
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "name": "dinohumon"
+                "name": "allomon"
             },
             {
-                "name": "wargrowlmon"
+                "name": "mastertyranomon"
             },
             {
-                "name": "gallantmon"
-            }
+                "name": "dinorexmon"
+            },
+            null,
+            null
         ],
         [
             {
-                "name": "choromon"
+                "name": "botamon"
             },
             {
-                "name": "caprimon"
+                "name": "koromon"
             },
             {
-                "name": "pawnchessmonwhite"
+                "name": "agumon"
             },
             {
-                "name": "gladimon"
+                "name": "tyranomon"
             },
             {
-                "name": "knightmon"
+                "name": "metaltyranomon"
             },
             {
-                "name": "lordknightmon"
-            }
+                "name": "rusttyranomon"
+            },
+            null,
+            null
         ],
         [
             null,
             null,
             {
-                "name": "pawnchessmonblack",
+                "name": "gammamon",
                 "from": [
                     -1,
                     -1
                 ]
             },
             {
-                "name": "skullknightmon"
+                "name": "monochromon"
             },
             {
-                "name": "darkknightmon"
+                "name": "triceramon"
             },
             {
-                "name": "craniummon"
-            }
+                "name": "ultimatebrachimon"
+            },
+            null,
+            null
         ],
         [
             null,
             null,
             {
-                "name": "kotemon",
+                "name": "armadillomon",
                 "from": [
                     -2,
                     -1
                 ]
             },
             {
-                "name": "musyamon"
+                "name": "ankylomon"
             },
             {
-                "name": "mistymon"
+                "name": "brachiomon"
             },
             {
-                "name": "dynasmon"
-            }
+                "name": "cannondramon"
+            },
+            null,
+            null
         ],
         [
             null,
             null,
             null,
             {
-                "name": "yaksamon",
+                "name": "parasaumon",
                 "from": [
                     -1,
                     -1
                 ]
             },
             {
-                "name": "kyukimon"
+                "name": "stegomon"
             },
             {
-                "name": "leopardmon"
-            }
+                "name": "spinomon"
+            },
+            null,
+            null
         ],
         [
             null,
@@ -121,18 +132,14 @@
             null,
             null,
             {
-                "name": "kentaurosmon",
+                "name": "dinotigermon",
                 "from": [
                     -1,
                     -1
                 ]
-            }
+            },
+            null,
+            null
         ]
-    ],
-    "related": [
-        "pawnchessmonwhite",
-        "wizardmon",
-        "kudamon",
-        "kotemon"
     ]
 }
