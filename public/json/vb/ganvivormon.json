@@ -1,1 +1,165 @@
-{"size":8,"columns":[[null,null,null,null,{"name":"piccolomon","from":[1,-1],"color":"light"},null,null,null],[null,null,null,{"name":"ganvivormon","from":[1,-1]},{"name":"angewomon","from":[0,-1],"color":"light"},{"name":"venusmon","from":[0,-1],"color":"light"},null,null],[{"name":"snowbotamon","from":null},{"name":"nyaromon","from":[0,-1]},{"name":"sistermonblanc","from":[0,-1],"color":"light"},{"name":"mikemon","from":[0,-1]},{"name":"bastemon","from":[0,-1]},{"name":"junomon","from":[0,-1],"color":"light"},null,null],[null,null,null,{"name":"sistermonciel","from":[-1,-1]},{"name":"sistermoncielawake","from":[0,-1]},{"name":"dianamon","from":[0,-1]},null,null],[null,null,null,{"name":"sistermonnoir","from":[-2,-1],"color":"dark"},{"name":"sistermonnoirawake","from":[0,-1],"color":"dark"},{"name":"beelstarmon","from":[0,-1],"color":"dark"},null,null],[null,null,null,null,{"name":"ladydevimon","from":[-1,-1],"color":"dark"},null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null]]}
+{
+    "size": 8,
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "angewomon",
+                "from": [
+                    1,
+                    -1
+                ],
+                "color": "light"
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "ganvivormon",
+                "from": [
+                    1,
+                    -1
+                ],
+                "color": "light"
+            },
+            {
+                "name": "sanzomon",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": "light"
+            },
+            {
+                "name": "junomon",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": "light"
+            }
+        ],
+        [
+            {
+                "name": "snowbotamon",
+                "from": null
+            },
+            {
+                "name": "nyaromon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "name": "sistermonblanc",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": "light"
+            },
+            {
+                "name": "kinkakumon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "name": "bastemon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "name": "mervamon",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": "default"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sistermonciel",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "color": "light"
+            },
+            {
+                "name": "sistermoncielawake",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": "light"
+            },
+            {
+                "name": "venusmon",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": "light"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sistermonnoir",
+                "from": [
+                    -2,
+                    -1
+                ],
+                "color": "dark"
+            },
+            {
+                "name": "sistermonnoirawake",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": "dark"
+            },
+            {
+                "name": "beelstarmon",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "ladydevimon",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "color": "dark"
+            },
+            null
+        ]
+    ]
+}
