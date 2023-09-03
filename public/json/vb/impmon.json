@@ -1,0 +1,53 @@
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "wisemon", "from": [1, -1], "color": "default" },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "wizardmon", "from": [1, -1], "color": "default" },
+			{ "name": "baalmon", "from": [0, -1], "color": "default" },
+			{ "name": "beelzebumon", "from": [0, -1], "color": "dark" }
+		],
+		[
+			{ "name": "keemon", "from": null },
+			{ "name": "yarmon", "from": [0, -1] },
+			{ "name": "impmon", "from": [0, -1] },
+			{ "name": "lianpumon", "from": [0, -1], "color": "default" },
+			{ "name": "xingtianmon", "from": [0, -1], "color": "default" },
+			{ "name": "dijiangmon", "from": [0, -1], "color": "dark" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "boogiemon", "from": [-1, -1], "color": "dark" },
+			{ "name": "phelesmon", "from": [0, -1], "color": "dark" },
+			{ "name": "barbamon", "from": [0, -1], "color": "dark" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "meramon", "from": [-2, -1], "color": "fire" },
+			{ "name": "deathmeramon", "from": [0, -1], "color": "fire" },
+			{ "name": "boltmon", "from": [0, -1], "color": "electric" }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "bluemeramon", "from": [-1, -1], "color": "ice" },
+			null
+		]
+	]
+}

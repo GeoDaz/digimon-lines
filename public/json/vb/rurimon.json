@@ -1,159 +1,46 @@
 {
-    "size": 8,
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "magnaangemon",
-                "from": [
-                    1,
-                    -1
-                ],
-                "color": "default"
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "wizardmon",
-                "from": [
-                    1,
-                    -1
-                ],
-                "color": "default"
-            },
-            {
-                "name": "mistymon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "dynasmon",
-                "from": [
-                    0,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "botamon",
-                "from": null
-            },
-            {
-                "name": "koromon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "rurimon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "coredramonblue",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color": "default"
-            },
-            {
-                "name": "wingdramon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "goldramon",
-                "from": [
-                    0,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "airdramon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "aeroveedramon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "ulforceveedramon",
-                "from": [
-                    0,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "flarelizardmon",
-                "from": [
-                    -2,
-                    -1
-                ],
-                "color": "fire"
-            },
-            {
-                "name": "volcdramon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color": "fire"
-            },
-            {
-                "name": "dorbickmon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color": "fire"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "bluemeramon",
-                "from": [
-                    -1,
-                    -1
-                ],
-                "color": "ice"
-            },
-            null
-        ]
-    ]
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "wisemon", "from": [1, -1], "color": "default" },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "wizardmon", "from": [1, -1], "color": "default" },
+			{ "name": "mistymon", "from": [0, -1] },
+			{ "name": "dynasmon", "from": [0, -1] }
+		],
+		[
+			{ "name": "botamon", "from": null },
+			{ "name": "koromon", "from": [0, -1] },
+			{ "name": "rurimon", "from": [0, -1] },
+			{ "name": "coredramonblue", "from": [0, -1], "color": "default" },
+			{ "name": "wingdramon", "from": [0, -1] },
+			{ "name": "slayerdramon", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "sorcerymon", "from": [-1, -1], "color": "ice" },
+			{ "name": "magnaangemon", "from": [0, -1], "color": "light" },
+			{ "name": "goldramon", "from": [0, -1], "color": "light" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "airdramon", "from": [-1, -1] },
+			{ "name": "aeroveedramon", "from": [0, -1] },
+			{ "name": "ulforceveedramon", "from": [0, -1] }
+		],
+		[null, null, null, null, { "name": "megadramon", "from": [-1, -1] }, null]
+	]
 }
