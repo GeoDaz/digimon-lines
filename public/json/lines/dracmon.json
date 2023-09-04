@@ -1,58 +1,46 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "slashangemon",
-                "color": "light",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "keemon"
-            },
-            {
-                "name": "yarmon",
-                "color": "dark"
-            },
-            {
-                "name": "dracmon",
-                "color": "dark"
-            },
-            {
-                "name": "sangloupmon",
-                "color": "dark"
-            },
-            {
-                "name": "matadormon",
-                "color": "dark"
-            },
-            {
-                "name": "grandracmon",
-                "color": "dark"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "devimon",
-            "for": "myotismon"
-        },
-        {
-            "name": "angemon",
-            "from": "slashangemon"
-        },
-        {
-            "name": "kotemon",
-            "for": "yaksamon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{ "name": "slashangemon", "color": "light", "from": [1, -1] }
+		],
+		[
+			{ "name": "keemon", "from": null },
+			{ "name": "yarmon", "color": "dark" },
+			{ "name": "dracmon", "color": "dark" },
+			{ "name": "sangloupmon", "color": "dark" },
+			{ "name": "matadormon", "color": "dark" },
+			{ "name": "grandracmon", "color": "dark" }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "myotismon", "color": "dark", "from": [-1, -1] },
+			{ "name": "venommyotismon", "color": "dark", "from": [0, -1] },
+			{ "name": "malomyotismon", "color": "dark", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "myotismonx", "from": [-1, 0], "color": "x" },
+			{ "name": "neomyotismon", "color": "dark", "from": [-1, -1] },
+			{ "name": "neomyotismondm", "from": [0, -1], "color": "fusion" }
+		]
+	],
+	"related": [
+		{ "name": "devimon", "for": "myotismon" },
+		{ "name": "angemon", "from": "slashangemon" },
+		{ "name": "bakemon", "for": "piemon" },
+		{ "name": "hookmon", "for": "boltboutamon" },
+		{ "name": "duskmon" },
+		{ "name": "kotemon", "for": "yaksamon" }
+	]
 }
