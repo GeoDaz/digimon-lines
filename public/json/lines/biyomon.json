@@ -1,80 +1,55 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "garudamonx",
-                "color": "x",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "phoenixmonx",
-                "color": "x"
-            }
-        ],
-        [
-            {
-                "name": "nyokimon"
-            },
-            {
-                "name": "yokomon"
-            },
-            {
-                "name": "biyomon"
-            },
-            {
-                "name": "birdramon",
-                "color": "fire"
-            },
-            {
-                "name": "garudamon"
-            },
-            {
-                "name": "phoenixmon",
-                "color": "light"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "saberdramon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "karatenmon",
-                "color": "dark"
-            },
-            {
-                "name": "ornismon",
-                "color": "dark"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "penmon",
-            "for": "cockatrimon"
-        },
-        {
-            "name": "hawkmon",
-            "for": "aquilamon"
-        },
-        {
-            "name": "falcomon",
-            "from": "karatenmon"
-        },
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "garudamonx", "color": "x", "from": [1, -1] },
+			{ "name": "phoenixmonx", "color": "x" }
+		],
+		[
+			{ "name": "nyokimon", "from": null },
+			{ "name": "yokomon" },
+			{ "name": "biyomon" },
+			{ "name": "birdramon", "color": "fire" },
+			{ "name": "garudamon" },
+			{ "name": "phoenixmon", "color": "light" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "saberdramon", "color": "dark", "from": [-1, -1] },
+			{ "name": "karatenmon", "color": "dark" },
+			{ "name": "ornismon", "color": "dark" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "akatorimon", "from": [-2, -1], "color": "fire" },
+			{ "name": "sinduramon", "from": [0, -1] },
+			{ "name": "zhuqiaomon", "from": [0, -1], "color": "fire" },
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "cockatrimon", "from": [-3, -1] },
+			{ "name": "parrotmon", "from": [0, -1], "color": "electric" },
+			{ "name": "crossmon", "from": [0, -1], "color": "gold" },
+			{ "name": "aegisdramon", "from": [0, -1], "color": "fusion" },
+			null
+		]
+	],
+	"related": [
+		{ "name": "penmon", "from": "cockatrimon" },
+		{ "name": "hawkmon", "for": "aquilamon" },
+		{ "name": "falcomon", "from": "karatenmon" },
+		"aegisdramon",
 		"omegamonmm"
-    ]
+	]
 }
