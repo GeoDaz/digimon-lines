@@ -1,127 +1,57 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "marinechimeramon",
-                "color": "marine",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "tobiumon",
-                "color": "marine",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "gusokumon",
-                "color": "marine"
-            },
-            {
-                "name": "aegisdramon",
-                "color": "marine"
-            }
-        ],
-        [
-            {
-                "name": "petitmon"
-            },
-            {
-                "name": "babydramon"
-            },
-            {
-                "name": "aequcedramon",
-                "color": "marine"
-            },
-            {
-                "name": "seahomon",
-                "color": "marine"
-            },
-            {
-                "name": "huankunmon",
-                "color": "marine"
-            },
-            {
-                "name": "xiangpengmon",
-                "color": "marine"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "tylomon",
-                "color": "marine",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "anomalocarimon",
-                "color": "marine"
-            },
-            {
-                "name": "plesiomon",
-                "color": "marine"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "seadramon",
-                "color": "marine",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "waruseadramon",
-                "color": "dark"
-            },
-            {
-                "name": "leviamon",
-                "color": "marine"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "megaseadramon",
-                "color": "marine",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "notes": [
-        "Aequcedramon is in reality a Champion, I was wrong when I made the chart. However it's not official and I like what it looks like. I still don't find a perfect Ultimate for its direct evolution. I think it evolves from betamon due to its arms and its relation to water."
-    ],
-    "related": [
-        "seadramon",
-        "tyranomon",
-        "gammamon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "anomalocarimon", "from": [1, -1], "color": "marine" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "tobiumon", "color": "marine", "from": [1, -1] },
+			{ "name": "gusokumon", "color": "marine" },
+			{ "name": "aegisdramon", "color": "marine" }
+		],
+		[
+			{ "name": "botamon", "from": null },
+			{ "name": "koromon" },
+			{ "name": "betamon", "color": "marine" },
+			{ "name": "aequcedramon", "color": "marine" },
+			{ "name": "huankunmon", "color": "marine" },
+			{ "name": "xiangpengmon", "color": "marine" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "tylomon", "color": "marine", "from": [-1, -1] },
+			{ "name": "waruseadramon", "color": "dark", "from": [0, -1] },
+			{ "name": "leviamon", "color": "dark", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "seadramon", "color": "marine", "from": [-2, -1] },
+			{ "name": "megaseadramon", "color": "marine", "from": [0, -1] },
+			{ "name": "metalseadramon", "color": "marine", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "marinechimeramon", "from": [-1, -1], "color": "marine" }
+		]
+	],
+	"related": [
+		"seadramon",
+		"swimmon",
+		"marinechimeramon",
+		{ "name": "falcomon", "for": "huankunmon" },
+		"aegisdramon"
+	]
 }
