@@ -23,7 +23,6 @@ interface Props {
 	ssr: StaticProps;
 }
 const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
-	// const ref = React.useRef<HTMLDivElement>(null);
 	const [line, dispatchState] = useReducer(lineReducer, defaultLine);
 	const setLine = (line: any) => dispatchState(setLineAction(line));
 	const { setItemToStorage } = useLocalStorage('line', line, setLine);
@@ -107,7 +106,6 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 			</div>
 			<SearchContext.Provider value={ssr.searchList}>
 				<LineGrid
-					// forwardRef={ref}
 					line={line}
 					zoom={zoom}
 					handleUpdate={edition ? handleUpdate : undefined}

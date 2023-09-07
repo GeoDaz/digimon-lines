@@ -1,9 +1,11 @@
 import React from 'react';
 import Icon from './Icon';
+import { makeClassName } from '@/functions';
 
 const UploadImage: React.FC<{
 	handleUpload: CallableFunction;
-}> = ({ handleUpload }) => {
+	className?: string;
+}> = ({ handleUpload, className }) => {
 	const getBase64 = (file: File) => {
 		return new Promise<string | null>((resolve, reject) => {
 			const reader = new FileReader();
@@ -36,7 +38,10 @@ const UploadImage: React.FC<{
 
 	return (
 		<>
-			<label htmlFor="upload-image" className="btn btn-secondary">
+			<label
+				htmlFor="upload-image"
+				className={makeClassName('btn btn-secondary', className)}
+			>
 				<Icon name="upload" className="me-2" /> Upload an image
 			</label>
 			<input

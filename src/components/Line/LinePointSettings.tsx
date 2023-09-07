@@ -90,9 +90,9 @@ const LinePointSettings: React.FC<Props> = ({
 			</Modal.Header>
 			<Modal.Body>
 				<SearchBar onSubmit={handleChoose} forwardRef={ref} />
-				<UploadImage handleUpload={handleUpload} />
+				<UploadImage handleUpload={handleUpload} className="mb-3" />
 				{point ? (
-					<div className='mb-3'>
+					<div className="mb-3">
 						<h4 className="text-capitalize mb-3">
 							{point.name}{' '}
 							<Button

@@ -82,11 +82,12 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 					<div className="levels">
 						{levels.map(
 							(level, i) =>
-								line.size >= i + 1 && (
+								!line.size ||
+								(line.size >= i + 1 && (
 									<div key={i} className="level">
 										<span>{level}</span>
 									</div>
-								)
+								))
 						)}
 					</div>
 					{line.columns.map((column, i) => (
