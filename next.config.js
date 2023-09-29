@@ -9,8 +9,11 @@ module.exports = {
 			},
 		];
 	},
-	webpack: (config) => {
+	webpack: config => {
 		config.resolve.fallback = { fs: false };
 		return config;
-	  },
+	},
+	images: {
+		unoptimized: true,
+	},
 };

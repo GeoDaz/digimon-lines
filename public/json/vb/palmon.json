@@ -1,114 +1,65 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "ajatarmon",
-                "from": [1,-1]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "vegimon",
-                "from": [2,-1]
-            },
-            {
-                "name": "blossomon"
-            },
-            {
-                "name": "bloomlordmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "togemon",
-                "from": [1,-1]
-            },
-            {
-                "name": "lilimon"
-            },
-            {
-                "name": "rosemon"
-            }
-        ],
-        [
-            {
-                "name": "yuramon"
-            },
-            {
-                "name": "tanemon"
-            },
-            {
-                "name": "palmon"
-            },
-            null,
-            null,
-            {
-                "name": "rafflesimon",
-                "color": "fusion",
-                "color2": "fusion",
-                "from": [
-                    -1,
-                    0
-                ],
-                "from2": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "sunflowmon",
-                "from": [-1,-1]
-            },
-            {
-                "name": "lilamon"
-            },
-            {
-                "name": "lotusmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "parasaumon",
-                "from": [-2,-1]
-            },
-            {
-                "name": "tropiamon"
-            },
-            {
-                "name": "hydramon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "entmon",
-                "color": "dark",
-                "from": [-1,-1]
-            }
-        ]
-    ],
-    "related": [
-        "palmon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "ajatarmon", "from": [1, -1], "color": "grass" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "vegimon", "from": [2, -1], "color": "grass" },
+			{ "name": "blossomon", "from": [0, -1], "color": "grass" },
+			{ "name": "bloomlordmon", "from": [0, -1], "color": "grass" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "togemon", "from": [1, -1], "color": "grass" },
+			{ "name": "lilimon", "from": [0, -1], "color": "grass" },
+			{ "name": "rosemon", "from": [0, -1], "color": "grass" }
+		],
+		[
+			{ "name": "yuramon", "from": null },
+			{ "name": "tanemon", "from": [0, -1], "color": "grass" },
+			{ "name": "palmon", "from": [0, -1], "color": "grass" },
+			null,
+			null,
+			{
+				"name": "rafflesimon",
+				"color": "fusion",
+				"color2": "fusion",
+				"from": [-1, 0],
+				"from2": [1, 0]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "sunflowmon", "from": [-1, -1], "color": "grass" },
+			{ "name": "lilamon", "from": [0, -1], "color": "grass" },
+			{ "name": "lotusmon", "from": [0, -1], "color": "grass" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "parasaumon", "from": [-2, -1], "color": "grass" },
+			{ "name": "tropiamon", "from": [0, -1], "color": "grass" },
+			{ "name": "hydramon", "from": [0, -1], "color": "grass" }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "petaldramon", "from": [-1, -1], "color": "grass" }
+		]
+	],
+	"related": ["palmon"]
 }

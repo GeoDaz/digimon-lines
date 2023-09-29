@@ -1,162 +1,115 @@
 {
-    "size": 8,
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "divemon",
-                "from": [
-                    1,
-                    -1
-                ],
-                "color": "marine"
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "bulkmon",
-                "from": [
-                    1,
-                    -1
-                ],
-                "color": "electric"
-            },
-            {
-                "name": "boutmon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color": "electric"
-            },
-            {
-                "name": "kazuchimon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color": "electric"
-            }
-        ],
-        [
-            {
-                "name": "dokimon",
-                "from": null
-            },
-            {
-                "name": "bibimon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color": "electric"
-            },
-            {
-                "name": "pulsemon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color": "electric"
-            },
-            {
-                "name": "exermon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "climbmon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "shivamon",
-                "from": [
-                    0,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "runnermon",
-                "from": [
-                    -1,
-                    -1
-                ],
-                "color": "electric"
-            },
-            {
-                "name": "pistmon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color": "grass"
-            },
-            {
-                "name": "achillesmon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color": "light"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "namakemon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "shootmon",
-                "from": [
-                    0,
-                    -1
-                ]
-            },
-            {
-                "name": "shroudmon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "color": "fire"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "tempomon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            null
-        ]
-    ]
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "divemon",
+				"from": [1, -1],
+				"color": "marine"
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "bulkmon",
+				"from": [1, -1],
+				"color": "electric"
+			},
+			{
+				"name": "boutmon",
+				"from": [0, -1],
+				"color": "electric"
+			},
+			{
+				"name": "kazuchimon",
+				"from": [0, -1],
+				"color": "electric"
+			}
+		],
+		[
+			{
+				"name": "dokimon",
+				"from": null
+			},
+			{
+				"name": "bibimon",
+				"from": [0, -1],
+				"color": "electric"
+			},
+			{
+				"name": "pulsemon",
+				"from": [0, -1],
+				"color": "electric"
+			},
+			{
+				"name": "exermon",
+				"from": [0, -1]
+			},
+			{
+				"name": "climbmon",
+				"from": [0, -1]
+			},
+			{
+				"name": "shivamon",
+				"from": [0, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "runnermon",
+				"from": [-1, -1],
+				"color": "electric"
+			},
+			{
+				"name": "pistmon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "achillesmon",
+				"from": [0, -1],
+				"color": "light"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "namakemon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "shootmon",
+				"from": [0, -1]
+			},
+			{
+				"name": "shroudmon",
+				"from": [0, -1],
+				"color": "fire"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "tempomon",
+				"from": [-1, -1]
+			},
+			null
+		]
+	],
+	"related": ["pulsemon"]
 }
