@@ -53,6 +53,10 @@
             },
             {
                 "name": "eldoradimon"
+            },
+            {
+                "name": "tlalocmon",
+                "color": "fusion"
             }
         ],
         [
@@ -69,6 +73,10 @@
         ]
     ],
     "related": [
+        {
+            "name": "leomon",
+            "from": "tlalocmon"
+        },
         {
             "name": "woodmon",
             "for": "xuanwumon"
