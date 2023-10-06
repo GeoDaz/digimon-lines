@@ -1,177 +1,143 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            [
-                null,
-                null,
-                null,
-                {
-                    "name": "shadramon",
-                    "color": "fire",
-                    "from": [
-                        2,
-                        -1
-                    ]
-                }
-            ],
-            {
-                "name": "jewelbeemon",
-                "from": [
-                    2,
-                    -1
-                ]
-            },
-            {
-                "name": "banchostingmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "hudiemon",
-                "color": "human",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "dinobeemon",
-                "color": "fusion",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "grankuwagamon"
-            }
-        ],
-        [
-            {
-                "name": "leafmon"
-            },
-            {
-                "name": "minomon"
-            },
-            {
-                "name": "wormmon"
-            },
-            {
-                "name": "stingmon"
-            },
-            {
-                "name": "paildramon",
-                "color": "fusion"
-            },
-            {
-                "name": "imperialdramon"
-            },
-            {
-                "name": "imperialdramonfm",
-                "color": "mode"
-            },
-            {
-                "name": "imperialdramonpm",
-                "color": "fusion"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "stingmonb",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            null,
-            {
-                "name": "imperialdramonb",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "imperialdramonfmb",
-                "color": "mode"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "pucchiemon",
-                "color": "light",
-                "skins": [
-                    "pucchiemongreen"
-                ],
-                "from": [
-                    -2,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "searchmon",
-                "from": [
-                    -3,
-                    -1
-                ]
-            },
-            {
-                "name": "kongoumon",
-                "color": "gold"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "mothmon",
-                "from": [
-                    -4,
-                    -1
-                ]
-            },
-            {
-                "name": "butterflamon"
-            }
-        ]
-    ],
-    "related": [
-        "veemon",
-        {
-            "name": "tentomon",
-            "from": "grankuwagamon"
-        },
-        {
-            "name": "fanbeemon",
-            "for": "morphomon"
-        },
-        {
-            "name": "gatomon",
-            "from": "butterflamon"
-        },
-        {
-            "name": "pulsemon",
-            "for": "exermon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "shadramon",
+				"color": "fire",
+				"from": [2, -1]
+			},
+			{
+				"name": "jewelbeemon",
+				"from": [2, -1]
+			},
+			{
+				"name": "banchostingmon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "hudiemon",
+				"color": "human",
+				"from": [1, -1]
+			},
+			{
+				"name": "dinobeemon",
+				"color": "fusion",
+				"from": [1, -1]
+			},
+			{
+				"name": "grankuwagamon"
+			}
+		],
+		[
+			{
+				"name": "leafmon"
+			},
+			{
+				"name": "minomon"
+			},
+			{
+				"name": "wormmon"
+			},
+			{
+				"name": "stingmon"
+			},
+			{
+				"name": "paildramon",
+				"color": "fusion"
+			},
+			{
+				"name": "imperialdramon"
+			},
+			{
+				"name": "imperialdramonfm",
+				"color": "mode"
+			},
+			{
+				"name": "imperialdramonpm",
+				"color": "fusion"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "stingmonb",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			null,
+			{
+				"name": "imperialdramonb",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			{
+				"name": "imperialdramonfmb",
+				"color": "mode"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "searchmon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "kongoumon",
+				"color": "gold"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pucchiemon",
+				"color": "light",
+				"skins": ["pucchiemongreen"],
+				"from": [-3, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mothmon",
+				"from": [-4, -1]
+			},
+			{
+				"name": "butterflamon"
+			}
+		]
+	],
+	"related": [
+		"veemon",
+		{
+			"name": "tentomon",
+			"from": "grankuwagamon"
+		},
+		{
+			"name": "fanbeemon",
+			"for": "morphomon"
+		},
+		{
+			"name": "gatomon",
+			"from": "butterflamon"
+		},
+		{
+			"name": "pulsemon",
+			"for": "exermon"
+		}
+	]
 }

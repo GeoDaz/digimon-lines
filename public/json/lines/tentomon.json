@@ -64,18 +64,18 @@
 		[
 			null,
 			null,
-			{ "name": "kokuwamon", "from": [-2, -1] },
-			{ "name": "bladekuwagamon", "from": null },
+			{ "name": "kokuwamon", "from": [-2, -1], "color": "electric" },
+			{ "name": "bladekuwagamon", "color": "electric" },
 			{ "name": "metallifekuwagamon", "from": [0, -1], "color": "gold" },
 			null
 		],
 		[
 			null,
 			null,
-			{ "name": "kokabuterimon", "size": 2, "from": [-3, -1], "from2": null },
-			{ "name": "blitzmon", "size": 2 },
+			{ "name": "kokabuterimon", "size": 2, "from": [-3.5, -1], "from2": null },
+			{ "name": "blitzmon", "size": 2, "color": "electric" },
 			[
-				{ "name": "bolgmon", "from": [0.5, -1] },
+				{ "name": "bolgmon", "from": [0.5, -1], "color": "electric" },
 				{ "name": "rhinokabuterimon", "from": [-0.5, -1] }
 			],
 			[null, { "name": "ancientbeetlemon" }]

@@ -14,43 +14,51 @@
 			null,
 			{ "name": "ponchomon", "color": "dark", "from": [1, -1] },
 			null,
-			{ "name": "bancholilimon", "from": [1, -1], "color": "grass" }
+			{ "name": "bancholilimon", "from": [1, -1], "color": "grass" },
+			{ "name": "rosemonbm", "color": "mode", "from": [1, -1] }
 		],
 		[
-			{ "name": "yuramon" },
-			{ "name": "tanemon", "from": [0, -1], "color": "grass" },
-			{ "name": "palmon", "from": [0, -1], "color": "grass" },
-			{ "name": "togemon", "from": [0, -1], "color": "grass" },
-			{ "name": "lilimon", "from": [0, -1], "color": "grass" },
-			{
-				"name": "rosemon",
-				"from": [0, -1],
-				"color": "grass",
-				"from2": [1, -1],
-				"color2": "grass"
-			},
-			{ "name": "rosemonbm", "color": "mode" }
-		],
-		[
-			{ "name": "nyokimon" },
-			{ "name": "budmon", "from": [0, -1], "color": "grass" },
-			{ "name": "lalamon", "from": [0, -1], "color": "grass" },
-			{ "name": "sunflowmon", "from": [0, -1], "color": "grass" },
-			{ "name": "lilamon", "from": [0, -1], "color": "grass" },
-			{
-				"name": "lotusmon",
-				"from": [0, -1],
-				"color": "dark",
-				"from2": [1, -1],
-				"color2": "grass"
-			},
+			[{ "name": "yuramon" }, { "name": "nyokimon" }],
+			[
+				{ "name": "tanemon", "from": [0, -1], "color": "grass" },
+				{ "name": "budmon", "from": [0, -1], "color": "grass" }
+			],
+			[
+				{ "name": "palmon", "from": [0, -1], "color": "grass" },
+				{ "name": "lalamon", "from": [0, -1], "color": "grass" }
+			],
+			[
+				{ "name": "togemon", "from": [0, -1], "color": "grass" },
+				{ "name": "sunflowmon", "from": [0, -1], "color": "grass" }
+			],
+			[
+				{ "name": "lilimon", "from": [0, -1], "color": "grass" },
+				{ "name": "lilamon", "from": [0, -1], "color": "grass" }
+			],
+			[
+				{
+					"name": "rosemon",
+					"from": [0, -1],
+					"color": "grass",
+					"from2": [1, -1],
+					"color2": "grass"
+				},
+				{
+					"name": "lotusmon",
+					"from": [0, -1],
+					"color": "dark",
+					"from2": [1, -1],
+					"color2": "grass"
+				}
+			],
 			{
 				"name": "rafflesimon",
-				"from": null,
+				"size": 2,
 				"color": "fusion",
+				"from": null,
 				"fusionFrom": [
-					[-1, -1],
-					[0, -1]
+					[-0.5, -1],
+					[0.5, -1]
 				]
 			}
 		],
@@ -117,9 +125,7 @@
 			{
 				"name": "bloomlordmon",
 				"from": [0, -1],
-				"color": "grass",
-				"from2": [-1, -1],
-				"color2": "light"
+				"color": "grass"
 			}
 		],
 		[
