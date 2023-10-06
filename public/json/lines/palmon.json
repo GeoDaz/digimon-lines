@@ -1,1 +1,155 @@
-{"columns":[[null,null,{"name":"palmonx","color":"x","from":[1,0]},{"name":"togemonx","color":"x"},{"name":"lilimonx","color":"x"},{"name":"rosemonx","color":"x"}],[{"name":"yuramon"},{"name":"tanemon","from":[0,-1],"color":"grass"},{"name":"palmon","from":[0,-1],"color":"grass"},{"name":"togemon","from":[0,-1],"color":"grass"},{"name":"lilimon","from":[0,-1],"color":"grass"},{"name":"rosemon","from":[0,-1],"color":"grass"},{"name":"rosemonbm","color":"mode"}],[null,null,null,{"name":"ponchomon","color":"dark","from":[-1,-1]},null,{"name":"bancholilimon","from":[-1,-1],"color":"grass"},{"name":"rafflesimon","from":null,"color":"fusion","fusionFrom":[[-1,-1],[1,-1]]}],[{"name":"nyokimon"},{"name":"budmon","from":[0,-1],"color":"grass"},{"name":"lalamon","from":[0,-1],"color":"grass"},{"name":"sunflowmon","from":[0,-1],"color":"grass"},{"name":"lilamon","from":[0,-1],"color":"grass"},{"name":"lotusmon","from":[0,-1],"color":"dark","from2":[1,-1],"color2":"grass"}],[null,null,null,{"name":"kabukimon","from":[-1,-1],"color":"grass"},{"name":"blossomon","from":[1,-1],"from2":[-1,-1],"color":"grass","color2":"grass"},{"name":"ceresmon","skins":["ceresmonbird"],"from":[0,-1],"from2":[1,-1],"color":"grass","color2":"grass"}],[{"name":"yuramon"},{"name":"tanemon","from":[0,-1],"color":"grass"},{"name":"alraumon","from":[0,-1],"color":"grass"},{"name":"vegimon","skins":["vegimonred"],"from":[0,-1],"color":"grass"},{"name":"oleamon","from":[0,-1],"color":"dark"},null,{"name":"rafflesimoncorrupted","from":[0,-2],"color":"dark"},null],[null,null,null,{"name":"zassoumon","from":[-1,-1],"color":"grass"},{"name":"ajatarmon","from":[0,-1],"color":"grass","from2":[1,-1],"color2":"dark"},{"name":"hydramon","from":[0,-1],"color":"grass","from2":[1,-1],"color2":"dark"},null,null],[null,null,{"name":"pomumon","from":[1,-1],"color":"grass"},{"name":"parasaumon","from":[0,-1],"color":"grass"},{"name":"tropiamon","from":[0,-1],"color":"grass"},{"name":"bloomlordmon","from":[0,-1],"color":"grass","from2":[-1,-1],"color2":"light"}],[{"name":"nyokimon"},{"name":"yokomon"},{"name":"floramon","from":[0,-1],"color":"grass"},{"name":"kiwimon","from":[-1,-1],"from2":[0,-1],"color":"grass","color2":"grass"},{"name":"sirenmon"},{"name":"ceresmonbird","skins":["ceresmon"],"from":[0,-1],"color":"grass"}],[null,null,null,null,{"name":"delumon","from":[-1,-1],"color":"grass"}]],"related":["woodmon","omegamonmm"]}
+{
+	"columns": [
+		[
+			null,
+			null,
+			{ "name": "palmonx", "color": "x", "from": [2, 0] },
+			{ "name": "togemonx", "color": "x" },
+			{ "name": "lilimonx", "color": "x" },
+			{ "name": "rosemonx", "color": "x" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "ponchomon", "color": "dark", "from": [1, -1] },
+			null,
+			{ "name": "bancholilimon", "from": [1, -1], "color": "grass" }
+		],
+		[
+			{ "name": "yuramon" },
+			{ "name": "tanemon", "from": [0, -1], "color": "grass" },
+			{ "name": "palmon", "from": [0, -1], "color": "grass" },
+			{ "name": "togemon", "from": [0, -1], "color": "grass" },
+			{ "name": "lilimon", "from": [0, -1], "color": "grass" },
+			{
+				"name": "rosemon",
+				"from": [0, -1],
+				"color": "grass",
+				"from2": [1, -1],
+				"color2": "grass"
+			},
+			{ "name": "rosemonbm", "color": "mode" }
+		],
+		[
+			{ "name": "nyokimon" },
+			{ "name": "budmon", "from": [0, -1], "color": "grass" },
+			{ "name": "lalamon", "from": [0, -1], "color": "grass" },
+			{ "name": "sunflowmon", "from": [0, -1], "color": "grass" },
+			{ "name": "lilamon", "from": [0, -1], "color": "grass" },
+			{
+				"name": "lotusmon",
+				"from": [0, -1],
+				"color": "dark",
+				"from2": [1, -1],
+				"color2": "grass"
+			},
+			{
+				"name": "rafflesimon",
+				"from": null,
+				"color": "fusion",
+				"fusionFrom": [
+					[-1, -1],
+					[0, -1]
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "kabukimon", "from": [-1, -1], "color": "grass" },
+			{
+				"name": "blossomon",
+				"from": [1, -1],
+				"from2": [-1, -1],
+				"color": "grass",
+				"color2": "grass"
+			}
+		],
+		[
+			{ "name": "yuramon" },
+			{ "name": "tanemon", "from": [0, -1], "color": "grass" },
+			{ "name": "alraumon", "from": [0, -1], "color": "grass" },
+			{
+				"name": "vegimon",
+				"skins": ["vegimonred"],
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{ "name": "oleamon", "from": [0, -1], "color": "dark" },
+			{
+				"name": "ceresmon",
+				"skins": ["ceresmonbird"],
+				"from2": [-1, -1],
+				"color": "grass",
+				"color2": "grass"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "zassoumon", "from": [-1, -1], "color": "grass" },
+			{
+				"name": "ajatarmon",
+				"from": [0, -1],
+				"color": "grass",
+				"from2": [1, -1],
+				"color2": "dark"
+			},
+			{
+				"name": "hydramon",
+				"from": [0, -1],
+				"color": "grass",
+				"from2": [1, -1],
+				"color2": "dark"
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "pomumon", "from": [1, -1], "color": "grass" },
+			{ "name": "parasaumon", "from": [0, -1], "color": "grass" },
+			{ "name": "tropiamon", "from": [0, -1], "color": "grass" },
+			{
+				"name": "bloomlordmon",
+				"from": [0, -1],
+				"color": "grass",
+				"from2": [-1, -1],
+				"color2": "light"
+			}
+		],
+		[
+			{ "name": "nyokimon" },
+			{ "name": "yokomon" },
+			{ "name": "floramon", "from": [0, -1], "color": "grass" },
+			{
+				"name": "kiwimon",
+				"from": [-1, -1],
+				"from2": [0, -1],
+				"color": "grass",
+				"color2": "grass"
+			},
+			{ "name": "sirenmon" },
+			{
+				"name": "ceresmonbird",
+				"skins": ["ceresmon"],
+				"from": [0, -1],
+				"from2": [1, -1],
+				"color": "grass",
+				"color2": "grass"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "delumon", "from": [-1, -1], "color": "grass" }
+		]
+	],
+	"related": ["woodmon", "omegamonmm"]
+}

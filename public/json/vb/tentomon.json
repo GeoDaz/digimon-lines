@@ -1,1 +1,46 @@
-{"size":8,"columns":[[null,null,null,null,{"name":"megakabuterimonblue","from":[1,-1]},null,null,null],[null,null,null,{"name":"kabuterimon","from":[1,-1]},{"name":"megakabuterimon","from":[0,-1]},{"name":"herculeskabuterimon","from":[0,-1]},null,null],[{"name":"bubbmon","from":null},{"name":"mochimon","from":[0,-1]},{"name":"tentomon","from":[0,-1]},{"name":"kuwagamon","from":[0,-1]},{"name":"okuwagamon","from":[0,-1]},{"name":"grankuwagamon","from":[0,-1]},null,null],[null,null,null,{"name":"snimon","from":null},{"name":"scorpiomon","from":[0,-1],"color":"dark"},{"name":"ancientbeetlemon","from":[0,-1]},null,null],[null,null,null,{"name":"ballistamon","from":[-2,-1]},{"name":"atlurballistamon","from":[0,-1]},{"name":"tyrantkabuterimon","from":[0,-1]},null,null],[null,null,null,null,{"name":"rhinokabuterimon","from":[-1,-1]},null,null,null],[null,null,null,null,null,null,null,null]]}
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "megakabuterimonblue", "from": [1, -1] },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "kabuterimon", "from": [1, -1] },
+			{ "name": "megakabuterimon", "from": [0, -1] },
+			{ "name": "herculeskabuterimon", "from": [0, -1] }
+		],
+		[
+			{ "name": "bubbmon", "from": null },
+			{ "name": "mochimon", "from": [0, -1] },
+			{ "name": "tentomon", "from": [0, -1] },
+			{ "name": "kuwagamon", "from": [0, -1] },
+			{ "name": "okuwagamon", "from": [0, -1] },
+			{ "name": "grankuwagamon", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "snimon", "from": null },
+			{ "name": "scorpiomon", "from": [0, -1], "color": "dark" },
+			{ "name": "ancientbeetlemon", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "ballistamon", "from": [-2, -1] },
+			{ "name": "atlurballistamon", "from": [0, -1] },
+			{ "name": "tyrantkabuterimon", "from": [0, -1] }
+		],
+		[null, null, null, null, { "name": "rhinokabuterimon", "from": [-1, -1] }, null]
+	]
+}

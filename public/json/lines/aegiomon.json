@@ -6,6 +6,7 @@
 			null,
 			{
 				"name": "oryxmon",
+				"color": "light",
 				"from": [3, -1]
 			},
 			{
@@ -42,7 +43,7 @@
 			},
 			{
 				"name": "pajiramon",
-				"from": [-1, -1]
+				"from2": [-1, -1]
 			}
 		],
 		[
@@ -106,10 +107,12 @@
 			null,
 			{
 				"name": "aegiochusmongreen",
+				"color": "grass",
 				"from": [-1, 0]
 			},
 			{
-				"name": "ceresmon"
+				"name": "ceresmon",
+				"color": "grass"
 			}
 		],
 		[
