@@ -1,0 +1,39 @@
+{
+	"size": 8,
+	"columns": [
+		[null, null, null, null, { "name": "gigasmon", "from": [1, -1] }, null],
+		[
+			null,
+			null,
+			null,
+			{ "name": "golemon", "from": [1, -1] },
+			{ "name": "volcamon", "from": [0, -1] },
+			{ "name": "ancientvolcamon", "from": [0, -1] }
+		],
+		[
+			{ "name": "sunamon", "from": null },
+			{ "name": "goromon", "from": [0, -1] },
+			{ "name": "sunarizamon", "from": [0, -1] },
+			{ "name": "tortamon", "from": [0, -1] },
+			{ "name": "gogmamon", "from": [0, -1], "from2": null },
+			{ "name": "banchogolemon", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "cyclomon", "from": [-1, -1] },
+			{ "name": "groundramon", "from": [0, -1], "from2": null },
+			{ "name": "breakdramon", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "ankylomon", "from": [-2, -1] },
+			{ "name": "stegomon", "from": [0, -1] },
+			{ "name": "spinomon", "from": [0, -1] }
+		],
+		[null, null, null, null, { "name": "triceramon", "from": [-1, -1] }, null]
+	]
+}

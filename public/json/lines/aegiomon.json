@@ -1,163 +1,160 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "moosemon",
-                "color": "ice",
-                "from": [
-                    3,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "oryxmon",
-                "from": [
-                    2,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "sheepmon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "pajiramon"
-            }
-        ],
-        [
-            {
-                "name": "punimon"
-            },
-            {
-                "name": "tsunomon"
-            },
-            {
-                "name": "pillowmon"
-            },
-            {
-                "name": "aegiomon"
-            },
-            {
-                "name": "aegiochusmon"
-            },
-            {
-                "name": "bacchusmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "aegiochusmonholly",
-                "color": "light",
-                "from": [
-                    -1,
-                    0
-                ]
-            },
-            {
-                "name": "jupitermon",
-                "color": "light"
-            },
-            {
-                "name": "jupitermonwrath",
-                "color": "mode"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "aegiochusmondark",
-                "color": "dark",
-                "from": [
-                    -1,
-                    0
-                ]
-            },
-            {
-                "name": "plutomon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "aegiochusmongreen",
-                "from": [
-                    -1,
-                    0
-                ]
-            },
-            {
-                "name": "ceresmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "aegiochusmonblue",
-                "from": [
-                    -1,
-                    0
-                ]
-            },
-            {
-                "name": "vulcanusmon",
-                "color": "fire"
-            }
-        ]
-    ],
-    "_commented": [
-        "If Bacchusmon had respected the lore of its god inspiration, it should be part of this line. But, the digimon is not inspired on satyr unlike Aegiomon",
-        "Aegiochusmon forms can make think to other gods, Light still to Jupitermon, but Dark to Plutomon, Green to Ceresmon and Blue to Vulcanusmon."
-    ],
-    "related": [
-        {
-            "name": "phascomon",
-            "for": "mephismon"
-        },
-        {
-            "name": "shortmon",
-            "for": "junomon"
-        },
-        {
-            "name": "labramon",
-            "from": "plutomon"
-        },
-        {
-            "name": "palmon",
-            "from": "ceresmon"
-        },
-        {
-            "name": "golemon",
-            "from": "vulcanusmon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "oryxmon",
+				"from": [3, -1]
+			},
+			{
+				"name": "mephismon",
+				"color": "dark"
+			},
+			{
+				"name": "gulfmon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "moosemon",
+				"color": "ice",
+				"from": [2, -1]
+			},
+			null,
+			{
+				"name": "kentaurosmon",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "sheepmon",
+				"from": [1, -1]
+			},
+			{
+				"name": "pajiramon",
+				"from": [-1, -1]
+			}
+		],
+		[
+			{
+				"name": "punimon"
+			},
+			{
+				"name": "tsunomon"
+			},
+			{
+				"name": "pillowmon"
+			},
+			{
+				"name": "aegiomon"
+			},
+			{
+				"name": "aegiochusmon"
+			},
+			{
+				"name": "bacchusmon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "aegiochusmonholly",
+				"color": "light",
+				"from": [-1, 0]
+			},
+			{
+				"name": "jupitermon",
+				"color": "light"
+			},
+			{
+				"name": "jupitermonwrath",
+				"color": "mode"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "aegiochusmondark",
+				"color": "dark",
+				"from": [-1, 0]
+			},
+			{
+				"name": "plutomon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "aegiochusmongreen",
+				"from": [-1, 0]
+			},
+			{
+				"name": "ceresmon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "aegiochusmonblue",
+				"from": [-1, 0]
+			},
+			{
+				"name": "vulcanusmon",
+				"color": "fire"
+			}
+		]
+	],
+	"_commented": [
+		"If Bacchusmon had respected the lore of its god inspiration, it should be part of this line. But, the digimon is not inspired on satyr unlike Aegiomon",
+		"Aegiochusmon forms can make think to other gods, Light still to Jupitermon, but Dark to Plutomon, Green to Ceresmon and Blue to Vulcanusmon."
+	],
+	"related": [
+		{
+			"name": "phascomon",
+			"from": "mephismon"
+		},
+		{
+			"name": "kudamon",
+			"from": "kentaurosmon"
+		},
+		{
+			"name": "shortmon",
+			"for": "junomon"
+		},
+		{
+			"name": "labramon",
+			"from": "plutomon"
+		},
+		{
+			"name": "palmon",
+			"from": "ceresmon"
+		},
+		{
+			"name": "golemon",
+			"from": "vulcanusmon"
+		}
+	]
 }

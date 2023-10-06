@@ -1,0 +1,53 @@
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "volcamon", "from": [1, -1], "color": "fire" },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "lavorvomon", "from": [1, -1], "color": "fire" },
+			{ "name": "volcdramon", "from": [0, -1], "color": "fire" },
+			{ "name": "ancientvolcamon", "from": [0, -1], "color": "fire" }
+		],
+		[
+			{ "name": "mokumon", "from": null },
+			{ "name": "demimeramon", "from": [0, -1], "color": "fire" },
+			{ "name": "vorvomon", "from": [0, -1], "color": "fire" },
+			{ "name": "birdramon", "from": [0, -1], "color": "fire" },
+			{ "name": "lavogaritamon", "from": [0, -1], "color": "fire" },
+			{ "name": "volcanicdramon", "from": [0, -1], "color": "fire" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "lynxmon", "from": [-1, -1], "color": "fire" },
+			{ "name": "flaremon", "from": [0, -1], "color": "fire" },
+			{ "name": "marsmon", "from": [0, -1], "color": "fire" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "meramon", "from": [-2, -1], "color": "fire" },
+			{ "name": "bluemeramon", "from": [0, -1], "color": "fire" },
+			{ "name": "shroudmon", "from": [0, -1], "color": "fire" }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "deathmeramon", "from": [-1, -1], "color": "fire" },
+			null
+		]
+	]
+}
