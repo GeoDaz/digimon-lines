@@ -47,6 +47,15 @@
                     -1,
                     -1
                 ]
+            },
+            null,
+            {
+                "name": "beelstarmon",
+                "color": "dark",
+                "from": [
+                    0,
+                    -2
+                ]
             }
         ],
         [
@@ -60,6 +69,15 @@
                     -1,
                     0
                 ]
+            },
+            null,
+            {
+                "name": "beelstarmonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
             }
         ]
     ],
@@ -67,7 +85,7 @@
         "gatomon",
         {
             "name": "impmon",
-            "for": "beelstarmon"
+            "from": "beelstarmon"
         }
     ]
 }

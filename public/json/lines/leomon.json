@@ -67,7 +67,9 @@
 			},
 			{
 				"name": "dinotigermon",
-				"color": "x"
+				"color": "x",
+				"color2": "ice",
+				"from2": [1, -1]
 			}
 		],
 		[
@@ -75,9 +77,14 @@
 			null,
 			null,
 			null,
-			null,
 			{
-				"name": "regulumon",
+				"name": "skullbaluchimon",
+				"color": "ice",
+				"from": [1, -1]
+			},
+			{
+				"name": "baihumon",
+				"color": "ice",
 				"from": [1, -1]
 			}
 		],
@@ -113,8 +120,7 @@
 			null,
 			null,
 			{
-				"name": "baihumon",
-				"color": "ice",
+				"name": "regulumon",
 				"from": [-1, -1]
 			}
 		],

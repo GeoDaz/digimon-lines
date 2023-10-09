@@ -4,7 +4,13 @@
             null,
             null,
             null,
-            null,
+            {
+                "name": "ginkakumon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
             null,
             {
                 "name": "minervamonx",
@@ -26,15 +32,14 @@
                 "name": "iguneetmon"
             },
             {
-                "name": "coatlmon",
-                "color": "light",
+                "name": "kinkakumon"
+            },
+            {
+                "name": "sandiramon",
                 "from2": [
                     1,
                     -1
                 ]
-            },
-            {
-                "name": "sandiramon"
             },
             {
                 "name": "minervamon",
@@ -54,14 +59,18 @@
                     -1
                 ]
             },
-            null,
             {
-                "name": "orochimon",
-                "color": "dark",
-                "from": [
+                "name": "coatlmon",
+                "color": "light",
+                "color2": "light",
+                "from2": [
                     -1,
                     -1
                 ]
+            },
+            {
+                "name": "orochimon",
+                "color": "dark"
             },
             {
                 "name": "nidhoggmon",
@@ -87,6 +96,10 @@
         {
             "name": "gatomon",
             "from": "minervamon"
+        },
+        {
+            "name": "duskmon",
+            "for": "bagramon"
         },
         {
             "name": "negamon",

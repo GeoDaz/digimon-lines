@@ -5,19 +5,6 @@
             null,
             null,
             {
-                "name": "shootingstarmon",
-                "color": "gold",
-                "from": [
-                    2,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
                 "name": "starmonx",
                 "color": "x",
                 "from": [
@@ -65,6 +52,19 @@
                 "color": "dark",
                 "from": [
                     -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shootingstarmon",
+                "color": "gold",
+                "from": [
+                    -2,
                     -1
                 ]
             }

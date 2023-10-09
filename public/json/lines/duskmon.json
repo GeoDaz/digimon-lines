@@ -51,21 +51,10 @@
             null,
             null,
             {
-                "name": "ginkakumon",
+                "name": "fangmon",
+                "color": "dark",
                 "from": [
                     -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "kinkakumon",
-                "from": [
-                    -2,
                     -1
                 ]
             }
@@ -81,9 +70,29 @@
             "for": "gaomon"
         },
         {
+            "name": "loogamon",
+            "from": "fangmon"
+        },
+        {
+            "name": "labramon",
+            "for": "cerberumon"
+        },
+        {
+            "name": "iguneetmon",
+            "for": "ginkakumon"
+        },
+        {
             "name": "negamon",
             "for": "eyesmon"
         },
-        "dracmon"
+        "dracmon",
+        {
+            "name": "penmon",
+            "for": "frosvelgrmon"
+        },
+        {
+            "name": "biyomon",
+            "for": "ornismon"
+        }
     ]
 }

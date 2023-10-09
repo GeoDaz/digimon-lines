@@ -32,7 +32,7 @@
 			null,
 			null,
 			{ "name": "yanmamon", "from": [-1, -1] },
-			{ "name": "anomalocarimon", "from": [0, -1] },
+			{ "name": "anomalocarimon", "from": [0, -1], "from2": [1, -1] },
 			null
 		],
 		[
@@ -40,22 +40,19 @@
 			null,
 			null,
 			{ "name": "sandyanmamon", "from": [1, -1], "from2": null },
-			{ "name": "scorpiomon", "from": [0, -1], "from2": [1, -1] },
-			null
+			{ "name": "anomalocarimonx", "from": [-1, 0], "color": "x" }
 		],
 		[
 			null,
 			null,
 			{ "name": "dokunemon", "from": [-7, -1] },
 			{ "name": "snimon", "from": [0, -1] },
-			{ "name": "climbmon", "from": [0, -1] },
-			null
+			{ "name": "scorpiomon", "from": [0, -1], "from2": [-1, -1], "color": "dark" }
 		]
 	],
 	"related": [
-		{ "name": "tentomon", "from": "snimon" },
+		{ "name": "tentomon", "for": "kuwagamon" },
 		{ "name": "wormmon", "from": "hudiemon" },
-		{ "name": "pulsemon", "from": "climbmon" },
 		"fairymon",
 		{
 			"name": "crabmon",

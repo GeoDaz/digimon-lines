@@ -5,8 +5,20 @@
 			null,
 			null,
 			{
-				"name": "shadramon",
-				"color": "fire",
+				"name": "mothmon",
+				"from": [3, -1]
+			},
+			{
+				"name": "butterflamon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "hudiemon",
+				"color": "human",
 				"from": [2, -1]
 			},
 			{
@@ -22,8 +34,8 @@
 			null,
 			null,
 			{
-				"name": "hudiemon",
-				"color": "human",
+				"name": "shadramon",
+				"color": "fire",
 				"from": [1, -1]
 			},
 			{
@@ -89,8 +101,26 @@
 			null,
 			null,
 			{
-				"name": "searchmon",
+				"name": "exermon",
 				"from": [-2, -1]
+			},
+			{
+				"name": "climbmon"
+			},
+			{
+				"name": "shivamon",
+				"from2": [1, -1],
+				"color": "light",
+				"olor2": "light"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "searchmon",
+				"from": [-3, -1]
 			},
 			{
 				"name": "kongoumon",
@@ -103,21 +133,9 @@
 			null,
 			{
 				"name": "pucchiemon",
+				"from": [-4, -1],
 				"color": "light",
-				"skins": ["pucchiemongreen"],
-				"from": [-3, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "mothmon",
-				"from": [-4, -1]
-			},
-			{
-				"name": "butterflamon"
+				"skins": ["pucchiemongreen"]
 			}
 		]
 	],
@@ -131,13 +149,14 @@
 			"name": "fanbeemon",
 			"for": "morphomon"
 		},
+		"fairymon",
 		{
 			"name": "gatomon",
 			"from": "butterflamon"
 		},
 		{
 			"name": "pulsemon",
-			"for": "exermon"
+			"from": "exermon"
 		}
 	]
 }
