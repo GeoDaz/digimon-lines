@@ -6,7 +6,7 @@
 			null,
 			null,
 			null,
-			{ "name": "wisemon", "from": [1, -1], "color": "default" },
+			{ "name": "wisemon", "from": [1, -1]},
 			null
 		],
 		[
@@ -37,17 +37,10 @@
 			null,
 			null,
 			null,
-			{ "name": "meramon", "from": [-2, -1], "color": "fire" },
-			{ "name": "deathmeramon", "from": [0, -1], "color": "fire" },
-			{ "name": "boltmon", "from": [0, -1], "color": "electric" }
+			{ "name": "flamewizardmon", "from": [-2, -1], "color": "fire" },
+			{ "name": "mistymon", "from": [0, -1] },
+			{ "name": "dynasmon", "from": [0, -1] }
 		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{ "name": "bluemeramon", "from": [-1, -1], "color": "ice" },
-			null
-		]
+		[null, null, null, null, { "name": "deathmeramon", "from": [-1, -1], "color": "fire"  }, null]
 	]
 }

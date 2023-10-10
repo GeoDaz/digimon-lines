@@ -1,65 +1,135 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mailbirdramon",
+				"color": "dark",
+				"from": [1, -1]
+			},
             {
-                "name": "mailbirdramon",
-                "color": "dark",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "bommon"
+                "name": "metalgreymonb3",
+                "color": "fusion"
             },
             {
-                "name": "missimon"
-            },
-            {
-                "name": "jazamon"
-            },
-            {
-                "name": "jazardmon"
-            },
-            {
-                "name": "jazarichmon"
-            },
-            {
-                "name": "metallicdramon"
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "sparrowmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "raptorsparrowmon",
+                "name": "zeekgreymon",
                 "color": "gold"
             }
-        ]
-    ],
-    "related": [
-        "vorvomon",
-        "blucomon",
-        "espimon",
-        {
-            "name": "fairymon",
-            "for": "jetsilphymon"
-        },
-        {
-            "name": "shoutmon",
-            "for": "shoutmonx5"
-        }
-    ]
+		],
+		[
+			{
+				"name": "bommon"
+			},
+			{
+				"name": "missimon"
+			},
+			{
+				"name": "jazamon"
+			},
+			{
+				"name": "jazardmon"
+			},
+			{
+				"name": "jazarichmon"
+			},
+			{
+				"name": "metallicdramon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "sparrowmon",
+				"from": [-1, -1],
+				"color": "gold"
+			},
+			{
+				"name": "raptorsparrowmon",
+				"color": "gold"
+			},
+			{
+				"name": "peacockmon",
+				"color": "gold"
+			},
+			{
+				"name": "crossmon",
+				"color": "gold"
+			},
+			{
+				"name": "aegisdramon",
+				"color": "fusion"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "kokuwamon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "pteranomon"
+			},
+			{
+				"name": "cargodramon"
+			},
+			{
+				"name": "brigadramon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "kokuwamonx",
+				"color": "x",
+				"from": [-1, 0]
+			},
+			{
+				"name": "pteranomonx",
+				"color": "x"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "greymon",
+			"for": "greymonb3"
+		},
+		"aegisdramon",
+		"vorvomon",
+		"blucomon",
+		{
+			"name": "tentomon",
+			"for": "bladekuwagamon"
+		},
+		{
+			"name": "commandramon",
+			"from": "cargodramon"
+		},
+		{
+			"name": "shoutmon",
+			"for": "shoutmonx5"
+		},
+		{
+			"name": "fairymon",
+			"for": "jetsilphymon"
+		},
+		"espimon",
+		{
+			"name": "garurumon",
+			"for": "machgaogamon"
+		},
+		{
+			"name": "aegiomon",
+			"for": "aegiochusmonblue"
+		},
+		{
+			"name": "terriermon",
+			"for": "rapidmon"
+		}
+	]
 }

@@ -7,10 +7,7 @@
 				"name": "impmonx",
 				"color": "x",
 				"size": 2,
-				"from": [
-					2,
-					0
-				]
+				"from": [2, 0]
 			},
 			{
 				"name": "wizardmonx",
@@ -26,18 +23,12 @@
 				{
 					"name": "beelzebumonx",
 					"color": "x",
-					"from": [
-						0.5,
-						-1
-					]
+					"from": [0.5, -1]
 				},
 				{
 					"name": "beelstarmonx",
 					"color": "x",
-					"from": [
-						-0.5,
-						-1
-					]
+					"from": [-0.5, -1]
 				}
 			]
 		],
@@ -68,21 +59,13 @@
 				{
 					"color": "dark",
 					"name": "beelzebumon",
-					"from": [
-						0.5,
-						-1
-					],
-					"skins": [
-						"beelzebumon2"
-					]
+					"from": [0.5, -1],
+					"skins": ["beelzebumon2"]
 				},
 				{
 					"name": "beelstarmon",
 					"color": "dark",
-					"from": [
-						-0.5,
-						-1
-					]
+					"from": [-0.5, -1]
 				}
 			],
 			[
@@ -98,38 +81,20 @@
 			{
 				"name": "petitmamon",
 				"color": "dark",
-				"from": [
-					-1.5,
-					-1
-				]
+				"from": [-1.5, -1]
 			},
 			{
 				"name": "boogiemon",
 				"color": "dark",
-				"from": [
-					-1.5,
-					-1
-				]
+				"from": [-1.5, -1]
 			},
 			{
 				"name": "phelesmon",
 				"color": "dark"
 			},
 			{
-				"name": "demon",
-				"color": "dark",
-				"skins": [
-					"demon2"
-				]
-			},
-			null,
-			{
-				"name": "demonsu",
-				"color": "fusion",
-				"from": [
-					0,
-					-2
-				]
+				"name": "barbamon",
+				"color": "dark"
 			}
 		],
 		[
@@ -139,12 +104,9 @@
 			null,
 			null,
 			{
-				"name": "demonx",
+				"name": "barbamonx",
 				"color": "x",
-				"from": [
-					-1,
-					0
-				]
+				"from": [-1, 0]
 			}
 		]
 	],
