@@ -7,26 +7,17 @@
 			{
 				"name": "tobucatmon",
 				"color": "x",
-				"from": [
-					1,
-					-1
-				]
+				"from": [1, -1]
 			},
 			{
 				"name": "nefertimonx",
 				"color": "x",
-				"from": [
-					1,
-					-1
-				]
+				"from": [1, -1]
 			},
 			{
 				"name": "magnadramonx",
 				"color": "x",
-				"from": [
-					1,
-					-1
-				]
+				"from": [1, -1]
 			},
 			null
 		],
@@ -36,10 +27,7 @@
 			{
 				"name": "salamonx",
 				"color": "x",
-				"from": [
-					4,
-					0
-				]
+				"from": [4, 0]
 			},
 			{
 				"name": "gatomonx",
@@ -64,10 +52,7 @@
 			{
 				"name": "ophanimonfmx",
 				"color": "dark",
-				"from": [
-					-1,
-					-1
-				]
+				"from": [-1, -1]
 			},
 			null
 		],
@@ -77,19 +62,13 @@
 			null,
 			{
 				"name": "ganvivormon",
-				"from": [
-					2,
-					-1
-				]
+				"from": [2, -1]
 			},
 			null,
 			{
 				"name": "lovelyangemon",
 				"color": "light",
-				"from": [
-					2,
-					-1
-				]
+				"from": [2, -1]
 			},
 			null
 		],
@@ -100,26 +79,17 @@
 			{
 				"name": "lynxmon",
 				"color": "fire",
-				"from": [
-					1,
-					-1
-				]
+				"from": [1, -1]
 			},
 			{
 				"name": "nefertimon",
 				"color": "light",
-				"from": [
-					1,
-					-1
-				]
+				"from": [1, -1]
 			},
 			{
 				"name": "magnadramon",
 				"color": "light",
-				"from": [
-					1,
-					-1
-				]
+				"from": [1, -1]
 			},
 			null
 		],
@@ -158,18 +128,12 @@
 			null,
 			{
 				"name": "betsumon",
-				"from": [
-					-1,
-					-1
-				]
+				"from": [-1, -1]
 			},
 			{
 				"name": "ophanimonfm",
 				"color": "dark",
-				"from": [
-					-1,
-					-1
-				]
+				"from": [-1, -1]
 			},
 			null
 		],
@@ -180,36 +144,21 @@
 			null,
 			{
 				"name": "butterflamon",
-				"from": [
-					-2,
-					-1
-				]
+				"from": [-2, -1]
 			},
 			{
 				"name": "mastemon",
 				"color": "fusion",
-				"from": [
-					-2,
-					-1
-				],
+				"from": [-2, -1],
 				"color2": "fusion",
-				"from2": [
-					2,
-					-1
-				]
+				"from2": [2, -1]
 			},
 			{
 				"name": "ordinemon",
 				"color": "fusion",
-				"from": [
-					-1,
-					-1
-				],
+				"from": [-1, -1],
 				"color2": "fusion",
-				"from2": [
-					7,
-					-1
-				]
+				"from2": [6, -1]
 			}
 		],
 		[
@@ -220,10 +169,7 @@
 			{
 				"name": "silphymon",
 				"color": "fusion",
-				"from": [
-					-3,
-					-1
-				]
+				"from": [-3, -1]
 			},
 			{
 				"name": "valkyrimon"
@@ -237,13 +183,8 @@
 			{
 				"name": "gatomonb",
 				"color": "dark",
-				"from": [
-					-4,
-					-1
-				],
-				"skins": [
-					"gatomonbuver"
-				]
+				"from": [-4, -1],
+				"skins": ["gatomonbuver"]
 			},
 			{
 				"name": "ladydevimon",
@@ -262,10 +203,7 @@
 			{
 				"name": "ladydevimonx",
 				"color": "x",
-				"from": [
-					-1,
-					0
-				]
+				"from": [-1, 0]
 			},
 			{
 				"name": "lilithmonx",
@@ -278,10 +216,7 @@
 			null,
 			{
 				"name": "mikemon",
-				"from": [
-					-6,
-					-1
-				]
+				"from": [-6, -1]
 			},
 			{
 				"name": "bastemon"
@@ -298,32 +233,11 @@
 			null,
 			{
 				"name": "mihiramon",
-				"from": [
-					-1,
-					-1
-				]
+				"from": [-1, -1],
+				"from2": [1.5, -1]
 			},
 			{
-				"name": "leopardmon",
-				"color": "light",
-				"skins": [
-					"leopardmonlm"
-				]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "leopardmonx",
-				"color": "x",
-				"from": [
-					-1,
-					0
-				]
+				"name": "baihumon"
 			}
 		],
 		[
@@ -331,10 +245,7 @@
 			{
 				"name": "meicoonyaromon",
 				"size": 2,
-				"from": [
-					-9.5,
-					-1
-				]
+				"from": [-9.5, -1]
 			},
 			{
 				"name": "meicoosalamon",
@@ -348,36 +259,24 @@
 				{
 					"name": "meicrackmonvm",
 					"color": "dark",
-					"from": [
-						0.5,
-						-1
-					]
+					"from": [0.5, -1]
 				},
 				{
 					"name": "meicrackmon",
 					"color": "light",
-					"from": [
-						-0.5,
-						-1
-					]
+					"from": [-0.5, -1]
 				}
 			],
 			[
 				{
 					"name": "raguelmon",
 					"color": "dark",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				},
 				{
 					"name": "rasielmon",
 					"color": "light",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				}
 			]
 		]

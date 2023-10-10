@@ -60,29 +60,9 @@
             null,
             null,
             {
-                "name": "pawnchessmonblack",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "skullknightmon"
-            },
-            {
-                "name": "darkknightmon"
-            },
-            {
-                "name": "craniummon"
-            }
-        ],
-        [
-            null,
-            null,
-            {
                 "name": "kotemon",
                 "from": [
-                    -2,
+                    -1,
                     -1
                 ]
             },
@@ -99,19 +79,45 @@
         [
             null,
             null,
+            {
+                "name": "pawnchessmonblack",
+                "color": "dark",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "skullknightmon",
+                "color": "dark"
+            },
+            {
+                "name": "darkknightmon",
+                "color": "dark"
+            },
+            {
+                "name": "craniummon"
+            }
+        ],
+        [
+            null,
+            null,
             null,
             {
-                "name": "yaksamon",
+                "name": "loweemon",
+                "color": "dark",
                 "from": [
                     -1,
                     -1
                 ]
             },
             {
-                "name": "kyukimon"
+                "name": "raihimon",
+                "color": "dark"
             },
             {
-                "name": "leopardmon"
+                "name": "leopardmon",
+                "color": "light"
             }
         ],
         [
@@ -121,7 +127,7 @@
             null,
             null,
             {
-                "name": "kentaurosmon",
+                "name": "gankoomon",
                 "from": [
                     -1,
                     -1

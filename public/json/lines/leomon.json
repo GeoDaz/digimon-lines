@@ -23,7 +23,8 @@
 			},
 			{
 				"name": "bancholeomon",
-				"size": 2
+				"size": 2,
+				"from2": [2.25, -1]
 			},
 			[
 				[
@@ -51,40 +52,34 @@
 		[
 			null,
 			null,
+			null,
+			null,
 			{
-				"name": "spadamon",
-				"color": "ice",
-				"from": [-2, -1]
+				"name": "grapleomon",
+				"size": 2,
+				"from": [2.5, -1]
 			},
-			{
-				"name": "leomonx",
-				"color": "x",
-				"from": [2, 0]
-			},
-			{
-				"name": "panjyamonx",
-				"color": "x"
-			},
-			{
-				"name": "dinotigermon",
-				"color": "x",
-				"color2": "ice",
-				"from2": [1, -1]
-			}
+			[
+				{
+					"name": "heavyleomon",
+					"from": [0.5, -1],
+					"from2": [-1.75, -1]
+				},
+				{
+					"name": "marsmon",
+					"color": "fire",
+					"from": [-0.5, -1]
+				}
+			]
 		],
 		[
 			null,
 			null,
 			null,
 			null,
+			null,
 			{
-				"name": "skullbaluchimon",
-				"color": "ice",
-				"from": [1, -1]
-			},
-			{
-				"name": "baihumon",
-				"color": "ice",
+				"name": "regulumon",
 				"from": [1, -1]
 			}
 		],
@@ -116,11 +111,20 @@
 		[
 			null,
 			null,
-			null,
-			null,
+			{
+				"name": "spadamon",
+				"color": "ice",
+				"from": [-1, -1]
+			},
 			null,
 			{
-				"name": "regulumon",
+				"name": "skullbaluchimon",
+				"color": "ice",
+				"from": [-1, -1]
+			},
+			{
+				"name": "baihumon",
+				"color": "ice",
 				"from": [-1, -1]
 			}
 		],
@@ -128,30 +132,33 @@
 			null,
 			null,
 			null,
-			[
-				null,
-				{
-					"name": "madleomon",
-					"color": "dark",
-					"from": [2, -1]
-				}
-			],
 			{
-				"name": "grapleomon",
-				"size": 2,
-				"from": [-2.5, -1]
+				"name": "leomonx",
+				"color": "x",
+				"from": [-2, 0]
 			},
-			[
-				{
-					"name": "heavyleomon",
-					"from": [0.5, -1]
-				},
-				{
-					"name": "marsmon",
-					"color": "fire",
-					"from": [-0.5, -1]
-				}
-			]
+			{
+				"name": "panjyamonx",
+				"color": "x"
+			},
+			{
+				"name": "dinotigermon",
+				"color": "x",
+				"color2": "ice",
+				"from2": [-1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "leopardmonx",
+				"color": "x",
+				"from": [1, 0]
+			}
 		],
 		[
 			null,
@@ -159,78 +166,81 @@
 			{
 				"name": "elecmonb",
 				"color": "dark",
-				"size": 2,
-				"from": [-4.5, -1]
+				"from": [-4, -1]
 			},
 			{
 				"name": "loweemon",
-				"color": "dark",
-				"size": 2
+				"color": "dark"
 			},
-			[
-				{
-					"name": "jagerloweemon",
-					"color": "dark",
-					"from": [0.5, -1]
-				},
-				{
-					"name": "raihimon",
-					"color": "dark",
-					"from": [-0.5, -1]
-				}
-			],
-			[
-				{
-					"name": "ancientsphinxmon",
-					"color": "dark"
-				}
-			]
+			{
+				"name": "raihimon",
+				"color": "dark"
+			},
+			{
+				"name": "leopardmon",
+				"color": "light",
+				"skins": ["leopardmonlm"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "madleomon",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			{
+				"name": "jagerloweemon",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			{
+				"name": "ancientsphinxmon",
+				"color": "dark"
+			}
 		],
 		[
 			{
-				"name": "mokumon",
-				"size": 2
+				"name": "mokumon"
 			},
 			{
 				"name": "sunmon",
-				"size": 2,
 				"color": "fire"
 			},
 			{
 				"name": "coronamon",
-				"size": 2,
 				"color": "fire"
 			},
 			{
 				"name": "firamon",
-				"size": 2,
 				"color": "fire"
 			},
 			{
 				"name": "flaremon",
-				"size": 2,
 				"color": "fire"
 			},
-			[
-				{
-					"name": "apollomon",
-					"color": "fire",
-					"from": [0.5, -1]
-				},
-				{
-					"name": "apollomonwhispered",
-					"color": "dark",
-					"from": [-0.5, -1]
-				}
-			],
-			[
-				[
-					{
-						"name": "gracenovamon",
-						"color": "fusion"
-					}
-				]
-			]
+			{
+				"name": "apollomon",
+				"color": "fire"
+			},
+			{
+				"name": "gracenovamon",
+				"color": "fusion"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "apollomonwhispered",
+				"color": "dark",
+				"from": [-1, -1]
+			}
 		]
 	],
 	"related": [
@@ -253,7 +263,7 @@
 		},
 		{
 			"name": "gatomon",
-			"for": "leopardmon"
+			"for": "mihiramon"
 		},
 		{
 			"name": "pulsemon",
