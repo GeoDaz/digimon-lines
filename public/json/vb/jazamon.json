@@ -1,14 +1,14 @@
 {
 	"size": 8,
 	"columns": [
-		[null, null, null, null, { "name": "metallifekuwagamon", "from": [1, -1] }, null],
+		[null, null, null, null, { "name": "blimpmon", "from": [1, -1] }, null],
 		[
 			null,
 			null,
 			null,
-			{ "name": "bladekuwagamon", "from": [1, -1] },
-			{ "name": "bolgmon", "from": [0, -1] },
-			{ "name": "blitzgreymon", "from": [0, -1] }
+			{ "name": "mailbirdramon", "from": [1, -1] },
+			{ "name": "metalgreymonb3", "from": [0, -1] },
+			{ "name": "zeekgreymon", "from": [0, -1] }
 		],
 		[
 			{ "name": "bommon", "from": null },
@@ -22,7 +22,7 @@
 			null,
 			null,
 			null,
-			{ "name": "mailbirdramon", "from": [-1, -1] },
+			{ "name": "pteranomon", "from": [-1, -1] },
 			{ "name": "cargodramon", "from": [0, -1] },
 			{ "name": "brigadramon", "from": [0, -1] }
 		],
@@ -31,9 +31,9 @@
 			null,
 			null,
 			{ "name": "machmon", "from": [-2, -1] },
-			{ "name": "rebellimon", "from": null },
-			{ "name": "heavyleomon", "from": [0, -2] }
+			{ "name": "locomon", "from": null },
+			{ "name": "grandlocomon", "from": [0, -2] }
 		],
-		[null, null, null, null, { "name": "locomon", "from": [-1, -1] }, null]
+		[null, null, null, null, { "name": "rebellimon", "from": [-1, -1] }, null]
 	]
 }
