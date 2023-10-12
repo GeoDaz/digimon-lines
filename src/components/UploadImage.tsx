@@ -47,7 +47,7 @@ const UploadImage: React.FC<{
 			<input
 				type="file"
 				className="d-none"
-				accept="image/jpeg,image/png" //image/gif,
+				accept="image/jpeg,image/png,image/webp" //image/gif,
 				id="upload-image"
 				name="upload-image"
 				onChange={handleFiles}
