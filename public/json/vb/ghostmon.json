@@ -1,0 +1,46 @@
+{
+	"size": 8,
+	"columns": [
+		[null, null, null, null, { "name": "metalphantomon", "from": [1, -1] }, null],
+		[
+			null,
+			null,
+			null,
+			{ "name": "bakemon", "from": [1, -1] },
+			{ "name": "phantomon", "from": [0, -1] },
+			{ "name": "gokumon", "from": [0, -1] }
+		],
+		[
+			{ "name": "mokumon", "from": null },
+			{ "name": "demimeramon", "from": [0, -1], "color": "fire" },
+			{ "name": "ghostmon", "from": [0, -1], "color": "fire" },
+			{ "name": "meramon", "from": [0, -1], "color": "fire" },
+			{ "name": "bluemeramon", "from": [0, -1], "color": "fire" },
+			{ "name": "shroudmon", "from": [0, -1], "color": "fire" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "flamewizardmon", "from": [-1, -1], "color": "fire" },
+			{ "name": "deathmeramon", "from": [0, -1], "color": "fire" },
+			{ "name": "boltmon", "from": [0, -1], "color": "electric" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "musyamon", "from": [-2, -1] },
+			{ "name": "oboromon", "from": [0, -1] },
+			{ "name": "zanbamon", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "asuramon", "from": [-1, -1], "color": "fire" },
+			null
+		]
+	]
+}

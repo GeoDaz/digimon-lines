@@ -1,0 +1,103 @@
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pegasmon",
+				"from": [2, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pidmon",
+				"from": [1, -1]
+			},
+			{
+				"name": "magnaangemon"
+			},
+			{
+				"name": "slashangemon"
+			}
+		],
+		[
+			{
+				"name": "poyomon",
+				"size": 2
+			},
+			{
+				"name": "tokomon",
+				"size": 2
+			},
+			[
+				{
+					"name": "patamon",
+					"from": [0.5, -1]
+				},
+				{
+					"name": "demidevimon",
+					"from": [-0.5, -1]
+				}
+			],
+			[
+				{
+					"name": "angemon"
+				},
+				{
+					"name": "devimon"
+				}
+			],
+			[
+				{
+					"name": "baalmon",
+					"color": "fusion",
+					"color2": "fusion",
+					"from2": [1, -1]
+				},
+				{
+					"name": "lucemonfm",
+					"color": "fusion",
+					"color2": "fusion",
+					"from2": [-1, -1]
+				}
+			],
+			[
+				{
+					"name": "bagramon"
+				},
+				{
+					"name": "lucemonsm"
+				}
+			]
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "boogiemon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "phelesmon"
+			},
+			{
+				"name": "demon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pipismon",
+				"from": [-2, -1]
+			}
+		]
+	],
+	"related": ["armadillomon", "angemon", "ikkakumon"]
+}

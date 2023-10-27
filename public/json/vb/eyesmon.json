@@ -1,0 +1,39 @@
+{
+	"size": 8,
+	"columns": [
+		[null, null, null, null, { "name": "sephirothmon", "from": [1, -1] }, null],
+		[
+			null,
+			null,
+			null,
+			{ "name": "raremon", "from": [1, -1] },
+			{ "name": "rareraremon", "from": [0, -1] },
+			{ "name": "deathmonb", "from": [0, -1] }
+		],
+		[
+			{ "name": "kuramon", "from": null },
+			{ "name": "negamon", "from": [0, -1] },
+			{ "name": "soundbirdmon", "from": [0, -1] },
+			{ "name": "numemon", "from": [0, -1] },
+			{ "name": "digitamamon", "from": [0, -1] },
+			{ "name": "devitamamon", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "eyesmon", "from": [-1, -1] },
+			{ "name": "orochimon", "from": [0, -1] },
+			{ "name": "nidhoggmon", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "duskmon", "from": [-2, -1] },
+			{ "name": "velgrmon", "from": [0, -1] },
+			{ "name": "abbadomoncore", "from": [0, -1] }
+		],
+		[null, null, null, null, { "name": "skullsatamon", "from": [-1, -1] }, null]
+	]
+}

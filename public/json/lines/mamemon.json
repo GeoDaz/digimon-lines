@@ -116,10 +116,23 @@
             null,
             null,
             null,
+            null,
+            {
+                "name": "shootmon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
             {
                 "name": "nanimon",
                 "from": [
-                    -3,
+                    -4,
                     -1
                 ],
                 "skins": [
@@ -131,12 +144,17 @@
             }
         ],
         [
-            null,
-            null,
-            null,
+            {
+                "name": "yuramon"
+            },
+            {
+                "name": "tanemon"
+            },
+            {
+                "name": "dondokomon"
+            },
             {
                 "name": "igamon",
-                "from": null,
                 "skins": [
                     "kougamon"
                 ]
@@ -161,7 +179,7 @@
         },
         {
             "name": "pulsemon",
-            "for": "shootmon"
+            "from": "shootmon"
         }
     ]
 }
