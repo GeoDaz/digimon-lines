@@ -1,112 +1,116 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "monzaemon",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "leomon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "panjyamon",
-                "color": "ice"
-            },
-            {
-                "name": "saberleomon"
-            }
-        ],
-        [
-            {
-                "name": "popomon"
-            },
-            {
-                "name": "frimon"
-            },
-            {
-                "name": "liolmon"
-            },
-            {
-                "name": "liamon"
-            },
-            {
-                "name": "loaderliomon"
-            },
-            {
-                "name": "bancholeomon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "firamon",
-                "color": "fire",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "flaremon",
-                "color": "fire"
-            },
-            {
-                "name": "apollomon",
-                "color": "fire"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "grizzlymon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "grapleomon"
-            },
-            {
-                "name": "heavyleomon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "pandamon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        "leomon",
-        "bearmon"
-    ]
+	"title": "Bememory Special Beasts",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gracenovamon",
+				"color": "fusion",
+				"from": [1, 0]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "coronamon",
+				"from": [1, -1]
+			},
+			{
+				"name": "firamon"
+			},
+			{
+				"name": "flaremon"
+			},
+			{
+				"name": "apollomon"
+			}
+		],
+		[
+			{
+				"name": "frimon"
+			},
+			{
+				"name": "popomon"
+			},
+			{
+				"name": "liolmon"
+			},
+			{
+				"name": "liamon"
+			},
+			{
+				"name": "loaderliomon"
+			},
+			{
+				"name": "heavyleomon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "bearmon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "grizzlymon"
+			},
+			{
+				"name": "grapleomon"
+			},
+			{
+				"name": "callismon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "elecmon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "loweemon"
+			},
+			{
+				"name": "raihimon"
+			},
+			{
+				"name": "leopardmon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "leomon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "panjyamon"
+			},
+			{
+				"name": "saberleomon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "tlalocmon",
+				"color": "fusion",
+				"from": [-1, 0]
+			}
+		]
+	],
+	"related": ["bearmon", "leomon"]
 }
