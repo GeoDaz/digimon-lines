@@ -1,100 +1,115 @@
 {
-    "columns": [
-        [
-            {
-                "name": "puwamon"
-            },
-            {
-                "name": "pinamon"
-            },
-            {
-                "name": "falcomon"
-            },
-            {
-                "name": "diatrymon"
-            },
-            {
-                "name": "yatagaramon"
-            },
-            {
-                "name": "valdurmon"
-            },
-            {
-                "name": "chaosmonvm",
-                "color": "fusion"
-            },
-            {
-                "name": "ultimatechaosmon",
-                "color": "fusion"
-            }
-        ],
-        [
+	"columns": [
+		[
             null,
             null,
-            {
-                "name": "falcomon2",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "peckmon"
-            },
-            {
-                "name": "yatagaramon2"
-            },
-            {
-                "name": "ravemon"
-            },
-            {
-                "name": "ravemonbm",
-                "color": "mode"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "xiquemon",
-                "color": "marine",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "huankunmon",
-                "color": "marine"
-            },
-            {
-                "name": "xiangpengmon",
-                "color": "marine"
-            }
-        ]
-    ],
-    "related": [
-        "ultimatechaosmon",
+			{
+				"name": "falcomon",
+				"from": [2, -1]
+			},
+			{
+				"name": "diatrymon"
+			},
+			{
+				"name": "yatagaramon"
+			},
+			{
+				"name": "valdurmon"
+			},
+			{
+				"name": "chaosmonvm",
+				"color": "fusion"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "karatenmon",
+				"color": "dark",
+				"from": [1, -1]
+			},
+			{
+				"name": "ornismon",
+				"color": "dark",
+				"color2": "dark",
+				"from2": [-1, -1]
+			}
+		],
+		[
+			{
+				"name": "puwamon"
+			},
+			{
+				"name": "pinamon"
+			},
+			{
+				"name": "falcomon2"
+			},
+			{
+				"name": "peckmon"
+			},
+			{
+				"name": "yatagaramon2"
+			},
+			{
+				"name": "ravemon"
+			},
+			{
+				"name": "ravemonbm",
+				"color": "mode"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "xiquemon",
+				"color": "marine",
+				"from": [-1, -1]
+			},
+			{
+				"name": "huankunmon",
+				"color": "marine"
+			},
+			{
+				"name": "xiangpengmon",
+				"color": "marine"
+			}
+		]
+	],
+	"related": [
+		"ultimatechaosmon",
+		{
+			"name": "leomon",
+			"from": "chaosmonvm"
+		},
+		{
+			"name": "biyomon",
+			"from": "karatenmon"
+		},
+		{
+			"name": "hawkmon",
+			"from": "valdurmon"
+		},
+		{
+			"name": "hyokomon",
+			"for": "butenmon"
+		},
+		{
+			"name": "penmon",
+			"from": "xiquemon"
+		},
+		{
+			"name": "swimmon",
+			"from": "huankunmon"
+		},
         {
-            "name": "leomon",
-            "for": "chaosmonvm"
-        },
-        {
-            "name": "penmon",
-            "for": "xiquemon"
-        },
-        {
-            "name": "swimmon",
-            "for": "huankunmon"
-        },
-        {
-            "name": "biyomon",
-            "for": "karatenmon"
-        },
-        {
-            "name": "hawkmon",
-            "for": "hippogriffomon"
+            "name": "seadramon",
+            "for": "aequcedramon"
         }
-    ]
+	]
 }

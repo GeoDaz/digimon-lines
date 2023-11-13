@@ -199,27 +199,43 @@
 	],
 	"related": [
 		{
-			"name": "apocalymon",
-			"from": "metalseadramon"
+			"name": "aegisdramon"
 		},
 		{
-			"name": "aegisdramon"
+			"name": "apocalymon",
+			"from": "metalseadramon"
 		},
 		{
 			"name": "ogudomon",
 			"from": "leviamon"
 		},
 		{
+			"name": "gomamon",
+			"for": "plesiomon"
+		},
+		{
+			"name": "crabmon",
+			"for": "anomalocarimon"
+		},
+		{
+			"name": "swimmon",
+			"for": "coelamon"
+		},
+        {
+            "name": "falcomon",
+            "for": "xiangpengmon"
+        },
+		{
 			"name": "flarelizardmon",
 			"from": "megadramon"
 		},
 		{
 			"name": "commandramon",
-			"from": "darkdramon"
+			"for": "darkdramon"
 		},
 		{
 			"name": "angemon",
-			"from": "goldramon"
+			"for": "goldramon"
 		},
 		{
 			"name": "guilmon",
@@ -232,14 +248,6 @@
 		{
 			"name": "gatomon",
 			"for": "magnadramon"
-		},
-		{
-			"name": "gomamon",
-			"for": "plesiomon"
-		},
-		{
-			"name": "crabmon",
-			"for": "anomalocarimon"
 		}
 	]
 }

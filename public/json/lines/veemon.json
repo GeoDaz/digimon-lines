@@ -1,208 +1,166 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "veedramonb",
-                "from": [
-                    2,
-                    -1
-                ],
-                "color": "dark"
-            },
-            {
-                "name": "goldveedramon",
-                "color": "gold",
-                "from": [
-                    2,
-                    -2
-                ]
-            },
-            {
-                "name": "ulforceveedramonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "veedramon",
-                "from": [
-                    1,
-                    -1
-                ],
-                "skins": ["redveedramon"]
-            },
-            {
-                "name": "aeroveedramon"
-            },
-            {
-                "name": "ulforceveedramon"
-            },
-            null,
-            {
-                "name": "ulforceveedramonfm",
-                "color": "mode",
-                "from": [
-                    0,
-                    -2
-                ]
-            }
-        ],
-        [
-            {
-                "name": "chicomon"
-            },
-            {
-                "name": "chibimon"
-            },
-            {
-                "name": "veemon"
-            },
-            {
-                "name": "exveemon"
-            },
-            {
-                "name": "paildramon",
-                "color": "fusion"
-            },
-            {
-                "name": "imperialdramon"
-            },
-            {
-                "name": "imperialdramonfm",
-                "color": "mode"
-            },
-            {
-                "name": "imperialdramonpm",
-                "color": "fusion"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "exveemonb",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "dinobeemon",
-                "color": "fusion",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "imperialdramonb",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "imperialdramonfmb",
-                "color": "mode"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            [
-                {
-                    "name": "flamedramon",
-                    "color": "fire",
-                    "from": [
-                        -2,
-                        -1
-                    ]
-                },
-                {
-                    "name": "raidramon",
-                    "color": "electric",
-                    "from": [
-                        -3,
-                        -1
-                    ]
-                }
-            ],
-            {
-                "name": "sagittarimon",
-                "color": "fusion",
-                "color2": "fusion",
-                "from": [
-                    -0.5,
-                    -1
-                ],
-                "from2": [
-                    0.5,
-                    -1
-                ],
-                "size": 2
-            },
-            [{
-                "name": "magnamon",
-                "color": "gold",
-                "from": [
-                    0.5,
-                    -1
-                ]
-            }, {
-                "name": "magnamonx",
-                "color": "x",
-                "from": [
-                    -1,
-                    0
-                ]
-            }]
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "gargoylemon",
-                "color": "light",
-                "from": [
-                    -4,
-                    -1
-                ]
-            },
-            {
-                "name": "manticoremon",
-                "color": "light"
-            },
-            {
-                "name": "azulongmon",
-                "color": "light"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "wormmon",
-            "for": "paildramon"
-        },
-        "shoutmon",
-        "gumdramon",
-        {
-            "name": "greymon",
-            "for": "omegamon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "veedramonb",
+				"from": [2, -1],
+				"color": "dark"
+			},
+			{
+				"name": "goldveedramon",
+				"color": "gold",
+				"from": [2, -2]
+			},
+			{
+				"name": "ulforceveedramonx",
+				"color": "x",
+				"from": [1, 0]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "veedramon",
+				"from": [1, -1],
+				"skins": ["redveedramon"]
+			},
+			{
+				"name": "aeroveedramon"
+			},
+			{
+				"name": "ulforceveedramon"
+			},
+			null,
+			{
+				"name": "ulforceveedramonfm",
+				"color": "mode",
+				"from": [0, -2]
+			}
+		],
+		[
+			{
+				"name": "chicomon"
+			},
+			{
+				"name": "chibimon"
+			},
+			{
+				"name": "veemon"
+			},
+			{
+				"name": "exveemon"
+			},
+			{
+				"name": "paildramon",
+				"color": "fusion"
+			},
+			{
+				"name": "imperialdramon"
+			},
+			{
+				"name": "imperialdramonfm",
+				"color": "mode"
+			},
+			{
+				"name": "imperialdramonpm",
+				"color": "fusion"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "exveemonb",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			{
+				"name": "dinobeemon",
+				"color": "fusion",
+				"from": [-1, -1]
+			},
+			{
+				"name": "imperialdramonb",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			{
+				"name": "imperialdramonfmb",
+				"color": "mode"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			[
+				{
+					"name": "flamedramon",
+					"color": "fire",
+					"from": [-2, -1]
+				},
+				{
+					"name": "raidramon",
+					"color": "electric",
+					"from": [-3, -1]
+				}
+			],
+			{
+				"name": "sagittarimon",
+				"color": "fusion",
+				"color2": "fusion",
+				"from": [-0.5, -1],
+				"from2": [0.5, -1],
+				"size": 2
+			},
+			[
+				{
+					"name": "magnamon",
+					"color": "gold",
+					"from": [0.5, -1]
+				},
+				{
+					"name": "magnamonx",
+					"color": "x",
+					"from": [-1, 0]
+				}
+			]
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gargoylemon",
+				"color": "light",
+				"from": [-4, -1]
+			},
+			{
+				"name": "manticoremon",
+				"color": "light"
+			},
+			{
+				"name": "azulongmon",
+				"color": "light"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "wormmon",
+			"for": "paildramon"
+		},
+		"shoutmon",
+		"gumdramon",
+		{
+			"name": "greymon",
+			"for": "omegamon"
+		}
+	]
 }

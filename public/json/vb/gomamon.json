@@ -1,0 +1,46 @@
+{
+	"size": 8,
+	"columns": [
+		[null, null, null, null, { "name": "monzaemon", "from": [1, -1] }, null],
+		[
+			null,
+			null,
+			null,
+			{ "name": "frigimon", "from": [1, -1], "color": "ice" },
+			{ "name": "panjyamon", "from": null },
+			{ "name": "vikemon", "from": [0, -2], "color": "ice" }
+		],
+		[
+			{ "name": "pitchmon", "from": null },
+			{ "name": "pukamon", "from": null },
+			{ "name": "gomamon", "from": null },
+			{ "name": "ikkakumon", "from": null },
+			{ "name": "zudomon", "from": null },
+			{ "name": "plesiomon", "from": [0, -5], "color": "marine" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "dolphmon", "from": [-1, -1], "color": "marine" },
+			{ "name": "whamon", "from": null },
+			{ "name": "neptunemon", "from": [0, -2], "color": "marine" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "chackmon", "from": [-2, -1], "color": "ice" },
+			{ "name": "blizzarmon", "from": [0, -1], "color": "ice" },
+			{ "name": "olegmon", "from": [0, -1], "color": "gold" }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "daipenmon", "from": [-1, -1], "color": "ice" },
+			null
+		]
+	]
+}

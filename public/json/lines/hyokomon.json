@@ -1,6 +1,18 @@
 {
     "columns": [
         [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "chronomondm",
+                "color": "dark",
+                "from": [1,0]
+            }
+        ],
+        [
             {
                 "name": "pururumon"
             },
@@ -20,23 +32,12 @@
                 "name": "chronomon",
                 "color": "light"
             }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "chronomondm",
-                "color": "dark",
-                "from": [-1,0]
-            }
         ]
     ],
     "related": [
-        "kotemon",
+        {"name":"hawkmon", "from": "butenmon"},
         {"name":"biyomon", "for": "karatenmon"},
-        {"name":"falcomon", "for": "ravemon"}
+        {"name":"falcomon", "for": "ravemon"},
+        "kotemon"
     ]
 }
