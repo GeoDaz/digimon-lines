@@ -1,386 +1,324 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "gabumonx",
-                "from": [
-                    1.5,
-                    0
-                ],
-                "color": "x"
-            },
-            {
-                "name": "garurumonx",
-                "color": "x"
-            },
-            {
-                "name": "weregarurumonx",
-                "color": "x"
-            },
-            {
-                "name": "metalgarurumonx",
-                "color": "x"
-            },
-            {
-                "name": "omegamonx",
-                "color": "x"
-            },
-            null
-        ],
-        [
-            {
-                "name": "punimon",
-                "size": 2
-            },
-            {
-                "name": "tsunomon",
-                "size": 2
-            },
-            {
-                "name": "gabumon",
-                "size": 2
-            },
-            {
-                "name": "garurumon",
-                "size": 2
-            },
-            {
-                "name": "weregarurumon",
-                "size": 2
-            },
-            {
-                "name": "metalgarurumon",
-                "size": 2
-            },
-            [
-                {
-                    "name": "omegamon",
-                    "color": "fusion",
-                    "from": [
-                        0.5,
-                        -1
-                    ]
-                },
-                {
-                    "name": "gabumonbf",
-                    "color": "mode",
-                    "from": [
-                        -0.5,
-                        -1
-                    ]
-                }
-            ],
-            [
-                {
-                    "name": "omegamonmm",
-                    "color": "fusion",
-                    "from": [
-                        0,
-                        -1
-                    ]
-                },
-                null
-            ]
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "drimogemon",
-                "from": [
-                    -1.5,
-                    -1
-                ]
-            },
-            {
-                "name": "weregarurumonam",
-                "color": "mode",
-                "from": [
-                    -1.5,
-                    0
-                ]
-            },
-            {
-                "name": "cresgarurumon",
-                "color": "gold"
-            },
-            {
-                "name": "omegamonam",
-                "color": "fusion"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "dorulumon",
-                "from": [
-                    -2.5,
-                    -1
-                ]
-            },
-            {
-                "name": "jaegerdorulumon",
-                "color": "gold"
-            },
-            {
-                "name": "marsmon",
-                "color": "fire"
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "gabumonb",
-                "from": [
-                    -3.5,
-                    -1
-                ],
-                "color": "dark"
-            },
-            {
-                "name": "garurumonb",
-                "color": "dark"
-            },
-            {
-                "name": "weregarurumonb",
-                "color": "dark"
-            },
-            {
-                "name": "metalgarurumonb",
-                "color": "dark"
-            },
-            {
-                "name": "omegamonb",
-                "color": "fusion",
-                "skins": [
-                    "omegamonbrm"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "psychemon",
-                "from": [
-                    -4.5,
-                    -1
-                ]
-            },
-            {
-                "name": "gururumon"
-            },
-            {
-                "name": "astamon",
-                "color": "dark"
-            },
-            {
-                "name": "merukimon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "omegamonbam",
-                "color": "mode",
-                "from": [
-                    -1,
-                    0
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "nisedrimogemon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            null,
-            null,
-            null
-        ],
-        [
-            {
-                "name": "botamon"
-            },
-            {
-                "name": "wanyamon"
-            },
-            {
-                "name": "gaomon",
-                "size": 1
-            },
-            {
-                "name": "gaogamon"
-            },
-            {
-                "name": "machgaogamon"
-            },
-            {
-                "name": "miragegaogamon"
-            },
-            {
-                "name": "miragegaogamonbm",
-                "color": "mode"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "zeedgarurumon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "gaogamonb",
-                "color": "dark",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "machgaogamonb",
-                "color": "dark"
-            },
-            {
-                "name": "miragegaogamonb",
-                "color": "dark"
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "strabimon",
-                "size": 2,
-                "from": [
-                    -4,
-                    -1
-                ]
-            },
-            {
-                "name": "wolfmon",
-                "color": "light",
-                "size": 2
-            },
-            [
-                {
-                    "name": "beowolfmon",
-                    "color": "light",
-                    "from": [
-                        0.5,
-                        -1
-                    ]
-                },
-                {
-                    "name": "kendogarurumon",
-                    "color": "light",
-                    "from": [
-                        -0.5,
-                        -1
-                    ]
-                }
-            ],
-            [
-                {
-                    "name": "magnagarurumon",
-                    "color": "light",
-                    "from": [
-                        0,
-                        -1
-                    ]
-                },
-                {
-                    "name": "ancientgarurumon",
-                    "color": "light",
-                    "from": [
-                        0,
-                        -1
-                    ]
-                }
-            ],
-            [
-                {
-                    "name": "susanoomon",
-                    "color": "fusion",
-                    "from": [
-                        0,
-                        -1
-                    ]
-                },
-                null
-            ]
-        ]
-    ],
-    "notes": [
-        "Gaogamon line is in Garurumon line, because it includes ZeedGarurumon they look very similar.",
-        "Merukymon is here because his headdress looks like a Garurumon and Mars because his looks like Gabumon."
-    ],
-    "related": [
-        "omegamonmm",
-        {
-            "name": "greymon",
-            "from": "omegamon"
-        },
-        {
-            "name": "chimeramon",
-            "from": "garurumon"
-        },
-        {
-            "name": "leomon",
-            "from": "marsmon"
-        },
-        {
-            "name": "bearmon",
-            "from": "marsmon"
-        },
-        {
-            "name": "phascomon",
-            "from": "astamon"
-        },
-        {
-            "name": "duskmon",
-            "for": "gazimon"
-        },
-        {
-            "name": "shoutmon",
-            "for": "shoutmonx3"
-        },
-        {
-            "name": "loogamon",
-            "for": "soloogarmon"
-        },
-        {
-            "name": "armadillomon",
-            "from": "drimogemon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "gabumonx",
+				"from": [1.5, 0],
+				"color": "x"
+			},
+			{
+				"name": "garurumonx",
+				"color": "x"
+			},
+			{
+				"name": "weregarurumonx",
+				"color": "x"
+			},
+			{
+				"name": "metalgarurumonx",
+				"color": "x"
+			},
+			{
+				"name": "omegamonx",
+				"color": "x"
+			},
+			null
+		],
+		[
+			{
+				"name": "punimon",
+				"size": 2
+			},
+			{
+				"name": "tsunomon",
+				"size": 2
+			},
+			{
+				"name": "gabumon",
+				"size": 2
+			},
+			{
+				"name": "garurumon",
+				"size": 2
+			},
+			{
+				"name": "weregarurumon",
+				"size": 2
+			},
+			{
+				"name": "metalgarurumon",
+				"size": 2
+			},
+			[
+				{
+					"name": "omegamon",
+					"color": "fusion",
+					"from": [0.5, -1]
+				},
+				{
+					"name": "gabumonbf",
+					"color": "mode",
+					"from": [-0.5, -1]
+				}
+			],
+			[
+				{
+					"name": "omegamonmm",
+					"color": "fusion",
+					"from": [0, -1]
+				},
+				null
+			]
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "drimogemon",
+				"from": [-1.5, -1]
+			},
+			{
+				"name": "weregarurumonam",
+				"color": "mode",
+				"from": [-1.5, 0]
+			},
+			{
+				"name": "cresgarurumon",
+				"color": "gold"
+			},
+			{
+				"name": "omegamonam",
+				"color": "fusion"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dorulumon",
+				"from": [-2.5, -1]
+			},
+			{
+				"name": "jaegerdorulumon",
+				"color": "gold"
+			},
+			{
+				"name": "marsmon",
+				"color": "fire"
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "gabumonb",
+				"from": [-3.5, -1],
+				"color": "dark"
+			},
+			{
+				"name": "garurumonb",
+				"color": "dark"
+			},
+			{
+				"name": "weregarurumonb",
+				"color": "dark"
+			},
+			{
+				"name": "metalgarurumonb",
+				"color": "dark"
+			},
+			{
+				"name": "omegamonb",
+				"color": "fusion",
+				"skins": ["omegamonbrm"]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "psychemon",
+				"from": [-4.5, -1]
+			},
+			{
+				"name": "gururumon"
+			},
+			{
+				"name": "astamon",
+				"color": "dark"
+			},
+			{
+				"name": "belphemonrm",
+				"color": "dark",
+				"skins": ["belphemon"]
+			},
+			{
+				"name": "omegamonbam",
+				"color": "mode",
+				"from": [-1, 0]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "nisedrimogemon",
+				"from": [-1, -1]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "wanyamon"
+			},
+			{
+				"name": "gaomon",
+				"size": 1
+			},
+			{
+				"name": "gaogamon"
+			},
+			{
+				"name": "machgaogamon"
+			},
+			{
+				"name": "miragegaogamon"
+			},
+			{
+				"name": "miragegaogamonbm",
+				"color": "mode"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "zeedgarurumon",
+				"from": [-1, -1]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gaogamonb",
+				"color": "dark",
+				"from": [-2, -1]
+			},
+			{
+				"name": "machgaogamonb",
+				"color": "dark"
+			},
+			{
+				"name": "merukimon",
+				"color": "dark"
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "strabimon",
+				"size": 2,
+				"from": [-4, -1]
+			},
+			{
+				"name": "wolfmon",
+				"color": "light",
+				"size": 2
+			},
+			[
+				{
+					"name": "beowolfmon",
+					"color": "light",
+					"from": [0.5, -1]
+				},
+				{
+					"name": "kendogarurumon",
+					"color": "light",
+					"from": [-0.5, -1]
+				}
+			],
+			[
+				{
+					"name": "magnagarurumon",
+					"color": "light",
+					"from": [0, -1]
+				},
+				{
+					"name": "ancientgarurumon",
+					"color": "light",
+					"from": [0, -1]
+				}
+			],
+			[
+				{
+					"name": "susanoomon",
+					"color": "fusion",
+					"from": [0, -1]
+				},
+				null
+			]
+		]
+	],
+	"notes": [
+		"Gaogamon line is in Garurumon line, because it includes ZeedGarurumon they look very similar.",
+		"Merukymon is here because his headdress looks like a Garurumon and Mars because his looks like Gabumon."
+	],
+	"related": [
+		"omegamonmm",
+		{
+			"name": "greymon",
+			"from": "omegamon"
+		},
+		{
+			"name": "chimeramon",
+			"from": "garurumon"
+		},
+		{
+			"name": "leomon",
+			"from": "marsmon"
+		},
+		{
+			"name": "bearmon",
+			"from": "marsmon"
+		},
+		{
+			"name": "phascomon",
+			"from": "astamon"
+		},
+		{
+			"name": "duskmon",
+			"for": "gazimon"
+		},
+		{
+			"name": "shoutmon",
+			"for": "shoutmonx3"
+		},
+		{
+			"name": "loogamon",
+			"for": "soloogarmon"
+		},
+		{
+			"name": "armadillomon",
+			"from": "drimogemon"
+		}
+	]
 }
