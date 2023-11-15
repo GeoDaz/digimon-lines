@@ -1,0 +1,100 @@
+{
+	"title": "Twin Fairy",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "hudiemon",
+				"from": [1, -1]
+			},
+			{
+				"name": "butterflamon"
+			},
+			{
+				"name": "tigervespamon"
+			}
+		],
+		[
+			{
+				"name": "pupumon",
+				"size": 2
+			},
+			{
+				"name": "puroromon",
+				"size": 2
+			},
+			[
+				{
+					"name": "morphomon",
+					"from": [0.5, -1]
+				},
+				{
+					"name": "tinkermon",
+					"from": [-0.5, -1]
+				}
+			],
+			[
+				{
+					"name": "eosmon"
+				},
+				{
+					"name": "fairymon"
+				}
+			],
+			[
+				{
+					"name": "eosmon2"
+				},
+				{
+					"name": "jetsilphymon"
+				}
+			],
+			[
+				{
+					"name": "eosmon3"
+				},
+				{
+					"name": "ancientirismon"
+				}
+			]
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "harpymon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "shutumon"
+			},
+			{
+				"name": "valkyrimon"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "fairymon"
+		},
+		{
+			"name": "hawkmon",
+			"for": "harpymon"
+		},
+		{
+			"name": "fanbeemon",
+			"for": "eosmon"
+		},
+		{
+			"name": "wormmon",
+			"for": "hudiemon"
+		},
+		{
+			"name": "angemon",
+			"for": "piccolomon"
+		}
+	]
+}

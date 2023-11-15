@@ -1,0 +1,56 @@
+{
+	"size": 8,
+	"columns": [
+		[null, null, null, null, { "name": "elephantmon", "from": [1, -1] }, null],
+		[
+			null,
+			null,
+			null,
+			{ "name": "togemogumon", "from": [1, -1], "color": "ice" },
+			{
+				"name": "stegomon",
+				"from": [0, -1],
+				"from2": [1, -1],
+				"color2": "default"
+			},
+			{ "name": "spinomon", "from": [0, -1] }
+		],
+		[
+			{ "name": "tsubumon", "from": null },
+			{ "name": "upamon", "from": null },
+			{ "name": "armadillomon", "from": null },
+			{ "name": "ankylomon", "from": [0, -3] },
+			{ "name": "shakkoumon", "from": [0, -1], "color": "fusion" },
+			{ "name": "clavisangemon", "from": [0, -1], "color": "light" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "submarimon", "from": [-1, -1], "color": "marine" },
+			{
+				"name": "zudomon",
+				"from": [0, -1],
+				"color": "marine",
+				"from2": null,
+				"color2": "fusion"
+			},
+			{ "name": "vikemon", "from": [0, -1], "color": "ice" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "digmon", "from": [-2, -1] },
+			{
+				"name": "kenkimon",
+				"from": [0, -1],
+				"from2": [-1, -1],
+				"color": "fusion",
+				"color2": "fusion"
+			},
+			{ "name": "breakdramon", "from": [0, -1] }
+		],
+		[null, null, null, null, { "name": "loaderliomon", "from": [-1, -1] }, null]
+	]
+}

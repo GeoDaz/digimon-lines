@@ -1,0 +1,64 @@
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "peacockmon", "from": [1, -1], "color": "gold" },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "harpymon", "from": [1, -1] },
+			{
+				"name": "silphymon",
+				"from": [0, -1],
+				"from2": [1, -1],
+				"color2": "fusion"
+			},
+			{ "name": "valkyrimon", "from": [0, -1], "color": "light" }
+		],
+		[
+			{ "name": "pururumon", "from": null },
+			{ "name": "poromon", "from": null },
+			{ "name": "hawkmon", "from": null },
+			{ "name": "aquilamon", "from": [0, -3] },
+			{ "name": "yatagaramon", "from": [0, -1] },
+			{ "name": "valdurmon", "from": [0, -1], "color": "light" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "halsemon", "from": [-1, -1] },
+			{ "name": "hippogriffomon", "from": null },
+			{ "name": "griffomon", "from": [0, -2] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "shurimon", "from": [-2, -1], "color": "grass" },
+			{
+				"name": "butenmon",
+				"from": [0, -1],
+				"color": "fusion",
+				"from2": [-1, -1],
+				"color2": "fusion"
+			},
+			{ "name": "chronomon", "from": [0, -1], "color": "light" }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "delumon", "from": [-1, -1], "color": "grass" },
+			null
+		]
+	]
+}

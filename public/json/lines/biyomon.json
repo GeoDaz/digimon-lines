@@ -22,13 +22,29 @@
 			null,
 			{ "name": "saberdramon", "color": "dark", "from": [-1, -1] },
 			{ "name": "karatenmon", "color": "dark" },
-			{ "name": "ornismon", "color": "dark" }
+			{
+				"name": "ornismon",
+				"color": "dark",
+				"from": [0, -1],
+				"from2": [1, -1],
+				"color2": "dark"
+			}
 		],
 		[
 			null,
 			null,
 			null,
-			{ "name": "cockatrimon", "from": [-2, -1] },
+			{ "name": "mailbirdramon", "from": [-2, -1], "color": "dark" },
+			{ "name": "velgrmon", "from": [-1, -1], "color": "dark" },
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "cockatrimon", "from": [-3, -1] },
 			{ "name": "parrotmon", "from": [0, -1], "color": "electric" },
 			{ "name": "crossmon", "from": [0, -1], "color": "gold" },
 			{ "name": "aegisdramon", "from": [0, -1], "color": "fusion" }
@@ -37,15 +53,9 @@
 			null,
 			null,
 			null,
-			{ "name": "akatorimon", "from": [-3, -1], "color": "fire" },
+			{ "name": "akatorimon", "from": [-4, -1], "color": "fire" },
 			{ "name": "sinduramon", "from": [0, -1] },
 			{ "name": "zhuqiaomon", "from": [0, -1], "color": "fire" }
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "mailbirdramon", "from": [-4, -1], "color": "dark" }
 		]
 	],
 	"related": [
