@@ -1,114 +1,98 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "helloogarmon",
-                "color": "dark",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "loogarmon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "soloogarmon"
-            },
-            {
-                "name": "fenriloogamon"
-            }
-        ],
-        [
-            {
-                "name": "fusamon"
-            },
-            {
-                "name": "bowmon"
-            },
-            {
-                "name": "loogamon"
-            },
-            {
-                "name": "gaogamon"
-            },
-            {
-                "name": "machgaogamon"
-            },
-            {
-                "name": "miragegaogamon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "fangmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "cerberumon"
-            },
-            {
-                "name": "anubimon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "sangloupmon",
-                "color": "dark",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "assaultmon",
-                "color": "dark"
-            },
-            {
-                "name": "grandracmon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "matadormon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        "loogamon",
-        "garurumon",
-        "labramon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "helloogarmon",
+				"color": "dark",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "loogarmon",
+				"from": [1, -1]
+			},
+			{
+				"name": "soloogarmon"
+			},
+			{
+				"name": "fenriloogamon"
+			}
+		],
+		[
+			{
+				"name": "fusamon"
+			},
+			{
+				"name": "bowmon"
+			},
+			{
+				"name": "loogamon"
+			},
+			{
+				"name": "gaogamon"
+			},
+			{
+				"name": "machgaogamon"
+			},
+			{
+				"name": "miragegaogamon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "fangmon",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			{
+				"name": "cerberumon",
+				"color": "dark"
+			},
+			{
+				"name": "anubimon",
+				"color": "light"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "sangloupmon",
+				"color": "dark",
+				"from": [-2, -1]
+			},
+			{
+				"name": "assaultmon",
+				"color": "dark"
+			},
+			{
+				"name": "grandracmon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "matadormon",
+				"color": "dark",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": ["loogamon", "garurumon", "labramon"]
 }

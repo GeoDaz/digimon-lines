@@ -24,7 +24,7 @@
 			{
 				"name": "bancholeomon",
 				"size": 2,
-				"from2": [2.25, -1]
+				"from2": [1.65, -1]
 			},
 			[
 				[
@@ -56,21 +56,25 @@
 			null,
 			{
 				"name": "grapleomon",
-				"size": 2,
-				"from": [2.5, -1]
+				"from": [3, -1]
 			},
-			[
-				{
-					"name": "heavyleomon",
-					"from": [0.5, -1],
-					"from2": [-1.75, -1]
-				},
-				{
-					"name": "marsmon",
-					"color": "fire",
-					"from": [-0.5, -1]
-				}
-			]
+			{
+				"name": "heavyleomon",
+				"from": [0, -1],
+				"from2": [-1.65, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "marsmon",
+				"color": "fire",
+				"from": [-1, -1]
+			}
 		],
 		[
 			null,

@@ -1,8 +1,9 @@
 {
 	"size": 8,
 	"columns": [
-		[null, null, null, { "name": "extyranomon", "from": [1, -1] }, null],
+		[null, null, null, null, { "name": "extyranomon", "from": [1, -1] }, null],
 		[
+			null,
 			null,
 			null,
 			{ "name": "omekamon", "from": [1, -1] },
@@ -10,13 +11,15 @@
 			{ "name": "omedamon", "from": [0, -1] }
 		],
 		[
-			{ "name": "chocomon", "from": null },
+			{ "name": "cocomon", "from": null },
+			{ "name": "chocomon", "from": [0, -1] },
 			{ "name": "ekakimon", "from": [0, -1] },
 			{ "name": "kangarumon", "from": [0, -1] },
 			{ "name": "pandamon", "from": [0, -1] },
 			{ "name": "justimon", "from": [0, -1] }
 		],
 		[
+			null,
 			null,
 			null,
 			{ "name": "nohemon", "from": [-1, -1] },
@@ -26,10 +29,11 @@
 		[
 			null,
 			null,
+			null,
 			{ "name": "porcupamon", "from": [-2, -1] },
 			{ "name": "warumonzaemon", "from": [0, -1] },
 			{ "name": "shinmonzaemon", "from": [0, -1] }
 		],
-		[null, null, null, { "name": "betsumon", "from": [-1, -1] }, null]
+		[null, null, null, null, { "name": "betsumon", "from": [-1, -1] }, null]
 	]
 }

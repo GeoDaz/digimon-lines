@@ -157,5 +157,5 @@
 			{ "name": "delumon", "from": [-1, -1], "color": "grass" }
 		]
 	],
-	"related": ["woodmon", "omegamonmm"]
+	"related": ["woodmon", { "name": "omegamonmm", "from": "rosemon" }]
 }

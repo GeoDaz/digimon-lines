@@ -293,8 +293,16 @@
 			"from": "garurumon"
 		},
 		{
+			"name": "shoutmon",
+			"for": "shoutmonx3"
+		},
+		{
+			"name": "loogamon",
+			"for": "gazimon"
+		},
+		{
 			"name": "leomon",
-			"from": "marsmon"
+			"for": "grapleomon"
 		},
 		{
 			"name": "bearmon",
@@ -305,20 +313,12 @@
 			"from": "astamon"
 		},
 		{
-			"name": "duskmon",
-			"for": "gazimon"
-		},
-		{
-			"name": "shoutmon",
-			"for": "shoutmonx3"
-		},
-		{
-			"name": "loogamon",
-			"for": "soloogarmon"
-		},
-		{
 			"name": "armadillomon",
 			"from": "drimogemon"
+		},
+		{
+			"name": "dracomon",
+			"for": "breakdramon"
 		}
 	]
 }

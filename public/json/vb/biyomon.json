@@ -1,1 +1,53 @@
-{"size":8,"columns":[[null,null,null,null,{"name":"thunderbirdmon","from":[1,-1],"color":"electric"},null,null,null],[null,null,null,{"name":"cockatrimon","from":[1,-1],"color":"default"},{"name":"parrotmon","from":[0,-1],"color":"electric"},{"name":"crossmon","from":[0,-1],"color":"gold"},null,null],[{"name":"nyokimon","from":null},{"name":"yokomon","from":null},{"name":"biyomon","from":[0,-2]},{"name":"birdramon","from":[0,-1],"color":"fire"},{"name":"garudamon","from":[0,-1],"color":"fire"},{"name":"phoenixmon","from":[0,-1],"color":"light"},null,null],[null,null,null,{"name":"akatorimon","from":[-1,-1],"color":"fire"},{"name":"sinduramon","from":[0,-1],"color":"fire"},{"name":"zhuqiaomon","from":[0,-1],"color":"fire"},null,null],[null,null,null,{"name":"saberdramon","from":[-2,-1],"color":"dark"},{"name":"karatenmon","from":null},{"name":"ornismon","from":[0,-2],"color":"dark","from2":null},null,null],[null,null,null,null,{"name":"velgrmon","from":[-1,-1],"color":"dark"},null,null,null]]}
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "thunderbirdmon", "from": [1, -1], "color": "electric" },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "cockatrimon", "from": [1, -1], "color": "default" },
+			{ "name": "parrotmon", "from": [0, -1], "color": "electric" },
+			{ "name": "crossmon", "from": [0, -1], "color": "gold" }
+		],
+		[
+			{ "name": "nyokimon", "from": null },
+			{ "name": "yokomon", "from": null },
+			{ "name": "biyomon", "from": [0, -2] },
+			{ "name": "birdramon", "from": [0, -1], "color": "fire" },
+			{ "name": "garudamon", "from": [0, -1], "color": "fire" },
+			{ "name": "phoenixmon", "from": [0, -1], "color": "light" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "akatorimon", "from": [-1, -1], "color": "fire" },
+			{ "name": "sinduramon", "from": [0, -1], "color": "fire" },
+			{ "name": "zhuqiaomon", "from": [0, -1], "color": "fire" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "saberdramon", "from": [-2, -1] },
+			{ "name": "karatenmon", "from": null },
+			{ "name": "ornismon", "from": [0, -2], "from2": null }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "velgrmon", "from": [-1, -1], "color": "dark" },
+			null
+		]
+	]
+}

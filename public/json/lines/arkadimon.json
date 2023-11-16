@@ -36,8 +36,9 @@
         ]
     ],
     "related": [
-        {"name":"impmon", "for": "demonsu"},
-        {"name": "duskmon", "for": "bagramon"},
-        "keramon"
+        {"name":"devimon", "for": "demonsu"},
+        "keramon",
+        {"name": "angemon", "for": "bagramon"},
+        {"name": "pawnchessmonwhite", "for": "darkknightmon"}
     ]
 }

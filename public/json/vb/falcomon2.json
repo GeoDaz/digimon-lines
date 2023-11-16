@@ -1,1 +1,115 @@
-{"title":"Falcomon","columns":[[null,null,null,null,{"name":"fumamon","from":[1,-1]}],[null,null,null,{"name":"peckmon","from":[1,-1]},{"name":"yatagaramon2"},{"name":"ravemon"}],[{"name":"puwamon"},{"name":"pinamon"},{"name":"falcomon2"},{"name":"diatrymon"},{"name":"yatagaramon"},{"name":"valdurmon"}],[null,null,null,{"name":"xiquemon","from":[-1,-1]},{"name":"huankunmon"},{"name":"xiangpengmon"}],[null,null,null,{"name":"buraimon","from":[-2,-1]},{"name":"butenmon"},{"name":"chronomondm"}],[null,null,null,null,{"name":"karatenmon","from":[-1,-1]}]],"related":["greymon","flarelizardmon","growlmon"]}
+{
+	"title": "Bememory Special Birds",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "ravemonbm",
+				"color": "mode",
+				"from": [1, 0]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "falcomon2",
+				"from": [1, -1]
+			},
+			{
+				"name": "peckmon"
+			},
+			{
+				"name": "yatagaramon2"
+			},
+			{
+				"name": "ravemon"
+			}
+		],
+		[
+			{
+				"name": "puwamon"
+			},
+			{
+				"name": "pinamon"
+			},
+			{
+				"name": "falcomon"
+			},
+			{
+				"name": "diatrymon"
+			},
+			{
+				"name": "yatagaramon"
+			},
+			{
+				"name": "valdurmon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "penmon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "xiquemon"
+			},
+			{
+				"name": "huankunmon"
+			},
+			{
+				"name": "xiangpengmon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "biyomon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "birdramon"
+			},
+			{
+				"name": "garudamon"
+			},
+			{
+				"name": "phoenixmon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "cockatrimon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "parrotmon"
+			},
+			{
+				"name": "crossmon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "aegisdramon",
+				"color": "fusion",
+				"from": [-1, 0]
+			}
+		]
+	]
+}

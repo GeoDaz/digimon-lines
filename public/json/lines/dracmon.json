@@ -4,6 +4,14 @@
 			null,
 			null,
 			null,
+			{ "name": "duskmon", "color": "dark", "from": [2, -1] },
+			{ "name": "velgrmon", "color": "dark" },
+			{ "name": "ornismon", "color": "dark" }
+		],
+		[
+			null,
+			null,
+			null,
 			null,
 			null,
 			{ "name": "slashangemon", "color": "light", "from": [1, -1] }
@@ -20,8 +28,8 @@
 			null,
 			null,
 			null,
-			null,
-			{ "name": "myotismon", "color": "dark", "from": [-1, -1] },
+			{ "name": "pipismon", "color": "dark", "from": [-1, -1] },
+			{ "name": "myotismon", "color": "dark", "color2": "dark", "from2": [-1, -1] },
 			{ "name": "venommyotismon", "color": "dark", "from": [0, -1] },
 			{ "name": "malomyotismon", "color": "dark", "from": [0, -1] }
 		],
@@ -37,10 +45,16 @@
 	],
 	"related": [
 		{ "name": "devimon", "for": "myotismon" },
-		{ "name": "angemon", "from": "slashangemon" },
+		{ "name": "angemon", "for": "slashangemon" },
+		{ "name": "angemon", "for": "bagramon" },
 		{ "name": "bakemon", "for": "piemon" },
 		{ "name": "hookmon", "for": "boltboutamon" },
-		{ "name": "duskmon" },
-		{ "name": "kotemon", "for": "yaksamon" }
+		{ "name": "biyomon", "for": "ornismon" },
+		{ "name": "kotemon", "for": "yaksamon" },
+		{ "name": "loogamon", "from": "sangloupmon" },
+		{
+			"name": "negamon",
+			"for": "eyesmon"
+		}
 	]
 }

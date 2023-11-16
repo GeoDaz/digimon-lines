@@ -26,11 +26,6 @@
 				"name": "moosemon",
 				"color": "ice",
 				"from": [2, -1]
-			},
-			null,
-			{
-				"name": "kentaurosmon",
-				"from": [1, -1]
 			}
 		],
 		[
@@ -44,6 +39,9 @@
 			{
 				"name": "pajiramon",
 				"from2": [-1, -1]
+			},
+			{
+				"name": "kentaurosmon"
 			}
 		],
 		[
@@ -144,20 +142,20 @@
 			"from": "kentaurosmon"
 		},
 		{
-			"name": "shortmon",
-			"for": "junomon"
+			"name": "tapirmon",
+			"for": "mammon"
 		},
 		{
 			"name": "labramon",
-			"from": "plutomon"
+			"for": "plutomon"
 		},
 		{
 			"name": "palmon",
-			"from": "ceresmon"
+			"for": "ceresmon"
 		},
 		{
 			"name": "golemon",
-			"from": "vulcanusmon"
+			"for": "vulcanusmon"
 		}
 	]
 }

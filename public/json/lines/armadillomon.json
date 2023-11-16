@@ -6,17 +6,12 @@
             null,
             {
                 "name": "togemogumon",
-                "color": "electric",
+                "color": "ice",
                 "from": [
-                    2,
+                    1,
                     -1
                 ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
+            },
             {
                 "name": "stegomon",
                 "from": [
@@ -24,13 +19,8 @@
                     -1
                 ]
             },
-            null,
             {
-                "name": "spinomon",
-                "from": [
-                    0,
-                    -2
-                ]
+                "name": "spinomon"
             },
             {
                 "name": "huanglongmon",
@@ -106,7 +96,7 @@
         },
         {
             "name": "herissmon",
-            "for": "togemogumon"
+            "from": "togemogumon"
         },
         {
             "name": "dracomon",

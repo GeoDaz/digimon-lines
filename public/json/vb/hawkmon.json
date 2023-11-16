@@ -15,20 +15,18 @@
 			null,
 			{ "name": "harpymon", "from": [1, -1] },
 			{
-				"name": "silphymon",
-				"from": [0, -1],
-				"from2": [1, -1],
-				"color2": "fusion"
+				"name": "shutumon",
+				"from": [0, -1]
 			},
-			{ "name": "valkyrimon", "from": [0, -1], "color": "light" }
+			{ "name": "ancientirismon", "from": [0, -1], "color": "light" }
 		],
 		[
 			{ "name": "pururumon", "from": null },
 			{ "name": "poromon", "from": null },
 			{ "name": "hawkmon", "from": null },
 			{ "name": "aquilamon", "from": [0, -3] },
-			{ "name": "yatagaramon", "from": [0, -1] },
-			{ "name": "valdurmon", "from": [0, -1], "color": "light" }
+			{ "name": "silphymon", "from": [0, -1] },
+			{ "name": "valkyrimon", "from": [0, -1], "color": "light" }
 		],
 		[
 			null,
@@ -36,7 +34,7 @@
 			null,
 			{ "name": "halsemon", "from": [-1, -1] },
 			{ "name": "hippogriffomon", "from": null },
-			{ "name": "griffomon", "from": [0, -2] }
+			{ "name": "valdurmon", "from": [0, -2] }
 		],
 		[
 			null,

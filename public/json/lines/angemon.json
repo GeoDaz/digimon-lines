@@ -65,11 +65,15 @@
 				"color": "light",
 				"from": [1, -1]
 			},
-			null,
+			{
+				"name": "chirinmon",
+				"color": "light"
+			},
 			{
 				"name": "goldramon",
 				"color": "light",
-				"from": [1, -1]
+				"color2": "light",
+				"from2": [1, -1]
 			}
 		],
 		[
@@ -88,8 +92,7 @@
 			},
 			{
 				"name": "magnaangemon",
-				"color": "light",
-				"skins": ["magnaangemonpm"]
+				"color": "light"
 			},
 			{
 				"name": "seraphimon",
@@ -118,11 +121,20 @@
 			null,
 			null,
 			null,
+			{
+				"name": "magnaangemonpm",
+				"from": [-2, 0],
+				"color": "mode"
+			},
+			{
+				"name": "bagramon",
+				"color": "dark"
+			},
 			null,
 			{
-				"name": "slashangemon",
-				"from": [-2, -1],
-				"from2": [1, -1]
+				"name": "darknessbagramon",
+				"color": "fusion",
+				"from": [0, 2]
 			}
 		],
 		[
@@ -138,6 +150,18 @@
 			{
 				"name": "clavisangemon",
 				"color": "light"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "slashangemon",
+				"color": "light",
+				"from": [-1, -1]
 			}
 		],
 		[
@@ -158,7 +182,7 @@
 				"color": "gold",
 				"color2": "fusion",
 				"from": [0, -2],
-				"from2": [-4, -1]
+				"from2": [-5, -1]
 			},
 			{
 				"name": "lucemonlarva",
@@ -189,7 +213,7 @@
 		},
 		{
 			"name": "devimon",
-			"from": "lucemonfm"
+			"for": "lucemonfm"
 		},
 		{
 			"name": "ogudomon",
@@ -200,14 +224,6 @@
 			"for": "angewomon"
 		},
 		{
-			"name": "dracmon",
-			"for": "slashangemon"
-		},
-		{
-			"name": "jellymon",
-			"for": "marineangemon"
-		},
-		{
 			"name": "seadramon",
 			"for": "goldramon"
 		},
@@ -216,9 +232,29 @@
 			"from": "patamon"
 		},
 		{
-			"name": "veemon",
-			"for": "azulongmon"
+			"name": "kudamon",
+			"from": "chirinmon"
 		},
-		"omegamonmm"
+		{
+			"name": "jellymon",
+			"for": "marineangemon"
+		},
+		{
+			"name": "dracmon",
+			"for": "slashangemon"
+		},
+		{
+			"name": "dracmon",
+			"for": "duskmon"
+		},
+		{
+			"name": "pawnchessmonwhite",
+			"for": "darkknightmon"
+		},
+		{
+			"name": "iguneetmon",
+			"for": "ginkakumon"
+		},
+		{ "name": "omegamonmm", "from": "seraphimon" }
 	]
 }

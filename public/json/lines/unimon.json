@@ -1,120 +1,107 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "shimaunimon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "indaramon"
-            },
-            {
-                "name": "ancienttroiamon"
-            }
-        ],
-        [
-            {
-                "name": "relemon"
-            },
-            {
-                "name": "pokomon"
-            },
-            {
-                "name": "neamon"
-            },
-            {
-                "name": "unimon"
-            },
-            {
-                "name": "hippogriffomon"
-            },
-            {
-                "name": "griffomon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "centarumon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "sagittarimon"
-            },
-            {
-                "name": "kentaurosmon",
-                "from2": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "pegasmon",
-                "color": "light",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "chirinmon",
-                "color": "light"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "pegasmonx",
-                "color": "x",
-                "from": [
-                    -1,
-                    0
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "angemon",
-            "from": "pegasmon"
-        },
-        {
-            "name": "kudamon",
-            "from": "chirinmon"
-        },
-        {
-            "name": "hawkmon",
-            "from": "hippogriffomon"
-        },
-        {
-            "name": "woodmon",
-            "from": "ancienttroiamon"
-        },
-        {
-            "name": "veemon",
-            "from": "sagittarimon"
-        },
-        {
-            "name": "commandramon",
-            "for": "assaultmon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "shimaunimon",
+				"from": [2, -1]
+			},
+			{
+				"name": "indaramon"
+			},
+			{
+				"name": "ancienttroiamon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "hippogriffomon",
+				"from": [1, -1]
+			},
+			{
+				"name": "griffomon"
+			}
+		],
+		[
+			{
+				"name": "relemon"
+			},
+			{
+				"name": "pokomon"
+			},
+			{
+				"name": "neamon"
+			},
+			{
+				"name": "unimon",
+				"color": "light"
+			},
+			{
+				"name": "chirinmon",
+				"color": "light"
+			},
+			{
+				"name": "kentaurosmon",
+				"from2": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "centarumon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "sagittarimon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "assaultmon",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "angemon",
+			"for": "pegasmon"
+		},
+		{
+			"name": "kudamon",
+			"for": "chirinmon"
+		},
+		{
+			"name": "pawnchessmonwhite",
+			"for": "knightchessmonwhite"
+		},
+		{
+			"name": "veemon",
+			"for": "sagittarimon"
+		},
+		{
+			"name": "hawkmon",
+			"for": "hippogriffomon"
+		},
+		{
+			"name": "woodmon",
+			"for": "ancienttroiamon"
+		},
+		{
+			"name": "commandramon",
+			"for": "assaultmon"
+		}
+	]
 }

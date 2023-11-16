@@ -1,89 +1,85 @@
 {
-    "columns": [
-        [
-            {
-                "name": "kuramon",
-                "color": "dark"
-            },
-            {
-                "name": "negamon",
-                "color": "dark"
-            },
-            {
-                "name": "soundbirdmon",
-                "color": "dark"
-            },
-            {
-                "name": "eyesmon",
-                "color": "dark",
-                "skins": ["eyesmonsmr"]
-            },
-            {
-                "name": "orochimon",
-                "color": "dark"
-            },
-            {
-                "name": "abbadomon",
-                "color": "dark"
-            },
-            {
-                "name": "abbadomoncore",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "shademon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            null,
-            {
-                "name": "nidhoggmon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "shademonnene",
-                "color": "human",
-                "from": [
-                    -1,
-                    0
-                ]
-            },
-            null,
-            {
-                "name": "deathmon",
-                "color": "dark",
-                "from": [
-                    -2,
-                    -1
-                ],
-                "skins": ["deathmonb"]
-            }
-        ]
-    ],
-    "related": [
-        {"name": "iguneetmon", "from": "nidhoggmon"},
-        {"name": "terriermon", "for": "luminamonnene"},
-        "duskmon",
-        "keramon",
-        "algomon",
-        {"name": "chimeramon", "for": "moonmillenniumon"},
-        {"name": "omegamonmm", "for": "omegamon"}
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "deathmon",
+				"color": "dark",
+				"from": [1, -1],
+				"skins": ["deathmonb"]
+			}
+		],
+		[
+			{
+				"name": "kuramon",
+				"color": "dark"
+			},
+			{
+				"name": "negamon",
+				"color": "dark"
+			},
+			{
+				"name": "soundbirdmon",
+				"color": "dark"
+			},
+			{
+				"name": "eyesmon",
+				"color": "dark",
+				"skins": ["eyesmonsmr"]
+			},
+			{
+				"name": "orochimon",
+				"color": "dark"
+			},
+			{
+				"name": "abbadomon",
+				"color": "dark"
+			},
+			{
+				"name": "abbadomoncore",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "shademon",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			null,
+			{
+				"name": "nidhoggmon",
+				"color": "dark",
+				"from": [-1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "shademonnene",
+				"color": "human",
+				"from": [-1, 0]
+			}
+		]
+	],
+	"related": [
+		{ "name": "iguneetmon", "from": "nidhoggmon" },
+		{ "name": "terriermon", "for": "luminamonnene" },
+		{ "name": "numemon", "for": "rareraremon" },
+		{ "name": "ogremon", "for": "digitamamon" },
+		{ "name": "dracmon", "for": "duskmon" },
+		"keramon",
+		"algomon",
+		{ "name": "chimeramon", "for": "moonmillenniumon" },
+		{ "name": "omegamonmm", "for": "omegamon" }
+	]
 }

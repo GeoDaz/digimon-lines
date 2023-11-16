@@ -27,7 +27,7 @@
 			{
 				"name": "salamonx",
 				"color": "x",
-				"from": [4, 0]
+				"from": [5, 0]
 			},
 			{
 				"name": "gatomonx",
@@ -61,7 +61,28 @@
 			null,
 			null,
 			{
+				"name": "darcmon",
+				"color": "light",
+				"from": [3, -1]
+			},
+			{
+				"name": "sanzomon",
+				"color": "light"
+			},
+			null,
+			{
+				"name": "shakamon",
+				"color": "fusion",
+				"from": [0, -2]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
 				"name": "ganvivormon",
+				"color": "light",
 				"from": [2, -1]
 			},
 			null,
@@ -245,7 +266,7 @@
 			{
 				"name": "meicoonyaromon",
 				"size": 2,
-				"from": [-9.5, -1]
+				"from": [-8.5, -1]
 			},
 			{
 				"name": "meicoosalamon",
@@ -293,7 +314,7 @@
 		"sistermonblanc",
 		{
 			"name": "devimon",
-			"from": "ladydevimon"
+			"for": "ladydevimon"
 		},
 		{
 			"name": "impmon",
@@ -301,7 +322,7 @@
 		},
 		{
 			"name": "hawkmon",
-			"from": "silphymon"
+			"for": "silphymon"
 		},
 		"angemon",
 		{
@@ -316,7 +337,8 @@
 			"name": "pawnchessmonwhite",
 			"for": "skullknightmon"
 		},
-		"omegamonmm",
+		{ "name": "omegamonmm", "from": "magnadramon" },
+		"shakamon",
 		{
 			"name": "ogudomon",
 			"from": "lilithmon"

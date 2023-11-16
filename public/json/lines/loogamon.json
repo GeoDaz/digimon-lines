@@ -1,79 +1,88 @@
 {
-    "columns": [
-        [
-            {
-                "name": "fusamon"
-            },
-            {
-                "name": "bowmon"
-            },
-            {
-                "name": "loogamon"
-            },
-            {
-                "name": "loogarmon"
-            },
-            {
-                "name": "soloogarmon"
-            },
-            {
-                "name": "fenriloogamon"
-            },
-            {
-                "name": "fenriloogamontakemikazuchi",
-                "color": "fusion"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "fangmon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "helloogarmon",
-                "color": "fire",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "anubimon",
-                "color": "light"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "labramon",
-            "from": "anubimon"
-        },
-        {
-            "name": "duskmon",
-            "for": "gazimon"
-        },
-        {
-            "name": "garurumon",
-            "for": "machgaogamon"
-        },
-        {
-            "name": "dracmon",
-            "for": "sangloupmon"
-        },
-        {
-            "name": "pulsemon",
-            "for": "kazuchimon"
-        },
-        {
-            "name": "flarelizardmon",
-            "from": "helloogarmon"
-        }
-    ]
+	"columns": [
+		[
+			{
+				"name": "fusamon"
+			},
+			{
+				"name": "bowmon"
+			},
+			{
+				"name": "loogamon"
+			},
+			{
+				"name": "loogarmon"
+			},
+			{
+				"name": "soloogarmon"
+			},
+			{
+				"name": "fenriloogamon"
+			},
+			{
+				"name": "fenriloogamontakemikazuchi",
+				"color": "fusion"
+			}
+		],
+		[
+			{
+				"name": "zurumon"
+			},
+			{
+				"name": "pagumon",
+				"color": "dark"
+			},
+			{
+				"name": "gazimon",
+				"color": "dark"
+			},
+			{
+				"name": "fangmon",
+				"color": "dark",
+				"color2": "dark",
+				"from2": [-1, -1]
+			},
+			{
+				"name": "helloogarmon",
+				"color": "fire",
+				"color2": "dark",
+				"from2": [-1, -1]
+			},
+			{
+				"name": "anubimon",
+				"color": "light"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "gazimonx",
+				"color": "x",
+				"from": [-1, 0]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "garurumon",
+			"for": "gaomon"
+		},
+		{
+			"name": "labramon",
+			"from": "anubimon"
+		},
+		{
+			"name": "dracmon",
+			"for": "sangloupmon"
+		},
+		{
+			"name": "pulsemon",
+			"for": "kazuchimon"
+		},
+		{
+			"name": "flarelizardmon",
+			"from": "helloogarmon"
+		}
+	]
 }

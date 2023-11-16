@@ -135,12 +135,14 @@
 			null,
 			{
 				"name": "pipismon",
+				"color": "dark",
 				"from": [-2, -1]
 			},
 			{
 				"name": "myotismon",
 				"color": "dark",
-				"from": [-2, -1]
+				"color2": "dark",
+				"from2": [-2, -1]
 			},
 			{
 				"name": "venommyotismon",

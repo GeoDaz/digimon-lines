@@ -63,7 +63,12 @@
 			null,
 			null,
 			null,
-			{ "name": "ballistamon", "from": [-1, -1], "from2": [1.5, -1], "skins": ["darkvolumon"] },
+			{
+				"name": "ballistamon",
+				"from": [-1, -1],
+				"from2": [1.5, -1],
+				"skins": ["darkvolumon"]
+			},
 			{ "name": "atlurballistamon", "color": "gold" }
 		],
 		[
@@ -94,7 +99,7 @@
 		},
 		{ "name": "pulsemon", "from": "climbmon" },
 		{ "name": "chimeramon", "from": "kabuterimon" },
-		"omegamonmm",
+		{ "name": "omegamonmm", "from": "herculeskabuterimon" },
 		{ "name": "shoutmon", "for": "shoutmonx2" }
 	]
 }
