@@ -28,8 +28,9 @@
   },
   "scripts": {
     "dev": "next dev",
+    "start": "next dev",
     "build": "next build",
-    "start": "next start"
+    "daemon": "next start"
   },
   "eslintConfig": {
     "extends": [
