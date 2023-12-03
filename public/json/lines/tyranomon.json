@@ -42,7 +42,8 @@
                 "name": "mastertyranomon"
             },
             {
-                "name": "rusttyranomon"
+                "name": "rusttyranomon",
+				"color": "machine"
             },
             null
         ],
@@ -95,6 +96,7 @@
             },
             {
                 "name": "gundramon",
+				"color": "machine",
                 "from": [
                     1,
                     -1
@@ -117,10 +119,12 @@
                 "color": "dark"
             },
             {
-                "name": "metaltyranomon"
+                "name": "metaltyranomon",
+				"color": "machine"
             },
             {
-                "name": "machinedramon"
+                "name": "machinedramon",
+				"color": "machine"
             }
         ],
         [

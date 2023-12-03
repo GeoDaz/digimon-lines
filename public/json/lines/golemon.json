@@ -14,6 +14,7 @@
             null,
             {
                 "name": "gravimon",
+				"color": "earth",
                 "from": [
                     1,
                     -1
@@ -29,6 +30,7 @@
             null,
             {
                 "name": "gottsumon",
+				"color": "earth",
                 "from": [
                     2,
                     -1
@@ -48,6 +50,7 @@
             null,
             {
                 "name": "baboongamon",
+				"color": "earth",
                 "from": [
                     -1,
                     -1
@@ -56,6 +59,7 @@
             null,
             {
                 "name": "blastmon",
+				"color": "earth",
                 "from": [
                     1,
                     -1
@@ -67,23 +71,29 @@
                 "name": "sunamon"
             },
             {
-                "name": "goromon"
+                "name": "goromon",
+				"color": "earth"
             },
             {
-                "name": "sunarizamon"
+                "name": "sunarizamon",
+				"color": "earth"
             },
             {
-                "name": "golemon"
+                "name": "golemon",
+				"color": "earth"
             },
             {
                 "name": "gogmamon",
+				"color": "earth",
+				"color2": "earth",
                 "from2": [
                     -1,
                     -1
                 ]
             },
             {
-                "name": "banchogolemon"
+                "name": "banchogolemon",
+				"color": "earth"
             }
         ],
         [
@@ -92,6 +102,7 @@
             null,
             {
                 "name": "tortamon",
+				"color": "earth",
                 "from": [
                     -1,
                     -1

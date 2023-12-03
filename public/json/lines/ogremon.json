@@ -6,13 +6,15 @@
             null,
             {
                 "name": "grumblemon",
+				"color": "earth",
                 "from": [
                     2,
                     -1
                 ]
             },
             {
-                "name": "gigasmon"
+                "name": "gigasmon",
+				"color": "earth"
             },
             {
                 "name": "ancientvolcamon",
@@ -57,7 +59,8 @@
                 "name": "ogremon"
             },
             {
-                "name": "rebellimon"
+                "name": "rebellimon",
+				"color": "machine"
             },
             {
                 "name": "titamon"

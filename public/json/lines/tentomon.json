@@ -51,25 +51,23 @@
 		[
 			null,
 			null,
-			{ "name": "kokuwamon", "from": [-3, -1], "color": "electric" },
-			{ "name": "bladekuwagamon", "color": "electric" },
+			{ "name": "kokuwamon", "from": [-3, -1], "color": "machine" },
+			{ "name": "bladekuwagamon", "color": "machine" },
 			{ "name": "metallifekuwagamon", "from": [0, -1], "color": "gold" },
-			{
-				"name": "tyrantkabuterimon",
-				"color": "dark"
-			}
+			{ "name": "tyrantkabuterimon", "color": "dark" }
 		],
 		[
 			null,
 			null,
 			null,
 			{
-				"name": "ballistamon",
+				"name": "ballistamon", 
+				"color": "machine",
 				"from": [-1, -1],
 				"from2": [1.5, -1],
 				"skins": ["darkvolumon"]
 			},
-			{ "name": "atlurballistamon", "color": "gold" }
+			{ "name": "atlurballistamon", "color": "machine" }
 		],
 		[
 			null,
@@ -77,7 +75,7 @@
 			{ "name": "kokabuterimon", "size": 2, "from": [-5.5, -1], "from2": null },
 			{ "name": "blitzmon", "size": 2, "color": "electric" },
 			[
-				{ "name": "bolgmon", "from": [0.5, -1], "color": "electric" },
+				{ "name": "bolgmon", "from": [0.5, -1], "color": "machine" },
 				{ "name": "rhinokabuterimon", "from": [-0.5, -1] }
 			],
 			[null, { "name": "ancientbeetlemon" }]

@@ -19,6 +19,7 @@
 			},
 			{
 				"name": "loaderliomon",
+				"color": "machine",
 				"size": 2
 			},
 			{
@@ -60,6 +61,8 @@
 			},
 			{
 				"name": "heavyleomon",
+				"color": "machine",
+				"color2": "machine",
 				"from": [0, -1],
 				"from2": [-1.65, -1]
 			}

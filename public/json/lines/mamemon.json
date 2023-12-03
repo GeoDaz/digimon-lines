@@ -1,185 +1,157 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "metalmamemonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "kokuwamonx",
-                "color": "x",
-                "from": [
-                    2,
-                    0
-                ]
-            },
-            {
-                "name": "thunderballmonx",
-                "color": "x"
-            },
-            {
-                "name": "mamemonx",
-                "color": "x"
-            },
-            {
-                "name": "princemamemonx",
-                "color": "x"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "tonosamamamemon",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "bommon2"
-            },
-            {
-                "name": "missimon"
-            },
-            {
-                "name": "kokuwamon"
-            },
-            {
-                "name": "thunderballmon",
-                "color": "electric"
-            },
-            {
-                "name": "mamemon",
-                "skins": [
-                    "bigmamemon",
-                    "catchmamemon"
-                ]
-            },
-            {
-                "name": "princemamemon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "metalmamemon",
-                "from": [
-                    -1,
-                    0
-                ]
-            },
-            {
-                "name": "banchomamemon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "tekkamon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "giromon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "shootmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "nanimon",
-                "from": [
-                    -4,
-                    -1
-                ],
-                "skins": [
-                    "bombernanimon"
-                ]
-            },
-            {
-                "name": "bombermon"
-            }
-        ],
-        [
-            {
-                "name": "yuramon"
-            },
-            {
-                "name": "tanemon"
-            },
-            {
-                "name": "dondokomon"
-            },
-            {
-                "name": "igamon",
-                "skins": [
-                    "kougamon"
-                ]
-            },
-            {
-                "name": "fumamon"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "tyranomon",
-            "for": "mametyramon"
-        },
-        {
-            "name": "gammamon",
-            "from": "bombermon"
-        },
-        {
-            "name": "tentomon",
-            "from": "kokuwamon"
-        },
-        {
-            "name": "pulsemon",
-            "from": "shootmon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metalmamemonx",
+				"color": "x",
+				"from": [1, 0]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "kokuwamonx",
+				"color": "x",
+				"from": [2, 0]
+			},
+			{
+				"name": "thunderballmonx",
+				"color": "x"
+			},
+			{
+				"name": "mamemonx",
+				"color": "x"
+			},
+			{
+				"name": "princemamemonx",
+				"color": "x"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "tonosamamamemon",
+				"from": [1, -1]
+			}
+		],
+		[
+			{
+				"name": "bommon2"
+			},
+			{
+				"name": "missimon",
+				"color": "machine"
+			},
+			{
+				"name": "kokuwamon",
+				"color": "machine"
+			},
+			{
+				"name": "thunderballmon",
+				"color": "electric"
+			},
+			{
+				"name": "mamemon",
+				"skins": ["bigmamemon", "catchmamemon"]
+			},
+			{
+				"name": "princemamemon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metalmamemon",
+				"color": "machine",
+				"from": [-1, 0]
+			},
+			{
+				"name": "banchomamemon",
+				"from": [-1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tekkamon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "giromon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "shootmon",
+				"from": [-1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "nanimon",
+				"from": [-4, -1],
+				"skins": ["bombernanimon"]
+			},
+			{
+				"name": "bombermon"
+			}
+		],
+		[
+			{
+				"name": "yuramon"
+			},
+			{
+				"name": "tanemon"
+			},
+			{
+				"name": "dondokomon"
+			},
+			{
+				"name": "igamon",
+				"skins": ["kougamon"]
+			},
+			{
+				"name": "fumamon"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "tyranomon",
+			"for": "mametyramon"
+		},
+		{
+			"name": "gammamon",
+			"from": "bombermon"
+		},
+		{
+			"name": "tentomon",
+			"from": "kokuwamon"
+		},
+		{
+			"name": "pulsemon",
+			"from": "shootmon"
+		}
+	]
 }

@@ -49,6 +49,7 @@
 			},
 			{
 				"name": "metalgarurumon",
+				"color": "machine",
 				"size": 2
 			},
 			[
@@ -78,6 +79,7 @@
 			null,
 			{
 				"name": "drimogemon",
+				"color": "earth",
 				"from": [-1.5, -1]
 			},
 			{
@@ -169,6 +171,7 @@
 			null,
 			{
 				"name": "nisedrimogemon",
+				"color": "earth",
 				"from": [-1, -1]
 			},
 			null,
@@ -190,7 +193,8 @@
 				"name": "gaogamon"
 			},
 			{
-				"name": "machgaogamon"
+				"name": "machgaogamon",
+				"color": "machine"
 			},
 			{
 				"name": "miragegaogamon"
@@ -208,6 +212,7 @@
 			null,
 			{
 				"name": "zeedgarurumon",
+				"color": "machine",
 				"from": [-1, -1]
 			},
 			null
