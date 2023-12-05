@@ -38,25 +38,20 @@
 			[
 				{
 					"name": "rosemon",
-					"from": [0, -1],
-					"color": "grass",
-					"from2": [1, -1],
-					"color2": "grass"
+					"from": [[0, -1], [1, -1]],
+					"color": ["grass", "grass"]
 				},
 				{
 					"name": "lotusmon",
-					"from": [0, -1],
-					"color": "dark",
-					"from2": [1, -1],
-					"color2": "grass"
+					"from": [[0, -1], [1, -1]],
+					"color": ["dark", "grass"]
 				}
 			],
 			{
 				"name": "rafflesimon",
 				"size": 2,
 				"color": "fusion",
-				"from": null,
-				"fusionFrom": [
+				"from": [
 					[-0.5, -1],
 					[0.5, -1]
 				]
@@ -69,10 +64,8 @@
 			{ "name": "kabukimon", "from": [-1, -1], "color": "grass" },
 			{
 				"name": "blossomon",
-				"from": [1, -1],
-				"from2": [-1, -1],
-				"color": "grass",
-				"color2": "grass"
+				"from": [[1, -1], [-1, -1]],
+				"color": ["grass", "grass"]
 			}
 		],
 		[
@@ -89,9 +82,8 @@
 			{
 				"name": "ceresmon",
 				"skins": ["ceresmonbird"],
-				"from2": [-1, -1],
-				"color": "grass",
-				"color2": "grass"
+				"from": [[0, -1], [-1, -1]],
+				"color": ["grass", "grass"]
 			}
 		],
 		[
@@ -101,17 +93,13 @@
 			{ "name": "zassoumon", "from": [-1, -1], "color": "grass" },
 			{
 				"name": "ajatarmon",
-				"from": [0, -1],
-				"color": "grass",
-				"from2": [1, -1],
-				"color2": "dark"
+				"from": [[0, -1], [1, -1]],
+				"color": ["grass", "dark"]
 			},
 			{
 				"name": "hydramon",
-				"from": [0, -1],
-				"color": "grass",
-				"from2": [1, -1],
-				"color2": "dark"
+				"from": [[0, -1], [1, -1]],
+				"color": ["grass", "dark"]
 			},
 			null,
 			null
@@ -134,19 +122,15 @@
 			{ "name": "floramon", "from": [0, -1], "color": "grass" },
 			{
 				"name": "kiwimon",
-				"from": [-1, -1],
-				"from2": [0, -1],
-				"color": "grass",
-				"color2": "grass"
+				"from": [[-1, -1], [0, -1]],
+				"color": ["grass", "grass"]
 			},
 			{ "name": "sirenmon" },
 			{
 				"name": "ceresmonbird",
 				"skins": ["ceresmon"],
-				"from": [0, -1],
-				"from2": [1, -1],
-				"color": "grass",
-				"color2": "grass"
+				"from": [[0, -1], [1, -1]],
+				"color": ["grass", "grass"]
 			}
 		],
 		[

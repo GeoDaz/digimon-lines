@@ -17,10 +17,8 @@
 			],
 			{
 				"name": "butenmon",
-				"color": "fusion",
-				"color2": "fusion",
-				"from": [-0.5, -1],
-				"from2": [0.5, -1],
+				"color": ["fusion", "fusion"],
+				"from": [[-0.5, -1], [0.5, -1]],
 				"size": 2
 			}
 		],
@@ -47,8 +45,7 @@
 			null,
 			{
 				"name": "hippogriffomon",
-				"from": [1, -1],
-				"from2": [-1, -1]
+				"from": [[1, -1], [-1, -1]]
 			},
 			{
 				"name": "griffomon",

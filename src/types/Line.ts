@@ -8,13 +8,10 @@ export interface Line {
 
 export interface LinePoint {
 	name: string;
-	color?: string;
-	color2?: string;
 	size?: number;
+	color?: string | string[];
+	from?: Array<number[]> | number[] | null;
 	skins?: string[];
-	from?: number[] | null;
-	from2?: number[];
-	fusionFrom?: Array<number[]>;
 	image?: string;
 }
 

@@ -13,7 +13,13 @@
 			null,
 			null,
 			{ "name": "gokimon", "from": [2, -1], "color": "dark" },
-			{ "name": "climbmon", "from": [0, -1], "from2": [-1, -1] },
+			{
+				"name": "climbmon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
+			},
 			{ "name": "shivamon", "from": [0, -1], "color": "light" }
 		],
 		[
@@ -36,7 +42,7 @@
 			null,
 			null,
 			null,
-			{ "name": "kuwagamon", "from": [-1, -1], "from2": null },
+			{ "name": "kuwagamon", "from": [-1, -1] },
 			{ "name": "okuwagamon", "from": [0, -1] },
 			{ "name": "grankuwagamon", "from": [0, -1] }
 		],
@@ -61,10 +67,9 @@
 			null,
 			null,
 			{
-				"name": "ballistamon", 
+				"name": "ballistamon",
 				"color": "machine",
-				"from": [-1, -1],
-				"from2": [1.5, -1],
+				"from": [[-1, -1], [1.5, -1]],
 				"skins": ["darkvolumon"]
 			},
 			{ "name": "atlurballistamon", "color": "machine" }
@@ -72,7 +77,7 @@
 		[
 			null,
 			null,
-			{ "name": "kokabuterimon", "size": 2, "from": [-5.5, -1], "from2": null },
+			{ "name": "kokabuterimon", "size": 2, "from": [-5.5, -1] },
 			{ "name": "blitzmon", "size": 2, "color": "electric" },
 			[
 				{ "name": "bolgmon", "from": [0.5, -1], "color": "machine" },

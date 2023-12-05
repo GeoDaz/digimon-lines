@@ -67,16 +67,14 @@
             null,
             {
                 "name": "mastemon",
-                "color": "fusion",
-                "color2": "fusion",
-                "from": [
+                "color": ["fusion", "fusion"],
+                "from": [[
                     -1,
                     -1
-                ],
-                "from2": [
+                ], [
                     1,
                     -1
-                ]
+                ]]
             }
         ],
         [

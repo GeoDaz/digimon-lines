@@ -1,145 +1,126 @@
 {
-    "columns": [
-        [
-            [
-                {
-                    "name": "botamon"
-                },
-                {
-                    "name": "punimon"
-                }
-            ],
-            [
-                {
-                    "name": "koromon"
-                },
-                {
-                    "name": "tsunomon"
-                }
-            ],
-            [
-                {
-                    "name": "agumon"
-                },
-                {
-                    "name": "gabumon"
-                }
-            ],
-            [
-                {
-                    "name": "greymon"
-                },
-                {
-                    "name": "garurumon"
-                }
-            ],
-            [
-                {
-                    "name": "metalgreymon"
-                },
-                {
-                    "name": "weregarurumon"
-                }
-            ],
-            [
-                {
-                    "name": "wargreymon"
-                },
-                {
-                    "name": "metalgarurumon"
-                }
-            ],
-            {
-                "name": "omegamon",
-                "size": 2,
-                "color": "fusion",
-                "from": null,
-                "fusionFrom": [
-                    [
-                        0.5,
-                        -1
-                    ],
-                    [
-                        -0.5,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            [
-                {
-                    "name": "chicomon"
-                },
-                {
-                    "name": "leafmon"
-                }
-            ],
-            [
-                {
-                    "name": "chibimon"
-                },
-                {
-                    "name": "minomon"
-                }
-            ],
-            [
-                {
-                    "name": "veemon"
-                },
-                {
-                    "name": "wormmon"
-                }
-            ],
-            [
-                {
-                    "name": "exveemon"
-                },
-                {
-                    "name": "stingmon"
-                }
-            ],
-            {
-                "name": "paildramon",
-                "color": "fusion",
-                "size": 2,
-                "from": null,
-                "skins": [
-                    "dinobeemon"
-                ],
-                "fusionFrom": [
-                    [
-                        0.5,
-                        -1
-                    ],
-                    [
-                        -0.5,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "imperialdramon",
-                "size": 2
-            },
-            {
-                "name": "imperialdramonfm",
-                "color": "mode",
-                "size": 2
-            },
-            {
-                "name": "imperialdramonpm",
-                "size": 2,
-                "color": "fusion",
-                "color2": "fusion",
-                "from2": [-2,-1]
-            }
-        ]
-    ],
-    "related": [
-        "greymon",
-        "garurumon",
-        "veemon",
-        "wormmon"
-    ]
+	"columns": [
+		[
+			[
+				{
+					"name": "botamon"
+				},
+				{
+					"name": "punimon"
+				}
+			],
+			[
+				{
+					"name": "koromon"
+				},
+				{
+					"name": "tsunomon"
+				}
+			],
+			[
+				{
+					"name": "agumon"
+				},
+				{
+					"name": "gabumon"
+				}
+			],
+			[
+				{
+					"name": "greymon"
+				},
+				{
+					"name": "garurumon"
+				}
+			],
+			[
+				{
+					"name": "metalgreymon"
+				},
+				{
+					"name": "weregarurumon"
+				}
+			],
+			[
+				{
+					"name": "wargreymon"
+				},
+				{
+					"name": "metalgarurumon"
+				}
+			],
+			{
+				"name": "omegamon",
+				"size": 2,
+				"color": "fusion",
+				"from": [
+					[0.5, -1],
+					[-0.5, -1]
+				]
+			}
+		],
+		[
+			[
+				{
+					"name": "chicomon"
+				},
+				{
+					"name": "leafmon"
+				}
+			],
+			[
+				{
+					"name": "chibimon"
+				},
+				{
+					"name": "minomon"
+				}
+			],
+			[
+				{
+					"name": "veemon"
+				},
+				{
+					"name": "wormmon"
+				}
+			],
+			[
+				{
+					"name": "exveemon"
+				},
+				{
+					"name": "stingmon"
+				}
+			],
+			{
+				"name": "paildramon",
+				"color": "fusion",
+				"size": 2,
+				"skins": ["dinobeemon"],
+				"from": [
+					[0.5, -1],
+					[-0.5, -1]
+				]
+			},
+			{
+				"name": "imperialdramon",
+				"size": 2
+			},
+			{
+				"name": "imperialdramonfm",
+				"color": "mode",
+				"size": 2
+			},
+			{
+				"name": "imperialdramonpm",
+				"size": 2,
+				"color": ["fusion", "fusion"],
+				"from": [
+					[0, -1],
+					[-2, -1]
+				]
+			}
+		]
+	],
+	"related": ["greymon", "garurumon", "veemon", "wormmon"]
 }

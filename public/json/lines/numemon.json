@@ -30,19 +30,18 @@
             },
             {
                 "name": "monzaemon",
-                "from2": [
+                "from": [[0, -1], [
                     1,
                     -1
-                ]
+                ]]
             },
             {
                 "name": "shinmonzaemon",
-                "color": "dark",
-                "color2": "dark",
-                "from2": [
+                "color": ["dark", "dark"],
+                "from": [[0, -1], [
                     1,
                     -1
-                ]
+                ]]
             }
         ],
         [
@@ -102,12 +101,11 @@
             },
             {
                 "name": "blackkingnumemon",
-                "color": "gold",
-                "color2": "gold",
-                "from2": [
+                "color": ["gold", "gold"],
+                "from": [[0, -1], [
                     -1,
                     -1
-                ]
+                ]]
             }
         ],
         [

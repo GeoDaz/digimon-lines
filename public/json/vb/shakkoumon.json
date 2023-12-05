@@ -54,15 +54,13 @@
 			[
 				{
 					"name": "knightmon",
-					"color": "fusion",
-					"color2": "fusion",
-					"from2": [1, -1]
+					"color": ["fusion", "fusion"],
+					"from": [[0, -1], [1, -1]]
 				},
 				{
 					"name": "shakkoumon",
-					"color": "fusion",
-					"color2": "fusion",
-					"from2": [-1, -1]
+					"color": ["fusion", "fusion"],
+					"from": [[0, -1], [-1, -1]]
 				}
 			],
 			[

@@ -148,12 +148,11 @@
             },
             {
                 "name": "millenniumon",
-                "color": "fusion",
-                "color2": "fusion",
-                "from2": [
+                "color": ["fusion", "fusion"],
+                "from": [[0, -1], [
                     -1,
                     0
-                ]
+                ]]
             },
             {
                 "name": "zeedmillenniumon",

@@ -84,12 +84,11 @@
             },
             {
                 "name": "gogmamon",
-				"color": "earth",
-				"color2": "earth",
-                "from2": [
+				"color": ["earth", "earth"],
+                "from": [[0, -1], [
                     -1,
                     -1
-                ]
+                ]]
             },
             {
                 "name": "banchogolemon",

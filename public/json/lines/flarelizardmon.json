@@ -8,10 +8,7 @@
 			{
 				"name": "helloogarmon",
 				"color": "fire",
-				"from": [
-					1,
-					-1
-				]
+				"from": [1, -1]
 			}
 		],
 		[
@@ -26,20 +23,12 @@
 			[
 				{
 					"name": "toyagumon",
-					"skins": [
-						"cleartoyagumon"
-					],
-					"from": [
-						0.5,
-						-1
-					]
+					"skins": ["cleartoyagumon"],
+					"from": [0.5, -1]
 				},
 				{
 					"name": "toyagumonb",
-					"from": [
-						-0.5,
-						-1
-					],
+					"from": [-0.5, -1],
 					"color": "dark"
 				}
 			],
@@ -47,58 +36,38 @@
 				{
 					"name": "flarelizardmon",
 					"color": "fire",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				},
 				{
 					"name": "darklizardmon",
 					"color": "dark",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				}
 			],
 			[
 				{
 					"name": "megadramon",
 					"color": "machine",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				},
 				{
 					"name": "gigadramon",
 					"color": "dark",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				}
 			],
 			[
 				{
 					"name": "machinedramon",
 					"color": "machine",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				},
 				{
 					"name": "chaosdramon",
-					"color": "dark",
+					"color": ["dark", "dark"],
 					"from": [
-						0,
-						-1
-					],
-					"color2": "dark",
-					"from2": [
-						-1,
-						0
+						[0, -1],
+						[-1, 0]
 					]
 				}
 			],
@@ -107,10 +76,7 @@
 				{
 					"name": "neocrimson",
 					"color": "fusion",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				}
 			]
 		],
@@ -123,10 +89,7 @@
 			{
 				"name": "chaosdramonx",
 				"color": "x",
-				"from": [
-					-1,
-					0
-				]
+				"from": [-1, 0]
 			}
 		]
 	],

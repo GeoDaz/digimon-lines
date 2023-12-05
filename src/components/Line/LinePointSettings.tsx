@@ -61,22 +61,26 @@ const LinePointSettings: React.FC<Props> = ({
 		}
 	};
 
-	const handleSelectColor = (color: string, number?: number) => {
+	const handleSelectColor = (color: string, i: number) => {
 		if (handleUpdate && point) {
-			const nextPoint: LinePoint = {
-				...point,
-				[number == 2 ? 'color2' : 'color']: color,
-			};
+			const colors = ((point.color || []) as string[]).slice();
+			colors[i] = color;
+			const nextPoint: LinePoint = { ...point, color: colors };
 			handleUpdate(setLineColumn, coord, nextPoint);
 		}
 	};
 
-	const handleRemoveFrom = (number?: number) => {
-		if (handleUpdate && point) {
-			const nextPoint: LinePoint = {
-				...point,
-				[number == 2 ? 'from2' : 'from']: null,
-			};
+	const handleRemoveFrom = (i: number) => {
+		if (handleUpdate && point?.from) {
+			let froms = point.from.slice();
+			let colors = ((point.color || []) as string[]).slice();
+			froms.splice(i, 1);
+			colors.splice(i, 1);
+			if (!froms.length) {
+				(froms as Array<number[]> | null) = null;
+				(colors as string[] | undefined) = undefined;
+			}
+			const nextPoint: LinePoint = { ...point, from: froms, color: colors };
 			handleUpdate(setLineColumn, coord, nextPoint);
 		}
 	};
@@ -108,22 +112,16 @@ const LinePointSettings: React.FC<Props> = ({
 						</div>
 					</div>
 				) : null}
-				{!!point?.from && (
-					<SettingFrom
-						number={1}
-						color={point.color}
-						handleSelect={handleSelectColor}
-						handleRemove={handleRemoveFrom}
-					/>
-				)}
-				{!!point?.from2 && (
-					<SettingFrom
-						number={2}
-						color={point.color2}
-						handleSelect={handleSelectColor}
-						handleRemove={handleRemoveFrom}
-					/>
-				)}
+				{!!point?.from &&
+					point.from.map((from, i) => (
+						<SettingFrom
+							key={i}
+							number={i}
+							color={point.color && point.color[i]}
+							handleSelect={handleSelectColor}
+							handleRemove={handleRemoveFrom}
+						/>
+					))}
 			</Modal.Body>
 		</Modal>
 	);
@@ -136,7 +134,7 @@ const SettingFrom: React.FC<{
 	handleRemove: CallableFunction;
 }> = ({ number, color, handleSelect, handleRemove }) => (
 	<div className="mt-4">
-		Line {number}&nbsp;:{' '}
+		Line {number + 1}&nbsp;:{' '}
 		<DropdownButton
 			as={ButtonGroup}
 			id="line-point-settings_point-from"

@@ -31,10 +31,8 @@
 			null,
 			{
 				"name": "mailbirdramon",
-				"color": "dark",
-				"color2": "dark",
-				"from": [1, -1],
-				"from2": [-1, -1]
+				"color": ["dark", "dark"],
+				"from": [[1, -1], [-1, -1]]
 			},
             {
                 "name": "metalgreymonb3",

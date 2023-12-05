@@ -9,9 +9,10 @@
 			{ "name": "togemogumon", "from": [1, -1], "color": "ice" },
 			{
 				"name": "stegomon",
-				"from": [0, -1],
-				"from2": [1, -1],
-				"color2": "default"
+				"from": [
+					[0, -1],
+					[1, -1]
+				]
 			},
 			{ "name": "spinomon", "from": [0, -1] }
 		],
@@ -31,9 +32,7 @@
 			{
 				"name": "zudomon",
 				"from": [0, -1],
-				"color": "marine",
-				"from2": null,
-				"color2": "fusion"
+				"color": ["marine", "fusion"]
 			},
 			{ "name": "vikemon", "from": [0, -1], "color": "ice" }
 		],
@@ -44,10 +43,11 @@
 			{ "name": "digmon", "from": [-2, -1] },
 			{
 				"name": "kenkimon",
-				"from": [0, -1],
-				"from2": [-1, -1],
-				"color": "fusion",
-				"color2": "fusion"
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"color": ["fusion", "fusion"]
 			},
 			{ "name": "breakdramon", "from": [0, -1] }
 		],

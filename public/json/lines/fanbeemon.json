@@ -32,14 +32,14 @@
 			null,
 			null,
 			{ "name": "yanmamon", "from": [-1, -1] },
-			{ "name": "anomalocarimon", "from": [0, -1], "from2": [1, -1] },
+			{ "name": "anomalocarimon", "from": [[0, -1], [1, -1]] },
 			null
 		],
 		[
 			null,
 			null,
 			null,
-			{ "name": "sandyanmamon", "from": [1, -1], "from2": null },
+			{ "name": "sandyanmamon", "from": [1, -1] },
 			{ "name": "anomalocarimonx", "from": [-1, 0], "color": "x" }
 		],
 		[
@@ -47,7 +47,7 @@
 			null,
 			{ "name": "dokunemon", "from": [-7, -1] },
 			{ "name": "snimon", "from": [0, -1] },
-			{ "name": "scorpiomon", "from": [0, -1], "from2": [-1, -1], "color": "dark" }
+			{ "name": "scorpiomon", "from": [[0, -1], [-1, -1]], "color": "dark" }
 		]
 	],
 	"related": [

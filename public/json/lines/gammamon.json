@@ -6,10 +6,7 @@
 			null,
 			{
 				"name": "wezengammamon",
-				"from": [
-					3.5,
-					-1
-				]
+				"from": [3.5, -1]
 			},
 			{
 				"name": "ghilliedhumon"
@@ -23,10 +20,7 @@
 			null,
 			{
 				"name": "kausgammamon",
-				"from": [
-					2.5,
-					-1
-				]
+				"from": [2.5, -1]
 			},
 			{
 				"name": "fumamon"
@@ -41,10 +35,7 @@
 			null,
 			{
 				"name": "bombermon",
-				"from": [
-					1,
-					-1
-				]
+				"from": [1, -1]
 			},
 			null,
 			null
@@ -65,69 +56,44 @@
 			[
 				{
 					"name": "betelgammamon",
-					"from": [
-						0.5,
-						-1
-					]
+					"from": [0.5, -1]
 				},
 				{
 					"name": "gulusgammamon",
 					"color": "dark",
-					"from": [
-						-0.5,
-						-1
-					]
+					"from": [-0.5, -1]
 				}
 			],
 			[
 				{
 					"name": "canoweissmon",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				},
 				{
 					"name": "regulusmon",
 					"color": "dark",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				}
 			],
 			[
 				{
 					"name": "siriusmon",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				},
 				{
 					"name": "arcturusmon",
 					"color": "dark",
-					"from": [
-						0,
-						-1
-					]
+					"from": [0, -1]
 				}
 			],
 			{
 				"name": "proximamon",
 				"size": 2,
 				"color": "fusion",
-                "from": null,
-                "fusionFrom": [
-                    [
-                        -0.5,
-                        -1
-                    ],
-                    [
-                        0.5,
-                        -1
-                    ]
-                ]
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				]
 			}
 		],
 		[
@@ -137,10 +103,7 @@
 			{
 				"name": "monochromonx",
 				"color": "x",
-				"from": [
-					1,
-					0
-				]
+				"from": [1, 0]
 			},
 			{
 				"name": "triceramonx",
@@ -158,10 +121,7 @@
 			null,
 			{
 				"name": "monochromon",
-				"from": [
-					-2.5,
-					-1
-				]
+				"from": [-2.5, -1]
 			},
 			{
 				"name": "triceramon"
@@ -174,16 +134,13 @@
 			null,
 			{
 				"name": "brachiomon",
-				"from": [
-					-1,
-					-1
-				]
+				"from": [-1, -1]
 			},
 			{
 				"name": "cannondramon",
-				"from2": [
-					-1,
-					-1
+				"from": [
+					[0, -1],
+					[-1, -1]
 				]
 			}
 		],
@@ -195,18 +152,14 @@
 			{
 				"name": "vermillimon",
 				"color": "fire",
-				"from": [
-					-2,
-					-1
-				]
+				"from": [-2, -1]
 			},
 			{
 				"name": "dorbickmon",
-				"color": "fire",
-				"color2": "fire",
-				"from2": [
-					1,
-					-1
+				"color": ["fire", "fire"],
+				"from": [
+					[0, -1],
+					[1, -1]
 				]
 			},
 			{
@@ -222,10 +175,7 @@
 			{
 				"name": "volcdramon",
 				"color": "fire",
-				"from": [
-					-3,
-					-1
-				]
+				"from": [-3, -1]
 			}
 		]
 	],

@@ -35,11 +35,8 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 		const nextPoint = {
 			...line.columns[source[0]][source[1]],
 		} as LinePoint;
-		if (nextPoint.from) {
-			nextPoint.from2 = from;
-		} else {
-			nextPoint.from = from;
-		}
+		if (!nextPoint.from) nextPoint.from = [];
+		(nextPoint.from as Array<number[]>).push(from);
 		handleUpdate(setLineColumn, source, nextPoint);
 		setDrawing(undefined);
 	};

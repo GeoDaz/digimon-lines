@@ -1,1 +1,57 @@
-{"columns":[[null,null,null,null,{"name":"dinobeemon","from":[1,-1]}],[null,null,null,{"name":"exveemon","from":[1,-1]},{"name":"paildramon"},{"name":"imperialdramon","from":[0,-1],"from2":[-1,-1]}],[{"name":"chicomon"},{"name":"chibimon"},{"name":"veemon"},{"name":"veedramon"},{"name":"aeroveedramon"},{"name":"ulforceveedramon"}],[null,null,null,{"name":"raidramon","color":"electric","from":[-1,-1]},{"name":"sagittarimon","color":"fusion","from":[0,-1],"from2":[1,-1],"color2":"fusion"},{"name":"azulongmon","color":"electric","from":[0,-1]}],[null,null,null,{"name":"flamedramon","color":"fire","from":[-2,-1]},{"name":"goldveedramon","color":"gold","from":[0,-1]},{"name":"magnamon","color":"gold"}],[null,null,null,null,{"name":"digitamamon","color":"default","from":[-1,-1]}]]}
+{
+	"columns": [
+		[null, null, null, null, { "name": "dinobeemon", "from": [1, -1] }],
+		[
+			null,
+			null,
+			null,
+			{ "name": "exveemon", "from": [1, -1] },
+			{ "name": "paildramon" },
+			{
+				"name": "imperialdramon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
+			}
+		],
+		[
+			{ "name": "chicomon" },
+			{ "name": "chibimon" },
+			{ "name": "veemon" },
+			{ "name": "veedramon" },
+			{ "name": "aeroveedramon" },
+			{ "name": "ulforceveedramon" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "raidramon", "color": "electric", "from": [-1, -1] },
+			{
+				"name": "sagittarimon",
+				"color": ["fusion", "fusion"],
+				"from": [
+					[0, -1],
+					[1, -1]
+				]
+			},
+			{ "name": "azulongmon", "color": "electric", "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "flamedramon", "color": "fire", "from": [-2, -1] },
+			{ "name": "goldveedramon", "color": "gold", "from": [0, -1] },
+			{ "name": "magnamon", "color": "gold" }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "digitamamon", "color": "default", "from": [-1, -1] }
+		]
+	]
+}

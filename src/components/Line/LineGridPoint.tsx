@@ -59,17 +59,7 @@ const LinePoint: React.FC<{
 		}
 	};
 
-	const {
-		name,
-		from,
-		from2,
-		fusionFrom,
-		size,
-		color,
-		color2,
-		skins = [],
-		image,
-	} = point;
+	const { name, from, size, color, skins = [], image } = point;
 
 	const width: number = useMemo(() => {
 		if (size) {
@@ -115,20 +105,24 @@ const LinePoint: React.FC<{
 					)}
 				</div>
 			)}
-			<LineSvg from={from} color={color} baseWidth={width} size={size} />
-			{!!from2 && (
-				<LineSvg from={from2} color={color2} baseWidth={width} size={size} />
-			)}
-			{!!fusionFrom &&
-				fusionFrom.map((coord, i) => (
+			{from && Array.isArray(from[0]) ? (
+				from.map((ifrom, i) => (
 					<LineSvg
 						key={i}
-						from={coord}
-						color={color}
+						from={ifrom as number[]}
+						color={color && (Array.isArray(color) ? color[i] : color)}
 						baseWidth={width}
 						size={size}
 					/>
-				))}
+				))
+			) : (
+				<LineSvg
+					from={from as number[] | null | undefined}
+					color={color as string}
+					baseWidth={width}
+					size={size}
+				/>
+			)}
 		</div>
 	);
 };

@@ -33,9 +33,8 @@
 			},
 			{
 				"name": "ornismon",
-				"color": "dark",
-				"color2": "dark",
-				"from2": [-1, -1]
+				"color": ["dark", "dark"],
+				"from": [[0, -1], [-1, -1]]
 			}
 		],
 		[

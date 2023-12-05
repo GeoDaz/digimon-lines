@@ -25,7 +25,7 @@
 			{
 				"name": "bancholeomon",
 				"size": 2,
-				"from2": [1.65, -1]
+				"from": [[0, -1], [1.65, -1]]
 			},
 			[
 				[
@@ -44,10 +44,8 @@
 			{
 				"name": "ultimatechaosmon",
 				"size": 2,
-				"color": "fusion",
-				"color2": "fusion",
-				"from": [-0.5, -1],
-				"from2": [0.5, -1]
+				"color": ["fusion", "fusion"],
+				"from": [[-0.5, -1], [0.5, -1]]
 			}
 		],
 		[
@@ -61,10 +59,8 @@
 			},
 			{
 				"name": "heavyleomon",
-				"color": "machine",
-				"color2": "machine",
-				"from": [0, -1],
-				"from2": [-1.65, -1]
+				"color": ["machine", "machine"],
+				"from": [[0, -1], [-1.65, -1]]
 			}
 		],
 		[
@@ -150,9 +146,8 @@
 			},
 			{
 				"name": "dinotigermon",
-				"color": "x",
-				"color2": "ice",
-				"from2": [-1, -1]
+				"color": ["x", "ice"],
+				"from": [[0, -1], [-1, -1]]
 			}
 		],
 		[

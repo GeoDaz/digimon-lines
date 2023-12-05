@@ -169,17 +169,13 @@
 			},
 			{
 				"name": "mastemon",
-				"color": "fusion",
-				"from": [-2, -1],
-				"color2": "fusion",
-				"from2": [2, -1]
+				"color": ["fusion", "fusion"],
+				"from": [[-2, -1], [2, -1]]
 			},
 			{
 				"name": "ordinemon",
-				"color": "fusion",
-				"from": [-1, -1],
-				"color2": "fusion",
-				"from2": [6, -1]
+				"color": ["fusion", "fusion"],
+				"from": [[-1, -1], [6, -1]]
 			}
 		],
 		[
@@ -254,8 +250,7 @@
 			null,
 			{
 				"name": "mihiramon",
-				"from": [-1, -1],
-				"from2": [1.5, -1]
+				"from": [[-1, -1], [1.5, -1]]
 			},
 			{
 				"name": "baihumon"
