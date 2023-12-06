@@ -77,6 +77,7 @@ const LinePointSettings: React.FC<Props> = ({
 			froms.splice(i, 1);
 			colors.splice(i, 1);
 			if (!froms.length) {
+				// become nullable in the if
 				(froms as Array<number[]> | null) = null;
 				(colors as string[] | undefined) = undefined;
 			}
@@ -143,7 +144,9 @@ const SettingFrom: React.FC<{
 				<>
 					<Icon
 						name="circle-fill"
-						style={{ color: color ? colors[color] : 'white' }}
+						style={{
+							color: color ? colors[color] : 'white',
+						}}
 					/>{' '}
 					{color || 'default'}
 				</>

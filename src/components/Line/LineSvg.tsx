@@ -1,6 +1,5 @@
 import React from 'react';
 import { colors } from '@/consts/colors';
-import { StringObject } from '@/types/Ui';
 
 // const xMargin = 22.5;
 // const yMargin = 30;
@@ -77,7 +76,7 @@ const LineSvg: React.FC<Props> = ({
 				x2={xOrigin + xDest}
 				y2={left ? yOrigin + yDest : yOrigin}
 				style={{
-					stroke: (color && (colors as StringObject)[color]) || colors.default,
+					stroke: (color && colors[color]) || colors.default,
 					strokeWidth,
 					strokeLinecap: 'round',
 				}}

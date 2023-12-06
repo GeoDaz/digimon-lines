@@ -1,24 +1,24 @@
-import { Legend } from '@/types/Ui';
+import { Legend, StringObject } from '@/types/Ui';
 
-export enum colors {
-	default = '#fff', //white // '#bdc3d1', // grey
-	x = '#0080ff', // light_blue
-	fusion = '#a054b9', // purple '#a333c8'
-	mode = '#ef6e33', // orange
-	gold = '#e4c05c', // gold '#E9DA1D'
-	human = '#F966DE', // pink
-	dark = '#6435c9', // violet '#684399' // black #000 ,
-	light = '#fffd8d', // light yellow
-	ice = '#87C7C6', // light blue
-	fire = '#db2828', // red
-	grass = '#21ba45', // green
-	marine = '#0056a6', // marine blue
-	electric = '#c0e617', // yellow
-	wind = '#92f5c4', // yellow
-	earth = '#a46204', // yellow
-	machine = '#909090', // yellow
-	// psychic= '#a24795', // fushia
-}
+export const colors: StringObject = {
+	default: '#fff', //white // '#bdc3d1', // grey
+	x: '#0080ff', // light_blue
+	fusion: '#a054b9', // purple '#a333c8'
+	mode: '#ef6e33', // orange
+	gold: '#e4c05c', // gold '#E9DA1D'
+	human: '#F966DE', // pink
+	dark: '#6435c9', // violet '#684399' // black #000 ,
+	light: '#fffd8d', // light yellow
+	ice: '#87C7C6', // light blue
+	fire: '#db2828', // red
+	grass: '#21ba45', // green
+	marine: '#0056a6', // marine blue
+	electric: '#c0e617', // yellow
+	wind: '#92f5c4', // yellow
+	earth: '#a46204', // yellow
+	machine: '#909090', // yellow
+	// psychic: '#a24795', // fushia
+};
 
 export const legend: Legend[] = [
 	{ key: 'default', color: colors.default, text: 'Default color' },
