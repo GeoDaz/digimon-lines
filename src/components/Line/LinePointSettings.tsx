@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useEffect } from 'react';
 import { Button, ButtonGroup, Dropdown, DropdownButton, Modal } from 'react-bootstrap';
 import Icon from '@/components/Icon';
-import { LinePoint } from '@/types/Line';
+import { LineColor, LineFrom, LinePoint } from '@/types/Line';
 import { GridContext } from '@/context/grid';
 import { setLinePoint } from '@/reducers/lineReducer';
 import SearchBar from '@/components/SearchBar';
@@ -63,7 +63,14 @@ const LinePointSettings: React.FC<Props> = ({
 
 	const handleSelectColor = (color: string, i: number) => {
 		if (handleUpdate && point) {
-			const colors = ((point.color || []) as string[]).slice();
+			let colors: LineColor | undefined = point.color;
+			if (Array.isArray(colors)) {
+				colors = colors.slice();
+			} else if (typeof colors === 'string' && point.from) {
+				colors = point.from.map(() => colors as string);
+			} else {
+				colors = [];
+			}
 			colors[i] = color;
 			const nextPoint: LinePoint = { ...point, color: colors };
 			handleUpdate(setLinePoint, coord, nextPoint);
@@ -72,14 +79,21 @@ const LinePointSettings: React.FC<Props> = ({
 
 	const handleRemoveFrom = (i: number) => {
 		if (handleUpdate && point?.from) {
-			let froms = point.from.slice();
-			let colors = ((point.color || []) as string[]).slice();
-			froms.splice(i, 1);
-			colors.splice(i, 1);
-			if (!froms.length) {
-				// become nullable in the if
-				(froms as Array<number[]> | null) = null;
-				(colors as string[] | undefined) = undefined;
+			let froms: LineFrom = point.from.slice();
+			let colors: LineColor | undefined = point.color;
+			if (Array.isArray(froms)) {
+				froms.splice(i, 1);
+				if (Array.isArray(colors)) {
+					colors = colors.slice();
+					colors.splice(i, 1);
+				}
+				if (!froms.length) {
+					froms = null;
+					colors = undefined;
+				}
+			} else {
+				froms = null;
+				colors = undefined;
 			}
 			const nextPoint: LinePoint = { ...point, from: froms, color: colors };
 			handleUpdate(setLinePoint, coord, nextPoint);
@@ -118,7 +132,9 @@ const LinePointSettings: React.FC<Props> = ({
 						<SettingFrom
 							key={i}
 							number={i}
-							color={point.color && point.color[i]}
+							color={
+								Array.isArray(point.color) ? point.color[i] : point.color
+							}
 							handleSelect={handleSelectColor}
 							handleRemove={handleRemoveFrom}
 						/>
