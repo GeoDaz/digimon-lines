@@ -95,31 +95,33 @@
                     -1
                 ]
             },
-            [
-                {
-                    "name": "blizzarmon",
-                    "color": "ice",
-                    "from": [
-                        0.5,
-                        -1
-                    ]
-                },
-                {
-                    "name": "daipenmon",
-                    "color": "ice",
-                    "from": [
-                        -0.5,
-                        -1
-                    ]
-                }
-            ],
-            [
-                {
-                    "name": "ancientmegatheriumon",
-                    "color": "ice"
-                },
-                null
-            ]
+            {
+                "name": "blizzarmon",
+                "color": "ice",
+                "from": [
+                    0.5,
+                    -1
+                ]
+            },
+            {
+                "name": "ancientmegatheriumon",
+                "color": "ice"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "daipenmon",
+                "color": "ice",
+                "from": [
+                    -0.5,
+                    -1
+                ]
+            },
+            null
         ],
         [
             null,

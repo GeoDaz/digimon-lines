@@ -1,3 +1,9 @@
+export const typeOf = (value: any): string => {
+	if (value === null) return 'null';
+	if (Array.isArray(value)) return 'array';
+	return typeof value;
+};
+
 export const makeClassName = (...classList: any[]): string =>
 	classList.reduce((classList, className) => {
 		if (!className) return classList;

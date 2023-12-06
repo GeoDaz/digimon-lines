@@ -1,122 +1,141 @@
 {
-	"columns": [
-		[
-			{
-				"name": "bommon"
-			},
-			{
-				"name": "missimon"
-			},
-			{
-				"name": "commandramon"
-			},
-			{
-				"name": "sealsdramon"
-			},
-			{
-				"name": "tankdramon"
-			},
-			{
-				"name": "darkdramon"
-			},
-			{
-				"name": "chaosmon",
-				"color": ["fusion", "fusion"],
-				"from": [
-					[0, -1],
-					[1, -1]
-				]
-			}
-		],
-		[
-			[
-				{
-					"name": "popomon"
-				},
-				{
-					"name": "puwamon"
-				}
-			],
-			[
-				{
-					"name": "frimon"
-				},
-				{
-					"name": "pinamon"
-				}
-			],
-			[
-				{
-					"name": "liolmon"
-				},
-				{
-					"name": "falcomon"
-				}
-			],
-			[
-				{
-					"name": "liamon"
-				},
-				{
-					"name": "diatrymon"
-				}
-			],
-			[
-				{
-					"name": "loaderliomon"
-				},
-				{
-					"name": "yatagaramon"
-				}
-			],
-			[
-				{
-					"name": "bancholeomon"
-				},
-				{
-					"name": "valdurmon"
-				}
-			],
-			{
-				"name": "chaosmonvm",
-				"color": "fusion",
-				"size": 2,
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				]
-			},
-			{
-				"name": "ultimatechaosmon",
-				"color": "fusion",
-				"size": 2,
-				"from": [
-					[-1.5, -2],
-					[0, -1],
-					[1.5, -2]
-				]
-			}
-		],
-		[
-			{
-				"name": "pafumon"
-			},
-			{
-				"name": "kyaromon"
-			},
-			{
-				"name": "kudamon"
-			},
-			{
-				"name": "reppamon"
-			},
-			{
-				"name": "chirinmon"
-			},
-			{
-				"name": "kentaurosmon"
-			}
-		]
-	],
-	"related": ["commandramon", "leomon", "falcomon", "kudamon"]
+    "columns": [
+        [
+            {
+                "name": "bommon"
+            },
+            {
+                "name": "missimon"
+            },
+            {
+                "name": "commandramon"
+            },
+            {
+                "name": "sealsdramon"
+            },
+            {
+                "name": "tankdramon"
+            },
+            {
+                "name": "darkdramon"
+            },
+            {
+                "name": "chaosmon",
+                "color": [
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "popomon"
+            },
+            {
+                "name": "frimon"
+            },
+            {
+                "name": "liolmon"
+            },
+            {
+                "name": "liamon"
+            },
+            {
+                "name": "loaderliomon"
+            },
+            {
+                "name": "bancholeomon"
+            },
+            {
+                "name": "chaosmonvm",
+                "color": "fusion",
+                "size": 2,
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "ultimatechaosmon",
+                "color": "fusion",
+                "size": 2,
+                "from": [
+                    [
+                        -1.5,
+                        -2
+                    ],
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1.5,
+                        -2
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "puwamon"
+            },
+            {
+                "name": "pinamon"
+            },
+            {
+                "name": "falcomon"
+            },
+            {
+                "name": "diatrymon"
+            },
+            {
+                "name": "yatagaramon"
+            },
+            {
+                "name": "valdurmon"
+            }
+        ],
+        [
+            {
+                "name": "pafumon"
+            },
+            {
+                "name": "kyaromon"
+            },
+            {
+                "name": "kudamon"
+            },
+            {
+                "name": "reppamon"
+            },
+            {
+                "name": "chirinmon"
+            },
+            {
+                "name": "kentaurosmon"
+            }
+        ]
+    ],
+    "related": [
+        "commandramon",
+        "leomon",
+        "falcomon",
+        "kudamon"
+    ]
 }

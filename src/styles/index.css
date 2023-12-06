@@ -305,6 +305,9 @@ input.form-control {
 
 .line-grid>.line-row>.col {
   margin-bottom: 2em;
+  min-width: var(--dl-img-size);
+  min-height: var(--dl-img-size);
+  position: relative;
 }
 
 .line-grid>.line-row>.line-row {
@@ -333,6 +336,9 @@ a.line-point {
   text-decoration: none;
 }
 
+.line-point.double {
+  position: absolute;
+}
 
 .line-point.editable {
   cursor: pointer;

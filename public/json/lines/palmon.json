@@ -3,50 +3,78 @@
 		[
 			null,
 			null,
-			{ "name": "palmonx", "color": "x", "from": [2, 0] },
-			{ "name": "togemonx", "color": "x" },
-			{ "name": "lilimonx", "color": "x" },
-			{ "name": "rosemonx", "color": "x" }
+			{
+				"name": "palmonx",
+				"color": "x",
+				"from": [2, 0]
+			},
+			{
+				"name": "togemonx",
+				"color": "x"
+			},
+			{
+				"name": "lilimonx",
+				"color": "x"
+			},
+			{
+				"name": "rosemonx",
+				"color": "x"
+			}
 		],
 		[
 			null,
 			null,
 			null,
-			{ "name": "ponchomon", "color": "dark", "from": [1, -1] },
+			{
+				"name": "ponchomon",
+				"color": "dark",
+				"from": [1, -1]
+			},
 			null,
-			{ "name": "bancholilimon", "from": [1, -1], "color": "grass" },
-			{ "name": "rosemonbm", "color": "mode", "from": [1, -1] }
+			{
+				"name": "bancholilimon",
+				"from": [1, -1],
+				"color": "grass"
+			},
+			{
+				"name": "rosemonbm",
+				"color": "mode",
+				"size": 2,
+				"from": [1, -1]
+			}
 		],
 		[
-			[{ "name": "yuramon" }, { "name": "nyokimon" }],
-			[
-				{ "name": "tanemon", "from": [0, -1], "color": "grass" },
-				{ "name": "budmon", "from": [0, -1], "color": "grass" }
-			],
-			[
-				{ "name": "palmon", "from": [0, -1], "color": "grass" },
-				{ "name": "lalamon", "from": [0, -1], "color": "grass" }
-			],
-			[
-				{ "name": "togemon", "from": [0, -1], "color": "grass" },
-				{ "name": "sunflowmon", "from": [0, -1], "color": "grass" }
-			],
-			[
-				{ "name": "lilimon", "from": [0, -1], "color": "grass" },
-				{ "name": "lilamon", "from": [0, -1], "color": "grass" }
-			],
-			[
-				{
-					"name": "rosemon",
-					"from": [[0, -1], [1, -1]],
-					"color": ["grass", "grass"]
-				},
-				{
-					"name": "lotusmon",
-					"from": [[0, -1], [1, -1]],
-					"color": ["dark", "grass"]
-				}
-			],
+			{
+				"name": "yuramon"
+			},
+			{
+				"name": "tanemon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "palmon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "togemon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "lilimon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "rosemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": ["grass", "grass"]
+			},
 			{
 				"name": "rafflesimon",
 				"size": 2,
@@ -58,31 +86,88 @@
 			}
 		],
 		[
+			{
+				"name": "nyokimon"
+			},
+			{
+				"name": "budmon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "lalamon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "sunflowmon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "lilamon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "lotusmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": ["dark", "grass"]
+			}
+		],
+		[
 			null,
 			null,
 			null,
-			{ "name": "kabukimon", "from": [-1, -1], "color": "grass" },
+			{
+				"name": "kabukimon",
+				"from": [-1, -1],
+				"color": "grass"
+			},
 			{
 				"name": "blossomon",
-				"from": [[1, -1], [-1, -1]],
+				"from": [
+					[1, -1],
+					[-1, -1]
+				],
 				"color": ["grass", "grass"]
 			}
 		],
 		[
-			{ "name": "yuramon" },
-			{ "name": "tanemon", "from": [0, -1], "color": "grass" },
-			{ "name": "alraumon", "from": [0, -1], "color": "grass" },
+			{
+				"name": "yuramon"
+			},
+			{
+				"name": "tanemon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "alraumon",
+				"from": [0, -1],
+				"color": "grass"
+			},
 			{
 				"name": "vegimon",
 				"skins": ["vegimonred"],
 				"from": [0, -1],
 				"color": "grass"
 			},
-			{ "name": "oleamon", "from": [0, -1], "color": "dark" },
+			{
+				"name": "oleamon",
+				"from": [0, -1],
+				"color": "dark"
+			},
 			{
 				"name": "ceresmon",
 				"skins": ["ceresmonbird"],
-				"from": [[0, -1], [-1, -1]],
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
 				"color": ["grass", "grass"]
 			}
 		],
@@ -90,15 +175,25 @@
 			null,
 			null,
 			null,
-			{ "name": "zassoumon", "from": [-1, -1], "color": "grass" },
+			{
+				"name": "zassoumon",
+				"from": [-1, -1],
+				"color": "grass"
+			},
 			{
 				"name": "ajatarmon",
-				"from": [[0, -1], [1, -1]],
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
 				"color": ["grass", "dark"]
 			},
 			{
 				"name": "hydramon",
-				"from": [[0, -1], [1, -1]],
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
 				"color": ["grass", "dark"]
 			},
 			null,
@@ -107,9 +202,21 @@
 		[
 			null,
 			null,
-			{ "name": "pomumon", "from": [1, -1], "color": "grass" },
-			{ "name": "parasaumon", "from": [0, -1], "color": "grass" },
-			{ "name": "tropiamon", "from": [0, -1], "color": "grass" },
+			{
+				"name": "pomumon",
+				"from": [1, -1],
+				"color": "grass"
+			},
+			{
+				"name": "parasaumon",
+				"from": [0, -1],
+				"color": "grass"
+			},
+			{
+				"name": "tropiamon",
+				"from": [0, -1],
+				"color": "grass"
+			},
 			{
 				"name": "bloomlordmon",
 				"from": [0, -1],
@@ -117,19 +224,35 @@
 			}
 		],
 		[
-			{ "name": "nyokimon" },
-			{ "name": "yokomon" },
-			{ "name": "floramon", "from": [0, -1], "color": "grass" },
+			{
+				"name": "nyokimon"
+			},
+			{
+				"name": "yokomon"
+			},
+			{
+				"name": "floramon",
+				"from": [0, -1],
+				"color": "grass"
+			},
 			{
 				"name": "kiwimon",
-				"from": [[-1, -1], [0, -1]],
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
 				"color": ["grass", "grass"]
 			},
-			{ "name": "sirenmon" },
+			{
+				"name": "sirenmon"
+			},
 			{
 				"name": "ceresmonbird",
 				"skins": ["ceresmon"],
-				"from": [[0, -1], [1, -1]],
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
 				"color": ["grass", "grass"]
 			}
 		],
@@ -138,8 +261,18 @@
 			null,
 			null,
 			null,
-			{ "name": "delumon", "from": [-1, -1], "color": "grass" }
+			{
+				"name": "delumon",
+				"from": [-1, -1],
+				"color": "grass"
+			}
 		]
 	],
-	"related": ["woodmon", { "name": "omegamonmm", "from": "rosemon" }]
+	"related": [
+		"woodmon",
+		{
+			"name": "omegamonmm",
+			"from": "rosemon"
+		}
+	]
 }

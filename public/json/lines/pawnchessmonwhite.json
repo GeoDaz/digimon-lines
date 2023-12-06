@@ -42,52 +42,48 @@
                 "name": "caprimon",
                 "size": 2
             },
-            [
-                {
-                    "name": "pawnchessmonwhite",
-                    "from": [
-                        0.5,
-                        -1
-                    ]
-                },
-                {
-                    "name": "pawnchessmonblack",
-                    "from": [
-                        -0.5,
-                        -1
-                    ]
-                }
-            ],
-            [
-                {
-                    "name": "knightchessmonwhite"
-                },
-                {
-                    "name": "knightchessmonblack"
-                }
-            ],
-            [
-                {
-                    "name": "bishopchessmonwhite",
-                    "skins": [
-                        "rockchessmonwhite"
-                    ]
-                },
-                {
-                    "name": "rockchessmonblack",
-                    "skins": [
-                        "bishopchessmonblack"
-                    ]
-                }
-            ],
-            [
-                {
-                    "name": "kingchessmon"
-                },
-                {
-                    "name": "queenchessmon"
-                }
-            ]
+            {
+                "name": "pawnchessmonwhite",
+                "from": [
+                    0.5,
+                    -1
+                ]
+            },
+            {
+                "name": "knightchessmonwhite"
+            },
+            {
+                "name": "bishopchessmonwhite",
+                "skins": [
+                    "rockchessmonwhite"
+                ]
+            },
+            {
+                "name": "kingchessmon"
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "pawnchessmonblack",
+                "from": [
+                    -0.5,
+                    -1
+                ]
+            },
+            {
+                "name": "knightchessmonblack"
+            },
+            {
+                "name": "rockchessmonblack",
+                "skins": [
+                    "bishopchessmonblack"
+                ]
+            },
+            {
+                "name": "queenchessmon"
+            }
         ],
         [
             null,

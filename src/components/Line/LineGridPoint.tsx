@@ -70,7 +70,11 @@ const LinePoint: React.FC<{
 
 	return (
 		<div
-			className={makeClassName('line-point pictured', handleEdit && 'editable')}
+			className={makeClassName(
+				'line-point pictured',
+				size && size > 1 && 'double',
+				handleEdit && 'editable'
+			)}
 			style={{ width: width + 'px' }}
 			data-coord={coord}
 			onClick={handleEdit ? handleEdit : undefined}

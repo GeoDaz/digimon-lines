@@ -21,25 +21,34 @@
                 "name": "stefilmon",
                 "size": 2
             },
-            [
-                {
-                    "name": "rasenmon",
-                    "from": [
-                        0.5,
-                        -1
-                    ],
-                    "skins": ["rasenmonb"]
-                },
-                {
-                    "name": "rasenmonfm",
-                    "color": "dark",
-                    "from": [
-                        -0.5,
-                        -1
-                    ],
-                    "skins": ["rasenmonfmred"]
-                }
-            ]
+            {
+                "name": "rasenmon",
+                "from": [
+                    0.5,
+                    -1
+                ],
+                "skins": [
+                    "rasenmonb"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "rasenmonfm",
+                "color": "dark",
+                "from": [
+                    -0.5,
+                    -1
+                ],
+                "skins": [
+                    "rasenmonfmred"
+                ]
+            }
         ],
         [
             null,
@@ -47,7 +56,7 @@
             null,
             {
                 "name": "togemogumon",
-				"color": "ice",
+                "color": "ice",
                 "from": [
                     -1.5,
                     -1

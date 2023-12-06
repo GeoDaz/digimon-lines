@@ -39,22 +39,27 @@
                 "name": "chirinmon",
                 "size": 2
             },
-            [
-                {
-                    "name": "kentaurosmon",
-                    "from": [
-                        0.5,
-                        -1
-                    ]
-                },
-                {
-                    "name": "mitamamon",
-                    "from": [
-                        -0.5,
-                        -1
-                    ]
-                }
-            ]
+            {
+                "name": "kentaurosmon",
+                "from": [
+                    0.5,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "mitamamon",
+                "from": [
+                    -0.5,
+                    -1
+                ]
+            }
         ],
         [
             null,
@@ -77,12 +82,21 @@
     "related": [
         "ultimatechaosmon",
         "renamon",
-        {"name": "bakemon", "for": "gokumon"},
-        {"name": "unimon", "from": "chirinmon"},
-        {"name": "aegiomon", "for": "moosemon"},
-		{
-			"name": "angemon",
-			"for": "slashangemon"
-		}
+        {
+            "name": "bakemon",
+            "for": "gokumon"
+        },
+        {
+            "name": "unimon",
+            "from": "chirinmon"
+        },
+        {
+            "name": "aegiomon",
+            "for": "moosemon"
+        },
+        {
+            "name": "angemon",
+            "for": "slashangemon"
+        }
     ]
 }

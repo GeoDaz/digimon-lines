@@ -1,266 +1,273 @@
 {
-	"columns": [
-		[
-			[
-				{
-					"name": "botamon"
-				},
-				{
-					"name": "punimon"
-				}
-			],
-			[
-				{
-					"name": "koromon"
-				},
-				{
-					"name": "tsunomon"
-				}
-			],
-			[
-				{
-					"name": "agumon"
-				},
-				{
-					"name": "gabumon"
-				}
-			],
-			[
-				{
-					"name": "greymon"
-				},
-				{
-					"name": "garurumon"
-				}
-			],
-			[
-				{
-					"name": "metalgreymon"
-				},
-				{
-					"name": "weregarurumon"
-				}
-			],
-			[
-				{
-					"name": "wargreymon"
-				},
-				{
-					"name": "metalgarurumon"
-				}
-			],
-			{
-				"name": "omegamon",
-				"size": 2,
-				"color": "fusion",
-				"from": [
-					[0.5, -1],
-					[-0.5, -1]
-				]
-			}
-		],
-		[
-			{
-				"name": "nyokimon"
-			},
-			{
-				"name": "yokomon"
-			},
-			{
-				"name": "biyomon"
-			},
-			{
-				"name": "birdramon",
-				"color": "fire"
-			},
-			{
-				"name": "garudamon"
-			},
-			{
-				"name": "phoenixmon"
-			}
-		],
-		[
-			[
-				{
-					"name": "bubbmon"
-				},
-				{
-					"name": "yuramon"
-				}
-			],
-			[
-				{
-					"name": "mochimon"
-				},
-				{
-					"name": "tanemon"
-				}
-			],
-			[
-				{
-					"name": "tentomon"
-				},
-				{
-					"name": "palmon"
-				}
-			],
-			[
-				{
-					"name": "kabuterimon"
-				},
-				{
-					"name": "togemon"
-				}
-			],
-			[
-				{
-					"name": "megakabuterimon"
-				},
-				{
-					"name": "lilimon"
-				}
-			],
-			[
-				{
-					"name": "herculeskabuterimon"
-				},
-				{
-					"name": "rosemon"
-				}
-			],
-			null,
-			{
-				"name": "omegamonmm",
-				"size": 2,
-				"color": "fusion",
-				"from": [
-					[3.5, -2],
-					[2.5, -2],
-					[1.5, -2],
-					[0.5, -2],
-					[-0.5, -2],
-					[-1.5, -2],
-					[-3, -1]
-				]
-			}
-		],
-		[
-			{
-				"name": "pitchmon"
-			},
-			{
-				"name": "pukamon"
-			},
-			{
-				"name": "gomamon"
-			},
-			{
-				"name": "ikkakumon"
-			},
-			{
-				"name": "zudomon"
-			},
-			{
-				"name": "vikemon"
-			}
-		],
-		[
-			{
-				"name": "poyomon"
-			},
-			{
-				"name": "tokomon"
-			},
-			{
-				"name": "patamon",
-				"color": "light"
-			},
-			{
-				"name": "angemon",
-				"color": "light"
-			},
-			{
-				"name": "magnaangemon",
-				"color": "light"
-			},
-			{
-				"name": "seraphimon",
-				"color": "light"
-			}
-		],
-		[
-			{
-				"name": "snowbotamon"
-			},
-			{
-				"name": "nyaromon"
-			},
-			{
-				"name": "salamon",
-				"color": "light"
-			},
-			{
-				"name": "gatomon",
-				"color": "light"
-			},
-			{
-				"name": "angewomon",
-				"color": "light"
-			},
-			{
-				"name": "magnadramon",
-				"color": "light"
-			}
-		]
-	],
-	"related": [
-		"greymon",
-		"garurumon",
-		"biyomon",
-		"tentomon",
-		"palmon",
-		"gomamon",
-		"angemon",
-		"gatomon",
-		{
-			"name": "greymon",
-			"for": "omegamonx"
-		},
-		{
-			"name": "greymon",
-			"for": "omegamonb"
-		},
-		{
-			"name": "greymon",
-			"for": "omegamonbrm"
-		},
-		{
-			"name": "greymon",
-			"for": "omegamonam"
-		},
-		{
-			"name": "greymon",
-			"for": "omegamonbam"
-		},
-		{
-			"name": "greymon",
-			"for": "susanoomon"
-		},
-		{
-			"name": "ekakimon",
-			"for": "omedamon"
-		},
-		{
-			"name": "imperialdramonpm"
-		},
-		{
-			"name": "ultimatechaosmon",
-			"for": "chaosmon"
-		},
-		{
-			"name": "negamon",
-			"for": "abbadomoncore"
-		}
-	]
+    "columns": [
+        [
+            {
+                "name": "botamon"
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "agumon"
+            },
+            {
+                "name": "greymon"
+            },
+            {
+                "name": "metalgreymon"
+            },
+            {
+                "name": "wargreymon"
+            },
+            {
+                "name": "omegamon",
+                "size": 2,
+                "color": "fusion",
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ],
+                    [
+                        -0.5,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "punimon"
+            },
+            {
+                "name": "tsunomon"
+            },
+            {
+                "name": "gabumon"
+            },
+            {
+                "name": "garurumon"
+            },
+            {
+                "name": "weregarurumon"
+            },
+            {
+                "name": "metalgarurumon"
+            }
+        ],
+        [
+            {
+                "name": "nyokimon"
+            },
+            {
+                "name": "yokomon"
+            },
+            {
+                "name": "biyomon"
+            },
+            {
+                "name": "birdramon",
+                "color": "fire"
+            },
+            {
+                "name": "garudamon"
+            },
+            {
+                "name": "phoenixmon"
+            }
+        ],
+        [
+            {
+                "name": "bubbmon"
+            },
+            {
+                "name": "mochimon"
+            },
+            {
+                "name": "tentomon"
+            },
+            {
+                "name": "kabuterimon"
+            },
+            {
+                "name": "megakabuterimon"
+            },
+            {
+                "name": "herculeskabuterimon"
+            },
+            null,
+            {
+                "name": "omegamonmm",
+                "size": 2,
+                "color": "fusion",
+                "from": [
+                    [
+                        3.5,
+                        -2
+                    ],
+                    [
+                        2.5,
+                        -2
+                    ],
+                    [
+                        1.5,
+                        -2
+                    ],
+                    [
+                        0.5,
+                        -2
+                    ],
+                    [
+                        -0.5,
+                        -2
+                    ],
+                    [
+                        -1.5,
+                        -2
+                    ],
+                    [
+                        -3,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "yuramon"
+            },
+            {
+                "name": "tanemon"
+            },
+            {
+                "name": "palmon"
+            },
+            {
+                "name": "togemon"
+            },
+            {
+                "name": "lilimon"
+            },
+            {
+                "name": "rosemon"
+            }
+        ],
+        [
+            {
+                "name": "pitchmon"
+            },
+            {
+                "name": "pukamon"
+            },
+            {
+                "name": "gomamon"
+            },
+            {
+                "name": "ikkakumon"
+            },
+            {
+                "name": "zudomon"
+            },
+            {
+                "name": "vikemon"
+            }
+        ],
+        [
+            {
+                "name": "poyomon"
+            },
+            {
+                "name": "tokomon"
+            },
+            {
+                "name": "patamon",
+                "color": "light"
+            },
+            {
+                "name": "angemon",
+                "color": "light"
+            },
+            {
+                "name": "magnaangemon",
+                "color": "light"
+            },
+            {
+                "name": "seraphimon",
+                "color": "light"
+            }
+        ],
+        [
+            {
+                "name": "snowbotamon"
+            },
+            {
+                "name": "nyaromon"
+            },
+            {
+                "name": "salamon",
+                "color": "light"
+            },
+            {
+                "name": "gatomon",
+                "color": "light"
+            },
+            {
+                "name": "angewomon",
+                "color": "light"
+            },
+            {
+                "name": "magnadramon",
+                "color": "light"
+            }
+        ]
+    ],
+    "related": [
+        "greymon",
+        "garurumon",
+        "biyomon",
+        "tentomon",
+        "palmon",
+        "gomamon",
+        "angemon",
+        "gatomon",
+        {
+            "name": "greymon",
+            "for": "omegamonx"
+        },
+        {
+            "name": "greymon",
+            "for": "omegamonb"
+        },
+        {
+            "name": "greymon",
+            "for": "omegamonbrm"
+        },
+        {
+            "name": "greymon",
+            "for": "omegamonam"
+        },
+        {
+            "name": "greymon",
+            "for": "omegamonbam"
+        },
+        {
+            "name": "greymon",
+            "for": "susanoomon"
+        },
+        {
+            "name": "ekakimon",
+            "for": "omedamon"
+        },
+        {
+            "name": "imperialdramonpm"
+        },
+        {
+            "name": "ultimatechaosmon",
+            "for": "chaosmon"
+        },
+        {
+            "name": "negamon",
+            "for": "abbadomoncore"
+        }
+    ]
 }

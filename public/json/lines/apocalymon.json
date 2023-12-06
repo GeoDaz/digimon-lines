@@ -1,117 +1,122 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			{
-				"name": "modokibetamon",
-				"from": [1, -1]
-			},
-			{
-				"name": "airdramon"
-			},
-			{
-				"name": "megadramon"
-			},
-			{
-				"name": "machinedramon"
-			}
-		],
-		[
-			[
-				{
-					"name": "botamon"
-				},
-				{
-					"name": "mokumon"
-				}
-			],
-			[
-				{
-					"name": "koromon"
-				},
-				{
-					"name": "demimeramon",
-					"color": "fire"
-				}
-			],
-			[
-				{
-					"name": "betamon"
-				},
-				{
-					"name": "candmon",
-					"color": "fire"
-				}
-			],
-			[
-				{
-					"name": "seadramon"
-				},
-				{
-					"name": "bakemon",
-					"color": "dark"
-				}
-			],
-			[
-				{
-					"name": "megaseadramon"
-				},
-				{
-					"name": "phantomon",
-					"color": "dark"
-				}
-			],
-			[
-				{
-					"name": "metalseadramon"
-				},
-				{
-					"name": "piemon",
-					"color": "dark"
-				}
-			],
-			{
-				"name": "apocalymon",
-				"size": 2,
-				"color": "fusion",
-				"from": [
-					[-1.5, -1],
-					[-0.5, -1],
-					[0.5, -1],
-					[1.5, -1]
-				]
-			}
-		],
-		[
-			{
-				"name": "nyokimon"
-			},
-			{
-				"name": "tanemon"
-			},
-			{
-				"name": "mushmon"
-			},
-			{
-				"name": "woodmon"
-			},
-			{
-				"name": "cherrymon"
-			},
-			{
-				"name": "puppetmon"
-			}
-		]
-	],
-	"related": [
-		"bakemon",
-		{
-			"name": "flarelizardmon",
-			"for": "machinedramon"
-		},
-		"seadramon",
-		"woodmon",
-		"neocrimson"
-	]
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "modokibetamon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "airdramon"
+            },
+            {
+                "name": "megadramon"
+            },
+            {
+                "name": "machinedramon"
+            }
+        ],
+        [
+            {
+                "name": "botamon"
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "betamon"
+            },
+            {
+                "name": "seadramon"
+            },
+            {
+                "name": "megaseadramon"
+            },
+            {
+                "name": "metalseadramon"
+            },
+            {
+                "name": "apocalymon",
+                "size": 2,
+                "color": "fusion",
+                "from": [
+                    [
+                        -1.5,
+                        -1
+                    ],
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ],
+                    [
+                        1.5,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "mokumon"
+            },
+            {
+                "name": "demimeramon",
+                "color": "fire"
+            },
+            {
+                "name": "candmon",
+                "color": "fire"
+            },
+            {
+                "name": "bakemon",
+                "color": "dark"
+            },
+            {
+                "name": "phantomon",
+                "color": "dark"
+            },
+            {
+                "name": "piemon",
+                "color": "dark"
+            }
+        ],
+        [
+            {
+                "name": "nyokimon"
+            },
+            {
+                "name": "tanemon"
+            },
+            {
+                "name": "mushmon"
+            },
+            {
+                "name": "woodmon"
+            },
+            {
+                "name": "cherrymon"
+            },
+            {
+                "name": "puppetmon"
+            }
+        ]
+    ],
+    "related": [
+        "bakemon",
+        {
+            "name": "flarelizardmon",
+            "for": "machinedramon"
+        },
+        "seadramon",
+        "woodmon",
+        "neocrimson"
+    ]
 }
