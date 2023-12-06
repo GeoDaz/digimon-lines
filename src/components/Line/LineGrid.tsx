@@ -31,10 +31,16 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 			source = target;
 			target = drawing;
 		}
-		const from: LineFrom = [target[0] - source[0], target[1] - source[1]];
-		const nextPoint = {
-			...line.columns[source[0]][source[1]],
-		} as LinePoint;
+		const sourcePoint: LinePoint | null = line.columns[source[0]][source[1]];
+		const targetPoint: LinePoint | null = line.columns[target[0]][target[1]];
+		if (!sourcePoint || !targetPoint) return;
+		const double = sourcePoint.size == 2;
+		const doubleTarget = targetPoint.size == 2;
+		const from: LineFrom = [
+			target[0] - source[0] - (double ? 0.5 : 0) + (doubleTarget ? 0.5 : 0),
+			target[1] - source[1],
+		];
+		const nextPoint: LinePoint = { ...sourcePoint };
 		if (!nextPoint.from) nextPoint.from = [];
 		(nextPoint.from as Array<number[]>).push(from);
 		handleUpdate(setLinePoint, source, nextPoint);
