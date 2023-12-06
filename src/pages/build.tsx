@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from 'react';
+import React, { useState, useReducer, useMemo } from 'react';
 import Layout from '@/components/Layout';
 import { createFile, download, getDirPaths } from '@/functions/file';
 import ZoomBar from '@/components/ZoomBar';
@@ -13,8 +13,9 @@ import { Button } from 'react-bootstrap';
 import ReportABugLink from '@/components/ReportABugLink';
 import useLocalStorage from '@/hooks/useLocalStorage';
 import DownloadDropdown from '@/components/DownloadDropdown';
-import Line from '@/types/Line';
+import Line, { LineColumn } from '@/types/Line';
 import UploadCode from '@/components/UploadCode';
+import { areCollapsablePoints } from '@/functions/transformer/line';
 
 interface StaticProps {
 	searchList?: string[];
@@ -24,10 +25,11 @@ interface Props {
 }
 const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	const [line, dispatchState] = useReducer(lineReducer, defaultLine);
-	const setLine = (line: any) => dispatchState(setLineAction(line));
+	const setLine = (line: Line) => dispatchState(setLineAction(line));
 	const { setItemToStorage } = useLocalStorage('line', line, setLine);
 	const [zoom, setZoom] = useState<number>(100);
 	const [edition, edit] = useState<boolean>(true);
+	useMemo(() => areCollapsablePoints(line), [line]);
 
 	const handleUpdate = (action: CallableFunction, ...args: any[]) => {
 		dispatchState(action(...args));
@@ -43,9 +45,9 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 		const file = createFile(JSON.stringify(line), 'application/json');
 		download(file, 'line.json');
 	};
-	const uploadCode = (json: object | null) => {
+	const uploadCode = (json: Line | null) => {
 		try {
-			json as Line;
+			json;
 		} catch (e) {
 			// TODO make a message modal
 			console.error(e);

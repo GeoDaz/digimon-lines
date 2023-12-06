@@ -1,9 +1,9 @@
 import React, { Fragment, useContext, useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
-import { Line, LinePoint } from '@/types/Line';
+import { Line, LineColumn, LineFrom, LinePoint } from '@/types/Line';
 import { levels } from '@/consts/levels';
 import { makeClassName } from '@/functions';
-import { addLineColumn, removeLineColumn, setLineColumn } from '@/reducers/lineReducer';
+import { addLineColumn, removeLineColumn, setLinePoint } from '@/reducers/lineReducer';
 import { GridContext } from '@/context/grid';
 import LinePointSettings from './LinePointSettings';
 import LineGridPoint from './LineGridPoint';
@@ -31,19 +31,45 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 			source = target;
 			target = drawing;
 		}
-		const from = [target[0] - source[0], target[1] - source[1]];
+		const from: LineFrom = [target[0] - source[0], target[1] - source[1]];
 		const nextPoint = {
 			...line.columns[source[0]][source[1]],
 		} as LinePoint;
 		if (!nextPoint.from) nextPoint.from = [];
 		(nextPoint.from as Array<number[]>).push(from);
-		handleUpdate(setLineColumn, source, nextPoint);
+		handleUpdate(setLinePoint, source, nextPoint);
 		setDrawing(undefined);
 	};
 
 	const handleEdit = (coord: number[]) => {
 		edit(coord);
 		if (drawing) setDrawing(undefined);
+	};
+
+	const handleCollapse = (coord: number[]) => {
+		const point: LinePoint | null = line.columns[coord[0]][coord[1]];
+		if (!handleUpdate || !point) return;
+		let from: LineFrom | undefined = point.from;
+		const uncollapse = point.size == 2;
+		if (!point.collapsable && !uncollapse) return;
+		if (from) {
+			if (Array.isArray(from[0])) {
+				from = (from as Array<number[]>).map(subFrom => {
+					subFrom = subFrom.slice();
+					subFrom[0] += 0.5 * (uncollapse ? 1 : -1);
+					return subFrom;
+				}) as LineFrom;
+			} else {
+				from = (from as number[]).slice();
+				from[0] += 0.5 * (uncollapse ? 1 : -1);
+			}
+		}
+		const nextPoint = {
+			...point,
+			from,
+			size: uncollapse ? undefined : 2,
+		} as LinePoint;
+		handleUpdate(setLinePoint, coord, nextPoint);
 	};
 
 	return (
@@ -54,6 +80,7 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 				handleEdit: handleUpdate ? handleEdit : undefined,
 				handleDraw: setDrawing,
 				handleTarget,
+				handleCollapse,
 			}}
 		>
 			{!!handleUpdate && (
@@ -88,7 +115,7 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 						)}
 					</div>
 					{line.columns.map((column, i) => (
-						<LineRow key={i} x={i} list={column} />
+						<LineRow key={i} x={i} column={column} />
 					))}
 					{!!handleUpdate && (
 						<LineAddRow handleUpdate={handleUpdate} length={line.size} />
@@ -100,11 +127,11 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 };
 
 interface RowProps {
-	list: Array<LinePoint | LinePoint[] | null> | undefined;
+	column?: LineColumn;
 	x: number;
 	y?: number; // for sub rows
 }
-const LineRow: React.FC<RowProps> = ({ list, x, y }) => {
+const LineRow: React.FC<RowProps> = ({ column, x, y }) => {
 	const { handleEdit, handleUpdate } = useContext(GridContext);
 
 	const handleRemove = (e: any) => {
@@ -118,7 +145,7 @@ const LineRow: React.FC<RowProps> = ({ list, x, y }) => {
 		}
 	};
 
-	if (!list) return null;
+	if (!column) return null;
 	return (
 		<Row className="line-row">
 			{!!handleEdit && (
@@ -136,14 +163,14 @@ const LineRow: React.FC<RowProps> = ({ list, x, y }) => {
 					</Button>
 				</>
 			)}
-			{list.map((point, i) => {
+			{column.map((point, i) => {
 				if (Array.isArray(point)) {
 					return (
 						<Fragment key={i}>
 							<LineRow
 								x={x}
 								// subX={i}
-								list={point}
+								column={point}
 							/>
 						</Fragment>
 					);

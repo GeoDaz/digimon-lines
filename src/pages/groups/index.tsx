@@ -12,13 +12,13 @@ import { GROUP } from '@/consts/ui';
 
 const defaultData = { groups: [], fusions: [] };
 interface StaticProps {
-	groups: string[] | Array<LineThumb>;
+	groups: string[] | LineThumb[];
 }
 interface Props {
 	ssr: StaticProps;
 }
 const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
-	const [groups, setLines] = useState<string[] | Array<LineThumb>>(ssr.groups);
+	const [groups, setLines] = useState<string[] | LineThumb[]>(ssr.groups);
 	const [load, loading] = useFetch(setLines);
 
 	useEffect(() => {

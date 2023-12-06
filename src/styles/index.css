@@ -560,6 +560,40 @@ a.line-point {
   top: 100%;
 }
 
+.line-point .bi.collapse-point {
+  top: 50%;
+  left: 100%;
+  transform: translate(0.3rem, -50%);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.line-point .bi.uncollapse-point {
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.line-point:hover .bi.collapse-point,
+.line-point:hover .bi.uncollapse-point,
+.line-point .bi.collapse-point:hover,
+.line-point .bi.uncollapse-point:hover {
+  opacity: 1;
+}
+
+.line-point:has(.bi.collapse-point:hover)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: calc(-100% - 1.5rem);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: var(--bs-border-radius);
+}
+
 .line-point .bi.settings {
   margin-top: 2em;
 }

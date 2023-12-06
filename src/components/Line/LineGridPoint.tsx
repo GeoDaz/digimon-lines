@@ -39,27 +39,38 @@ const LinePoint: React.FC<{
 	coord: number[];
 	handleEdit?: MouseEventHandler<HTMLElement>;
 }> = ({ point, coord, handleEdit }) => {
-	const { drawing, handleDraw, handleTarget } = React.useContext(GridContext);
+	const { drawing, handleDraw, handleTarget, handleCollapse } =
+		React.useContext(GridContext);
 	const isDrawing: boolean =
 		!!drawing && drawing[0] == coord[0] && drawing[1] == coord[1];
 
-	const handleClickDraw = (e: any) => {
+	const handleClickBuffer = (e: any) => {
 		e.preventDefault();
 		e.stopPropagation();
+	};
+
+	const handleClickDraw = (e: any) => {
+		handleClickBuffer(e);
 		if (handleDraw) {
 			handleDraw(coord);
 		}
 	};
 
 	const handleClickTarget = (e: any) => {
-		e.preventDefault();
-		e.stopPropagation();
+		handleClickBuffer(e);
 		if (handleTarget) {
 			handleTarget(coord);
 		}
 	};
 
-	const { name, from, size, color, skins = [], image } = point;
+	const handleClickCollapse = (e: any) => {
+		handleClickBuffer(e);
+		if (handleCollapse) {
+			handleCollapse(coord);
+		}
+	};
+
+	const { name, from, size, color, skins = [], image, collapsable } = point;
 
 	const width: number = useMemo(() => {
 		if (size) {
@@ -72,7 +83,7 @@ const LinePoint: React.FC<{
 		<div
 			className={makeClassName(
 				'line-point pictured',
-				size && size > 1 && 'double',
+				size == 2 && 'double',
 				handleEdit && 'editable'
 			)}
 			style={{ width: width + 'px' }}
@@ -99,6 +110,23 @@ const LinePoint: React.FC<{
 						onClick={handleClickDraw}
 						title="link it to another digimon"
 					/>
+					{collapsable ? (
+						<Icon
+							name="arrows-collapse-vertical"
+							className="action collapse-point"
+							onClick={handleClickCollapse}
+							title="collapse 2 cells"
+						/>
+					) : (
+						size == 2 && (
+							<Icon
+								name="arrows-expand-vertical"
+								className="action uncollapse-point"
+								onClick={handleClickCollapse}
+								title="uncollapse 2 cells"
+							/>
+						)
+					)}
 					{!!drawing && (
 						<Icon
 							name="bullseye"

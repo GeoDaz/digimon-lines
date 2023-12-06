@@ -1,5 +1,6 @@
 import React from 'react';
 import { colors } from '@/consts/colors';
+import { StringObject } from '@/types/Ui';
 
 // const xMargin = 22.5;
 // const yMargin = 30;
@@ -10,7 +11,7 @@ export const pointHeight: number = 150;
 
 const defaultFrom = [0, -1];
 interface Props {
-	from?: Array<number> | null;
+	from?: number[] | null;
 	color?: string;
 	size?: number;
 	baseWidth?: number;
@@ -76,7 +77,7 @@ const LineSvg: React.FC<Props> = ({
 				x2={xOrigin + xDest}
 				y2={left ? yOrigin + yDest : yOrigin}
 				style={{
-					stroke: (color && colors[color]) || colors.default,
+					stroke: (color && (colors as StringObject)[color]) || colors.default,
 					strokeWidth,
 					strokeLinecap: 'round',
 				}}

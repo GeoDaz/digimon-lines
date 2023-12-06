@@ -3,7 +3,7 @@ import { Button, ButtonGroup, Dropdown, DropdownButton, Modal } from 'react-boot
 import Icon from '@/components/Icon';
 import { LinePoint } from '@/types/Line';
 import { GridContext } from '@/context/grid';
-import { setLineColumn } from '@/reducers/lineReducer';
+import { setLinePoint } from '@/reducers/lineReducer';
 import SearchBar from '@/components/SearchBar';
 import LineImage from './LineImage';
 import colors, { legend } from '@/consts/colors';
@@ -38,7 +38,7 @@ const LinePointSettings: React.FC<Props> = ({
 			const nextPoint: LinePoint = point
 				? { ...point, name: search }
 				: { name: search, from: null };
-			handleUpdate(setLineColumn, coord, nextPoint);
+			handleUpdate(setLinePoint, coord, nextPoint);
 			handleClose();
 		}
 	};
@@ -46,7 +46,7 @@ const LinePointSettings: React.FC<Props> = ({
 	const handleUpload = (file: string) => {
 		if (handleUpdate) {
 			const newPoint: LinePoint = { name: 'upload', from: null, image: file };
-			handleUpdate(setLineColumn, coord, newPoint);
+			handleUpdate(setLinePoint, coord, newPoint);
 			handleClose();
 		}
 	};
@@ -56,7 +56,7 @@ const LinePointSettings: React.FC<Props> = ({
 			URL.revokeObjectURL(point.image);
 		}
 		if (handleUpdate) {
-			handleUpdate(setLineColumn, coord, null);
+			handleUpdate(setLinePoint, coord, null);
 			handleClose();
 		}
 	};
@@ -66,7 +66,7 @@ const LinePointSettings: React.FC<Props> = ({
 			const colors = ((point.color || []) as string[]).slice();
 			colors[i] = color;
 			const nextPoint: LinePoint = { ...point, color: colors };
-			handleUpdate(setLineColumn, coord, nextPoint);
+			handleUpdate(setLinePoint, coord, nextPoint);
 		}
 	};
 
@@ -81,7 +81,7 @@ const LinePointSettings: React.FC<Props> = ({
 				(colors as string[] | undefined) = undefined;
 			}
 			const nextPoint: LinePoint = { ...point, from: froms, color: colors };
-			handleUpdate(setLineColumn, coord, nextPoint);
+			handleUpdate(setLinePoint, coord, nextPoint);
 		}
 	};
 

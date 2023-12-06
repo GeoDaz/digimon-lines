@@ -10,13 +10,13 @@ import { VB } from '@/consts/ui';
 
 const defaultData = { lines: [] };
 interface StaticProps {
-	lines: string[] | Array<LineThumb>;
+	lines: string[] | LineThumb[];
 }
 interface Props {
 	ssr: StaticProps;
 }
 const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
-	const [lines, setLines] = React.useState<string[] | Array<LineThumb>>(ssr.lines);
+	const [lines, setLines] = React.useState<string[] | LineThumb[]>(ssr.lines);
 	const [load, loading] = useFetch(setLines);
 
 	useEffect(() => {

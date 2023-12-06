@@ -1,19 +1,26 @@
 export interface Line {
 	title?: string;
-	columns: Array<Array<LinePoint | LinePoint[] | null>>;
+	columns: LineColumn[];
 	size: number;
 	related?: Array<string | LineRelation>;
 	notes?: string[];
 }
 
+export type LineColumn = Array<LinePoint | null>;
+
 export interface LinePoint {
 	name: string;
 	size?: number;
-	color?: string | string[];
-	from?: Array<number[]> | number[] | null;
+	color?: LineColor;
+	from?: LineFrom;
 	skins?: string[];
 	image?: string;
+	collapsable?: boolean;
 }
+
+export type LineFrom = Array<number[]> | number[] | null;
+
+export type LineColor = string | string[];
 
 export interface LineRelation {
 	name: string;

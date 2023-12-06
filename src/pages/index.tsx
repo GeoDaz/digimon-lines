@@ -13,6 +13,7 @@ import { filterlinesFound, foundLines, lineToArray } from '@/functions/transform
 import SearchBar from '@/components/SearchBar';
 import useQueryParam, { addQueryParam, removeQueryParam } from '@/hooks/useQueryParam';
 import { stringToKey } from '@/functions';
+import { StringArrayObject } from '@/types/Ui';
 
 const SEARCH = 'search';
 const defaultData = { lines: [], fusions: [], searchList: {} };
@@ -124,7 +125,7 @@ const LineRow = ({ lines }: { lines: LineThumb[] }) => (
 
 const checkLineAvailability = (
 	value: string,
-	searchList: { [key: string]: string[] }
+	searchList: StringArrayObject
 ): LineThumb => {
 	try {
 		let line: Line | undefined = require(`../../public/json/lines/${value}.json`);
@@ -145,7 +146,7 @@ export const getStaticProps: GetStaticProps = async () => {
 		let lines = require('../../public/json/lines/_index.json');
 		let fusions = require('../../public/json/lines/_fusion.json');
 
-		const searchList: { [key: string]: string[] } = {};
+		const searchList: StringArrayObject = {};
 		lines = lines.map((line: string) => checkLineAvailability(line, searchList));
 		fusions = fusions.map((fusion: string) =>
 			checkLineAvailability(fusion, searchList)

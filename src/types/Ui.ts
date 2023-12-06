@@ -13,3 +13,7 @@ export interface Legend {
 	color: string;
 	text: string;
 }
+
+export type StringObject = { [key: string]: string };
+export type NumberObject = { [key: number | string]: number };
+export type StringArrayObject = { [key: string]: string[] };
