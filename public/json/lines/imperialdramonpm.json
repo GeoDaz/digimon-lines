@@ -53,6 +53,25 @@
             },
             {
                 "name": "metalgarurumon"
+            },
+            null,
+            {
+                "name": "imperialdramonpm",
+                "size": 2,
+                "color": [
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -1.5,
+                        -1
+                    ],
+                    [
+                        1.5,
+                        -1
+                    ]
+                ]
             }
         ],
         [
@@ -94,24 +113,6 @@
                 "name": "imperialdramonfm",
                 "color": "mode",
                 "size": 2
-            },
-            {
-                "name": "imperialdramonpm",
-                "size": 2,
-                "color": [
-                    "fusion",
-                    "fusion"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        -2,
-                        -1
-                    ]
-                ]
             }
         ],
         [
