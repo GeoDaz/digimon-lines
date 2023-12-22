@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { makeClassName } from '@/functions';
 import { Spinner } from 'react-bootstrap';
-import { GROUP } from '@/consts/ui';
+import { GROUP, LINE } from '@/consts/ui';
 
 interface Props extends React.ImgHTMLAttributes<any> {
 	name: string;
@@ -12,9 +12,16 @@ interface Props extends React.ImgHTMLAttributes<any> {
 	className?: string;
 	style?: object;
 }
-const LineImage: React.FC<Props> = ({ name, title, className, style, type, path }) => {
+const LineImage: React.FC<Props> = ({
+	name,
+	title,
+	className,
+	style,
+	type = LINE,
+	path,
+}) => {
 	const [src, setSrc] = useState(
-		path || `/images/${type === GROUP ? 'groups' : 'digimon'}/${name}.jpg`
+		path || `/images/${type === LINE ? 'digimon' : type}/${name}.jpg`
 	);
 	const [loading, setLoading] = useState(true);
 	const [ratioWidth, setRatioWidth] = useState(1);
@@ -29,9 +36,7 @@ const LineImage: React.FC<Props> = ({ name, title, className, style, type, path 
 				setSrc(path);
 			}
 		} else {
-			const nextSrc = `/images/${
-				type === GROUP ? 'groups' : 'digimon'
-			}/${name}.jpg`;
+			const nextSrc = `/images/${type === LINE ? 'digimon' : type}/${name}.jpg`;
 			if (src != nextSrc) {
 				setLoading(true);
 				setLoadingStyle({ opacity: 1, zIndex: 5 });

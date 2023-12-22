@@ -1,0 +1,334 @@
+{
+	"title": "Digimentals",
+	"notes": "Armor évolutions with Digi-Eggs",
+	"type": "digieggs",
+	"main": {
+		"courage": [
+			{
+				"name": "flamedramon",
+				"line": "veemon"
+			},
+			{
+				"name": "allomon",
+				"line": "hawkmon"
+			},
+			{
+				"name": "boarmon",
+				"line": "armadillomon"
+			},
+			{
+				"name": "baromon",
+				"line": "patamon",
+				"redirect": "angemon"
+			},
+			{
+				"name": "lynxmon",
+				"line": "gatomon"
+			},
+			{
+				"name": "shadramon",
+				"line": "wormmon"
+			},
+			{
+				"name": "salamandermon",
+				"line": "tyumon"
+			},
+			{
+				"name": "flamewizardmon",
+				"line": "impmon"
+			}
+		],
+		"friendship": [
+			{
+				"name": "raidramon",
+				"line": "veemon"
+			},
+			{
+				"name": "rinkmon",
+				"line": "hawkmon"
+			},
+			{
+				"name": "sepikmon",
+				"line": "armadillomon"
+			},
+			{
+				"name": "stegomon",
+				"line": "patamon",
+				"redirect": "angemon"
+			},
+			{
+				"name": "rabbitmon",
+				"line": "gatomon"
+			},
+			{
+				"name": "togemogumon",
+				"line": "wormmon"
+			},
+			{
+				"name": "thunderbirdmon",
+				"line": "biyomon"
+			},
+			{
+				"name": "kenkimon",
+				"line": "hagurumon"
+			}
+		],
+		"love": [
+			{
+				"name": "sethmon",
+				"line": "veemon"
+			},
+			{
+				"name": "halsemon",
+				"line": "hawkmon"
+			},
+			{
+				"name": "pteranomon",
+				"line": "armadillomon"
+			},
+			{
+				"name": "pipismon",
+				"line": "patamon",
+				"redirect": "angemon"
+			},
+			{
+				"name": "swanmon",
+				"line": "gatomon"
+			},
+			{
+				"name": "owlmon",
+				"line": "wormmon"
+			}
+		],
+		"purity": [
+			{
+				"name": "yaksamon",
+				"line": "veemon"
+			},
+			{
+				"name": "shurimon",
+				"line": "hawkmon"
+			},
+			{
+				"name": "frogmon",
+				"line": "armadillomon"
+			},
+			{
+				"name": "ponchomon",
+				"line": "patamon",
+				"redirect": "angemon"
+			},
+			{
+				"name": "kabukimon",
+				"line": "gatomon"
+			},
+			{
+				"name": "nohemon",
+				"line": "wormmon"
+			}
+		],
+		"knowledge": [
+			{
+				"name": "honeybeemon",
+				"line": "veemon"
+			},
+			{
+				"name": "flybeemon",
+				"line": "hawkmon"
+			},
+			{
+				"name": "digmon",
+				"line": "armadillomon"
+			},
+			{
+				"name": "mothmon",
+				"line": "patamon",
+				"redirect": "angemon"
+			},
+			{
+				"name": "butterflamon",
+				"line": "gatomon"
+			},
+			{
+				"name": "searchmon",
+				"line": "wormmon"
+			}
+		],
+		"faith": [
+			{
+				"name": "depthmon",
+				"line": "veemon"
+			},
+			{
+				"name": "orcamon",
+				"line": "hawkmon"
+			},
+			{
+				"name": "submarimon",
+				"line": "armadillomon"
+			},
+			{
+				"name": "mantaraymon",
+				"line": "patamon",
+				"redirect": "angemon"
+			},
+			{
+				"name": "tylomon",
+				"line": "gatomon"
+			},
+			{
+				"name": "archelomon",
+				"line": "wormmon"
+			}
+		],
+		"hope": [
+			{
+				"name": "sagittarimon",
+				"line": "veemon"
+			},
+			{
+				"name": "moosemon",
+				"line": "hawkmon"
+			},
+			{
+				"name": "sheepmon",
+				"line": "armadillomon"
+			},
+			{
+				"name": "pegasmon",
+				"line": "patamon",
+				"redirect": "angemon"
+			},
+			{
+				"name": "goatmon",
+				"line": "gatomon"
+			},
+			{
+				"name": "bullmon",
+				"line": "wormmon"
+			}
+		],
+		"light": [
+			{
+				"name": "gargoylemon",
+				"line": "veemon"
+			},
+			{
+				"name": "harpymon",
+				"line": "hawkmon"
+			},
+			{
+				"name": "seahomon",
+				"line": "armadillomon"
+			},
+			{
+				"name": "manbomon",
+				"line": "patamon",
+				"redirect": "angemon"
+			},
+			{
+				"name": "nefertimon",
+				"line": "gatomon"
+			},
+			{
+				"name": "coatlmon",
+				"line": "wormmon"
+			}
+		],
+		"kindness": [
+			{
+				"name": "kangarumon",
+				"line": "veemon"
+			},
+			{
+				"name": "toucanmon",
+				"line": "hawkmon"
+			},
+			{
+				"name": "chamelemon",
+				"line": "armadillomon"
+			},
+			{
+				"name": "prairiemon",
+				"line": "patamon",
+				"redirect": "angemon"
+			},
+			{
+				"name": "opossummon",
+				"line": "gatomon"
+			},
+			{
+				"name": "pucchiemon",
+				"line": "wormmon"
+			},
+			{
+				"name": "pucchiemongreen",
+				"line": "wormmon"
+			}
+		],
+		"miracles": [
+			{
+				"name": "magnamon",
+				"line": "veemon"
+			},
+			{
+				"name": "peacockmon",
+				"line": "hawkmon"
+			},
+			{
+				"name": "elephantmon",
+				"line": "armadillomon"
+			},
+			{
+				"name": "rhinomon",
+				"line": "patamon",
+				"redirect": "angemon"
+			},
+			{
+				"name": "maildramon",
+				"line": "gatomon"
+			},
+			{
+				"name": "kongoumon",
+				"line": "wormmon"
+			}
+		],
+		"fate": [
+			{
+				"name": "goldveedramon",
+				"line": "veemon"
+			},
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "goldrapidmon",
+				"line": "terriermon"
+			},
+			{
+				"name": "guardromongold",
+				"line": "hagurumon"
+			}
+		],
+		"darkness": [
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "darkmaildramon",
+				"line": "gatomon"
+			}
+		]
+	},
+	"related": [
+		{ "name": "veemon" },
+		{ "name": "hawkmon" },
+		{ "name": "armadillomon" },
+		{ "name": "wormmon" },
+		{ "line": "angemon", "name": "patamon" },
+		{ "name": "gatomon" }
+	]
+}

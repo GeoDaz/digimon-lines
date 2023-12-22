@@ -11,10 +11,11 @@ import LineImage from '@/components/Line/LineImage';
 import CommentLink from '@/components/CommentLink';
 // functions
 import useFetch from '@/hooks/useFetch';
-import { capitalize } from '@/functions';
+import { capitalize, typeOf } from '@/functions';
 import useQueryParam from '@/hooks/useQueryParam';
 // constants
-import { Group } from '@/types/Group';
+import { Group, GroupPoint } from '@/types/Group';
+import GroupGrid from '@/components/Group/GroupGrid';
 
 const NAME = 'name';
 interface StaticProps {
@@ -61,21 +62,25 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 			{loading ? (
 				<LineLoading />
 			) : group ? (
-				<Row className="line-row">
-					{group.main.map((point, i) => (
-						<Col key={i}>
-							<LinePoint name={point.name} line={point.line}>
-								{!!point.line && (
-									<LineImage
-										className="line-skin"
-										name={point.line}
-										title={point.line}
-									/>
-								)}
-							</LinePoint>
-						</Col>
-					))}
-				</Row>
+				Array.isArray(group) ? (
+					<Row className="line-row">
+						{(group.main as GroupPoint[]).map((point, i) => (
+							<Col key={i}>
+								<LinePoint name={point.name} line={point.line}>
+									{!!point.line && (
+										<LineImage
+											className="line-skin"
+											name={point.line}
+											title={point.line}
+										/>
+									)}
+								</LinePoint>
+							</Col>
+						))}
+					</Row>
+				) : (
+					<GroupGrid group={group} />
+				)
 			) : (
 				<p>Group not found</p>
 			)}
