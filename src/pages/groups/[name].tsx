@@ -62,7 +62,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 			{loading ? (
 				<LineLoading />
 			) : group ? (
-				Array.isArray(group) ? (
+				Array.isArray(group.main) ? (
 					<Row className="line-row">
 						{(group.main as GroupPoint[]).map((point, i) => (
 							<Col key={i}>
