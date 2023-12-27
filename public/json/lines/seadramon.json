@@ -6,9 +6,25 @@
 			null,
 			{
 				"name": "tylomonx",
-				"from": [1, -1],
+				"from": [2, -1],
 				"color": "x"
 			},
+			{
+				"name": "anomalocarimonx",
+				"color": "x"
+			},
+			{
+				"name": "plesiomonx",
+				"color": "x"
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
 			null,
 			{
 				"name": "leviamonx",
@@ -107,10 +123,13 @@
 				"from": [-3, -1],
 				"color": "marine"
 			},
-			null,
+			{
+				"name": "anomalocarimon",
+				"from": [-1, -1],
+				"color": "marine"
+			},
 			{
 				"name": "plesiomon",
-				"from": [-1, -2],
 				"color": "marine"
 			},
 			{
@@ -161,12 +180,24 @@
 			"name": "aegisdramon"
 		},
 		{
+			"name": "marinechimeramon",
+			"from": "seadramon"
+		},
+		{
 			"name": "apocalymon",
 			"from": "metalseadramon"
 		},
 		{
 			"name": "ogudomon",
 			"from": "leviamon"
+		},
+		{
+			"name": "flarelizardmon",
+			"for": "megadramon"
+		},
+		{
+			"name": "angemon",
+			"for": "goldramon"
 		},
 		{
 			"name": "gomamon",
@@ -185,16 +216,8 @@
 			"for": "xiangpengmon"
 		},
 		{
-			"name": "flarelizardmon",
-			"from": "megadramon"
-		},
-		{
 			"name": "commandramon",
 			"for": "darkdramon"
-		},
-		{
-			"name": "angemon",
-			"for": "goldramon"
 		},
 		{
 			"name": "guilmon",
