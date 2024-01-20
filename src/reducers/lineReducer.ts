@@ -1,5 +1,5 @@
 import Line from '@/types/Line';
-import { createSlice } from '@reduxjs/toolkit';
+// import { createSlice } from '@reduxjs/toolkit';
 
 export const SET_LINE = 'SET_LINE';
 export const SET_LINE_VALUE = 'SET_LINE_VALUE';
