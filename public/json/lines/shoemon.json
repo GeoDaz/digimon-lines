@@ -1,0 +1,36 @@
+{
+	"columns": [
+		[
+			{
+				"name": "poyomon"
+			},
+			{
+				"name": "tokomon"
+			},
+			{
+				"name": "shoemon"
+			},
+			{
+				"name": "shoeshoemon"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "sukamon",
+			"for": "targetmon"
+		},
+		{
+			"name": "bearmon",
+			"for": "monzaemon"
+		},
+		{
+			"name": "tyranomon",
+			"for": "extyranomon"
+		},
+		{
+			"name": "pulsemon",
+			"for": "footmon"
+		}
+	]
+}

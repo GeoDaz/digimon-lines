@@ -1,4 +1,5 @@
 import Line from '@/types/Line';
+import { createSlice } from '@reduxjs/toolkit';
 
 export const SET_LINE = 'SET_LINE';
 export const SET_LINE_VALUE = 'SET_LINE_VALUE';
@@ -74,4 +75,19 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
 			return line;
 	}
 };
+
+// const lineSlice = createSlice({
+// 	name: 'line',
+// 	initialState: defaultLine,
+// 	reducers: {
+// 		setLine: (state: Line, { payload: line }) => line as Line,
+// 		setLineValue: {
+// 			reducer: (state: Line, { payload: { name, value } }) => {
+// 				state[name as string] = value;
+// 			},
+// 			prepare: (name, value) => ({ payload: { name, value } }),
+// 		},
+// 	},
+// });
+
 export default lineReducer;
