@@ -216,7 +216,14 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "zeedgarurumon",
+                "color": "machine",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
             null
         ],
         [
@@ -249,27 +256,11 @@
             null,
             null,
             null,
-            null,
-            null,
-            {
-                "name": "zeedgarurumon",
-                "color": "machine",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
             {
                 "name": "gaogamonb",
                 "color": "dark",
                 "from": [
-                    -2,
+                    -1,
                     -1
                 ]
             },
@@ -290,7 +281,7 @@
                 "name": "strabimon",
                 "size": 2,
                 "from": [
-                    -4,
+                    -3,
                     -1
                 ]
             },
