@@ -5,9 +5,34 @@
 			null,
 			null,
 			{
-				"name": "pteranomonx",
-				"color": "x",
-				"from": [1, 0]
+				"name": "diatrymon",
+				"color": "wind",
+				"from": [1, -1]
+			}
+		],
+		[
+			{
+				"name": "yolkmon"
+			},
+			{
+				"name": "fluffymon",
+				"color": "wind"
+			},
+			{
+				"name": "pteromon",
+				"color": "wind"
+			},
+			{
+				"name": "galemon",
+				"color": "wind"
+			},
+			{
+				"name": "grandgalemon",
+				"color": "wind"
+			},
+			{
+				"name": "zephagamon",
+				"color": "wind"
 			}
 		],
 		[
@@ -16,30 +41,18 @@
 			null,
 			{
 				"name": "pteranomon",
-				"from": [1, -1]
-			}
-		],
-		[
-			{
-				"name": "puwamon"
-			},
-			{
-				"name": "pinamon"
-			},
-			{
-				"name": "pteromon"
-			},
-			{
-				"name": "galemon"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "diatrymon",
+				"color": "machine",
 				"from": [-1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pteranomonx",
+				"color": "x",
+				"from": [-1, 0]
 			}
 		]
 	],
