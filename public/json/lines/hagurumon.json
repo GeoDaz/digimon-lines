@@ -6,7 +6,7 @@
             null,
             {
                 "name": "kenkimon",
-                "color": "gold",
+                "color": "machine",
                 "from": [
                     1,
                     -1
@@ -47,6 +47,7 @@
             null,
             {
                 "name": "blimpmon",
+				"color": "machine",
                 "from": [
                     1,
                     1
@@ -58,19 +59,24 @@
                 "name": "choromon"
             },
             {
-                "name": "caprimon"
+                "name": "caprimon",
+				"color": "machine"
             },
             {
-                "name": "hagurumon"
+                "name": "hagurumon",
+				"color": "machine"
             },
             {
-                "name": "guardromon"
+                "name": "guardromon",
+				"color": "machine"
             },
             {
-                "name": "andromon"
+                "name": "andromon",
+				"color": "machine"
             },
             {
-                "name": "hiandromon"
+                "name": "hiandromon",
+				"color": "machine"
             }
         ],
         [
@@ -79,13 +85,15 @@
             null,
             {
                 "name": "mechanorimon",
+				"color": "machine",
                 "from": [
                     -1,
                     -1
                 ]
             },
             {
-                "name": "nanomon"
+                "name": "nanomon",
+				"color": "machine"
             },
             {
                 "name": "quantumon",
@@ -98,13 +106,15 @@
             null,
             {
                 "name": "clockmon",
+				"color": "machine",
                 "from": [
                     -2,
                     -1
                 ]
             },
             {
-                "name": "valvemon"
+                "name": "valvemon",
+				"color": "machine"
             },
             {
                 "name": "quartzmon",

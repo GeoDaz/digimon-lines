@@ -1,5 +1,6 @@
-import Line, { LineFound, LinePoint, LineThumb } from '@/types/Line';
+import Line, { LineColumn, LineFound, LinePoint, LineThumb } from '@/types/Line';
 import { getSearchPriority } from '..';
+import { StringArrayObject } from '@/types/Ui';
 
 const transformLine = (line: Line | undefined): Line | undefined => {
 	if (line) {
@@ -13,11 +14,7 @@ const transformLine = (line: Line | undefined): Line | undefined => {
 			col = col.slice();
 			let first = col[0];
 			if (first) {
-				if (Array.isArray(first)) {
-					col[0] = first.map(point => point && { ...point, from: null });
-				} else {
-					col[0] = { ...first, from: null };
-				}
+				col[0] = { ...first, from: null };
 			}
 			while (col.length < size) {
 				col.push(null);
@@ -36,15 +33,9 @@ const transformLine = (line: Line | undefined): Line | undefined => {
 export const lineToArray = (line: Line | undefined): string[] => {
 	const result: string[] = [];
 	if (line) {
-		line.columns.forEach((column: Array<LinePoint | LinePoint[] | null>) => {
-			column.forEach((point: LinePoint | LinePoint[] | null) => {
-				if (Array.isArray(point)) {
-					point.forEach((subPoint: LinePoint | null) => {
-						if (subPoint) {
-							result.push(subPoint.name);
-						}
-					});
-				} else if (point) {
+		line.columns.forEach((column: LineColumn) => {
+			column.forEach((point: LinePoint | null) => {
+				if (point) {
 					result.push(point.name);
 				}
 			});
@@ -53,10 +44,7 @@ export const lineToArray = (line: Line | undefined): string[] => {
 	return result;
 };
 
-export const foundLines = (
-	search: string,
-	searchList: { [key: string]: string[] }
-): LineFound[] =>
+export const foundLines = (search: string, searchList: StringArrayObject): LineFound[] =>
 	Object.entries(searchList).reduce((result, [digimon, lines]) => {
 		const priority = getSearchPriority(search, digimon);
 		if (priority != null) {
@@ -91,5 +79,22 @@ export const filterlinesFound = (
 		if (found) result.push(line);
 		return result;
 	}, [] as LineThumb[]);
+
+export const areCollapsablePoints = (line: Line): Line => {
+	line.columns.forEach((col: LineColumn, i) => {
+		col.forEach((point, j) => {
+			if (!point) return;
+			const nextCol = line.columns[i + 1];
+			const nextPoint = nextCol && nextCol[j];
+			point.collapsable = !!(
+				point &&
+				point.size != 2 &&
+				nextCol &&
+				(!nextPoint || nextPoint.size == 2)
+			);
+		});
+	});
+	return line;
+};
 
 export default transformLine;

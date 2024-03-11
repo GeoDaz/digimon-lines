@@ -6,19 +6,29 @@
 			null,
 			{
 				"name": "tylomonx",
-				"from": [
-					1,
-					-1
-				],
+				"from": [2, -1],
+				"color": "x"
+			},
+			{
+				"name": "anomalocarimonx",
+				"color": "x"
+			},
+			{
+				"name": "plesiomonx",
 				"color": "x"
 			},
 			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
 			{
 				"name": "leviamonx",
-				"from": [
-					1,
-					-1
-				],
+				"from": [1, -1],
 				"color": "x"
 			},
 			null,
@@ -30,10 +40,7 @@
 			{
 				"name": "betamonx",
 				"color": "x",
-				"from": [
-					1,
-					0
-				]
+				"from": [1, 0]
 			},
 			{
 				"name": "seadramonx",
@@ -58,10 +65,7 @@
 			},
 			{
 				"name": "betamon",
-				"from": [
-					0,
-					-1
-				]
+				"from": [0, -1]
 			},
 			{
 				"name": "seadramon",
@@ -83,16 +87,11 @@
 			null,
 			{
 				"name": "waruseadramon",
-				"color": "dark",
+				"color": ["dark", "marine"],
 				"from": [
-					-1,
-					-1
-				],
-				"from2": [
-					1,
-					-1
-				],
-				"color2": "marine"
+					[-1, -1],
+					[1, -1]
+				]
 			},
 			{
 				"name": "chaosmetalseadramon",
@@ -105,20 +104,14 @@
 			null,
 			{
 				"name": "tylomon",
-				"from": [
-					-2,
-					-1
-				],
+				"from": [-2, -1],
 				"color": "marine"
 			},
 			null,
 			{
 				"name": "leviamon",
 				"color": "dark",
-				"from": [
-					-1,
-					-1
-				]
+				"from": [-1, -1]
 			}
 		],
 		[
@@ -127,47 +120,38 @@
 			null,
 			{
 				"name": "aequcedramon",
-				"from": [
-					-3,
-					-1
-				],
+				"from": [-3, -1],
 				"color": "marine"
 			},
-			null,
+			{
+				"name": "anomalocarimon",
+				"from": [-1, -1],
+				"color": "marine"
+			},
 			{
 				"name": "plesiomon",
-				"from": [
-					-1,
-					-2
-				],
 				"color": "marine"
 			},
 			{
 				"name": "aegisdramon",
-				"from": [
-					0,
-					-1
-				],
-				"color": "fusion",
-				"from2": null
-			},
-			null
+				"from": [0, -1],
+				"color": "fusion"
+			}
 		],
 		[
 			null,
 			null,
 			{
 				"name": "modokibetamon",
-				"from": [
-					-4,
-					-1
-				]
+				"from": [-4, -1]
 			},
 			{
-				"name": "airdramon"
+				"name": "airdramon",
+				"color": "wind"
 			},
 			{
-				"name": "megadramon"
+				"name": "megadramon",
+				"color": "machine"
 			},
 			{
 				"name": "goldramon",
@@ -182,18 +166,12 @@
 			{
 				"name": "gigadramon",
 				"color": "dark",
-				"from": [
-					-1,
-					-1
-				]
+				"from": [-1, -1]
 			},
 			{
 				"name": "goldramonx",
 				"color": "x",
-				"from": [
-					-1,
-					0
-				]
+				"from": [-1, 0]
 			}
 		]
 	],
@@ -202,12 +180,24 @@
 			"name": "aegisdramon"
 		},
 		{
+			"name": "marinechimeramon",
+			"from": "seadramon"
+		},
+		{
 			"name": "apocalymon",
 			"from": "metalseadramon"
 		},
 		{
 			"name": "ogudomon",
 			"from": "leviamon"
+		},
+		{
+			"name": "flarelizardmon",
+			"for": "megadramon"
+		},
+		{
+			"name": "angemon",
+			"for": "goldramon"
 		},
 		{
 			"name": "gomamon",
@@ -221,21 +211,13 @@
 			"name": "swimmon",
 			"for": "coelamon"
 		},
-        {
-            "name": "falcomon",
-            "for": "xiangpengmon"
-        },
 		{
-			"name": "flarelizardmon",
-			"from": "megadramon"
+			"name": "falcomon",
+			"for": "xiangpengmon"
 		},
 		{
 			"name": "commandramon",
 			"for": "darkdramon"
-		},
-		{
-			"name": "angemon",
-			"for": "goldramon"
 		},
 		{
 			"name": "guilmon",

@@ -1,0 +1,54 @@
+{
+	"columns": [
+		[
+			{
+				"name": "poyomon"
+			},
+			{
+				"name": "tokomon"
+			},
+			{
+				"name": "shoemon"
+			},
+			{
+				"name": "shoeshoemon"
+			},
+			{
+				"name": "chaperomon"
+			},
+			{
+				"name": "cendrillmon"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "sukamon",
+			"for": "tyumon"
+		},
+		{
+			"name": "sukamon",
+			"for": "targetmon"
+		},
+		{
+			"name": "gatomon",
+			"for": "venusmon"
+		},
+        {
+            "name": "shortmon",
+            "for": "junomon"
+        },
+		{
+			"name": "bearmon",
+			"for": "monzaemon"
+		},
+		{
+			"name": "tyranomon",
+			"for": "extyranomon"
+		},
+		{
+			"name": "pulsemon",
+			"for": "footmon"
+		}
+	]
+}

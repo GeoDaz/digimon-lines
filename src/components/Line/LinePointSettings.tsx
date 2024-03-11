@@ -1,9 +1,9 @@
 import React, { useContext, useRef, useEffect } from 'react';
 import { Button, ButtonGroup, Dropdown, DropdownButton, Modal } from 'react-bootstrap';
 import Icon from '@/components/Icon';
-import { LinePoint } from '@/types/Line';
+import { LineColor, LineFrom, LinePoint } from '@/types/Line';
 import { GridContext } from '@/context/grid';
-import { setLineColumn } from '@/reducers/lineReducer';
+import { setLinePoint } from '@/reducers/lineReducer';
 import SearchBar from '@/components/SearchBar';
 import LineImage from './LineImage';
 import colors, { legend } from '@/consts/colors';
@@ -38,7 +38,7 @@ const LinePointSettings: React.FC<Props> = ({
 			const nextPoint: LinePoint = point
 				? { ...point, name: search }
 				: { name: search, from: null };
-			handleUpdate(setLineColumn, coord, nextPoint);
+			handleUpdate(setLinePoint, coord, nextPoint);
 			handleClose();
 		}
 	};
@@ -46,7 +46,7 @@ const LinePointSettings: React.FC<Props> = ({
 	const handleUpload = (file: string) => {
 		if (handleUpdate) {
 			const newPoint: LinePoint = { name: 'upload', from: null, image: file };
-			handleUpdate(setLineColumn, coord, newPoint);
+			handleUpdate(setLinePoint, coord, newPoint);
 			handleClose();
 		}
 	};
@@ -56,28 +56,47 @@ const LinePointSettings: React.FC<Props> = ({
 			URL.revokeObjectURL(point.image);
 		}
 		if (handleUpdate) {
-			handleUpdate(setLineColumn, coord, null);
+			handleUpdate(setLinePoint, coord, null);
 			handleClose();
 		}
 	};
 
-	const handleSelectColor = (color: string, number?: number) => {
+	const handleSelectColor = (color: string, i: number) => {
 		if (handleUpdate && point) {
-			const nextPoint: LinePoint = {
-				...point,
-				[number == 2 ? 'color2' : 'color']: color,
-			};
-			handleUpdate(setLineColumn, coord, nextPoint);
+			let colors: LineColor | undefined = point.color;
+			if (Array.isArray(colors)) {
+				colors = colors.slice();
+			} else if (typeof colors === 'string' && point.from) {
+				colors = point.from.map(() => colors as string);
+			} else {
+				colors = [];
+			}
+			colors[i] = color;
+			const nextPoint: LinePoint = { ...point, color: colors };
+			handleUpdate(setLinePoint, coord, nextPoint);
 		}
 	};
 
-	const handleRemoveFrom = (number?: number) => {
-		if (handleUpdate && point) {
-			const nextPoint: LinePoint = {
-				...point,
-				[number == 2 ? 'from2' : 'from']: null,
-			};
-			handleUpdate(setLineColumn, coord, nextPoint);
+	const handleRemoveFrom = (i: number) => {
+		if (handleUpdate && point?.from) {
+			let froms: LineFrom = point.from.slice();
+			let colors: LineColor | undefined = point.color;
+			if (Array.isArray(froms)) {
+				froms.splice(i, 1);
+				if (Array.isArray(colors)) {
+					colors = colors.slice();
+					colors.splice(i, 1);
+				}
+				if (!froms.length) {
+					froms = null;
+					colors = undefined;
+				}
+			} else {
+				froms = null;
+				colors = undefined;
+			}
+			const nextPoint: LinePoint = { ...point, from: froms, color: colors };
+			handleUpdate(setLinePoint, coord, nextPoint);
 		}
 	};
 
@@ -108,22 +127,18 @@ const LinePointSettings: React.FC<Props> = ({
 						</div>
 					</div>
 				) : null}
-				{!!point?.from && (
-					<SettingFrom
-						number={1}
-						color={point.color}
-						handleSelect={handleSelectColor}
-						handleRemove={handleRemoveFrom}
-					/>
-				)}
-				{!!point?.from2 && (
-					<SettingFrom
-						number={2}
-						color={point.color2}
-						handleSelect={handleSelectColor}
-						handleRemove={handleRemoveFrom}
-					/>
-				)}
+				{!!point?.from &&
+					point.from.map((from, i) => (
+						<SettingFrom
+							key={i}
+							number={i}
+							color={
+								Array.isArray(point.color) ? point.color[i] : point.color
+							}
+							handleSelect={handleSelectColor}
+							handleRemove={handleRemoveFrom}
+						/>
+					))}
 			</Modal.Body>
 		</Modal>
 	);
@@ -136,7 +151,7 @@ const SettingFrom: React.FC<{
 	handleRemove: CallableFunction;
 }> = ({ number, color, handleSelect, handleRemove }) => (
 	<div className="mt-4">
-		Line {number}&nbsp;:{' '}
+		Line {number + 1}&nbsp;:{' '}
 		<DropdownButton
 			as={ButtonGroup}
 			id="line-point-settings_point-from"
@@ -145,7 +160,9 @@ const SettingFrom: React.FC<{
 				<>
 					<Icon
 						name="circle-fill"
-						style={{ color: color ? colors[color] : 'white' }}
+						style={{
+							color: color ? colors[color] : 'white',
+						}}
 					/>{' '}
 					{color || 'default'}
 				</>

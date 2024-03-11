@@ -36,45 +36,26 @@
                 "name": "dracomon",
                 "size": 2
             },
-            [
-                {
-                    "name": "coredramonblue",
-                    "from": [
-                        0.5,
-                        -1
-                    ]
-                },
-                {
-                    "name": "coredramongreen",
-                    "from": [
-                        -0.5,
-                        -1
-                    ]
-                }
-            ],
-            [
-                {
-                    "name": "wingdramon"
-                },
-                {
-                    "name": "groundramon"
-                }
-            ],
-            [
-                {
-                    "name": "slayerdramon"
-                },
-                {
-                    "name": "breakdramon",
-                    "skins": ["gigabreakdramon"]
-                }
-            ],
+            {
+                "name": "coredramonblue",
+                "color": "wind",
+                "from": [
+                    0.5,
+                    -1
+                ]
+            },
+            {
+                "name": "wingdramon",
+                "color": "wind"
+            },
+            {
+                "name": "slayerdramon"
+            },
             {
                 "name": "examon",
                 "size": 2,
                 "color": "fusion",
-                "from": null,
-                "fusionFrom": [
+                "from": [
                     [
                         -0.5,
                         -1
@@ -83,6 +64,29 @@
                         0.5,
                         -1
                     ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "coredramongreen",
+                "from": [
+                    -0.5,
+                    -1
+                ]
+            },
+            {
+                "name": "groundramon",
+                "color": "earth"
+            },
+            {
+                "name": "breakdramon",
+                "color": "machine",
+                "skins": [
+                    "gigabreakdramon"
                 ]
             }
         ]

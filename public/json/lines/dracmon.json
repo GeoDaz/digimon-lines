@@ -29,7 +29,7 @@
 			null,
 			null,
 			{ "name": "pipismon", "color": "dark", "from": [-1, -1] },
-			{ "name": "myotismon", "color": "dark", "color2": "dark", "from2": [-1, -1] },
+			{ "name": "myotismon", "color": ["dark", "dark"], "from": [[0, -1], [-1, -1]] },
 			{ "name": "venommyotismon", "color": "dark", "from": [0, -1] },
 			{ "name": "malomyotismon", "color": "dark", "from": [0, -1] }
 		],

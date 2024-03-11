@@ -4,7 +4,7 @@ import { Option } from '@/types/Ui';
 
 interface Props {
 	onChange: Function;
-	steps: Array<Option>;
+	steps: Option[];
 	selected: number | string;
 	progress?: number;
 	className?: string;

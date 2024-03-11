@@ -1,455 +1,477 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			{
-				"name": "agumonx",
-				"from": [
-					2.5,
-					0
-				],
-				"color": "x"
-			},
-			{
-				"name": "greymonx",
-				"color": "x"
-			},
-			{
-				"name": "metalgreymonx",
-				"color": "x"
-			},
-			{
-				"name": "wargreymonx",
-				"color": "x"
-			},
-			{
-				"name": "omegamonx",
-				"color": "x"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "metalgreymonam",
-				"color": "mode",
-				"from": [
-					1.5,
-					0
-				]
-			},
-			{
-				"name": "blitzgreymon"
-			},
-			{
-				"name": "omegamonam",
-				"color": "fusion"
-			}
-		],
-		[
-			{
-				"name": "botamon",
-				"size": 2
-			},
-			{
-				"name": "koromon",
-				"size": 2
-			},
-			{
-				"name": "agumon",
-				"size": 2,
-				"skins": [
-					"agumon2",
-					"bushiagumon",
-					"hakaseagumon"
-				]
-			},
-			{
-				"name": "greymon",
-				"size": 2
-			},
-			{
-				"name": "metalgreymon",
-				"size": 2
-			},
-			{
-				"name": "wargreymon",
-				"size": 2
-			},
-			[
-				{
-					"name": "omegamon",
-					"color": "fusion",
-					"from": [
-						0.5,
-						-1
-					]
-				},
-				{
-					"name": "agumonbc",
-					"color": "mode",
-					"from": [
-						-0.5,
-						-1
-					]
-				}
-			],
-			[
-				{
-					"name": "omegamonmm",
-					"color": "fusion"
-				},
-				null
-			]
-		],
-		[
-			null,
-			null,
-			{
-				"name": "snowagumon",
-				"color": "ice",
-				"from": [
-					-1.5,
-					-1
-				],
-				"skins": [
-					"snowagumon2"
-				]
-			},
-			{
-				"name": "cyclomon",
-				"color": "dark",
-				"from": [
-					-1.5,
-					-1
-				]
-			},
-			{
-				"name": "skullgreymon",
-				"color": "dark",
-				"color2": "dark",
-				"from2": [
-					-1.5,
-					-1
-				]
-			},
-			{
-				"name": "machinedramon",
-				"color": "dark",
-				"from": [
-					-1.5,
-					-1
-				]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "agumon2",
-				"size": 2,
-				"from": [
-					-3,
-					-1
-				],
-				"skins": [
-					"agumon"
-				]
-			},
-			{
-				"name": "geogreymon",
-				"size": 2
-			},
-			{
-				"name": "rizegreymon",
-				"size": 2
-			},
-			{
-				"name": "shinegreymon",
-				"size": 2
-			},
-			[
-				{
-					"name": "shinegreymonbm",
-					"color": "mode",
-					"from": [
-						0.5,
-						-1
-					]
-				},
-				{
-					"name": "shinegreymonrm",
-					"color": "dark",
-					"from": [
-						-0.5,
-						-1
-					]
-				}
-			]
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "rizegreymonx",
-				"color": "x",
-				"from": [
-					-1.5,
-					0
-				]
-			},
-			{
-				"name": "victorygreymon",
-				"from": [
-					-1.5,
-					-1
-				]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "neocrimson",
-				"color": "fusion",
-				"from": [
-					1,
-					-1
-				]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "agumonb",
-				"from": [
-					-6.5,
-					-1
-				],
-				"color": "dark",
-				"skins": [
-					"agumonb2",
-					"hakaseagumonb"
-				]
-			},
-			{
-				"name": "greymonb",
-				"color": "dark"
-			},
-			{
-				"name": "metalgreymonb",
-				"color": "dark"
-			},
-			{
-				"name": "wargreymonb",
-				"color": "dark",
-				"skins": [
-					"chaoswargreymon"
-				]
-			},
-			{
-				"name": "omegamonb",
-				"color": "fusion",
-				"skins": [
-					"omegamonbrm"
-				]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "agumonbx",
-				"color": "x",
-				"from": [
-					-1,
-					0
-				]
-			},
-			{
-				"name": "greymonbx",
-				"color": "x"
-			},
-			{
-				"name": "metalgreymonbx",
-				"color": "x"
-			},
-			{
-				"name": "wargreymonbx",
-				"color": "x"
-			},
-			{
-				"name": "omegamonbam",
-				"color": "mode",
-				"from": [
-					-1,
-					0
-				]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "samudramon",
-				"color": "x",
-				"from": [
-					-1,
-					-1
-				]
-			},
-			{
-				"name": "samudramonbm",
-				"color": "mode"
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "gaossmonb",
-				"color": "dark",
-				"from": [
-					-9.5,
-					-1
-				],
-				"_com_skins": [
-					"gaossmon"
-				]
-			},
-			{
-				"name": "greymonb3",
-				"color": "dark",
-				"_com_skins": [
-					"greymon3",
-					"ashgreymon"
-				]
-			},
-			{
-				"name": "metalgreymonb3",
-				"color": "dark",
-				"skins": [
-					"deckergreymon"
-				]
-			},
-			{
-				"name": "zeekgreymon",
-				"color": "gold"
-			}
-		],
-		[
-			{
-				"name": "mokumon",
-				"size": 2
-			},
-			{
-				"name": "sunmon",
-				"size": 2,
-				"color": "fire"
-			},
-			{
-				"name": "flamon",
-				"color": "fire",
-				"size": 2
-			},
-			{
-				"name": "agunimon",
-				"color": "fire",
-				"size": 2
-			},
-			[
-				{
-					"name": "aldamon",
-					"color": "fire",
-					"from": [
-						0.5,
-						-1
-					]
-				},
-				{
-					"name": "burninggreymon",
-					"color": "fire",
-					"from": [
-						-0.5,
-						-1
-					]
-				}
-			],
-			[
-				{
-					"name": "emperorgreymon",
-					"color": "fire"
-				},
-				{
-					"name": "ancientgreymon",
-					"color": "fire"
-				}
-			],
-			[
-				{
-					"name": "susanoomon",
-					"color": "fusion"
-				},
-				null
-			]
-		]
-	],
-	"related": [
-		{
-			"name": "commandramon",
-			"for": "brigadramon"
-		},
-		{
-			"name": "tyranomon",
-			"from": "agumon"
-		},
-		{
-			"name": "flarelizardmon",
-			"for": "toyagumon"
-		},
-		"neocrimson",
-		"omegamonmm",
-		{
-			"name": "garurumon",
-			"from": "omegamon"
-		},
-		{
-			"name": "jazamon",
-			"for": "mailbirdramon"
-		},
-		{
-			"name": "shoutmon",
-			"for": "shoutmondx"
-		},
-		{
-			"name": "apocalymon",
-			"from": "machinedramon"
-		},
-		{
-			"name": "seadramon",
-			"from": "snowagumon"
-		},
-		{
-			"name": "chimeramon",
-			"from": "greymon"
-		}
-	],
-	"notes": [
-		"DoruGreymon does not belong to the family of Greymon. It's VO name is DoruGuremon, while Greymon is still Greymon.",
-		"ToyAgumon is not represented here because it doesn't evolve into a Greymon and it looks more like an Agumon imitation than a member of his own species.",
-		"Commandramon to Brigadramon line seems to be a Greymon like line, but Commandramon has another evolution line which is really different. So it needs its own familly line."
-	]
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "agumonx",
+                "from": [
+                    2.5,
+                    0
+                ],
+                "color": "x"
+            },
+            {
+                "name": "greymonx",
+                "color": "x"
+            },
+            {
+                "name": "metalgreymonx",
+                "color": "x"
+            },
+            {
+                "name": "wargreymonx",
+                "color": "x"
+            },
+            {
+                "name": "omegamonx",
+                "color": "x"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "metalgreymonam",
+                "color": "mode",
+                "from": [
+                    1.5,
+                    0
+                ]
+            },
+            {
+                "name": "blitzgreymon",
+                "color": "electric"
+            },
+            {
+                "name": "omegamonam",
+                "color": "fusion"
+            }
+        ],
+        [
+            {
+                "name": "botamon",
+                "size": 2
+            },
+            {
+                "name": "koromon",
+                "size": 2
+            },
+            {
+                "name": "agumon",
+                "size": 2,
+                "skins": [
+                    "agumon2",
+                    "bushiagumon",
+                    "hakaseagumon"
+                ]
+            },
+            {
+                "name": "greymon",
+                "size": 2
+            },
+            {
+                "name": "metalgreymon",
+                "color": "machine",
+                "size": 2
+            },
+            {
+                "name": "wargreymon",
+                "size": 2
+            },
+            {
+                "name": "omegamon",
+                "color": "fusion",
+                "from": [
+                    0.5,
+                    -1
+                ]
+            },
+            {
+                "name": "omegamonmm",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "agumonbc",
+                "color": "mode",
+                "from": [
+                    -0.5,
+                    -1
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "snowagumon",
+                "color": "ice",
+                "from": [
+                    -1.5,
+                    -1
+                ],
+                "skins": [
+                    "snowagumon2"
+                ]
+            },
+            {
+                "name": "cyclomon",
+                "color": "dark",
+                "from": [
+                    -1.5,
+                    -1
+                ]
+            },
+            {
+                "name": "skullgreymon",
+                "color": [
+                    "dark",
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -1.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "machinedramon",
+                "color": "dark",
+                "from": [
+                    -1.5,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "agumon2",
+                "size": 2,
+                "from": [
+                    -3,
+                    -1
+                ],
+                "skins": [
+                    "agumon"
+                ]
+            },
+            {
+                "name": "geogreymon",
+                "size": 2
+            },
+            {
+                "name": "rizegreymon",
+                "color": "machine",
+                "size": 2
+            },
+            {
+                "name": "shinegreymon",
+                "color": "light",
+                "size": 2
+            },
+            {
+                "name": "shinegreymonbm",
+                "color": "mode",
+                "from": [
+                    0.5,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "shinegreymonrm",
+                "color": "dark",
+                "from": [
+                    -0.5,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "rizegreymonx",
+                "color": "x",
+                "from": [
+                    -1.5,
+                    0
+                ]
+            },
+            {
+                "name": "victorygreymon",
+                "from": [
+                    -1.5,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "neocrimson",
+                "color": "fusion",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "agumonb",
+                "from": [
+                    -6.5,
+                    -1
+                ],
+                "color": "dark",
+                "skins": [
+                    "agumonb2",
+                    "hakaseagumonb"
+                ]
+            },
+            {
+                "name": "greymonb",
+                "color": "dark"
+            },
+            {
+                "name": "metalgreymonb",
+                "color": "dark"
+            },
+            {
+                "name": "wargreymonb",
+                "color": "dark",
+                "skins": [
+                    "chaoswargreymon"
+                ]
+            },
+            {
+                "name": "omegamonb",
+                "color": "fusion",
+                "skins": [
+                    "omegamonbrm"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "agumonbx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ]
+            },
+            {
+                "name": "greymonbx",
+                "color": "x"
+            },
+            {
+                "name": "metalgreymonbx",
+                "color": "x"
+            },
+            {
+                "name": "wargreymonbx",
+                "color": "x"
+            },
+            {
+                "name": "omegamonbam",
+                "color": "mode",
+                "from": [
+                    -1,
+                    0
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "samudramon",
+                "color": "x",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "samudramonbm",
+                "color": "mode"
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "gaossmonb",
+                "color": "dark",
+                "from": [
+                    -9.5,
+                    -1
+                ],
+                "_com_skins": [
+                    "gaossmon"
+                ]
+            },
+            {
+                "name": "greymonb3",
+                "color": "dark",
+                "_com_skins": [
+                    "greymon3",
+                    "ashgreymon"
+                ]
+            },
+            {
+                "name": "metalgreymonb3",
+                "color": "dark",
+                "skins": [
+                    "deckergreymon"
+                ]
+            },
+            {
+                "name": "zeekgreymon",
+                "color": "gold"
+            }
+        ],
+        [
+            {
+                "name": "mokumon",
+                "size": 2
+            },
+            {
+                "name": "sunmon",
+                "size": 2,
+                "color": "fire"
+            },
+            {
+                "name": "flamon",
+                "color": "fire",
+                "size": 2
+            },
+            {
+                "name": "agunimon",
+                "color": "fire",
+                "size": 2
+            },
+            {
+                "name": "aldamon",
+                "color": "fire",
+                "from": [
+                    0.5,
+                    -1
+                ]
+            },
+            {
+                "name": "emperorgreymon",
+                "color": "fire"
+            },
+            {
+                "name": "susanoomon",
+                "color": "fusion"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "burninggreymon",
+                "color": "fire",
+                "from": [
+                    -0.5,
+                    -1
+                ]
+            },
+            {
+                "name": "ancientgreymon",
+                "color": "fire"
+            },
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "commandramon",
+            "for": "brigadramon"
+        },
+        {
+            "name": "tyranomon",
+            "from": "agumon"
+        },
+        {
+            "name": "flarelizardmon",
+            "for": "toyagumon"
+        },
+        "neocrimson",
+        "omegamonmm",
+        {
+            "name": "garurumon",
+            "from": "omegamon"
+        },
+        {
+            "name": "jazamon",
+            "for": "mailbirdramon"
+        },
+        {
+            "name": "shoutmon",
+            "for": "shoutmondx"
+        },
+        {
+            "name": "apocalymon",
+            "from": "machinedramon"
+        },
+        {
+            "name": "seadramon",
+            "from": "snowagumon"
+        },
+        {
+            "name": "chimeramon",
+            "from": "greymon"
+        }
+    ],
+    "notes": [
+        "DoruGreymon does not belong to the family of Greymon. It's VO name is DoruGuremon, while Greymon is still Greymon.",
+        "ToyAgumon is not represented here because it doesn't evolve into a Greymon and it looks more like an Agumon imitation than a member of his own species.",
+        "Commandramon to Brigadramon line seems to be a Greymon like line, but Commandramon has another evolution line which is really different. So it needs its own familly line."
+    ]
 }

@@ -64,10 +64,10 @@
             },
             {
                 "name": "shivamon",
-                "from2": [
+                "from": [[0, -1], [
                     1,
                     -1
-                ]
+                ]]
             }
         ],
         [
@@ -122,12 +122,11 @@
             },
             {
                 "name": "achillesmon",
-                "color": "light",
-                "color2": "light",
-                "from2": [
+                "color": ["light", "light"],
+                "from": [[0, -1], [
                     -1,
                     -1
-                ]
+                ]]
             }
         ],
         [

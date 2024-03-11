@@ -43,10 +43,8 @@
 			{ "name": "shurimon", "from": [-2, -1], "color": "grass" },
 			{
 				"name": "butenmon",
-				"from": [0, -1],
-				"color": "fusion",
-				"from2": [-1, -1],
-				"color2": "fusion"
+				"from": [[0, -1], [-1, -1]],
+				"color": ["fusion", "fusion"]
 			},
 			{ "name": "chronomon", "from": [0, -1], "color": "light" }
 		],

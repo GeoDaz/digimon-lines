@@ -71,9 +71,8 @@
 			},
 			{
 				"name": "goldramon",
-				"color": "light",
-				"color2": "light",
-				"from2": [1, -1]
+				"color": ["light", "light"],
+				"from": [[0, -1], [1, -1]]
 			}
 		],
 		[
@@ -179,10 +178,8 @@
 			null,
 			{
 				"name": "lucemonfm",
-				"color": "gold",
-				"color2": "fusion",
-				"from": [0, -2],
-				"from2": [-5, -1]
+				"color": ["gold", "fusion"],
+				"from": [[0, -2], [-5, -1]]
 			},
 			{
 				"name": "lucemonlarva",

@@ -53,16 +53,14 @@
             null,
             {
                 "name": "huanglongmon",
-                "color": "fusion",
-                "color2": "fusion",
-                "from": [
+                "color": ["fusion", "fusion"],
+                "from": [[
                     -2,
                     0
-                ],
-                "from2": [
+                ], [
                     2,
                     0
-                ]
+                ]]
             }
         ],
         [

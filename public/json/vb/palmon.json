@@ -31,10 +31,8 @@
 			null,
 			{
 				"name": "rafflesimon",
-				"color": "fusion",
-				"color2": "fusion",
-				"from": [-1, 0],
-				"from2": [1, 0]
+				"color": ["fusion", "fusion"],
+				"from": [[-1, 0], [1, 0]]
 			}
 		],
 		[

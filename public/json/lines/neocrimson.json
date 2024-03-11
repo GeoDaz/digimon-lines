@@ -25,65 +25,33 @@
             }
         ],
         [
-            [
-                {
-                    "name": "botamon"
-                },
-                null
-            ],
-            [
-                {
-                    "name": "koromon"
-                },
-                null
-            ],
-            [
-                {
-                    "name": "agumonb",
-                    "color": "dark"
-                },
-                {
-                    "name": "betamon",
-                    "from": [
-                        -1,
-                        -1
-                    ]
-                }
-            ],
-            [
-                {
-                    "name": "greymonb",
-                    "color": "dark"
-                },
-                {
-                    "name": "seadramon"
-                }
-            ],
-            [
-                {
-                    "name": "metalgreymonb",
-                    "color": "dark"
-                },
-                {
-                    "name": "waruseadramon",
-                    "color": "dark"
-                }
-            ],
-            [
-                {
-                    "name": "chaoswargreymon"
-                },
-                {
-                    "name": "chaosmetalseadramon",
-                    "color": "dark"
-                }
-            ],
+            {
+                "name": "botamon"
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "agumonb",
+                "color": "dark"
+            },
+            {
+                "name": "greymonb",
+                "color": "dark"
+            },
+            {
+                "name": "metalgreymonb",
+                "color": "dark"
+            },
+            {
+                "name": "chaoswargreymon",
+                "color": "dark"
+            },
             {
                 "name": "neocrimson",
                 "size": 2,
                 "color": "fusion",
-                "from": null,
-                "fusionFrom": [
+                "from": [
                     [
                         -1.5,
                         -1
@@ -101,6 +69,28 @@
                         -1
                     ]
                 ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "betamon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "seadramon"
+            },
+            {
+                "name": "waruseadramon",
+                "color": "dark"
+            },
+            {
+                "name": "chaosmetalseadramon",
+                "color": "dark"
             }
         ],
         [

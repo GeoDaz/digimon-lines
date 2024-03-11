@@ -30,29 +30,32 @@
                 "color": "human",
                 "size": 2
             },
-            [
-                {
-                    "name": "shutumon",
-                    "color": "human",
-                    "from": [
-                        0.5,
-                        -1
-                    ]
-                },
-                {
-                    "name": "jetsilphymon",
-                    "color": "human",
-                    "from": [
-                        -0.5,
-                        -1
-                    ]
-                }
-            ],
-            [
-                {
-                    "name": "ancientirismon"
-                }
-            ]
+            {
+                "name": "shutumon",
+                "color": "human",
+                "from": [
+                    0.5,
+                    -1
+                ]
+            },
+            {
+                "name": "ancientirismon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "jetsilphymon",
+                "color": "human",
+                "from": [
+                    -0.5,
+                    -1
+                ]
+            },
+            null
         ]
     ],
     "related": [

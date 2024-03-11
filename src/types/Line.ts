@@ -1,22 +1,26 @@
 export interface Line {
 	title?: string;
-	columns: Array<Array<LinePoint | LinePoint[] | null>>;
+	columns: LineColumn[];
 	size: number;
 	related?: Array<string | LineRelation>;
 	notes?: string[];
 }
 
+export type LineColumn = Array<LinePoint | null>;
+
 export interface LinePoint {
 	name: string;
-	color?: string;
-	color2?: string;
 	size?: number;
+	color?: LineColor;
+	from?: LineFrom;
 	skins?: string[];
-	from?: number[] | null;
-	from2?: number[];
-	fusionFrom?: Array<number[]>;
 	image?: string;
+	collapsable?: boolean;
 }
+
+export type LineFrom = Array<number[]> | number[] | null;
+
+export type LineColor = string | string[];
 
 export interface LineRelation {
 	name: string;

@@ -19,58 +19,27 @@
             null
         ],
         [
-            [
-                {
-                    "name": "zerimon"
-                },
-                {
-                    "name": "snowbotamon"
-                }
-            ],
-            [
-                {
-                    "name": "gummymon"
-                },
-                {
-                    "name": "nyaromon"
-                }
-            ],
-            [
-                {
-                    "name": "monmon"
-                },
-                {
-                    "name": "salamon"
-                }
-            ],
-            [
-                {
-                    "name": "hapemon"
-                },
-                {
-                    "name": "darcmon",
-                    "color": "light"
-                }
-            ],
-            [
-                {
-                    "name": "gokuwmon"
-                },
-                {
-                    "name": "sanzomon",
-                    "color": "light"
-                }
-            ],
-            [
-                null,
-                null
-            ],
+            {
+                "name": "zerimon"
+            },
+            {
+                "name": "gummymon"
+            },
+            {
+                "name": "monmon"
+            },
+            {
+                "name": "hapemon"
+            },
+            {
+                "name": "gokuwmon"
+            },
+            null,
             {
                 "name": "shakamon",
                 "size": 2,
                 "color": "fusion",
-                "from": null,
-                "fusionFrom": [
+                "from": [
                     [
                         -1.5,
                         -2
@@ -89,6 +58,26 @@
                     ]
                 ]
             }
+        ],
+        [
+            {
+                "name": "snowbotamon"
+            },
+            {
+                "name": "nyaromon"
+            },
+            {
+                "name": "salamon"
+            },
+            {
+                "name": "darcmon",
+                "color": "light"
+            },
+            {
+                "name": "sanzomon",
+                "color": "light"
+            },
+            null
         ],
         [
             {

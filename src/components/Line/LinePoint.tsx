@@ -48,7 +48,7 @@ const LinePoint: React.FC<Props> = ({
 	}
 	return (
 		<Link
-			href={`/${type}s/${line}`}
+			href={`/${type}/${line}`}
 			title={name}
 			className={makeClassName(
 				'line-point pictured',

@@ -1,0 +1,69 @@
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "diatrymon",
+				"color": "wind",
+				"from": [1, -1]
+			}
+		],
+		[
+			{
+				"name": "yolkmon"
+			},
+			{
+				"name": "fluffymon",
+				"color": "wind"
+			},
+			{
+				"name": "pteromon",
+				"color": "wind"
+			},
+			{
+				"name": "galemon",
+				"color": "wind"
+			},
+			{
+				"name": "grandgalemon",
+				"color": "wind"
+			},
+			{
+				"name": "zephagamon",
+				"color": "wind"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pteranomon",
+				"color": "machine",
+				"from": [-1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pteranomonx",
+				"color": "x",
+				"from": [-1, 0]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "falcomon2",
+			"for": "falcomon"
+		},
+		{
+			"name": "jazamon",
+			"from": "pteranomon"
+		}
+	]
+}

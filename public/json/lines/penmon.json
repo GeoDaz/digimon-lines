@@ -33,9 +33,8 @@
 			},
 			{
 				"name": "frosvelgrmon",
-				"color": "ice",
-				"color2": "ice",
-				"from2": [1, -1]
+				"color": ["ice", "ice"],
+				"from": [[0, -1], [1, -1]]
 			}
 		],
 		[

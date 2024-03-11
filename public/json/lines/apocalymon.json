@@ -21,65 +21,29 @@
             }
         ],
         [
-            [
-                {
-                    "name": "botamon"
-                },
-                {
-                    "name": "mokumon"
-                }
-            ],
-            [
-                {
-                    "name": "koromon"
-                },
-                {
-                    "name": "demimeramon",
-                    "color": "fire"
-                }
-            ],
-            [
-                {
-                    "name": "betamon"
-                },
-                {
-                    "name": "candmon",
-                    "color": "fire"
-                }
-            ],
-            [
-                {
-                    "name": "seadramon"
-                },
-                {
-                    "name": "bakemon",
-                    "color": "dark"
-                }
-            ],
-            [
-                {
-                    "name": "megaseadramon"
-                },
-                {
-                    "name": "phantomon",
-                    "color": "dark"
-                }
-            ],
-            [
-                {
-                    "name": "metalseadramon"
-                },
-                {
-                    "name": "piemon",
-                    "color": "dark"
-                }
-            ],
+            {
+                "name": "botamon"
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "betamon"
+            },
+            {
+                "name": "seadramon"
+            },
+            {
+                "name": "megaseadramon"
+            },
+            {
+                "name": "metalseadramon"
+            },
             {
                 "name": "apocalymon",
                 "size": 2,
                 "color": "fusion",
-                "from": null,
-                "fusionFrom": [
+                "from": [
                     [
                         -1.5,
                         -1
@@ -97,6 +61,31 @@
                         -1
                     ]
                 ]
+            }
+        ],
+        [
+            {
+                "name": "mokumon"
+            },
+            {
+                "name": "demimeramon",
+                "color": "fire"
+            },
+            {
+                "name": "candmon",
+                "color": "fire"
+            },
+            {
+                "name": "bakemon",
+                "color": "dark"
+            },
+            {
+                "name": "phantomon",
+                "color": "dark"
+            },
+            {
+                "name": "piemon",
+                "color": "dark"
             }
         ],
         [

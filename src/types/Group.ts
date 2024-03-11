@@ -1,9 +1,9 @@
 export interface Group {
 	title?: string;
-	// main: Array<GroupPoint>|Record<string, GroupPoint[]>;
-	main: GroupPoint[];
+	main: GroupPoint[] | { [key: string]: Array<GroupPoint | null> };
 	related?: GroupPoint[];
 	notes?: string[];
+	type?: string;
 }
 
 export interface GroupPoint {

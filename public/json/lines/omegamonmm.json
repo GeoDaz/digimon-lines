@@ -1,60 +1,29 @@
 {
     "columns": [
         [
-            [
-                {
-                    "name": "botamon"
-                },
-                {
-                    "name": "punimon"
-                }
-            ],
-            [
-                {
-                    "name": "koromon"
-                },
-                {
-                    "name": "tsunomon"
-                }
-            ],
-            [
-                {
-                    "name": "agumon"
-                },
-                {
-                    "name": "gabumon"
-                }
-            ],
-            [
-                {
-                    "name": "greymon"
-                },
-                {
-                    "name": "garurumon"
-                }
-            ],
-            [
-                {
-                    "name": "metalgreymon"
-                },
-                {
-                    "name": "weregarurumon"
-                }
-            ],
-            [
-                {
-                    "name": "wargreymon"
-                },
-                {
-                    "name": "metalgarurumon"
-                }
-            ],
+            {
+                "name": "botamon"
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "agumon"
+            },
+            {
+                "name": "greymon"
+            },
+            {
+                "name": "metalgreymon"
+            },
+            {
+                "name": "wargreymon"
+            },
             {
                 "name": "omegamon",
                 "size": 2,
                 "color": "fusion",
-                "from": null,
-                "fusionFrom": [
+                "from": [
                     [
                         0.5,
                         -1
@@ -64,6 +33,26 @@
                         -1
                     ]
                 ]
+            }
+        ],
+        [
+            {
+                "name": "punimon"
+            },
+            {
+                "name": "tsunomon"
+            },
+            {
+                "name": "gabumon"
+            },
+            {
+                "name": "garurumon"
+            },
+            {
+                "name": "weregarurumon"
+            },
+            {
+                "name": "metalgarurumon"
             }
         ],
         [
@@ -88,61 +77,30 @@
             }
         ],
         [
-            [
-                {
-                    "name": "bubbmon"
-                },
-                {
-                    "name": "yuramon"
-                }
-            ],
-            [
-                {
-                    "name": "mochimon"
-                },
-                {
-                    "name": "tanemon"
-                }
-            ],
-            [
-                {
-                    "name": "tentomon"
-                },
-                {
-                    "name": "palmon"
-                }
-            ],
-            [
-                {
-                    "name": "kabuterimon"
-                },
-                {
-                    "name": "togemon"
-                }
-            ],
-            [
-                {
-                    "name": "megakabuterimon"
-                },
-                {
-                    "name": "lilimon"
-                }
-            ],
-            [
-                {
-                    "name": "herculeskabuterimon"
-                },
-                {
-                    "name": "rosemon"
-                }
-            ],
+            {
+                "name": "bubbmon"
+            },
+            {
+                "name": "mochimon"
+            },
+            {
+                "name": "tentomon"
+            },
+            {
+                "name": "kabuterimon"
+            },
+            {
+                "name": "megakabuterimon"
+            },
+            {
+                "name": "herculeskabuterimon"
+            },
             null,
             {
                 "name": "omegamonmm",
                 "size": 2,
                 "color": "fusion",
-                "from": null,
-                "fusionFrom": [
+                "from": [
                     [
                         3.5,
                         -2
@@ -172,6 +130,26 @@
                         -1
                     ]
                 ]
+            }
+        ],
+        [
+            {
+                "name": "yuramon"
+            },
+            {
+                "name": "tanemon"
+            },
+            {
+                "name": "palmon"
+            },
+            {
+                "name": "togemon"
+            },
+            {
+                "name": "lilimon"
+            },
+            {
+                "name": "rosemon"
             }
         ],
         [

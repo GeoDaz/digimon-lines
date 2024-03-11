@@ -1,6 +1,6 @@
-import { Option } from '@/types/Ui';
+import { NumberObject, Option } from '@/types/Ui';
 
-export const zooms: { [key: number | string]: number } = {
+export const zooms: NumberObject = {
 	'-3': 25,
 	'-2': 50,
 	'-1': 75,
@@ -9,7 +9,7 @@ export const zooms: { [key: number | string]: number } = {
 	2: 150,
 };
 // cannot use Object.entries(zooms) because keys will wrong be ordered
-export const zoomOptions: Array<Option> = [
+export const zoomOptions: Option[] = [
 	{ key: -3, value: 25 },
 	{ key: -2, value: 50 },
 	{ key: -1, value: 75 },

@@ -1,11 +1,12 @@
-import Line from "@/types/Line";
+import { StringObject } from '@/types/Ui';
 
-export const LINE = 'line';
-export const VB = 'vb';
-export const GROUP = 'group';
+export const LINE = 'lines';
+export const VB = 'vbs';
+export const GROUP = 'groups';
+export const DIGIEGG = 'digieggs';
 
-export const titles: Record<string, string> = {
-	vb: 'DIM card',
-	line: 'Line',
-	group: 'Group',
+export const titles: StringObject = {
+	vbs: 'DIM card',
+	lines: 'Line',
+	groups: 'Group',
 };

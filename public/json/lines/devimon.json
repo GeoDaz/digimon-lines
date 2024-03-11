@@ -119,10 +119,8 @@
 			null,
 			{
 				"name": "neomyotismon",
-				"color": "dark",
-				"from": [-1, -1],
-				"color2": "dark",
-				"from2": [1, -1]
+				"from": [[-1, -1],[1, -1]],
+				"color": ["dark", "dark"]
 			},
 			{
 				"name": "neomyotismondm",
@@ -140,9 +138,8 @@
 			},
 			{
 				"name": "myotismon",
-				"color": "dark",
-				"color2": "dark",
-				"from2": [-2, -1]
+				"color": ["dark", "dark"],
+				"from": [[0, -1], [-2, -1]]
 			},
 			{
 				"name": "venommyotismon",

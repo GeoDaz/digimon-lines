@@ -1,34 +1,35 @@
 {
-    "columns": [
-        [
-            {
-                "name": "cotsucomon"
-            },
-            {
-                "name": "kakkinmon"
-            },
-            {
-                "name": "ludomon"
-            },
-            {
-                "name": "tialudomon"
-            },
-            {
-                "name": "raijiludomon"
-            },
-            {
-                "name": "bryweludramon",
-                "color": "fire"
-            },
-            {
-                "name": "ragnalordmon",
-                "color": "fusion"
-            }
-        ]
-    ],
-    "related": [
-        "zubamon",
-        {"name": "guilmon", "for": "gallantmon"},
-        {"name": "renamon", "for": "raijinmon"}
-    ]
+	"columns": [
+		[
+			{
+				"name": "cotsucomon"
+			},
+			{
+				"name": "kakkinmon"
+			},
+			{
+				"name": "ludomon"
+			},
+			{
+				"name": "tialudomon"
+			},
+			{
+				"name": "raijiludomon",
+				"color": "electric"
+			},
+			{
+				"name": "bryweludramon",
+				"color": "fire"
+			},
+			{
+				"name": "ragnalordmon",
+				"color": "fusion"
+			}
+		]
+	],
+	"related": [
+		"zubamon",
+		{ "name": "guilmon", "for": "gallantmon" },
+		{ "name": "renamon", "for": "raijinmon" }
+	]
 }

@@ -1,157 +1,214 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			[
-				{
-					"name": "halsemon",
-					"from": [4, -1]
-				},
-				{
-					"name": "shurimon",
-					"from": [3, -1],
-					"color": "grass"
-				}
-			],
-			{
-				"name": "butenmon",
-				"color": "fusion",
-				"color2": "fusion",
-				"from": [-0.5, -1],
-				"from2": [0.5, -1],
-				"size": 2
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "darcmon",
-				"color": "light",
-				"from": [2, -1]
-			},
-			null,
-			{
-				"name": "murmukusmon",
-				"color": "dark",
-				"from": [1, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "hippogriffomon",
-				"from": [1, -1],
-				"from2": [-1, -1]
-			},
-			{
-				"name": "griffomon",
-				"from": [0, -1]
-			}
-		],
-		[
-			{
-				"name": "pururumon"
-			},
-			{
-				"name": "poromon"
-			},
-			{
-				"name": "hawkmon"
-			},
-			{
-				"name": "aquilamon"
-			},
-			null,
-			{
-				"name": "valdurmon",
-				"color": "light",
-				"from": [-1, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "harpymon",
-				"from": [-1, -1]
-			},
-			{
-				"name": "silphymon",
-				"color": "fusion",
-				"from": [-1, -1]
-			},
-			{
-				"name": "valkyrimon"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "owlmon",
-				"from": [-2, -1]
-			},
-			{
-				"name": "shutumon",
-				"from": [-1, -1]
-			},
-			{
-				"name": "ancientirismon"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "allomon",
-				"color": "fire",
-				"from": [-3, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "flybeemon",
-				"from": [-4, -1]
-			}
-		]
-	],
-	"related": [
-		{
-			"name": "biyomon",
-			"for": "garudamon"
-		},
-		{
-			"name": "gatomon",
-			"from": "silphymon"
-		},
-		{
-			"name": "fairymon",
-			"from": "shutumon"
-		},
-		{
-			"name": "falcomon",
-			"from": "valdurmon"
-		},
-		{
-			"name": "hyokomon",
-			"from": "butenmon"
-		},
-		{
-			"name": "penmon",
-			"for": "peacockmon"
-		}
-	]
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "halsemon",
+                "from": [
+                    4,
+                    -1
+                ]
+            },
+            {
+                "name": "butenmon",
+                "color": [
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ],
+                "size": 2
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shurimon",
+                "from": [
+                    3,
+                    -1
+                ],
+                "color": "grass"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "darcmon",
+                "color": "light",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            null,
+            {
+                "name": "murmukusmon",
+                "color": "dark",
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "hippogriffomon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "griffomon",
+                "from": [
+                    0,
+                    -1
+                ]
+            }
+        ],
+        [
+            {
+                "name": "pururumon"
+            },
+            {
+                "name": "poromon"
+            },
+            {
+                "name": "hawkmon"
+            },
+            {
+                "name": "aquilamon"
+            },
+            null,
+            {
+                "name": "valdurmon",
+                "color": "light",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "harpymon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "silphymon",
+                "color": "fusion",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "valkyrimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "owlmon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "shutumon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "ancientirismon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "allomon",
+                "color": "fire",
+                "from": [
+                    -3,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "flybeemon",
+                "from": [
+                    -4,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "biyomon",
+            "for": "garudamon"
+        },
+        {
+            "name": "gatomon",
+            "from": "silphymon"
+        },
+        {
+            "name": "fairymon",
+            "from": "shutumon"
+        },
+        {
+            "name": "falcomon",
+            "from": "valdurmon"
+        },
+        {
+            "name": "hyokomon",
+            "from": "butenmon"
+        },
+        {
+            "name": "penmon",
+            "for": "peacockmon"
+        }
+    ]
 }

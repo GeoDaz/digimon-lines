@@ -47,44 +47,23 @@
             }
         ],
         [
-            [
-                {
-                    "name": "leafmon"
-                },
-                {
-                    "name": "botamon"
-                }
-            ],
-            [
-                {
-                    "name": "minomon"
-                },
-                {
-                    "name": "koromon"
-                }
-            ],
-            [
-                {
-                    "name": "kunemon"
-                },
-                {
-                    "name": "modokibetamon"
-                }
-            ],
-            [
-                {
-                    "name": "kuwagamon"
-                },
-                {
-                    "name": "airdramon"
-                }
-            ],
+            {
+                "name": "leafmon"
+            },
+            {
+                "name": "minomon"
+            },
+            {
+                "name": "kunemon"
+            },
+            {
+                "name": "kuwagamon"
+            },
             {
                 "name": "chimeramon",
                 "color": "fusion",
                 "size": 2,
-                "from": null,
-                "fusionFrom": [
+                "from": [
                     [
                         -3.5,
                         0
@@ -125,11 +104,19 @@
             },
             {
                 "name": "millenniumon",
-                "color": "fusion",
-                "color2": "fusion",
-                "from2": [
-                    6.5,
-                    0
+                "color": [
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        6.5,
+                        0
+                    ]
                 ],
                 "size": 2
             },
@@ -140,6 +127,20 @@
                 "skins": [
                     "moonmillenniumon"
                 ]
+            }
+        ],
+        [
+            {
+                "name": "botamon"
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "modokibetamon"
+            },
+            {
+                "name": "airdramon"
             }
         ],
         [
@@ -259,9 +260,8 @@
             },
             {
                 "name": "machinedramon",
-                "from": null,
                 "color": "fusion",
-                "fusionFrom": [
+                "from": [
                     [
                         -2,
                         -1

@@ -64,12 +64,11 @@
             },
             {
                 "name": "piemon",
-                "color": "dark",
-                "color2": "dark",
-                "from2": [
+                "color": ["dark", "dark"],
+                "from": [[0, -1], [
                     1,
                     -1
-                ]
+                ]]
             }
         ],
         [
