@@ -1,7 +1,6 @@
-import React, { Fragment, useContext, useState } from 'react';
+import { Fragment, memo, useContext, useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import { Line, LineColumn, LineFrom, LinePoint } from '@/types/Line';
-import { levels } from '@/consts/levels';
 import { makeClassName } from '@/functions';
 import { addLineColumn, removeLineColumn, setLinePoint } from '@/reducers/lineReducer';
 import { GridContext } from '@/context/grid';
@@ -9,6 +8,7 @@ import LinePointSettings from './LinePointSettings';
 import LineGridPoint from './LineGridPoint';
 import LineAddRow from './LineAddRow';
 import Icon from '../Icon';
+import LineLevels from './LineLevels';
 
 export interface LineEdition {
 	point?: LinePoint;
@@ -109,17 +109,7 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 					)}
 					style={{ zoom: `${zoom}%` }}
 				>
-					<div className="levels">
-						{levels.map(
-							(level, i) =>
-								!line.size ||
-								(line.size >= i + 1 && (
-									<div key={i} className="level">
-										<span>{level}</span>
-									</div>
-								))
-						)}
-					</div>
+					<LineLevels size={line.size} />
 					{line.columns.map((column, i) => (
 						<LineRow key={i} x={i} column={column} />
 					))}
@@ -191,4 +181,4 @@ const LineRow: React.FC<RowProps> = ({ column, x, y }) => {
 	);
 };
 
-export default React.memo(LineGrid);
+export default memo(LineGrid);

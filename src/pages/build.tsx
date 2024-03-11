@@ -15,7 +15,7 @@ import useLocalStorage from '@/hooks/useLocalStorage';
 import DownloadDropdown from '@/components/DownloadDropdown';
 import Line, { LineColumn } from '@/types/Line';
 import UploadCode from '@/components/UploadCode';
-import { areCollapsablePoints } from '@/functions/transformer/line';
+import transformLine, { areCollapsablePoints } from '@/functions/transformer/line';
 
 interface StaticProps {
 	searchList?: string[];
@@ -53,7 +53,7 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 			console.error(e);
 			return;
 		}
-		setLine(json || defaultLine);
+		setLine(json ? (transformLine(json) as Line) : defaultLine);
 	};
 
 	// const downloadImage = () => {

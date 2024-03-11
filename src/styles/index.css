@@ -760,17 +760,47 @@ a.line-point {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .line-grid .levels .level:last-child {
   border-bottom: var(--dl-border);
 }
 
-.line-grid .levels .level span {
+.line-grid .levels .level span,
+.line-grid .levels .level .btn {
   position: relative;
   display: inline-block;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+
+.line-grid.editable .levels .level .btn.add {
+  display: inline-block;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.3s;
+  padding: 0.25rem 0.5rem;
+  z-index: 1;
+}
+
+.line-grid.editable .levels .level .btn.btn-danger {
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.3s;
+  padding: 0.25rem 0.5rem;
+}
+
+.line-grid.editable .levels .level:hover .btn.btn-danger,
+.line-grid.editable .levels .level:hover .btn.add {
+  opacity: 1;
 }
 
 /* Progress Bar */
