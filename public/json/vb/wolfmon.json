@@ -1,0 +1,103 @@
+{
+	"title": "Double Light",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "garurumon",
+				"from": [[1, -1]],
+				"collapsable": false,
+				"color": ["ice"]
+			},
+			{ "name": "kendogarurumon", "from": null, "collapsable": false },
+			{
+				"name": "ancientgarurumon",
+				"from": [[0, -2]],
+				"collapsable": false,
+				"color": ["ice"]
+			}
+		],
+		[
+			{ "name": "snowbotamon", "from": null, "collapsable": false, "size": 2 },
+			{
+				"name": "moonmon",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"size": 2,
+				"color": ["light"]
+			},
+			{
+				"name": "strabimon",
+				"from": [[0.5, -1]],
+				"collapsable": false,
+				"color": ["light"]
+			},
+			{ "name": "wolfmon", "from": null, "collapsable": false },
+			{ "name": "wolfmon", "from": null, "collapsable": false },
+			{
+				"name": "magnagarurumon",
+				"from": [[0, -3]],
+				"collapsable": false,
+				"color": ["light"]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "lunamon",
+				"from": [[-0.5, -1]],
+				"collapsable": true,
+				"color": ["light"]
+			},
+			{
+				"name": "tialudomon",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"color": ["light"]
+			},
+			{
+				"name": "raijiludomon",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"color": ["electric"]
+			},
+			{
+				"name": "earangmon",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"color": ["light"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "lekismon",
+				"from": [[-1, -1]],
+				"collapsable": true,
+				"color": ["light"]
+			},
+			{ "name": "crescemon", "from": null, "collapsable": true },
+			{
+				"name": "dianamon",
+				"from": [[0, -2]],
+				"collapsable": true,
+				"color": ["light"]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "garurumon",
+			"for": "wolfmon"
+		},
+		{
+			"name": "ludomon",
+			"for": "tialudomon"
+		}
+	]
+}
