@@ -91,13 +91,13 @@ const LinePoint: React.FC<{
 			onClick={handleEdit ? handleEdit : undefined}
 		>
 			<div className="line-point-safe-zone">
-				<LineImage name={name} title={name} path={image} />
+				<LineImage name={name} path={image} />
 				{skins.map((skin, i) => (
 					<LineImage
-						className="line-skin"
 						key={i}
 						name={skin}
-						title={skin}
+						className="line-skin"
+						loadable={false}
 						style={{ bottom: 3.3 * i + 'em' }}
 					/>
 				))}

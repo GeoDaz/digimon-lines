@@ -12,8 +12,13 @@ export const makeClassName = (...classList: any[]): string =>
 		return classList + ' ' + className;
 	}, '');
 
-export const capitalize = (string: string): string =>
-	string[0].toUpperCase() + string.slice(1);
+export const capitalize = (string: string): string => {
+	const strings = string.split('_');
+	if (strings.length > 1) {
+		return strings.map(capitalize).join(' ');
+	}
+	return string[0].toUpperCase() + string.slice(1);
+};
 
 export const objectToGETparams = (
 	object: object,

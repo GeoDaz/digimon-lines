@@ -67,7 +67,7 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 	}
 	const { next, prev } = ssr;
 	const nameCap = capitalize(name);
-	const typeTitle = titles[type]; 
+	const typeTitle = titles[type];
 	return (
 		<Layout
 			title={
@@ -147,14 +147,14 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 											<LineImage
 												className="line-skin"
 												name={relation.name}
-												title={relation.name}
+												loadable={false}
 											/>
 										)}
 										{!!relation.from && (
 											<LineImage
 												className="line-skin" /* from */
 												name={relation.from}
-												title={relation.from}
+												loadable={false}
 											/>
 										)}
 									</LinePoint>

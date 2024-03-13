@@ -124,7 +124,7 @@ const LineRow = ({ lines, type }: { lines: LineThumb[]; type?: string }) => (
 							<LineImage
 								className="line-skin"
 								name={line.found.found}
-								title={line.found.found}
+								loadable={false}
 							/>
 						)}
 					</LinePoint>
@@ -135,21 +135,21 @@ const LineRow = ({ lines, type }: { lines: LineThumb[]; type?: string }) => (
 );
 
 const checkLineAvailability = (
-	value: string,
+	name: string,
 	searchList: StringArrayObject,
 	type: string = 'lines'
 ): LineThumb => {
 	try {
-		let line: Line | undefined = require(`../../public/json/${type}/${value}.json`);
-		if (!line) throw new Error(`line ${value} not found`);
-		let lineArray = lineToArray(line);
+		const line: Line | undefined = require(`../../public/json/${type}/${name}.json`);
+		if (!line) throw new Error(`line ${name} not found`);
+		const lineArray = lineToArray(line);
 		lineArray.forEach(digimon => {
 			if (!searchList[digimon]) searchList[digimon] = [];
-			searchList[digimon].push(value);
+			searchList[digimon].push(name);
 		});
-		return { name: value, available: true } as LineThumb;
+		return { name, available: true } as LineThumb;
 	} catch (e) {
-		return { name: value, available: false } as LineThumb;
+		return { name, available: false } as LineThumb;
 	}
 };
 

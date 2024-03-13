@@ -1,7 +1,7 @@
 // modules
 import { GetStaticProps } from 'next';
 // components
-import { PageLine as PageVB } from '@/pages/lines/[name]';
+import { PageLine as PageAppmon } from '@/pages/lines/[name]';
 import transformLine from '@/functions/transformer/line';
 // constants
 import { Line } from '@/types/Line';
@@ -47,4 +47,4 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	return { props: { ssr: { name: params.name, line, prev, next }, type: APPMON } };
 };
 
-export default PageVB;
+export default PageAppmon;

@@ -71,7 +71,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 										<LineImage
 											className="line-skin"
 											name={point.line}
-											title={point.line}
+											loadable={false}
 										/>
 									)}
 								</LinePoint>
@@ -95,7 +95,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 										<LineImage
 											className="line-skin"
 											name={relation.line}
-											title={relation.line}
+											loadable={false}
 										/>
 									)}
 								</LinePoint>

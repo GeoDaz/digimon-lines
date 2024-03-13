@@ -7,7 +7,8 @@ export const DIGIEGG = 'digieggs';
 export const APPMON = 'appmons';
 
 export const titles: StringObject = {
-	vbs: 'DIM card',
-	lines: 'Line',
-	groups: 'Group',
+	[VB]: 'DIM card',
+	[LINE]: 'Line',
+	[APPMON]: 'Line',
+	[GROUP]: 'Group',
 };

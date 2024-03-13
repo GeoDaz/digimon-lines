@@ -26,7 +26,7 @@ const GroupGrid: React.FC<{ group: Group }> = ({ group }) => {
 											<LineImage
 												className="line-skin"
 												name={point.line}
-												title={point.line}
+												loadable={false}
 											/>
 										)}
 									</LinePoint>

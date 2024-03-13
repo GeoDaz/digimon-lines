@@ -17,14 +17,16 @@ interface Props extends React.ImgHTMLAttributes<any> {
 	type?: string;
 	className?: string;
 	style?: object;
+	loadable?: boolean;
 }
 const LineImage: React.FC<Props> = ({
 	name,
-	title,
+	title = name,
 	className,
 	style,
 	type = LINE,
 	path,
+	loadable = true,
 }) => {
 	const [src, setSrc] = useState(() => path || makeImgPath(name, type));
 	const [loading, setLoading] = useState(true);
@@ -51,7 +53,7 @@ const LineImage: React.FC<Props> = ({
 
 	return (
 		<>
-			{loading && (
+			{loadable && loading && (
 				<div className="spinner-wrapper" style={loadingStyle}>
 					<Spinner animation="border" />
 				</div>
