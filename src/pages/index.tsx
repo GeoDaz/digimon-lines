@@ -120,26 +120,28 @@ const LineRow = ({ lines, type }: { lines: LineThumb[]; type?: string }) => (
 			{lines.map((line, i) => (
 				<Col key={i}>
 					<LinePoint name={line.name} available={line.available} type={type}>
-						{!!line.found && line.found.found != line.name && (
+						{!!line.found && line.found.found != line.name ? (
 							<LineImage
 								className="line-skin"
 								name={line.found.found}
 								loadable={false}
 							/>
+						) : (
+							!!line.thumbs && (
+								<div className="line-thumbs">
+									{line.thumbs.map((thumb, i) => (
+										<LineImage
+											key={i}
+											name={thumb}
+											className="line-skin"
+											loadable={false}
+											style={{ right: 3.3 * i + 'em' }}
+										/>
+									))}
+								</div>
+							)
 						)}
 					</LinePoint>
-					{!!line.thumbs && (
-						<div className="line-thumbs">
-							{line.thumbs.map((thumb, i) => (
-								<LineImage
-									key={i}
-									name={thumb}
-									className="line-skin"
-									loadable={false}
-								/>
-							))}
-						</div>
-					)}
 				</Col>
 			))}
 		</Row>
