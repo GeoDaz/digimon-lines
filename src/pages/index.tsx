@@ -32,16 +32,16 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	const [lines, setLines] = useState<LineThumb[]>(ssr.lines);
 	const [fusions, setFusions] = useState<LineThumb[]>(ssr.fusions);
 	const [appmons, setAppmons] = useState<LineThumb[]>(ssr.appmons);
-	const [load, loading] = useFetch(setLines);
+	// const [load, loading] = useFetch(setLines);
 	const [search, setSearch] = useState<string>(searchParam);
-	const [loadFusions] = useFetch(setFusions);
+	// const [loadFusions] = useFetch(setFusions);
 
-	useEffect(() => {
-		if (!lines.length) {
-			load(`${process.env.URL}/json/lines/_index.json`);
-			loadFusions(`${process.env.URL}/json/lines/_fusion.json`);
-		}
-	}, []);
+	// useEffect(() => {
+	// 	if (!lines.length) {
+	// 		load(`${process.env.URL}/json/lines/_index.json`);
+	// 		loadFusions(`${process.env.URL}/json/lines/_fusion.json`);
+	// 	}
+	// }, []);
 
 	useEffect(() => {
 		if (!search) {
@@ -88,27 +88,27 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 				together members of the same species.
 			</blockquote>
 			<SearchBar onSubmit={handleSearch} defaultValue={search} />
-			{loading ? (
+			{/* {loading ? (
 				<div className="text-center">
 					<Spinner animation="border" />
 				</div>
-			) : (
-				<>
-					{lines.length > 0 && <LineRow lines={lines} />}
-					{fusions.length > 0 && (
-						<div>
-							<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
-							<LineRow lines={fusions} />
-						</div>
-					)}
-					{appmons.length > 0 && (
-						<div>
-							<h2>Appmons&nbsp;:</h2>
-							<LineRow lines={appmons} type={APPMON} />
-						</div>
-					)}
-				</>
+			) : ( */}
+			{/* <> */}
+			{lines.length > 0 && <LineRow lines={lines} />}
+			{fusions.length > 0 && (
+				<div>
+					<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
+					<LineRow lines={fusions} />
+				</div>
 			)}
+			{appmons.length > 0 && (
+				<div>
+					<h2>Appmons&nbsp;:</h2>
+					<LineRow lines={appmons} type={APPMON} />
+				</div>
+			)}
+			{/* </> */}
+			{/* )} */}
 			{!lines.length && !fusions.length && <p>No line found.</p>}
 		</Layout>
 	);
@@ -128,44 +128,72 @@ const LineRow = ({ lines, type }: { lines: LineThumb[]; type?: string }) => (
 							/>
 						)}
 					</LinePoint>
+					{!!line.thumbs && (
+						<div className="line-thumbs">
+							{line.thumbs.map((thumb, i) => (
+								<LineImage
+									key={i}
+									name={thumb}
+									className="line-skin"
+									loadable={false}
+								/>
+							))}
+						</div>
+					)}
 				</Col>
 			))}
 		</Row>
 	</div>
 );
 
-const checkLineAvailability = (
-	name: string,
-	searchList: StringArrayObject,
-	type: string = 'lines'
-): LineThumb => {
+interface CheckParams {
+	name: string;
+	searchList: StringArrayObject;
+	type?: string;
+	thumbs?: string[];
+}
+const checkLineAvailability = ({
+	name,
+	searchList,
+	type = 'lines',
+	thumbs,
+}: CheckParams): LineThumb => {
+	let available = true;
 	try {
-		const line: Line | undefined = require(`../../public/json/${type}/${name}.json`);
+		let line: Line | undefined = require(`../../public/json/${type}/${name}.json`);
 		if (!line) throw new Error(`line ${name} not found`);
-		const lineArray = lineToArray(line);
+		let lineArray = lineToArray(line);
 		lineArray.forEach(digimon => {
 			if (!searchList[digimon]) searchList[digimon] = [];
 			searchList[digimon].push(name);
 		});
-		return { name, available: true } as LineThumb;
 	} catch (e) {
-		return { name, available: false } as LineThumb;
+		available = false;
 	}
+	if (thumbs) {
+		return { name, available, thumbs } as LineThumb;
+	}
+	return { name, available } as LineThumb;
 };
 
 export const getStaticProps: GetStaticProps = async () => {
 	try {
-		let lines = require('../../public/json/lines/_index.json');
+		const objectLines: {
+			[key: string]: string | string[];
+		} = require('../../public/json/lines/_index.json');
 		let fusions = require('../../public/json/lines/_fusion.json');
 		let appmons = require('../../public/json/appmons/_index.json');
 
 		const searchList: StringArrayObject = {};
-		lines = lines.map((line: string) => checkLineAvailability(line, searchList));
+		const lines = Object.entries(objectLines).map(([key, line]) => {
+			const thumbs = Array.isArray(line) ? line : undefined;
+			return checkLineAvailability({ name: key, searchList, thumbs });
+		});
 		fusions = fusions.map((fusion: string) =>
-			checkLineAvailability(fusion, searchList)
+			checkLineAvailability({ name: fusion, searchList })
 		);
 		appmons = appmons.map((appmon: string) =>
-			checkLineAvailability(appmon, searchList, 'appmons')
+			checkLineAvailability({ name: appmon, searchList, type: 'appmons' })
 		);
 		// TODO make a flat searchList for previews
 

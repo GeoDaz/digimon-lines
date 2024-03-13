@@ -32,6 +32,7 @@ export interface LineThumb {
 	name: string;
 	available?: boolean;
 	found?: LineFound;
+	thumbs?: string[];
 }
 
 export interface LineFound {

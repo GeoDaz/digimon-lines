@@ -170,7 +170,7 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 
 export async function getStaticPaths() {
 	try {
-		const lines = require('../../../public/json/lines/_index.json');
+		const lines = Object.keys(require('../../../public/json/lines/_index.json'));
 		const fusions = require('../../../public/json/lines/_fusion.json');
 
 		const paths = [...lines, ...fusions].map(name => ({
@@ -196,7 +196,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		console.error(e);
 	}
 
-	const lines = require('../../../public/json/lines/_index.json');
+	const lines = Object.keys(require('../../../public/json/lines/_index.json'));
 	const fusions = require('../../../public/json/lines/_fusion.json');
 
 	let prev = null;

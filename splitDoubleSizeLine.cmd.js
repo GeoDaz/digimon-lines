@@ -19,7 +19,6 @@ function writeJson(filePath, body) {
 }
 
 function splitColumn(line) {
-	// console.log({ keys: Object.keys(line), typeof: typeOf(line.columns) });
 	let changed = false;
 	line.columns = line.columns.reduce((columns, col, i) => {
 		let toSplit = false;

@@ -264,6 +264,14 @@ input.form-control {
   padding-right: 0.75rem;
 }
 
+.line-thumbs {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+}
+
 .line-grid {
   display: flex;
   overflow: auto hidden;
@@ -463,17 +471,20 @@ a.line-point {
   transition: all .3s;
 }
 
+.line-skin,
 .line-point .line-skin {
   max-width: var(--dl-skin-img-size);
   max-height: var(--dl-skin-img-size);
-  position: relative;
-  z-index: 3;
   color: var(--bs-dark);
+  transition: all .3s;
+  opacity: 1;
+}
+
+.line-point .line-skin {
   position: absolute;
   bottom: 0;
   right: 0;
-  transition: all .3s;
-  opacity: 1;
+  z-index: 3;
 }
 
 /* .line-point .line-skin.from {
@@ -1013,6 +1024,7 @@ a.dropdown-item.active {
     max-height: var(--dl-md-img-size);
   }
 
+  .line-skin,
   .line-point .line-skin {
     max-width: var(--dl-md-skin-img-size);
     max-height: var(--dl-md-skin-img-size);
@@ -1064,6 +1076,7 @@ a.dropdown-item.active {
     max-height: var(--dl-xs-img-size);
   }
 
+  .line-skin,
   .line-point .line-skin {
     max-width: var(--dl-xs-skin-img-size);
     max-height: var(--dl-xs-skin-img-size);
