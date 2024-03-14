@@ -1,1 +1,32 @@
-{"size":8,"columns":[[null,null,{"name":"app_perorimon","from":null,"collapsable":false},{"name":"app_sukasimon","from":[[0,-1],[1,-1]],"collapsable":true},{"name":"app_damedamon","from":[[0,-1]],"collapsable":true},null,null,null],[null,null,{"name":"app_puzzlemon","from":null,"collapsable":true},null,null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null]]}
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			{ "name": "app_perorimon", "from": null, "collapsable": false },
+			{
+				"name": "app_sukasimon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"collapsable": true
+			},
+			{ "name": "app_damedamon", "from": [[0, -1]], "collapsable": true },
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_puzzlemon", "from": null, "collapsable": true },
+			null,
+			null,
+			null,
+			null,
+			null
+		]
+	]
+}

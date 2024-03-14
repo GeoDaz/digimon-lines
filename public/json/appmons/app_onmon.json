@@ -1,1 +1,72 @@
-{"size":8,"columns":[[null,null,{"name":"app_onmon","from":null,"collapsable":false},{"name":"app_logimon","from":[[0,-1]],"collapsable":false,"color":["gold"]},{"name":"app_bootmon","from":[[0,-1],[1,-1]],"collapsable":true,"color":["gold","gold"]},{"name":"app_rebootmon","from":[[0,-1]],"collapsable":false,"color":["fusion"]},null,null],[null,null,{"name":"app_watchmon","from":null,"collapsable":false},{"name":"app_timemon","from":[[0,-1],[1,-1]],"collapsable":true,"color":[null,"gold"]},null,{"name":"app_rebootmonvirus","from":[[-1,0]],"collapsable":true,"color":["dark"]},null,null],[null,null,{"name":"app_compassmon","from":null,"collapsable":false},null,null,null,null,null]]}
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			{ "name": "app_onmon", "from": null, "collapsable": false },
+			{
+				"name": "app_logimon",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"color": ["gold"]
+			},
+			{
+				"name": "app_bootmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"collapsable": true,
+				"color": ["gold", "gold"]
+			},
+			{
+				"name": "app_rebootmon",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"color": ["fusion"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_watchmon", "from": null, "collapsable": false },
+			{
+				"name": "app_timemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"collapsable": true,
+				"color": [null, "gold"]
+			},
+			null,
+			{
+				"name": "app_rebootmonvirus",
+				"from": [[-1, 0]],
+				"collapsable": true,
+				"color": ["dark"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_compassmon", "from": null, "collapsable": false },
+			null,
+			null,
+			null,
+			null,
+			null
+		]
+	],
+	"related": [
+		"app_offmon",
+		"bearmon",
+		{ "name": "hagurumon", "for": "clockmon" },
+		{ "name": "omegamonmm", "for": "omegamon" }
+	]
+}

@@ -1,1 +1,45 @@
-{"size":8,"columns":[[null,null,{"name":"app_gatchmon","from":null,"collapsable":false},{"name":"app_dogatchmon","from":[[0,-1],[1,-1]],"collapsable":true},{"name":"app_globemon","from":[[0,-1]],"collapsable":false},{"name":"app_gaiamon","from":[[0,-1],[1,-1]],"collapsable":true},null,null],[null,null,{"name":"app_navimon","from":null,"collapsable":false},null,{"name":"app_charismon","from":[[-1,-1]],"collapsable":false,"color":["dark"]},null,null,null]]}
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			{ "name": "app_gatchmon", "from": null, "collapsable": false },
+			{
+				"name": "app_dogatchmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"collapsable": true
+			},
+			{ "name": "app_globemon", "from": [[0, -1]], "collapsable": false },
+			{
+				"name": "app_gaiamon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"collapsable": true
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_navimon", "from": null, "collapsable": false },
+			null,
+			{
+				"name": "app_charismon",
+				"from": [[-1, -1]],
+				"collapsable": false,
+				"color": ["dark"]
+			},
+			null,
+			null,
+			null
+		]
+	],
+	"related": ["shoutmon", "app_gossipmon"]
+}

@@ -1,1 +1,49 @@
-{"size":8,"columns":[[null,null,{"name":"app_hackmon","from":null,"collapsable":false},{"name":"app_raidramon","from":[[0,-1],[1,-1]],"collapsable":true,"color":["dark","machine"]},{"name":"app_revivemon","from":[[0,-1]],"collapsable":true,"color":["dark"]},{"name":"app_hadesmon","from":[[0,-1]],"collapsable":true,"color":["gold"]},null,null],[null,null,{"name":"app_rocketmon","from":null,"collapsable":false},null,null,null,null,null]]}
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			{ "name": "app_hackmon", "from": null, "collapsable": false },
+			{
+				"name": "app_raidramon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"collapsable": true,
+				"color": ["dark", "machine"]
+			},
+			{
+				"name": "app_revivemon",
+				"from": [[0, -1]],
+				"collapsable": true,
+				"color": ["dark"]
+			},
+			{
+				"name": "app_hadesmon",
+				"from": [[0, -1]],
+				"collapsable": true,
+				"color": ["gold"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_rocketmon", "from": null, "collapsable": false },
+			null,
+			null,
+			null,
+			null,
+			null
+		]
+	],
+	"related": [
+		"hackmon",
+		{ "name": "dorumon", "for": "dexdorugreymon" },
+		{ "name": "labramon", "for": "plutomon" },
+		{ "name": "flarelizardmon", "for": "megadramon" }
+	]
+}

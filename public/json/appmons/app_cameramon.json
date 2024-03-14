@@ -1,1 +1,36 @@
-{"size":8,"columns":[[null,null,{"name":"app_cameramon","from":null,"collapsable":false},{"name":"app_scopemon","from":[[0,-1],[1,-1]],"collapsable":true},{"name":"app_sateramon","from":[[0,-1]],"collapsable":true},null,null,null],[null,null,{"name":"app_shotmon","from":null,"collapsable":false},null,null,null,null,null]]}
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			{ "name": "app_cameramon", "from": null, "collapsable": false },
+			{
+				"name": "app_scopemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"collapsable": true
+			},
+			{ "name": "app_sateramon", "from": [[0, -1]], "collapsable": true },
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_shotmon", "from": null, "collapsable": false },
+			null,
+			null,
+			null,
+			null,
+			null
+		]
+	],
+	"related": [
+		{ "name": "hookmon", "for": "revolmon" },
+		{ "name": "impmon", "for": "beelzebumon" }
+	]
+}

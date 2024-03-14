@@ -1,1 +1,163 @@
-{"size":8,"columns":[[null,null,{"name":"app_cookmon","from":null,"collapsable":false},{"name":"app_coachmon","from":[[-0.5,-1],[0.5,-1]],"collapsable":false,"size":2},null,null,null,null],[null,null,{"name":"app_auctiomon","from":null,"collapsable":false},null,null,null,null,null],[null,null,{"name":"app_dokamon","from":null,"collapsable":false},{"name":"app_dosukomon","from":[[0,-1],[1,-1]],"collapsable":true},{"name":"app_oujamon","from":[[0,-1],[-1.5,-1],[2,-1]],"collapsable":true,"color":["ice"]},{"name":"app_poseidomon","from":[[0,-1]],"collapsable":true,"color":["marine"]},null,null],[null,null,{"name":"app_musclemon","from":null,"collapsable":false},null,null,null,null,null],[null,null,{"name":"app_gengomon","from":null,"collapsable":false},{"name":"app_bramon","from":[[0,-1],[-1,-1]],"collapsable":false,"color":["dark"]},null,null,null,null],[null,null,{"name":"app_tubumon","from":null,"collapsable":false},{"name":"app_roamon","from":[[-1,-1],[0,-1]],"collapsable":true,"color":["dark","dark"]},{"name":"app_fakemon","from":[[2,-1],[-1,-1],[0,-1]],"collapsable":true,"color":["default","dark","dark"]},null,null,null],[null,null,{"name":"app_jammingmon","from":null,"collapsable":false},null,null,null,null,null],[null,null,{"name":"app_onpamon","from":null,"collapsable":false},{"name":"app_uratekumon","from":[[-1,-1],[0,-1],[1,-1]],"collapsable":true},null,null,null,null],[null,null,{"name":"app_denpamon","from":null,"collapsable":false},null,null,null,null,null]]}
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			{ "name": "app_cookmon", "from": null, "collapsable": false },
+			{
+				"name": "app_coachmon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"collapsable": false,
+				"size": 2
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_auctiomon", "from": null, "collapsable": false },
+			null,
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_dokamon", "from": null, "collapsable": false },
+			{
+				"name": "app_dosukomon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"collapsable": true
+			},
+			{
+				"name": "app_oujamon",
+				"from": [
+					[0, -1],
+					[-1.5, -1],
+					[2, -1]
+				],
+				"collapsable": true,
+				"color": ["ice"]
+			},
+			{
+				"name": "app_poseidomon",
+				"from": [[0, -1]],
+				"collapsable": true,
+				"color": ["marine"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_musclemon", "from": null, "collapsable": false },
+			null,
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_gengomon", "from": null, "collapsable": false },
+			{
+				"name": "app_bramon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"collapsable": false,
+				"color": ["dark"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_tubumon", "from": null, "collapsable": false },
+			{
+				"name": "app_roamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"collapsable": true,
+				"color": ["dark", "dark"]
+			},
+			{
+				"name": "app_fakemon",
+				"from": [
+					[2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"collapsable": true,
+				"color": ["default", "dark", "dark"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_jammingmon", "from": null, "collapsable": false },
+			null,
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_onpamon", "from": null, "collapsable": false },
+			{
+				"name": "app_uratekumon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"collapsable": true
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "app_denpamon", "from": null, "collapsable": false },
+			null,
+			null,
+			null,
+			null,
+			null
+		]
+	],
+	"related": [
+		{ "name": "garurumon", "for": "weregarurumon" },
+		"ogremon",
+		{ "name": "monmon", "for": "lianpumon" },
+		{ "name": "sukamon", "for": "etemon" }
+	]
+}
