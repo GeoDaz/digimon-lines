@@ -1,92 +1,94 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "tyutyumon",
-                "color": "gold",
-                "from": [1,-1]
-            },
-            {
-                "name": "damemon",
-                "color": "gold"
-            },
-            {
-                "name": "tuwarmon",
-                "color": "gold"
-            },
-            {
-                "name": "takutoumon"
-            }
-        ],
-        [
-            {
-                "name": "cocomon"
-            },
-            {
-                "name": "chocomon"
-            },
-            {
-                "name": "tyumon"
-            },
-            {
-                "name": "sukamon",
-                "skins": [
-                    "platinumsukamon"
-                ]
-            },
-            {
-                "name": "greatkingsukamon",
-                "color": "gold"
-            },
-            {
-                "name": "kingetemon",
-                "color": "gold"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "targetmon",
-                "from": [-1,-1]
-            },
-            {
-                "name": "etemon"
-            },
-            {
-                "name": "metaletemon",
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "tyutyumon",
+				"color": "gold",
+				"from": [1, -1]
+			},
+			{
+				"name": "damemon",
+				"color": "gold"
+			},
+			{
+				"name": "tuwarmon",
+				"color": "gold"
+			},
+			{
+				"name": "takutoumon"
+			},
+			{
+				"name": "takutoumonbm",
+				"color": "mode"
+			}
+		],
+		[
+			{
+				"name": "cocomon"
+			},
+			{
+				"name": "chocomon"
+			},
+			{
+				"name": "tyumon"
+			},
+			{
+				"name": "sukamon",
+				"skins": ["platinumsukamon"]
+			},
+			{
+				"name": "greatkingsukamon",
+				"color": "gold"
+			},
+			{
+				"name": "kingetemon",
+				"color": "gold"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "targetmon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "etemon"
+			},
+			{
+				"name": "metaletemon",
 				"color": "machine"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "opossummon",
-                "from": [-2,-1]
-            },
-            {
-                "name": "chohakkaimon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "kumbhiramon",
-                "from": [-1,-1]
-            }
-        ]
-    ],
-    "related": [
-        {"name": "monmon", "from": "etemon"},
-        "numemon",
-        {"name": "shakamon", "from": "chohakkaimon"}
-    ]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "opossummon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "chohakkaimon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "kumbhiramon",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		{ "name": "monmon", "from": "etemon" },
+		"numemon",
+		{ "name": "shakamon", "from": "chohakkaimon" }
+	]
 }
