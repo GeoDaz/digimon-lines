@@ -1,157 +1,138 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "medievalgallantmon",
-                "color": "x",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "guilmonx",
-                "color": "x",
-                "from": [
-                    3,
-                    0
-                ]
-            },
-            {
-                "name": "growlmonx",
-                "color": "x"
-            },
-            {
-                "name": "wargrowlmonx",
-                "color": "x"
-            },
-            {
-                "name": "gallantmonx",
-                "color": "x"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "megidramonx",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "megidramon",
-                "color": "dark",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "jyarimon"
-            },
-            {
-                "name": "gigimon"
-            },
-            {
-                "name": "guilmon"
-            },
-            {
-                "name": "growlmon"
-            },
-            {
-                "name": "wargrowlmon"
-            },
-            {
-                "name": "gallantmon",
-                "color": "human"
-            },
-            {
-                "name": "gallantmoncm",
-                "color": "mode"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "growlmonorange",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "wargrowlmonorange"
-            },
-            {
-                "name": "suijinmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "guilmonb",
-                "color": "dark",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "growlmonb",
-                "color": "dark"
-            },
-            {
-                "name": "wargrowlmonb",
-                "color": "dark"
-            },
-            {
-                "name": "chaosgallantmon",
-                "color": "dark",
-                "skins": [
-                    "chaosgallantmoncore"
-                ]
-            },
-            {
-                "name": "chaosgallantmoncm",
-                "color": "mode"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "raidenmon",
-            "for": "suijinmon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "medievalgallantmon",
+				"color": "x",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "guilmonx",
+				"color": "x",
+				"from": [3, 0]
+			},
+			{
+				"name": "growlmonx",
+				"color": "x"
+			},
+			{
+				"name": "wargrowlmonx",
+				"color": "x"
+			},
+			{
+				"name": "gallantmonx",
+				"color": "x"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "megidramonx",
+				"color": "dark",
+				"from": [-1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "megidramon",
+				"color": "dark",
+				"from": [1, -1]
+			}
+		],
+		[
+			{
+				"name": "jyarimon"
+			},
+			{
+				"name": "gigimon"
+			},
+			{
+				"name": "guilmon"
+			},
+			{
+				"name": "growlmon"
+			},
+			{
+				"name": "wargrowlmon"
+			},
+			{
+				"name": "gallantmon",
+				"color": "human"
+			},
+			{
+				"name": "gallantmoncm",
+				"color": "mode"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "growlmonorange",
+				"from": [-1, -1]
+			},
+			{
+				"name": "wargrowlmonorange"
+			},
+			{
+				"name": "suijinmon",
+				"from": [-1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "guilmonb",
+				"color": "dark",
+				"from": [-2, -1]
+			},
+			{
+				"name": "growlmonb",
+				"color": "dark"
+			},
+			{
+				"name": "wargrowlmonb",
+				"color": "dark"
+			},
+			{
+				"name": "chaosgallantmon",
+				"color": "dark",
+				"skins": ["chaosgallantmoncore"]
+			},
+			{
+				"name": "chaosgallantmoncm",
+				"color": "mode"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "impmon",
+			"for": "impgrowlmon"
+		},
+		{
+			"name": "raidenmon",
+			"for": "suijinmon"
+		}
+	]
 }
