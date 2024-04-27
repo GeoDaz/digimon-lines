@@ -52,8 +52,7 @@
 			null,
 			null,
 			{
-				"name": "megidramon",
-				"color": "dark",
+				"name": "suijinmon",
 				"from": [1, -1]
 			}
 		],
@@ -94,7 +93,8 @@
 				"name": "wargrowlmonorange"
 			},
 			{
-				"name": "suijinmon",
+				"name": "megidramon",
+				"color": "dark",
 				"from": [-1, -1]
 			}
 		],
@@ -123,12 +123,30 @@
 				"name": "chaosgallantmoncm",
 				"color": "mode"
 			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "impgrowlmon",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			{
+				"name": "impwargrowlmon",
+				"color": "dark"
+			},
+			{
+				"name": "impmegidramon",
+				"color": "dark"
+			}
 		]
 	],
 	"related": [
 		{
 			"name": "impmon",
-			"for": "impgrowlmon"
+			"from": "impgrowlmon"
 		},
 		{
 			"name": "raidenmon",
