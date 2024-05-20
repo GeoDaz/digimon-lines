@@ -1,221 +1,198 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "agumonx",
-                "from": [
-                    1,
-                    0
-                ],
-                "color": "x"
-            },
-            {
-                "name": "tyranomonx",
-                "color": "x"
-            },
-            {
-                "name": "extyranomon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            null,
-            null
-        ],
-        [
-            {
-                "name": "botamon"
-            },
-            {
-                "name": "koromon"
-            },
-            {
-                "name": "agumon"
-            },
-            {
-                "name": "tyranomon"
-            },
-            {
-                "name": "mastertyranomon"
-            },
-            {
-                "name": "rusttyranomon",
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "minidekachimon",
+				"from": [2, -1]
+			},
+			{
+				"name": "atamadekachimon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "agumonx",
+				"from": [1, 0],
+				"color": "x"
+			},
+			{
+				"name": "tyranomonx",
+				"color": "x"
+			},
+			{
+				"name": "extyranomon",
+				"from": [1, -1]
+			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "koromon"
+			},
+			{
+				"name": "agumon"
+			},
+			{
+				"name": "tyranomon"
+			},
+			{
+				"name": "mastertyranomon"
+			},
+			{
+				"name": "rusttyranomon",
 				"color": "machine"
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "tuskmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "mametyramon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "dinorexmon"
-            },
-            {
-                "name": "huanglongmon",
-                "skins": [
-                    "huanglongmonrm"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "agumonbx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            {
-                "name": "darktyranomonx",
-                "color": "x"
-            },
-            {
-                "name": "metaltyranomonx",
-                "color": "x"
-            },
-            {
-                "name": "gundramon",
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tuskmon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "mametyramon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "dinorexmon"
+			},
+			{
+				"name": "huanglongmon",
+				"skins": ["huanglongmonrm"]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "agumonbx",
+				"color": "x",
+				"from": [1, 0]
+			},
+			{
+				"name": "darktyranomonx",
+				"color": "x"
+			},
+			{
+				"name": "metaltyranomonx",
+				"color": "x"
+			},
+			{
+				"name": "gundramon",
 				"color": "machine",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "agumonb",
-                "from": [
-                    -3,
-                    -1
-                ],
-                "color": "dark"
-            },
-            {
-                "name": "darktyranomon",
-                "color": "dark"
-            },
-            {
-                "name": "metaltyranomon",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "agumonb",
+				"from": [-3, -1],
+				"color": "dark"
+			},
+			{
+				"name": "darktyranomon",
+				"color": "dark"
+			},
+			{
+				"name": "metaltyranomon",
 				"color": "machine"
-            },
-            {
-                "name": "machinedramon",
+			},
+			{
+				"name": "machinedramon",
 				"color": "machine"
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "gaossmonb",
-                "color": "dark",
-                "from": [
-                    -4,
-                    -1
-                ]
-            },
-            {
-                "name": "deltamon",
-                "color": "dark"
-            },
-            {
-                "name": "chimeramon",
-                "color": "dark"
-            },
-            {
-                "name": "millenniumon",
-                "color": ["fusion", "fusion"],
-                "from": [[0, -1], [
-                    -1,
-                    0
-                ]]
-            },
-            {
-                "name": "zeedmillenniumon",
-                "color": "dark",
-                "skins": [
-                    "moonmillenniumon"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "allomon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "allomonx",
-                "color": "x",
-                "from": [
-                    -1,
-                    0
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "gammamon",
-            "for": "triceramon"
-        },
-        {
-            "name": "armadillomon",
-            "for": "spinomon"
-        },
-        {
-            "name": "flarelizardmon",
-            "for": "chaosdramon"
-        },
-        {
-            "name": "greymon",
-            "from": "agumon"
-        },
-        {
-            "name": "chimeramon",
-            "from": "machinedramon"
-        },
-        {
-            "name": "apocalymon",
-            "from": "machinedramon"
-        },
-        {
-            "name": "commandramon",
-            "for": "gundramon"
-        }
-    ]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "gaossmonb",
+				"color": "dark",
+				"from": [-4, -1]
+			},
+			{
+				"name": "deltamon",
+				"color": "dark"
+			},
+			{
+				"name": "chimeramon",
+				"color": "dark"
+			},
+			{
+				"name": "millenniumon",
+				"color": ["fusion", "fusion"],
+				"from": [
+					[0, -1],
+					[-1, 0]
+				]
+			},
+			{
+				"name": "zeedmillenniumon",
+				"color": "dark",
+				"skins": ["moonmillenniumon"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "allomon",
+				"from": [-1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "allomonx",
+				"color": "x",
+				"from": [-1, 0]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "gammamon",
+			"for": "triceramon"
+		},
+		{
+			"name": "armadillomon",
+			"for": "spinomon"
+		},
+		{
+			"name": "flarelizardmon",
+			"for": "chaosdramon"
+		},
+		{
+			"name": "greymon",
+			"from": "agumon"
+		},
+		{
+			"name": "chimeramon",
+			"from": "machinedramon"
+		},
+		{
+			"name": "apocalymon",
+			"from": "machinedramon"
+		},
+		{
+			"name": "commandramon",
+			"for": "gundramon"
+		}
+	]
 }
