@@ -1,89 +1,81 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "crabmonx",
-                "color": "x",
-                "from": [
-                    2,
-                    0
-                ]
-            },
-            null,
-            {
-                "name": "anomalocarimonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "anomalocarimon",
-                "color": "marine",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "pitchmon"
-            },
-            {
-                "name": "pukamon",
-                "color": "marine"
-            },
-            {
-                "name": "crabmon",
-                "color": "marine"
-            },
-            {
-                "name": "ebidramon",
-                "color": "marine"
-            },
-            {
-                "name": "marinechimeramon",
-                "color": "marine"
-            },
-            {
-                "name": "regalecusmon",
-                "color": "marine"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "gusokumon",
-                "color": "marine",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        "marinechimeramon",
-        {
-            "name": "fanbeemon",
-            "for": "yanmamon"
-        },
-        {
-            "name": "swimmon",
-            "for": "tobiumon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "crabmonx",
+				"color": "x",
+				"from": [2, 0]
+			},
+			null,
+			{
+				"name": "anomalocarimonx",
+				"color": "x",
+				"from": [1, 0]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "anomalocarimon",
+				"color": "marine",
+				"from": [1, -1]
+			}
+		],
+		[
+			{
+				"name": "pitchmon"
+			},
+			{
+				"name": "pukamon",
+				"color": "marine"
+			},
+			{
+				"name": "crabmon",
+				"color": "marine"
+			},
+			{
+				"name": "ebidramon",
+				"color": "marine"
+			},
+			{
+				"name": "marinechimeramon",
+				"color": "marine"
+			},
+			{
+				"name": "regalecusmon",
+				"color": "marine"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gusokumon",
+				"color": "marine",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		"marinechimeramon",
+		{
+			"name": "seadramon",
+			"for": "plesiomon"
+		},
+		{
+			"name": "fanbeemon",
+			"for": "yanmamon"
+		},
+		{
+			"name": "swimmon",
+			"for": "tobiumon"
+		}
+	]
 }

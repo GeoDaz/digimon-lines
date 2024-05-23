@@ -1,29 +1,10 @@
 {
 	"columns": [
-		[null, null, null, { "name": "honeybeemon", "from": [1, -1] }],
-		[
-			{ "name": "pupumon" },
-			{ "name": "puroromon" },
-			{ "name": "fanbeemon" },
-			{ "name": "waspmon" },
-			{ "name": "cannonbeemon" },
-			{ "name": "tigervespamon" }
-		],
 		[
 			null,
 			null,
-			{ "name": "morphomon", "from": [-1, -1] },
-			{ "name": "eosmon" },
-			{ "name": "eosmon2" },
-			{ "name": "eosmon3" }
-		],
-		[null, null, null, { "name": "hudiemon", "from": [-1, -1] }],
-		[null, null, null, { "name": "flybeemon", "from": [1, -1] }, null, null],
-		[
 			null,
-			null,
-			{ "name": "kunemon", "from": [-4, -1] },
-			{ "name": "flymon", "from": [0, -1] },
+			{ "name": "honeybeemon", "from": [[2, -1]], "collapsable": false },
 			null,
 			null
 		],
@@ -31,32 +12,107 @@
 			null,
 			null,
 			null,
-			{ "name": "yanmamon", "from": [-1, -1] },
-			{ "name": "anomalocarimon", "from": [[0, -1], [1, -1]] },
+			{ "name": "forgebeemon", "from": [[1, -1]], "collapsable": false },
+			{ "name": "cannonbeemon", "from": null, "collapsable": false },
+			{
+				"name": "queenbeemon",
+				"from": [[0, -2]],
+				"collapsable": false,
+				"skins": ["queenbeemonthrone"]
+			},
+			null,
+			null
+		],
+		[
+			{ "name": "pupumon", "from": null, "collapsable": true },
+			{ "name": "puroromon", "collapsable": true },
+			{ "name": "fanbeemon", "collapsable": false },
+			{ "name": "waspmon", "collapsable": false },
+			{ "name": "vespamon", "collapsable": false },
+			{ "name": "tigervespamon", "collapsable": false }
+		],
+		[
+			null,
+			null,
+			{ "name": "morphomon", "from": [-1, -1], "collapsable": true },
+			{ "name": "eosmon", "collapsable": false },
+			{ "name": "eosmon2", "collapsable": true },
+			{ "name": "eosmon3", "collapsable": true }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "hudiemon", "from": [-1, -1], "collapsable": false },
+			null,
 			null
 		],
 		[
 			null,
 			null,
 			null,
-			{ "name": "sandyanmamon", "from": [1, -1] },
-			{ "name": "anomalocarimonx", "from": [-1, 0], "color": "x" }
+			{ "name": "flybeemon", "from": [1, -1], "collapsable": false },
+			null,
+			null
 		],
 		[
 			null,
 			null,
-			{ "name": "dokunemon", "from": [-7, -1] },
-			{ "name": "snimon", "from": [0, -1] },
-			{ "name": "scorpiomon", "from": [[0, -1], [-1, -1]], "color": "dark" }
+			{ "name": "kunemon", "from": [-4, -1], "collapsable": true },
+			{ "name": "flymon", "from": [0, -1], "collapsable": false },
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "yanmamon", "from": [-1, -1], "collapsable": false },
+			{
+				"name": "anomalocarimon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"collapsable": false
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "sandyanmamon", "from": [1, -1], "collapsable": false },
+			{
+				"name": "anomalocarimonx",
+				"from": [-1, 0],
+				"color": "x",
+				"collapsable": false
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "dokunemon", "from": [-7, -1], "collapsable": false },
+			{ "name": "snimon", "from": [0, -1], "collapsable": false },
+			{
+				"name": "scorpiomon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"color": "dark",
+				"collapsable": false
+			},
+			null
 		]
 	],
 	"related": [
 		{ "name": "tentomon", "for": "kuwagamon" },
-		{ "name": "wormmon", "from": "hudiemon" },
+		{ "name": "wormmon", "for": "jewelbeemon" },
 		"fairymon",
-		{
-			"name": "crabmon",
-			"from": "anomalocarimon"
-		}
-	]
+		{ "name": "crabmon", "for": "anomalocarimon" }
+	],
+	"size": 6
 }

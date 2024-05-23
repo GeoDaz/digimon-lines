@@ -129,16 +129,16 @@
 			null,
 			null,
 			{
-				"name": "impgrowlmon",
+				"name": "punkmon",
 				"color": "dark",
 				"from": [-1, -1]
 			},
 			{
-				"name": "impwargrowlmon",
+				"name": "loudmon",
 				"color": "dark"
 			},
 			{
-				"name": "impmegidramon",
+				"name": "heavymetaldramon",
 				"color": "dark"
 			}
 		]
@@ -146,7 +146,7 @@
 	"related": [
 		{
 			"name": "impmon",
-			"from": "impgrowlmon"
+			"from": "punkmon"
 		},
 		{
 			"name": "raidenmon",
