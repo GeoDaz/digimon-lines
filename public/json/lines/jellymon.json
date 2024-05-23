@@ -1,213 +1,186 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "splashmon",
-                "color": "marine",
-                "from": [
-                    2,
-                    -1
-                ],
-                "skins": [
-                    "splashmondm"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "mermaimon",
-                "color": "marine",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "marineangemon",
-                "color": "light"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "ranamon",
-                "color": "marine",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "calamaramon",
-                "color": "marine"
-            },
-            {
-                "name": "ancientmermaimon",
-                "color": "marine"
-            }
-        ],
-        [
-            {
-                "name": "puyomon"
-            },
-            {
-                "name": "puyoyomon",
-                "color": "marine"
-            },
-            {
-                "name": "jellymon",
-                "color": "marine"
-            },
-            {
-                "name": "teslajellymon",
-                "color": "marine"
-            },
-            {
-                "name": "thetismon",
-                "color": "marine"
-            },
-            {
-                "name": "amphimon",
-                "color": "marine"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "depthmon",
-                "color": "marine",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "hangyomon",
-                "color": "marine"
-            },
-            {
-                "name": "regalecusmon",
-                "color": "marine"
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "sangomon",
-                "color": "marine",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "octomon",
-                "color": "marine"
-            },
-            {
-                "name": "dagomon",
-                "color": "marine"
-            },
-            {
-                "name": "neptunemon",
-                "color": "marine"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "shellmon",
-                "color": "marine",
-                "skins": [
-                    "morishellmon"
-                ],
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "shakomon",
-                "color": "marine",
-                "from": [
-                    -4,
-                    -1
-                ]
-            },
-            {
-                "name": "gesomon",
-                "color": "marine"
-            },
-            {
-                "name": "marinedevimon",
-                "color": "dark"
-            },
-            {
-                "name": "cthyllamon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "shakomonx",
-                "color": "x",
-                "from": [
-                    -1,
-                    0
-                ]
-            },
-            {
-                "name": "gesomonx",
-                "color": "x"
-            },
-            null,
-            null
-        ]
-    ],
-    "related": [
-        {
-            "name": "devimon",
-            "from": "marinedevimon"
-        },
-        {
-            "name": "angemon",
-            "from": "marineangemon"
-        },
-        {
-            "name": "seadramon",
-            "for": "leviamon"
-        },
-        {
-            "name": "swimmon",
-            "from": "hangyomon"
-        },
-        {
-            "name": "numemon",
-            "for": "karatukinumemon"
-        }
-    ],
-    "notes": [
-        "This line is about octopus, seashells and mermaids."
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "splashmon",
+				"color": "marine",
+				"from": [2, -1],
+				"skins": ["splashmondm"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "mermaimon",
+				"color": "marine",
+				"from": [1, -1]
+			},
+			{
+				"name": "marineangemon",
+				"color": "light"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ranamon",
+				"color": "marine",
+				"from": [1, -1]
+			},
+			{
+				"name": "calamaramon",
+				"color": "marine"
+			},
+			{
+				"name": "ancientmermaimon",
+				"color": "marine"
+			}
+		],
+		[
+			{
+				"name": "puyomon"
+			},
+			{
+				"name": "puyoyomon",
+				"color": "marine"
+			},
+			{
+				"name": "jellymon",
+				"color": "marine"
+			},
+			{
+				"name": "teslajellymon",
+				"color": "marine"
+			},
+			{
+				"name": "thetismon",
+				"color": "marine"
+			},
+			{
+				"name": "amphimon",
+				"color": "marine"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "depthmon",
+				"color": "marine",
+				"from": [1, -1]
+			},
+			{
+				"name": "hangyomon",
+				"color": "marine"
+			},
+			{
+				"name": "regalecusmon",
+				"color": "marine"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "sangomon",
+				"color": "marine",
+				"from": [-2, -1]
+			},
+			{
+				"name": "octomon",
+				"color": "marine"
+			},
+			{
+				"name": "dagomon",
+				"color": "marine"
+			},
+			{
+				"name": "neptunemon",
+				"color": "marine"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "shellmon",
+				"color": "marine",
+				"skins": ["morishellmon"],
+				"from": [-1, -1]
+			},
+			{
+				"name": "gerbemon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "shakomon",
+				"color": "marine",
+				"from": [-4, -1]
+			},
+			{
+				"name": "gesomon",
+				"color": "marine"
+			},
+			{
+				"name": "marinedevimon",
+				"color": "dark"
+			},
+			{
+				"name": "cthyllamon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "shakomonx",
+				"color": "x",
+				"from": [-1, 0]
+			},
+			{
+				"name": "gesomonx",
+				"color": "x"
+			},
+			null,
+			null
+		]
+	],
+	"related": [
+		{
+			"name": "devimon",
+			"from": "marinedevimon"
+		},
+		{
+			"name": "angemon",
+			"from": "marineangemon"
+		},
+		{
+			"name": "seadramon",
+			"for": "leviamon"
+		},
+		{
+			"name": "swimmon",
+			"from": "hangyomon"
+		},
+		{
+			"name": "numemon",
+			"from": "gerbemon"
+		}
+	],
+	"notes": ["This line is about octopus, seashells and mermaids."]
 }

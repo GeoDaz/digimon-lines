@@ -20,7 +20,7 @@
 				"name": "takutoumon"
 			},
 			{
-				"name": "takutoumonwm",
+				"name": "takutoumonbm",
 				"color": "mode"
 			}
 		],
@@ -87,8 +87,9 @@
 		]
 	],
 	"related": [
-		{ "name": "monmon", "from": "etemon" },
 		"numemon",
+		{ "name": "monmon", "from": "etemon" },
+		{ "name": "gatomon", "from": "opossumon" },
 		{ "name": "shakamon", "from": "chohakkaimon" }
 	]
 }
