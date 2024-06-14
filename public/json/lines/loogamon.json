@@ -25,39 +25,25 @@
 			}
 		],
 		[
-			{
-				"name": "zurumon"
-			},
-			{
-				"name": "pagumon",
-				"color": "dark"
-			},
-			{
-				"name": "gazimon",
-				"color": "dark"
-			},
+			null,
+			null,
+			null,
 			{
 				"name": "fangmon",
 				"color": ["dark", "dark"],
-				"from": [[0, -1], [-1, -1]]
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "helloogarmon",
 				"color": ["fire", "dark"],
-				"from": [[0, -1], [-1, -1]]
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
 			},
 			{
 				"name": "anubimon",
 				"color": "light"
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "gazimonx",
-				"color": "x",
-				"from": [-1, 0]
 			}
 		]
 	],

@@ -1,104 +1,90 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "dobermonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            {
-                "name": "cerberumonx",
-                "color": "x"
-            }
-        ],
-        [
-            {
-                "name": "paomon"
-            },
-            {
-                "name": "xiaomon"
-            },
-            {
-                "name": "labramon"
-            },
-            {
-                "name": "dobermon"
-            },
-            {
-                "name": "cerberumon",
-                "color": "dark"
-            },
-            {
-                "name": "anubimon",
-                "color": "light"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "dogmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "cerberumonwm",
-                "color": "mode",
-                "from": [
-                    -1,
-                    0
-                ]
-            },
-            {
-                "name": "plutomon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "siesamon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "caturamon"
-            },
-            {
-                "name": "baihumon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "siesamonx",
-                "color": "x",
-                "from": [
-                    -1,
-                    0
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {"name": "loogamon", "for": "fangmon"},
-        {"name": "darcmon", "for": "sangloupmon"},
-        "machmon",
-        {"name": "leomon", "for": "baihumon"}
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dobermonx",
+				"color": "x",
+				"from": [1, 0]
+			},
+			{
+				"name": "cerberumonx",
+				"color": "x"
+			}
+		],
+		[
+			{
+				"name": "paomon"
+			},
+			{
+				"name": "xiaomon"
+			},
+			{
+				"name": "labramon"
+			},
+			{
+				"name": "dobermon"
+			},
+			{
+				"name": "cerberumon",
+				"color": "dark"
+			},
+			{
+				"name": "anubimon",
+				"color": "light"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dogmon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "cerberumonwm",
+				"color": "mode",
+				"from": [-1, 0]
+			},
+			{
+				"name": "plutomon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "siesamon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "caturamon"
+			},
+			{
+				"name": "baihumon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "siesamonx",
+				"color": "x",
+				"from": [-1, 0]
+			}
+		]
+	],
+	"related": [
+		{ "name": "loogamon", "from": "anubimon" },
+		{ "name": "garurumon", "for": "gaomon" },
+		{ "name": "darcmon", "for": "sangloupmon" },
+		"machmon",
+		{ "name": "leomon", "for": "baihumon" }
+	]
 }
