@@ -1,123 +1,74 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "wizardmonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            null,
-            {
-                "name": "dynasmonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            {
-                "name": "mokumon"
-            },
-            {
-                "name": "demimeramon",
-                "color": "fire"
-            },
-            {
-                "name": "ghostmon",
-                "color": "fire"
-            },
-            {
-                "name": "wizardmon"
-            },
-            {
-                "name": "mistymon"
-            },
-            {
-                "name": "dynasmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "sorcerymon",
-                "color": "ice",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "wisemon"
-            },
-            {
-                "name": "ancientwisemon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "witchmon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            null,
-            {
-                "name": "babamon",
-                "from": [
-                    0,
-                    -2
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "candlemon",
-                "color": "fire",
-                "from": [
-                    -3,
-                    -1
-                ]
-            },
-            {
-                "name": "flamewizardmon",
-                "color": "fire"
-            }
-        ]
-    ],
-    "related": [
-        "impmon",
-        "bakemon",
-        {
-            "name": "meramon",
-            "from": "demimeramon"
-        },
-        {
-            "name": "mercurymon",
-            "from": "ancientwisemon"
-        },
-        {
-            "name": "gatomon",
-            "from": "witchmon"
-        },
-        {
-            "name": "monmon",
-            "for": "jijimon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{ "name": "wizardmonx", "color": "x", "from": [1, 0], "collapsable": false },
+			null,
+			{ "name": "dynasmonx", "color": "x", "from": [1, 0], "collapsable": false }
+		],
+		[
+			{ "name": "mokumon", "from": null, "collapsable": true },
+			{ "name": "demimeramon", "color": "fire", "collapsable": true },
+			{ "name": "ghostmon", "color": "fire", "collapsable": true },
+			{ "name": "wizardmon", "collapsable": false },
+			{ "name": "mistymon", "collapsable": false },
+			{ "name": "dynasmon", "collapsable": false }
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "sorcerymon",
+				"color": "ice",
+				"from": [-1, -1],
+				"collapsable": false
+			},
+			{ "name": "wisemon", "collapsable": false },
+			{ "name": "ancientwisemon", "collapsable": false }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "witchmon", "from": [-2, -1], "collapsable": false },
+			{ "name": "chaperomon", "from": null, "collapsable": false },
+			{ "name": "babamon", "from": [0, -2], "collapsable": false }
+		],
+		[
+			null,
+			null,
+			{
+				"name": "candlemon",
+				"color": "fire",
+				"from": [-3, -1],
+				"collapsable": false
+			},
+			{ "name": "flamewizardmon", "color": "fire", "collapsable": false },
+			{
+				"name": "skullsatamon",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"color": ["dark"]
+			},
+			{
+				"name": "barbamon",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"color": ["dark"]
+			}
+		]
+	],
+	"related": [
+		{ "name": "impmon", "from": "wizardmon" },
+		{ "name": "mercurymon", "from": "ancientwisemon" },
+		{ "name": "devimon", "from": "barbamon" },
+		{ "name": "bakemon", "from": "candlemon" },
+		{ "name": "meramon", "from": "demimeramon" },
+		{ "name": "gatomon", "from": "witchmon" },
+		{ "name": "monmon", "for": "jijimon" },
+		{ "name": "palmon", "from": "babamon" }
+	]
 }

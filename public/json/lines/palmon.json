@@ -3,23 +3,12 @@
 		[
 			null,
 			null,
-			{
-				"name": "palmonx",
-				"color": "x",
-				"from": [2, 0]
-			},
-			{
-				"name": "togemonx",
-				"color": "x"
-			},
-			{
-				"name": "lilimonx",
-				"color": "x"
-			},
-			{
-				"name": "rosemonx",
-				"color": "x"
-			}
+			{ "name": "palmonx", "color": "x", "from": [2, 0], "collapsable": true },
+			{ "name": "togemonx", "color": "x", "collapsable": false },
+			{ "name": "lilimonx", "color": "x", "collapsable": true },
+			{ "name": "rosemonx", "color": "x", "collapsable": false },
+			null,
+			null
 		],
 		[
 			null,
@@ -28,44 +17,39 @@
 			{
 				"name": "ponchomon",
 				"color": "dark",
-				"from": [1, -1]
+				"from": [1, -1],
+				"collapsable": false
 			},
 			null,
 			{
 				"name": "bancholilimon",
 				"from": [1, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
-			{
-				"name": "rosemonbm",
-				"color": "mode",
-				"size": 2,
-				"from": [1, -1]
-			}
+			null,
+			null
 		],
 		[
-			{
-				"name": "yuramon"
-			},
+			{ "name": "yuramon", "from": null, "collapsable": false },
 			{
 				"name": "tanemon",
 				"from": [0, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
-			{
-				"name": "palmon",
-				"from": [0, -1],
-				"color": "grass"
-			},
+			{ "name": "palmon", "from": [0, -1], "color": "grass", "collapsable": false },
 			{
 				"name": "togemon",
 				"from": [0, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
 			{
 				"name": "lilimon",
 				"from": [0, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
 			{
 				"name": "rosemon",
@@ -73,50 +57,49 @@
 					[0, -1],
 					[1, -1]
 				],
-				"color": ["grass", "grass"]
+				"color": ["grass", "grass"],
+				"collapsable": false
 			},
 			{
-				"name": "rafflesimon",
-				"size": 2,
-				"color": "fusion",
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				]
-			}
+				"name": "rosemonbm",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"color": ["mode"]
+			},
+			null
 		],
 		[
-			{
-				"name": "nyokimon"
-			},
-			{
-				"name": "budmon",
-				"from": [0, -1],
-				"color": "grass"
-			},
-			{
-				"name": "lalamon",
-				"from": [0, -1],
-				"color": "grass"
-			},
+			{ "name": "nyokimon", "from": null, "collapsable": true },
+			{ "name": "budmon", "from": [0, -1], "color": "grass", "collapsable": true },
+			{ "name": "lalamon", "from": [0, -1], "color": "grass", "collapsable": true },
 			{
 				"name": "sunflowmon",
 				"from": [0, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
 			{
 				"name": "lilamon",
 				"from": [0, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
 			{
-				"name": "lotusmon",
+				"name": "babamon",
+				"from": [[-1, 0]],
+				"collapsable": false,
+				"color": ["machine"]
+			},
+			{
+				"name": "rafflesimon",
 				"from": [
-					[0, -1],
+					[-1, -1],
 					[1, -1]
 				],
-				"color": ["dark", "grass"]
-			}
+				"collapsable": true,
+				"color": ["fusion", "fusion"]
+			},
+			null
 		],
 		[
 			null,
@@ -125,7 +108,8 @@
 			{
 				"name": "kabukimon",
 				"from": [-1, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
 			{
 				"name": "blossomon",
@@ -133,34 +117,37 @@
 					[1, -1],
 					[-1, -1]
 				],
-				"color": ["grass", "grass"]
-			}
+				"color": ["grass", "grass"],
+				"collapsable": false
+			},
+			{
+				"name": "lotusmon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"collapsable": false
+			},
+			null,
+			null
 		],
 		[
-			{
-				"name": "yuramon"
-			},
-			{
-				"name": "tanemon",
-				"from": [0, -1],
-				"color": "grass"
-			},
+			{ "name": "yuramon", "from": null, "collapsable": true },
+			{ "name": "tanemon", "from": [0, -1], "color": "grass", "collapsable": true },
 			{
 				"name": "alraumon",
 				"from": [0, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": true
 			},
 			{
 				"name": "vegimon",
 				"skins": ["vegimonred"],
 				"from": [0, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
-			{
-				"name": "oleamon",
-				"from": [0, -1],
-				"color": "dark"
-			},
+			{ "name": "oleamon", "from": [0, -1], "color": "dark", "collapsable": false },
 			{
 				"name": "ceresmon",
 				"skins": ["ceresmonbird"],
@@ -168,8 +155,11 @@
 					[0, -1],
 					[-1, -1]
 				],
-				"color": ["grass", "grass"]
-			}
+				"color": ["grass", "grass"],
+				"collapsable": false
+			},
+			null,
+			null
 		],
 		[
 			null,
@@ -178,7 +168,8 @@
 			{
 				"name": "zassoumon",
 				"from": [-1, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
 			{
 				"name": "ajatarmon",
@@ -186,7 +177,8 @@
 					[0, -1],
 					[1, -1]
 				],
-				"color": ["grass", "dark"]
+				"color": ["grass", "dark"],
+				"collapsable": false
 			},
 			{
 				"name": "hydramon",
@@ -194,12 +186,10 @@
 					[0, -1],
 					[1, -1]
 				],
-				"color": ["grass", "dark"]
+				"color": ["grass", "dark"],
+				"collapsable": false
 			},
-			{
-				"name": "cernumon",
-				"color": "fusion"
-			},
+			{ "name": "cernumon", "color": "fusion", "collapsable": true },
 			null
 		],
 		[
@@ -208,35 +198,38 @@
 			{
 				"name": "pomumon",
 				"from": [1, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
 			{
 				"name": "parasaumon",
 				"from": [0, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
 			{
 				"name": "tropiamon",
 				"from": [0, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": false
 			},
 			{
 				"name": "bloomlordmon",
 				"from": [0, -1],
-				"color": "grass"
-			}
+				"color": "grass",
+				"collapsable": false
+			},
+			null,
+			null
 		],
 		[
-			{
-				"name": "nyokimon"
-			},
-			{
-				"name": "yokomon"
-			},
+			{ "name": "nyokimon", "from": null, "collapsable": true },
+			{ "name": "yokomon", "collapsable": true },
 			{
 				"name": "floramon",
 				"from": [0, -1],
-				"color": "grass"
+				"color": "grass",
+				"collapsable": true
 			},
 			{
 				"name": "kiwimon",
@@ -244,11 +237,10 @@
 					[-1, -1],
 					[0, -1]
 				],
-				"color": ["grass", "grass"]
+				"color": ["grass", "grass"],
+				"collapsable": true
 			},
-			{
-				"name": "sirenmon"
-			},
+			{ "name": "sirenmon", "collapsable": false },
 			{
 				"name": "ceresmonbird",
 				"skins": ["ceresmon"],
@@ -256,8 +248,11 @@
 					[0, -1],
 					[1, -1]
 				],
-				"color": ["grass", "grass"]
-			}
+				"color": ["grass", "grass"],
+				"collapsable": true
+			},
+			null,
+			null
 		],
 		[
 			null,
@@ -267,15 +262,18 @@
 			{
 				"name": "delumon",
 				"from": [-1, -1],
-				"color": "grass"
-			}
+				"color": "grass",
+				"collapsable": false
+			},
+			null,
+			null,
+			null
 		]
 	],
 	"related": [
 		"woodmon",
-		{
-			"name": "omegamonmm",
-			"from": "rosemon"
-		}
+		{ "name": "bakemon", "from": "ponchomon" },
+		{ "name": "wizardmon", "from": "babamon" },
+		{ "name": "omegamonmm", "from": "rosemon" }
 	]
 }
