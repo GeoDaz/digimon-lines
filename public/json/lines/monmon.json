@@ -1,150 +1,135 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "gankoomonx",
-                "color": "x",
-                "from":[1,0]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "apemon",
-                "from": [
-                    2,
-                    -1
-                ]
-            },
-            {
-                "name": "gokuwmon"
-            },
-            {
-                "name": "gankoomon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "mojyamon",
-                "from": [
-                    1,
-                    -1
-                ],
-                "skins": [
-                    "junglemojyamon"
-                ]
-            },
-            null,
-            {
-                "name": "jijimon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "zerimon"
-            },
-            {
-                "name": "gummymon"
-            },
-            {
-                "name": "monmon"
-            },
-            {
-                "name": "sepikmon"
-            },
-            {
-                "name": "makuramon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "lianpumon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "xingtianmon"
-            },
-            {
-                "name": "dijiangmon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "gorimon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "baboongamon",
-                "from": [
-                    -3,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "sukamon",
-            "for": "etemon"
-        },
-        {
-            "name": "shakamon",
-            "from": "gokuwmon"
-        },
-        {
-            "name": "hackmon",
-            "for": "jesmongx"
-        },
-        {
-            "name": "hookmon"
-        },
-        {
-            "name": "golemon",
-            "from": "baboongamon"
-        },
-        {
-            "name": "impmon",
-            "from": "dijiangmon"
-        },
-        {
-            "name": "bearmon",
-            "for": "pandamon"
-        },
-        {
-            "name": "starmon",
-            "from": "gankoomon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gankoomonx",
+				"color": "x",
+				"from": [1, 0]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "apemon",
+				"from": [2, -1]
+			},
+			{
+				"name": "gokuwmon"
+			},
+			{
+				"name": "gankoomon",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mojyamon",
+				"from": [1, -1],
+				"skins": ["junglemojyamon"]
+			},
+			null,
+			{
+				"name": "jijimon",
+				"from": [-1, -1]
+			}
+		],
+		[
+			{
+				"name": "zerimon"
+			},
+			{
+				"name": "gummymon"
+			},
+			{
+				"name": "monmon"
+			},
+			{
+				"name": "sepikmon"
+			},
+			{
+				"name": "makuramon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "lianpumon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "xingtianmon"
+			},
+			{
+				"name": "dijiangmon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gorimon",
+				"from": [-2, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "baboongamon",
+				"from": [-3, -1]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "sukamon",
+			"for": "etemon"
+		},
+		{
+			"name": "shakamon",
+			"from": "gokuwmon"
+		},
+		{
+			"name": "hackmon",
+			"for": "jesmongx"
+		},
+		{
+			"name": "hookmon"
+		},
+		{
+			"name": "golemon",
+			"from": "baboongamon"
+		},
+		{
+			"name": "ogremon",
+			"from": "xingtianmon"
+		},
+		{
+			"name": "impmon",
+			"from": "dijiangmon"
+		},
+		{
+			"name": "bearmon",
+			"for": "pandamon"
+		},
+		{
+			"name": "starmon",
+			"from": "gankoomon"
+		}
+	]
 }

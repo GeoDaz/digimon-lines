@@ -1,182 +1,164 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "panbachimon",
-                "from": [
-                    2,
-                    -1
-                ]
-            },
-            {
-                "name": "pandamon"
-            },
-            {
-                "name": "justimon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "monzaemonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            {
-                "name": "justimonx",
-                "color": "x",
-                "from": [
-                    -1,
-                    0
-                ]
-            }
-        ],
-        [
-            {
-                "name": "snowbotamon"
-            },
-            {
-                "name": "hiyarimon",
-                "color": "ice"
-            },
-            {
-                "name": "bearmon"
-            },
-            {
-                "name": "grizzlymon"
-            },
-            {
-                "name": "monzaemon"
-            },
-            {
-                "name": "callismon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "porcupamon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "warumonzaemon",
-                "color": "dark"
-            },
-            {
-                "name": "shinmonzaemon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "chackmon",
-                "color": "ice",
-                "size": 2,
-                "from": [
-                    -2.5,
-                    -1
-                ]
-            },
-            {
-                "name": "blizzarmon",
-                "color": "ice",
-                "from": [
-                    0.5,
-                    -1
-                ]
-            },
-            {
-                "name": "ancientmegatheriumon",
-                "color": "ice"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "daipenmon",
-                "color": "ice",
-                "from": [
-                    -0.5,
-                    -1
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "frigimon",
-                "color": "ice",
-                "from": [
-                    -4,
-                    -1
-                ],
-                "skins": [
-                    "mudfrigimon"
-                ]
-            }
-        ]
-    ],
-    "related": [
-        "penmon",
-        {
-            "name": "numemon",
-            "from": "monzaemon"
-        },
-        {
-            "name": "phascomon",
-            "for": "porcupamon"
-        },
-        {
-            "name": "monmon",
-            "for": "mojyamon"
-        },
-        {
-            "name": "monmon",
-            "for": "gankoomon"
-        },
-        {
-            "name": "leomon",
-            "for": "grapleomon"
-        },
-        {
-            "name": "garurumon",
-            "for": "marsmon"
-        },
-        {
-            "name": "gomamon",
-            "for": "vikemon"
-        },
-        {
-            "name": "monodramon",
-            "from": "justimon"
-        },
-        {
-            "name": "starmon",
-            "from": "justimon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "panbachimon",
+				"from": [2, -1]
+			},
+			{
+				"name": "pandamon"
+			},
+			{
+				"name": "justimon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "monzaemonx",
+				"color": "x",
+				"from": [1, 0]
+			},
+			{
+				"name": "justimonx",
+				"color": "x",
+				"from": [-1, 0]
+			}
+		],
+		[
+			{
+				"name": "snowbotamon"
+			},
+			{
+				"name": "hiyarimon",
+				"color": "ice"
+			},
+			{
+				"name": "bearmon"
+			},
+			{
+				"name": "grizzlymon"
+			},
+			{
+				"name": "monzaemon"
+			},
+			{
+				"name": "callismon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "porcupamon",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			{
+				"name": "warumonzaemon",
+				"color": "dark"
+			},
+			{
+				"name": "shinmonzaemon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "chackmon",
+				"color": "ice",
+				"size": 2,
+				"from": [-2.5, -1]
+			},
+			{
+				"name": "blizzarmon",
+				"color": "ice",
+				"from": [0.5, -1]
+			},
+			{
+				"name": "ancientmegatheriumon",
+				"color": "ice"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "daipenmon",
+				"color": "ice",
+				"from": [-0.5, -1]
+			},
+			{
+				"name": "vikemon",
+				"color": "ice",
+				"from": [-1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "frigimon",
+				"color": "ice",
+				"from": [-4, -1],
+				"skins": ["mudfrigimon"]
+			}
+		]
+	],
+	"related": [
+		"penmon",
+		{
+			"name": "numemon",
+			"from": "monzaemon"
+		},
+		{
+			"name": "phascomon",
+			"for": "porcupamon"
+		},
+		{
+			"name": "monmon",
+			"for": "mojyamon"
+		},
+		{
+			"name": "monmon",
+			"for": "gankoomon"
+		},
+		{
+			"name": "leomon",
+			"for": "grapleomon"
+		},
+		{
+			"name": "garurumon",
+			"for": "marsmon"
+		},
+		{
+			"name": "gomamon",
+			"for": "vikemon"
+		},
+		{
+			"name": "hookmo",
+			"for": "olegmon"
+		},
+		{
+			"name": "monodramon",
+			"from": "justimon"
+		},
+		{
+			"name": "starmon",
+			"from": "justimon"
+		}
+	]
 }
