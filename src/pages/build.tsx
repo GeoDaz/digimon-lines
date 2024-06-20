@@ -1,4 +1,5 @@
 import React, { useState, useReducer, useMemo } from 'react';
+import { Button, FormControl, InputGroup } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import { createFile, download, getDirPaths } from '@/functions/file';
 import ZoomBar from '@/components/ZoomBar';
@@ -9,11 +10,10 @@ import { SearchContext } from '@/context/search';
 import lineReducer, { defaultLine, setLineAction } from '@/reducers/lineReducer';
 import Icon from '@/components/Icon';
 import BoostrapSwitch from '@/components/BoostrapSwitch';
-import { Button } from 'react-bootstrap';
 import ReportABugLink from '@/components/ReportABugLink';
 import useLocalStorage from '@/hooks/useLocalStorage';
 import DownloadDropdown from '@/components/DownloadDropdown';
-import Line, { LineColumn } from '@/types/Line';
+import Line from '@/types/Line';
 import UploadCode from '@/components/UploadCode';
 import transformLine, { areCollapsablePoints } from '@/functions/transformer/line';
 
@@ -29,6 +29,7 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	const { setItemToStorage } = useLocalStorage('line', line, setLine);
 	const [zoom, setZoom] = useState<number>(100);
 	const [edition, edit] = useState<boolean>(true);
+	const [name, setName] = useState<string | undefined>();
 	useMemo(() => areCollapsablePoints(line), [line]);
 
 	const handleUpdate = (action: CallableFunction, ...args: any[]) => {
@@ -43,16 +44,10 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 
 	const downloadCode = () => {
 		const file = createFile(JSON.stringify(line), 'application/json');
-		download(file, 'line.json');
+		download(file, (name || 'line') + '.json');
 	};
-	const uploadCode = (json: Line | null) => {
-		try {
-			json;
-		} catch (e) {
-			// TODO make a message modal
-			console.error(e);
-			return;
-		}
+	const uploadCode = (name: string, json: Line | null) => {
+		setName(name);
 		setLine(json ? (transformLine(json) as Line) : defaultLine);
 	};
 
@@ -97,6 +92,16 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 				<Button variant="danger" onClick={handleVoid}>
 					<Icon name="trash3-fill" /> Void
 				</Button>
+				<InputGroup className="width-auto d-inline-flex">
+					<InputGroup.Text>Line title</InputGroup.Text>
+					<FormControl
+						id="line-title"
+						max="100"
+						onChange={e => setName(e.target.value)}
+						value={name || ''}
+						placeholder="_ _ _ _ _"
+					/>
+				</InputGroup>
 				<DownloadDropdown
 					downloadCode={downloadCode}
 					// downloadImage={downloadImage}
