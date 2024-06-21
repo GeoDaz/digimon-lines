@@ -97,6 +97,7 @@ const SearchBar: React.FC<Props> = ({
 				value={search || ''}
 				onKeyDown={onKeyDown}
 				autoComplete="off"
+				className="research"
 			/>
 			{previews.length > 0 && (
 				<div className="previews" role="listbox" aria-expanded tabIndex={0}>

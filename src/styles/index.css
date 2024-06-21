@@ -143,6 +143,10 @@ a:active:not(.btn) {
   width: min-content;
 }
 
+.width-auto {
+  width: auto;
+}
+
 .hover-only {
   opacity: 0;
   transition: all .3s;
@@ -197,8 +201,18 @@ h2 {
   font-size: 0.95em;
 }
 
-input,
-input.form-control {
+.form-control {
+  border: var(--dl-border);
+  background-color: var(--dl-snd-dark);
+  max-width: 200px;
+}
+
+.input-group-text {
+  border: var(--dl-border);
+  border-right: 0;
+}
+
+.form-control.research {
   background-color: var(--dl-snd-dark) !important;
   border: 1px solid var(--dl-snd-dark);
   color: white !important;
