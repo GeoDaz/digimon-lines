@@ -55,7 +55,7 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	const downloadImage = () => {
 		setDownloading(true);
 		let type: string = 'blob';
-		fetch('/api/screenshot', {
+		fetch(process.env.NEXT_PUBLIC_PUPPETEER_URL + '/digimon-lines/build', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(line),
