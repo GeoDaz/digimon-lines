@@ -30,7 +30,7 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
 	const { setItemToStorage } = useLocalStorage('line', line, setLine);
 	const [zoom, setZoom] = useState<number>(100);
-	const [edition, edit] = useState<boolean>(false);
+	const [edition, edit] = useState<boolean>(true);
 	useMemo(() => areCollapsablePoints(line), [line]);
 
 	const { downloadCode, uploadCode, name, setName } = useDownloadCode(line, setLine);
