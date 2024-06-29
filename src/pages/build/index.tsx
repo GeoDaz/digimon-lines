@@ -1,5 +1,5 @@
 import React, { useState, useReducer, useMemo } from 'react';
-import { Button, FormControl, InputGroup } from 'react-bootstrap';
+import { Alert, Button, FormControl, InputGroup } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import { createFile, download, getDirPaths } from '@/functions/file';
 import ZoomBar from '@/components/ZoomBar';
@@ -16,6 +16,8 @@ import DownloadDropdown from '@/components/DownloadDropdown';
 import Line from '@/types/Line';
 import UploadCode from '@/components/UploadCode';
 import transformLine, { areCollapsablePoints } from '@/functions/transformer/line';
+import useDownloadImg from '@/hooks/useDownloadImg';
+import useDownloadCode from '@/hooks/useDownloadCode';
 
 interface Props {
 	ssr: {
@@ -29,9 +31,10 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	const { setItemToStorage } = useLocalStorage('line', line, setLine);
 	const [zoom, setZoom] = useState<number>(100);
 	const [edition, edit] = useState<boolean>(false);
-	const [name, setName] = useState<string | undefined>();
-	const [downloading, setDownloading] = useState<boolean>(false);
 	useMemo(() => areCollapsablePoints(line), [line]);
+
+	const { downloadCode, uploadCode, name, setName } = useDownloadCode(line, setLine);
+	const { downloadImage, downloading, error } = useDownloadImg(line, name);
 
 	const handleUpdate = (action: CallableFunction, ...args: any[]) => {
 		dispatchState(action(...args));
@@ -41,43 +44,6 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 		setLine(defaultLine);
 		// default value is not automaticaly stored in localstorage
 		setItemToStorage(defaultLine);
-	};
-
-	const downloadCode = () => {
-		const file = createFile(JSON.stringify(line), 'application/json');
-		download(file, (name || 'line') + '.json');
-	};
-	const uploadCode = (name: string, json: Line | null) => {
-		setName(name);
-		setLine(json ? (transformLine(json) as Line) : defaultLine);
-	};
-
-	const downloadImage = () => {
-		setDownloading(true);
-		let type: string = 'blob';
-		fetch(process.env.NEXT_PUBLIC_PUPPETEER_URL + '/digimon-lines/build', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify(line),
-		})
-			.then(res => {
-				if (res.headers.get('Content-Type') == 'application/json') {
-					type = 'json';
-					return res.json();
-				}
-				if (!res.ok) throw new Error(res.statusText);
-				return res.blob();
-			})
-			.then(res => {
-				if (type == 'json') throw res;
-
-				download(res, (name || 'line') + '.png');
-				setDownloading(false);
-			})
-			.catch(e => {
-				console.error(e);
-				setDownloading(false);
-			});
 	};
 
 	return (
@@ -129,12 +95,18 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 					downloadCode={downloadCode}
 					downloadImage={downloadImage}
 					loading={downloading}
+					error={error}
 				/>
 				<UploadCode handleUpload={uploadCode} />
 				<ReportABugLink />
 				<ZoomBar handleZoom={setZoom} />
 				<ColorLegend />
 			</div>
+			{!!error && (
+				<div>
+					<Alert variant="danger">{error}</Alert>
+				</div>
+			)}
 			<SearchContext.Provider value={ssr.searchList}>
 				<LineGrid
 					line={line}

@@ -12,11 +12,12 @@ const DownloadDropdown: React.FC<{
 	downloadCode: () => void;
 	downloadImage: () => void;
 	loading: boolean;
-}> = ({ downloadCode, downloadImage, loading = false }) => (
+	error?: string;
+}> = ({ downloadCode, downloadImage, loading = false, error }) => (
 	<DropdownButton
 		as={ButtonGroup}
 		id="download-line-options"
-		variant="secondary"
+		variant={error ? 'danger' : 'secondary'}
 		title={
 			loading ? (
 				<Spinner animation="border" />
