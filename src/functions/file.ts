@@ -34,34 +34,3 @@ export const createFile = (
 	content: string,
 	contentType: string = 'application/json'
 ): Blob => new Blob([content], { type: contentType });
-
-// Not working
-// export const screenshot = async () => {
-// 	const el = document.body;
-// 	html2canvas(el).then(canvas => {
-// 		canvas.toBlob(blob => {
-// 			if (!blob) return;
-// 			download(blob, 'screenshot.png');
-// 		});
-// 	});
-// };
-
-// make a hook to set a loader
-// should ask for permission to record screen...
-// export const capture = async () => {
-// 	const canvas = document.createElement('canvas');
-// 	const context = canvas.getContext('2d');
-// 	const video = document.createElement('video');
-// 	if (context === null) return;
-// 	try {
-// 		const captureStream = await navigator.mediaDevices.getDisplayMedia();
-// 		video.srcObject = captureStream;
-// 		context.drawImage(video, 0, 0, window.innerWidth, window.innerHeight);
-// 		const frame = canvas.toDataURL('image/png');
-// 		captureStream.getTracks().forEach(track => track.stop());
-// 		const blob = await (await fetch(frame)).blob();
-// 		download(blob, 'screenshot.png');
-// 	} catch (err) {
-// 		console.error('Error: ' + err);
-// 	}
-// };

@@ -17,19 +17,20 @@ import Line from '@/types/Line';
 import UploadCode from '@/components/UploadCode';
 import transformLine, { areCollapsablePoints } from '@/functions/transformer/line';
 
-interface StaticProps {
-	searchList?: string[];
-}
 interface Props {
-	ssr: StaticProps;
+	ssr: {
+		searchList?: string[];
+		line?: Line;
+	};
 }
 const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
-	const [line, dispatchState] = useReducer(lineReducer, defaultLine);
+	const [line, dispatchState] = useReducer(lineReducer, ssr.line || defaultLine);
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
 	const { setItemToStorage } = useLocalStorage('line', line, setLine);
 	const [zoom, setZoom] = useState<number>(100);
-	const [edition, edit] = useState<boolean>(true);
+	const [edition, edit] = useState<boolean>(false);
 	const [name, setName] = useState<string | undefined>();
+	const [downloading, setDownloading] = useState<boolean>(false);
 	useMemo(() => areCollapsablePoints(line), [line]);
 
 	const handleUpdate = (action: CallableFunction, ...args: any[]) => {
@@ -51,11 +52,33 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 		setLine(json ? (transformLine(json) as Line) : defaultLine);
 	};
 
-	// const downloadImage = () => {
-	// 	// if (!ref.current) return;
-	// 	// screenshot();
-	// 	capture();
-	// };
+	const downloadImage = () => {
+		setDownloading(true);
+		let type: string = 'blob';
+		fetch('/api/screenshot', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify(line),
+		})
+			.then(res => {
+				if (res.headers.get('Content-Type') == 'application/json') {
+					type = 'json';
+					return res.json();
+				}
+				if (!res.ok) throw new Error(res.statusText);
+				return res.blob();
+			})
+			.then(res => {
+				if (type == 'json') throw res;
+
+				download(res, (name || 'line') + '.png');
+				setDownloading(false);
+			})
+			.catch(e => {
+				console.error(e);
+				setDownloading(false);
+			});
+	};
 
 	return (
 		<Layout
@@ -104,7 +127,8 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 				</InputGroup>
 				<DownloadDropdown
 					downloadCode={downloadCode}
-					// downloadImage={downloadImage}
+					downloadImage={downloadImage}
+					loading={downloading}
 				/>
 				<UploadCode handleUpload={uploadCode} />
 				<ReportABugLink />
@@ -125,7 +149,6 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 export const getStaticProps: GetStaticProps = async () => {
 	try {
 		const searchList = getDirPaths('images/digimon');
-
 		return { props: { ssr: { searchList } } };
 	} catch (e) {
 		console.error(e);
