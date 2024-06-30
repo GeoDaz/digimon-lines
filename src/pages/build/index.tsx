@@ -28,7 +28,13 @@ interface Props {
 const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	const [line, dispatchState] = useReducer(lineReducer, ssr.line || defaultLine);
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
-	const { setItemToStorage } = useLocalStorage('line', line, setLine, defaultLine);
+	const { setItemToStorage } = useLocalStorage({
+		key: 'line',
+		item: line,
+		setItem: setLine,
+		defaultItem: defaultLine,
+		locked: !!ssr.line,
+	});
 	const [zoom, setZoom] = useState<number>(100);
 	const [edition, edit] = useState<boolean>(true);
 	useMemo(() => areCollapsablePoints(line), [line]);

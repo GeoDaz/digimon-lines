@@ -6,15 +6,23 @@ interface Return {
 	getStoredItem: CallableFunction;
 	setItemToStorage: CallableFunction;
 }
-const useLocalStorage = (
-	key: string,
-	item: any,
-	setItem: CallableFunction,
-	defaultItem: any = item
-): Return => {
+interface Props {
+	key: string;
+	item: any;
+	defaultItem: any;
+	setItem: CallableFunction;
+	locked?: boolean;
+}
+const useLocalStorage = ({
+	key,
+	item,
+	setItem,
+	defaultItem,
+	locked = false,
+}: Props): Return => {
 	useEffect(() => {
 		// don't get stored value if first item is not the default one
-		if (item !== defaultItem) {
+		if (!locked && item === defaultItem) {
 			const storedItem = getStoredItem();
 			if (storedItem) {
 				setItem(storedItem);
@@ -23,7 +31,7 @@ const useLocalStorage = (
 	}, []);
 
 	useEffect(() => {
-		if (item && item !== defaultItem) {
+		if (!locked && item && item !== defaultItem) {
 			setItemToStorage(item);
 		}
 	}, [item]);
