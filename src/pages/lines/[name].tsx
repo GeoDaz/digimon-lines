@@ -81,12 +81,12 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 			metaimg={`digimon/${name}.jpg`}
 		>
 			<div className="line-filters">
-				<Link
+				<a
 					className="btn btn-primary"
 					href={`/build/` + encodeURIComponent(JSON.stringify(line))}
 				>
 					<Icon name="pen-fill" /> Edit in builder
-				</Link>
+				</a>
 				<ZoomBar handleZoom={setZoom} />
 				<ColorLegend />
 			</div>
