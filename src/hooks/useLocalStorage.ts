@@ -1,3 +1,4 @@
+import { objectCompare } from '@/functions';
 import Line from '@/types/Line';
 import { useEffect, useRef } from 'react';
 
@@ -5,12 +6,15 @@ interface Return {
 	getStoredItem: CallableFunction;
 	setItemToStorage: CallableFunction;
 }
-const useLocalStorage = (key: string, item: any, setItem: CallableFunction): Return => {
-	const mount = useRef<Line | null>(null);
-
+const useLocalStorage = (
+	key: string,
+	item: any,
+	setItem: CallableFunction,
+	defaultItem: any = item
+): Return => {
 	useEffect(() => {
-		if (!mount.current) {
-			mount.current = item;
+		// don't get stored value if first item is not the default one
+		if (item !== defaultItem) {
 			const storedItem = getStoredItem();
 			if (storedItem) {
 				setItem(storedItem);
@@ -19,9 +23,10 @@ const useLocalStorage = (key: string, item: any, setItem: CallableFunction): Ret
 	}, []);
 
 	useEffect(() => {
-		// don't save default value
-		if (item && item !== mount.current) {
+		if (item && item !== defaultItem) {
 			setItemToStorage(item);
+		} else {
+			localStorage.removeItem(key);
 		}
 	}, [item]);
 

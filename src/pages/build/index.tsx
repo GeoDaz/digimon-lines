@@ -28,7 +28,7 @@ interface Props {
 const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	const [line, dispatchState] = useReducer(lineReducer, ssr.line || defaultLine);
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
-	const { setItemToStorage } = useLocalStorage('line', line, setLine);
+	const { setItemToStorage } = useLocalStorage('line', line, setLine, defaultLine);
 	const [zoom, setZoom] = useState<number>(100);
 	const [edition, edit] = useState<boolean>(true);
 	useMemo(() => areCollapsablePoints(line), [line]);
@@ -78,7 +78,11 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 					}
 					toggle={() => edit(!edition)}
 				/>
-				<Button variant="danger" onClick={handleVoid}>
+				<Button
+					variant="danger"
+					disabled={line === defaultLine}
+					onClick={handleVoid}
+				>
 					<Icon name="trash3-fill" /> Void
 				</Button>
 				<InputGroup className="width-auto d-inline-flex">

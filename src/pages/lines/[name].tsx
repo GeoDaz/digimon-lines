@@ -1,6 +1,6 @@
 // modules
 import React, { useState, useEffect } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 import { redirect } from 'next/navigation';
 import { GetStaticProps } from 'next';
 // components
@@ -21,6 +21,7 @@ import transformLine from '@/functions/transformer/line';
 import { Line } from '@/types/Line';
 import { LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
+import Link from 'next/link';
 
 const NAME = 'name';
 interface StaticProps {
@@ -80,6 +81,12 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 			metaimg={`digimon/${name}.jpg`}
 		>
 			<div className="line-filters">
+				<Link
+					className="btn btn-primary"
+					href={`/build/` + encodeURIComponent(JSON.stringify(line))}
+				>
+					<Icon name="pen-fill" /> Edit in builder
+				</Link>
 				<ZoomBar handleZoom={setZoom} />
 				<ColorLegend />
 			</div>
