@@ -1,7 +1,7 @@
 import React, { useState, useReducer, useMemo } from 'react';
 import { Alert, Button, FormControl, InputGroup } from 'react-bootstrap';
 import Layout from '@/components/Layout';
-import { createFile, download, getDirPaths } from '@/functions/file';
+import { getDirPaths } from '@/functions/file';
 import ZoomBar from '@/components/ZoomBar';
 import ColorLegend from '@/components/ColorLegend';
 import LineGrid from '@/components/Line/LineGrid';
@@ -15,7 +15,7 @@ import useLocalStorage from '@/hooks/useLocalStorage';
 import DownloadDropdown from '@/components/DownloadDropdown';
 import Line from '@/types/Line';
 import UploadCode from '@/components/UploadCode';
-import transformLine, { areCollapsablePoints } from '@/functions/transformer/line';
+import { areCollapsablePoints } from '@/functions/transformer/line';
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
 
@@ -25,10 +25,13 @@ interface Props {
 		line?: Line;
 	};
 }
-const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
+
+const Page = ({ ssr }: Props) => <PageBuild ssr={ssr} />;
+
+export const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	const [line, dispatchState] = useReducer(lineReducer, ssr.line || defaultLine);
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
-	const { setItemToStorage } = useLocalStorage({
+	const { removeItemFromStorage } = useLocalStorage({
 		key: 'line',
 		item: line,
 		setItem: setLine,
@@ -49,7 +52,7 @@ const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 	const handleVoid = () => {
 		setLine(defaultLine);
 		// default value is not automaticaly stored in localstorage
-		setItemToStorage(defaultLine);
+		removeItemFromStorage();
 	};
 
 	return (
@@ -138,4 +141,4 @@ export const getStaticProps: GetStaticProps = async () => {
 	}
 };
 
-export default PageBuild;
+export default Page;

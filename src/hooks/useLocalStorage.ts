@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react';
 interface Return {
 	getStoredItem: CallableFunction;
 	setItemToStorage: CallableFunction;
+	removeItemFromStorage: CallableFunction;
 }
 interface Props {
 	key: string;
@@ -55,7 +56,15 @@ const useLocalStorage = ({
 		}
 	};
 
-	return { getStoredItem, setItemToStorage };
+	const removeItemFromStorage = () => {
+		try {
+			localStorage.removeItem(key);
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	return { getStoredItem, setItemToStorage, removeItemFromStorage };
 };
 
 export default useLocalStorage;
