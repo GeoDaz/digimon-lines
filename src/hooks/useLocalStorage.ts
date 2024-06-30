@@ -25,8 +25,6 @@ const useLocalStorage = (
 	useEffect(() => {
 		if (item && item !== defaultItem) {
 			setItemToStorage(item);
-		} else {
-			localStorage.removeItem(key);
 		}
 	}, [item]);
 
