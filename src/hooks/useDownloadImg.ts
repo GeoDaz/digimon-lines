@@ -1,4 +1,5 @@
 import { download } from '@/functions/file';
+import { clearLine } from '@/functions/transformer/line';
 import Line from '@/types/Line';
 import { useState } from 'react';
 
@@ -9,10 +10,11 @@ const useDownloadImg = (line: Line, name: string | undefined) => {
 	const downloadImage = () => {
 		setDownloading(true);
 		let type: string = 'blob';
+		const cleared = clearLine(line);
 		fetch(process.env.NEXT_PUBLIC_PUPPETEER_URL + '/digimon-lines/build', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify(line),
+			body: JSON.stringify(cleared),
 		})
 			.then(res => {
 				if (res.headers.get('Content-Type') == 'application/json') {

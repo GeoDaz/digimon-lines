@@ -30,6 +30,21 @@ const transformLine = (line: Line | undefined): Line | undefined => {
 	return line;
 };
 
+export const clearLine = (line: Line): Line => {
+	const columns = line.columns.map(col =>
+		col.map(point => {
+			if (point?.image) {
+				return { ...point, image: undefined };
+			}
+			return point;
+		})
+	);
+	return {
+		...line,
+		columns,
+	};
+};
+
 export const lineToArray = (line: Line | undefined): string[] => {
 	const result: string[] = [];
 	if (line) {
