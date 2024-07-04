@@ -37,13 +37,37 @@
             {
                 "name": "ebemon"
             }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "catchmamemon",
+                "from": [
+                    1,
+                    0
+                ]
+            },
+            {
+                "name": "ragnamon"
+            }
         ]
     ],
     "related": [
         "bearmon",
         {
-            "name": "garurumon",
+            "name": "bemmon",
             "for": "machgaogamon"
+        },
+        {
+            "name": "garurumon",
+            "for": "ragnamon"
+        },
+        {
+            "name": "mamemon",
+            "from": "catchmamemon"
         },
         {
             "name": "jazamon",

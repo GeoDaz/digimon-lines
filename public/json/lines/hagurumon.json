@@ -1,151 +1,166 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "kenkimon",
-                "color": "machine",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "frozomon",
-                "color": "ice"
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "solarmon",
-                "color": "fire",
-                "from": [
-                    2,
-                    -1
-                ]
-            },
-            {
-                "name": "guardromongold",
-                "color": "gold"
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "hagurumonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            null,
-            {
-                "name": "blimpmon",
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "hagurumonx",
+				"color": "x",
+				"from": [1, 0]
+			},
+			{
+				"name": "blimpmon",
 				"color": "machine",
-                "from": [
-                    1,
-                    1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "choromon"
-            },
-            {
-                "name": "caprimon",
+				"from": [1, 1]
+			},
+			{
+				"name": "cargodramon",
 				"color": "machine"
-            },
-            {
-                "name": "hagurumon",
+			},
+			{
+				"name": "brigadramon",
 				"color": "machine"
-            },
-            {
-                "name": "guardromon",
+			}
+		],
+		[
+			{
+				"name": "choromon"
+			},
+			{
+				"name": "caprimon",
 				"color": "machine"
-            },
-            {
-                "name": "andromon",
+			},
+			{
+				"name": "hagurumon",
 				"color": "machine"
-            },
-            {
-                "name": "hiandromon",
+			},
+			{
+				"name": "guardromon",
 				"color": "machine"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "mechanorimon",
+			},
+			{
+				"name": "andromon",
+				"color": "machine"
+			},
+			{
+				"name": "hiandromon",
+				"color": "machine"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mechanorimon",
 				"color": "machine",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "nanomon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "nanomon",
 				"color": "machine"
-            },
-            {
-                "name": "quantumon",
-                "color": "light"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "clockmon",
+			},
+			{
+				"name": "quantumon",
+				"color": "light"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "clockmon",
 				"color": "machine",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "valvemon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "valvemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
 				"color": "machine"
-            },
-            {
-                "name": "quartzmon",
-                "color": "dark"
-            }
-        ]
-    ],
-    "related": [
+			},
+			{
+				"name": "quartzmon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "kenkimon",
+				"color": "machine",
+				"from": [1, -1]
+			},
+			null,
+			{
+				"name": "breakdramon",
+				"color": "machine",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "solarmon",
+				"color": "fire",
+				"from": [-4, -1]
+			},
+			{
+				"name": "guardromongold",
+				"color": "gold"
+			},
+			{
+				"name": "frozomon",
+				"color": "ice",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "flarelizardmon",
+			"for": "machinedramon"
+		},
+		{
+			"name": "tentomon",
+			"for": "kokuwamon"
+		},
+		{
+			"name": "commandramon",
+			"from": "cargodramon"
+		},
+		{
+			"name": "jazamon",
+			"from": "mailbirdramon"
+		},
         {
-            "name": "flarelizardmon",
-            "for": "machinedramon"
+            "name": "mamemon",
+            "from": "kokuwamon"
         },
-        {
-            "name": "tentomon",
-            "for": "kokuwamon"
-        },
-        {
-            "name": "armadillomon",
-            "from": "kenkimon"
-        },
-        {
-            "name": "machmon",
-            "for": "grandlocomon"
-        },
-        {
-            "name": "dracomon",
-            "for": "breakdramon"
-        },
-        {
-            "name": "leomon",
-            "for": "loaderliomon"
-        }
-    ]
+		{
+			"name": "machmon",
+			"for": "grandlocomon"
+		},
+		{
+			"name": "armadillomon",
+			"from": "kenkimon"
+		},
+		{
+			"name": "dracomon",
+			"for": "breakdramon"
+		},
+		{
+			"name": "leomon",
+			"for": "loaderliomon"
+		}
+	]
 }
