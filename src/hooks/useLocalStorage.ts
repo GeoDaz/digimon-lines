@@ -1,16 +1,29 @@
+import { objectCompare } from '@/functions';
 import Line from '@/types/Line';
 import { useEffect, useRef } from 'react';
 
 interface Return {
 	getStoredItem: CallableFunction;
 	setItemToStorage: CallableFunction;
+	removeItemFromStorage: CallableFunction;
 }
-const useLocalStorage = (key: string, item: any, setItem: CallableFunction): Return => {
-	const mount = useRef<Line | null>(null);
-
+interface Props {
+	key: string;
+	item: any;
+	defaultItem: any;
+	setItem: CallableFunction;
+	locked?: boolean;
+}
+const useLocalStorage = ({
+	key,
+	item,
+	setItem,
+	defaultItem,
+	locked = false,
+}: Props): Return => {
 	useEffect(() => {
-		if (!mount.current) {
-			mount.current = item;
+		// don't get stored value if first item is not the default one
+		if (!locked && item === defaultItem) {
 			const storedItem = getStoredItem();
 			if (storedItem) {
 				setItem(storedItem);
@@ -19,8 +32,7 @@ const useLocalStorage = (key: string, item: any, setItem: CallableFunction): Ret
 	}, []);
 
 	useEffect(() => {
-		// don't save default value
-		if (item && item !== mount.current) {
+		if (!locked && item && item !== defaultItem) {
 			setItemToStorage(item);
 		}
 	}, [item]);
@@ -44,7 +56,15 @@ const useLocalStorage = (key: string, item: any, setItem: CallableFunction): Ret
 		}
 	};
 
-	return { getStoredItem, setItemToStorage };
+	const removeItemFromStorage = () => {
+		try {
+			localStorage.removeItem(key);
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	return { getStoredItem, setItemToStorage, removeItemFromStorage };
 };
 
 export default useLocalStorage;

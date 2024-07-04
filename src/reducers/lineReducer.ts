@@ -12,7 +12,6 @@ export const REMOVE_LINE_ROW = 'REMOVE_LINE_ROW';
 
 export const defaultColumn = [null, null, null, null, null, null, null, null];
 export const defaultLine: Line = {
-	title: undefined,
 	size: 8,
 	columns: [
 		defaultColumn,

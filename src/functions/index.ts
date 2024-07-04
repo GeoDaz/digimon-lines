@@ -37,6 +37,31 @@ export const objectToGETparams = (
 	}, baseParams);
 };
 
+export function objectCompare(
+	object1: Record<any, any> | null,
+	object2: Record<any, any> | null
+) {
+	if (object1 == null && object2 == null) {
+		return true;
+	} else if (object1 == null || object2 == null) {
+		return false;
+	}
+	if (Object.keys(object1).length !== Object.keys(object2).length) {
+		return false;
+	}
+	for (let [key, value] of Object.entries(object1)) {
+		// compare arrays as objects
+		if (typeof value === 'object' && typeof object2[key] === 'object') {
+			if (!objectCompare(value, object2[key])) {
+				return false;
+			}
+		} else if (value !== object2[key]) {
+			return false;
+		}
+	}
+	return true;
+}
+
 export const stringToKey = (string: string): string =>
 	string.toLowerCase().replace(/\s/g, '');
 

@@ -1,6 +1,8 @@
 import { getDirPaths } from '@/functions/file';
-import PageBuild from '@/pages/build';
+import { PageBuild } from '@/pages/build';
 import { GetStaticProps } from 'next';
+
+const Page = ({ ssr }: any) => <PageBuild ssr={ssr} />;
 
 export const getServerSideProps: GetStaticProps = async ({ query }: any) => {
 	try {
@@ -17,4 +19,4 @@ export const getServerSideProps: GetStaticProps = async ({ query }: any) => {
 	}
 };
 
-export default PageBuild;
+export default Page;
