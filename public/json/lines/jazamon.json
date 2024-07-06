@@ -32,16 +32,19 @@
 			{
 				"name": "mailbirdramon",
 				"color": ["dark", "dark"],
-				"from": [[1, -1], [-1, -1]]
+				"from": [
+					[1, -1],
+					[-1, -1]
+				]
 			},
-            {
-                "name": "metalgreymonb3",
-                "color": "fusion"
-            },
-            {
-                "name": "zeekgreymon",
-                "color": "gold"
-            }
+			{
+				"name": "metalgreymonb3",
+				"color": "fusion"
+			},
+			{
+				"name": "zeekgreymon",
+				"color": "gold"
+			}
 		],
 		[
 			{
@@ -78,7 +81,11 @@
 			},
 			{
 				"name": "pteranomon",
-				"color": "machine"
+				"color": "machine",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
 			},
 			{
 				"name": "cargodramon",
@@ -108,19 +115,42 @@
 			"name": "greymon",
 			"for": "greymonb3"
 		},
+		"vorvomon",
+		"blucomon",
+		"espimon",
 		"aegisdramon",
 		{
 			"name": "tentomon",
-			"for": "bladekuwagamon"
+			"for": "kokuwamon"
 		},
 		{
 			"name": "commandramon",
 			"from": "cargodramon"
 		},
 		{
+			"name": "hagurumon",
+			"for": "blimpmon"
+		},
+		{
 			"name": "seadramon",
+			"for": "megadramon"
+		},
+		{
+			"name": "flarelizardmon",
 			"for": "gigadramon"
 		},
+		{
+			"name": "biyomon",
+			"from": "crossmon"
+		},
+		{
+			"name": "penmon",
+			"for": "peacockmon"
+		},
+        {
+            "name": "mamemon",
+            "from": "kokuwamon"
+        },
 		{
 			"name": "shoutmon",
 			"for": "shoutmonx5"
@@ -129,9 +159,6 @@
 			"name": "fairymon",
 			"for": "jetsilphymon"
 		},
-		"vorvomon",
-		"blucomon",
-		"espimon",
 		{
 			"name": "garurumon",
 			"for": "machgaogamon"
