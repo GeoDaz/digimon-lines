@@ -69,9 +69,9 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
 		case ADD_LINE_COLUMN:
 			columns = line.columns.slice();
 			if (action.i === undefined) {
-				columns.push(defaultColumn);
+				columns.push(new Array(line.size).fill(null));
 			} else {
-				columns.splice(action.i, 0, defaultColumn);
+				columns.splice(action.i, 0, new Array(line.size).fill(null));
 			}
 			return { ...line, columns } || line;
 

@@ -343,7 +343,7 @@ h2 {
 }
 
 .line-point {
-  transition: outline-color .3s, outline-width .3s;
+  transition: outline-color .3s, outline-width .3s, background-color .3s;
 }
 
 a.line-point {
@@ -362,6 +362,24 @@ a.line-point {
 .line-point.editable:focus {
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: var(--bs-border-radius);
+}
+
+.line-point.editable .line-point-safe-zone::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: transparent;
+  border-radius: var(--bs-border-radius);
+  transition: all .3s;
+}
+
+.line-point.editable:hover .line-point-safe-zone::before,
+.line-point.editable:focus .line-point-safe-zone::before {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .line-point .absolute-legend {
@@ -525,7 +543,7 @@ a.line-point {
   top: 0;
   bottom: 0;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
   transition: all .3s;
   display: flex;
   justify-content: center;
@@ -533,7 +551,7 @@ a.line-point {
   border-radius: 0.3rem;
 }
 
-.line-point .actions:hover,
+/* .line-point .actions:hover,
 .line-point .actions:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -541,7 +559,7 @@ a.line-point {
 .line-point .actions:hover:has(.action:hover),
 .line-point .actions:focus:has(.action:focus) {
   background-color: rgba(0, 0, 0, 0);
-}
+} */
 
 .line-point .bi.action {
   position: absolute;
@@ -655,6 +673,18 @@ a.line-point {
   top: 2em;
 }
 
+.line-grid.editable .line-point.editable::before {
+  content: '';
+  z-index: -3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: var(--bs-border-radius);
+}
+
 .line-grid.editable .line-row {
   border-radius: var(--bs-border-radius);
   transition: background-color 0.3s;
@@ -735,21 +765,13 @@ a.line-point {
 }
 
 .line-grid .add-row>div {
-  height: calc((var(--dl-img-size) + 2rem) * 6 - 2rem);
+  height: calc(100% - 2rem);
   width: var(--dl-img-size);
   opacity: 0;
   border-radius: var(--bs-border-radius);
   transition: all .3s;
   padding-top: 1em;
   cursor: pointer;
-}
-
-.line-grid .add-row .size-7 {
-  height: calc((var(--dl-img-size) + 2rem) * 7 - 2rem);
-}
-
-.line-grid .add-row .size-8 {
-  height: calc((var(--dl-img-size) + 2rem) * 8 - 2rem);
 }
 
 .line-grid .add-row>div:hover {
