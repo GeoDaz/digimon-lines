@@ -364,7 +364,7 @@ a.line-point {
   border-radius: var(--bs-border-radius);
 }
 
-.line-point.editable .line-point-safe-zone::before {
+/* .line-point.editable .line-point-safe-zone::before {
   content: '';
   position: absolute;
   top: 0;
@@ -380,7 +380,7 @@ a.line-point {
 .line-point.editable:hover .line-point-safe-zone::before,
 .line-point.editable:focus .line-point-safe-zone::before {
   background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 .line-point .absolute-legend {
   position: absolute;
@@ -543,7 +543,7 @@ a.line-point {
   top: 0;
   bottom: 0;
   z-index: 10;
-  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: rgba(0, 0, 0, 0);
   transition: all .3s;
   display: flex;
   justify-content: center;
@@ -551,7 +551,7 @@ a.line-point {
   border-radius: 0.3rem;
 }
 
-/* .line-point .actions:hover,
+.line-point .actions:hover,
 .line-point .actions:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -559,7 +559,7 @@ a.line-point {
 .line-point .actions:hover:has(.action:hover),
 .line-point .actions:focus:has(.action:focus) {
   background-color: rgba(0, 0, 0, 0);
-} */
+}
 
 .line-point .bi.action {
   position: absolute;
