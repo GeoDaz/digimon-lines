@@ -364,6 +364,11 @@ a.line-point {
   border-radius: var(--bs-border-radius);
 }
 
+.line-point.editable.pictured:hover,
+.line-point.editable.pictured:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* .line-point.editable .line-point-safe-zone::before {
   content: '';
   position: absolute;
