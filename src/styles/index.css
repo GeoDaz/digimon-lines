@@ -561,10 +561,15 @@ a.line-point {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.line-point .actions:hover:has(.action:hover),
+/* .line-point .actions:hover:has(.action:hover),
 .line-point .actions:focus:has(.action:focus) {
-  background-color: rgba(0, 0, 0, 0);
-}
+  background-color: rgba(0, 0, 0, 0.75);
+} */
+
+/* .line-point.editable.pictured:has(.action:hover),
+.line-point.editable.pictured:has(.action:focus) {
+  background-color: rgba(255, 255, 255, 0.75);
+} */
 
 .line-point .bi.action {
   position: absolute;
