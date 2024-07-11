@@ -33,7 +33,7 @@ const LineSvg: React.FC<Props> = ({
 	const xGap = Math.abs(from[0]);
 	const yGap = Math.abs(from[1]);
 	x = xUnit * xGap; // 150 + 12 * 2
-	if (size > 1 && xGap >= 1) {
+	if (size > 1 && xGap > 1) {
 		x -= pointWidth / 2;
 	}
 	y = yUnit * yGap; // 150 + 15 * 2
