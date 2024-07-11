@@ -607,7 +607,7 @@ a.line-point {
 
 .line-point .bi.uncollapse-point {
   top: 50%;
-  left: 75%;
+  left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all .3s;
