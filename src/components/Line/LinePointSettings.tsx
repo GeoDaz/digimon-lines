@@ -8,6 +8,7 @@ import SearchBar from '@/components/SearchBar';
 import LineImage from './LineImage';
 import colors, { legend } from '@/consts/colors';
 import UploadImage from '../UploadImage';
+import InputMono from '../InputMono';
 
 interface Props {
 	handleClose: () => void;
@@ -39,6 +40,14 @@ const LinePointSettings: React.FC<Props> = ({
 				? { ...point, name: search }
 				: { name: search, from: null };
 			handleUpdate(setLinePoint, coord, nextPoint);
+			handleClose();
+		}
+	};
+
+	const handleImage = (name: string, value: string) => {
+		if (handleUpdate) {
+			const newPoint: LinePoint = { name: 'url', from: null, image: value };
+			handleUpdate(setLinePoint, coord, newPoint);
 			handleClose();
 		}
 	};
@@ -109,6 +118,12 @@ const LinePointSettings: React.FC<Props> = ({
 			</Modal.Header>
 			<Modal.Body>
 				<SearchBar onSubmit={handleChoose} forwardRef={ref} />
+				<InputMono
+					name="image"
+					onSubmit={handleImage}
+					placeholder="Image URL"
+					defaultValue={(point && point.name == 'url' && point.image) || ''}
+				/>
 				<UploadImage handleUpload={handleUpload} className="mb-3" />
 				{point ? (
 					<div className="mb-3">
