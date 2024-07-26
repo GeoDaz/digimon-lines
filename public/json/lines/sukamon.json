@@ -72,7 +72,10 @@
 				"from": [-2, -1]
 			},
 			{
-				"name": "chohakkaimon"
+				"name": "kumbhiramon"
+			},
+			{
+				"name": "cendrillmon"
 			}
 		],
 		[
@@ -81,13 +84,14 @@
 			null,
 			null,
 			{
-				"name": "kumbhiramon",
+				"name": "chohakkaimon",
 				"from": [-1, -1]
 			}
 		]
 	],
 	"related": [
 		"numemon",
+		{ "name": "shoemon", "from": "cendrillmon" },
 		{ "name": "monmon", "from": "etemon" },
 		{ "name": "gatomon", "from": "opossummon" },
 		{ "name": "shakamon", "from": "chohakkaimon" },

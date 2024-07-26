@@ -107,6 +107,15 @@
 			{
 				"name": "pteranomonx",
 				"color": "x"
+			},
+			{
+				"name": "gigadramon",
+				"from": [-1, 0],
+				"color": "machine"
+			},
+			{
+				"name": "darkdramon",
+				"color": "machine"
 			}
 		]
 	],
@@ -120,6 +129,14 @@
 		"espimon",
 		"aegisdramon",
 		{
+			"name": "flarelizardmon",
+			"for": "gigadramon"
+		},
+		{
+			"name": "seadramon",
+			"for": "megadramon"
+		},
+		{
 			"name": "tentomon",
 			"for": "kokuwamon"
 		},
@@ -132,14 +149,6 @@
 			"for": "blimpmon"
 		},
 		{
-			"name": "seadramon",
-			"for": "megadramon"
-		},
-		{
-			"name": "flarelizardmon",
-			"for": "gigadramon"
-		},
-		{
 			"name": "biyomon",
 			"from": "crossmon"
 		},
@@ -147,10 +156,10 @@
 			"name": "penmon",
 			"for": "peacockmon"
 		},
-        {
-            "name": "mamemon",
-            "from": "kokuwamon"
-        },
+		{
+			"name": "mamemon",
+			"from": "kokuwamon"
+		},
 		{
 			"name": "shoutmon",
 			"for": "shoutmonx5"
