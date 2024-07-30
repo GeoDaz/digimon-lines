@@ -25,7 +25,8 @@
 				"color": "ice"
 			},
 			{
-				"name": "swanmon"
+				"name": "xiquemon",
+				"color": "marine"
 			},
 			{
 				"name": "daipenmon",
@@ -34,17 +35,23 @@
 			{
 				"name": "frosvelgrmon",
 				"color": ["ice", "ice"],
-				"from": [[0, -1], [1, -1]]
+				"size": 2,
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				]
 			}
 		],
 		[
 			null,
 			null,
 			null,
-			null,
 			{
-				"name": "peacockmon",
+				"name": "swanmon",
 				"from": [-1, -1]
+			},
+			{
+				"name": "peacockmon"
 			}
 		],
 		[
@@ -102,6 +109,10 @@
 		{
 			"name": "falcomon2",
 			"for": "xiquemon"
+		},
+		{
+			"name": "swimmon",
+			"for": "huankunmon"
 		},
 		{
 			"name": "biyomon",
