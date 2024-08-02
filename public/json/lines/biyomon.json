@@ -38,6 +38,13 @@
 			null,
 			{ "name": "velgrmon", "from": [-1, -1], "color": "dark" }
 		]
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "vulturemon", "from": [-2, -1], "color": "dark" }
+		]
 	],
 	"related": [
 		{ "name": "penmon", "for": "cockatrimon" },
@@ -45,6 +52,7 @@
 		{ "name": "falcomon2", "from": "ornismon" },
 		{ "name": "dracmon", "for": "velgrmon" },
 		{ "name": "jazamon", "for": "mailbirdramon" },
+		{ "name": "hookmon", "for": "vulturemon" },
 		"aegisdramon",
 		{ "name": "omegamonmm", "from": "phoenixmon" }
 	]
