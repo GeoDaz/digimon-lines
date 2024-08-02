@@ -42,7 +42,11 @@
 			},
 			{
 				"name": "ancientmermaimon",
-				"color": "marine"
+				"color": "marine",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				]
 			}
 		],
 		[
@@ -176,6 +180,10 @@
 		{
 			"name": "swimmon",
 			"from": "hangyomon"
+		},
+		{
+			"name": "hookmon",
+			"from": "mermaimon"
 		},
 		{
 			"name": "numemon",

@@ -1,76 +1,82 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "trailmon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "locomon"
-            },
-            {
-                "name": "grandlocomon"
-            }
-        ],
-        [
-            {
-                "name": "choromon"
-            },
-            {
-                "name": "caprimon"
-            },
-            {
-                "name": "junkmon"
-            },
-            {
-                "name": "machmon"
-            },
-            {
-                "name": "rebellimon"
-            },
-            {
-                "name": "heavyleomon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "komondomon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "labramon",
-            "for": "dobermon"
-        },
-        {
-            "name": "ogremon",
-            "from": "rebellimon"
-        },
-        {
-            "name": "leomon",
-            "from": "heavyleomon"
-        },
-        {
-            "name": "numemon",
-            "from": "junkmon"
-        },
-        {
-            "name": "hagurumon",
-            "for": "frozomon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "trailmon",
+				"from": [1, -1]
+			},
+			{
+				"name": "locomon"
+			},
+			{
+				"name": "grandlocomon"
+			}
+		],
+		[
+			{
+				"name": "choromon"
+			},
+			{
+				"name": "caprimon"
+			},
+			{
+				"name": "junkmon"
+			},
+			{
+				"name": "machmon"
+			},
+			{
+				"name": "rebellimon"
+			},
+			{
+				"name": "natamon"
+			},
+			{
+				"name": "takutoumon",
+				"from": [0, -1],
+				"skins": ["takutoumonwm"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "komondomon",
+				"from": [-1, -1]
+			},
+			null,
+			{
+				"name": "heavyleomon",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "labramon",
+			"for": "dobermon"
+		},
+		{
+			"name": "ogremon",
+			"from": "rebellimon"
+		},
+		{
+			"name": "leomon",
+			"from": "heavyleomon"
+		},
+		{
+			"name": "numemon",
+			"from": "junkmon"
+		},
+		{
+			"name": "hagurumon",
+			"for": "frozomon"
+		},
+		{ "name": "garurumon", "from": "takutoumon" },
+		{ "name": "ludomon", "from": "takutoumon" }
+	]
 }

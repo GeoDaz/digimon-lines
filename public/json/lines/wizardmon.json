@@ -26,7 +26,14 @@
 				"from": [-1, -1],
 				"collapsable": false
 			},
-			{ "name": "wisemon", "collapsable": false },
+			{
+				"name": "wisemon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"collapsable": false
+			},
 			{ "name": "ancientwisemon", "collapsable": false }
 		],
 		[
@@ -64,7 +71,8 @@
 	"related": [
 		{ "name": "impmon", "from": "wizardmon" },
 		{ "name": "mercurymon", "from": "ancientwisemon" },
-		{ "name": "devimon", "from": "barbamon" },
+		{ "name": "devimon", "for": "lilithmon" },
+		{ "name": "devimon", "for": "skullsatamon" },
 		{ "name": "bakemon", "from": "candlemon" },
 		{ "name": "meramon", "from": "demimeramon" },
 		{ "name": "gatomon", "from": "witchmon" },

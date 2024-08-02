@@ -1,0 +1,577 @@
+{
+	"celeste": {
+		"G": [
+			{ "name": "Patamon" },
+			{ "name": "Falcomon" },
+			{ "name": "Hawkmon" },
+			{ "name": "Biyomon" }
+		],
+		"F": [
+			{ "name": "Cockatrimon" },
+			{ "name": "Birdramon" },
+			{ "name": "Harpymon" },
+			{ "name": "Unimon" }
+		],
+		"E": [
+			{ "name": "Angemon", "from": ["Patamon", "Centalmon"] },
+			{ "name": "Aquilamon" },
+			{ "name": "Fairymon" },
+			{ "name": "Pegasumon", "from": ["Angemon", "Unimon"] },
+			{ "name": "Nefertimon", "from": ["Gatomon", "Unimon"] }
+		],
+		"D": [
+			{ "name": "Angewomon", "from": ["Nefertimon", "Angemon"] },
+			{ "name": "ThunderBirdmon", "from": ["Aquilamon", "Bulkmon"] },
+			{ "name": "Shutumon", "from": ["Fairymon", "Harpymon"] },
+			{ "name": "Parrotmon", "from": ["Cockatrimon", "ThunderBirdmon"] }
+		],
+		"C": [
+			{ "name": "Garudamon", "from": ["Birdramon", "ThunderBirdmon"] },
+			{ "name": "MagnaAngemon", "from": ["Angemon", "Knightmon"] },
+			{ "name": "Silphymon", "from": ["Angewomon", "Aquilamon"] },
+			{ "name": "Shakkoumon", "from": ["Angemon", "Ankylomon"] },
+			{ "name": "Chirinmon", "from": ["Pegasumon", ""] }
+		],
+		"B": [{ "name": "Crossmon" }, { "name": "Cherubimon" }],
+		"A": [
+			{ "name": "Phoenixmon", "from": ["Crossmon", "Garudamon"] },
+			{ "name": "MagnaDramon", "from": ["Angewomon", "Magnamon"] },
+			{ "name": "Seraphimon", "from": ["MagnaAngemon", "Shakkoumon"] },
+			{ "name": "Ophanimon", "from": ["Angewomon", "Chirinmon"] },
+			{ "name": "Raguelmon", "from": ["MagnaDramon", "Lucemon"] },
+			{ "name": "Valdurmon", "from": ["Cherubimon", "Phoenixmon"] },
+			{ "name": "Valkyrimon", "from": ["Silphymon", "Diarbitmon"] }
+		],
+		"S": [
+			{ "name": "Zhuqiaomon", "from": ["Valdurmon", "Apollomon"] },
+			{ "name": "Ordinemon", "from": ["Ophanimon", "Raguelmon"] }
+		],
+		"X": []
+	},
+	"dragon": {
+		"G": [
+			{ "name": "Dracomon", "from": [["Dragon Family", "*", "Rank G"]] },
+			{ "name": "Agumon" },
+			{
+				"name": "SnowAgumon",
+				"from": ["Dragon Family", "Nature Family", "Rank G"]
+			},
+			{
+				"name": "BlackAgumon",
+				"from": ["Dragon Family", "Demon Family", "Rank G"]
+			},
+			{ "name": "Guilmon", "from": ["Dragon Family", "Demon Family", "Rank G"] },
+			{ "name": "Veemon", "from": ["Dragon Family", "Celeste Family", "Rank G"] },
+			{ "name": "Dorumon", "from": ["Dragon Family", "Nature Family", "Rank G"] },
+			{
+				"name": "Commandramon",
+				"from": ["Dragon Family", "Material Family", "Rank G"]
+			}
+		],
+		"F": [
+			{
+				"name": "CoreDramon",
+				"from": [
+					["Dracomon", "*"],
+					["Dragon Family", "Dragon Family", "Rank F"]
+				]
+			},
+			{
+				"name": "Tyranomon",
+				"from": [
+					["Agumon", "Guilmon"],
+					["Dragon Family", "Dragon Family", "Rank F"]
+				]
+			},
+			{
+				"name": "AirDramon",
+				"from": [
+					["Veemon", "Betamon"],
+					["Dragon Family", "Celeste Family", "Rank F"]
+				]
+			},
+			{
+				"name": "SeaDramon",
+				"from": [
+					["SnowAgumon", "Betamon"],
+					["Dragon Family", "Nature Family", "Rank F"]
+				]
+			},
+			{
+				"name": "MonoChromon",
+				"from": [["Dragon Family", "Material Family", "Rank F"]]
+			},
+			{
+				"name": "Allomon",
+				"from": [["Hawkmon", "Dragon Family"]]
+			},
+			{
+				"name": "FlameDramon",
+				"from": [["Veemon", "Agumon"]]
+			},
+			{
+				"name": "Punkmon",
+				"from": [["Impmon", "Guilmon"]]
+			}
+		],
+		"E": [
+			{ "name": "Greymon", "from": [["Tyranomon", "Agumon"]] },
+			{ "name": "HiCommandramon", "from": [["Greymon", "Commandramon"]] },
+			{
+				"name": "DarkTyranomon",
+				"from": [["Tyranomon", "BlackAgumon"]]
+			},
+			{
+				"name": "DeviDramon",
+				"from": [["Dragon Family", "Demon Family", "Rank E"]]
+			},
+			{
+				"name": "Gargoylemon",
+				"from": [["Dragon Family", "Celeste Family", "Rank E"]]
+			},
+			{ "name": "ExVeemon" },
+			{ "name": "GinRyumon" },
+			{ "name": "Ankylomon" },
+			{ "name": "Raidramon", "from": [["Veemon", "Garurumon"]] },
+			{ "name": "RaptorDramon" },
+			{ "name": "Bulkmon", "from": [["Pulsemon", "Tyranomon"]] }
+		],
+		"D": [
+			{
+				"name": "WingDramon",
+				"from": [
+					["CoreDramon", "ExVeemon"],
+					["Dragon Family", "Celeste Family", "Rank D"]
+				]
+			},
+			{ "name": "Groundramon", "from": ["CoreDramon", "Ankylomon"] },
+			{
+				"name": "Megadramon",
+				"from": [
+					["Flarelizardmon", "AirDramon"],
+					["Dragon Family", "Material Family", "Rank D"]
+				]
+			},
+			{
+				"name": "MetalTyranomon",
+				"from": [["DarkTyranomon", "Material Family", "Rank E"]]
+			},
+			{ "name": "Stegomon" },
+			{ "name": "Brachiomon" },
+			{ "name": "Tricermon" },
+			{ "name": "MegaSeadramon" }
+		],
+		"C": [
+			{ "name": "MetalGreymon" },
+			{ "name": "SkullGreymon", "from": ["MetalGreymon", "Cyclomon"] },
+			{ "name": "DoruGreymon" },
+			{ "name": "WarGrowlmon" },
+			{ "name": "Loudmon", "from": ["WarGrowlmon", "Punkmon"] },
+			{ "name": "Sagittarimon", "from": ["Raidramon", "FlameDramon"] },
+			{ "name": "PailDramon", "from": ["ExVeemon", "Stingmon"] },
+			{ "name": "Hisyaryumon" }
+		],
+		"B": [
+			{ "name": "SlayerDramon", "from": ["WingDramon"] },
+			{ "name": "Ouryumon" },
+			{ "name": "Megidramon", "from": ["WarGrowlmon", "DeviDramon"] },
+			{ "name": "MetalSeadramon", "from": ["MegaSeadDramon", "MetalMamemon"] },
+			{ "name": "Plesiomon", "from": ["MegaSeadDramon", "Anomalocarimon"] },
+			{ "name": "Magnamon", "from": ["Sagittarimon", "GoldRapidmon"] },
+			{
+				"name": "DinoRexmon",
+				"from": ["Triceramon", "Brachiomon", "Stegomon", "WarGrowlmon"]
+			}
+		],
+		"A": [
+			{ "name": "WarGreymon", "from": ["MetalGreymon", "WarGrowlmon"] },
+			{ "name": "BlackWarGreymon" },
+			{ "name": "RustTyranomon", "from": ["MachineDramon", "DinoRexmon"] },
+			{ "name": "BlitzGreymon", "from": ["MetalGreymon", "RustTyranomon"] },
+			{ "name": "UlforceVeedramon", "from": ["SlayerDramon", "MagnaAngemon"] },
+			{ "name": "Goldramon", "from": ["UlforceVeedramon", "MegaDramon"] },
+			{ "name": "HeavyMetalDramon", "from": ["Loudmon", "Megidramon"] },
+			{ "name": "Dorugoramon", "from": ["SlayerDramon", "DoruGreymon"] },
+			{ "name": "ImperialDramon", "from": ["PailDramon", "Dorugoramon"] }
+		],
+		"S": [
+			{
+				"name": "Azulongmon",
+				"from": ["Goldramon", "Ouryumon", "Megidramon", "MagnaDramon"]
+			},
+			{
+				"name": "Examon",
+				"from": ["SlayerDramon", "Breakdramon", "Megidramon", "DarkDramon"]
+			}
+		],
+		"X": [
+			{
+				"name": "Huanglongmon",
+				"from": ["Azulongmon", "Baihumon", "Zhuqiaomon", "Ebonwumon"]
+			},
+			{
+				"name": "ImperialDramonPM",
+				"from": ["ImperialDramon", "Omegamon", "Goldramon", "UlforceVeedramon"]
+			}
+		]
+	},
+	"beast": {
+		"G": [
+			{ "name": "Gabumon" },
+			{ "name": "Gazimon" },
+			{ "name": "Elecmon" },
+			{ "name": "Plotmon" }
+		],
+		"F": [{ "name": "Frigimon" }],
+		"E": [{ "name": "Garurumon" }, { "name": "Leomon" }, { "name": "Centalmon" }],
+		"D": [{ "name": "Etemon" }, { "name": "Panjyamon" }],
+		"C": [
+			{ "name": "WereGarurumon" },
+			{ "name": "Zudomon" },
+			{ "name": "LoaderLeomon" },
+			{ "name": "Rapidmon" }
+		],
+		"B": [
+			{ "name": "GoldRapidmon" },
+			{ "name": "SaberLeomon" },
+			{ "name": "BanchoLeomon" },
+			{ "name": "MetalEtemon", "from": ["Etemon", "Volcamon"] }
+		],
+		"A": [
+			{ "name": "KingEtemon", "from": ["KingMamemon", "MetalEtemon"] },
+			{ "name": "MetalGarurumon", "from": ["WereGarurumon", "MetalMamemon"] },
+			{ "name": "CresGarurumon" },
+			{ "name": "Vikemon", "from": ["Zudomon", "Shakkoumon"] },
+			{ "name": "Diarbitmon" },
+			{ "name": "Marsmon" },
+			{ "name": "Apollomon", "from": ["Marsmon", "BanchoLeomon"] },
+			{ "name": "Dianamon", "from": ["Diarbitmon"] },
+			{ "name": "HeavyLeomon" },
+			{ "name": "Leopardmon" }
+		],
+		"S": [
+			{
+				"name": "Baihumon",
+				"from": ["MetalGarurumon", "SaberLeomon", "Leopardmon", "HeavyLeomon"]
+			},
+			{ "name": "Kentaurosmon", "from": ["Cernumon", "Chirinmon"] },
+			{ "name": "GraceNovamon", "from": ["Apollomon", "Dianamon"] }
+		],
+		"X": []
+	},
+	"nature": {
+		"G": [
+			{ "name": "Palmon" },
+			{ "name": "Mushmon" },
+			{ "name": "Kunemon" },
+			{ "name": "Tentomon" },
+			{ "name": "Wormmon" },
+			{ "name": "Shakomon" },
+			{ "name": "Crabmon" },
+			{ "name": "Betamon" },
+			{ "name": "Gizamon" }
+		],
+		"F": [
+			{ "name": "Numemon" },
+			{ "name": "Woodmon" },
+			{ "name": "Vegiemon" },
+			{ "name": "Shellmon" },
+			{ "name": "Gesomon" },
+			{ "name": "Kiwimon", "from": ["Nature Family", "Celeste Family"] },
+			{ "name": "Kuwagamon", "from": ["Tentomon", "Kunemon"] },
+			{ "name": "Flymon", "from": ["Kunemon", "Celeste Family"] },
+			{ "name": "Chamblemon", "from": ["Mushmon", "Demon Family"] }
+		],
+		"E": [
+			{ "name": "Kabuterimon" },
+			{ "name": "Togemon" },
+			{ "name": "Shurimon", "from": ["Hawkmon", "Palmon"] },
+			{ "name": "Stingmon" },
+			{ "name": "Snimon" }
+		],
+		"D": [
+			{ "name": "Hangyomon" },
+			{ "name": "Cherrymon" },
+			{ "name": "Blossomon" },
+			{ "name": "Whamon" },
+			{ "name": "Okuwagamon" },
+			{ "name": "Ajatarmon" }
+		],
+		"C": [
+			{ "name": "Lilymon" },
+			{ "name": "MegaKabuterimon" },
+			{ "name": "Tropiamon" }
+		],
+		"B": [
+			{ "name": "MarineChimeramon", "from": [""] },
+			{ "name": "GranKuwagamon" },
+			{ "name": "Lotosmon", "from": ["Blossomon"] },
+			{
+				"name": "Hydramon",
+				"from": ["Orochimon", "Tropiamon"]
+			}
+		],
+		"A": [
+			{ "name": "Rosemon", "from": ["Lilimon"] },
+			{ "name": "HerculesKabuterimon" },
+			{ "name": "Regalescumon", "from": ["Piranimon", "MarineChimeramon"] },
+			{
+				"name": "Neptunemon",
+				"from": ["Whamon", "Dagomon", "Whamon", "Hangyomon"]
+			},
+			{ "name": "Ceresmon", "from": ["Lotosmon"] }
+		],
+		"S": [
+			{ "name": "Rafflesimon", "from": ["Lotosmon", "Rosemon"] },
+			{ "name": "BloomLordmon", "from": ["Rafflesimon", "LordKnightmon"] },
+			{
+				"name": "Leviamon",
+				"from": ["MetalSeadramon", "MarineDevimon", "Neptunemon", "Regalescumon"]
+			},
+			{ "name": "Cernumon", "from": ["Puppetmon", "Hydramon"] },
+			{
+				"name": "Tlalocmon",
+				"from": ["SaberLeomon", "Eldoradimon", "Coaltmon", "Cherubimon"]
+			},
+			{
+				"name": "Ebonwumon",
+				"from": ["Cernumon", "Tlalocmon"]
+			}
+		],
+		"X": []
+	},
+	"material": {
+		"G": [
+			{ "name": "Gottsumpon" },
+			{ "name": "Kokuwamon" },
+			{
+				"name": "ToyAgumon",
+				"from": ["Material Family", "Dragon Family", "Rank G"]
+			},
+			{ "name": "Hagurumon" },
+			{ "name": "Candlemon", "from": ["Material Family", "Demon Family", "Rank G"] }
+		],
+		"F": [
+			{ "name": "Golemon" },
+			{ "name": "Sukamon" },
+			{
+				"name": "Meramon",
+				"from": [
+					["Candlemon", "Dragon Family"],
+					["Material Family", "Demon Family", "Rank F"]
+				]
+			},
+			{ "name": "Tortamon" },
+			{ "name": "Clockmon", "from": ["Hagurumon", "Demon Family"] },
+			{
+				"name": "Flarelizardmon",
+				"from": ["Material Family", "Dragon Family", "Rank F"]
+			},
+			{ "name": "SealsDramon", "from": ["Commandramon", "Material Family"] },
+			{ "name": "Hookmon" }
+		],
+		"E": [{ "name": "Tankmon" }, { "name": "Mekanorimon" }, { "name": "Guardromon" }],
+		"D": [
+			{ "name": "Mamemon" },
+			{ "name": "Monzaemon", "from": ["Numemon", "Numemon", "Numemon", "Numemon"] },
+			{ "name": "Andromon" },
+			{ "name": "Assaultmon" },
+			{ "name": "BlueMeramon" }
+		],
+		"C": [
+			{ "name": "MetalMamemon" },
+			{ "name": "TankDramon" },
+			{ "name": "CargoDramon" },
+			{ "name": "Volcamon" }
+		],
+		"B": [
+			{ "name": "Puppetmon" },
+			{ "name": "HiAndromon" },
+			{ "name": "BanchoMamemon" },
+			{ "name": "ElDOradimon" },
+			{
+				"name": "MachineDramon",
+				"from": ["MetalGreymon", "MetalMamemon", "MegaDramon", "MetalTyranomon"]
+			},
+			{ "name": "PrinceMamemon" },
+			{ "name": "BreakDramon" }
+		],
+		"A": [
+			{ "name": "BanchoGolemon", "from": ["BanchoMamemon", "Volcamon"] },
+			{
+				"name": "DarkDramon",
+				"from": ["TankDramon", "CyberDramon", "Assaultmon", "CargoDramon"]
+			},
+			{ "name": "BrigaDramon" },
+			{
+				"name": "ChaosDramon",
+				"from": ["MachineDramon", "BlitzGreymon"]
+			}
+		],
+		"S": [
+			{
+				"name": "AegisDramon",
+				"from": ["Plesiomon", "MetalSeadramon", "Crossmon", "BrigaDramon"]
+			}
+		],
+		"X": []
+	},
+	"demon": {
+		"G": [
+			{ "name": "Impmon" },
+			{ "name": "DemiDevimon" },
+			{ "name": "Dracmon" },
+			{ "name": "Goblimon" }
+		],
+		"F": [{ "name": "Boogiemon" }, { "name": "Bakemon" }, { "name": "Cyclomon" }],
+		"E": [{ "name": "Ogremon" }, { "name": "Devimon" }, { "name": "Wizardmon" }],
+		"D": [
+			{ "name": "LadyDevimon" },
+			{ "name": "Phantomon" },
+			{ "name": "SkullMeramon" },
+			{ "name": "MarineDevimon", "from": ["Devimon", "Gesomon"] },
+			{ "name": "Pumpmon" }
+		],
+		"C": [
+			{ "name": "NeoDevimon" },
+			{ "name": "Myotismon" },
+			{ "name": "SkullSatamon" },
+			{ "name": "MetalPhantomon" },
+			{ "name": "Mephismon" },
+			{ "name": "Baalmon" }
+		],
+		"B": [
+			{ "name": "Piemon" },
+			{ "name": "Boltmon" },
+			{ "name": "VenoMyotismon" },
+			{ "name": "DoneDevimon" },
+			{ "name": "Gokumon" },
+			{ "name": "NoblePumpmon" }
+		],
+		"A": [
+			{ "name": "Beelzebumon" },
+			{ "name": "Lilithmon" },
+			{ "name": "MaloMyotismon", "from": ["VenoMyotismon"] },
+			{
+				"name": "GranDracmon",
+				"from": ["SangLoupmon", "Myotismon", "SangLoupmon", "WereGarurumon"]
+			},
+			{ "name": "Barbamon" },
+			{ "name": "Gulfmon", "from": ["GranDracmon", "Mephismon"] }
+		],
+		"S": [
+			{
+				"name": "Daemon",
+				"from": ["Barbamon", "MaloMyotismon", "Lilithmon", "DoneDevimon"]
+			},
+			{ "name": "Belphemon", "from": ["Beelzebumon", "Gulfmon"] },
+			{
+				"name": "BoltBoutamon",
+				"from": ["Piemon", "Myotismon", "CaptainHookmon", "Boltmon"]
+			}
+		],
+		"X": []
+	},
+	"???": {
+		"G": [{ "name": "Hackmon" }],
+		"F": [],
+		"E": [{ "name": "Axemon" }],
+		"D": [{ "name": "CaptainHookmon" }, { "name": "SkullKnightmon" }],
+		"C": [{ "name": "Knightmon" }, { "name": "Mistymon" }],
+		"B": [
+			{ "name": "Lucemon", "from": ["Angemon", "Devimon"] },
+			{
+				"name": "DarkKnightmon",
+				"from": ["SkullKnightmon", "Axemon", "SkullSatamon", "SkullGreymon"]
+			},
+			{
+				"name": "Chimeramon",
+				"from": [
+					"Greymon",
+					"Garurumon",
+					"Angemon",
+					"Devimon",
+					"AirDramon",
+					"Monochromon",
+					"Kabuterimon",
+					"Kuwagamon"
+				]
+			},
+			{ "name": "Diablomon" }
+		],
+		"A": [
+			{ "name": "Gankoomon" },
+			{ "name": "Jesmon", "from": ["Gankoomon"] },
+			{ "name": "Gallantmon", "from": ["Megidramon", "Knightmon"] },
+			{ "name": "Craniumon", "from": ["Knightmon", "DarkKnightmon"] },
+			{ "name": "Dynasmon", "from": ["Mistymon"] },
+			{ "name": "LordKnightmon", "from": ["Knightmon", "Rosemon"] },
+			{ "name": "Mastemon", "from": ["Ophanimon", "Lilithmon"] }
+		],
+		"S": [
+			{
+				"name": "Omegamon",
+				"from": ["WarGreymon", "MetalGarurumon", "BlitzGreymon", "CresGarurumon"]
+			},
+			{
+				"name": "Alphamon",
+				"from": ["Dorugoramon", "Ouryumon", "Craniumon", "Jesmon"]
+			},
+			{
+				"name": "LucemonSM",
+				"from": ["Lucemon", "Cherubimon", "Mastemon", "Seraphimon"]
+			},
+			{
+				"name": "Chaosmon",
+				"from": ["DarkDramon", "BanchoLeomon", "Valdurmon", "Kentaurosmon"]
+			},
+			{
+				"name": "Apocalymon",
+				"from": ["Piemon", "MachineDramon", "MetalSeadramon", "Puppetmon"]
+			},
+			{
+				"name": "NeoCrimson",
+				"from2?": [
+					"BoltBoutamon",
+					"ChaosDramon",
+					"AegisDramon",
+					"BlackWarGreymon"
+				]
+			},
+			{
+				"name": "Milleniumon",
+				"from": ["Chimeramon", "MachineDramon", "Diablomon", "Gankoomon"]
+			},
+			{
+				"name": "Armageddemon",
+				"from": ["Diablomon", "Apocalymon", "Diablomon", "Gulfmon"]
+			}
+		],
+		"X": [
+			{
+				"name": "OmegamonMM",
+				"from": [
+					"Omegamon",
+					"Seraphimon",
+					"MagnaDramon",
+					"Rosemon",
+					"Phoenixmon",
+					"HerculesKabuterimon",
+					"Vikemon"
+				]
+			},
+			{
+				"name": "ZeedMilleniumon",
+				"from": ["Milleniumon", "Armageddemon", "Chaosmon", "NeoCrimson"]
+			},
+			{
+				"name": "Yggdrasil",
+				"from": ["Alphamon", "OmegamonMM", "ImperialDramonPM", "Examon"]
+			},
+			{
+				"name": "Ogudomon",
+				"from": ["LucemonSM", "Daemon", "Belphemon", "Leviamon"]
+			}
+		]
+	}
+}

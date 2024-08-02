@@ -15,13 +15,6 @@
 			{
 				"name": "tuwarmon",
 				"color": "gold"
-			},
-			{
-				"name": "takutoumon"
-			},
-			{
-				"name": "takutoumonwm",
-				"color": "mode"
 			}
 		],
 		[
@@ -44,6 +37,10 @@
 			},
 			{
 				"name": "kingetemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
 				"color": "gold"
 			}
 		],
@@ -56,7 +53,11 @@
 				"from": [-1, -1]
 			},
 			{
-				"name": "etemon"
+				"name": "etemon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
 			},
 			{
 				"name": "metaletemon",
@@ -95,7 +96,6 @@
 		{ "name": "monmon", "from": "etemon" },
 		{ "name": "gatomon", "from": "opossummon" },
 		{ "name": "shakamon", "from": "chohakkaimon" },
-		{ "name": "garurumon", "from": "takutoumon" },
-		{ "name": "ludomon", "from": "takutoumon" }
+		{ "name": "machmon", "for": "takutoumon" }
 	]
 }

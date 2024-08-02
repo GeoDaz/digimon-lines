@@ -1,95 +1,98 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "dexdorugamon",
-                "color": "dark",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "dexdorugreymon",
-                "color": "dark"
-            },
-            {
-                "name": "dexdorugoramon",
-                "color": "dark"
-            },
-            {
-                "name": "dexmon",
-                "color": "dark"
-            }
-        ],
-        [
-            {
-                "name": "dodomon"
-            },
-            {
-                "name": "dorimon"
-            },
-            {
-                "name": "dorumon"
-            },
-            {
-                "name": "dorugamon"
-            },
-            {
-                "name": "dorugreymon"
-            },
-            {
-                "name": "dorugoramon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "raptordramon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "grademon"
-            },
-            {
-                "name": "alphamon"
-            },
-            {
-                "name": "alphamonouryuken",
-                "color": "fusion"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "grademonb",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "ryudamon",
-            "for": "ouryumon"
-        },
-        {
-            "name": "greymon",
-            "for": "samudramon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dexdorugamon",
+				"color": "dark",
+				"from": [1, -1]
+			},
+			{
+				"name": "dexdorugreymon",
+				"color": "dark"
+			},
+			{
+				"name": "dexdorugoramon",
+				"color": "dark"
+			},
+			{
+				"name": "dexmon",
+				"color": "dark"
+			}
+		],
+		[
+			{
+				"name": "dodomon"
+			},
+			{
+				"name": "dorimon"
+			},
+			{
+				"name": "dorumon"
+			},
+			{
+				"name": "dorugamon"
+			},
+			{
+				"name": "dorugreymon"
+			},
+			{
+				"name": "dorugoramon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "raptordramon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "grademon"
+			},
+			{
+				"name": "alphamon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
+			},
+			{
+				"name": "alphamonouryuken",
+				"color": "fusion"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "grademonb",
+				"color": "dark",
+				"from": [-1, -1]
+			},
+			{
+				"name": "samudramon",
+				"color": "dark"
+			},
+			{
+				"name": "samudramonbm",
+				"color": "mode"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "ryudamon",
+			"for": "ouryumon"
+		},
+		{
+			"name": "greymon",
+			"for": "samudramon"
+		}
+	]
 }

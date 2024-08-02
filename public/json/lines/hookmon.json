@@ -1,109 +1,115 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "mermaimon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "olegmon",
-                "from": [
-                    1,
-                    -1
-                ],
-                "color": "gold"
-            }
-        ],
-        [
-            {
-                "name": "bombmon"
-            },
-            {
-                "name": "missimon"
-            },
-            {
-                "name": "monmon"
-            },
-            {
-                "name": "hookmon"
-            },
-            {
-                "name": "captainhookmon"
-            },
-            {
-                "name": "boltboutamon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "revolmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "vulturemon"
-            },
-            {
-                "name": "magnakidmon",
-                "skins": [
-                    "avengekidmon"
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "impmon",
-            "for": "beelstarmon"
-        },
-        {
-            "name": "sistermonblanc",
-            "for": "sistermonnoirawake"
-        },
-        {
-            "name": "commandramon",
-            "for": "gundramon"
-        },
-        {
-            "name": "devimon",
-            "from": "boltboutamon"
-        },
-        {
-            "name": "bakemon",
-            "for": "piemon"
-        },
-        {
-            "name": "jellymon",
-            "from": "mermaimon"
-        },
-        {
-            "name": "ogremon",
-            "from": "olegmon"
-        },
-        {
-            "name": "gomamon",
-            "for": "vikemon"
-        },
-        {
-            "name": "bearmon",
-            "for": "blizzarmon"
-        },
-        {
-            "name": "starmon",
-            "from": "revolmon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "mermaimon",
+				"from": [1, -1]
+			},
+			{
+				"name": "olegmon",
+				"from": [1, -1],
+				"color": "gold"
+			}
+		],
+		[
+			{
+				"name": "bombmon"
+			},
+			{
+				"name": "missimon"
+			},
+			{
+				"name": "monmon"
+			},
+			{
+				"name": "hookmon"
+			},
+			{
+				"name": "captainhookmon"
+			},
+			{
+				"name": "boltboutamon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "revolmon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "vulturemon"
+			},
+			{
+				"name": "magnakidmon",
+				"skins": ["avengekidmon"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mimicmon",
+				"from": [-2, -1]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "impmon",
+			"for": "beelstarmon"
+		},
+		{
+			"name": "sistermonblanc",
+			"for": "sistermonnoirawake"
+		},
+		{
+			"name": "commandramon",
+			"for": "gundramon"
+		},
+		{
+			"name": "devimon",
+			"from": "boltboutamon"
+		},
+		{
+			"name": "bakemon",
+			"for": "piemon"
+		},
+		{
+			"name": "jellymon",
+			"from": "mermaimon"
+		},
+		{
+			"name": "biyomon",
+			"from": "vulturemon"
+		},
+		{
+			"name": "ogremon",
+			"from": "olegmon"
+		},
+		{
+			"name": "gomamon",
+			"for": "vikemon"
+		},
+		{
+			"name": "bearmon",
+			"for": "blizzarmon"
+		},
+		{
+			"name": "starmon",
+			"from": "revolmon"
+		},
+		{
+			"name": "veemon",
+			"for": "manticoremon"
+		}
+	]
 }

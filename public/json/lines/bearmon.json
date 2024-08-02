@@ -19,7 +19,12 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "frigimon",
+				"color": "ice",
+				"from": [1, 0],
+				"skins": ["mudfrigimon"]
+			}
 			{
 				"name": "monzaemonx",
 				"color": "x",
@@ -104,17 +109,6 @@
 				"name": "vikemon",
 				"color": "ice",
 				"from": [-1, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "frigimon",
-				"color": "ice",
-				"from": [-4, -1],
-				"skins": ["mudfrigimon"]
 			}
 		]
 	],

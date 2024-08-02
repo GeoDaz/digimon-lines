@@ -1,138 +1,123 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "rhinomonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "rhinomon",
-                "color": "gold",
-                "from": [
-                    2,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "mammonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            {
-                "name": "skullmammonx",
-                "color": "x"
-            }
-        ],
-        [
-            {
-                "name": "mokumon"
-            },
-            {
-                "name": "demimeramon",
-                "color": "fire"
-            },
-            {
-                "name": "tapirmon",
-                "color": "light"
-            },
-            {
-                "name": "baluchimon"
-            },
-            {
-                "name": "mammon"
-            },
-            {
-                "name": "skullmammon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "boarmon",
-                "color": "fire",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "vikaralamon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "sethmon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "elephantmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "gatomon",
-            "for": "skullbaluchimon"
-        },
-        {
-            "name": "aegiomon",
-            "for": "moosemon"
-        },
-        {
-            "name": "meramon",
-            "from": "demimeramon"
-        },
-        {
-            "name": "armadillomon",
-            "from": "elephantmon"
-        },
-        {
-            "name": "sukamon",
-            "for": "chohakkaimon"
-        },
-        {
-            "name": "shortmon",
-            "for": "burpmon"
-        }
-    ],
-    "notes": [
-        "This line is about the tapir, elephant / mammoths, rhinoceros and wild boar theme.",
-        "Baluchimon is a Paraceratherium which is a prehistoric rhinoceros."
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "rhinomonx",
+				"color": "x",
+				"from": [1, 0]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "rhinomon",
+				"color": "gold",
+				"from": [2, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "mammonx",
+				"color": "x",
+				"from": [1, 0]
+			},
+			{
+				"name": "skullmammonx",
+				"color": "x"
+			}
+		],
+		[
+			{
+				"name": "mokumon"
+			},
+			{
+				"name": "demimeramon",
+				"color": "fire"
+			},
+			{
+				"name": "tapirmon",
+				"color": "light"
+			},
+			{
+				"name": "baluchimon"
+			},
+			{
+				"name": "mammon"
+			},
+			{
+				"name": "skullmammon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "boarmon",
+				"color": "fire",
+				"from": [-1, -1]
+			},
+			{
+				"name": "vikaralamon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "bokomon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "sethmon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "elephantmon",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "gatomon",
+			"for": "skullbaluchimon"
+		},
+		{
+			"name": "aegiomon",
+			"for": "moosemon"
+		},
+		{
+			"name": "meramon",
+			"from": "demimeramon"
+		},
+		{
+			"name": "armadillomon",
+			"from": "elephantmon"
+		},
+		{
+			"name": "sukamon",
+			"for": "chohakkaimon"
+		},
+		{
+			"name": "shortmon",
+			"for": "burpmon"
+		}
+	],
+	"notes": [
+		"This line is about the tapir, elephant / mammoths, rhinoceros and wild boar theme.",
+		"Baluchimon is a Paraceratherium which is a prehistoric rhinoceros."
+	]
 }
