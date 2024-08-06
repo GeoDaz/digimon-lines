@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Dropdown, DropdownButton, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
 import Icon from './Icon';
 import { DISCORD_URL } from '@/consts/env';
-import DropdownMenu from './DropDownMenu';
+import DropdownMenu from './DropdownMenu';
 
 const Header: React.FC = () => (
 	<header className="sticky-top">
