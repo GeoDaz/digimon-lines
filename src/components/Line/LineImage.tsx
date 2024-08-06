@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { makeClassName } from '@/functions';
 import { Spinner } from 'react-bootstrap';
-import { DIGIEGG, GROUP, LINE } from '@/consts/ui';
-
-const DIRS = [GROUP, DIGIEGG];
-
-const makeImgPath = (name: string, type: string) => {
-	return `/images/${DIRS.includes(type) ? type : 'digimon'}/${name}.jpg`;
-};
+import { DIGIMON, LINE } from '@/consts/ui';
+import { LicenseContext } from '@/context/license';
+import imgPathByLicence from '@/functions/images';
 
 interface Props extends React.ImgHTMLAttributes<any> {
 	name: string;
@@ -28,7 +24,9 @@ const LineImage: React.FC<Props> = ({
 	path,
 	loadable = true,
 }) => {
-	const [src, setSrc] = useState(() => path || makeImgPath(name, type));
+	const getImgPath = imgPathByLicence[useContext(LicenseContext)?.key || DIGIMON];
+
+	const [src, setSrc] = useState(() => path || getImgPath(name, type));
 	const [loading, setLoading] = useState(true);
 	const [ratioWidth, setRatioWidth] = useState(1);
 	const [ratioHeight, setRatioHeight] = useState(1);
@@ -42,7 +40,7 @@ const LineImage: React.FC<Props> = ({
 				setSrc(path);
 			}
 		} else {
-			const nextSrc = makeImgPath(name, type);
+			const nextSrc = getImgPath(name, type);
 			if (src != nextSrc) {
 				setLoading(true);
 				setLoadingStyle({ opacity: 1, zIndex: 5 });

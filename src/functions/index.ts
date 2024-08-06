@@ -63,9 +63,15 @@ export function objectCompare(
 }
 
 export const stringToKey = (string: string): string =>
-	string.toLowerCase().replace(/\s/g, '');
+	string
+		.toLowerCase()
+		.normalize('NFD')
+		.replace(/[\s\-_.'’:?%\u0300-\u036f]/g, '')
+		.toLowerCase();
 
 export const getSearchPriority = (search: string, name: string): number | null => {
+	name = stringToKey(name);
+	search = stringToKey(search);
 	let index =
 		search.length > 3 ? name.indexOf(search) : name.startsWith(search) ? 0 : -1; // digimon string contains search string
 	if (index === -1) return null;

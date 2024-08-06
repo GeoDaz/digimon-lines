@@ -9,6 +9,7 @@ import LineImage from './LineImage';
 import colors, { legend } from '@/consts/colors';
 import UploadImage from '../UploadImage';
 import InputMono from '../InputMono';
+import { LicenseContext } from '@/context/license';
 
 interface Props {
 	handleClose: () => void;
@@ -24,6 +25,7 @@ const LinePointSettings: React.FC<Props> = ({
 }) => {
 	const ref = useRef<HTMLInputElement>(null);
 	const { handleUpdate } = useContext(GridContext);
+	const licenceName = useContext(LicenseContext).name;
 
 	useEffect(() => {
 		if (show) {
@@ -117,7 +119,11 @@ const LinePointSettings: React.FC<Props> = ({
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
-				<SearchBar onSubmit={handleChoose} forwardRef={ref} />
+				<SearchBar
+					label={`Research a ${licenceName}`}
+					onSubmit={handleChoose}
+					forwardRef={ref}
+				/>
 				<InputMono
 					name="image"
 					onSubmit={handleImage}

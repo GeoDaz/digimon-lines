@@ -18,28 +18,32 @@ import UploadCode from '@/components/UploadCode';
 import { areCollapsablePoints } from '@/functions/transformer/line';
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
+import { defaultLicenceContext, LicenceProps, LicenseContext } from '@/context/license';
 
-interface Props {
-	ssr: {
-		searchList?: string[];
-		line?: Line;
-	};
+export interface BuildProps {
+	searchList?: string[];
+	line?: Line;
+	context?: LicenceProps;
 }
 
-const Page = ({ ssr }: Props) => <PageBuild ssr={ssr} />;
+const Page = (props: BuildProps) => <PageBuild {...props} />;
 
-export const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
-	const [line, dispatchState] = useReducer(lineReducer, ssr.line || defaultLine);
+export const PageBuild = (props: BuildProps) => {
+	const [line, dispatchState] = useReducer(lineReducer, props.line || defaultLine);
+	const [zoom, setZoom] = useState<number>(100);
+	const [edition, edit] = useState<boolean>(true);
+
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
 	const { removeItemFromStorage } = useLocalStorage({
-		key: 'line',
+		key: props?.context?.key + '-line',
 		item: line,
 		setItem: setLine,
 		defaultItem: defaultLine,
-		locked: !!ssr.line,
+		locked: !!props.line,
 	});
-	const [zoom, setZoom] = useState<number>(100);
-	const [edition, edit] = useState<boolean>(true);
+
+	const licenceContext = props.context || defaultLicenceContext;
+
 	useMemo(() => areCollapsablePoints(line), [line]);
 
 	const { downloadCode, uploadCode, name, setName } = useDownloadCode(line, setLine);
@@ -59,12 +63,13 @@ export const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 		<Layout
 			title="Build your line"
 			metatitle="Builder"
-			metadescription="Build your own Digimon lines. be creative your are free."
+			metadescription={`Build your own ${licenceContext.name} lines. be creative your are free.`}
 		>
 			<blockquote className="blockquote">
-				<b>Click</b> on a case from the grid to set a Digimon.
-				<br /> You can make up to 2 relation from a Digimon to another one, but a
-				Digimon can receive an unlimited number of relations.
+				<b>Click</b> on a case from the grid to set a {licenceContext.name}.
+				<br /> You can make up to 2 relation from a {licenceContext.name} to
+				another one, but a{licenceContext.name} can receive an unlimited number of
+				relations.
 				<br /> At the moment there is no download button for images, the only way
 				is to move zoom to the percent you need to get the full image, toggle the
 				edit button and get a manual screenshot.
@@ -120,12 +125,14 @@ export const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 					<Alert variant="danger">{error}</Alert>
 				</div>
 			)}
-			<SearchContext.Provider value={ssr.searchList}>
-				<LineGrid
-					line={line}
-					zoom={zoom}
-					handleUpdate={edition ? handleUpdate : undefined}
-				/>
+			<SearchContext.Provider value={props.searchList}>
+				<LicenseContext.Provider value={licenceContext}>
+					<LineGrid
+						line={line}
+						zoom={zoom}
+						handleUpdate={edition ? handleUpdate : undefined}
+					/>
+				</LicenseContext.Provider>
 			</SearchContext.Provider>
 		</Layout>
 	);
@@ -134,7 +141,7 @@ export const PageBuild: React.FC<Props> = ({ ssr = {} }) => {
 export const getStaticProps: GetStaticProps = async () => {
 	try {
 		const searchList = getDirPaths('images/digimon');
-		return { props: { ssr: { searchList } } };
+		return { props: { searchList } };
 	} catch (e) {
 		console.error(e);
 		return { props: {} };

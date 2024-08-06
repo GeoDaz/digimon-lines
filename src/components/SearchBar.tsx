@@ -9,12 +9,14 @@ import { Option } from '@/types/Ui';
 const NB_PREVIEW = 10;
 interface Props {
 	onSubmit: Function;
+	label?: string;
 	defaultValue?: string;
 	width?: number;
 	forwardRef?: React.Ref<HTMLInputElement>;
 }
 const SearchBar: React.FC<Props> = ({
 	onSubmit,
+	label = 'Research',
 	defaultValue,
 	width = 300,
 	forwardRef,
@@ -59,7 +61,6 @@ const SearchBar: React.FC<Props> = ({
 
 	const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setSearch(e.target.value);
-		let search = stringToKey(e.target.value);
 		if (search) {
 			if (searchList && searchList.length > 0) {
 				let result = searchList.reduce((result, name) => {
@@ -91,7 +92,7 @@ const SearchBar: React.FC<Props> = ({
 				ref={forwardRef}
 				type="text"
 				id="lines-search"
-				placeholder="Research a Digimon"
+				placeholder={label}
 				style={{ width, maxWidth: '100%' }}
 				onChange={handleSearch}
 				value={search || ''}

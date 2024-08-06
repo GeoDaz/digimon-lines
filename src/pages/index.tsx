@@ -11,7 +11,7 @@ import { LineThumb } from '@/types/Line';
 import Line, { LineFound } from '@/types/Line';
 import { filterlinesFound, foundLines, lineToArray } from '@/functions/transformer/line';
 import SearchBar from '@/components/SearchBar';
-import useQueryParam, { addQueryParam, removeQueryParam } from '@/hooks/useQueryParam';
+import useQueryParam from '@/hooks/useQueryParam';
 import { stringToKey } from '@/functions';
 import { StringArrayObject } from '@/types/Ui';
 import { APPMON } from '@/consts/ui';
@@ -87,7 +87,11 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 				The aim of this site is to present evolutionary lines designed to bring
 				together members of the same species.
 			</blockquote>
-			<SearchBar onSubmit={handleSearch} defaultValue={search} />
+			<SearchBar
+				label="Research a digimon"
+				onSubmit={handleSearch}
+				defaultValue={search}
+			/>
 			{loading ? (
 				<div className="text-center">
 					<Spinner animation="border" />

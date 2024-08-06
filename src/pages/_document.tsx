@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import Header from '@/components/Header';
 import { SITE_URL } from '@/consts/env';
 
 export default function Document() {
@@ -19,7 +18,6 @@ export default function Document() {
 				<link rel="manifest" href="/manifest.json" />
 			</Head>
 			<body>
-				<Header />
 				<Main />
 				<NextScript />
 			</body>

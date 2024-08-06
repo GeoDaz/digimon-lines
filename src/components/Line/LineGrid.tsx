@@ -113,9 +113,7 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 					{line.columns.map((column, i) => (
 						<LineRow key={i} x={i} column={column} />
 					))}
-					{!!handleUpdate && (
-						<LineAddRow handleUpdate={handleUpdate} length={line.size} />
-					)}
+					{!!handleUpdate && <LineAddRow handleUpdate={handleUpdate} />}
 				</div>
 			</div>
 		</GridContext.Provider>

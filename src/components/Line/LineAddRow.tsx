@@ -7,7 +7,7 @@ interface Props {
 	handleUpdate: CallableFunction;
 	length?: number;
 }
-const LineAddRow: React.FC<Props> = ({ handleUpdate, length }) => {
+const LineAddRow: React.FC<Props> = ({ handleUpdate }) => {
 	return (
 		<Row className="add-row" onClick={e => handleUpdate(addLineColumn)}>
 			<div>

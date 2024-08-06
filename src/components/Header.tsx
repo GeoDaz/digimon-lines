@@ -1,9 +1,10 @@
 import React from 'react';
-import { Container, Navbar } from 'react-bootstrap';
+import { Container, Dropdown, DropdownButton, Nav, Navbar } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
 import Icon from './Icon';
 import { DISCORD_URL } from '@/consts/env';
+import DropdownMenu from './DropDownMenu';
 
 const Header: React.FC = () => (
 	<header className="sticky-top">
@@ -13,20 +14,46 @@ const Header: React.FC = () => (
 					<Image src="/images/icon.png" alt="logo" height="26" width="32" />{' '}
 					Digimon Lines
 				</Navbar.Brand>
-				<div className="navbar-nav flex-grow-1">
-					<Link className="nav-link d-max-xs-none" href="/">
-						Lines
-					</Link>
-					<Link className="nav-link" href="/groups">
-						Groups
-					</Link>
-					<Link className="nav-link" href="/vbs">
-						DIM
-					</Link>
-					<Link className="nav-link" href="/build">
-						Build
-					</Link>
-				</div>
+				<Nav className="flex-grow-1">
+					<DropdownMenu
+						className="nav-link"
+						toggle={{ content: 'Digimon' }}
+						items={[
+							{ href: '/build', content: 'Builder' },
+							{ href: '/', content: 'Lines' },
+							{ href: '/groups', content: 'Groups' },
+							{ href: '/vbs', content: 'DIM' },
+						]}
+					/>
+					<DropdownMenu
+						className="nav-link"
+						toggle={{ content: 'Pokémon' }}
+						items={[{ href: '/build/pokemon', content: 'Builder' }]}
+					/>
+					{/* <DropdownMenu
+						className="nav-link"
+						toggle={{ content: 'Yu-Gi-Oh!' }}
+						items={[
+							{ href: '/build/yugioh', content: 'Builder' },
+						]}
+					/> */}
+					<DropdownMenu
+						className="nav-link"
+						toggle={{ content: 'Dragon Quest' }}
+						items={[
+							{
+								href: 'https://dragon-quest-synth.vercel.app/build',
+								target: '_blank',
+								content: 'Builder',
+							},
+							{
+								href: 'https://dragon-quest-synth.vercel.app',
+								target: '_blank',
+								content: 'Synthesis',
+							},
+						]}
+					/>
+				</Nav>
 				<Link
 					href={DISCORD_URL}
 					target="_blank"

@@ -28,7 +28,10 @@ export const getServerSideProps: GetStaticProps = async ({ query }: any) => {
 		let line = query?.line;
 		if (line) line = JSON.parse(line as string) as Line;
 
-		const props: ScreenShotProps = { zoom: 100 };
+		const props: ScreenShotProps = {
+			zoom: 100,
+			context: { key: 'pokemon', name: 'Pokémon' },
+		};
 		if (line) props.line = line;
 		return { props };
 	} catch (e) {

@@ -85,7 +85,8 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 					className="btn btn-primary"
 					href={`/build/` + encodeURIComponent(JSON.stringify(line))}
 				>
-					<Icon name="pen-fill" /> Edit in builder
+					<Icon name="pencil-fill" className="d-inline-block me-1" /> Edit in
+					builder
 				</a>
 				<ZoomBar handleZoom={setZoom} />
 				<ColorLegend />
