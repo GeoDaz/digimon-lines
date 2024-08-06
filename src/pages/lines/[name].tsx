@@ -21,7 +21,6 @@ import transformLine from '@/functions/transformer/line';
 import { Line } from '@/types/Line';
 import { LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
-import Link from 'next/link';
 
 const NAME = 'name';
 interface StaticProps {
