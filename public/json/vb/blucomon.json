@@ -13,7 +13,7 @@
 			null,
 			null,
 			null,
-			{ "name": "mojyamon", "from": [1, -1], "color": "ice" },
+			{ "name": "hyogamon", "from": [1, -1], "color": "ice" },
 			{ "name": "panjyamon", "from": null },
 			{ "name": "dinotigermon", "from": [0, -2], "color": "ice" }
 		],
@@ -29,25 +29,18 @@
 			null,
 			null,
 			null,
-			{ "name": "moosemon", "from": [-1, -1], "color": "ice" },
+			{ "name": "frigimon", "from": [-1, -1], "color": "ice" },
+			{ "name": "polarbearmon", "from": null },
+			{ "name": "skadimon", "from": [0, -2], "color": "ice" }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "moosemon", "from": [-2, -1], "color": "ice" },
 			{ "name": "blizzarmon", "from": null },
 			{ "name": "ancientmegatheriumon", "from": [0, -2], "color": "ice" }
 		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "baluchimon", "from": [-2, -1] },
-			{ "name": "mammon", "from": [0, -1] },
-			{ "name": "skullmammon", "from": [0, -1], "color": "dark" }
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{ "name": "skullbaluchimon", "from": [-1, -1], "color": "dark" },
-			null
-		]
+		[null, null, null, null, { "name": "mammon", "from": [-1, -1], "color": "ice" }, null]
 	]
 }

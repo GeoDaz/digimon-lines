@@ -1,8 +1,8 @@
 {
 	"columns": [
 		[
-            null,
-            null,
+			null,
+			null,
 			{
 				"name": "falcomon",
 				"from": [2, -1]
@@ -34,7 +34,10 @@
 			{
 				"name": "ornismon",
 				"color": ["dark", "dark"],
-				"from": [[0, -1], [-1, -1]]
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
 			}
 		],
 		[
@@ -76,7 +79,11 @@
 			},
 			{
 				"name": "xiangpengmon",
-				"color": "marine"
+				"color": "marine",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
 			}
 		]
 	],
@@ -110,9 +117,9 @@
 			"name": "swimmon",
 			"from": "huankunmon"
 		},
-        {
-            "name": "seadramon",
-            "for": "aequcedramon"
-        }
+		{
+			"name": "seadramon",
+			"for": "aequcedramon"
+		}
 	]
 }

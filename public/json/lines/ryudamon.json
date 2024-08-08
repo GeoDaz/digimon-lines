@@ -1,70 +1,80 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "zanmetsumon",
-                "color": "fusion",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "fufumon"
-            },
-            {
-                "name": "kyokyomon"
-            },
-            {
-                "name": "ryudamon"
-            },
-            {
-                "name": "ginryumon"
-            },
-            {
-                "name": "hisyaryumon"
-            },
-            {
-                "name": "ouryumon"
-            },
-            {
-                "name": "alphamonouryuken",
-                "color": "fusion"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "majiramon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "dorumon",
-            "for": "alphamon"
-        },
-        "kotemon",
-        {
-            "name": "veemon",
-            "for": "azulongmon"
-        },
-        {
-            "name": "gammamon",
-            "from": "zanmetsumon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "zanmetsumon",
+				"color": "fusion",
+				"from": [1, -1]
+			},
+			{
+				"name": "samudramon",
+				"from": [[0, -1]],
+				"collapsable": true,
+				"color": ["x"]
+			},
+			{
+				"name": "samudramonbm",
+				"from": [[0, -1]],
+				"collapsable": true,
+				"color": ["mode"]
+			}
+		],
+		[
+			{
+				"name": "fufumon"
+			},
+			{
+				"name": "kyokyomon"
+			},
+			{
+				"name": "ryudamon"
+			},
+			{
+				"name": "ginryumon"
+			},
+			{
+				"name": "hisyaryumon"
+			},
+			{
+				"name": "ouryumon"
+			},
+			{
+				"name": "alphamonouryuken",
+				"color": "fusion"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "majiramon",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "dorumon",
+			"for": "alphamon"
+		},
+		"kotemon",
+		{
+			"name": "gammamon",
+			"from": "zanmetsumon"
+		},
+		{
+			"name": "greymon",
+			"from": "samudramon"
+		},
+		{
+			"name": "veemon",
+			"for": "azulongmon"
+		}
+	]
 }

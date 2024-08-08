@@ -1,37 +1,72 @@
 {
-    "columns": [
-        [
-            {
-                "name": "snowbotamon"
-            },
-            {
-                "name": "hiyarimon",
-                "color": "ice"
-            },
-            {
-                "name": "blucomon",
-                "color": "ice"
-            },
-            {
-                "name": "paledramon",
-                "color": "ice"
-            },
-            {
-                "name": "cryspaledramon",
-                "color": "ice"
-            },
-            {
-                "name": "hexeblaumon",
-                "color": "ice"
-            }
-        ]
-    ],
-    "related": [
-        "vorvomon",
-        "jazamon",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "frosvelgrmon",
+				"collapsable": true,
+				"color": ["ice"],
+				"from": [[1, -1]]
+			}
+		],
+		[
+			{
+				"name": "snowbotamon"
+			},
+			{
+				"name": "hiyarimon",
+				"color": "ice"
+			},
+			{
+				"name": "blucomon",
+				"color": "ice"
+			},
+			{
+				"name": "paledramon",
+				"color": "ice"
+			},
+			{
+				"name": "cryspaledramon",
+				"color": "ice"
+			},
+			{
+				"name": "hexeblaumon",
+				"color": "ice"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "frigimon",
+				"color": ["ice"],
+				"from": [[-1, -1]],
+				"skins": ["mudfrigimon"],
+				"collapsable": true
+			},
+			{ "name": "polarbearmon", "color": ["ice"], "collapsable": false },
+			{
+				"name": "skadimon",
+				"collapsable": true,
+				"color": ["ice"]
+			}
+		]
+	],
+	"related": [
+		"vorvomon",
+		"jazamon",
 		{
 			"name": "bearmon",
-			"for": "frigimon"
+			"from": "frigimon"
+		},
+		{
+			"name": "penmon",
+			"for": "frosvelgrmon"
 		},
 		{
 			"name": "ogremon",
@@ -41,5 +76,5 @@
 			"name": "leomon",
 			"for": "panjyamon"
 		}
-    ]
+	]
 }
