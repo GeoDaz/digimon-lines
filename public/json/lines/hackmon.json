@@ -1,51 +1,48 @@
 {
-    "columns": [
-        [
-            {
-                "name": "botamon"
-            },
-            {
-                "name": "koromon"
-            },
-            {
-                "name": "hackmon"
-            },
-            {
-                "name": "baohackmon"
-            },
-            {
-                "name": "saviorhackmon"
-            },
-            {
-                "name": "jesmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "jesmonx",
-                "color": "x",
-                "from": [
-                    -1,
-                    0
-                ]
-            },
-            {
-                "name": "jesmongx",
-                "color": "fusion"
-            }
-        ]
-    ],
-    "related": [
-        "zubamon",
-        {
-            "name": "bearmon",
-            "for": "gankoomon"
-        },
-        "kotemon"
-    ]
+	"columns": [
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "koromon"
+			},
+			{
+				"name": "hackmon"
+			},
+			{
+				"name": "baohackmon"
+			},
+			{
+				"name": "saviorhackmon"
+			},
+			{
+				"name": "jesmon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "jesmonx",
+				"color": "x",
+				"from": [-1, 0]
+			},
+			{
+				"name": "jesmongx",
+				"color": "fusion"
+			}
+		]
+	],
+	"related": [
+		"zubamon",
+		{
+			"name": "monmon",
+			"for": "gankoomon"
+		},
+		"kotemon"
+	]
 }

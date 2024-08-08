@@ -3,9 +3,9 @@
 		[
 			null,
 			null,
-			null,
 			{ "name": "panbachimon", "from": [[2, -1]], "collapsable": true },
-			{ "name": "pandamon", "collapsable": false },
+			null,
+			{ "name": "pandamon", "from": [[0, -2]], "collapsable": false },
 			{ "name": "justimon", "collapsable": false }
 		],
 		[
@@ -145,6 +145,7 @@
 		{ "name": "leomon", "for": "grapleomon" },
 		{ "name": "garurumon", "for": "marsmon" },
 		{ "name": "hookmon", "for": "olegmon" },
+		{ "name": "wormmon", "for": "fanbeemon" },
 		{ "name": "monmon", "for": "gankoomon" },
 		{ "name": "monodramon", "from": "justimon" },
 		{ "name": "starmon", "from": "justimon" }
