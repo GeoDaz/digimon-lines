@@ -100,6 +100,10 @@ body ::-webkit-scrollbar-track {
   border-radius: 5px;
 }
 
+header {
+  overflow: auto hidden;
+}
+
 a:not(.btn) {
   color: var(--bs-primary);
   text-decoration: none;
