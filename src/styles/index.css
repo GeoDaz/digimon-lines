@@ -101,7 +101,7 @@ body ::-webkit-scrollbar-track {
 }
 
 header {
-  overflow: auto hidden;
+  overflow: auto visible;
 }
 
 a:not(.btn) {
