@@ -12,7 +12,7 @@ const Header: React.FC = () => (
 			<Container fluid className="justify-content-start">
 				<Navbar.Brand as={Link} href="/">
 					<Image src="/images/icon.png" alt="logo" height="26" width="32" />{' '}
-					Digimon Lines
+					<span className='d-none d-sm-inline-block'>Digimon Lines</span>
 				</Navbar.Brand>
 				<Nav className="flex-grow-1">
 					<DropdownMenu
@@ -38,7 +38,7 @@ const Header: React.FC = () => (
 						]}
 					/> */}
 					<DropdownMenu
-						className="nav-link"
+						className="nav-link d-none d-sm-block"
 						toggle={{ content: 'Dragon Quest' }}
 						items={[
 							{
