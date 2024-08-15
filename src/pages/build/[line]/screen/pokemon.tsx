@@ -1,7 +1,7 @@
 import LineGrid from '@/components/Line/LineGrid';
 import { defaultLicenceContext, LicenceProps, LicenseContext } from '@/context/license';
 import Line from '@/types/Line';
-import { GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 
 export interface ScreenShotProps {
 	line?: Line;
@@ -23,7 +23,7 @@ export const PageScreenShot: React.FC<ScreenShotProps> = props => {
 	);
 };
 
-export const getServerSideProps: GetStaticProps = async ({ query }: any) => {
+export const getServerSideProps: GetServerSideProps = async ({ query }: any) => {
 	try {
 		let line = query?.line;
 		if (line) line = JSON.parse(line as string) as Line;

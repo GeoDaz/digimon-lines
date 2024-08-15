@@ -1,11 +1,11 @@
 import { getDirPaths } from '@/functions/file';
 import { BuildProps, PageBuild } from '@/pages/build';
 import Line from '@/types/Line';
-import { GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 
-const Page = (props: BuildProps) => <PageBuild {...props} />;
+const PageBis = (props: BuildProps) => <PageBuild {...props} />;
 
-export const getServerSideProps: GetStaticProps = async ({ query }: any) => {
+export const getServerSideProps: GetServerSideProps = async ({ query }: any) => {
 	try {
 		let line = query?.line;
 		if (line) line = JSON.parse(line as string) as Line;
@@ -20,4 +20,4 @@ export const getServerSideProps: GetStaticProps = async ({ query }: any) => {
 	}
 };
 
-export default Page;
+export default PageBis;
