@@ -37,7 +37,7 @@ const SearchBar: React.FC<Props> = ({
 		e.preventDefault();
 		e.stopPropagation();
 		if (e.key == 'Enter') {
-			handleSubmit(selection !== null ? previews[selection].value : undefined);
+			handleSubmit((selection !== null && previews[selection]?.value) || undefined);
 		} else if (previews.length > 0) {
 			if (e.key == 'ArrowDown') {
 				setSelection(

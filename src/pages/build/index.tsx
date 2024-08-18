@@ -35,7 +35,7 @@ export const PageBuild = (props: BuildProps) => {
 
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
 	const { removeItemFromStorage } = useLocalStorage({
-		key: props?.context?.key + '-line',
+		key: (props?.context?.key || 'digimon') + '-line',
 		item: line,
 		setItem: setLine,
 		defaultItem: defaultLine,

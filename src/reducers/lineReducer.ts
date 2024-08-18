@@ -12,7 +12,7 @@ export const REMOVE_LINE_ROW = 'REMOVE_LINE_ROW';
 
 export const defaultColumn = [null, null, null, null, null, null, null, null];
 export const defaultLine: Line = {
-	size: 8,
+	size: 8, // yLength ; xLength = line.columns.length
 	columns: [
 		defaultColumn,
 		defaultColumn,
@@ -41,10 +41,10 @@ export const setLineColumn = (i: number, value: any) => ({
 	i,
 	value,
 });
-export const addLineColumn = (i: number | undefined) => ({ type: ADD_LINE_COLUMN, i });
-export const removeLineColumn = (i: number) => ({ type: REMOVE_LINE_COLUMN, i });
-export const addLineRow = (i: number | undefined) => ({ type: ADD_LINE_ROW, i });
-export const removeLineRow = (i: number) => ({ type: REMOVE_LINE_ROW, i });
+export const addLineColumn = (x: number | undefined) => ({ type: ADD_LINE_COLUMN, i: x });
+export const removeLineColumn = (x: number) => ({ type: REMOVE_LINE_COLUMN, i: x });
+export const addLineRow = (y: number | undefined) => ({ type: ADD_LINE_ROW, i: y });
+export const removeLineRow = (y: number) => ({ type: REMOVE_LINE_ROW, i: y });
 
 const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
 	let columns;

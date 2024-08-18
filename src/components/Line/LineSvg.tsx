@@ -12,14 +12,16 @@ const defaultFrom = [0, -1];
 interface Props {
 	from?: number[] | null;
 	color?: string;
-	size?: number;
+	xSize?: number;
+	ySize?: number;
 	baseWidth?: number;
 	baseHeight?: number;
 }
 const LineSvg: React.FC<Props> = ({
 	from = defaultFrom,
 	color,
-	size = 0,
+	xSize = 0,
+	ySize = 0,
 	baseWidth = pointWidth,
 	baseHeight = pointHeight,
 }) => {
@@ -30,37 +32,52 @@ const LineSvg: React.FC<Props> = ({
 	const halfWidth: number = baseWidth / 2;
 	let x: number = 0;
 	let y: number = 0;
-	const xGap = Math.abs(from[0]);
-	const yGap = Math.abs(from[1]);
-	x = xUnit * xGap; // 150 + 12 * 2
-	if (size > 1 && xGap > 1) {
+	const xGap = Math.abs(from[0]); // x distance to target
+	const yGap = Math.abs(from[1]); // y distance to target 	>>> -0.5
+	x = xUnit * xGap; // used for SVG width  => doesn't incur xDest changes
+	y = yUnit * yGap; // used for SVG height => doesn't incur yDest changes
+	if (xSize > 1 && xGap > 1) {
 		x -= pointWidth / 2;
 	}
-	y = yUnit * yGap; // 150 + 15 * 2
-	let yOrigin: number = halfHeight; // halfHeight;
+	// if (ySize > 1 && yGap > 1) {
+	// 	y -= pointHeight / 2;
+	// }
 	let xOrigin: number = halfWidth;
+	let yOrigin: number = halfHeight;
 	let xDest = x;
 	let yDest = y;
 	const strokeWidth = 12;
 	const svgStyle: React.CSSProperties = {};
-	if (xGap > 1 && yGap > 0) {
-		// prettier-ignore
-		xDest += (size ? size - 1 : 0)
-		* (pointWidth / 2 + strokeWidth);
+	if ((xGap > 1 && yGap > 0 && from[1] != -0.5) || (xGap > 0 && yGap > 1)) {
+		xDest += (xSize ? xSize - 1 : 0) * (pointWidth / 2 + strokeWidth);
+		yDest += (ySize ? ySize - 1 : 0) * (pointHeight / 2 + strokeWidth);
 
 		xOrigin = pointWidth - strokeWidth / 2;
 		yOrigin = pointHeight - strokeWidth / 2;
 		if (from[0] < 0) {
 			svgStyle.zIndex = Math.floor(from[0]);
-		} else if (size > 1) {
-			xOrigin += pointWidth / 2;
+		} else {
+			if (xSize > 1) {
+				xOrigin += pointWidth / 2;
+			}
+			if (ySize > 1) {
+				yOrigin += pointHeight / 2;
+			}
 		}
 		xDest -= pointWidth - strokeWidth;
 		yDest -= pointHeight - strokeWidth;
 	}
 	if (xGap == 0.5 && yGap > 0) {
-		yOrigin = pointHeight - strokeWidth / 2;
-		yDest -= pointHeight - strokeWidth;
+		if (yGap <= 1.5 && ySize <= 1) {
+			yOrigin = pointHeight - strokeWidth / 2;
+			yDest -= pointHeight - strokeWidth;
+		}
+	}
+	if (yGap == 0.5) {
+		if (xGap <= 1.5 && xSize <= 1) {
+			xOrigin = pointHeight - strokeWidth / 2;
+			xDest -= pointHeight - strokeWidth;
+		}
 	}
 
 	return (

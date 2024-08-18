@@ -100,12 +100,18 @@ export const areCollapsablePoints = (line: Line): Line => {
 		col.forEach((point, j) => {
 			if (!point) return;
 			const nextCol = line.columns[i + 1];
-			const nextPoint = nextCol && nextCol[j];
-			point.collapsable = !!(
+			const nextXPoint = nextCol && nextCol[j];
+			point.xCollapsable = !!(
 				point &&
-				point.size != 2 &&
+				point.xSize != 2 &&
 				nextCol &&
-				(!nextPoint || nextPoint.size == 2)
+				(!nextXPoint || nextXPoint.xSize == 2)
+			);
+			const nextYPoint = col[j + 1];
+			point.yCollapsable = !!(
+				point &&
+				point.ySize != 2 &&
+				(!nextYPoint || nextYPoint.ySize == 2)
 			);
 		});
 	});

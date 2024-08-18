@@ -6,7 +6,8 @@ export interface GridContextInterface {
 	handleEdit?: CallableFunction;
 	handleDraw?: CallableFunction;
 	handleTarget?: CallableFunction;
-	handleCollapse?: CallableFunction;
+	handleXCollapse?: CallableFunction;
+	handleYCollapse?: CallableFunction;
 }
 
 export const GridContext = createContext<GridContextInterface>({});

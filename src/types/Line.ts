@@ -10,13 +10,21 @@ export type LineColumn = Array<LinePoint | null>;
 
 export interface LinePoint {
 	name: string;
-	size?: number;
+	size?: number /** @deprected */;
+	xSize?: number;
+	ySize?: number;
 	color?: LineColor;
 	from?: LineFrom;
 	skins?: string[];
 	image?: string;
-	collapsable?: boolean;
+	collapsable?: boolean /** @deprected */;
+	xCollapsable?: boolean;
+	yCollapsable?: boolean;
 }
+
+export type Axis = 'x' | 'y';
+export type SizeAttr = 'xSize' | 'ySize';
+export type CollapseAttr = 'xCollapsable' | 'yCollapsable';
 
 export type LineFrom = Array<number[]> | number[] | null;
 

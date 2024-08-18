@@ -1,6 +1,14 @@
 import { Fragment, memo, useContext, useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
-import { Line, LineColumn, LineFrom, LinePoint } from '@/types/Line';
+import {
+	Axis,
+	CollapseAttr,
+	Line,
+	LineColumn,
+	LineFrom,
+	LinePoint,
+	SizeAttr,
+} from '@/types/Line';
 import { makeClassName } from '@/functions';
 import { addLineColumn, removeLineColumn, setLinePoint } from '@/reducers/lineReducer';
 import { GridContext } from '@/context/grid';
@@ -27,18 +35,30 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 	const handleTarget = (target: number[]) => {
 		if (!handleUpdate || !drawing) return;
 		let source = drawing;
-		if (target[1] > drawing[1]) {
+		let sourcePoint: LinePoint | null = line.columns[source[0]][source[1]];
+		let targetPoint: LinePoint | null = line.columns[target[0]][target[1]];
+		// If the target is below the source, swap them
+		if (
+			target[1] > source[1] ||
+			(target[1] == source[1] &&
+				targetPoint?.ySize &&
+				targetPoint.ySize > (sourcePoint?.ySize || 0))
+		) {
 			source = target;
 			target = drawing;
+			sourcePoint = line.columns[source[0]][source[1]];
+			targetPoint = line.columns[target[0]][target[1]];
 		}
-		const sourcePoint: LinePoint | null = line.columns[source[0]][source[1]];
-		const targetPoint: LinePoint | null = line.columns[target[0]][target[1]];
 		if (!sourcePoint || !targetPoint) return;
-		const double = sourcePoint.size == 2;
-		const doubleTarget = targetPoint.size == 2;
 		const from: LineFrom = [
-			target[0] - source[0] - (double ? 0.5 : 0) + (doubleTarget ? 0.5 : 0),
-			target[1] - source[1],
+			target[0] -
+				source[0] -
+				(sourcePoint.xSize == 2 ? 0.5 : 0) +
+				(targetPoint.xSize == 2 ? 0.5 : 0),
+			target[1] -
+				source[1] -
+				(sourcePoint.ySize == 2 ? 0.5 : 0) +
+				(targetPoint.ySize == 2 ? 0.5 : 0),
 		];
 		const nextPoint: LinePoint = { ...sourcePoint };
 		if (!nextPoint.from) nextPoint.from = [];
@@ -52,30 +72,41 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 		if (drawing) setDrawing(undefined);
 	};
 
-	const handleCollapse = (coord: number[]) => {
+	const handleCollapse = (axis: Axis, coord: number[]) => {
 		const point: LinePoint | null = line.columns[coord[0]][coord[1]];
 		if (!handleUpdate || !point) return;
 		let from: LineFrom | undefined = point.from;
-		const uncollapse = point.size == 2;
-		if (!point.collapsable && !uncollapse) return;
+		const sizeAttr = (axis + 'Size') as SizeAttr;
+		const collapsableAttr = (axis + 'Collapsable') as CollapseAttr;
+		const uncollapse = point[sizeAttr] == 2;
+		if (!point[collapsableAttr] && !uncollapse) return;
 		if (from) {
+			const axisKey: number = axis == 'x' ? 0 : 1;
 			if (Array.isArray(from[0])) {
 				from = (from as Array<number[]>).map(subFrom => {
 					subFrom = subFrom.slice();
-					subFrom[0] += 0.5 * (uncollapse ? 1 : -1);
+					subFrom[axisKey] += 0.5 * (uncollapse ? 1 : -1);
 					return subFrom;
 				}) as LineFrom;
 			} else {
 				from = (from as number[]).slice();
-				from[0] += 0.5 * (uncollapse ? 1 : -1);
+				from[axisKey] += 0.5 * (uncollapse ? 1 : -1);
 			}
 		}
 		const nextPoint = {
 			...point,
 			from,
-			size: uncollapse ? undefined : 2,
+			[sizeAttr]: uncollapse ? undefined : 2,
 		} as LinePoint;
 		handleUpdate(setLinePoint, coord, nextPoint);
+	};
+
+	const handleXCollapse = (coord: number[]) => {
+		handleCollapse('x', coord);
+	};
+
+	const handleYCollapse = (coord: number[]) => {
+		handleCollapse('y', coord);
 	};
 
 	return (
@@ -86,7 +117,8 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 				handleEdit: handleUpdate ? handleEdit : undefined,
 				handleDraw: setDrawing,
 				handleTarget,
-				handleCollapse,
+				handleXCollapse,
+				handleYCollapse,
 			}}
 		>
 			{!!handleUpdate && (
@@ -161,11 +193,7 @@ const LineRow: React.FC<RowProps> = ({ column, x, y }) => {
 				if (Array.isArray(point)) {
 					return (
 						<Fragment key={i}>
-							<LineRow
-								x={x}
-								// subX={i}
-								column={point}
-							/>
+							<LineRow x={x} column={point} />
 						</Fragment>
 					);
 				}
