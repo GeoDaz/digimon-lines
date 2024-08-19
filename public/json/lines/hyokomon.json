@@ -1,43 +1,61 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "chronomondm",
-                "color": "dark",
-                "from": [1,0]
-            }
-        ],
-        [
-            {
-                "name": "pururumon"
-            },
-            {
-                "name": "chicchimon"
-            },
-            {
-                "name": "hyokomon"
-            },
-            {
-                "name": "buraimon"
-            },
-            {
-                "name": "butenmon"
-            },
-            {
-                "name": "chronomon",
-                "color": "light"
-            }
-        ]
-    ],
-    "related": [
-        {"name":"hawkmon", "from": "butenmon"},
-        {"name":"biyomon", "for": "karatenmon"},
-        {"name":"falcomon2", "for": "ravemon"},
-        "kotemon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "chronomondm",
+				"color": "dark",
+				"from": [1, 0]
+			}
+		],
+		[
+			{
+				"name": "yolkmon"
+			},
+			{
+				"name": "chicchimon"
+			},
+			{
+				"name": "hyokomon"
+			},
+			{
+				"name": "buraimon"
+			},
+			{
+				"name": "butenmon"
+			},
+			{
+				"name": "chronomon",
+				"color": "light"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "toucanmon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "digitamamon",
+				"color": "dark"
+			},
+			{
+				"name": "devitamamon",
+				"color": "dark"
+			}
+		]
+	],
+	"related": [
+		{ "name": "hawkmon", "from": "butenmon" },
+		{ "name": "biyomon", "for": "karatenmon" },
+		{ "name": "falcomon2", "for": "ravemon" },
+		{ "name": "penmon", "from": "toucanmon" },
+		"kotemon"
+	]
 }
