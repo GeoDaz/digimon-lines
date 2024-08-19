@@ -52,9 +52,9 @@
 			null
 		],
 		[
-			{ "name": "pupumon", "from": null, "size": 2 },
-			{ "name": "puroromon", "size": 2 },
-			{ "name": "fanbeemon", "size": 2 },
+			{ "name": "pupumon", "from": null, "xSize": 2 },
+			{ "name": "puroromon", "xSize": 2 },
+			{ "name": "fanbeemon", "xSize": 2 },
 			{ "name": "forgebeemon", "from": [[0.5, -1]] },
 			{
 				"name": "cannonbeemon",
@@ -127,10 +127,10 @@
 			null
 		],
 		[
-			{ "name": "leafmon", "from": null, "size": 2 },
-			{ "name": "minomon", "size": 2 },
-			{ "name": "wormmon", "size": 2 },
-			{ "name": "stingmon", "size": 2 },
+			{ "name": "leafmon", "from": null, "xSize": 2 },
+			{ "name": "minomon", "xSize": 2 },
+			{ "name": "wormmon", "xSize": 2 },
+			{ "name": "stingmon", "xSize": 2 },
 			{
 				"name": "jewelbeemon",
 				"color": ["default"],

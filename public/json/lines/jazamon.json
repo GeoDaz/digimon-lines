@@ -76,11 +76,11 @@
 				]
 			},
 			{
-				"name": "cargodramon",
+				"name": "gigadramon",
 				"color": "machine"
 			},
 			{
-				"name": "brigadramon",
+				"name": "darkdramon",
 				"color": "machine"
 			}
 		],
@@ -95,15 +95,6 @@
 			{
 				"name": "pteranomonx",
 				"color": "x"
-			},
-			{
-				"name": "gigadramon",
-				"from": [-1, 0],
-				"color": "machine"
-			},
-			{
-				"name": "darkdramon",
-				"color": "machine"
 			}
 		]
 	],
@@ -129,7 +120,7 @@
 		},
 		{
 			"name": "commandramon",
-			"from": "cargodramon"
+			"for": "cargodramon"
 		},
 		{
 			"name": "hagurumon",

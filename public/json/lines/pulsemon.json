@@ -20,12 +20,12 @@
 				"color": "electric",
 				"from": null,
 				"collapsable": false,
-				"size": 2
+				"xSize": 2
 			},
-			{ "name": "bibimon", "color": "electric", "collapsable": false, "size": 2 },
-			{ "name": "pulsemon", "color": "electric", "collapsable": false, "size": 2 },
-			{ "name": "bulkmon", "color": "electric", "collapsable": false, "size": 2 },
-			{ "name": "boutmon", "color": "electric", "collapsable": false, "size": 2 },
+			{ "name": "bibimon", "color": "electric", "collapsable": false, "xSize": 2 },
+			{ "name": "pulsemon", "color": "electric", "collapsable": false, "xSize": 2 },
+			{ "name": "bulkmon", "color": "electric", "collapsable": false, "xSize": 2 },
+			{ "name": "boutmon", "color": "electric", "collapsable": false, "xSize": 2 },
 			{
 				"name": "shroudmon",
 				"color": ["dark"],
@@ -89,7 +89,7 @@
 				"color": ["electric"],
 				"from": [[-3, -1]],
 				"collapsable": false,
-				"size": 2
+				"xSize": 2
 			},
 			{ "name": "tempomon", "from": [[0.5, -1]], "collapsable": false },
 			null,
@@ -113,7 +113,7 @@
 					[0.5, -1]
 				],
 				"collapsable": false,
-				"size": 2,
+				"xSize": 2,
 				"color": ["light", "light"]
 			},
 			null

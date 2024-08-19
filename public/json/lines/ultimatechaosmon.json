@@ -21,7 +21,7 @@
 			},
 			{
 				"name": "chaosmon",
-				"size": 2,
+				"xSize": 2,
 				"color": ["fusion", "fusion"],
 				"from": [
 					[-0.5, -1],
@@ -51,7 +51,7 @@
 			{
 				"name": "chaosmonvm",
 				"color": ["fusion", "fusion"],
-				"size": 2,
+				"xSize": 2,
 				"from": [
 					[-0.5, -1],
 					[0.5, -1]
@@ -60,7 +60,7 @@
 			{
 				"name": "ultimatechaosmon",
 				"color": "fusion",
-				"size": 2,
+				"xSize": 2,
 				"from": [
 					[-1.25, -1],
 					[0, -1],

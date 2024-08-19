@@ -12,14 +12,6 @@
 				"name": "blimpmon",
 				"color": "machine",
 				"from": [1, 1]
-			},
-			{
-				"name": "cargodramon",
-				"color": "machine"
-			},
-			{
-				"name": "brigadramon",
-				"color": "machine"
 			}
 		],
 		[
@@ -136,7 +128,7 @@
 		},
 		{
 			"name": "commandramon",
-			"from": "cargodramon"
+			"for": "cargodramon"
 		},
 		{
 			"name": "jazamon",

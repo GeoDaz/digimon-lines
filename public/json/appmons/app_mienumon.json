@@ -12,7 +12,7 @@
 					[0.5, -1]
 				],
 				"collapsable": false,
-				"size": 2
+				"xSize": 2
 			},
 			{
 				"name": "app_biomon",
@@ -21,7 +21,7 @@
 					[1.5, -1]
 				],
 				"collapsable": false,
-				"size": 2,
+				"xSize": 2,
 				"color": [null, "dark"]
 			},
 			null,
@@ -68,7 +68,7 @@
 				],
 				"collapsable": false,
 				"color": ["dark", "fusion"],
-				"size": 2
+				"xSize": 2
 			},
 			{
 				"name": "app_warudamon",
@@ -78,14 +78,14 @@
 					[1.5, -1],
 					[4.5, -1]
 				],
-				"size": 2,
+				"xSize": 2,
 				"color": ["dark", "dark", "dark"]
 			},
 			{
 				"name": "app_deusmon",
 				"from": [[0, -1]],
 				"collapsable": false,
-				"size": 2,
+				"xSize": 2,
 				"color": ["electric"]
 			},
 			null,

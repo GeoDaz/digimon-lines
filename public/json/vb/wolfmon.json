@@ -20,12 +20,12 @@
 			}
 		],
 		[
-			{ "name": "snowbotamon", "from": null, "collapsable": false, "size": 2 },
+			{ "name": "snowbotamon", "from": null, "collapsable": false, "xSize": 2 },
 			{
 				"name": "moonmon",
 				"from": [[0, -1]],
 				"collapsable": false,
-				"size": 2,
+				"xSize": 2,
 				"color": ["light"]
 			},
 			{

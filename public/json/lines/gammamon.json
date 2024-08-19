@@ -67,9 +67,9 @@
 			null
 		],
 		[
-			{ "name": "curimon", "size": 2, "from": null, "collapsable": false },
-			{ "name": "gurimon", "size": 2, "collapsable": false },
-			{ "name": "gammamon", "size": 2, "collapsable": false },
+			{ "name": "curimon", "xSize": 2, "from": null, "collapsable": false },
+			{ "name": "gurimon", "xSize": 2, "collapsable": false },
+			{ "name": "gammamon", "xSize": 2, "collapsable": false },
 			{
 				"name": "betelgammamon",
 				"from": [[0.5, -1]],
@@ -80,7 +80,7 @@
 			{ "name": "siriusmon", "from": [0, -1], "collapsable": false },
 			{
 				"name": "proximamon",
-				"size": 2,
+				"xSize": 2,
 				"color": "fusion",
 				"from": [
 					[-0.5, -1],

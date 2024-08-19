@@ -53,15 +53,15 @@
         [
             {
                 "name": "botamon",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "koromon",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "agumon",
-                "size": 2,
+                "xSize": 2,
                 "skins": [
                     "agumon2",
                     "bushiagumon",
@@ -70,16 +70,16 @@
             },
             {
                 "name": "greymon",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "metalgreymon",
                 "color": "machine",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "wargreymon",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "omegamon",
@@ -164,7 +164,7 @@
             null,
             {
                 "name": "agumon2",
-                "size": 2,
+                "xSize": 2,
                 "from": [
                     -3,
                     -1
@@ -175,17 +175,17 @@
             },
             {
                 "name": "geogreymon",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "rizegreymon",
                 "color": "machine",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "shinegreymon",
                 "color": "light",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "shinegreymonbm",
@@ -375,22 +375,22 @@
         [
             {
                 "name": "mokumon",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "sunmon",
-                "size": 2,
+                "xSize": 2,
                 "color": "fire"
             },
             {
                 "name": "flamon",
                 "color": "fire",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "agunimon",
                 "color": "fire",
-                "size": 2
+                "xSize": 2
             },
             {
                 "name": "aldamon",
