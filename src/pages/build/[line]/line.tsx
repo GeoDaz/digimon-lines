@@ -1,9 +1,7 @@
 import { getDirPaths } from '@/functions/file';
-import { BuildProps, PageBuild } from '@/pages/build';
+import { PageBuild, BuildProps } from '@/pages/build';
 import Line from '@/types/Line';
 import { GetServerSideProps } from 'next';
-
-const PageBis = (props: BuildProps) => <PageBuild {...props} />;
 
 export const getServerSideProps: GetServerSideProps = async ({ query }: any) => {
 	try {
@@ -20,4 +18,4 @@ export const getServerSideProps: GetServerSideProps = async ({ query }: any) => 
 	}
 };
 
-export default PageBis;
+export default PageBuild;

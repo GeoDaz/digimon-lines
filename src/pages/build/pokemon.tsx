@@ -1,6 +1,5 @@
 import { GetStaticProps } from 'next';
-import { BuildProps, PageBuild } from '.';
-const Page = (props: BuildProps) => <PageBuild {...props} />;
+import { PageBuild } from '.';
 
 export const getStaticProps: GetStaticProps = async () => {
 	try {
@@ -20,4 +19,4 @@ export const getStaticProps: GetStaticProps = async () => {
 	}
 };
 
-export default Page;
+export default PageBuild;

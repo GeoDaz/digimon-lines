@@ -29,14 +29,6 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 	const { name } = useQueryParam(NAME) || ssr;
 	const [group, setGroup] = useState<Group | undefined>(ssr.group);
 
-	const [load, loading] = useFetch((group: Group | undefined): void => setGroup(group));
-
-	useEffect(() => {
-		if (name != ssr.name) {
-			load(`${process.env.URL}/json/groups/${name}.json`);
-		}
-	}, [name]);
-
 	useEffect(() => {
 		if (group !== ssr.group) {
 			setGroup(ssr.group);
@@ -59,9 +51,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 			metadescription={`List of Digimon in the ${nameCap} group`}
 			metaimg={`groups/${name}.jpg`}
 		>
-			{loading ? (
-				<LineLoading />
-			) : group ? (
+			{group ? (
 				Array.isArray(group.main) ? (
 					<Row className="line-row">
 						{(group.main as GroupPoint[]).map((point, i) => (

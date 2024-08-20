@@ -27,8 +27,6 @@ export interface BuildProps {
 	noStorage?: boolean;
 }
 
-const Page = (props: BuildProps) => <PageBuild {...props} />;
-
 export const PageBuild = (props: BuildProps) => {
 	const [line, dispatchState] = useReducer(lineReducer, props.line || defaultLine);
 	const [zoom, setZoom] = useState<number>(100);
@@ -149,4 +147,4 @@ export const getStaticProps: GetStaticProps = async () => {
 	}
 };
 
-export default Page;
+export default PageBuild;

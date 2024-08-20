@@ -38,10 +38,6 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
 	const [zoom, setZoom] = useState(100);
 
-	const [load, loading] = useFetch((line: Line | undefined): void =>
-		setLine(transformLine(line))
-	);
-
 	useEffect(() => {
 		if (window.innerWidth < 576) {
 			setZoom(-2);
@@ -49,12 +45,6 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 			setZoom(-1);
 		}
 	}, []);
-
-	useEffect(() => {
-		if (name != ssr.name) {
-			load(`${process.env.URL}/json/lines/${name}.json`);
-		}
-	}, [name]);
 
 	useEffect(() => {
 		if (line !== ssr.line) {
@@ -82,7 +72,7 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 			<div className="line-filters">
 				<a
 					className="btn btn-primary"
-					href={`/build/` + encodeURIComponent(JSON.stringify(line))}
+					href={`/build/` + encodeURIComponent(JSON.stringify(line)) + '/line'}
 				>
 					<Icon name="pencil-fill" className="d-inline-block me-1" /> Edit in
 					builder
@@ -90,9 +80,7 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 				<ZoomBar handleZoom={setZoom} />
 				<ColorLegend />
 			</div>
-			{loading ? (
-				<LineLoading />
-			) : line ? (
+			{line ? (
 				<>
 					<LineGrid line={line} zoom={zoom} />
 					<CommentLink />

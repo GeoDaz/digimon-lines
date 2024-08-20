@@ -9,9 +9,7 @@ export interface ScreenShotProps {
 	context?: LicenceProps;
 }
 
-const Page = (props: ScreenShotProps) => <PageScreenShot {...props} />;
-
-export const PageScreenShot: React.FC<ScreenShotProps> = props => {
+const PageScreenShot: React.FC<ScreenShotProps> = props => {
 	if (!props.line) return <div>Line is missing</div>;
 	return (
 		<div className="page container-fluid">
@@ -37,4 +35,4 @@ export const getServerSideProps: GetServerSideProps = async ({ query }: any) => 
 	}
 };
 
-export default Page;
+export default PageScreenShot;

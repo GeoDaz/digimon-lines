@@ -1,1 +1,56 @@
-{"size":6,"columns":[[{"name":"bubbmon","from":null,"collapsable":false,"size":2},{"name":"mochimon","from":[[0,-1]],"collapsable":false,"size":2},{"name":"tentomon","from":[[0.5,-1]],"collapsable":false},{"name":"kuwagamon","from":[[0,-1]],"collapsable":false},null,null],[null,null,{"name":"kokabuterimon","from":[[-0.5,-1]],"collapsable":false},{"name":"kabuterimon","from":[[0,-1]],"collapsable":false},null,null],[{"name":"leafmon","from":null,"collapsable":false,"size":2},{"name":"minomon","from":[[0,-1]],"collapsable":false,"size":2},{"name":"dokunemon","from":[[0.5,-1]],"collapsable":false},{"name":"snimon","from":[[0,-1]],"collapsable":false},null,{"name":"ancientbeetlemon","from":[[-2,-2],[-1,-2],[0,-2],[1,-2],[2,-2]],"collapsable":true,"color":["fusion","fusion","fusion","fusion","fusion"]}],[null,null,{"name":"kunemon","from":[[-0.5,-1]],"collapsable":false},{"name":"flymon","from":[[0,-1]],"collapsable":false},null,null],[null,{"name":"kodokugumon","from":[[-1.5,-1]],"collapsable":false},{"name":"kodokugumon2","from":null,"collapsable":false},{"name":"dokugumon","from":[[0,-2]],"collapsable":false},null,null]]}
+{
+	"size": 6,
+	"columns": [
+		[
+			{ "name": "bubbmon", "from": null, "collapsable": false, "xSize": 2 },
+			{ "name": "mochimon", "from": [[0, -1]], "collapsable": false, "xSize": 2 },
+			{ "name": "tentomon", "from": [[0.5, -1]], "collapsable": false },
+			{ "name": "kuwagamon", "from": [[0, -1]], "collapsable": false },
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "kokabuterimon", "from": [[-0.5, -1]], "collapsable": false },
+			{ "name": "kabuterimon", "from": [[0, -1]], "collapsable": false },
+			null,
+			null
+		],
+		[
+			{ "name": "leafmon", "from": null, "collapsable": false, "xSize": 2 },
+			{ "name": "minomon", "from": [[0, -1]], "collapsable": false, "xSize": 2 },
+			{ "name": "dokunemon", "from": [[0.5, -1]], "collapsable": false },
+			{ "name": "snimon", "from": [[0, -1]], "collapsable": false },
+			null,
+			{
+				"name": "ancientbeetlemon",
+				"from": [
+					[-2, -2],
+					[-1, -2],
+					[0, -2],
+					[1, -2],
+					[2, -2]
+				],
+				"collapsable": true,
+				"color": ["fusion", "fusion", "fusion", "fusion", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			{ "name": "kunemon", "from": [[-0.5, -1]], "collapsable": false },
+			{ "name": "flymon", "from": [[0, -1]], "collapsable": false },
+			null,
+			null
+		],
+		[
+			null,
+			{ "name": "kodokugumon", "from": [[-1.5, -1]], "collapsable": false },
+			{ "name": "kodokugumon2", "from": null, "collapsable": false },
+			{ "name": "dokugumon", "from": [[0, -2]], "collapsable": false },
+			null,
+			null
+		]
+	]
+}
