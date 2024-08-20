@@ -11,7 +11,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }: any) => 
 		if (line) line = JSON.parse(line as string) as Line;
 		const searchList = getDirPaths('images/digimon');
 
-		const props: BuildProps = { searchList };
+		const props: BuildProps = { searchList, noStorage: true };
 		if (line) props.line = line;
 		return { props };
 	} catch (e) {

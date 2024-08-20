@@ -24,6 +24,7 @@ export interface BuildProps {
 	searchList?: string[];
 	line?: Line;
 	context?: LicenceProps;
+	noStorage?: boolean;
 }
 
 const Page = (props: BuildProps) => <PageBuild {...props} />;
@@ -39,7 +40,7 @@ export const PageBuild = (props: BuildProps) => {
 		item: line,
 		setItem: setLine,
 		defaultItem: defaultLine,
-		locked: !!props.line,
+		locked: props.noStorage,
 	});
 
 	const licenceContext = props.context || defaultLicenceContext;
