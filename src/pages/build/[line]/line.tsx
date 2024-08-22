@@ -3,6 +3,8 @@ import { PageBuild, BuildProps } from '@/pages/build';
 import Line from '@/types/Line';
 import { GetServerSideProps } from 'next';
 
+const Page = (props: BuildProps) => <PageBuild {...props} />;
+
 export const getServerSideProps: GetServerSideProps = async ({ query }: any) => {
 	try {
 		let line = query?.line;
@@ -18,4 +20,4 @@ export const getServerSideProps: GetServerSideProps = async ({ query }: any) => 
 	}
 };
 
-export default PageBuild;
+export default Page;
