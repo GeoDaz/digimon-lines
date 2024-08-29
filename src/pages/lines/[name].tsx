@@ -1,5 +1,6 @@
 // modules
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { Row, Col, Button } from 'react-bootstrap';
 import { redirect } from 'next/navigation';
 import { GetStaticProps } from 'next';
@@ -35,6 +36,7 @@ interface Props {
 }
 export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 	const { name } = useQueryParam(NAME) || ssr;
+	const router = useRouter();
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
 	const [zoom, setZoom] = useState(100);
 
@@ -51,6 +53,11 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 			setLine(ssr.line);
 		}
 	}, [ssr.line]);
+
+	const handleEdit = () => {
+		localStorage.setItem('digimon-line', JSON.stringify(line));
+		router.push(`/build/`);
+	};
 
 	if (!name) {
 		redirect('/');
@@ -70,13 +77,10 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 			metaimg={`digimon/${name}.jpg`}
 		>
 			<div className="line-filters">
-				<a
-					className="btn btn-primary"
-					href={`/build/` + encodeURIComponent(JSON.stringify(line)) + '/line'}
-				>
+				<button type="button" className="btn btn-primary" onClick={handleEdit}>
 					<Icon name="pencil-fill" className="d-inline-block me-1" /> Edit in
 					builder
-				</a>
+				</button>
 				<ZoomBar handleZoom={setZoom} />
 				<ColorLegend />
 			</div>
