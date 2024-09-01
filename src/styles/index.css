@@ -841,6 +841,7 @@ a.line-point {
 
 .line-grid .levels .level {
   height: 12rem;
+  max-width: 4.5rem;
   border-right: var(--dl-border);
   border-top: var(--dl-border);
   display: flex;
@@ -854,11 +855,21 @@ a.line-point {
 }
 
 .line-grid .levels .level span,
-.line-grid .levels .level .btn {
+.line-grid .levels .level .btn,
+.line-grid .levels .level input {
   position: relative;
   display: inline-block;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+
+.line-grid .levels .level input {
+  width: 8rem;
+  text-align: center;
+}
+
+.line-grid .levels .level .form-control:focus {
+  background-color: var(--dl-snd-dark);
 }
 
 .line-grid.editable .levels .level .btn.add {
@@ -871,6 +882,12 @@ a.line-point {
   transition: all 0.3s;
   padding: 0.25rem 0.5rem;
   z-index: 1;
+}
+
+.line-grid.editable .levels .level .btn.add.before {
+  top: 0;
+  bottom: auto;
+  transform: translate(-50%, -50%);
 }
 
 .line-grid.editable .levels .level .btn.btn-danger {
