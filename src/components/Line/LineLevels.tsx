@@ -2,30 +2,33 @@ import { useContext, useState, useEffect } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { levels } from '@/consts/levels';
 import { GridContext } from '@/context/grid';
-import { addLineRow, removeLineRow } from '@/reducers/lineReducer';
+import { addLineRow, defaultLine, removeLineRow } from '@/reducers/lineReducer';
 import Icon from '../Icon';
+import Line from '@/types/Line';
 
 const makeDefaultLevels = (size: number) => {
 	return Array.from({ length: size || 0 }).map((_, i) => levels[i] || '');
 };
 
 interface Props {
-	size?: number;
+	line: Line;
 }
-const LineLevels: React.FC<Props> = ({ size = 0 }) => {
+const LineLevels: React.FC<Props> = ({ line }) => {
 	const { handleEdit, handleUpdate } = useContext(GridContext);
 	const [editingIndex, setEditingIndex] = useState<number | null>(null);
 	const [levelsPicked, setLevelsPicked] = useState<string[]>(() =>
-		makeDefaultLevels(size)
+		makeDefaultLevels(line.size)
 	);
 
 	useEffect(() => {
-		if (size !== levelsPicked.length) {
+		if (line === defaultLine) {
+			setLevelsPicked(makeDefaultLevels(line.size));
+		} else if (line.size !== levelsPicked.length) {
 			setLevelsPicked(
-				Array.from({ length: size }).map((_, i) => levelsPicked[i] || '')
+				Array.from({ length: line.size }).map((_, i) => levelsPicked[i] || '')
 			);
 		}
-	}, [size]);
+	}, [line]);
 
 	const handleLevelClick = (e: any, index: number) => {
 		if (handleEdit) {
@@ -35,9 +38,9 @@ const LineLevels: React.FC<Props> = ({ size = 0 }) => {
 
 	const handleLevelChange = (e: any, index: number) => {
 		setLevelsPicked(current => {
-			const nextevels = current.slice();
-			nextevels[index] = e.target.value;
-			return nextevels;
+			const nextLevels = current.slice();
+			nextLevels[index] = e.target.value;
+			return nextLevels;
 		});
 	};
 
@@ -62,19 +65,24 @@ const LineLevels: React.FC<Props> = ({ size = 0 }) => {
 
 	const handleAdd = (e: any, y: number) => {
 		e.stopPropagation();
-		const nextY = y + 1;
 		if (handleUpdate) {
-			if (!levels.includes(levelsPicked[y])) {
+			const nextY = y + 1;
+			const currentLevel = levelsPicked[y];
+			const levelIndex = levels.indexOf(currentLevel);
+			// if (levelIndex < 0) {
+			// // add a level from a custom level
+			// setLevelsPicked(current => {
+			// 	const nextLevels = current.slice();
+			// 	nextLevels.splice(nextY, 0, '');
+			// 	return nextLevels;
+			// });
+			// } else
+			if (levelIndex >= 0 && levelsPicked[nextY] != levels[levelIndex + 1]) {
+				// add a level from a level in the levels array
 				setLevelsPicked(current => {
-					const nextevels = current.slice();
-					nextevels.splice(nextY, 0, '');
-					return nextevels;
-				});
-			} else if (levels[nextY] && levelsPicked[nextY] != levels[nextY]) {
-				setLevelsPicked(current => {
-					const nextevels = current.slice();
-					nextevels.splice(nextY, 0, levels[nextY]);
-					return nextevels;
+					const nextLevels = current.slice();
+					nextLevels.splice(nextY, 0, levels[levelIndex + 1]);
+					return nextLevels;
 				});
 			}
 
@@ -90,7 +98,7 @@ const LineLevels: React.FC<Props> = ({ size = 0 }) => {
 		}
 	};
 
-	if (!size) return null;
+	if (!line.size) return null;
 	return (
 		<div className="levels">
 			{levelsPicked.map((level, i) => (
