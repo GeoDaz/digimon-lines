@@ -133,7 +133,7 @@ const LineLevels: React.FC<Props> = ({ size = 0 }) => {
 							type="text"
 							value={level}
 							onChange={e => handleLevelChange(e, i)}
-							// onBlur={handleCloseEdit}
+							onBlur={handleCloseEdit}
 							autoFocus
 							onKeyDown={handleEnter}
 						/>
