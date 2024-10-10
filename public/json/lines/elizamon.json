@@ -1,0 +1,30 @@
+{
+	"columns": [
+		[
+			{
+				"name": ""
+			},
+			{
+				"name": ""
+			},
+			{
+				"name": "elizamon"
+			},
+			{
+				"name": "dimetromon"
+			}
+		],
+        [
+            null,
+            null,
+            null,
+			{
+				"name": "salamandermon"
+			}
+        ]
+	],
+	"related": [
+		{ "name": "armadillomon", "for": "stegomon" },
+		{ "name": "gekomon", "from": "salamandermon" }
+	]
+}
