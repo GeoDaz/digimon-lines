@@ -1,12 +1,8 @@
 {
 	"columns": [
 		[
-			{
-				"name": ""
-			},
-			{
-				"name": ""
-			},
+			null,
+			null,
 			{
 				"name": "elizamon"
 			},
@@ -14,14 +10,15 @@
 				"name": "dimetromon"
 			}
 		],
-        [
-            null,
-            null,
-            null,
+		[
+			null,
+			null,
+			null,
 			{
-				"name": "salamandermon"
+				"name": "salamandermon",
+				"from": [-1, -1]
 			}
-        ]
+		]
 	],
 	"related": [
 		{ "name": "armadillomon", "for": "stegomon" },
