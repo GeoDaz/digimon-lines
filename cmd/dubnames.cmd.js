@@ -48,7 +48,7 @@ function getText(element) {
 		.toLowerCase();
 }
 
-const srcPath = `./dubnames.html`;
+const srcPath = `./cmd/dubnames.html`;
 const distPath = `./public/json/dubnames.json`;
 
 let json = {};
