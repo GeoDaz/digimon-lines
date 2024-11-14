@@ -1,0 +1,131 @@
+{
+    "title": "Double Thunderbolt",
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "bladekuwagamon",
+                "color": "electric",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "metallifekuwagamon",
+                "color": "electric"
+            },
+            {
+                "name": "ancientgreymon",
+                "color": "electric"
+            }
+        ],
+        [
+            {
+                "name": "dokimon",
+                "color": "electric",
+                "xSize": 2
+            },
+            {
+                "name": "bibimon",
+                "color": "electric",
+                "xSize": 2
+            },
+            [
+                {
+                    "name": "kukuwamon",
+                    "color": "electric",
+                    "from": [
+                        0.5,
+                        -1
+                    ]
+                },
+                {
+                    "name": "pulsemon",
+                    "color": "electric",
+                    "from": [
+                        -0.5,
+                        -1
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "boltmon",
+                    "color": "electric"
+                },
+                {
+                    "name": "bulkmon",
+                    "color": "electric"
+                }
+            ],
+            [
+                {
+                    "name": "bolgmon",
+                    "color": "electric"
+                },
+                {
+                    "name": "boutmon",
+                    "color": "electric"
+                }
+            ],
+            [
+                {
+                    "name": "ancientbeetlemon",
+                    "color": "electric"
+                },
+                {
+                    "name": "kazuchimon",
+                    "color": "electric"
+                }
+            ]
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "lynxmon",
+                "color": "electric",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "helloogarmon",
+                "color": "electric"
+            },
+            {
+                "name": "marsmon",
+                "color": "electric"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "greymon",
+            "for": "agunimon"
+        },
+        {
+            "name": "leomon",
+            "for": "coronamon"
+        },
+        "flarelizardmon",
+        {
+            "name": "gatomon",
+            "for": "lynxmon"
+        },
+        {
+            "name": "loogamon",
+            "for": "helloogarmon"
+        },
+        "meramon",
+        {
+            "name": "biyomon",
+            "for": "birdramon"
+        }
+    ]
+}

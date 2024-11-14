@@ -1,1 +1,121 @@
-{"title":"Bememory Special Royal Knights Blade","columns":[[null,null,null,null,null,{"name":"chaosmon","from":[[1,0]],"color":["fusion"],"collapsable":false}],[null,null,{"name":"monodramon","from":[1,-1],"color":"default","collapsable":false},{"name":"airdramon","from":[[0,-1]],"collapsable":false,"color":["wind"]},{"name":"megadramon","from":null,"collapsable":false},{"name":"darkdramon","from":[[0,-2]],"color":["machine"],"collapsable":false}],[{"name":"petitmon","from":null,"collapsable":true},{"name":"babydramon","from":[0,-1],"color":"default","collapsable":true},{"name":"vorvomon","from":null,"collapsable":false},{"name":"lavorvomon","from":null,"collapsable":false},{"name":"lavogaritamon","from":null,"collapsable":false},{"name":"volcanicdramon","from":[[0,-4]],"collapsable":false,"color":["fire"]}],[null,null,{"name":"blucomon","from":[[-1,-1]],"collapsable":false,"color":["ice"]},{"name":"paledramon","from":null,"collapsable":false},{"name":"cryspaledramon","from":null,"collapsable":false},{"name":"hexeblaumon","from":[[0,-3]],"color":["ice"],"collapsable":false}],[null,null,{"name":"dracomon","from":[[-2,-1]],"collapsable":true},{"name":"coredramonblue","from":null,"collapsable":false},{"name":"wingdramon","from":null,"collapsable":false},{"name":"slayerdramon","from":[[0,-3]],"collapsable":false,"color":["wind"]}],[null,null,null,{"name":"coredramongreen","from":[[-1,-1]],"color":["earth"],"collapsable":true},{"name":"groundramon","from":null,"collapsable":true},{"name":"breakdramon","from":[[0,-2]],"collapsable":false,"color":["earth"]}],[null,null,null,null,null,{"name":"examon","from":[[-2,0]],"color":["fusion"],"collapsable":false}]]}
+{
+	"title": "Bememory Special Royal Knights Blade",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "chaosmon",
+				"from": [[1, 0]],
+				"color": ["fusion"],
+				"collapsable": false
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "monodramon",
+				"from": [1, -1],
+				"color": "default",
+				"collapsable": false
+			},
+			{
+				"name": "airdramon",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"color": ["wind"]
+			},
+			{ "name": "megadramon", "from": null, "collapsable": false },
+			{
+				"name": "darkdramon",
+				"from": [[0, -2]],
+				"color": ["machine"],
+				"collapsable": false
+			}
+		],
+		[
+			{ "name": "petitmon", "from": null, "collapsable": true },
+			{
+				"name": "babydramon",
+				"from": [0, -1],
+				"color": "default",
+				"collapsable": true
+			},
+			{ "name": "vorvomon", "from": null, "collapsable": false },
+			{ "name": "lavorvomon", "from": null, "collapsable": false },
+			{ "name": "lavogaritamon", "from": null, "collapsable": false },
+			{
+				"name": "volcanicdramon",
+				"from": [[0, -4]],
+				"collapsable": false,
+				"color": ["fire"]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "blucomon",
+				"from": [[-1, -1]],
+				"collapsable": false,
+				"color": ["ice"]
+			},
+			{ "name": "paledramon", "from": null, "collapsable": false },
+			{ "name": "cryspaledramon", "from": null, "collapsable": false },
+			{
+				"name": "hexeblaumon",
+				"from": [[0, -3]],
+				"color": ["ice"],
+				"collapsable": false
+			}
+		],
+		[
+			null,
+			null,
+			{ "name": "dracomon", "from": [[-2, -1]], "collapsable": true },
+			{ "name": "coredramonblue", "from": null, "collapsable": false },
+			{ "name": "wingdramon", "from": null, "collapsable": false },
+			{
+				"name": "slayerdramon",
+				"from": [[0, -3]],
+				"collapsable": false,
+				"color": ["wind"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "coredramongreen",
+				"from": [[-1, -1]],
+				"color": ["earth"],
+				"collapsable": true
+			},
+			{ "name": "groundramon", "from": null, "collapsable": true },
+			{
+				"name": "breakdramon",
+				"from": [[0, -2]],
+				"collapsable": false,
+				"color": ["earth"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "examon",
+				"from": [[-2, 0]],
+				"color": ["fusion"],
+				"collapsable": false
+			}
+		]
+	]
+}
