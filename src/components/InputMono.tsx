@@ -20,7 +20,7 @@ const InputMono: React.FC<Props> = ({
 	defaultValue,
 	placeholder,
 	onSubmit,
-	width = 300,
+	width,
 	forwardRef,
 	type = 'text',
 	className,

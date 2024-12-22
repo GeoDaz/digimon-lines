@@ -91,6 +91,7 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 				label="Research a digimon"
 				onSubmit={handleSearch}
 				defaultValue={search}
+				width={300}
 			/>
 			{loading ? (
 				<div className="text-center">

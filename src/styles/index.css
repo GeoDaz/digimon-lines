@@ -147,6 +147,14 @@ a:active:not(.btn) {
   width: auto;
 }
 
+.m-auto {
+  margin: 0 auto;
+}
+
+.break-word {
+  word-break: break-word;
+}
+
 .hover-only {
   opacity: 0;
   transition: all .3s;
@@ -1027,7 +1035,7 @@ a.dropdown-item.active {
 
 /* modal */
 .modal {
-  --bs-modal-width: 350px;
+  /* --bs-modal-width: 350px; */
   --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
   --bs-modal-color: var(--bs-body-color);
