@@ -1,13 +1,5 @@
-import React, { useContext, useRef, useEffect } from 'react';
-import {
-	Button,
-	ButtonGroup,
-	Col,
-	Dropdown,
-	DropdownButton,
-	Modal,
-	Row,
-} from 'react-bootstrap';
+import React, { useContext, useRef, useEffect, MouseEventHandler } from 'react';
+import { Button, ButtonGroup, Dropdown, DropdownButton, Modal } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import { LineColor, LineFrom, LinePoint } from '@/types/Line';
 import { GridContext } from '@/context/grid';
@@ -131,10 +123,9 @@ const LinePointSettings: React.FC<Props> = ({
 
 	const handleRemoveSkin = (i: number) => {
 		if (handleUpdate && point) {
-			const nextPoint: LinePoint = {
-				...point,
-				skins: (point.skins as string[]).filter((_, i) => i != i),
-			};
+			const skins = (point.skins as string[]).slice();
+			skins.splice(i, 1);
+			const nextPoint: LinePoint = { ...point, skins };
 			handleUpdate(setLinePoint, coord, nextPoint);
 		}
 	};
@@ -218,7 +209,7 @@ const LinePointSettings: React.FC<Props> = ({
 const SettingPoint: React.FC<{
 	className?: string;
 	point: LinePoint;
-	handleRemove: CallableFunction;
+	handleRemove: MouseEventHandler<HTMLElement>;
 	imgClassName?: string;
 }> = ({ className, point, handleRemove, imgClassName }) => (
 	<div className={className}>
