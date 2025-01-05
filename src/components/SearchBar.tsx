@@ -13,13 +13,15 @@ interface Props {
 	defaultValue?: string;
 	width?: number;
 	forwardRef?: React.Ref<HTMLInputElement>;
+	disabled?: boolean;
 }
 const SearchBar: React.FC<Props> = ({
 	onSubmit,
 	label = 'Research',
 	defaultValue,
-	width = 300,
+	width,
 	forwardRef,
+	disabled = false,
 }) => {
 	const searchList = useContext(SearchContext);
 	const [search, setSearch] = useState<string | undefined>(defaultValue);
@@ -99,6 +101,7 @@ const SearchBar: React.FC<Props> = ({
 				onKeyDown={onKeyDown}
 				autoComplete="off"
 				className="research"
+				disabled={disabled}
 			/>
 			{previews.length > 0 && (
 				<div className="previews" role="listbox" aria-expanded tabIndex={0}>
@@ -112,6 +115,7 @@ const SearchBar: React.FC<Props> = ({
 							onClick={e => {
 								e.preventDefault();
 								e.stopPropagation();
+								if (disabled) return;
 								setSearch(preview.value as string);
 								handleSubmit(preview.value);
 							}}
@@ -121,7 +125,12 @@ const SearchBar: React.FC<Props> = ({
 					))}
 				</div>
 			)}
-			<Button color="primary" type="submit" onClick={e => handleSubmit()}>
+			<Button
+				color="primary"
+				type="submit"
+				disabled={disabled}
+				onClick={e => handleSubmit()}
+			>
 				<Icon name="search" />
 			</Button>
 		</div>

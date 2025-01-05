@@ -3,46 +3,279 @@
         [
             null,
             null,
+            null,
             {
-                "name": "gottsumonx",
-                "color": "x",
+                "name": "tortamon",
                 "from": [
-                    1,
-                    0
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "color": [
+                    "earth"
                 ]
             },
             null,
             {
-                "name": "gravimon",
-				"color": "earth",
+                "name": "eldoradimon",
                 "from": [
-                    1,
-                    -1
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "color": [
+                    "earth"
                 ]
             },
             {
-                "name": "gravimondm",
-                "color": "fusion"
+                "name": "tlalocmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "color": [
+                    "fusion"
+                ]
             }
         ],
         [
             null,
             null,
             {
-                "name": "gottsumon",
-				"color": "earth",
+                "name": "sunarizamon",
                 "from": [
-                    2,
-                    -1
+                    [
+                        3,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false,
+                "color": [
+                    "earth"
                 ]
             },
             {
-                "name": "icemon",
-                "color": "ice"
+                "name": "landramon",
+                "from": null,
+                "xCollapsable": false,
+                "yCollapsable": false
             },
             {
-                "name": "meteormon"
-            }
+                "name": "proganomon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false,
+                "color": [
+                    "earth"
+                ]
+            },
+            {
+                "name": "pyramidimon",
+                "from": [
+                    [
+                        0,
+                        -3
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "color": [
+                    "earth"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "volcdramon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "color": [
+                    "fire"
+                ]
+            },
+            {
+                "name": "ancientvolcamon",
+                "color": [
+                    "fire",
+                    "earth"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "gigasmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "color": [
+                    "earth"
+                ]
+            },
+            {
+                "name": "vulcanusmon",
+                "color": "fire",
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "sunamon",
+                "from": null,
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "goromon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true,
+                "color": [
+                    "earth"
+                ]
+            },
+            null,
+            {
+                "name": "golemon",
+                "from": [
+                    [
+                        3,
+                        -1
+                    ],
+                    [
+                        -3,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false,
+                "color": [
+                    "earth",
+                    "earth"
+                ]
+            },
+            {
+                "name": "volcamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "color": [
+                    "fire"
+                ]
+            },
+            {
+                "name": "pilevolcamon",
+                "color": [
+                    "fire"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "gogmamon",
+                "color": [
+                    "earth",
+                    "earth"
+                ],
+                "from": [
+                    [
+                        1,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "banchogolemon",
+                "color": "earth",
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
         ],
         [
             null,
@@ -50,105 +283,108 @@
             null,
             {
                 "name": "baboongamon",
-				"color": "earth",
+                "color": "earth",
                 "from": [
-                    -1,
+                    1,
                     -1
-                ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false
             },
-            null,
+            {
+                "name": "gokuwmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
             {
                 "name": "blastmon",
-				"color": "earth",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "sunamon"
-            },
-            {
-                "name": "goromon",
-				"color": "earth"
-            },
-            {
-                "name": "sunarizamon",
-				"color": "earth"
-            },
-            {
-                "name": "golemon",
-				"color": "earth"
-            },
-            {
-                "name": "gogmamon",
-				"color": ["earth", "earth"],
-                "from": [[0, -1], [
-                    -1,
-                    -1
-                ]]
-            },
-            {
-                "name": "banchogolemon",
-				"color": "earth"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "tortamon",
-				"color": "earth",
+                "color": "earth",
                 "from": [
                     -1,
                     -1
-                ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
             },
-            null,
-            {
-                "name": "ancientvolcamon",
-                "color": "fire",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
+            null
         ],
         [
             null,
             null,
-            null,
-            null,
             {
-                "name": "volcamon",
-                "color": "fire",
+                "name": "gottsumon",
+                "color": [
+                    "earth"
+                ],
                 "from": [
-                    -2,
-                    -1
-                ]
+                    [
+                        -3,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false
             },
             {
-                "name": "pilevolcamon",
-                "color": "fire"
-            }
+                "name": "icemon",
+                "color": "ice",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "meteormon",
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            null,
+            null
         ],
         [
             null,
             null,
-            null,
-            null,
+            {
+                "name": "gottsumonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
             null,
             {
-                "name": "vulcanusmon",
-                "color": "fire",
+                "name": "gravimon",
+                "color": "earth",
                 "from": [
                     -1,
                     -1
-                ]
-            }
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "gravimondm",
+                "color": "fusion",
+                "xCollapsable": true,
+                "yCollapsable": true
+            },
+            null
         ]
     ],
     "related": [
@@ -171,6 +407,11 @@
         {
             "name": "kamemon",
             "for": "tortamon"
+        },
+        {
+            "name": "leomon",
+            "for": "tlalocmon"
         }
-    ]
+    ],
+    "size": 7
 }

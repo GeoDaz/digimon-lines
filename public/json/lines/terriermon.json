@@ -6,18 +6,25 @@
 			{
 				"name": "terriermonx",
 				"color": "x",
-				"from": [2, 0]
+				"from": [2, 0],
+				"xCollapsable": true,
+				"yCollapsable": true
 			},
 			null,
 			{
 				"name": "goldrapidmon",
 				"color": "gold",
-				"from": [2, -2]
+				"from": [2, -2],
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "goldrapidmonx",
-				"color": "x"
-			}
+				"color": "x",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			null,
@@ -27,30 +34,35 @@
 			null,
 			{
 				"name": "fujinmon",
-				"from": [1, -1]
-			}
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			{
-				"name": "zerimon"
+				"name": "zerimon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
-			{
-				"name": "gummymon"
-			},
+			{ "name": "gummymon", "xCollapsable": true, "yCollapsable": false },
 			{
 				"name": "terriermon",
-				"skins": ["terriermonassistant"]
+				"skins": ["terriermonassistant"],
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
-			{
-				"name": "gargomon"
-			},
-			{
-				"name": "rapidmon"
-			},
+			{ "name": "gargomon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "rapidmon", "xCollapsable": false, "yCollapsable": false },
 			{
 				"name": "megagargomon",
-				"color": "human"
-			}
+				"color": "human",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			null,
@@ -59,16 +71,23 @@
 			{
 				"name": "gargomonb",
 				"color": "dark",
-				"from": [-1, -1]
+				"from": [-1, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "rapidmonb",
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "megagargomonb",
-				"color": "dark"
-			}
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			null,
@@ -76,32 +95,46 @@
 			{
 				"name": "lopmonx",
 				"color": "x",
-				"from": [1.5, 0]
+				"from": [1.5, 0],
+				"xCollapsable": true,
+				"yCollapsable": true
 			},
 			null,
 			null,
 			{
 				"name": "cherubimonx",
 				"color": "x",
-				"from": [1, 0]
-			}
+				"from": [1, 0],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			{
 				"name": "cocomon",
-				"xSize": 2
+				"xSize": 2,
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "chocomon",
-				"xSize": 2
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "lopmon",
-				"xSize": 2
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "turuiemon",
-				"from": [0.5, -1]
+				"from": [0.5, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "andiramon",
@@ -110,17 +143,23 @@
 					[0.5, -1]
 				],
 				"color": ["default", "dark"],
-				"xSize": 2
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "cherubimon",
 				"color": "light",
-				"from": [0.5, -1]
+				"from": [0.5, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "erlangmon",
 				"color": "fusion",
-				"skins": ["erlangmonbm"]
+				"skins": ["erlangmonbm"],
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -130,13 +169,23 @@
 			{
 				"name": "wendimon",
 				"color": "dark",
-				"from": [-0.5, -1]
+				"from": [-0.5, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
 			},
 			null,
 			{
 				"name": "cherubimonb",
 				"color": "dark",
-				"from": [-0.5, -1]
+				"from": [-0.5, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "jougamon",
+				"color": "fusion",
+				"xCollapsable": true,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -144,27 +193,18 @@
 			null,
 			{
 				"name": "pyontomon",
-				"from": [-1.5, -1]
+				"from": [-1.5, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
-			{
-				"name": "prairiemon"
-			},
+			{ "name": "prairiemon", "xCollapsable": false, "yCollapsable": true },
 			null,
 			{
 				"name": "cherubimonbx",
 				"color": "x",
-				"from": [-1, 0]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "cutemon",
-				"from": [-2.5, -1]
-			},
-			{
-				"name": "rabbitmon"
+				"from": [-1, 0],
+				"xCollapsable": true,
+				"yCollapsable": true
 			},
 			null
 		],
@@ -172,30 +212,44 @@
 			null,
 			null,
 			{
-				"name": "luminamon",
-				"color": "light",
-				"from": [-3.5, -1]
+				"name": "cutemon",
+				"from": [-2.5, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
+			{ "name": "rabbitmon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "luminamon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["light"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
 			{
 				"name": "luminamonnene",
-				"color": "human"
-			}
+				"from": [[-1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["human"]
+			},
+			null,
+			null
 		]
 	],
 	"related": [
-		{
-			"name": "raidenmon",
-			"for": "fujinmon"
-		},
+		{ "name": "raidenmon", "for": "fujinmon" },
 		"lunamon",
 		"angoramon",
-		{
-			"name": "garurumon",
-			"for": "erlangmon"
-		},
-		{
-			"name": "negamon",
-			"for": "shademonnene"
-		}
-	]
+		{ "name": "garurumon", "for": "erlangmon" },
+		{ "name": "negamon", "for": "shademonnene" }
+	],
+	"size": 7
 }

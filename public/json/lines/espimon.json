@@ -1,85 +1,92 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "vademonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            {
-                "name": "ebemonx",
-                "color": "x"
-            }
-        ],
-        [
-            {
-                "name": "choromon"
-            },
-            {
-                "name": "caprimon"
-            },
-            {
-                "name": "espimon"
-            },
-            {
-                "name": "hoverespimon"
-            },
-            {
-                "name": "vademon"
-            },
-            {
-                "name": "ebemon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "catchmamemon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "ragnamon"
-            }
-        ]
-    ],
-    "related": [
-        "bearmon",
-        {
-            "name": "bemmon",
-            "for": "machgaogamon"
-        },
-        {
-            "name": "bemmon",
-            "for": "ragnamon"
-        },
-        {
-            "name": "mamemon",
-            "from": "catchmamemon"
-        },
-        {
-            "name": "jazamon",
-            "for": "sparrowmon"
-        },
-        {
-            "name": "terriermon",
-            "for": "megagargomon"
-        },
-        {
-            "name": "aegiomon",
-            "for": "aegiochusmonblue"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "vademonx",
+				"color": "x",
+				"from": [1, 0]
+			},
+			{
+				"name": "ebemonx",
+				"color": "x"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "vademon",
+				"from": [1, -1]
+			},
+			{
+				"name": "ebemon"
+			}
+		],
+		[
+			{
+				"name": "choromon"
+			},
+			{
+				"name": "caprimon"
+			},
+			{
+				"name": "espimon"
+			},
+			{
+				"name": "hoverespimon"
+			},
+			{
+				"name": "oblivimon"
+			},
+			{
+				"name": "invisimon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "catchmamemon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "ragnamon"
+			}
+		]
+	],
+	"related": [
+		"bearmon",
+		{
+			"name": "bemmon",
+			"for": "machgaogamon"
+		},
+		{
+			"name": "bemmon",
+			"for": "ragnamon"
+		},
+		{
+			"name": "mamemon",
+			"from": "catchmamemon"
+		},
+		{
+			"name": "jazamon",
+			"for": "sparrowmon"
+		},
+		{
+			"name": "terriermon",
+			"for": "megagargomon"
+		},
+		{
+			"name": "aegiomon",
+			"for": "aegiochusmonblue"
+		}
+	]
 }

@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useEffect } from 'react';
+import React, { useContext, useRef, useEffect, MouseEventHandler } from 'react';
 import { Button, ButtonGroup, Dropdown, DropdownButton, Modal } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import { LineColor, LineFrom, LinePoint } from '@/types/Line';
@@ -111,6 +111,25 @@ const LinePointSettings: React.FC<Props> = ({
 		}
 	};
 
+	const handleChooseSkin = (search: string) => {
+		if (handleUpdate && point) {
+			const nextPoint: LinePoint = {
+				...point,
+				skins: point.skins ? [...point.skins, search] : [search],
+			};
+			handleUpdate(setLinePoint, coord, nextPoint);
+		}
+	};
+
+	const handleRemoveSkin = (i: number) => {
+		if (handleUpdate && point) {
+			const skins = (point.skins as string[]).slice();
+			skins.splice(i, 1);
+			const nextPoint: LinePoint = { ...point, skins };
+			handleUpdate(setLinePoint, coord, nextPoint);
+		}
+	};
+
 	return (
 		<Modal show={show} onHide={handleClose}>
 			<Modal.Header closeButton>
@@ -132,21 +151,11 @@ const LinePointSettings: React.FC<Props> = ({
 				/>
 				<UploadImage handleUpload={handleUpload} className="mb-3" />
 				{point ? (
-					<div className="mb-3">
-						<h4 className="text-capitalize mb-3">
-							{point.name}{' '}
-							<Button
-								variant="danger"
-								onClick={handleRemove}
-								title="remove digimon"
-							>
-								<Icon name="trash3-fill" />
-							</Button>
-						</h4>
-						<div className="line-point width-min-content">
-							<LineImage name={point.name} path={point.image} />
-						</div>
-					</div>
+					<SettingPoint
+						className="mb-3"
+						point={point}
+						handleRemove={handleRemove}
+					/>
 				) : null}
 				{!!point?.from &&
 					point.from.map((from, i) => (
@@ -160,10 +169,70 @@ const LinePointSettings: React.FC<Props> = ({
 							handleRemove={handleRemoveFrom}
 						/>
 					))}
+				{!!point?.name && (
+					<>
+						<h4
+							className={
+								point.skins && point.skins.length > 2
+									? 'text-decoration-line-through'
+									: undefined
+							}
+						>
+							Add a skin (max 3)
+						</h4>
+						<SearchBar
+							label={`Research a ${licenceName}`}
+							onSubmit={handleChooseSkin}
+							disabled={point.skins ? point.skins.length > 2 : false}
+						/>
+						<div className="d-flex flex-wrap gap-3">
+							{point.skins?.map((skin, i) => (
+								<h5 key={i} className="text-capitalize break-word">
+									{skin}{' '}
+									<Button
+										variant="danger"
+										onClick={() => handleRemoveSkin(i)}
+										title="remove digimon"
+									>
+										<Icon name="trash3-fill" />
+									</Button>
+								</h5>
+							))}
+						</div>
+					</>
+				)}
 			</Modal.Body>
 		</Modal>
 	);
 };
+
+const SettingPoint: React.FC<{
+	className?: string;
+	point: LinePoint;
+	handleRemove: MouseEventHandler<HTMLElement>;
+	imgClassName?: string;
+}> = ({ className, point, handleRemove, imgClassName }) => (
+	<div className={className}>
+		<h4 className="text-capitalize break-word mb-3">
+			{point.name}{' '}
+			<Button variant="danger" onClick={handleRemove} title="remove digimon">
+				<Icon name="trash3-fill" />
+			</Button>
+		</h4>
+		<div className="line-point width-min-content">
+			<LineImage name={point.name} path={point.image} className={imgClassName} />
+			{point.skins?.map((skin, i) => (
+				<LineImage
+					key={i}
+					name={skin}
+					className="line-skin"
+					loadable={false}
+					style={{ bottom: 3.3 * i + 'em' }}
+				/>
+			))}
+		</div>
+	</div>
+);
 
 const SettingFrom: React.FC<{
 	number: number;
