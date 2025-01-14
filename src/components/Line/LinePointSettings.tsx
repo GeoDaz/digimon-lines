@@ -10,6 +10,7 @@ import colors, { legend } from '@/consts/colors';
 import UploadImage from '../UploadImage';
 import InputMono from '../InputMono';
 import { LicenseContext } from '@/context/license';
+import { makeClassName } from '@/functions';
 
 interface Props {
 	handleClose: () => void;
@@ -172,11 +173,12 @@ const LinePointSettings: React.FC<Props> = ({
 				{!!point?.name && (
 					<>
 						<h4
-							className={
-								point.skins && point.skins.length > 2
-									? 'text-decoration-line-through'
-									: undefined
-							}
+							className={makeClassName(
+								'mt-4',
+								point.skins &&
+									point.skins.length > 2 &&
+									'text-decoration-line-through'
+							)}
 						>
 							Add a skin (max 3)
 						</h4>
