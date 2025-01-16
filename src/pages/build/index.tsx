@@ -15,33 +15,35 @@ import useLocalStorage from '@/hooks/useLocalStorage';
 import DownloadDropdown from '@/components/DownloadDropdown';
 import Line from '@/types/Line';
 import UploadCode from '@/components/UploadCode';
-import { areCollapsablePoints } from '@/functions/transformer/line';
+import { areCollapsablePoints } from '@/functions/line';
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
 import { defaultLicenceContext, LicenceProps, LicenseContext } from '@/context/license';
+import { getDubbedSearchList } from '@/functions/search';
+import { StringObject } from '@/types/Ui';
+import Search from '@/types/Search';
 
 export interface BuildProps {
-	searchList?: string[];
+	search?: Search;
 	line?: Line;
 	context?: LicenceProps;
 	noStorage?: boolean;
 }
 
 export const PageBuild = (props: BuildProps) => {
+	const licenceContext = props.context || defaultLicenceContext;
 	const [line, dispatchState] = useReducer(lineReducer, props.line || defaultLine);
 	const [zoom, setZoom] = useState<number>(100);
 	const [edition, edit] = useState<boolean>(true);
 
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
 	const { removeItemFromStorage } = useLocalStorage({
-		key: (props?.context?.key || 'digimon') + '-line',
+		key: licenceContext.key + '-line',
 		item: line,
 		setItem: setLine,
 		defaultItem: defaultLine,
 		locked: props.noStorage,
 	});
-
-	const licenceContext = props.context || defaultLicenceContext;
 
 	useMemo(() => areCollapsablePoints(line), [line]);
 
@@ -124,7 +126,7 @@ export const PageBuild = (props: BuildProps) => {
 					<Alert variant="danger">{error}</Alert>
 				</div>
 			)}
-			<SearchContext.Provider value={props.searchList}>
+			<SearchContext.Provider value={props.search}>
 				<LicenseContext.Provider value={licenceContext}>
 					<LineGrid
 						line={line}
@@ -138,12 +140,15 @@ export const PageBuild = (props: BuildProps) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
+	const context: LicenceProps = defaultLicenceContext;
 	try {
-		const searchList = getDirPaths('images/digimon');
-		return { props: { searchList } };
+		const dubNames: StringObject = require('../../../public/json/dubnames.json');
+		const searchList: string[] = getDirPaths('images/digimon');
+		const search: Search = getDubbedSearchList(searchList, dubNames);
+		return { props: { search, context } };
 	} catch (e) {
 		console.error(e);
-		return { props: {} };
+		return { props: { context } };
 	}
 };
 

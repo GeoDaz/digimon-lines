@@ -17,7 +17,7 @@ import ColorLegend from '@/components/ColorLegend';
 import useFetch from '@/hooks/useFetch';
 import useQueryParam from '@/hooks/useQueryParam';
 import { capitalize } from '@/functions';
-import transformLine from '@/functions/transformer/line';
+import transformLine from '@/functions/line';
 // constants
 import { Line } from '@/types/Line';
 import { LINE, titles } from '@/consts/ui';

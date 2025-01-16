@@ -1,5 +1,5 @@
 import { download } from '@/functions/file';
-import { clearLine } from '@/functions/transformer/line';
+import { clearLine } from '@/functions/line';
 import Line from '@/types/Line';
 import { useState } from 'react';
 

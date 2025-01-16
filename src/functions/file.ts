@@ -13,6 +13,13 @@ export const getDirPaths = (dir: string): string[] => {
 export const formatFileName = (string: string) =>
 	string.replace(/\/+/g, '-').replace(/:+/g, '');
 
+export const formatPokemonFileName = (string: string) =>
+	string
+		.normalize('NFD')
+		.replace(/(\s+)/g, '-')
+		.replace(/[.'’:?%\u0300-\u036f]|-(t|T)otem|-(a|A)ntique/g, '')
+		.toLowerCase();
+
 export const download = (blob: Blob | File, filename: string) => {
 	filename = formatFileName(filename);
 	if (window.navigator && window.navigator.msSaveBlob !== undefined) {

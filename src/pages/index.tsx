@@ -9,7 +9,7 @@ import LineImage from '@/components/Line/LineImage';
 import { GetStaticProps } from 'next';
 import { LineThumb } from '@/types/Line';
 import Line, { LineFound } from '@/types/Line';
-import { filterlinesFound, foundLines, lineToArray } from '@/functions/transformer/line';
+import { filterlinesFound, foundLines, lineToArray } from '@/functions/line';
 import SearchBar from '@/components/SearchBar';
 import useQueryParam from '@/hooks/useQueryParam';
 import { stringToKey } from '@/functions';
@@ -18,20 +18,17 @@ import { APPMON } from '@/consts/ui';
 
 const SEARCH = 'search';
 const defaultData = { lines: [], fusions: [], appmons: [], searchList: {} };
-interface StaticProps {
+interface Props {
 	lines: LineThumb[];
 	fusions: LineThumb[];
 	appmons: LineThumb[];
 	searchList: Record<string, string[]>;
 }
-interface Props {
-	ssr: StaticProps;
-}
-const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
-	const { search: searchParam } = useQueryParam(SEARCH) || ssr;
-	const [lines, setLines] = useState<LineThumb[]>(ssr.lines);
-	const [fusions, setFusions] = useState<LineThumb[]>(ssr.fusions);
-	const [appmons, setAppmons] = useState<LineThumb[]>(ssr.appmons);
+const PageLines: React.FC<Props> = props => {
+	const { search: searchParam } = useQueryParam(SEARCH) || props;
+	const [lines, setLines] = useState<LineThumb[]>(props.lines);
+	const [fusions, setFusions] = useState<LineThumb[]>(props.fusions);
+	const [appmons, setAppmons] = useState<LineThumb[]>(props.appmons);
 	const [load, loading] = useFetch(setLines);
 	const [search, setSearch] = useState<string>(searchParam);
 	const [loadFusions] = useFetch(setFusions);
@@ -46,16 +43,16 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	useEffect(() => {
 		if (!search) {
 			if (searchParam) {
-				setLines(ssr.lines);
-				setFusions(ssr.fusions);
-				setAppmons(ssr.appmons);
+				setLines(props.lines);
+				setFusions(props.fusions);
+				setAppmons(props.appmons);
 				Router.push({ pathname: '/', query: null });
 			}
 		} else {
-			const foundList: LineFound[] = foundLines(search, ssr.searchList);
-			setLines(filterlinesFound(ssr.lines, foundList));
-			setFusions(filterlinesFound(ssr.fusions, foundList));
-			setAppmons(filterlinesFound(ssr.appmons, foundList));
+			const foundList: LineFound[] = foundLines(search, props.searchList);
+			setLines(filterlinesFound(props.lines, foundList));
+			setFusions(filterlinesFound(props.fusions, foundList));
+			setAppmons(filterlinesFound(props.appmons, foundList));
 			if (search != searchParam) {
 				Router.push({ pathname: '/', query: { search } });
 			}
@@ -174,10 +171,10 @@ export const getStaticProps: GetStaticProps = async () => {
 		);
 		// TODO make a flat searchList for previews
 
-		return { props: { ssr: { lines, fusions, appmons, searchList } } };
+		return { props: { lines, fusions, appmons, searchList } };
 	} catch (e) {
 		console.error(e);
-		return { props: { ssr: defaultData } };
+		return { props: { defaultData } };
 	}
 };
 

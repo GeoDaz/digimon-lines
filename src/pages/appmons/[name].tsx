@@ -2,7 +2,7 @@
 import { GetStaticProps } from 'next';
 // components
 import { PageLine as PageAppmon } from '@/pages/lines/[name]';
-import transformLine from '@/functions/transformer/line';
+import transformLine from '@/functions/line';
 // constants
 import { Line } from '@/types/Line';
 import { APPMON } from '@/consts/ui';

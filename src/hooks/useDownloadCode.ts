@@ -1,5 +1,5 @@
 import { createFile, download } from '@/functions/file';
-import transformLine from '@/functions/transformer/line';
+import transformLine from '@/functions/line';
 import { defaultLine } from '@/reducers/lineReducer';
 import Line from '@/types/Line';
 import { useState } from 'react';

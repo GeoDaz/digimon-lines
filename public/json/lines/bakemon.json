@@ -1,1 +1,220 @@
-{"columns":[[null,null,null,null,{"name":"oboromon","color":"dark","collapsable":false,"from":[[1,-1]],"xCollapsable":false,"yCollapsable":false},{"name":"zanbamon","color":"dark","collapsable":false,"xCollapsable":false,"yCollapsable":true},null],[null,null,{"name":"ghostmon","from":[[1,-1]],"collapsable":false,"color":["fire"],"xCollapsable":false,"yCollapsable":false},{"name":"soulmon","from":[[0,-1]],"collapsable":false,"color":["dark"],"xCollapsable":false,"yCollapsable":false},{"name":"metalphantomon","color":["dark","x"],"from":[[0,-1],[1,0]],"collapsable":false,"xCollapsable":false,"yCollapsable":false},{"name":"gokumon","color":["dark"],"collapsable":false,"from":[[0,-1]],"xCollapsable":false,"yCollapsable":true},null],[{"name":"mokumon","from":null,"collapsable":true,"xCollapsable":true,"yCollapsable":false},{"name":"demimeramon","color":"fire","collapsable":true,"xCollapsable":true,"yCollapsable":false},{"name":"candlemon","color":"fire","collapsable":true,"xCollapsable":true,"yCollapsable":false},{"name":"bakemon","color":"dark","collapsable":true,"xCollapsable":true,"yCollapsable":false},{"name":"phantomon","color":["dark"],"collapsable":false,"xCollapsable":false,"yCollapsable":false,"from":[[0,-1]]},{"name":"piemon","color":["dark","dark"],"from":[[0,-1],[1,-1]],"collapsable":false,"xCollapsable":false,"yCollapsable":false},{"name":"boltboutamon","from":[[0,-1]],"collapsable":true,"color":["fusion"],"xCollapsable":true,"yCollapsable":true}],[null,null,null,null,{"name":"jokermon","from":[[-1,-1]],"xCollapsable":true,"yCollapsable":false,"color":["dark"]},{"name":"chaospiemon","from":[[-1,-1]],"xCollapsable":false,"yCollapsable":true,"color":["dark"]},null],[null,null,null,null,{"name":"mummymon","from":[[-2.5,-1]],"collapsable":false,"color":["dark"],"xCollapsable":false,"yCollapsable":false,"xSize":2},{"name":"pharaohmon","from":[[0.5,-1]],"collapsable":false,"color":["dark"],"xCollapsable":false,"yCollapsable":true},null],[null,null,null,null,null,{"name":"lampmon","from":[[-0.5,-1]],"xCollapsable":false,"yCollapsable":true,"color":["dark"]},null],[null,null,null,{"name":"ponchomon","from":[[-4,-1]],"collapsable":false,"color":["dark"],"xCollapsable":true,"yCollapsable":false},{"name":"pumpmon","color":["dark"],"from":[[0,-1]],"collapsable":false,"xCollapsable":true,"yCollapsable":false},{"name":"noblepumpmon","color":"dark","collapsable":false,"xCollapsable":true,"yCollapsable":true},null],[null,null,null,null,null,null,null]],"related":["apocalymon","wizardmon",{"name":"palmon","from":"ponchomon"},{"name":"devimon","for":"myotismon"},{"name":"hookmon","from":"boltboutamon"},{"name":"meramon","from":"demimeramon"},{"name":"kotemon","for":"oboromon"}],"size":7}
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "oboromon",
+				"color": "dark",
+				"collapsable": false,
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "zanbamon",
+				"color": "dark",
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "ghostmon",
+				"from": [[1, -1]],
+				"collapsable": false,
+				"color": ["fire"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "soulmon",
+				"from": [[0, -1]],
+				"collapsable": false,
+				"color": ["dark"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "metalphantomon",
+				"color": ["dark", "x"],
+				"from": [
+					[0, -1],
+					[1, 0]
+				],
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "reapermon",
+				"color": ["dark"],
+				"collapsable": false,
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			{
+				"name": "mokumon",
+				"from": null,
+				"collapsable": true,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "demimeramon",
+				"color": "fire",
+				"collapsable": true,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "candlemon",
+				"color": "fire",
+				"collapsable": true,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "bakemon",
+				"color": "dark",
+				"collapsable": true,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "phantomon",
+				"color": ["dark"],
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]]
+			},
+			{
+				"name": "necromon",
+				"color": ["dark"],
+				"from": [[0, -1]],
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "jokermon",
+				"from": [[-1, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["dark"]
+			},
+			{
+				"name": "piemon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["dark"],
+				"skins": ["chaospiemon"]
+			},
+			{
+				"name": "boltboutamon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "mummymon",
+				"from": [[-2.5, -1]],
+				"collapsable": false,
+				"color": ["dark"],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "pharaohmon",
+				"from": [[0.5, -1]],
+				"collapsable": false,
+				"color": ["dark"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "lampmon",
+				"from": [[-0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ponchomon",
+				"from": [[-4, -1]],
+				"collapsable": false,
+				"color": ["dark"],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "pumpmon",
+				"color": ["dark"],
+				"from": [[0, -1]],
+				"collapsable": false,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "noblepumpmon",
+				"color": "dark",
+				"collapsable": false,
+				"xCollapsable": true,
+				"yCollapsable": true
+			},
+			null
+		],
+		[null, null, null, null, null, null, null]
+	],
+	"related": [
+		"apocalymon",
+		"wizardmon",
+		{ "name": "palmon", "from": "ponchomon" },
+		{ "name": "devimon", "for": "myotismon" },
+		{ "name": "hookmon", "from": "boltboutamon" },
+		{ "name": "meramon", "from": "demimeramon" },
+		{ "name": "kotemon", "for": "oboromon" }
+	],
+	"size": 7
+}

@@ -3,8 +3,9 @@ import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Icon from './Icon';
 import { SearchContext } from '@/context/search';
-import { getSearchPriority, makeClassName, stringToKey } from '@/functions';
+import { makeClassName } from '@/functions';
 import { Option } from '@/types/Ui';
+import { getSearchPriority } from '@/functions/search';
 
 const NB_PREVIEW = 10;
 interface Props {
@@ -62,13 +63,18 @@ const SearchBar: React.FC<Props> = ({
 	};
 
 	const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-		setSearch(e.target.value);
-		if (search) {
-			if (searchList && searchList.length > 0) {
-				let result = searchList.reduce((result, name) => {
-					const priority = getSearchPriority(search, name);
+		const value = e.target.value;
+		setSearch(value);
+		if (value) {
+			if (searchList && searchList.values.length > 0) {
+				let result = searchList.keys.reduce((result, name) => {
+					const priority = getSearchPriority(value, name);
 					if (priority != null) {
-						result.push({ key: priority, value: name } as Option);
+						result.push({
+							key: priority,
+							value: searchList.mapped[name],
+							text: name,
+						} as Option);
 					}
 					return result;
 				}, [] as any[]);
@@ -120,7 +126,7 @@ const SearchBar: React.FC<Props> = ({
 								handleSubmit(preview.value);
 							}}
 						>
-							{preview.value}
+							{preview.text || preview.value}
 						</span>
 					))}
 				</div>
