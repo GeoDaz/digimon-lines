@@ -1,7 +1,7 @@
 export interface Option {
 	key: number | string;
 	value: number | string;
-	text: number | string | undefined;
+	text?: number | string;
 }
 
 export interface Step {
