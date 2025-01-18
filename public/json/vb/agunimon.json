@@ -7,6 +7,7 @@
             null,
             {
                 "name": "flarelizardmon",
+                "mirror": true,
                 "color": "fire",
                 "from": [
                     1,
@@ -15,10 +16,12 @@
             },
             {
                 "name": "burninggreymon",
+                "mirror": true,
                 "color": "fire"
             },
             {
                 "name": "ancientgreymon",
+                "mirror": true,
                 "color": "fire"
             }
         ],
@@ -36,6 +39,7 @@
             [
                 {
                     "name": "flamon",
+                    "mirror": true,
                     "color": "fire",
                     "from": [
                         0.5,
@@ -64,16 +68,19 @@
             [
                 {
                     "name": "aldamon",
+                    "mirror": true,
                     "color": "fire"
                 },
                 {
                     "name": "flaremon",
+                    "mirror": true,
                     "color": "fire"
                 }
             ],
             [
                 {
                     "name": "emperorgreymon",
+                    "mirror": true,
                     "color": "fire"
                 },
                 {

@@ -4,19 +4,6 @@
             null,
             null,
             null,
-            null,
-            {
-                "name": "extyranomon",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
             {
                 "name": "growlmon",
                 "from": [
@@ -77,10 +64,34 @@
             null,
             null,
             {
-                "name": "devidramon",
+                "name": "punkmon",
+                "mirror": true,
                 "color": "dark",
                 "from": [
                     -2,
+                    -1
+                ]
+            },
+            {
+                "name": "loudmon",
+                "mirror": true,
+                "color": "dark"
+            },
+            {
+                "name": "heavymetaldramon",
+                "mirror": true,
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "devidramon",
+                "color": "dark",
+                "from": [
+                    -3,
                     -1
                 ]
             },

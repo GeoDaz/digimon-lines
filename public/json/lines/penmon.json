@@ -34,11 +34,11 @@
 			},
 			{
 				"name": "frosvelgrmon",
-				"color": ["ice", "ice"],
-				"xSize": 2,
+				"color": ["ice", "ice", "ice"],
 				"from": [
-					[-0.5, -1],
-					[0.5, -1]
+					[-1, -1],
+					[0, -1],
+					[1, -1]
 				]
 			}
 		],
@@ -100,11 +100,34 @@
 	"related": [
 		{
 			"name": "bearmon",
-			"from": "daipenmon"
+			"for": "frigimon"
+		},
+		{
+			"name": "bearmon",
+			"for": "chackmon"
+		},
+		{
+			"name": "gomamon",
+			"for": "dolphmon"
 		},
 		{
 			"name": "pulsemon",
-			"from": "tempomon"
+			"for": "tempomon"
+		},
+		{
+			"name": "biyomon",
+			"from": "cockatrimon"
+		},
+		{
+			"name": "aegisdramon"
+		},
+		{
+			"name": "hawkmon",
+			"from": "peacockmon"
+		},
+		{
+			"name": "hyokomon",
+			"for": "toucanmon"
 		},
 		{
 			"name": "falcomon2",
@@ -113,17 +136,6 @@
 		{
 			"name": "swimmon",
 			"for": "huankunmon"
-		},
-		{
-			"name": "biyomon",
-			"from": "cockatrimon"
-		},
-		{
-			"name": "hawkmon",
-			"from": "peacockmon"
-		},
-		{
-			"name": "aegisdramon"
 		}
 	]
 }

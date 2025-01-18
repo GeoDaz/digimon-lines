@@ -78,6 +78,7 @@
             null,
             {
                 "name": "reppamon",
+                "mirror": true,
                 "from": [
                     -2,
                     -1
@@ -87,7 +88,8 @@
                 "name": "chirinmon"
             },
             {
-                "name": "mitamamon"
+                "name": "mitamamon",
+                "mirror": true
             }
         ],
         [

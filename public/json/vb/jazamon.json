@@ -1,1 +1,142 @@
-{"size":6,"columns":[[null,null,null,null,{"name":"atlurballistamon","from":[1,-1],"xCollapsable":false,"yCollapsable":true},null],[null,null,null,{"name":"ballistamon","from":[1,-1],"xCollapsable":false,"yCollapsable":false},{"name":"locomon","from":[0,-1],"xCollapsable":false,"yCollapsable":false},{"name":"grandlocomon","from":[0,-1],"xCollapsable":false,"yCollapsable":true}],[{"name":"bommon","from":null,"xCollapsable":true,"yCollapsable":false},{"name":"missimon","from":[0,-1],"xCollapsable":true,"yCollapsable":false},{"name":"jazamon","from":[0,-1],"xCollapsable":true,"yCollapsable":false},{"name":"jazardmon","from":null,"xCollapsable":false,"yCollapsable":false},{"name":"jazarichmon","from":null,"xCollapsable":false,"yCollapsable":false},{"name":"metallicdramon","from":[0,-3],"xCollapsable":false,"yCollapsable":true}],[null,null,null,{"name":"mailbirdramon","from":[-1,-1],"xCollapsable":false,"yCollapsable":false},{"name":"metalgreymonb3","from":[0,-1],"xCollapsable":false,"yCollapsable":false},{"name":"zeekgreymon","from":[0,-1],"xCollapsable":false,"yCollapsable":true}],[null,null,null,{"name":"machmon","from":[-2,-1],"xCollapsable":true,"yCollapsable":false},{"name":"rebellimon","from":null,"xCollapsable":false,"yCollapsable":false},{"name":"heavyleomon","from":[0,-2],"xCollapsable":true,"yCollapsable":true}],[null,null,null,null,{"name":"loaderliomon","from":[-1,-1],"xCollapsable":false,"yCollapsable":true},null]]}
+{
+	"size": 6,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "atlurballistamon",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ballistamon",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "locomon",
+                "mirror": true,
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "grandlocomon",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			{
+				"name": "bommon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "missimon",
+				"from": [0, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "jazamon",
+				"from": [0, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "jazardmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "jazarichmon",
+                "mirror": true,
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "metallicdramon",
+				"from": [0, -3],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mailbirdramon",
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "metalgreymonb3",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "zeekgreymon",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "machmon",
+				"from": [-2, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "rebellimon",
+                "mirror": true,
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "heavyleomon",
+                "mirror": true,
+				"from": [0, -2],
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "loaderliomon",
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		]
+	]
+}

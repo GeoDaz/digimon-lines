@@ -1,20 +1,13 @@
 {
 	"size": 8,
 	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			{ "name": "metallifekuwagamon", "from": [1, -1] },
-			null
-		],
+		[null, null, null, null, { "name": "metallifekuwagamon", "from": [1, -1] }, null],
 		[
 			null,
 			null,
 			null,
 			{ "name": "kuwagamon", "from": [1, -1] },
-			{ "name": "okuwagamon", "from": [0, -1] },
+			{ "name": "okuwagamon", "mirror": true, "from": [0, -1] },
 			{ "name": "grankuwagamon", "from": [0, -1] }
 		],
 		[
@@ -23,7 +16,7 @@
 			{ "name": "tentomon", "from": [0, -1] },
 			{ "name": "kabuterimon", "from": [0, -1] },
 			{ "name": "megakabuterimon", "from": [0, -1] },
-			{ "name": "herculeskabuterimon", "from": [0, -1] }
+			{ "name": "herculeskabuterimon", "mirror": true, "from": [0, -1] }
 		],
 		[
 			null,
@@ -37,7 +30,7 @@
 			null,
 			null,
 			null,
-			{ "name": "boltmon", "from": [-2, -1] },
+			{ "name": "blitzmon", "from": [-2, -1] },
 			{ "name": "bolgmon", "from": [0, -1] },
 			{ "name": "ancientbeetlemon", "from": [0, -1] }
 		],

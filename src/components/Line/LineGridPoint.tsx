@@ -116,7 +116,7 @@ const LinePoint: React.FC<{
 			onClick={handleEdit ? handleEdit : undefined}
 		>
 			<div className="line-point-safe-zone">
-				<LineImage name={name} path={image} />
+				<LineImage name={name} path={image} mirror={point.mirror} />
 				{skins.map((skin, i) => (
 					<LineImage
 						key={i}

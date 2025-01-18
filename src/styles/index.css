@@ -533,6 +533,10 @@ a.line-point {
   transition: all .3s;
 }
 
+.line-point .line-img.mirror {
+  transform: scaleX(-1);
+}
+
 .line-point .line-skin {
   max-width: var(--dl-skin-img-size);
   max-height: var(--dl-skin-img-size);

@@ -37,6 +37,7 @@ export const PageBuild = (props: BuildProps) => {
 	const [edition, edit] = useState<boolean>(true);
 
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
+	
 	const { removeItemFromStorage } = useLocalStorage({
 		key: licenceContext.key + '-line',
 		item: line,

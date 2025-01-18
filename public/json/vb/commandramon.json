@@ -7,13 +7,15 @@
             null,
             {
                 "name": "strikedramon",
+                "mirror": true,
                 "from": [
                     1,
                     -1
                 ]
             },
             {
-                "name": "cyberdramon"
+                "name": "cyberdramon",
+                "mirror": true
             },
             {
                 "name": "justimon"
@@ -31,6 +33,7 @@
             [
                 {
                     "name": "bemmon",
+                    "mirror": true,
                     "from": [
                         0.5,
                         -1
@@ -38,6 +41,7 @@
                 },
                 {
                     "name": "commandramon",
+                    "mirror": true,
                     "from": [
                         -0.5,
                         -1
@@ -54,7 +58,8 @@
             ],
             [
                 {
-                    "name": "destromon"
+                    "name": "destromon",
+                    "mirror": true
                 },
                 {
                     "name": "cargodramon"
@@ -65,7 +70,8 @@
                     "name": "ragnamon"
                 },
                 {
-                    "name": "brigadramon"
+                    "name": "brigadramon",
+                    "mirror": true
                 }
             ]
         ],
@@ -84,7 +90,8 @@
                 "name": "tankdramon"
             },
             {
-                "name": "darkdramon"
+                "name": "darkdramon",
+                "mirror": true
             }
         ]
     ],

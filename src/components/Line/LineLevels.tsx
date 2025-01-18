@@ -6,26 +6,22 @@ import { addLineRow, defaultLine, removeLineRow } from '@/reducers/lineReducer';
 import Icon from '../Icon';
 import Line from '@/types/Line';
 
-const makeDefaultLevels = (size: number) => {
-	return Array.from({ length: size || 0 }).map((_, i) => levels[i] || '');
-};
-
 interface Props {
 	line: Line;
 }
 const LineLevels: React.FC<Props> = ({ line }) => {
 	const { handleEdit, handleUpdate } = useContext(GridContext);
 	const [editingIndex, setEditingIndex] = useState<number | null>(null);
-	const [levelsPicked, setLevelsPicked] = useState<string[]>(() =>
-		makeDefaultLevels(line.size)
-	);
+	const [levelsPicked, setLevelsPicked] = useState<string[]>(levels);
 
 	useEffect(() => {
 		if (line === defaultLine) {
-			setLevelsPicked(makeDefaultLevels(line.size));
+			setLevelsPicked(levels);
 		} else if (line.size !== levelsPicked.length) {
 			setLevelsPicked(
-				Array.from({ length: line.size }).map((_, i) => levelsPicked[i] || '')
+				Array.from({ length: line.size }).map(
+					(_, i) => levelsPicked[i] || levels[i] || ''
+				)
 			);
 		}
 	}, [line]);
@@ -69,14 +65,6 @@ const LineLevels: React.FC<Props> = ({ line }) => {
 			const nextY = y + 1;
 			const currentLevel = levelsPicked[y];
 			const levelIndex = levels.indexOf(currentLevel);
-			// if (levelIndex < 0) {
-			// // add a level from a custom level
-			// setLevelsPicked(current => {
-			// 	const nextLevels = current.slice();
-			// 	nextLevels.splice(nextY, 0, '');
-			// 	return nextLevels;
-			// });
-			// } else
 			if (levelIndex >= 0 && levelsPicked[nextY] != levels[levelIndex + 1]) {
 				// add a level from a level in the levels array
 				setLevelsPicked(current => {
@@ -94,7 +82,7 @@ const LineLevels: React.FC<Props> = ({ line }) => {
 		e.stopPropagation();
 		if (handleUpdate) {
 			setLevelsPicked(current => ['', ...current]);
-			handleUpdate(addLineRow, y);
+			handleUpdate(addLineRow, y - 1);
 		}
 	};
 

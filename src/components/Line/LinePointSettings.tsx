@@ -11,6 +11,7 @@ import UploadImage from '../UploadImage';
 import InputMono from '../InputMono';
 import { LicenseContext } from '@/context/license';
 import { makeClassName } from '@/functions';
+import ButtonRemove from '../Button/ButtonRemove';
 
 interface Props {
 	handleClose: () => void;
@@ -131,6 +132,13 @@ const LinePointSettings: React.FC<Props> = ({
 		}
 	};
 
+	const handleMirror = () => {
+		if (handleUpdate && point) {
+			const nextPoint: LinePoint = { ...point, mirror: !point.mirror };
+			handleUpdate(setLinePoint, coord, nextPoint);
+		}
+	};
+
 	return (
 		<Modal show={show} onHide={handleClose}>
 			<Modal.Header closeButton>
@@ -156,6 +164,7 @@ const LinePointSettings: React.FC<Props> = ({
 						className="mb-3"
 						point={point}
 						handleRemove={handleRemove}
+						handleMirror={handleMirror}
 					/>
 				) : null}
 				{!!point?.from &&
@@ -191,13 +200,10 @@ const LinePointSettings: React.FC<Props> = ({
 							{point.skins?.map((skin, i) => (
 								<h5 key={i} className="text-capitalize break-word">
 									{skin}{' '}
-									<Button
-										variant="danger"
+									<ButtonRemove
 										onClick={() => handleRemoveSkin(i)}
-										title="remove digimon"
-									>
-										<Icon name="trash3-fill" />
-									</Button>
+										title="remove skin"
+									/>
 								</h5>
 							))}
 						</div>
@@ -212,17 +218,23 @@ const SettingPoint: React.FC<{
 	className?: string;
 	point: LinePoint;
 	handleRemove: MouseEventHandler<HTMLElement>;
+	handleMirror: MouseEventHandler<HTMLElement>;
 	imgClassName?: string;
-}> = ({ className, point, handleRemove, imgClassName }) => (
+}> = ({ className, point, handleRemove, handleMirror, imgClassName }) => (
 	<div className={className}>
 		<h4 className="text-capitalize break-word mb-3">
-			{point.name}{' '}
-			<Button variant="danger" onClick={handleRemove} title="remove digimon">
-				<Icon name="trash3-fill" />
+			{point.name} <ButtonRemove onClick={handleRemove} title="remove digimon" />{' '}
+			<Button title="mirror mode" onClick={handleMirror}>
+				<Icon name="symmetry-vertical" />
 			</Button>
 		</h4>
 		<div className="line-point width-min-content">
-			<LineImage name={point.name} path={point.image} className={imgClassName} />
+			<LineImage
+				name={point.name}
+				path={point.image}
+				mirror={point.mirror}
+				className={imgClassName}
+			/>
 			{point.skins?.map((skin, i) => (
 				<LineImage
 					key={i}
@@ -272,9 +284,7 @@ const SettingFrom: React.FC<{
 				</Dropdown.Item>
 			))}
 		</DropdownButton>{' '}
-		<Button variant="danger" onClick={e => handleRemove(number)} title="remove line">
-			<Icon name="trash3-fill" />
-		</Button>
+		<ButtonRemove onClick={e => handleRemove(number)} title="remove line" />
 	</div>
 );
 

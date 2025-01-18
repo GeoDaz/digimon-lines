@@ -14,7 +14,7 @@
 			{ "name": "kuramon", "from": null },
 			{ "name": "negamon", "from": [0, -1] },
 			{ "name": "soundbirdmon", "from": [0, -1] },
-			{ "name": "numemon", "from": [0, -1] },
+			{ "name": "numemon", "mirror": true, "from": [0, -1] },
 			{ "name": "digitamamon", "from": [0, -1] },
 			{ "name": "devitamamon", "from": [0, -1] }
 		],

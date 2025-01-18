@@ -5,7 +5,12 @@
 			null,
 			null,
 			null,
-			{ "name": "dinobeemon", "from": [1, -1], "collapsable": false },
+			{
+				"name": "dinobeemon",
+				"from": [1, -1],
+				"collapsable": false,
+				"mirror": true
+			},
 			null
 		],
 		[
@@ -19,7 +24,7 @@
 		[
 			{ "name": "pupumon", "from": null, "collapsable": true },
 			{ "name": "puroromon", "collapsable": true },
-			{ "name": "fanbeemon", "collapsable": true },
+			{ "name": "fanbeemon", "collapsable": true, "mirror": true },
 			{ "name": "forgebeemon", "collapsable": false },
 			{ "name": "cannonbeemon", "collapsable": false },
 			{ "name": "queenbeemon", "collapsable": false }

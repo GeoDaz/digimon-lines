@@ -14,6 +14,7 @@ export interface LinePoint {
 	xSize?: number;
 	ySize?: number;
 	color?: LineColor;
+	mirror?: boolean;
 	from?: LineFrom;
 	skins?: string[];
 	image?: string;
