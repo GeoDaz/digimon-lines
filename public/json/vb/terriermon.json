@@ -26,7 +26,8 @@
                 ]
             },
             {
-                "name": "rapidmon"
+                "name": "rapidmon",
+                "mirror": true
             },
             {
                 "name": "fujinmon"
@@ -80,9 +81,30 @@
             null,
             null,
             {
-                "name": "turuiemon",
+                "name": "wendimon",
+                "color": "dark",
                 "from": [
                     -2,
+                    -1
+                ]
+            },
+            {
+                "name": "andiramon2",
+                "color": "dark"
+            },
+            {
+                "name": "cherubimonb",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "turuiemon",
+                "from": [
+                    -3,
                     -1
                 ]
             },

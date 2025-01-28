@@ -1,5 +1,5 @@
 {
-	"size": 8,
+	"size": 6,
 	"columns": [
 		[
 			null,
@@ -12,9 +12,7 @@
 				"from": [[1, 0]],
 				"collapsable": false,
 				"color": ["fusion"]
-			},
-			null,
-			null
+			}
 		],
 		[
 			null,
@@ -37,9 +35,7 @@
 				"from": [[0, -1]],
 				"collapsable": false,
 				"color": ["light"]
-			},
-			null,
-			null
+			}
 		],
 		[
 			{ "name": "yolkmon", "from": null, "collapsable": true },
@@ -52,9 +48,7 @@
 				"from": [[0, -5]],
 				"collapsable": false,
 				"color": ["wind"]
-			},
-			null,
-			null
+			}
 		],
 		[
 			null,
@@ -72,9 +66,7 @@
 				"from": [[0, -3]],
 				"collapsable": false,
 				"color": ["grass"]
-			},
-			null,
-			null
+			}
 		],
 		[
 			null,
@@ -92,9 +84,7 @@
 				"from": [[0, -3]],
 				"collapsable": false,
 				"color": ["marine"]
-			},
-			null,
-			null
+			}
 		],
 		[
 			null,
@@ -112,9 +102,7 @@
 				"from": [[0, -3]],
 				"collapsable": false,
 				"color": ["dark"]
-			},
-			null,
-			null
+			}
 		],
 		[
 			null,
@@ -127,9 +115,7 @@
 				"from": [[-1, 0]],
 				"collapsable": false,
 				"color": ["mode"]
-			},
-			null,
-			null
+			}
 		]
 	]
 }

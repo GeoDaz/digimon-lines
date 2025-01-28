@@ -5,7 +5,12 @@
 			null,
 			null,
 			null,
-			{ "name": "anomalocarimon", "from": [1, -1], "color": "marine" }
+			{
+				"name": "anomalocarimon",
+				"mirror": true,
+				"from": [1, -1],
+				"color": "marine"
+			}
 		],
 		[
 			null,
@@ -35,8 +40,13 @@
 			null,
 			null,
 			null,
-			{ "name": "seadramon", "color": "marine", "from": [-2, -1] },
-			{ "name": "megaseadramon", "color": "marine", "from": [0, -1] },
+			{ "name": "seadramon", "mirror": true, "color": "marine", "from": [-2, -1] },
+			{
+				"name": "megaseadramon",
+				"mirror": true,
+				"color": "marine",
+				"from": [0, -1]
+			},
 			{ "name": "metalseadramon", "color": "marine", "from": [0, -1] }
 		],
 		[
@@ -44,7 +54,12 @@
 			null,
 			null,
 			null,
-			{ "name": "marinechimeramon", "from": [-1, -1], "color": "marine" }
+			{
+				"name": "marinechimeramon",
+				"mirror": true,
+				"from": [-1, -1],
+				"color": "marine"
+			}
 		]
 	],
 	"related": [

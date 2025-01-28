@@ -1,1 +1,144 @@
-{"size":6,"columns":[[null,null,null,null,{"name":"gigasmon","from":[1,-1],"xCollapsable":false,"yCollapsable":true},null],[null,null,null,{"name":"golemon","from":[[1.5,-1]],"xCollapsable":false,"yCollapsable":false},{"name":"volcamon","from":[0,-1],"xCollapsable":false,"yCollapsable":false},{"name":"ancientvolcamon","from":[0,-1],"xCollapsable":false,"yCollapsable":true}],[{"name":"sunamon","from":null,"xCollapsable":false,"yCollapsable":false,"xSize":2},{"name":"goromon","from":[[0,-1]],"xCollapsable":false,"yCollapsable":false,"xSize":2},{"name":"sunarizamon","from":[[0,-1]],"xCollapsable":false,"yCollapsable":false,"xSize":2},{"name":"baboongamon","from":[[0.5,-1]],"xCollapsable":false,"yCollapsable":false},{"name":"gogmamon","from":[0,-1],"xCollapsable":false,"yCollapsable":false},{"name":"banchogolemon","from":[0,-1],"xCollapsable":false,"yCollapsable":true}],[null,null,null,{"name":"tortamon","from":[[-0.5,-1]],"xCollapsable":false,"yCollapsable":false},{"name":"proganomon","from":[0,-1],"xCollapsable":false,"yCollapsable":false},{"name":"pyramidimon","from":[0,-1],"xCollapsable":false,"yCollapsable":true}],[null,null,null,{"name":"landramon","from":[[-1.5,-1]],"xCollapsable":true,"yCollapsable":false},{"name":"groundramon","from":[0,-1],"xCollapsable":false,"yCollapsable":false},{"name":"breakdramon","from":[0,-1],"xCollapsable":true,"yCollapsable":true}],[null,null,null,null,{"name":"stegomon","from":[-1,-1],"xCollapsable":false,"yCollapsable":true},null]]}
+{
+	"size": 6,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gigasmon",
+                "mirror": true,
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "golemon",
+				"from": [[1.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "volcamon",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "ancientvolcamon",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			{
+				"name": "sunamon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "goromon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "sunarizamon",
+                "mirror": true,
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "baboongamon",
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "gogmamon",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "banchogolemon",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tortamon",
+				"from": [[-0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "proganomon",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "pyramidimon",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "landramon",
+				"from": [[-1.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "groundramon",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "breakdramon",
+                "mirror": true,
+				"from": [0, -1],
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "stegomon",
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		]
+	]
+}
