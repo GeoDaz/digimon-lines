@@ -3,6 +3,41 @@
 		[
 			null,
 			null,
+			{
+				"name": "candlemon",
+				"from": [[2.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["fire"]
+			},
+			{
+				"name": "flamewizardmon",
+				"from": [
+					[0, -1],
+					[2.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["fire", "fire"]
+			},
+			{
+				"name": "skullsatamon",
+				"from": [[2.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["dark"]
+			},
+			{
+				"name": "barbamon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["dark"]
+			}
+		],
+		[
+			null,
+			null,
 			null,
 			{
 				"name": "wizardmonx",
@@ -52,7 +87,11 @@
 				"collapsable": false,
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"xSize": 2
+				"xSize": 2,
+				"from": [
+					[-2.5, -1],
+					[0, -1]
+				]
 			},
 			{
 				"name": "mistymon",
@@ -87,32 +126,44 @@
 			null,
 			null,
 			null,
+			null,
+			null,
+			{
+				"name": "hexeblaumon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["ice"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
 			{
 				"name": "sorcerymon",
-				"color": "ice",
-				"from": [[-2, -1]],
+				"color": ["ice"],
+				"from": [[-2.5, -1]],
 				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "wisemon",
 				"from": [
-					[0, -1],
-					[-2, -1]
+					[-2.5, -1],
+					[0, -1]
 				],
 				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "ancientwisemon",
 				"collapsable": false,
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"from": [[0.5, -1]]
+				"from": [[0, -1]]
 			}
 		],
 		[
@@ -123,7 +174,7 @@
 			null,
 			{
 				"name": "jijimon",
-				"from": [[-0.5, -1]],
+				"from": [[-1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
 			}
@@ -134,7 +185,7 @@
 			null,
 			{
 				"name": "witchmon",
-				"from": [[-4, -1]],
+				"from": [[-5, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"xSize": 2
@@ -173,56 +224,22 @@
 				"xCollapsable": false,
 				"yCollapsable": true
 			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "candlemon",
-				"color": "fire",
-				"from": [[-5.5, -1]],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "flamewizardmon",
-				"color": "fire",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "skullsatamon",
-				"from": [[0, -1]],
-				"collapsable": false,
-				"color": ["dark"],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "barbamon",
-				"from": [[0, -1]],
-				"collapsable": false,
-				"color": ["dark"],
-				"xCollapsable": false,
-				"yCollapsable": true
-			}
 		]
 	],
 	"related": [
 		{ "name": "impmon", "from": "wizardmon" },
+		{ "name": "meramon", "for": "deathmeramon" },
+		{ "name": "meramon", "for": "demimeramon" },
+		{ "name": "bakemon", "from": "ghostmon" },
 		{ "name": "mercuremon", "from": "ancientwisemon" },
 		{ "name": "guilmon", "for": "medievalgallantmon" },
 		{ "name": "blucomon", "for": "hexeblaumon" },
 		{ "name": "devimon", "for": "lilithmon" },
 		{ "name": "devimon", "for": "skullsatamon" },
-		{ "name": "bakemon", "from": "candlemon" },
-		{ "name": "meramon", "from": "demimeramon" },
 		{ "name": "gatomon", "from": "witchmon" },
 		{ "name": "shoemon", "for": "chaperomon" },
-		{ "name": "monmon", "from": "jijimon" },
-		{ "name": "palmon", "from": "babamon" }
+		{ "name": "monmon", "for": "jijimon" },
+		{ "name": "palmon", "for": "babamon" }
 	],
 	"size": 6
 }

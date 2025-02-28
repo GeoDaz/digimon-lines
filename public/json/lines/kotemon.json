@@ -1,113 +1,105 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "shivamon",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "asuramon",
-                "color": "fire",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "vulcanusmon",
-                "color": "fire"
-            }
-        ],
-        [
-            {
-                "name": "choromon"
-            },
-            {
-                "name": "caprimon"
-            },
-            {
-                "name": "kotemon"
-            },
-            {
-                "name": "musyamon"
-            },
-            {
-                "name": "oboromon",
-                "color": "black"
-            },
-            {
-                "name": "zanbamon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "yaksamon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "boutmon"
-            },
-            {
-                "name": "kazuchimon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "tactimon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "pawnchessmonwhite",
-            "for": "gladimon"
-        },
-        {
-            "name": "bakemon",
-            "from": "oboromon"
-        },
-        {
-            "name": "pulsemon",
-            "from": "kazuchimon"
-        },
-        "ryudamon",
-        {
-            "name": "golemon",
-            "from": "vulcanusmon"
-        },
-        {
-            "name": "greymon",
-            "for": "samudramon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "shivamon",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "asuramon",
+				"color": "fire",
+				"from": [1, -1]
+			},
+			{
+				"name": "vulcanusmon",
+				"color": "fire"
+			}
+		],
+		[
+			{
+				"name": "choromon"
+			},
+			{
+				"name": "caprimon"
+			},
+			{
+				"name": "kotemon"
+			},
+			{
+				"name": "musyamon"
+			},
+			{
+				"name": "oboromon",
+				"color": "black"
+			},
+			{
+				"name": "zanbamon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "yaksamon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "boutmon"
+			},
+			{
+				"name": "kazuchimon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "tactimon",
+				"color": "dark",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "pawnchessmonwhite",
+			"for": "gladimon"
+		},
+		{
+			"name": "bakemon",
+			"from": "oboromon"
+		},
+		{
+			"name": "pulsemon",
+			"from": "kazuchimon"
+		},
+		"ryudamon",
+		{
+			"name": "greymon",
+			"for": "samudramon"
+		},
+		{
+			"name": "meramon",
+			"for": "asuramon"
+		},
+		{
+			"name": "golemon",
+			"for": "vulcanusmon"
+		}
+	]
 }

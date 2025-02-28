@@ -209,12 +209,13 @@
 	],
 	"related": [
 		"apocalymon",
-		"wizardmon",
-		{ "name": "palmon", "from": "ponchomon" },
+		{ "name": "wizardmon", "from": "ghostmon" },
+		{ "name": "palmon", "for": "ponchomon" },
 		{ "name": "devimon", "for": "myotismon" },
 		{ "name": "hookmon", "from": "boltboutamon" },
 		{ "name": "meramon", "from": "demimeramon" },
-		{ "name": "kotemon", "for": "oboromon" }
+		{ "name": "kotemon", "for": "oboromon" },
+		{ "name": "golemon", "for": "pyramidmon" }
 	],
 	"size": 7
 }
