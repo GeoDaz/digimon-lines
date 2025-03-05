@@ -7,23 +7,32 @@
 				"name": "impmonx",
 				"color": "x",
 				"xSize": 2,
-				"from": [2, 0]
+				"from": [2, 0],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "wizardmonx",
 				"color": "x",
-				"xSize": 2
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "baalmonx",
 				"color": "x",
-				"xSize": 2
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "beelzebumonx",
 				"color": "x",
-				"from": [0.5, -1]
-			}
+				"from": [0.5, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			null,
@@ -34,41 +43,60 @@
 			{
 				"name": "beelstarmonx",
 				"color": "x",
-				"from": [-0.5, -1]
-			}
+				"from": [-0.5, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			{
 				"name": "keemon",
-				"xSize": 2
+				"xSize": 2,
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "yarmon",
 				"color": "dark",
-				"xSize": 2
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "impmon",
 				"color": "dark",
-				"xSize": 2
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "wizardmon",
-				"xSize": 2
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
-				"name": "baalmon",
-				"xSize": 2
+				"name": "deathmeramon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0.5, -1]],
+				"color": ["dark"]
 			},
 			{
-				"color": "dark",
+				"color": ["dark"],
 				"name": "beelzebumon",
-				"from": [0.5, -1],
-				"skins": ["beelzebumon2"]
+				"from": [[0, -1]],
+				"skins": ["beelzebumonbehemoth"],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "beelzebumonbm",
-				"color": "mode"
+				"color": "mode",
+				"xCollapsable": true,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -76,11 +104,18 @@
 			null,
 			null,
 			null,
-			null,
 			{
-				"name": "beelstarmon",
-				"color": "dark",
-				"from": [-0.5, -1]
+				"name": "baalmon",
+				"from": [[-0.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "beelzebumon2",
+				"color": ["dark"],
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
 			},
 			null
 		],
@@ -89,22 +124,46 @@
 			null,
 			{
 				"name": "petitmamon",
-				"color": "dark",
-				"from": [-1.5, -1]
+				"from": [[-1.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["dark"]
 			},
+			null,
+			null,
+			{
+				"name": "beelstarmon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
 			{
 				"name": "punkmon",
-				"color": "dark",
-				"from": [-1.5, -1]
+				"color": ["dark"],
+				"from": [[-2.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "loudmon",
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "heavymetaldramon",
-				"color": "dark"
-			}
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			null,
@@ -112,17 +171,24 @@
 			null,
 			{
 				"name": "boogiemon",
-				"color": "dark",
-				"from": [-2.5, -1]
+				"color": ["dark"],
+				"from": [[-3.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "phelesmon",
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "barbamon",
-				"color": "dark"
-			}
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			null,
@@ -133,48 +199,28 @@
 			{
 				"name": "barbamonx",
 				"color": "x",
-				"from": [-1, 0]
-			}
+				"from": [-1, 0],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		]
 	],
 	"related": [
 		"guilmon",
 		"ogudomon",
 		"wizardmon",
-		{
-			"name": "meramon",
-			"for": "deathmeramon"
-		},
-		{
-			"name": "devimon",
-			"for": "skullsatamon"
-		},
-		{
-			"name": "shoutmon",
-			"for": "shoutmonx4b"
-		},
-		{
-			"name": "bemmon",
-			"for": "omegaarmamon"
-		},
-		{
-			"name": "gatomon",
-			"for": "ladydevimon"
-		},
-		{
-			"name": "sistermonblanc",
-			"for": "sistermonnoirawake"
-		},
-		{
-			"name": "hookmon",
-			"for": "magnakidmon"
-		},
-		{
-			"name": "monmon",
-			"for": "dijiangmon"
-		}
+		{ "name": "meramon", "for": "deathmeramon" },
+		{ "name": "devimon", "for": "skullsatamon" },
+		{ "name": "shoutmon", "for": "shoutmonx4b" },
+		{ "name": "bemmon", "for": "omegaarmamon" },
+		{ "name": "gatomon", "for": "ladydevimon" },
+		{ "name": "sistermonblanc", "for": "sistermonnoirawake" },
+		{ "name": "hookmon", "for": "magnakidmon" },
+		{ "name": "monmon", "for": "dijiangmon" }
 	],
 	"notes": [
 		"Astar is demon close to Beelzebub in the demonology but Astamon is already taken as an Ultimate/Perfect on Belphemon line."
-	]
+	],
+	"size": 7
 }
