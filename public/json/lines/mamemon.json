@@ -136,7 +136,8 @@
 					[-2, -1]
 				],
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": true,
+				"color": ["electric", "electric"]
 			},
 			null
 		],
@@ -148,13 +149,15 @@
 				"name": "bombernanimon",
 				"from": [[1, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false
+				"yCollapsable": false,
+				"color": ["fire"]
 			},
 			{
 				"name": "bombermon",
 				"from": [[0, -1]],
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": true,
+				"color": ["fire"]
 			},
 			null
 		],
@@ -165,13 +168,15 @@
 				"name": "chikurimon",
 				"from": [[-4, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false
+				"yCollapsable": false,
+				"color": ["dark"]
 			},
 			{
 				"name": "troopmon",
 				"from": [[0, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false
+				"yCollapsable": false,
+				"color": ["dark"]
 			},
 			{
 				"name": "giromon",
@@ -180,7 +185,8 @@
 					[-4, -1]
 				],
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": true,
+				"color": ["dark", "dark"]
 			},
 			null
 		],
@@ -191,7 +197,13 @@
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
-			{ "name": "tanemon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "tanemon",
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"color": ["grass"]
+			},
 			{ "name": "dondokomon", "xCollapsable": true, "yCollapsable": false },
 			{
 				"name": "igamon",
@@ -206,7 +218,8 @@
 					[-5, -1]
 				],
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": true,
+				"color": ["machine", "machine"]
 			},
 			null
 		],
@@ -228,7 +241,8 @@
 		{ "name": "tyranomon", "for": "mametyramon" },
 		{ "name": "gammamon", "from": "bombermon" },
 		{ "name": "tentomon", "from": "kokuwamon" },
-		{ "name": "pulsemon", "from": "shootmon" }
+		{ "name": "pulsemon", "from": "shootmon" },
+		{ "name": "commandramon", "from": "troopmon" }
 	],
 	"size": 6
 }
