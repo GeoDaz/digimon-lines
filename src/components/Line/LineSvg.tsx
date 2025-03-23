@@ -48,7 +48,7 @@ const LineSvg: React.FC<Props> = ({
 	let yDest = y;
 	const strokeWidth = 12;
 	const svgStyle: React.CSSProperties = {};
-	if ((xGap > 1 && yGap > 0 && from[1] != -0.5) || (xGap > 0 && yGap > 1)) {
+	if ((xGap > 1 && yGap > 0 && from[1] != -0.5) || (xGap > 0.5 && yGap > 1)) {
 		xDest += (xSize ? xSize - 1 : 0) * (pointWidth / 2 + strokeWidth);
 		yDest += (ySize ? ySize - 1 : 0) * (pointHeight / 2 + strokeWidth);
 
@@ -68,7 +68,7 @@ const LineSvg: React.FC<Props> = ({
 		yDest -= pointHeight - strokeWidth;
 	}
 	if (xGap == 0.5 && yGap > 0) {
-		if (yGap <= 1.5 && ySize <= 1) {
+		if (ySize <= 1) {
 			yOrigin = pointHeight - strokeWidth / 2;
 			yDest -= pointHeight - strokeWidth;
 		}
@@ -79,7 +79,9 @@ const LineSvg: React.FC<Props> = ({
 			xDest -= pointHeight - strokeWidth;
 		}
 	}
-
+	if (yGap > 1) {
+		console.log({ from, xSize, ySize, xGap, yGap, xOrigin, yOrigin, xDest, yDest });
+	}
 	return (
 		<svg
 			className={'line-svg ' + (left ? 'left' : 'right')}

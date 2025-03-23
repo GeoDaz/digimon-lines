@@ -1,1 +1,111 @@
-{"columns":[[null,null,null,{"name":"archelomon","color":"marine","from":[1,-1],"xCollapsable":false,"yCollapsable":false},{"name":"zudomon","color":"marine","xCollapsable":false,"yCollapsable":true},null,null],[{"name":"pipimon","from":null,"xCollapsable":true,"yCollapsable":false},{"name":"chapmon","xCollapsable":true,"yCollapsable":false},{"name":"kamemon","xCollapsable":true,"yCollapsable":false},{"name":"gawappamon","xCollapsable":false,"yCollapsable":false},{"name":"shawujinmon","xCollapsable":false,"yCollapsable":false},{"name":"jumbogamemon","xCollapsable":true,"yCollapsable":true,"from":[[0,-3]],"color":["marine"]},null],[null,null,null,{"name":"dinohumon","from":[[-1,-1]],"xCollapsable":false,"yCollapsable":false},{"name":"sagomon","from":[[-1,-1],[1,-1]],"xCollapsable":false,"yCollapsable":true,"color":["marine","marine"]},null,null],[null,null,null,{"name":"tortamon","from":[[-2,-1]],"xCollapsable":true,"yCollapsable":false,"color":["earth"]},{"name":"proganomon","xCollapsable":true,"yCollapsable":false,"from":[[0,-1]],"color":["earth"]},{"name":"eldoradimon","xCollapsable":true,"yCollapsable":false,"from":[[0,-1],[-1,-1]],"color":["earth","earth"]},{"name":"tlalocmon","color":"fusion","xCollapsable":true,"yCollapsable":true}],[null,null,null,null,null,null,null]],"related":[{"name":"leomon","from":"tlalocmon"},{"name":"woodmon","for":"xuanwumon"},{"name":"golemon","from":"tortamon"},{"name":"gomamon","from":"zudomon"}],"size":7}
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "archelomon",
+				"color": "marine",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "zudomon",
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "pipimon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "chapmon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "kamemon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "gawappamon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "shawujinmon", "xCollapsable": false, "yCollapsable": false },
+			{
+				"name": "jumbogamemon",
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"from": [[0, -3]],
+				"color": ["marine"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dinohumon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "sagomon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["marine", "marine"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tortamon",
+				"from": [[-2, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["earth"]
+			},
+			{
+				"name": "proganomon",
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"color": ["earth"]
+			},
+			{
+				"name": "eldoradimon",
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"color": ["earth", "earth"]
+			},
+			{
+				"name": "tlalocmon",
+				"color": "fusion",
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		],
+		[null, null, null, null, null, null, null]
+	],
+	"related": [
+		{ "name": "shakamon", "from": "sagomon" },
+		{ "name": "leomon", "from": "tlalocmon" },
+		{ "name": "woodmon", "for": "xuanwumon" },
+		{ "name": "golemon", "for": "tortamon" },
+		{ "name": "gomamon", "for": "zudomon" }
+	],
+	"size": 7
+}
