@@ -15,6 +15,8 @@ interface Props extends React.ImgHTMLAttributes<any> {
 	style?: object;
 	loadable?: boolean;
 	mirror?: boolean;
+	width?: number;
+	height?: number;
 }
 const LineImage: React.FC<Props> = ({
 	name,
@@ -25,6 +27,8 @@ const LineImage: React.FC<Props> = ({
 	path,
 	loadable = true,
 	mirror = false,
+	width = 150,
+	height = 150,
 }) => {
 	const getImgPath = imgPathByLicence[useContext(LicenseContext)?.key || DIGIMON];
 
@@ -80,8 +84,8 @@ const LineImage: React.FC<Props> = ({
 				}}
 				alt={name}
 				className={makeClassName('line-img rounded', mirror && 'mirror', className)}
-				width={150 / ratioWidth}
-				height={150 / ratioHeight}
+				width={width / ratioWidth}
+				height={height / ratioHeight}
 				title={title}
 				style={style}
 			/>

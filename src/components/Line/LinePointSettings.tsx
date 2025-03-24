@@ -140,7 +140,7 @@ const LinePointSettings: React.FC<Props> = ({
 	};
 
 	return (
-		<Modal show={show} onHide={handleClose}>
+		<Modal show={show} onHide={handleClose} className="line-point-settings">
 			<Modal.Header closeButton>
 				<Modal.Title>
 					<Icon name="sliders2" /> Element Options
@@ -234,6 +234,8 @@ const SettingPoint: React.FC<{
 				path={point.image}
 				mirror={point.mirror}
 				className={imgClassName}
+				width={300}
+				height={300}
 			/>
 			{point.skins?.map((skin, i) => (
 				<LineImage
@@ -241,6 +243,8 @@ const SettingPoint: React.FC<{
 					name={skin}
 					className="line-skin"
 					loadable={false}
+					width={300}
+					height={300}
 					style={{ bottom: 3.3 * i + 'em' }}
 				/>
 			))}
