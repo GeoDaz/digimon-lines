@@ -9,20 +9,17 @@
 			},
 			{
 				"name": "dimetromon"
-			}
-		],
-		[
-			null,
-			null,
-			null,
+			},
 			{
-				"name": "salamandermon",
-				"from": [-1, -1]
+				"name": "lamiamon"
+			},
+			{
+				"name": "medusamon"
 			}
 		]
 	],
 	"related": [
 		{ "name": "armadillomon", "for": "stegomon" },
-		{ "name": "gekomon", "from": "salamandermon" }
+		{ "name": "gekomon", "for": "salamandermon" }
 	]
 }
