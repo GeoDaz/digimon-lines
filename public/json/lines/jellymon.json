@@ -6,16 +6,20 @@
 			{
 				"name": "ukkomon",
 				"color": "light",
-				"from": [4, -1]
+				"from": [4, -1],
+				"xCollapsable": true,
+				"yCollapsable": true
 			},
-            null,
-            null,
-            {
-                "name": "bigukkomon",
-                "color": "dark",
+			null,
+			null,
+			{
+				"name": "bigukkomon",
+				"color": "dark",
 				"skins": ["bigukkomonopen"],
-                "from": [0,-3]
-            }
+				"from": [0, -3],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
 		],
 		[
 			null,
@@ -26,7 +30,16 @@
 				"name": "splashmon",
 				"color": "marine",
 				"from": [2, -1],
-				"skins": ["splashmondm"]
+				"skins": ["splashmondm"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "marineangemon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["light"]
 			}
 		],
 		[
@@ -37,11 +50,16 @@
 			{
 				"name": "mermaimon",
 				"color": "marine",
-				"from": [1, -1]
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
-				"name": "marineangemon",
-				"color": "light"
+				"name": "shagaramon",
+				"color": ["marine"],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"from": [[0, -1]]
 			}
 		],
 		[
@@ -51,11 +69,15 @@
 			{
 				"name": "ranamon",
 				"color": "marine",
-				"from": [1, -1]
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "calamaramon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "ancientmermaimon",
@@ -63,32 +85,47 @@
 				"from": [
 					[-1, -1],
 					[0, -1]
-				]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
 			{
-				"name": "puyomon"
+				"name": "puyomon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "puyoyomon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "jellymon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "teslajellymon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "thetismon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "amphimon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -98,15 +135,21 @@
 			{
 				"name": "depthmon",
 				"color": "marine",
-				"from": [1, -1]
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "hangyomon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "regalecusmon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -115,19 +158,27 @@
 			{
 				"name": "sangomon",
 				"color": "marine",
-				"from": [-2, -1]
+				"from": [-2, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "octomon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "dagomon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "neptunemon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -138,15 +189,21 @@
 				"name": "shellmon",
 				"color": "marine",
 				"skins": ["morishellmon"],
-				"from": [-1, -1]
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "marinbullmon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "ryugumon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -155,19 +212,27 @@
 			{
 				"name": "shakomon",
 				"color": "marine",
-				"from": [-4, -1]
+				"from": [-4, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "gesomon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "marinedevimon",
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "cthyllamon",
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -176,41 +241,30 @@
 			{
 				"name": "shakomonx",
 				"color": "x",
-				"from": [-1, 0]
+				"from": [-1, 0],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "gesomonx",
-				"color": "x"
+				"color": "x",
+				"xCollapsable": false,
+				"yCollapsable": true
 			},
 			null,
 			null
 		]
 	],
 	"related": [
-		{
-			"name": "devimon",
-			"from": "marinedevimon"
-		},
-		{
-			"name": "angemon",
-			"from": "marineangemon"
-		},
-		{
-			"name": "seadramon",
-			"for": "leviamon"
-		},
-		{
-			"name": "swimmon",
-			"from": "hangyomon"
-		},
-		{
-			"name": "hookmon",
-			"from": "mermaimon"
-		},
-		{
-			"name": "numemon",
-			"from": "gerbemon"
-		}
+		{ "name": "devimon", "from": "marinedevimon" },
+		{ "name": "angemon", "from": "marineangemon" },
+		{ "name": "seadramon", "for": "leviamon" },
+		{ "name": "swimmon", "from": "hangyomon" },
+		{ "name": "hookmon", "from": "mermaimon" },
+		{ "name": "numemon", "from": "gerbemon" },
+		{ "name": "falcomon2", "for": "xiangpengmon" },
+		{ "name": "gatomon", "from": "venusmon" }
 	],
-	"notes": ["This line is about octopus, seashells and mermaids."]
+	"notes": ["This line is about octopus, seashells and mermaids."],
+	"size": 6
 }
