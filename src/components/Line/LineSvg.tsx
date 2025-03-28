@@ -79,9 +79,6 @@ const LineSvg: React.FC<Props> = ({
 			xDest -= pointHeight - strokeWidth;
 		}
 	}
-	if (yGap > 1) {
-		console.log({ from, xSize, ySize, xGap, yGap, xOrigin, yOrigin, xDest, yDest });
-	}
 	return (
 		<svg
 			className={'line-svg ' + (left ? 'left' : 'right')}
