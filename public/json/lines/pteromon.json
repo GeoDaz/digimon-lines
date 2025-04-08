@@ -4,35 +4,98 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
-				"name": "diatrymon",
-				"color": "wind",
-				"from": [1, -1]
+				"name": "zephagamon",
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["wind"]
 			}
 		],
 		[
 			{
-				"name": "yolkmon"
+				"name": "yolkmon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "fluffymon",
-				"color": "wind"
+				"color": "wind",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "pteromon",
-				"color": "wind"
+				"color": "wind",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "galemon",
-				"color": "wind"
+				"color": "wind",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "grandgalemon",
-				"color": "wind"
+				"color": "wind",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
-				"name": "zephagamon",
-				"color": "wind"
+				"name": "medievalgallantmon",
+				"color": "wind",
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"from": [[-0.5, -1]],
+				"xSize": 2
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "valdurmon",
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["light"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "diatrymon",
+				"color": ["wind"],
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "yatagaramon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"skins": ["yatagaramon2"],
+				"color": ["wind"]
+			},
+			{
+				"name": "ornismon",
+				"from": [[-0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["dark"]
 			}
 		],
 		[
@@ -41,9 +104,13 @@
 			null,
 			{
 				"name": "pteranomon",
-				"color": "machine",
-				"from": [-1, -1]
-			}
+				"from": [[-3, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["machine"]
+			},
+			null,
+			null
 		],
 		[
 			null,
@@ -51,19 +118,19 @@
 			null,
 			{
 				"name": "pteranomonx",
-				"color": "x",
-				"from": [-1, 0]
-			}
+				"from": [[-1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["x"]
+			},
+			null,
+			null
 		]
 	],
 	"related": [
-		{
-			"name": "falcomon2",
-			"for": "falcomon"
-		},
-		{
-			"name": "jazamon",
-			"from": "pteranomon"
-		}
-	]
+		{ "name": "falcomon2", "from": "valdurmon" },
+		{ "name": "jazamon", "from": "pteranomon" },
+		{ "name": "guilmon", "from": "medievalgallantmon" }
+	],
+	"size": 6
 }

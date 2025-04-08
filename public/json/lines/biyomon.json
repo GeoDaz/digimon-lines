@@ -4,7 +4,7 @@
 			null,
 			null,
 			null,
-			{ "name": "thunderbirdmon", "from": [1, -1], "color": "electric" },
+			null,
 			{ "name": "garudamonx", "color": "x", "from": [1, -1] },
 			{ "name": "phoenixmonx", "color": "x" }
 		],
@@ -24,10 +24,12 @@
 			{ "name": "karatenmon", "color": "dark" },
 			{
 				"name": "ornismon",
+				"xCollapsable": true,
+				"xSize": 2,
 				"color": ["dark", "dark"],
 				"from": [
-					[0, -1],
-					[1, -1]
+					[-0.5, -1],
+					[0.5, -1]
 				]
 			}
 		],
@@ -35,21 +37,58 @@
 			null,
 			null,
 			null,
-			null,
+			{ "name": "thunderbirdmon", "from": [-2, -1], "color": "electric" },
 			{ "name": "velgrmon", "from": [-1, -1], "color": "dark" }
 		],
 		[
 			null,
 			null,
 			null,
+			{
+				"name": "cockatrimon",
+				"from": [-3, -1]
+			},
+			{
+				"name": "parrotmon",
+				"color": "electric",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
+			},
+			{
+				"name": "crossmon",
+				"color": "gold"
+			},
+			{
+				"name": "aegisdramon",
+				"color": "fusion"
+			}
+		],
+		[
 			null,
-			{ "name": "vulturemon", "from": [-2, -1], "color": "dark" }
+			null,
+			null,
+			{
+				"name": "akatorimon",
+				"color": "fire",
+				"from": [-4, -1]
+			},
+			{
+				"name": "sinduramon",
+				"color": "fire"
+			},
+			{
+				"name": "zhuqiaomon",
+				"color": "fire"
+			}
 		]
 	],
 	"related": [
-		{ "name": "penmon", "for": "cockatrimon" },
-		{ "name": "hawkmon", "for": "aquilamon" },
-		{ "name": "falcomon2", "from": "ornismon" },
+		{ "name": "penmon", "from": "cockatrimon" },
+		{ "name": "hawkmon", "from": "aquilamon" },
+		{ "name": "falcomon2", "from": "karatenmon" },
+		{ "name": "pteromon", "from": "ornismon" },
 		{ "name": "dracmon", "for": "velgrmon" },
 		{ "name": "jazamon", "for": "mailbirdramon" },
 		{ "name": "hookmon", "for": "vulturemon" },
