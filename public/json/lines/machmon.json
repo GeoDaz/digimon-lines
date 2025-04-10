@@ -35,9 +35,9 @@
 				"name": "nezhamon"
 			},
 			{
-				"name": "takutoumon",
+				"name": "nezhamoncm",
 				"from": [0, -1],
-				"skins": ["takutoumonwm"]
+				"color": "mode"
 			}
 		],
 		[
@@ -76,7 +76,6 @@
 			"name": "hagurumon",
 			"for": "frozomon"
 		},
-		{ "name": "garurumon", "from": "takutoumon" },
-		{ "name": "ludomon", "from": "takutoumon" }
+		{ "name": "sukamon", "for": "takutoumon" }
 	]
 }

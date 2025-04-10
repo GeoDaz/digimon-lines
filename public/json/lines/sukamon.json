@@ -1,101 +1,212 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			{
-				"name": "tyutyumon",
-				"color": "gold",
-				"from": [1, -1]
-			},
-			{
-				"name": "damemon",
-				"color": "gold"
-			},
-			{
-				"name": "tuwarmon",
-				"color": "gold"
-			}
-		],
-		[
-			{
-				"name": "cocomon"
-			},
-			{
-				"name": "chocomon"
-			},
-			{
-				"name": "tyumon"
-			},
-			{
-				"name": "sukamon",
-				"skins": ["platinumsukamon"]
-			},
-			{
-				"name": "greatkingsukamon",
-				"color": "gold"
-			},
-			{
-				"name": "kingetemon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": "gold"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "targetmon",
-				"from": [-1, -1]
-			},
-			{
-				"name": "etemon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				]
-			},
-			{
-				"name": "metaletemon",
-				"color": "machine"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "opossummon",
-				"from": [-2, -1]
-			},
-			{
-				"name": "kumbhiramon"
-			},
-			{
-				"name": "cendrillmon"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "chohakkaimon",
-				"from": [-1, -1]
-			}
-		]
-	],
-	"related": [
-		"numemon",
-		{ "name": "shoemon", "from": "cendrillmon" },
-		{ "name": "monmon", "from": "etemon" },
-		{ "name": "gatomon", "from": "opossummon" },
-		{ "name": "shakamon", "from": "chohakkaimon" },
-		{ "name": "machmon", "for": "takutoumon" }
-	]
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "tyutyumon",
+                "color": "gold",
+                "from": [
+                    1,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "damemon",
+                "color": "gold",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "tuwarmon",
+                "color": "gold",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "takutoumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "takutoumonwm",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true,
+                "color": [
+                    "mode"
+                ]
+            }
+        ],
+        [
+            {
+                "name": "cocomon",
+                "from": null,
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "chocomon",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "tyumon",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "sukamon",
+                "skins": [
+                    "platinumsukamon"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "greatkingsukamon",
+                "color": "gold",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "kingetemon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": "gold",
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "targetmon",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "etemon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "metaletemon",
+                "color": "machine",
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "opossummon",
+                "from": [
+                    -2,
+                    -1
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "kumbhiramon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "cendrillmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "chohakkaimon",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            null
+        ]
+    ],
+    "related": [
+        "numemon",
+        {
+            "name": "shoemon",
+            "from": "cendrillmon"
+        },
+        {
+            "name": "monmon",
+            "from": "etemon"
+        },
+        {
+            "name": "gatomon",
+            "from": "opossummon"
+        },
+        {
+            "name": "shakamon",
+            "from": "chohakkaimon"
+        },
+        {
+            "name": "machmon",
+            "for": "takutoumon"
+        }
+    ],
+    "size": 7
 }

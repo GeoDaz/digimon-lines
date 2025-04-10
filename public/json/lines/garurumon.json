@@ -1,358 +1,568 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			{
-				"name": "gabumonx",
-				"from": [1.5, 0],
-				"color": "x"
-			},
-			{
-				"name": "garurumonx",
-				"color": "x"
-			},
-			{
-				"name": "weregarurumonx",
-				"color": "x"
-			},
-			{
-				"name": "metalgarurumonx",
-				"color": "x"
-			},
-			{
-				"name": "omegamonx",
-				"color": "x"
-			},
-			null
-		],
-		[
-			{
-				"name": "punimon",
-				"xSize": 2
-			},
-			{
-				"name": "tsunomon",
-				"xSize": 2
-			},
-			{
-				"name": "gabumon",
-				"xSize": 2
-			},
-			{
-				"name": "garurumon",
-				"xSize": 2
-			},
-			{
-				"name": "weregarurumon",
-				"xSize": 2
-			},
-			{
-				"name": "metalgarurumon",
-				"color": "machine",
-				"xSize": 2
-			},
-			{
-				"name": "omegamon",
-				"color": "fusion",
-				"from": [0.5, -1]
-			},
-			{
-				"name": "omegamonmm",
-				"color": "fusion",
-				"from": [0, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "gabumonbf",
-				"color": "mode",
-				"from": [-0.5, -1]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "drimogemon",
-				"color": "earth",
-				"from": [-1.5, -1]
-			},
-			{
-				"name": "weregarurumonam",
-				"color": "mode",
-				"from": [-1.5, 0]
-			},
-			{
-				"name": "cresgarurumon",
-				"color": "gold"
-			},
-			{
-				"name": "omegamonam",
-				"color": "fusion"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "dorulumon",
-				"from": [-2.5, -1]
-			},
-			{
-				"name": "jaegerdorulumon",
-				"color": "gold"
-			},
-			{
-				"name": "marsmon",
-				"color": "fire"
-			},
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "gabumonb",
-				"from": [-3.5, -1],
-				"color": "dark"
-			},
-			{
-				"name": "garurumonb",
-				"color": "dark"
-			},
-			{
-				"name": "weregarurumonb",
-				"color": "dark"
-			},
-			{
-				"name": "metalgarurumonb",
-				"color": "dark"
-			},
-			{
-				"name": "omegamonb",
-				"color": "fusion",
-				"skins": ["omegamonbrm"]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "psychemon",
-				"from": [-4.5, -1]
-			},
-			{
-				"name": "gururumon"
-			},
-			{
-				"name": "astamon",
-				"color": "dark"
-			},
-			{
-				"name": "belphemonrm",
-				"color": "dark",
-				"skins": ["belphemon"]
-			},
-			{
-				"name": "omegamonbam",
-				"color": "mode",
-				"from": [-1, 0]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "nisedrimogemon",
-				"color": "earth",
-				"from": [-1, -1]
-			},
-			null,
-			{
-				"name": "zeedgarurumon",
-				"color": "machine",
-				"from": [1, -1]
-			},
-			null
-		],
-		[
-			{
-				"name": "botamon"
-			},
-			{
-				"name": "wanyamon"
-			},
-			{
-				"name": "gaomon",
-				"size": 1
-			},
-			{
-				"name": "gaogamon"
-			},
-			{
-				"name": "machgaogamon",
-				"color": "machine"
-			},
-			{
-				"name": "miragegaogamon"
-			},
-			{
-				"name": "miragegaogamonbm",
-				"color": "mode"
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "gazimon",
-				"color": "dark",
-				"from": [-1, -1]
-			},
-			{
-				"name": "gaogamonb",
-				"color": "dark"
-			},
-			{
-				"name": "machgaogamonb",
-				"color": "dark"
-			},
-			{
-				"name": "mercurymon",
-				"color": "dark"
-			},
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "gazimonx",
-				"color": "x",
-				"from": [-1, 0]
-			},
-			{
-				"name": "fangmon",
-				"color": "dark",
-				"from": [-1, -1]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "strabimon",
-				"xSize": 2,
-				"from": [-4, -1]
-			},
-			{
-				"name": "wolfmon",
-				"color": "light",
-				"xSize": 2
-			},
-			{
-				"name": "beowolfmon",
-				"color": "light",
-				"from": [0.5, -1]
-			},
-			{
-				"name": "magnagarurumon",
-				"color": "light",
-				"from": [0, -1]
-			},
-			{
-				"name": "susanoomon",
-				"color": "fusion",
-				"from": [0, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "kendogarurumon",
-				"color": "light",
-				"from": [-0.5, -1]
-			},
-			{
-				"name": "ancientgarurumon",
-				"color": "light",
-				"from": [0, -1]
-			},
-			{
-				"name": "erlangmon",
-				"color": "fusion",
-				"from": [0, -1],
-				"skins": ["erlangmonbm"]
-			}
-		]
-	],
-	"notes": [
-		"Gaogamon line is in Garurumon line, because it includes ZeedGarurumon they look very similar.",
-		"Merukymon is here because his headdress looks like a Garurumon and Mars because his looks like Gabumon."
-	],
-	"related": [
-		"omegamonmm",
-		{
-			"name": "greymon",
-			"for": "omegamon"
-		},
-		{
-			"name": "machmon",
-			"for": "takutoumon"
-		},
-		{
-			"name": "terriermon",
-			"for": "erlangmon"
-		},
-		{
-			"name": "chimeramon",
-			"from": "garurumon"
-		},
-		{
-			"name": "shoutmon",
-			"for": "shoutmonx3"
-		},
-		{
-			"name": "loogamon",
-			"from": "fangmon"
-		},
-		{
-			"name": "labramon",
-			"from": "fangmon"
-		},
-		{
-			"name": "leomon",
-			"from": "marsmon"
-		},
-		{
-			"name": "bearmon",
-			"from": "marsmon"
-		},
-		{
-			"name": "phascomon",
-			"from": "astamon"
-		},
-		{
-			"name": "armadillomon",
-			"from": "drimogemon"
-		},
-		{
-			"name": "dracomon",
-			"for": "breakdramon"
-		}
-	]
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "gabumonx",
+                "from": [
+                    1.5,
+                    0
+                ],
+                "color": "x",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "garurumonx",
+                "color": "x",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "weregarurumonx",
+                "color": "x",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "metalgarurumonx",
+                "color": "x",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "omegamonx",
+                "color": "x",
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            {
+                "name": "punimon",
+                "xSize": 2,
+                "from": null,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "tsunomon",
+                "xSize": 2,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "gabumon",
+                "xSize": 2,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "garurumon",
+                "xSize": 2,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "weregarurumon",
+                "xSize": 2,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "metalgarurumon",
+                "color": "machine",
+                "xSize": 2,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "omegamon",
+                "color": "fusion",
+                "from": [
+                    0.5,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "omegamonmm",
+                "color": "fusion",
+                "from": [
+                    0,
+                    -1
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "gabumonbf",
+                "color": "mode",
+                "from": [
+                    -0.5,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "drimogemon",
+                "color": "earth",
+                "from": [
+                    -1.5,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "weregarurumonam",
+                "color": "mode",
+                "from": [
+                    -1.5,
+                    0
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "cresgarurumon",
+                "color": "gold",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "omegamonam",
+                "color": "fusion",
+                "xCollapsable": true,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "dorulumon",
+                "from": [
+                    -2.5,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "jaegerdorulumon",
+                "color": "gold",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "marsmon",
+                "color": "fire",
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "gabumonb",
+                "from": [
+                    -3.5,
+                    -1
+                ],
+                "color": "dark",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "garurumonb",
+                "color": "dark",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "weregarurumonb",
+                "color": "dark",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "metalgarurumonb",
+                "color": "dark",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "omegamonb",
+                "color": "fusion",
+                "skins": [
+                    "omegamonbrm"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "psychemon",
+                "from": [
+                    -4.5,
+                    -1
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "gururumon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "astamon",
+                "color": "dark",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "belphemonrm",
+                "color": "dark",
+                "skins": [
+                    "belphemon"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "omegamonbam",
+                "color": "mode",
+                "from": [
+                    -1,
+                    0
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "nisedrimogemon",
+                "color": "earth",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            {
+                "name": "zeedgarurumon",
+                "color": "machine",
+                "from": [
+                    1,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            null
+        ],
+        [
+            {
+                "name": "botamon",
+                "from": null,
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "wanyamon",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "gaomon",
+                "size": 1,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "gaogamon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "machgaogamon",
+                "color": "machine",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "miragegaogamon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "miragegaogamonbm",
+                "color": "mode",
+                "xCollapsable": true,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "gazimon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "gaogamonb",
+                "color": "dark",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "machgaogamonb",
+                "color": "dark",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "mercurymon",
+                "color": "dark",
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "gazimonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "fangmon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true
+            },
+            null,
+            {
+                "name": "erlangmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "color": [
+                    "fusion"
+                ]
+            },
+            {
+                "name": "erlangmonbm",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "color": [
+                    "mode"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "strabimon",
+                "xSize": 2,
+                "from": [
+                    -4,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "wolfmon",
+                "color": "light",
+                "xSize": 2,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "beowolfmon",
+                "color": "light",
+                "from": [
+                    0.5,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "magnagarurumon",
+                "color": "light",
+                "from": [
+                    0,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "susanoomon",
+                "color": "fusion",
+                "from": [
+                    0,
+                    -1
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "kendogarurumon",
+                "color": "light",
+                "from": [
+                    -0.5,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "ancientgarurumon",
+                "color": "light",
+                "from": [
+                    0,
+                    -1
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            null
+        ]
+    ],
+    "notes": [
+        "Gaogamon line is in Garurumon line, because it includes ZeedGarurumon they look very similar.",
+        "Merukymon is here because his headdress looks like a Garurumon and Mars because his looks like Gabumon."
+    ],
+    "related": [
+        "omegamonmm",
+        {
+            "name": "greymon",
+            "for": "omegamon"
+        },
+        {
+            "name": "machmon",
+            "for": "takutoumon"
+        },
+        {
+            "name": "terriermon",
+            "for": "erlangmon"
+        },
+        {
+            "name": "chimeramon",
+            "from": "garurumon"
+        },
+        {
+            "name": "shoutmon",
+            "for": "shoutmonx3"
+        },
+        {
+            "name": "loogamon",
+            "from": "fangmon"
+        },
+        {
+            "name": "labramon",
+            "from": "fangmon"
+        },
+        {
+            "name": "leomon",
+            "from": "marsmon"
+        },
+        {
+            "name": "bearmon",
+            "from": "marsmon"
+        },
+        {
+            "name": "phascomon",
+            "from": "astamon"
+        },
+        {
+            "name": "armadillomon",
+            "from": "drimogemon"
+        },
+        {
+            "name": "dracomon",
+            "for": "breakdramon"
+        }
+    ],
+    "size": 8
 }
