@@ -6,38 +6,63 @@
 			null,
 			{
 				"name": "trailmon",
-				"from": [1, -1]
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["machine"]
 			},
 			{
-				"name": "locomon"
+				"name": "locomon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"color": ["machine"]
 			},
 			{
-				"name": "grandlocomon"
-			}
+				"name": "grandlocomon",
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"from": [[0, -1]],
+				"color": ["machine"]
+			},
+			null
 		],
 		[
 			{
-				"name": "choromon"
+				"name": "choromon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "caprimon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "junkmon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "machmon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"color": ["machine"]
 			},
 			{
-				"name": "caprimon"
+				"name": "rebellimon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"color": ["machine"]
 			},
 			{
-				"name": "junkmon"
-			},
-			{
-				"name": "machmon"
-			},
-			{
-				"name": "rebellimon"
-			},
-			{
-				"name": "nezhamon"
+				"name": "nezhamon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"color": ["fire"]
 			},
 			{
 				"name": "nezhamoncm",
 				"from": [0, -1],
-				"color": "mode"
+				"color": "mode",
+				"xCollapsable": true,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -46,36 +71,36 @@
 			null,
 			{
 				"name": "komondomon",
-				"from": [-1, -1]
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
-			null,
+			{
+				"name": "pistmon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["grass"]
+			},
 			{
 				"name": "heavyleomon",
-				"from": [-1, -1]
-			}
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["machine"]
+			},
+			null
 		]
 	],
 	"related": [
-		{
-			"name": "labramon",
-			"for": "dobermon"
-		},
-		{
-			"name": "ogremon",
-			"from": "rebellimon"
-		},
-		{
-			"name": "leomon",
-			"from": "heavyleomon"
-		},
-		{
-			"name": "numemon",
-			"from": "junkmon"
-		},
-		{
-			"name": "hagurumon",
-			"for": "frozomon"
-		},
+		{ "name": "labramon", "for": "dobermon" },
+		{ "name": "ogremon", "from": "rebellimon" },
+		{ "name": "leomon", "from": "heavyleomon" },
+		{ "name": "numemon", "from": "junkmon" },
+		{ "name": "hagurumon", "for": "frozomon" },
+		{ "name": "impmon", "for": "beelzebumon" },
+		{ "name": "golemon", "for": "vulcanusmon" },
 		{ "name": "sukamon", "for": "takutoumon" }
-	]
+	],
+	"size": 7
 }

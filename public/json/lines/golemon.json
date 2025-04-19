@@ -22,7 +22,7 @@
 			{
 				"name": "tlalocmon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": true,
 				"color": ["fusion"]
 			}
@@ -40,13 +40,13 @@
 			{
 				"name": "landramon",
 				"from": null,
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
 				"name": "proganomon",
 				"from": [[-1, -1]],
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["earth"]
 			},
@@ -99,10 +99,16 @@
 				"name": "vulcanusmon",
 				"color": "fire",
 				"xCollapsable": false,
-				"yCollapsable": true,
+				"yCollapsable": false,
 				"from": [[1, -1]]
 			},
-			null
+			{
+				"name": "nezhamoncm",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["fusion"]
+			}
 		],
 		[
 			{
@@ -176,7 +182,7 @@
 				"name": "baboongamon",
 				"color": "earth",
 				"from": [1, -1],
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
@@ -189,7 +195,7 @@
 				"name": "blastmon",
 				"color": "earth",
 				"from": [-1, -1],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": true
 			},
 			null
@@ -201,13 +207,13 @@
 				"name": "gottsumon",
 				"color": ["earth"],
 				"from": [[-3, -1]],
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
 				"name": "icemon",
 				"color": "ice",
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
@@ -241,41 +247,21 @@
 			{
 				"name": "gravimondm",
 				"color": "fusion",
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": true
 			},
 			null
 		]
 	],
 	"related": [
-		{
-			"name": "ogremon",
-			"for": "grumblemon"
-		},
-		{
-			"name": "monmon",
-			"for": "baboongamon"
-		},
-		{
-			"name": "gammamon",
-			"for": "volcdramon"
-		},
-		{
-			"name": "kamemon",
-			"for": "tortamon"
-		},
-		{
-			"name": "kotemon",
-			"from": "vulcanusmon"
-		},
-		{
-			"name": "meramon",
-			"from": "vulcanusmon"
-		},
-		{
-			"name": "leomon",
-			"for": "tlalocmon"
-		}
+		{ "name": "ogremon", "for": "grumblemon" },
+		{ "name": "monmon", "for": "baboongamon" },
+		{ "name": "gammamon", "for": "volcdramon" },
+		{ "name": "kamemon", "for": "tortamon" },
+		{ "name": "kotemon", "from": "vulcanusmon" },
+		{ "name": "meramon", "from": "vulcanusmon" },
+		{ "name": "machmon", "from": "nezhamon" },
+		{ "name": "leomon", "for": "tlalocmon" }
 	],
 	"size": 7
 }

@@ -45,9 +45,16 @@
 				"color": "x",
 				"from": [-0.5, -1],
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": false
 			},
-			null
+			{
+				"name": "nezhamoncm",
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion"]
+			}
 		],
 		[
 			{
@@ -95,8 +102,10 @@
 			{
 				"name": "beelzebumonbm",
 				"color": "mode",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"from": [[-0.5, -1]],
+				"xSize": 2
 			}
 		],
 		[
@@ -213,11 +222,13 @@
 		{ "name": "meramon", "for": "deathmeramon" },
 		{ "name": "devimon", "for": "skullsatamon" },
 		{ "name": "shoutmon", "for": "shoutmonx4b" },
+		{ "name": "machmon", "from": "nezhamon" },
+		{ "name": "golemon", "from": "vulcanusmon" },
+		{ "name": "monmon", "for": "dijiangmon" },
+		{ "name": "hookmon", "for": "magnakidmon" },
 		{ "name": "bemmon", "for": "omegaarmamon" },
 		{ "name": "gatomon", "for": "ladydevimon" },
-		{ "name": "sistermonblanc", "for": "sistermonnoirawake" },
-		{ "name": "hookmon", "for": "magnakidmon" },
-		{ "name": "monmon", "for": "dijiangmon" }
+		{ "name": "sistermonblanc", "for": "sistermonnoirawake" }
 	],
 	"notes": [
 		"Astar is demon close to Beelzebub in the demonology but Astamon is already taken as an Ultimate/Perfect on Belphemon line."

@@ -12,6 +12,7 @@
 				"yCollapsable": true
 			},
 			null,
+			null,
 			null
 		],
 		[
@@ -55,7 +56,8 @@
 				"color": "electric",
 				"xCollapsable": false,
 				"yCollapsable": true
-			}
+			},
+			null
 		],
 		[
 			null,
@@ -74,7 +76,8 @@
 				"color": "fire",
 				"xCollapsable": false,
 				"yCollapsable": true
-			}
+			},
+			null
 		],
 		[
 			null,
@@ -92,8 +95,15 @@
 				"name": "vulcanusmon",
 				"from": [[0, -1]],
 				"xCollapsable": false,
-				"yCollapsable": true,
+				"yCollapsable": false,
 				"color": ["fire"]
+			},
+			{
+				"name": "nezhamoncm",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["fusion"]
 			}
 		]
 	],
@@ -103,7 +113,8 @@
 		"flarelizardmon",
 		{ "name": "impmon", "for": "beelzebumon" },
 		{ "name": "kotemon", "for": "asuramon" },
-		{ "name": "golemon", "for": "vulcanusmon" }
+		{ "name": "golemon", "for": "vulcanusmon" },
+		{ "name": "machmon", "from": "nezhamon" }
 	],
-	"size": 6
+	"size": 7
 }
