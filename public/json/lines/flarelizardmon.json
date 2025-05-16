@@ -6,39 +6,68 @@
 			null,
 			null,
 			{
-				"name": "helloogarmon",
+				"name": "volcdramon",
 				"color": "fire",
-				"from": [1, -1]
-			}
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null,
+			null
 		],
 		[
 			{
 				"name": "botamon",
-				"xSize": 2
+				"xSize": 2,
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "koromon",
-				"xSize": 2
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "toyagumon",
 				"skins": ["cleartoyagumon"],
-				"from": [0.5, -1]
+				"from": [0.5, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "flarelizardmon",
 				"color": "fire",
-				"from": [0, -1]
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "megadramon",
 				"color": "machine",
-				"from": [0, -1]
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "machinedramon",
-				"color": "machine",
-				"from": [0, -1]
+				"color": ["dark", "machine"],
+				"from": [
+					[0.5, -1],
+					[-0.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "himachinedramon",
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["fusion"]
 			},
 			null
 		],
@@ -49,30 +78,38 @@
 				"name": "toyagumonb",
 				"skins": ["cleartoyagumonb"],
 				"from": [-0.5, -1],
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "darklizardmon",
 				"color": "dark",
-				"from": [0, -1]
+				"from": [0, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "gigadramon",
 				"color": "dark",
-				"from": [0, -1]
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
 			},
+			null,
 			{
 				"name": "chaosdramon",
-				"color": ["dark", "dark"],
-				"from": [
-					[0, -1],
-					[-1, 0]
-				]
+				"color": ["dark"],
+				"from": [[-0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "neocrimson",
-				"color": "fusion",
-				"from": [0, -1]
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["fusion"]
 			}
 		],
 		[
@@ -80,66 +117,34 @@
 			null,
 			null,
 			null,
+			{
+				"name": "helloogarmon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["fire"]
+			},
 			null,
 			{
 				"name": "chaosdramonx",
-				"color": "x",
-				"from": [-1, 0]
-			}
+				"from": [[-1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["x"]
+			},
+			null
 		]
 	],
 	"related": [
 		"neocrimson",
-		{
-			"name": "apocalymon",
-			"from": "machinedramon"
-		},
-		{
-			"name": "chimeramon",
-			"from": "machinedramon"
-		},
-		{
-			"name": "tyranomon",
-			"from": "machinedramon"
-		},
-		{
-			"name": "seadramon",
-			"for": "airdramon"
-		},
-		{
-			"name": "meramon"
-		},
-		{
-			"name": "gekomon",
-			"for": "salamandermon"
-		},
-		{
-			"name": "commandramon",
-			"for": "cargodramon"
-		},
-		{
-			"name": "loogamon",
-			"for": "helloogarmon"
-		},
-		{
-			"name": "gammamon",
-			"for": "volcdramon"
-		},
-		{
-			"name": "greymon",
-			"for": "metalgreymon"
-		},
-		{
-			"name": "tyranomon",
-			"for": "metaltyranomon"
-		},
-		{
-			"name": "hagurumon",
-			"for": "andromon"
-		},
-		{
-			"name": "mamemon",
-			"for": "metalmamemon"
-		}
-	]
+		{ "name": "gekomon", "for": "salamandermon" },
+		{ "name": "loogamon", "for": "helloogarmon" },
+		{ "name": "gammamon", "for": "volcdramon" },
+		{ "name": "seadramon", "for": "airdramon" },
+		{ "name": "apocalymon", "from": "machinedramon" },
+		{ "name": "chimeramon", "from": "machinedramon" },
+		{ "name": "tyranomon", "from": "machinedramon" },
+		{ "name": "commandramon", "for": "cargodramon" }
+	],
+	"size": 8
 }

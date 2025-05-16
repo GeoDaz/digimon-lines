@@ -118,13 +118,34 @@
 		]
 	],
 	"related": [
-		"swimmon",
-		"crabmon",
+		{
+			"name": "swimmon",
+			"for": "coelamon"
+		},
+		{
+			"name": "crabmon",
+			"for": "ebidramon"
+		},
 		"seadramon",
-		"gomamon",
+		{
+			"name": "gomamon",
+			"for": "ikkakumon"
+		},
+		{
+			"name": "gomamon",
+			"for": "dolphmon"
+		},
 		{
 			"name": "jellymon",
-			"from": "gesomon"
+			"for": "gesomon"
+		},
+		{
+			"name": "jellymon",
+			"for": "octomon"
+		},
+		{
+			"name": "jellymon",
+			"for": "hangyomon"
 		}
 	]
 }
