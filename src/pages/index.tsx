@@ -15,6 +15,7 @@ import useQueryParam from '@/hooks/useQueryParam';
 import { stringToKey } from '@/functions';
 import { StringArrayObject } from '@/types/Ui';
 import { APPMON } from '@/consts/ui';
+import { SITE_URL } from '@/consts/env';
 
 const SEARCH = 'search';
 const defaultData = { lines: [], fusions: [], appmons: [], searchList: {} };
@@ -29,16 +30,7 @@ const PageLines: React.FC<Props> = props => {
 	const [lines, setLines] = useState<LineThumb[]>(props.lines);
 	const [fusions, setFusions] = useState<LineThumb[]>(props.fusions);
 	const [appmons, setAppmons] = useState<LineThumb[]>(props.appmons);
-	const [load, loading] = useFetch(setLines);
 	const [search, setSearch] = useState<string>(searchParam);
-	const [loadFusions] = useFetch(setFusions);
-
-	useEffect(() => {
-		if (!lines.length) {
-			load(`${process.env.URL}/json/lines/_index.json`);
-			loadFusions(`${process.env.URL}/json/lines/_fusion.json`);
-		}
-	}, []);
 
 	useEffect(() => {
 		if (!search) {
@@ -90,28 +82,21 @@ const PageLines: React.FC<Props> = props => {
 				defaultValue={search}
 				width={300}
 			/>
-			{loading ? (
-				<div className="text-center">
-					<Spinner animation="border" />
-				</div>
-			) : (
-				<>
-					{lines.length > 0 && <LineRow lines={lines} />}
-					{fusions.length > 0 && (
-						<div>
-							<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
-							<LineRow lines={fusions} />
-						</div>
-					)}
-					{appmons.length > 0 && (
-						<div>
-							<h2>Appmons&nbsp;:</h2>
-							<LineRow lines={appmons} type={APPMON} />
-						</div>
-					)}
-				</>
-			)}
-			{!lines.length && !fusions.length && <p>No line found.</p>}
+			<>
+				{lines.length > 0 && <LineRow lines={lines} />}
+				{fusions.length > 0 && (
+					<div>
+						<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
+						<LineRow lines={fusions} />
+					</div>
+				)}
+				{appmons.length > 0 && (
+					<div>
+						<h2>Appmons&nbsp;:</h2>
+						<LineRow lines={appmons} type={APPMON} />
+					</div>
+				)}
+			</>
 		</Layout>
 	);
 };

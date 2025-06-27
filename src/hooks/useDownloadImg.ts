@@ -3,6 +3,7 @@ import { download } from '@/functions/file';
 import { clearLine } from '@/functions/line';
 import Line from '@/types/Line';
 import { defaultLicenceContext, LicenceProps } from '@/context/license';
+import { PUPPETEER_URL } from '@/consts/env';
 
 const useDownloadImg = (
 	line: Line,
@@ -17,9 +18,7 @@ const useDownloadImg = (
 		let type: string = 'blob';
 		const cleared = clearLine(line);
 		const url =
-			process.env.NEXT_PUBLIC_PUPPETEER_URL +
-				'/digimon-lines/build' +
-				licenceContext.key !==
+			PUPPETEER_URL + '/digimon-lines/build' + licenceContext.key !==
 			defaultLicenceContext.key
 				? licenceContext.key
 				: '';

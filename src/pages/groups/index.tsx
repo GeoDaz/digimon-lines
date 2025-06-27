@@ -7,6 +7,7 @@ import LinePoint from '@/components/Line/LinePoint';
 import { GetStaticProps } from 'next';
 import { LineThumb } from '@/types/Line';
 import { GROUP } from '@/consts/ui';
+import { SITE_URL } from '@/consts/env';
 
 // TODO rename this page groups.tsx when there will be a home
 
@@ -18,46 +19,31 @@ interface Props {
 	ssr: StaticProps;
 }
 const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
-	const [groups, setLines] = useState<string[] | LineThumb[]>(ssr.groups);
-	const [load, loading] = useFetch(setLines);
-
-	useEffect(() => {
-		if (!groups.length) {
-			load(`${process.env.URL}/json/groups/_index.json`);
-		}
-	}, []);
-
 	return (
 		<Layout
 			title="Available groups"
 			metatitle="Groups"
 			metadescription="List of available Digimon groups"
 		>
-			{loading ? (
-				<div className="text-center">
-					<Spinner animation="border" />
-				</div>
-			) : (
-				<div className="line-wrapper">
-					<Row className="line-row">
-						{groups.map((group, i) =>
-							typeof group === 'string' ? (
-								<Col key={i}>
-									<LinePoint name={group} type={GROUP} />
-								</Col>
-							) : (
-								<Col key={i}>
-									<LinePoint
-										name={group.name}
-										available={group.available}
-										type={GROUP}
-									/>
-								</Col>
-							)
-						)}
-					</Row>
-				</div>
-			)}
+			<div className="line-wrapper">
+				<Row className="line-row">
+					{ssr.groups.map((group, i) =>
+						typeof group === 'string' ? (
+							<Col key={i}>
+								<LinePoint name={group} type={GROUP} />
+							</Col>
+						) : (
+							<Col key={i}>
+								<LinePoint
+									name={group.name}
+									available={group.available}
+									type={GROUP}
+								/>
+							</Col>
+						)
+					)}
+				</Row>
+			</div>
 		</Layout>
 	);
 };
