@@ -1,9 +1,14 @@
+import { useState } from 'react';
 import { download } from '@/functions/file';
 import { clearLine } from '@/functions/line';
 import Line from '@/types/Line';
-import { useState } from 'react';
+import { defaultLicenceContext, LicenceProps } from '@/context/license';
 
-const useDownloadImg = (line: Line, name: string | undefined) => {
+const useDownloadImg = (
+	line: Line,
+	name: string | undefined,
+	licenceContext: LicenceProps
+) => {
 	const [downloading, setDownloading] = useState<boolean>(false);
 	const [error, setError] = useState<string | undefined>();
 
@@ -11,7 +16,15 @@ const useDownloadImg = (line: Line, name: string | undefined) => {
 		setDownloading(true);
 		let type: string = 'blob';
 		const cleared = clearLine(line);
-		fetch(process.env.NEXT_PUBLIC_PUPPETEER_URL + '/digimon-lines/build', {
+		const url =
+			process.env.NEXT_PUBLIC_PUPPETEER_URL +
+				'/digimon-lines/build' +
+				licenceContext.key !==
+			defaultLicenceContext.key
+				? licenceContext.key
+				: '';
+
+		fetch(url, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(cleared),

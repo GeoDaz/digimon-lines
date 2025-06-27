@@ -49,7 +49,7 @@ export const PageBuild = (props: BuildProps) => {
 	useMemo(() => areCollapsablePoints(line), [line]);
 
 	const { downloadCode, uploadCode, name, setName } = useDownloadCode(line, setLine);
-	const { downloadImage, downloading, error } = useDownloadImg(line, name);
+	const { downloadImage, downloading, error } = useDownloadImg(line, name, licenceContext);
 
 	const handleUpdate = (action: CallableFunction, ...args: any[]) => {
 		dispatchState(action(...args));
