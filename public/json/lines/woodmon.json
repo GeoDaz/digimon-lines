@@ -1,106 +1,128 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "chamblemon",
-                "from": [
-                    1,
-                    -1
-                ],
-                "color": "dark"
-            },
-            {
-                "name": "entmon",
-                "color": "dark"
-            },
-            {
-                "name": "xuanwumon",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "chamblemon",
+				"from": [1, -1],
+				"color": "dark"
+			},
+			{
+				"name": "entmon",
+				"color": "dark"
+			},
+			{
+				"name": "xuanwumon",
 				"color": "grass",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "yuramon"
-            },
-            {
-                "name": "tanemon",
+				"from": [1, -1]
+			}
+		],
+		[
+			{
+				"name": "yuramon"
+			},
+			{
+				"name": "tanemon",
 				"color": "grass"
-            },
-            {
-                "name": "mushmon",
+			},
+			{
+				"name": "mushmon",
 				"color": "grass"
-            },
-            {
-                "name": "woodmon",
+			},
+			{
+				"name": "woodmon",
 				"color": "grass"
-            },
-            {
-                "name": "cherrymon",
+			},
+			{
+				"name": "cherrymon",
 				"color": "grass"
-            },
-            {
-                "name": "puppetmon",
-				"color": "grass"
-            },
-            {
-                "name": "cernumon",
+			},
+			{
+				"name": "puppetmon",
+				"color": "grass",
+				"from": [
+					[0, -1],
+					[1, -1]
+				]
+			},
+			{
+				"name": "cernumon",
 				"color": "fusion"
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "bacomon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "arbormon",
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "hanimon",
+				"color": "grass",
+				"from": [-1, -1]
+			},
+			{
+				"name": "kokeshimon",
 				"color": "grass"
-            },
-            {
-                "name": "petaldramon",
+			},
+			{
+				"name": "karakurumon",
+				"color": "grass",
+				"from": [
+					[0, -1],
+					[1, -1]
+				]
+			},
+			{
+				"name": "kaguyamon",
 				"color": "grass"
-            },
-            {
-                "name": "ancienttroiamon",
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "bacomon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "arbormon",
+				"color": "grass",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
+			},
+			{
+				"name": "petaldramon",
 				"color": "grass"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "nohemon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "zamielmon"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "palmon",
-            "for": "ceresmonbird"
-        },
-        {
-            "name": "kamemon",
-            "from": "xuanwumon"
-        }
-    ]
+			},
+			{
+				"name": "ancienttroiamon",
+				"color": "grass"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "nohemon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "zamielmon",
+				"color": "grass"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "palmon",
+			"for": "ceresmonbird"
+		},
+		{
+			"name": "kamemon",
+			"from": "xuanwumon"
+		}
+	]
 }
