@@ -18,10 +18,11 @@ const useDownloadImg = (
 		let type: string = 'blob';
 		const cleared = clearLine(line);
 		const url =
-			PUPPETEER_URL + '/digimon-lines/build' + licenceContext.key !==
-			defaultLicenceContext.key
-				? licenceContext.key
-				: '';
+			PUPPETEER_URL +
+			'/digimon-lines/build' +
+			(licenceContext.key !== defaultLicenceContext.key
+				? `/${licenceContext.key}`
+				: '');
 
 		fetch(url, {
 			method: 'POST',
