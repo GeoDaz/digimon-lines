@@ -1,107 +1,96 @@
 {
-    "columns": [
-        [
-            {
-                "name": "cocomon"
-            },
-            {
-                "name": "chocomon"
-            },
-            {
-                "name": "tyumon"
-            },
-            {
-                "name": "opossummon"
-            },
-            {
-                "name": "chohakkaimon"
-            },
-            null
-        ],
-        [
-            {
-                "name": "zerimon"
-            },
-            {
-                "name": "gummymon"
-            },
-            {
-                "name": "monmon"
-            },
-            {
-                "name": "apemon"
-            },
-            {
-                "name": "gokuwmon"
-            },
-            null,
-            {
-                "name": "shakamon",
-                "xSize": 2,
-                "color": "fusion",
-                "from": [
-                    [
-                        -1.5,
-                        -2
-                    ],
-                    [
-                        -0.5,
-                        -2
-                    ],
-                    [
-                        0.5,
-                        -2
-                    ],
-                    [
-                        1.5,
-                        -2
-                    ]
-                ]
-            }
-        ],
-        [
-            {
-                "name": "snowbotamon"
-            },
-            {
-                "name": "nyaromon"
-            },
-            {
-                "name": "salamon"
-            },
-            {
-                "name": "darcmon",
-                "color": "light"
-            },
-            {
-                "name": "sanzomon",
-                "color": "light"
-            },
-            null
-        ],
-        [
-            {
-                "name": "pipimon"
-            },
-            {
-                "name": "chapmon"
-            },
-            {
-                "name": "kamemon"
-            },
-            {
-                "name": "gawappamon"
-            },
-            {
-                "name": "shawujinmon"
-            },
-            null
-        ]
-    ],
-    "related": [
-        "hawkmon",
-        "monmon",
-        "sukamon",
-        "kamemon"
-    ]
+	"columns": [
+		[
+			{
+				"name": "cocomon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{ "name": "chocomon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "tyumon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "opossummon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "chohakkaimon", "xCollapsable": false, "yCollapsable": true },
+			null,
+			null
+		],
+		[
+			{
+				"name": "zerimon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{ "name": "gummymon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "monmon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "apemon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "gokuwmon", "xCollapsable": false, "yCollapsable": false },
+			{
+				"name": "seitengokuwmon",
+				"from": [
+					[-1.5, -1],
+					[-0.5, -1],
+					[0.5, -1],
+					[1.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2,
+				"color": ["fusion", "fusion", "fusion", "fusion"]
+			},
+			{
+				"name": "shakamon",
+				"xSize": 2,
+				"color": "fusion",
+				"from": [
+					[-1.5, -2],
+					[-0.5, -2],
+					[0.5, -2],
+					[1.5, -2]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			{
+				"name": "snowbotamon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{ "name": "nyaromon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "salamon", "xCollapsable": false, "yCollapsable": false },
+			{
+				"name": "darcmon",
+				"color": "light",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "sanzomon",
+				"color": "light",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "pipimon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{ "name": "chapmon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "kamemon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "gawappamon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "sagomon", "xCollapsable": false, "yCollapsable": true },
+			null,
+			null
+		]
+	],
+	"related": ["hawkmon", "monmon", "sukamon", "kamemon"],
+	"size": 7
 }

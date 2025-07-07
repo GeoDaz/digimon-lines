@@ -5,21 +5,59 @@
 			null,
 			{
 				"name": "falcomon",
-				"from": [2, -1]
+				"from": [[2.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2,
+				"color": ["wind"]
 			},
 			{
-				"name": "diatrymon"
+				"name": "diatrymon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"xSize": 2,
+				"color": ["wind"]
 			},
 			{
-				"name": "yatagaramon"
+				"name": "yatagaramon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"xSize": 2,
+				"color": ["wind"]
 			},
 			{
-				"name": "valdurmon"
+				"name": "valdurmon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0.5, -1]],
+				"color": ["light"]
 			},
 			{
 				"name": "chaosmonvm",
-				"color": "fusion"
+				"color": "fusion",
+				"xCollapsable": true,
+				"yCollapsable": true
 			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "ornismon",
+				"from": [
+					[-0.5, -1],
+					[1, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["dark", "dark"]
+			},
+			null
 		],
 		[
 			null,
@@ -29,39 +67,42 @@
 			{
 				"name": "karatenmon",
 				"color": "dark",
-				"from": [1, -1]
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
-				"name": "ornismon",
-				"color": ["dark", "dark"],
-				"from": [
-					[0, -1],
-					[-1, -1]
-				]
-			}
+				"name": "tengumon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["dark"]
+			},
+			null
 		],
 		[
 			{
-				"name": "puwamon"
+				"name": "puwamon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
+			{ "name": "pinamon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "falcomon2", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "peckmon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "yatagaramon2", "xCollapsable": false, "yCollapsable": false },
 			{
-				"name": "pinamon"
-			},
-			{
-				"name": "falcomon2"
-			},
-			{
-				"name": "peckmon"
-			},
-			{
-				"name": "yatagaramon2"
-			},
-			{
-				"name": "ravemon"
+				"name": "ravemon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -5]],
+				"color": ["wind"]
 			},
 			{
 				"name": "ravemonbm",
-				"color": "mode"
+				"color": "mode",
+				"xCollapsable": true,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -71,11 +112,15 @@
 			{
 				"name": "xiquemon",
 				"color": "marine",
-				"from": [-1, -1]
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "huankunmon",
-				"color": "marine"
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "xiangpengmon",
@@ -83,43 +128,23 @@
 				"from": [
 					[0, -1],
 					[-1, -1]
-				]
-			}
+				],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		]
 	],
 	"related": [
 		"ultimatechaosmon",
-		{
-			"name": "leomon",
-			"from": "chaosmonvm"
-		},
-		{
-			"name": "biyomon",
-			"for": "saberdramon"
-		},
-		{
-			"name": "hawkmon",
-			"for": "shurimon"
-		},
-		{
-			"name": "pteromon",
-			"from": "diatrymon"
-		},
-		{
-			"name": "hyokomon",
-			"for": "butenmon"
-		},
-		{
-			"name": "penmon",
-			"from": "xiquemon"
-		},
-		{
-			"name": "swimmon",
-			"from": "huankunmon"
-		},
-		{
-			"name": "seadramon",
-			"for": "aequcedramon"
-		}
-	]
+		{ "name": "leomon", "from": "chaosmonvm" },
+		{ "name": "biyomon", "for": "saberdramon" },
+		{ "name": "hawkmon", "for": "shurimon" },
+		{ "name": "pteromon", "from": "diatrymon" },
+		{ "name": "hyokomon", "for": "butenmon" },
+		{ "name": "penmon", "from": "xiquemon" },
+		{ "name": "swimmon", "from": "huankunmon" },
+		{ "name": "seadramon", "for": "aequcedramon" }
+	],
+	"size": 7
 }

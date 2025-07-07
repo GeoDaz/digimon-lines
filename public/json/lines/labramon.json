@@ -1,1 +1,150 @@
-{"columns":[[null,null,null,{"name":"dobermonx","color":"x","from":[1,0],"xCollapsable":false,"yCollapsable":false},{"name":"cerberumonx","color":"x","xCollapsable":false,"yCollapsable":true},null],[{"name":"paomon","from":null,"xCollapsable":true,"yCollapsable":false},{"name":"xiaomon","xCollapsable":true,"yCollapsable":false},{"name":"labramon","xCollapsable":true,"yCollapsable":false},{"name":"dobermon","xCollapsable":false,"yCollapsable":false},{"name":"cerberumon","color":"dark","xCollapsable":false,"yCollapsable":false},{"name":"anubimon","color":"light","xCollapsable":false,"yCollapsable":true}],[null,null,null,{"name":"dogmon","from":[[-1,-1],[3,-1]],"xCollapsable":false,"yCollapsable":false},{"name":"cerberumonwm","color":"mode","from":[-1,0],"xCollapsable":false,"yCollapsable":false},{"name":"plutomon","color":"dark","xCollapsable":false,"yCollapsable":true}],[null,null,null,{"name":"siesamon","from":[[-2,-1]],"xCollapsable":false,"yCollapsable":false},{"name":"caturamon","xCollapsable":true,"yCollapsable":false},{"name":"baihumon","xCollapsable":true,"yCollapsable":true}],[null,null,null,{"name":"siesamonx","color":"x","from":[-1,0],"xCollapsable":false,"yCollapsable":true},null,null],[null,null,{"name":"madomon","from":[[-4,-1]],"xCollapsable":false,"yCollapsable":false},{"name":"komondomon","from":[[0,-1]],"xCollapsable":false,"yCollapsable":true},null,null]],"related":[{"name":"loogamon","from":"anubimon"},{"name":"garurumon","for":"gaomon"},{"name":"dracmon","for":"sangloupmon"},"machmon",{"name":"leomon","for":"baihumon"}],"size":6}
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dobermonx",
+				"color": "x",
+				"from": [1, 0],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "cerberumonx",
+				"color": "x",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			{
+				"name": "paomon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "xiaomon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "labramon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "dobermon", "xCollapsable": false, "yCollapsable": false },
+			{
+				"name": "cerberumon",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "anubimon",
+				"color": "light",
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dogmon",
+				"from": [[-1, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "cerberumonwm",
+				"color": "mode",
+				"from": [-1, 0],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "plutomon",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "labramon2",
+				"from": [[-2.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "siesamon",
+				"from": [
+					[0, -1],
+					[-2.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "caturamon",
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{ "name": "baihumon", "xCollapsable": false, "yCollapsable": true }
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "siesamonx",
+				"from": [[-1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2,
+				"color": ["x"]
+			},
+			{
+				"name": "unknown",
+				"from": [[-0.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "amaterasumon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		],
+		[null, null, null, null, null, null],
+		[
+			null,
+			null,
+			{
+				"name": "madomon",
+				"from": [[-5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "komondomon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		]
+	],
+	"related": [
+		{ "name": "loogamon", "from": "anubimon" },
+		{ "name": "garurumon", "for": "gaomon" },
+		{ "name": "dracmon", "for": "sangloupmon" },
+		"machmon",
+		{ "name": "leomon", "for": "baihumon" }
+	],
+	"size": 6
+}
