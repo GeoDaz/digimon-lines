@@ -104,33 +104,10 @@
 		[
 			null,
 			null,
-			null,
 			{
-				"name": "shellmon",
+				"name": "gasamon",
 				"color": "marine",
-				"skins": ["morishellmon"],
-				"from": [1, -1]
-			},
-			{
-				"name": "marinbullmon",
-				"color": "marine"
-			},
-			{
-				"name": "ryugumon",
-				"color": "marine"
-			},
-			{
-				"name": "ariemon",
-				"color": "marine"
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "sangomon",
-				"color": "marine",
-				"from": [-2, -1]
+				"from": [-1, -1]
 			},
 			{
 				"name": "octomon",
@@ -148,43 +125,10 @@
 		[
 			null,
 			null,
-			null,
-			{
-				"name": "depthmon",
-				"color": "marine",
-				"from": [-1, -1]
-			},
-			{
-				"name": "hangyomon",
-				"color": "marine"
-			},
-			{
-				"name": "regalecusmon",
-				"color": "marine"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "divemon",
-				"color": "marine",
-				"from": [-1, -1]
-			},
-			{
-				"name": "surfimon",
-				"color": "marine"
-			}
-		],
-		[
-			null,
-			null,
 			{
 				"name": "shakomon",
 				"color": "marine",
-				"from": [-5, -1]
+				"from": [-2, -1]
 			},
 			{
 				"name": "gesomon",
@@ -213,6 +157,65 @@
 			},
 			null,
 			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "sangomon",
+				"color": "marine",
+				"from": [-4, -1]
+			},
+			{
+				"name": "shellmon",
+				"color": "marine",
+				"skins": ["morishellmon"]
+			},
+			{
+				"name": "marinbullmon",
+				"color": "marine"
+			},
+			{
+				"name": "ryugumon",
+				"color": "marine"
+			},
+			{
+				"name": "ariemon",
+				"color": "marine"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "depthmon",
+				"color": "marine",
+				"from": [-1, -1]
+			},
+			{
+				"name": "divemon",
+				"color": "marine"
+			},
+			{
+				"name": "surfimon",
+				"color": "marine"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "hangyomon",
+				"color": "marine",
+				"from": [-1, -1]
+			},
+			{
+				"name": "regalecusmon",
+				"color": "marine"
+			}
 		]
 	],
 	"related": [

@@ -69,26 +69,17 @@
 		[
 			null,
 			null,
+			null,
 			{
-				"name": "wankomon",
-				"from": [[-2.5, -1]],
+				"name": "siesamonx",
+				"from": [[1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"xSize": 2
-			},
-			{
-				"name": "siesamon",
-				"from": [
-					[0, -1],
-					[-2.5, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2
+				"color": ["x"]
 			},
 			{
 				"name": "caturamon",
-				"from": [[0.5, -1]],
+				"from": [[1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -97,18 +88,20 @@
 		[
 			null,
 			null,
-			null,
 			{
-				"name": "siesamonx",
-				"from": [[-1, 0]],
+				"name": "wankomon",
+				"from": [[-3, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2,
-				"color": ["x"]
+				"yCollapsable": false
+			},
+			{
+				"name": "siesamon",
+				"from": [[0, -1], [-3, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "unknown",
-				"from": [[-0.5, -1]],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
@@ -119,7 +112,19 @@
 				"yCollapsable": true
 			}
 		],
-		[null, null, null, null, null, null],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "manekimon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			null,
+			null
+		],
 		[
 			null,
 			null,
