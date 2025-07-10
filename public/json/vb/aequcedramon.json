@@ -1,1 +1,154 @@
-{"columns":[[null,null,null,null,{"name":"anomalocarimon","mirror":true,"from":[1,-1],"color":"marine","xCollapsable":false,"yCollapsable":true},null],[null,null,null,{"name":"aequcedramon","color":"marine","from":[1,-1],"xCollapsable":false,"yCollapsable":false},{"name":"huankunmon","color":"marine","xCollapsable":false,"yCollapsable":false},{"name":"xiangpengmon","color":"marine","xCollapsable":false,"yCollapsable":true}],[{"name":"botamon","from":null,"xCollapsable":true,"yCollapsable":false},{"name":"koromon","xCollapsable":true,"yCollapsable":false},{"name":"betamon","color":"marine","xCollapsable":true,"yCollapsable":false},{"name":"tobiumon","color":"marine","xCollapsable":false,"yCollapsable":false},{"name":"gusokumon","color":"marine","xCollapsable":false,"yCollapsable":false,"from":[[0,-1]]},{"name":"aegisdramon","color":"marine","xCollapsable":false,"yCollapsable":true}],[null,null,null,{"name":"tylomon","color":"marine","from":[-1,-1],"xCollapsable":false,"yCollapsable":false},{"name":"sharkmon","color":["marine"],"from":[[0,-1]],"xCollapsable":false,"yCollapsable":false},{"name":"leviamon","color":"dark","from":[0,-1],"xCollapsable":false,"yCollapsable":true}],[null,null,null,{"name":"seadramon","mirror":true,"color":"marine","from":[-2,-1],"xCollapsable":true,"yCollapsable":false},{"name":"megaseadramon","mirror":true,"color":"marine","from":[0,-1],"xCollapsable":false,"yCollapsable":false},{"name":"metalseadramon","color":"marine","from":[0,-1],"xCollapsable":true,"yCollapsable":true}],[null,null,null,null,{"name":"skullseadramon","mirror":false,"from":[[-1,-1]],"color":["dark"],"xCollapsable":false,"yCollapsable":true},null]],"related":["seadramon","swimmon","marinechimeramon",{"name":"falcomon2","for":"huankunmon"},"aegisdramon"],"size":6}
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "anomalocarimon",
+				"mirror": true,
+				"from": [1, -1],
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "aequcedramon",
+				"color": "marine",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "huankunmon",
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "xiangpengmon",
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			{
+				"name": "botamon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "koromon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "betamon",
+				"color": "marine",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "tobiumon",
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "gusokumon",
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]]
+			},
+			{
+				"name": "aegisdramon",
+				"color": "marine",
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tylomon",
+				"color": "marine",
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "sharkmon",
+				"color": ["marine"],
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "leviamon",
+				"color": "dark",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "seadramon",
+				"mirror": true,
+				"color": "marine",
+				"from": [-2, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "megaseadramon",
+				"mirror": true,
+				"color": "marine",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "metalseadramon",
+				"color": "marine",
+				"from": [0, -1],
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "skullseadramon",
+				"mirror": false,
+				"from": [[-1, -1]],
+				"color": ["dark"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		]
+	],
+	"related": [
+		"seadramon",
+		"hujiamon",
+		"marinechimeramon",
+		{ "name": "falcomon2", "for": "huankunmon" },
+		"aegisdramon"
+	],
+	"size": 6
+}

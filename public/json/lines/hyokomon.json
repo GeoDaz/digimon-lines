@@ -49,13 +49,23 @@
 				"name": "devitamamon",
 				"color": "dark"
 			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "darumamon",
+				"from": [-1, -1]
+			}
 		]
 	],
 	"related": [
 		{ "name": "hawkmon", "from": "butenmon" },
 		{ "name": "biyomon", "for": "karatenmon" },
 		{ "name": "falcomon2", "for": "ravemon" },
-		{ "name": "ogremon", "from": "digitamamon" },
+		{ "name": "hyokomon", "from": "digitamamon" },
 		{ "name": "penmon", "from": "toucanmon" },
 		"kotemon"
 	]

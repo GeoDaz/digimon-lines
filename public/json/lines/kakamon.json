@@ -4,6 +4,27 @@
 			null,
 			null,
 			null,
+			null,
+			null,
+			{
+				"name": "gankoomonx",
+				"from": [[1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["x"]
+			},
+			{
+				"name": "jesmongx",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
 			{
 				"name": "baboongamon",
 				"from": [[1, -1]],
@@ -12,7 +33,12 @@
 				"color": ["earth"]
 			},
 			null,
-			null,
+			{
+				"name": "gankoomon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
 			null
 		],
 		[
@@ -30,7 +56,7 @@
 				"color": ["fire"]
 			},
 			{
-				"name": "chimcharmon",
+				"name": "kakamon",
 				"from": [[0, -1]],
 				"xCollapsable": true,
 				"yCollapsable": false

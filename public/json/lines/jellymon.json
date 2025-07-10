@@ -102,12 +102,15 @@
 			}
 		],
 		[
-			null,
-			null,
+			{
+				"name": "tomorimon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "onibimon", "xCollapsable": true, "yCollapsable": false },
 			{
 				"name": "gasamon",
-				"color": "marine",
-				"from": [-1, -1]
+				"color": "marine"
 			},
 			{
 				"name": "octomon",
@@ -221,8 +224,7 @@
 	"related": [
 		{ "name": "devimon", "from": "marinedevimon" },
 		{ "name": "angemon", "from": "marineangemon" },
-		{ "name": "seadramon", "for": "leviamon" },
-		{ "name": "swimmon", "from": "hangyomon" },
+		{ "name": "hujiamon", "for": "leviamon" },
 		{ "name": "hookmon", "from": "mermaimon" },
 		{ "name": "numemon", "from": "gerbemon" },
 		{ "name": "falcomon2", "for": "xiangpengmon" },

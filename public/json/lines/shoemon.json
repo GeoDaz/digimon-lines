@@ -2,57 +2,122 @@
 	"columns": [
 		[
 			{
-				"name": "poyomon"
+				"name": "poyomon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "tokomon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "shoemon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "shoeshoemon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "chaperomon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "cendrillmon", "xCollapsable": true, "yCollapsable": true }
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tobucatmon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
-				"name": "tokomon"
+				"name": "pandamon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": [],
+				"color": ["x"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "porcupamon",
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["dark"]
 			},
 			{
-				"name": "shoemon"
+				"name": "warumonzaemon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["dark"]
 			},
 			{
-				"name": "shoeshoemon"
-			},
-			{
-				"name": "chaperomon"
-			},
-			{
-				"name": "cendrillmon"
+				"name": "shinmonzaemon",
+				"from": [
+					[0, -1],
+					[-1, -1],
+					[1, -1]
+				],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["dark", "dark", "dark"]
 			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dogmon",
+				"from": [[-3, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "monzaemon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "monzaemonx",
+				"from": [[-1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["x"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "extyranomon",
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		]
 	],
 	"related": [
-		{
-			"name": "sukamon",
-			"for": "tyumon"
-		},
-		{
-			"name": "sukamon",
-			"for": "targetmon"
-		},
-		{
-			"name": "wizardmon",
-			"from": "chaperomon"
-		},
-		{
-			"name": "gatomon",
-			"for": "venusmon"
-		},
-		{
-			"name": "gatomon",
-			"for": "junomon"
-		},
-		{
-			"name": "bearmon",
-			"for": "monzaemon"
-		},
-		{
-			"name": "tyranomon",
-			"for": "extyranomon"
-		},
-		{
-			"name": "pulsemon",
-			"for": "footmon"
-		}
-	]
+		{ "name": "sukamon", "for": "tyumon" },
+		{ "name": "sukamon", "for": "targetmon" },
+		{ "name": "wizardmon", "from": "chaperomon" },
+		{ "name": "gatomon", "for": "venusmon" },
+		{ "name": "gatomon", "for": "junomon" },
+		{ "name": "bearmon", "for": "monzaemon" },
+		{ "name": "tyranomon", "for": "extyranomon" },
+		{ "name": "pulsemon", "for": "footmon" }
+	],
+	"size": 6
 }

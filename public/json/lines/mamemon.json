@@ -54,7 +54,12 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "mametyramon",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
 			{
 				"name": "tonosamamamemon",
 				"from": [1, -1],

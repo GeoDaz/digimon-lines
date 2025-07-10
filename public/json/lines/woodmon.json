@@ -53,12 +53,15 @@
 			}
 		],
 		[
-			null,
-			null,
+			{
+				"name": "tomorimon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "onibimon", "xCollapsable": true, "yCollapsable": false },
 			{
 				"name": "hanimon",
-				"color": "grass",
-				"from": [-1, -1]
+				"color": "grass"
 			},
 			{
 				"name": "kokeshimon",
