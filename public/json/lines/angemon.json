@@ -72,7 +72,10 @@
 			{
 				"name": "goldramon",
 				"color": ["light", "light"],
-				"from": [[0, -1], [1, -1]]
+				"from": [
+					[0, -1],
+					[1, -1]
+				]
 			}
 		],
 		[
@@ -179,7 +182,10 @@
 			{
 				"name": "lucemonfm",
 				"color": ["gold", "fusion"],
-				"from": [[0, -2], [-5, -1]]
+				"from": [
+					[0, -2],
+					[-5, -1]
+				]
 			},
 			{
 				"name": "lucemonlarva",
@@ -226,7 +232,7 @@
 		},
 		{
 			"name": "turkimon",
-			"from": "patamon"
+			"for": "unimon"
 		},
 		{
 			"name": "kudamon",

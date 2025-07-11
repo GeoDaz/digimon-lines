@@ -95,10 +95,10 @@
 			},
 			{
 				"name": "ornismon",
-				"from": [[0, -1]],
+				"from": [[0, -1], [-1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"color": ["dark"]
+				"color": ["dark", "dark"]
 			},
 			null
 		],
