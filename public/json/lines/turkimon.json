@@ -1,72 +1,160 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "gyukimon",
-                "color": "fusion",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "fukamon"
-            },
-            {
-                "name": "mokokomon"
-            },
-            {
-                "name": "turkimon"
-            },
-            {
-                "name": "minotarumon"
-            },
-            {
-                "name": "blizzarmon",
-                "color": "ice"
-            },
-            {
-                "name": "ancientmegatheriumon",
-                "color": "ice"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "bullmon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "vajramon"
-            },
-            {
-                "name": "zanbamon"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "dokugumon",
-            "from": "gyukimon"
-        },
-        {
-            "name": "bearmon",
-            "from": "blizzarmon"
-        },
-        {
-            "name": "kotemon",
-            "from": "zanbamon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "shimaunimon",
+				"from": [[4, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "indaramon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "hippogriffomon",
+				"from": [[2, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "griffomon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "kentaurosmonx",
+				"from": [[1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["x"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "unimon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "chirinmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["light", "light"]
+			},
+			{
+				"name": "kentaurosmon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"skins": []
+			},
+			null
+		],
+		[
+			{
+				"name": "fukamon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "mokokomon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "takimon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "hakubamon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"color": ["light"]
+			},
+			{
+				"name": "sanzomon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["light"]
+			},
+			null,
+			{
+				"name": "shakamon",
+				"from": [[0, -2]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "minotarumon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "gyukimon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["fusion"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "bullmon",
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{ "name": "vajramon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "zanbamon", "xCollapsable": false, "yCollapsable": true },
+			null
+		]
+	],
+	"related": [
+		{ "name": "angemon", "from": "unimon" },
+		{ "name": "kudamon", "from": "chirinmon" },
+		{ "name": "dokugumon", "from": "gyukimon" },
+		{ "name": "bearmon", "from": "ancientmegatheriumon" },
+		{ "name": "kotemon", "from": "zanbamon" }
+	],
+	"size": 7
 }
