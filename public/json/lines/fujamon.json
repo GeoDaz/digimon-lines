@@ -3,9 +3,10 @@
 		[
 			null,
 			null,
+			null,
 			{
 				"name": "xiquemon",
-				"from": [[-1, -1]],
+				"from": [[1, -1]],
 				"color": "marine",
 				"xCollapsable": false,
 				"yCollapsable": false
@@ -18,7 +19,6 @@
 			},
 			{
 				"name": "xiangpengmon",
-				"from": [[0, -5]],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"color": ["marine"]
@@ -63,7 +63,7 @@
 			null,
 			{
 				"name": "tylomon",
-				"from": [[-2, -1]],
+				"from": [[-1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["marine"]
