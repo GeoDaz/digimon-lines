@@ -16,13 +16,13 @@
 		],
 		[
 			{
-				"name": "zerimon",
+				"name": "fukamon",
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{ "name": "gummymon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "monmon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "mokokomon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "kakamon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "apemon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "gokuwmon", "xCollapsable": false, "yCollapsable": false },
 			{
@@ -54,15 +54,15 @@
 		],
 		[
 			{
-				"name": "snowbotamon",
+				"name": "fukamon",
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{ "name": "nyaromon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "salamon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "mokokomon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "turkimon", "xCollapsable": false, "yCollapsable": false },
 			{
-				"name": "darcmon",
+				"name": "hakubamon",
 				"color": "light",
 				"xCollapsable": false,
 				"yCollapsable": false
@@ -91,6 +91,6 @@
 			null
 		]
 	],
-	"related": ["hawkmon", "kakamon", "sukamon", "kamemon"],
+	"related": ["sukamon", "kakamon", "turkimon", "kamemon"],
 	"size": 7
 }

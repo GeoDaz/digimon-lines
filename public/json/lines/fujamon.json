@@ -32,7 +32,7 @@
 			},
 			{ "name": "onibimon", "xCollapsable": true, "yCollapsable": false },
 			{
-				"name": "hujiamon",
+				"name": "fujamon",
 				"color": "marine",
 				"xCollapsable": true,
 				"yCollapsable": false
@@ -230,10 +230,10 @@
 	"related": [
 		"marinechimeramon",
 		{ "name": "crabmon", "for": "gusokumon" },
-		{ "name": "falcomon2", "for": "xiquemon" },
-		{ "name": "seadramon", "for": "tylomon" },
+		{ "name": "seadramon", "from": "tylomon" },
 		{ "name": "gomamon", "for": "dolphmon" },
 		{ "name": "jellymon", "for": "depthmon" },
+		{ "name": "falcomon2", "from": "xiquemon" },
 		{ "name": "pulsemon", "from": "divemon" }
 	],
 	"size": 6

@@ -70,7 +70,13 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "darcmon",
+				"from": [[2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["wind"]
+			},
 			{
 				"name": "silphymon",
 				"from": [[2, -1]],
@@ -353,7 +359,7 @@
 			{
 				"name": "yihumon",
 				"from": [[-0.5, -1]],
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": true
 			},
 			null
@@ -363,49 +369,23 @@
 			null,
 			null,
 			{
-				"name": "darcmon",
+				"name": "manekimon",
 				"from": [[-10, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["light"]
-			},
-			{
-				"name": "sanzomon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"color": ["light"]
-			},
-			null,
-			{
-				"name": "shakamon",
-				"from": [
-					[-0.5, -2],
-					[0.5, -2]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"xSize": 2,
-				"color": ["fusion", "fusion"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "opossummon",
-				"from": [[-11, -1]],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
-				"name": "chohakkaimon",
+				"name": "shishimamon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "amaterasumon",
 				"from": [[0, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
-			null,
 			null
 		],
 		[
@@ -413,7 +393,7 @@
 			{
 				"name": "meicoonyaromon",
 				"xSize": 2,
-				"from": [[-11.5, -1]],
+				"from": [[-12.5, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -447,7 +427,7 @@
 				"name": "ordinemon",
 				"from": [
 					[0, -1],
-					[-11, -1]
+					[-10, -1]
 				],
 				"xCollapsable": true,
 				"yCollapsable": true,
@@ -479,7 +459,7 @@
 	"related": [
 		"angemon",
 		"sistermonblanc",
-		"shakamon",
+		{ "name": "wankomon", "from": "manekimon" },
 		{ "name": "iguneetmon", "for": "minervamon" },
 		{ "name": "hawkmon", "for": "silphymon" },
 		{ "name": "sukamon", "for": "opossummon" },
