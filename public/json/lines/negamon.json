@@ -10,38 +10,56 @@
 				"name": "deathmon",
 				"color": "dark",
 				"from": [1, -1],
-				"skins": ["deathmonb"]
-			}
+				"skins": ["deathmonb"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			{
 				"name": "kuramon",
-				"color": "dark"
+				"color": "dark",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "negamon",
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "soundbirdmon",
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "eyesmon",
 				"color": "dark",
-				"skins": ["eyesmonsmr"]
+				"skins": ["eyesmonsmr"],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
-				"name": "orochimon",
-				"color": "dark"
+				"name": "negamonevolved",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "abbadomon",
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "abbadomoncore",
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -51,14 +69,25 @@
 			{
 				"name": "shademon",
 				"color": "dark",
-				"from": [-1, -1]
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
-			null,
+			{
+				"name": "orochimon",
+				"from": [[-1, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["dark"]
+			},
 			{
 				"name": "nidhoggmon",
 				"color": "dark",
-				"from": [-1, -1]
-			}
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true
+			},
+			null
 		],
 		[
 			null,
@@ -67,8 +96,13 @@
 			{
 				"name": "shademonnene",
 				"color": "human",
-				"from": [-1, 0]
-			}
+				"from": [-1, 0],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null,
+			null
 		]
 	],
 	"related": [
@@ -81,5 +115,6 @@
 		"algomon",
 		{ "name": "chimeramon", "for": "moonmillenniumon" },
 		{ "name": "omegamonmm", "for": "omegamon" }
-	]
+	],
+	"size": 7
 }
