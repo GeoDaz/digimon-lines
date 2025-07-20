@@ -237,16 +237,18 @@
 			null,
 			null,
 			{
-				"name": "rurimon",
-				"from": [[-2.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
-				"skins": ["hakaseagumon", "hakaseagumonb"]
+				"name": "toyagumon",
+				"skins": ["cleartoyagumon"],
+				"from": [[-2.5, -1]]
 			},
 			{
 				"name": "cyclomon",
-				"color": ["dark"],
-				"from": [[-2.5, -1]],
+				"color": ["dark", "dark", "dark"],
+				"from": [
+					[-2.5, -1],
+					[0, -1],
+					[1, -1]
+				],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
@@ -285,7 +287,12 @@
 		[
 			null,
 			null,
-			null,
+			{
+				"name": "toyagumonb",
+				"skins": ["cleartoyagumonb"],
+				"from": [[1, -1]],
+				"color": ["dark"]
+			},
 			null,
 			null,
 			null,
@@ -437,7 +444,13 @@
 		[
 			null,
 			null,
-			null,
+			{
+				"name": "rurimon",
+				"from": [[1, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"skins": ["hakaseagumon", "hakaseagumonb"]
+			},
 			null,
 			null,
 			null,
@@ -628,13 +641,13 @@
 		]
 	],
 	"related": [
-		{ "name": "flarelizardmon", "for": "toyagumon" },
+		"omegamonmm",
 		{ "name": "tyranomon", "from": "agumon" },
 		{ "name": "commandramon" },
+		{ "name": "flarelizardmon", "for": "toyagumon" },
 		{ "name": "flarelizardmon", "from": "agumon" },
 		{ "name": "flarelizardmon", "for": "machinedramon" },
 		"neocrimson",
-		"omegamonmm",
 		{ "name": "seadramon", "from": "snowagumon" },
 		{ "name": "chimeramon", "from": "greymon" },
 		{ "name": "garurumon", "from": "omegamon" },
@@ -643,9 +656,7 @@
 		{ "name": "apocalymon", "from": "machinedramon" }
 	],
 	"notes": [
-		"DoruGreymon does not belong to the family of Greymon. It's VO name is DoruGuremon, while Greymon is still Greymon.",
-		"ToyAgumon is not represented here because it doesn't evolve into a Greymon and it looks more like an Agumon imitation than a member of his own species.",
-		"Commandramon also has it own line with Sealsdramon like Agumon and Tyranomon."
+		"DoruGreymon does not belong to the family of Greymon. It's VO name is DoruGuremon, while Greymon is still Greymon."
 	],
 	"size": 8
 }

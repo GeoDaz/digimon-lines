@@ -1,0 +1,36 @@
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "gemmon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "liskmon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "reptilimon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "unknown",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true
+			},
+			null,
+			null
+		]
+	],
+	"related": [{ "name": "greymon", "from": "reptilimon" }]
+}
