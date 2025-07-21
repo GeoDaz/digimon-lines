@@ -1,110 +1,90 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "monzaemon",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "siesamon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "chirinmon"
-            },
-            {
-                "name": "kentaurosmon"
-            }
-        ],
-        [
-            {
-                "name": "pyonmon"
-            },
-            {
-                "name": "bosamon"
-            },
-            {
-                "name": "angoramon"
-            },
-            {
-                "name": "symbareangoramon"
-            },
-            {
-                "name": "lamortmon"
-            },
-            {
-                "name": "diarbbitmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "komondomon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "caturamon"
-            },
-            {
-                "name": "anubimon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "frigimon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "blizzarmon"
-            },
-            {
-                "name": "vikemon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "panjyamon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        "angoramon",
-        "kudamon",
-        "wankomon",
-        "bearmon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "monzaemon",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "siesamon",
+				"from": [1, -1]
+			},
+			{
+				"name": "chirinmon"
+			},
+			{
+				"name": "kentaurosmon"
+			}
+		],
+		[
+			{
+				"name": "pyonmon"
+			},
+			{
+				"name": "bosamon"
+			},
+			{
+				"name": "angoramon"
+			},
+			{
+				"name": "symbareangoramon"
+			},
+			{
+				"name": "lamortmon"
+			},
+			{
+				"name": "diarbbitmon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "komondomon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "caturamon"
+			},
+			{
+				"name": "anubimon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "frigimon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "blizzarmon"
+			},
+			{
+				"name": "vikemon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "panjyamon",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": ["angoramon", "renamon", "wankomon", "bearmon"]
 }

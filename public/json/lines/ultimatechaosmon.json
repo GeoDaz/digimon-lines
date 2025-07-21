@@ -109,5 +109,10 @@
 			}
 		]
 	],
-	"related": ["commandramon", "leomon", "falcomon2", "kudamon"]
+	"related": [
+		"commandramon",
+		{ "name": "leomon", "for": "liolmon" },
+		"falcomon2",
+		{ "name": "renamon", "for": "kudamon" }
+	]
 }

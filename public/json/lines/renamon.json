@@ -1,100 +1,204 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "renamonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            null,
-            null,
-            {
-                "name": "sakuyamonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            {
-                "name": "relemon"
-            },
-            {
-                "name": "pokomon"
-            },
-            {
-                "name": "renamon"
-            },
-            {
-                "name": "kyubimon"
-            },
-            {
-                "name": "taomon"
-            },
-            {
-                "name": "sakuyamon",
-                "color": "human",
-                "skins": [
-                    "sakuyamonmm"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "raijinmon",
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "renamonx",
+				"color": "x",
+				"from": [1, 0],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null,
+			{
+				"name": "sakuyamonx",
+				"color": "x",
+				"from": [1, 0],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			{
+				"name": "relemon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "pokomon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "renamon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "kyubimon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "taomon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "sakuyamon",
+				"color": "human",
+				"skins": ["sakuyamonmm"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "raijinmon",
 				"color": "electric",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "youkomon",
-                "from": [
-                    -2,
-                    -1
-                ],
-                "skins": [
-                    "kyubimonsilver"
-                ]
-            },
-            {
-                "name": "doumon"
-            },
-            {
-                "name": "kuzuhamon",
-                "color": "dark",
-                "skins": [
-                    "kuzuhamonmm"
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "kudamon",
-            "for": "reppamon"
-        },
-        {
-            "name": "raidenmon",
-            "for": "raijinmon"
-        }
-    ]
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "youkomon",
+				"from": [[-2, -1]],
+				"skins": ["kyubimonsilver"],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["dark"]
+			},
+			{
+				"name": "doumon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"color": ["dark"]
+			},
+			{
+				"name": "kuzuhamon",
+				"color": "dark",
+				"skins": ["kuzuhamonmm"],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"from": [[0, -1]]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tenkomon",
+				"from": [[-3, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["ice"]
+			},
+			{
+				"name": "sekkamon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["ice"]
+			},
+			{
+				"name": "unknown",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["ice"]
+			}
+		],
+		[
+			{
+				"name": "pafumon",
+				"xSize": 2,
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "kyaromon",
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "kudamon",
+				"xSize": 2,
+				"skins": ["kudamon2"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "reppamon",
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [
+					[-4.5, -1],
+					[0, -1]
+				]
+			},
+			{
+				"name": "chirinmon",
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "mitamamon",
+				"from": [0.5, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "kentaurosmon",
+				"from": [-0.5, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "kyukimon",
+				"from": [[-1.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "kentaurosmonx",
+				"color": ["x"],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"from": [[-1, 0]]
+			}
+		]
+	],
+	"related": [
+		{ "name": "raidenmon", "for": "raijinmon" },
+		{ "name": "ultimatechaosmon", "from": "kentaurosmon" },
+		{
+			"name": "turkimon",
+			"for": "hakubamon"
+		},
+		{
+			"name": "aegiomon",
+			"for": "moosemon"
+		},
+		{
+			"name": "angemon",
+			"for": "slashangemon"
+		}
+	],
+	"size": 6
 }

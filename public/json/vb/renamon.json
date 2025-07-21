@@ -1,113 +1,124 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "kabukimon",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "kyubimon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "taomon"
-            },
-            {
-                "name": "raijinmon"
-            }
-        ],
-        [
-            {
-                "name": "relemon"
-            },
-            {
-                "name": "pokomon"
-            },
-            {
-                "name": "renamon"
-            },
-            {
-                "name": "kyubimonsilver"
-            },
-            {
-                "name": "taomonsilver"
-            },
-            {
-                "name": "sakuyamon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "youkomon",
-                "from": [
-                    -1,
-                    -1
-                ],
-                "color": "dark"
-            },
-            {
-                "name": "doumon",
-                "color": "dark"
-            },
-            {
-                "name": "kuzuhamon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "reppamon",
-                "mirror": true,
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "chirinmon"
-            },
-            {
-                "name": "mitamamon",
-                "mirror": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "kyukimon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        "renamon",
-        "kudamon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "kabukimon",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "kyubimon",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{ "name": "taomon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "raijinmon", "xCollapsable": false, "yCollapsable": true }
+		],
+		[
+			{
+				"name": "relemon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "pokomon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "renamon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "kyubimonsilver", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "taomonsilver", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "sakuyamon", "xCollapsable": false, "yCollapsable": true }
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "youkomon",
+				"from": [-1, -1],
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "doumon",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "kuzuhamon",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tenkomon",
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "sekkamon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "unknown",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "reppamon",
+				"mirror": true,
+				"from": [[-3, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{ "name": "chirinmon", "xCollapsable": false, "yCollapsable": false },
+			{
+				"name": "mitamamon",
+				"mirror": true,
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "kyukimon",
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		]
+	],
+	"related": ["renamon"],
+	"size": 6
 }
