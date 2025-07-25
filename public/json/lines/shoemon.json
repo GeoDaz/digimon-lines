@@ -11,7 +11,8 @@
 			{ "name": "shoemon", "xCollapsable": true, "yCollapsable": false },
 			{ "name": "shoeshoemon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "chaperomon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "cendrillmon", "xCollapsable": true, "yCollapsable": true }
+			{ "name": "cendrillmon", "xCollapsable": true, "yCollapsable": true },
+			{ "name": "nyabootmon", "xCollapsable": true, "yCollapsable": true }
 		],
 		[
 			null,
@@ -113,6 +114,7 @@
 		{ "name": "sukamon", "for": "tyumon" },
 		{ "name": "sukamon", "for": "targetmon" },
 		{ "name": "wizardmon", "from": "chaperomon" },
+		{ "name": "gatomon", "from": "nyabootmon" },
 		{ "name": "gatomon", "for": "venusmon" },
 		{ "name": "gatomon", "for": "junomon" },
 		{ "name": "bearmon", "for": "monzaemon" },
