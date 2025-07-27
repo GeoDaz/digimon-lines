@@ -4,13 +4,48 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "publimon",
+				"from": [[1, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			}
+		],
+		[
+			{
+				"name": "choromon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "monimon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "monitamon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "hivisionmonitamon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
 			null,
 			{
 				"name": "ancientwisemon",
 				"xSize": 2,
-				"from": [[0.5, -1]]
-			}
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
 		],
 		[
 			null,
@@ -18,17 +53,60 @@
 			null,
 			{
 				"name": "mercuremon",
-				"from": null
+				"from": [[-1, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "sephirothmon",
-				"color": "dark"
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "seraphimonb",
-				"color": "dark", 
+				"color": "dark",
 				"xSize": 2,
-				"from": [[-0.5, -1]]
+				"from": [[-0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[null, null, null, null, null, null, null, null],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "chimeramon",
+				"from": [[-2, 0]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["slide"]
+			},
+			{
+				"name": "millenniumon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["fusion"]
+			},
+			{
+				"name": "moonmillenniumon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["fusion"]
+			},
+			{
+				"name": "zeedmillenniumon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["fusion"]
 			}
 		]
 	],
@@ -39,7 +117,12 @@
 		},
 		{
 			"name": "wizardmon",
-			"for": "wisemon"
+			"from": "ancientwisemon"
+		},
+		"chimeramon",
+		{
+			"name": "jellymon",
+			"from": "publimon"
 		}
 	]
 }
