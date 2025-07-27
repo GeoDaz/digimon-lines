@@ -41,6 +41,7 @@ export interface LineThumb {
 	name: string;
 	available?: boolean;
 	found?: LineFound;
+	for?: string;
 }
 
 export interface LineFound {

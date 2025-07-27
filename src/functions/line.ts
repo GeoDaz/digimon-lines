@@ -79,7 +79,7 @@ export const filterlinesFound = (
 		foundList.forEach(el => {
 			if (el.name === line.name) {
 				if (!line.found || el.priority > line.found.priority) {
-					line = { ...line, found: el };
+					line = { ...line, found: el, for: el.name };
 					found = true;
 				}
 			}

@@ -2,31 +2,23 @@
 	"size": 8,
 	"columns": [
 		[
-			null,
-			null,
 			{
-				"name": "gemmon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "poyomon"
 			},
 			{
-				"name": "liskmon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "tokomon"
 			},
 			{
-				"name": "reptilimon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "gemmon"
 			},
 			{
-				"name": "unknown",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"name": "liskmon"
+			},
+			{
+				"name": "reptilimon"
+			},
+			{
+				"name": "unknown"
 			},
 			null,
 			null

@@ -366,34 +366,10 @@
 		],
 		[
 			null,
-			null,
-			null,
-			{
-				"name": "manekimon",
-				"from": [[-10, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "shishimamon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "amaterasumon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null
-		],
-		[
-			null,
 			{
 				"name": "meicoonyaromon",
 				"xSize": 2,
-				"from": [[-12.5, -1]],
+				"from": [[-10.5, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -458,19 +434,18 @@
 	],
 	"related": [
 		"angemon",
-		"sistermonblanc",
-		{ "name": "wankomon", "from": "manekimon" },
+		{ "name": "wankomon", "for": "manekimon" },
 		{ "name": "iguneetmon", "for": "minervamon" },
 		{ "name": "hawkmon", "for": "silphymon" },
 		{ "name": "sukamon", "for": "opossummon" },
-		{ "name": "wizardmon", "for": "witchmon" },
-		{ "name": "shoemon", "for": "cendrillmon" },
 		{ "name": "devimon", "for": "ladydevimon" },
-		{ "name": "impmon", "for": "beelstarmon" },
 		{ "name": "leomon", "for": "ancientsphinxmon" },
-		{ "name": "pawnchessmonwhite", "for": "skullknightmon" },
 		{ "name": "omegamonmm", "from": "magnadramon" },
-		{ "name": "ogudomon", "from": "lilithmon" }
-	],
-	"size": 7
+		{ "name": "ogudomon", "from": "lilithmon" },
+		{ "name": "pawnchessmonwhite", "for": "skullknightmon" },
+		"sistermonblanc",
+		{ "name": "impmon", "for": "beelstarmon" },
+		{ "name": "wizardmon", "for": "witchmon" },
+		{ "name": "shoemon", "for": "cendrillmon" }
+	]
 }
