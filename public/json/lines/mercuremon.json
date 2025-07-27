@@ -1,0 +1,45 @@
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "ancientwisemon",
+				"xSize": 2,
+				"from": [[0.5, -1]]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mercuremon",
+				"from": null
+			},
+			{
+				"name": "sephirothmon",
+				"color": "dark"
+			},
+			{
+				"name": "seraphimonb",
+				"color": "dark", 
+				"xSize": 2,
+				"from": [[-0.5, -1]]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "angemon",
+			"for": "seraphimonb"
+		},
+		{
+			"name": "wizardmon",
+			"for": "wisemon"
+		}
+	]
+}

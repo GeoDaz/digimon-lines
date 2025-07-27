@@ -7,6 +7,7 @@ export const colors: StringObject = {
 	mode: '#ef6e33', // orange
 	gold: '#e4c05c', // gold '#E9DA1D'
 	human: '#F966DE', // pink
+	slide: '#00b5ad', // teal
 	dark: '#6435c9', // violet '#684399' // black #000 ,
 	light: '#fffd8d', // light yellow
 	ice: '#87C7C6', // light blue
@@ -32,6 +33,7 @@ export const legend: Legend[] = [
 	{ key: 'mode', color: colors.mode, text: 'Mode change (Burst Mode,\u00A0...)' },
 	{ key: 'human', color: colors.human, text: 'Fusion with a human' },
 	{ key: 'gold', color: colors.gold, text: 'Gold or warp evolution digimon' },
+	{ key: 'slide', color: colors.slide, text: 'Slide evolution digimon' },
 	{ key: 'light', color: colors.light, text: 'Holy, angel evolution' },
 	{ key: 'fire', color: colors.fire, text: 'Fire, lava made digimon' },
 	{ key: 'ice', color: colors.ice, text: 'Ice, snow made digimon' },
