@@ -1,6 +1,25 @@
 {
 	"columns": [
 		[
+			null,
+			null,
+			null,
+			{
+				"name": "salamandermon",
+				"from": [[1, -1]],
+				"color": ["fire"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			{
+				"name": "stegomon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			{ "name": "spinomon" }
+		],
+		[
 			{
 				"name": "jyarimon",
 				"from": null,
@@ -22,7 +41,7 @@
 			{ "name": "dimetromon", "xCollapsable": false, "yCollapsable": false },
 			{
 				"name": "lamiamon",
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false,
 				"from": [
 					[0, -1],
@@ -39,12 +58,20 @@
 				"name": "kinkakumon",
 				"from": [[1, -1]],
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": false
 			},
-			null,
+			{
+				"name": "chohakkaimon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
 			{
 				"name": "minervamon",
-				"from": [[-1, -1]],
+				"from": [
+					[-1, -1],
+					[2, -1]
+				],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"skins": ["mervamon", "jetmervamon"]
@@ -56,13 +83,13 @@
 			{
 				"name": "iguneetmon",
 				"from": [[-2, -1]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
 				"name": "ginkakumon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": true
 			},
 			null,
@@ -78,33 +105,38 @@
 			{
 				"name": "choromon",
 				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
 			},
 			{
 				"name": "monimon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
 			},
 			{
 				"name": "hubmon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -2]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
 			},
 			{
 				"name": "coatlmon",
 				"from": [
-					[-1, -1],
+					[-1.5, -1],
 					[0, -1]
 				],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2,
+				"color": ["light", "light"]
 			},
 			{
 				"name": "sandiramon",
-				"from": [[0, -1]],
+				"from": [[0.5, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -122,9 +154,13 @@
 			null,
 			{
 				"name": "orochimon",
-				"from": [[-1, -1]],
+				"from": [
+					[-2, -1],
+					[-0.5, -1]
+				],
 				"xCollapsable": true,
-				"yCollapsable": false
+				"yCollapsable": false,
+				"color": ["dark", "dark"]
 			},
 			{
 				"name": "nidhoggmon",
@@ -150,8 +186,13 @@
 		]
 	],
 	"related": [
-		{ "name": "armadillomon", "for": "stegomon" },
-		{ "name": "gekomon", "for": "salamandermon" }
+		{ "name": "gatomon", "from": "minervamon" },
+		{ "name": "armadillomon", "from": "stegomon" },
+		{ "name": "gekomon", "for": "otamamonred" },
+		{ "name": "vorvomon", "from": "salamandermon" },
+		{ "name": "woodmon", "from": "xuanwumon" },
+		{ "name": "sukamon", "for": "chohakkaimon" },
+		{ "name": "tyranomon", "for": "deltamon" }
 	],
 	"size": 6
 }

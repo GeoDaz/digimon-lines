@@ -1,44 +1,52 @@
 {
-    "columns": [
-        [
-            {
-                "name": "zurumon"
-            },
-            {
-                "name": "arkadimon2",
-                "color": "dark"
-            },
-            {
-                "name": "arkadimon3",
-                "color": "dark"
-            },
-            {
-                "name": "arkadimon4",
-                "color": "dark"
-            },
-            {
-                "name": "arkadimon5",
-                "color": "dark"
-            },
-            {
-                "name": "arkadimon6",
-                "color": "dark"
-            },
-            null,
-            {
-                "name": "arkadimon7",
-                "color": "dark",
-                "from": [
-                    0,
-                    -2
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {"name":"devimon", "for": "demonsu"},
-        "keramon",
-        {"name": "angemon", "for": "bagramon"},
-        {"name": "pawnchessmonwhite", "for": "darkknightmon"}
-    ]
+	"columns": [
+		[
+			{
+				"name": "zurumon"
+			},
+			{
+				"name": "arkadimon2",
+				"color": "dark"
+			},
+			{
+				"name": "arkadimon3",
+				"color": "dark"
+			},
+			{
+				"name": "arkadimon4",
+				"color": "dark"
+			},
+			{
+				"name": "arkadimon5",
+				"color": "dark"
+			},
+			{
+				"name": "arkadimon6",
+				"color": "dark"
+			},
+			null,
+			{
+				"name": "arkadimon7",
+				"color": "dark",
+				"from": [0, -2]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metamormon",
+				"from": [[-1, -1]]
+			}
+		]
+	],
+	"related": [
+		{ "name": "devimon", "for": "demonsu" },
+		"keramon",
+		{ "name": "angemon", "for": "bagramon" },
+		{ "name": "pawnchessmonwhite", "for": "darkknightmon" }
+	]
 }

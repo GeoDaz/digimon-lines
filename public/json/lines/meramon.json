@@ -110,7 +110,8 @@
 	"related": [
 		"bakemon",
 		"wizardmon",
-		"flarelizardmon",
+		{ "name": "greymon", "for": "flarelizardmon" },
+		"vorvomon",
 		{ "name": "impmon", "for": "beelzebumon" },
 		{ "name": "kotemon", "for": "asuramon" },
 		{ "name": "golemon", "for": "vulcanusmon" },

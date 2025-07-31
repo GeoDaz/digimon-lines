@@ -1,53 +1,141 @@
 {
 	"columns": [
 		[
+			null,
+			null,
+			null,
 			{
-				"name": "mokumon"
+				"name": "salamandermon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["fire"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			{
+				"name": "mokumon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "demimeramon",
-				"color": "fire"
+				"color": "fire",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "vorvomon",
-				"color": "fire"
+				"color": "fire",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "lavorvomon",
-				"color": "fire"
+				"color": "fire",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "lavogaritamon",
-				"color": "fire"
+				"color": "fire",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "volcanicdramon",
-				"color": "fire"
+				"color": "fire",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "flarelizardmon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["fire"]
+			},
+			{
+				"name": "volcdramon",
+				"color": "fire",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "dorbickmon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "dorbickmondm",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["fusion"]
 			}
 		],
 		[
 			null,
 			null,
 			null,
+			{
+				"name": "darklizardmon",
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["dark"]
+			},
+			{
+				"name": "helloogarmon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["fire"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
 			null,
 			{
-				"name": "volcdramon",
-				"color": "fire",
-				"from": [-1, -1]
-			}
+				"name": "birdramon",
+				"from": [[-3, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["fire"]
+			},
+			null,
+			null,
+			null
 		]
 	],
 	"related": [
 		"jazamon",
 		"blucomon",
-		{
-			"name": "gammamon",
-			"for": "dorbickmon"
-		},
-		{
-			"name": "golemon",
-			"for": "ancientvolcamon"
-		},
-		"flarerizardmon"
-	]
+		{ "name": "greymon", "for": "flarelizardmon" },
+		{ "name": "gammamon", "from": "volcdramon" },
+		{ "name": "gekomon", "for": "otamamonred" },
+		{ "name": "golemon", "for": "ancientvolcamon" },
+		{ "name": "biyomon", "for": "birdramon" },
+		{ "name": "loogamon", "for": "helloogarmon" },
+		"meramon"
+	],
+	"size": 7
 }

@@ -1,122 +1,107 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "modokibetamon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "airdramon"
-            },
-            {
-                "name": "megadramon"
-            },
-            {
-                "name": "machinedramon"
-            }
-        ],
-        [
-            {
-                "name": "botamon"
-            },
-            {
-                "name": "koromon"
-            },
-            {
-                "name": "betamon"
-            },
-            {
-                "name": "seadramon"
-            },
-            {
-                "name": "megaseadramon"
-            },
-            {
-                "name": "metalseadramon"
-            },
-            {
-                "name": "apocalymon",
-                "xSize": 2,
-                "color": "fusion",
-                "from": [
-                    [
-                        -1.5,
-                        -1
-                    ],
-                    [
-                        -0.5,
-                        -1
-                    ],
-                    [
-                        0.5,
-                        -1
-                    ],
-                    [
-                        1.5,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            {
-                "name": "mokumon"
-            },
-            {
-                "name": "demimeramon",
-                "color": "fire"
-            },
-            {
-                "name": "candlemon",
-                "color": "fire"
-            },
-            {
-                "name": "bakemon",
-                "color": "dark"
-            },
-            {
-                "name": "phantomon",
-                "color": "dark"
-            },
-            {
-                "name": "piemon",
-                "color": "dark"
-            }
-        ],
-        [
-            {
-                "name": "nyokimon"
-            },
-            {
-                "name": "tanemon"
-            },
-            {
-                "name": "mushmon"
-            },
-            {
-                "name": "woodmon"
-            },
-            {
-                "name": "cherrymon"
-            },
-            {
-                "name": "puppetmon"
-            }
-        ]
-    ],
-    "related": [
-        "bakemon",
-        {
-            "name": "flarelizardmon",
-            "for": "machinedramon"
-        },
-        "seadramon",
-        "woodmon",
-        "neocrimson"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "agumonb",
+				"from": [1, -1]
+			},
+			{
+				"name": "darktyranomon"
+			},
+			{
+				"name": "metaltyranomon"
+			},
+			{
+				"name": "machinedramon"
+			}
+		],
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "koromon"
+			},
+			{
+				"name": "betamon"
+			},
+			{
+				"name": "seadramon"
+			},
+			{
+				"name": "megaseadramon"
+			},
+			{
+				"name": "metalseadramon"
+			},
+			{
+				"name": "apocalymon",
+				"xSize": 2,
+				"color": "fusion",
+				"from": [
+					[-1.5, -1],
+					[-0.5, -1],
+					[0.5, -1],
+					[1.5, -1]
+				]
+			}
+		],
+		[
+			{
+				"name": "mokumon"
+			},
+			{
+				"name": "demimeramon",
+				"color": "fire"
+			},
+			{
+				"name": "candlemon",
+				"color": "fire"
+			},
+			{
+				"name": "bakemon",
+				"color": "dark"
+			},
+			{
+				"name": "phantomon",
+				"color": "dark"
+			},
+			{
+				"name": "piemon",
+				"color": "dark"
+			}
+		],
+		[
+			{
+				"name": "nyokimon"
+			},
+			{
+				"name": "tanemon"
+			},
+			{
+				"name": "mushmon"
+			},
+			{
+				"name": "woodmon"
+			},
+			{
+				"name": "cherrymon"
+			},
+			{
+				"name": "puppetmon"
+			}
+		]
+	],
+	"related": [
+		"bakemon",
+		{
+			"name": "tyranomon",
+			"for": "darktyranomon"
+		},
+		"betamon",
+		"woodmon",
+		"neocrimson"
+	]
 }

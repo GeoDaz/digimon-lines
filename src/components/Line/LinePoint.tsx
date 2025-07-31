@@ -14,6 +14,7 @@ interface Props extends React.ImgHTMLAttributes<any> {
 	style?: object;
 	children?: React.ReactNode;
 	available?: boolean;
+	grid?: string[];
 }
 const LinePoint: React.FC<Props> = ({
 	name,
@@ -23,6 +24,7 @@ const LinePoint: React.FC<Props> = ({
 	available,
 	children,
 	className,
+	grid,
 	...props
 }) => {
 	if (available === false) {
@@ -59,7 +61,15 @@ const LinePoint: React.FC<Props> = ({
 			style={style}
 		>
 			<div className="line-point-safe-zone">
-				<LineImage name={name} type={type} {...props} />
+				{grid ? (
+					<div className="grid-4">
+						{grid.map(name => (
+							<LineImage key={name} name={name} type={type} {...props} />
+						))}
+					</div>
+				) : (
+					<LineImage name={name} type={type} {...props} />
+				)}
 			</div>
 			{available && (
 				<Icon

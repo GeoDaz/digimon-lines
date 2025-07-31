@@ -42,6 +42,9 @@ export const clearLine = (line: Line): Line => {
 	return { ...line, columns };
 };
 
+export const thumbsToNames = (lines: Array<LineThumb | string>): string[] =>
+	lines.map(line => (typeof line === 'string' ? line : line.name));
+
 export const lineToArray = (line: Line | undefined): string[] => {
 	const result: string[] = [];
 	if (line) {

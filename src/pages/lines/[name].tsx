@@ -17,9 +17,9 @@ import ColorLegend from '@/components/ColorLegend';
 import useFetch from '@/hooks/useFetch';
 import useQueryParam from '@/hooks/useQueryParam';
 import { capitalize } from '@/functions';
-import transformLine from '@/functions/line';
+import transformLine, { thumbsToNames } from '@/functions/line';
 // constants
-import { Line } from '@/types/Line';
+import { Line, LineThumb } from '@/types/Line';
 import { LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
 
@@ -169,8 +169,8 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 
 export async function getStaticPaths() {
 	try {
-		const lines = require('../../../public/json/lines/_index.json');
-		const fusions = require('../../../public/json/lines/_fusion.json');
+		const lines = thumbsToNames(require('../../../public/json/lines/_index.json'));
+		const fusions = thumbsToNames(require('../../../public/json/lines/_fusion.json'));
 
 		const paths = [...lines, ...fusions].map(name => ({
 			params: { name },
@@ -195,8 +195,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		console.error(e);
 	}
 
-	const lines = require('../../../public/json/lines/_index.json');
-	const fusions = require('../../../public/json/lines/_fusion.json');
+	const lines = thumbsToNames(require('../../../public/json/lines/_index.json'));
+	const fusions = thumbsToNames(require('../../../public/json/lines/_fusion.json'));
 
 	let prev = null;
 	let next = null;

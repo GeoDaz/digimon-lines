@@ -340,11 +340,10 @@
 		{ "name": "gammamon", "from": "triceramon" },
 		{ "name": "armadillomon", "from": "spinomon" },
 		"neocrimson",
+		{ "name": "betamon", "for": "machinedramon" },
 		{ "name": "chimeramon", "from": "machinedramon" },
-		{ "name": "flarelizardmon", "from": "machinedramon" },
-		{ "name": "commandramon", "from": "gundramon" },
-		{ "name": "seadramon", "for": "megadramon" },
-		{ "name": "apocalymon", "from": "machinedramon" }
+		{ "name": "apocalymon", "from": "machinedramon" },
+		{ "name": "commandramon", "from": "gundramon" }
 	],
 	"size": 8
 }

@@ -1,74 +1,62 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "otamamonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            {
-                "name": "bubbmon"
-            },
-            {
-                "name": "mochimon"
-            },
-            {
-                "name": "otamamon",
-                "color": "marine"
-            },
-            {
-                "name": "gekomon"
-            },
-            {
-                "name": "shogungekomon"
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "otamamonred",
-                "color": "marine",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "salamandermon",
-                "color": "fire"
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "gizamon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "frogmon"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "seadramon",
-            "for": "betamon"
-        },
-        {
-            "name": "jellymon",
-            "for": "hangyomon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "otamamonx",
+				"color": "x",
+				"from": [1, 0]
+			}
+		],
+		[
+			{
+				"name": "bubbmon"
+			},
+			{
+				"name": "mochimon"
+			},
+			{
+				"name": "otamamon",
+				"color": "marine"
+			},
+			{
+				"name": "gekomon"
+			},
+			{
+				"name": "shogungekomon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "otamamonred",
+				"color": "marine",
+				"from": [-1, -1]
+			},
+			{
+				"name": "salamandermon",
+				"color": "fire"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "gizamon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "frogmon"
+			}
+		]
+	],
+	"related": [
+		"betamon",
+		{
+			"name": "jellymon",
+			"for": "hangyomon"
+		}
+	]
 }

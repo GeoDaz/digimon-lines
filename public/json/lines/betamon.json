@@ -4,6 +4,115 @@
 			null,
 			null,
 			{
+				"name": "gizamon",
+				"from": [[4, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["dark"]
+			},
+			{
+				"name": "cyclomon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["dark"]
+			},
+			{
+				"name": "gigadramon",
+				"color": "dark",
+				"from": [
+					[2, -1],
+					[0, -1]
+				],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "machinedramon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["machine", "machine"]
+			},
+			{
+				"name": "chaosdramon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["dark"],
+				"skins": ["himachinedramon"]
+			},
+			{
+				"name": "neocrimson",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "goldramonx",
+				"from": [[1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["x"]
+			},
+			{
+				"name": "chaosdramonx",
+				"from": [[-1, 0]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["x"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "modokibetamon",
+				"from": [[2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "airdramon",
+				"color": "wind",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "megadramon",
+				"color": "machine",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [
+					[-2, -1],
+					[0, -1]
+				]
+			},
+			{
+				"name": "goldramon",
+				"color": "light",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
 				"name": "betamonx",
 				"color": "x",
 				"from": [1, 0],
@@ -38,7 +147,11 @@
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
-			{ "name": "koromon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "koromon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
 			{
 				"name": "betamon",
 				"from": [0, -1],
@@ -181,96 +294,101 @@
 			{
 				"name": "tylomonx",
 				"from": [[-1, 0]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
 				"name": "anomalocarimonx",
 				"from": [[0, -1]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
 				"name": "plesiomonx",
 				"from": [[0, -1]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null,
 			null
 		],
-		[
-			null,
-			null,
-			{
-				"name": "modokibetamon",
-				"from": [[-6, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "airdramon",
-				"color": "wind",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "megadramon",
-				"color": "machine",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "goldramon",
-				"color": "light",
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "gigadramon",
-				"color": "dark",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "goldramonx",
-				"color": "x",
-				"from": [-1, 0],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null
-		]
+		[null, null, null, null, null, null, null, null]
 	],
 	"related": [
-		{ "name": "aegisdramon" },
-		{ "name": "marinechimeramon", "from": "seadramon" },
-		{ "name": "apocalymon", "from": "metalseadramon" },
-		{ "name": "ogudomon", "from": "leviamon" },
-		{ "name": "flarelizardmon", "for": "megadramon" },
-		{ "name": "commandramon", "for": "darkdramon" },
-		{ "name": "angemon", "for": "goldramon" },
-		{ "name": "gomamon", "for": "plesiomon" },
-		{ "name": "bemmon", "for": "grimmon" },
-		{ "name": "crabmon", "for": "anomalocarimon" },
-		{ "name": "fujamon", "from": "tylomon" },
-		{ "name": "falcomon2", "for": "xiangpengmon" },
-		{ "name": "guilmon", "for": "megidramon" },
-		{ "name": "veemon", "for": "azulongmon" },
-		{ "name": "gatomon", "for": "magnadramon" }
+		{
+			"name": "aegisdramon"
+		},
+		{
+			"name": "gekomon",
+			"for": "otamamon"
+		},
+		{
+			"name": "greymon",
+			"for": "snowagumon"
+		},
+		{
+			"name": "gomamon",
+			"for": "plesiomon"
+		},
+		{
+			"name": "angemon",
+			"for": "goldramon"
+		},
+		{
+			"name": "crabmon",
+			"for": "anomalocarimon"
+		},
+		{
+			"name": "fujamon",
+			"for": "tylomon"
+		},
+		{
+			"name": "marinechimeramon",
+			"from": "seadramon"
+		},
+		{
+			"name": "bemmon",
+			"for": "grimmon"
+		},
+		{
+			"name": "jazamon",
+			"from": "gigadramon"
+		},
+		{
+			"name": "commandramon",
+			"for": "darkdramon"
+		},
+		{
+			"name": "apocalymon",
+			"from": "metalseadramon"
+		},
+		{
+			"name": "ogudomon",
+			"from": "leviamon"
+		},
+		{
+			"name": "falcomon2",
+			"for": "xiangpengmon"
+		},
+		{
+			"name": "jellymon",
+			"for": "hangyomon"
+		},
+		{
+			"name": "guilmon",
+			"for": "megidramon"
+		},
+		{
+			"name": "veemon",
+			"for": "azulongmon"
+		},
+		{
+			"name": "gatomon",
+			"for": "magnadramon"
+		}
 	],
 	"size": 8
 }

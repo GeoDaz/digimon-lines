@@ -226,6 +226,13 @@ h2 {
   color: white !important;
 }
 
+.grid-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 /* App */
 
 .app {
@@ -531,6 +538,11 @@ a.line-point {
   z-index: 2;
   color: var(--bs-dark);
   transition: all .3s;
+}
+
+.line-point .grid-4 .line-img {
+  max-width: calc(var(--dl-img-size) / 2);
+  max-height: calc(var(--dl-img-size) / 2);
 }
 
 .line-point .line-img.mirror {
@@ -1137,6 +1149,11 @@ a.dropdown-item.active {
     max-height: var(--dl-md-img-size);
   }
 
+  .line-point .grid-4 .line-img {
+    max-width: calc(var(--dl-md-img-size) / 2);
+    max-height: calc(var(--dl-md-img-size) / 2);
+  }
+
   .line-point .line-skin {
     max-width: var(--dl-md-skin-img-size);
     max-height: var(--dl-md-skin-img-size);
@@ -1186,6 +1203,11 @@ a.dropdown-item.active {
   .line-point .line-img {
     max-width: var(--dl-xs-img-size);
     max-height: var(--dl-xs-img-size);
+  }
+
+  .line-point .grid-4 .line-img {
+    max-width: calc(var(--dl-xs-img-size) / 2);
+    max-height: calc(var(--dl-xs-img-size) / 2);
   }
 
   .line-point .line-skin {

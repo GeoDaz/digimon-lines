@@ -19,7 +19,6 @@ const SEARCH = 'search';
 const defaultData = {
 	lines: [],
 	news: [],
-	list: [],
 	fusions: [],
 	appmons: [],
 	searchList: {},
@@ -27,7 +26,6 @@ const defaultData = {
 interface Props {
 	lines: LineThumb[];
 	news: LineThumb[];
-	list: LineThumb[];
 	fusions: LineThumb[];
 	appmons: LineThumb[];
 	searchList: Record<string, string[]>;
@@ -35,7 +33,7 @@ interface Props {
 const PageLines: React.FC<Props> = props => {
 	const { search: searchParam } = useQueryParam(SEARCH) || props;
 	const [news, setNews] = useState<LineThumb[]>(props.news);
-	const [list, setList] = useState<LineThumb[]>(props.list);
+	const [lines, setLines] = useState<LineThumb[]>(props.lines);
 	const [fusions, setFusions] = useState<LineThumb[]>(props.fusions);
 	const [appmons, setAppmons] = useState<LineThumb[]>(props.appmons);
 	const [search, setSearch] = useState<string>(searchParam);
@@ -44,7 +42,7 @@ const PageLines: React.FC<Props> = props => {
 		if (!search) {
 			if (searchParam) {
 				setNews(props.news);
-				setList(props.list);
+				setLines(props.lines);
 				setFusions(props.fusions);
 				setAppmons(props.appmons);
 				Router.push({ pathname: '/', query: null });
@@ -52,7 +50,7 @@ const PageLines: React.FC<Props> = props => {
 		} else {
 			const foundList: LineFound[] = foundLines(search, props.searchList);
 			setNews([]);
-			setList(filterlinesFound(props.list, foundList));
+			setLines(filterlinesFound(props.lines, foundList));
 			setFusions(filterlinesFound(props.fusions, foundList));
 			setAppmons(filterlinesFound(props.appmons, foundList));
 			if (search != searchParam) {
@@ -97,10 +95,10 @@ const PageLines: React.FC<Props> = props => {
 					<div>
 						<h2>News&nbsp;:</h2>
 						<LineRow lines={news} />
-						<h2>List&nbsp;:</h2>
+						<h2>Species&nbsp;:</h2>
 					</div>
 				)}
-				{list.length > 0 && <LineRow lines={list} />}
+				{lines.length > 0 && <LineRow lines={lines} />}
 				{fusions.length > 0 && (
 					<div>
 						<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
@@ -123,7 +121,12 @@ const LineRow = ({ lines, type }: { lines: LineThumb[]; type?: string }) => (
 		<Row className="line-row">
 			{lines.map((line, i) => (
 				<Col key={i}>
-					<LinePoint name={line.name} available={line.available} type={type}>
+					<LinePoint
+						name={line.name}
+						grid={line.grid}
+						available={line.available}
+						type={type}
+					>
 						{!!line.for && line.for != line.name && (
 							<LineImage
 								className="line-skin"
@@ -170,14 +173,12 @@ export const getStaticProps: GetStaticProps = async () => {
 	try {
 		let lines = require('../../public/json/lines/_index.json');
 		let news = require('../../public/json/lines/_news.json');
-		let list = require('../../public/json/lines/_list.json');
 		let fusions = require('../../public/json/lines/_fusion.json');
 		let appmons = require('../../public/json/appmons/_index.json');
 
 		const searchList: StringArrayObject = {};
-		lines.forEach((line: string) => checkLineAvailability(line, searchList));
+		lines = lines.map((line: string) => checkLineAvailability(line, searchList));
 		news = news.map((line: string) => checkLineAvailability(line));
-		list = list.map((line: string) => checkLineAvailability(line));
 		fusions = fusions.map((fusion: string) =>
 			checkLineAvailability(fusion, searchList)
 		);
@@ -186,7 +187,7 @@ export const getStaticProps: GetStaticProps = async () => {
 		);
 
 		return {
-			props: { news, list, fusions, appmons, searchList },
+			props: { news, lines, fusions, appmons, searchList },
 		};
 	} catch (e) {
 		console.error(e);
