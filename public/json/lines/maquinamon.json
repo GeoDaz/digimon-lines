@@ -1,0 +1,73 @@
+{
+	"size": 6,
+	"columns": [
+		[
+			{
+				"name": "choromon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "caprimon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "maquinamon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "mulemon",
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["machine"]
+			},
+			{
+				"name": "mockingbirdmon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["machine"]
+			},
+			{
+				"name": "unknown",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["machine"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "unknown",
+				"from": [[-0.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "unknown",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "unknown",
+				"from": [[0, -2]],
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		]
+	],
+	"related": ["gatomon", "jazamon"]
+}

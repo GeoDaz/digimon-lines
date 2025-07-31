@@ -170,16 +170,14 @@ export const getStaticProps: GetStaticProps = async () => {
 	try {
 		let lines = require('../../public/json/lines/_index.json');
 		let news = require('../../public/json/lines/_news.json');
-		let partners = require('../../public/json/lines/_partners.json');
-		let others = require('../../public/json/lines/_others.json');
+		let list = require('../../public/json/lines/_list.json');
 		let fusions = require('../../public/json/lines/_fusion.json');
 		let appmons = require('../../public/json/appmons/_index.json');
 
 		const searchList: StringArrayObject = {};
 		lines.forEach((line: string) => checkLineAvailability(line, searchList));
 		news = news.map((line: string) => checkLineAvailability(line));
-		partners = partners.map((line: string) => checkLineAvailability(line));
-		others = others.map((line: string) => checkLineAvailability(line));
+		list = list.map((line: string) => checkLineAvailability(line));
 		fusions = fusions.map((fusion: string) =>
 			checkLineAvailability(fusion, searchList)
 		);
@@ -188,7 +186,7 @@ export const getStaticProps: GetStaticProps = async () => {
 		);
 
 		return {
-			props: { news, list: [...partners, ...others], fusions, appmons, searchList },
+			props: { news, list, fusions, appmons, searchList },
 		};
 	} catch (e) {
 		console.error(e);
