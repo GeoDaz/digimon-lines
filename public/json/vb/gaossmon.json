@@ -1,1 +1,53 @@
-{"size":6,"columns":[[null,null,null,null,{"name":"mametyramon","from":[[1,-1]],"collapsable":false},null],[null,null,null,{"name":"tyranomon","from":[[1,-1]],"collapsable":false},{"name":"mastertyranomon","from":[[0,-1]],"collapsable":false},{"name":"dinomon","from":[[0,-1]],"collapsable":false}],[{"name":"botamon","from":null,"collapsable":true},{"name":"koromon","from":null,"collapsable":true},{"name":"gaossmon","from":null,"collapsable":true},{"name":"darktyranomon","from":[[0,-1]],"collapsable":false},{"name":"metaltyranomon","from":null,"collapsable":false},{"name":"rusttyranomon","from":[[0,-2]],"collapsable":false}],[null,null,null,{"name":"tuskmon","from":[[-1,-1]],"collapsable":false},{"name":"triceramon","from":[[0,-1]],"collapsable":false},{"name":"dinorexmon","from":[[0,-1]],"collapsable":false}],[null,null,null,{"name":"deltamon","from":[[-2,-1]],"collapsable":true},{"name":"chimeramon","from":[[0,-1]],"collapsable":false},{"name":"millenniumon","from":[[0,-1]],"collapsable":true}],[null,null,null,null,{"name":"extyranomon","from":[[-1,-1]],"collapsable":false},null]]}
+{
+	"size": 6,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "mametyramon", "from": [[1, -1]], "collapsable": false },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "tyranomon", "from": [[1, -1]], "collapsable": false },
+			{ "name": "mastertyranomon", "from": [[0, -1]], "collapsable": false },
+			{ "name": "dinomon", "from": [[0, -1]], "collapsable": false }
+		],
+		[
+			{ "name": "botamon", "from": null, "collapsable": true },
+			{ "name": "koromon", "from": null, "collapsable": true },
+			{ "name": "gaossmon", "from": null, "collapsable": true },
+			{ "name": "darktyranomon", "from": [[0, -1]], "collapsable": false },
+			{ "name": "metaltyranomon", "from": null, "collapsable": false },
+			{ "name": "rusttyranomon", "from": [[0, -2]], "collapsable": false }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "tuskmon", "from": [[-1, -1]], "collapsable": false },
+			{ "name": "triceramon", "from": [[0, -1]], "collapsable": false },
+			{ "name": "dinorexmon", "from": [[0, -1]], "collapsable": false }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "deltamon", "from": [[-2, -1]], "collapsable": true },
+			{ "name": "chimeramon", "from": [[0, -1]], "collapsable": false },
+			{ "name": "millenniumon", "from": [[0, -1]], "collapsable": true }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "extyranomon", "from": [[-1, -1]], "collapsable": false },
+			null
+		]
+	]
+}
