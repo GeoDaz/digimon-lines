@@ -7,6 +7,8 @@ export const zooms: NumberObject = {
 	0: 100,
 	1: 125,
 	2: 150,
+	3: 175,
+	4: 200,
 };
 // cannot use Object.entries(zooms) because keys will wrong be ordered
 export const zoomOptions: Option[] = [
@@ -16,4 +18,6 @@ export const zoomOptions: Option[] = [
 	{ key: 0, value: 100 },
 	{ key: 1, value: 125 },
 	{ key: 2, value: 150 },
+	{ key: 3, value: 175 },
+	{ key: 4, value: 200 },
 ];

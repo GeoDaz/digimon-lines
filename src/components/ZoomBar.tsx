@@ -37,7 +37,7 @@ export const ZoomBar: React.FC<{
 				title="zoom"
 				steps={zoomOptions}
 				selected={zoom}
-				progress={zooms[zoom] / 1.5}
+				progress={zooms[zoom] / 2}
 				onChange={setZoom}
 				className="progress-zoom"
 			/>

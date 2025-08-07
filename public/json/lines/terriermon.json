@@ -153,13 +153,6 @@
 				"from": [0.5, -1],
 				"xCollapsable": false,
 				"yCollapsable": false
-			},
-			{
-				"name": "erlangmon",
-				"color": "fusion",
-				"skins": ["erlangmonbm"],
-				"xCollapsable": false,
-				"yCollapsable": true
 			}
 		],
 		[
@@ -248,7 +241,6 @@
 		{ "name": "raidenmon", "for": "fujinmon" },
 		"lunamon",
 		"angoramon",
-		{ "name": "garurumon", "for": "erlangmon" },
 		{ "name": "negamon", "for": "shademonnene" }
 	],
 	"size": 7

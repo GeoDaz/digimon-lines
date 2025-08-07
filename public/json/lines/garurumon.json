@@ -13,24 +13,40 @@
 			{
 				"name": "garurumonx",
 				"color": "x",
+				"from": [
+					[0, -1],
+					[1.5, 0]
+				],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
 				"name": "weregarurumonx",
 				"color": "x",
+				"from": [
+					[0, -1],
+					[1.5, 0]
+				],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
 				"name": "metalgarurumonx",
 				"color": "x",
+				"from": [
+					[0, -1],
+					[1.5, 0]
+				],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
 				"name": "omegamonx",
 				"color": "x",
+				"from": [
+					[0, -1],
+					[1, 0]
+				],
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -154,13 +170,14 @@
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
+			null,
 			{
-				"name": "marsmon",
-				"color": "fire",
-				"xCollapsable": false,
+				"name": "omegamonbam",
+				"color": "mode",
+				"from": [1, 0],
+				"xCollapsable": true,
 				"yCollapsable": true
 			},
-			null,
 			null
 		],
 		[
@@ -209,14 +226,11 @@
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
-			{
-				"name": "gururumon",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
+			null,
 			{
 				"name": "astamon",
 				"color": "dark",
+				"from": [0, -2],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
@@ -227,13 +241,7 @@
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{
-				"name": "omegamonbam",
-				"color": "mode",
-				"from": [-1, 0],
-				"xCollapsable": true,
-				"yCollapsable": true
-			},
+			null,
 			null
 		],
 		[
@@ -246,6 +254,27 @@
 				"from": [-1, -1],
 				"xCollapsable": false,
 				"yCollapsable": true
+			},
+			null,
+			{
+				"name": "belphemonrmx",
+				"color": "x",
+				"from": [-1, 0],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gururumon",
+				"from": [-2, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			null,
 			{
@@ -349,20 +378,8 @@
 				"yCollapsable": true
 			},
 			null,
-			{
-				"name": "erlangmon",
-				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["fusion"]
-			},
-			{
-				"name": "erlangmonbm",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"color": ["mode"]
-			},
+			null,
+			null,
 			null
 		],
 		[
@@ -433,42 +450,40 @@
 		"Merukymon is here because his headdress looks like a Garurumon and Mars because his looks like Gabumon."
 	],
 	"related": [
+		{
+			"name": "wankomon",
+			"for": "erlangmon"
+		},
 		"omegamonmm",
 		{
 			"name": "greymon",
 			"for": "omegamon"
 		},
 		{
-			"name": "terriermon",
-			"for": "erlangmon"
+			"name": "shoutmon",
+			"for": "shoutmonx3"
 		},
 		{
-			"name": "sukamon",
-			"for": "takutomon"
+			"name": "shoutmonx7"
+		},
+		{
+			"name": "shoutmonex6"
 		},
 		{
 			"name": "chimeramon",
 			"from": "garurumon"
 		},
 		{
-			"name": "shoutmon",
-			"for": "shoutmonx3"
-		},
-		{
 			"name": "loogamon",
 			"from": "fangmon"
 		},
 		{
-			"name": "wankomon",
-			"from": "fangmon"
-		},
-		{
 			"name": "leomon",
-			"from": "marsmon"
+			"for": "grapleomon"
 		},
 		{
 			"name": "bearmon",
-			"from": "marsmon"
+			"for": "marsmon"
 		},
 		{
 			"name": "phascomon",

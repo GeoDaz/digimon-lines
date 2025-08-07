@@ -11,12 +11,18 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "caturamon",
-				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "shishimamon",
+				"from": [
+					[0.5, -1],
+					[-0.5, -1]
+				],
+				"xSize": 2
 			},
-			{ "name": "baihumon", "xCollapsable": false, "yCollapsable": true }
+			{
+				"name": "amaterasumon",
+				"from": [[0, -1]],
+				"xSize": 2
+			}
 		],
 		[
 			{ "name": "fukamon", "xCollapsable": true, "yCollapsable": false },
@@ -40,19 +46,15 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "shishimamon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "caturamon",
+				"from": [[-0.5, -1]],
+				"xSize": 2
 			},
+			{ "name": "erlangmon", "xSize": 2 },
 			{
-				"name": "amaterasumon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"name": "erlangmonbm",
+				"color": "mode",
+				"xSize": 2
 			}
 		],
 		[
