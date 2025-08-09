@@ -3,39 +3,78 @@
 		[
 			null,
 			null,
-			null,
-			null,
-			null,
+			{
+				"name": "snowgoblimon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["ice"]
+			},
+			{
+				"name": "hyogamon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["ice", "ice"]
+			},
+			{
+				"name": "frozomon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["ice"]
+			},
 			{
 				"name": "frosvelgrmon",
 				"collapsable": true,
-				"color": ["ice"],
-				"from": [[1, -1]]
+				"color": ["ice", "ice"],
+				"from": [
+					[1, -1],
+					[0, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
 			{
-				"name": "snowbotamon"
+				"name": "snowbotamon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "hiyarimon",
-				"color": "ice"
+				"color": "ice",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "blucomon",
-				"color": "ice"
+				"color": "ice",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "paledramon",
-				"color": "ice"
+				"color": "ice",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "cryspaledramon",
-				"color": "ice"
+				"color": "ice",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "hexeblaumon",
-				"color": "ice"
+				"color": "ice",
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -47,34 +86,67 @@
 				"color": ["ice"],
 				"from": [[-1, -1]],
 				"skins": ["mudfrigimon"],
-				"collapsable": true
+				"collapsable": true,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
-			{ "name": "polarbearmon", "color": ["ice"], "collapsable": false },
+			{
+				"name": "polarbearmon",
+				"color": ["ice"],
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
 			{
 				"name": "skadimon",
 				"collapsable": true,
-				"color": ["ice"]
+				"color": ["ice"],
+				"xCollapsable": true,
+				"yCollapsable": true
 			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "sorcerymon",
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["ice"]
+			},
+			{
+				"name": "panjyamon",
+				"from": [[-1, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["ice"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "icedevimon",
+				"from": [[-3, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["ice"]
+			},
+			null,
+			null
 		]
 	],
 	"related": [
 		"vorvomon",
 		"jazamon",
-		{
-			"name": "bearmon",
-			"from": "frigimon"
-		},
-		{
-			"name": "penmon",
-			"for": "frosvelgrmon"
-		},
-		{
-			"name": "ogremon",
-			"for": "hyogamon"
-		},
-		{
-			"name": "leomon",
-			"for": "panjyamon"
-		}
-	]
+		{ "name": "bearmon", "from": "frigimon" },
+		{ "name": "penmon", "for": "frosvelgrmon" },
+		{ "name": "ogremon", "for": "hyogamon" },
+		{ "name": "leomon", "for": "panjyamon" }
+	],
+	"size": 6
 }
