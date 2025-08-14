@@ -69,12 +69,7 @@
 			null,
 			null,
 			null,
-			{
-				"name": "komondomon",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
+			{ "name": "turbomon", "from": [[-1, -1]] },
 			{
 				"name": "pistmon",
 				"from": [[-1, -1]],
@@ -90,17 +85,29 @@
 				"color": ["machine"]
 			},
 			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "komondomon",
+				"from": [-2, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			}
 		]
 	],
 	"related": [
 		{ "name": "wankomon", "for": "dobermon" },
-		{ "name": "ogremon", "from": "rebellimon" },
-		{ "name": "leomon", "from": "heavyleomon" },
+		{ "name": "ogremon", "for": "rebellimon" },
+		{ "name": "leomon", "for": "heavyleomon" },
+		{ "name": "maquinamon", "for": "turbomon" },
+		{ "name": "jazamon", "for": "maneuvermon" },
 		{ "name": "numemon", "from": "junkmon" },
 		{ "name": "hagurumon", "for": "frozomon" },
 		{ "name": "impmon", "for": "beelzebumon" },
-		{ "name": "golemon", "for": "vulcanusmon" },
-		{ "name": "sukamon", "for": "takutomon" }
+		{ "name": "golemon", "for": "vulcanusmon" }
 	],
 	"size": 7
 }

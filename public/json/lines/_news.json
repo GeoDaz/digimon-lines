@@ -1,19 +1,19 @@
 [
+	{ "name": "maquinamon", "grid": ["turbomon", "maneuvermon","maquinamon"] },
 	{ "name": "gemmon", "grid": ["rubeusdramon", "gemmon"] },
-	{ "name": "renamon", "grid": ["renamon", "yukinamon"] },
+	{ "name": "renamon", "grid": ["yukinamon","renamon"] },
 	{ "name": "kakamon", "grid": ["seitengokuwmon", "kakamon"] },
 	{
 		"name": "wankomon",
-		"grid": ["shishimamon", "amaterasumon", "manekimon", "wankomon"]
+		"grid": ["amaterasumon", "wankomon"]
 	},
-	{ "name": "turkimon", "grid": ["sanzomon", "hakubamon", "turkimon"] },
-	{ "name": "fujamon", "grid": ["fujamon", "sharkmon"] },
-	{ "name": "shoemon", "grid": ["shoemon", "nyabootmon"] },
-	{ "name": "gatomon", "grid": ["gatomon", "yihumon"] },
-	{ "name": "jellymon", "grid": ["jellymon", "ariemon", "gasamon"] },
-	{ "name": "betamon", "grid": ["betamon", "skullseadramon"] },
-	{ "name": "biyomon", "grid": ["biyomon", "tengumon"] },
-	{ "name": "hyokomon", "grid": ["hyokomon", "darumamon"] },
-	{ "name": "maquinamon", "grid": ["mulemon", "mockingbirdmon", "maquinamon"] },
-	{ "name": "woodmon", "grid": ["hanimon", "kaguyamon", "woodmon"] }
+	{ "name": "turkimon", "grid": ["hakubamon", "turkimon"] },
+	{ "name": "fujamon", "grid": ["sharkmon","fujamon"] },
+	{ "name": "shoemon", "grid": ["nyabootmon","shoemon"] },
+	{ "name": "gatomon", "grid": ["yihumon","gatomon"] },
+	{ "name": "jellymon", "grid": ["ariemon","jellymon"] },
+	{ "name": "betamon", "grid": ["skullseadramon","betamon"] },
+	{ "name": "biyomon", "grid": ["tengumon","biyomon"] },
+	{ "name": "hyokomon", "grid": ["darumamon","hyokomon"] },
+	{ "name": "woodmon", "grid": ["kaguyamon","woodmon"] }
 ]

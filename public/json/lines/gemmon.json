@@ -24,5 +24,10 @@
 			null
 		]
 	],
-	"related": [{ "name": "greymon", "from": "reptilimon" }]
+	"related": [
+		{ "name": "pteromon", "from": "liskmon" },
+		{ "name": "greymon", "from": "reptilimon" },
+		{ "name": "guilmon", "from": "rubeusdramon" },
+		{ "name": "guilmon", "for": "medievalgallantmon" }
+	]
 }

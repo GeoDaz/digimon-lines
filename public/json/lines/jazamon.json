@@ -6,12 +6,18 @@
 			{
 				"name": "sparrowmon",
 				"from": [2, -1],
-				"color": "gold"
+				"color": "gold",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "raptorsparrowmon",
-				"color": "gold"
-			}
+				"color": "gold",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
 		],
 		[
 			null,
@@ -23,41 +29,74 @@
 				"from": [
 					[1, -1],
 					[-1, -1]
-				]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "metalgreymonb3",
-				"color": "fusion"
+				"color": "fusion",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "zeekgreymon",
-				"color": "gold"
+				"color": "gold",
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
 			{
-				"name": "bommon"
+				"name": "bommon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "missimon",
-				"color": "machine"
+				"color": "machine",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "jazamon",
-				"color": "machine"
+				"color": "machine",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "jazardmon",
-				"color": "machine"
+				"color": "machine",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "jazarichmon",
-				"color": "machine"
+				"color": "machine",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "metallicdramon",
-				"color": "machine"
+				"color": "machine",
+				"xCollapsable": true,
+				"yCollapsable": true
 			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "mockingbirdmon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["machine"]
+			},
+			null
 		],
 		[
 			null,
@@ -65,24 +104,28 @@
 			{
 				"name": "kokuwamon",
 				"color": "machine",
-				"from": [-1, -1]
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "pteranomon",
 				"color": "machine",
 				"from": [
 					[0, -1],
-					[-1, -1]
-				]
+					[-2, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
-				"name": "gigadramon",
-				"color": "machine"
+				"name": "maneuvermon",
+				"color": ["default"],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"from": [[0, -1]]
 			},
-			{
-				"name": "darkdramon",
-				"color": "machine"
-			}
+			null
 		],
 		[
 			null,
@@ -90,69 +133,69 @@
 			{
 				"name": "kokuwamonx",
 				"color": "x",
-				"from": [-1, 0]
+				"from": [-1, 0],
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
 				"name": "pteranomonx",
-				"color": "x"
+				"color": "x",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "cargodramon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["machine"]
+			},
+			{
+				"name": "brigadramon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["machine"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gigadramon",
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["dark"]
+			},
+			{
+				"name": "darkdramon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["dark"]
 			}
 		]
 	],
 	"related": [
-		{
-			"name": "greymon",
-			"for": "greymonb3"
-		},
 		"vorvomon",
 		"blucomon",
+		{ "name": "greymon", "for": "greymonb3" },
+		{ "name": "pteromon", "from": "pteranomon" },
+		{ "name": "commandramon", "for": "cargodramon" },
+		{ "name": "betamon", "for": "gigadramon" },
+		{ "name": "maquinamon", "for": "mockingbirdmon" },
+		{ "name": "hagurumon", "for": "blimpmon" },
+		{ "name": "tentomon", "for": "kokuwamon" },
 		"espimon",
-		{
-			"name": "betamon",
-			"for": "gigadramon"
-		},
-		{
-			"name": "pteromon",
-			"from": "pteranomon"
-		},
-		{
-			"name": "tentomon",
-			"for": "kokuwamon"
-		},
-		{
-			"name": "commandramon",
-			"for": "cargodramon"
-		},
-		{
-			"name": "hagurumon",
-			"for": "blimpmon"
-		},
-		{
-			"name": "penmon",
-			"for": "peacockmon"
-		},
-		{
-			"name": "mamemon",
-			"from": "kokuwamon"
-		},
-		{
-			"name": "shoutmon",
-			"for": "shoutmonx5"
-		},
-		{
-			"name": "fairymon",
-			"for": "jetsilphymon"
-		},
-		{
-			"name": "garurumon",
-			"for": "machgaogamon"
-		},
-		{
-			"name": "aegiomon",
-			"for": "aegiochusmonblue"
-		},
-		{
-			"name": "terriermon",
-			"for": "rapidmon"
-		}
-	]
+		{ "name": "penmon", "for": "peacockmon" },
+		{ "name": "shoutmon", "for": "shoutmonx5" },
+		{ "name": "fairymon", "for": "jetsilphymon" },
+		{ "name": "garurumon", "for": "machgaogamon" },
+		{ "name": "aegiomon", "for": "aegiochusmonblue" },
+		{ "name": "terriermon", "for": "rapidmon" }
+	],
+	"size": 6
 }

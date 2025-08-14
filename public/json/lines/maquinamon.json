@@ -50,13 +50,13 @@
 			null,
 			null,
 			{
-				"name": "unknown",
+				"name": "turbomon",
 				"from": [[-0.5, -1]],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
-				"name": "unknown",
+				"name": "maneuvermon",
 				"from": null,
 				"xCollapsable": true,
 				"yCollapsable": false
@@ -69,5 +69,10 @@
 			}
 		]
 	],
-	"related": ["gatomon", "jazamon"]
+	"related": [
+		{ "name": "gatomon", "from": "maquinamon" },
+		{ "name": "jazamon", "from": "mockingbirdmon" },
+		{ "name": "jazamon", "for": "pteranomon" },
+		{ "name": "machmon", "from": "turbomon" }
+	]
 }

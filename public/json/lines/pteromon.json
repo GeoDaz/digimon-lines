@@ -102,40 +102,14 @@
 				"xSize": 2,
 				"color": ["dark"]
 			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "pteranomon",
-				"from": [[-3, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"color": ["machine"]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "pteranomonx",
-				"from": [[-1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"color": ["x"]
-			},
-			null,
-			null
 		]
 	],
 	"related": [
-		{ "name": "falcomon2", "from": "valdurmon" },
-		{ "name": "jazamon", "from": "pteranomon" },
-		{ "name": "guilmon", "from": "medievalgallantmon" }
+		{ "name": "falcomon2", "for": "falcomon" },
+		{ "name": "jazamon", "for": "pteranomon" },
+		{ "name": "gemmon", "for": "liskmon" },
+		{ "name": "guilmon", "from": "medievalgallantmon" },
+		{ "name": "wizardmon", "from": "medievalgallantmon" }
 	],
 	"size": 6
 }
