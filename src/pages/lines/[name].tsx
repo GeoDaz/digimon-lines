@@ -141,6 +141,7 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 									<LinePoint
 										name={relation.for || relation.name}
 										line={relation.name}
+										type={relation.type}
 									>
 										{!!relation.for && (
 											<LineImage

@@ -1,45 +1,264 @@
 {
-	"size": 8,
+	"size": 6,
 	"columns": [
 		[
 			null,
-			null,
-			{ "name": "app_gatchmon", "from": null, "collapsable": false },
+			{
+				"name": "app_gatchmon",
+				"from": null,
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
 			{
 				"name": "app_dogatchmon",
 				"from": [
-					[0, -1],
-					[1, -1]
+					[-0.5, -1],
+					[0.5, -1]
 				],
-				"collapsable": true
+				"collapsable": true,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["gold", "fusion"]
 			},
-			{ "name": "app_globemon", "from": [[0, -1]], "collapsable": false },
-			{
-				"name": "app_gaiamon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"collapsable": true
-			},
+			null,
 			null,
 			null
 		],
 		[
 			null,
+			{
+				"name": "app_navimon",
+				"from": null,
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
 			null,
-			{ "name": "app_navimon", "from": null, "collapsable": false },
+			{
+				"name": "app_globemon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"collapsable": false,
+				"color": ["gold", "fusion"],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2
+			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "app_compassmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_watchmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": ["app_calendamon"]
+			},
+			{
+				"name": "app_timemon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			{
+				"name": "app_copipemon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_savemon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": []
+			},
+			null,
+			null,
+			{
+				"name": "app_gaiamon",
+				"from": [
+					[-2, -1],
+					[2, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["gold", "fusion"]
+			},
+			null
+		],
+		[
+			{
+				"name": "app_kosomon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_reviewmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": ["app_kosomon"]
+			},
+			{
+				"name": "app_gossipmon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			{
+				"name": "app_kabemon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_newsmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["app_dogamon"]
+			},
 			null,
 			{
 				"name": "app_charismon",
-				"from": [[-1, -1]],
-				"collapsable": false,
-				"color": ["dark"]
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
 			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "app_calcumon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_mailmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": ["app_callmon"]
+			},
+			{
+				"name": "app_sociamon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			{
+				"name": "app_diarimon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"skins": ["app_puzzlemon"]
+			},
+			{
+				"name": "app_addmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["app_messemon"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			{
+				"name": "app_jishomon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_libramon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			{
+				"name": "app_bookmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["app_setmon"]
+			},
+			null,
 			null,
 			null,
 			null
 		]
 	],
-	"related": ["shoutmon", "app_gossipmon"]
+	"related": [
+		"shoutmon",
+		{
+			"name": "hagurumon",
+			"for": "clockmon"
+		}
+	]
 }

@@ -64,7 +64,7 @@
 		]
 	],
 	"related": [
-		"app_offmon",
+		{ "name": "app_offmon", "from": "app_rebootmon", "type": "appmons" },
 		"bearmon",
 		{ "name": "hagurumon", "for": "clockmon" },
 		{ "name": "omegamonmm", "for": "omegamon" }

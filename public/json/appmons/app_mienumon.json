@@ -200,8 +200,8 @@
 	],
 	"related": [
 		{ "name": "gatomon", "for": "lilithmon" },
-		{ "name": "app_weathermon", "for": "app_cometmon" },
 		{ "name": "aegiomon", "for": "jupitermon" },
+		{ "name": "app_weathermon", "for": "app_cometmon", "type": "appmons" },
 		{ "name": "devimon", "for": "myotismon" },
 		{ "name": "mercuremon", "from": "app_mirrormon" },
 		{ "name": "espimon", "for": "ebemon" },

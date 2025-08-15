@@ -1,3 +1,5 @@
+import { DIGIMON, APPMON, GROUP, VB, DIGIEGG } from '@/consts/ui';
+
 export interface Line {
 	title?: string;
 	columns: LineColumn[];
@@ -35,6 +37,7 @@ export interface LineRelation {
 	name: string;
 	for?: string;
 	from?: string;
+	type?: typeof DIGIMON | typeof APPMON | typeof GROUP | typeof VB | typeof DIGIEGG;
 }
 
 export interface LineThumb {

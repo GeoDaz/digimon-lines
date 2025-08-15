@@ -212,25 +212,26 @@
 			"name": "dracmon",
 			"from": "myotismon"
 		},
+		{ "name": "app_mienumon", "for": "app_docmon", "type": "appmons" },
 		{
-			"name": "arkadimon",
-			"from": "demonsu"
+			"name": "hookmon",
+			"for": "boltboutamon"
 		},
 		{
 			"name": "jellymon",
-			"from": "marinedevimon"
+			"for": "marinedevimon"
 		},
 		{
 			"name": "impmon",
 			"for": "boogiemon"
 		},
 		{
-			"name": "hookmon",
-			"from": "boltboutamon"
-		},
-		{
 			"name": "bakemon",
 			"for": "piemon"
+		},
+		{
+			"name": "arkadimon",
+			"from": "demonsu"
 		},
 		{
 			"name": "fujamon",

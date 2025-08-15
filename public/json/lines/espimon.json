@@ -64,6 +64,7 @@
 	],
 	"related": [
 		"bearmon",
+		{ "name": "app_mienumon", "for": "app_medicmon", "type": "appmons" },
 		{
 			"name": "bemmon",
 			"for": "machgaogamon"
@@ -74,7 +75,7 @@
 		},
 		{
 			"name": "mamemon",
-			"from": "catchmamemon"
+			"for": "catchmamemon"
 		},
 		{
 			"name": "jazamon",

@@ -4,10 +4,21 @@
 		[
 			null,
 			null,
+			{ "name": "app_gomimon", "from": null, "collapsable": true },
+			null,
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
 			{ "name": "app_perorimon", "from": null, "collapsable": false },
 			{
 				"name": "app_sukasimon",
 				"from": [
+					[-1, -1],
 					[0, -1],
 					[1, -1]
 				],
@@ -28,5 +39,6 @@
 			null,
 			null
 		]
-	]
+	],
+	"related": ["sukamon", { "name": "numemon", "for": "gerbemon" }]
 }

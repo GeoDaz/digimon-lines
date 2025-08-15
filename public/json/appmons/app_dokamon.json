@@ -1,15 +1,130 @@
 {
-	"size": 8,
+	"size": 6,
 	"columns": [
 		[
+			{
+				"name": "app_gengomon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_tubumon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": ["app_tutomon", "app_ropuremon"]
+			},
+			{
+				"name": "app_uratekumon",
+				"from": [
+					[-0.5, -1],
+					[1.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
 			null,
+			null,
+			null
+		],
+		[
+			{
+				"name": "app_callmon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"skins": ["app_messemon"]
+			},
+			{
+				"name": "app_calcumon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": ["app_puzzlemon"]
+			},
+			{
+				"name": "app_bramon",
+				"from": [
+					[-0.5, -1],
+					[1.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null,
+			null
+		],
+		[
 			null,
 			{
-				"name": "app_cookmon",
+				"name": "app_dokamon",
 				"from": null,
 				"collapsable": false,
 				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": []
+			},
+			{
+				"name": "app_dosukomon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"collapsable": true,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["gold", "fusion"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			{
+				"name": "app_musclemon",
+				"from": null,
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["app_perorimon"]
+			},
+			null,
+			{
+				"name": "app_oujamon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"collapsable": false,
+				"color": ["gold", "fusion"],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2
+			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "app_auctiomon",
+				"from": null,
+				"xCollapsable": false,
 				"yCollapsable": false
+			},
+			{
+				"name": "app_cookmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": []
 			},
 			{
 				"name": "app_coachmon",
@@ -17,88 +132,55 @@
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": true,
 				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["fusion", "fusion"]
 			},
-			null,
 			null,
 			null,
 			null
 		],
 		[
-			null,
-			null,
 			{
-				"name": "app_auctiomon",
+				"name": "app_addmon",
 				"from": null,
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "app_dokamon",
-				"from": null,
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "app_dosukomon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": false,
-				"color": ["gold"]
-			},
-			{
-				"name": "app_oujamon",
-				"from": [
-					[0, -1],
-					[-1.5, -1],
-					[1.5, -1]
-				],
-				"collapsable": true,
-				"color": ["gold"],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
+			{
+				"name": "app_calendamon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["app_diarimon"]
+			},
+			null,
+			null,
 			{
 				"name": "app_poseidomon",
-				"from": [[0, -1]],
-				"collapsable": true,
-				"color": ["gold"],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [
+					[-2, -1],
+					[2, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["gold", "fusion"]
 			},
-			null,
 			null
 		],
 		[
 			null,
-			null,
 			{
-				"name": "app_musclemon",
+				"name": "app_dressmon",
 				"from": null,
-				"collapsable": false,
 				"xCollapsable": false,
-				"yCollapsable": false
+				"yCollapsable": false,
+				"skins": ["app_mirrormon"]
 			},
 			{
-				"name": "app_bramon",
+				"name": "app_coordemon",
 				"from": [
 					[-0.5, -1],
 					[0.5, -1]
@@ -106,120 +188,80 @@
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["dark", "dark"]
+				"color": ["fusion", "fusion"]
 			},
-			null,
 			null,
 			null,
 			null
 		],
 		[
 			null,
+			{
+				"name": "app_kaimon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["app_auctiomon"]
+			},
 			null,
 			{
-				"name": "app_gengomon",
-				"from": null,
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "app_roamon",
+				"name": "app_beautymon",
 				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2,
-				"color": ["dark", "dark"]
-			},
-			{
-				"name": "app_fakemon",
-				"from": [
-					[0, -1],
 					[-1, -1],
 					[1, -1]
 				],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["dark", "dark", "dark"]
+				"color": ["fusion", "fusion"]
 			},
-			null,
 			null,
 			null
 		],
 		[
-			null,
-			null,
 			{
-				"name": "app_tubumon",
+				"name": "app_pokomon",
 				"from": null,
-				"collapsable": false,
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "app_uratekumon",
+				"name": "app_kakeimon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": ["app_pekomon"]
+			},
+			{
+				"name": "app_consulmon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1],
-					[1.5, -1],
-					[2.5, -1]
+					[0.5, -1]
 				],
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"xSize": 2
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
 			},
-			null,
 			null,
 			null,
 			null
 		],
 		[
-			null,
-			null,
 			{
-				"name": "app_jammingmon",
+				"name": "app_luckmon",
 				"from": null,
-				"collapsable": false,
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": false,
+				"skins": ["app_batterimon"]
 			},
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
 			{
-				"name": "app_onpamon",
+				"name": "app_moneymon",
 				"from": null,
-				"collapsable": false,
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": true,
+				"skins": ["app_ecomon"]
 			},
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "app_denpamon",
-				"from": null,
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
 			null,
 			null,
 			null,
@@ -227,9 +269,27 @@
 		]
 	],
 	"related": [
-		{ "name": "garurumon", "for": "weregarurumon" },
-		"ogremon",
-		{ "name": "kakamon", "for": "lianpumon" },
-		{ "name": "sukamon", "for": "etemon" }
+		{
+			"name": "garurumon",
+			"for": "weregarurumon"
+		},
+		{
+			"name": "jellymon",
+			"for": "neptunemon"
+		},
+		{
+			"name": "ogremon",
+			"from": "app_coachmon",
+			"type": "appmons"
+		},
+		{
+			"name": "mamemon",
+			"from": "app_musclemon",
+			"type": "appmons"
+		},
+		{
+			"name": "gatomon",
+			"for": "angewomon"
+		}
 	]
 }

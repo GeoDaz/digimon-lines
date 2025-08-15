@@ -1,155 +1,212 @@
 {
-	"size": 8,
+	"size": 5,
 	"columns": [
 		[
-			null,
-			null,
-			{ "name": "app_dogamon", "from": null, "collapsable": false },
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{ "name": "app_dancemon", "from": null, "collapsable": false },
-			null,
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{ "name": "app_musimon", "from": null, "collapsable": false },
+			{
+				"name": "app_dancemon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_musimon",
+				"from": null,
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": ["app_dancemon", "app_mcmon"]
+			},
 			{
 				"name": "app_mediamon",
 				"from": [
-					[0, -1],
-					[-1, -1],
-					[1, -1],
-					[-2, -1]
+					[-0.5, -1],
+					[0.5, -1]
 				],
-				"collapsable": true
+				"collapsable": true,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["gold", "fusion"]
 			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "app_mcmon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_recomon",
+				"from": null,
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": []
+			},
+			null,
 			{
 				"name": "app_entermon",
 				"from": [
-					[0, -1],
-					[1.5, -1]
+					[-1, -1],
+					[1, -1]
 				],
-				"collapsable": true
+				"collapsable": false,
+				"color": ["gold", "fusion"],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2
 			},
-			{
-				"name": "app_ouranosmon",
-				"from": [[0, -1]],
-				"collapsable": true,
-				"color": ["wind"]
-			},
-			null,
 			null
 		],
 		[
 			null,
-			null,
-			{ "name": "app_mcmon", "from": null, "collapsable": false },
 			{
-				"name": "app_uratekumon",
+				"name": "app_sleepmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": []
+			},
+			{
+				"name": "app_dreammon",
 				"from": [
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"collapsable": false,
-				"xSize": 2
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "app_tellermon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_setmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["app_yadomon"]
 			},
 			null,
 			null,
+			{
+				"name": "app_ouranosmon",
+				"from": [
+					[-2, -1],
+					[2, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["gold", "fusion"]
+			}
+		],
+		[
+			{
+				"name": "app_tubumon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_gengomon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": []
+			},
+			{
+				"name": "app_roamon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
 			null,
 			null
 		],
 		[
 			null,
+			{
+				"name": "app_jammingmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["app_onpamon", "app_denpamon"]
+			},
 			null,
-			{ "name": "app_recomon", "from": null, "collapsable": false },
-			null,
-			null,
-			null,
-			null,
+			{
+				"name": "app_fakemon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
 			null
 		],
 		[
 			null,
-			null,
-			{ "name": "app_drawmon", "from": null, "collapsable": false },
+			{
+				"name": "app_drawmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": []
+			},
 			{
 				"name": "app_effecmon",
 				"from": [
-					[0, -1],
-					[1, -1],
-					[-1, -1]
-				],
-				"collapsable": true
-			},
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{ "name": "app_kaimon", "from": null, "collapsable": false },
-			null,
-			{
-				"name": "app_beautymon",
-				"from": [
-					[-1.5, -1],
-					[1.5, -1]
-				],
-				"collapsable": false,
-				"xSize": 2,
-				"color": ["light", "light"]
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{ "name": "app_dressmon", "from": null, "collapsable": false },
-			{
-				"name": "app_coordemon",
-				"from": [
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": true,
 				"xSize": 2,
-				"color": [null, "human"]
+				"color": ["fusion", "fusion"]
 			},
-			null,
-			null,
 			null,
 			null
 		],
 		[
 			null,
-			null,
-			{ "name": "app_kakeimon", "from": null, "collapsable": false },
-			null,
-			null,
+			{
+				"name": "app_dogamon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"skins": ["app_lightmon"]
+			},
 			null,
 			null,
 			null
-		]
+		],
+		[null, null, null, null, null]
 	],
 	"related": [
-		{ "name": "app_weathermon", "from": "app_ouranosmon" },
-		{ "name": "terriermon", "for": "lopmon" },
-		{ "name": "gatomon", "for": "angewomon" }
+		"terriermon",
+		"angoramon",
+		{ "name": "leomon", "for": "apollomon" },
+		{ "name": "hawkmon", "for": "hippogriffomon" },
+		{ "name": "sukamon", "for": "etemon" },
+		{ "name": "bakemon", "for": "jokermon" }
 	]
 }

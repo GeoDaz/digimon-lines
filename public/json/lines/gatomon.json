@@ -434,20 +434,22 @@
 	],
 	"related": [
 		"angemon",
+		{ "name": "app_musimon", "for": "app_beautymon", "type": "appmons" },
 		"maquinamon",
 		{ "name": "wankomon", "for": "manekimon" },
-		{ "name": "elizamon", "for": "minervamon" },
+		{ "name": "devimon", "for": "ladydevimon" },
 		{ "name": "hawkmon", "for": "silphymon" },
 		{ "name": "sukamon", "for": "opossummon" },
-		{ "name": "devimon", "for": "ladydevimon" },
-		{ "name": "pulsemon", "for": "runnermon" },
-		{ "name": "leomon", "for": "ancientsphinxmon" },
+		{ "name": "elizamon", "for": "minervamon" },
 		{ "name": "omegamonmm", "from": "magnadramon" },
 		{ "name": "ogudomon", "from": "lilithmon" },
-		{ "name": "pawnchessmonwhite", "for": "skullknightmon" },
-		"sistermonblanc",
 		{ "name": "impmon", "for": "beelstarmon" },
+		{ "name": "pawnchessmonwhite", "for": "skullknightmon" },
+		{ "name": "leomon", "for": "ancientsphinxmon" },
+		{ "name": "pulsemon", "for": "runnermon" },
 		{ "name": "wizardmon", "for": "witchmon" },
+		{ "name": "app_mienumon", "for": "app_warudamon", "type": "appmons" },
+		"sistermonblanc",
 		{ "name": "shoemon", "for": "cendrillmon" }
 	]
 }

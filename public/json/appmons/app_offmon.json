@@ -42,5 +42,9 @@
 			null
 		]
 	],
-	"related": ["app_onmon","loogamon", { "name": "omegamonmm", "for": "omegamon" }]
+	"related": [
+		{ "name": "app_onmon", "from": "app_rebootmon", "type": "appmons" },
+		"loogamon",
+		{ "name": "omegamonmm", "for": "omegamon" }
+	]
 }
