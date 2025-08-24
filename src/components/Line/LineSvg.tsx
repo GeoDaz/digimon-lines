@@ -70,7 +70,7 @@ const LineSvg: React.FC<Props> = ({
 	}
 	// <== start 0.5 distance
 	if (xGap == 0.5 && yGap > 0) {
-		if (ySize <= 1) {
+		if (yGap <= 1.5 && ySize <= 1) {
 			yOrigin = pointHeight - strokeWidth / 2;
 			yDest -= pointHeight - strokeWidth;
 		}
@@ -82,7 +82,6 @@ const LineSvg: React.FC<Props> = ({
 		}
 	}
 	// ==> end 0.5 distance
-	console.log({ color, xOrigin, yOrigin, xDest, yDest, xGap, yGap, xSize, ySize });
 	return (
 		<svg
 			className={
