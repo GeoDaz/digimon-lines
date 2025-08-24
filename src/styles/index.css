@@ -707,8 +707,6 @@ a.line-point {
 .line-point .line-svg {
   position: absolute;
   z-index: -2;
-  /* top: 0; */
-  bottom: 0;
 }
 
 .line-point .line-svg.left {
@@ -717,6 +715,14 @@ a.line-point {
 
 .line-point .line-svg.right {
   left: 0;
+}
+
+.line-point .line-svg.top {
+  bottom: 0;
+}
+
+.line-point .line-svg.bottom {
+  top: 0;
 }
 
 .line-point .spinner-wrapper {

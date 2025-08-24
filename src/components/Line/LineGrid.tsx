@@ -37,18 +37,6 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 		let source = drawing;
 		let sourcePoint: LinePoint | null = line.columns[source[0]][source[1]];
 		let targetPoint: LinePoint | null = line.columns[target[0]][target[1]];
-		// If the target is below the source, swap them
-		if (
-			target[1] > source[1] ||
-			(target[1] == source[1] &&
-				targetPoint?.ySize &&
-				targetPoint.ySize > (sourcePoint?.ySize || 0))
-		) {
-			source = target;
-			target = drawing;
-			sourcePoint = line.columns[source[0]][source[1]];
-			targetPoint = line.columns[target[0]][target[1]];
-		}
 		if (!sourcePoint || !targetPoint) return;
 		const from: LineFrom = [
 			target[0] -
