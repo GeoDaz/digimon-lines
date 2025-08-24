@@ -4,13 +4,22 @@
 			null,
 			null,
 			null,
+			null,
 			{
-				"name": "goatmon",
-				"from": [[3, -1]],
-				"color": ["light"],
+				"name": "blizzarmon",
+				"from": [[1, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false
-			}
+				"yCollapsable": false,
+				"color": ["ice"]
+			},
+			{
+				"name": "ancientmegatheriumon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["slide"]
+			},
+			null
 		],
 		[
 			null,
@@ -43,8 +52,16 @@
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{ "name": "vajramon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "zanbamon", "xCollapsable": true, "yCollapsable": true },
+			{
+				"name": "vajramon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "zanbamon",
+				"xCollapsable": true,
+				"yCollapsable": true
+			},
 			null
 		],
 		[
@@ -54,8 +71,16 @@
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
-			{ "name": "mokokomon", "xCollapsable": true, "yCollapsable": false },
-			{ "name": "turkimon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "mokokomon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "turkimon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
 			{
 				"name": "hakubamon",
 				"xCollapsable": false,
@@ -184,15 +209,105 @@
 				"color": ["grass"]
 			},
 			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "goatmon",
+				"from": [[-5, -1]],
+				"color": ["light"],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "mephismon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "gulfmon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "belphemonrm",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["belphemon"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "mephismonx",
+				"from": [[-2, 0]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["x"]
+			},
+			{
+				"name": "belphemonrmx",
+				"from": [
+					[-1, 0],
+					[0, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["x", "x"]
+			},
+			null
 		]
 	],
 	"related": [
-		{ "name": "angemon", "from": "unimon" },
-		{ "name": "renamon", "from": "chirinmon" },
-		{ "name": "dokugumon", "from": "gyukimon" },
-		{ "name": "bearmon", "for": "ancientmegatheriumon" },
-		{ "name": "aegiomon", "for": "goatmon" },
-		{ "name": "kotemon", "from": "zanbamon" }
+		{
+			"name": "angemon",
+			"from": "unimon"
+		},
+		{
+			"name": "renamon",
+			"from": "chirinmon"
+		},
+		{
+			"name": "dokugumon",
+			"from": "gyukimon"
+		},
+		{
+			"name": "bearmon",
+			"for": "ancientmegatheriumon"
+		},
+		{
+			"name": "aegiomon",
+			"from": "goatmon"
+		},
+		{
+			"name": "phascomon",
+			"from": "belphemon"
+		},
+		{
+			"name": "hawkmon",
+			"from": "hippogriffomon"
+		},
+		{
+			"name": "kotemon",
+			"from": "zanbamon"
+		}
 	],
 	"size": 7
 }

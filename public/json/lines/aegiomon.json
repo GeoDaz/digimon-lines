@@ -4,73 +4,80 @@
 			null,
 			null,
 			null,
-			{
-				"name": "oryxmon",
-				"color": "light",
-				"from": [3, -1]
-			},
-			{
-				"name": "mephismon",
-				"color": "dark"
-			},
-			{
-				"name": "gulfmon",
-				"color": "dark"
-			}
-		],
-		[
-			null,
-			null,
 			null,
 			{
-				"name": "moosemon",
-				"color": "ice",
-				"from": [2, -1]
-			},
-			null,
-			{
-				"name": "cernumon",
+				"name": "aegiochusmongreen",
 				"color": "grass",
-				"from": [1, -1]
-			}
+				"from": [2, -0.5],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"ySize": 2
+			},
+			null,
+			null
 		],
 		[
 			null,
 			null,
 			null,
+			null,
 			{
-				"name": "sheepmon",
-				"from": [1, -1]
+				"name": "aegiochusmonblue",
+				"from": [[1, -0.5]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"ySize": 2,
+				"color": ["machine"]
+			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "punimon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
-				"name": "pajiramon",
+				"name": "tsunomon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "pillowmon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "aegiomon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "aegiochusmon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "jupitermon",
 				"from": [
 					[0, -1],
-					[-1, -1]
-				]
+					[-1, -0.5],
+					[-2, -0.5],
+					[1, -0.5],
+					[2, -0.5]
+				],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"color": ["light", "light", "light", "light", "light"]
 			},
 			{
-				"name": "kentaurosmon"
-			}
-		],
-		[
-			{
-				"name": "punimon"
-			},
-			{
-				"name": "tsunomon"
-			},
-			{
-				"name": "pillowmon"
-			},
-			{
-				"name": "aegiomon"
-			},
-			{
-				"name": "aegiochusmon"
-			},
-			{
-				"name": "bacchusmon"
+				"name": "jupitermonwrath",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["mode"]
 			}
 		],
 		[
@@ -81,16 +88,13 @@
 			{
 				"name": "aegiochusmonholly",
 				"color": "light",
-				"from": [-1, 0]
+				"from": [-1, -0.5],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"ySize": 2
 			},
-			{
-				"name": "jupitermon",
-				"color": "light"
-			},
-			{
-				"name": "jupitermonwrath",
-				"color": "mode"
-			}
+			null,
+			null
 		],
 		[
 			null,
@@ -100,12 +104,81 @@
 			{
 				"name": "aegiochusmondark",
 				"color": "dark",
-				"from": [-1, 0]
+				"from": [-2, -0.5],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"ySize": 2
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "sheepmon",
+				"from": [-3, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
-				"name": "plutomon",
-				"color": "dark"
-			}
+				"name": "pajiramon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "kentaurosmon",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "oryxmon",
+				"color": "light",
+				"from": [-4, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "mephismon",
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "gulfmon",
+				"color": "dark",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "belphemonrm",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["belphemon"],
+				"color": ["dark"]
+			},
+			null
 		],
 		[
 			null,
@@ -113,33 +186,24 @@
 			null,
 			null,
 			{
-				"name": "aegiochusmongreen",
-				"color": "grass",
-				"from": [-1, 0]
+				"name": "mephismonx",
+				"from": [[-2, 0]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["x"]
 			},
 			{
-				"name": "ceresmon",
-				"color": "grass"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "aegiochusmonblue",
-				"from": [-1, 0]
+				"name": "belphemonrmx",
+				"from": [
+					[-1, 0],
+					[0, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["x", "x"]
 			},
-			{
-				"name": "vulcanusmon",
-				"color": "fire"
-			}
+			null
 		]
-	],
-	"_commented": [
-		"If Bacchusmon had respected the lore of its god inspiration, it should be part of this line. But, the digimon is not inspired on satyr unlike Aegiomon",
-		"Aegiochusmon forms can make think to other gods, Light still to Jupitermon, but Dark to Plutomon, Green to Ceresmon and Blue to Vulcanusmon."
 	],
 	"related": [
 		{
@@ -153,22 +217,7 @@
 		{
 			"name": "renamon",
 			"from": "kentaurosmon"
-		},
-		{
-			"name": "tapirmon",
-			"for": "mammon"
-		},
-		{
-			"name": "wankomon",
-			"for": "plutomon"
-		},
-		{
-			"name": "palmon",
-			"for": "ceresmon"
-		},
-		{
-			"name": "golemon",
-			"for": "vulcanusmon"
 		}
-	]
+	],
+	"size": 7
 }

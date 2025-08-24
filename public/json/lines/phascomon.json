@@ -1,82 +1,105 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "belphemonrmx",
-                "color": "x",
-                "from": [1,0]
-            }
-        ],
-        [
-            {
-                "name": "keemon"
-            },
-            {
-                "name": "yarmon",
-                "color": "dark"
-            },
-            {
-                "name": "phascomon",
-                "color": "dark"
-            },
-            {
-                "name": "porcupamon",
-                "color": "dark"
-            },
-            {
-                "name": "astamon",
-                "color": "dark"
-            },
-            {
-                "name": "belphemonrm",
-                "color": "dark",
-                "skins": ["belphemon"]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "mephismon",
-                "color": "dark",
-                "from": [-1,-1]
-            },
-            {
-                "name": "gulfmon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "mephismonx",
-                "color": "x",
-                "from": [-1,0]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "garurumon",
-            "for": "psychemon"
-        },
-        {
-            "name": "bearmon",
-            "from": "porcupamon"
-        },
-        {
-            "name": "aegiomon",
-            "for": "oryxmon"
-        }
-    ]
+	"columns": [
+		[
+			{
+				"name": "keemon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "yarmon",
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "phascomon",
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "porcupamon",
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "astamon",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "belphemonrm",
+				"color": "dark",
+				"skins": ["belphemon"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "mephismonx",
+				"from": [[1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["x"]
+			},
+			{
+				"name": "belphemonrmx",
+				"from": [
+					[-1, 0],
+					[0, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["x", "x"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "mephismon",
+				"color": "dark",
+				"from": [[-2, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "gulfmon",
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		],
+		[null, null, null, null, null, null]
+	],
+	"related": [
+		{
+			"name": "garurumon",
+			"for": "psychemon"
+		},
+		{
+			"name": "bearmon",
+			"from": "porcupamon"
+		},
+		{
+			"name": "aegiomon",
+			"from": "mephismon"
+		},
+		{
+			"name": "turkimon",
+			"from": "mephismon"
+		}
+	],
+	"size": 6
 }
