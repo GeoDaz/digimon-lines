@@ -4,16 +4,25 @@
 		[
 			null,
 			null,
-			{ "name": "app_cameramon", "from": null, "collapsable": false },
+			{
+				"name": "app_cameramon",
+				"from": null,
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
 			{
 				"name": "app_scopemon",
 				"from": [
-					[0, -1],
-					[1, -1]
+					[-0.5, -1],
+					[0.5, -1]
 				],
-				"collapsable": true
+				"collapsable": true,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2
 			},
-			{ "name": "app_sateramon", "from": [[0, -1]], "collapsable": true },
+			null,
 			null,
 			null,
 			null
@@ -21,7 +30,69 @@
 		[
 			null,
 			null,
-			{ "name": "app_shotmon", "from": null, "collapsable": false },
+			{
+				"name": "app_shotmon",
+				"from": null,
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["app_rocketmon"]
+			},
+			null,
+			{
+				"name": "app_sateramon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "app_resshamon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": ["app_jetmon"]
+			},
+			{
+				"name": "app_tripmon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			{
+				"name": "app_spamon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_yadomon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["app_compassmon"]
+			},
 			null,
 			null,
 			null,
@@ -30,7 +101,17 @@
 		]
 	],
 	"related": [
-		{ "name": "hookmon", "for": "revolmon" },
-		{ "name": "impmon", "for": "beelzebumon" }
+		{
+			"name": "hookmon",
+			"for": "revolmon"
+		},
+		{
+			"name": "impmon",
+			"for": "beelzebumon"
+		},
+		{
+			"name": "machmon",
+			"for": "locomon"
+		}
 	]
 }

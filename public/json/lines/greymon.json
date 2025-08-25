@@ -266,7 +266,13 @@
 				"color": ["dark"]
 			},
 			null,
-			null,
+			{
+				"name": "himachinedramon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["fusion"]
+			},
 			null
 		],
 		[
@@ -314,8 +320,7 @@
 				"from": [[0, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"color": ["dark"],
-				"skins": ["himachinedramon"]
+				"color": ["dark"]
 			},
 			null
 		],

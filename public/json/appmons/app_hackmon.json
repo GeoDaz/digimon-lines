@@ -3,6 +3,7 @@
 	"columns": [
 		[
 			null,
+			null,
 			{
 				"name": "app_hackmon",
 				"from": null,
@@ -26,6 +27,7 @@
 			null
 		],
 		[
+			null,
 			null,
 			{
 				"name": "app_protecmon",
@@ -51,6 +53,7 @@
 			null
 		],
 		[
+			null,
 			{
 				"name": "app_copipemon",
 				"from": null,
@@ -80,6 +83,7 @@
 		],
 		[
 			null,
+			null,
 			{
 				"name": "app_pekomon",
 				"from": null,
@@ -102,6 +106,7 @@
 			}
 		],
 		[
+			null,
 			null,
 			{
 				"name": "app_virusmon",
@@ -126,6 +131,7 @@
 		],
 		[
 			null,
+			null,
 			{
 				"name": "app_aidmon",
 				"from": null,
@@ -148,6 +154,7 @@
 			null
 		],
 		[
+			null,
 			{
 				"name": "app_dopemon",
 				"from": null,
@@ -177,6 +184,7 @@
 		],
 		[
 			null,
+			null,
 			{
 				"name": "app_spamon",
 				"from": null,
@@ -188,9 +196,10 @@
 			null,
 			null
 		],
-		[null, null, null, null, null]
+		[null, null, null, null, null, null]
 	],
 	"related": [
+		{ "name": "app_rebootmon", "type": "appmons" },
 		"hackmon",
 		{ "name": "veemon", "for": "raidramon" },
 		{ "name": "dorumon", "for": "dexdorugreymon" },

@@ -2,14 +2,16 @@
 import { GetStaticProps } from 'next';
 // components
 import { PageLine as PageAppmon } from '@/pages/lines/[name]';
-import transformLine from '@/functions/line';
+import transformLine, { thumbsToNames } from '@/functions/line';
 // constants
 import { Line } from '@/types/Line';
 import { APPMON } from '@/consts/ui';
 
 export async function getStaticPaths() {
 	try {
-		const appmons: string[] = require('../../../public/json/appmons/_index.json');
+		const appmons: string[] = thumbsToNames(
+			require('../../../public/json/appmons/_index.json')
+		);
 		const paths = appmons.map(name => ({ params: { name } }));
 
 		return { paths, fallback: false };
@@ -31,7 +33,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		console.error(e);
 	}
 
-	const lines = require('../../../public/json/appmons/_index.json');
+	const lines = thumbsToNames(require('../../../public/json/appmons/_index.json'));
 
 	let prev = null;
 	let next = null;

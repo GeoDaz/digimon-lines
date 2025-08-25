@@ -94,5 +94,10 @@
 			}
 		]
 	],
-	"related": ["loogamon", "garurumon", "wankomon"]
+	"related": [
+		"loogamon",
+		"garurumon",
+		"wankomon",
+		{ "name": "app_rebootmon", "for": "app_offmon" }
+	]
 }
