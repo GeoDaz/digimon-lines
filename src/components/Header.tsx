@@ -12,7 +12,7 @@ const Header: React.FC = () => (
 			<Container fluid className="justify-content-start">
 				<Navbar.Brand as={Link} href="/">
 					<Image src="/images/icon.png" alt="logo" height="26" width="32" />{' '}
-					<span className='d-none d-sm-inline-block'>Digimon Lines</span>
+					<span className="d-none d-sm-inline-block">Digimon Lines</span>
 				</Navbar.Brand>
 				<Nav className="flex-grow-1">
 					<DropdownMenu
@@ -30,13 +30,20 @@ const Header: React.FC = () => (
 						toggle={{ content: 'Pokémon' }}
 						items={[{ href: '/build/pokemon', content: 'Builder' }]}
 					/>
-					{/* <DropdownMenu
+					<DropdownMenu
 						className="nav-link"
 						toggle={{ content: 'Yu-Gi-Oh!' }}
 						items={[
-							{ href: '/build/yugioh', content: 'Builder' },
+							{
+								href: 'https://yugioh-lines.vercel.app',
+								content: 'Deck Randomizer',
+							},
+							{
+								href: 'https://yugioh-lines.vercel.app/build',
+								content: 'Steps Builder',
+							},
 						]}
-					/> */}
+					/>
 					<DropdownMenu
 						className="nav-link d-none d-sm-block"
 						toggle={{ content: 'Dragon Quest' }}
