@@ -60,16 +60,14 @@ const LinePoint: React.FC<Props> = ({
 			)}
 			style={style}
 		>
-			<div className="line-point-safe-zone">
-				{grid ? (
-					<div className="grid-4">
-						{grid.map(name => (
+			<div className={makeClassName('line-point-safe-zone', grid && 'gridded')}>
+				<LineImage name={name} type={type} {...props} />
+				<div className="d-flex">
+					{!!grid &&
+						grid.map(name => (
 							<LineImage key={name} name={name} type={type} {...props} />
 						))}
-					</div>
-				) : (
-					<LineImage name={name} type={type} {...props} />
-				)}
+				</div>
 			</div>
 			{available && (
 				<Icon

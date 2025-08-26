@@ -226,13 +226,6 @@ h2 {
   color: white !important;
 }
 
-.grid-4 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 /* App */
 
 .app {
@@ -533,6 +526,10 @@ a.line-point {
   background-color: transparent;
 }
 
+.line-point .line-point-safe-zone.gridded {
+  flex-direction: column;
+}
+
 .line-point .line-img {
   max-width: var(--dl-img-size);
   max-height: var(--dl-img-size);
@@ -542,9 +539,14 @@ a.line-point {
   transition: all .3s;
 }
 
-.line-point .grid-4 .line-img {
-  max-width: calc(var(--dl-img-size) / 2);
-  max-height: calc(var(--dl-img-size) / 2);
+.line-point .line-point-safe-zone.gridded>.line-img {
+  max-width: calc(var(--dl-img-size) * 2 / 3);
+  max-height: calc(var(--dl-img-size) * 2 / 3);
+}
+
+.line-point .line-point-safe-zone.gridded>.d-flex>.line-img {
+  max-width: calc(var(--dl-img-size) / 3);
+  max-height: calc(var(--dl-img-size) / 3);
 }
 
 .line-point .line-img.mirror {
@@ -1157,9 +1159,14 @@ a.dropdown-item.active {
     max-height: var(--dl-md-img-size);
   }
 
-  .line-point .grid-4 .line-img {
-    max-width: calc(var(--dl-md-img-size) / 2);
-    max-height: calc(var(--dl-md-img-size) / 2);
+  .line-point .line-point-safe-zone.gridded>.line-img {
+    max-width: calc(var(--dl-md-img-size) * 2 / 3);
+    max-height: calc(var(--dl-md-img-size) * 2 / 3);
+  }
+
+  .line-point .line-point-safe-zone.gridded>.d-flex>.line-img {
+    max-width: calc(var(--dl-md-img-size) / 3);
+    max-height: calc(var(--dl-md-img-size) / 3);
   }
 
   .line-point .line-skin {
@@ -1213,9 +1220,14 @@ a.dropdown-item.active {
     max-height: var(--dl-xs-img-size);
   }
 
-  .line-point .grid-4 .line-img {
-    max-width: calc(var(--dl-xs-img-size) / 2);
-    max-height: calc(var(--dl-xs-img-size) / 2);
+  .line-point .line-point-safe-zone.gridded>.line-img {
+    max-width: calc(var(--dl-xs-img-size) * 2 / 3);
+    max-height: calc(var(--dl-xs-img-size) * 2 / 3);
+  }
+
+  .line-point .line-point-safe-zone.gridded>.d-flex>.line-img {
+    max-width: calc(var(--dl-xs-img-size) / 3);
+    max-height: calc(var(--dl-xs-img-size) / 3);
   }
 
   .line-point .line-skin {
