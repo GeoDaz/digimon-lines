@@ -243,6 +243,8 @@ h2 {
 
 .navbar {
   font-weight: bold;
+  overflow: auto;
+  scrollbar-width: none;
 }
 
 .navbar.navbar-dark {
