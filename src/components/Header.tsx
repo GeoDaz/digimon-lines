@@ -31,7 +31,7 @@ const Header: React.FC = () => (
 						items={[{ href: '/build/pokemon', content: 'Builder' }]}
 					/>
 					<DropdownMenu
-						className="nav-link"
+						className="nav-link d-none d-sm-block"
 						toggle={{ content: 'Yu-Gi-Oh!' }}
 						items={[
 							{
@@ -45,7 +45,7 @@ const Header: React.FC = () => (
 						]}
 					/>
 					<DropdownMenu
-						className="nav-link d-none d-sm-block"
+						className="nav-link d-none d-md-block"
 						toggle={{ content: 'Dragon Quest' }}
 						items={[
 							{
