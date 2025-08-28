@@ -15,7 +15,7 @@
 				"color": "x",
 				"from": [
 					[0, -1],
-					[-1, 0]
+					[1, 0]
 				]
 			}
 		],
@@ -47,12 +47,12 @@
 			null,
 			null,
 			{
-				"name": "shakomon",
+				"name": "shakomonx",
 				"color": "x",
 				"from": [[1, 0]]
 			},
 			{
-				"name": "gesomon",
+				"name": "gesomonx",
 				"color": "x",
 				"from": [
 					[0, -1],
@@ -63,10 +63,7 @@
 			{
 				"name": "leviamonx",
 				"color": "x",
-				"from": [
-					[0, -1],
-					[1, 0]
-				]
+				"from": [[1, 0]]
 			}
 		],
 		[
