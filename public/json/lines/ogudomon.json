@@ -12,7 +12,11 @@
 			},
 			{
 				"name": "lilithmonx",
-				"color": "x"
+				"color": "x",
+				"from": [
+					[0, -1],
+					[-1, 0]
+				]
 			}
 		],
 		[
@@ -42,31 +46,45 @@
 		[
 			null,
 			null,
-			null,
-			null,
+			{
+				"name": "shakomon",
+				"color": "x",
+				"from": [[1, 0]]
+			},
+			{
+				"name": "gesomon",
+				"color": "x",
+				"from": [
+					[0, -1],
+					[1, 0]
+				]
+			},
 			null,
 			{
 				"name": "leviamonx",
 				"color": "x",
-				"from": [1, 0]
+				"from": [
+					[0, -1],
+					[1, 0]
+				]
 			}
 		],
 		[
 			{
 				"name": "pitchmon",
-				"color": "water"
+				"color": "marine"
 			},
 			{
 				"name": "pukamon",
-				"color": "water"
+				"color": "marine"
 			},
 			{
 				"name": "shakomon",
-				"color": "water"
+				"color": "marine"
 			},
 			{
 				"name": "gesomon",
-				"color": "water"
+				"color": "marine"
 			},
 			{
 				"name": "marinedevimon",
@@ -181,15 +199,27 @@
 			},
 			{
 				"name": "wizardmonx",
-				"color": "x"
+				"color": "x",
+				"from": [
+					[0, -1],
+					[1, 0]
+				]
 			},
 			{
 				"name": "baalmonx",
-				"color": "x"
+				"color": "x",
+				"from": [
+					[0, -1],
+					[1, 0]
+				]
 			},
 			{
 				"name": "beelzebumonx",
-				"color": "x"
+				"color": "x",
+				"from": [
+					[0, -1],
+					[1, 0]
+				]
 			}
 		],
 		[
@@ -231,7 +261,7 @@
 				"color": "dark"
 			},
 			{
-				"name": "babrbamon",
+				"name": "barbamon",
 				"color": "dark"
 			}
 		],
@@ -242,7 +272,7 @@
 			null,
 			null,
 			{
-				"name": "babrbamonx",
+				"name": "barbamonx",
 				"color": "x",
 				"from": [-1, 0]
 			}
