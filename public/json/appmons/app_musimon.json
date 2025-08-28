@@ -1,5 +1,5 @@
 {
-	"size": 5,
+	"size": 6,
 	"columns": [
 		[
 			null,
@@ -15,19 +15,21 @@
 				"collapsable": false,
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"skins": ["app_dancemon", "app_mcmon"]
+				"skins": []
 			},
 			{
 				"name": "app_mediamon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1]
+					[0.5, -1],
+					[-0.5, -2],
+					[0.5, -2]
 				],
 				"collapsable": true,
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["gold", "fusion"]
+				"color": ["gold", "fusion", "fusion", "fusion"]
 			},
 			null,
 			null
@@ -77,12 +79,13 @@
 				"name": "app_dreammon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1]
+					[0.5, -1],
+					[0.5, -2]
 				],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["fusion", "fusion"]
+				"color": ["fusion", "fusion", "fusion"]
 			},
 			null,
 			null
@@ -90,7 +93,7 @@
 		[
 			null,
 			{
-				"name": "app_tellermon",
+				"name": "app_yadomon",
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": false
@@ -100,7 +103,7 @@
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"skins": ["app_yadomon"]
+				"skins": []
 			},
 			null,
 			null,
@@ -119,9 +122,9 @@
 		[
 			null,
 			{
-				"name": "app_tubumon",
+				"name": "app_jammingmon",
 				"from": null,
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
@@ -135,25 +138,32 @@
 				"name": "app_roamon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1]
+					[0.5, -1],
+					[-0.5, -2],
+					[0.5, -2]
 				],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["fusion", "fusion"]
+				"color": ["fusion", "fusion", "fusion", "fusion"]
 			},
 			null,
 			null
 		],
 		[
 			null,
-			null,
 			{
-				"name": "app_jammingmon",
+				"name": "app_denpamon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_onpamon",
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"skins": ["app_onpamon", "app_denpamon"]
+				"skins": []
 			},
 			null,
 			{
@@ -183,39 +193,93 @@
 				"name": "app_effecmon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1]
+					[0.5, -1],
+					[0.5, -2]
 				],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["fusion", "fusion"]
+				"color": ["fusion", "fusion", "fusion"]
 			},
 			null,
 			null
 		],
 		[
 			null,
-			null,
+			{
+				"name": "app_lightmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
 			{
 				"name": "app_dogamon",
 				"from": null,
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": true,
-				"skins": ["app_lightmon"]
+				"skins": []
 			},
 			null,
 			null,
 			null
-		],
-		[null, null, null, null, null, null]
+		]
 	],
 	"related": [
-		{ "name": "app_mienumon", "for": "app_weathermon", "type": "appmons" },
-		"terriermon",
-		"angoramon",
-		{ "name": "leomon", "for": "apollomon" },
-		{ "name": "hawkmon", "for": "hippogriffomon" },
-		{ "name": "sukamon", "for": "etemon" },
-		{ "name": "bakemon", "for": "jokermon" }
+		{
+			"name": "app_mienumon",
+			"for": "app_weathermon"
+		},
+		{
+			"name": "app_mienumon",
+			"for": "app_weatherdramon"
+		},
+		{
+			"name": "app_dokamon",
+			"for": "app_beautymon"
+		},
+		{
+			"name": "terriermon",
+			"from": "app_musimon"
+		},
+		{
+			"name": "leomon",
+			"for": "apollomon",
+			"from": "app_ouranosmon"
+		},
+		{
+			"name": "hawkmon",
+			"for": "hippogriffomon",
+			"from": "app_roamon"
+		},
+		{
+			"name": "sukamon",
+			"for": "etemon",
+			"from": "app_fakemon"
+		},
+		{
+			"name": "bakemon",
+			"for": "jokermon",
+			"from": "app_fakemon"
+		},
+		{
+			"name": "app_dokamon",
+			"for": "app_tubumon"
+		},
+		{
+			"name": "app_cameramon",
+			"from": "app_yadomon"
+		},
+		{
+			"name": "app_hackmon",
+			"for": "app_spamon"
+		},
+		{
+			"name": "app_musimon",
+			"for": "app_setmon"
+		},
+		{
+			"name": "app_mienumon",
+			"for": "app_tellermon"
+		}
 	]
 }

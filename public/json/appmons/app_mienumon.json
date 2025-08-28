@@ -117,7 +117,7 @@
 				"skins": []
 			},
 			{
-				"name": "app_weathedramon",
+				"name": "app_weatherdramon",
 				"from": [
 					[-0.5, -1],
 					[0.5, -1]
@@ -279,8 +279,7 @@
 		},
 		{
 			"name": "app_musimon",
-			"for": "app_ouranosmon",
-			"type": "appmons"
+			"for": "app_ouranosmon"
 		},
 		{
 			"name": "devimon",

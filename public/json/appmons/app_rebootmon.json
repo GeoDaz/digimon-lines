@@ -9,8 +9,7 @@
 				"from": null,
 				"collapsable": false,
 				"xCollapsable": false,
-				"yCollapsable": false,
-				"mirror": true
+				"yCollapsable": false
 			},
 			{
 				"name": "app_logimon",
@@ -36,8 +35,7 @@
 				"from": null,
 				"collapsable": false,
 				"xCollapsable": false,
-				"yCollapsable": true,
-				"mirror": true
+				"yCollapsable": true
 			},
 			null,
 			{
@@ -50,8 +48,7 @@
 				"color": ["gold", "fusion"],
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"xSize": 2,
-				"mirror": true
+				"xSize": 2
 			},
 			null,
 			null
@@ -163,8 +160,7 @@
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["gold", "fusion"],
-				"mirror": true
+				"color": ["gold", "fusion"]
 			},
 			null,
 			null
@@ -211,8 +207,8 @@
 		]
 	],
 	"related": [
-		{ "name": "app_gatchmon", "type": "appmons" },
-		{ "name": "app_hackmon", "type": "appmons" },
+		{ "name": "app_gatchmon" },
+		{ "name": "app_hackmon" },
 		"bearmon",
 		"loogamon",
 		{ "name": "omegamonmm", "for": "omegamon" },

@@ -20,7 +20,7 @@ import { capitalize } from '@/functions';
 import transformLine, { thumbsToNames } from '@/functions/line';
 // constants
 import { Line, LineThumb } from '@/types/Line';
-import { LINE, titles } from '@/consts/ui';
+import { APPMON, LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
 
 const NAME = 'name';
@@ -130,32 +130,37 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 					<Row className="line-row">
 						{line.related.map((relation, i) => {
 							if (typeof relation == 'string') {
+								const type = relation.startsWith('app_') ? APPMON : LINE;
 								return (
 									<Col key={i}>
-										<LinePoint name={relation} />
+										<LinePoint name={relation} type={type} />
 									</Col>
 								);
 							}
+							const type =
+								relation.type ||
+								(relation.name.startsWith('app_') ? APPMON : LINE);
 							return (
 								<Col key={i}>
 									<LinePoint
 										name={relation.for || relation.name}
 										line={relation.name}
-										type={relation.type}
+										type={type}
 									>
-										{!!relation.for && (
-											<LineImage
-												className="line-skin"
-												name={relation.name}
-												loadable={false}
-											/>
-										)}
-										{!!relation.from && (
+										{!!relation.from ? (
 											<LineImage
 												className="line-skin" /* from */
 												name={relation.from}
 												loadable={false}
 											/>
+										) : (
+											!!relation.for && (
+												<LineImage
+													className="line-skin"
+													name={relation.name}
+													loadable={false}
+												/>
+											)
 										)}
 									</LinePoint>
 								</Col>

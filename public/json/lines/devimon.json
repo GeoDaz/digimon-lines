@@ -335,11 +335,7 @@
 			"name": "dracmon",
 			"from": "myotismon"
 		},
-		{
-			"name": "app_mienumon",
-			"for": "app_docmon",
-			"type": "appmons"
-		},
+		{ "name": "app_mienumon", "for": "app_docmon" },
 		{
 			"name": "hookmon",
 			"for": "boltboutamon"
