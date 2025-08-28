@@ -222,14 +222,14 @@
 		]
 	],
 	"related": [
+		{ "name": "app_dokamon", "for": "app_poseidomon", "type": "appmons" },
+		{ "name": "hookmon", "from": "mermaimon" },
+		{ "name": "fujamon", "from": "depthmon" },
+		{ "name": "betamon", "for": "leviamon" },
 		{ "name": "devimon", "from": "marinedevimon" },
 		{ "name": "angemon", "from": "marineangemon" },
-		{ "name": "fujamon", "for": "leviamon" },
-		{ "name": "hookmon", "from": "mermaimon" },
-		{ "name": "numemon", "from": "gerbemon" },
-		{ "name": "app_dokamon", "for": "poseidomon", "type": "appmons" },
-		{ "name": "falcomon2", "for": "xiangpengmon" },
-		{ "name": "gatomon", "from": "venusmon" }
+		{ "name": "numemon", "for": "gerbemon" },
+		{ "name": "gatomon", "for": "venusmon" }
 	],
 	"notes": ["This line is about octopus, seashells and mermaids."],
 	"size": 6

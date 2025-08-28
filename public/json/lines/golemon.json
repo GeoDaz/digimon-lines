@@ -57,7 +57,12 @@
 				"yCollapsable": true,
 				"color": ["earth"]
 			},
-			null
+			{
+				"name": "magneticdramon",
+				"from": [0, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
 		],
 		[
 			null,

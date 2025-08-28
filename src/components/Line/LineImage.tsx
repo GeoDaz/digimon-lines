@@ -30,7 +30,8 @@ const LineImage: React.FC<Props> = ({
 	width = 150,
 	height = 150,
 }) => {
-	const getImgPath = imgPathByLicence[useContext(LicenseContext)?.key || DIGIMON];
+	const licence = useContext(LicenseContext)?.key || DIGIMON;
+	const getImgPath = imgPathByLicence[licence];
 
 	const [src, setSrc] = useState(() => path || getImgPath(name, type));
 	const [loading, setLoading] = useState(true);

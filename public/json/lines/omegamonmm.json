@@ -14,7 +14,8 @@
                 "name": "greymon"
             },
             {
-                "name": "metalgreymon"
+                "name": "metalgreymon",
+                "skins": ["metalgreymonam"]
             },
             {
                 "name": "wargreymon"
@@ -49,7 +50,8 @@
                 "name": "garurumon"
             },
             {
-                "name": "weregarurumon"
+                "name": "weregarurumon",
+                "skins": ["weregarurumonam"]
             },
             {
                 "name": "metalgarurumon"
@@ -169,7 +171,8 @@
                 "name": "zudomon"
             },
             {
-                "name": "vikemon"
+                "name": "vikemon",
+                "skins": ["plesiomon"]
             }
         ],
         [
@@ -193,7 +196,8 @@
             },
             {
                 "name": "seraphimon",
-                "color": "light"
+                "color": "light",
+                "skins": ["goldramon"]
             }
         ],
         [
@@ -217,7 +221,8 @@
             },
             {
                 "name": "magnadramon",
-                "color": "light"
+                "color": "light",
+                "skins": ["ophanimon"]
             }
         ]
     ],

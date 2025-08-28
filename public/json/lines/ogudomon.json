@@ -52,13 +52,21 @@
 			}
 		],
 		[
-			null,
-			null,
-			null,
 			{
-				"name": "icedevimon",
-				"color": "ice",
-				"from": [1, -1]
+				"name": "pitchmon",
+				"color": "water"
+			},
+			{
+				"name": "pukamon",
+				"color": "water"
+			},
+			{
+				"name": "shakomon",
+				"color": "water"
+			},
+			{
+				"name": "gesomon",
+				"color": "water"
 			},
 			{
 				"name": "marinedevimon",
@@ -86,12 +94,13 @@
 				"color": "dark"
 			},
 			{
-				"name": "skullsatamon",
+				"name": "neodevimon",
 				"color": "dark"
 			},
 			{
-				"name": "barbamon",
-				"color": "dark"
+				"name": "demon",
+				"color": "dark",
+				"skins": ["demon2"]
 			}
 		],
 		[
@@ -101,7 +110,7 @@
 			null,
 			null,
 			{
-				"name": "barbamonx",
+				"name": "demonx",
 				"color": "x",
 				"from": [-1, 0]
 			}
@@ -125,13 +134,11 @@
 				"from": [0, -2]
 			},
 			{
-				"name": "lucemonlarva",
-				"color": "dark"
-			},
-			{
 				"name": "lucemonsm",
-				"color": "dark"
+				"color": "dark",
+				"skins": ["lucemonlarva"]
 			},
+			null,
 			{
 				"name": "ogudomon",
 				"color": "fusion",
@@ -139,7 +146,7 @@
 					[-5, -2],
 					[-3, -2],
 					[-2, -2],
-					[0, -1],
+					[0, -2],
 					[3, -2],
 					[4, -2],
 					[6, -2]
@@ -202,7 +209,7 @@
 				"color": "dark"
 			},
 			{
-				"name": "baalmon",
+				"name": "deathmeramon",
 				"color": "dark"
 			},
 			{
@@ -224,9 +231,8 @@
 				"color": "dark"
 			},
 			{
-				"name": "demon",
-				"color": "dark",
-				"skins": ["demon2"]
+				"name": "babrbamon",
+				"color": "dark"
 			}
 		],
 		[
@@ -236,7 +242,7 @@
 			null,
 			null,
 			{
-				"name": "demonx",
+				"name": "babrbamonx",
 				"color": "x",
 				"from": [-1, 0]
 			}
@@ -276,5 +282,13 @@
 			}
 		]
 	],
-	"related": ["impmon", "phascomon", "devimon", "angemon", "betamon", "gatomon"]
+	"related": [
+		"devimon",
+		"impmon",
+		"phascomon",
+		{ "name": "angemon", "for": "lucemon" },
+		{ "name": "betamon", "for": "leviamon" },
+		{ "name": "gatomon", "for": "gatomonb" },
+		{ "name": "jellymon", "for": "marinedevimon" }
+	]
 }
