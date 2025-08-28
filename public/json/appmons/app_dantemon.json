@@ -1,0 +1,105 @@
+{
+	"size": 6,
+	"columns": [
+		[null, null, { "name": "app_mailmon", "from": null }],
+		[null, null, { "name": "app_ropuremon", "from": null }],
+		[null, null, { "name": "app_gomimon", "from": null }],
+		[null, null, { "name": "app_tellermon", "from": null }],
+		[
+			null,
+			null,
+			{ "name": "app_copipemon", "from": null  },
+			null,
+			null,
+			{
+				"name": "app_dantemon",
+				"color": "fusion",
+				"from": [
+					[-4, -3],
+					[-3, -3],
+					[-2, -3],
+					[-1, -3],
+					[0, -3],
+					[1.5, -2],
+					[3.5, -2]
+				]
+			}
+		],
+		[
+			null,
+			{
+				"name": "app_dopemon",
+				"from": null
+			},
+			{
+				"name": "app_supplemon",
+				"from": null,
+				"skins": ["app_aidmon"]
+			},
+			{
+				"name": "app_medicmon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "app_spamon",
+				"from": null,
+				"skins": []
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "app_weathermon",
+				"from": null,
+				"skins": []
+			},
+			{
+				"name": "app_weathedramon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "app_rocketmon",
+				"from": null,
+				"skins": []
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "app_hackmon",
+			"for": "app_medicmon",
+			"type": "appmons"
+		},
+		{
+			"name": "app_mienumon",
+			"for": "app_weathedramon",
+			"type": "appmons"
+		}
+	]
+}
