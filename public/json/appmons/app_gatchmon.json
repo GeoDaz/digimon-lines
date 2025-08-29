@@ -305,7 +305,7 @@
 			"from": "app_bookmon"
 		},
 		{
-			"name": "app_rebootmon",
+			"name": "app_mienumon",
 			"for": "app_kabemon"
 		},
 		{
@@ -317,16 +317,8 @@
 			"for": "app_calcumon"
 		},
 		{
-			"name": "app_hackmon",
-			"for": "app_savemon"
-		},
-		{
 			"name": "app_mienumon",
 			"for": "app_copipemon"
-		},
-		{
-			"name": "app_musimon",
-			"for": "app_setmon"
 		},
 		{
 			"name": "app_mienumon",

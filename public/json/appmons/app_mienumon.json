@@ -4,9 +4,9 @@
 		[
 			null,
 			{
-				"name": "app_savemon",
+				"name": "app_drawmon",
 				"from": null,
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
@@ -15,33 +15,40 @@
 				"collapsable": false,
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"skins": ["app_drawmon"]
+				"skins": []
 			},
 			{
 				"name": "app_mienumon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1]
+					[0.5, -1],
+					[-0.5, -2],
+					[0.5, -2]
 				],
 				"collapsable": true,
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["fusion", "fusion"]
+				"color": ["fusion", "fusion", "fusion", "fusion"]
 			},
 			null,
 			null
 		],
 		[
 			null,
-			null,
+			{
+				"name": "app_kabemon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
 			{
 				"name": "app_mirrormon",
 				"from": null,
 				"collapsable": false,
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"skins": ["app_kabemon"]
+				"skins": []
 			},
 			null,
 			{
@@ -72,25 +79,31 @@
 				"name": "app_sakusimon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1]
+					[0.5, -1],
+					[0.5, -2]
 				],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["fusion", "fusion"]
+				"color": ["fusion", "fusion", "fusion"]
 			},
 			null,
 			null
 		],
 		[
 			null,
-			null,
+			{
+				"name": "app_batterimon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
 			{
 				"name": "app_calcumon",
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"skins": ["app_batterimon"]
+				"skins": []
 			},
 			null,
 			null,
@@ -168,25 +181,31 @@
 				"name": "app_warpmon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1]
+					[0.5, -1],
+					[0.5, -2]
 				],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["fusion", "fusion"]
+				"color": ["fusion", "fusion", "fusion"]
 			},
 			null,
 			null
 		],
 		[
 			null,
-			null,
+			{
+				"name": "app_trickmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
 			{
 				"name": "app_racemon",
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"skins": ["app_trickmon"]
+				"skins": []
 			},
 			null,
 			null,
@@ -194,9 +213,14 @@
 		],
 		[
 			null,
-			null,
 			{
-				"name": "app_dicemon",
+				"name": "app_gashamon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_luckmon",
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": false,
@@ -206,25 +230,32 @@
 				"name": "app_vegasmon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1]
+					[0.5, -1],
+					[-0.5, -2],
+					[0.5, -2]
 				],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["fusion", "fusion"]
+				"color": ["fusion", "fusion", "fusion", "fusion"]
 			},
 			null,
 			null
 		],
 		[
 			null,
-			null,
 			{
-				"name": "app_luckmon",
+				"name": "app_moneymon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_dicemon",
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"skins": ["app_moneymon", "app_gashamon"]
+				"skins": []
 			},
 			null,
 			null,
@@ -238,25 +269,31 @@
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"skins": ["app_cardmon"]
+				"skins": []
 			},
 			{
 				"name": "app_tarotmon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1]
+					[0.5, -1],
+					[0.5, -2]
 				],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"xSize": 2,
-				"color": ["fusion", "fusion"]
+				"color": ["fusion", "fusion", "fusion"]
 			},
 			null,
 			null
 		],
 		[
 			null,
-			null,
+			{
+				"name": "app_cardmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
 			{
 				"name": "app_tellermon",
 				"from": null,
@@ -292,6 +329,22 @@
 		{
 			"name": "impmon",
 			"from": "app_vegasmon"
+		},
+		{
+			"name": "app_dokamon",
+			"for": "app_consulmon"
+		},
+		{
+			"name": "app_musimon",
+			"for": "app_effecmon"
+		},
+		{
+			"name": "app_dokamon",
+			"for": "app_ecomon"
+		},
+		{
+			"name": "app_gatchmon",
+			"for": "app_savemon"
 		}
 	]
 }
