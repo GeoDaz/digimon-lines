@@ -234,6 +234,7 @@ const SettingPoint: React.FC<{
 				path={point.image}
 				mirror={point.mirror}
 				className={imgClassName}
+				expandable={true}
 				width={300}
 				height={300}
 			/>
@@ -243,6 +244,7 @@ const SettingPoint: React.FC<{
 					name={skin}
 					className="line-skin"
 					loadable={false}
+					expandable={true}
 					width={300}
 					height={300}
 					style={{ bottom: 3.3 * i + 'em' }}

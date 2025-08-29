@@ -5,6 +5,7 @@ import { Spinner } from 'react-bootstrap';
 import { DIGIMON, LINE } from '@/consts/ui';
 import { LicenseContext } from '@/context/license';
 import imgPathByLicence from '@/functions/images';
+import LineImageModal from './LineImageModal';
 
 interface Props extends React.ImgHTMLAttributes<any> {
 	name: string;
@@ -13,6 +14,7 @@ interface Props extends React.ImgHTMLAttributes<any> {
 	type?: string;
 	className?: string;
 	style?: object;
+	expandable?: boolean;
 	loadable?: boolean;
 	mirror?: boolean;
 	width?: number | string;
@@ -25,6 +27,7 @@ const LineImage: React.FC<Props> = ({
 	style,
 	type = LINE,
 	path,
+	expandable = false,
 	loadable = true,
 	mirror = false,
 	width = 150,
@@ -32,8 +35,8 @@ const LineImage: React.FC<Props> = ({
 }) => {
 	const licence = useContext(LicenseContext)?.key || DIGIMON;
 	const getImgPath = imgPathByLicence[licence];
-
 	const [src, setSrc] = useState(() => path || getImgPath(name, type));
+	const [open, setOpen] = useState(false);
 	const [loading, setLoading] = useState(true);
 	const [ratioWidth, setRatioWidth] = useState(1);
 	const [ratioHeight, setRatioHeight] = useState(1);
@@ -83,18 +86,29 @@ const LineImage: React.FC<Props> = ({
 						setRatioWidth(naturalHeight / naturalWidth || 1);
 					}
 				}}
+				width={Number(width) / ratioWidth}
+				height={Number(height) / ratioHeight}
 				alt={name}
+				title={title}
 				className={makeClassName(
 					'line-img rounded',
+					expandable && 'click',
 					mirror && 'mirror',
 					className
 				)}
-				width={Number(width) / ratioWidth}
-				height={Number(height) / ratioHeight}
-				title={title}
 				style={style}
+				onClick={() => expandable && setOpen(true)}
 			/>
 			<span className="sr-only">{name}</span>
+			{expandable && open && (
+				<LineImageModal
+					name={name}
+					path={src}
+					mirror={mirror}
+					open={open}
+					handleClose={() => setOpen(false)}
+				/>
+			)}
 		</>
 	);
 };

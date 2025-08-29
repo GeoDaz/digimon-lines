@@ -755,6 +755,14 @@ a.line-point {
   --dl-xs-img-size: 12rem;
   --dl-xs-skin-img-size: 3rem;
 }
+.line-image-modal {
+  --dl-img-size: 25rem;
+  --dl-skin-img-size: 10rem;
+  --dl-md-img-size: 25rem;
+  --dl-md-skin-img-size: 10rem;
+  --dl-xs-img-size: 15rem;
+  --dl-xs-skin-img-size: 5rem;
+}
 
 .line-grid.editable {
   padding-top: 3em;
