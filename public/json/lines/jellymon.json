@@ -222,13 +222,12 @@
 		]
 	],
 	"related": [
-		{ "name": "app_dokamon", "for": "app_poseidomon", "type": "appmons" },
+		{ "name": "app_dokamon", "for": "app_poseidomon" },
 		{ "name": "hookmon", "from": "mermaimon" },
 		{ "name": "fujamon", "from": "depthmon" },
 		{ "name": "betamon", "for": "leviamon" },
 		{ "name": "devimon", "from": "marinedevimon" },
 		{ "name": "angemon", "from": "marineangemon" },
-		{ "name": "app_dokamon", "for": "poseidomon" },
 		{ "name": "numemon", "for": "gerbemon" },
 		{ "name": "gatomon", "for": "venusmon" }
 	],

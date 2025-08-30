@@ -78,7 +78,13 @@
                 "name": "goldnumemon",
                 "color": "gold"
             },
-            null,
+            {
+                "name": "gerbemon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
             {
                 "name": "platinumnumemon",
                 "color": "gold",
@@ -107,34 +113,6 @@
                     -1
                 ]]
             }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "raremon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "rareraremon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "gerbemon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
         ]
     ],
     "related": [
@@ -143,6 +121,10 @@
         {
             "name": "bearmon",
             "from": "monzaemon"
+        },
+        {
+            "name": "negamon",
+            "for": "raremon"
         },
         {
             "name": "jellymon",

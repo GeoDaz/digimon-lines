@@ -4,7 +4,13 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "raremon",
+				"color": "dark",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
 			null,
 			{
 				"name": "deathmon",
@@ -44,8 +50,12 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "negamonevolved",
+				"name": "rareraremon",
 				"color": "dark",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -108,7 +118,7 @@
 	"related": [
 		{ "name": "elizamon", "from": "nidhoggmon" },
 		{ "name": "terriermon", "for": "luminamonnene" },
-		{ "name": "numemon", "for": "rareraremon" },
+		{ "name": "numemon", "from": "raremon" },
 		{ "name": "hyokomon", "for": "devitamamon" },
 		{ "name": "dracmon", "for": "duskmon" },
 		"keramon",

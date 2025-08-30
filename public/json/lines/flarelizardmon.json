@@ -137,13 +137,16 @@
 	],
 	"related": [
 		"neocrimson",
+		"vorvomon",
+		{ "name": "greymon", "from": "agumon" },
 		{ "name": "gekomon", "for": "salamandermon" },
 		{ "name": "loogamon", "for": "helloogarmon" },
 		{ "name": "gammamon", "for": "volcdramon" },
 		{ "name": "betamon", "for": "airdramon" },
 		{ "name": "apocalymon", "from": "machinedramon" },
 		{ "name": "chimeramon", "from": "machinedramon" },
-		{ "name": "tyranomon", "from": "machinedramon" },
+		{ "name": "tyranomon", "for": "metaltyranomon" },
+		{ "name": "commandramon", "for": "gundramon" },
 		{ "name": "commandramon", "for": "cargodramon" }
 	],
 	"size": 8
