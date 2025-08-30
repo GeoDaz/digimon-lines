@@ -3,6 +3,9 @@ import { stringToKey } from '.';
 import Search from '@/types/Search';
 
 export const getSearchPriority = (search: string, name: string): number | null => {
+	if (!search.startsWith('app')) {
+		name = name.replace('app_', '');
+	}
 	name = stringToKey(name);
 	search = stringToKey(search);
 	let index =
