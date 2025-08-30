@@ -101,7 +101,7 @@
 				"color": ["dark"]
 			},
 			{
-				"name": "helloogarmon",
+				"name": "vermillimon",
 				"from": [[-1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
@@ -121,7 +121,13 @@
 				"yCollapsable": true,
 				"color": ["fire"]
 			},
-			null,
+			{
+				"name": "helloogarmon",
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["fire"]
+			},
 			null,
 			null
 		]
@@ -130,11 +136,11 @@
 		"jazamon",
 		"blucomon",
 		{ "name": "greymon", "for": "flarelizardmon" },
-		{ "name": "gammamon", "from": "volcdramon" },
-		{ "name": "gekomon", "for": "otamamonred" },
-		{ "name": "golemon", "for": "ancientvolcamon" },
+		{ "name": "gammamon", "for": "vermillimon" },
 		{ "name": "biyomon", "for": "birdramon" },
 		{ "name": "loogamon", "for": "helloogarmon" },
+		{ "name": "gekomon", "for": "otamamonred", "from": "salamandermon" },
+		{ "name": "golemon", "for": "ancientvolcamon" },
 		"meramon"
 	],
 	"size": 7

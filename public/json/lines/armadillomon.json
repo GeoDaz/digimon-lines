@@ -68,13 +68,8 @@
 			},
 			{
 				"name": "breakdramon",
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				],
 				"xCollapsable": false,
-				"yCollapsable": true,
-				"xSize": 2
+				"yCollapsable": true
 			},
 			null
 		],
@@ -100,17 +95,22 @@
 				"yCollapsable": true,
 				"color": ["fusion", "fusion"]
 			},
-			null,
+			{
+				"name": "gigabreakdramon",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
 			null
-		],
-		[null, null, null, null, null, null, null]
+		]
 	],
 	"related": [
 		{ "name": "angemon", "for": "shakkoumon" },
 		{ "name": "gomamon", "for": "vikemon" },
 		{ "name": "tyranomon", "for": "spinomon" },
 		{ "name": "gammamon", "for": "brachiomon" },
-		{ "name": "garurumon", "for": "drimogemon" },
+		{ "name": "garurumon", "for": "drimogemon", "from": "gabumon" },
+		{ "name": "kamemon", "for": "tortamon" },
+		{ "name": "golemon", "for": "pyramidimon", "from": "sunarizamon" },
 		{ "name": "herissmon", "from": "togemogumon" },
 		{ "name": "dracomon", "for": "breakdramon" },
 		{ "name": "hagurumon", "for": "kenkimon" },

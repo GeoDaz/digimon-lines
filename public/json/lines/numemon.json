@@ -116,19 +116,23 @@
         ]
     ],
     "related": [
-        { "name": "app_sukasimon", "for": "app_gomimon" },
-        "sukamon",
-        {
-            "name": "bearmon",
-            "from": "monzaemon"
-        },
-        {
-            "name": "negamon",
-            "for": "raremon"
-        },
-        {
-            "name": "jellymon",
-            "for": "shellmon"
-        }
-    ]
+		{ "name": "app_sukasimon", "for": "app_gomimon" },
+		"sukamon",
+		{
+			"name": "bearmon",
+			"from": "monzaemon"
+		},
+		{
+			"name": "machmon",
+			"from": "junkmon"
+		},
+		{
+			"name": "negamon",
+			"for": "raremon"
+		},
+		{
+			"name": "jellymon",
+			"for": "shellmon"
+		}
+	]
 }

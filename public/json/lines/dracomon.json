@@ -90,5 +90,11 @@
                 ]
             }
         ]
-    ]
+    ],
+	"related": [
+		{ "name": "armadillomon", "from": "ankylomon" },
+		{ "name": "garurumon", "for": "drimogemon", "from": "gabumon" },
+		{ "name": "golemon", "for": "proganomon", "from": "sunarizamon" },
+		{ "name": "hagurumon", "for": "kenkimon" }
+	]
 }
