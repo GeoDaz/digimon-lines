@@ -1,0 +1,44 @@
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "hudiemon",
+				"from": [[1, -1]]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "pupumon", "from": null },
+			{ "name": "puroromon" },
+			{ "name": "morphomon" },
+			{ "name": "eosmon" },
+			{ "name": "eosmon2" },
+			{ "name": "eosmon3" },
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "mothmon", "from": [[-1, -1]] },
+			{ "name": "butterflamon" },
+			null,
+			null,
+			null
+		]
+	],
+	"related": [
+		{ "name": "wormmon", "for": "hudiemon" },
+		{ "name": "gatomon", "for": "butterflamon" },
+		{ "name": "wormmon", "for": "shadramon" },
+		"fairymon"
+	],
+	"size": 8
+}

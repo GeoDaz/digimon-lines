@@ -1,72 +1,143 @@
 {
 	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "chronomondm",
-				"color": "dark",
-				"from": [1, 0]
-			}
-		],
-		[
-			{
-				"name": "yolkmon"
-			},
-			{
-				"name": "chicchimon"
-			},
-			{
-				"name": "hyokomon"
-			},
-			{
-				"name": "buraimon"
-			},
-			{
-				"name": "butenmon"
-			},
-			{
-				"name": "chronomon",
-				"color": "light"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "toucanmon",
-				"from": [-1, -1]
-			},
-			{
-				"name": "digitamamon",
-				"color": "dark"
-			},
-			{
-				"name": "devitamamon",
-				"color": "dark"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "darumamon",
-				"from": [-1, -1]
-			}
-		]
+	  [
+		{
+		  "name": "yolkmon",
+		  "xSize": 2,
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "chicchimon",
+		  "xSize": 2,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "hyokomon",
+		  "xSize": 2,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "buraimon",
+		  "xSize": 2,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "butenmon",
+		  "xSize": 2,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "chronomondm",
+		  "color": [
+			"dark",
+			"mode"
+		  ],
+		  "from": [
+			[
+			  0.5,
+			  -1
+			],
+			[
+			  1,
+			  0
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		}
+	  ],
+	  [
+		null,
+		null,
+		null,
+		null,
+		null,
+		{
+		  "name": "chronomon",
+		  "color": "light",
+		  "xCollapsable": false,
+		  "yCollapsable": true,
+		  "from": [
+			[
+			  -0.5,
+			  -1
+			]
+		  ]
+		}
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "toucanmon",
+		  "from": [
+			[
+			  -1.5,
+			  -1
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "digitamamon",
+		  "color": "dark",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "devitamamon",
+		  "color": "dark",
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		}
+	  ],
+	  [
+		null,
+		null,
+		null,
+		null,
+		{
+		  "name": "darumamon",
+		  "from": [
+			-1,
+			-1
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ]
 	],
 	"related": [
-		{ "name": "hawkmon", "from": "butenmon" },
-		{ "name": "biyomon", "for": "karatenmon" },
-		{ "name": "falcomon2", "for": "ravemon" },
-		{ "name": "hyokomon", "from": "digitamamon" },
-		{ "name": "penmon", "from": "toucanmon" },
-		"kotemon"
-	]
-}
+	  {
+		"name": "hawkmon",
+		"from": "butenmon"
+	  },
+	  {
+		"name": "biyomon",
+		"for": "karatenmon"
+	  },
+	  {
+		"name": "falcomon2",
+		"for": "ravemon"
+	  },
+	  {
+		"name": "hyokomon",
+		"from": "digitamamon"
+	  },
+	  {
+		"name": "penmon",
+		"from": "toucanmon"
+	  },
+	  "kotemon"
+	],
+	"size": 6
+  }

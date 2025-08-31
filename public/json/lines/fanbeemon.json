@@ -1,0 +1,122 @@
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{ "name": "honeybeemon", "from": [[1.5, -1]] },
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "pupumon", "from": null, "xSize": 2 },
+			{ "name": "puroromon", "xSize": 2 },
+			{ "name": "fanbeemon", "xSize": 2 },
+			{ "name": "forgebeemon", "from": [[0.5, -1]] },
+			{
+				"name": "cannonbeemon",
+				"from": [
+					[0, -1],
+					[-1, -1],
+					[1, -1]
+				]
+			},
+			{
+				"name": "queenbeemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"skins": ["queenbeemonthrone"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "waspmon", "from": [[-0.5, -1]] },
+			{
+				"name": "vespamon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"collapsable": true
+			},
+			{
+				"name": "tigervespamon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"collapsable": true
+			},
+			null,
+			null
+		],
+		[null, null, null, { "name": "flybeemon", "from": [[-1.5, -1]] }, null, null],
+		[
+			null,
+			null,
+			{ "name": "kunemon", "from": [-3, -1] },
+			{ "name": "flymon", "from": [[0, -1]] },
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "yanmamon", "from": [[-1, -1]] },
+			{ "name": "anomalocarimon", "from": [[0, -1], [1, -1]] },
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "sandyanmamon", "from": [[1, -1]] },
+			{
+				"name": "anomalocarimonx",
+				"from": [-1, 0],
+				"color": "x"
+			},
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "leafmon", "from": null },
+			{ "name": "minomon", "from": null },
+			{ "name": "dokunemon", "from": [[0, -2]] },
+			{ "name": "snimon", "from": [0, -1] },
+			{
+				"name": "scorpiomon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"color": "dark"
+			},
+			null,
+			null,
+			null
+		]
+	],
+	"related": [
+		{ "name": "wormmon", "for": "jewelbeemon" },
+		{ "name": "veemon", "for": "honeybeemon" },
+		{ "name": "bearmon", "for": "panbachimon" },
+		{ "name": "tentomon", "for": "snimon" },
+		{ "name": "crabmon", "for": "anomalocarimon" }
+	],
+	"size": 8
+}

@@ -1,97 +1,81 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "dracomonx",
-                "color": "x",
-                "from": [
-                    1.5,
-                    0
-                ]
-            },
-            null,
-            null,
-            null,
-            {
-                "name": "examonx",
-                "color": "x",
-                "from": [
-                    1.5,
-                    0
-                ]
-            }
-        ],
-        [
-            {
-                "name": "petitmon",
-                "xSize": 2
-            },
-            {
-                "name": "babydramon",
-                "xSize": 2
-            },
-            {
-                "name": "dracomon",
-                "xSize": 2
-            },
-            {
-                "name": "coredramonblue",
-                "color": "wind",
-                "from": [
-                    0.5,
-                    -1
-                ]
-            },
-            {
-                "name": "wingdramon",
-                "color": "wind"
-            },
-            {
-                "name": "slayerdramon"
-            },
-            {
-                "name": "examon",
-                "xSize": 2,
-                "color": "fusion",
-                "from": [
-                    [
-                        -0.5,
-                        -1
-                    ],
-                    [
-                        0.5,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "coredramongreen",
-                "from": [
-                    -0.5,
-                    -1
-                ]
-            },
-            {
-                "name": "groundramon",
-                "color": "earth"
-            },
-            {
-                "name": "breakdramon",
-                "color": "machine",
-                "skins": [
-                    "gigabreakdramon"
-                ]
-            }
-        ]
-    ],
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "dracomonx",
+				"color": "x",
+				"from": [1.5, 0]
+			},
+			null,
+			null,
+			null,
+			{
+				"name": "examonx",
+				"color": "x",
+				"from": [1.5, 0]
+			}
+		],
+		[
+			{
+				"name": "petitmon",
+				"xSize": 2
+			},
+			{
+				"name": "babydramon",
+				"xSize": 2
+			},
+			{
+				"name": "dracomon",
+				"xSize": 2
+			},
+			{
+				"name": "coredramonblue",
+				"color": "wind",
+				"from": [0.5, -1]
+			},
+			{
+				"name": "wingdramon",
+				"color": "wind"
+			},
+			{
+				"name": "slayerdramon"
+			},
+			{
+				"name": "examon",
+				"xSize": 2,
+				"color": "fusion",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "coredramongreen",
+				"from": [-0.5, -1]
+			},
+			{
+				"name": "groundramon",
+				"color": "earth"
+			},
+			{
+				"name": "breakdramon",
+				"color": "machine",
+				"skins": ["gigabreakdramon"]
+			}
+		]
+	],
 	"related": [
+		{ "name": "betamon", "for": "airdramon" },
+		{ "name": "golemon", "for": "landramon", "from": "sunarizamon" },
+		{ "name": "ryudamon", "for": "majiramon" },
+		{ "name": "hyokomon", "for": "darumamon" },
 		{ "name": "armadillomon", "from": "ankylomon" },
 		{ "name": "garurumon", "for": "drimogemon", "from": "gabumon" },
 		{ "name": "golemon", "for": "proganomon", "from": "sunarizamon" },

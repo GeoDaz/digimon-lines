@@ -1,129 +1,21 @@
 {
 	"columns": [
 		[
-			{ "name": "leafmon", "from": null },
-			{ "name": "minomon", "from": null },
-			{ "name": "dokunemon", "from": [[0, -2]] },
-			{ "name": "snimon", "from": [0, -1] },
+			null,
+			null,
+			null,
 			{
-				"name": "scorpiomon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": "dark"
+				"name": "hudiemon",
+				"from": [[1.5, -1]],
+				"color": "human"
 			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "sandyanmamon", "from": [[-1, -1]] },
-			{
-				"name": "anomalocarimonx",
-				"from": [1, 0],
-				"color": "x"
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "yanmamon", "from": [[1, -1]] },
-			{ "name": "anomalocarimon", "from": [0, -1] },
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{ "name": "kunemon", "from": [-3, -1] },
-			{ "name": "flymon", "from": [[0, -1]] },
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			{ "name": "pupumon", "from": null, "xSize": 2 },
-			{ "name": "puroromon", "xSize": 2 },
-			{ "name": "fanbeemon", "xSize": 2 },
-			{ "name": "forgebeemon", "from": [[0.5, -1]] },
-			{
-				"name": "cannonbeemon",
-				"from": [
-					[0, -1],
-					[-1, -1],
-					[1, -1]
-				]
-			},
-			{
-				"name": "queenbeemon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"skins": ["queenbeemonthrone"]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "waspmon", "from": [[-0.5, -1]] },
-			{
-				"name": "vespamon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				],
-				"collapsable": true
-			},
-			{
-				"name": "tigervespamon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				],
-				"collapsable": true
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "honeybeemon", "from": [[-1.5, -1]] },
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "flybeemon", "from": [[-2.5, -1]] },
 			{
 				"name": "dinobeemon",
-				"from": [
-					[-1, -1],
-					[1.5, -1]
-				],
-				"color": [null, "fusion"]
+				"from": [[1.5, -1]],
+				"color": "fusion"
 			},
 			{ "name": "grankuwagamon", "from": [[0, -1]] },
-			null,
+			{ "name": "grandiskuwagamon", "from": [[0, -1]], "color": ["x"] },
 			null
 		],
 		[
@@ -134,10 +26,7 @@
 			{
 				"name": "jewelbeemon",
 				"color": ["default"],
-				"from": [
-					[0.5, -1],
-					[-1, -1]
-				]
+				"from": [[0.5, -1]]
 			},
 			{ "name": "banchostingmon" },
 			null,
@@ -171,12 +60,15 @@
 			null,
 			null,
 			null,
-			{ "name": "stingmonb", "from": [[-1.5, -1]] },
-			null,
+			{ "name": "stingmonb", "from": [[-1.5, -1]], "color": ["dark"] },
+			{
+				"name": "paildramonb",
+				"color": ["dark"],
+				"collapsable": true
+			},
 			{
 				"name": "imperialdramonb",
 				"color": ["dark"],
-				"from": [[0, -2]],
 				"collapsable": true
 			},
 			{ "name": "imperialdramonfmb", "color": "mode" },
@@ -186,14 +78,18 @@
 			null,
 			null,
 			null,
+			{ "name": "exermon", "from": [[-2.5, -1]] },
+			{ "name": "climbmon" },
 			{
-				"name": "pucchiemon",
-				"from": [[-2.5, -1]],
-				"skins": ["pucchiemongreen"],
-				"color": ["light"]
+				"name": "shivamon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": "light",
+				"olor2": "light",
+				"collapsable": true
 			},
-			null,
-			null,
 			null,
 			null
 		],
@@ -215,18 +111,14 @@
 			null,
 			null,
 			null,
-			{ "name": "exermon", "from": [[-4.5, -1]] },
-			{ "name": "climbmon" },
 			{
-				"name": "shivamon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				],
-				"color": "light",
-				"olor2": "light",
-				"collapsable": true
+				"name": "pucchiemon",
+				"from": [[-4.5, -1]],
+				"skins": ["pucchiemongreen"],
+				"color": ["light"]
 			},
+			null,
+			null,
 			null,
 			null
 		],
@@ -249,50 +141,23 @@
 			null,
 			null,
 			{
-				"name": "hudiemon",
-				"from": [
-					[2, -1],
-					[-6.5, -1]
-				],
-				"color": [null, "human"]
+				"name": "archelomon",
+				"from": [[-6.5, -1]],
+				"color": ["marine"]
 			},
 			null,
 			null,
 			null,
 			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "mothmon", "from": [[1, -1]] },
-			{ "name": "butterflamon" },
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{ "name": "morphomon", "from": [[-8.5, -1]] },
-			{ "name": "eosmon" },
-			{ "name": "eosmon2" },
-			{ "name": "eosmon3" },
-			null,
-			null
 		]
 	],
 	"related": [
-		"veemon",
-		{ "name": "tentomon", "from": "grankuwagamon" },
+		{ "name": "veemon", "from": "paildramon" },
+		{ "name": "tentomon", "for": "grankuwagamon" },
+		{ "name": "morphomon", "from": "hudiemon" },
+		{ "name": "fanbeemon", "from": "jewelbeemon" },
 		"fairymon",
-		{ "name": "gatomon", "from": "butterflamon" },
-		{ "name": "pulsemon", "from": "exermon" },
-		{ "name": "bearmon", "for": "panbachimon" },
-		{ "name": "crabmon", "for": "anomalocarimon" }
-	],
-	"notes": [
-		"Digimon that start out as caterpillars and then become bees, butterflies and bugs with stings."
-	],
-	"size": 8
+		{ "name": "pulsemon", "for": "exermon" },
+		{ "name": "kamemon", "for": "archelomon" }
+	]
 }

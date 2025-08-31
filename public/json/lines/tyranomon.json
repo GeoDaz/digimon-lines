@@ -1,349 +1,608 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			{
-				"name": "agumonx",
-				"from": [[2, 0]],
-				"color": ["x"],
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "tyranomonx",
-				"color": "x",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "mametyramon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"collapsable": false,
-				"color": ["x"],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "spinomon",
-				"from": [[0, -1]],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "huanglongmonrm",
-				"from": [
-					[1, 0],
-					[0, -1],
-					[1, -1]
-				],
-				"collapsable": false,
-				"color": ["dark", "dark", "dark"],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "tuskmon",
-				"from": [[1, -1]],
-				"collapsable": false,
-				"color": ["fusion"],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "triceramon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "dinorexmon",
-				"from": [
-					[0, -1],
-					[-1, -1],
-					[1, -1]
-				],
-				"collapsable": false,
-				"color": [null, "x"],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "huanglongmon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": true
-			},
-			null
-		],
-		[
-			{
-				"name": "botamon",
-				"from": null,
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "koromon",
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "agumon",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "tyranomon",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "mastertyranomon",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"from": [[-1, -1]]
-			},
-			{
-				"name": "dinomon",
-				"color": ["fire"],
-				"collapsable": false,
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "agumonb",
-				"from": [[-1, -1]],
-				"color": ["dark"],
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "darktyranomon",
-				"color": "dark",
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "metaltyranomon",
-				"color": "machine",
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[1, -1]
-				]
-			},
-			{
-				"name": "rusttyranomon",
-				"color": "machine",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"from": [
-					[-1, -1],
-					[0, -1]
-				]
-			},
-			{
-				"name": "himachinedramon",
-				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"color": ["fusion"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "deltamon",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["dark"]
-			},
-			{
-				"name": "skullgreymon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["dark"]
-			},
-			{
-				"name": "machinedramon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"collapsable": true,
-				"color": ["machine", "dark"],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "chaosdramon",
-				"from": [[0, -1]],
-				"collapsable": false,
-				"color": ["machine"],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "neocrimson",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
-				"color": ["fusion"]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "agumonbx",
-				"color": ["x"],
-				"from": [[-2, 0]],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "darktyranomonx",
-				"color": "x",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "metaltyranomonx",
-				"color": "x",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			null,
-			{
-				"name": "chaosdramonx",
-				"from": [[-1, 0]],
-				"xCollapsable": true,
-				"yCollapsable": true,
-				"color": ["x"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "minidekachimon",
-				"from": [[-4, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "atamadekachimon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "extyranomon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "gaossmonb",
-				"from": [[-5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
-				"color": ["dark"]
-			},
-			{
-				"name": "allomon",
-				"from": [[0, -1]],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "allomonx",
-				"color": "x",
-				"from": [-1, 0],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null,
-			null,
-			null
-		]
-	],
-	"related": [
-		{ "name": "greymon", "from": "agumon" },
-		{ "name": "gammamon", "from": "triceramon" },
-		{ "name": "armadillomon", "from": "spinomon" },
-		"neocrimson",
-		{ "name": "betamon", "for": "machinedramon" },
-		{ "name": "chimeramon", "from": "machinedramon" },
-		{ "name": "apocalymon", "from": "machinedramon" },
-		{ "name": "commandramon", "from": "gundramon" }
-	],
-	"size": 8
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "agumonx",
+                "from": [
+                    [
+                        2,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ],
+                "collapsable": true,
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "tyranomonx",
+                "color": "x",
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "mametyramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "collapsable": false,
+                "color": [
+                    "x",
+                    "x"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "spinomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "huanglongmonrm",
+                "from": [
+                    [
+                        1,
+                        0
+                    ],
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "collapsable": false,
+                "color": [
+                    "mode",
+                    "dark",
+                    "dark"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tuskmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "collapsable": false,
+                "color": [
+                    "dark"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "triceramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "dinorexmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "collapsable": false,
+                "color": [
+                    "x",
+                    "x",
+                    "x"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "huanglongmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "collapsable": true,
+                "xCollapsable": true,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            {
+                "name": "botamon",
+                "from": null,
+                "collapsable": true,
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "koromon",
+                "collapsable": true,
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "agumon",
+                "collapsable": false,
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "tyranomon",
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "mastertyranomon",
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "dinomon",
+                "color": [
+                    "fire"
+                ],
+                "collapsable": false,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "deltamon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "skullgreymon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "rusttyranomon",
+                "color": "machine",
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "himachinedramon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "color": [
+                    "fusion"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "agumonb",
+                "from": null,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "darktyranomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "metaltyranomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "color": [
+                    "machine"
+                ]
+            },
+            {
+                "name": "machinedramon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "collapsable": true,
+                "color": [
+                    "machine",
+                    "machine"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "chaosdramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "collapsable": false,
+                "color": [
+                    "machine"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "neocrimson",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true,
+                "color": [
+                    "fusion"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "agumonbx",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "darktyranomonx",
+                "color": "x",
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "from": [
+                    [
+                        -1,
+                        0
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "metaltyranomonx",
+                "color": "x",
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "from": [
+                    [
+                        -1,
+                        0
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "machinedramonx",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "color": [
+                    "x",
+                    "x"
+                ]
+            },
+            {
+                "name": "chaosdramonx",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true,
+                "color": [
+                    "x",
+                    "x"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "minidekachimon",
+                "from": [
+                    [
+                        -4,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "atamadekachimon",
+                "from": null,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "extyranomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "gundramon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true,
+                "color": [
+                    "machine"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "gaossmonb",
+                "from": [
+                    [
+                        -5,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false,
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "allomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "allomonx",
+                "color": "x",
+                "from": [
+                    -1,
+                    0
+                ],
+                "collapsable": false,
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            null,
+            null,
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "greymon",
+            "from": "agumon"
+        },
+        {
+            "name": "gammamon",
+            "from": "triceramon"
+        },
+        {
+            "name": "armadillomon",
+            "from": "spinomon"
+        },
+        "neocrimson",
+        {
+            "name": "betamon",
+            "for": "machinedramon"
+        },
+        {
+            "name": "chimeramon",
+            "from": "machinedramon"
+        },
+        {
+            "name": "apocalymon",
+            "from": "machinedramon"
+        },
+        {
+            "name": "hawkmon",
+            "for": "allomon"
+        },
+        {
+            "name": "commandramon",
+            "for": "gundramon"
+        }
+    ],
+    "size": 8
 }
