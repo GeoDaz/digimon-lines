@@ -199,7 +199,10 @@
 			{
 				"name": "magnamon",
 				"color": "gold",
-				"from": [0.5, -1],
+				"from": [
+					[0.5, -1],
+					[0, -2]
+				],
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -331,6 +334,10 @@
 		{
 			"name": "wormmon",
 			"from": "paildramon"
+		},
+		{
+			"name": "tentomon",
+			"for": "grankuwagamon"
 		},
 		{
 			"name": "kotemon",
