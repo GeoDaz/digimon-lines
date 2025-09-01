@@ -70,7 +70,8 @@
 				"name": "bancholeomon",
 				"from": [
 					[0, -1],
-					[-1, -1]
+					[-1, -1],
+					[2, -1]
 				],
 				"collapsable": false,
 				"xCollapsable": false,
@@ -129,6 +130,7 @@
 			{
 				"name": "marsmon",
 				"from": [[-1, -1]],
+				"color": "fire",
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -149,7 +151,7 @@
 				"from": [[-1, -1]]
 			},
 			{
-				"name": "saberleomon",
+				"name": "regulumon",
 				"collapsable": false,
 				"xCollapsable": false,
 				"yCollapsable": false
@@ -170,11 +172,8 @@
 			null,
 			null,
 			{
-				"name": "regulumon",
-				"from": [
-					[1, -1],
-					[-1, -1]
-				],
+				"name": "saberleomon",
+				"from": [[1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -213,7 +212,7 @@
 			{
 				"name": "dinotigermon",
 				"color": ["x"],
-				"from": [[0, -1]],
+				"from": [[0, -1], [-1, -1]],
 				"collapsable": false,
 				"xCollapsable": false,
 				"yCollapsable": true
