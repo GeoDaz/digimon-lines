@@ -181,16 +181,19 @@
 			null,
 			{
 				"name": "lucemonfm",
-				"color": ["gold", "fusion"],
+				"color": ["mode", "fusion"],
 				"from": [
 					[0, -2],
 					[-5, -1]
 				]
 			},
 			{
+				"name": "lucemonlarva",
+				"color": "mode"
+			},
+			{
 				"name": "lucemonsm",
-				"color": "dark",
-				"skins": ["lucemonlarva"]
+				"color": "mode"
 			}
 		],
 		[
