@@ -9,6 +9,7 @@ export interface Group {
 export interface GroupPoint {
 	name: string;
 	line?: string;
+	redirect?: string;
 	skin?: string;
 }
 

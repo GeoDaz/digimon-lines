@@ -56,7 +56,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 					<Row className="line-row">
 						{(group.main as GroupPoint[]).map((point, i) => (
 							<Col key={i}>
-								<LinePoint name={point.name} line={point.line}>
+								<LinePoint name={point.name} line={point.redirect || point.line}>
 									{!!point.line && (
 										<LineImage
 											className="line-skin"

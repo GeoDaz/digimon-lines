@@ -21,7 +21,7 @@ const GroupGrid: React.FC<{ group: Group }> = ({ group }) => {
 						{(points as Array<GroupPoint | null>).map((point, i) => (
 							<Col key={i}>
 								{point ? (
-									<LinePoint name={point.name} line={point.line}>
+									<LinePoint name={point.name} line={point.redirect || point.line}>
 										{!!point.line && (
 											<LineImage
 												className="line-skin"

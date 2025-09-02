@@ -1,267 +1,441 @@
 {
 	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "piccolomon",
-				"color": "light",
-				"from": [1, -1]
-			},
-			{
-				"name": "marineangemon",
-				"color": "marine"
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "luxmon",
-				"color": "light",
-				"from": [3, -1]
-			},
-			{
-				"name": "pidmon",
-				"color": "light"
-			},
-			{
-				"name": "arkhaiangemon",
-				"color": "light"
-			},
-			{
-				"name": "dominimon",
-				"color": "light"
-			}
-		],
-		[
-			null,
-			{
-				"name": "tokomonx",
-				"color": "x",
-				"from": [2, 0]
-			},
-			null,
-			{
-				"name": "pegasmonx",
-				"color": "x",
-				"from": [1, 0]
-			},
-			null,
-			{
-				"name": "goldramonx",
-				"color": "x",
-				"from": [1, 0]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "pegasmon",
-				"color": "light",
-				"from": [1, -1]
-			},
-			{
-				"name": "chirinmon",
-				"color": "light"
-			},
-			{
-				"name": "goldramon",
-				"color": ["light", "light"],
-				"from": [
-					[0, -1],
-					[1, -1]
-				]
-			}
-		],
-		[
-			{
-				"name": "poyomon"
-			},
-			{
-				"name": "tokomon"
-			},
-			{
-				"name": "patamon"
-			},
-			{
-				"name": "angemon",
-				"color": "light"
-			},
-			{
-				"name": "magnaangemon",
-				"color": "light"
-			},
-			{
-				"name": "seraphimon",
-				"color": "light"
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "tukaimon",
-				"color": "dark",
-				"from": [-1, -1]
-			},
-			null,
-			null,
-			{
-				"name": "seraphimonb",
-				"color": "dark",
-				"from": [-1, -1],
-				"skins": ["seraphimonb2"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "magnaangemonpm",
-				"from": [-2, 0],
-				"color": "mode"
-			},
-			{
-				"name": "bagramon",
-				"color": "dark"
-			},
-			null,
-			{
-				"name": "darknessbagramon",
-				"color": "fusion",
-				"from": [0, -2]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "shakkoumon",
-				"color": "fusion",
-				"from": [-3, -1]
-			},
-			{
-				"name": "clavisangemon",
-				"color": "light"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "slashangemon",
-				"color": "light",
-				"from": [-1, -1]
-			}
-		],
-		[
-			{
-				"name": "puttimon"
-			},
-			{
-				"name": "cupimon",
-				"color": "light"
-			},
-			{
-				"name": "lucemon",
-				"color": "light"
-			},
-			null,
-			{
-				"name": "lucemonfm",
-				"color": ["mode", "fusion"],
-				"from": [
-					[0, -2],
-					[-5, -1]
-				]
-			},
-			{
-				"name": "lucemonlarva",
-				"color": "mode"
-			},
-			{
-				"name": "lucemonsm",
-				"color": "mode"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "lucemonx",
-				"color": "x",
-				"from": [-1, -1]
-			}
-		]
+	  [
+		null,
+		null,
+		null,
+		null,
+		{
+		  "name": "piccolomon",
+		  "color": "light",
+		  "from": [
+			1,
+			-1
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "marineangemon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		{
+		  "name": "luxmon",
+		  "color": "light",
+		  "from": [
+			3,
+			-1
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "pidmon",
+		  "color": "light",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "arkhaiangemon",
+		  "color": "light",
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "dominimon",
+		  "color": "light",
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		{
+		  "name": "tokomonx",
+		  "color": "x",
+		  "from": [
+			2,
+			0
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		},
+		null,
+		{
+		  "name": "shimaunimon",
+		  "from": [
+			[
+			  2,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		{
+		  "name": "goldramonx",
+		  "color": "x",
+		  "from": [
+			1,
+			0
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "unimon",
+		  "color": "light",
+		  "from": [
+			1,
+			-1
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "chirinmon",
+		  "color": "light",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "goldramon",
+		  "color": [
+			"light",
+			"light"
+		  ],
+		  "from": [
+			[
+			  0,
+			  -1
+			],
+			[
+			  1,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		{
+		  "name": "poyomon",
+		  "from": null,
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "tokomon",
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "patamon",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "angemon",
+		  "color": "light",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "magnaangemon",
+		  "color": "light",
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "seraphimon",
+		  "color": "light",
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		{
+		  "name": "tukaimon",
+		  "color": "dark",
+		  "from": [
+			-1,
+			-1
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "pegasmon",
+		  "from": [
+			[
+			  -1,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		{
+		  "name": "seraphimonb",
+		  "color": "dark",
+		  "from": [
+			-1,
+			-1
+		  ],
+		  "skins": [
+			"seraphimonb2"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "pegasmonx",
+		  "from": [
+			[
+			  -1,
+			  0
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false,
+		  "color": [
+			"x"
+		  ]
+		},
+		{
+		  "name": "magnaangemonpm",
+		  "from": [
+			-2,
+			0
+		  ],
+		  "color": "mode",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "bagramon",
+		  "color": "dark",
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		{
+		  "name": "darknessbagramon",
+		  "color": "fusion",
+		  "from": [
+			0,
+			-2
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		}
+	  ],
+	  [
+		null,
+		null,
+		null,
+		null,
+		{
+		  "name": "shakkoumon",
+		  "color": "fusion",
+		  "from": [
+			-3,
+			-1
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "clavisangemon",
+		  "color": "light",
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		null,
+		null,
+		{
+		  "name": "slashangemon",
+		  "color": "light",
+		  "from": [
+			-1,
+			-1
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		{
+		  "name": "puttimon",
+		  "from": null,
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "cupimon",
+		  "color": "light",
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "lucemon",
+		  "color": "light",
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		},
+		null,
+		{
+		  "name": "lucemonfm",
+		  "color": [
+			"mode",
+			"fusion"
+		  ],
+		  "from": [
+			[
+			  0,
+			  -2
+			],
+			[
+			  -5,
+			  -1
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "lucemonlarva",
+		  "color": "mode",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "lucemonsm",
+		  "color": "mode",
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		null,
+		null,
+		{
+		  "name": "lucemonx",
+		  "color": "x",
+		  "from": [
+			-1,
+			-1
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ]
 	],
 	"related": [
-		{
-			"name": "armadillomon",
-			"for": "shakkoumon"
-		},
-		{
-			"name": "devimon",
-			"for": "lucemonfm"
-		},
-		{
-			"name": "ogudomon",
-			"from": "lucemonfm"
-		},
-		{
-			"name": "gatomon",
-			"for": "angewomon"
-		},
-		{
-			"name": "betamon",
-			"for": "goldramon"
-		},
-		{
-			"name": "turkimon",
-			"for": "unimon"
-		},
-		{
-			"name": "renamon",
-			"for": "chirinmon"
-		},
-		{
-			"name": "turkimon",
-			"for": "hakubamon"
-		},
-		{
-			"name": "jellymon",
-			"for": "marineangemon"
-		},
-		{
-			"name": "dracmon",
-			"for": "slashangemon"
-		},
-		{
-			"name": "dracmon",
-			"for": "duskmon"
-		},
-		{
-			"name": "pawnchessmonwhite",
-			"for": "darkknightmon"
-		},
-		{
-			"name": "elizamon",
-			"for": "ginkakumon"
-		},
-		{ "name": "omegamonmm", "from": "seraphimon" }
-	]
-}
+	  {
+		"name": "armadillomon",
+		"for": "shakkoumon"
+	  },
+	  {
+		"name": "gatomon",
+		"for": "angewomon"
+	  },
+	  {
+		"name": "turkimon",
+		"for": "unimon"
+	  },
+	  {
+		"name": "devimon",
+		"for": "lucemonfm"
+	  },
+	  {
+		"name": "ogudomon",
+		"from": "lucemonfm"
+	  },
+	  {
+		"name": "betamon",
+		"for": "goldramon"
+	  },
+	  {
+		"name": "renamon",
+		"for": "chirinmon"
+	  },
+	  {
+		"name": "turkimon",
+		"for": "hakubamon"
+	  },
+	  {
+		"name": "jellymon",
+		"for": "marineangemon"
+	  },
+	  {
+		"name": "dracmon",
+		"for": "slashangemon"
+	  },
+	  {
+		"name": "dracmon",
+		"for": "duskmon"
+	  },
+	  {
+		"name": "pawnchessmonwhite",
+		"for": "darkknightmon"
+	  },
+	  {
+		"name": "elizamon",
+		"for": "ginkakumon"
+	  },
+	  {
+		"name": "omegamonmm",
+		"from": "seraphimon"
+	  }
+	],
+	"size": 8
+  }
