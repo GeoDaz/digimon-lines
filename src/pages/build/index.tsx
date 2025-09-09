@@ -22,12 +22,18 @@ import { defaultLicenceContext, LicenceProps, LicenseContext } from '@/context/l
 import { getDubbedSearchList } from '@/functions/search';
 import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
+import { DigimonContext } from '@/context/digimon';
+import { Digimon } from '@/types/Digimon';
 
 export interface BuildProps {
 	search?: Search;
 	line?: Line;
 	context?: LicenceProps;
 	noStorage?: boolean;
+	digimons?: {
+		[key: string]: Digimon;
+	};
+	dubNames?: StringObject;
 }
 
 export const PageBuild = (props: BuildProps) => {
@@ -37,7 +43,7 @@ export const PageBuild = (props: BuildProps) => {
 	const [edition, edit] = useState<boolean>(true);
 
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
-	
+
 	const { removeItemFromStorage } = useLocalStorage({
 		key: licenceContext.key + '-line',
 		item: line,
@@ -49,7 +55,11 @@ export const PageBuild = (props: BuildProps) => {
 	useMemo(() => areCollapsablePoints(line), [line]);
 
 	const { downloadCode, uploadCode, name, setName } = useDownloadCode(line, setLine);
-	const { downloadImage, downloading, error } = useDownloadImg(line, name, licenceContext);
+	const { downloadImage, downloading, error } = useDownloadImg(
+		line,
+		name,
+		licenceContext
+	);
 
 	const handleUpdate = (action: CallableFunction, ...args: any[]) => {
 		dispatchState(action(...args));
@@ -129,11 +139,18 @@ export const PageBuild = (props: BuildProps) => {
 			)}
 			<SearchContext.Provider value={props.search}>
 				<LicenseContext.Provider value={licenceContext}>
-					<LineGrid
-						line={line}
-						zoom={zoom}
-						handleUpdate={edition ? handleUpdate : undefined}
-					/>
+					<DigimonContext.Provider
+						value={{
+							dubNames: props.dubNames || {},
+							data: props.digimons || {},
+						}}
+					>
+						<LineGrid
+							line={line}
+							zoom={zoom}
+							handleUpdate={edition ? handleUpdate : undefined}
+						/>
+					</DigimonContext.Provider>
 				</LicenseContext.Provider>
 			</SearchContext.Provider>
 		</Layout>
@@ -143,10 +160,18 @@ export const PageBuild = (props: BuildProps) => {
 export const getStaticProps: GetStaticProps = async () => {
 	const context: LicenceProps = defaultLicenceContext;
 	try {
-		const dubNames: StringObject = require('../../../public/json/dubnames.json');
+		let dubNames: StringObject = require('../../../public/json/dubnames.json');
+		dubNames = {
+			...dubNames,
+			...Object.fromEntries(Object.entries(dubNames).map(([k, v]) => [v, k])),
+		};
+
+		const digimons: {
+			[key: string]: Digimon;
+		} = require('../../../public/json/digimons/index.json');
 		const searchList: string[] = getDirPaths('images/digimon');
 		const search: Search = getDubbedSearchList(searchList, dubNames);
-		return { props: { search, context } };
+		return { props: { search, context, digimons, dubNames } };
 	} catch (e) {
 		console.error(e);
 		return { props: { context } };

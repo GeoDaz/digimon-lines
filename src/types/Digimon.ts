@@ -1,12 +1,14 @@
 export interface Digimon {
 	name: string;
 	name2?: string;
+	url?:string;
+	year?:string;
 	evos?: string[];
 	preEvos?: string[];
-	attribute: string;
-	type: string;
-	species: string[];
+	level: string|string[];
+	type: string|string[];
+	attribute: string|string[];
+	field: string|string[];
+	variants: string[];
 	tags: string[];
-	legend: string[];
 }
-// legend is an array to make <br/>

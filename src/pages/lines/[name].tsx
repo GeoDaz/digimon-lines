@@ -22,6 +22,9 @@ import transformLine, { thumbsToNames } from '@/functions/line';
 import { Line, LineThumb } from '@/types/Line';
 import { APPMON, LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
+import { Digimon } from '@/types/Digimon';
+import { DigimonContext } from '@/context/digimon';
+import { StringObject } from '@/types/Ui';
 
 const NAME = 'name';
 interface StaticProps {
@@ -29,6 +32,10 @@ interface StaticProps {
 	name?: string;
 	next?: string;
 	prev?: string;
+	digimons?: {
+		[key: string]: Digimon;
+	};
+	dubNames?: StringObject;
 }
 interface Props {
 	ssr: StaticProps;
@@ -85,10 +92,12 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 				<ColorLegend />
 			</div>
 			{line ? (
-				<>
+				<DigimonContext.Provider
+					value={{ data: ssr.digimons || {}, dubNames: ssr.dubNames || {} }}
+				>
 					<LineGrid line={line} zoom={zoom} />
 					<CommentLink />
-				</>
+				</DigimonContext.Provider>
 			) : (
 				<p>Line not found</p>
 			)}
@@ -203,6 +212,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 	const lines = thumbsToNames(require('../../../public/json/lines/_index.json'));
 	const fusions = thumbsToNames(require('../../../public/json/lines/_fusion.json'));
+	const digimons: {
+		[key: string]: Digimon;
+	} = require('../../../public/json/digimons/index.json');
+	let dubNames: StringObject = require('../../../public/json/dubnames.json');
+	dubNames = {
+		...dubNames,
+		...Object.fromEntries(Object.entries(dubNames).map(([k, v]) => [v, k])),
+	};
 
 	let prev = null;
 	let next = null;
@@ -221,7 +238,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		next = list[index + 1];
 	}
 
-	return { props: { ssr: { name: params.name, line, prev, next } } };
+	return {
+		props: { ssr: { name: params.name, line, prev, next, digimons, dubNames } },
+	};
 };
 
 export default PageLine;

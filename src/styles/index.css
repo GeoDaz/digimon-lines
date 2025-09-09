@@ -257,6 +257,16 @@ h2 {
   overflow: auto;
 }
 
+.grid-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75em;
+}
+
+.grid-2 .full-row {
+  grid-area: 3 / 1 / 4 / 3;;
+}
+
 /* line */
 
 .line-filters {
