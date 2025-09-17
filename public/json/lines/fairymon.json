@@ -1,79 +1,133 @@
 {
     "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "petermon",
-                "from": [
-                    1.5,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "pupumon",
-                "xSize": 2
-            },
-            {
-                "name": "puroromon",
-                "xSize": 2
-            },
-            {
-                "name": "tinkermon",
-                "xSize": 2
-            },
-            {
-                "name": "fairymon",
-                "color": "human",
-                "xSize": 2
-            },
-            {
-                "name": "shutumon",
-                "color": "human",
-                "from": [
-                    0.5,
-                    -1
-                ]
-            },
-            {
-                "name": "ancientirismon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "jetsilphymon",
-                "color": "human",
-                "from": [
-                    -0.5,
-                    -1
-                ]
-            },
-            null
-        ]
+      [
+        {
+          "name": "pupumon",
+          "xSize": 2,
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "puroromon",
+          "xSize": 2,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "tinkermon",
+          "xSize": 2,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        {
+          "name": "fairymon",
+          "color": [
+            "wind"
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "from": [
+            [
+              0.5,
+              -1.5
+            ]
+          ],
+          "ySize": 2
+        },
+        {
+          "name": "jetsilphymon",
+          "color": [
+            "fusion",
+            "fusion"
+          ],
+          "from": [
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "shutumon",
+          "from": [
+            [
+              -0.5,
+              -1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "ySize": 2,
+          "color": [
+            "wind"
+          ]
+        },
+        null,
+        {
+          "name": "ancientirismon",
+          "from": [
+            [
+              0,
+              -1.5
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": true,
+          "color": [
+            "wind"
+          ]
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "petermon",
+          "from": [
+            [
+              -1.5,
+              -1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        null
+      ]
     ],
     "related": [
-        {
-            "name": "wormmon",
-            "for": "hudiemon"
-        },
-        {
-            "name": "hawkmon",
-            "for": "silphymon"
-        },
-        {
-            "name": "jazamon",
-            "for": "sparrowmon"
-        },
-        {
-            "name": "woodmon",
-            "for": "zamielmon"
-        }
-    ]
-}
+      {
+        "name": "wormmon",
+        "for": "hudiemon"
+      },
+      {
+        "name": "hawkmon",
+        "for": "silphymon"
+      },
+      {
+        "name": "jazamon",
+        "for": "sparrowmon"
+      },
+      {
+        "name": "woodmon",
+        "for": "zamielmon"
+      }
+    ],
+    "size": 6
+  }
