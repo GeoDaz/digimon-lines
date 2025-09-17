@@ -276,7 +276,7 @@
 		]
 	],
 	"related": [
-		"woodmon",
+		{ "name": "woodmon", "from": "cernumon" },
 		{ "name": "bakemon", "from": "ponchomon" },
 		{ "name": "wizardmon", "from": "babamon" },
 		{ "name": "hookmon", "for": "vulturemon" },

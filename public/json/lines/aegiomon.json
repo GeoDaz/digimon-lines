@@ -100,7 +100,13 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "moosemon",
+				"color": "ice",
+				"from": [-2, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
 			{
 				"name": "aegiochusmondark",
 				"color": "dark",
@@ -124,7 +130,7 @@
 			},
 			{
 				"name": "pajiramon",
-				"from": [[0, -1]],
+				"from": [[0, -1], [-1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -215,8 +221,16 @@
 			"for": "oryxmon"
 		},
 		{
+			"name": "tapirmon",
+			"from": "moosemon"
+		},
+		{
+			"name": "woodmon",
+			"for": "cernumon"
+		},
+		{
 			"name": "renamon",
-			"from": "kentaurosmon"
+			"for": "kentaurosmon"
 		}
 	],
 	"size": 7

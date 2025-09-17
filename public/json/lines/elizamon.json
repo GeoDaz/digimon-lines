@@ -17,7 +17,8 @@
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
-			{ "name": "spinomon" }
+			{ "name": "spinomon" },
+			null
 		],
 		[
 			{
@@ -48,7 +49,8 @@
 					[1, -1]
 				]
 			},
-			{ "name": "medusamon", "xCollapsable": false, "yCollapsable": true }
+			{ "name": "medusamon", "xCollapsable": false, "yCollapsable": true },
+			null
 		],
 		[
 			null,
@@ -73,8 +75,11 @@
 					[2, -1]
 				],
 				"xCollapsable": false,
-				"yCollapsable": true,
-				"skins": ["mervamon", "jetmervamon"]
+				"yCollapsable": true
+			},
+			{
+				"name": "mervamon",
+				"skins": ["jetmervamon"]
 			}
 		],
 		[
@@ -99,7 +104,8 @@
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"color": ["x"]
-			}
+			},
+			null
 		],
 		[
 			{
@@ -145,7 +151,8 @@
 				"from": [[0, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
-			}
+			},
+			null
 		],
 		[
 			null,
@@ -168,7 +175,8 @@
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"color": ["dark"]
-			}
+			},
+			null
 		],
 		[
 			null,
@@ -182,7 +190,8 @@
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"color": ["grass"]
-			}
+			},
+			null
 		]
 	],
 	"related": [

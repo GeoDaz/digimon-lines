@@ -98,7 +98,7 @@
 			null,
 			{
 				"name": "shakamon",
-				"from": [[0, 2]],
+				"from": [[0, -2]],
 				"xCollapsable": true,
 				"yCollapsable": true,
 				"color": ["fusion"]
@@ -298,11 +298,15 @@
 		},
 		{
 			"name": "phascomon",
-			"from": "belphemon"
+			"from": "belphemonrm"
+		},
+		{
+			"name": "woodmon",
+			"for": "ancienttroiamon"
 		},
 		{
 			"name": "hawkmon",
-			"from": "hippogriffomon"
+			"for": "hippogriffomon"
 		},
 		{
 			"name": "kotemon",
