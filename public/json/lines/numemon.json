@@ -1,121 +1,118 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "numemonx",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            {
-                "name": "monzaemonx",
-                "color": "x"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "numemon",
-                "from": [
-                    2,
-                    -1
-                ]
-            },
-            {
-                "name": "monzaemon",
-                "from": [[0, -1], [
-                    1,
-                    -1
-                ]]
-            },
-            {
-                "name": "shinmonzaemon",
-                "color": ["dark", "dark"],
-                "from": [[0, -1], [
-                    1,
-                    -1
-                ]]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "geremon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "warumonzaemon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            {
-                "name": "bubbmon"
-            },
-            {
-                "name": "mochimon"
-            },
-            {
-                "name": "junkmon"
-            },
-            {
-                "name": "goldnumemon",
-                "color": "gold"
-            },
-            {
-                "name": "gerbemon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "platinumnumemon",
-                "color": "gold",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "karatukinumemon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "blackkingnumemon",
-                "color": ["gold", "gold"],
-                "from": [[0, -1], [
-                    -1,
-                    -1
-                ]]
-            }
-        ]
-    ],
-    "related": [
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "numemonx",
+				"color": "x",
+				"from": [1, 0]
+			},
+			{
+				"name": "monzaemonx",
+				"color": "x",
+				"from": [
+					[0, -1],
+					[1, 0]
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "numemon",
+				"from": [2, -1]
+			},
+			{
+				"name": "monzaemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				]
+			},
+			{
+				"name": "shinmonzaemon",
+				"color": ["dark", "dark"],
+				"from": [
+					[0, -1],
+					[1, -1]
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "geremon",
+				"from": [1, -1]
+			},
+			{
+				"name": "warumonzaemon",
+				"color": "dark",
+				"from": [-1, -1]
+			}
+		],
+		[
+			{
+				"name": "bubbmon"
+			},
+			{
+				"name": "mochimon"
+			},
+			{
+				"name": "junkmon"
+			},
+			{
+				"name": "goldnumemon",
+				"color": "gold"
+			},
+			{
+				"name": "gerbemon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "platinumnumemon",
+				"color": "gold",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "karatukinumemon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "blackkingnumemon",
+				"color": ["gold", "gold"],
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "raremon",
+				"color": "dark",
+				"from": [-2, -1]
+			},
+			{
+				"name": "rareraremon",
+				"color": "dark"
+			}
+		]
+	],
+	"related": [
 		{ "name": "app_sukasimon", "for": "app_gomimon" },
 		"sukamon",
 		{

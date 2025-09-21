@@ -1017,16 +1017,15 @@
             {
                 "name": "burninggreymon",
                 "from": [
-                    [
-                        -0.5,
-                        -1.5
-                    ]
+                    [-0.5,-1.5],
+                    [-1,0]
                 ],
                 "xCollapsable": false,
                 "yCollapsable": false,
                 "ySize": 2,
                 "color": [
-                    "fire"
+                    "fire",
+                    "slide"
                 ]
             },
             null,
@@ -1036,10 +1035,8 @@
                 "xCollapsable": false,
                 "yCollapsable": true,
                 "from": [
-                    [
-                        0,
-                        -1.5
-                    ]
+                  [0,-1.5],
+                  [-1,-0.5]
                 ]
             },
             null,
