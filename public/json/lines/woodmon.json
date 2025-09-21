@@ -1,139 +1,269 @@
 {
 	"columns": [
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "chamblemon",
-				"from": [1, -1],
-				"color": "dark"
-			},
-			{
-				"name": "entmon",
-				"color": "dark"
-			},
-			{
-				"name": "xuanwumon",
-				"color": "grass",
-				"from": [1, -1]
-			}
-		],
-		[
-			{
-				"name": "yuramon"
-			},
-			{
-				"name": "tanemon",
-				"color": "grass"
-			},
-			{
-				"name": "mushmon",
-				"color": "grass"
-			},
-			{
-				"name": "woodmon",
-				"color": "grass"
-			},
-			{
-				"name": "cherrymon",
-				"color": "grass"
-			},
-			{
-				"name": "puppetmon",
-				"color": "grass",
-				"from": [
-					[0, -1],
-					[1, -1]
-				]
-			},
-			{
-				"name": "cernumon",
-				"color": "fusion"
-			}
-		],
-		[
-			{
-				"name": "tomorimon",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{ "name": "onibimon", "xCollapsable": true, "yCollapsable": false },
-			{
-				"name": "hanimon",
-				"color": "grass"
-			},
-			{
-				"name": "kokeshimon",
-				"color": "grass"
-			},
-			{
-				"name": "karakurumon",
-				"color": "grass",
-				"from": [
-					[0, -1],
-					[1, -1]
-				]
-			},
-			{
-				"name": "kaguyamon",
-				"color": "grass"
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "bacomon",
-				"from": [-2, -1]
-			},
-			{
-				"name": "arbormon",
-				"color": "grass",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				]
-			},
-			{
-				"name": "petaldramon",
-				"color": "grass"
-			},
-			{
-				"name": "ancienttroiamon",
-				"color": "grass"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "nohemon",
-				"from": [-1, -1]
-			},
-			{
-				"name": "zamielmon",
-				"color": "grass"
-			}
-		]
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "chamblemon",
+		  "from": [
+			1,
+			-1
+		  ],
+		  "color": "dark",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "entmon",
+		  "color": "dark",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "xuanwumon",
+		  "color": "grass",
+		  "from": [
+			1,
+			-1
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		{
+		  "name": "yuramon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "tanemon",
+		  "color": "grass",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "mushmon",
+		  "color": "grass",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "woodmon",
+		  "color": "grass",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "cherrymon",
+		  "color": "grass",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "puppetmon",
+		  "color": "grass",
+		  "from": [
+			[
+			  0,
+			  -1
+			],
+			[
+			  1,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "cernumon",
+		  "color": "fusion",
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		}
+	  ],
+	  [
+		{
+		  "name": "tomorimon",
+		  "xCollapsable": true,
+		  "yCollapsable": false,
+		  "from": null
+		},
+		{
+		  "name": "onibimon",
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "hanimon",
+		  "color": "grass",
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "kokeshimon",
+		  "color": "grass",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "karakurumon",
+		  "color": "grass",
+		  "from": [
+			[
+			  0,
+			  -1
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "kaguyamon",
+		  "color": "grass",
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "arbormon",
+		  "color": "grass",
+		  "from": [
+			[
+			  2,
+			  -1.5
+			],
+			[
+			  -1,
+			  -1.5
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false,
+		  "ySize": 2
+		},
+		null,
+		{
+		  "name": "ancienttroiamon",
+		  "color": "grass",
+		  "xCollapsable": true,
+		  "yCollapsable": true,
+		  "from": [
+			[
+			  0,
+			  -1.5
+			],
+			[
+			  1,
+			  -1.5
+			]
+		  ]
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "petaldramon",
+		  "from": [
+			[
+			  -1,
+			  0
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false,
+		  "color": [
+			"slide"
+		  ],
+		  "ySize": 2
+		},
+		null,
+		null,
+		null
+	  ],
+	  [
+		{
+		  "name": "yuramon",
+		  "from": null,
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "tanemon",
+		  "from": null,
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "bacomon",
+		  "from": [
+			[
+			  0,
+			  -2
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "nohemon",
+		  "from": [
+			[
+			  0,
+			  -1
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "zamielmon",
+		  "color": "grass",
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null
+	  ]
 	],
 	"related": [
-		{
-			"name": "palmon",
-			"from": "cernumon"
-		},
-		{
-			"name": "palmon",
-			"for": "ceresmonbird"
-		},
-		{
-			"name": "palmon",
-			"for": "tropiamon"
-		},
-		{
-			"name": "kamemon",
-			"from": "xuanwumon"
-		}
-	]
-}
+	  {
+		"name": "palmon",
+		"from": "cernumon"
+	  },
+	  {
+		"name": "palmon",
+		"for": "ceresmonbird"
+	  },
+	  {
+		"name": "palmon",
+		"for": "tropiamon"
+	  },
+	  {
+		"name": "kamemon",
+		"from": "xuanwumon"
+	  }
+	],
+	"size": 7
+  }
