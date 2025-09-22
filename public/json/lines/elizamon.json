@@ -4,20 +4,7 @@
             null,
             null,
             null,
-            {
-                "name": "salamandermon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "fire"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
+            null,
             {
                 "name": "stegomon",
                 "from": [
@@ -143,16 +130,14 @@
             }
         ],
         [
-            null,
-            null,
+            {
+                "name": "kekomon"
+            },
+            {
+                "name": "kekkomon"
+            },
             {
                 "name": "iguneetmon",
-                "from": [
-                    [
-                        -2,
-                        -1
-                    ]
-                ],
                 "xCollapsable": false,
                 "yCollapsable": false
             },
@@ -325,6 +310,7 @@
             "name": "gatomon",
             "from": "minervamon"
         },
+        "gekkomon",
         {
             "name": "armadillomon",
             "from": "stegomon"
@@ -335,7 +321,7 @@
         },
         {
             "name": "vorvomon",
-            "from": "salamandermon"
+            "for": "salamandermon"
         },
         {
             "name": "woodmon",

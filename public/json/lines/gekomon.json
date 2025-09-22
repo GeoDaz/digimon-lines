@@ -54,9 +54,19 @@
 	],
 	"related": [
 		"betamon",
+		"gekkomon",
+		"elizamon",
+        {
+            "name": "vorvomon",
+            "for": "salamandermon"
+        },
 		{
 			"name": "jellymon",
 			"for": "hangyomon"
+		},
+		{
+			"name": "armadillomon",
+			"from": "frogmon"
 		}
 	]
 }
