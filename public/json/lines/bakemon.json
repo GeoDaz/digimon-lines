@@ -107,7 +107,14 @@
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
-			null
+			{
+				"name": "dullahamon",
+				"color": ["dark"],
+				"from": [[0, -1]],
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
 		],
 		[
 			null,
@@ -210,12 +217,13 @@
 	"related": [
 		"apocalymon",
 		{ "name": "wizardmon", "from": "ghostmon" },
-		{ "name": "palmon", "for": "ponchomon" },
-		{ "name": "devimon", "for": "myotismon" },
-		{ "name": "hookmon", "from": "boltboutamon" },
-		{ "name": "meramon", "from": "demimeramon" },
 		{ "name": "kotemon", "for": "oboromon" },
-		{ "name": "golemon", "for": "pyramidimon" }
+		{ "name": "palmon", "for": "ponchomon" },
+		{ "name": "hookmon", "from": "boltboutamon" },
+		{ "name": "devimon", "for": "myotismon" },
+		{ "name": "meramon", "from": "demimeramon" },
+		{ "name": "golemon", "for": "pyramidimon" },
+		{ "name": "pawnchessmonwhite", "for": "knightmon", "from": "dullahamon" }
 	],
 	"size": 7
 }
