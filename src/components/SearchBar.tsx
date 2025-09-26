@@ -86,7 +86,7 @@ const SearchBar: React.FC<Props> = ({
 		}
 	};
 
-	const handleSubmit = (value: string | number | undefined) => {
+	const handleSubmit = (value: string | number | undefined = undefined) => {
 		setPreviews([]);
 		onSubmit(value || (search && unCapitalize(search)));
 	};
