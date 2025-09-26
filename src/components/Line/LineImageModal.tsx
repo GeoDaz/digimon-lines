@@ -4,6 +4,7 @@ import LineImage from './LineImage';
 import { LinePoint } from '@/types/Line';
 import LinePointData from './LinePointData';
 import { DigimonContext } from '@/context/digimon';
+import { capitalize } from '@/functions';
 
 interface Props {
 	name: string;
@@ -27,7 +28,7 @@ const LineImageModal: React.FC<Props> = ({
 		<Modal show={open} onHide={handleClose} className="line-image-modal pt-4">
 			<Modal.Header closeButton>
 				<Modal.Title className="text-capitalize break-word">
-					{name} {dubName && `/ ${dubName}`}
+					{capitalize(name)} {dubName && `/ ${dubName}`}
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body className="text-center overflow-auto">

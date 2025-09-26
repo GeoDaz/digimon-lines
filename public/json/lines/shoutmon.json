@@ -6,7 +6,7 @@
 			null,
 			null,
 			{
-				"name": "omegashoutmonx",
+				"name": "omegashoutmon_x",
 				"color": "x",
 				"from": [1, 0]
 			}
@@ -20,26 +20,26 @@
 			},
 			{
 				"name": "shoutmon",
-				"_com_skins": ["shoutmonb", "shoutmonblue", "shoutmonyellow"]
+				"_com_skins": ["shoutmon_black", "shoutmon_blue", "shoutmon_yellow"]
 			},
 			{
-				"name": "kingshoutmon"
+				"name": "king_shoutmon"
 			},
 			{
 				"name": "omegashoutmon",
 				"color": "gold"
 			},
 			{
-				"name": "shoutmondx",
+				"name": "shoutmon_dx",
 				"color": "fusion"
 			},
 			{
-				"name": "shoutmonx7",
+				"name": "shoutmon_x7",
 				"color": "fusion",
-				"skins": ["shoutmonex6"]
+				"skins": ["shoutmon_ex6"]
 			},
 			{
-				"name": "shoutmonx7sm",
+				"name": "shoutmon_x7_superior_mode",
 				"color": "fusion"
 			}
 		],
@@ -48,19 +48,19 @@
 			null,
 			null,
 			{
-				"name": "shoutmonx2",
+				"name": "shoutmon_x2",
 				"color": "fusion",
 				"from": [-1, -1]
 			},
 			{
-				"name": "shoutmonx3",
+				"name": "shoutmon_x3",
 				"color": "fusion",
-				"skins": ["shoutmonx4", "shoutmonx5"]
+				"skins": ["shoutmon_x4", "shoutmon_x5"]
 			},
 			{
-				"name": "shoutmonx4b",
+				"name": "shoutmon_x4b",
 				"color": "fusion",
-				"skins": ["shoutmonx5b"]
+				"skins": ["shoutmon_x5b"]
 			}
 		],
 		[
@@ -69,12 +69,12 @@
 			null,
 			null,
 			{
-				"name": "shoutmonx4s",
+				"name": "shoutmon_x4s",
 				"color": "fusion",
 				"from": [-1, -1]
 			},
 			{
-				"name": "shoutmonx4k",
+				"name": "shoutmon_x4k",
 				"color": "fusion",
 				"from": [-1, -1]
 			}
@@ -86,7 +86,7 @@
 			null,
 			null,
 			{
-				"name": "shoutmonx3sd",
+				"name": "shoutmon_x3sd",
 				"color": "fusion",
 				"from": [-2, -1]
 			}
@@ -98,7 +98,7 @@
 			null,
 			null,
 			{
-				"name": "shoutmonx3gm",
+				"name": "shoutmon_x3gm",
 				"color": "fusion",
 				"from": [-3, -1]
 			}
@@ -135,14 +135,14 @@
 		},
 		{
 			"name": "impmon",
-			"for": "beelzebumon2"
+			"for": "beelzebumon_2"
 		},
 		{
 			"name": "leomon",
 			"for": "spadamon"
 		},
 		{
-			"name": "pawnchessmonwhite",
+			"name": "pawnchessmon_white",
 			"for": "darkknightmon"
 		}
 	]

@@ -5,7 +5,7 @@
 		null,
 		null,
 		{
-		  "name": "nefertimonx",
+		  "name": "nefertimon_x",
 		  "from": [
 			[
 			  1,
@@ -20,7 +20,7 @@
 		},
 		null,
 		{
-		  "name": "magnadramonx",
+		  "name": "magnadramon_x",
 		  "color": "x",
 		  "from": [
 			1,
@@ -35,7 +35,7 @@
 		null,
 		null,
 		{
-		  "name": "salamonx",
+		  "name": "salamon_x",
 		  "color": "x",
 		  "from": [
 			[
@@ -47,19 +47,19 @@
 		  "yCollapsable": false
 		},
 		{
-		  "name": "gatomonx",
+		  "name": "gatomon_x",
 		  "color": "x",
 		  "xCollapsable": true,
 		  "yCollapsable": false
 		},
 		{
-		  "name": "angewomonx",
+		  "name": "angewomon_x",
 		  "color": "x",
 		  "xCollapsable": true,
 		  "yCollapsable": false
 		},
 		{
-		  "name": "ophanimonx",
+		  "name": "ophanimon_x",
 		  "color": "x",
 		  "xCollapsable": false,
 		  "yCollapsable": true
@@ -73,7 +73,7 @@
 		null,
 		null,
 		{
-		  "name": "ophanimonfmx",
+		  "name": "ophanimon_falldown_mode_x",
 		  "color": "dark",
 		  "from": [
 			-1,
@@ -210,7 +210,7 @@
 		  "yCollapsable": false
 		},
 		{
-		  "name": "ophanimonbm",
+		  "name": "ophanimon_burst_mode",
 		  "color": "mode",
 		  "xCollapsable": true,
 		  "yCollapsable": true
@@ -249,7 +249,7 @@
 		  ]
 		},
 		{
-		  "name": "ophanimonfm",
+		  "name": "ophanimon_falldown_mode",
 		  "color": "dark",
 		  "from": [
 			-1,
@@ -324,14 +324,14 @@
 		null,
 		null,
 		{
-		  "name": "gatomonb",
+		  "name": "gatomon_black",
 		  "color": "dark",
 		  "from": [
 			-4,
 			-1
 		  ],
 		  "skins": [
-			"gatomonbuver"
+			"gatomon_buver"
 		  ],
 		  "xCollapsable": true,
 		  "yCollapsable": false
@@ -356,7 +356,7 @@
 		null,
 		null,
 		{
-		  "name": "ladydevimonx",
+		  "name": "ladydevimon_x",
 		  "color": "x",
 		  "from": [
 			-1,
@@ -366,7 +366,7 @@
 		  "yCollapsable": false
 		},
 		{
-		  "name": "lilithmonx",
+		  "name": "lilithmon_x",
 		  "color": "x",
 		  "xCollapsable": false,
 		  "yCollapsable": true
@@ -419,7 +419,7 @@
 		  ]
 		},
 		{
-		  "name": "junomonhm",
+		  "name": "junomon_hysteric_mode",
 		  "from": [
 			[
 			  0,
@@ -541,7 +541,7 @@
 	  [
 		null,
 		{
-		  "name": "meicoonyaromon",
+		  "name": "meicoo_nyaromon",
 		  "xSize": 2,
 		  "from": [
 			[
@@ -553,7 +553,7 @@
 		  "yCollapsable": false
 		},
 		{
-		  "name": "meicoosalamon",
+		  "name": "meicoo_salamon",
 		  "xSize": 2,
 		  "xCollapsable": false,
 		  "yCollapsable": false
@@ -565,7 +565,7 @@
 		  "yCollapsable": false
 		},
 		{
-		  "name": "meicrackmonvm",
+		  "name": "meicrackmon_vicious_mode",
 		  "color": "dark",
 		  "from": [
 			0.5,
@@ -660,7 +660,7 @@
 		"for": "minervamon"
 	  },
 	  {
-		"name": "omegamonmm",
+		"name": "omegamon_merciful_mode",
 		"from": "magnadramon"
 	  },
 	  {
@@ -672,7 +672,7 @@
 		"for": "beelstarmon"
 	  },
 	  {
-		"name": "pawnchessmonwhite",
+		"name": "pawnchessmon_white",
 		"for": "skullknightmon"
 	  },
 	  {
@@ -691,7 +691,7 @@
 		"name": "app_mienumon",
 		"for": "app_warudamon"
 	  },
-	  "sistermonblanc",
+	  "sistermon_blanc",
 	  {
 		"name": "shoemon",
 		"for": "cendrillmon"

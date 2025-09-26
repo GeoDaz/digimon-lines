@@ -1,4 +1,5 @@
 {
+    "title": "Black Agumon",
     "columns": [
         [
             null,
@@ -6,8 +7,9 @@
             null,
             null,
             {
-                "name": "metalgreymon_alter_mode",
-                "color": "mode",
+                "name": "skullgreymon",
+                "mirror": true,
+                "color": "dark",
                 "from": [1,-1]
             }
         ],
@@ -16,14 +18,18 @@
             null,
             null,
             {
-                "name": "greymon",
+                "name": "greymon_blue",
+                "mirror": true,
+                "color": "dark",
                 "from": [1,-1]
             },
             {
-                "name": "metalgreymon"
+                "name": "metalgreymon_blue",
+                "color": "dark"
             },
             {
-                "name": "wargreymon"
+                "name": "black_wargreymon",
+                "color": "dark"
             }
         ],
         [
@@ -34,17 +40,20 @@
                 "name": "koromon"
             },
             {
-                "name": "agumon"
-            },
-            {
-                "name": "cyclomon"
-            },
-            {
-                "name": "skullgreymon",
+                "name": "agumon_black",
                 "color": "dark"
             },
             {
-                "name": "blitzgreymon"
+                "name": "greymon_blue_2",
+                "color": "dark"
+            },
+            {
+                "name": "metalgreymon_blue_2",
+                "color": "dark"
+            },
+            {
+                "name": "zeekgreymon",
+                "color": "gold"
             }
         ],
         [
@@ -52,15 +61,17 @@
             null,
             null,
             {
-                "name": "geogreymon",
-                "mirror": true,
+                "name": "darktyranomon",
+                "color": "dark",
                 "from": [-1,-1]
             },
             {
-                "name": "rizegreymon"
+                "name": "mastertyranomon",
+                "mirror": true
             },
             {
-                "name": "victorygreymon"
+                "name": "samudramon",
+                "color": "dark"
             }
         ],
         [
@@ -68,16 +79,17 @@
             null,
             null,
             {
-                "name": "flarelizardmon",
-                "color": "fire",
+                "name": "darklizardmon",
+                "color": "dark",
                 "from": [-2,-1]
             },
             {
-                "name": "burninggreymon",
-                "color": "fire"
+                "name": "metaltyranomon",
+                "color": "dark"
             },
             {
-                "name": "shinegreymon"
+                "name": "machinedramon",
+                "color": "dark"
             }
         ],
         [
@@ -86,13 +98,15 @@
             null,
             null,
             {
-                "name": "megadramon",
+                "name": "gigadramon",
+                "color": "dark",
                 "from": [-1,-1]
             }
         ]
     ],
     "related": [
         "greymon",
+        "tyranomon",
         "flarelizardmon"
     ]
 }

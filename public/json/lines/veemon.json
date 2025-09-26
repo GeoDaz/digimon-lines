@@ -5,7 +5,7 @@
 			null,
 			null,
 			{
-				"name": "veedramonb",
+				"name": "veedramon_black",
 				"from": [2, -1],
 				"color": "dark",
 				"xCollapsable": false,
@@ -19,7 +19,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "ulforceveedramonx",
+				"name": "ulforceveedramon_x",
 				"color": "x",
 				"from": [1, 0],
 				"xCollapsable": false,
@@ -53,7 +53,7 @@
 			},
 			null,
 			{
-				"name": "ulforceveedramonfm",
+				"name": "ulforceveedramon_future_mode",
 				"color": "mode",
 				"from": [0, -2],
 				"xCollapsable": false,
@@ -91,7 +91,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "imperialdramon",
+				"name": "imperialdramon_dragon_mode",
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"from": [
@@ -100,13 +100,13 @@
 				]
 			},
 			{
-				"name": "imperialdramonfm",
+				"name": "imperialdramon_fighter_mode",
 				"color": "mode",
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "imperialdramonpm",
+				"name": "imperialdramon_paladin_mode",
 				"color": "fusion",
 				"xCollapsable": true,
 				"yCollapsable": true
@@ -117,7 +117,7 @@
 			null,
 			null,
 			{
-				"name": "exveemonb",
+				"name": "exveemon_black",
 				"color": "dark",
 				"from": [-1, -1],
 				"xCollapsable": false,
@@ -130,13 +130,13 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "imperialdramonb",
+				"name": "imperialdramon_black",
 				"color": "dark",
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "imperialdramonfmb",
+				"name": "imperialdramon_fighter_mode_black",
 				"color": "mode",
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -222,14 +222,14 @@
 			},
 			null,
 			{
-				"name": "magnamonx",
+				"name": "magnamon_x",
 				"color": "x",
 				"from": [-1, 0],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "magnamonxgolddigizoid",
+				"name": "magnamon_x_gold_digizoid",
 				"color": "mode",
 				"xCollapsable": true,
 				"yCollapsable": true

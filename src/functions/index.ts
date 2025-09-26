@@ -20,6 +20,14 @@ export const capitalize = (string: string): string => {
 	return string[0].toUpperCase() + string.slice(1);
 };
 
+export const unCapitalize = (string: string): string => {
+	const strings = string.split(' ');
+	if (strings.length > 1) {
+		return strings.map(unCapitalize).join('_');
+	}
+	return string[0].toLowerCase() + string.slice(1);
+};
+
 export const objectToGETparams = (
 	object: object,
 	baseParams: string = '',

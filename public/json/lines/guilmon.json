@@ -22,7 +22,7 @@
             null,
             null,
             {
-                "name": "guilmonx",
+                "name": "guilmon_x",
                 "color": "x",
                 "from": [
                     3,
@@ -32,7 +32,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "growlmonx",
+                "name": "growlmon_x",
                 "color": "x",
                 "xCollapsable": true,
                 "yCollapsable": false,
@@ -48,7 +48,7 @@
                 ]
             },
             {
-                "name": "wargrowlmonx",
+                "name": "wargrowlmon_x",
                 "color": "x",
                 "xCollapsable": true,
                 "yCollapsable": false,
@@ -64,7 +64,7 @@
                 ]
             },
             {
-                "name": "gallantmonx",
+                "name": "gallantmon_x",
                 "color": "x",
                 "xCollapsable": false,
                 "yCollapsable": true
@@ -78,7 +78,7 @@
             null,
             null,
             {
-                "name": "megidramonx",
+                "name": "megidramon_x",
                 "color": "dark",
                 "from": [
                     -1,
@@ -146,7 +146,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "gallantmoncm",
+                "name": "gallantmon_cm",
                 "color": "mode",
                 "xCollapsable": true,
                 "yCollapsable": true
@@ -157,7 +157,7 @@
             null,
             null,
             {
-                "name": "growlmonorange",
+                "name": "growlmon_orange",
                 "from": [
                     -1,
                     -1
@@ -166,7 +166,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "wargrowlmonorange",
+                "name": "wargrowlmon_orange",
                 "xCollapsable": false,
                 "yCollapsable": false
             },
@@ -186,7 +186,7 @@
             null,
             null,
             {
-                "name": "guilmonb",
+                "name": "guilmon_black",
                 "color": "dark",
                 "from": [
                     -2,
@@ -196,13 +196,13 @@
                 "yCollapsable": false
             },
             {
-                "name": "growlmonb",
+                "name": "growlmon_black",
                 "color": "dark",
                 "xCollapsable": false,
                 "yCollapsable": false
             },
             {
-                "name": "wargrowlmonb",
+                "name": "black_wargrowlmon",
                 "color": "dark",
                 "xCollapsable": false,
                 "yCollapsable": false
@@ -211,13 +211,13 @@
                 "name": "chaosgallantmon",
                 "color": "dark",
                 "skins": [
-                    "chaosgallantmoncore"
+                    "chaosgallantmon_core"
                 ],
                 "xCollapsable": false,
                 "yCollapsable": false
             },
             {
-                "name": "chaosgallantmoncm",
+                "name": "gallantmon_chaos_mode",
                 "color": "mode",
                 "xCollapsable": true,
                 "yCollapsable": true

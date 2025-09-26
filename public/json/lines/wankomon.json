@@ -52,7 +52,7 @@
 			},
 			{ "name": "erlangmon", "xSize": 2 },
 			{
-				"name": "erlangmonbm",
+				"name": "erlangmon_blast_mode",
 				"color": "mode",
 				"xSize": 2
 			}
@@ -62,7 +62,7 @@
 			null,
 			null,
 			{
-				"name": "siesamonx",
+				"name": "siesamon_x",
 				"from": [[-1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": false,
@@ -76,14 +76,14 @@
 			null,
 			null,
 			{
-				"name": "dobermonx",
+				"name": "dobermon_x",
 				"color": "x",
 				"from": [1, 0],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "cerberumonx",
+				"name": "cerberumon_x",
 				"color": "x",
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -124,7 +124,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "cerberumonwm",
+				"name": "cerberumon_werewolf_mode",
 				"color": "mode",
 				"from": [-1, 0],
 				"xCollapsable": false,
@@ -147,7 +147,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "komondomon",
+				"name": "komon_domon",
 				"from": [[0, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true

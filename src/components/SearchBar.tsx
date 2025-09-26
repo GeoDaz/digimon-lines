@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Icon from './Icon';
 import { SearchContext } from '@/context/search';
-import { makeClassName } from '@/functions';
+import { capitalize, makeClassName, unCapitalize } from '@/functions';
 import { Option } from '@/types/Ui';
 import { getSearchPriority } from '@/functions/search';
 
@@ -86,9 +86,9 @@ const SearchBar: React.FC<Props> = ({
 		}
 	};
 
-	const handleSubmit = (value: string | number | undefined = search) => {
+	const handleSubmit = (value: string | number | undefined) => {
 		setPreviews([]);
-		onSubmit(value);
+		onSubmit(value || (search && unCapitalize(search)));
 	};
 
 	return (
@@ -126,7 +126,7 @@ const SearchBar: React.FC<Props> = ({
 								handleSubmit(preview.value);
 							}}
 						>
-							{preview.text || preview.value}
+							{capitalize((preview.text || preview.value) as string)}
 						</span>
 					))}
 				</div>

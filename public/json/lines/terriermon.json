@@ -4,7 +4,7 @@
 			null,
 			null,
 			{
-				"name": "terriermonx",
+				"name": "terriermon_x",
 				"color": "x",
 				"from": [2, 0],
 				"xCollapsable": true,
@@ -19,7 +19,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "goldrapidmonx",
+				"name": "goldrapidmon_x",
 				"color": "x",
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -50,7 +50,7 @@
 			{ "name": "gummymon", "xCollapsable": true, "yCollapsable": false },
 			{
 				"name": "terriermon",
-				"skins": ["terriermonassistant"],
+				"skins": ["terriermon_assistant"],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
@@ -69,20 +69,20 @@
 			null,
 			null,
 			{
-				"name": "gargomonb",
+				"name": "gargomon_black",
 				"color": "dark",
 				"from": [-1, -1],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
-				"name": "rapidmonb",
+				"name": "rapidmon_black",
 				"color": "dark",
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
-				"name": "megagargomonb",
+				"name": "megagargomon_black",
 				"color": "dark",
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -93,7 +93,7 @@
 			null,
 			null,
 			{
-				"name": "lopmonx",
+				"name": "lopmon_x",
 				"color": "x",
 				"from": [1.5, 0],
 				"xCollapsable": true,
@@ -102,7 +102,7 @@
 			null,
 			null,
 			{
-				"name": "cherubimonx",
+				"name": "cherubimon_virtue_x",
 				"color": "x",
 				"from": [1, 0],
 				"xCollapsable": false,
@@ -148,7 +148,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "cherubimon",
+				"name": "cherubimon_virtue",
 				"color": "light",
 				"from": [0.5, -1],
 				"xCollapsable": false,
@@ -168,7 +168,7 @@
 			},
 			null,
 			{
-				"name": "cherubimonb",
+				"name": "cherubimon_vice",
 				"color": "dark",
 				"from": [-0.5, -1],
 				"xCollapsable": false,
@@ -193,7 +193,7 @@
 			{ "name": "prairiemon", "xCollapsable": false, "yCollapsable": true },
 			null,
 			{
-				"name": "cherubimonbx",
+				"name": "cherubimon_vice_x",
 				"color": "x",
 				"from": [-1, 0],
 				"xCollapsable": true,
@@ -227,7 +227,7 @@
 			null,
 			null,
 			{
-				"name": "luminamonnene",
+				"name": "luminamon_nene",
 				"from": [[-1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": true,
@@ -241,7 +241,7 @@
 		{ "name": "raidenmon", "for": "fujinmon" },
 		"lunamon",
 		"angoramon",
-		{ "name": "negamon", "for": "shademonnene" }
+		{ "name": "negamon", "for": "shademon_nene" }
 	],
 	"size": 7
 }

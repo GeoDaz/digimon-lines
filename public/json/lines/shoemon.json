@@ -46,14 +46,14 @@
 				"color": ["dark"]
 			},
 			{
-				"name": "warumonzaemon",
+				"name": "warumon_zaemon",
 				"from": [[0, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
-				"name": "shinmonzaemon",
+				"name": "shinmon_zaemon",
 				"from": [
 					[0, -1],
 					[-1, -1],
@@ -88,7 +88,7 @@
 			null,
 			null,
 			{
-				"name": "monzaemonx",
+				"name": "monzaemon_x",
 				"from": [[-1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": true,

@@ -32,9 +32,9 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "belphemonrm",
+				"name": "belphemon_rage_mode",
 				"color": "dark",
-				"skins": ["belphemon"],
+				"skins": ["belphemon_sleep_mode"],
 				"xCollapsable": false,
 				"yCollapsable": true
 			}
@@ -45,14 +45,14 @@
 			null,
 			null,
 			{
-				"name": "mephismonx",
+				"name": "mephismon_x",
 				"from": [[1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
-				"name": "belphemonrmx",
+				"name": "belphemon_x",
 				"from": [
 					[-1, 0],
 					[0, -1]

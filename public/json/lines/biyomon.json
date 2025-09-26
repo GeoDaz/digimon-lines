@@ -6,14 +6,14 @@
 			null,
 			null,
 			{
-				"name": "garudamonx",
+				"name": "garudamon_x",
 				"color": ["x"],
 				"from": [[1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "phoenixmonx",
+				"name": "phoenixmon_x",
 				"color": "x",
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -164,13 +164,13 @@
 	"related": [
 		{ "name": "penmon", "from": "cockatrimon" },
 		{ "name": "hawkmon", "from": "aquilamon" },
-		{ "name": "falcomon2", "from": "karatenmon" },
+		{ "name": "falcomon_2", "from": "karatenmon" },
 		{ "name": "pteromon", "from": "ornismon" },
 		{ "name": "dracmon", "for": "velgrmon" },
 		{ "name": "jazamon", "for": "mailbirdramon" },
 		{ "name": "hookmon", "for": "vulturemon" },
 		"aegisdramon",
-		{ "name": "omegamonmm", "from": "phoenixmon" }
+		{ "name": "omegamon_merciful_mode", "from": "phoenixmon" }
 	],
 	"size": 7
 }

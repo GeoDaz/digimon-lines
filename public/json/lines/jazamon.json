@@ -34,7 +34,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "metalgreymonb3",
+				"name": "metalgreymon_blue_2",
 				"color": "fusion",
 				"xCollapsable": false,
 				"yCollapsable": false
@@ -131,14 +131,14 @@
 			null,
 			null,
 			{
-				"name": "kokuwamonx",
+				"name": "kokuwamon_x",
 				"color": "x",
 				"from": [-1, 0],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
-				"name": "pteranomonx",
+				"name": "pteranomon_x",
 				"color": "x",
 				"xCollapsable": true,
 				"yCollapsable": false
@@ -182,7 +182,7 @@
 	"related": [
 		"vorvomon",
 		"blucomon",
-		{ "name": "greymon", "for": "greymonb3" },
+		{ "name": "greymon", "for": "greymon_blue_2" },
 		{ "name": "pteromon", "from": "pteranomon" },
 		{ "name": "commandramon", "for": "cargodramon" },
 		{ "name": "betamon", "for": "gigadramon" },
@@ -191,10 +191,10 @@
 		{ "name": "tentomon", "for": "kokuwamon" },
 		"espimon",
 		{ "name": "penmon", "for": "peacockmon" },
-		{ "name": "shoutmon", "for": "shoutmonx5" },
+		{ "name": "shoutmon", "for": "shoutmon_x5" },
 		{ "name": "fairymon", "for": "jetsilphymon" },
 		{ "name": "garurumon", "for": "machgaogamon" },
-		{ "name": "aegiomon", "for": "aegiochusmonblue" },
+		{ "name": "aegiomon", "for": "aegiochusmon_blue" },
 		{ "name": "terriermon", "for": "rapidmon" }
 	],
 	"size": 6

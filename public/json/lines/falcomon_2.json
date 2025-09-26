@@ -44,7 +44,7 @@
             null,
             null,
             {
-                "name": "falcomon2",
+                "name": "falcomon_2",
                 "xCollapsable": true,
                 "yCollapsable": false,
                 "from": [
@@ -63,7 +63,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "yatagaramon2",
+                "name": "yatagaramon_2",
                 "xCollapsable": false,
                 "yCollapsable": false
             },
@@ -82,7 +82,7 @@
                 ]
             },
             {
-                "name": "ravemonbm",
+                "name": "ravemon_burst_mode",
                 "color": "mode",
                 "xCollapsable": true,
                 "yCollapsable": true
@@ -220,7 +220,7 @@
                 ]
             },
             {
-                "name": "chaosmonvm",
+                "name": "chaosmon_valdur_mode",
                 "color": "fusion",
                 "xCollapsable": true,
                 "yCollapsable": true
@@ -266,7 +266,7 @@
         "ultimatechaosmon",
         {
             "name": "leomon",
-            "from": "chaosmonvm"
+            "from": "chaosmon_valdur_mode"
         },
         {
             "name": "biyomon",

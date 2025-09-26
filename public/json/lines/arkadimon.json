@@ -5,28 +5,28 @@
 				"name": "zurumon"
 			},
 			{
-				"name": "arkadimon2",
+				"name": "arkadimon_2",
 				"color": "dark"
 			},
 			{
-				"name": "arkadimon3",
+				"name": "arkadimon_3",
 				"color": "dark"
 			},
 			{
-				"name": "arkadimon4",
+				"name": "arkadimon_4",
 				"color": "dark"
 			},
 			{
-				"name": "arkadimon5",
+				"name": "arkadimon_5",
 				"color": "dark"
 			},
 			{
-				"name": "arkadimon6",
+				"name": "arkadimon_6",
 				"color": "dark"
 			},
 			null,
 			{
-				"name": "arkadimon7",
+				"name": "arkadimon_7",
 				"color": "dark",
 				"from": [0, -2]
 			}
@@ -44,9 +44,9 @@
 		]
 	],
 	"related": [
-		{ "name": "devimon", "for": "demonsu" },
+		{ "name": "devimon", "for": "demon_super_ultimate" },
 		"keramon",
 		{ "name": "angemon", "for": "bagramon" },
-		{ "name": "pawnchessmonwhite", "for": "darkknightmon" }
+		{ "name": "pawnchessmon_white", "for": "darkknightmon" }
 	]
 }

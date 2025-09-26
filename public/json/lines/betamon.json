@@ -60,14 +60,14 @@
 			null,
 			null,
 			{
-				"name": "goldramonx",
+				"name": "goldramon_x",
 				"from": [[1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
-				"name": "chaosdramonx",
+				"name": "chaosdramon_x",
 				"from": [[-1, 0]],
 				"xCollapsable": true,
 				"yCollapsable": true,
@@ -113,20 +113,20 @@
 			null,
 			null,
 			{
-				"name": "betamonx",
+				"name": "betamon_x",
 				"color": "x",
 				"from": [1, 0],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "seadramonx",
+				"name": "seadramon_x",
 				"color": "x",
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "megaseadramonx",
+				"name": "megaseadramon_x",
 				"color": "x",
 				"xCollapsable": false,
 				"yCollapsable": false
@@ -245,7 +245,7 @@
 				"color": ["marine"]
 			},
 			{
-				"name": "leviamonx",
+				"name": "leviamon_x",
 				"from": [[-1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": true,
@@ -292,21 +292,21 @@
 			null,
 			null,
 			{
-				"name": "tylomonx",
+				"name": "tylomon_x",
 				"from": [[-1, 0]],
 				"xCollapsable": true,
 				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
-				"name": "anomalocarimonx",
+				"name": "anomalocarimon_x",
 				"from": [[0, -1]],
 				"xCollapsable": true,
 				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
-				"name": "plesiomonx",
+				"name": "plesiomon_x",
 				"from": [[0, -1]],
 				"xCollapsable": true,
 				"yCollapsable": true,
@@ -373,7 +373,7 @@
 			"for": "darkdramon"
 		},
 		{
-			"name": "falcomon2",
+			"name": "falcomon_2",
 			"for": "xiangpengmon"
 		},
 		{

@@ -95,7 +95,7 @@
 			null,
 			null,
 			{
-				"name": "tylomonx",
+				"name": "tylomon_x",
 				"from": [[-1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": true,
@@ -103,7 +103,7 @@
 			},
 			null,
 			{
-				"name": "leviamonx",
+				"name": "leviamon_x",
 				"from": [[-1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": true,
@@ -217,7 +217,7 @@
 			null,
 			null,
 			{
-				"name": "mantaraymonx",
+				"name": "mantaraymon_x",
 				"color": ["x"],
 				"from": [[-1, 0]],
 				"xCollapsable": false,
@@ -233,7 +233,7 @@
 		{ "name": "betamon", "from": "tylomon" },
 		{ "name": "gomamon", "for": "dolphmon" },
 		{ "name": "jellymon", "for": "depthmon" },
-		{ "name": "falcomon2", "from": "xiquemon" },
+		{ "name": "falcomon_2", "from": "xiquemon" },
 		{ "name": "pulsemon", "from": "divemon" }
 	],
 	"size": 6

@@ -50,7 +50,7 @@
 		  "yCollapsable": false
 		},
 		{
-		  "name": "hivisionmonitamon",
+		  "name": "hivisionmon_itamon",
 		  "from": [
 			[
 			  0,
@@ -117,7 +117,7 @@
 		},
 		null,
 		{
-		  "name": "seraphimonb",
+		  "name": "black_seraphimon",
 		  "from": [
 			[
 			  0,
@@ -203,7 +203,7 @@
 	  },
 	  {
 		"name": "angemon",
-		"for": "seraphimonb"
+		"for": "black_seraphimon"
 	  },
 	  {
 		"name": "wizardmon",

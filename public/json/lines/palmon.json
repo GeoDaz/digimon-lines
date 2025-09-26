@@ -3,10 +3,10 @@
 		[
 			null,
 			null,
-			{ "name": "palmonx", "color": "x", "from": [2, 0], "collapsable": true },
-			{ "name": "togemonx", "color": "x", "collapsable": false },
-			{ "name": "lilimonx", "color": "x", "collapsable": true },
-			{ "name": "rosemonx", "color": "x", "collapsable": false },
+			{ "name": "palmon_x", "color": "x", "from": [2, 0], "collapsable": true },
+			{ "name": "togemon_x", "color": "x", "collapsable": false },
+			{ "name": "lilimon_x", "color": "x", "collapsable": true },
+			{ "name": "rosemon_x", "color": "x", "collapsable": false },
 			null,
 			null
 		],
@@ -66,7 +66,7 @@
 				"collapsable": false
 			},
 			{
-				"name": "rosemonbm",
+				"name": "rosemon_burst_mode",
 				"from": [[0, -1]],
 				"collapsable": false,
 				"color": ["mode"]
@@ -147,7 +147,7 @@
 			},
 			{
 				"name": "vegimon",
-				"skins": ["vegimonred"],
+				"skins": ["vegimon_red"],
 				"from": [0, -1],
 				"color": "grass",
 				"collapsable": false
@@ -155,7 +155,7 @@
 			{ "name": "oleamon", "from": [0, -1], "color": "dark", "collapsable": false },
 			{
 				"name": "ceresmon",
-				"skins": ["ceresmonbird"],
+				"skins": ["ceresmon_bird"],
 				"from": [
 					[0, -1],
 					[-1, -1]
@@ -247,7 +247,7 @@
 			},
 			{ "name": "sirenmon", "collapsable": false },
 			{
-				"name": "ceresmonbird",
+				"name": "ceresmon_bird",
 				"skins": ["ceresmon"],
 				"from": [
 					[0, -1],
@@ -280,6 +280,6 @@
 		{ "name": "bakemon", "from": "ponchomon" },
 		{ "name": "wizardmon", "from": "babamon" },
 		{ "name": "hookmon", "for": "vulturemon" },
-		{ "name": "omegamonmm", "from": "rosemon" }
+		{ "name": "omegamon_merciful_mode", "from": "rosemon" }
 	]
 }

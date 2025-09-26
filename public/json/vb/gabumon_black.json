@@ -1,5 +1,5 @@
 {
-    "title": "Black Agumon",
+    "title": "Black Gabumon",
     "columns": [
         [
             null,
@@ -7,10 +7,13 @@
             null,
             null,
             {
-                "name": "skullgreymon",
+                "name": "skullbaluchimon",
                 "mirror": true,
                 "color": "dark",
-                "from": [1,-1]
+                "from": [
+                    1,
+                    -1
+                ]
             }
         ],
         [
@@ -18,42 +21,67 @@
             null,
             null,
             {
-                "name": "greymonb",
+                "name": "garurumon_black",
+                "color": "dark",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "weregarurumon_black",
+                "color": "dark"
+            },
+            {
+                "name": "metalgarurumon_black",
+                "color": "dark"
+            }
+        ],
+        [
+            {
+                "name": "punimon"
+            },
+            {
+                "name": "tsunomon"
+            },
+            {
+                "name": "gabumon_black",
+                "color": "dark"
+            },
+            {
+                "name": "gaogamon_black",
+                "color": "dark"
+            },
+            {
+                "name": "machgaogamon_black",
+                "color": "dark"
+            },
+            {
+                "name": "mercurymon",
+                "mirror": true,
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gururumon",
                 "mirror": true,
                 "color": "dark",
-                "from": [1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             },
             {
-                "name": "metalgreymonb",
+                "name": "astamon",
                 "color": "dark"
             },
             {
-                "name": "wargreymonb",
+                "name": "belphemon_rage_mode",
                 "color": "dark"
-            }
-        ],
-        [
-            {
-                "name": "botamon"
-            },
-            {
-                "name": "koromon"
-            },
-            {
-                "name": "agumonb",
-                "color": "dark"
-            },
-            {
-                "name": "greymonb3",
-                "color": "dark"
-            },
-            {
-                "name": "metalgreymonb3",
-                "color": "dark"
-            },
-            {
-                "name": "zeekgreymon",
-                "color": "gold"
             }
         ],
         [
@@ -61,34 +89,19 @@
             null,
             null,
             {
-                "name": "darktyranomon",
+                "name": "dobermon",
                 "color": "dark",
-                "from": [-1,-1]
+                "from": [
+                    -2,
+                    -1
+                ]
             },
             {
-                "name": "mastertyranomon",
-                "mirror": true
-            },
-            {
-                "name": "samudramon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "darklizardmon",
-                "color": "dark",
-                "from": [-2,-1]
-            },
-            {
-                "name": "metaltyranomon",
+                "name": "cerberumon",
                 "color": "dark"
             },
             {
-                "name": "machinedramon",
+                "name": "plutomon",
                 "color": "dark"
             }
         ],
@@ -98,15 +111,17 @@
             null,
             null,
             {
-                "name": "gigadramon",
+                "name": "cerberumon_werewolf_mode",
                 "color": "dark",
-                "from": [-1,-1]
+                "from": [
+                    -1,
+                    -1
+                ]
             }
         ]
     ],
     "related": [
-        "greymon",
-        "tyranomon",
-        "flarelizardmon"
+        "garurumon",
+        "dracmon"
     ]
 }

@@ -20,7 +20,7 @@
 		[
 			{ "name": "cotsucomon", "from": null },
 			{ "name": "kakkinmon" },
-			{ "name": "pawnchessmonwhite" },
+			{ "name": "pawnchessmon_white" },
 			{ "name": "gladimon" },
 			{ "name": "knightmon" },
 			{ "name": "lordknightmon" }
@@ -28,7 +28,7 @@
 		[
 			null,
 			null,
-			{ "name": "pawnchessmonblack", "color": "dark", "from": [-1, -1] },
+			{ "name": "pawnchessmon_black", "color": "dark", "from": [-1, -1] },
 			{ "name": "skullknightmon", "color": "dark" },
 			{ "name": "darkknightmon", "color": "dark" },
 			{ "name": "craniummon" }
@@ -55,8 +55,8 @@
 			null,
 			null,
 			null,
-			{ "name": "gallantmoncm", "from": [-1, 0], "color": "mode" }
+			{ "name": "gallantmon_cm", "from": [-1, 0], "color": "mode" }
 		]
 	],
-	"related": ["pawnchessmonwhite", "wizardmon", "kotemon"]
+	"related": ["pawnchessmon_white", "wizardmon", "kotemon"]
 }

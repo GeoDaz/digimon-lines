@@ -15,7 +15,7 @@
             },
             {
                 "name": "metalgreymon",
-                "skins": ["metalgreymonam"]
+                "skins": ["metalgreymon_alter_mode"]
             },
             {
                 "name": "wargreymon"
@@ -51,7 +51,7 @@
             },
             {
                 "name": "weregarurumon",
-                "skins": ["weregarurumonam"]
+                "skins": ["weregarurumon_alter_mode"]
             },
             {
                 "name": "metalgarurumon"
@@ -99,7 +99,7 @@
             },
             null,
             {
-                "name": "omegamonmm",
+                "name": "omegamon_merciful_mode",
                 "xSize": 2,
                 "color": "fusion",
                 "from": [
@@ -237,23 +237,23 @@
         "gatomon",
         {
             "name": "greymon",
-            "for": "omegamonx"
+            "for": "omegamon_x"
         },
         {
             "name": "greymon",
-            "for": "omegamonb"
+            "for": "omegamon_zwart"
         },
         {
             "name": "greymon",
-            "for": "omegamonbrm"
+            "for": "omegamon_zwart_defeat"
         },
         {
             "name": "greymon",
-            "for": "omegamonam"
+            "for": "omegamon_alter_s"
         },
         {
             "name": "greymon",
-            "for": "omegamonbam"
+            "for": "omegamon_bam"
         },
         {
             "name": "greymon",
@@ -264,7 +264,7 @@
             "for": "omedamon"
         },
         {
-            "name": "imperialdramonpm"
+            "name": "imperialdramon_paladin_mode"
         },
         {
             "name": "ultimatechaosmon",
@@ -272,7 +272,7 @@
         },
         {
             "name": "negamon",
-            "for": "abbadomoncore"
+            "for": "abbadomon_core"
         }
     ]
 }

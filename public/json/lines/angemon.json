@@ -61,7 +61,7 @@
 	  [
 		null,
 		{
-		  "name": "tokomonx",
+		  "name": "tokomon_x",
 		  "color": "x",
 		  "from": [
 			2,
@@ -84,7 +84,7 @@
 		},
 		null,
 		{
-		  "name": "goldramonx",
+		  "name": "goldramon_x",
 		  "color": "x",
 		  "from": [
 			1,
@@ -202,14 +202,14 @@
 		},
 		null,
 		{
-		  "name": "seraphimonb",
+		  "name": "black_seraphimon",
 		  "color": "dark",
 		  "from": [
 			-1,
 			-1
 		  ],
 		  "skins": [
-			"seraphimonb2"
+			"black_seraphimon_2"
 		  ],
 		  "xCollapsable": false,
 		  "yCollapsable": true
@@ -222,7 +222,7 @@
 		null,
 		null,
 		{
-		  "name": "pegasmonx",
+		  "name": "pegasmon_x",
 		  "from": [
 			[
 			  -1,
@@ -236,7 +236,7 @@
 		  ]
 		},
 		{
-		  "name": "magnaangemonpm",
+		  "name": "magnaangemon_priest_mode",
 		  "from": [
 			-2,
 			0
@@ -253,7 +253,7 @@
 		},
 		null,
 		{
-		  "name": "darknessbagramon",
+		  "name": "darkness_bagramon",
 		  "color": "fusion",
 		  "from": [
 			0,
@@ -327,7 +327,7 @@
 		},
 		null,
 		{
-		  "name": "lucemonfm",
+		  "name": "lucemon_falldown_mode",
 		  "color": [
 			"mode",
 			"fusion"
@@ -346,13 +346,13 @@
 		  "yCollapsable": false
 		},
 		{
-		  "name": "lucemonlarva",
+		  "name": "lucemon_larva",
 		  "color": "mode",
 		  "xCollapsable": false,
 		  "yCollapsable": false
 		},
 		{
-		  "name": "lucemonsm",
+		  "name": "lucemon_satan_mode",
 		  "color": "mode",
 		  "xCollapsable": true,
 		  "yCollapsable": true
@@ -366,7 +366,7 @@
 		null,
 		null,
 		{
-		  "name": "lucemonx",
+		  "name": "lucemon_x",
 		  "color": "x",
 		  "from": [
 			-1,
@@ -394,11 +394,11 @@
 	  },
 	  {
 		"name": "devimon",
-		"for": "lucemonfm"
+		"for": "lucemon_falldown_mode"
 	  },
 	  {
 		"name": "ogudomon",
-		"from": "lucemonfm"
+		"from": "lucemon_falldown_mode"
 	  },
 	  {
 		"name": "betamon",
@@ -425,7 +425,7 @@
 		"for": "duskmon"
 	  },
 	  {
-		"name": "pawnchessmonwhite",
+		"name": "pawnchessmon_white",
 		"for": "darkknightmon"
 	  },
 	  {
@@ -433,7 +433,7 @@
 		"for": "ginkakumon"
 	  },
 	  {
-		"name": "omegamonmm",
+		"name": "omegamon_merciful_mode",
 		"from": "seraphimon"
 	  }
 	],

@@ -16,7 +16,7 @@
 				"name": "deathmon",
 				"color": "dark",
 				"from": [1, -1],
-				"skins": ["deathmonb"],
+				"skins": ["deathmon_black"],
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -45,7 +45,7 @@
 			{
 				"name": "eyesmon",
 				"color": "dark",
-				"skins": ["eyesmonsmr"],
+				"skins": ["eyesmon_scatter_mode"],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -67,7 +67,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "abbadomoncore",
+				"name": "abbadomon_core",
 				"color": "dark",
 				"xCollapsable": true,
 				"yCollapsable": true
@@ -105,7 +105,7 @@
 			null,
 			null,
 			{
-				"name": "shademonnene",
+				"name": "shademon_nene",
 				"color": "human",
 				"from": [-1, 0],
 				"xCollapsable": false,
@@ -118,14 +118,14 @@
 	],
 	"related": [
 		{ "name": "elizamon", "from": "nidhoggmon" },
-		{ "name": "terriermon", "for": "luminamonnene" },
+		{ "name": "terriermon", "for": "luminamon_nene" },
 		{ "name": "numemon", "from": "raremon" },
 		{ "name": "hyokomon", "for": "devitamamon" },
 		{ "name": "dracmon", "for": "duskmon" },
 		"keramon",
 		"algomon",
 		{ "name": "chimeramon", "for": "moonmillenniumon" },
-		{ "name": "omegamonmm", "for": "omegamon" }
+		{ "name": "omegamon_merciful_mode", "for": "omegamon" }
 	],
 	"size": 7
 }

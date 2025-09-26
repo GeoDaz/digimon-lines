@@ -4,7 +4,7 @@
 			null,
 			null,
 			{
-				"name": "renamonx",
+				"name": "renamon_x",
 				"color": "x",
 				"from": [1, 0],
 				"xCollapsable": false,
@@ -13,7 +13,7 @@
 			null,
 			null,
 			{
-				"name": "sakuyamonx",
+				"name": "sakuyamon_x",
 				"color": "x",
 				"from": [1, 0],
 				"xCollapsable": false,
@@ -34,7 +34,7 @@
 			{
 				"name": "sakuyamon",
 				"color": "human",
-				"skins": ["sakuyamonmm"],
+				"skins": ["sakuyamon_miko_mode"],
 				"xCollapsable": false,
 				"yCollapsable": true
 			}
@@ -60,7 +60,7 @@
 			{
 				"name": "youkomon",
 				"from": [[-2, -1]],
-				"skins": ["kyubimonsilver"],
+				"skins": ["kyubimon_silver"],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["dark"]
@@ -75,7 +75,7 @@
 			{
 				"name": "kuzuhamon",
 				"color": "dark",
-				"skins": ["kuzuhamonmm"],
+				"skins": ["kuzuhamon_miko_mode"],
 				"xCollapsable": true,
 				"yCollapsable": true,
 				"from": [[0, -1]]
@@ -124,7 +124,7 @@
 			{
 				"name": "kudamon",
 				"xSize": 2,
-				"skins": ["kudamon2"],
+				"skins": ["kudamon_2"],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -176,7 +176,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "kentaurosmonx",
+				"name": "kentaurosmon_x",
 				"color": ["x"],
 				"xCollapsable": false,
 				"yCollapsable": true,

@@ -6,7 +6,7 @@
 			null,
 			null,
 			{
-				"name": "aegiochusmongreen",
+				"name": "aegiochusmon_green",
 				"color": "grass",
 				"from": [2, -0.5],
 				"xCollapsable": false,
@@ -22,7 +22,7 @@
 			null,
 			null,
 			{
-				"name": "aegiochusmonblue",
+				"name": "aegiochusmon_blue",
 				"from": [[1, -0.5]],
 				"xCollapsable": false,
 				"yCollapsable": false,
@@ -73,7 +73,7 @@
 				"color": ["light", "light", "light", "light", "light"]
 			},
 			{
-				"name": "jupitermonwrath",
+				"name": "jupitermon_wrath_mode",
 				"from": [[0, -1]],
 				"xCollapsable": true,
 				"yCollapsable": true,
@@ -86,7 +86,7 @@
 			null,
 			null,
 			{
-				"name": "aegiochusmonholly",
+				"name": "aegiochusmon_holly",
 				"color": "light",
 				"from": [-1, -0.5],
 				"xCollapsable": false,
@@ -108,7 +108,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "aegiochusmondark",
+				"name": "aegiochusmon_dark",
 				"color": "dark",
 				"from": [-2, -0.5],
 				"xCollapsable": false,
@@ -177,11 +177,11 @@
 			null,
 			null,
 			{
-				"name": "belphemonrm",
+				"name": "belphemon_rage_mode",
 				"from": [[-1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"skins": ["belphemon"],
+				"skins": ["belphemon_sleep_mode"],
 				"color": ["dark"]
 			},
 			null
@@ -192,14 +192,14 @@
 			null,
 			null,
 			{
-				"name": "mephismonx",
+				"name": "mephismon_x",
 				"from": [[-2, 0]],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
-				"name": "belphemonrmx",
+				"name": "belphemon_x",
 				"from": [
 					[-1, 0],
 					[0, -1]

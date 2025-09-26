@@ -4,7 +4,7 @@
       null,
       null,
       {
-        "name": "gabumonx",
+        "name": "gabumon_x",
         "from": [
           1.5,
           0
@@ -14,7 +14,7 @@
         "yCollapsable": false
       },
       {
-        "name": "garurumonx",
+        "name": "garurumon_x",
         "color": "x",
         "from": [
           [
@@ -30,7 +30,7 @@
         "yCollapsable": false
       },
       {
-        "name": "weregarurumonx",
+        "name": "weregarurumon_x",
         "color": "x",
         "from": [
           [
@@ -46,7 +46,7 @@
         "yCollapsable": false
       },
       {
-        "name": "metalgarurumonx",
+        "name": "metalgarurumon_x",
         "color": "x",
         "from": [
           [
@@ -62,7 +62,7 @@
         "yCollapsable": false
       },
       {
-        "name": "omegamonx",
+        "name": "omegamon_x",
         "color": "x",
         "from": [
           [
@@ -129,7 +129,7 @@
         "yCollapsable": false
       },
       {
-        "name": "omegamonmm",
+        "name": "omegamon_merciful_mode",
         "color": "fusion",
         "from": [
           0,
@@ -147,7 +147,7 @@
       null,
       null,
       {
-        "name": "gabumonbf",
+        "name": "gabumon_yujo_no_kizuma",
         "color": "mode",
         "from": [
           -0.5,
@@ -173,7 +173,7 @@
         "yCollapsable": false
       },
       {
-        "name": "weregarurumonam",
+        "name": "weregarurumon_alter_mode",
         "color": "mode",
         "from": [
           -1.5,
@@ -189,7 +189,7 @@
         "yCollapsable": false
       },
       {
-        "name": "omegamonam",
+        "name": "omegamon_alter_s",
         "color": "fusion",
         "xCollapsable": false,
         "yCollapsable": true
@@ -217,7 +217,7 @@
       },
       null,
       {
-        "name": "omegamonbam",
+        "name": "omegamon_bam",
         "color": "mode",
         "from": [
           1,
@@ -232,7 +232,7 @@
       null,
       null,
       {
-        "name": "gabumonb",
+        "name": "gabumon_black",
         "from": [
           -3.5,
           -1
@@ -242,28 +242,28 @@
         "yCollapsable": false
       },
       {
-        "name": "garurumonb",
+        "name": "garurumon_black",
         "color": "dark",
         "xCollapsable": true,
         "yCollapsable": false
       },
       {
-        "name": "weregarurumonb",
+        "name": "weregarurumon_black",
         "color": "dark",
         "xCollapsable": false,
         "yCollapsable": false
       },
       {
-        "name": "metalgarurumonb",
+        "name": "metalgarurumon_black",
         "color": "dark",
         "xCollapsable": false,
         "yCollapsable": false
       },
       {
-        "name": "omegamonb",
+        "name": "omegamon_zwart",
         "color": "fusion",
         "skins": [
-          "omegamonbrm"
+          "omegamon_zwart_defeat"
         ],
         "xCollapsable": true,
         "yCollapsable": true
@@ -294,10 +294,10 @@
         "yCollapsable": false
       },
       {
-        "name": "belphemonrm",
+        "name": "belphemon_rage_mode",
         "color": "dark",
         "skins": [
-          "belphemon"
+          "belphemon_sleep_mode"
         ],
         "xCollapsable": false,
         "yCollapsable": true
@@ -321,7 +321,7 @@
       },
       null,
       {
-        "name": "belphemonrmx",
+        "name": "belphemon_x",
         "color": "x",
         "from": [
           -1,
@@ -395,7 +395,7 @@
         "yCollapsable": false
       },
       {
-        "name": "miragegaogamonbm",
+        "name": "miragegaogamon_burst_mode",
         "color": "mode",
         "xCollapsable": true,
         "yCollapsable": true
@@ -407,7 +407,7 @@
       null,
       null,
       {
-        "name": "gaogamonb",
+        "name": "gaogamon_black",
         "color": "dark",
         "xCollapsable": false,
         "yCollapsable": false,
@@ -423,7 +423,7 @@
         ]
       },
       {
-        "name": "machgaogamonb",
+        "name": "machgaogamon_black",
         "color": "dark",
         "xCollapsable": true,
         "yCollapsable": false
@@ -477,7 +477,7 @@
       null,
       null,
       {
-        "name": "gazimonx",
+        "name": "gazimon_x",
         "color": "x",
         "from": [
           -1,
@@ -649,20 +649,20 @@
       "name": "wankomon",
       "for": "erlangmon"
     },
-    "omegamonmm",
+    "omegamon_merciful_mode",
     {
       "name": "greymon",
       "for": "omegamon"
     },
     {
       "name": "shoutmon",
-      "for": "shoutmonx3"
+      "for": "shoutmon_x3"
     },
     {
-      "name": "shoutmonx7"
+      "name": "shoutmon_x7"
     },
     {
-      "name": "shoutmonex6"
+      "name": "shoutmon_ex6"
     },
     {
       "name": "chimeramon",

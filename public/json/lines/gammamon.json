@@ -22,7 +22,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "samudramonbm",
+				"name": "samudramon_itto_mode",
 				"from": [[0, -1]],
 				"collapsable": true,
 				"color": ["mode"],
@@ -76,7 +76,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "ravemonbm",
+				"name": "ravemon_burst_mode",
 				"from": [[0, -1]],
 				"xCollapsable": true,
 				"yCollapsable": true,
@@ -199,7 +199,7 @@
 			null,
 			null,
 			{
-				"name": "monochromonx",
+				"name": "monochromon_x",
 				"color": "x",
 				"from": [1, 0],
 				"collapsable": false,
@@ -207,7 +207,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "triceramonx",
+				"name": "triceramon_x",
 				"color": "x",
 				"collapsable": false,
 				"xCollapsable": false,
@@ -254,7 +254,7 @@
 			{
 				"name": "huanglongmon",
 				"from": [[0, -1]],
-				"skins": ["huanglongmonrm"],
+				"skins": ["huanglongmon_rm"],
 				"collapsable": true,
 				"xCollapsable": true,
 				"yCollapsable": true
@@ -310,7 +310,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "dorbickmondm",
+				"name": "dorbickmon_darkness_mode",
 				"color": ["fusion", "fusion"],
 				"collapsable": true,
 				"from": [
@@ -360,7 +360,7 @@
 			"for": "tlalocmon"
 		},
 		{
-			"name": "falcomon2",
+			"name": "falcomon_2",
 			"for": "ravemon"
 		},
 		{

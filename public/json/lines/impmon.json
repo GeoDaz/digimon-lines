@@ -4,7 +4,7 @@
 			null,
 			null,
 			{
-				"name": "impmonx",
+				"name": "impmon_x",
 				"color": "x",
 				"xSize": 2,
 				"from": [2, 0],
@@ -12,21 +12,21 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "wizardmonx",
+				"name": "wizardmon_x",
 				"color": "x",
 				"xSize": 2,
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "baalmonx",
+				"name": "baalmon_x",
 				"color": "x",
 				"xSize": 2,
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "beelzebumonx",
+				"name": "beelzebumon_x",
 				"color": "x",
 				"from": [0.5, -1],
 				"xCollapsable": false,
@@ -41,14 +41,14 @@
 			null,
 			null,
 			{
-				"name": "beelstarmonx",
+				"name": "beelstarmon_x",
 				"color": "x",
 				"from": [-0.5, -1],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "nezhamoncm",
+				"name": "nezhamon_crimson_mode",
 				"from": [[0.5, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true,
@@ -95,12 +95,12 @@
 				"color": ["dark"],
 				"name": "beelzebumon",
 				"from": [[0, -1]],
-				"skins": ["beelzebumonbehemoth"],
+				"skins": ["beelzebumon_behemoth"],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "beelzebumonbm",
+				"name": "beelzebumon_blast_mode",
 				"color": "mode",
 				"xCollapsable": false,
 				"yCollapsable": true,
@@ -120,7 +120,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "beelzebumon2",
+				"name": "beelzebumon_2",
 				"color": ["dark"],
 				"from": [[0, -1]],
 				"xCollapsable": false,
@@ -206,7 +206,7 @@
 			null,
 			null,
 			{
-				"name": "barbamonx",
+				"name": "barbamon_x",
 				"color": "x",
 				"from": [-1, 0],
 				"xCollapsable": false,
@@ -223,14 +223,14 @@
 		{ "name": "devimon", "for": "skullsatamon" },
 		{ "name": "app_mienumon", "for": "app_vegasmon" },
 		{ "name": "app_cameramon", "for": "app_scopemon" },
-		{ "name": "shoutmon", "for": "shoutmonx4b" },
+		{ "name": "shoutmon", "for": "shoutmon_x4b" },
 		{ "name": "machmon", "from": "nezhamon" },
 		{ "name": "golemon", "for": "vulcanusmon" },
 		{ "name": "kakamon", "for": "dijiangmon" },
 		{ "name": "hookmon", "for": "magnakidmon" },
 		{ "name": "bemmon", "for": "omegaarmamon" },
 		{ "name": "gatomon", "for": "ladydevimon" },
-		{ "name": "sistermonblanc", "for": "sistermonnoirawake" }
+		{ "name": "sistermon_blanc", "for": "sistermon_noir_awake" }
 	],
 	"notes": [
 		"Astar is demon close to Beelzebub in the demonology but Astamon is already taken as an Ultimate/Perfect on Belphemon line."

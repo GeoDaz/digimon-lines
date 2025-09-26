@@ -22,7 +22,7 @@
                 ]
             },
             {
-                "name": "zephagamonbm",
+                "name": "zephagamon_blast_mode",
                 "xSize": 2,
                 "color": "mode",
                 "xCollapsable": false,
@@ -79,7 +79,7 @@
             null,
             null,
             {
-                "name": "darkpteromon",
+                "name": "dark_pteromon",
                 "from": [
                     [
                         -1,
@@ -141,7 +141,7 @@
                 "xCollapsable": false,
                 "yCollapsable": false,
                 "skins": [
-                    "yatagaramon2"
+                    "yatagaramon_2"
                 ],
                 "color": [
                     "wind"
@@ -200,7 +200,7 @@
     ],
     "related": [
         {
-            "name": "falcomon2",
+            "name": "falcomon_2",
             "for": "falcomon",
             "from": "diatrymon"
         },

@@ -56,7 +56,7 @@
 			null,
 			null,
 			{
-				"name": "herculeskabuterimonx",
+				"name": "herculeskabuterimon_x",
 				"color": "x",
 				"from": [1, 0],
 				"xCollapsable": false,
@@ -88,7 +88,7 @@
 			},
 			{
 				"name": "megakabuterimon",
-				"skins": ["megakabuterimonblue"],
+				"skins": ["megakabuterimon_blue"],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -127,21 +127,21 @@
 			null,
 			null,
 			{
-				"name": "kokuwamonx",
+				"name": "kokuwamon_x",
 				"from": [1, 0],
 				"color": "x",
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "kuwagamonx",
+				"name": "kuwagamon_x",
 				"from": [-1, 0],
 				"color": "x",
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "okuwamonx",
+				"name": "okuwamon_x",
 				"from": [
 					[-1, 0],
 					[0, -1]
@@ -302,12 +302,12 @@
 			"from": "kabuterimon"
 		},
 		{
-			"name": "omegamonmm",
+			"name": "omegamon_merciful_mode",
 			"from": "herculeskabuterimon"
 		},
 		{
 			"name": "shoutmon",
-			"for": "shoutmonx2"
+			"for": "shoutmon_x2"
 		}
 	],
 	"size": 7

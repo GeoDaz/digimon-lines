@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Image from 'next/image';
-import { makeClassName } from '@/functions';
+import { capitalize, makeClassName } from '@/functions';
 import { Spinner } from 'react-bootstrap';
 import { DIGIMON, LINE } from '@/consts/ui';
 import { LicenseContext } from '@/context/license';
@@ -22,7 +22,7 @@ interface Props extends React.ImgHTMLAttributes<any> {
 }
 const LineImage: React.FC<Props> = ({
 	name,
-	title = name,
+	title,
 	className,
 	style,
 	type = LINE,
@@ -59,6 +59,7 @@ const LineImage: React.FC<Props> = ({
 		}
 	}, [name, path]);
 
+	const capitalizedName = capitalize(name);
 	return (
 		<>
 			{loadable && loading && (
@@ -88,8 +89,8 @@ const LineImage: React.FC<Props> = ({
 				}}
 				width={Number(width) / ratioWidth}
 				height={Number(height) / ratioHeight}
-				alt={name}
-				title={title}
+				alt={capitalizedName}
+				title={title || capitalizedName}
 				className={makeClassName(
 					'line-img rounded',
 					expandable && 'click',
@@ -99,7 +100,7 @@ const LineImage: React.FC<Props> = ({
 				style={style}
 				onClick={() => expandable && setOpen(true)}
 			/>
-			<span className="sr-only">{name}</span>
+			<span className="sr-only">{capitalizedName}</span>
 			{expandable && open && (
 				<LineImageModal
 					name={name}

@@ -18,10 +18,10 @@
             null,
             null,
             {
-                "name": "bigukkomon",
+                "name": "big_ukkomon",
                 "color": "dark",
                 "skins": [
-                    "bigukkomonopen"
+                    "big_ukkomon_open"
                 ],
                 "from": [
                     0,
@@ -51,11 +51,11 @@
                     "marine"
                 ],
                 "skins": [
-                    "splashmondm"
+                    "splashmon_darkness_mode"
                 ]
             },
             {
-                "name": "splashmondm2",
+                "name": "splashmon_darkness_mode_2",
                 "from": [
                     [
                         0,
@@ -295,7 +295,7 @@
             null,
             null,
             {
-                "name": "shakomonx",
+                "name": "shakomon_x",
                 "color": "x",
                 "from": [
                     -1,
@@ -305,7 +305,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "gesomonx",
+                "name": "gesomon_x",
                 "color": "x",
                 "xCollapsable": false,
                 "yCollapsable": true

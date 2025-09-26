@@ -156,7 +156,7 @@
 				"color": ["machine"]
 			},
 			{
-				"name": "kentaurosmonx",
+				"name": "kentaurosmon_x",
 				"from": [[-1, 0]],
 				"xCollapsable": false,
 				"yCollapsable": true,
@@ -242,11 +242,11 @@
 			null,
 			null,
 			{
-				"name": "belphemonrm",
+				"name": "belphemon_rage_mode",
 				"from": [[-1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true,
-				"skins": ["belphemon"]
+				"skins": ["belphemon_sleep_mode"]
 			},
 			null
 		],
@@ -256,14 +256,14 @@
 			null,
 			null,
 			{
-				"name": "mephismonx",
+				"name": "mephismon_x",
 				"from": [[-2, 0]],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
-				"name": "belphemonrmx",
+				"name": "belphemon_x",
 				"from": [
 					[-1, 0],
 					[0, -1]
@@ -298,7 +298,7 @@
 		},
 		{
 			"name": "phascomon",
-			"from": "belphemonrm"
+			"from": "belphemon_rage_mode"
 		},
 		{
 			"name": "woodmon",

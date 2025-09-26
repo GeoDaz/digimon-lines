@@ -35,7 +35,7 @@
             },
             [
                 {
-                    "name": "elecmonb",
+                    "name": "elecmon_black",
                     "color": "dark",
                     "from": [
                         0.5,
@@ -76,7 +76,7 @@
                     "name": "leopardmon"
                 },
                 {
-                    "name": "abbadomoncore",
+                    "name": "abbadomon_core",
                     "color": "dark"
                 }
             ]
@@ -110,12 +110,12 @@
             "for": "loweemon"
         },
         {
-            "name": "pawnchessmonwhite",
+            "name": "pawnchessmon_white",
             "for": "darkknightmon"
         },
         {
             "name": "negamon",
-            "for": "abbadomoncore"
+            "for": "abbadomon_core"
         },
         {
             "name": "gatomon",

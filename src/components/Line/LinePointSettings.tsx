@@ -10,7 +10,7 @@ import colors, { legend } from '@/consts/colors';
 import UploadImage from '../UploadImage';
 import InputMono from '../InputMono';
 import { LicenseContext } from '@/context/license';
-import { makeClassName } from '@/functions';
+import { capitalize, makeClassName } from '@/functions';
 import ButtonRemove from '../Button/ButtonRemove';
 
 interface Props {
@@ -199,7 +199,7 @@ const LinePointSettings: React.FC<Props> = ({
 						<div className="d-flex flex-wrap gap-3">
 							{point.skins?.map((skin, i) => (
 								<h5 key={i} className="text-capitalize break-word">
-									{skin}{' '}
+									{capitalize(skin)}{' '}
 									<ButtonRemove
 										onClick={() => handleRemoveSkin(i)}
 										title="remove skin"
@@ -223,7 +223,7 @@ const SettingPoint: React.FC<{
 }> = ({ className, point, handleRemove, handleMirror, imgClassName }) => (
 	<div className={className}>
 		<h4 className="text-capitalize break-word mb-3">
-			{point.name} <ButtonRemove onClick={handleRemove} title="remove digimon" />{' '}
+			{capitalize(point.name)} <ButtonRemove onClick={handleRemove} title="remove digimon" />{' '}
 			<Button title="mirror mode" onClick={handleMirror}>
 				<Icon name="symmetry-vertical" />
 			</Button>

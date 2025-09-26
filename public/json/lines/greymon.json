@@ -25,7 +25,7 @@
             null,
             null,
             {
-                "name": "agumon2",
+                "name": "agumon_2",
                 "from": [
                     [
                         3.5,
@@ -63,7 +63,7 @@
                 ]
             },
             {
-                "name": "shinegreymonbm",
+                "name": "shinegreymon_burst_mode",
                 "color": "mode",
                 "from": [
                     0.5,
@@ -80,7 +80,7 @@
             null,
             null,
             {
-                "name": "rizegreymonx",
+                "name": "rizegreymon_x",
                 "from": [
                     [
                         -1,
@@ -100,7 +100,7 @@
             },
             null,
             {
-                "name": "shinegreymonrm",
+                "name": "shinegreymon_ruin_mode",
                 "color": "dark",
                 "from": [
                     -0.5,
@@ -115,7 +115,7 @@
             null,
             null,
             {
-                "name": "agumonx",
+                "name": "agumon_x",
                 "from": [
                     [
                         1.5,
@@ -129,7 +129,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "greymonx",
+                "name": "greymon_x",
                 "color": "x",
                 "xCollapsable": true,
                 "yCollapsable": false,
@@ -145,7 +145,7 @@
                 ]
             },
             {
-                "name": "metalgreymonx",
+                "name": "metalgreymon_x",
                 "color": "x",
                 "xCollapsable": true,
                 "yCollapsable": false,
@@ -161,7 +161,7 @@
                 ]
             },
             {
-                "name": "wargreymonx",
+                "name": "wargreymon_x",
                 "color": "x",
                 "xCollapsable": true,
                 "yCollapsable": false,
@@ -177,7 +177,7 @@
                 ]
             },
             {
-                "name": "omegamonx",
+                "name": "omegamon_x",
                 "color": "x",
                 "xCollapsable": false,
                 "yCollapsable": true,
@@ -212,9 +212,9 @@
                 "name": "agumon",
                 "xSize": 2,
                 "skins": [
-                    "agumon2",
-                    "bushiagumon",
-                    "hakaseagumon"
+                    "agumon_2",
+                    "bushi_agumon",
+                    "agumon_hakase"
                 ],
                 "xCollapsable": false,
                 "yCollapsable": false
@@ -255,7 +255,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "omegamonmm",
+                "name": "omegamon_merciful_mode",
                 "color": "fusion",
                 "xCollapsable": true,
                 "yCollapsable": true
@@ -267,7 +267,7 @@
             null,
             null,
             {
-                "name": "metalgreymonam",
+                "name": "metalgreymon_alter_mode",
                 "from": [
                     [
                         -1,
@@ -283,7 +283,7 @@
             },
             null,
             {
-                "name": "agumonbc",
+                "name": "agumon_yuki_no_kizuma",
                 "color": "mode",
                 "from": [
                     -0.5,
@@ -308,7 +308,7 @@
                 "xCollapsable": false,
                 "yCollapsable": true,
                 "skins": [
-                    "snowagumon2"
+                    "snowagumon_2"
                 ],
                 "color": [
                     "ice"
@@ -331,7 +331,7 @@
                 ]
             },
             {
-                "name": "omegamonam",
+                "name": "omegamon_alter_s",
                 "from": [
                     [
                         0,
@@ -360,8 +360,8 @@
                 "xCollapsable": false,
                 "yCollapsable": false,
                 "skins": [
-                    "hakaseagumon",
-                    "hakaseagumonb"
+                    "agumon_hakase",
+                    "nise_agumon_hakase"
                 ]
             },
             {
@@ -513,9 +513,9 @@
             null,
             null,
             {
-                "name": "toyagumonb",
+                "name": "toyagumon_black",
                 "skins": [
-                    "cleartoyagumonb"
+                    "cleartoyagumon_black"
                 ],
                 "from": [
                     [
@@ -558,7 +558,7 @@
                 ]
             },
             {
-                "name": "chaosdramonx",
+                "name": "chaosdramon_x",
                 "from": [
                     [
                         -1,
@@ -606,7 +606,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "agumonb",
+                "name": "agumon_black",
                 "from": [
                     [
                         0,
@@ -617,26 +617,26 @@
                     "dark"
                 ],
                 "skins": [
-                    "agumonb2",
-                    "hakaseagumonb"
+                    "agumon_black_2",
+                    "nise_agumon_hakase"
                 ],
                 "xCollapsable": false,
                 "yCollapsable": false
             },
             {
-                "name": "greymonb",
+                "name": "greymon_blue",
                 "color": "dark",
                 "xCollapsable": false,
                 "yCollapsable": false
             },
             {
-                "name": "metalgreymonb",
+                "name": "metalgreymon_blue",
                 "color": "dark",
                 "xCollapsable": false,
                 "yCollapsable": false
             },
             {
-                "name": "wargreymonb",
+                "name": "black_wargreymon",
                 "color": "dark",
                 "skins": [
                     "chaoswargreymon"
@@ -645,10 +645,10 @@
                 "yCollapsable": false
             },
             {
-                "name": "omegamonb",
+                "name": "omegamon_zwart",
                 "color": "fusion",
                 "skins": [
-                    "omegamonbrm"
+                    "omegamon_zwart_defeat"
                 ],
                 "xCollapsable": false,
                 "yCollapsable": true
@@ -659,7 +659,7 @@
             null,
             null,
             {
-                "name": "agumonbx",
+                "name": "agumon_black_x",
                 "color": "x",
                 "from": [
                     [
@@ -671,7 +671,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "greymonbx",
+                "name": "greymon_blue_x",
                 "color": "x",
                 "xCollapsable": true,
                 "yCollapsable": false,
@@ -687,7 +687,7 @@
                 ]
             },
             {
-                "name": "metalgreymonbx",
+                "name": "metalgreymon_blue_x",
                 "color": "x",
                 "xCollapsable": true,
                 "yCollapsable": false,
@@ -703,7 +703,7 @@
                 ]
             },
             {
-                "name": "wargreymonbx",
+                "name": "black_wargreymon_x",
                 "color": "x",
                 "xCollapsable": false,
                 "yCollapsable": false,
@@ -719,7 +719,7 @@
                 ]
             },
             {
-                "name": "omegamonbam",
+                "name": "omegamon_bam",
                 "color": "mode",
                 "from": [
                     -1,
@@ -734,7 +734,7 @@
             null,
             null,
             {
-                "name": "bushiagumon",
+                "name": "bushi_agumon",
                 "from": [
                     [
                         1,
@@ -766,7 +766,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "samudramonbm",
+                "name": "samudramon_itto_mode",
                 "color": "mode",
                 "xCollapsable": false,
                 "yCollapsable": true
@@ -792,7 +792,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "gaossmonb",
+                "name": "gaossmon",
                 "color": [
                     "dark"
                 ],
@@ -803,27 +803,27 @@
                     ]
                 ],
                 "_com_skins": [
-                    "gaossmon"
+                    "gaossmon_red"
                 ],
                 "xCollapsable": false,
                 "yCollapsable": false,
                 "skins": []
             },
             {
-                "name": "greymonb3",
+                "name": "greymon_blue_2",
                 "color": "dark",
                 "_com_skins": [
-                    "greymon3",
-                    "ashgreymon"
+                    "greymon_3",
+                    "ash_greymon_3"
                 ],
                 "xCollapsable": false,
                 "yCollapsable": false
             },
             {
-                "name": "metalgreymonb3",
+                "name": "metalgreymon_blue_2",
                 "color": "dark",
                 "skins": [
-                    "deckergreymon"
+                    "decker_greymon"
                 ],
                 "xCollapsable": false,
                 "yCollapsable": false
@@ -834,11 +834,11 @@
                 "xCollapsable": false,
                 "yCollapsable": false,
                 "skins": [
-                    "shoutmondx"
+                    "shoutmon_dx"
                 ]
             },
             {
-                "name": "shoutmonx7",
+                "name": "shoutmon_x7",
                 "from": [
                     [
                         0,
@@ -851,11 +851,11 @@
                     "fusion"
                 ],
                 "skins": [
-                    "shoutmonex6"
+                    "shoutmon_ex6"
                 ]
             },
             {
-                "name": "shoutmonx7sm",
+                "name": "shoutmon_x7_superior_mode",
                 "from": [
                     [
                         0,
@@ -917,7 +917,7 @@
                 "mirror": false
             },
             {
-                "name": "shoutmonx7b",
+                "name": "shoutmon_x7_black",
                 "from": [
                     [
                         -1,
@@ -1044,7 +1044,7 @@
         ]
     ],
     "related": [
-        "omegamonmm",
+        "omegamon_merciful_mode",
         {
             "name": "tyranomon",
             "from": "agumon"
@@ -1076,7 +1076,7 @@
         },
         {
             "name": "shoutmon",
-            "for": "shoutmondx"
+            "for": "shoutmon_dx"
         },
         {
             "name": "apocalymon",

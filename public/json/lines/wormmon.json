@@ -43,14 +43,14 @@
 				"collapsable": true,
 				"color": ["fusion"]
 			},
-			{ "name": "imperialdramon", "from": [[0, -1]] },
+			{ "name": "imperialdramon_dragon_mode", "from": [[0, -1]] },
 			{
-				"name": "imperialdramonfm",
+				"name": "imperialdramon_fighter_mode",
 				"from": [[0, -1]],
 				"color": ["mode"]
 			},
 			{
-				"name": "imperialdramonpm",
+				"name": "imperialdramon_paladin_mode",
 				"from": [[0, -1]],
 				"collapsable": true,
 				"color": ["fusion"]
@@ -60,18 +60,18 @@
 			null,
 			null,
 			null,
-			{ "name": "stingmonb", "from": [[-1.5, -1]], "color": ["dark"] },
+			{ "name": "stingmon_black", "from": [[-1.5, -1]], "color": ["dark"] },
 			{
 				"name": "paildramonb",
 				"color": ["dark"],
 				"collapsable": true
 			},
 			{
-				"name": "imperialdramonb",
+				"name": "imperialdramon_black",
 				"color": ["dark"],
 				"collapsable": true
 			},
-			{ "name": "imperialdramonfmb", "color": "mode" },
+			{ "name": "imperialdramon_fighter_mode_black", "color": "mode" },
 			null
 		],
 		[
@@ -114,7 +114,7 @@
 			{
 				"name": "pucchiemon",
 				"from": [[-4.5, -1]],
-				"skins": ["pucchiemongreen"],
+				"skins": ["pucchiemon_green"],
 				"color": ["light"]
 			},
 			null,

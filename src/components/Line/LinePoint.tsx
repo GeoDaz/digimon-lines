@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { makeClassName } from '@/functions';
+import { capitalize, makeClassName } from '@/functions';
 import Icon from '@/components/Icon';
 import { GROUP, LINE } from '@/consts/ui';
 import LineImage from './LineImage';
@@ -27,10 +27,11 @@ const LinePoint: React.FC<Props> = ({
 	grid,
 	...props
 }) => {
+	const capitalizedName = capitalize(name);
 	if (available === false) {
 		return (
 			<div
-				title={name}
+				title={capitalizedName}
 				className={makeClassName(
 					'line-point pictured unavailable',
 					type === GROUP && 'group',
@@ -51,7 +52,7 @@ const LinePoint: React.FC<Props> = ({
 	return (
 		<Link
 			href={`/${type}/${line}`}
-			title={name}
+			title={capitalizedName}
 			className={makeClassName(
 				'line-point pictured',
 				available && 'available',

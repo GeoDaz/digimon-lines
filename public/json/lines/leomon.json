@@ -7,7 +7,7 @@
         null,
         null,
         {
-          "name": "leopardmonx",
+          "name": "leopardmon_x",
           "color": [
             "x"
           ],
@@ -40,7 +40,7 @@
             ]
           ],
           "skins": [
-            "leopardmonlm"
+            "leopardmon_leopard_mode"
           ],
           "collapsable": false,
           "xCollapsable": false,
@@ -167,7 +167,7 @@
           "yCollapsable": false
         },
         {
-          "name": "chaosmonvm",
+          "name": "chaosmon_valdur_mode",
           "from": [
             [
               -0.5,
@@ -343,7 +343,7 @@
           ]
         },
         {
-          "name": "leomonx",
+          "name": "leomon_x",
           "color": "x",
           "from": [
             [
@@ -356,7 +356,7 @@
           "yCollapsable": false
         },
         {
-          "name": "panjyamonx",
+          "name": "panjyamon_x",
           "color": "x",
           "collapsable": true,
           "xCollapsable": false,
@@ -399,7 +399,7 @@
         null,
         null,
         {
-          "name": "elecmonb",
+          "name": "elecmon_black",
           "color": "dark",
           "from": [
             [
@@ -515,7 +515,7 @@
           ]
         },
         {
-          "name": "madleomonarmed",
+          "name": "madleomon_armed",
           "from": [
             [
               0,
@@ -525,15 +525,15 @@
           "xCollapsable": false,
           "yCollapsable": false,
           "skins": [
-            "madleomonorochi",
-            "madleomonfm"
+            "madleomon_orochi",
+            "madleomon_final_mode"
           ],
           "color": [
             "fusion"
           ]
         },
         {
-          "name": "apollomonwhispered",
+          "name": "apollomon_whispered",
           "from": [
             [
               1,
@@ -546,7 +546,7 @@
             "dark"
           ],
           "skins": [
-            "apollomondarknessmode"
+            "apollomon_darkness_mode"
           ]
         },
         null,
@@ -616,8 +616,8 @@
         "from": "chaosmon"
       },
       {
-        "name": "falcomon2",
-        "from": "chaosmonvm"
+        "name": "falcomon_2",
+        "from": "chaosmon_valdur_mode"
       },
       {
         "name": "kamemon",

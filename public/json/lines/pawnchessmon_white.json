@@ -20,7 +20,7 @@
             },
             null,
             {
-                "name": "lordknightmonx",
+                "name": "lordknightmon_x",
                 "color": "x",
                 "from": [
                     1,
@@ -69,7 +69,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "pawnchessmonwhite",
+                "name": "pawnchessmon_white",
                 "from": [
                     0.5,
                     -1
@@ -78,14 +78,14 @@
                 "yCollapsable": false
             },
             {
-                "name": "knightchessmonwhite",
+                "name": "knightchessmon_white",
                 "xCollapsable": false,
                 "yCollapsable": false
             },
             {
-                "name": "bishopchessmonwhite",
+                "name": "bishopchessmon_white",
                 "skins": [
-                    "rockchessmonwhite"
+                    "rockchessmon_white"
                 ],
                 "xCollapsable": false,
                 "yCollapsable": false
@@ -100,7 +100,7 @@
             null,
             null,
             {
-                "name": "pawnchessmonblack",
+                "name": "pawnchessmon_black",
                 "from": [
                     -0.5,
                     -1
@@ -109,14 +109,14 @@
                 "yCollapsable": false
             },
             {
-                "name": "knightchessmonblack",
+                "name": "knightchessmon_black",
                 "xCollapsable": false,
                 "yCollapsable": false
             },
             {
-                "name": "rockchessmonblack",
+                "name": "rockchessmon_black",
                 "skins": [
-                    "bishopchessmonblack"
+                    "bishopchessmon_black"
                 ],
                 "xCollapsable": false,
                 "yCollapsable": false
@@ -160,8 +160,8 @@
                 "xCollapsable": true,
                 "yCollapsable": false,
                 "skins": [
-                    "skullknightmoncavalier",
-                    "skullknightmonaxe"
+                    "skullknightmon_cavalier",
+                    "skullknightmon_axe"
                 ],
                 "color": [
                     "fusion",
@@ -169,11 +169,11 @@
                 ]
             },
             {
-                "name": "superdarkknightmon",
+                "name": "super_darkknightmon",
                 "color": "fusion",
                 "skins": [
                     "greyknightsmon",
-                    "darkknightmonbagramon"
+                    "darkknightmon_bagramon"
                 ],
                 "from": [
                     [
@@ -235,7 +235,7 @@
                 ]
             },
             {
-                "name": "darkknightmonx",
+                "name": "darkknightmon_x",
                 "color": "x",
                 "from": [
                     [
@@ -247,7 +247,7 @@
                 "yCollapsable": false
             },
             {
-                "name": "craniummonx",
+                "name": "craniummon_x",
                 "color": "x",
                 "xCollapsable": false,
                 "yCollapsable": true,
@@ -285,7 +285,7 @@
         },
         {
             "name": "shoutmon",
-            "for": "shoutmonx3sd"
+            "for": "shoutmon_x3sd"
         },
         {
             "name": "angemon",
@@ -293,7 +293,7 @@
         },
         {
             "name": "greymon",
-            "for": "metalgreymonb3"
+            "for": "metalgreymon_blue_2"
         },
         {
             "name": "greymon",
