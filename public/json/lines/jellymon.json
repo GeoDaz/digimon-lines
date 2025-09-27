@@ -1,448 +1,535 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "ukkomon",
-                "color": "light",
-                "from": [
-                    [
-                        5,
-                        -1
-                    ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": true
-            },
-            null,
-            null,
-            {
-                "name": "big_ukkomon",
-                "color": "dark",
-                "skins": [
-                    "big_ukkomon_open"
-                ],
-                "from": [
-                    0,
-                    -3
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "splashmon",
-                "from": [
-                    [
-                        2,
-                        -0.5
-                    ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false,
-                "color": [
-                    "marine"
-                ],
-                "skins": [
-                    "splashmon_darkness_mode"
-                ]
-            },
-            {
-                "name": "splashmon_darkness_mode_2",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true,
-                "color": [
-                    "fusion"
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "calamaramon",
-                "from": [
-                    [
-                        1,
-                        0
-                    ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false,
-                "ySize": 2,
-                "color": [
-                    "slide"
-                ]
-            },
-            null,
-            {
-                "name": "shagaramon",
-                "color": [
-                    "marine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1.5
-                    ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "ranamon",
-                "color": "marine",
-                "from": [
-                    [
-                        2,
-                        -1.5
-                    ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false,
-                "ySize": 2
-            },
-            null,
-            {
-                "name": "ancientmermaimon",
-                "color": "marine",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ],
-                    [
-                        0,
-                        -1.5
-                    ],
-                    [
-                        -1,
-                        -1.5
-                    ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "mermaimon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false,
-                "color": [
-                    "light"
-                ]
-            },
-            {
-                "name": "marineangemon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true,
-                "color": [
-                    "light"
-                ]
-            },
-            null
-        ],
-        [
-            {
-                "name": "puyomon",
-                "from": null,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "puyoyomon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "jellymon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "teslajellymon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "thetismon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "amphimon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            {
-                "name": "tomorimon",
-                "xCollapsable": true,
-                "yCollapsable": false,
-                "from": null
-            },
-            {
-                "name": "onibimon",
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "gasamon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "octomon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "dagomon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "neptunemon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "shakomon",
-                "color": "marine",
-                "from": [
-                    -2,
-                    -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "gesomon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "marinedevimon",
-                "color": "dark",
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "cthyllamon",
-                "color": "dark",
-                "xCollapsable": true,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "shakomon_x",
-                "color": "x",
-                "from": [
-                    -1,
-                    0
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "gesomon_x",
-                "color": "x",
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null,
-            null,
-            null
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "sangomon",
-                "color": "marine",
-                "from": [
-                    -4,
-                    -1
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "shellmon",
-                "color": "marine",
-                "skins": [
-                    "morishellmon"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "marinbullmon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "ryugumon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "ariemon",
-                "color": "marine",
-                "xCollapsable": true,
-                "yCollapsable": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "depthmon",
-                "color": "marine",
-                "from": [
-                    -1,
-                    -1
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "divemon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "surfimon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "hangyomon",
-                "color": "marine",
-                "from": [
-                    -1,
-                    -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "regalecusmon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ]
-    ],
-    "related": [
-        {
-            "name": "app_dokamon",
-            "for": "app_poseidomon"
-        },
-        {
-            "name": "hookmon",
-            "from": "mermaimon"
-        },
-        {
-            "name": "fujamon",
-            "from": "depthmon"
-        },
-        {
-            "name": "betamon",
-            "for": "leviamon"
-        },
-        {
-            "name": "devimon",
-            "from": "marinedevimon"
-        },
-        {
-            "name": "angemon",
-            "from": "marineangemon"
-        },
-        {
-            "name": "numemon",
-            "for": "gerbemon"
-        },
-        {
-            "name": "gatomon",
-            "for": "venusmon"
-        }
-    ],
-    "notes": [
-        "This line is about octopus, seashells and mermaids."
-    ],
-    "size": 7
-}
+	"columns": [
+	  [
+		null,
+		null,
+		{
+		  "name": "shakomon_x",
+		  "color": "x",
+		  "from": [
+			[
+			  1,
+			  0
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "gesomon_x",
+		  "color": "x",
+		  "xCollapsable": false,
+		  "yCollapsable": true,
+		  "from": [
+			[
+			  1,
+			  0
+			],
+			[
+			  0,
+			  -1
+			]
+		  ]
+		},
+		null,
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		{
+		  "name": "shakomon",
+		  "color": "marine",
+		  "from": [
+			[
+			  2,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "gesomon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "marinedevimon",
+		  "color": "dark",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "cthyllamon",
+		  "color": "dark",
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		{
+		  "name": "sangomon",
+		  "color": "marine",
+		  "from": [
+			[
+			  1,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "shellmon",
+		  "color": "marine",
+		  "skins": [
+			"morishellmon"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "marinbullmon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "ryugumon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "ariemon",
+		  "color": "marine",
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		}
+	  ],
+	  [
+		{
+		  "name": "puyomon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "puyoyomon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "jellymon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "teslajellymon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "thetismon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "amphimon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		{
+		  "name": "tomorimon",
+		  "xCollapsable": true,
+		  "yCollapsable": false,
+		  "from": null
+		},
+		{
+		  "name": "onibimon",
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "gasamon",
+		  "color": "marine",
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "octomon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "dagomon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "neptunemon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": true,
+		  "from": [
+			[
+			  1,
+			  -1
+			],
+			[
+			  0,
+			  -1
+			]
+		  ]
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "depthmon",
+		  "color": "marine",
+		  "from": [
+			-1,
+			-1
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "hangyomon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "regalecusmon",
+		  "color": "marine",
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		null,
+		{
+		  "name": "divemon",
+		  "from": [
+			[
+			  -1,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false,
+		  "color": [
+			"marine"
+		  ]
+		},
+		{
+		  "name": "surfimon",
+		  "from": [
+			[
+			  0,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true,
+		  "color": [
+			"marine"
+		  ]
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		null,
+		{
+		  "name": "mermaimon",
+		  "from": [
+			[
+			  -2,
+			  -1
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false,
+		  "color": [
+			"marine"
+		  ]
+		},
+		{
+		  "name": "marineangemon",
+		  "from": [
+			[
+			  0,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true,
+		  "color": [
+			"light"
+		  ]
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "calamaramon",
+		  "from": [
+			[
+			  1,
+			  0
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false,
+		  "ySize": 2,
+		  "color": [
+			"slide"
+		  ]
+		},
+		null,
+		{
+		  "name": "shagaramon",
+		  "color": [
+			"marine",
+			"marine"
+		  ],
+		  "from": [
+			[
+			  -1,
+			  -1
+			],
+			[
+			  0,
+			  -1.5
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		{
+		  "name": "puyomon",
+		  "from": null,
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "puyoyomon",
+		  "from": null,
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "jellymon",
+		  "from": [
+			[
+			  0,
+			  -2
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": true,
+		  "color": [
+			"marine"
+		  ]
+		},
+		{
+		  "name": "ranamon",
+		  "color": [
+			"marine"
+		  ],
+		  "from": [
+			[
+			  0,
+			  -1.5
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false,
+		  "ySize": 2
+		},
+		null,
+		{
+		  "name": "ancientmermaimon",
+		  "color": [
+			"marine",
+			"marine"
+		  ],
+		  "from": [
+			[
+			  0,
+			  -1.5
+			],
+			[
+			  -2,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		null,
+		{
+		  "name": "splashmon",
+		  "from": [
+			[
+			  -1,
+			  -0.5
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false,
+		  "color": [
+			"marine"
+		  ],
+		  "skins": []
+		},
+		{
+		  "name": "splashmon_darkness_mode_2",
+		  "from": [
+			[
+			  0,
+			  -1
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": true,
+		  "color": [
+			"fusion"
+		  ]
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		null,
+		{
+		  "name": "splashmon_darkness_mode",
+		  "from": [
+			[
+			  -1,
+			  0
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": true,
+		  "color": [
+			"mode"
+		  ]
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		{
+		  "name": "ukkomon",
+		  "color": "light",
+		  "from": [
+			[
+			  -3,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null,
+		{
+		  "name": "big_ukkomon",
+		  "color": "dark",
+		  "skins": [
+			"big_ukkomon_open"
+		  ],
+		  "from": [
+			0,
+			-3
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ]
+	],
+	"related": [
+	  {
+		"name": "app_dokamon",
+		"for": "app_poseidomon"
+	  },
+	  {
+		"name": "hookmon",
+		"from": "mermaimon"
+	  },
+	  {
+		"name": "fujamon",
+		"from": "depthmon"
+	  },
+	  {
+		"name": "betamon",
+		"for": "leviamon"
+	  },
+	  {
+		"name": "devimon",
+		"from": "marinedevimon"
+	  },
+	  {
+		"name": "angemon",
+		"from": "marineangemon"
+	  },
+	  {
+		"name": "numemon",
+		"for": "gerbemon"
+	  },
+	  {
+		"name": "gatomon",
+		"for": "venusmon"
+	  }
+	],
+	"notes": [
+	  "This line is about octopus, seashells and mermaids."
+	],
+	"size": 7
+  }
