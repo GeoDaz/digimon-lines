@@ -80,8 +80,7 @@
 				"xCollapsable": true,
 				"yCollapsable": true
 			}
-		],
-		[null, null, null, null, null, null]
+		]
 	],
 	"related": [
 		{
@@ -96,13 +95,11 @@
 			"name": "bearmon",
 			"from": "porcupamon"
 		},
-		{
-			"name": "aegiomon",
-			"from": "mephismon"
-		},
+		"pillowmon",
+		"aegiomon",
 		{
 			"name": "turkimon",
-			"from": "mephismon"
+			"from": "gulfmon"
 		}
 	],
 	"size": 6

@@ -45,7 +45,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "pillowmon",
+				"name": "elecmon",
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
@@ -65,8 +65,7 @@
 					[0, -1],
 					[-1, -0.5],
 					[-2, -0.5],
-					[1, -0.5],
-					[2, -0.5]
+					[1, -0.5]
 				],
 				"xCollapsable": true,
 				"yCollapsable": false,
@@ -99,14 +98,8 @@
 		[
 			null,
 			null,
+			{ "name": "elecmon_violet", "color": "dark", "from": [-2, -1] },
 			null,
-			{
-				"name": "moosemon",
-				"color": "ice",
-				"from": [-2, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
 			{
 				"name": "aegiochusmon_dark",
 				"color": "dark",
@@ -122,115 +115,30 @@
 			null,
 			null,
 			null,
-			{
-				"name": "sheepmon",
-				"from": [-3, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "pajiramon",
-				"from": [[0, -1], [-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "kentaurosmon",
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null
-		],
-		[
-			null,
 			null,
 			null,
 			{
-				"name": "oryxmon",
-				"color": "light",
-				"from": [-4, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "mephismon",
+				"name": "chronomon_destroy_mode",
 				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [-1, -0.5]
 			},
-			{
-				"name": "gulfmon",
-				"color": "dark",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null
-		],
-		[
 			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "belphemon_rage_mode",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"skins": ["belphemon_sleep_mode"],
-				"color": ["dark"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "mephismon_x",
-				"from": [[-2, 0]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["x"]
-			},
-			{
-				"name": "belphemon_x",
-				"from": [
-					[-1, 0],
-					[0, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"color": ["x", "x"]
-			},
 			null
 		]
 	],
 	"related": [
+		"pillowmon",
 		{
-			"name": "phascomon",
-			"from": "mephismon"
+			"name": "hyokomon",
+			"from": "chronomon_destroy_mode"
 		},
 		{
 			"name": "turkimon",
 			"for": "oryxmon"
 		},
 		{
-			"name": "tapirmon",
-			"from": "moosemon"
-		},
-		{
-			"name": "woodmon",
-			"for": "cernumon"
-		},
-		{
-			"name": "renamon",
-			"for": "kentaurosmon"
+			"name": "phascomon",
+			"for": "mephismon"
 		}
 	],
 	"size": 7
