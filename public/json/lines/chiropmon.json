@@ -1,0 +1,32 @@
+{
+	"columns": [
+		[
+			{
+				"name": "unknown"
+			},
+			{
+				"name": "unknown"
+			},
+			{
+				"name": "chiropmon"
+			},
+			{
+				"name": "unknown"
+			},
+			{
+				"name": "unknown"
+			},
+			{
+				"name": "unknown"
+			}
+		],
+		[null, null, null, null, { "name": "pipismon", "from": [-1, -1] }, null, null]
+	],
+	"related": [
+		{
+			"name": "devimon",
+			"for": "myotismon",
+			"from": "demidevimon"
+		}
+	]
+}
