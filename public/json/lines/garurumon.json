@@ -405,7 +405,20 @@
     [
       null,
       null,
-      null,
+      {
+        "name": "gazimon",
+        "from": [
+          [
+            -1,
+            -1
+          ]
+        ],
+        "xCollapsable": false,
+        "yCollapsable": false,
+        "color": [
+          "dark"
+        ]
+      },
       {
         "name": "gaogamon_black",
         "color": "dark",
@@ -439,43 +452,6 @@
     ],
     [
       null,
-      null,
-      {
-        "name": "gazimon",
-        "from": [
-          [
-            -2,
-            -1
-          ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": false,
-        "color": [
-          "dark"
-        ]
-      },
-      {
-        "name": "hyemon",
-        "from": [
-          [
-            0,
-            -1
-          ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": true,
-        "color": [
-          "dark"
-        ]
-      },
-      null,
-      null,
-      null,
-      null
-    ],
-    [
-      null,
-      null,
       {
         "name": "gazimon_x",
         "color": "x",
@@ -496,6 +472,28 @@
         ],
         "xCollapsable": false,
         "yCollapsable": true,
+        "color": [
+          "dark"
+        ]
+      },
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      {
+        "name": "hyemon",
+        "from": [
+          [
+            -3,
+            -1
+          ]
+        ],
+        "xCollapsable": false,
+        "yCollapsable": false,
         "color": [
           "dark"
         ]
