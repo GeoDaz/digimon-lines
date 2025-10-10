@@ -183,11 +183,10 @@
 		"vorvomon",
 		"blucomon",
 		{ "name": "greymon", "for": "greymon_blue_2" },
-		{ "name": "pteromon", "from": "pteranomon" },
 		{ "name": "commandramon", "for": "cargodramon" },
 		{ "name": "betamon", "for": "gigadramon" },
 		{ "name": "maquinamon", "for": "mockingbirdmon" },
-		{ "name": "hagurumon", "for": "blimpmon" },
+		{ "name": "hagurumon", "for": "masterblimpmon" },
 		{ "name": "tentomon", "for": "kokuwamon" },
 		"espimon",
 		{ "name": "penmon", "for": "peacockmon" },
@@ -195,7 +194,8 @@
 		{ "name": "fairymon", "for": "jetsilphymon" },
 		{ "name": "garurumon", "for": "machgaogamon" },
 		{ "name": "aegiomon", "for": "aegiochusmon_blue" },
-		{ "name": "terriermon", "for": "rapidmon" }
+		{ "name": "terriermon", "for": "rapidmon" },
+		{ "name": "pteromon", "from": "pteranomon" }
 	],
 	"size": 6
 }
