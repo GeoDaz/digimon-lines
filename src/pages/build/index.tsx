@@ -78,16 +78,18 @@ export const PageBuild = (props: BuildProps) => {
 			metadescription={`Build your own ${licenceContext.name} lines. be creative your are free.`}
 		>
 			<blockquote className="blockquote">
-				<b>Click</b> on a case from the grid to set a {licenceContext.name}.
-				<br /> You can make up to 2 relation from a {licenceContext.name} to
-				another one, but a{licenceContext.name} can receive an unlimited number of
-				relations.
-				<br /> At the moment there is no download button for images, the only way
-				is to move zoom to the percent you need to get the full image, toggle the
-				edit button and get a manual screenshot.
-				<br /> Your work is saved on the browser for one line at a time but you
-				can export it on your computer with the <b>Save</b> button and rework it
-				later with the <b>Import</b> button.
+				<b>Click</b> on a case from the grid to set a {licenceContext.name}. The{' '}
+				<Icon name="bezier2" title="link" /> button will allow you to link two
+				digimons together.
+				<br /> If you click on a digimon image, you can access to new parameters
+				like&nbsp;: change the line color or add some sub images.
+				<br /> The <b>Save as</b> button will allow you to download the line as an
+				image or code.
+				<br /> The image option doesn't work with <b>uploaded images</b>, but it
+				will works with <b>images urls</b>.
+				<br /> Your work is saved on the browser for one line at a time, but you
+				can export it on your computer with the <b>Save as Code</b> button and
+				update it later with the <b>Import from {'{}'}</b> button.
 			</blockquote>
 			<div className="line-filters align-items-center">
 				<BoostrapSwitch

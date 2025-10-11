@@ -14,6 +14,7 @@ import useQueryParam from '@/hooks/useQueryParam';
 import { stringToKey } from '@/functions';
 import { StringArrayObject } from '@/types/Ui';
 import { APPMON } from '@/consts/ui';
+import Link from 'next/link';
 
 const SEARCH = 'search';
 const defaultData = {
@@ -83,6 +84,12 @@ const PageLines: React.FC<Props> = props => {
 			<blockquote className="blockquote">
 				The aim of this site is to present evolutionary lines designed to bring
 				together members of the same species.
+				<br />
+				You can go to the{' '}
+				<Link href="/build" className="btn btn-primary">
+					builder
+				</Link>{' '}
+				to create your own lines&nbsp;!
 			</blockquote>
 			<SearchBar
 				label="Research a digimon"
