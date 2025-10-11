@@ -86,8 +86,8 @@ const PageLines: React.FC<Props> = props => {
 				together members of the same species.
 				<br />
 				You can go to the{' '}
-				<Link href="/build" className="btn btn-primary">
-					builder
+				<Link href="/build" className="btn btn-primary px-2 py-1">
+					Builder
 				</Link>{' '}
 				to create your own lines&nbsp;!
 			</blockquote>
