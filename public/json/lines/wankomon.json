@@ -133,6 +133,7 @@
 			{
 				"name": "plutomon",
 				"color": "dark",
+				"from": [[-1, -1],[0, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
 			}
@@ -153,7 +154,13 @@
 				"yCollapsable": true
 			},
 			null,
-			null
+			{
+				"name": "plutomon",
+				"color": "dark",
+				"from": [[-1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
 		]
 	],
 	"related": [
