@@ -117,7 +117,14 @@
 				"yCollapsable": true,
 				"color": ["dark"]
 			},
-			null
+			null,
+			{
+				"name": "titamon_skullbaluchimon",
+				"color": "fusion",
+				"from": [[0, -2]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			}
 		],
 		[
 			null,
@@ -156,6 +163,7 @@
 		[null, null, null, null, null, null]
 	],
 	"related": [
+		{ "name": "ogremon", "for": "titamon" },
 		{ "name": "gatomon", "for": "skullbaluchimon" },
 		{ "name": "pillowmon", "for": "moosemon" },
 		{ "name": "meramon", "from": "demimeramon" },

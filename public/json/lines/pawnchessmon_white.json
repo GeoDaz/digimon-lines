@@ -214,7 +214,13 @@
                         -1
                     ]
                 ]
-            }
+            },
+			{
+				"name": "craniummon_enbarrmon",
+				"color": "fusion",
+				"xCollapsable": false,
+				"yCollapsable": false
+			}
         ],
         [
             null,
@@ -265,6 +271,7 @@
         ]
     ],
     "related": [
+        { "name": "turkimon", "for": "enbarrmon" },
         { "name": "app_ropuremon", "for": "app_protecmon" },
         "kotemon",
         {

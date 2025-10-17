@@ -80,6 +80,12 @@
 				"name": "titamon",
 				"xCollapsable": false,
 				"yCollapsable": true
+			},
+			{
+				"name": "titamon_skullbaluchimon",
+				"color": "fusion",
+				"xCollapsable": false,
+				"yCollapsable": false
 			}
 		],
 		[
@@ -151,6 +157,10 @@
 		]
 	],
 	"related": [
+		{
+			"name": "tapirmon",
+			"from": "skullbaluchimon"
+		},
 		{
 			"name": "hyokomon",
 			"from": "digitamamon"

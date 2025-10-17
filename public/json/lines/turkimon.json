@@ -196,8 +196,29 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "indaramon",
+				"name": "enbarrmon",
 				"from": [[0, -1]],
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			null,
+			{
+				"name": "craniummon_enbarrmon",
+				"color": "fusion",
+				"from": [[0, -2]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "indaramon",
+				"from": [[-1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -212,6 +233,7 @@
 		]
 	],
 	"related": [
+		{ "name": "pawnchessmon_white", "for": "craniummon" },
 		"pillowmon",
 		{
 			"name": "dokugumon",
