@@ -1,89 +1,83 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "cyberdramon_x",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            {
-                "name": "justimon_x",
-                "color": "x"
-            }
-        ],
-        [
-            {
-                "name": "ketomon"
-            },
-            {
-                "name": "hopmon"
-            },
-            {
-                "name": "monodramon"
-            },
-            {
-                "name": "strikedramon"
-            },
-            {
-                "name": "cyberdramon"
-            },
-            {
-                "name": "justimon",
-                "color": "human",
-                "skins": [
-                    "justimon_critical_arm",
-                    "justimon_accel_arm"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "cyberdramon_2",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "darkdramon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "commandramon",
-            "from": "darkdramon"
-        },
-        {
-            "name": "ultimatechaosmon",
-            "for": "chaosmon"
-        },
-        {
-            "name": "raidenmon",
-            "from": "justimon"
-        },
-        {
-            "name": "starmon",
-            "from": "justimon"
-        },
-        {
-            "name": "bearmon",
-            "for": "pandamon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "cyberdramon_x",
+				"color": "x",
+				"from": [
+					[1, 0]
+				]
+			},
+			{
+				"name": "justimon_x",
+				"color": "x",
+				"from": [
+					[0, -1],
+					[1, 0]
+				]
+			}
+		],
+		[
+			{
+				"name": "ketomon"
+			},
+			{
+				"name": "hopmon"
+			},
+			{
+				"name": "monodramon"
+			},
+			{
+				"name": "strikedramon"
+			},
+			{
+				"name": "cyberdramon"
+			},
+			{
+				"name": "justimon",
+				"color": "human",
+				"skins": ["justimon_critical_arm", "justimon_accel_arm"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "cyberdramon_2",
+				"from": [-1, -1]
+			},
+			{
+				"name": "darkdramon",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "commandramon",
+			"from": "darkdramon"
+		},
+		{
+			"name": "ultimatechaosmon",
+			"for": "chaosmon"
+		},
+		{
+			"name": "raidenmon",
+			"from": "justimon"
+		},
+		{
+			"name": "starmon",
+			"from": "justimon"
+		},
+		{
+			"name": "bearmon",
+			"for": "pandamon"
+		}
+	]
 }

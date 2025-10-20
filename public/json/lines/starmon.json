@@ -1,95 +1,169 @@
 {
     "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "starmon_x",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            null,
-            {
-                "name": "justimon_x",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            {
-                "name": "chibickmon"
-            },
-            {
-                "name": "pickmon"
-            },
-            {
-                "name": "starmons"
-            },
-            {
-                "name": "starmon"
-            },
-            {
-                "name": "superstarmon"
-            },
-            {
-                "name": "justimon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "darksuperstarmon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "shootingstarmon",
-                "color": "gold",
-                "from": [
-                    -2,
-                    -1
-                ]
-            }
-        ]
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "starmon_x",
+          "color": [
+            "x"
+          ],
+          "from": [
+            [
+              1,
+              0
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        {
+          "name": "justimon_x",
+          "color": [
+            "x"
+          ],
+          "from": [
+            [
+              1,
+              0
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        }
+      ],
+      [
+        {
+          "name": "chibickmon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "pickmon",
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "starmons",
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "starmon",
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "superstarmon",
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+            "name": "justimon",
+            "skins": ["justimon_critical_arm", "justimon_accel_arm"]
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        {
+          "name": "darksuperstarmon",
+          "color": [
+            "dark"
+          ],
+          "from": [
+            [
+              -1,
+              -1
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "beelstarmon",
+          "from": [
+            [
+              0,
+              -1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true,
+          "color": [
+            "dark"
+          ]
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "shootingstarmon",
+          "color": [
+            "gold"
+          ],
+          "from": [
+            [
+              -2,
+              -1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        {
+          "name": "beelstarmon_x",
+          "from": [
+            [
+              -1,
+              0
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true,
+          "color": [
+            "x"
+          ]
+        }
+      ]
     ],
     "related": [
-        {
-            "name": "monodramon",
-            "from": "justimon"
-        },
-        {
-            "name": "bearmon",
-            "for": "pandamon"
-        },
-        {
-            "name": "kakamon",
-            "for": "gankoomon"
-        },
-        {
-            "name": "hookmon",
-            "for": "revolmon"
-        },
-        {
-            "name": "shoutmon",
-            "for": "shoutmon_x4"
-        }
-    ]
-}
+      {
+        "name": "monodramon",
+        "from": "justimon"
+      },
+      {
+        "name": "shoutmon",
+        "for": "shoutmon_x4"
+      },
+      {
+        "name": "hookmon",
+        "for": "revolmon"
+      },
+      {
+        "name": "impmon",
+        "from": "beelstarmon"
+      },
+      {
+        "name": "sistermon_blanc",
+        "from": "beelstarmon"
+      },
+      {
+        "name": "bearmon",
+        "for": "pandamon"
+      },
+      {
+        "name": "kakamon",
+        "for": "gankoomon"
+      }
+    ],
+    "size": 6
+  }

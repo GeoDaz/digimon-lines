@@ -85,6 +85,10 @@
 			{
 				"name": "cerberumon_x",
 				"color": "x",
+				"from": [
+					[0, -1],
+					[1, 0]
+				],
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -133,7 +137,10 @@
 			{
 				"name": "plutomon",
 				"color": "dark",
-				"from": [[-1, -1],[0, -1]],
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
 				"xCollapsable": false,
 				"yCollapsable": true
 			}
@@ -155,7 +162,7 @@
 			},
 			null,
 			{
-				"name": "plutomon",
+				"name": "zombie_plutomon",
 				"color": "dark",
 				"from": [[-1, 0]],
 				"xCollapsable": false,

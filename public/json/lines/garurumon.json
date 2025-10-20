@@ -170,7 +170,13 @@
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
-			null,
+			{
+				"name": "mercurymon",
+				"color": "wind",
+				"from": [1, -1],
+				"xCollapsable": true,
+				"yCollapsable": true
+			},
 			{
 				"name": "omegamon_bam",
 				"color": "mode",
@@ -337,7 +343,7 @@
 				"from": [[-1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"color": ["dark"]
+				"color": "dark"
 			},
 			{
 				"name": "gaogamon_black",
@@ -355,12 +361,7 @@
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
-			{
-				"name": "mercurymon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": true
-			},
+			null,
 			null,
 			null
 		],
@@ -374,13 +375,7 @@
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
-			{
-				"name": "fangmon",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"color": ["dark"]
-			},
+			null,
 			null,
 			null,
 			null,
@@ -394,9 +389,18 @@
 				"from": [[-3, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"color": ["dark"]
+				"color": "dark"
 			},
-			null,
+			{
+				"name": "fangmon",
+				"from": [
+					[0, -1],
+					[-2, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": "dark"
+			},
 			null,
 			null,
 			null
@@ -492,8 +496,7 @@
 		]
 	],
 	"notes": [
-		"Gaogamon line is in Garurumon line, because it includes ZeedGarurumon they look very similar.",
-		"Merukymon is here because his headdress looks like a Garurumon and Mars because his looks like Gabumon."
+		"Gaogamon line is in Garurumon line, because it includes ZeedGarurumon and they look very similar."
 	],
 	"related": [
 		{
@@ -525,15 +528,15 @@
 		},
 		{
 			"name": "loogamon",
-			"from": "fangmon"
+			"for": "helloogarmon"
 		},
 		{
 			"name": "wankomon",
 			"for": "cerberumon"
 		},
 		{
-			"name": "leomon",
-			"for": "grapleomon"
+			"name": "shoemon",
+			"for": "chaperomon"
 		},
 		{
 			"name": "bearmon",
