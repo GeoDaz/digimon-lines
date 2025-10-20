@@ -11,11 +11,26 @@ const transformLine = (line: Line | undefined): Line | undefined => {
 			}
 		});
 		const columns = line.columns.map(col => {
-			col = col.slice();
-			let first = col[0];
-			if (first) {
-				col[0] = { ...first, from: null };
-			}
+			col = col.map((point: LinePoint | null, i) => {
+				if (!point) return point;
+				if (i === 0) {
+					point = { ...point, from: null };
+				}
+				if (point.from?.[0] && !Array.isArray(point.from[0])) {
+					point = { ...point, from: [point.from] } as LinePoint;
+				}
+				if (point.color && !Array.isArray(point.color)) {
+					point = {
+						...point,
+						color: Array.from(
+							{ length: point.from?.length || 1 },
+							() => point!.color
+						),
+					} as LinePoint;
+				}
+				return point;
+			});
+
 			while (col.length < size) {
 				col.push(null);
 			}

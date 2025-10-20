@@ -159,54 +159,54 @@ const LinePointSettings: React.FC<Props> = ({
 					defaultValue={(point && point.name == 'url' && point.image) || ''}
 				/>
 				<UploadImage handleUpload={handleUpload} className="mb-3" />
-				{point ? (
-					<SettingPoint
-						className="mb-3"
-						point={point}
-						handleRemove={handleRemove}
-						handleMirror={handleMirror}
-					/>
-				) : null}
-				{!!point?.from &&
-					point.from.map((from, i) => (
-						<SettingFrom
-							key={i}
-							number={i}
-							color={
-								Array.isArray(point.color) ? point.color[i] : point.color
-							}
-							handleSelect={handleSelectColor}
-							handleRemove={handleRemoveFrom}
-						/>
-					))}
-				{!!point?.name && (
+				{!!point && (
 					<>
-						<h4
-							className={makeClassName(
-								'mt-4',
-								point.skins &&
-									point.skins.length > 2 &&
-									'text-decoration-line-through'
-							)}
-						>
-							Add a skin (max 3)
-						</h4>
-						<SearchBar
-							label={`Research a ${licenceName}`}
-							onSubmit={handleChooseSkin}
-							disabled={point.skins ? point.skins.length > 2 : false}
+						<ImagePoint
+							className="mb-3"
+							point={point}
+							handleRemove={handleRemove}
+							handleMirror={handleMirror}
 						/>
-						<div className="d-flex flex-wrap gap-3">
-							{point.skins?.map((skin, i) => (
-								<h5 key={i} className="text-capitalize break-word">
-									{capitalize(skin)}{' '}
-									<ButtonRemove
-										onClick={() => handleRemoveSkin(i)}
-										title="remove skin"
-									/>
-								</h5>
-							))}
-						</div>
+						<SettingFroms
+							point={point}
+							handleSelectColor={handleSelectColor}
+							handleRemove={handleRemove}
+						/>
+						{!!point.name && (
+							<>
+								<h4
+									className={makeClassName(
+										'mt-4',
+										point.skins &&
+											point.skins.length > 2 &&
+											'text-decoration-line-through'
+									)}
+								>
+									Add a skin (max 3)
+								</h4>
+								<SearchBar
+									label={`Research a ${licenceName}`}
+									onSubmit={handleChooseSkin}
+									disabled={
+										point.skins ? point.skins.length > 2 : false
+									}
+								/>
+								<div className="d-flex flex-wrap gap-3">
+									{point.skins?.map((skin, i) => (
+										<h5
+											key={i}
+											className="text-capitalize break-word"
+										>
+											{capitalize(skin)}{' '}
+											<ButtonRemove
+												onClick={() => handleRemoveSkin(i)}
+												title="remove skin"
+											/>
+										</h5>
+									))}
+								</div>
+							</>
+						)}
 					</>
 				)}
 			</Modal.Body>
@@ -214,7 +214,7 @@ const LinePointSettings: React.FC<Props> = ({
 	);
 };
 
-const SettingPoint: React.FC<{
+const ImagePoint: React.FC<{
 	className?: string;
 	point: LinePoint;
 	handleRemove: MouseEventHandler<HTMLElement>;
@@ -223,7 +223,8 @@ const SettingPoint: React.FC<{
 }> = ({ className, point, handleRemove, handleMirror, imgClassName }) => (
 	<div className={className}>
 		<h4 className="text-capitalize break-word mb-3">
-			{capitalize(point.name)} <ButtonRemove onClick={handleRemove} title="remove digimon" />{' '}
+			{capitalize(point.name)}{' '}
+			<ButtonRemove onClick={handleRemove} title="remove digimon" />{' '}
 			<Button title="mirror mode" onClick={handleMirror}>
 				<Icon name="symmetry-vertical" />
 			</Button>
@@ -253,6 +254,27 @@ const SettingPoint: React.FC<{
 		</div>
 	</div>
 );
+
+const SettingFroms: React.FC<{
+	point: LinePoint;
+	handleSelectColor: CallableFunction;
+	handleRemove: CallableFunction;
+}> = ({ point, handleSelectColor, handleRemove }) => {
+	if (!point.from) return null;
+	return (
+		<div className="mt-4">
+			{point.from.map((from, i) => (
+				<SettingFrom
+					key={i}
+					number={i}
+					color={Array.isArray(point.color) ? point.color[i] : point.color}
+					handleSelect={handleSelectColor}
+					handleRemove={handleRemove}
+				/>
+			))}
+		</div>
+	);
+};
 
 const SettingFrom: React.FC<{
 	number: number;
