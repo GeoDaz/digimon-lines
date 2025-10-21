@@ -8,7 +8,6 @@
 			null,
 			{
 				"name": "shinegreymon",
-				"color": "light",
 				"xSize": 2,
 				"xCollapsable": false,
 				"yCollapsable": false,
@@ -41,7 +40,6 @@
 			},
 			{
 				"name": "rizegreymon",
-				"color": "machine",
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -164,7 +162,6 @@
 			},
 			{
 				"name": "metalgreymon",
-				"color": "machine",
 				"xSize": 2,
 				"xCollapsable": false,
 				"yCollapsable": false
@@ -195,14 +192,7 @@
 			null,
 			null,
 			null,
-			{
-				"name": "metalgreymon_alter_mode",
-				"from": [[-1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"xSize": 2,
-				"color": ["mode"]
-			},
+			null,
 			null,
 			{
 				"name": "agumon_yuki_no_kizuma",
@@ -225,13 +215,18 @@
 				"color": ["ice"]
 			},
 			null,
-			null,
+			{
+				"name": "metalgreymon_alter_mode",
+				"from": [[-1.5, 0]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["mode"]
+			},
 			{
 				"name": "blitzgreymon",
-				"from": [[-0.5, -1]],
+				"from": [[0, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["electric"]
+				"yCollapsable": false
 			},
 			{
 				"name": "omegamon_alter_s",
@@ -264,7 +259,7 @@
 			},
 			{
 				"name": "skullgreymon",
-				"from": [[0, -1]],
+				"from": [[0, -1], [-2.5, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["dark"]
@@ -278,7 +273,7 @@
 				],
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"color": ["dark", "machine", "dark"]
+				"color": ["dark", "dark", "dark"]
 			},
 			{
 				"name": "himachinedramon",
@@ -308,7 +303,6 @@
 			},
 			{
 				"name": "megadramon",
-				"color": ["machine", "machine"],
 				"from": [
 					[0, -1],
 					[-1, -1]
@@ -619,13 +613,11 @@
 			{
 				"name": "sunmon",
 				"xSize": 2,
-				"color": "fire",
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
 			{
 				"name": "flamon",
-				"color": "fire",
 				"xSize": 2,
 				"xCollapsable": false,
 				"yCollapsable": false,
@@ -634,7 +626,6 @@
 			},
 			{
 				"name": "agunimon",
-				"color": "fire",
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"from": [[0.5, -1.5]],
@@ -653,7 +644,6 @@
 			},
 			{
 				"name": "emperorgreymon",
-				"color": "fire",
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"ySize": 2
