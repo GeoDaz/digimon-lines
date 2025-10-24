@@ -170,7 +170,7 @@ const LinePointSettings: React.FC<Props> = ({
 						<SettingFroms
 							point={point}
 							handleSelectColor={handleSelectColor}
-							handleRemove={handleRemove}
+							handleRemove={handleRemoveFrom}
 						/>
 						{!!point.name && (
 							<>
@@ -258,8 +258,8 @@ const ImagePoint: React.FC<{
 const SettingFroms: React.FC<{
 	point: LinePoint;
 	handleSelectColor: CallableFunction;
-	handleRemove: CallableFunction;
-}> = ({ point, handleSelectColor, handleRemove }) => {
+	handleRemoveFrom: CallableFunction;
+}> = ({ point, handleSelectColor, handleRemoveFrom }) => {
 	if (!point.from) return null;
 	return (
 		<div className="mt-4">
@@ -269,7 +269,7 @@ const SettingFroms: React.FC<{
 					number={i}
 					color={Array.isArray(point.color) ? point.color[i] : point.color}
 					handleSelect={handleSelectColor}
-					handleRemove={handleRemove}
+					handleRemoveFrom={handleRemoveFrom}
 				/>
 			))}
 		</div>
@@ -280,8 +280,8 @@ const SettingFrom: React.FC<{
 	number: number;
 	color?: string;
 	handleSelect: CallableFunction;
-	handleRemove: CallableFunction;
-}> = ({ number, color, handleSelect, handleRemove }) => (
+	handleRemoveFrom: CallableFunction;
+}> = ({ number, color, handleSelect, handleRemoveFrom }) => (
 	<div className="mt-4">
 		Line {number + 1}&nbsp;:{' '}
 		<DropdownButton
@@ -312,7 +312,7 @@ const SettingFrom: React.FC<{
 				</Dropdown.Item>
 			))}
 		</DropdownButton>{' '}
-		<ButtonRemove onClick={e => handleRemove(number)} title="remove line" />
+		<ButtonRemove onClick={e => handleRemoveFrom(number)} title="remove line" />
 	</div>
 );
 
