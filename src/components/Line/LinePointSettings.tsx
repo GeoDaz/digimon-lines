@@ -170,7 +170,7 @@ const LinePointSettings: React.FC<Props> = ({
 						<SettingFroms
 							point={point}
 							handleSelectColor={handleSelectColor}
-							handleRemove={handleRemoveFrom}
+							handleRemoveFrom={handleRemoveFrom}
 						/>
 						{!!point.name && (
 							<>
