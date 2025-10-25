@@ -52,16 +52,8 @@
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{
-				"name": "vajramon",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "zanbamon",
-				"xCollapsable": true,
-				"yCollapsable": true
-			},
+			{ "name": "vajramon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "zanbamon", "xCollapsable": true, "yCollapsable": true },
 			null
 		],
 		[
@@ -71,16 +63,8 @@
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
-			{
-				"name": "mokokomon",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "turkimon",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
+			{ "name": "mokokomon", "xCollapsable": true, "yCollapsable": false },
+			{ "name": "turkimon", "xCollapsable": true, "yCollapsable": false },
 			{
 				"name": "hakubamon",
 				"xCollapsable": false,
@@ -179,11 +163,18 @@
 			{
 				"name": "griffomon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
+				"xCollapsable": true,
+				"yCollapsable": false,
 				"color": ["wind"]
 			},
-			null
+			{
+				"name": "craniummon_enbarrmon",
+				"from": [[0.5, -2]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2,
+				"color": ["fusion"]
+			}
 		],
 		[
 			null,
@@ -192,23 +183,23 @@
 			{
 				"name": "shimaunimon",
 				"from": [[-4, -1]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
 				"name": "enbarrmon",
 				"from": [[0, -1]],
-				"color": "dark",
+				"color": ["dark"],
 				"xCollapsable": false,
-				"yCollapsable": false
+				"yCollapsable": true
 			},
 			null,
 			{
-				"name": "craniummon_enbarrmon",
-				"color": "fusion",
-				"from": [[0, -2]],
+				"name": "dullahamon",
+				"from": [[-0.5, -2]],
 				"xCollapsable": false,
-				"yCollapsable": false
+				"yCollapsable": true,
+				"xSize": 2
 			}
 		],
 		[
@@ -235,49 +226,18 @@
 	"related": [
 		{ "name": "pawnchessmon_white", "for": "craniummon" },
 		"pillowmon",
-		{
-			"name": "dokugumon",
-			"from": "gyukimon"
-		},
-		{
-			"name": "bearmon",
-			"from": "ancientmegatheriumon"
-		},
-		{
-			"name": "aegiomon"
-		},
-		{
-			"name": "phascomon",
-			"for": "gulfmon"
-		},
-		{
-			"name": "angemon",
-			"from": "unimon"
-		},
-		{
-			"name": "renamon",
-			"from": "chirinmon"
-		},
-		{
-			"name": "woodmon",
-			"for": "ancienttroiamon"
-		},
-		{
-			"name": "hawkmon",
-			"for": "hippogriffomon"
-		},
-		{
-			"name": "kotemon",
-			"from": "zanbamon"
-		},
-		{
-			"name": "bakemon",
-			"from": "zanbamon"
-		},
-		{
-			"name": "tapirmon",
-			"for": "mammon"
-		}
+		{ "name": "dokugumon", "from": "gyukimon" },
+		{ "name": "bearmon", "from": "ancientmegatheriumon" },
+		{ "name": "bakemon", "from": "dullahamon" },
+		{ "name": "aegiomon" },
+		{ "name": "phascomon", "for": "gulfmon" },
+		{ "name": "angemon", "from": "unimon" },
+		{ "name": "renamon", "from": "chirinmon" },
+		{ "name": "woodmon", "for": "ancienttroiamon" },
+		{ "name": "hawkmon", "for": "hippogriffomon" },
+		{ "name": "kotemon", "from": "zanbamon" },
+		{ "name": "bakemon", "from": "zanbamon" },
+		{ "name": "tapirmon", "for": "mammon" }
 	],
 	"size": 7
 }
