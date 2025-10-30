@@ -38,7 +38,7 @@
 				"color": ["machine"]
 			},
 			{
-				"name": "unknown",
+				"name": "metatromon",
 				"from": [[0, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true,
@@ -73,6 +73,7 @@
 		{ "name": "gatomon", "from": "maquinamon" },
 		{ "name": "jazamon", "from": "mockingbirdmon" },
 		{ "name": "jazamon", "for": "pteranomon" },
-		{ "name": "machmon", "from": "turbomon" }
+		{ "name": "machmon", "from": "turbomon" },
+		{ "name": "armadillomon", "for": "shakkoumon" }
 	]
 }
