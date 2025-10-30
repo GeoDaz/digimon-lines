@@ -72,13 +72,14 @@
 		]
 	],
 	"related": [
+		{ "name": "armadillomon", "for": "gigabreakdramon" },
+		{ "name": "ryudamon", "for": "majiramon" },
 		{ "name": "betamon", "for": "airdramon" },
 		{ "name": "golemon", "for": "landramon", "from": "sunarizamon" },
-		{ "name": "ryudamon", "for": "majiramon" },
+		{ "name": "betamon", "for": "seadramon" },
 		{ "name": "hyokomon", "for": "darumamon" },
-		{ "name": "armadillomon", "from": "ankylomon" },
-		{ "name": "garurumon", "for": "drimogemon", "from": "gabumon" },
 		{ "name": "golemon", "for": "proganomon", "from": "sunarizamon" },
+		{ "name": "garurumon", "for": "drimogemon", "from": "gabumon" },
 		{ "name": "hagurumon", "for": "kenkimon" }
 	]
 }

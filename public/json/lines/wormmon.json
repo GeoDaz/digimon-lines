@@ -99,10 +99,11 @@
 			null,
 			{
 				"name": "searchmon",
+				"skins": ["knowledge"],
 				"from": [[-3.5, -1]],
 				"color": ["machine"]
 			},
-			{ "name": "kongoumon", "color": "gold" },
+			{ "name": "kongoumon", "color": "gold", "skins": ["miracles"] },
 			null,
 			null,
 			null
@@ -114,7 +115,7 @@
 			{
 				"name": "pucchiemon",
 				"from": [[-4.5, -1]],
-				"skins": ["pucchiemon_green"],
+				"skins": ["kindness","pucchiemon_green"],
 				"color": ["light"]
 			},
 			null,
@@ -129,7 +130,8 @@
 			{
 				"name": "shadramon",
 				"from": [[-5.5, -1]],
-				"color": ["fire"]
+				"color": ["fire"],
+				"skins": ["courage"]
 			},
 			null,
 			null,
@@ -143,7 +145,8 @@
 			{
 				"name": "archelomon",
 				"from": [[-6.5, -1]],
-				"color": ["marine"]
+				"color": ["marine"],
+				"skins": ["reliability"]
 			},
 			null,
 			null,

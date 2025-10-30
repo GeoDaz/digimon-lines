@@ -293,24 +293,24 @@
 			null,
 			{
 				"name": "tylomon_x",
-				"from": [[-1, 0]],
+				"from": [[-1, 0], [0, -1]],
 				"xCollapsable": true,
 				"yCollapsable": false,
-				"color": ["x"]
+				"color": ["x","x"]
 			},
 			{
 				"name": "anomalocarimon_x",
-				"from": [[0, -1]],
+				"from": [[-1, 0], [0, -1]],
 				"xCollapsable": true,
 				"yCollapsable": false,
-				"color": ["x"]
+				"color": ["x","x"]
 			},
 			{
 				"name": "plesiomon_x",
-				"from": [[0, -1]],
+				"from": [[-1, 0], [0, -1]],
 				"xCollapsable": true,
 				"yCollapsable": true,
-				"color": ["x"]
+				"color": ["x","x"]
 			},
 			null,
 			null
@@ -321,16 +321,29 @@
 			"name": "aegisdramon"
 		},
 		{
+			"name": "marinechimeramon",
+			"from": "seadramon"
+		},
+		{
+			"name": "golemon",
+			"for": "landramon",
+			"from": "sunarizamon"
+		},
+		{
+			"name": "bemmon",
+			"for": "grimmon"
+		},
+		{
 			"name": "gekomon",
 			"for": "otamamon"
 		},
 		{
-			"name": "greymon",
-			"for": "snowagumon"
+			"name": "dracomon",
+			"from": "airdramon"
 		},
 		{
-			"name": "vorvomon",
-			"for": "flarelizardmon"
+			"name": "greymon",
+			"for": "snowagumon"
 		},
 		{
 			"name": "gomamon",
@@ -339,6 +352,14 @@
 		{
 			"name": "angemon",
 			"for": "goldramon"
+		},
+		{
+			"name": "greymon",
+			"for": "cyclomon"
+		},
+		{
+			"name": "vorvomon",
+			"for": "flarelizardmon"
 		},
 		{
 			"name": "crabmon",
@@ -355,14 +376,6 @@
 		{
 			"name": "ogudomon",
 			"from": "leviamon"
-		},
-		{
-			"name": "marinechimeramon",
-			"from": "seadramon"
-		},
-		{
-			"name": "bemmon",
-			"for": "grimmon"
 		},
 		{
 			"name": "jazamon",

@@ -14,6 +14,7 @@
 			{
 				"name": "goldveedramon",
 				"color": "gold",
+				"skins": ["fate"],
 				"from": [2, -2],
 				"xCollapsable": false,
 				"yCollapsable": false
@@ -150,6 +151,7 @@
 			{
 				"name": "honeybeemon",
 				"from": [[-2, -1]],
+				"skins": ["knowledge"],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -181,6 +183,7 @@
 			{
 				"name": "flamedramon",
 				"color": "fire",
+				"skins": ["courage"],
 				"from": [[-3, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
@@ -188,6 +191,7 @@
 			{
 				"name": "sagittarimon",
 				"color": ["fusion", "fusion"],
+				"skins": ["hope"],
 				"from": [
 					[-0.5, -1],
 					[0.5, -1]
@@ -199,6 +203,7 @@
 			{
 				"name": "magnamon",
 				"color": "gold",
+				"skins": ["miracles"],
 				"from": [
 					[0.5, -1],
 					[0, -2]
@@ -216,6 +221,7 @@
 			{
 				"name": "raidramon",
 				"color": "electric",
+				"skins": ["friendship"],
 				"from": [[-4, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -243,6 +249,7 @@
 			{
 				"name": "gargoylemon",
 				"color": "light",
+				"skins": ["light"],
 				"from": [[-5, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
@@ -273,6 +280,7 @@
 			{
 				"name": "kangarumon",
 				"from": [[-6, -1]],
+				"skins": ["kindness"],
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -288,6 +296,7 @@
 			{
 				"name": "yaksamon",
 				"color": "grass",
+				"skins": ["purity"],
 				"from": [[-7, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -304,6 +313,7 @@
 			{
 				"name": "sethmon",
 				"color": "wind",
+				"skins": ["love"],
 				"from": [[-8, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -320,6 +330,7 @@
 			{
 				"name": "depthmon",
 				"color": "marine",
+				"skins": ["reliability"],
 				"from": [[-9, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true

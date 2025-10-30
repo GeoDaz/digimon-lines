@@ -6,10 +6,11 @@
 			null,
 			{
 				"name": "shurimon",
+				"skins": ["purity"],
+				"color": ["grass"],
 				"from": [[4, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["grass"]
+				"yCollapsable": false
 			},
 			{
 				"name": "butenmon",
@@ -38,6 +39,7 @@
 				"name": "halsemon",
 				"from": [[3, -1]],
 				"color": ["wind"],
+				"skins": ["love"],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
@@ -149,6 +151,7 @@
 			{
 				"name": "harpymon",
 				"from": [-1, -1],
+				"skins": ["light"],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["wind"]
@@ -172,6 +175,7 @@
 			null,
 			{
 				"name": "allomon",
+				"skins": ["courage"],
 				"from": [[-2, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
@@ -184,7 +188,7 @@
 				"yCollapsable": true,
 				"color": ["wind"]
 			},
-            null
+			null
 		],
 		[
 			null,
@@ -193,6 +197,7 @@
 			{
 				"name": "flybeemon",
 				"color": ["wind"],
+				"skins": ["knowledge"],
 				"from": [[-3, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false

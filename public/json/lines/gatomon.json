@@ -73,6 +73,7 @@
 			{
 				"name": "butterflamon",
 				"from": [[2, -1]],
+				"skins": ["knowledge"],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["default"]
@@ -101,6 +102,7 @@
 				"name": "nefertimon",
 				"color": ["light"],
 				"from": [[1, -1]],
+				"skins": ["light"],
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -350,9 +352,10 @@
 			{
 				"name": "lynxmon",
 				"from": [[-8.5, -1]],
+				"color": ["fire"],
+				"skins": ["courage"],
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"color": ["fire"],
 				"xSize": 2
 			},
 			{

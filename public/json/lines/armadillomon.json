@@ -4,101 +4,75 @@
 			null,
 			null,
 			null,
+			{
+				"name": "digmon",
+				"from": [[2, -1]],
+				"xSize": 2,
+				"color": ["earth"],
+				"skins": ["knowledge"]
+			},
+			{
+				"name": "groundramon",
+				"from": [[2.5, -1]]
+			},
+			{
+				"name": "breakdramon",
+				"from": [[0, -1]]
+			},
+			null
+		],
+		[
+			null,
 			null,
 			null,
 			{
-				"name": "cannondramon",
+				"name": "submarimon",
+				"color": ["marine"],
 				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "brachiomon",
-				"from": [[2.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"skins": ["reliability"],
+				"xSize": 2
 			},
 			{
-				"name": "ultimatebrachimon",
+				"name": "proganomon",
 				"from": [
-					[0, -1],
-					[1, -1]
+					[-0.5, -1],
+					[0.5, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["fusion", "fusion"]
+			},
+			{
+				"name": "gigabreakdramon",
+				"from": [[0, -1]],
+				"color": ["earth"]
 			},
 			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "togemogumon",
-				"color": ["ice"],
-				"from": [[1.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "stegomon",
-				"from": [[1.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{ "name": "spinomon", "xCollapsable": false, "yCollapsable": false },
-			{
-				"name": "huanglongmon",
-				"skins": ["huanglongmon_rm"],
-				"xCollapsable": true,
-				"yCollapsable": true
-			}
 		],
 		[
 			{
 				"name": "tsubumon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "upamon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "armadillomon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "ankylomon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "shakkoumon",
 				"color": ["fusion"],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "metatromon",
 				"color": ["machine"],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [[0.5, -1]]
 			},
 			null
@@ -112,8 +86,6 @@
 			{
 				"name": "clavisangemon",
 				"from": [[-0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["light"]
 			},
 			null
@@ -123,26 +95,35 @@
 			null,
 			null,
 			{
-				"name": "digmon",
-				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2,
-				"color": ["earth"]
+				"name": "togemogumon",
+				"color": ["ice"],
+				"from": [[-1.5, -1]]
 			},
 			{
-				"name": "groundramon",
-				"from": [[-1.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["earth"]
+				"name": "stegomon",
+				"from": [[-1.5, -1]]
+			},
+			{ "name": "spinomon" },
+			{
+				"name": "huanglongmon",
+				"skins": ["huanglongmon_rm"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "brachiomon",
+				"from": [[-2.5, -1]]
 			},
 			{
-				"name": "breakdramon",
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"from": [[0, -1]],
-				"color": ["earth"]
+				"name": "ultimatebrachimon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
 			},
 			null
 		],
@@ -150,38 +131,19 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
-				"name": "submarimon",
-				"color": ["marine"],
-				"from": [[-3, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2
-			},
-			{
-				"name": "proganomon",
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				],
-				"xCollapsable": true,
-				"yCollapsable": false,
-				"color": ["fusion", "fusion"]
-			},
-			{
-				"name": "gigabreakdramon",
-				"xCollapsable": true,
-				"yCollapsable": true,
-				"from": [[0, -1]],
-				"color": ["earth"]
+				"name": "cannondramon",
+				"from": [[-1, -1]]
 			},
 			null
-		],
-		[null, null, null, null, null, null, null]
+		]
 	],
 	"related": [
 		{ "name": "angemon", "for": "shakkoumon" },
 		{ "name": "gomamon", "for": "vikemon" },
+		{ "name": "maquinamon", "for": "metatromon" },
 		{ "name": "tyranomon", "for": "spinomon" },
 		{ "name": "gammamon", "for": "brachiomon" },
 		{ "name": "kamemon", "for": "tortamon" },
