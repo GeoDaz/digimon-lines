@@ -28,7 +28,7 @@ const LineImageModal: React.FC<Props> = ({
 		<Modal show={open} onHide={handleClose} className="line-image-modal pt-4">
 			<Modal.Header closeButton>
 				<Modal.Title className="text-capitalize break-word">
-					{capitalize(name)} {dubName && `/ ${dubName}`}
+					{capitalize(name)} {dubName && `/ ${capitalize(dubName)}`}
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body className="text-center overflow-auto">

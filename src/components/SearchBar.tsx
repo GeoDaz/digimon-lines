@@ -10,6 +10,7 @@ import { getSearchPriority } from '@/functions/search';
 const NB_PREVIEW = 10;
 interface Props {
 	onSubmit: Function;
+	voidOnSubmit?: boolean;
 	label?: string;
 	defaultValue?: string;
 	width?: number;
@@ -18,8 +19,9 @@ interface Props {
 }
 const SearchBar: React.FC<Props> = ({
 	onSubmit,
+	voidOnSubmit = false,
 	label = 'Research',
-	defaultValue,
+	defaultValue = '',
 	width,
 	forwardRef,
 	disabled = false,
@@ -89,6 +91,9 @@ const SearchBar: React.FC<Props> = ({
 	const handleSubmit = (value: string | number | undefined = undefined) => {
 		setPreviews([]);
 		onSubmit(value || (search && unCapitalize(search)));
+		if (voidOnSubmit){
+			setSearch('');
+		}
 	};
 
 	return (

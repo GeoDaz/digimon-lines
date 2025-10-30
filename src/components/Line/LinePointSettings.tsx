@@ -187,6 +187,7 @@ const LinePointSettings: React.FC<Props> = ({
 								<SearchBar
 									label={`Research a ${licenceName}`}
 									onSubmit={handleChooseSkin}
+									voidOnSubmit
 									disabled={
 										point.skins ? point.skins.length > 2 : false
 									}
