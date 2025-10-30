@@ -4,17 +4,53 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
-				"name": "togemogumon",
-				"color": "ice",
-				"from": [1, -1],
+				"name": "cannondramon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "brachiomon",
+				"from": [[2.5, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
-				"name": "stegomon",
-				"from": [1, -1],
+				"name": "ultimatebrachimon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
 				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "togemogumon",
+				"color": ["ice"],
+				"from": [[1.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "stegomon",
+				"from": [[1.5, -1]],
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{ "name": "spinomon", "xCollapsable": false, "yCollapsable": false },
@@ -29,23 +65,56 @@
 			{
 				"name": "tsubumon",
 				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
 			},
-			{ "name": "upamon", "xCollapsable": true, "yCollapsable": false },
-			{ "name": "armadillomon", "xCollapsable": true, "yCollapsable": false },
-			{ "name": "ankylomon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "upamon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "armadillomon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "ankylomon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
 			{
 				"name": "shakkoumon",
-				"color": "fusion",
+				"color": ["fusion"],
 				"xCollapsable": false,
-				"yCollapsable": false
+				"yCollapsable": false,
+				"xSize": 2
 			},
 			{
+				"name": "metatromon",
+				"color": ["machine"],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"from": [[0.5, -1]]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
 				"name": "clavisangemon",
-				"color": "light",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [[-0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["light"]
 			},
 			null
 		],
@@ -55,21 +124,25 @@
 			null,
 			{
 				"name": "digmon",
-				"from": [-1.5, -1],
+				"from": [[-2, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"xSize": 2
+				"xSize": 2,
+				"color": ["earth"]
 			},
 			{
 				"name": "groundramon",
-				"from": [[-1, -1]],
+				"from": [[-1.5, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false
+				"yCollapsable": false,
+				"color": ["earth"]
 			},
 			{
 				"name": "breakdramon",
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": true,
+				"from": [[0, -1]],
+				"color": ["earth"]
 			},
 			null
 		],
@@ -79,8 +152,8 @@
 			null,
 			{
 				"name": "submarimon",
-				"color": "marine",
-				"from": [-2.5, -1],
+				"color": ["marine"],
+				"from": [[-3, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"xSize": 2
@@ -92,29 +165,33 @@
 					[0.5, -1]
 				],
 				"xCollapsable": true,
-				"yCollapsable": true,
+				"yCollapsable": false,
 				"color": ["fusion", "fusion"]
 			},
 			{
 				"name": "gigabreakdramon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"from": [[0, -1]],
+				"color": ["earth"]
 			},
 			null
-		]
+		],
+		[null, null, null, null, null, null, null]
 	],
 	"related": [
 		{ "name": "angemon", "for": "shakkoumon" },
 		{ "name": "gomamon", "for": "vikemon" },
 		{ "name": "tyranomon", "for": "spinomon" },
 		{ "name": "gammamon", "for": "brachiomon" },
-		{ "name": "garurumon", "for": "drimogemon", "from": "gabumon" },
 		{ "name": "kamemon", "for": "tortamon" },
 		{ "name": "golemon", "for": "pyramidimon", "from": "sunarizamon" },
+		{ "name": "tapirmon", "for": "elephantmon" },
 		{ "name": "herissmon", "from": "togemogumon" },
 		{ "name": "dracomon", "for": "breakdramon" },
+		{ "name": "garurumon", "for": "drimogemon", "from": "gabumon" },
+		{ "name": "commandramon", "from": "cannondramon" },
 		{ "name": "hagurumon", "for": "kenkimon" },
-		{ "name": "tapirmon", "for": "elephantmon" },
 		{ "name": "leomon", "for": "loaderliomon" }
 	],
 	"size": 7
