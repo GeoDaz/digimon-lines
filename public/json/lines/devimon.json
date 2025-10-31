@@ -341,8 +341,9 @@
 		},
 		{ "name": "app_hackmon", "for": "app_docmon" },
 		{
-			"name": "hookmon",
-			"for": "boltboutamon"
+			"name": "revolmon",
+			"from": "boltboutamon",
+			"for": "hookmon"
 		},
 		{
 			"name": "jellymon",

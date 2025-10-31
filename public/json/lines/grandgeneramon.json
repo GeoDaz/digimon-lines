@@ -165,31 +165,32 @@
 	],
 	"related": [
 		{
-			"from": "neomyotismon",
+			"for": "neomyotismon",
 			"name": "devimon"
 		},
 		{
-			"from": "dorbickmon",
+			"for": "dorbickmon",
 			"name": "gammamon"
 		},
 		{
-			"from": "splashmon",
+			"for": "splashmon",
 			"name": "jellymon"
 		},
 		{
-			"from": "zamielmon",
+			"for": "zamielmon",
 			"name": "woodmon"
 		},
 		{
-			"from": "olegmon",
-			"name": "hookmon"
+			"for": "olegmon",
+			"name": "revolmon",
+			"from": "hookmon"
 		},
 		{
-			"from": "gravimon",
+			"for": "gravimon",
 			"name": "golemon"
 		},
 		{
-			"from": "apollomon",
+			"for": "apollomon",
 			"name": "leomon"
 		}
 	]

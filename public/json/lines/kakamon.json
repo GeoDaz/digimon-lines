@@ -163,12 +163,12 @@
 		{ "name": "sukamon", "for": "etemon" },
 		{ "name": "shakamon", "from": "gokuwmon" },
 		{ "name": "hackmon", "for": "jesmon" },
-		{ "name": "hookmon" },
+		{ "name": "revolmon", "for": "hookmon", "from": "koemon" },
 		{ "name": "golemon", "from": "baboongamon" },
-		{ "name": "ogremon", "from": "xingtianmon" },
-		{ "name": "impmon", "from": "dijiangmon" },
+		{ "name": "ogremon", "for": "xingtianmon" },
+		{ "name": "impmon", "for": "dijiangmon" },
 		{ "name": "bearmon", "for": "pandamon" },
-		{ "name": "starmon", "from": "gankoomon" }
+		{ "name": "starmon", "for": "gankoomon" }
 	],
 	"size": 7
 }
