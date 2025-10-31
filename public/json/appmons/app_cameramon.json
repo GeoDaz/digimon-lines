@@ -1,168 +1,140 @@
 {
 	"size": 8,
 	"columns": [
-	  [
-		null,
-		null,
-		{
-		  "name": "app_cameramon",
-		  "from": null,
-		  "collapsable": false,
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "app_scopemon",
-		  "from": [
-			[
-			  -0.5,
-			  -1
-			],
-			[
-			  0.5,
-			  -1
-			],
-			[
-			  0.5,
-			  -2
-			]
-		  ],
-		  "color": "fusion",
-		  "collapsable": true,
-		  "xCollapsable": false,
-		  "yCollapsable": true,
-		  "xSize": 2
-		},
-		null,
-		null,
-		null,
-		null
-	  ],
-	  [
-		null,
-		{
-		  "name": "app_rocketmon",
-		  "from": null,
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "app_shotmon",
-		  "from": null,
-		  "collapsable": false,
-		  "xCollapsable": false,
-		  "yCollapsable": true,
-		  "skins": []
-		},
-		null,
-		{
-		  "name": "app_sateramon",
-		  "from": [
-			[
-			  -1,
-			  -1
-			],
-			[
-			  1,
-			  -1
-			]
-		  ],
-		  "color": "fusion",
-		  "xCollapsable": false,
-		  "yCollapsable": true,
-		  "xSize": 2
-		},
-		null,
-		null,
-		null
-	  ],
-	  [
-		null,
-		{
-		  "name": "app_jetmon",
-		  "from": null,
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "app_resshamon",
-		  "from": null,
-		  "xCollapsable": false,
-		  "yCollapsable": false,
-		  "skins": []
-		},
-		{
-		  "name": "app_tripmon",
-		  "from": [
-			[
-			  -0.5,
-			  -1
-			],
-			[
-			  0.5,
-			  -1
-			],
-			[
-			  -0.5,
-			  -2
-			],
-			[
-			  0.5,
-			  -2
-			]
-		  ],
-		  "color": "fusion",
-		  "xCollapsable": false,
-		  "yCollapsable": true,
-		  "xSize": 2
-		},
-		null,
-		null,
-		null,
-		null
-	  ],
-	  [
-		null,
-		{
-		  "name": "app_yadomon",
-		  "from": null,
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "app_compassmon",
-		  "from": null,
-		  "xCollapsable": false,
-		  "yCollapsable": true,
-		  "skins": []
-		},
-		null,
-		null,
-		null,
-		null,
-		null
-	  ]
+		[
+			null,
+			null,
+			{
+				"name": "app_cameramon",
+				"from": null,
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_scopemon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1],
+					[0.5, -2]
+				],
+				"color": "fusion",
+				"collapsable": true,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			{
+				"name": "app_rocketmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_shotmon",
+				"from": null,
+				"collapsable": false,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": []
+			},
+			null,
+			{
+				"name": "app_sateramon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": "fusion",
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			{
+				"name": "app_jetmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_resshamon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": []
+			},
+			{
+				"name": "app_tripmon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1],
+					[-0.5, -2],
+					[0.5, -2]
+				],
+				"color": "fusion",
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			{
+				"name": "app_yadomon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "app_compassmon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": []
+			},
+			null,
+			null,
+			null,
+			null,
+			null
+		]
 	],
 	"related": [
-	  {
-		"name": "revolmon",
-		"for": "revolmon"
-	  },
-	  {
-		"name": "impmon",
-		"for": "beelzebumon"
-	  },
-	  {
-		"name": "machmon",
-		"for": "locomon"
-	  },
-	  {
-		"name": "app_hackmon",
-		"for": "app_spamon"
-	  },
-	  {
-		"name": "app_gatchmon",
-		"for": "app_navimon"
-	  }
+		{
+			"name": "revolmon"
+		},
+		{
+			"name": "impmon",
+			"for": "beelzebumon"
+		},
+		{
+			"name": "machmon",
+			"for": "locomon"
+		},
+		{
+			"name": "app_hackmon",
+			"for": "app_spamon"
+		},
+		{
+			"name": "app_gatchmon",
+			"for": "app_navimon"
+		}
 	]
-  }
+}
