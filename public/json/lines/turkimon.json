@@ -228,7 +228,7 @@
 		"pillowmon",
 		{ "name": "dokugumon", "from": "gyukimon" },
 		{ "name": "bearmon", "from": "ancientmegatheriumon" },
-		{ "name": "bakemon", "from": "dullahamon" },
+		{ "name": "bakemon", "for": "dullahamon" },
 		{ "name": "aegiomon" },
 		{ "name": "phascomon", "for": "gulfmon" },
 		{ "name": "angemon", "from": "unimon" },
@@ -236,7 +236,7 @@
 		{ "name": "woodmon", "for": "ancienttroiamon" },
 		{ "name": "hawkmon", "for": "hippogriffomon" },
 		{ "name": "kotemon", "from": "zanbamon" },
-		{ "name": "bakemon", "from": "zanbamon" },
+		{ "name": "bakemon", "for": "zanbamon" },
 		{ "name": "tapirmon", "for": "mammon" }
 	],
 	"size": 7
