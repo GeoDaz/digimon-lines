@@ -17,6 +17,7 @@ export const capitalize = (string: string): string => {
 	if (strings.length > 1) {
 		return strings.map(capitalize).join(' ');
 	}
+	if(string.length < 3) return string.toUpperCase();
 	return string[0].toUpperCase() + string.slice(1);
 };
 
