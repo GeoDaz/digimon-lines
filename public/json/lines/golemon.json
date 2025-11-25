@@ -61,7 +61,8 @@
 				"name": "magneticdramon",
 				"from": [0, -1],
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": true,
+				"color": ["electric"]
 			}
 		],
 		[
@@ -78,10 +79,11 @@
 			},
 			{
 				"name": "ancientvolcamon",
-				"color": ["fire", "earth"],
+				"color": ["fire", "earth", "fire"],
 				"from": [
 					[0, -1],
-					[1, -1]
+					[1, -1],
+					[2, -1]
 				],
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -112,7 +114,8 @@
 				"from": [[0, -1]],
 				"xCollapsable": true,
 				"yCollapsable": true,
-				"color": ["fusion"]
+				"color": ["fusion"],
+				"skins": ["nezhamon"]
 			}
 		],
 		[
@@ -194,7 +197,10 @@
 			{
 				"name": "blastmon",
 				"color": "earth",
-				"from": [-1, -1],
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
 				"xCollapsable": true,
 				"yCollapsable": true
 			},

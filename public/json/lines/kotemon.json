@@ -10,7 +10,8 @@
 				"name": "shivamon",
 				"from": [1, -1],
 				"xCollapsable": false,
-				"yCollapsable": true
+				"yCollapsable": true,
+				"color": ["light"]
 			},
 			null
 		],
@@ -18,7 +19,12 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "dinohumon",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
 			{
 				"name": "asuramon",
 				"color": "fire",
@@ -37,7 +43,8 @@
 				"from": [[0, -1]],
 				"xCollapsable": true,
 				"yCollapsable": true,
-				"color": ["fusion"]
+				"color": ["fusion"],
+				"skins": ["nezhamon"]
 			}
 		],
 		[
@@ -91,13 +98,16 @@
 	],
 	"related": [
 		{ "name": "pawnchessmon_white", "for": "gladimon" },
-		{ "name": "bakemon", "from": "oboromon" },
-		{ "name": "pulsemon", "from": "kazuchimon" },
+		{ "name": "kamemon", "for": "dinohumon" },
+		{ "name": "renamon", "for": "kyukimon" },
+		{ "name": "angemon", "for": "slashangemon" },
+		{ "name": "bakemon", "for": "oboromon" },
+		{ "name": "pulsemon", "for": "kazuchimon" },
 		"ryudamon",
 		{ "name": "greymon", "for": "samudramon" },
 		{ "name": "meramon", "for": "asuramon" },
 		{ "name": "golemon", "for": "vulcanusmon" },
-		{ "name": "machmon", "from": "nezhamon" }
+		{ "name": "machmon", "for": "nezhamon" }
 	],
 	"size": 7
 }

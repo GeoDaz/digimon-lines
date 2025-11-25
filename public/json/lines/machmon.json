@@ -60,7 +60,7 @@
 			{
 				"name": "nezhamon_crimson_mode",
 				"from": [0, -1],
-				"color": "mode",
+				"color": ["mode"],
 				"xCollapsable": true,
 				"yCollapsable": true
 			}
@@ -100,15 +100,17 @@
 	],
 	"related": [
 		{ "name": "app_cameramon", "for": "app_resshamon" },
-		{ "name": "wankomon", "for": "dobermon" },
 		{ "name": "ogremon", "for": "rebellimon" },
 		{ "name": "leomon", "for": "heavyleomon" },
 		{ "name": "maquinamon", "for": "turbomon" },
 		{ "name": "jazamon", "for": "maneuvermon" },
-		{ "name": "numemon", "from": "junkmon" },
+		{ "name": "wankomon", "for": "dobermon" },
+		{ "name": "numemon", "for": "junkmon" },
 		{ "name": "hagurumon", "for": "frozomon" },
-		{ "name": "impmon", "for": "beelzebumon" },
-		{ "name": "golemon", "for": "vulcanusmon" }
+		{ "name": "impmon", "for": "beelzebumon_behemoth" },
+		{ "name": "meramon", "for": "deathmeramon" },
+		{ "name": "golemon", "for": "vulcanusmon" },
+		{ "name": "pulsemon", "for": "pistmon" }
 	],
 	"size": 7
 }
