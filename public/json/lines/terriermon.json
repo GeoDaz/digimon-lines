@@ -3,38 +3,23 @@
 		[
 			null,
 			null,
-			{
-				"name": "terriermon_x",
-				"color": "x",
-				"from": [2, 0],
-				"xCollapsable": true,
-				"yCollapsable": true
-			},
 			null,
 			{
-				"name": "goldrapidmon",
-				"color": "gold",
-				"from": [2, -2],
+				"name": "gargomon_black",
+				"color": "dark",
+				"from": [1, -1],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
-				"name": "goldrapidmon_x",
-				"color": "x",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "rapidmon_black",
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
 			{
-				"name": "fujinmon",
-				"from": [1, -1],
+				"name": "megagargomon_black",
+				"color": "dark",
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -68,22 +53,38 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
-				"name": "gargomon_black",
-				"color": "dark",
+				"name": "fujinmon",
 				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "terriermon_x",
+				"color": "x",
+				"from": [-2, 0],
+				"xCollapsable": true,
+				"yCollapsable": true
+			},
+			null,
+			{
+				"name": "goldrapidmon",
+				"color": "gold",
+				"skins": ["fate"],
+				"from": [-2, -2],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
-				"name": "rapidmon_black",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "megagargomon_black",
-				"color": "dark",
+				"name": "goldrapidmon_x",
+				"color": "x",
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -238,10 +239,11 @@
 		]
 	],
 	"related": [
-		{ "name": "raidenmon", "for": "fujinmon" },
 		"lunamon",
 		"angoramon",
-		{ "name": "negamon", "for": "shademon_nene" }
+		{ "name": "raidenmon", "for": "fujinmon" },
+		{ "name": "negamon", "for": "shademon_nene" },
+		{ "name": "angemon", "for": "piccolomon", "from": "patamon" }
 	],
 	"size": 7
 }

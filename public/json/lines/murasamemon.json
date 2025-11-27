@@ -1,31 +1,30 @@
 {
-    "columns": [
-        [
-            {
-                "name": "unknown"
-            },
-            {
-                "name": "unknown"
-            },
-            {
-                "name": "unknown"
-            },
-            {
-                "name": "cougarmon"
-            },
-            {
-                "name": "murasamemon"
-            },
-            {
-                "name": "unknown"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "garurumon",
-            "for": "gazimon",
-            "from": "gabumon"
-        }
-    ]
+	"columns": [
+		[
+			{
+				"name": "unknown"
+			},
+			{
+				"name": "unknown"
+			},
+			{
+				"name": "unknown"
+			},
+			{
+				"name": "cougarmon"
+			},
+			{
+				"name": "murasamemon"
+			},
+			{
+				"name": "unknown"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "gaomon",
+			"for": "gazimon"
+		}
+	]
 }

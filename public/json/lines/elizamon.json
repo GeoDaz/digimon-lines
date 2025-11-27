@@ -177,7 +177,12 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "dinohumon",
+				"from": [[-2, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
 			null,
 			{
 				"name": "nidhoggmon",

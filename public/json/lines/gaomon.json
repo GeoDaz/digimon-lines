@@ -1,0 +1,167 @@
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "zeedgarurumon",
+				"color": "machine",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "botamon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "wanyamon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "gaomon",
+				"size": 1,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "gaogamon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "machgaogamon",
+				"color": "machine",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "miragegaogamon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "miragegaogamon_burst_mode",
+				"color": "mode",
+				"xCollapsable": true,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			{
+				"name": "zurumon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "pagumon",
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "gazimon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": "dark"
+			},
+			{
+				"name": "gaogamon_black",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [
+					[-1, -1],
+					[0, -1]
+				]
+			},
+			{
+				"name": "machgaogamon_black",
+				"color": "dark",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "mercurymon",
+				"color": "wind",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "gazimon_x",
+				"color": "x",
+				"from": [-1, 0],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			null,
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "hyemon",
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": "dark"
+			},
+			{
+				"name": "fangmon",
+				"from": [
+					[0, -1],
+					[-2, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": "dark"
+			},
+			null,
+			null,
+			null
+		]
+	],
+	"related": [
+        {"name": "garurumon", "from": "zeedgarurumon"},
+        "loogamon",
+		{
+			"name": "loogamon",
+			"for": "helloogarmon"
+		},
+		{
+			"name": "wankomon",
+			"for": "cerberumon"
+		},
+		{
+			"name": "darcmon",
+			"for": "sangloupmon"
+		},
+		{
+			"name": "shoemon",
+			"for": "chaperomon"
+		}
+	],
+	"size": 8
+}

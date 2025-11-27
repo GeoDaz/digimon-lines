@@ -2,12 +2,12 @@
 	"columns": [
 		[
 			{
-				"name": "jyarimon",
+				"name": "kekomon",
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{ "name": "gigimon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "kekkomon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "iguneetmon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "kinkakumon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "chohakkaimon", "xCollapsable": false, "yCollapsable": true },
@@ -96,7 +96,7 @@
 		"turkimon",
 		"kamemon",
 		{ "name": "sukamon", "for": "chohakkaimon" },
-		{ "name": "elizamon", "for": "kinkakumon" }
+		{ "name": "elizamon", "for": "iguneetmon" }
 	],
 	"size": 7
 }

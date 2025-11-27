@@ -1,143 +1,182 @@
 {
-	"columns": [
-	  [
-		{
-		  "name": "yolkmon",
-		  "xSize": 2,
-		  "from": null,
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "chicchimon",
-		  "xSize": 2,
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "hyokomon",
-		  "xSize": 2,
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "buraimon",
-		  "xSize": 2,
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "butenmon",
-		  "xSize": 2,
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "chronomon_destroy_mode",
-		  "color": [
-			"dark",
-			"mode"
-		  ],
-		  "from": [
-			[
-			  0.5,
-			  -1
-			],
-			[
-			  1,
-			  0
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": true
-		}
-	  ],
-	  [
-		null,
-		null,
-		null,
-		null,
-		null,
-		{
-		  "name": "chronomon_holy_mode",
-		  "color": "light",
-		  "xCollapsable": false,
-		  "yCollapsable": true,
-		  "from": [
-			[
-			  -0.5,
-			  -1
-			]
-		  ]
-		}
-	  ],
-	  [
-		null,
-		null,
-		null,
-		{
-		  "name": "toucanmon",
-		  "from": [
-			[
-			  -1.5,
-			  -1
-			]
-		  ],
-		  "xCollapsable": true,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "digitamamon",
-		  "color": "dark",
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "devitamamon",
-		  "color": "dark",
-		  "xCollapsable": true,
-		  "yCollapsable": true
-		}
-	  ],
-	  [
-		null,
-		null,
-		null,
-		null,
-		{
-		  "name": "darumamon",
-		  "from": [
-			-1,
-			-1
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": true
-		},
-		null
-	  ]
-	],
-	"related": [
-	  {
-		"name": "hawkmon",
-		"from": "butenmon"
-	  },
-	  {
-		"name": "biyomon",
-		"for": "karatenmon"
-	  },
-	  {
-		"name": "falcomon_2",
-		"for": "ravemon"
-	  },
-	  {
-		"name": "ogremon",
-		"from": "digitamamon"
-	  },
-	  {
-		"name": "penmon",
-		"from": "toucanmon"
-	  },
-	  "kotemon"
-	],
-	"size": 6
-  }
+    "columns": [
+        [
+            {
+                "name": "yolkmon",
+                "xSize": 2,
+                "from": null,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "chicchimon",
+                "xSize": 2,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "hyokomon",
+                "xSize": 2,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "buraimon",
+                "xSize": 2,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "butenmon",
+                "xSize": 2,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "chronomon_destroy_mode",
+                "color": [
+                    "dark",
+                    "mode"
+                ],
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ],
+                    [
+                        1,
+                        0
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "chronomon_holy_mode",
+                "color": [
+                    "light"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "sinduramon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "zhuqiaomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "color": [
+                    "fire"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "toucanmon",
+                "from": [
+                    [
+                        -2.5,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "digitamamon",
+                "color": [
+                    "dark"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "devitamamon",
+                "color": [
+                    "dark"
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "darumamon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "hawkmon",
+            "from": "butenmon"
+        },
+        {
+            "name": "biyomon",
+            "for": "karatenmon"
+        },
+        {
+            "name": "falcomon_2",
+            "for": "ravemon"
+        },
+        {
+            "name": "ogremon",
+            "from": "digitamamon"
+        },
+        {
+            "name": "penmon",
+            "from": "toucanmon"
+        },
+        "kotemon"
+    ],
+    "size": 6
+}

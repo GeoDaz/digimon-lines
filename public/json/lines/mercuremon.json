@@ -1,220 +1,147 @@
 {
 	"columns": [
-	  [
-		null,
-		null,
-		null,
-		{
-		  "name": "publimon",
-		  "from": [
-			[
-			  1,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": true
-		},
-		null,
-		null,
-		null,
-		null
-	  ],
-	  [
-		{
-		  "name": "choromon",
-		  "from": null,
-		  "xCollapsable": true,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "monimon",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": true,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "monitamon",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": true,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "hivisionmon_itamon",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": true
-		},
-		null,
-		null,
-		null,
-		null
-	  ],
-	  [
-		null,
-		null,
-		null,
-		{
-		  "name": "mercuremon",
-		  "from": [
-			[
-			  -1,
-			  -1.5
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false,
-		  "ySize": 2
-		},
-		null,
-		{
-		  "name": "ancientwisemon",
-		  "from": [
-			[
-			  0,
-			  -1.5
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": true
-		},
-		null,
-		null
-	  ],
-	  [
-		null,
-		null,
-		null,
-		{
-		  "name": "sephirothmon",
-		  "from": [
-			[
-			  -1,
-			  0
-			]
-		  ],
-		  "xCollapsable": true,
-		  "yCollapsable": false,
-		  "ySize": 2,
-		  "color": [
-			"slide"
-		  ]
-		},
-		null,
-		{
-		  "name": "black_seraphimon",
-		  "from": [
-			[
-			  0,
-			  -1.5
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": true,
-		  "color": [
-			"dark"
-		  ]
-		},
-		null,
-		null
-	  ],
-	  [
-		null,
-		null,
-		null,
-		null,
-		{
-		  "name": "chimeramon",
-		  "from": [
-			[
-			  -1,
-			  -0.5
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false,
-		  "color": [
-			"slide"
-		  ]
-		},
-		{
-		  "name": "millenniumon",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false,
-		  "color": [
-			"fusion"
-		  ]
-		},
-		{
-		  "name": "moonmillenniumon",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false,
-		  "color": [
-			"fusion"
-		  ]
-		},
-		{
-		  "name": "zeedmillenniumon",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": true,
-		  "color": [
-			"fusion"
-		  ]
-		}
-	  ]
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "publimon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{
+				"name": "choromon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "monimon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "monitamon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "hivisionmon_itamon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mercuremon",
+				"from": [[-1, -1.5]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "ancientwisemon",
+				"from": [[0, -1.5]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "sephirothmon",
+				"from": [[-1, 0]],
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"ySize": 2,
+				"color": ["slide"]
+			},
+			null,
+			{
+				"name": "black_seraphimon",
+				"from": [[0, -1.5]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["dark"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "chimeramon",
+				"from": [[-1, -0.5]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["slide"]
+			},
+			{
+				"name": "millenniumon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["fusion"]
+			},
+			{
+				"name": "moonmillenniumon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["fusion"]
+			},
+			{
+				"name": "zeedmillenniumon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["fusion"]
+			}
+		]
 	],
 	"related": [
-	  {
-		"name": "app_mienumon",
-		"for": "app_mirrormon"
-	  },
-	  {
-		"name": "angemon",
-		"for": "black_seraphimon"
-	  },
-	  {
-		"name": "wizardmon",
-		"from": "ancientwisemon"
-	  },
-	  "chimeramon",
-	  {"name":"tyranomon","for":"deltamon"},
-	  {
-		"name": "jellymon",
-		"from": "publimon"
-	  }
+		{
+			"name": "app_mienumon",
+			"for": "app_mirrormon"
+		},
+		{
+			"name": "angemon",
+			"for": "black_seraphimon"
+		},
+		{
+			"name": "wizardmon",
+			"from": "ancientwisemon"
+		},
+		{ "name": "chimeramon", "from": "mimicmon" },
+		{
+			"name": "jellymon",
+			"from": "publimon"
+		}
 	],
 	"size": 8
-  }
+}
