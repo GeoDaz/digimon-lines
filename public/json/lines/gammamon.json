@@ -503,7 +503,7 @@
     "related": [
         {
             "name": "tyranomon",
-            "from": "triceramon"
+            "for": "dinorexmon"
         },
         {
             "name": "mamemon",
@@ -526,6 +526,14 @@
             "for": "ravemon"
         },
         {
+            "name": "elizamon",
+            "from": "styrakomon"
+        },
+        {
+            "name": "armadillomon",
+            "for": "stegomon"
+        },
+        {
             "name": "vorvomon",
             "from": "volcdramon"
         },
@@ -536,10 +544,6 @@
         {
             "name": "chimeramon",
             "from": "monochromon"
-        },
-        {
-            "name": "armadillomon",
-            "for": "ankylomon"
         }
     ],
     "size": 7

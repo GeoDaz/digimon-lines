@@ -205,10 +205,6 @@
 		]
 	],
 	"related": [
-		{
-			"name": "gatomon",
-			"from": "minervamon"
-		},
 		"gekkomon",
 		{
 			"name": "armadillomon",
@@ -224,7 +220,11 @@
 		},
 		{
 			"name": "woodmon",
-			"from": "xuanwumon"
+			"for": "xuanwumon"
+		},
+		{
+			"name": "gatomon",
+			"from": "minervamon"
 		},
 		{
 			"name": "sukamon",
