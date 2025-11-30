@@ -1,149 +1,296 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "omegashoutmon_x",
-				"color": "x",
-				"from": [1, 0]
-			}
-		],
-		[
-			{
-				"name": "botamon"
-			},
-			{
-				"name": "koromon"
-			},
-			{
-				"name": "shoutmon",
-				"_com_skins": ["shoutmon_black", "shoutmon_blue", "shoutmon_yellow"]
-			},
-			{
-				"name": "king_shoutmon"
-			},
-			{
-				"name": "omegashoutmon",
-				"color": "gold"
-			},
-			{
-				"name": "shoutmon_dx",
-				"color": "fusion"
-			},
-			{
-				"name": "shoutmon_x7",
-				"color": "fusion",
-				"skins": ["shoutmon_ex6"]
-			},
-			{
-				"name": "shoutmon_x7_superior_mode",
-				"color": "fusion"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "shoutmon_x2",
-				"color": "fusion",
-				"from": [-1, -1]
-			},
-			{
-				"name": "shoutmon_x3",
-				"color": "fusion",
-				"skins": ["shoutmon_x4", "shoutmon_x5"]
-			},
-			{
-				"name": "shoutmon_x4b",
-				"color": "fusion",
-				"skins": ["shoutmon_x5b"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "shoutmon_x4s",
-				"color": "fusion",
-				"from": [-1, -1]
-			},
-			{
-				"name": "shoutmon_x4k",
-				"color": "fusion",
-				"from": [-1, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "shoutmon_x3sd",
-				"color": "fusion",
-				"from": [-2, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "shoutmon_x3gm",
-				"color": "fusion",
-				"from": [-3, -1]
-			}
-		]
-	],
-	"related": [
-		{
-			"name": "app_gatchmon",
-			"for": "app_globemon"
-		},
-		{
-			"name": "veemon",
-			"for": "redveedramon"
-		},
-		{
-			"name": "greymon",
-			"for": "zeekgreymon"
-		},
-		{
-			"name": "tentomon",
-			"for": "ballistamon"
-		},
-		{
-			"name": "garurumon",
-			"for": "dorulumon"
-		},
-		{
-			"name": "starmon",
-			"for": "starmons"
-		},
-		{
-			"name": "jazamon",
-			"for": "sparrowmon"
-		},
-		{
-			"name": "impmon",
-			"for": "beelzebumon_2"
-		},
-		{
-			"name": "leomon",
-			"for": "spadamon"
-		},
-		{
-			"name": "pawnchessmon_white",
-			"for": "darkknightmon"
-		}
-	]
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "omegashoutmon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            {
+                "name": "shoutmon_ex6",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "color": [
+                    "fusion"
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "botamon",
+                "from": null,
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "koromon",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "shoutmon",
+                "_com_skins": [
+                    "shoutmon_black",
+                    "shoutmon_blue",
+                    "shoutmon_yellow"
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "king_shoutmon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "omegashoutmon",
+                "color": [
+                    "gold"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "shoutmon_dx",
+                "color": [
+                    "fusion"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "shoutmon_x7",
+                "color": [
+                    "fusion"
+                ],
+                "skins": [],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "shoutmon_x7_superior_mode",
+                "color": [
+                    "fusion"
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shoutmon_x2",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "shoutmon_x3",
+                "color": [
+                    "fusion"
+                ],
+                "skins": [
+                    "shoutmon_x4",
+                    "shoutmon_x5"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "shoutmon_x4b",
+                "color": [
+                    "fusion"
+                ],
+                "skins": [
+                    "shoutmon_x5b"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "shoutmon_x7_black",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true,
+                "color": [
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "shoutmon_x4s",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false,
+                "skins": [
+                    "shoutmon_x5s"
+                ]
+            },
+            {
+                "name": "shoutmon_x4k",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "shoutmon_x3sd",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "shoutmon_x3gm",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "app_gatchmon",
+            "for": "app_globemon"
+        },
+        {
+            "name": "veemon",
+            "for": "redveedramon"
+        },
+        {
+            "name": "greymon",
+            "for": "zeekgreymon"
+        },
+        {
+            "name": "tentomon",
+            "for": "ballistamon"
+        },
+        {
+            "name": "garurumon",
+            "for": "dorulumon"
+        },
+        {
+            "name": "starmon",
+            "for": "starmons"
+        },
+        {
+            "name": "jazamon",
+            "for": "sparrowmon"
+        },
+        {
+            "name": "impmon",
+            "for": "beelzebumon_2"
+        },
+        {
+            "name": "leomon",
+            "for": "spadamon"
+        },
+        {
+            "name": "pawnchessmon_white",
+            "for": "darkknightmon"
+        }
+    ],
+    "size": 8
 }

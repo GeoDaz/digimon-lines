@@ -6,31 +6,150 @@
 			null,
 			null,
 			{
-				"name": "divemon",
-				"color": ["marine"],
+				"name": "mihiramon",
 				"from": [[1.5, -1]],
-				"collapsable": true
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2,
+				"color": ["wind"]
 			},
-			{ "name": "surfimon", "color": "marine", "collapsable": false },
+			{
+				"name": "baihumon",
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["machine"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "pistmon",
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2,
+				"color": ["grass"]
+			},
+			{
+				"name": "yihumon",
+				"from": [[-0.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["wind"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "runnermon",
+				"from": [[2.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["electric"]
+			},
+			{
+				"name": "footmon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"xSize": 2
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "yoyomon",
+				"from": [[1.5, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "shootmon",
+				"from": [
+					[1, -1],
+					[-0.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2,
+				"color": ["electric"]
+			},
+			{
+				"name": "achillesmon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["light", "light"]
+			},
 			null
 		],
 		[
 			{
 				"name": "dokimon",
-				"color": "electric",
+				"color": ["electric"],
 				"from": null,
 				"collapsable": false,
-				"xSize": 2
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
-			{ "name": "bibimon", "color": "electric", "collapsable": false, "xSize": 2 },
-			{ "name": "pulsemon", "color": "electric", "collapsable": false, "xSize": 2 },
-			{ "name": "bulkmon", "color": "electric", "collapsable": false, "xSize": 2 },
-			{ "name": "boutmon", "color": "electric", "collapsable": false, "xSize": 2 },
+			{
+				"name": "bibimon",
+				"color": ["electric"],
+				"collapsable": false,
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "pulsemon",
+				"color": ["electric"],
+				"collapsable": false,
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "bulkmon",
+				"color": ["electric"],
+				"collapsable": false,
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "boutmon",
+				"color": ["electric"],
+				"collapsable": false,
+				"xSize": 2,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
 			{
 				"name": "shroudmon",
 				"color": ["dark"],
 				"collapsable": false,
-				"from": [[0.5, -1]]
+				"from": [[0.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
 			},
 			null
 		],
@@ -44,14 +163,39 @@
 				"name": "kazuchimon",
 				"from": [[-0.5, -1]],
 				"collapsable": false,
-				"color": ["electric"]
+				"color": ["electric"],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "fenriloogamon_takemikazuchi",
 				"from": [[0, -1]],
 				"collapsable": true,
-				"color": ["fusion"]
+				"color": ["fusion"],
+				"xCollapsable": true,
+				"yCollapsable": true
 			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "divemon",
+				"from": [[-1.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["marine"]
+			},
+			{
+				"name": "surfimon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["marine"]
+			},
+			null
 		],
 		[
 			null,
@@ -59,24 +203,23 @@
 			null,
 			{
 				"name": "exermon",
-				"from": [[-1.5, -1]],
-				"collapsable": true,
+				"from": [[-2.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
 				"color": ["electric"]
 			},
 			{
 				"name": "climbmon",
-				"collapsable": false,
 				"from": [[0, -1]],
-				"color": ["earth"]
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "shivamon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"collapsable": true,
-				"color": ["light", "light"]
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["light"]
 			},
 			null
 		],
@@ -86,79 +229,62 @@
 			null,
 			{
 				"name": "namakemon",
-				"color": ["electric"],
-				"from": [[-3, -1]],
-				"collapsable": false,
-				"xSize": 2
-			},
-			{ "name": "tempomon", "from": [[0.5, -1]], "collapsable": false },
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "shootmon",
-				"color": ["electric"],
-				"from": [[-0.5, -1]],
-				"collapsable": false
+				"from": [[-3.5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["electric"]
 			},
 			{
-				"name": "achillesmon",
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				],
-				"collapsable": false,
-				"xSize": 2,
-				"color": ["light", "light"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "runnermon",
-				"color": ["electric"],
-				"from": [[-4.5, -1]],
-				"collapsable": false
-			},
-			{ "name": "pistmon", "color": "grass", "collapsable": false },
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "yoyomon", "from": [[-5.5, -1]], "collapsable": false },
-			{
-				"name": "footmon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"collapsable": false
+				"name": "tempomon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
 			},
 			null,
 			null
 		]
 	],
 	"related": [
-		{ "name": "loogamon", "for": "fenriloogamon" },
-		{ "name": "kotemon", "from": "kazuchimon" },
-		{ "name": "meramon", "from": "shroudmon" },
-		{ "name": "wormmon", "from": "exermon" },
-		{ "name": "leomon", "from": "achillesmon" },
-		{ "name": "gatomon", "from": "runnermon" },
-		{ "name": "penmon", "from": "tempomon" },
-		{ "name": "mamemon", "from": "shootmon" },
-		{ "name": "fujamon", "from": "divemon" }
+		{
+			"name": "loogamon",
+			"for": "fenriloogamon"
+		},
+		{
+			"name": "kotemon",
+			"from": "kazuchimon"
+		},
+		{
+			"name": "gatomon",
+			"from": "mihiramon"
+		},
+		{
+			"name": "leomon",
+			"from": "achillesmon"
+		},
+		{
+			"name": "meramon",
+			"from": "shroudmon"
+		},
+		{
+			"name": "wormmon",
+			"from": "exermon"
+		},
+		{
+			"name": "penmon",
+			"from": "tempomon"
+		},
+		{
+			"name": "mamemon",
+			"from": "shootmon"
+		},
+		{
+			"name": "fujamon",
+			"from": "divemon"
+		},
+		{
+			"name": "tapirmon",
+			"for": "skullbaluchimon"
+		}
 	],
 	"size": 7
 }

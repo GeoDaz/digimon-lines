@@ -1,270 +1,230 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "medievalgallantmon",
-                "color": "x",
-                "from": [
-                    1,
-                    -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "guilmon_x",
-                "color": "x",
-                "from": [
-                    3,
-                    0
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "growlmon_x",
-                "color": "x",
-                "xCollapsable": true,
-                "yCollapsable": false,
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        3,
-                        0
-                    ]
-                ]
-            },
-            {
-                "name": "wargrowlmon_x",
-                "color": "x",
-                "xCollapsable": true,
-                "yCollapsable": false,
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        3,
-                        0
-                    ]
-                ]
-            },
-            {
-                "name": "gallantmon_x",
-                "color": "x",
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "megidramon_x",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "suijinmon",
-                "from": [
-                    1,
-                    -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            {
-                "name": "jyarimon",
-                "from": null,
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "gigimon",
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "guilmon",
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "growlmon",
-                "xCollapsable": false,
-                "yCollapsable": false,
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "wargrowlmon",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "gallantmon",
-                "color": "human",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "gallantmon_crimson_mode",
-                "color": "mode",
-                "xCollapsable": true,
-                "yCollapsable": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "growlmon_orange",
-                "from": [
-                    -1,
-                    -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "wargrowlmon_orange",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "megidramon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "guilmon_black",
-                "color": "dark",
-                "from": [
-                    -2,
-                    -1
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "growlmon_black",
-                "color": "dark",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "black_wargrowlmon",
-                "color": "dark",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "chaosgallantmon",
-                "color": "dark",
-                "skins": [
-                    "chaosgallantmon_core"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "gallantmon_chaos_mode",
-                "color": "mode",
-                "xCollapsable": true,
-                "yCollapsable": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "punkmon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "loudmon",
-                "color": "dark",
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "heavymetaldramon",
-                "color": "dark",
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ]
-    ],
-    "related": [
-        {
-            "name": "impmon",
-            "from": "punkmon"
-        },
-        {
-            "name": "raidenmon",
-            "for": "suijinmon"
-        },
-        {
-            "name": "wizardmon",
-            "from": "medievalgallantmon"
-        }
-    ],
-    "size": 7
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "medievalgallantmon",
+				"color": ["x", "mode"],
+				"from": [
+					[1, -1],
+					[1, 0]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "guilmon_x",
+				"color": "x",
+				"from": [3, 0],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "growlmon_x",
+				"color": "x",
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"from": [
+					[0, -1],
+					[3, 0]
+				]
+			},
+			{
+				"name": "wargrowlmon_x",
+				"color": "x",
+				"xCollapsable": true,
+				"yCollapsable": false,
+				"from": [
+					[0, -1],
+					[3, 0]
+				]
+			},
+			{
+				"name": "gallantmon_x",
+				"color": "x",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "megidramon_x",
+				"color": "dark",
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "suijinmon",
+				"from": [1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			{
+				"name": "jyarimon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "gigimon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "guilmon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "growlmon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]]
+			},
+			{
+				"name": "wargrowlmon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "gallantmon",
+				"color": "human",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "gallantmon_crimson_mode",
+				"color": "mode",
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "growlmon_orange",
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "wargrowlmon_orange",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "megidramon",
+				"color": "dark",
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "guilmon_black",
+				"color": "dark",
+				"from": [-2, -1],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "growlmon_black",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "black_wargrowlmon",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "chaosgallantmon",
+				"color": "dark",
+				"skins": ["chaosgallantmon_core"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "gallantmon_chaos_mode",
+				"color": "mode",
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "punkmon",
+				"color": "dark",
+				"from": [-1, -1],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "loudmon",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "heavymetaldramon",
+				"color": "dark",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null
+		]
+	],
+	"related": [
+		{
+			"name": "impmon",
+			"from": "punkmon"
+		},
+		{
+			"name": "raidenmon",
+			"for": "suijinmon"
+		},
+		{
+			"name": "wizardmon",
+			"from": "medievalgallantmon"
+		}
+	],
+	"size": 7
 }

@@ -697,18 +697,6 @@
 			"name": "commandramon"
 		},
 		"neocrimson",
-		{
-			"name": "vorvomon",
-			"for": "flarelizardmon"
-		},
-		{
-			"name": "betamon",
-			"for": "megadramon"
-		},
-		{
-			"name": "betamon",
-			"for": "seadramon"
-		},
 		"chimeramon",
 		{
 			"name": "garurumon",
@@ -720,7 +708,27 @@
 		},
 		{
 			"name": "shoutmon",
+			"for": "shoutmon_x3gm"
+		},
+		{
+			"name": "shoutmon",
 			"for": "shoutmon_dx"
+		},
+		{
+			"name": "pawnchessmon_white",
+			"for": "greyknightsmon"
+		},
+		{
+			"name": "vorvomon",
+			"for": "flarelizardmon"
+		},
+		{
+			"name": "betamon",
+			"for": "megadramon"
+		},
+		{
+			"name": "betamon",
+			"for": "seadramon"
 		},
 		{
 			"name": "apocalymon",

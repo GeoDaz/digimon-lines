@@ -27,6 +27,8 @@ import { DigimonContext } from '@/context/digimon';
 import { StringObject } from '@/types/Ui';
 
 const NAME = 'name';
+const defaultObject: any = {};
+
 interface StaticProps {
 	line?: Line;
 	name?: string;
@@ -41,7 +43,7 @@ interface Props {
 	ssr: StaticProps;
 	type: string;
 }
-export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
+export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) => {
 	const { name } = useQueryParam(NAME) || ssr;
 	const router = useRouter();
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
@@ -93,7 +95,10 @@ export const PageLine: React.FC<Props> = ({ ssr = {}, type = LINE }) => {
 			</div>
 			{line ? (
 				<DigimonContext.Provider
-					value={{ data: ssr.digimons || {}, dubNames: ssr.dubNames || {} }}
+					value={{
+						data: ssr.digimons || defaultObject,
+						dubNames: ssr.dubNames || defaultObject,
+					}}
 				>
 					<LineGrid line={line} zoom={zoom} />
 					<CommentLink />
