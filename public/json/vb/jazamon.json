@@ -7,7 +7,7 @@
 			null,
 			null,
 			{
-				"name": "atlurballistamon",
+				"name": "masterblimpmon",
 				"from": [1, -1],
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -19,8 +19,9 @@
 			null,
 			null,
 			{
-				"name": "ballistamon",
+				"name": "blimpmon",
 				"from": [1, -1],
+                "mirror": true,
 				"xCollapsable": false,
 				"yCollapsable": false
 			},

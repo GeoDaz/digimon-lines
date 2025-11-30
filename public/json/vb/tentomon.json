@@ -1,7 +1,7 @@
 {
 	"size": 8,
 	"columns": [
-		[null, null, null, null, { "name": "metallifekuwagamon", "from": [1, -1] }, null],
+		[null, null, null, null, { "name": "metallifekuwagamon", "from": [1, -1], "mirror": true }, null],
 		[
 			null,
 			null,
@@ -30,10 +30,10 @@
 			null,
 			null,
 			null,
-			{ "name": "blitzmon", "from": [-2, -1] },
+			{ "name": "ballistamon", "from": [-2, -1] },
 			{ "name": "bolgmon", "from": [0, -1] },
 			{ "name": "ancientbeetlemon", "from": [0, -1] }
 		],
-		[null, null, null, null, { "name": "rhinokabuterimon", "from": [-1, -1] }, null]
+		[null, null, null, null, { "name": "atlurballistamon", "from": [-1, -1], "mirror": true }, null]
 	]
 }
