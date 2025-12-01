@@ -27,7 +27,7 @@ export const ZoomBar: React.FC<{
 	}, [zoom]);
 
 	return (
-		<div className="zoom-bar d-flex ms-3">
+		<div className="zoom-bar d-flex align-items-center overflow-x-auto">
 			<Icon
 				name="zoom-in"
 				className="lead d-inline-block d-max-xs-none"

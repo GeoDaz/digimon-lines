@@ -970,6 +970,7 @@ a.line-point {
 .progress-bar {
   position: relative;
   width: 400px;
+  min-width: 320px;
   height: 15px;
   display: flex;
   flex-direction: row;
