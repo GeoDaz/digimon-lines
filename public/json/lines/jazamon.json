@@ -5,8 +5,8 @@
 			null,
 			{
 				"name": "sparrowmon",
-				"from": [2, -1],
-				"color": "gold",
+				"from": [[2, -1]],
+				"color": ["gold"],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
@@ -17,7 +17,13 @@
 				"yCollapsable": true
 			},
 			null,
-			null
+			{
+				"name": "zeekgreymon",
+				"color": "gold",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
 		],
 		[
 			null,
@@ -40,8 +46,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "zeekgreymon",
-				"color": "gold",
+				"name": "shoutmon_x3gm",
 				"xCollapsable": false,
 				"yCollapsable": true
 			}
@@ -183,18 +188,21 @@
 		"vorvomon",
 		"blucomon",
 		{ "name": "greymon", "for": "greymon_blue_2" },
+		{ "name": "maquinamon", "for": "mockingbirdmon" },
+		{ "name": "maquinamon", "for": "maneuvermon" },
+		{ "name": "shoutmon", "for": "shoutmon_x3gm" },
+		{ "name": "shoutmon", "for": "shoutmon_x5" },
 		{ "name": "commandramon", "for": "cargodramon" },
 		{ "name": "betamon", "for": "gigadramon" },
-		{ "name": "maquinamon", "for": "mockingbirdmon" },
 		{ "name": "hagurumon", "for": "masterblimpmon" },
 		{ "name": "tentomon", "for": "kokuwamon" },
 		"espimon",
-		{ "name": "penmon", "for": "peacockmon" },
-		{ "name": "shoutmon", "for": "shoutmon_x5" },
+		{ "name": "elizamon", "for": "jet_mervamon", "from": "iguneetmon" },
 		{ "name": "fairymon", "for": "jetsilphymon" },
 		{ "name": "gaomon", "for": "machgaogamon" },
 		{ "name": "aegiomon", "for": "aegiochusmon_blue" },
 		{ "name": "terriermon", "for": "rapidmon" },
+		{ "name": "hawkmon", "for": "peacockmon" },
 		{ "name": "pteromon", "from": "pteranomon" }
 	],
 	"size": 6
