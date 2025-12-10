@@ -1,84 +1,71 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "keramon_x",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            },
-            null,
-            null,
-            {
-                "name": "diaboromon_x",
-                "color": "x",
-                "from": [
-                    1,
-                    0
-                ]
-            }
-        ],
-        [
-            {
-                "name": "kuramon"
-            },
-            {
-                "name": "tsumemon",
-                "color": "dark"
-            },
-            {
-                "name": "keramon",
-                "color": "dark"
-            },
-            {
-                "name": "chrysalimon",
-                "color": "dark"
-            },
-            {
-                "name": "infermon",
-                "color": "dark"
-            },
-            {
-                "name": "diaboromon",
-                "color": "dark"
-            },
-            null,
-            {
-                "name": "armageddemon",
-                "color": "dark",
-                "from": [
-                    0,
-                    -2
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "parallelmon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        "algomon",
-        "arkadimon",
-        "negamon",
-        {
-            "name": "dokugumon",
-            "for": "parasitemon"
-        }
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "keramon_x",
+				"color": "x",
+				"from": [1, 0]
+			},
+			null,
+			null,
+			{
+				"name": "diaboromon_x",
+				"color": "x",
+				"from": [1, 0]
+			}
+		],
+		[
+			{
+				"name": "kuramon"
+			},
+			{
+				"name": "tsumemon",
+				"color": "dark"
+			},
+			{
+				"name": "keramon",
+				"color": "dark"
+			},
+			{
+				"name": "chrysalimon",
+				"color": "dark"
+			},
+			{
+				"name": "infermon",
+				"color": "dark"
+			},
+			{
+				"name": "diaboromon",
+				"color": "dark"
+			},
+			{
+				"name": "armageddemon",
+				"color": "dark"
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "parallelmon",
+				"color": "dark",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		"algomon",
+		"arkadimon",
+		"negamon",
+		{
+			"name": "dokugumon",
+			"for": "parasitemon"
+		}
+	]
 }

@@ -24,11 +24,13 @@
 				"name": "arkadimon_6",
 				"color": "dark"
 			},
-			null,
 			{
 				"name": "arkadimon_7",
-				"color": "dark",
-				"from": [0, -2]
+				"color": "dark"
+			},
+			{
+				"name": "demon_super_ultimate",
+				"color": "fusion"
 			}
 		],
 		[
@@ -39,13 +41,16 @@
 			null,
 			{
 				"name": "metamormon",
-				"from": [[-1, -1]]
+				"from": [[-1, -1]],
+				"color": "dark"
 			}
 		]
 	],
 	"related": [
 		{ "name": "devimon", "for": "demon_super_ultimate" },
 		"keramon",
+		{ "name": "mercuremon", "from": "metamormon" },
+		{ "name": "jellymon", "for": "parallelmon" },
 		{ "name": "angemon", "for": "bagramon" },
 		{ "name": "pawnchessmon_white", "for": "darkknightmon" }
 	]

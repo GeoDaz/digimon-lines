@@ -52,14 +52,13 @@
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
-			null,
 			{
 				"name": "ulforceveedramon_future_mode",
 				"color": "mode",
-				"from": [0, -2],
 				"xCollapsable": false,
 				"yCollapsable": true
-			}
+			},
+			null
 		],
 		[
 			{
@@ -342,6 +341,7 @@
 		]
 	],
 	"related": [
+		"imperialdramon_paladin_mode",
 		{
 			"name": "wormmon",
 			"from": "paildramon"
