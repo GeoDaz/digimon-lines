@@ -30,7 +30,8 @@
   --bs-xl: 1200px;
   --bs-xxl: 1400px;
   --bs-primary: rgb(100, 53, 201);
-  --bs-primary-hover: rgb(78, 43, 155);
+  --bs-primary-link: rgb(133, 92, 223);
+  --bs-primary-hover: rgb(100, 53, 201);
   --bs-primary-active: rgb(54, 29, 107);
 
   --dl-img-size: 10rem;
@@ -101,7 +102,7 @@ body ::-webkit-scrollbar-track {
 }
 
 a:not(.btn) {
-  color: var(--bs-primary);
+  color: var(--bs-primary-link);
   text-decoration: none;
 }
 
@@ -528,10 +529,6 @@ a.line-point {
   width: var(--dl-img-size);
   height: var(--dl-img-size);
   border-radius: var(--bs-border-radius);
-}
-
-.line-point.group .line-point-safe-zone {
-  background-color: transparent;
 }
 
 .line-point .line-point-safe-zone.gridded {
