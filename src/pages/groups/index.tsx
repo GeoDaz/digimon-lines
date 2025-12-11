@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import fs from 'fs';
-import { Row, Col, Spinner } from 'react-bootstrap';
-import useFetch from '@/hooks/useFetch';
+import { Row, Col } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import LinePoint from '@/components/Line/LinePoint';
 import { GetStaticProps } from 'next';
 import { LineThumb } from '@/types/Line';
 import { GROUP } from '@/consts/ui';
-import { SITE_URL } from '@/consts/env';
+import { capitalize } from '@/functions';
 
 // TODO rename this page groups.tsx when there will be a home
 
@@ -31,6 +30,7 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 						typeof group === 'string' ? (
 							<Col key={i}>
 								<LinePoint name={group} type={GROUP} />
+								<GroupName name={group} />
 							</Col>
 						) : (
 							<Col key={i}>
@@ -39,12 +39,21 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 									available={group.available}
 									type={GROUP}
 								/>
+								<GroupName name={group.name} />
 							</Col>
 						)
 					)}
 				</Row>
 			</div>
 		</Layout>
+	);
+};
+
+const GroupName: React.FC<{ name: string }> = ({ name }) => {
+	return (
+		<a href={`/groups/${name}`} className="h5 d-block text-center mt-2">
+			{capitalize(name)}
+		</a>
 	);
 };
 

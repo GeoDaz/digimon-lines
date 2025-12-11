@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import fs from 'fs';
-import { Row, Col, Spinner } from 'react-bootstrap';
-import useFetch from '@/hooks/useFetch';
+import { Row, Col } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import LinePoint from '@/components/Line/LinePoint';
 import { GetStaticProps } from 'next';
 import { LineThumb } from '@/types/Line';
 import { VB } from '@/consts/ui';
-import { SITE_URL } from '@/consts/env';
 
 const defaultData = { lines: [] };
 interface StaticProps {
@@ -23,6 +21,31 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 			metatitle="DIM"
 			metadescription="List of available Digimon DIM"
 		>
+			<div>
+				<p className="mb-1">
+					These lines are fan made, you can find the original here:
+				</p>
+				<ul>
+					<li>
+						<a
+							href="https://humulos.com/digimon/vbdm/#"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+						>
+							https://humulos.com/ DIM
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://humulos.com/digimon/vbbe/"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+						>
+							https://humulos.com/digimon/vbbe/
+						</a>
+					</li>
+				</ul>
+			</div>
 			<div className="line-wrapper">
 				<Row className="line-row">
 					{ssr.lines.map((line, i) =>

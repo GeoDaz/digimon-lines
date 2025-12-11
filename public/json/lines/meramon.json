@@ -113,9 +113,10 @@
 		"wizardmon",
 		{ "name": "greymon", "for": "flarelizardmon" },
 		"vorvomon",
-		{ "name": "impmon", "for": "beelzebumon" },
-		{ "name": "kotemon", "for": "asuramon" },
-		{ "name": "golemon", "for": "vulcanusmon" },
+		{ "name": "impmon", "for": "beelzebumon_behemoth" },
+		{ "name": "kotemon", "from": "asuramon" },
+		{ "name": "golemon", "from": "vulcanusmon" },
+		{ "name": "jellymon", "from": "vulcanusmon" },
 		{ "name": "machmon", "from": "nezhamon" }
 	],
 	"size": 7

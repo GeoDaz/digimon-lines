@@ -107,7 +107,11 @@
 		{ "name": "greymon", "for": "samudramon" },
 		{ "name": "meramon", "for": "asuramon" },
 		{ "name": "golemon", "for": "vulcanusmon" },
-		{ "name": "machmon", "for": "nezhamon" }
+		{ "name": "machmon", "for": "nezhamon" },
+		{
+			"name": "impmon",
+			"for": "beelzebumon_behemoth"
+		}
 	],
 	"size": 7
 }

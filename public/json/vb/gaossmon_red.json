@@ -18,9 +18,9 @@
 			{ "name": "dinomon", "from": [[0, -1]], "collapsable": false }
 		],
 		[
-			{ "name": "botamon", "from": null, "collapsable": true },
-			{ "name": "koromon", "from": null, "collapsable": true },
-			{ "name": "gaossmon_red", "from": null, "collapsable": true },
+			{ "name": "botamon", "collapsable": true },
+			{ "name": "koromon", "collapsable": true },
+			{ "name": "gaossmon_red", "collapsable": true },
 			{ "name": "darktyranomon", "from": [[0, -1]], "collapsable": false },
 			{ "name": "metaltyranomon", "from": null, "collapsable": false },
 			{ "name": "rusttyranomon", "from": [[0, -2]], "collapsable": false }

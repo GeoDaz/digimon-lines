@@ -32,11 +32,7 @@ const LinePoint: React.FC<Props> = ({
 		return (
 			<div
 				title={capitalizedName}
-				className={makeClassName(
-					'line-point pictured unavailable',
-					type === GROUP && 'group',
-					className
-				)}
+				className={makeClassName('line-point pictured unavailable', className)}
 				style={style}
 			>
 				<div className="line-point-safe-zone">
@@ -56,7 +52,6 @@ const LinePoint: React.FC<Props> = ({
 			className={makeClassName(
 				'line-point pictured',
 				available && 'available',
-				type === GROUP && 'group',
 				className
 			)}
 			style={style}
