@@ -40,7 +40,7 @@
 				"from": [[3, -1]],
 				"color": ["wind"],
 				"skins": ["love"],
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
@@ -68,27 +68,28 @@
 			null,
 			null,
 			{
-				"name": "darcmon",
-				"color": "light",
-				"from": [1.5, -1],
+				"name": "thunderbirdmon",
+				"from": [[2, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
-				"xSize": 2
+				"skins": ["friendship", "rinkmon"],
+				"color": ["electric"]
 			},
 			{
 				"name": "hippogriffomon",
 				"from": [
 					[-1.5, -1],
-					[0, -1]
+					[1.5, -1],
+					[0.5, -1]
 				],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"xSize": 2,
-				"color": ["wind", "wind"]
+				"color": ["wind", "wind", "wind"]
 			},
 			{
 				"name": "murmukusmon",
-				"color": "dark",
+				"color": ["dark"],
 				"from": [[0.5, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
@@ -98,7 +99,13 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "darcmon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["light"]
+			},
 			null,
 			{
 				"name": "griffomon",
@@ -134,7 +141,7 @@
 			},
 			{
 				"name": "silphymon",
-				"color": "fusion",
+				"color": ["fusion"],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -151,7 +158,7 @@
 			null,
 			{
 				"name": "harpymon",
-				"from": [-1, -1],
+				"from": [[-1, -1]],
 				"skins": ["light"],
 				"xCollapsable": false,
 				"yCollapsable": false,
@@ -185,7 +192,7 @@
 			{
 				"name": "jetsilphymon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": true,
 				"color": ["wind"]
 			},
@@ -201,7 +208,51 @@
 				"skins": ["knowledge"],
 				"from": [[-3, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "moosemon",
+				"from": [[-4, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["hope"],
+				"color": ["ice"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "toucanmon",
+				"from": [[-5, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["kindness"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "orcamon",
+				"from": [[-6, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["reliability"],
+				"color": ["marine"]
 			},
 			null,
 			null

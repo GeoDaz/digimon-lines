@@ -1,378 +1,586 @@
 {
 	"columns": [
-		[
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "veedramon_black",
+		  "from": [
+			[
+			  2,
+			  -1
+			]
+		  ],
+		  "color": [
+			"dark"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "goldveedramon",
+		  "color": [
+			"gold"
+		  ],
+		  "skins": [
+			"fate"
+		  ],
+		  "from": [
+			[
+			  2,
+			  -2
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "ulforceveedramon_x",
+		  "color": [
+			"x"
+		  ],
+		  "from": [
+			[
+			  1,
+			  0
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "veedramon",
+		  "from": [
+			[
+			  1,
+			  -1
+			]
+		  ],
+		  "skins": [
+			"redveedramon"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "aeroveedramon",
+		  "color": [
+			"wind"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "ulforceveedramon",
+		  "color": [
+			"wind"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "ulforceveedramon_future_mode",
+		  "color": [
+			"mode"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		{
+		  "name": "chicomon",
+		  "from": null,
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "chibimon",
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "veemon",
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "exveemon",
+		  "color": [
+			"wind",
+			"wind"
+		  ],
+		  "from": [
+			0,
+			-1
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "paildramon",
+		  "color": [
+			"fusion"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "imperialdramon_dragon_mode",
+		  "xCollapsable": false,
+		  "yCollapsable": false,
+		  "from": [
+			[
+			  2,
+			  -1
+			],
+			[
+			  0,
+			  -1
+			]
+		  ]
+		},
+		{
+		  "name": "imperialdramon_fighter_mode",
+		  "color": [
+			"mode"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "imperialdramon_paladin_mode",
+		  "color": [
+			"fusion"
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		}
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "exveemon_black",
+		  "color": [
+			"dark"
+		  ],
+		  "from": [
+			[
+			  -1,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "paildramon_black",
+		  "color": [
+			"dark"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "imperialdramon_black",
+		  "color": [
+			"dark"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "imperialdramon_fighter_mode_black",
+		  "color": [
+			"mode"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "honeybeemon",
+		  "from": [
+			[
+			  -2,
+			  -1
+			]
+		  ],
+		  "skins": [
+			"knowledge"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "dinobeemon",
+		  "from": [
+			[
+			  0,
+			  -1
+			],
+			[
+			  -2,
+			  -1
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false,
+		  "color": [
 			null,
-			null,
-			null,
-			{
-				"name": "veedramon_black",
-				"from": [2, -1],
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "goldveedramon",
-				"color": "gold",
-				"skins": ["fate"],
-				"from": [2, -2],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "ulforceveedramon_x",
-				"color": "x",
-				"from": [1, 0],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "veedramon",
-				"from": [1, -1],
-				"skins": ["redveedramon"],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "aeroveedramon",
-				"color": "wind",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "ulforceveedramon",
-				"color": "wind",
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			{
-				"name": "ulforceveedramon_future_mode",
-				"color": "mode",
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null
-		],
-		[
-			{
-				"name": "chicomon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "chibimon",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "veemon",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "exveemon",
-				"color": "wind",
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "paildramon",
-				"color": "fusion",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "imperialdramon_dragon_mode",
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"from": [
-					[2, -1],
-					[0, -1]
-				]
-			},
-			{
-				"name": "imperialdramon_fighter_mode",
-				"color": "mode",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "imperialdramon_paladin_mode",
-				"color": "fusion",
-				"xCollapsable": true,
-				"yCollapsable": true
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "exveemon_black",
-				"color": "dark",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			{
-				"name": "paildramon_black",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "imperialdramon_black",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "imperialdramon_fighter_mode_black",
-				"color": "mode",
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "honeybeemon",
-				"from": [[-2, -1]],
-				"skins": ["knowledge"],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "dinobeemon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "grankuwagamon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "grandiskuwagamon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
-				"color": ["x"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "flamedramon",
-				"color": "fire",
-				"skins": ["courage"],
-				"from": [[-3, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "sagittarimon",
-				"color": ["fusion", "fusion"],
-				"skins": ["hope"],
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				],
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "magnamon",
-				"color": "gold",
-				"skins": ["miracles"],
-				"from": [
-					[0.5, -1],
-					[0, -2]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "raidramon",
-				"color": "electric",
-				"skins": ["friendship"],
-				"from": [[-4, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			{
-				"name": "magnamon_x",
-				"color": "x",
-				"from": [-1, 0],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "magnamon_x_gold_digizoid",
-				"color": "mode",
-				"xCollapsable": true,
-				"yCollapsable": true
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "gargoylemon",
-				"color": "light",
-				"skins": ["light"],
-				"from": [[-5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "manticoremon",
-				"color": "light",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "azulongmon",
-				"color": ["light", "electric"],
-				"from": [
-					[0, -1],
-					[-1.5, -1]
-				],
-				"xCollapsable": true,
-				"yCollapsable": true
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "kangarumon",
-				"from": [[-6, -1]],
-				"skins": ["kindness"],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "yaksamon",
-				"color": "grass",
-				"skins": ["purity"],
-				"from": [[-7, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "sethmon",
-				"color": "wind",
-				"skins": ["love"],
-				"from": [[-8, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "depthmon",
-				"color": "marine",
-				"skins": ["reliability"],
-				"from": [[-9, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			null,
-			null,
-			null
-		]
+			"fusion"
+		  ]
+		},
+		{
+		  "name": "grankuwagamon",
+		  "from": [
+			[
+			  0,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "grandiskuwagamon",
+		  "from": [
+			[
+			  0,
+			  -1
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": true,
+		  "color": [
+			"x"
+		  ]
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "flamedramon",
+		  "color": [
+			"fire"
+		  ],
+		  "skins": [
+			"courage"
+		  ],
+		  "from": [
+			[
+			  -3,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "sagittarimon",
+		  "color": [
+			"fusion",
+			"fusion"
+		  ],
+		  "skins": [
+			"hope"
+		  ],
+		  "from": [
+			[
+			  -0.5,
+			  -1
+			],
+			[
+			  0.5,
+			  -1
+			]
+		  ],
+		  "xSize": 2,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "magnamon",
+		  "color": [
+			"gold",
+			"gold"
+		  ],
+		  "skins": [
+			"miracles"
+		  ],
+		  "from": [
+			[
+			  0.5,
+			  -1
+			],
+			[
+			  0,
+			  -2
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "raidramon",
+		  "color": [
+			"electric"
+		  ],
+		  "skins": [
+			"friendship"
+		  ],
+		  "from": [
+			[
+			  -4,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		{
+		  "name": "magnamon_x",
+		  "color": [
+			"x"
+		  ],
+		  "from": [
+			[
+			  -1,
+			  0
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "magnamon_x_gold_digizoid",
+		  "color": [
+			"mode"
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "gargoylemon",
+		  "color": [
+			"light"
+		  ],
+		  "skins": [
+			"light"
+		  ],
+		  "from": [
+			[
+			  -5,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "manticoremon",
+		  "color": [
+			"light"
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "azulongmon",
+		  "color": [
+			"light",
+			"electric"
+		  ],
+		  "from": [
+			[
+			  0,
+			  -1
+			],
+			[
+			  -1.5,
+			  -1
+			]
+		  ],
+		  "xCollapsable": true,
+		  "yCollapsable": true
+		},
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "kangarumon",
+		  "from": [
+			[
+			  -6,
+			  -1
+			]
+		  ],
+		  "skins": [
+			"kindness"
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null,
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "yaksamon",
+		  "color": [
+			"grass"
+		  ],
+		  "skins": [
+			"purity"
+		  ],
+		  "from": [
+			[
+			  -7,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null,
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "sethmon",
+		  "color": [
+			"wind"
+		  ],
+		  "skins": [
+			"love"
+		  ],
+		  "from": [
+			[
+			  -8,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null,
+		null,
+		null
+	  ],
+	  [
+		null,
+		null,
+		null,
+		{
+		  "name": "depthmon",
+		  "color": [
+			"marine"
+		  ],
+		  "skins": [
+			"reliability"
+		  ],
+		  "from": [
+			[
+			  -9,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null,
+		null,
+		null,
+		null
+	  ]
 	],
 	"related": [
-		"imperialdramon_paladin_mode",
-		{
-			"name": "wormmon",
-			"from": "paildramon"
-		},
-		{
-			"name": "tentomon",
-			"for": "grankuwagamon"
-		},
-		{
-			"name": "kotemon",
-			"for": "yaksamon"
-		},
-		{
-			"name": "jellymon",
-			"for": "depthmon"
-		},
-		{
-			"name": "tapirmon",
-			"for": "sethmon"
-		},
-		{
-			"name": "hyokomon",
-			"for": "darumamon"
-		},
-		{ "name": "shoutmon", "from": "redveedramon" },
-		"gumdramon",
-		{ "name": "patamon", "for": "goldramon" },
-		{
-			"name": "greymon",
-			"for": "omegamon"
-		}
+	  "imperialdramon_paladin_mode",
+	  {
+		"name": "wormmon",
+		"from": "paildramon"
+	  },
+	  {
+		"name": "tentomon",
+		"for": "grankuwagamon"
+	  },
+	  {
+		"name": "kotemon",
+		"for": "yaksamon"
+	  },
+	  {
+		"name": "jellymon",
+		"for": "depthmon"
+	  },
+	  {
+		"name": "tapirmon",
+		"for": "sethmon"
+	  },
+	  {
+		"name": "hyokomon",
+		"for": "darumamon"
+	  },
+	  {
+		"name": "shoutmon",
+		"from": "redveedramon"
+	  },
+	  "gumdramon",
+	  {
+		"name": "patamon",
+		"for": "goldramon"
+	  },
+	  {
+		"name": "greymon",
+		"for": "omegamon"
+	  }
 	],
 	"size": 8
-}
+  }
