@@ -514,19 +514,8 @@
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
-			{
-				"name": "minervamon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "mervamon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
-				"skins": ["jet_mervamon"]
-			},
+			null,
+			null,
 			null
 		],
 		[
@@ -542,13 +531,7 @@
 				"yCollapsable": true
 			},
 			null,
-			{
-				"name": "minervamon_x",
-				"from": [[-1, 0]],
-				"xCollapsable": true,
-				"yCollapsable": true,
-				"color": ["x"]
-			},
+			null,
 			null,
 			null
 		],
@@ -636,10 +619,6 @@
 			"for": "rabbitmon"
 		},
 		{
-			"name": "sukamon",
-			"for": "opossummon"
-		},
-		{
 			"name": "elizamon",
 			"for": "minervamon"
 		},
@@ -663,6 +642,7 @@
 			"name": "impmon",
 			"for": "beelstarmon"
 		},
+		"sistermon_blanc",
 		{
 			"name": "morphomon",
 			"from": "butterflamon"
@@ -672,7 +652,22 @@
 			"for": "coronamon",
 			"from": "lynxmon"
 		},
-		"sistermon_blanc",
+		{
+			"name": "sukamon",
+			"for": "opossummon"
+		},
+		{
+			"name": "penmon",
+			"for": "swanmon"
+		},
+		{
+			"name": "penmon",
+			"for": "swanmon"
+		},
+		{
+			"name": "pillowmon",
+			"for": "goatmon"
+		},
 		{
 			"name": "shoemon",
 			"for": "cendrillmon"

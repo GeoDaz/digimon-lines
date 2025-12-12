@@ -566,14 +566,6 @@
 			"for": "goldramon"
 		},
 		{
-			"name": "renamon",
-			"for": "chirinmon"
-		},
-		{
-			"name": "turkimon",
-			"for": "hakubamon"
-		},
-		{
 			"name": "jellymon",
 			"for": "marineangemon"
 		},
@@ -582,16 +574,29 @@
 			"for": "slashangemon"
 		},
 		{
+			"name": "renamon",
+			"for": "chirinmon"
+		},
+		{
+			"name": "veemon",
+			"for": "sagittarimon"
+		},
+		{ "name": "commandramon", "from": "assaultmon" },
+		{
+			"name": "turkimon",
+			"for": "hakubamon"
+		},
+		{
+			"name": "omegamon_merciful_mode",
+			"from": "seraphimon"
+		},
+		{
 			"name": "dracmon",
 			"for": "duskmon"
 		},
 		{
 			"name": "pawnchessmon_white",
 			"for": "darkknightmon"
-		},
-		{
-			"name": "omegamon_merciful_mode",
-			"from": "seraphimon"
 		}
 	],
 	"size": 8
