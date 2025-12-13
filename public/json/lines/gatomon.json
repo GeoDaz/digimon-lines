@@ -614,22 +614,18 @@
 			"for": "skullbaluchimon"
 		},
 		{
-			"name": "terriermon",
-			"from": "lopmon",
-			"for": "rabbitmon"
+			"name": "jellymon",
+			"for": "venusmon"
+		},
+		{
+			"name": "impmon",
+			"for": "beelstarmon"
 		},
 		{
 			"name": "elizamon",
 			"for": "minervamon"
 		},
-		{
-			"name": "jellymon",
-			"for": "venusmon"
-		},
-		{
-			"name": "pawnchessmon_white",
-			"for": "skullknightmon"
-		},
+		"sistermon_blanc",
 		{
 			"name": "wizardmon",
 			"for": "witchmon"
@@ -639,18 +635,22 @@
 			"for": "app_warudamon"
 		},
 		{
-			"name": "impmon",
-			"for": "beelstarmon"
+			"name": "pawnchessmon_white",
+			"for": "skullknightmon"
 		},
-		"sistermon_blanc",
 		{
 			"name": "morphomon",
-			"from": "butterflamon"
+			"for": "butterflamon"
 		},
 		{
 			"name": "leomon",
-			"for": "coronamon",
-			"from": "lynxmon"
+			"from": "coronamon",
+			"for": "lynxmon"
+		},
+		{
+			"name": "terriermon",
+			"from": "lopmon",
+			"for": "rabbitmon"
 		},
 		{
 			"name": "sukamon",
@@ -661,8 +661,12 @@
 			"for": "swanmon"
 		},
 		{
-			"name": "penmon",
-			"for": "swanmon"
+			"name": "palmon",
+			"for": "kabukimon"
+		},
+		{
+			"name": "betamon",
+			"for": "tylomon"
 		},
 		{
 			"name": "pillowmon",
