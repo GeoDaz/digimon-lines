@@ -316,14 +316,6 @@
 			"from": "sunarizamon"
 		},
 		{
-			"name": "tapirmon",
-			"from": "boarmon"
-		},
-		{
-			"name": "herissmon",
-			"from": "togemogumon"
-		},
-		{
 			"name": "dracomon",
 			"for": "breakdramon"
 		},
@@ -337,12 +329,41 @@
 			"from": "cannondramon"
 		},
 		{
-			"name": "hagurumon",
-			"for": "kenkimon"
+			"name": "tapirmon",
+			"for": "boarmon"
+		},
+		{
+			"name": "herissmon",
+			"for": "togemogumon"
+		},
+		{
+			"name": "pillowmon",
+			"for": "sheepmon"
+		},
+		{
+			"name": "gekkomon",
+			"for": "frogmon"
+		},
+		{
+			"name": "gekomon",
+			"for": "chamelemon"
+		},
+		{
+			"name": "swimmon",
+			"for": "seahomon"
 		},
 		{
 			"name": "jazamon",
 			"for": "pteranomon"
+		},
+		{
+			"name": "hagurumon",
+			"for": "kenkimon"
+		},
+		{
+			"name": "kakamon",
+			"for": "sepikmon",
+			"from": "monmon"
 		},
 		{
 			"name": "leomon",
