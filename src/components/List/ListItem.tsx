@@ -46,15 +46,17 @@ const ListItem: React.FC<Props> = ({ digimon, hash }) => {
 							{dubName && `/ ${capitalize(dubName)}`}
 						</h3>
 					</CardHeader>
-					<CardBody className="d-flex flex-wrap gap-2 align-items-start">
-						<RelationList title="Variants" relations={digimon.variants} />
-						<RelationList title="Modes" relations={digimon.modes} />
-						<RelationList title="From" relations={digimon.from} />
-						<RelationList
-							title="Fusion from"
-							relations={digimon.fusionFrom}
-						/>
-						<RelationList title="To" relations={digimon.to} />
+					<CardBody>
+						<div className="d-flex flex-wrap gap-2 align-items-start flex-grow-0">
+							<RelationList title="Variants" relations={digimon.variants} />
+							<RelationList title="Modes" relations={digimon.modes} />
+							<RelationList title="From" relations={digimon.from} />
+							<RelationList
+								title="Fusion from"
+								relations={digimon.fusionFrom}
+							/>
+							<RelationList title="To" relations={digimon.to} />
+						</div>
 					</CardBody>
 				</Card>
 			</div>
