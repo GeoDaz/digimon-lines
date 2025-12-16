@@ -12,3 +12,12 @@ export interface Digimon {
 	variants: string[];
 	tags: string[];
 }
+
+export interface DigimonItem{
+	name: string;
+	variants?: string[];
+	modes?: string[];
+	from?: string[];
+	fusionFrom?: string[];
+	to?: string[];
+}

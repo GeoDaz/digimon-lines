@@ -1,0 +1,279 @@
+{
+	"Baby I": {
+		"botamon": {
+			"name": "botamon",
+			"to": ["koromon"]
+		}
+	},
+	"Baby II": {
+		"koromon": {
+			"name": "koromon",
+			"to": ["agumon"],
+			"from": ["botamon"]
+		}
+	},
+	"Rookie": {
+		"agumon": {
+			"name": "agumon",
+			"variants": [
+				"agumon_2",
+				"agumon_black",
+				"agumon_black_2",
+				"snowagumon",
+				"snowagumon_2",
+				"agumon_hakase",
+				"nise_agumon_hakase",
+				"bushi_agumon",
+				"rurimon",
+				"commandramon",
+				"toyagumon",
+				"cleartoyagumon",
+				"toyagumon_black",
+				"cleartoyagumon_black"
+			],
+			"modes": ["agumon_x", "agumon_yuki_no_kizuma"],
+			"from": ["koromon"],
+			"to": [
+				"greymon",
+				"geogreymon",
+				"tyranomon",
+				"tuskmon",
+				"cyclomon",
+				"flarelizardmon"
+			]
+		}
+	},
+	"Rookie X": {
+		"agumon_x": {
+			"name": "agumon_x",
+			"variants": ["agumon_black_x"],
+			"to": ["greymon_x", "tyranomon_x"],
+			"from": ["agumon"]
+		}
+	},
+	"Hybrid I": {
+		"flamon": {
+			"name": "flamon",
+			"to": ["agunimon"],
+			"from": ["sunmon"]
+		}
+	},
+	"Champion": {
+		"greymon": {
+			"name": "greymon",
+			"variants": [
+				"geogreymon",
+				"greymon_blue",
+				"greymon_blue_2",
+				"hicommandramon"
+			],
+			"modes": ["greymon_x"],
+			"to": ["metalgreymon", "skullgreymon", "burninggreymon"],
+			"from": ["agumon"]
+		},
+		"geogreymon": {
+			"name": "geogreymon",
+			"variants": ["greymon", "greymon_blue", "greymon_blue_2"],
+			"to": ["rizegreymon"],
+			"from": ["agumon"]
+		}
+	},
+	"Armor I": {
+		"flamedramon": {
+			"name": "flamedramon",
+			"to": ["sagittarimon", "magnamon"],
+			"from": ["veemon"]
+		}
+	},
+	"Hybrid II": {
+		"agunimon": {
+			"name": "agunimon",
+			"modes": ["burninggreymon"],
+			"to": ["aldamon"],
+			"from": ["flamon"]
+		}
+	},
+	"Champion X": {
+		"greymon_x": {
+			"name": "greymon_x",
+			"variants": ["greymon_blue_x"],
+			"to": ["metalgreymon_x", "rizegreymon_x"],
+			"from": ["greymon", "agumon_x"]
+		}
+	},
+	"Hybrid III": {
+		"burninggreymon": {
+			"name": "burninggreymon",
+			"modes": ["agunimon"],
+			"to": ["aldamon", "ancientgreymon"],
+			"from": ["greymon"]
+		}
+	},
+	"Armor II": {
+		"sagittarimon": {
+			"name": "sagittarimon",
+			"to": ["magnamon"],
+			"from": ["veemon", "centarumon"],
+			"fusionFrom": ["flamedramon", "raidramon"]
+		}
+	},
+	"Ultimate": {
+		"metalgreymon": {
+			"name": "metalgreymon",
+			"modes": ["metalgreymon_alter_mode", "metalgreymon_x"],
+			"variants": ["metalgreymon_blue", "metalgreymon_blue_2", "rizegreymon", "skullgreymon"],
+			"to": ["wargreymon", "blitzgreymon", "victorygreymon", "ancientgreymon"],
+			"from": ["greymon", "flarelizardmon"]
+		}
+	},
+	"Ultimate +": {
+		"metalgreymon_alter_mode": {
+			"name": "metalgreymon_alter_mode",
+			"to": ["wargreymon", "blitzgreymon", "victorygreymon"],
+			"from": ["metalgreymon"]
+		}
+	},
+	"Ultimate X": {
+		"metalgreymon_x": {
+			"name": "metalgreymon_x",
+			"variants": ["metalgreymon_blue_x", "rizegreymon_x"],
+			"to": ["wargreymon_x"],
+			"from": ["metalgreymon", "greymon_x"]
+		},
+		"rizegreymon_x": {
+			"name": "rizegreymon_x",
+			"variants": ["metalgreymon_x", "metalgreymon_blue_x"],
+			"from": ["rizegreymon", "greymon_x"]
+		}
+	},
+	"Hybrid IV": {
+		"aldamon": {
+			"name": "aldamon",
+			"to": ["emperorgreymon", "ancientgreymon"],
+			"fusionFrom": ["agunimon", "burninggreymon"]
+		}
+	},
+	"Armor III": {
+		"magnamon": {
+			"name": "magnamon",
+			"modes": ["magnamon_x"],
+			"from": ["veemon", "flamedramon", "sagittarimon"]
+		}
+	},
+	"Mega": {
+		"wargreymon": {
+			"name": "wargreymon",
+			"variants": ["black_wargreymon", "victorygreymon", "blitzgreymon"],
+			"modes": ["wargreymon_x"],
+			"to": ["omegamon"],
+			"from": ["metalgreymon", "wargrowlmon_orange"]
+		},
+		"shinegreymon": {
+			"name": "shinegreymon",
+			"modes": ["shinegreymon_burst_mode", "shinegreymon_ruin_mode"],
+			"from": ["rizegreymon"]
+		},
+		"ancientgreymon": {
+			"name": "ancientgreymon",
+			"from": ["burninggreymon", "aldamon", "metalgreymon", "rizegreymon"]
+		}
+	},
+	"Mega X": {
+		"wargreymon_x": {
+			"name": "wargreymon_x",
+			"variants": ["black_wargreymon_x", "samudramon"],
+			"to": ["omegamon_x"],
+			"from": ["wargreymon","metalgreymon_x"]
+		},
+		"magnamon_x": {
+			"name": "magnamon_x",
+			"modes": ["magnamon_x_gold_digizoid"],
+			"from": ["magnamon"]
+		}
+	},
+	"Hybrid V": {
+		"emperorgreymon": {
+			"name": "emperorgreymon",
+			"to": ["susanoomon"],
+			"from": ["aldamon"]
+		}
+	},
+	"Mega+": {
+		"shinegreymon_burst_mode": {
+			"name": "shinegreymon_burst_mode",
+			"variants": ["shinegreymon_ruin_mode"],
+			"from": ["shinegreymon"]
+		},
+		"omegamon": {
+			"name": "omegamon",
+			"variants": [
+				"omegamon_alter_s",
+				"omegamon_zwart",
+				"omegamon_zwart_defeat",
+				"omegamon_alter_b"
+			],
+			"modes": ["omegamon_x", "omegamon_merciful_mode"],
+			"fusionFrom": ["wargreymon", "metalgarurumon"]
+		},
+		"susanoomon": {
+			"name": "susanoomon",
+			"fusionFrom": ["emperorgreymon", "magnagarurumon"]
+		}
+	},
+	"Mega+ X": {
+		"omegamon_x": {
+			"name": "omegamon_x",
+			"from": ["omegamon", "wargreymon_x", "metalgarurumon_x"]
+		},
+		"magnamon_x_gold_digizoid": {
+			"name": "magnamon_x_gold_digizoid",
+			"from": ["magnamon_x"]
+		},
+		"jesmon_gx": {
+			"name": "jesmon_gx",
+			"from": ["jesmon_x", "gankoomon_x"]
+		}
+	},
+	"Ultra": {
+		"omegamon_merciful_mode": {
+			"name": "omegamon_merciful_mode",
+			"fusionFrom": [
+				"omegamon",
+				"phoenixmon",
+				"herculeskabuterimon",
+				"rosemon",
+				"vikemon",
+				"seraphimon",
+				"magnadramon"
+			]
+		},
+		"ogudomon": {
+			"name": "ogudomon",
+			"modes": ["ogudomon_x"],
+			"fusionFrom": [
+				"barbamon",
+				"lilithmon",
+				"lucemon_satan_mode",
+				"demon",
+				"belphemon_rage_mode",
+				"beelzebumon",
+				"leviamon"
+			]
+		}
+	},
+	"Ultra X": {
+		"ogudomon_x": {
+			"name": "ogudomon_x",
+			"from": ["ogudomon"],
+			"fusionFrom": [
+				"barbamon_x",
+				"lilithmon_x",
+				"lucemon_x",
+				"demon_x",
+				"belphemon_x",
+				"beelzebumon_x",
+				"leviamon_x"
+			]
+		}
+	}
+}

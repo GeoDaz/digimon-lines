@@ -102,7 +102,7 @@ const PageLines: React.FC<Props> = props => {
 					<div>
 						<h2>News&nbsp;:</h2>
 						<LineRow lines={news} />
-						<h2>Species&nbsp;:</h2>
+						<h2>Families&nbsp;:</h2>
 					</div>
 				)}
 				{lines.length > 0 && <LineRow lines={lines} />}

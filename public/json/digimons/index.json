@@ -7,13 +7,8 @@
 		"type": "Reptile",
 		"attribute": "Vaccine",
 		"field": [
-			"Deep Savers",
 			"Dragon's Roar",
-			"Metal Empire",
-			"Nature Spirits",
-			"Nightmare Soldiers",
-			"Virus Busters",
-			"Unknown"
+			"Virus Busters"
 		],
 		"variants": []
 	},
@@ -24,7 +19,7 @@
 		"level": "Adult",
 		"type": "Mythical Beast",
 		"attribute": "Vaccine",
-		"field": ["Dragon's Roar", "Nature Spirits", "Wind Guardians"],
+		"field": ["Dragon's Roar", "Wind Guardians"],
 		"variants": []
 	},
 	"angemon": {
@@ -45,7 +40,7 @@
 		"level": "Child",
 		"type": "Amphibian",
 		"attribute": "Virus",
-		"field": "Nature Spirits",
+		"field": ["Nature Spirits", "Deep Savers"],
 		"variants": []
 	},
 	"birdramon": {
@@ -55,7 +50,7 @@
 		"level": "Adult",
 		"type": "Giant Bird",
 		"attribute": ["Data", "Vaccine"],
-		"field": ["Nature Spirits", "Wind Guardians"],
+		"field": ["Wind Guardians", "Dragon's Roar"],
 		"variants": []
 	},
 	"botamon": {
@@ -75,42 +70,6 @@
 		"level": "Child",
 		"variants": []
 	},
-	"deathairdramon": {
-		"name": "deathairdramon",
-		"year": "1997",
-		"url": "https://wikimon.net/Death_Airdramon",
-		"level": "－",
-		"type": "Mythical Beast",
-		"variants": []
-	},
-	"deathdevimon": {
-		"name": "deathdevimon",
-		"year": "1997",
-		"variants": []
-	},
-	"deathmeramonc'mondigimonversion": {
-		"name": "deathmeramonc'mondigimonversion",
-		"year": "1997",
-		"variants": []
-	},
-	"deathmetalgreymon": {
-		"name": "deathmetalgreymon",
-		"year": "1997",
-		"url": "https://wikimon.net/Death_Metal_Greymon",
-		"level": "－",
-		"type": "Cyborg",
-		"variants": []
-	},
-	"deathtyranomon": {
-		"name": "deathtyranomon",
-		"year": "1997",
-		"variants": []
-	},
-	"deathmonc'mondigimonversion": {
-		"name": "deathmonc'mondigimonversion",
-		"year": "1997",
-		"variants": []
-	},
 	"devimon": {
 		"name": "devimon",
 		"year": "1997",
@@ -128,7 +87,7 @@
 		"level": "Child",
 		"type": "Mammal",
 		"attribute": "Data",
-		"field": ["Deep Savers", "Nature Spirits", "Metal Empire"],
+		"field": ["Nature Spirits"],
 		"variants": []
 	},
 	"gabumon": {
@@ -138,7 +97,7 @@
 		"level": "Child",
 		"type": ["Reptile", "Beast"],
 		"attribute": ["Data", "Vaccine"],
-		"field": ["Metal Empire", "Nature Spirits", "Virus Busters", "Wind Guardians"],
+		"field": ["Nature Spirits", "Virus Busters"],
 		"variants": []
 	},
 	"garurumon": {
@@ -149,11 +108,8 @@
 		"type": "Beast",
 		"attribute": ["Vaccine", "Data"],
 		"field": [
-			"Metal Empire",
 			"Nature Spirits",
-			"Nightmare Soldiers",
-			"Virus Busters",
-			"Wind Guardians"
+			"Virus Busters"
 		],
 		"variants": []
 	},
@@ -165,11 +121,7 @@
 		"type": "Dinosaur",
 		"attribute": "Vaccine",
 		"field": [
-			"Deep Savers",
 			"Dragon's Roar",
-			"Metal Empire",
-			"Nature Spirits",
-			"Nightmare Soldiers",
 			"Virus Busters"
 		],
 		"variants": []
@@ -181,7 +133,7 @@
 		"level": "Adult",
 		"type": "Insect",
 		"attribute": "Vaccine",
-		"field": ["Jungle Troopers", "Nature Spirits", "Wind Guardians"],
+		"field": ["Jungle Troopers", "Wind Guardians"],
 		"variants": []
 	},
 	"koromon": {
@@ -201,7 +153,7 @@
 		"level": "Perfect",
 		"type": "Mutation",
 		"attribute": "Data",
-		"field": ["Metal Empire", "Unknown", "Virus Busters"],
+		"field": ["Unknown", "Metal Empire", "Virus Busters"],
 		"Group": "Mamemon-species",
 		"variants": []
 	},
@@ -212,7 +164,7 @@
 		"level": "Adult",
 		"type": "Flame",
 		"attribute": ["Data", "Vaccine"],
-		"field": ["Nature Spirits", "Nightmare Soldiers", "Dragon's Roar"],
+		"field": ["Unknown", "Nightmare Soldiers", "Dragon's Roar"],
 		"variants": []
 	},
 	"metalgreymonvirus": {
@@ -222,7 +174,7 @@
 		"level": "Perfect",
 		"type": "Cyborg",
 		"attribute": "Virus",
-		"field": "Metal Empire",
+		"field": ["Metal Empire", "Dark Area", "Dragon's Roar"],
 		"Group": "Crack Team",
 		"variants": []
 	},
@@ -233,7 +185,7 @@
 		"level": "Perfect",
 		"type": "Cyborg",
 		"attribute": ["Data", "Vaccine"],
-		"field": ["Metal Empire", "Virus Busters"],
+		"field": ["Metal Empire", "Unknown", "Virus Busters"],
 		"Group": ["Mamemon-species", "Crack Team"],
 		"variants": []
 	},
@@ -244,7 +196,7 @@
 		"level": "Perfect",
 		"type": "Puppet",
 		"attribute": "Vaccine",
-		"field": "Metal Empire",
+		"field": ["Unknown", "Nature Spirits"],
 		"variants": []
 	},
 	"numemon": {
@@ -254,14 +206,7 @@
 		"level": "Adult",
 		"type": "Mollusk",
 		"attribute": ["Virus", "Data"],
-		"field": ["Metal Empire", "Nature Spirits", "Nightmare Soldiers", "Unknown"],
-		"variants": []
-	},
-	"ohakadamon": {
-		"name": "ohakadamon",
-		"year": "1997",
-		"url": "https://wikimon.net/Ohakadamon",
-		"level": "－",
+		"field": ["Unknown", "Metal Empire", "Nightmare Soldiers"],
 		"variants": []
 	},
 	"punimon": {
@@ -290,7 +235,7 @@
 		"level": "Perfect",
 		"type": ["Undead", "Skeleton"],
 		"attribute": "Virus",
-		"field": ["Dragon's Roar", "Nightmare Soldiers"],
+		"field": ["Dragon's Roar", "Nightmare Soldiers", "Metal Empire"],
 		"variants": []
 	},
 	"tunomon": {
@@ -309,13 +254,7 @@
 		"level": "Adult",
 		"type": "Dinosaur",
 		"attribute": "Data",
-		"field": [
-			"Metal Empire",
-			"Nature Spirits",
-			"Nightmare Soldiers",
-			"Unknown",
-			"Dragon's Roar"
-		],
+		"field": ["Dragon's Roar"],
 		"variants": []
 	},
 	"vademon": {
@@ -335,7 +274,7 @@
 		"level": "Adult",
 		"type": ["Insectivorous Plant", "Plant"],
 		"attribute": "Virus",
-		"field": ["Nature Spirits", "Unknown", "Wind Guardians"],
+		"field": ["Jungle Troopers", "Unknown"],
 		"variants": []
 	},
 	"whamon": {
@@ -355,7 +294,7 @@
 		"level": "Adult",
 		"type": "Ice-Snow",
 		"attribute": "Vaccine",
-		"field": ["Nature Spirits", "Nightmare Soldiers", "Deep Savers"],
+		"field": ["Nature Spirits", "Deep Savers"],
 		"variants": []
 	},
 	"andromon": {
@@ -376,7 +315,7 @@
 		"level": ["Perfect", "Ultimate"],
 		"type": ["Archangel", "Angel"],
 		"attribute": ["Vaccine", "Free"],
-		"field": ["Nature Spirits", "Virus Busters", "Wind Guardians"],
+		"field": ["Virus Busters", "Wind Guardians"],
 		"Group": "Angel Army",
 		"variants": []
 	},
@@ -397,7 +336,7 @@
 		"level": "Perfect",
 		"type": "Insect",
 		"attribute": ["Data", "Vaccine"],
-		"field": "Nature Spirits",
+		"field": ["Jungle Troopers"],
 		"variants": []
 	},
 	"bakemon": {
@@ -457,7 +396,7 @@
 		"level": "Adult",
 		"type": "Dragon Man",
 		"attribute": "Virus",
-		"field": ["Nature Spirits", "Unknown"],
+		"field": ["Nightmare Soldiers", "Unknown"],
 		"variants": []
 	},
 	"dagomon": {
@@ -477,7 +416,7 @@
 		"level": "Adult",
 		"type": "Dinosaur",
 		"attribute": "Virus",
-		"field": ["Nightmare Soldiers", "Unknown"],
+		"field": ["Dark Area", "Dragon's Roar"],
 		"variants": []
 	},
 	"deltamon": {
@@ -487,7 +426,7 @@
 		"level": "Adult",
 		"type": "Composite",
 		"attribute": "Virus",
-		"field": ["Nightmare Soldiers", "Unknown"],
+		"field": ["Dark Area", "Nightmare Soldiers", "Unknown", "Dragon's Roar"],
 		"variants": []
 	},
 	"devidramon": {
@@ -497,7 +436,7 @@
 		"level": "Adult",
 		"type": "Evil Dragon",
 		"attribute": "Virus",
-		"field": ["Dragon's Roar", "Nightmare Soldiers", "Unknown", "Wind Guardians"],
+		"field": ["Dragon's Roar", "Nightmare Soldiers", "Dark Area"],
 		"variants": []
 	},
 	"digitamamon": {
@@ -537,7 +476,7 @@
 		"level": "Perfect",
 		"type": "Puppet",
 		"attribute": "Virus",
-		"field": ["Deep Savers", "Metal Empire", "Unknown"],
+		"field": ["Nature Spirits", "Dark Area", "Unknown"],
 		"variants": []
 	},
 	"evilmon": {
@@ -547,7 +486,7 @@
 		"level": "Adult",
 		"type": "Small Devil",
 		"attribute": "Virus",
-		"field": ["Nightmare Soldiers", "Unknown"],
+		"field": ["Nightmare Soldiers", "Dark Area"],
 		"variants": []
 	},
 	"extyranomon": {
@@ -557,7 +496,7 @@
 		"level": "Perfect",
 		"type": "Puppet",
 		"attribute": ["Vaccine", "Virus"],
-		"field": ["Nature Spirits", "Unknown", "Nightmare Soldiers"],
+		"field": ["Unknown", "Metal Empire"],
 		"variants": []
 	},
 	"flymon": {
@@ -567,15 +506,7 @@
 		"level": "Adult",
 		"type": "Insect",
 		"attribute": "Virus",
-		"field": ["Unknown", "Wind Guardians"],
-		"variants": []
-	},
-	"fujitsumon": {
-		"name": "fujitsumon",
-		"year": "1998",
-		"url": "https://wikimon.net/Fujitsumon",
-		"level": "－",
-		"type": "Shellfish",
+		"field": ["Jungle Troopers", "Wind Guardians"],
 		"variants": []
 	},
 	"ganimon": {
@@ -595,7 +526,7 @@
 		"level": "Child",
 		"type": "Mammal",
 		"attribute": "Virus",
-		"field": ["Nature Spirits", "Nightmare Soldiers", "Unknown", "Wind Guardians"],
+		"field": ["Nature Spirits", "Nightmare Soldiers", "Dark Area"],
 		"variants": []
 	},
 	"gekomon": {
@@ -605,7 +536,7 @@
 		"level": "Adult",
 		"type": "Amphibian",
 		"attribute": ["Virus", "Data"],
-		"field": "Nature Spirits",
+		"field": ["Nature Spirits", "Deep Savers"],
 		"variants": []
 	},
 	"gesomon": {
@@ -625,7 +556,7 @@
 		"level": "Perfect",
 		"type": ["Mine", "Machine"],
 		"attribute": "Vaccine",
-		"field": "Metal Empire",
+		"field": ["Metal Empire", "Unknown"],
 		"variants": []
 	},
 	"gizamon": {

@@ -20,7 +20,8 @@ const Header: React.FC = () => (
 						toggle={{ content: 'Digimon' }}
 						items={[
 							{ href: '/build', content: 'Builder' },
-							{ href: '/', content: 'Lines' },
+							{ href: '/', content: 'Families' },
+							{ href: '/list', content: 'List' },
 							{ href: '/groups', content: 'Groups' },
 							{ href: '/vbs', content: 'DIM' },
 						]}
