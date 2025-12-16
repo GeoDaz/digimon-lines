@@ -133,11 +133,10 @@
 				"color": ["machine"]
 			},
 			{
-				"name": "assaultmon",
+				"name": "sagittarimon",
 				"from": [[0, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["machine"]
+				"yCollapsable": false
 			},
 			{
 				"name": "kentaurosmon_x",
@@ -152,7 +151,12 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "goatmon",
+				"from": [[-3, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
 			{
 				"name": "hippogriffomon",
 				"from": [[-2, -1]],
@@ -225,16 +229,18 @@
 	],
 	"related": [
 		{ "name": "pawnchessmon_white", "for": "craniummon" },
-		"pillowmon",
 		{ "name": "dokugumon", "from": "gyukimon" },
 		{ "name": "bearmon", "from": "ancientmegatheriumon" },
 		{ "name": "bakemon", "for": "dullahamon" },
-		{ "name": "aegiomon" },
-		{ "name": "phascomon", "for": "gulfmon" },
 		{ "name": "angemon", "from": "unimon" },
 		{ "name": "renamon", "from": "chirinmon" },
-		{ "name": "woodmon", "for": "ancienttroiamon" },
 		{ "name": "hawkmon", "for": "hippogriffomon" },
+		{ "name": "woodmon", "for": "ancienttroiamon" },
+		{ "name": "veemon", "from": "sagittarimon" },
+		{ "name": "commandramon", "from": "assaultmon" },
+		"pillowmon",
+		{ "name": "aegiomon" },
+		{ "name": "phascomon", "for": "gulfmon" },
 		{ "name": "kotemon", "from": "zanbamon" },
 		{ "name": "bakemon", "for": "zanbamon" },
 		{ "name": "tapirmon", "for": "mammon" }

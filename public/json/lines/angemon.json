@@ -122,10 +122,7 @@
 			},
 			{
 				"name": "chirinmon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				],
+				"from": [[0, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["light", "light"]
@@ -144,7 +141,7 @@
 			{
 				"name": "tokomon_x",
 				"color": ["x"],
-				"from": [[3, 0]],
+				"from": [[2, 0]],
 				"xCollapsable": true,
 				"yCollapsable": true
 			},
@@ -523,7 +520,7 @@
 			null,
 			{
 				"name": "manbomon",
-				"from": [[-7, -1]],
+				"from": [[-9, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"skins": ["light"],
@@ -541,16 +538,16 @@
 			"for": "shakkoumon"
 		},
 		{
+			"name": "devimon",
+			"for": "lucemon_falldown_mode"
+		},
+		{
 			"name": "gatomon",
 			"for": "angewomon"
 		},
 		"devimon",
 		{
-			"name": "devimon",
-			"for": "lucemon_falldown_mode"
-		},
-		{
-			"name": "darcmon",
+			"name": "dracmon",
 			"for": "myotismon"
 		},
 		{
@@ -566,14 +563,6 @@
 			"for": "goldramon"
 		},
 		{
-			"name": "renamon",
-			"for": "chirinmon"
-		},
-		{
-			"name": "turkimon",
-			"for": "hakubamon"
-		},
-		{
 			"name": "jellymon",
 			"for": "marineangemon"
 		},
@@ -582,16 +571,70 @@
 			"for": "slashangemon"
 		},
 		{
+			"name": "omegamon_merciful_mode",
+			"from": "seraphimon"
+		},
+		{
+			"name": "veemon",
+			"for": "sagittarimon"
+		},
+		{ "name": "commandramon", "for": "assaultmon" },
+		{
+			"name": "renamon",
+			"for": "chirinmon"
+		},
+		{
+			"name": "turkimon",
+			"for": "hakubamon"
+		},
+		{
+			"name": "chiropmon",
+			"for": "pipismon"
+		},
+		{
+			"name": "tapirmon",
+			"for": "rhinomon"
+		},
+		{
+			"name": "ogremon",
+			"for": "baromon"
+		},
+		{
+			"name": "morphomon",
+			"for": "mothmon"
+		},
+		{
+			"name": "terriermon",
+			"for": "prairiemon",
+			"from": "lopmon"
+		},
+		{
+			"name": "hawkmon",
+			"for": "rinkmon"
+		},
+		{
+			"name": "swimmon",
+			"for": "mantaraymon"
+		},
+		{
+			"name": "palmon",
+			"for": "ponchomon"
+		},
+		{
+			"name": "swimmon",
+			"for": "manbomon"
+		},
+		{
+			"name": "armadillomon",
+			"for": "stegomon"
+		},
+		{
 			"name": "dracmon",
 			"for": "duskmon"
 		},
 		{
 			"name": "pawnchessmon_white",
 			"for": "darkknightmon"
-		},
-		{
-			"name": "omegamon_merciful_mode",
-			"from": "seraphimon"
 		}
 	],
 	"size": 8

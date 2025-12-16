@@ -8,7 +8,7 @@
 			null,
 			{
 				"name": "shivamon",
-				"from": [1, -1],
+				"from": [[1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true,
 				"color": ["light"]
@@ -21,20 +21,20 @@
 			null,
 			{
 				"name": "dinohumon",
-				"from": [1, -1],
+				"from": [[1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
 				"name": "asuramon",
-				"color": "fire",
-				"from": [1, -1],
+				"color": ["fire"],
+				"from": [[1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
 				"name": "vulcanusmon",
-				"color": "fire",
+				"color": ["fire"],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -54,16 +54,32 @@
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
-			{ "name": "caprimon", "xCollapsable": true, "yCollapsable": false },
-			{ "name": "kotemon", "xCollapsable": true, "yCollapsable": false },
-			{ "name": "musyamon", "xCollapsable": false, "yCollapsable": false },
 			{
-				"name": "oboromon",
-				"color": "black",
+				"name": "caprimon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "kotemon",
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "musyamon",
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{ "name": "zanbamon", "xCollapsable": false, "yCollapsable": true },
+			{
+				"name": "oboromon",
+				"color": ["black"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "zanbamon",
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
 			null
 		],
 		[
@@ -72,12 +88,24 @@
 			null,
 			{
 				"name": "yaksamon",
-				"from": [-1, -1],
+				"from": [[-1, -1]],
 				"xCollapsable": true,
 				"yCollapsable": false
 			},
-			{ "name": "boutmon", "xCollapsable": true, "yCollapsable": false },
-			{ "name": "kazuchimon", "xCollapsable": false, "yCollapsable": true },
+			{
+				"name": "grademon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[0, -1]],
+				"color": ["gold"]
+			},
+			{
+				"name": "kazuchimon",
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"from": [[0, -1]],
+				"color": ["electric"]
+			},
 			null
 		],
 		[
@@ -85,11 +113,17 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "grademon_black",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"color": ["dark"]
+			},
 			{
 				"name": "tactimon",
-				"color": "dark",
-				"from": [-1, -1],
+				"color": ["dark"],
+				"from": [[0, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
@@ -97,17 +131,51 @@
 		]
 	],
 	"related": [
-		{ "name": "pawnchessmon_white", "for": "gladimon" },
-		{ "name": "kamemon", "for": "dinohumon" },
-		{ "name": "renamon", "for": "kyukimon" },
-		{ "name": "angemon", "for": "slashangemon" },
-		{ "name": "bakemon", "for": "oboromon" },
-		{ "name": "pulsemon", "for": "kazuchimon" },
+		{
+			"name": "pawnchessmon_white",
+			"for": "gladimon"
+		},
+		{
+			"name": "dorumon",
+			"for": "grademon"
+		},
+		{
+			"name": "kamemon",
+			"for": "dinohumon"
+		},
+		{
+			"name": "renamon",
+			"for": "kyukimon"
+		},
+		{
+			"name": "angemon",
+			"for": "slashangemon"
+		},
+		{
+			"name": "bakemon",
+			"for": "oboromon"
+		},
+		{
+			"name": "pulsemon",
+			"for": "kazuchimon"
+		},
 		"ryudamon",
-		{ "name": "greymon", "for": "samudramon" },
-		{ "name": "meramon", "for": "asuramon" },
-		{ "name": "golemon", "for": "vulcanusmon" },
-		{ "name": "machmon", "for": "nezhamon" },
+		{
+			"name": "greymon",
+			"for": "samudramon"
+		},
+		{
+			"name": "meramon",
+			"for": "asuramon"
+		},
+		{
+			"name": "golemon",
+			"for": "vulcanusmon"
+		},
+		{
+			"name": "machmon",
+			"for": "nezhamon"
+		},
 		{
 			"name": "impmon",
 			"for": "beelzebumon_behemoth"
