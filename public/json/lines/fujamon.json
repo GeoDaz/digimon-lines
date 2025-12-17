@@ -210,7 +210,13 @@
 				"yCollapsable": true
 			},
 			null,
-			null
+			{
+				"name": "neptunemon",
+				"color": "marine",
+				"from": [[-1, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
 		],
 		[
 			null,
@@ -232,9 +238,13 @@
 		{ "name": "crabmon", "for": "gusokumon" },
 		{ "name": "betamon", "from": "tylomon" },
 		{ "name": "gomamon", "for": "dolphmon" },
-		{ "name": "jellymon", "for": "depthmon" },
-		{ "name": "falcomon_2", "from": "xiquemon" },
-		{ "name": "pulsemon", "from": "divemon" }
+		{ "name": "jellymon", "for": "neptunemon" },
+		{
+		  "name": "app_dokamon",
+		  "for": "app_poseidomon"
+		},
+		{ "name": "pulsemon", "from": "divemon" },
+		{ "name": "falcomon_2", "from": "xiquemon" }
 	],
 	"size": 6
 }
