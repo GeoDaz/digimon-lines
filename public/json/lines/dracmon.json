@@ -206,12 +206,33 @@
 		"for": "slashangemon"
 	  },
 	  {
+		"name": "negamon",
+		"for": "eyesmon"
+	  },
+	  {
 		"name": "angemon",
 		"for": "bagramon"
 	  },
 	  {
-		"name": "bakemon",
-		"for": "piemon"
+		"name": "phascomon",
+		"for": "astamon"
+	  },
+	  {
+		"name": "gabumon",
+		"for": "garurumon_black"
+	  },
+	  {
+		"name": "wankomon",
+		"for": "dobermon",
+		"from": "labramon"
+	  },
+	  {
+		"name": "loogamon",
+		"from": "sangloupmon"
+	  },
+	  {
+		"name": "kotemon",
+		"for": "yaksamon"
 	  },
 	  {
 		"name": "revolmon",
@@ -219,20 +240,12 @@
 		"from": "hookmon"
 	  },
 	  {
+		"name": "bakemon",
+		"for": "piemon"
+	  },
+	  {
 		"name": "biyomon",
 		"for": "ornismon"
-	  },
-	  {
-		"name": "kotemon",
-		"for": "yaksamon"
-	  },
-	  {
-		"name": "loogamon",
-		"from": "sangloupmon"
-	  },
-	  {
-		"name": "negamon",
-		"for": "eyesmon"
 	  }
 	],
 	"size": 7

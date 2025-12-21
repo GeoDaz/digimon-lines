@@ -1,299 +1,226 @@
 {
 	"columns": [
-	  [
-		null,
-		null,
-		null,
-		null,
-		{
-		  "name": "rizegreymon",
-		  "from": [
-			[
-			  1,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "magnakidmon",
-		  "xCollapsable": false,
-		  "yCollapsable": true
-		}
-	  ],
-	  [
-		null,
-		null,
-		{
-		  "name": "toyagumon",
-		  "xCollapsable": false,
-		  "yCollapsable": false,
-		  "from": [
-			[
-			  1,
-			  -1
-			]
-		  ],
-		  "skins": [
-			"cleartoyagumon"
-		  ]
-		},
-		{
-		  "name": "revolmon",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "vulturemon",
-		  "skins": [
-			"mummymon"
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false,
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ]
-		},
-		{
-		  "name": "avengekidmon",
-		  "xCollapsable": false,
-		  "yCollapsable": true
-		}
-	  ],
-	  [
-		{
-		  "name": "bombmon",
-		  "from": null,
-		  "xCollapsable": true,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "missimon",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": true,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "toyagumon_black",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false,
-		  "skins": [
-			"cleartoyagumon_black"
-		  ],
-		  "color": [
-			"dark"
-		  ]
-		},
-		{
-		  "name": "tankmon",
-		  "from": [
-			[
-			  0,
-			  -1
-			],
-			[
-			  -1,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "gigadramon",
-		  "from": [
-			[
-			  -1,
-			  -1
-			],
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false,
-		  "skins": [
-			"megadramon"
-		  ],
-		  "color": [
-			"dark"
-		  ]
-		},
-		{
-		  "name": "gundramon",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": true
-		}
-	  ],
-	  [
-		null,
-		null,
-		{
-		  "name": "monmon",
-		  "from": [
-			[
-			  -1,
-			  -1
-			]
-		  ],
-		  "xCollapsable": true,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "hookmon",
-		  "from": [
-			[
-			  0,
-			  -1
-			]
-		  ],
-		  "xCollapsable": true,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "captainhookmon",
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "boltboutamon",
-		  "color": [
-			"dark"
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": true
-		}
-	  ],
-	  [
-		null,
-		null,
-		null,
-		null,
-		{
-		  "name": "mermaimon",
-		  "from": [
-			[
-			  -1,
-			  -1
-			]
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": false
-		},
-		{
-		  "name": "olegmon",
-		  "from": [
-			[
-			  -1,
-			  -1
-			]
-		  ],
-		  "color": [
-			"gold"
-		  ],
-		  "xCollapsable": false,
-		  "yCollapsable": true
-		}
-	  ]
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "vulturemon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[1, -1]]
+			},
+			{
+				"name": "avengekidmon",
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "toyagumon",
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"from": [[1, -1]],
+				"skins": ["cleartoyagumon"]
+			},
+			{
+				"name": "revolmon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "rizegreymon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "magnakidmon",
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			{
+				"name": "bombmon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "missimon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "toyagumon_black",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": ["cleartoyagumon_black"],
+				"color": ["dark"]
+			},
+			{
+				"name": "tankmon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "gigadramon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"skins": ["megadramon"]
+			},
+			{
+				"name": "gundramon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "monmon",
+				"from": [[-1, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "hookmon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "captainhookmon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "boltboutamon",
+				"color": ["dark"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "mermaimon",
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "olegmon",
+				"from": [[-1, -1]],
+				"color": ["gold"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		]
 	],
 	"related": [
 		{
-		  "name": "greymon",
-		  "for": "toyagumon"
+			"name": "greymon",
+			"for": "toyagumon"
 		},
-	  {
-		"name": "app_cameramon",
-		"for": "app_shotmon"
-	  },
-	  {
-		"name": "commandramon",
-		"for": "tankdramon"
-	  },
-	  {
-		"name": "impmon",
-		"for": "beelstarmon"
-	  },
-	  {
-		"name": "sistermon_blanc",
-		"for": "sistermon_noir_awake"
-	  },
-	  {
-		"name": "starmon"
-	  },
-	  {
-		"name": "bakemon",
-		"for": "mummymon"
-	  },
-	  {
-		"name": "greymon",
-		"for": "rizegreymon"
-	  },
-	  {
-		"name": "betamon",
-		"for": "gigadramon"
-	  },
-	  {
-		"name": "tyranomon",
-		"for": "machinedramon"
-	  },
-	  {
-		"name": "mamemon",
-		"for": "metalmamemon"
-	  },
-	  {
-		"name": "devimon",
-		"for": "myotismon",
-		"from": "boltboutamon"
-	  },
-	  {
-		"name": "bakemon",
-		"for": "piemon",
-		"from": "boltboutamon"
-	  },
-	  {
-		"name": "jellymon",
-		"for": "mermaimon"
-	  },
-	  {
-		"name": "ogremon",
-		"from": "olegmon"
-	  },
-	  {
-		"name": "gomamon",
-		"for": "vikemon"
-	  },
-	  {
-		"name": "bearmon",
-		"for": "blizzarmon"
-	  }
+		{
+			"name": "app_cameramon",
+			"for": "app_shotmon"
+		},
+		{
+			"name": "commandramon",
+			"for": "tankdramon"
+		},
+		{
+			"name": "impmon",
+			"for": "beelstarmon"
+		},
+		{
+			"name": "sistermon_blanc",
+			"for": "sistermon_noir_awake"
+		},
+		{
+			"name": "starmon"
+		},
+		{
+			"name": "greymon",
+			"for": "rizegreymon"
+		},
+		{
+			"name": "bakemon",
+			"for": "mummymon"
+		},
+		{
+			"name": "phascomon",
+			"for": "astamon"
+		},
+		{
+			"name": "betamon",
+			"for": "gigadramon"
+		},
+		{
+			"name": "angemon",
+			"for": "centarumon",
+			"from": "patamon"
+		},
+		{
+			"name": "tyranomon",
+			"for": "machinedramon"
+		},
+		{
+			"name": "mamemon",
+			"for": "metalmamemon"
+		},
+		{
+			"name": "devimon",
+			"for": "myotismon",
+			"from": "boltboutamon"
+		},
+		{
+			"name": "bakemon",
+			"for": "piemon",
+			"from": "boltboutamon"
+		},
+		{
+			"name": "jellymon",
+			"for": "mermaimon"
+		},
+		{
+			"name": "ogremon",
+			"from": "olegmon"
+		},
+		{
+			"name": "gomamon",
+			"for": "vikemon"
+		},
+		{
+			"name": "bearmon",
+			"for": "blizzarmon"
+		}
 	],
 	"size": 6
-  }
+}

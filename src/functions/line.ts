@@ -20,10 +20,13 @@ const transformLine = (line: Line | undefined): Line | undefined => {
 					point = { ...point, from: [point.from] } as LinePoint;
 				}
 				if (point.color && !Array.isArray(point.color)) {
+					if (!point.from || point.from.length === 0) {
+						point.from = [[0, -1]];
+					}
 					point = {
 						...point,
 						color: Array.from(
-							{ length: point.from?.length || 1 },
+							{ length: point.from?.length },
 							() => point!.color
 						),
 					} as LinePoint;

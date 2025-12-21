@@ -690,11 +690,24 @@
 	"related": [
 		"omegamon_merciful_mode",
 		{
+			"name": "commandramon"
+		},
+		{
 			"name": "tyranomon",
 			"from": "agumon"
 		},
 		{
-			"name": "commandramon"
+			"name": "gammamon",
+			"for": "brachiomon"
+		},
+		{
+			"name": "betamon",
+			"for": "cyclomon",
+			"from": "gizamon"
+		},
+		{
+			"name": "vorvomon",
+			"for": "flarelizardmon"
 		},
 		"neocrimson",
 		"chimeramon",
@@ -719,12 +732,12 @@
 			"for": "greyknightsmon"
 		},
 		{
-			"name": "vorvomon",
-			"for": "flarelizardmon"
-		},
-		{
 			"name": "betamon",
 			"for": "megadramon"
+		},
+		{
+			"name": "revolmon",
+			"for": "gundramon"
 		},
 		{
 			"name": "betamon",
