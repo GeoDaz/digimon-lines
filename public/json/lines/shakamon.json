@@ -2,16 +2,43 @@
 	"columns": [
 		[
 			{
-				"name": "kekomon",
+				"name": "fukamon",
 				"from": null,
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{ "name": "kekkomon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "iguneetmon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "kinkakumon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "chohakkaimon", "xCollapsable": false, "yCollapsable": true },
-			null,
+			{
+				"name": "mokokomon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "turkimon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "kinkakumon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "chohakkaimon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "seitengokuwmon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["fusion", "fusion", "fusion", "fusion"]
+			},
 			null
 		],
 		[
@@ -21,12 +48,34 @@
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{ "name": "mokokomon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "kakamon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "apemon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "gokuwmon", "xCollapsable": false, "yCollapsable": false },
 			{
-				"name": "seitengokuwmon",
+				"name": "mokokomon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "kakamon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "apemon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "gokuwmon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "nezhamon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "shakamon",
 				"from": [
 					[-1.5, -1],
 					[-0.5, -1],
@@ -34,22 +83,9 @@
 					[1.5, -1]
 				],
 				"xCollapsable": false,
-				"yCollapsable": false,
+				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion", "fusion", "fusion", "fusion"]
-			},
-			{
-				"name": "shakamon",
-				"xSize": 2,
-				"color": "fusion",
-				"from": [
-					[-1.5, -2],
-					[-0.5, -2],
-					[0.5, -2],
-					[1.5, -2]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
 			}
 		],
 		[
@@ -63,17 +99,22 @@
 			{ "name": "takinmon", "xCollapsable": false, "yCollapsable": false },
 			{
 				"name": "hakubamon",
-				"color": "light",
+				"color": ["light"],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
 				"name": "sanzomon",
-				"color": "light",
+				"color": ["light"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "erlangmon",
+				"from": [[0, -1]],
 				"xCollapsable": false,
 				"yCollapsable": true
 			},
-			null,
 			null
 		],
 		[
@@ -83,20 +124,40 @@
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{ "name": "chapmon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "kamemon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "gawappamon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "sagomon", "xCollapsable": false, "yCollapsable": true },
-			null,
+			{
+				"name": "chapmon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "kamemon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "gawappamon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "sagomon",
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "takutomon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
 			null
 		]
 	],
 	"related": [
-		"kakamon",
-		"takinmon",
-		"kamemon",
-		{ "name": "sukamon", "for": "chohakkaimon" },
-		{ "name": "elizamon", "for": "iguneetmon" }
+		{ "name": "takinmon", "for": "sanzomon" },
+		{ "name": "kakamon", "for": "gokuwmon" },
+		{ "name": "kamemon", "for": "sagomon" },
+		{ "name": "sukamon", "for": "chohakkaimon" }
 	],
 	"size": 7
 }

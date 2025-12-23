@@ -8,6 +8,10 @@
 			"name": "punimon",
 			"to": ["tsunomon"]
 		},
+		"zurumon": {
+			"name": "zurumon",
+			"to": ["pagumon"]
+		},
 		"kuramon": {
 			"name": "kuramon",
 			"to": ["tsumemon", "arkadimon_2"]
@@ -16,13 +20,18 @@
 	"Baby II": {
 		"koromon": {
 			"name": "koromon",
-			"to": ["agumon"],
+			"to": ["agumon", "agumon_black", "snowagumon", "betamon"],
 			"from": ["botamon"]
 		},
 		"tsunomon": {
 			"name": "tsunomon",
-			"to": ["gabumon"],
+			"to": ["gabumon", "elecmon"],
 			"from": ["punimon"]
+		},
+		"pagumon": {
+			"name": "pagumon",
+			"to": ["gazimon", "demidevimon"],
+			"from": ["zurumon"]
 		},
 		"tsumemon": {
 			"name": "tsumemon",
@@ -36,23 +45,19 @@
 			"variants": [
 				"agumon_2",
 				"agumon_black",
-				"agumon_black_2",
 				"snowagumon",
-				"snowagumon_2",
 				"agumon_hakase",
-				"nise_agumon_hakase",
 				"bushi_agumon",
 				"rurimon",
 				"commandramon",
 				"toyagumon",
-				"cleartoyagumon",
-				"toyagumon_black",
 				"cleartoyagumon_black"
 			],
 			"modes": ["agumon_x", "agumon_yuki_no_kizuma"],
-			"from": ["koromon"],
+			"from": ["koromon", "gigimon"],
 			"to": [
 				"greymon",
+				"greymon_blue",
 				"geogreymon",
 				"tyranomon",
 				"tuskmon",
@@ -66,10 +71,7 @@
 				"agumon_black_2",
 				"nise_agumon_hakase",
 				"agumon",
-				"agumon_2",
-				"agumon_hakase",
 				"snowagumon",
-				"snowagumon_2",
 				"commandramon",
 				"toyagumon_black",
 				"cleartoyagumon_black"
@@ -88,28 +90,16 @@
 		},
 		"snowagumon": {
 			"name": "snowagumon",
-			"variants": [
-				"snowagumon_2",
-				"agumon",
-				"agumon_2",
-				"agumon_black",
-				"agumon_black_2"
-			],
+			"variants": ["snowagumon_2", "agumon", "agumon_black"],
 			"from": ["koromon", "hiyarimon"],
-			"to": [
-				"seadramon",
-				"paledramon",
-				"frigimon",
-				"hyogamon",
-				"sorcerymon"
-			]
+			"to": ["seadramon", "paledramon", "frigimon", "hyogamon", "sorcerymon"]
 		},
 		"gabumon": {
 			"name": "gabumon",
 			"modes": ["gabumon_x"],
 			"variants": ["gabumon_black", "psychemon"],
 			"to": ["garurumon", "gururumon", "dorulumon", "drimogemon"],
-			"from": ["tsunomon"]
+			"from": ["tsunomon", "wanyamon", "bowmon"]
 		},
 		"gabumon_black": {
 			"name": "gabumon_black",
@@ -121,7 +111,84 @@
 			"name": "psychemon",
 			"variants": ["gabumon_black", "psychemon"],
 			"to": ["astamon", "gururumon", "garurumon", "nisedrimogemon"],
-			"from": ["tsunomon"]
+			"from": ["tsunomon", "pagumon"]
+		},
+		"biyomon": {
+			"name": "biyomon",
+			"to": [
+				"birdramon",
+				"saberdramon",
+				"cockatrimon",
+				"akatorimon",
+				"diatrymon",
+				"thunderdramon",
+				"xiquemon",
+				"mailbirdramon"
+			],
+			"from": ["poromon", "yokomon", "pinamon"]
+		},
+		"tentomon": {
+			"name": "tentomon",
+			"variants": ["kokabuterimon"],
+			"to": ["kabuterimon", "kuwagamon", "snimon", "ballistamon", "blitzmon"],
+			"from": ["minomon", "mochimon", "puroromon"]
+		},
+		"palmon": {
+			"name": "palmon",
+			"modes": ["palmon_x"],
+			"to": [
+				"togemon",
+				"ponchomon",
+				"vegimon",
+				"vegimon_red",
+				"zassoumon",
+				"kabukimon"
+			],
+			"from": ["tanamon", "yokomon", "budmon"]
+		},
+		"toyagumon": {
+			"name": "toyagumon",
+			"variants": ["cleartoyagumon", "toyagumon_black"],
+			"from": ["koromon", "caprimon"],
+			"to": [
+				"revolmon",
+				"omekamon",
+				"tankmon",
+				"assaultmon",
+				"flarelizardmon",
+				"tyranomon"
+			]
+		},
+		"toyagumon_black": {
+			"name": "toyagumon_black",
+			"variants": ["cleartoyagumon_black", "toyagumon"],
+			"from": ["koromon", "caprimon"],
+			"to": ["tankmon", "darktyranomon", "darklizardmon"]
+		},
+		"betamon": {
+			"name": "betamon",
+			"variants": ["modokibetamon"],
+			"modes": ["betamon_x"],
+			"from": ["koromon"],
+			"to": ["seadramon", "airdramon", "landramon", "coealamon", "tylomon"]
+		},
+		"gizamon": {
+			"name": "gizamon",
+			"from": ["koromon"],
+			"to": ["cyclomon", "seadramon"]
+		},
+		"gazimon": {
+			"name": "gazimon",
+			"modes": ["gazimon_x"],
+			"from": ["pagumon", "tsunomon", "wanyamon", "bowmon"],
+			"to": [
+				"gaogamon_black",
+				"fangmon",
+				"deltamon",
+				"darktyranomon",
+				"devidramon",
+				"dobbermon"
+			]
 		}
 	},
 	"Rookie X": {
@@ -141,6 +208,11 @@
 			"name": "gabumon_x",
 			"to": ["garurumon_x"],
 			"from": ["gabumon"]
+		},
+		"palmon_x": {
+			"name": "palmon_x",
+			"to": ["togemon_x"],
+			"from": ["palmon"]
 		}
 	},
 	"Hybrid I": {
@@ -148,6 +220,11 @@
 			"name": "flamon",
 			"to": ["agunimon"],
 			"from": ["sunmon"]
+		},
+		"strabimon": {
+			"name": "strabimon",
+			"to": ["wolfmon"],
+			"from": ["moonmon", "wanyamon", "bowmon"]
 		}
 	},
 	"Champion": {
@@ -160,19 +237,54 @@
 				"hicommandramon"
 			],
 			"modes": ["greymon_x"],
-			"to": ["metalgreymon", "skullgreymon", "burninggreymon"],
+			"to": [
+				"metalgreymon",
+				"metalgreymon_blue",
+				"skullgreymon",
+				"burninggreymon",
+				"chimeramon"
+			],
+			"from": ["agumon"]
+		},
+		"greymon_blue": {
+			"name": "greymon_blue",
+			"variants": ["greymon", "greymon_blue_2", "hicommandramon"],
+			"to": ["metalgreymon_blue", "skullgreymon"],
 			"from": ["agumon"]
 		},
 		"geogreymon": {
 			"name": "geogreymon",
-			"variants": ["greymon", "greymon_blue", "greymon_blue_2"],
+			"variants": ["greymon"],
 			"to": ["rizegreymon"],
+			"from": ["agumon"]
+		},
+		"garurumon": {
+			"name": "garurumon",
+			"variants": ["garurumon_black", "gururumon", "dorulumon"],
+			"modes": ["garurumon_x"],
+			"to": [
+				"weregarurumon",
+				"weregarurumon_black",
+				"kendogarurumon",
+				"chimeramon"
+			],
+			"from": ["agumon"]
+		},
+		"garurumon_black": {
+			"name": "garurumon_black",
+			"variants": ["garurumon", "gururumon", "dorulumon"],
+			"to": ["weregarurumon_black", "cerberumon"],
 			"from": ["agumon"]
 		}
 	},
 	"Armor I": {
 		"flamedramon": {
 			"name": "flamedramon",
+			"to": ["sagittarimon", "magnamon"],
+			"from": ["veemon"]
+		},
+		"raidramon": {
+			"name": "raidramon",
 			"to": ["sagittarimon", "magnamon"],
 			"from": ["veemon"]
 		}
@@ -183,6 +295,12 @@
 			"modes": ["burninggreymon"],
 			"to": ["aldamon"],
 			"from": ["flamon"]
+		},
+		"wolfmon": {
+			"name": "wolfmon",
+			"modes": ["kendogarurumon"],
+			"to": ["beowolfmon"],
+			"from": ["strabimon"]
 		}
 	},
 	"Champion X": {
@@ -191,6 +309,17 @@
 			"variants": ["greymon_blue_x"],
 			"to": ["metalgreymon_x", "rizegreymon_x"],
 			"from": ["greymon", "agumon_x"]
+		},
+		"greymon_blue_x": {
+			"name": "greymon_blue_x",
+			"variants": ["greymon_x"],
+			"to": ["metalgreymon_blue_x"],
+			"from": ["greymon_blue", "agumon_black_x"]
+		},
+		"garurumon_x": {
+			"name": "garurumon_x",
+			"to": ["weregarurumon_x"],
+			"from": ["garurumon", "gabumon_x"]
 		}
 	},
 	"Hybrid III": {
@@ -199,6 +328,12 @@
 			"modes": ["agunimon"],
 			"to": ["aldamon", "ancientgreymon"],
 			"from": ["greymon"]
+		},
+		"kendogarurumon": {
+			"name": "kendogarurumon",
+			"modes": ["wolfmon"],
+			"to": ["beowolfmon"],
+			"from": ["garurumon"]
 		}
 	},
 	"Armor II": {
@@ -219,8 +354,45 @@
 				"rizegreymon",
 				"skullgreymon"
 			],
-			"to": ["wargreymon", "blitzgreymon", "victorygreymon", "ancientgreymon"],
+			"to": ["wargreymon", "blitzgreymon", "victorygreymon", "ancientgreymon", "machinedramon"],
 			"from": ["greymon", "flarelizardmon"]
+		},
+		"metalgreymon_blue": {
+			"name": "metalgreymon_blue",
+			"variants": ["metalgreymon", "metalgreymon_blue_2", "skullgreymon"],
+			"to": ["wargreymon_black", "machinedramon", "chaosdramon"],
+			"from": ["greymon_blue", "greymon", "darklizardmon"]
+		},
+		"rizegreymon": {
+			"name": "rizegreymon",
+			"variants": ["metalgreymon"],
+			"to": ["shinegreymon", "victorygreymon", "magnakidmon", "gundramon"],
+			"from": ["geogreymon", "revolmon", "tankmon"]
+		},
+		"skullgreymon": {
+			"name": "skullgreymon",
+			"variants": ["metalgreymon", "metalgreymon_blue"],
+			"to": [
+				"wargreymon_black",
+				"machinedramon",
+				"chaosdramon",
+				"blitzgreymon",
+				"titamon",
+				"chimeramon"
+			],
+			"from": ["greymon", "greymon_blue", "cyclomon", "deltamon"]
+		},
+		"weregarurumon": {
+			"name": "weregarurumon",
+			"variants": ["weregarurumon_black"],
+			"to": ["metalgarurumon", "zeedgarurumon", "merukimon", "ancientgarurumon"],
+			"from": ["garurumon"]
+		},
+		"weregarurumon_black": {
+			"name": "weregarurumon_black",
+			"variants": ["weregarurumon"],
+			"to": ["metalgarurumon_black","merukimon","grandracmon","plutomon"],
+			"from": ["garurumon_black", "dobbermon","sangloupmon"]
 		}
 	},
 	"Ultimate +": {
@@ -228,6 +400,11 @@
 			"name": "metalgreymon_alter_mode",
 			"to": ["wargreymon", "blitzgreymon", "victorygreymon"],
 			"from": ["metalgreymon"]
+		},
+		"weregarurumon_alter_mode": {
+			"name": "weregarurumon_alter_mode",
+			"to": ["metalgarurumon","cresgarurumon","zeedgarurumon"],
+			"from": ["weregarurumon"]
 		}
 	},
 	"Ultimate X": {
@@ -237,10 +414,21 @@
 			"to": ["wargreymon_x"],
 			"from": ["metalgreymon", "greymon_x"]
 		},
+		"metalgreymon_blue_x": {
+			"name": "metalgreymon_blue_x",
+			"variants": ["metalgreymon_x"],
+			"to": ["wargreymon_black_x", "samudramon"],
+			"from": ["metalgreymon_blue", "greymon_x"]
+		},
 		"rizegreymon_x": {
 			"name": "rizegreymon_x",
 			"variants": ["metalgreymon_x", "metalgreymon_blue_x"],
 			"from": ["rizegreymon", "greymon_x"]
+		},
+		"weregarurumon_x": {
+			"name": "weregarurumon_x",
+			"to": ["metalgarurumon_x","fenriloogamon"],
+			"from": ["weregarurumon", "garurumon_x"]
 		}
 	},
 	"Hybrid IV": {
@@ -248,6 +436,11 @@
 			"name": "aldamon",
 			"to": ["emperorgreymon", "ancientgreymon"],
 			"fusionFrom": ["agunimon", "burninggreymon"]
+		},
+		"beowolfmon": {
+			"name": "beowolfmon",
+			"to": ["magnagarurumon", "ancientgarurumon"],
+			"from": ["wolfmon", "kendogarurumon"]
 		}
 	},
 	"Armor III": {
@@ -293,6 +486,11 @@
 			"name": "emperorgreymon",
 			"to": ["susanoomon"],
 			"from": ["aldamon"]
+		},
+		"magnagarurumon": {
+			"name": "magnagarurumon",
+			"to": ["ancientgarurumon"],
+			"from": ["beowolfmon"]
 		}
 	},
 	"Mega+": {
@@ -320,7 +518,8 @@
 	"Mega+ X": {
 		"omegamon_x": {
 			"name": "omegamon_x",
-			"from": ["omegamon", "wargreymon_x", "metalgarurumon_x"]
+			"from": ["omegamon", "omekamon"],
+			"fusionFrom": ["wargreymon_x", "metalgarurumon_x"]
 		},
 		"magnamon_x_gold_digizoid": {
 			"name": "magnamon_x_gold_digizoid",

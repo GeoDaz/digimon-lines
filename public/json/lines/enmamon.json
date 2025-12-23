@@ -1,17 +1,237 @@
 {
 	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "enmamon",
-				"color": "fusion",
-				"from": null
-			}
-		]
+	  [
+		{
+		  "name": "tomorimon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "onibimon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "wankomon",
+		  "from": [
+			[
+			  0,
+			  -2
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "siesamon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "shishimamon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "amaterasumon",
+		  "from": [
+			[
+			  0,
+			  -3
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		{
+		  "name": "tomorimon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "onibimon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "hanimon",
+		  "from": [
+			[
+			  0,
+			  -2
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "kokeshimon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "karakurumon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "kaguyamon",
+		  "from": [
+			[
+			  0,
+			  -3
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "enmamon",
+		  "from": [
+			[
+			  -1.5,
+			  -1
+			],
+			[
+			  -0.5,
+			  -1
+			],
+			[
+			  0.5,
+			  -1
+			],
+			[
+			  1.5,
+			  -1
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true,
+		  "xSize": 2,
+		  "color": [
+			"fusion",
+			"fusion",
+			"fusion",
+			"fusion"
+		  ]
+		}
+	  ],
+	  [
+		{
+		  "name": "puyomon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "puyoyomon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "sangomon",
+		  "from": [
+			[
+			  0,
+			  -2
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "shellmon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "marinbullmon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "ryugumon",
+		  "from": [
+			[
+			  0,
+			  -3
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ],
+	  [
+		{
+		  "name": "zurumon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "pagumon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "shamamon",
+		  "from": [
+			[
+			  0,
+			  -2
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "fugamon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "karatenmon",
+		  "from": null,
+		  "xCollapsable": false,
+		  "yCollapsable": false
+		},
+		{
+		  "name": "tengumon",
+		  "from": [
+			[
+			  0,
+			  -3
+			]
+		  ],
+		  "xCollapsable": false,
+		  "yCollapsable": true
+		},
+		null
+	  ]
+	],
+	"size": 7,
+	"related": [
+		{ "name": "wankomon", "for": "amaterasumon" },
+		{ "name": "woodmon", "for": "kaguyamon", "from": "hanimon" },
+		{ "name": "jellymon", "for": "ryugumon", "from": "sangomon" },
+		{ "name": "biyomon", "for": "tengumon" },
+		{ "name": "ogremon", "for": "fugamon" }
 	]
-}
+  }

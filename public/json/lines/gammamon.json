@@ -1,550 +1,574 @@
 {
     "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "zanmetsumon",
-                "from": [
-                    [
-                        2,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "fusion"
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "samudramon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "collapsable": true,
-                "color": [
-                    "x"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "samudramon_itto_mode",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "collapsable": true,
-                "color": [
-                    "mode"
-                ],
-                "xCollapsable": true,
-                "yCollapsable": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "ghilliedhumon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "tlalocmon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "wezengammamon",
-                "from": [
-                    [
-                        2.5,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "color": [
-                    "electric"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "fumamon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "ravemon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "ravemon_burst_mode",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": true,
-                "color": [
-                    "mode"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "kausgammamon",
-                "from": [
-                    [
-                        1.5,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "color": [
-                    "wind"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "bombermon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "color": [
-                    "default"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null,
-            null
-        ],
-        [
-            {
-                "name": "curimon",
-                "xSize": 2,
-                "from": null,
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "gurimon",
-                "xSize": 2,
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "gammamon",
-                "xSize": 2,
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "betelgammamon",
-                "from": [
-                    [
-                        0.5,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "color": [
-                    "fire"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "canoweissmon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "siriusmon",
-                "from": [
-                    0,
-                    -1
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "proximamon",
-                "xSize": 2,
-                "color": [
-                    "fusion",
-                    "fusion"
-                ],
-                "from": [
-                    [
-                        -0.5,
-                        -1
-                    ],
-                    [
-                        0.5,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "gulusgammamon",
-                "color": [
-                    "dark"
-                ],
-                "from": [
-                    [
-                        -0.5,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "regulusmon",
-                "color": [
-                    "dark",
-                    "dark"
-                ],
-                "from": [
-                    0,
-                    -1
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "arcturusmon",
-                "color": [
-                    "dark",
-                    "dark"
-                ],
-                "from": [
-                    0,
-                    -1
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "monochromon_x",
-                "color": [
-                    "x"
-                ],
-                "from": [
-                    [
-                        1,
-                        0
-                    ]
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "triceramon_x",
-                "color": [
-                    "x"
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "ultimatebrachimon",
-                "color": [
-                    "x"
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "monochromon",
-                "from": [
-                    [
-                        -2.5,
-                        -1
-                    ]
-                ],
-                "collapsable": true,
-                "color": [
-                    "earth"
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "triceramon",
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "styracomon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "brachiomon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "cannondramon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "color": [
-                    "machine",
-                    "machine"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "vermillimon",
-                "color": [
-                    "fire"
-                ],
-                "from": [
-                    [
-                        -2,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": false
-            },
-            {
-                "name": "dorbickmon",
-                "color": [
-                    "fire",
-                    "fire"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        1,
-                        -1
-                    ]
-                ],
-                "collapsable": true,
-                "xCollapsable": true,
-                "yCollapsable": false
-            },
-            {
-                "name": "dorbickmon_darkness_mode",
-                "color": [
-                    "fusion"
-                ],
-                "collapsable": true,
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "volcdramon",
-                "color": [
-                    "fire"
-                ],
-                "from": [
-                    [
-                        -3,
-                        -1
-                    ]
-                ],
-                "collapsable": false,
-                "xCollapsable": false,
-                "yCollapsable": true
-            },
-            null,
-            null
-        ]
+      [
+        null,
+        null,
+        null,
+        null,
+        {
+          "name": "zanmetsumon",
+          "from": [
+            [
+              2,
+              -1
+            ]
+          ],
+          "color": [
+            "fusion"
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "samudramon",
+          "from": [
+            [
+              0,
+              -1
+            ]
+          ],
+          "collapsable": true,
+          "color": [
+            "x"
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "samudramon_itto_mode",
+          "from": [
+            [
+              0,
+              -1
+            ]
+          ],
+          "collapsable": true,
+          "color": [
+            "mode"
+          ],
+          "xCollapsable": true,
+          "yCollapsable": true
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        {
+          "name": "ghilliedhumon",
+          "from": [
+            [
+              1,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "tlalocmon",
+          "from": [
+            [
+              0,
+              -1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "wezengammamon",
+          "from": [
+            [
+              2.5,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "color": [
+            "electric"
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "fumamon",
+          "from": [
+            [
+              1,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "ravemon",
+          "from": [
+            [
+              0,
+              -1
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "ravemon_burst_mode",
+          "from": [
+            [
+              0,
+              -1
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": true,
+          "color": [
+            "mode"
+          ]
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "kausgammamon",
+          "from": [
+            [
+              1.5,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "color": [
+            "wind"
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "bombermon",
+          "from": [
+            [
+              1,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "color": [
+            "default"
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        null
+      ],
+      [
+        {
+          "name": "curimon",
+          "xSize": 2,
+          "from": null,
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "gurimon",
+          "xSize": 2,
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "gammamon",
+          "xSize": 2,
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "betelgammamon",
+          "from": [
+            [
+              0.5,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "color": [
+            "fire"
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "canoweissmon",
+          "from": [
+            0,
+            -1
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "siriusmon",
+          "from": [
+            0,
+            -1
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "proximamon",
+          "xSize": 2,
+          "color": [
+            "fusion",
+            "fusion"
+          ],
+          "from": [
+            [
+              -0.5,
+              -1
+            ],
+            [
+              0.5,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": true
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "gulusgammamon",
+          "color": [
+            "dark"
+          ],
+          "from": [
+            [
+              -0.5,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "regulusmon",
+          "color": [
+            "dark",
+            "dark"
+          ],
+          "from": [
+            0,
+            -1
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "arcturusmon",
+          "color": [
+            "dark",
+            "dark"
+          ],
+          "from": [
+            0,
+            -1
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "monochromon_x",
+          "color": [
+            "x"
+          ],
+          "from": [
+            [
+              1,
+              0
+            ]
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "triceramon_x",
+          "color": [
+            "x"
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "ultimatebrachimon",
+          "color": [
+            "x"
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "monochromon",
+          "from": [
+            [
+              -2.5,
+              -1
+            ]
+          ],
+          "collapsable": true,
+          "color": [
+            "earth"
+          ],
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "triceramon",
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "styracomon",
+          "from": [
+            [
+              0,
+              -1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        {
+          "name": "brachiomon",
+          "from": [
+            [
+              -1,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "cannondramon",
+          "from": [
+            [
+              0,
+              -1
+            ],
+            [
+              -1,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "color": [
+            "machine",
+            "machine"
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        {
+          "name": "volcdramon",
+          "color": [
+            "fire"
+          ],
+          "from": [
+            [
+              -2,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "plesiomon",
+          "from": [
+            [
+              -1,
+              -1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true,
+          "skins": [
+            "plesiomon_x"
+          ],
+          "color": [
+            "marine"
+          ]
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        {
+          "name": "vermillimon",
+          "color": [
+            "fire"
+          ],
+          "from": [
+            [
+              -3,
+              -1
+            ]
+          ],
+          "collapsable": false,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "dorbickmon",
+          "color": [
+            "fire",
+            "fire"
+          ],
+          "from": [
+            [
+              0,
+              -1
+            ],
+            [
+              -1,
+              -1
+            ]
+          ],
+          "collapsable": true,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "dorbickmon_darkness_mode",
+          "color": [
+            "fusion"
+          ],
+          "collapsable": true,
+          "from": [
+            [
+              0,
+              -1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        }
+      ]
     ],
     "related": [
-        {
-            "name": "tyranomon",
-            "for": "dinorexmon"
-        },
-        {
-            "name": "mamemon",
-            "for": "bombermon"
-        },
-        {
-            "name": "ryudamon",
-            "for": "zanmetsumon"
-        },
-        {
-            "name": "greymon",
-            "for": "samudramon"
-        },
-        {
-            "name": "leomon",
-            "for": "tlalocmon"
-        },
-        {
-            "name": "falcomon_2",
-            "for": "ravemon"
-        },
-        {
-            "name": "elizamon",
-            "from": "styracomon"
-        },
-        {
-            "name": "armadillomon",
-            "for": "stegomon"
-        },
-        {
-            "name": "vorvomon",
-            "from": "volcdramon"
-        },
-        {
-            "name": "commandramon",
-            "from": "cannondramon"
-        },
-        {
-            "name": "chimeramon",
-            "from": "monochromon"
-        }
+      {
+        "name": "tyranomon",
+        "for": "dinorexmon"
+      },
+      {
+        "name": "elizamon",
+        "for": "styracomon"
+      },
+      {
+        "name": "mamemon",
+        "for": "bombermon"
+      },
+      {
+        "name": "ryudamon",
+        "for": "zanmetsumon"
+      },
+      {
+        "name": "greymon",
+        "for": "samudramon"
+      },
+      {
+        "name": "leomon",
+        "for": "tlalocmon"
+      },
+      {
+        "name": "falcomon_2",
+        "for": "ravemon"
+      },
+      {
+        "name": "armadillomon",
+        "for": "stegomon"
+      },
+      {
+        "name": "vorvomon",
+        "for": "volcdramon"
+      },
+      {
+        "name": "commandramon",
+        "for": "cannondramon"
+      },
+      {
+        "name": "gomamon",
+        "for": "plesiomon"
+      },
+      {
+        "name": "betamon",
+        "for": "seadramon"
+      },
+      {
+        "name": "chimeramon",
+        "from": "monochromon"
+      }
     ],
     "size": 7
-}
+  }

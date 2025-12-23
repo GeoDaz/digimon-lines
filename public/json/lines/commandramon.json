@@ -95,16 +95,12 @@
 			"from": "brigadramon"
 		},
 		{
-			"name": "monodramon",
-			"from": "darkdramon"
-		},
-		{
-			"name": "gammamon",
-			"for": "cannondramon"
+			"name": "hagurumon",
+			"for": "masterblimpmon"
 		},
 		{
 			"name": "tyranomon",
-			"from": "gundramon"
+			"for": "gundramon"
 		},
 		{
 			"name": "revolmon",
@@ -115,12 +111,21 @@
 			"for": "beelstarmon"
 		},
 		{
-			"name": "jazamon",
-			"for": "mailbirdramon"
+			"name": "monodramon",
+			"from": "darkdramon"
 		},
 		{
-			"name": "hagurumon",
-			"for": "masterblimpmon"
+			"name": "gammamon",
+			"for": "cannondramon"
+		},
+		{
+		  "name": "angemon",
+		  "for": "centarumon",
+		  "from": "patamon"
+		},
+		{
+			"name": "jazamon",
+			"for": "mailbirdramon"
 		},
 		{
 			"name": "betamon",
