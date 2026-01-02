@@ -34,7 +34,7 @@
 			{
 				"name": "pidmon",
 				"color": ["light"],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
@@ -105,10 +105,11 @@
 			{
 				"name": "metatromon",
 				"from": [[-1, -1]],
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": true,
 				"color": ["machine"]
 			},
+			null,
 			null
 		],
 		[
@@ -166,7 +167,7 @@
 			{
 				"name": "magnaangemon",
 				"color": ["light"],
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
@@ -227,7 +228,7 @@
 			{
 				"name": "chirinmon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false,
 				"color": ["light", "light"]
 			},
@@ -243,7 +244,7 @@
 				"name": "darkness_bagramon",
 				"color": ["fusion"],
 				"from": [[0, -2]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": true
 			}
 		],
@@ -255,7 +256,7 @@
 				"name": "mantaraymon",
 				"from": [[-3, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false,
+				"yCollapsable": true,
 				"skins": ["reliability"],
 				"color": ["marine"]
 			},
@@ -281,7 +282,7 @@
 				"name": "mantaraymon_x",
 				"from": [[-1, 0]],
 				"xCollapsable": false,
-				"yCollapsable": false,
+				"yCollapsable": true,
 				"skins": [],
 				"color": ["x"]
 			},
@@ -309,7 +310,7 @@
 			{
 				"name": "sagittarimon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
@@ -333,7 +334,7 @@
 				"name": "baromon",
 				"from": [[-6, -1]],
 				"xCollapsable": false,
-				"yCollapsable": false,
+				"yCollapsable": true,
 				"color": ["fire"],
 				"skins": ["courage"]
 			},
@@ -341,7 +342,7 @@
 			{
 				"name": "kentaurosmon_x",
 				"from": [[-1, 0]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": true,
 				"color": ["x"]
 			},
@@ -396,6 +397,7 @@
 			},
 			null,
 			null,
+			null,
 			null
 		],
 		[
@@ -434,7 +436,12 @@
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			null,
+			{
+				"name": "dullahamon",
+				"from": [[1, -1]],
+				"xCollapsable": true,
+				"yCollapsable": true
+			},
 			null,
 			null
 		],
@@ -442,18 +449,18 @@
 			{
 				"name": "poyomon",
 				"from": null,
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
 				"name": "tokomon",
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false
 			},
 			{
 				"name": "tukaimon",
 				"from": [[0, -1]],
-				"xCollapsable": true,
+				"xCollapsable": false,
 				"yCollapsable": false,
 				"color": ["dark"]
 			},
@@ -461,7 +468,7 @@
 				"name": "shimaunimon",
 				"from": [[0, -1]],
 				"color": ["dark"],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
@@ -469,7 +476,7 @@
 				"from": [[0, -1]],
 				"color": ["dark"],
 				"xCollapsable": false,
-				"yCollapsable": false
+				"yCollapsable": true
 			},
 			null,
 			{
@@ -485,27 +492,27 @@
 			{
 				"name": "puttimon",
 				"from": null,
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
 				"name": "cupimon",
 				"color": ["light"],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
 				"name": "lucemon",
 				"color": ["light"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xCollapsable": true,
+				"yCollapsable": true
 			},
 			null,
 			{
 				"name": "lucemon_falldown_mode",
 				"color": ["mode"],
 				"from": [[0, -2]],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": false
 			},
 			{
@@ -517,7 +524,7 @@
 			{
 				"name": "lucemon_satan_mode",
 				"color": ["mode"],
-				"xCollapsable": false,
+				"xCollapsable": true,
 				"yCollapsable": true
 			},
 			null
@@ -564,7 +571,10 @@
 			"name": "jellymon",
 			"for": "marineangemon"
 		},
-		{ "name": "devimon", "from": "demon" },
+		{
+			"name": "devimon",
+			"from": "demon"
+		},
 		{
 			"name": "dracmon",
 			"for": "myotismon"
@@ -589,8 +599,14 @@
 			"name": "veemon",
 			"for": "sagittarimon"
 		},
-		{ "name": "commandramon", "for": "assaultmon" },
-		{ "name": "woodmon", "for": "ancienttroiamon" },
+		{
+			"name": "commandramon",
+			"for": "assaultmon"
+		},
+		{
+			"name": "woodmon",
+			"for": "ancienttroiamon"
+		},
 		{
 			"name": "renamon",
 			"for": "chirinmon",
