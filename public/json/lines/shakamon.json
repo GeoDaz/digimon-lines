@@ -13,7 +13,7 @@
 				"yCollapsable": false
 			},
 			{
-				"name": "turkimon",
+				"name": "takinmon",
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -95,16 +95,8 @@
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
-			{
-				"name": "mokokomon",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "turkimon",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
+			{ "name": "mokokomon", "xCollapsable": false, "yCollapsable": false },
+			{ "name": "takinmon", "xCollapsable": false, "yCollapsable": false },
 			{
 				"name": "hakubamon",
 				"color": ["light"],
@@ -162,7 +154,7 @@
 		]
 	],
 	"related": [
-		{ "name": "turkimon", "for": "sanzomon" },
+		{ "name": "takinmon", "for": "sanzomon" },
 		{ "name": "kakamon", "for": "gokuwmon" },
 		{ "name": "kamemon", "for": "sagomon" },
 		{ "name": "sukamon", "for": "chohakkaimon" }
