@@ -337,7 +337,7 @@ h2 {
 }
 
 .line-grid>.line-row>.col {
-  margin-bottom: 2em;
+  margin-bottom: var(--bs-gutter-x);
   min-width: var(--dl-img-size);
   min-height: var(--dl-img-size);
   position: relative;
@@ -718,22 +718,6 @@ a.line-point {
   z-index: -2;
 }
 
-.line-point .line-svg.left {
-  right: 0;
-}
-
-.line-point .line-svg.right {
-  left: 0;
-}
-
-.line-point .line-svg.top {
-  bottom: 0;
-}
-
-.line-point .line-svg.bottom {
-  top: 0;
-}
-
 .line-point .spinner-wrapper {
   position: absolute;
   top: 0;
@@ -896,7 +880,7 @@ a.line-point {
 }
 
 .line-grid .levels .level {
-  height: 12rem;
+  height: calc(var(--dl-img-size) + var(--bs-gutter-x));
   max-width: 4.5rem;
   border-right: var(--dl-border);
   border-top: var(--dl-border);

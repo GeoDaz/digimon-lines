@@ -1,0 +1,908 @@
+{
+    "size": 8,
+    "columns": [
+      [
+        null,
+        null,
+        {
+          "name": "demon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "gazimon",
+          "from": [
+            [
+              3,
+              0
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": true
+        },
+        {
+          "name": "demon",
+          "from": [
+            [
+              3,
+              -1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        {
+          "name": "zanbamon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        {
+          "name": "agumon",
+          "from": [
+            [
+              2,
+              -1.5
+            ],
+            [
+              2,
+              1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        {
+          "name": "chaosmon",
+          "from": [
+            [
+              2,
+              -2.5
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        null
+      ],
+      [
+        null,
+        {
+          "name": "gaomon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "bemmon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": true
+        },
+        null,
+        {
+          "name": "bemmon",
+          "from": [
+            [
+              1,
+              -1.5
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        null,
+        null
+      ],
+      [
+        {
+          "name": "gemmon",
+          "from": [
+            [
+              0,
+              3
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": true
+        },
+        null,
+        null,
+        {
+          "name": "veemon",
+          "from": [
+            [
+              -1,
+              -1
+            ],
+            [
+              -2,
+              -1
+            ],
+            [
+              -3,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              -1
+            ],
+            [
+              1,
+              -2
+            ],
+            [
+              -1,
+              -2
+            ],
+            [
+              -2,
+              -2
+            ],
+            [
+              2,
+              -2
+            ],
+            [
+              -1,
+              1.5
+            ],
+            [
+              1,
+              1.5
+            ],
+            [
+              2,
+              1.5
+            ],
+            [
+              3,
+              1.5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              -3
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              -3,
+              0
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": true
+        },
+        null,
+        null,
+        {
+          "name": "gigasmon",
+          "from": [
+            [
+              0,
+              -3
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": true
+        },
+        null
+      ],
+      [
+        null,
+        {
+          "name": "flamon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "jesmon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        {
+          "name": "jesmon",
+          "from": [
+            [
+              -1,
+              -1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        {
+          "name": "unimon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "leomon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        {
+          "name": "leomon",
+          "from": [
+            [
+              -2,
+              -1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        {
+          "name": "filmon",
+          "from": [
+            [
+              -2,
+              -2.5
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        {
+          "name": "mammon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        {
+          "name": "mammon",
+          "from": [
+            [
+              -3,
+              -1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        {
+          "name": "nanimon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "gizamon",
+          "from": [
+            [
+              -4,
+              0
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        {
+          "name": "nanimon",
+          "from": [
+            [
+              -4,
+              -1.5
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "agumon_2",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        {
+          "name": "gemmon",
+          "from": [
+            [
+              3,
+              1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        {
+          "name": "agumon_2",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": true
+        }
+      ],
+      [
+        {
+          "name": "relemon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": true,
+          "xSize": 2
+        },
+        {
+          "name": "ravemon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        {
+          "name": "agumon_2",
+          "from": [
+            [
+              0.5,
+              1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        {
+          "name": "greymon",
+          "from": [
+            [
+              1.5,
+              -1.5
+            ],
+            [
+              0.5,
+              -1.5
+            ],
+            [
+              -0.5,
+              -1.5
+            ],
+            [
+              -1.5,
+              -1.5
+            ],
+            [
+              -1.5,
+              -0.5
+            ],
+            [
+              -1.5,
+              0.5
+            ],
+            [
+              -1.5,
+              1.5
+            ],
+            [
+              -0.5,
+              1.5
+            ],
+            [
+              0.5,
+              1.5
+            ],
+            [
+              1.5,
+              1.5
+            ],
+            [
+              1.5,
+              0.5
+            ],
+            [
+              1.5,
+              -0.5
+            ],
+            [
+              -2.5,
+              -1.5
+            ],
+            [
+              2.5,
+              -1.5
+            ],
+            [
+              0,
+              -4.5
+            ],
+            [
+              2.5,
+              0
+            ],
+            [
+              1.5,
+              2.5
+            ],
+            [
+              -1.5,
+              2.5
+            ],
+            [
+              1.5,
+              -2.5
+            ],
+            [
+              2.5,
+              1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "ySize": 2,
+          "xSize": 2
+        },
+        null,
+        {
+          "name": "agumon",
+          "from": [
+            [
+              0.5,
+              -1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "agumon_2",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        null,
+        {
+          "name": "agumon",
+          "from": [
+            [
+              -0.5,
+              -1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": [
+            [
+              -2,
+              -1.5
+            ],
+            [
+              -3,
+              -1.5
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": true
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "name": "agumon_2",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        {
+          "name": "renamon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        {
+          "name": "renamon",
+          "from": [
+            [
+              1.5,
+              -0.5
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        null
+      ],
+      [
+        null,
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "xSize": 2
+        },
+        {
+          "name": "agumon",
+          "from": [
+            [
+              1,
+              1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": [
+            [
+              1,
+              0
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": [
+            [
+              1,
+              -1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "greymon",
+          "from": [
+            [
+              -0.5,
+              -1
+            ],
+            [
+              0.5,
+              -1
+            ],
+            [
+              -0.5,
+              1
+            ],
+            [
+              0.5,
+              1
+            ],
+            [
+              -1.5,
+              0.5
+            ],
+            [
+              -1.5,
+              -0.5
+            ],
+            [
+              1.5,
+              0.5
+            ],
+            [
+              1.5,
+              -0.5
+            ],
+            [
+              -2.5,
+              0
+            ],
+            [
+              2.5,
+              0
+            ],
+            [
+              0,
+              -4
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "xSize": 2
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        {
+          "name": "agumon",
+          "from": [
+            [
+              0,
+              1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false
+        },
+        {
+          "name": "gabumon",
+          "from": [
+            [
+              0,
+              -1
+            ],
+            [
+              -1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "color": [
+            "fire",
+            "x",
+            "x",
+            "x",
+            "x",
+            "x",
+            "x",
+            "x"
+          ]
+        },
+        {
+          "name": "agumon",
+          "from": [
+            [
+              0,
+              -1
+            ]
+          ],
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        {
+          "name": "agumon",
+          "from": [
+            [
+              0,
+              -2
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": true
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        {
+          "name": "agumon",
+          "from": [
+            [
+              -1,
+              1
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": null,
+          "xCollapsable": true,
+          "yCollapsable": false
+        },
+        {
+          "name": "agumon",
+          "from": [
+            [
+              -1,
+              -1
+            ]
+          ],
+          "xCollapsable": true,
+          "yCollapsable": true
+        },
+        {
+          "name": "octomon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": false,
+          "ySize": 2
+        },
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "name": "erlangmon",
+          "from": null,
+          "xCollapsable": false,
+          "yCollapsable": true
+        },
+        null,
+        null
+      ]
+    ]
+  }

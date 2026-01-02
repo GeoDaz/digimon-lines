@@ -1,14 +1,16 @@
 import React from 'react';
 import { colors } from '@/consts/colors';
 
-// const xMargin = 22.5;
-// const yMargin = 30;
-export const xUnit: number = 174; // 150 + xMargin
-export const yUnit: number = 180; // 150 + yMargin
+const spacing: number = 22.5;
+const strokeWidth: number = 12;
+const strokeHalf: number = strokeWidth / 2;
 export const pointWidth: number = 150;
 export const pointHeight: number = 150;
+export const xUnit: number = pointWidth + spacing;
+export const yUnit: number = pointHeight + spacing;
 
 const defaultFrom = [0, -1];
+
 interface Props {
 	from?: number[] | null;
 	color?: string;
@@ -27,76 +29,111 @@ const LineSvg: React.FC<Props> = ({
 }) => {
 	if (!from) return null;
 
-	const negX: boolean = from[0] < 0;
-	const negY: boolean = from[1] <= 0;
-	const halfHeight: number = baseHeight / 2;
-	const halfWidth: number = baseWidth / 2;
-	let x: number = 0;
-	let y: number = 0;
-	const xGap = Math.abs(from[0]); // x distance to target
-	const yGap = Math.abs(from[1]); // y distance to target
-	x = xUnit * xGap; // used for SVG width  => doesn't incur xDest changes
-	y = yUnit * yGap; // used for SVG height => doesn't incur yDest changes
-	if (xSize > 1 && xGap > 1 && yGap < 1) {
-		x -= pointWidth / 2;
-	}
-	if (ySize > 1 && yGap > 1 && xGap < 1) {
-		y -= pointHeight / 2;
-	}
-	let xOrigin: number = halfWidth;
-	let yOrigin: number = halfHeight;
-	let xDest = x;
-	let yDest = y;
-	const strokeWidth = 12;
-	const svgStyle: React.CSSProperties = {};
-	if ((xGap > 1 && yGap > 0.5) || (xGap > 0.5 && yGap > 1)) {
-		xDest += (xSize ? xSize - 1 : 0) * (pointWidth / 2 + strokeWidth);
-		yDest += (ySize ? ySize - 1 : 0) * (pointHeight / 2 + strokeWidth);
+	const x: number = from[0] || 0;
+	const y: number = from[1] || 0;
+	const xGap: number = Math.abs(x);
+	const yGap: number = Math.abs(y);
 
-		xOrigin = pointWidth + (!negX && xSize > 1 ? 1 : -1) * strokeWidth / 2;
-		yOrigin = pointHeight + (!negY && ySize > 1 ? 1 : -1) * strokeWidth / 2;
-		if (negX) {
-			svgStyle.zIndex = Math.floor(from[0]);
-		}
+	let top: number | undefined,
+		left: number | undefined,
+		right: number | undefined,
+		bottom: number | undefined,
+		translateX: string | undefined,
+		translateY: string | undefined;
+
+	if (x <= -1) {
+		left = strokeWidth;
+		translateX = '-100%';
 		if (xSize > 1) {
-			xOrigin += pointWidth / 4;
+			left += baseWidth / 4 + strokeHalf;
 		}
-		if (ySize > 1) {
-			yOrigin += pointHeight / 4;
+	} else if (x >= 1) {
+		right = strokeWidth;
+		translateX = '100%';
+		if (xSize > 1 && xGap > 0.5) {
+			right += baseWidth / 4 + strokeHalf;
 		}
-		xDest -= pointWidth - strokeWidth;
-		yDest -= pointHeight - strokeWidth;
+	} else if (x == 0.5) {
+		translateX = `calc(50% - ${strokeHalf}px)`;
+	} else if (x == -0.5) {
+		translateX = `calc(-50% + ${strokeHalf}px)`;
 	}
-	// <== start 0.5 distance
-	if (xGap == 0.5 && yGap > 0) {
-		if (ySize <= 1) {
-			yOrigin = pointHeight - strokeWidth / 2;
-			yDest -= pointHeight - strokeWidth;
+
+	if (y <= -1) {
+		top = strokeWidth;
+		translateY = '-100%';
+		if (ySize > 1 && yGap > 0) {
+			top += baseHeight / 4 + strokeHalf;
 		}
-	}
-	if (yGap == 0.5) {
-		if (xGap <= 1.5 && xSize <= 1) {
-			xOrigin = pointHeight - strokeWidth / 2;
-			xDest -= pointHeight - strokeWidth;
+	} else if (y >= 1) {
+		bottom = strokeWidth;
+		translateY = '100%';
+		if (ySize > 1 && yGap > 0) {
+			bottom += baseHeight / 4 + strokeHalf;
 		}
+	} else if (y == 0.5) {
+		translateY = `calc(50% - ${strokeHalf}px)`;
+	} else if (y == -0.5) {
+		translateY = `calc(-50% + ${strokeHalf}px)`;
 	}
-	// ==> end 0.5 distance
+
+	let xDest: number;
+	if (xGap >= 1) {
+		xDest = xUnit * (xGap - 1) + spacing + strokeWidth;
+	} else if (xGap > 0) {
+		xDest = xGap * xUnit;
+	} else {
+		xDest = 0;
+	}
+	xDest += strokeWidth;
+
+	let yDest: number;
+	if (yGap >= 1) {
+		yDest = yUnit * (yGap - 1) + spacing + strokeWidth;
+	} else if (yGap > 0) {
+		yDest = yGap * yUnit;
+	} else {
+		yDest = 0;
+	}
+	yDest += strokeWidth;
+
+	const zIndex: number = Math.floor(Math.abs(from[0]) + Math.abs(from[1])) * -1 - 1;
+	const hexColor = (color && colors[color]) || colors.default;
+
+	const makeTranslate = (): string | undefined => {
+		if (translateX && translateY) {
+			return `translate(${translateX}, ${translateY})`;
+		}
+		if (translateX) {
+			return `translateX(${translateX})`;
+		}
+		if (translateY) {
+			return `translateY(${translateY})`;
+		}
+		return undefined;
+	};
+
 	return (
 		<svg
-			className={
-				'line-svg ' + (negY ? 'top' : 'bottom') + (negX ? ' left' : ' right')
-			}
-			width={baseWidth + x}
-			height={baseHeight + y}
-			style={svgStyle}
+			className="line-svg"
+			width={Math.abs(xDest)}
+			height={Math.abs(yDest)}
+			style={{
+				zIndex,
+				top,
+				left,
+				right,
+				bottom,
+				transform: makeTranslate(),
+			}}
 		>
 			<line
-				x1={negY ? xOrigin : xOrigin + xDest}
-				y1={negX ? yOrigin : yOrigin + yDest}
-				x2={negY ? xOrigin + xDest : xOrigin}
-				y2={negX ? yOrigin + yDest : yOrigin}
+				x1={y < 0 ? strokeHalf : xDest - strokeHalf}
+				y1={x < 0 ? strokeHalf : yDest - strokeHalf}
+				x2={y < 0 ? xDest - strokeHalf : strokeHalf}
+				y2={x < 0 ? yDest - strokeHalf : strokeHalf}
 				style={{
-					stroke: (color && colors[color]) || colors.default,
+					stroke: hexColor,
 					strokeWidth,
 					strokeLinecap: 'round',
 				}}
