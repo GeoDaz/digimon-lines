@@ -7,40 +7,56 @@
 			null,
 			{
 				"name": "cyberdramon_x",
-				"color": "x",
-				"from": [
-					[1, 0]
-				]
+				"color": ["x"],
+				"from": [[1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "justimon_x",
-				"color": "x",
+				"color": ["x", "x"],
 				"from": [
 					[0, -1],
 					[1, 0]
-				]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
 			{
-				"name": "ketomon"
+				"name": "ketomon",
+				"from": null,
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
-				"name": "hopmon"
+				"name": "hopmon",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
-				"name": "monodramon"
+				"name": "monodramon",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
-				"name": "strikedramon"
+				"name": "strikedramon",
+				"xCollapsable": true,
+				"yCollapsable": false
 			},
 			{
-				"name": "cyberdramon"
+				"name": "cyberdramon",
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "justimon",
-				"color": "human",
-				"skins": ["justimon_critical_arm", "justimon_accel_arm"]
+				"color": ["human"],
+				"skins": ["justimon_critical_arm", "justimon_accel_arm"],
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
 		],
 		[
@@ -50,12 +66,77 @@
 			null,
 			{
 				"name": "cyberdramon_2",
-				"from": [-1, -1]
+				"from": [[-1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
 			},
 			{
 				"name": "darkdramon",
-				"from": [-1, -1]
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[0, -1]
+				],
+				"xCollapsable": false,
+				"yCollapsable": true
 			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gigadramon",
+				"from": [[1, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "chaosdramon",
+				"from": [[0, -1]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"skins": ["machinedramon"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pteranomon",
+				"from": [[-3, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "maneuvermon",
+				"from": [[0, -1]],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "chaosdramon_x",
+				"from": [[-1, 0]],
+				"xCollapsable": true,
+				"yCollapsable": true,
+				"color": ["x"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pteranomon_x",
+				"from": [[-1, 0]],
+				"xCollapsable": false,
+				"yCollapsable": true,
+				"color": ["x"]
+			},
+			null,
+			null
 		]
 	],
 	"related": [
@@ -66,6 +147,26 @@
 		{
 			"name": "ultimatechaosmon",
 			"for": "chaosmon"
+		},
+		{
+			"name": "jazamon",
+			"from": "pteranomon"
+		},
+		{
+			"name": "betamon",
+			"from": "gigadramon"
+		},
+		{
+			"name": "maquinamon",
+			"from": "maneuvermon"
+		},
+		{
+			"name": "tyranomon",
+			"from": "chaosdramon"
+		},
+		{
+			"name": "greymon",
+			"for": "flarelizardmon"
 		},
 		{
 			"name": "raidenmon",
@@ -79,5 +180,6 @@
 			"name": "bearmon",
 			"for": "pandamon"
 		}
-	]
+	],
+	"size": 6
 }

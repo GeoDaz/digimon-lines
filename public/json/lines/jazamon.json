@@ -1,210 +1,265 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			{
-				"name": "sparrowmon",
-				"from": [[2, -1]],
-				"color": ["gold"],
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "raptorsparrowmon",
-				"color": "gold",
-				"xCollapsable": false,
-				"yCollapsable": true
-			},
-			null,
-			{
-				"name": "zeekgreymon",
-				"color": "gold",
-				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "mailbirdramon",
-				"color": ["dark", "dark"],
-				"from": [
-					[1, -1],
-					[-1, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "metalgreymon_blue_2",
-				"color": "fusion",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "shoutmon_x3gm",
-				"color": "fusion",
-				"xCollapsable": false,
-				"yCollapsable": true
-			}
-		],
-		[
-			{
-				"name": "bommon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "missimon",
-				"color": "machine",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "jazamon",
-				"color": "machine",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "jazardmon",
-				"color": "machine",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "jazarichmon",
-				"color": "machine",
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "metallicdramon",
-				"color": "machine",
-				"xCollapsable": true,
-				"yCollapsable": true
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "mockingbirdmon",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"color": ["machine"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "kokuwamon",
-				"color": "machine",
-				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "pteranomon",
-				"color": "machine",
-				"from": [
-					[0, -1],
-					[-2, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": false
-			},
-			{
-				"name": "maneuvermon",
-				"color": ["default"],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"from": [[0, -1]]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "kokuwamon_x",
-				"color": "x",
-				"from": [-1, 0],
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "pteranomon_x",
-				"color": "x",
-				"xCollapsable": true,
-				"yCollapsable": false
-			},
-			{
-				"name": "cargodramon",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["machine"]
-			},
-			{
-				"name": "brigadramon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"color": ["machine"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "gigadramon",
-				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"color": ["dark"]
-			},
-			{
-				"name": "darkdramon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
-				"color": ["dark"]
-			}
-		]
-	],
-	"related": [
-		"vorvomon",
-		"blucomon",
-		{ "name": "greymon", "for": "greymon_blue_2" },
-		{ "name": "maquinamon", "for": "mockingbirdmon" },
-		{ "name": "maquinamon", "for": "maneuvermon" },
-		{ "name": "shoutmon", "for": "shoutmon_x3gm" },
-		{ "name": "shoutmon", "for": "shoutmon_x5" },
-		{ "name": "commandramon", "for": "cargodramon" },
-		{ "name": "betamon", "for": "gigadramon" },
-		{ "name": "hagurumon", "for": "masterblimpmon" },
-		{ "name": "tentomon", "for": "kokuwamon" },
-		"espimon",
-		{ "name": "elizamon", "for": "jet_mervamon", "from": "iguneetmon" },
-		{ "name": "fairymon", "for": "jetsilphymon" },
-		{ "name": "gaomon", "for": "machgaogamon" },
-		{ "name": "aegiomon", "for": "aegiochusmon_blue" },
-		{ "name": "terriermon", "for": "rapidmon" },
-		{ "name": "hawkmon", "for": "peacockmon" },
-		{ "name": "pteromon", "from": "pteranomon" }
-	],
-	"size": 6
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "sparrowmon",
+                "from": [
+                    [
+                        2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "gold"
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "raptorsparrowmon",
+                "color": [
+                    "gold"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "zeekgreymon",
+                "color": [
+                    "gold"
+                ],
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "mailbirdramon",
+                "color": [
+                    "dark",
+                    "dark"
+                ],
+                "from": [
+                    [
+                        1,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "metalgreymon_blue_2",
+                "color": [
+                    "fusion"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "shoutmon_x3gm",
+                "color": [
+                    "fusion"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "bommon",
+                "from": null,
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "missimon",
+                "color": [
+                    "machine"
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "jazamon",
+                "color": [
+                    "machine"
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "jazardmon",
+                "color": [
+                    "machine"
+                ],
+                "xCollapsable": true,
+                "yCollapsable": false,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "jazarichmon",
+                "color": [
+                    "machine"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "metallicdramon",
+                "color": [
+                    "machine"
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "mockingbirdmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "color": [
+                    "machine"
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        "vorvomon",
+        "blucomon",
+        {
+            "name": "maquinamon",
+            "for": "mockingbirdmon"
+        },
+        {
+            "name": "greymon",
+            "for": "greymon_blue_2"
+        },
+        {
+            "name": "shoutmon",
+            "for": "shoutmon_x3gm"
+        },
+        {
+            "name": "shoutmon",
+            "for": "shoutmon_x5"
+        },
+        {
+            "name": "maquinamon",
+            "for": "maneuvermon"
+        },
+        {
+            "name": "monodramon",
+            "for": "pteranomon"
+        },
+        {
+            "name": "commandramon",
+            "for": "cargodramon"
+        },
+        {
+            "name": "betamon",
+            "for": "gigadramon"
+        },
+        {
+            "name": "hagurumon",
+            "for": "masterblimpmon"
+        },
+        {
+            "name": "tentomon",
+            "for": "kokuwamon_x"
+        },
+        "espimon",
+        {
+            "name": "elizamon",
+            "for": "jet_mervamon",
+            "from": "iguneetmon"
+        },
+        {
+            "name": "fairymon",
+            "for": "jetsilphymon"
+        },
+        {
+            "name": "aegiomon",
+            "for": "aegiochusmon_blue"
+        },
+        {
+            "name": "hawkmon",
+            "for": "peacockmon"
+        }
+    ],
+    "size": 6
 }
