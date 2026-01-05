@@ -15,6 +15,7 @@ const transformLine = (line: Line | undefined): Line | undefined => {
 				if (!point) return point;
 				if (i === 0) {
 					point = { ...point, from: null };
+					return point;
 				}
 				if (point.from?.[0] && !Array.isArray(point.from[0])) {
 					point = { ...point, from: [point.from] } as LinePoint;

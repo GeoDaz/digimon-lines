@@ -258,14 +258,15 @@ h2 {
   overflow: auto;
 }
 
-.grid-2{
+.grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.75em;
 }
 
 .grid-2 .full-row {
-  grid-area: 3 / 1 / 4 / 3;;
+  grid-area: 3 / 1 / 4 / 3;
+  ;
 }
 
 /* line */
@@ -345,6 +346,7 @@ h2 {
 
 .line-grid>.line-row>.line-row {
   padding: 0;
+  margin-bottom: var(--bs-gutter-x);
 }
 
 .line-point,
@@ -746,6 +748,7 @@ a.line-point {
   --dl-xs-img-size: 12rem;
   --dl-xs-skin-img-size: 3rem;
 }
+
 .line-image-modal {
   --dl-img-size: 25rem;
   --dl-skin-img-size: 10rem;
