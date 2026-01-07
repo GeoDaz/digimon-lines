@@ -1,4 +1,8 @@
 [
+	{ "name": "wankomon", "grid": ["zombie_plutomon"] },
+	{ "name": "pawnchessmon_white", "grid": ["craniummon_enbarrmon"] },
+	{ "name": "ogremon", "grid": ["titamon_skullbaluchimon"] },
+	{ "name": "patamon", "grid": ["enbarrmon"] },
 	{ "name": "gekkomon", "grid": ["armalizamon"] },
 	{ "name": "chiropmon", "grid": ["nightchiropmon"] },
 	{ "name": "pristimon", "grid": ["wolvermon"] },
@@ -10,5 +14,6 @@
 	"shakamon",
 	"takinmon",
 	"kakamon",
-	"fujamon"
+	"fujamon",
+	{ "name": "jellymon", "grid": ["gasamon"] }
 ]

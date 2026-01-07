@@ -271,7 +271,6 @@
         ]
     ],
     "related": [
-        { "name": "takinmon", "for": "enbarrmon" },
         { "name": "app_ropuremon", "for": "app_protecmon" },
         "kotemon",
         {
@@ -290,13 +289,14 @@
             "name": "leomon",
             "for": "leopardmon"
         },
-        {
-            "name": "takinmon",
-            "for": "centarumon"
-        },
+        { "name": "angemon", "for": "enbarrmon", "from": "patamon" },
         {
             "name": "angemon",
             "for": "bagramon"
+        },
+        {
+            "name": "takinmon",
+            "for": "centarumon"
         },
         {
             "name": "greymon",
