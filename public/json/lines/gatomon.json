@@ -969,7 +969,10 @@
 		"name": "ogudomon",
 		"from": "lilithmon"
 	  },
-	  "angemon",
+	  {
+		"name": "patamon",
+		"from": "angemon"
+	  },
 	  {
 		"name": "app_musimon",
 		"for": "app_beautymon"
