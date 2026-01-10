@@ -1,59 +1,79 @@
 import { useState } from 'react';
-import { download } from '@/functions/file';
-import { clearLine } from '@/functions/line';
+import { downloadFromUrl, formatFileName } from '@/functions/file';
 import Line from '@/types/Line';
-import { defaultLicenceContext, LicenceProps } from '@/context/license';
-import { PUPPETEER_URL } from '@/consts/env';
+import { gridSpacing, xUnit, yUnit } from '@/components/Line/LineSvg';
 
 const useDownloadImg = (
-	line: Line,
-	name: string | undefined,
-	licenceContext: LicenceProps
-) => {
+	name: string | undefined
+): {
+	downloadImage: (line: Line) => Promise<void>;
+	downloading: boolean;
+	error: string | undefined;
+} => {
 	const [downloading, setDownloading] = useState<boolean>(false);
 	const [error, setError] = useState<string | undefined>();
 
-	const downloadImage = () => {
+	const downloadImage = async (line: Line) => {
 		setDownloading(true);
-		let type: string = 'blob';
-		const cleared = clearLine(line);
-		const url =
-			PUPPETEER_URL +
-			'/digimon-lines/build' +
-			(licenceContext.key !== defaultLicenceContext.key
-				? `/${licenceContext.key}`
-				: '');
+		setError(undefined);
 
-		fetch(url, {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify(cleared),
-		})
-			.then(res => {
-				if (res.headers.get('Content-Type') == 'application/json') {
-					type = 'json';
-					return res.json();
-				}
-				if (!res.ok) throw new Error(res.statusText);
-				return res.blob();
-			})
-			.then(res => {
-				if (type == 'json') throw res;
+		try {
+			const domtoimage = (await import('dom-to-image-more')).default;
 
-				download(res, (name || 'line') + '.png');
-				setDownloading(false);
-				setError(undefined);
-			})
-			.catch(e => {
-				console.error(e);
-				if (e.message) {
-					setError(e.message);
-				}
-				setDownloading(false);
+			const node = document.querySelector('.line-wrapper') as HTMLElement | null;
+			if (!node) {
+				throw new Error('Element .frame non trouvé');
+			}
+
+			node.classList.add('captured');
+
+			await preLoadImages(node);
+			const xCases = line.columns.length;
+			const yCases = line.size;
+
+			const dataUrl = await domtoimage.toPng(node, {
+				quality: 1,
+				width: 66 + gridSpacing * 1.5 + xUnit * xCases,
+				height: gridSpacing * 1.5 + yUnit * yCases,
+				style: { overflow: 'visible' },
 			});
+
+			const filename = formatFileName((name || 'line') + '.png');
+			downloadFromUrl(dataUrl, filename);
+
+			node.classList.remove('captured');
+			setDownloading(false);
+		} catch (err) {
+			console.error({ err });
+			if (err instanceof Error) {
+				setError(err.message);
+			}
+			setDownloading(false);
+		}
 	};
 
 	return { downloadImage, downloading, error };
+};
+
+const preLoadImages = async (node: Element): Promise<void> => {
+	const imgs = Array.from(node.querySelectorAll('img'));
+	for (const img of imgs) {
+		const src = img.src;
+		if (!src.startsWith('data:')) {
+			try {
+				const response = await fetch(src);
+				const blob = await response.blob();
+				const dataUrl = await new Promise<string>(resolve => {
+					const reader = new FileReader();
+					reader.onloadend = () => resolve(reader.result as string);
+					reader.readAsDataURL(blob);
+				});
+				img.src = dataUrl;
+			} catch (err) {
+				console.error({ err });
+			}
+		}
+	}
 };
 
 export default useDownloadImg;

@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useMemo } from 'react';
+import { useState, useReducer, useMemo } from 'react';
 import { Alert, Button, FormControl, InputGroup } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import { getDirPaths } from '@/functions/file';
@@ -55,14 +55,21 @@ export const PageBuild = (props: BuildProps) => {
 	useMemo(() => areCollapsablePoints(line), [line]);
 
 	const { downloadCode, uploadCode, name, setName } = useDownloadCode(line, setLine);
-	const { downloadImage, downloading, error } = useDownloadImg(
-		line,
-		name,
-		licenceContext
-	);
+	const { downloadImage, downloading, error } = useDownloadImg(name);
 
 	const handleUpdate = (action: CallableFunction, ...args: any[]) => {
 		dispatchState(action(...args));
+	};
+
+	const handeDowloadImg = () => {
+		let editionState = edition;
+		let zoomState = zoom;
+		edit(false);
+		setZoom(100);
+		downloadImage(line).then(() => {
+			edit(editionState);
+			setZoom(zoomState);
+		});
 	};
 
 	const handleVoid = () => {
@@ -125,7 +132,7 @@ export const PageBuild = (props: BuildProps) => {
 				</InputGroup>
 				<DownloadDropdown
 					downloadCode={downloadCode}
-					downloadImage={downloadImage}
+					downloadImage={handeDowloadImg}
 					loading={downloading}
 					error={error}
 				/>

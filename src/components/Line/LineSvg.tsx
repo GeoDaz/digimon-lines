@@ -1,13 +1,13 @@
 import React from 'react';
 import { colors } from '@/consts/colors';
 
-const spacing: number = 22.5;
+export const gridSpacing: number = 22.5;
 const strokeWidth: number = 12;
 const strokeHalf: number = strokeWidth / 2;
 export const pointWidth: number = 150;
 export const pointHeight: number = 150;
-export const xUnit: number = pointWidth + spacing;
-export const yUnit: number = pointHeight + spacing;
+export const xUnit: number = pointWidth + gridSpacing;
+export const yUnit: number = pointHeight + gridSpacing;
 
 const defaultFrom = [0, -1];
 
@@ -79,7 +79,7 @@ const LineSvg: React.FC<Props> = ({
 
 	let xDest: number;
 	if (xGap >= 1) {
-		xDest = xUnit * (xGap - 1) + spacing + strokeWidth;
+		xDest = xUnit * (xGap - 1) + gridSpacing + strokeWidth;
 	} else if (xGap > 0) {
 		xDest = xGap * xUnit;
 	} else {
@@ -89,7 +89,7 @@ const LineSvg: React.FC<Props> = ({
 
 	let yDest: number;
 	if (yGap >= 1) {
-		yDest = yUnit * (yGap - 1) + spacing + strokeWidth;
+		yDest = yUnit * (yGap - 1) + gridSpacing + strokeWidth;
 	} else if (yGap > 0) {
 		yDest = yGap * yUnit;
 	} else {

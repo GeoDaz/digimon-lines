@@ -1,4 +1,4 @@
-import { createFile, download } from '@/functions/file';
+import { createFile, downloadFile } from '@/functions/file';
 import transformLine from '@/functions/line';
 import { defaultLine } from '@/reducers/lineReducer';
 import Line from '@/types/Line';
@@ -9,7 +9,7 @@ const useDownloadCode = (line: Line, setLine: (line: Line) => void) => {
 
 	const downloadCode = () => {
 		const file = createFile(JSON.stringify(line), 'application/json');
-		download(file, (name || 'line') + '.json');
+		downloadFile(file, (name || 'line') + '.json');
 	};
 	const uploadCode = (name: string, json: Line | null) => {
 		setName(name);

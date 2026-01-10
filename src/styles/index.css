@@ -13,6 +13,7 @@
   /* --dl-snd-dark: #141516; */
   --dl-snd-dark: black;
   --dl-box-shadow: 0 0 3px 0 rgb(0, 0, 0, 0.3);
+  --dl-inset-box-shadow: inset 0 0 0 2px var(--dl-snd-dark);
   --dl-border: 2px solid var(--dl-snd-dark);
   --bs-border-color: #495057;
 
@@ -296,6 +297,29 @@ h2 {
   margin-right: -0.75rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  box-shadow: var(--dl-inset-box-shadow);
+}
+
+.line-wrapper.captured {
+  box-shadow: var(--dl-inset-box-shadow);
+  background-color: var(--bs-dark);
+  margin: 0 !important;
+  padding: var(--bs-gutter-x) var(--bs-gutter-x) 0 !important;
+}
+
+.frame .line-grid.line-wrapper.captured {
+  box-shadow: var(--dl-inset-box-shadow);
+  background-color: var(--bs-dark);
+  margin: 0 !important;
+  padding: var(--bs-gutter-x) var(--bs-gutter-x) 0 calc(4.5rem + var(--bs-gutter-x) / 2 + 2px) !important;
+}
+
+.line-wrapper.captured .levels {
+  margin: 0 !important;
+  left: 2px;
+}
+.line-wrapper.captured .add-row {
+  display: none !important;
 }
 
 .line-grid {
@@ -877,7 +901,7 @@ a.line-point {
   top: 1em;
   bottom: 0;
   left: 1em;
-  margin-left: -3px;
+  margin-left: -6px;
   display: flex;
   flex-direction: column;
 }
@@ -885,6 +909,7 @@ a.line-point {
 .line-grid .levels .level {
   height: calc(var(--dl-img-size) + var(--bs-gutter-x));
   max-width: 4.5rem;
+  border-left: var(--dl-border);
   border-right: var(--dl-border);
   border-top: var(--dl-border);
   display: flex;
