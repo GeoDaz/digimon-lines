@@ -92,8 +92,10 @@ export const PageBuild = (props: BuildProps) => {
 				like&nbsp;: change the line color or add some sub images.
 				<br /> The <b>Save as</b> button will allow you to download the line as an
 				image or code.
-				<br /> The image option doesn't work with <b>uploaded images</b>, but it
-				will works with <b>images urls</b>.
+				<br /> The image option doesn't work with <b>url images</b>, but it will
+				works with <b>uploaded images</b>.
+				<br /> The code save option will be very heavy with <b>uploaded images</b>
+				, but it will works with <b>url images</b>.
 				<br /> Your work is saved on the browser for one line at a time, but you
 				can export it on your computer with the <b>Save as Code</b> button and
 				update it later with the <b>Import from {'{}'}</b> button.
