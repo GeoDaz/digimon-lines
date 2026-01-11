@@ -85,10 +85,15 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "rhamphomon",
+				"from": [[-2, -1]],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
 			{
 				"name": "gigadramon",
-				"from": [[1, -1]],
+				"from": [[0, -1],[1, -1]],
 				"xCollapsable": false,
 				"yCollapsable": false
 			},
@@ -141,12 +146,8 @@
 	],
 	"related": [
 		{
-			"name": "commandramon",
-			"from": "darkdramon"
-		},
-		{
-			"name": "ultimatechaosmon",
-			"for": "chaosmon"
+			"name": "greymon",
+			"for": "metalgreymon_blue"
 		},
 		{
 			"name": "jazamon",
@@ -155,6 +156,14 @@
 		{
 			"name": "betamon",
 			"from": "gigadramon"
+		},
+		{
+			"name": "commandramon",
+			"from": "darkdramon"
+		},
+		{
+			"name": "ultimatechaosmon",
+			"for": "chaosmon"
 		},
 		{
 			"name": "maquinamon",
