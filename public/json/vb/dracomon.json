@@ -10,8 +10,7 @@
 			{
 				"name": "chaosmon",
 				"from": [[1, 0]],
-				"color": ["fusion"],
-				"collapsable": false
+				"color": ["fusion"]
 			}
 		],
 		[
@@ -20,21 +19,18 @@
 			{
 				"name": "monodramon",
 				"from": [1, -1],
-				"color": "default",
-				"collapsable": false
+				"color": "default"
 			},
 			{
 				"name": "airdramon",
 				"from": [[0, -1]],
-				"collapsable": false,
 				"color": ["wind"]
 			},
 			{ "name": "megadramon", "from": null, "collapsable": false },
 			{
 				"name": "darkdramon",
 				"from": [[0, -2]],
-				"color": ["machine"],
-				"collapsable": false
+				"color": ["machine"]
 			}
 		],
 		[
@@ -42,8 +38,7 @@
 			{
 				"name": "babydramon",
 				"from": [0, -1],
-				"color": "default",
-				"collapsable": true
+				"color": "default"
 			},
 			{ "name": "vorvomon", "from": null, "collapsable": false },
 			{ "name": "lavorvomon", "from": null, "collapsable": false },
@@ -51,7 +46,6 @@
 			{
 				"name": "volcanicdramon",
 				"from": [[0, -4]],
-				"collapsable": false,
 				"color": ["fire"]
 			}
 		],
@@ -61,7 +55,6 @@
 			{
 				"name": "blucomon",
 				"from": [[-1, -1]],
-				"collapsable": false,
 				"color": ["ice"]
 			},
 			{ "name": "paledramon", "from": null, "collapsable": false },
@@ -69,8 +62,7 @@
 			{
 				"name": "hexeblaumon",
 				"from": [[0, -3]],
-				"color": ["ice"],
-				"collapsable": false
+				"color": ["ice"]
 			}
 		],
 		[
@@ -82,7 +74,6 @@
 			{
 				"name": "slayerdramon",
 				"from": [[0, -3]],
-				"collapsable": false,
 				"color": ["wind"]
 			}
 		],
@@ -93,14 +84,12 @@
 			{
 				"name": "coredramon_green",
 				"from": [[-1, -1]],
-				"color": ["earth"],
-				"collapsable": true
+				"color": ["earth"]
 			},
 			{ "name": "groundramon", "from": null, "collapsable": true },
 			{
 				"name": "breakdramon",
 				"from": [[0, -2]],
-				"collapsable": false,
 				"color": ["earth"]
 			}
 		],
@@ -113,8 +102,7 @@
 			{
 				"name": "examon",
 				"from": [[-2, 0]],
-				"color": ["fusion"],
-				"collapsable": false
+				"color": ["fusion"]
 			}
 		]
 	]

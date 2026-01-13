@@ -8,9 +8,7 @@
 			{
 				"name": "metalmamemon_x",
 				"color": "x",
-				"from": [1, 0],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, 0]
 			},
 			null
 		],
@@ -20,35 +18,25 @@
 			{
 				"name": "kokuwamon_x",
 				"color": "x",
-				"from": [2, 0],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [2, 0]
 			},
 			{
 				"name": "thunderballmon_x",
-				"color": "x",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "x"
 			},
 			{
 				"name": "mamemon_x",
-				"color": "x",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "x"
 			},
 			{
 				"name": "princemamemon_x",
-				"color": "x",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "x"
 			}
 		],
 		[
 			{
 				"name": "bommon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2
 			},
 			null,
@@ -56,30 +44,22 @@
 			null,
 			{
 				"name": "mametyramon",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, -1]
 			},
 			{
 				"name": "tonosamamamemon",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, -1]
 			}
 		],
 		[
 			{
 				"name": "bombmon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "missimon",
 				"color": "machine",
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"from": [
 					[-0.5, -1],
 					[0.5, -1]
@@ -87,21 +67,15 @@
 			},
 			{
 				"name": "kokuwamon",
-				"color": "machine",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "machine"
 			},
 			{
 				"name": "thunderballmon",
-				"color": "electric",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "electric"
 			},
 			{
 				"name": "mamemon",
-				"skins": ["bigmamemon", "catchmamemon"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"skins": ["bigmamemon", "catchmamemon"]
 			},
 			{ "name": "princemamemon", "xCollapsable": false, "yCollapsable": true }
 		],
@@ -113,15 +87,11 @@
 			{
 				"name": "metalmamemon",
 				"color": "machine",
-				"from": [-1, 0],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-1, 0]
 			},
 			{
 				"name": "banchomamemon",
-				"from": [-1, -1],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [-1, -1]
 			}
 		],
 		[
@@ -130,9 +100,7 @@
 			null,
 			{
 				"name": "nanimon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "shootmon",
@@ -140,8 +108,6 @@
 					[0, -1],
 					[-2, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["electric", "electric"]
 			},
 			null
@@ -153,15 +119,11 @@
 			{
 				"name": "bombernanimon",
 				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["fire"]
 			},
 			{
 				"name": "bombermon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["fire"]
 			},
 			null
@@ -172,15 +134,11 @@
 			{
 				"name": "chikurimon",
 				"from": [[-4, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
 				"name": "troopmon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
@@ -189,8 +147,6 @@
 					[0, -1],
 					[-4, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark", "dark"]
 			},
 			null
@@ -198,23 +154,17 @@
 		[
 			{
 				"name": "yuramon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "tanemon",
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"from": [[0, -1]],
 				"color": ["grass"]
 			},
 			{ "name": "dondokomon", "xCollapsable": true, "yCollapsable": false },
 			{
 				"name": "igamon",
-				"skins": ["kougamon"],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"skins": ["kougamon"]
 			},
 			{
 				"name": "tekkamon",
@@ -222,8 +172,6 @@
 					[0, -1],
 					[-5, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["machine", "machine"]
 			},
 			null
@@ -235,9 +183,7 @@
 			null,
 			{
 				"name": "fumamon",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[-1, -1]]
 			},
 			null
 		]

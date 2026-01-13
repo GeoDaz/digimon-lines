@@ -13,17 +13,13 @@
                 ],
                 "color": [
                     "gold"
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "raptorsparrowmon",
                 "color": [
                     "gold"
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "from": [
                     [
                         0,
@@ -42,9 +38,7 @@
                         1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             }
         ],
         [
@@ -66,17 +60,13 @@
                         -1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "metalgreymon_blue_2",
                 "color": [
                     "fusion"
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "from": [
                     [
                         0,
@@ -89,8 +79,6 @@
                 "color": [
                     "fusion"
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "from": [
                     [
                         0,
@@ -102,17 +90,13 @@
         [
             {
                 "name": "bommon",
-                "from": null,
-                "xCollapsable": true,
-                "yCollapsable": false
+                "from": null
             },
             {
                 "name": "missimon",
                 "color": [
                     "machine"
                 ],
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "from": [
                     [
                         0,
@@ -125,8 +109,6 @@
                 "color": [
                     "machine"
                 ],
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "from": [
                     [
                         0,
@@ -139,8 +121,6 @@
                 "color": [
                     "machine"
                 ],
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "from": [
                     [
                         0,
@@ -153,8 +133,6 @@
                 "color": [
                     "machine"
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "from": [
                     [
                         0,
@@ -167,8 +145,6 @@
                 "color": [
                     "machine"
                 ],
-                "xCollapsable": true,
-                "yCollapsable": true,
                 "from": [
                     [
                         0,
@@ -190,8 +166,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "color": [
                     "machine"
                 ]

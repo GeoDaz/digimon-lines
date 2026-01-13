@@ -9,8 +9,6 @@
 			{
 				"name": "shivamon",
 				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["light"]
 			},
 			null
@@ -21,28 +19,20 @@
 			null,
 			{
 				"name": "dinohumon",
-				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[1, -1]]
 			},
 			{
 				"name": "asuramon",
 				"color": ["fire"],
-				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[1, -1]]
 			},
 			{
 				"name": "vulcanusmon",
-				"color": ["fire"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["fire"]
 			},
 			{
 				"name": "nezhamon_crimson_mode",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["fusion"],
 				"skins": ["nezhamon"]
 			}
@@ -50,35 +40,23 @@
 		[
 			{
 				"name": "choromon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
-				"name": "caprimon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "caprimon"
 			},
 			{
-				"name": "kotemon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "kotemon"
 			},
 			{
-				"name": "musyamon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "musyamon"
 			},
 			{
 				"name": "oboromon",
-				"color": ["black"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["black"]
 			},
 			{
-				"name": "zanbamon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "zanbamon"
 			},
 			null
 		],
@@ -88,21 +66,15 @@
 			null,
 			{
 				"name": "yaksamon",
-				"from": [[-1, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "grademon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0, -1]],
 				"color": ["gold"]
 			},
 			{
 				"name": "kazuchimon",
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [[0, -1]],
 				"color": ["electric"]
 			},
@@ -116,16 +88,12 @@
 			{
 				"name": "grademon_black",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
 				"name": "tactimon",
 				"color": ["dark"],
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -1]]
 			},
 			null
 		]

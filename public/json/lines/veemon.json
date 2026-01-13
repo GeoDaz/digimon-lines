@@ -7,24 +7,18 @@
 			{
 				"name": "veedramon_black",
 				"from": [[2, -1]],
-				"color": ["dark"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["dark"]
 			},
 			{
 				"name": "goldveedramon",
 				"color": ["gold"],
 				"skins": ["fate"],
-				"from": [[2, -2]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[2, -2]]
 			},
 			{
 				"name": "ulforceveedramon_x",
 				"color": ["x"],
-				"from": [[1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[1, 0]]
 			},
 			null,
 			null
@@ -36,64 +30,44 @@
 			{
 				"name": "veedramon",
 				"from": [[1, -1]],
-				"skins": ["redveedramon"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"skins": ["redveedramon"]
 			},
 			{
 				"name": "aeroveedramon",
-				"color": ["wind"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["wind"]
 			},
 			{
 				"name": "ulforceveedramon",
-				"color": ["wind"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["wind"]
 			},
 			{
 				"name": "ulforceveedramon_future_mode",
-				"color": ["mode"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["mode"]
 			},
 			null
 		],
 		[
 			{
 				"name": "chicomon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
-				"name": "chibimon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "chibimon"
 			},
 			{
-				"name": "veemon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "veemon"
 			},
 			{
 				"name": "exveemon",
 				"color": ["wind", "wind"],
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "paildramon",
-				"color": ["fusion"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["fusion"]
 			},
 			{
 				"name": "imperialdramon_dragon_mode",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [
 					[2, -1],
 					[0, -1]
@@ -101,15 +75,11 @@
 			},
 			{
 				"name": "imperialdramon_fighter_mode",
-				"color": ["mode"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["mode"]
 			},
 			{
 				"name": "imperialdramon_paladin_mode",
-				"color": ["fusion"],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": ["fusion"]
 			}
 		],
 		[
@@ -119,27 +89,19 @@
 			{
 				"name": "exveemon_black",
 				"color": ["dark"],
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "paildramon_black",
-				"color": ["dark"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["dark"]
 			},
 			{
 				"name": "imperialdramon_black",
-				"color": ["dark"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["dark"]
 			},
 			{
 				"name": "imperialdramon_fighter_mode_black",
-				"color": ["mode"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["mode"]
 			},
 			null
 		],
@@ -150,9 +112,7 @@
 			{
 				"name": "honeybeemon",
 				"from": [[-2, -1]],
-				"skins": ["knowledge"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"skins": ["knowledge"]
 			},
 			{
 				"name": "dinobeemon",
@@ -160,21 +120,15 @@
 					[0, -1],
 					[-2, -1]
 				],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": [null, "fusion"]
 			},
 			{
 				"name": "grankuwagamon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "grandiskuwagamon",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null
@@ -187,9 +141,7 @@
 				"name": "flamedramon",
 				"color": ["fire"],
 				"skins": ["courage"],
-				"from": [[-3, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-3, -1]]
 			},
 			{
 				"name": "sagittarimon",
@@ -199,9 +151,7 @@
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "magnamon",
@@ -210,9 +160,7 @@
 				"from": [
 					[0.5, -1],
 					[0, -2]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
+				]
 			},
 			null,
 			null
@@ -225,23 +173,17 @@
 				"name": "raidramon",
 				"color": ["electric"],
 				"skins": ["friendship"],
-				"from": [[-4, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[-4, -1]]
 			},
 			null,
 			{
 				"name": "magnamon_x",
 				"color": ["x"],
-				"from": [[-1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-1, 0]]
 			},
 			{
 				"name": "magnamon_x_gold_digizoid",
-				"color": ["mode"],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": ["mode"]
 			},
 			null
 		],
@@ -253,15 +195,11 @@
 				"name": "gargoylemon",
 				"color": ["light"],
 				"skins": ["light"],
-				"from": [[-5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-5, -1]]
 			},
 			{
 				"name": "manticoremon",
-				"color": ["light"],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": ["light"]
 			},
 			{
 				"name": "azulongmon",
@@ -269,9 +207,7 @@
 				"from": [
 					[0, -1],
 					[-1.5, -1]
-				],
-				"xCollapsable": true,
-				"yCollapsable": true
+				]
 			},
 			null,
 			null
@@ -283,9 +219,7 @@
 			{
 				"name": "kangarumon",
 				"from": [[-6, -1]],
-				"skins": ["kindness"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"skins": ["kindness"]
 			},
 			null,
 			null,
@@ -300,9 +234,7 @@
 				"name": "yaksamon",
 				"color": ["grass"],
 				"skins": ["purity"],
-				"from": [[-7, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[-7, -1]]
 			},
 			null,
 			null,
@@ -317,9 +249,7 @@
 				"name": "sethmon",
 				"color": ["wind"],
 				"skins": ["love"],
-				"from": [[-8, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[-8, -1]]
 			},
 			null,
 			null,
@@ -334,9 +264,7 @@
 				"name": "depthmon",
 				"color": ["marine"],
 				"skins": ["reliability"],
-				"from": [[-9, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[-9, -1]]
 			},
 			null,
 			null,

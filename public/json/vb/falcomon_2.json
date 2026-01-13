@@ -10,7 +10,6 @@
 			{
 				"name": "chaosmon_valdur_arm",
 				"from": [[1, 0]],
-				"collapsable": false,
 				"color": ["fusion"]
 			}
 		],
@@ -21,19 +20,16 @@
 			{
 				"name": "diatrymon",
 				"from": [[1, -1]],
-				"collapsable": false,
 				"color": ["wind"]
 			},
 			{
 				"name": "yatagaramon",
 				"from": [[0, -1]],
-				"collapsable": false,
 				"color": ["wind"]
 			},
 			{
 				"name": "valdurmon",
 				"from": [[0, -1]],
-				"collapsable": false,
 				"color": ["light"]
 			}
 		],
@@ -46,7 +42,6 @@
 			{
 				"name": "zephagamon",
 				"from": [[0, -5]],
-				"collapsable": false,
 				"color": ["wind"]
 			}
 		],
@@ -56,7 +51,6 @@
 			{
 				"name": "pomumon",
 				"from": [[-1, -1]],
-				"collapsable": false,
 				"color": ["grass"]
 			},
 			{ "name": "kiwimon", "from": null, "collapsable": false },
@@ -64,7 +58,6 @@
 			{
 				"name": "ceresmon_bird",
 				"from": [[0, -3]],
-				"collapsable": false,
 				"color": ["grass"]
 			}
 		],
@@ -74,7 +67,6 @@
 			{
 				"name": "biyomon",
 				"from": [[-2, -1]],
-				"collapsable": false,
 				"color": ["wind"]
 			},
 			{ "name": "xiquemon", "from": null, "collapsable": false },
@@ -82,7 +74,6 @@
 			{
 				"name": "xiangpengmon",
 				"from": [[0, -3]],
-				"collapsable": false,
 				"color": ["marine"]
 			}
 		],
@@ -92,7 +83,6 @@
 			{
 				"name": "falcomon_2",
 				"from": [[-3, -1]],
-				"collapsable": true,
 				"color": ["dark"]
 			},
 			{ "name": "peckmon", "from": null, "collapsable": true },
@@ -100,7 +90,6 @@
 			{
 				"name": "ravemon",
 				"from": [[0, -3]],
-				"collapsable": false,
 				"color": ["dark"]
 			}
 		],
@@ -113,7 +102,6 @@
 			{
 				"name": "ravemon_burst_mode",
 				"from": [[-1, 0]],
-				"collapsable": false,
 				"color": ["mode"]
 			}
 		]

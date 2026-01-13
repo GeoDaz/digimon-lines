@@ -8,9 +8,7 @@
 			{
 				"name": "volcdramon",
 				"color": "fire",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, -1]
 			},
 			null,
 			null,
@@ -20,36 +18,26 @@
 			{
 				"name": "botamon",
 				"xSize": 2,
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "koromon",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "toyagumon",
 				"skins": ["cleartoyagumon"],
-				"from": [0.5, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [0.5, -1]
 			},
 			{
 				"name": "flarelizardmon",
 				"color": "fire",
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "megadramon",
 				"color": "machine",
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "machinedramon",
@@ -58,15 +46,11 @@
 					[0.5, -1],
 					[-0.5, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "himachinedramon",
 				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["fusion"]
 			},
 			null
@@ -78,37 +62,27 @@
 				"name": "toyagumon_black",
 				"skins": ["cleartoyagumon_black"],
 				"from": [-0.5, -1],
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "darklizardmon",
 				"color": "dark",
-				"from": [0, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "gigadramon",
 				"color": "dark",
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [0, -1]
 			},
 			null,
 			{
 				"name": "chaosdramon",
 				"color": ["dark"],
-				"from": [[-0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-0.5, -1]]
 			},
 			{
 				"name": "neocrimson",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["fusion"]
 			}
 		],
@@ -120,16 +94,12 @@
 			{
 				"name": "helloogarmon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["fire"]
 			},
 			null,
 			{
 				"name": "chaosdramon_x",
 				"from": [[-1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null

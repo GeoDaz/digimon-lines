@@ -16,29 +16,21 @@
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "mulemon",
 				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["machine"]
 			},
 			{
 				"name": "mockingbirdmon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["machine"]
 			},
 			{
 				"name": "metatromon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["machine"]
 			}
 		],
@@ -51,21 +43,15 @@
 			null,
 			{
 				"name": "turbomon",
-				"from": [[-0.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-0.5, -1]]
 			},
 			{
 				"name": "maneuvermon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "dalphomon",
-				"from": [[0, -2]],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [[0, -2]]
 			}
 		]
 	],

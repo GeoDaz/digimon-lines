@@ -4,33 +4,23 @@
 			{
 				"name": "nyokimon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "budmon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "ekakimon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "omekamon",
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2
 			},
 			null,
 			{
 				"name": "omegamon_x",
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [[0.5, -2]],
 				"color": ["x"]
 			}
@@ -43,9 +33,7 @@
 			null,
 			{
 				"name": "omedamon",
-				"from": [[-0.5, -2]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[-0.5, -2]]
 			}
 		]
 	],

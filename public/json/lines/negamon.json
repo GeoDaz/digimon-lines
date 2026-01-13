@@ -7,18 +7,14 @@
 			{
 				"name": "raremon",
 				"color": "dark",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, -1]
 			},
 			null,
 			{
 				"name": "deathmon",
 				"color": "dark",
 				"from": [1, -1],
-				"skins": ["deathmon_black"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"skins": ["deathmon_black"]
 			},
 			null
 		],
@@ -26,28 +22,20 @@
 			{
 				"name": "kuramon",
 				"color": "dark",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "negamon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "soundbirdmon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "eyesmon",
 				"color": "dark",
-				"skins": ["eyesmon_scatter_mode"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"skins": ["eyesmon_scatter_mode"]
 			},
 			{
 				"name": "rareraremon",
@@ -56,21 +44,15 @@
 					[-1, -1],
 					[0, -1],
 					[1, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": false
+				]
 			},
 			{
 				"name": "abbadomon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "abbadomon_core",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": "dark"
 			}
 		],
 		[
@@ -80,23 +62,17 @@
 			{
 				"name": "shademon",
 				"color": "dark",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-1, -1]
 			},
 			{
 				"name": "orochimon",
 				"from": [[-1, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
 				"name": "nidhoggmon",
 				"color": "dark",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [[0, -1]]
 			},
 			null
 		],
@@ -107,9 +83,7 @@
 			{
 				"name": "shademon_nene",
 				"color": "human",
-				"from": [-1, 0],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [-1, 0]
 			},
 			null,
 			null,

@@ -3,40 +3,28 @@
 		[
 			{
 				"name": "keemon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "yarmon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "phascomon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "porcupamon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "astamon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "belphemon_rage_mode",
 				"color": "dark",
-				"skins": ["belphemon_sleep_mode"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"skins": ["belphemon_sleep_mode"]
 			}
 		],
 		[
@@ -47,8 +35,6 @@
 			{
 				"name": "mephismon_x",
 				"from": [[1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
@@ -57,8 +43,6 @@
 					[-1, 0],
 					[0, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x", "x"]
 			}
 		],
@@ -70,15 +54,11 @@
 			{
 				"name": "mephismon",
 				"color": "dark",
-				"from": [[-2, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-2, -1]]
 			},
 			{
 				"name": "gulfmon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": "dark"
 			}
 		]
 	],

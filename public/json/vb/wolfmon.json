@@ -9,20 +9,17 @@
 				"name": "garurumon",
 				"mirror": true,
 				"from": [[1, -1]],
-				"collapsable": false,
 				"color": ["ice"]
 			},
 			{
 				"name": "kendogarurumon",
 				"mirror": true,
-				"from": null,
-				"collapsable": false
+				"from": null
 			},
 			{
 				"name": "ancientgarurumon",
 				"mirror": true,
 				"from": [[0, -2]],
-				"collapsable": false,
 				"color": ["ice"]
 			}
 		],
@@ -31,7 +28,6 @@
 			{
 				"name": "moonmon",
 				"from": [[0, -1]],
-				"collapsable": false,
 				"xSize": 2,
 				"color": ["light"]
 			},
@@ -39,7 +35,6 @@
 				"name": "strabimon",
 				"mirror": true,
 				"from": [[0.5, -1]],
-				"collapsable": false,
 				"color": ["light"]
 			},
 			{ "name": "wolfmon", "mirror": true, "from": null, "collapsable": false },
@@ -48,7 +43,6 @@
 				"name": "magnagarurumon",
 				"mirror": true,
 				"from": [[0, -3]],
-				"collapsable": false,
 				"color": ["light"]
 			}
 		],
@@ -58,26 +52,22 @@
 			{
 				"name": "lunamon",
 				"from": [[-0.5, -1]],
-				"collapsable": true,
 				"color": ["light"]
 			},
 			{
 				"name": "tialudomon",
 				"from": [[0, -1]],
-				"collapsable": false,
 				"color": ["light"]
 			},
 			{
 				"name": "raijiludomon",
 				"from": [[0, -1]],
-				"collapsable": false,
 				"color": ["electric"]
 			},
 			{
 				"name": "miragegaogamon",
 				"mirror": true,
 				"from": [[0, -1]],
-				"collapsable": false,
 				"color": ["light"]
 			}
 		],
@@ -89,7 +79,6 @@
 				"name": "lekismon",
 				"mirror": true,
 				"from": [[-1, -1]],
-				"collapsable": true,
 				"color": ["light"]
 			},
 			{ "name": "crescemon", "mirror": true, "from": null, "collapsable": true },
@@ -97,7 +86,6 @@
 				"name": "dianamon",
 				"mirror": true,
 				"from": [[0, -2]],
-				"collapsable": true,
 				"color": ["light"]
 			}
 		]

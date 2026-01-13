@@ -6,10 +6,7 @@
 			null,
 			{
 				"name": "app_cameramon",
-				"from": null,
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_scopemon",
@@ -19,9 +16,6 @@
 					[0.5, -2]
 				],
 				"color": "fusion",
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2
 			},
 			null,
@@ -33,16 +27,11 @@
 			null,
 			{
 				"name": "app_rocketmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_shotmon",
 				"from": null,
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null,
@@ -53,8 +42,6 @@
 					[1, -1]
 				],
 				"color": "fusion",
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2
 			},
 			null,
@@ -65,15 +52,11 @@
 			null,
 			{
 				"name": "app_jetmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_resshamon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": []
 			},
 			{
@@ -85,8 +68,6 @@
 					[0.5, -2]
 				],
 				"color": "fusion",
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2
 			},
 			null,
@@ -98,15 +79,11 @@
 			null,
 			{
 				"name": "app_yadomon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_compassmon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null,

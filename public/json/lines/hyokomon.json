@@ -4,33 +4,23 @@
             {
                 "name": "yolkmon",
                 "xSize": 2,
-                "from": null,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "from": null
             },
             {
                 "name": "chicchimon",
-                "xSize": 2,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "xSize": 2
             },
             {
                 "name": "hyokomon",
-                "xSize": 2,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "xSize": 2
             },
             {
                 "name": "buraimon",
-                "xSize": 2,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "xSize": 2
             },
             {
                 "name": "butenmon",
-                "xSize": 2,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "xSize": 2
             },
             {
                 "name": "chronomon_destroy_mode",
@@ -47,9 +37,7 @@
                         1,
                         0
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             }
         ],
         [
@@ -63,8 +51,6 @@
                 "color": [
                     "light"
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "from": [
                     [
                         -0.5,
@@ -85,9 +71,7 @@
                         1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "zhuqiaomon",
@@ -97,8 +81,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "color": [
                     "fire"
                 ]
@@ -115,25 +97,19 @@
                         -2.5,
                         -1
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "digitamamon",
                 "color": [
                     "dark"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "devitamamon",
                 "color": [
                     "dark"
-                ],
-                "xCollapsable": true,
-                "yCollapsable": true
+                ]
             }
         ],
         [
@@ -148,9 +124,7 @@
                         -1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null
         ]

@@ -3,35 +3,25 @@
         [
             {
                 "name": "cocomon",
-                "from": null,
-                "xCollapsable": true,
-                "yCollapsable": false
+                "from": null
             },
             {
-                "name": "chocomon",
-                "xCollapsable": true,
-                "yCollapsable": false
+                "name": "chocomon"
             },
             {
-                "name": "tyumon",
-                "xCollapsable": true,
-                "yCollapsable": false
+                "name": "tyumon"
             },
             {
                 "name": "sukamon",
                 "skins": [
                     "platinumsukamon"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "greatkingsukamon",
                 "color": [
                     "gold"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "kingetemon",
@@ -48,9 +38,7 @@
                 "color": [
                     "gold",
                     "gold"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null
         ],
@@ -65,9 +53,7 @@
                         -1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "etemon",
@@ -80,17 +66,13 @@
                         -1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "metaletemon",
                 "color": [
                     "machine"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null
         ],
@@ -105,9 +87,7 @@
                         -2,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "chohakkaimon",
@@ -116,9 +96,7 @@
                         0,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "cendrillmon",
@@ -127,24 +105,18 @@
                         1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null
         ],
         [
             {
                 "name": "sakumon",
-                "from": null,
-                "xCollapsable": true,
-                "yCollapsable": false
+                "from": null
             },
             {
                 "name": "sakuttomon",
-                "from": null,
-                "xCollapsable": true,
-                "yCollapsable": false
+                "from": null
             },
             {
                 "name": "tyutyumon",
@@ -154,8 +126,6 @@
                         -2
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "color": [
                     "gold"
                 ]
@@ -168,16 +138,12 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "color": [
                     "gold"
                 ]
             },
             {
                 "name": "kumbhiramon",
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "from": [
                     [
                         1,
@@ -197,8 +163,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "color": [
                     "light"
                 ]
@@ -211,8 +175,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": true,
                 "color": [
                     "mode"
                 ]
@@ -230,8 +192,6 @@
                         0
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "color": [
                     "mode"
                 ]
@@ -244,8 +204,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "skins": [
                     "deadly_tuwarmon_hell_mode"
                 ],

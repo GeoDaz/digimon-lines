@@ -3,9 +3,7 @@
     [
       {
         "name": "puyomon",
-        "from": null,
-        "xCollapsable": false,
-        "yCollapsable": false
+        "from": null
       },
       {
         "name": "puyoyomon",
@@ -14,9 +12,7 @@
             0,
             -1
           ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": false
+        ]
       },
       {
         "name": "ukkomon",
@@ -25,9 +21,7 @@
             0,
             -1
           ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": true
+        ]
       },
       null,
       null,
@@ -43,9 +37,7 @@
         "from": [
           0,
           -3
-        ],
-        "xCollapsable": false,
-        "yCollapsable": true
+        ]
       },
       null,
       null
@@ -53,34 +45,22 @@
     [
       {
         "name": "puyomon",
-        "from": null,
-        "xCollapsable": false,
-        "yCollapsable": false
+        "from": null
       },
       {
-        "name": "puyoyomon",
-        "xCollapsable": false,
-        "yCollapsable": false
+        "name": "puyoyomon"
       },
       {
-        "name": "jellymon",
-        "xCollapsable": false,
-        "yCollapsable": false
+        "name": "jellymon"
       },
       {
-        "name": "teslajellymon",
-        "xCollapsable": false,
-        "yCollapsable": false
+        "name": "teslajellymon"
       },
       {
-        "name": "thetismon",
-        "xCollapsable": false,
-        "yCollapsable": false
+        "name": "thetismon"
       },
       {
-        "name": "amphimon",
-        "xCollapsable": false,
-        "yCollapsable": true
+        "name": "amphimon"
       },
       null,
       null
@@ -88,29 +68,19 @@
     [
       {
         "name": "tomorimon",
-        "xCollapsable": true,
-        "yCollapsable": false,
         "from": null
       },
       {
-        "name": "onibimon",
-        "xCollapsable": true,
-        "yCollapsable": false
+        "name": "onibimon"
       },
       {
-        "name": "gasamon",
-        "xCollapsable": false,
-        "yCollapsable": false
+        "name": "gasamon"
       },
       {
-        "name": "octomon",
-        "xCollapsable": false,
-        "yCollapsable": false
+        "name": "octomon"
       },
       {
         "name": "dagomon",
-        "xCollapsable": true,
-        "yCollapsable": false,
         "from": [
           [
             0,
@@ -129,9 +99,7 @@
             0,
             -1
           ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": false
+        ]
       },
       {
         "name": "nezhamon_crimson_mode",
@@ -141,8 +109,6 @@
             -1
           ]
         ],
-        "xCollapsable": true,
-        "yCollapsable": true,
         "color": [
           "fusion"
         ],
@@ -165,9 +131,7 @@
             1,
             0
           ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": false
+        ]
       },
       {
         "name": "gesomon_x",
@@ -175,8 +139,6 @@
           "x",
           "x"
         ],
-        "xCollapsable": false,
-        "yCollapsable": true,
         "from": [
           [
             1,
@@ -194,8 +156,6 @@
         "color": [
           "dark"
         ],
-        "xCollapsable": false,
-        "yCollapsable": true,
         "from": [
           [
             1,
@@ -209,32 +169,22 @@
     [
       {
         "name": "puyomon",
-        "from": null,
-        "xCollapsable": true,
-        "yCollapsable": false
+        "from": null
       },
       {
-        "name": "puyoyomon",
-        "xCollapsable": true,
-        "yCollapsable": false
+        "name": "puyoyomon"
       },
       {
-        "name": "shakomon",
-        "xCollapsable": true,
-        "yCollapsable": false
+        "name": "shakomon"
       },
       {
-        "name": "gesomon",
-        "xCollapsable": false,
-        "yCollapsable": false
+        "name": "gesomon"
       },
       {
         "name": "marinedevimon",
         "color": [
           "dark"
-        ],
-        "xCollapsable": true,
-        "yCollapsable": false
+        ]
       },
       {
         "name": "cthyllamon",
@@ -244,8 +194,6 @@
             -1
           ]
         ],
-        "xCollapsable": false,
-        "yCollapsable": true,
         "color": [
           "dark"
         ]
@@ -269,8 +217,6 @@
             -1.5
           ]
         ],
-        "xCollapsable": false,
-        "yCollapsable": false,
         "ySize": 2,
         "color": [
           "slide"
@@ -293,8 +239,6 @@
             -1
           ]
         ],
-        "xCollapsable": false,
-        "yCollapsable": true,
         "color": [
           "default",
           "default"
@@ -310,8 +254,6 @@
       {
         "name": "calamaramon",
         "from": null,
-        "xCollapsable": true,
-        "yCollapsable": false,
         "ySize": 2
       },
       null,
@@ -322,9 +264,7 @@
             0,
             -1.5
           ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": true
+        ]
       },
       null,
       null
@@ -343,8 +283,6 @@
             -1
           ]
         ],
-        "xCollapsable": false,
-        "yCollapsable": true,
         "color": [
           "light"
         ]
@@ -363,9 +301,7 @@
             1,
             -1
           ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": false
+        ]
       },
       {
         "name": "mermaimon",
@@ -378,9 +314,7 @@
             2,
             -1
           ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": false
+        ]
       },
       {
         "name": "venusmon",
@@ -390,8 +324,6 @@
             -1
           ]
         ],
-        "xCollapsable": false,
-        "yCollapsable": true,
         "color": [
           "light"
         ]
@@ -402,15 +334,11 @@
     [
       {
         "name": "puyomon",
-        "from": null,
-        "xCollapsable": true,
-        "yCollapsable": false
+        "from": null
       },
       {
         "name": "puyoyomon",
-        "from": null,
-        "xCollapsable": true,
-        "yCollapsable": false
+        "from": null
       },
       {
         "name": "sangomon",
@@ -419,17 +347,13 @@
             0,
             -2
           ]
-        ],
-        "xCollapsable": true,
-        "yCollapsable": false
+        ]
       },
       {
         "name": "shellmon",
         "skins": [
           "morishellmon"
         ],
-        "xCollapsable": false,
-        "yCollapsable": false,
         "from": [
           [
             -5,
@@ -442,19 +366,13 @@
         ]
       },
       {
-        "name": "marinbullmon",
-        "xCollapsable": false,
-        "yCollapsable": false
+        "name": "marinbullmon"
       },
       {
-        "name": "ryugumon",
-        "xCollapsable": false,
-        "yCollapsable": false
+        "name": "ryugumon"
       },
       {
-        "name": "ariemon",
-        "xCollapsable": true,
-        "yCollapsable": true
+        "name": "ariemon"
       },
       null
     ],
@@ -469,19 +387,13 @@
             -1,
             -1
           ]
-        ],
-        "xCollapsable": true,
-        "yCollapsable": false
+        ]
       },
       {
-        "name": "hangyomon",
-        "xCollapsable": false,
-        "yCollapsable": false
+        "name": "hangyomon"
       },
       {
-        "name": "neptunemon",
-        "xCollapsable": false,
-        "yCollapsable": true
+        "name": "neptunemon"
       },
       null,
       null
@@ -498,9 +410,7 @@
             -1,
             -1
           ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": false
+        ]
       },
       {
         "name": "surfimon",
@@ -509,9 +419,7 @@
             0,
             -1
           ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": true
+        ]
       },
       null,
       null
@@ -528,9 +436,7 @@
             -2,
             -1
           ]
-        ],
-        "xCollapsable": false,
-        "yCollapsable": false
+        ]
       },
       {
         "name": "splashmon_darkness_mode_2",
@@ -540,8 +446,6 @@
             -1
           ]
         ],
-        "xCollapsable": true,
-        "yCollapsable": true,
         "color": [
           "fusion"
         ]
@@ -562,8 +466,6 @@
             0
           ]
         ],
-        "xCollapsable": false,
-        "yCollapsable": true,
         "color": [
           "mode"
         ]

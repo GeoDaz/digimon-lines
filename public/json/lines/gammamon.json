@@ -15,10 +15,7 @@
           ],
           "color": [
             "fusion"
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "samudramon",
@@ -28,12 +25,9 @@
               -1
             ]
           ],
-          "collapsable": true,
           "color": [
             "x"
-          ],
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "samudramon_itto_mode",
@@ -43,12 +37,9 @@
               -1
             ]
           ],
-          "collapsable": true,
           "color": [
             "mode"
-          ],
-          "xCollapsable": true,
-          "yCollapsable": true
+          ]
         }
       ],
       [
@@ -63,10 +54,7 @@
               1,
               -1
             ]
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "tlalocmon",
@@ -75,9 +63,7 @@
               0,
               -1
             ]
-          ],
-          "xCollapsable": false,
-          "yCollapsable": true
+          ]
         },
         null
       ],
@@ -93,12 +79,9 @@
               -1
             ]
           ],
-          "collapsable": false,
           "color": [
             "electric"
-          ],
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "fumamon",
@@ -107,10 +90,7 @@
               1,
               -1
             ]
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "ravemon",
@@ -119,9 +99,7 @@
               0,
               -1
             ]
-          ],
-          "xCollapsable": true,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "ravemon_burst_mode",
@@ -131,8 +109,6 @@
               -1
             ]
           ],
-          "xCollapsable": true,
-          "yCollapsable": true,
           "color": [
             "mode"
           ]
@@ -150,12 +126,9 @@
               -1
             ]
           ],
-          "collapsable": false,
           "color": [
             "wind"
-          ],
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "bombermon",
@@ -165,12 +138,9 @@
               -1
             ]
           ],
-          "collapsable": false,
           "color": [
             "default"
-          ],
-          "xCollapsable": false,
-          "yCollapsable": true
+          ]
         },
         null,
         null
@@ -179,24 +149,15 @@
         {
           "name": "curimon",
           "xSize": 2,
-          "from": null,
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          "from": null
         },
         {
           "name": "gurimon",
-          "xSize": 2,
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          "xSize": 2
         },
         {
           "name": "gammamon",
-          "xSize": 2,
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          "xSize": 2
         },
         {
           "name": "betelgammamon",
@@ -206,32 +167,23 @@
               -1
             ]
           ],
-          "collapsable": false,
           "color": [
             "fire"
-          ],
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "canoweissmon",
           "from": [
             0,
             -1
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "siriusmon",
           "from": [
             0,
             -1
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "proximamon",
@@ -249,10 +201,7 @@
               0.5,
               -1
             ]
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": true
+          ]
         }
       ],
       [
@@ -269,10 +218,7 @@
               -0.5,
               -1
             ]
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "regulusmon",
@@ -283,10 +229,7 @@
           "from": [
             0,
             -1
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "arcturusmon",
@@ -297,10 +240,7 @@
           "from": [
             0,
             -1
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": true
+          ]
         },
         null
       ],
@@ -318,28 +258,19 @@
               1,
               0
             ]
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "triceramon_x",
           "color": [
             "x"
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "ultimatebrachimon",
           "color": [
             "x"
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": true
+          ]
         },
         null
       ],
@@ -355,18 +286,12 @@
               -1
             ]
           ],
-          "collapsable": true,
           "color": [
             "earth"
-          ],
-          "xCollapsable": true,
-          "yCollapsable": false
+          ]
         },
         {
-          "name": "triceramon",
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          "name": "triceramon"
         },
         {
           "name": "styracomon",
@@ -375,9 +300,7 @@
               0,
               -1
             ]
-          ],
-          "xCollapsable": false,
-          "yCollapsable": true
+          ]
         },
         null
       ],
@@ -393,10 +316,7 @@
               -1,
               -1
             ]
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "cannondramon",
@@ -410,13 +330,10 @@
               -1
             ]
           ],
-          "collapsable": false,
           "color": [
             "machine",
             "machine"
-          ],
-          "xCollapsable": false,
-          "yCollapsable": true
+          ]
         },
         null
       ],
@@ -435,10 +352,7 @@
               -2,
               -1
             ]
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "plesiomon",
@@ -448,8 +362,6 @@
               -1
             ]
           ],
-          "xCollapsable": false,
-          "yCollapsable": true,
           "skins": [
             "plesiomon_x"
           ],
@@ -474,10 +386,7 @@
               -3,
               -1
             ]
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "dorbickmon",
@@ -494,25 +403,19 @@
               -1,
               -1
             ]
-          ],
-          "collapsable": true,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "dorbickmon_darkness_mode",
           "color": [
             "fusion"
           ],
-          "collapsable": true,
           "from": [
             [
               0,
               -1
             ]
-          ],
-          "xCollapsable": false,
-          "yCollapsable": true
+          ]
         }
       ]
     ],

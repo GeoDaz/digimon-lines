@@ -4,9 +4,6 @@
         {
           "name": "snowbotamon",
           "from": null,
-          "collapsable": true,
-          "xCollapsable": false,
-          "yCollapsable": false,
           "xSize": 2
         },
         {
@@ -14,35 +11,22 @@
           "color": [
             "ice"
           ],
-          "collapsable": true,
-          "xCollapsable": false,
-          "yCollapsable": false,
           "xSize": 2
         },
         {
           "name": "bearmon",
-          "collapsable": true,
-          "xCollapsable": false,
-          "yCollapsable": false,
           "xSize": 2
         },
         {
           "name": "grizzlymon",
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false,
           "xSize": 2
         },
         {
           "name": "greatgrizzlymon",
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false,
           "xSize": 2
         },
         {
           "name": "marsmon",
-          "collapsable": false,
           "from": [
             [
               0.5,
@@ -51,9 +35,7 @@
           ],
           "color": [
             "fire"
-          ],
-          "xCollapsable": false,
-          "yCollapsable": true
+          ]
         },
         null
       ],
@@ -71,8 +53,6 @@
               -1
             ]
           ],
-          "xCollapsable": true,
-          "yCollapsable": true,
           "color": [
             "dark"
           ]
@@ -94,9 +74,6 @@
               -1.5
             ]
           ],
-          "collapsable": true,
-          "xCollapsable": false,
-          "yCollapsable": false,
           "ySize": 2
         },
         {
@@ -111,8 +88,6 @@
               -1
             ]
           ],
-          "xCollapsable": true,
-          "yCollapsable": false,
           "ySize": 2,
           "color": [
             "fusion",
@@ -134,8 +109,6 @@
               0
             ]
           ],
-          "xCollapsable": false,
-          "yCollapsable": false,
           "ySize": 2,
           "color": [
             "slide"
@@ -154,8 +127,6 @@
               -0.5
             ]
           ],
-          "xCollapsable": false,
-          "yCollapsable": true,
           "color": [
             "ice",
             "ice"
@@ -178,17 +149,11 @@
               -1
             ]
           ],
-          "skins": [],
-          "collapsable": false,
-          "xCollapsable": true,
-          "yCollapsable": false
+          "skins": []
         },
         {
           "name": "polarbearmon",
-          "from": null,
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          "from": null
         },
         {
           "name": "skadimon",
@@ -198,12 +163,9 @@
               -2
             ]
           ],
-          "collapsable": false,
           "color": [
             "ice"
-          ],
-          "xCollapsable": true,
-          "yCollapsable": true
+          ]
         },
         null
       ],
@@ -220,8 +182,6 @@
               0
             ]
           ],
-          "xCollapsable": false,
-          "yCollapsable": true,
           "color": [
             "x"
           ]
@@ -246,8 +206,6 @@
               -1
             ]
           ],
-          "xCollapsable": false,
-          "yCollapsable": false,
           "skins": [
             "monzaemon_red"
           ]
@@ -264,8 +222,6 @@
               -1
             ]
           ],
-          "xCollapsable": true,
-          "yCollapsable": true,
           "color": [
             "dark",
             "dark"
@@ -287,25 +243,19 @@
               -6.5,
               -1
             ]
-          ],
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "warumonzaemon",
           "color": [
             "dark"
           ],
-          "collapsable": false,
           "from": [
             [
               0,
               -1
             ]
-          ],
-          "xCollapsable": false,
-          "yCollapsable": true
+          ]
         },
         null,
         null
@@ -313,15 +263,11 @@
       [
         {
           "name": "pupumon",
-          "from": null,
-          "xCollapsable": true,
-          "yCollapsable": false
+          "from": null
         },
         {
           "name": "puroromon",
-          "from": null,
-          "xCollapsable": true,
-          "yCollapsable": false
+          "from": null
         },
         {
           "name": "panbachimon",
@@ -330,16 +276,11 @@
               0,
               -2
             ]
-          ],
-          "collapsable": true,
-          "xCollapsable": true,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "mudfrigimon",
-          "from": null,
-          "xCollapsable": true,
-          "yCollapsable": false
+          "from": null
         },
         {
           "name": "pandamon",
@@ -348,16 +289,10 @@
               0,
               -2
             ]
-          ],
-          "collapsable": false,
-          "xCollapsable": true,
-          "yCollapsable": false
+          ]
         },
         {
-          "name": "gankoomon",
-          "collapsable": false,
-          "xCollapsable": false,
-          "yCollapsable": true
+          "name": "gankoomon"
         },
         null
       ],
@@ -375,12 +310,9 @@
               0
             ]
           ],
-          "collapsable": false,
           "color": [
             "x"
-          ],
-          "xCollapsable": false,
-          "yCollapsable": false
+          ]
         },
         {
           "name": "jesmon_gx",
@@ -390,8 +322,6 @@
               -1
             ]
           ],
-          "xCollapsable": false,
-          "yCollapsable": true,
           "color": [
             "fusion"
           ]

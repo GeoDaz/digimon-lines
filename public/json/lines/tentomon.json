@@ -6,16 +6,12 @@
 			null,
 			{
 				"name": "snimon",
-				"from": [3, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [3, -1]
 			},
 			{
 				"name": "scorpiomon",
 				"from": [0, -1],
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "dark"
 			},
 			null,
 			null
@@ -27,25 +23,19 @@
 			{
 				"name": "gokimon",
 				"from": [2, -1],
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "climbmon",
 				"from": [
 					[0, -1],
 					[-1, -1]
-				],
-				"xCollapsable": true,
-				"yCollapsable": false
+				]
 			},
 			{
 				"name": "shivamon",
 				"from": [0, -1],
-				"color": "light",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "light"
 			},
 			null
 		],
@@ -58,44 +48,30 @@
 			{
 				"name": "herculeskabuterimon_x",
 				"color": "x",
-				"from": [1, 0],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, 0]
 			},
 			null
 		],
 		[
 			{
 				"name": "bubbmon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
-				"name": "mochimon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "mochimon"
 			},
 			{
-				"name": "tentomon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "tentomon"
 			},
 			{
-				"name": "kabuterimon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "kabuterimon"
 			},
 			{
 				"name": "megakabuterimon",
-				"skins": ["megakabuterimon_blue"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"skins": ["megakabuterimon_blue"]
 			},
 			{
-				"name": "herculeskabuterimon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "herculeskabuterimon"
 			},
 			null
 		],
@@ -105,21 +81,15 @@
 			null,
 			{
 				"name": "kuwagamon",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-1, -1]
 			},
 			{
 				"name": "okuwamon",
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "grankuwagamon",
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [0, -1]
 			},
 			null
 		],
@@ -129,16 +99,12 @@
 			{
 				"name": "kokuwamon_x",
 				"from": [1, 0],
-				"color": "x",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "x"
 			},
 			{
 				"name": "kuwagamon_x",
 				"from": [-1, 0],
-				"color": "x",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "x"
 			},
 			{
 				"name": "okuwamon_x",
@@ -146,9 +112,7 @@
 					[-1, 0],
 					[0, -1]
 				],
-				"color": "x",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "x"
 			},
 			{
 				"name": "grandiskuwagamon",
@@ -156,9 +120,7 @@
 					[-1, 0],
 					[0, -1]
 				],
-				"color": ["x", "x"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["x", "x"]
 			},
 			null
 		],
@@ -168,29 +130,21 @@
 			{
 				"name": "kokuwamon",
 				"from": [-3, -1],
-				"color": "machine",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "machine"
 			},
 			{
 				"name": "bladekuwagamon",
 				"color": "machine",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0, -1]]
 			},
 			{
 				"name": "metallifekuwagamon",
 				"from": [0, -1],
-				"color": "gold",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "gold"
 			},
 			{
 				"name": "tyrantkabuterimon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": "dark"
 			},
 			null
 		],
@@ -205,15 +159,11 @@
 					[-1, -1],
 					[1.5, -1]
 				],
-				"skins": ["darkvolumon"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"skins": ["darkvolumon"]
 			},
 			{
 				"name": "atlurballistamon",
-				"color": "machine",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "machine"
 			},
 			null,
 			null
@@ -224,15 +174,11 @@
 			{
 				"name": "kokabuterimon",
 				"xSize": 2,
-				"from": [-5.5, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [-5.5, -1]
 			},
 			{
 				"name": "blitzmon",
 				"color": "electric",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0.5, -1.5]],
 				"ySize": 2
 			},
@@ -242,8 +188,6 @@
 					[0, -1],
 					[1, -1]
 				],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"ySize": 2,
 				"color": ["fusion", "fusion"]
 			},
@@ -260,16 +204,12 @@
 					[-0.5, -1.5],
 					[-1, 0]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"ySize": 2,
 				"color": ["electric", "slide"]
 			},
 			null,
 			{
 				"name": "ancientbeetlemon",
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [
 					[0, -1.5],
 					[-1, -0.5]

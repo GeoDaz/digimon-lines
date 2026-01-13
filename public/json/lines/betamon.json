@@ -8,9 +8,7 @@
 			{
 				"name": "gigadramon",
 				"color": ["dark"],
-				"from": [[2, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[2, -1]]
 			},
 			{
 				"name": "machinedramon",
@@ -18,23 +16,17 @@
 					[0, -1],
 					[2, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["machine", "machine"]
 			},
 			{
 				"name": "chaosdramon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["dark"],
 				"skins": ["himachinedramon"]
 			},
 			{
 				"name": "neocrimson",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["fusion"]
 			}
 		],
@@ -47,15 +39,11 @@
 			{
 				"name": "goldramon_x",
 				"from": [[1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
 				"name": "chaosdramon_x",
 				"from": [[-1, 0]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null
@@ -65,28 +53,20 @@
 			null,
 			{
 				"name": "modokibetamon",
-				"from": [[2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[2, -1]]
 			},
 			{
 				"name": "airdramon",
-				"color": ["wind"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["wind"]
 			},
 			{
 				"name": "megadramon",
 				"color": ["machine"],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0, -1]]
 			},
 			{
 				"name": "goldramon",
-				"color": ["light"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["light"]
 			},
 			null,
 			null
@@ -97,15 +77,11 @@
 			{
 				"name": "betamon_x",
 				"color": ["x"],
-				"from": [[1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[1, 0]]
 			},
 			{
 				"name": "seadramon_x",
 				"color": ["x", "x"],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [
 					[0, -1],
 					[1, 0]
@@ -114,8 +90,6 @@
 			{
 				"name": "megaseadramon_x",
 				"color": ["x", "x"],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [
 					[0, -1],
 					[1, 0]
@@ -124,8 +98,6 @@
 			{
 				"name": "gigaseadramon",
 				"color": ["x", "x"],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [
 					[0, -1],
 					[1, 0]
@@ -137,38 +109,26 @@
 		[
 			{
 				"name": "botamon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
-				"name": "koromon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "koromon"
 			},
 			{
 				"name": "betamon",
-				"from": [0, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "seadramon",
-				"color": ["marine"],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": ["marine"]
 			},
 			{
 				"name": "megaseadramon",
-				"color": ["marine"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["marine"]
 			},
 			{
 				"name": "metalseadramon",
-				"color": ["marine"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["marine"]
 			},
 			null,
 			null
@@ -181,15 +141,11 @@
 			{
 				"name": "waruseadramon",
 				"color": ["dark"],
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "chaosmetalseadramon",
 				"color": ["dark"],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [[0, -1]]
 			},
 			null,
@@ -201,16 +157,12 @@
 			{
 				"name": "aequcedramon",
 				"from": [[-2, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["marine"]
 			},
 			null,
 			{
 				"name": "skullseadramon",
 				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
@@ -219,9 +171,7 @@
 				"from": [
 					[1, -1],
 					[0, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
+				]
 			},
 			null,
 			null
@@ -233,22 +183,16 @@
 			{
 				"name": "coelamon",
 				"from": [[-3, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["marine"]
 			},
 			{
 				"name": "sharkmon",
 				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["marine"]
 			},
 			{
 				"name": "leviamon_x",
 				"from": [[-1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null,
@@ -261,8 +205,6 @@
 			{
 				"name": "tylomon",
 				"from": [[-4, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["marine"]
 			},
 			{
@@ -271,15 +213,11 @@
 					[0, -1],
 					[-1, -1]
 				],
-				"color": ["marine", "marine"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["marine", "marine"]
 			},
 			{
 				"name": "plesiomon",
 				"color": ["marine", "marine"],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [
 					[0, -1],
 					[2, -1]
@@ -288,9 +226,7 @@
 			{
 				"name": "aegisdramon",
 				"from": [[0, -1]],
-				"color": ["fusion"],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": ["fusion"]
 			},
 			null
 		],
@@ -301,8 +237,6 @@
 			{
 				"name": "tylomon_x",
 				"from": [[-1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
@@ -311,8 +245,6 @@
 					[-1, 0],
 					[0, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["x", "x"]
 			},
 			{
@@ -321,8 +253,6 @@
 					[-1, 0],
 					[0, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x", "x"]
 			},
 			null,
@@ -334,28 +264,20 @@
 			{
 				"name": "gizamon",
 				"from": [[-6, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
 				"name": "cyclomon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
 				"name": "brachiomon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "cannondramon",
-				"from": [[0, -2]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -2]]
 			},
 			null,
 			null

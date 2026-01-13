@@ -7,59 +7,41 @@
 			null,
 			{
 				"name": "stegomon",
-				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[1, -1]]
 			},
 			{
-				"name": "spinomon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "spinomon"
 			},
 			null
 		],
 		[
 			{
 				"name": "jyarimon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "gigimon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "elizamon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
-				"name": "dimetromon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "dimetromon"
 			},
 			{
 				"name": "lamiamon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [
 					[0, -1],
 					[1, -1]
 				]
 			},
 			{
-				"name": "medusamon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "medusamon"
 			},
 			{
-				"name": "styracomon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "styracomon"
 			}
 		],
 		[
@@ -69,21 +51,15 @@
 			{
 				"name": "kinkakumon",
 				"from": [[1, -1]],
-				"color": ["electric"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["electric"]
 			},
 			{
 				"name": "chohakkaimon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "minervamon_x",
 				"from": [[1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null
@@ -96,21 +72,15 @@
 				"name": "kekkomon"
 			},
 			{
-				"name": "iguneetmon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "iguneetmon"
 			},
 			{
 				"name": "dinohumon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "coatlmon",
 				"from": [[0, -1], [-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["light", "light"]
 			},
 			{
@@ -121,54 +91,38 @@
 					[1, -1],
 					[2, -1]
 				],
-				"color": ["light", "light", "light", "light"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["light", "light", "light", "light"]
 			},
 			{
 				"name": "mervamon",
-				"skins": ["jet_mervamon"],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"skins": ["jet_mervamon"]
 			}
 		],
 		[
 			{
 				"name": "choromon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "monimon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "hubmon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "ginkakumon",
 				"from": [[-1, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
 				"name": "sandiramon",
-				"from": [[-1, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "lotusmon",
-				"from": [[0, -1], [-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -1], [-1, -1]]
 			},
 			null
 		],
@@ -180,15 +134,11 @@
 			{
 				"name": "orochimon",
 				"from": [[-1, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
 				"name": "nidhoggmon",
 				"from": [[0, -1], [-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark", "dark"]
 			},
 			null
@@ -202,8 +152,6 @@
 			{
 				"name": "bacchusmon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": ["bacchusmon_drunk"]
 			},
 			null
@@ -217,8 +165,6 @@
 			{
 				"name": "xuanwumon",
 				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["grass"]
 			},
 			null

@@ -12,9 +12,7 @@
 				"from": [
 					[1, -1],
 					[1, 0]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
+				]
 			},
 			null
 		],
@@ -24,15 +22,11 @@
 			{
 				"name": "guilmon_x",
 				"color": "x",
-				"from": [3, 0],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [3, 0]
 			},
 			{
 				"name": "growlmon_x",
 				"color": "x",
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"from": [
 					[0, -1],
 					[3, 0]
@@ -41,8 +35,6 @@
 			{
 				"name": "wargrowlmon_x",
 				"color": "x",
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"from": [
 					[0, -1],
 					[3, 0]
@@ -50,9 +42,7 @@
 			},
 			{
 				"name": "gallantmon_x",
-				"color": "x",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "x"
 			},
 			null
 		],
@@ -65,9 +55,7 @@
 			{
 				"name": "megidramon_x",
 				"color": "dark",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [-1, -1]
 			},
 			null
 		],
@@ -79,51 +67,35 @@
 			null,
 			{
 				"name": "suijinmon",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, -1]
 			},
 			null
 		],
 		[
 			{
 				"name": "jyarimon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
-				"name": "gigimon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "gigimon"
 			},
 			{
-				"name": "guilmon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "guilmon"
 			},
 			{
 				"name": "growlmon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0, -1]]
 			},
 			{
-				"name": "wargrowlmon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "wargrowlmon"
 			},
 			{
 				"name": "gallantmon",
-				"color": "human",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "human"
 			},
 			{
 				"name": "gallantmon_crimson_mode",
-				"color": "mode",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": "mode"
 			}
 		],
 		[
@@ -132,21 +104,15 @@
 			null,
 			{
 				"name": "growlmon_orange",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-1, -1]
 			},
 			{
-				"name": "wargrowlmon_orange",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "wargrowlmon_orange"
 			},
 			{
 				"name": "megidramon",
 				"color": "dark",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [-1, -1]
 			},
 			null
 		],
@@ -156,34 +122,24 @@
 			{
 				"name": "guilmon_black",
 				"color": "dark",
-				"from": [-2, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [-2, -1]
 			},
 			{
 				"name": "growlmon_black",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "black_wargrowlmon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "chaosgallantmon",
 				"color": "dark",
-				"skins": ["chaosgallantmon_core"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"skins": ["chaosgallantmon_core"]
 			},
 			{
 				"name": "gallantmon_chaos_mode",
-				"color": "mode",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": "mode"
 			}
 		],
 		[
@@ -193,21 +149,15 @@
 			{
 				"name": "punkmon",
 				"color": "dark",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-1, -1]
 			},
 			{
 				"name": "loudmon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "heavymetaldramon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "dark"
 			},
 			null
 		]

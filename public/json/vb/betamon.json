@@ -7,9 +7,7 @@
 			null,
 			{
 				"name": "metaltyranomon",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, -1]
 			},
 			null
 		],
@@ -19,9 +17,7 @@
 			null,
 			{
 				"name": "tyranomon",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [1, -1]
 			},
 			{ "name": "brachiomon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "cannondramon", "xCollapsable": false, "yCollapsable": true }
@@ -29,9 +25,7 @@
 		[
 			{
 				"name": "botamon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{ "name": "koromon", "xCollapsable": true, "yCollapsable": false },
 			{ "name": "betamon", "xCollapsable": true, "yCollapsable": false },
@@ -45,9 +39,7 @@
 			null,
 			{
 				"name": "seadramon",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-1, -1]
 			},
 			{ "name": "megaseadramon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "metalseadramon", "xCollapsable": false, "yCollapsable": true }
@@ -58,9 +50,7 @@
 			null,
 			{
 				"name": "landramon",
-				"from": [-2, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [-2, -1]
 			},
 			{ "name": "groundramon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "breakdramon", "xCollapsable": true, "yCollapsable": true }
@@ -72,9 +62,7 @@
 			null,
 			{
 				"name": "proganomon",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [-1, -1]
 			},
 			null
 		]

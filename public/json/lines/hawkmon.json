@@ -8,9 +8,7 @@
 				"name": "shurimon",
 				"skins": ["purity"],
 				"color": ["grass"],
-				"from": [[4, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[4, -1]]
 			},
 			{
 				"name": "butenmon",
@@ -19,15 +17,11 @@
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "chronomon_holy_mode",
 				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["light"]
 			}
 		],
@@ -39,16 +33,12 @@
 				"name": "halsemon",
 				"color": ["wind"],
 				"skins": ["love", "owlmon"],
-				"from": [[3, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[3, -1]]
 			},
 			{
 				"name": "peacockmon",
 				"from": [[-0.5, -1]],
 				"skins": ["miracles"],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2,
 				"color": ["gold"]
 			},
@@ -58,8 +48,6 @@
 					[-0.5, -1],
 					[-1, 0]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark", "mode"]
 			}
 		],
@@ -70,8 +58,6 @@
 			{
 				"name": "thunderbirdmon",
 				"from": [[2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": ["friendship", "rinkmon"],
 				"color": ["electric"]
 			},
@@ -82,17 +68,13 @@
 					[1.5, -1],
 					[0.5, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2,
 				"color": ["wind", "wind", "wind"]
 			},
 			{
 				"name": "murmukusmon",
 				"color": ["dark"],
-				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0.5, -1]]
 			}
 		],
 		[
@@ -102,53 +84,37 @@
 			{
 				"name": "darcmon",
 				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["light"]
 			},
 			null,
 			{
 				"name": "griffomon",
 				"from": [[-0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["wind"]
 			}
 		],
 		[
 			{
 				"name": "pururumon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
-				"name": "poromon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "poromon"
 			},
 			{
 				"name": "hawkmon",
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": ["wind"]
 			},
 			{
 				"name": "aquilamon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["wind"]
 			},
 			{
 				"name": "silphymon",
-				"color": ["fusion"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["fusion"]
 			},
 			{
 				"name": "valkyrimon",
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["light"]
 			}
 		],
@@ -160,20 +126,14 @@
 				"name": "harpymon",
 				"from": [[-1, -1]],
 				"skins": ["light"],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["wind"]
 			},
 			{
 				"name": "shutumon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["wind"]
 			},
 			{
 				"name": "ancientirismon",
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["light"]
 			}
 		],
@@ -185,15 +145,11 @@
 				"name": "allomon",
 				"skins": ["courage"],
 				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["fire"]
 			},
 			{
 				"name": "jetsilphymon",
 				"from": [[-1, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["wind"]
 			},
 			null
@@ -206,9 +162,7 @@
 				"name": "flybeemon",
 				"color": ["wind"],
 				"skins": ["knowledge"],
-				"from": [[-3, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[-3, -1]]
 			},
 			null,
 			null
@@ -220,8 +174,6 @@
 			{
 				"name": "moosemon",
 				"from": [[-4, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": ["hope"],
 				"color": ["ice"]
 			},
@@ -235,8 +187,6 @@
 			{
 				"name": "toucanmon",
 				"from": [[-5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": ["kindness"]
 			},
 			null,
@@ -249,8 +199,6 @@
 			{
 				"name": "orcamon",
 				"from": [[-6, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": ["reliability"],
 				"color": ["marine"]
 			},

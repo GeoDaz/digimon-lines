@@ -6,10 +6,7 @@
 			null,
 			{
 				"name": "app_gatchmon",
-				"from": null,
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_dogatchmon",
@@ -17,9 +14,6 @@
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["gold", "fusion"]
 			},
@@ -32,10 +26,7 @@
 			null,
 			{
 				"name": "app_navimon",
-				"from": null,
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": null
 			},
 			null,
 			{
@@ -44,10 +35,7 @@
 					[-1, -1],
 					[1, -1]
 				],
-				"collapsable": false,
 				"color": ["gold", "fusion"],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2
 			},
 			null,
@@ -59,8 +47,6 @@
 			{
 				"name": "app_watchmon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": []
 			},
 			{
@@ -70,8 +56,6 @@
 					[0.5, -1],
 					[0.5, -2]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion", "fusion", "fusion"]
 			},
@@ -83,15 +67,11 @@
 			null,
 			{
 				"name": "app_calendamon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_savemon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null,
@@ -102,8 +82,6 @@
 					[-2, -1],
 					[2, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["gold", "fusion"]
 			},
@@ -113,15 +91,11 @@
 			null,
 			{
 				"name": "app_newsmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_reviewmon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": []
 			},
 			{
@@ -132,8 +106,6 @@
 					[-0.5, -2],
 					[0.5, -2]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion", "fusion", "fusion", "fusion"]
 			},
@@ -145,15 +117,11 @@
 			null,
 			{
 				"name": "app_dogamon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_kosomon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null,
@@ -163,8 +131,6 @@
 					[-1, -1],
 					[1, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion", "fusion"]
 			},
@@ -175,15 +141,11 @@
 			null,
 			{
 				"name": "app_callmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_mailmon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": []
 			},
 			{
@@ -194,8 +156,6 @@
 					[-0.5, -2],
 					[0.5, -2]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion", "fusion", "fusion", "fusion"]
 			},
@@ -208,15 +168,11 @@
 			{
 				"name": "app_messemon",
 				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"skins": []
 			},
 			{
 				"name": "app_addmon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null,
@@ -229,9 +185,7 @@
 			null,
 			{
 				"name": "app_jishomon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_libramon",
@@ -240,8 +194,6 @@
 					[0.5, -1],
 					[0.5, -2]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion", "fusion", "fusion"]
 			},
@@ -253,15 +205,11 @@
 			null,
 			{
 				"name": "app_setmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_bookmon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null,

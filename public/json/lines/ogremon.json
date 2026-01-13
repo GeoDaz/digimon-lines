@@ -7,21 +7,15 @@
 			{
 				"name": "grumblemon",
 				"color": "earth",
-				"from": [2, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [2, -1]
 			},
 			{
 				"name": "gigasmon",
-				"color": "earth",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "earth"
 			},
 			{
 				"name": "ancientvolcamon",
-				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "fire"
 			}
 		],
 		[
@@ -31,61 +25,41 @@
 			{
 				"name": "ogremon_x",
 				"color": "x",
-				"from": [1, 0],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [1, 0]
 			},
 			{
 				"name": "xingtianmon",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [1, -1]
 			},
 			{
-				"name": "olegmon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "olegmon"
 			}
 		],
 		[
 			{
 				"name": "zurumon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "pagumon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
-				"name": "goblimon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "goblimon"
 			},
 			{
-				"name": "ogremon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "ogremon"
 			},
 			{
 				"name": "rebellimon",
-				"color": "machine",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "machine"
 			},
 			{
-				"name": "titamon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "titamon"
 			},
 			{
 				"name": "titamon_skullbaluchimon",
-				"color": "fusion",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fusion"
 			}
 		],
 		[
@@ -93,26 +67,18 @@
 			null,
 			{
 				"name": "shamamon",
-				"from": [-1, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [-1, -1]
 			},
 			{
-				"name": "fugamon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "fugamon"
 			},
 			{
 				"name": "digitamamon",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "devitamamon",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["dark"]
 			}
 		],
@@ -123,15 +89,11 @@
 			{
 				"name": "baromon",
 				"color": "fire",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-1, -1]
 			},
 			{
 				"name": "darumamon",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["fire"]
 			},
 			null
@@ -142,15 +104,11 @@
 			{
 				"name": "snowgoblimon",
 				"color": "ice",
-				"from": [-3, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-3, -1]
 			},
 			{
 				"name": "hyogamon",
-				"color": "ice",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "ice"
 			},
 			null,
 			null

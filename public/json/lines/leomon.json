@@ -9,10 +9,7 @@
 			{
 				"name": "leopardmon_x",
 				"color": ["x"],
-				"from": [[1, 0]],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[1, 0]]
 			},
 			null,
 			null
@@ -27,10 +24,7 @@
 				"name": "leopardmon",
 				"color": "light",
 				"from": [[2, -1]],
-				"skins": ["leopardmon_leopard_mode"],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true
+				"skins": ["leopardmon_leopard_mode"]
 			},
 			null,
 			null
@@ -41,17 +35,11 @@
 			null,
 			{
 				"name": "liamon",
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"from": [[1, -1]]
 			},
 			{
 				"name": "loaderliomon",
-				"color": "machine",
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "machine"
 			},
 			{
 				"name": "heavyleomon",
@@ -59,16 +47,11 @@
 					[0, -1],
 					[1, -1]
 				],
-				"collapsable": false,
-				"color": ["machine", "machine"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["machine", "machine"]
 			},
 			{
 				"name": "chaosmon",
 				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion"]
 			},
@@ -77,29 +60,20 @@
 		[
 			{
 				"name": "popomon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "frimon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "liolmon",
-				"from": [[0, -2]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -2]]
 			},
 			null,
 			{
 				"name": "grapleomon",
-				"from": [[1, -1]],
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[1, -1]]
 			},
 			{
 				"name": "bancholeomon",
@@ -107,19 +81,13 @@
 					[0, -1],
 					[-1, -1],
 					[2, -1]
-				],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
+				]
 			},
 			{
 				"name": "chaosmon_valdur_arm",
 				"from": [[-0.5, -1]],
-				"collapsable": false,
 				"xSize": 2,
-				"color": ["fusion"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["fusion"]
 			},
 			{
 				"name": "ultimatechaosmon",
@@ -127,47 +95,34 @@
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"collapsable": true,
-				"color": ["fusion", "fusion"],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": ["fusion", "fusion"]
 			}
 		],
 		[
 			{
 				"name": "punimon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "tsunomon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "elecmon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "leomon",
 				"from": [
 					[0, -1],
 					[-1, -1]
-				],
-				"xCollapsable": true,
-				"yCollapsable": true
+				]
 			},
 			null,
 			{
 				"name": "marsmon",
 				"from": [[-1, -1]],
-				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "fire"
 			},
 			null,
 			null
@@ -180,16 +135,10 @@
 			{
 				"name": "panjyamon",
 				"color": ["ice"],
-				"collapsable": false,
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"from": [[-1, -1]]
 			},
 			{
-				"name": "regulumon",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "regulumon"
 			},
 			null,
 			null
@@ -202,15 +151,11 @@
 			null,
 			{
 				"name": "saberleomon",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "tlalocmon",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["fusion"]
 			},
 			null
@@ -221,24 +166,16 @@
 			{
 				"name": "spadamon",
 				"from": [[-4, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": ["ice"]
 			},
 			{
 				"name": "leomon_x",
 				"color": "x",
-				"from": [[-3, 0]],
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-3, 0]]
 			},
 			{
 				"name": "panjyamon_x",
 				"color": "x",
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [
 					[0, -1],
 					[-2, 0]
@@ -250,10 +187,7 @@
 				"from": [
 					[0, -1],
 					[-1, 0]
-				],
-				"collapsable": false,
-				"xCollapsable": true,
-				"yCollapsable": true
+				]
 			},
 			null,
 			null
@@ -265,26 +199,17 @@
 				"name": "elecmon_violet",
 				"color": "dark",
 				"from": [[-4.5, -1]],
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2
 			},
 			{
 				"name": "loweemon",
 				"color": "dark",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0.5, -1.5]],
 				"ySize": 2
 			},
 			{
 				"name": "raihimon",
 				"color": ["fusion", "fusion"],
-				"collapsable": false,
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"from": [
 					[1, -1],
 					[0, -1]
@@ -305,8 +230,6 @@
 					[-0.5, -1.5],
 					[-1, 0]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"ySize": 2,
 				"color": ["dark", "slide"]
 			},
@@ -314,9 +237,6 @@
 			{
 				"name": "ancientsphinxmon",
 				"color": "dark",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [
 					[0, -1.5],
 					[-1, -0.5]
@@ -332,23 +252,17 @@
 			{
 				"name": "madleomon",
 				"from": [[-1.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
 				"name": "madleomon_armed",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": ["madleomon_orochi", "madleomon_final_mode"],
 				"color": ["fusion"]
 			},
 			{
 				"name": "apollomon_whispered",
 				"from": [[1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark"],
 				"skins": ["apollomon_darkness_mode"]
 			},
@@ -358,52 +272,31 @@
 		[
 			{
 				"name": "mokumon",
-				"from": null,
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "sunmon",
-				"color": "fire",
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "coronamon",
-				"color": "fire",
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "firamon",
-				"color": "fire",
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "flaremon",
-				"color": "fire",
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "apollomon",
-				"color": "fire",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "gracenovamon",
-				"color": "fusion",
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "fusion"
 			},
 			null
 		]

@@ -9,9 +9,7 @@
 			{
 				"name": "panjyamon",
 				"from": [1, -1],
-				"color": "ice",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "ice"
 			},
 			null
 		],
@@ -22,66 +20,48 @@
 			{
 				"name": "hyogamon",
 				"from": [[1.5, -1]],
-				"color": ["ice"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["ice"]
 			},
 			{
 				"name": "frozomon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "frosvelgrmon",
 				"from": [0, -2],
-				"color": "ice",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "ice"
 			}
 		],
 		[
 			{
 				"name": "snowbotamon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "hiyarimon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "blucomon",
 				"from": [[0, -2]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2,
 				"color": ["ice"]
 			},
 			{
 				"name": "paledramon",
 				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["ice"]
 			},
 			{
 				"name": "cryspaledramon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "hexeblaumon",
 				"from": [[0, -2]],
-				"color": ["ice"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["ice"]
 			}
 		],
 		[
@@ -91,22 +71,16 @@
 			{
 				"name": "frigimon",
 				"from": [[-0.5, -1]],
-				"color": ["ice"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["ice"]
 			},
 			{
 				"name": "polarbearmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "skadimon",
 				"from": [0, -2],
-				"color": "ice",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "ice"
 			}
 		],
 		[
@@ -116,22 +90,16 @@
 			{
 				"name": "moosemon",
 				"from": [[-1.5, -1]],
-				"color": ["ice"],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": ["ice"]
 			},
 			{
 				"name": "blizzarmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "ancientmegatheriumon",
 				"from": [0, -2],
-				"color": "ice",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": "ice"
 			}
 		],
 		[
@@ -142,9 +110,7 @@
 			{
 				"name": "mammon",
 				"from": [-1, -1],
-				"color": "ice",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "ice"
 			},
 			null
 		]
