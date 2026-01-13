@@ -231,27 +231,29 @@ const ImagePoint: React.FC<{
 			</Button>
 		</h4>
 		<div className="line-point width-min-content">
-			<LineImage
-				name={point.name}
-				path={point.image}
-				mirror={point.mirror}
-				className={imgClassName}
-				expandable={true}
-				width={300}
-				height={300}
-			/>
-			{point.skins?.map((skin, i) => (
+			<div className="line-point-safe-zone">
 				<LineImage
-					key={i}
-					name={skin}
-					className="line-skin"
-					loadable={false}
+					name={point.name}
+					path={point.image}
+					mirror={point.mirror}
+					className={imgClassName}
 					expandable={true}
-					width={300}
-					height={300}
-					style={{ bottom: 3.3 * i + 'em' }}
+					width={225}
+					height={225}
 				/>
-			))}
+				{point.skins?.map((skin, i) => (
+					<LineImage
+						key={i}
+						name={skin}
+						className="line-skin"
+						loadable={false}
+						expandable={true}
+						width={225}
+						height={225}
+						style={{ bottom: 3.3 * i + 'em' }}
+					/>
+				))}
+			</div>
 		</div>
 	</div>
 );
