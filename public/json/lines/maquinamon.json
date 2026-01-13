@@ -4,21 +4,18 @@
 		[
 			{
 				"name": "choromon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2
+				"from": null
 			},
 			{
 				"name": "caprimon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2
+				"from": [[0, -1]]
 			},
 			{
 				"name": "maquinamon",
-				"from": [[0, -1]],
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
 				"xCollapsable": false,
 				"yCollapsable": false,
 				"xSize": 2
@@ -47,7 +44,10 @@
 		],
 		[
 			null,
-			null,
+			{
+				"name": "app_flickmon_tool",
+				"from": null
+			},
 			null,
 			{
 				"name": "turbomon",
@@ -71,6 +71,7 @@
 	],
 	"related": [
 		{ "name": "gatomon", "from": "maquinamon" },
+		{ "name": "app_rebootmon", "from": "flickmon_tool" },
 		{ "name": "jazamon", "from": "mockingbirdmon" },
 		{ "name": "monodramon", "for": "pteranomon" },
 		{ "name": "machmon", "from": "turbomon" },

@@ -1,5 +1,5 @@
 import { createFile, downloadFile } from '@/functions/file';
-import transformLine from '@/functions/line';
+import { transformLine, prepareLineExport } from '@/functions/line';
 import { defaultLine } from '@/reducers/lineReducer';
 import Line from '@/types/Line';
 import { useState } from 'react';
@@ -8,7 +8,10 @@ const useDownloadCode = (line: Line, setLine: (line: Line) => void) => {
 	const [name, setName] = useState<string | undefined>();
 
 	const downloadCode = () => {
-		const file = createFile(JSON.stringify(line), 'application/json');
+		const file = createFile(
+			JSON.stringify(prepareLineExport(line)),
+			'application/json'
+		);
 		downloadFile(file, (name || 'line') + '.json');
 	};
 	const uploadCode = (name: string, json: Line | null) => {
