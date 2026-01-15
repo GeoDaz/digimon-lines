@@ -32,6 +32,15 @@
 				"name": "metatromon",
 				"from": [[0, -1]],
 				"color": ["machine"]
+			},
+			{
+				"name": "metatromon",
+				"from": [
+					[0, -0.5],
+					[0, 0.5]
+				],
+				"color": ["machine"],
+				"xSize": 2
 			}
 		],
 		[
