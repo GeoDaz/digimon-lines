@@ -36,10 +36,10 @@
 			{
 				"name": "exmaquinamon",
 				"from": [
-					[0, -0.5],
-					[0, 0.5]
+					[-0.5, -1],
+					[0.5, -1]
 				],
-				"color": ["machine"],
+				"color": ["fusion", "fusion"],
 				"xSize": 2
 			}
 		],
