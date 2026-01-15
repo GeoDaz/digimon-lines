@@ -8,7 +8,6 @@
 			{
 				"name": "dinobeemon",
 				"from": [1, -1],
-				"collapsable": false,
 				"mirror": true
 			},
 			null
@@ -46,7 +45,6 @@
 			{
 				"name": "eosmon_3",
 				"color": ["default"],
-				"collapsable": true,
 				"from": [[0, -2]]
 			}
 		],
@@ -58,8 +56,7 @@
 			{
 				"name": "butterflamon",
 				"color": "default",
-				"from": [-1, -1],
-				"collapsable": false
+				"from": [-1, -1]
 			},
 			null
 		]

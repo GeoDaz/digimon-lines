@@ -8,9 +8,7 @@
 			null,
 			{
 				"name": "masterblimpmon",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, -1]
 			},
 			null
 		],
@@ -21,61 +19,43 @@
 			{
 				"name": "blimpmon",
 				"from": [1, -1],
-                "mirror": true,
-				"xCollapsable": false,
-				"yCollapsable": false
+                "mirror": true
 			},
 			{
 				"name": "locomon",
                 "mirror": true,
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "grandlocomon",
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [0, -1]
 			}
 		],
 		[
 			{
 				"name": "bommon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "missimon",
-				"from": [0, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "jazamon",
-				"from": [0, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "jazardmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "jazarichmon",
                 "mirror": true,
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "metallicdramon",
-				"from": [0, -3],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [0, -3]
 			}
 		],
 		[
@@ -84,21 +64,15 @@
 			null,
 			{
 				"name": "mailbirdramon",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-1, -1]
 			},
 			{
 				"name": "metalgreymon_blue_2",
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "zeekgreymon",
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [0, -1]
 			}
 		],
 		[
@@ -107,23 +81,17 @@
 			null,
 			{
 				"name": "machmon",
-				"from": [-2, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [-2, -1]
 			},
 			{
 				"name": "rebellimon",
                 "mirror": true,
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "heavyleomon",
                 "mirror": true,
-				"from": [0, -2],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [0, -2]
 			}
 		],
 		[
@@ -133,9 +101,7 @@
 			null,
 			{
 				"name": "loaderliomon",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [-1, -1]
 			},
 			null
 		]

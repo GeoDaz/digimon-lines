@@ -5,16 +5,11 @@
 			null,
 			{
 				"name": "app_dancemon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_musimon",
 				"from": null,
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": []
 			},
 			{
@@ -25,9 +20,6 @@
 					[-0.5, -2],
 					[0.5, -2]
 				],
-				"collapsable": true,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["gold", "fusion", "fusion", "fusion"]
 			},
@@ -38,16 +30,11 @@
 			null,
 			{
 				"name": "app_mcmon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_recomon",
 				"from": null,
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null,
@@ -57,10 +44,7 @@
 					[-1, -1],
 					[1, -1]
 				],
-				"collapsable": false,
 				"color": ["gold", "fusion"],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2
 			},
 			null
@@ -71,8 +55,6 @@
 			{
 				"name": "app_sleepmon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": []
 			},
 			{
@@ -82,8 +64,6 @@
 					[0.5, -1],
 					[0.5, -2]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion", "fusion", "fusion"]
 			},
@@ -94,15 +74,11 @@
 			null,
 			{
 				"name": "app_yadomon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_setmon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null,
@@ -113,8 +89,6 @@
 					[-2, -1],
 					[2, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["gold", "fusion"]
 			}
@@ -123,15 +97,11 @@
 			null,
 			{
 				"name": "app_jammingmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_gengomon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": []
 			},
 			{
@@ -142,8 +112,6 @@
 					[-0.5, -2],
 					[0.5, -2]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion", "fusion", "fusion", "fusion"]
 			},
@@ -154,15 +122,11 @@
 			null,
 			{
 				"name": "app_denpamon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_onpamon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null,
@@ -172,8 +136,6 @@
 					[-1, -1],
 					[1, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion", "fusion"]
 			},
@@ -185,8 +147,6 @@
 			{
 				"name": "app_drawmon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": []
 			},
 			{
@@ -196,8 +156,6 @@
 					[0.5, -1],
 					[0.5, -2]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion", "fusion", "fusion"]
 			},
@@ -208,15 +166,11 @@
 			null,
 			{
 				"name": "app_lightmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "app_dogamon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null,

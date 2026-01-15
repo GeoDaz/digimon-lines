@@ -8,15 +8,11 @@
 			{
 				"name": "blizzarmon",
 				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["ice"]
 			},
 			{
 				"name": "ancientmegatheriumon",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["slide"]
 			},
 			null
@@ -27,15 +23,11 @@
 			null,
 			{
 				"name": "minotarumon",
-				"from": [[2.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[2.5, -1]]
 			},
 			{
 				"name": "gyukimon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["fusion"]
 			},
 			null,
@@ -48,19 +40,13 @@
 			{
 				"name": "bullmon",
 				"from": [[1.5, -1]],
-				"color": [],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": []
 			},
 			{
-				"name": "vajramon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "vajramon"
 			},
 			{
-				"name": "zanbamon",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"name": "zanbamon"
 			},
 			null
 		],
@@ -68,42 +54,30 @@
 			{
 				"name": "fukamon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "mokokomon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "takinmon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "kinkakumon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0.5, -1]],
 				"color": ["electric"]
 			},
 			{
 				"name": "chohakkaimon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["light"]
 			},
 			null,
 			{
 				"name": "takutomon_wrath_mode",
 				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["mode"]
 			}
 		],
@@ -113,29 +87,21 @@
 			null,
 			{
 				"name": "hakubamon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[-0.5, -1]],
 				"color": ["light"]
 			},
 			{
 				"name": "sanzomon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["light"]
 			},
 			{
 				"name": "takutomon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "shakamon",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["fusion"]
 			}
 		],
@@ -146,22 +112,16 @@
 			{
 				"name": "goatmon",
 				"from": [[-1.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": []
 			},
 			{
 				"name": "chirinmon",
 				"from": [[-1, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": ["light"]
 			},
 			{
 				"name": "kentaurosmon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": []
 			},
 			null
@@ -175,8 +135,6 @@
 			{
 				"name": "kentaurosmon_x",
 				"from": [[-1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null

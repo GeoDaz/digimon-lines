@@ -4,27 +4,19 @@
 			{
 				"name": "pupumon",
 				"xSize": 2,
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "puroromon",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "tinkermon",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": true
+				"xSize": 2
 			},
 			{
 				"name": "fairymon",
 				"color": ["wind"],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0.5, -1.5]],
 				"ySize": 2
 			},
@@ -35,8 +27,6 @@
 					[0, -1],
 					[1, -1]
 				],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"ySize": 2
 			},
 			null
@@ -51,8 +41,6 @@
 					[-0.5, -1.5],
 					[-1, 0]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"ySize": 2,
 				"color": ["wind", "slide"]
 			},
@@ -63,8 +51,6 @@
 					[0, -1.5],
 					[-1, -0.5]
 				],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["wind", "wind"]
 			}
 		],
@@ -74,9 +60,7 @@
 			null,
 			{
 				"name": "petermon",
-				"from": [[-1.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[-1.5, -1]]
 			},
 			null,
 			null

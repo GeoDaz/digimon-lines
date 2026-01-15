@@ -7,9 +7,7 @@
 			null,
 			{
 				"name": "kabukimon",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, -1]
 			},
 			null
 		],
@@ -19,9 +17,7 @@
 			null,
 			{
 				"name": "kyubimon",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [1, -1]
 			},
 			{ "name": "taomon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "raijinmon", "xCollapsable": false, "yCollapsable": true }
@@ -29,9 +25,7 @@
 		[
 			{
 				"name": "relemon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{ "name": "pokomon", "xCollapsable": true, "yCollapsable": false },
 			{ "name": "renamon", "xCollapsable": true, "yCollapsable": false },
@@ -46,21 +40,15 @@
 			{
 				"name": "youkomon",
 				"from": [-1, -1],
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "doumon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "kuzuhamon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "dark"
 			}
 		],
 		[
@@ -69,21 +57,15 @@
 			null,
 			{
 				"name": "tenkomon",
-				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-2, -1]]
 			},
 			{
 				"name": "sekkamon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "yukinamon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -1]]
 			}
 		],
 		[
@@ -93,16 +75,12 @@
 			{
 				"name": "reppamon",
 				"mirror": true,
-				"from": [[-3, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-3, -1]]
 			},
 			{ "name": "chirinmon", "xCollapsable": false, "yCollapsable": false },
 			{
 				"name": "mitamamon",
-				"mirror": true,
-				"xCollapsable": true,
-				"yCollapsable": true
+				"mirror": true
 			}
 		],
 		[
@@ -112,9 +90,7 @@
 			null,
 			{
 				"name": "kyukimon",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [-1, -1]
 			},
 			null
 		]

@@ -9,21 +9,15 @@
 				"from": [[2, -1]],
 				"xSize": 2,
 				"color": ["earth"],
-				"skins": ["knowledge"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"skins": ["knowledge"]
 			},
 			{
 				"name": "groundramon",
-				"from": [[2.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[2.5, -1]]
 			},
 			{
 				"name": "breakdramon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -1]]
 			},
 			null
 		],
@@ -36,26 +30,20 @@
 				"color": ["marine"],
 				"from": [[1, -1]],
 				"skins": ["reliability"],
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
-				"name": "proganomon",
+				"name": "masterblimpmon",
 				"from": [
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"color": ["fusion", "fusion"],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": ["fusion", "fusion"]
 			},
 			{
 				"name": "gigabreakdramon",
 				"from": [[0, -1]],
-				"color": ["earth"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["earth"]
 			},
 			null
 		],
@@ -63,41 +51,29 @@
 			{
 				"name": "tsubumon",
 				"from": null,
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "upamon",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "armadillomon",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "ankylomon",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "shakkoumon",
 				"color": ["fusion"],
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "metatromon",
 				"color": ["machine"],
-				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0.5, -1]]
 			},
 			null
 		],
@@ -110,9 +86,7 @@
 			{
 				"name": "clavisangemon",
 				"from": [[-0.5, -1]],
-				"color": ["light"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["light"]
 			},
 			null
 		],
@@ -124,8 +98,6 @@
 				"name": "togemogumon",
 				"color": ["ice"],
 				"from": [[-1.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": ["friendship", "kenkimon", "sepikmon"]
 			},
 			{
@@ -134,20 +106,14 @@
 					[-1.5, -1],
 					[0, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": ["friendship"]
 			},
 			{
-				"name": "spinomon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "spinomon"
 			},
 			{
 				"name": "huanglongmon",
-				"skins": ["huanglongmon_rm"],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"skins": ["huanglongmon_rm"]
 			}
 		],
 		[
@@ -157,25 +123,19 @@
 			{
 				"name": "boarmon",
 				"from": [[-2.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": ["courage"],
 				"color": ["fire"]
 			},
 			{
 				"name": "brachiomon",
-				"from": [[-2.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-2.5, -1]]
 			},
 			{
 				"name": "ultimatebrachimon",
 				"from": [
 					[0, -1],
 					[-1, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
+				]
 			},
 			null
 		],
@@ -186,23 +146,17 @@
 			{
 				"name": "sheepmon",
 				"from": [[-3.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": ["hope"]
 			},
 			{
 				"name": "elephantmon",
 				"from": [[-1, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"skins": ["miracles"],
 				"color": ["wind"]
 			},
 			{
 				"name": "cannondramon",
-				"from": [[-1, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [[-1, -1]]
 			},
 			null
 		],
@@ -213,8 +167,6 @@
 			{
 				"name": "pteranomon",
 				"from": [[-4.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": ["love"],
 				"color": ["machine"]
 			},
@@ -229,8 +181,6 @@
 			{
 				"name": "pteranomon_x",
 				"from": [[-1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null,
@@ -244,8 +194,6 @@
 			{
 				"name": "frogmon",
 				"from": [[-6.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": ["purity"],
 				"color": ["grass"]
 			},
@@ -260,8 +208,6 @@
 			{
 				"name": "chamelemon",
 				"from": [[-7.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": ["kindness"]
 			},
 			null,
@@ -275,8 +221,6 @@
 			{
 				"name": "seahomon",
 				"from": [[-8.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": ["light"],
 				"color": ["marine"]
 			},

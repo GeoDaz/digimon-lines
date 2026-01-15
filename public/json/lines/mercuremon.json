@@ -6,9 +6,7 @@
 			null,
 			{
 				"name": "publimon",
-				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[1, -1]]
 			},
 			null,
 			null,
@@ -18,27 +16,19 @@
 		[
 			{
 				"name": "choromon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "monimon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "monitamon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "hivisionmon_itamon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -1]]
 			},
 			null,
 			null,
@@ -52,16 +42,12 @@
 			{
 				"name": "mercuremon",
 				"from": [[-1, -1.5]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"ySize": 2
 			},
 			null,
 			{
 				"name": "ancientwisemon",
-				"from": [[0, -1.5]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -1.5]]
 			},
 			null,
 			null
@@ -73,8 +59,6 @@
 			{
 				"name": "sephirothmon",
 				"from": [[-1, 0]],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"ySize": 2,
 				"color": ["slide"]
 			},
@@ -82,8 +66,6 @@
 			{
 				"name": "black_seraphimon",
 				"from": [[0, -1.5]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark"]
 			},
 			null,
@@ -97,29 +79,21 @@
 			{
 				"name": "chimeramon",
 				"from": [[-1, -0.5]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["slide"]
 			},
 			{
 				"name": "millenniumon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["fusion"]
 			},
 			{
 				"name": "moonmillenniumon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["fusion"]
 			},
 			{
 				"name": "zeedmillenniumon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["fusion"]
 			}
 		]

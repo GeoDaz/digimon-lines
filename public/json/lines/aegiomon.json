@@ -9,8 +9,6 @@
 				"name": "aegiochusmon_green",
 				"color": "grass",
 				"from": [2, -0.5],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"ySize": 2
 			},
 			null,
@@ -24,8 +22,6 @@
 			{
 				"name": "aegiochusmon_blue",
 				"from": [[1, -0.5]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"ySize": 2,
 				"color": ["machine"]
 			},
@@ -35,29 +31,19 @@
 		[
 			{
 				"name": "punimon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
-				"name": "tsunomon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "tsunomon"
 			},
 			{
-				"name": "elecmon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "elecmon"
 			},
 			{
-				"name": "aegiomon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "aegiomon"
 			},
 			{
-				"name": "aegiochusmon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "aegiochusmon"
 			},
 			{
 				"name": "jupitermon",
@@ -68,15 +54,11 @@
 					[1, -0.5],
 					[2, -0.5]
 				],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": ["light", "light", "light", "light", "light"]
 			},
 			{
 				"name": "jupitermon_wrath_mode",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["mode"]
 			}
 		],
@@ -89,8 +71,6 @@
 				"name": "aegiochusmon_holly",
 				"color": "light",
 				"from": [-1, -0.5],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"ySize": 2
 			},
 			null,
@@ -105,8 +85,6 @@
 				"name": "aegiochusmon_dark",
 				"color": "dark",
 				"from": [-2, -0.5],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"ySize": 2
 			},
 			null,

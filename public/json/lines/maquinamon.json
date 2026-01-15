@@ -4,73 +4,60 @@
 		[
 			{
 				"name": "choromon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2
+				"from": null
 			},
 			{
 				"name": "caprimon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
-				"xSize": 2
+				"from": [[0, -1]]
 			},
 			{
 				"name": "maquinamon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
 				"xSize": 2
 			},
 			{
 				"name": "mulemon",
 				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["machine"]
 			},
 			{
 				"name": "mockingbirdmon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["machine"]
 			},
 			{
 				"name": "metatromon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["machine"]
 			}
 		],
 		[
 			null,
-			null,
+			{
+				"name": "app_flickmon_tool",
+				"from": null
+			},
 			null,
 			{
 				"name": "turbomon",
-				"from": [[-0.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-0.5, -1]]
 			},
 			{
 				"name": "maneuvermon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "dalphomon",
-				"from": [[0, -2]],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [[0, -2]]
 			}
 		]
 	],
 	"related": [
 		{ "name": "gatomon", "from": "maquinamon" },
+		{ "name": "app_rebootmon", "from": "flickmon_tool" },
 		{ "name": "jazamon", "from": "mockingbirdmon" },
 		{ "name": "monodramon", "for": "pteranomon" },
 		{ "name": "machmon", "from": "turbomon" },

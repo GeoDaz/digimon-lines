@@ -8,16 +8,12 @@
 			{
 				"name": "mihiramon",
 				"from": [[1.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2,
 				"color": ["wind"]
 			},
 			{
 				"name": "baihumon",
 				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["machine"]
 			},
 			null
@@ -30,16 +26,12 @@
 			{
 				"name": "pistmon",
 				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2,
 				"color": ["grass"]
 			},
 			{
 				"name": "yihumon",
 				"from": [[-0.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["wind"]
 			},
 			null
@@ -51,8 +43,6 @@
 			{
 				"name": "runnermon",
 				"from": [[2.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["electric"]
 			},
 			{
@@ -61,8 +51,6 @@
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2
 			},
 			null,
@@ -74,9 +62,7 @@
 			null,
 			{
 				"name": "yoyomon",
-				"from": [[1.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[1.5, -1]]
 			},
 			{
 				"name": "shootmon",
@@ -84,8 +70,6 @@
 					[1, -1],
 					[-0.5, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2,
 				"color": ["electric"]
 			},
@@ -95,8 +79,6 @@
 					[-0.5, -1],
 					[0.5, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["light", "light"]
 			},
 			null
@@ -106,50 +88,32 @@
 				"name": "dokimon",
 				"color": ["electric"],
 				"from": null,
-				"collapsable": false,
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "bibimon",
 				"color": ["electric"],
-				"collapsable": false,
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "pulsemon",
 				"color": ["electric"],
-				"collapsable": false,
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "bulkmon",
 				"color": ["electric"],
-				"collapsable": false,
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "boutmon",
 				"color": ["electric"],
-				"collapsable": false,
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "shroudmon",
 				"color": ["dark"],
-				"collapsable": false,
-				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0.5, -1]]
 			},
 			null
 		],
@@ -162,18 +126,12 @@
 			{
 				"name": "kazuchimon",
 				"from": [[-0.5, -1]],
-				"collapsable": false,
-				"color": ["electric"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["electric"]
 			},
 			{
 				"name": "fenriloogamon_takemikazuchi",
 				"from": [[0, -1]],
-				"collapsable": true,
-				"color": ["fusion"],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": ["fusion"]
 			}
 		],
 		[
@@ -184,15 +142,11 @@
 			{
 				"name": "divemon",
 				"from": [[-1.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["marine"]
 			},
 			{
 				"name": "surfimon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["marine"]
 			},
 			null
@@ -204,21 +158,15 @@
 			{
 				"name": "exermon",
 				"from": [[-2.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["electric"]
 			},
 			{
 				"name": "climbmon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "shivamon",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["light"]
 			},
 			null
@@ -230,15 +178,11 @@
 			{
 				"name": "namakemon",
 				"from": [[-3.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["electric"]
 			},
 			{
 				"name": "tempomon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -1]]
 			},
 			null,
 			null

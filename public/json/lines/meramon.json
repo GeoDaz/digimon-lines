@@ -7,9 +7,7 @@
 			{
 				"name": "meramon_x",
 				"color": ["x"],
-				"from": [[1.5, 0]],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [[1.5, 0]]
 			},
 			null,
 			null,
@@ -19,43 +17,31 @@
 			{
 				"name": "mokumon",
 				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "demimeramon",
 				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "candlemon",
 				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "meramon",
 				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"xSize": 2
 			},
 			{
 				"name": "deathmeramon",
 				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0.5, -1]]
 			},
 			{
 				"name": "boltmon",
-				"color": "electric",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "electric"
 			},
 			null
 		],
@@ -67,15 +53,11 @@
 			{
 				"name": "bluemeramon",
 				"color": ["ice"],
-				"from": [[-0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-0.5, -1]]
 			},
 			{
 				"name": "shroudmon",
-				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "fire"
 			},
 			null
 		],
@@ -87,22 +69,16 @@
 			{
 				"name": "asuramon",
 				"from": [[-1.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["fire"]
 			},
 			{
 				"name": "vulcanusmon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["fire"]
 			},
 			{
 				"name": "nezhamon_crimson_mode",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["fusion"],
 				"skins": ["nezhamon"]
 			}

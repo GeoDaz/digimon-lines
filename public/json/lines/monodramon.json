@@ -8,9 +8,7 @@
 			{
 				"name": "cyberdramon_x",
 				"color": ["x"],
-				"from": [[1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[1, 0]]
 			},
 			{
 				"name": "justimon_x",
@@ -18,45 +16,31 @@
 				"from": [
 					[0, -1],
 					[1, 0]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
+				]
 			}
 		],
 		[
 			{
 				"name": "ketomon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
-				"name": "hopmon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "hopmon"
 			},
 			{
-				"name": "monodramon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "monodramon"
 			},
 			{
-				"name": "strikedramon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "strikedramon"
 			},
 			{
-				"name": "cyberdramon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "cyberdramon"
 			},
 			{
 				"name": "justimon",
 				"color": ["human"],
 				"skins": ["justimon_critical_arm", "justimon_accel_arm"],
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -1]]
 			}
 		],
 		[
@@ -66,9 +50,7 @@
 			null,
 			{
 				"name": "cyberdramon_2",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "darkdramon",
@@ -76,9 +58,7 @@
 					[-1, -1],
 					[1, -1],
 					[0, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
+				]
 			}
 		],
 		[
@@ -87,21 +67,15 @@
 			null,
 			{
 				"name": "rhamphomon",
-				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-2, -1]]
 			},
 			{
 				"name": "gigadramon",
-				"from": [[0, -1],[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -1],[1, -1]]
 			},
 			{
 				"name": "chaosdramon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": ["machinedramon"]
 			}
 		],
@@ -111,21 +85,15 @@
 			null,
 			{
 				"name": "pteranomon",
-				"from": [[-3, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-3, -1]]
 			},
 			{
 				"name": "maneuvermon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "chaosdramon_x",
 				"from": [[-1, 0]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["x"]
 			}
 		],
@@ -136,8 +104,6 @@
 			{
 				"name": "pteranomon_x",
 				"from": [[-1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null,

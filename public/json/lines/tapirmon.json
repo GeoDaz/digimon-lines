@@ -7,8 +7,6 @@
 			{
 				"name": "rhinomon_x",
 				"from": [[1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null,
@@ -19,9 +17,7 @@
 			null,
 			{
 				"name": "bokomon",
-				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[1, -1]]
 			},
 			{
 				"name": "rhinomon",
@@ -29,59 +25,36 @@
 					[1, -1],
 					[0, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["gold"]
 			},
 			{
 				"name": "mammon_x",
 				"color": "x",
-				"from": [1, 0],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [1, 0]
 			},
 			{
 				"name": "skullmammon_x",
-				"color": "x",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "x"
 			}
 		],
 		[
 			{
 				"name": "mokumon",
-				"from": null,
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "demimeramon",
-				"color": "fire",
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "tapirmon",
-				"color": "light",
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "light"
 			},
 			{
-				"name": "baluchimon",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "baluchimon"
 			},
 			{
 				"name": "mammon",
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [
 					[1, -1],
 					[0, -1]
@@ -90,9 +63,6 @@
 			{
 				"name": "skullmammon",
 				"color": "dark",
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"from": [
 					[0, -1],
 					[1, -1]
@@ -106,24 +76,18 @@
 			{
 				"name": "elephantmon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["wind"]
 			},
 			{
 				"name": "skullbaluchimon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark"]
 			},
 			null,
 			{
 				"name": "titamon_skullbaluchimon",
 				"color": "fusion",
-				"from": [[0, -2]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -2]]
 			}
 		],
 		[
@@ -133,16 +97,10 @@
 			{
 				"name": "boarmon",
 				"color": "fire",
-				"from": [[-2, -1]],
-				"collapsable": false,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-2, -1]]
 			},
 			{
-				"name": "vikaralamon",
-				"collapsable": false,
-				"xCollapsable": true,
-				"yCollapsable": true
+				"name": "vikaralamon"
 			},
 			null
 		],
@@ -152,10 +110,7 @@
 			null,
 			{
 				"name": "sethmon",
-				"from": [[-3, -1]],
-				"collapsable": true,
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [[-3, -1]]
 			},
 			null,
 			null

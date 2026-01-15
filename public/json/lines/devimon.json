@@ -7,21 +7,15 @@
 			{
 				"name": "icedevimon",
 				"color": "ice",
-				"from": [[7, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[7, -1]]
 			},
 			{
 				"name": "marinedevimon",
-				"color": "marine",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "marine"
 			},
 			{
 				"name": "cthyllamon",
-				"color": "marine",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "marine"
 			},
 			null,
 			null
@@ -34,15 +28,11 @@
 			{
 				"name": "ladydevimon_x",
 				"color": "x",
-				"from": [1, 0],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [1, 0]
 			},
 			{
 				"name": "lilithmon_x",
-				"color": "x",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "x"
 			},
 			null,
 			null
@@ -55,15 +45,11 @@
 			{
 				"name": "ladydevimon",
 				"color": "dark",
-				"from": [[2, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[2, -1]]
 			},
 			{
 				"name": "lilithmon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "dark"
 			},
 			null,
 			null
@@ -77,8 +63,6 @@
 			{
 				"name": "barbamon_x",
 				"from": [[1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null,
@@ -91,8 +75,6 @@
 			{
 				"name": "devidramon",
 				"from": [[3, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
@@ -101,15 +83,11 @@
 					[3, -1],
 					[0, -1]
 				],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": ["dark", "dark"]
 			},
 			{
 				"name": "barbamon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark"]
 			},
 			null,
@@ -124,9 +102,7 @@
 			{
 				"name": "demon_x",
 				"color": "x",
-				"from": [1, 0],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, 0]
 			},
 			null,
 			null
@@ -141,55 +117,39 @@
 				"name": "demon",
 				"color": "dark",
 				"skins": [],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [[1, -1]]
 			},
 			null,
 			{
 				"name": "demon_super_ultimate",
 				"color": "fusion",
-				"from": [0, -2],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"from": [0, -2]
 			}
 		],
 		[
 			{
 				"name": "zurumon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "pagumon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "demidevimon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "devimon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "neodevimon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "donedevimon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "dark"
 			},
 			null,
 			null
@@ -206,15 +166,11 @@
 					[-1, -1],
 					[1, -1]
 				],
-				"color": ["dark", "dark"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["dark", "dark"]
 			},
 			{
 				"name": "neomyotismon_darkness_mode",
 				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"skins": ["neomyotismon_darkness_mode_metal_greymon"]
 			},
 			null
@@ -226,9 +182,7 @@
 			{
 				"name": "pipismon",
 				"color": "dark",
-				"from": [-2, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [-2, -1]
 			},
 			{
 				"name": "myotismon",
@@ -236,15 +190,11 @@
 				"from": [
 					[0, -1],
 					[-2, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": false
+				]
 			},
 			{
 				"name": "venommyotismon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "dark"
 			},
 			null,
 			null
@@ -257,16 +207,12 @@
 			{
 				"name": "myotismon_x",
 				"color": "x",
-				"from": [-1, 0],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [-1, 0]
 			},
 			{
 				"name": "malomyotismon",
 				"color": ["dark"],
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[-1, -1]]
 			},
 			null,
 			null
@@ -280,8 +226,6 @@
 			{
 				"name": "boltboutamon",
 				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["fusion"]
 			},
 			null,
@@ -295,9 +239,7 @@
 			{
 				"name": "lucemon_falldown_mode",
 				"color": "fusion",
-				"from": [[-5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-5, -1]]
 			},
 			{
 				"name": "lucemon_larva",
@@ -321,9 +263,7 @@
 			{
 				"name": "lucemon_x",
 				"color": "x",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [-1, -1]
 			},
 			null,
 			null

@@ -7,21 +7,15 @@
 			{
 				"name": "trailmon",
 				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["machine"]
 			},
 			{
 				"name": "locomon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0, -1]],
 				"color": ["machine"]
 			},
 			{
 				"name": "grandlocomon",
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [[0, -1]],
 				"color": ["machine"]
 			},
@@ -30,39 +24,29 @@
 		[
 			{
 				"name": "choromon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{ "name": "caprimon", "xCollapsable": true, "yCollapsable": false },
 			{ "name": "junkmon", "xCollapsable": true, "yCollapsable": false },
 			{
 				"name": "machmon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0, -1]],
 				"color": ["machine"]
 			},
 			{
 				"name": "rebellimon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0, -1]],
 				"color": ["machine"]
 			},
 			{
 				"name": "nezhamon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0, -1]],
 				"color": ["fire"]
 			},
 			{
 				"name": "nezhamon_crimson_mode",
 				"from": [0, -1],
-				"color": ["mode"],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": ["mode"]
 			}
 		],
 		[
@@ -73,15 +57,11 @@
 			{
 				"name": "pistmon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["grass"]
 			},
 			{
 				"name": "heavyleomon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["machine"]
 			},
 			null
@@ -92,9 +72,7 @@
 			null,
 			{
 				"name": "komondomon",
-				"from": [-2, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-2, -1]
 			}
 		]
 	],

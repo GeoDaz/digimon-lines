@@ -13,9 +13,7 @@
                 ],
                 "color": [
                     "x"
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "garurumon_x",
@@ -32,9 +30,7 @@
                         1.5,
                         0
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "weregarurumon_x",
@@ -51,9 +47,7 @@
                         1.5,
                         0
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "metalgarurumon_x",
@@ -70,9 +64,7 @@
                         1.5,
                         0
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "omegamon_x",
@@ -89,9 +81,7 @@
                         1,
                         0
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null
         ],
@@ -99,42 +89,30 @@
             {
                 "name": "punimon",
                 "xSize": 2,
-                "from": null,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "from": null
             },
             {
                 "name": "tsunomon",
-                "xSize": 2,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "xSize": 2
             },
             {
                 "name": "gabumon",
-                "xSize": 2,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "xSize": 2
             },
             {
                 "name": "garurumon",
-                "xSize": 2,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "xSize": 2
             },
             {
                 "name": "weregarurumon",
-                "xSize": 2,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "xSize": 2
             },
             {
                 "name": "metalgarurumon",
                 "color": [
                     "machine"
                 ],
-                "xSize": 2,
-                "xCollapsable": false,
-                "yCollapsable": false
+                "xSize": 2
             },
             {
                 "name": "omegamon",
@@ -146,9 +124,7 @@
                         0.5,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "omegamon_merciful_mode",
@@ -160,9 +136,7 @@
                         0,
                         -1
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": true
+                ]
             }
         ],
         [
@@ -178,8 +152,6 @@
                         0
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "xSize": 2,
                 "color": [
                     "mode"
@@ -193,8 +165,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "xSize": 2,
                 "color": [
                     "machine"
@@ -210,9 +180,7 @@
                         -0.5,
                         -1
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": true
+                ]
             },
             null
         ],
@@ -230,9 +198,7 @@
                         -1.5,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null,
             {
@@ -240,8 +206,6 @@
                 "color": [
                     "gold"
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "from": [
                     [
                         -1,
@@ -255,8 +219,6 @@
                 "color": [
                     "fusion"
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "xSize": 2
             },
             null
@@ -272,17 +234,13 @@
                         -2.5,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "jaegerdorulumon",
                 "color": [
                     "gold"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null,
             null,
@@ -301,33 +259,25 @@
                 ],
                 "color": [
                     "dark"
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "garurumon_black",
                 "color": [
                     "dark"
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "weregarurumon_black",
                 "color": [
                     "dark"
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "metalgarurumon_black",
                 "color": [
                     "dark"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "omegamon_zwart",
@@ -336,9 +286,7 @@
                 ],
                 "skins": [
                     "omegamon_zwart_defeat"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null
         ],
@@ -354,8 +302,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "xSize": 2
             },
             null,
@@ -367,8 +313,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "color": [
                     "wind"
                 ]
@@ -381,8 +325,6 @@
                         0
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": true,
                 "color": [
                     "mode"
                 ]
@@ -399,9 +341,7 @@
                         -5.5,
                         -1
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "nisedrimogemon",
@@ -411,8 +351,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "xSize": 2
             },
             {
@@ -425,9 +363,7 @@
                         0,
                         -2
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "belphemon_rage_mode",
@@ -436,9 +372,7 @@
                 ],
                 "skins": [
                     "belphemon_sleep_mode"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null,
             null
@@ -459,9 +393,7 @@
                         -1,
                         0
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null,
             null
@@ -470,8 +402,6 @@
             {
                 "name": "botamon",
                 "from": null,
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "xSize": 2
             },
             {
@@ -482,8 +412,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "xSize": 2
             },
             {
@@ -495,8 +423,6 @@
                         -1.5
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "ySize": 2
             },
             {
@@ -504,8 +430,6 @@
                 "color": [
                     "light"
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "from": [
                     [
                         0.5,
@@ -530,8 +454,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "ySize": 2
             },
             {
@@ -545,8 +467,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "ySize": 2
             },
             {
@@ -560,8 +480,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "ySize": 2
             },
             null
@@ -582,8 +500,6 @@
                         0
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "ySize": 2,
                 "color": [
                     "light",
@@ -606,9 +522,7 @@
                         -1,
                         -0.5
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null,
             null

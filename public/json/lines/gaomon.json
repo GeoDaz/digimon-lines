@@ -9,9 +9,7 @@
 			{
 				"name": "zeedgarurumon",
 				"color": "machine",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [1, -1]
 			},
 			null,
 			null
@@ -19,69 +17,47 @@
 		[
 			{
 				"name": "botamon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
-				"name": "wanyamon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "wanyamon"
 			},
 			{
 				"name": "gaomon",
-				"size": 1,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"size": 1
 			},
 			{
-				"name": "gaogamon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "gaogamon"
 			},
 			{
 				"name": "machgaogamon",
-				"color": "machine",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "machine"
 			},
 			{
-				"name": "miragegaogamon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "miragegaogamon"
 			},
 			{
 				"name": "miragegaogamon_burst_mode",
-				"color": "mode",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": "mode"
 			},
 			null
 		],
 		[
 			{
 				"name": "zurumon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "pagumon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "gazimon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": "dark"
 			},
 			{
 				"name": "gaogamon_black",
 				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [
 					[-1, -1],
 					[0, -1]
@@ -89,15 +65,11 @@
 			},
 			{
 				"name": "machgaogamon_black",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "mercurymon",
-				"color": "wind",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "wind"
 			},
 			null,
 			null
@@ -108,9 +80,7 @@
 			{
 				"name": "gazimon_x",
 				"color": "x",
-				"from": [-1, 0],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [-1, 0]
 			},
 			null,
 			null,
@@ -124,8 +94,6 @@
 			{
 				"name": "hyemon",
 				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": "dark"
 			},
 			{
@@ -134,8 +102,6 @@
 					[0, -1],
 					[-2, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": "dark"
 			},
 			null,

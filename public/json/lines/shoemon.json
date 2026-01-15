@@ -3,9 +3,7 @@
 		[
 			{
 				"name": "pafumon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{ "name": "kyaromon", "xCollapsable": true, "yCollapsable": false },
 			{ "name": "shoemon", "xCollapsable": true, "yCollapsable": false },
@@ -20,15 +18,11 @@
 			null,
 			{
 				"name": "tobucatmon",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "pandamon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": [],
 				"color": ["x"]
 			},
@@ -41,15 +35,11 @@
 			{
 				"name": "porcupamon",
 				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
 				"name": "warumonzaemon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["dark"]
 			},
 			{
@@ -59,8 +49,6 @@
 					[-1, -1],
 					[1, -1]
 				],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["dark", "dark", "dark"]
 			}
 		],
@@ -70,15 +58,11 @@
 			null,
 			{
 				"name": "dogmon",
-				"from": [[-3, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-3, -1]]
 			},
 			{
 				"name": "monzaemon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -1]]
 			},
 			null
 		],
@@ -90,8 +74,6 @@
 			{
 				"name": "monzaemon_x",
 				"from": [[-1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x"]
 			},
 			null
@@ -103,9 +85,7 @@
 			null,
 			{
 				"name": "extyranomon",
-				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[-2, -1]]
 			},
 			null
 		]

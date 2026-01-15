@@ -7,8 +7,6 @@
 			{
 				"name": "salamandermon",
 				"from": [[1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["fire"]
 			},
 			null,
@@ -18,39 +16,27 @@
 		[
 			{
 				"name": "mokumon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "demimeramon",
-				"color": "fire",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "vorvomon",
-				"color": "fire",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "lavorvomon",
-				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "lavogaritamon",
-				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "volcanicdramon",
-				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "fire"
 			},
 			null
 		],
@@ -61,8 +47,6 @@
 			{
 				"name": "flarelizardmon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["fire"]
 			},
 			{
@@ -71,21 +55,15 @@
 				"from": [
 					[0, -1],
 					[-1, -1]
-				],
-				"xCollapsable": true,
-				"yCollapsable": false
+				]
 			},
 			{
 				"name": "dorbickmon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "dorbickmon_darkness_mode",
 				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["fusion"]
 			}
 		],
@@ -96,15 +74,11 @@
 			{
 				"name": "darklizardmon",
 				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark"]
 			},
 			{
 				"name": "vermillimon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["fire"]
 			},
 			null,
@@ -117,15 +91,11 @@
 			{
 				"name": "birdramon",
 				"from": [[-3, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["fire"]
 			},
 			{
 				"name": "helloogarmon",
 				"from": [[-2, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["fire"]
 			},
 			null,

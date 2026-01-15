@@ -7,14 +7,10 @@
 			null,
 			{
 				"name": "vulturemon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[1, -1]]
 			},
 			{
-				"name": "avengekidmon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "avengekidmon"
 			}
 		],
 		[
@@ -22,47 +18,33 @@
 			null,
 			{
 				"name": "toyagumon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[1, -1]],
 				"skins": ["cleartoyagumon"]
 			},
 			{
 				"name": "revolmon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "rizegreymon",
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
-				"name": "magnakidmon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "magnakidmon"
 			}
 		],
 		[
 			{
 				"name": "bombmon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "missimon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
 				"name": "toyagumon_black",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": ["cleartoyagumon_black"],
 				"color": ["dark"]
 			},
@@ -71,9 +53,7 @@
 				"from": [
 					[0, -1],
 					[-1, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": false
+				]
 			},
 			{
 				"name": "gigadramon",
@@ -81,8 +61,6 @@
 					[-1, -1],
 					[0, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"skins": ["megadramon"]
 			},
 			{
@@ -90,9 +68,7 @@
 				"from": [
 					[-1, -1],
 					[0, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
+				]
 			}
 		],
 		[
@@ -100,26 +76,18 @@
 			null,
 			{
 				"name": "monmon",
-				"from": [[-1, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "hookmon",
-				"from": [[0, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[0, -1]]
 			},
 			{
-				"name": "captainhookmon",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"name": "captainhookmon"
 			},
 			{
 				"name": "boltboutamon",
-				"color": ["dark"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["dark"]
 			}
 		],
 		[
@@ -129,16 +97,12 @@
 			null,
 			{
 				"name": "mermaimon",
-				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-1, -1]]
 			},
 			{
 				"name": "olegmon",
 				"from": [[-1, -1]],
-				"color": ["gold"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["gold"]
 			}
 		]
 	],

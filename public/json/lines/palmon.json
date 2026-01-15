@@ -17,20 +17,17 @@
 			{
 				"name": "ponchomon",
 				"color": "dark",
-				"from": [1, -1],
-				"collapsable": false
+				"from": [1, -1]
 			},
 			{
 				"name": "vulturemon",
 				"color": "dark",
-				"from": [1, -1],
-				"collapsable": false
+				"from": [1, -1]
 			},
 			{
 				"name": "bancholilimon",
 				"from": [1, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			null,
 			null
@@ -40,21 +37,18 @@
 			{
 				"name": "tanemon",
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{ "name": "palmon", "from": [0, -1], "color": "grass", "collapsable": false },
 			{
 				"name": "togemon",
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{
 				"name": "lilimon",
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{
 				"name": "rosemon",
@@ -62,13 +56,11 @@
 					[0, -1],
 					[1, -1]
 				],
-				"color": ["grass", "grass"],
-				"collapsable": false
+				"color": ["grass", "grass"]
 			},
 			{
 				"name": "rosemon_burst_mode",
 				"from": [[0, -1]],
-				"collapsable": false,
 				"color": ["mode"]
 			},
 			null
@@ -80,19 +72,16 @@
 			{
 				"name": "sunflowmon",
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{
 				"name": "lilamon",
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{
 				"name": "babamon",
 				"from": [[-1, 0]],
-				"collapsable": false,
 				"color": ["slide"]
 			},
 			{
@@ -101,7 +90,6 @@
 					[-1, -1],
 					[1, -1]
 				],
-				"collapsable": true,
 				"color": ["fusion", "fusion"]
 			},
 			null
@@ -113,8 +101,7 @@
 			{
 				"name": "kabukimon",
 				"from": [-1, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{
 				"name": "blossomon",
@@ -122,16 +109,14 @@
 					[1, -1],
 					[-1, -1]
 				],
-				"color": ["grass", "grass"],
-				"collapsable": false
+				"color": ["grass", "grass"]
 			},
 			{
 				"name": "lotusmon",
 				"from": [
 					[0, -1],
 					[-1, -1]
-				],
-				"collapsable": false
+				]
 			},
 			null,
 			null
@@ -142,15 +127,13 @@
 			{
 				"name": "alraumon",
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": true
+				"color": "grass"
 			},
 			{
 				"name": "vegimon",
 				"skins": ["vegimon_red"],
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{ "name": "oleamon", "from": [0, -1], "color": "dark", "collapsable": false },
 			{
@@ -160,8 +143,7 @@
 					[0, -1],
 					[-1, -1]
 				],
-				"color": ["grass", "grass"],
-				"collapsable": false
+				"color": ["grass", "grass"]
 			},
 			null,
 			null
@@ -173,8 +155,7 @@
 			{
 				"name": "zassoumon",
 				"from": [-1, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{
 				"name": "ajatarmon",
@@ -182,8 +163,7 @@
 					[0, -1],
 					[1, -1]
 				],
-				"color": ["grass", "dark"],
-				"collapsable": false
+				"color": ["grass", "dark"]
 			},
 			{
 				"name": "hydramon",
@@ -191,8 +171,7 @@
 					[0, -1],
 					[1, -1]
 				],
-				"color": ["grass", "dark"],
-				"collapsable": false
+				"color": ["grass", "dark"]
 			},
 			{ "name": "cernumon", "color": "fusion", "collapsable": true },
 			null
@@ -203,26 +182,22 @@
 			{
 				"name": "pomumon",
 				"from": [1, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{
 				"name": "parasaumon",
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{
 				"name": "tropiamon",
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			{
 				"name": "bloomlordmon",
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			null,
 			null
@@ -233,8 +208,7 @@
 			{
 				"name": "floramon",
 				"from": [0, -1],
-				"color": "grass",
-				"collapsable": true
+				"color": "grass"
 			},
 			{
 				"name": "kiwimon",
@@ -242,8 +216,7 @@
 					[-1, -1],
 					[0, -1]
 				],
-				"color": ["grass", "grass"],
-				"collapsable": true
+				"color": ["grass", "grass"]
 			},
 			{ "name": "sirenmon", "collapsable": false },
 			{
@@ -253,8 +226,7 @@
 					[0, -1],
 					[1, -1]
 				],
-				"color": ["grass", "grass"],
-				"collapsable": true
+				"color": ["grass", "grass"]
 			},
 			null,
 			null
@@ -267,8 +239,7 @@
 			{
 				"name": "delumon",
 				"from": [-1, -1],
-				"color": "grass",
-				"collapsable": false
+				"color": "grass"
 			},
 			null,
 			null,

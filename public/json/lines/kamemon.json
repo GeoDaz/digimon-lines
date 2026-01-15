@@ -7,15 +7,11 @@
 			{
 				"name": "archelomon",
 				"color": "marine",
-				"from": [1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [1, -1]
 			},
 			{
 				"name": "zudomon",
-				"color": "marine",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "marine"
 			},
 			null,
 			null
@@ -23,9 +19,7 @@
 		[
 			{
 				"name": "pipimon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{ "name": "chapmon", "xCollapsable": true, "yCollapsable": false },
 			{ "name": "kamemon", "xCollapsable": true, "yCollapsable": false },
@@ -33,8 +27,6 @@
 			{ "name": "shawujinmon", "xCollapsable": false, "yCollapsable": false },
 			{
 				"name": "jumbogamemon",
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"from": [[0, -3]],
 				"color": ["marine"]
 			},
@@ -51,8 +43,6 @@
 					[-1, -1],
 					[1, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["marine", "marine"]
 			},
 			null,
@@ -65,21 +55,15 @@
 			{
 				"name": "tortamon",
 				"from": [[-2, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"color": ["earth"]
 			},
 			{
 				"name": "proganomon",
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"from": [[0, -1]],
 				"color": ["earth"]
 			},
 			{
 				"name": "eldoradimon",
-				"xCollapsable": true,
-				"yCollapsable": false,
 				"from": [
 					[0, -1],
 					[-1, -1]
@@ -88,9 +72,7 @@
 			},
 			{
 				"name": "tlalocmon",
-				"color": "fusion",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": "fusion"
 			}
 		],
 		[null, null, null, null, null, null, null]

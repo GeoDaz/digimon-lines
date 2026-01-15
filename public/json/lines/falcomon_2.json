@@ -12,15 +12,11 @@
                         1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "huankunmon",
-                "color": "marine",
-                "xCollapsable": false,
-                "yCollapsable": false
+                "color": "marine"
             },
             {
                 "name": "xiangpengmon",
@@ -34,9 +30,7 @@
                         0,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null
         ],
@@ -45,8 +39,6 @@
             null,
             {
                 "name": "falcomon_2",
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "from": [
                     [
                         1.5,
@@ -58,19 +50,13 @@
                 ]
             },
             {
-                "name": "peckmon",
-                "xCollapsable": true,
-                "yCollapsable": false
+                "name": "peckmon"
             },
             {
-                "name": "yatagaramon_2",
-                "xCollapsable": false,
-                "yCollapsable": false
+                "name": "yatagaramon_2"
             },
             {
                 "name": "ravemon",
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "from": [
                     [
                         0,
@@ -83,24 +69,18 @@
             },
             {
                 "name": "ravemon_burst_mode",
-                "color": "mode",
-                "xCollapsable": true,
-                "yCollapsable": true
+                "color": "mode"
             }
         ],
         [
             {
                 "name": "puwamon",
                 "from": null,
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "xSize": 2
             },
             {
                 "name": "pinamon",
                 "from": null,
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "xSize": 2
             },
             null,
@@ -113,9 +93,7 @@
                         -1,
                         -1
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "tengumon",
@@ -125,8 +103,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "color": [
                     "dark"
                 ]
@@ -151,8 +127,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "color": [
                     "dark",
                     "dark"
@@ -171,16 +145,12 @@
                         -1
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "color": [
                     "wind"
                 ]
             },
             {
                 "name": "diatrymon",
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "from": [
                     [
                         0,
@@ -193,8 +163,6 @@
             },
             {
                 "name": "yatagaramon",
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "from": [
                     [
                         0,
@@ -207,8 +175,6 @@
             },
             {
                 "name": "valdurmon",
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "from": [
                     [
                         0,
@@ -221,9 +187,7 @@
             },
             {
                 "name": "chaosmon_valdur_arm",
-                "color": "fusion",
-                "xCollapsable": true,
-                "yCollapsable": true
+                "color": "fusion"
             }
         ],
         [
@@ -238,8 +202,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "color": [
                     "wind"
                 ]
@@ -253,8 +215,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "color": [
                     "fire"
                 ]

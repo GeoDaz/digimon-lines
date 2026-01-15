@@ -8,44 +8,32 @@
 			{
 				"name": "garudamon_x",
 				"color": ["x"],
-				"from": [[1, 0]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[1, 0]]
 			},
 			{
 				"name": "phoenixmon_x",
-				"color": "x",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "x"
 			},
 			null
 		],
 		[
 			{
 				"name": "nyokimon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{ "name": "yokomon", "xCollapsable": true, "yCollapsable": false },
 			{ "name": "biyomon", "xCollapsable": true, "yCollapsable": false },
 			{
 				"name": "birdramon",
-				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "garudamon",
-				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "phoenixmon",
-				"color": "light",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "light"
 			},
 			null
 		],
@@ -56,21 +44,15 @@
 			{
 				"name": "saberdramon",
 				"color": "dark",
-				"from": [-1, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-1, -1]
 			},
 			{
 				"name": "karatenmon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "tengumon",
 				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark"]
 			},
 			null
@@ -82,22 +64,16 @@
 			{
 				"name": "thunderbirdmon",
 				"from": [-2, -1],
-				"color": "electric",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "electric"
 			},
 			{
 				"name": "velgrmon",
 				"from": [-1, -1],
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "ornismon",
 				"from": [[0, -1], [-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark", "dark"]
 			},
 			null
@@ -108,9 +84,7 @@
 			null,
 			{
 				"name": "cockatrimon",
-				"from": [-3, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-3, -1]
 			},
 			{
 				"name": "parrotmon",
@@ -118,21 +92,15 @@
 				"from": [
 					[0, -1],
 					[-1, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": false
+				]
 			},
 			{
 				"name": "crossmon",
-				"color": "gold",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "gold"
 			},
 			{
 				"name": "aegisdramon",
-				"color": "fusion",
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": "fusion"
 			}
 		],
 		[
@@ -142,21 +110,15 @@
 			{
 				"name": "akatorimon",
 				"color": "fire",
-				"from": [-4, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-4, -1]
 			},
 			{
 				"name": "sinduramon",
-				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "fire"
 			},
 			{
 				"name": "zhuqiaomon",
-				"color": "fire",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "fire"
 			},
 			null
 		]

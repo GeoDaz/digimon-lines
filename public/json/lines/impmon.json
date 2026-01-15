@@ -7,30 +7,22 @@
 				"name": "impmon_x",
 				"color": "x",
 				"xSize": 2,
-				"from": [2, 0],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [2, 0]
 			},
 			{
 				"name": "wizardmon_x",
 				"color": "x",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "baalmon_x",
 				"color": "x",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "beelzebumon_x",
 				"color": "x",
-				"from": [0.5, -1],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [0.5, -1]
 			},
 			null
 		],
@@ -43,15 +35,11 @@
 			{
 				"name": "beelstarmon_x",
 				"color": "x",
-				"from": [-0.5, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [-0.5, -1]
 			},
 			{
 				"name": "nezhamon_crimson_mode",
 				"from": [[0.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"xSize": 2,
 				"color": ["fusion"],
 				"skins": ["nezhamon"]
@@ -61,34 +49,24 @@
 			{
 				"name": "keemon",
 				"xSize": 2,
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "yarmon",
 				"color": "dark",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "impmon",
 				"color": "dark",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "wizardmon",
-				"xSize": 2,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"xSize": 2
 			},
 			{
 				"name": "deathmeramon",
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"from": [[0.5, -1]],
 				"color": ["dark"]
 			},
@@ -96,15 +74,11 @@
 				"color": ["dark"],
 				"name": "beelzebumon",
 				"from": [[0, -1]],
-				"skins": ["beelzebumon_behemoth"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"skins": ["beelzebumon_behemoth"]
 			},
 			{
 				"name": "beelzebumon_blast_mode",
 				"color": "mode",
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [[-0.5, -1]],
 				"xSize": 2
 			}
@@ -116,16 +90,12 @@
 			null,
 			{
 				"name": "baalmon",
-				"from": [[-0.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-0.5, -1]]
 			},
 			{
 				"name": "beelzebumon_2",
 				"color": ["dark"],
-				"from": [[0, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [[0, -1]]
 			},
 			null
 		],
@@ -135,8 +105,6 @@
 			{
 				"name": "petitmamon",
 				"from": [[-1.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": true,
 				"color": ["dark"]
 			},
 			null,
@@ -144,8 +112,6 @@
 			{
 				"name": "beelstarmon",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["dark"]
 			},
 			null
@@ -157,21 +123,15 @@
 			{
 				"name": "punkmon",
 				"color": ["dark"],
-				"from": [[-2.5, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[-2.5, -1]]
 			},
 			{
 				"name": "loudmon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "heavymetaldramon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "dark"
 			},
 			null
 		],
@@ -182,21 +142,15 @@
 			{
 				"name": "boogiemon",
 				"color": ["dark"],
-				"from": [[-3.5, -1]],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [[-3.5, -1]]
 			},
 			{
 				"name": "phelesmon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "barbamon",
-				"color": "dark",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "dark"
 			},
 			null
 		],
@@ -209,9 +163,7 @@
 			{
 				"name": "barbamon_x",
 				"color": "x",
-				"from": [-1, 0],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"from": [-1, 0]
 			},
 			null
 		]

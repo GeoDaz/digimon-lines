@@ -14,8 +14,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "xSize": 2,
                 "color": [
                     "wind"
@@ -24,47 +22,33 @@
             {
                 "name": "zephagamon_blast_mode",
                 "xSize": 2,
-                "color": "mode",
-                "xCollapsable": false,
-                "yCollapsable": true
+                "color": "mode"
             }
         ],
         [
             {
                 "name": "yolkmon",
-                "from": null,
-                "xCollapsable": true,
-                "yCollapsable": false
+                "from": null
             },
             {
                 "name": "fluffymon",
-                "color": "wind",
-                "xCollapsable": true,
-                "yCollapsable": false
+                "color": "wind"
             },
             {
                 "name": "pteromon",
-                "color": "wind",
-                "xCollapsable": false,
-                "yCollapsable": false
+                "color": "wind"
             },
             {
                 "name": "galemon",
-                "color": "wind",
-                "xCollapsable": true,
-                "yCollapsable": false
+                "color": "wind"
             },
             {
                 "name": "grandgalemon",
-                "color": "wind",
-                "xCollapsable": true,
-                "yCollapsable": false
+                "color": "wind"
             },
             {
                 "name": "medievalgallantmon",
                 "color": "wind",
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "from": [
                     [
                         -0.5,
@@ -86,8 +70,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": true,
                 "color": [
                     "dark"
                 ]
@@ -102,8 +84,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "xSize": 2,
                 "color": [
                     "light"
@@ -126,8 +106,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "xSize": 2
             },
             {
@@ -138,8 +116,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "skins": [
                     "yatagaramon_2"
                 ],
@@ -156,8 +132,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "xSize": 2,
                 "color": [
                     "dark"
@@ -179,8 +153,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "xSize": 2,
                 "color": [
                     "fire"

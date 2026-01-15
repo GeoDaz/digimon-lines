@@ -9,9 +9,7 @@
                 "from": [
                     1,
                     0
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "blimpmon",
@@ -21,9 +19,7 @@
                         1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "masterblimpmon",
@@ -33,8 +29,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "color": [
                     "machine"
                 ]
@@ -44,39 +38,27 @@
         [
             {
                 "name": "choromon",
-                "from": null,
-                "xCollapsable": true,
-                "yCollapsable": false
+                "from": null
             },
             {
                 "name": "caprimon",
-                "color": "machine",
-                "xCollapsable": true,
-                "yCollapsable": false
+                "color": "machine"
             },
             {
                 "name": "hagurumon",
-                "color": "machine",
-                "xCollapsable": false,
-                "yCollapsable": false
+                "color": "machine"
             },
             {
                 "name": "guardromon",
-                "color": "machine",
-                "xCollapsable": false,
-                "yCollapsable": false
+                "color": "machine"
             },
             {
                 "name": "andromon",
-                "color": "machine",
-                "xCollapsable": false,
-                "yCollapsable": false
+                "color": "machine"
             },
             {
                 "name": "hiandromon",
-                "color": "machine",
-                "xCollapsable": false,
-                "yCollapsable": true
+                "color": "machine"
             }
         ],
         [
@@ -90,8 +72,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": false,
                 "color": [
                     "machine"
                 ]
@@ -108,21 +88,15 @@
                         -1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "nanomon",
-                "color": "machine",
-                "xCollapsable": false,
-                "yCollapsable": false
+                "color": "machine"
             },
             {
                 "name": "quantumon",
-                "color": "light",
-                "xCollapsable": false,
-                "yCollapsable": true
+                "color": "light"
             }
         ],
         [
@@ -136,8 +110,6 @@
                         0
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "color": [
                     "x"
                 ]
@@ -148,9 +120,7 @@
                 "from": [
                     -2,
                     -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "valvemon",
@@ -164,15 +134,11 @@
                         -1
                     ]
                 ],
-                "color": "machine",
-                "xCollapsable": true,
-                "yCollapsable": false
+                "color": "machine"
             },
             {
                 "name": "quartzmon",
-                "color": "dark",
-                "xCollapsable": false,
-                "yCollapsable": true
+                "color": "dark"
             }
         ],
         [
@@ -185,9 +151,7 @@
                 "from": [
                     1,
                     -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null,
             {
@@ -196,9 +160,7 @@
                 "from": [
                     1,
                     -1
-                ],
-                "xCollapsable": true,
-                "yCollapsable": true
+                ]
             }
         ],
         [
@@ -210,15 +172,11 @@
                 "from": [
                     -4,
                     -1
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "guardromon_gold",
-                "color": "gold",
-                "xCollapsable": false,
-                "yCollapsable": false
+                "color": "gold"
             },
             {
                 "name": "frozomon",
@@ -232,9 +190,7 @@
                         -1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null
         ]

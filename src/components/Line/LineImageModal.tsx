@@ -33,13 +33,15 @@ const LineImageModal: React.FC<Props> = ({
 			</Modal.Header>
 			<Modal.Body className="text-center overflow-auto">
 				<div className="line-point m-auto">
-					<LineImage
-						name={name}
-						path={path}
-						mirror={mirror}
-						width={500}
-						height={500}
-					/>
+					<div className="line-point-safe-zone">
+						<LineImage
+							name={name}
+							path={path}
+							mirror={mirror}
+							width={375}
+							height={375}
+						/>
+					</div>
 				</div>
 				<LinePointData name={name} className="p-4 pb-0" />
 			</Modal.Body>

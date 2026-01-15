@@ -15,9 +15,7 @@
                         1,
                         0
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null,
             {
@@ -28,8 +26,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": false,
-                "yCollapsable": true,
                 "color": [
                     "fusion"
                 ]
@@ -39,14 +35,10 @@
         [
             {
                 "name": "botamon",
-                "from": null,
-                "xCollapsable": true,
-                "yCollapsable": false
+                "from": null
             },
             {
-                "name": "koromon",
-                "xCollapsable": true,
-                "yCollapsable": false
+                "name": "koromon"
             },
             {
                 "name": "shoutmon",
@@ -54,47 +46,35 @@
                     "shoutmon_black",
                     "shoutmon_blue",
                     "shoutmon_yellow"
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
-                "name": "king_shoutmon",
-                "xCollapsable": false,
-                "yCollapsable": false
+                "name": "king_shoutmon"
             },
             {
                 "name": "omegashoutmon",
                 "color": [
                     "gold"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "shoutmon_dx",
                 "color": [
                     "fusion"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "shoutmon_x7",
                 "color": [
                     "fusion"
                 ],
-                "skins": [],
-                "xCollapsable": false,
-                "yCollapsable": false
+                "skins": []
             },
             {
                 "name": "shoutmon_x7_superior_mode",
                 "color": [
                     "fusion"
-                ],
-                "xCollapsable": true,
-                "yCollapsable": true
+                ]
             }
         ],
         [
@@ -111,9 +91,7 @@
                         -1,
                         -1
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "shoutmon_x3",
@@ -123,9 +101,7 @@
                 "skins": [
                     "shoutmon_x4",
                     "shoutmon_x5"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "shoutmon_x4b",
@@ -134,9 +110,7 @@
                 ],
                 "skins": [
                     "shoutmon_x5b"
-                ],
-                "xCollapsable": false,
-                "yCollapsable": false
+                ]
             },
             {
                 "name": "shoutmon_x7_black",
@@ -146,8 +120,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": true,
                 "color": [
                     "dark"
                 ]
@@ -170,8 +142,6 @@
                         -1
                     ]
                 ],
-                "xCollapsable": true,
-                "yCollapsable": false,
                 "skins": [
                     "shoutmon_x5s"
                 ]
@@ -186,9 +156,7 @@
                         -1,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null,
             null
@@ -209,9 +177,7 @@
                         -2,
                         -1
                     ]
-                ],
-                "xCollapsable": false,
-                "yCollapsable": true
+                ]
             },
             null,
             null
@@ -232,9 +198,7 @@
                         -3,
                         -1
                     ]
-                ],
-                "xCollapsable": true,
-                "yCollapsable": true
+                ]
             },
             null,
             null

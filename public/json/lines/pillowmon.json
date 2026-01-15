@@ -7,51 +7,35 @@
 			{
 				"name": "moosemon",
 				"color": "ice",
-				"from": [1, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [1, -1]
 			},
 			null,
 			{
 				"name": "kentaurosmon",
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"from": [[1, -1]]
 			}
 		],
 		[
 			{
 				"name": "punimon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
-				"name": "tsunomon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "tsunomon"
 			},
 			{
-				"name": "pillowmon",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"name": "pillowmon"
 			},
 			{
 				"name": "sheepmon",
-				"from": [0, -1],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [0, -1]
 			},
 			{
 				"name": "pajiramon",
-				"from": [[0, -1], [-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": [[0, -1], [-1, -1]]
 			},
 			{
-				"name": "taotiemon",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"name": "taotiemon"
 			},
 			null
 		],
@@ -62,15 +46,11 @@
 			{
 				"name": "goatmon",
 				"color": "light",
-				"from": [-1, -1],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": [-1, -1]
 			},
 			{
 				"name": "mephismon",
-				"color": "dark",
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": "dark"
 			},
 			{
 				"name": "gulfmon",
@@ -78,9 +58,7 @@
 				"from": [
 					[0, -1],
 					[-1, -1]
-				],
-				"xCollapsable": false,
-				"yCollapsable": true
+				]
 			},
 			null
 		],
@@ -93,8 +71,6 @@
 			{
 				"name": "belphemon_rage_mode",
 				"from": [[-1, -1]],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"skins": ["belphemon_sleep_mode"],
 				"color": ["dark"]
 			},
@@ -108,8 +84,6 @@
 			{
 				"name": "mephismon_x",
 				"from": [[-2, 0]],
-				"xCollapsable": false,
-				"yCollapsable": false,
 				"color": ["x"]
 			},
 			{
@@ -118,8 +92,6 @@
 					[-1, 0],
 					[0, -1]
 				],
-				"xCollapsable": false,
-				"yCollapsable": true,
 				"color": ["x", "x"]
 			},
 			null

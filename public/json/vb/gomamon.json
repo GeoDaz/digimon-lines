@@ -9,9 +9,7 @@
 			{
 				"name": "polarbearmon",
 				"from": [1, -1],
-				"mirror": true,
-				"xCollapsable": false,
-				"yCollapsable": true
+				"mirror": true
 			},
 			null
 		],
@@ -22,61 +20,43 @@
 			{
 				"name": "frigimon",
 				"from": [1, -1],
-				"color": "ice",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "ice"
 			},
 			{
 				"name": "blizzarmon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "vikemon",
 				"from": [0, -2],
-				"color": "ice",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "ice"
 			}
 		],
 		[
 			{
 				"name": "pitchmon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "pukamon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "gomamon",
-				"from": null,
-				"xCollapsable": true,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "ikkakumon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "zudomon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "plesiomon",
 				"from": [0, -5],
-				"color": "marine",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "marine"
 			}
 		],
 		[
@@ -86,22 +66,16 @@
 			{
 				"name": "dolphmon",
 				"from": [-1, -1],
-				"color": "marine",
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": "marine"
 			},
 			{
 				"name": "whamon",
-				"from": null,
-				"xCollapsable": false,
-				"yCollapsable": false
+				"from": null
 			},
 			{
 				"name": "neptunemon",
 				"from": [0, -2],
-				"color": "marine",
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": "marine"
 			}
 		],
 		[
@@ -111,23 +85,17 @@
 			{
 				"name": "gesomon",
 				"from": [[-2, -1]],
-				"color": ["dark"],
-				"xCollapsable": true,
-				"yCollapsable": false
+				"color": ["dark"]
 			},
 			{
 				"name": "marinedevimon",
 				"from": [[0, -1]],
-				"color": ["dark"],
-				"xCollapsable": false,
-				"yCollapsable": false
+				"color": ["dark"]
 			},
 			{
 				"name": "leviamon",
 				"from": [[0, -1]],
-				"color": ["dark"],
-				"xCollapsable": true,
-				"yCollapsable": true
+				"color": ["dark"]
 			}
 		],
 		[
@@ -138,9 +106,7 @@
 			{
 				"name": "dagomon",
 				"from": [[-1, -1]],
-				"color": ["marine"],
-				"xCollapsable": false,
-				"yCollapsable": true
+				"color": ["marine"]
 			},
 			null
 		]
