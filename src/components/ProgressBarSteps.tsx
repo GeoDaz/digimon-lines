@@ -6,7 +6,7 @@ interface Props {
 	onChange: Function;
 	steps: Option[];
 	selected: number | string;
-	progress?: number;
+	index: number;
 	className?: string;
 	title?: string;
 }
@@ -14,12 +14,15 @@ const ProgressBarSteps: React.FC<Props> = ({
 	onChange,
 	steps,
 	selected,
-	progress,
+	index,
 	className,
 	title,
 }) => (
 	<div className={makeClassName('progress-bar', className)} title={title}>
-		<div className="progress" style={{ width: `calc(${progress}% - 40px)` }} />
+		<div
+			className="progress"
+			style={{ width: `calc(${index} * var(--progress-bar-step-width))` }}
+		/>
 		{steps.map(step => (
 			<div
 				key={step.key}

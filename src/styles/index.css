@@ -977,8 +977,8 @@ a.line-point {
 
 .progress-bar {
   position: relative;
-  width: 400px;
-  min-width: 320px;
+  /* width: 400px;
+  min-width: 320px; */
   height: 15px;
   display: flex;
   flex-direction: row;
@@ -988,21 +988,24 @@ a.line-point {
   padding-top: 35px;
   padding-bottom: 15px;
   /* margin-left: -1.2em; */
+
+  --progress-bar-step-width: 50px; 
+  --progress-bar-x-padding: calc(var(--progress-bar-step-width) / 2); 
 }
 
 .progress-bar::before,
 .progress-bar .progress {
   position: absolute;
-  left: 20px;
-  right: 20px;
+  left: var(--progress-bar-x-padding);
+  right: var(--progress-bar-x-padding);
   height: 5px;
 }
 
 .progress-bar::before {
   content: '';
   background-color: var(--bs-gray-200);
-  left: 20px;
-  right: 20px;
+  left: var(--progress-bar-x-padding);
+  right: var(--progress-bar-x-padding);
 }
 
 .progress-bar .progress {
@@ -1012,7 +1015,7 @@ a.line-point {
 
 .progress-bar .step {
   position: relative;
-  width: auto;
+  width: var(--progress-bar-step-width);
   height: 15px;
   flex-grow: 1;
   cursor: pointer;

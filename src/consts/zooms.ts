@@ -1,23 +1,8 @@
 import { NumberObject, Option } from '@/types/Ui';
 
-export const zooms: NumberObject = {
-	'-3': 25,
-	'-2': 50,
-	'-1': 75,
-	0: 100,
-	1: 125,
-	2: 150,
-	3: 175,
-	4: 200,
-};
-// cannot use Object.entries(zooms) because keys will wrong be ordered
-export const zoomOptions: Option[] = [
-	{ key: -3, value: 25 },
-	{ key: -2, value: 50 },
-	{ key: -1, value: 75 },
-	{ key: 0, value: 100 },
-	{ key: 1, value: 125 },
-	{ key: 2, value: 150 },
-	{ key: 3, value: 175 },
-	{ key: 4, value: 200 },
-];
+export const zooms: number[] = [15, 25, 50, 75, 100, 125, 150];
+
+export const zoomOptions: Option[] = zooms.map((zoom, index) => ({
+	key: index,
+	value: zoom,
+}));

@@ -7,16 +7,14 @@ import { zooms, zoomOptions } from '@/consts/zooms';
 export const ZoomBar: React.FC<{
 	defaultZoom?: number;
 	handleZoom: CallableFunction;
-}> = ({ defaultZoom = 0, handleZoom }) => {
-	const [zoom, setZoom] = useState<number | string>(
-		Object.keys(zooms).find(key => zooms[key] == defaultZoom) || 0
-	);
+}> = ({ defaultZoom = 100, handleZoom }) => {
+	const [zoom, setZoom] = useState<number>(() => zooms.indexOf(defaultZoom));
 
 	useEffect(() => {
 		if (window.innerWidth < 576) {
-			setZoom(-2);
+			setZoom(zooms.indexOf(50));
 		} else if (window.innerWidth < 992) {
-			setZoom(-1);
+			setZoom(zooms.indexOf(75));
 		}
 	}, []);
 
@@ -37,7 +35,7 @@ export const ZoomBar: React.FC<{
 				title="zoom"
 				steps={zoomOptions}
 				selected={zoom}
-				progress={zooms[zoom] / 2}
+				index={zoom}
 				onChange={setZoom}
 				className="progress-zoom"
 			/>
