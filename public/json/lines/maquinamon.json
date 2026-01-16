@@ -32,6 +32,15 @@
 				"name": "metatromon",
 				"from": [[0, -1]],
 				"color": ["machine"]
+			},
+			{
+				"name": "exmaquinamon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"color": ["fusion", "fusion"],
+				"xSize": 2
 			}
 		],
 		[
