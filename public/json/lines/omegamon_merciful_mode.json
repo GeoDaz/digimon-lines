@@ -192,7 +192,8 @@
             },
             {
                 "name": "magnaangemon",
-                "color": "light"
+                "color": "light",
+                "skins":["magnaangemon_priest_mode"]
             },
             {
                 "name": "seraphimon",
@@ -260,12 +261,8 @@
             "for": "susanoomon"
         },
         {
-            "name": "ekakimon",
+            "name": "toyagumon",
             "for": "omekamon"
-        },
-        {
-            "name": "ekakimon",
-            "for": "omedamon"
         },
         {
             "name": "imperialdramon_paladin_mode"

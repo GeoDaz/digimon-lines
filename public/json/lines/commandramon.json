@@ -80,7 +80,8 @@
 				"name": "assaultmon"
 			},
 			{
-				"name": "gundramon"
+				"name": "gundramon",
+				"from": [[0, -1],[-2, -1]]
 			}
 		]
 	],
@@ -95,15 +96,11 @@
 			"from": "brigadramon"
 		},
 		{
-			"name": "hagurumon",
-			"for": "masterblimpmon"
-		},
-		{
 			"name": "tyranomon",
 			"for": "gundramon"
 		},
 		{
-			"name": "revolmon",
+			"name": "toyagumon",
 			"for": "magnakidmon"
 		},
 		{
@@ -111,8 +108,16 @@
 			"for": "beelstarmon"
 		},
 		{
+			"name": "hagurumon",
+			"for": "masterblimpmon"
+		},
+		{
 			"name": "monodramon",
 			"from": "darkdramon"
+		},
+		{
+			"name": "bemmon",
+			"for": "destromon"
 		},
 		{
 			"name": "gammamon",
@@ -128,7 +133,7 @@
 		},
 		{
 			"name": "betamon",
-			"for": "megadramon"
+			"for": "gigadramon"
 		}
 	]
 }

@@ -115,7 +115,8 @@
 			"name": "wizardmon",
 			"from": "ancientwisemon"
 		},
-		{ "name": "chimeramon", "from": "mimicmon" },
+		"chimeramon",
+		{ "name": "toyagumon", "from": "chimeramon" },
 		{
 			"name": "jellymon",
 			"from": "publimon"

@@ -64,23 +64,59 @@
 				"color": "fusion",
 				"xSize": 2,
 				"from": [
-					[-3.5, 0],
-					[-3.5, -1],
-					[-2.5, -1],
-					[-1.5, -1],
-					[-0.5, -1],
-					[0.5, -1],
-					[1.5, -1],
-					[2.5, -1],
-					[3.5, -1]
+					[
+						-3.5,
+						0
+					],
+					[
+						-3.5,
+						-1
+					],
+					[
+						-2.5,
+						-1
+					],
+					[
+						-1.5,
+						-1
+					],
+					[
+						-0.5,
+						-1
+					],
+					[
+						0.5,
+						-1
+					],
+					[
+						1.5,
+						-1
+					],
+					[
+						2.5,
+						-1
+					],
+					[
+						3.5,
+						-1
+					]
 				]
 			},
 			{
 				"name": "millenniumon",
-				"color": ["fusion", "fusion"],
+				"color": [
+					"fusion",
+					"fusion"
+				],
 				"from": [
-					[0, -1],
-					[6.5, 0]
+					[
+						0,
+						-1
+					],
+					[
+						6.5,
+						0
+					]
 				],
 				"xSize": 2
 			},
@@ -160,16 +196,25 @@
 			null,
 			{
 				"name": "toyagumon",
-				"from": [1, -1],
-				"skins": ["toyagumon_black"]
+				"from": [
+					1,
+					-1
+				],
+				"skins": [
+					"toyagumon_black"
+				]
 			},
 			{
 				"name": "flarelizardmon",
-				"skins": ["darklizardmon"]
+				"skins": [
+					"darklizardmon"
+				]
 			},
 			{
 				"name": "megadramon",
-				"skins": ["gigadramon"]
+				"skins": [
+					"gigadramon"
+				]
 			}
 		],
 		[
@@ -181,15 +226,21 @@
 			},
 			{
 				"name": "agumon",
-				"skins": ["agumon_black"]
+				"skins": [
+					"agumon_black"
+				]
 			},
 			{
 				"name": "greymon",
-				"skins": ["greymon_blue"]
+				"skins": [
+					"greymon_blue"
+				]
 			},
 			{
 				"name": "metalgreymon",
-				"skins": ["metalgreymon_blue"]
+				"skins": [
+					"metalgreymon_blue"
+				]
 			}
 		],
 		[
@@ -198,8 +249,13 @@
 			null,
 			{
 				"name": "tyranomon",
-				"from": [-1, -1],
-				"skins": ["darktyranomon"]
+				"from": [
+					-1,
+					-1
+				],
+				"skins": [
+					"darktyranomon"
+				]
 			},
 			{
 				"name": "metaltyranomon"
@@ -208,11 +264,26 @@
 				"name": "machinedramon",
 				"color": "fusion",
 				"from": [
-					[-2, -1],
-					[-1, -1],
-					[0, -1],
-					[1, -1],
-					[2, -1]
+					[
+						-2,
+						-1
+					],
+					[
+						-1,
+						-1
+					],
+					[
+						0,
+						-1
+					],
+					[
+						1,
+						-1
+					],
+					[
+						2,
+						-1
+					]
 				]
 			}
 		],
@@ -238,7 +309,10 @@
 			null,
 			{
 				"name": "kokuwamon",
-				"from": [-1, -1]
+				"from": [
+					-1,
+					-1
+				]
 			},
 			{
 				"name": "thunderballmon",
@@ -254,8 +328,10 @@
 		"MachineDramon can simply evolve from digimons given as its fusion here, but its body is made of parts of each of them."
 	],
 	"related": [
-		"mimicmon",
 		"marinechimeramon",
+		{
+			"name": "toyagumon"
+		},
 		{
 			"name": "tyranomon",
 			"for": "deltamon"
@@ -280,11 +356,29 @@
 		},
 		"patamon",
 		"devimon",
-		{ "name": "betamon", "for": "megadramon" },
-		{ "name": "vorvomon", "for": "flarelizardmon" },
-		{ "name": "greymon", "for": "metalgreymon" },
-		{ "name": "tyranomon", "for": "metaltyranomon" },
-		{ "name": "hagurumon", "for": "andromon" },
-		{ "name": "mamemon", "for": "metalmamemon" }
+		{
+			"name": "betamon",
+			"for": "megadramon"
+		},
+		{
+			"name": "vorvomon",
+			"for": "flarelizardmon"
+		},
+		{
+			"name": "greymon",
+			"for": "metalgreymon"
+		},
+		{
+			"name": "tyranomon",
+			"for": "metaltyranomon"
+		},
+		{
+			"name": "hagurumon",
+			"for": "andromon"
+		},
+		{
+			"name": "mamemon",
+			"for": "metalmamemon"
+		}
 	]
 }

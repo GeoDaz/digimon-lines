@@ -128,16 +128,6 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 					</div>
 				</div>
 			)}
-			{!!line?.notes && (
-				<>
-					<h2>Notes&nbsp;:</h2>
-					{line.notes.map((note, i) => (
-						<p key={i} className="mb-1">
-							{note}
-						</p>
-					))}
-				</>
-			)}
 			{!!line?.related && (
 				<div className="line-wrapper">
 					<h2>Related lines&nbsp;:</h2>

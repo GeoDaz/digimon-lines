@@ -66,7 +66,7 @@
 			null
 		],
 		[
-			{ "name": "nyokimon", "from": null, "collapsable": true },
+			{ "name": "leafmon", "from": null, "collapsable": true },
 			{ "name": "budmon", "from": [0, -1], "color": "grass", "collapsable": true },
 			{ "name": "lalamon", "from": [0, -1], "color": "grass", "collapsable": true },
 			{
@@ -250,7 +250,7 @@
 		{ "name": "woodmon", "from": "cernumon" },
 		{ "name": "bakemon", "from": "ponchomon" },
 		{ "name": "wizardmon", "from": "babamon" },
-		{ "name": "revolmon", "for": "vulturemon" },
+		{ "name": "toyagumon", "for": "vulturemon" },
 		{ "name": "omegamon_merciful_mode", "from": "rosemon" }
 	]
 }

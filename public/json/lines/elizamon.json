@@ -172,8 +172,33 @@
 	],
 	"related": [
 		{
+			"name": "gatomon",
+			"from": "minervamon"
+		},
+		"gekkomon",
+		{
+			"name": "tyranomon",
+			"from": "styracomon"
+		},
+		{
+			"name": "gammamon",
+			"from": "styracomon"
+		},
+		{
+			"name": "toyagumon",
+			"for": "deltamon"
+		},
+		{
 			"name": "palmon",
 			"for": "lotusmon"
+		},
+		{
+			"name": "armadillomon",
+			"from": "stegomon"
+		},
+		{
+			"name": "gekomon",
+			"for": "otamamon_red"
 		},
 		{
 			"name": "sukamon",
@@ -182,23 +207,6 @@
 		{
 			"name": "woodmon",
 			"for": "xuanwumon"
-		},
-		{
-			"name": "mimicmon",
-			"for": "deltamon"
-		},
-		{
-			"name": "gatomon",
-			"from": "minervamon"
-		},
-		"gekkomon",
-		{
-			"name": "armadillomon",
-			"from": "stegomon"
-		},
-		{
-			"name": "gekomon",
-			"for": "otamamon_red"
 		},
 		{
 			"name": "vorvomon",

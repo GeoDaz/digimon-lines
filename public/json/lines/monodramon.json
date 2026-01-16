@@ -73,11 +73,7 @@
 				"name": "gigadramon",
 				"from": [[0, -1],[1, -1]]
 			},
-			{
-				"name": "chaosdramon",
-				"from": [[0, -1]],
-				"skins": ["machinedramon"]
-			}
+			null
 		],
 		[
 			null,
@@ -91,11 +87,7 @@
 				"name": "maneuvermon",
 				"from": [[0, -1]]
 			},
-			{
-				"name": "chaosdramon_x",
-				"from": [[-1, 0]],
-				"color": ["x"]
-			}
+			null
 		],
 		[
 			null,
@@ -120,6 +112,10 @@
 			"from": "pteranomon"
 		},
 		{
+			"name": "toyagumon",
+			"from": "gigadramon"
+		},
+		{
 			"name": "betamon",
 			"from": "gigadramon"
 		},
@@ -134,10 +130,6 @@
 		{
 			"name": "maquinamon",
 			"from": "maneuvermon"
-		},
-		{
-			"name": "tyranomon",
-			"from": "chaosdramon"
 		},
 		{
 			"name": "greymon",
