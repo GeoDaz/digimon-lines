@@ -1292,4 +1292,8 @@ a.dropdown-item.active {
     max-width: var(--dl-img-size);
     max-height: var(--dl-img-size);
   }
+
+  .progress-bar {
+    --progress-bar-step-width: 30px;
+  }
 }
