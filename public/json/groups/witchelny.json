@@ -1,0 +1,50 @@
+{
+	"title": "Witchelny",
+	"main": [
+		{
+			"name": "wizardmon"
+		},
+		{
+			"name": "witchmon",
+			"line": "wizardmon"
+		},
+		{
+			"name": "sorcerymon",
+			"line": "wizardmon"
+		},
+		{
+			"name": "flamewizardmon",
+			"line": "wizardmon"
+		},
+		{
+			"name": "mistymon",
+			"line": "wizardmon"
+		},
+		{
+			"name": "wisemon",
+			"line": "wizardmon"
+		},
+		{
+			"name": "medievalgallantmon",
+			"line": "guilmon"
+		},
+		{
+			"name": "grandgalemon",
+			"line": "pteromon"
+		},
+		{
+			"name": "zephagamon",
+			"line": "pteromon"
+		},
+		{
+			"name": "hexeblaumon",
+			"line": "blucomon"
+		}
+	],
+	"related": [
+		{
+			"name": "ancientwisemon",
+			"line": "wizardmon"
+		}
+	]
+}
