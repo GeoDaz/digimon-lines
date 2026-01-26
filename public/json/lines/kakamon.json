@@ -6,37 +6,18 @@
 			null,
 			{
 				"name": "baboongamon",
-				"from": [
-					[
-						1,
-						-1
-					]
-				],
-				"color": [
-					"earth"
-				]
+				"from": [[1, -1]],
+				"color": ["earth"]
 			},
 			null,
 			{
 				"name": "nezhamon",
-				"from": [
-					[
-						1,
-						-1
-					]
-				]
+				"from": [[1, -1]]
 			},
 			{
 				"name": "nezhamon_crimson_mode",
-				"from": [
-					[
-						0,
-						-1
-					]
-				],
-				"color": [
-					"mode"
-				]
+				"from": [[0, -1]],
+				"color": ["mode"]
 			}
 		],
 		[
@@ -46,67 +27,32 @@
 			},
 			{
 				"name": "mokokomon",
-				"from": [
-					[
-						0,
-						-1
-					]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[0, -1]],
+				"color": ["fire"]
 			},
 			{
 				"name": "kakamon",
-				"from": [
-					[
-						0,
-						-1
-					]
-				]
+				"from": [[0, -1]]
 			},
 			{
 				"name": "apemon",
-				"from": [
-					[
-						0,
-						-1
-					]
-				]
+				"from": [[0, -1]]
 			},
 			{
 				"name": "gokuwmon",
 				"from": [
-					[
-						0,
-						-1
-					],
-					[
-						-1,
-						-1
-					]
+					[0, -1],
+					[-1, -1]
 				]
 			},
 			{
 				"name": "seitengokuwmon",
-				"from": [
-					[
-						0,
-						-1
-					]
-				]
+				"from": [[0, -1]]
 			},
 			{
 				"name": "shakamon",
-				"from": [
-					[
-						0,
-						-1
-					]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1]],
+				"color": ["fusion"]
 			}
 		],
 		[
@@ -115,37 +61,20 @@
 			null,
 			{
 				"name": "lianpumon",
-				"from": [
-					[
-						-1,
-						-1
-					]
-				],
-				"color": [
-					"dark"
-				]
+				"from": [[-1, -1]],
+				"color": ["dark"]
 			},
 			{
 				"name": "xingtianmon",
 				"from": [
-					[
-						0,
-						-1
-					],
-					[
-						1,
-						-1
-					]
+					[0, -1],
+					[1, -1]
 				],
-				"color": [
-					"dark"
-				]
+				"color": ["dark"]
 			},
 			{
 				"name": "dijiangmon",
-				"color": [
-					"dark"
-				]
+				"color": ["dark"]
 			},
 			null
 		],
@@ -155,26 +84,11 @@
 			null,
 			{
 				"name": "mojyamon",
-				"from": [
-					[
-						1,
-						-1
-					]
-				],
-				"skins": [
-					"jungle_mojyamon"
-				]
+				"from": [[1, -1]],
+				"skins": ["jungle_mojyamon"]
 			},
-			null,
-			{
-				"name": "jijimon",
-				"from": [
-					[
-						-1,
-						-1
-					]
-				]
-			},
+			{ "name": "piccolomon" },
+			{ "name": "jijimon" },
 			null
 		],
 		[
@@ -203,12 +117,7 @@
 			null,
 			{
 				"name": "gorimon",
-				"from": [
-					[
-						-1,
-						-1
-					]
-				]
+				"from": [[-1, -1]]
 			},
 			null,
 			null,
@@ -220,12 +129,7 @@
 			null,
 			{
 				"name": "minotarumon",
-				"from": [
-					[
-						-2,
-						-1
-					]
-				]
+				"from": [[-2, -1]]
 			},
 			null,
 			null,
@@ -260,6 +164,10 @@
 		{
 			"name": "bearmon",
 			"for": "gankoomon"
+		},
+		{
+			"name": "patamon",
+			"for": "piccolomon"
 		},
 		{
 			"name": "takinmon",

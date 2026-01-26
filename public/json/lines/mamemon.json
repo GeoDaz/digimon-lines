@@ -48,7 +48,10 @@
 			},
 			{
 				"name": "pukumon",
-				"from": [[0, -1], [1, -1]]
+				"from": [
+					[0, -1],
+					[1, -1]
+				]
 			}
 		],
 		[
@@ -112,7 +115,10 @@
 			},
 			{
 				"name": "banchomamemon",
-				"from": [[-2, -1], [0, -1]]
+				"from": [
+					[-2, -1],
+					[0, -1]
+				]
 			}
 		],
 		[
@@ -196,6 +202,14 @@
 		{ "name": "gammamon", "for": "bombermon" },
 		{ "name": "pulsemon", "for": "shootmon" },
 		{ "name": "fujamon", "for": "pukumon" },
+		{
+			"name": "patamon",
+			"for": "piccolomon"
+		},
+		{
+			"name": "kakamon",
+			"for": "jijimon"
+		},
 		{ "name": "tentomon", "for": "kokuwamon" },
 		{ "name": "commandramon", "for": "troopmon" },
 		{ "name": "toyagumon", "for": "machinedramon" }
