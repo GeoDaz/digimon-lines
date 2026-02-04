@@ -85,20 +85,20 @@ export const PageBuild = (props: BuildProps) => {
 			metadescription={`Build your own ${licenceContext.name} lines. be creative your are free.`}
 		>
 			<blockquote className="blockquote">
-				<b>Click</b> on a case from the grid to set a {licenceContext.name}. The{' '}
-				<Icon name="bezier2" title="link" /> button will allow you to link two
-				digimons together.
-				<br /> If you click on a digimon image, you can access to new parameters
-				like&nbsp;: change the line color or add some sub images.
-				<br /> The <b>Save as</b> button will allow you to download the line as an
-				image or code.
-				<br /> The image option doesn't work with <b>url images</b>, but it will
-				works with <b>uploaded images</b>.
-				<br /> The code save option will be very heavy with <b>uploaded images</b>
-				, but it will works with <b>url images</b>.
-				<br /> Your work is saved on the browser for one line at a time, but you
-				can export it on your computer with the <b>Save as Code</b> button and
-				update it later with the <b>Import from {'{}'}</b> button.
+				<b>Click</b> on a cell in the grid to set a {licenceContext.name}. The{' '}
+				<Icon name="bezier2" title="link" /> button lets you link two Digimons
+				together.
+				<br /> Clicking on a Digimon image gives you access to additional options,
+				such as changing the line color or adding sub-images.
+				<br /> The <b>Save as</b>button allows you to export the line as an image
+				or as code.
+				<br /> The Save as Image option does not work with <b>url images</b>, but
+				it does work with <b>uploaded images</b>.
+				<br /> The Save as Code option can produce very large files when using{' '}
+				<b>uploaded images</b>, but it works well with <b>URL images</b>.
+				<br /> Your work is saved locally in the browser, one line at a time. You
+				can export it to your computer using the <b>Save as Code</b> button and
+				reload it later with the <b>Import from {'{}'}</b> button.
 			</blockquote>
 			<div className="line-filters align-items-center">
 				<BoostrapSwitch

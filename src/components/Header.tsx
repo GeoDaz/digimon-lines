@@ -67,9 +67,11 @@ const Header: React.FC = () => (
 					target="_blank"
 					rel="nofollow noopener noreferrer"
 					title="discord"
-					className="fs-4"
 				>
-					<Icon name="discord" />
+					<span className="d-none d-lg-inline-block align-middle">
+						Join us&nbsp;!
+					</span>{' '}
+					<Icon className="fs-4 align-middle" name="discord" />
 				</Link>
 			</Container>
 		</Navbar>
