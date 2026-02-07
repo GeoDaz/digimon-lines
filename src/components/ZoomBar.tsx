@@ -2,12 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import ProgressBarSteps from '@/components/ProgressBarSteps';
 import Icon from '@/components/Icon';
-import { zooms, zoomOptions } from '@/consts/zooms';
+import { zooms, zoomOptions, DEFAULT_ZOOM } from '@/consts/zooms';
 
 export const ZoomBar: React.FC<{
 	defaultZoom?: number;
 	handleZoom: CallableFunction;
-}> = ({ defaultZoom = 100, handleZoom }) => {
+}> = ({ defaultZoom = DEFAULT_ZOOM, handleZoom }) => {
 	const [zoom, setZoom] = useState<number>(() => zooms.indexOf(defaultZoom));
 
 	useEffect(() => {

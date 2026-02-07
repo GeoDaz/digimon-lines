@@ -240,6 +240,7 @@ const ImagePoint: React.FC<{
 					expandable={true}
 					width={225}
 					height={225}
+					zoomable={false}
 				/>
 				{point.skins?.map((skin, i) => (
 					<LineImage
@@ -251,6 +252,7 @@ const ImagePoint: React.FC<{
 						width={225}
 						height={225}
 						style={{ bottom: 3.3 * i + 'em' }}
+						zoomable={false}
 					/>
 				))}
 			</div>

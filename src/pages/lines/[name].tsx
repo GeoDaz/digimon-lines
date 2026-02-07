@@ -1,34 +1,33 @@
 // modules
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useRouter } from 'next/router';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { redirect } from 'next/navigation';
 import { GetStaticProps } from 'next';
 // components
 import Layout from '@/components/Layout';
 import LineGrid from '@/components/Line/LineGrid';
-import LineLoading from '@/components/Line/LineLoading';
 import LinePoint from '@/components/Line/LinePoint';
 import LineImage from '@/components/Line/LineImage';
 import CommentLink from '@/components/CommentLink';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
 // functions
-import useFetch from '@/hooks/useFetch';
 import useQueryParam from '@/hooks/useQueryParam';
 import { capitalize } from '@/functions';
 import transformLine, { thumbsToNames } from '@/functions/line';
 // constants
-import { Line, LineThumb } from '@/types/Line';
+import { Line } from '@/types/Line';
 import { APPMON, LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
 import { Digimon } from '@/types/Digimon';
-import { DigimonContext } from '@/context/digimon';
+import { DigimonContext, DigimonProvider } from '@/context/digimon';
 import { StringObject } from '@/types/Ui';
+import { ZoomProvider } from '@/context/zoom';
+import { DEFAULT_ZOOM } from '@/consts/zooms';
 
 const NAME = 'name';
 const defaultObject: any = {};
-
 interface StaticProps {
 	line?: Line;
 	name?: string;
@@ -47,7 +46,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 	const { name } = useQueryParam(NAME) || ssr;
 	const router = useRouter();
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
-	const [zoom, setZoom] = useState(100);
+	const [zoom, setZoom] = useState(DEFAULT_ZOOM);
 
 	useEffect(() => {
 		if (window.innerWidth < 576) {
@@ -94,15 +93,14 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 				<ColorLegend />
 			</div>
 			{line ? (
-				<DigimonContext.Provider
-					value={{
-						data: ssr.digimons || defaultObject,
-						dubNames: ssr.dubNames || defaultObject,
-					}}
-				>
-					<LineGrid line={line} zoom={zoom} />
+				<>
+					<DigimonProvider dubNames={ssr.dubNames} data={ssr.digimons}>
+						<ZoomProvider zoom={zoom}>
+							<LineGrid line={line} />
+						</ZoomProvider>
+					</DigimonProvider>
 					<CommentLink />
-				</DigimonContext.Provider>
+				</>
 			) : (
 				<p>Line not found</p>
 			)}

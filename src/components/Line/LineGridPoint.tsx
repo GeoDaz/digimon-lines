@@ -4,7 +4,8 @@ import LineImage from '@/components/Line/LineImage';
 import { makeClassName } from '@/functions';
 import Icon from '@/components/Icon';
 import { GridContext } from '@/context/grid';
-import LineSvg, { pointHeight, pointWidth, xUnit, yUnit } from './LineSvg';
+import { ZoomContext } from '@/context/zoom';
+import LineSvg from './LineSvg';
 
 const LineGridPoint: React.FC<{
 	point?: LinePointInterface | null;
@@ -41,6 +42,7 @@ const LinePoint: React.FC<{
 }> = ({ point, coord, handleEdit }) => {
 	const { drawing, handleDraw, handleTarget, handleXCollapse, handleYCollapse } =
 		React.useContext(GridContext);
+	const { zoomFactor, imgSize, unit } = useContext(ZoomContext);
 	const isDrawing: boolean =
 		!!drawing && drawing[0] == coord[0] && drawing[1] == coord[1];
 
@@ -89,19 +91,16 @@ const LinePoint: React.FC<{
 		yCollapsable,
 	} = point;
 
-	const width: number = useMemo(() => {
-		if (xSize) {
-			return pointWidth + (xSize ? xSize - 1 : 0) * xUnit; // 150 + xMargin
-		}
-		return pointWidth;
-	}, [xSize]);
+	// Apply zoom to base dimensions
 
-	const height: number = useMemo(() => {
-		if (ySize) {
-			return pointHeight + (ySize ? ySize - 1 : 0) * yUnit; // 150 + xMargin
-		}
-		return pointHeight;
-	}, [ySize]);
+	const [width, height]: [number, number] = useMemo(() => {
+		const pointWidth = imgSize;
+		const pointHeight = imgSize;
+		return [
+			pointWidth + (xSize ? xSize - 1 : 0) * unit,
+			pointHeight + (ySize ? ySize - 1 : 0) * unit,
+		];
+	}, [xSize, ySize, zoomFactor]);
 
 	return (
 		<div
@@ -116,7 +115,12 @@ const LinePoint: React.FC<{
 			onClick={handleEdit ? handleEdit : undefined}
 		>
 			<div className="line-point-safe-zone">
-				<LineImage name={name} path={image} mirror={point.mirror} expandable={!handleEdit}/>
+				<LineImage
+					name={name}
+					path={image}
+					mirror={point.mirror}
+					expandable={!handleEdit}
+				/>
 				{skins.map((skin, i) => (
 					<LineImage
 						key={i}

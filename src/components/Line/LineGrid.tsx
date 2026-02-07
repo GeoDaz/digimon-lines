@@ -1,4 +1,4 @@
-import { Fragment, memo, useContext, useState } from 'react';
+import { Fragment, memo, useContext, useMemo, useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import {
 	Axis,
@@ -12,6 +12,7 @@ import {
 import { makeClassName } from '@/functions';
 import { addLineColumn, removeLineColumn, setLinePoint } from '@/reducers/lineReducer';
 import { GridContext } from '@/context/grid';
+import { ZoomContext } from '@/context/zoom';
 import LinePointSettings from './LinePointSettings';
 import LineGridPoint from './LineGridPoint';
 import LineAddRow from './LineAddRow';
@@ -25,12 +26,12 @@ export interface LineEdition {
 
 interface GridProps {
 	line: Line;
-	zoom?: number;
 	handleUpdate?: CallableFunction;
 }
-const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
+const LineGrid: React.FC<GridProps> = ({ line, handleUpdate }) => {
 	const [drawing, setDrawing] = useState<number[] | undefined>();
 	const [edition, edit] = useState<number[]>();
+	const { zoomFactor } = useContext(ZoomContext);
 
 	const handleTarget = (target: number[]) => {
 		if (!handleUpdate || !drawing) return;
@@ -127,7 +128,7 @@ const LineGrid: React.FC<GridProps> = ({ line, zoom = 100, handleUpdate }) => {
 						'line-wrapper line-grid',
 						handleUpdate && 'editable'
 					)}
-					style={{ zoom: `${zoom}%` }}
+					style={{ fontSize: `${zoomFactor}rem` }}
 				>
 					<LineLevels line={line} />
 					{line.columns.map((column, i) => (

@@ -16,6 +16,8 @@
 	--dl-inset-box-shadow: inset 0 0 0 2px var(--dl-snd-dark);
 	--dl-border: 2px solid var(--dl-snd-dark);
 	--bs-border-color: #495057;
+	--dl-border-radius: 0.375em;
+	--dl-gutter: 1.3333em;
 
 	--bs-body-color: #adb5bd;
 	--bs-body-color-rgb: 173, 181, 189;
@@ -36,12 +38,12 @@
 	--bs-primary-hover: rgb(100, 53, 201);
 	--bs-primary-active: rgb(54, 29, 107);
 
-	--dl-img-size: 10rem;
-	--dl-skin-img-size: 3rem;
-	--dl-md-img-size: 7.5rem;
-	--dl-md-skin-img-size: 2.5rem;
-	--dl-xs-img-size: 6rem;
-	--dl-xs-skin-img-size: 2rem;
+	--dl-img-size: 10em;
+	--dl-skin-img-size: 3em;
+	--dl-md-img-size: 7.5em;
+	--dl-md-skin-img-size: 2.5em;
+	--dl-xs-img-size: 6em;
+	--dl-xs-skin-img-size: 2em;
 }
 
 html,
@@ -290,10 +292,10 @@ h2 {
 	padding-bottom: 2em;
 	position: relative;
 	z-index: 1;
-	margin-left: -0.75rem;
-	margin-right: -0.75rem;
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
+	margin-left: -0.75em;
+	margin-right: -0.75em;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
 }
 
 .line-wrapper.captured {
@@ -308,12 +310,12 @@ h2 {
 	background-color: var(--bs-dark);
 	margin: 0 !important;
 	padding: var(--bs-gutter-x) var(--bs-gutter-x) 0
-		calc(4.5rem + var(--bs-gutter-x) / 2 + 2px) !important;
+		calc(4.5em + var(--bs-gutter-x) / 2 + 0.1333em) !important;
 }
 
 .line-wrapper.captured .levels {
 	margin: 0 !important;
-	left: 2px;
+	left: 0.1333em;
 }
 .line-wrapper.captured .add-row {
 	display: none !important;
@@ -324,14 +326,31 @@ h2 {
 	overflow: auto hidden;
 }
 
+/* Force buttons and icons to inherit font-size for zoom scaling */
+.line-grid .btn,
+.line-grid .bi {
+	font-size: inherit;
+}
+
 .frame .line-grid {
-	padding: 2em 2em 0 6em;
+	padding-top: 2em;
+	padding-right: 2em;
+	padding-left: 6em;
+	padding-bottom: 0;
+}
+.frame .line-grid.line-wrapper {
+	margin-left: calc(-0.75em);
+	margin-right: calc(-0.75em);
+}
+
+.frame .line-grid.editable {
+	padding-top: 3em;
 }
 
 .line-grid .line-row {
 	position: relative;
 	flex-wrap: nowrap;
-	margin-bottom: 2em;
+	margin-bottom: var(--dl-gutter, 2em);
 }
 
 .line-grid > .line-row {
@@ -340,6 +359,7 @@ h2 {
 }
 
 .line-grid .line-row.row {
+	--bs-gutter-x: var(--dl-gutter, 1.5em);
 	justify-content: flex-start;
 	margin-left: 0;
 	margin-right: 0;
@@ -351,7 +371,7 @@ h2 {
 
 .line-row .col {
 	flex: 0;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.5em;
 }
 
 .line-grid .line-row .col {
@@ -359,7 +379,7 @@ h2 {
 }
 
 .line-grid > .line-row > .col {
-	margin-bottom: var(--bs-gutter-x);
+	margin-bottom: var(--dl-gutter, var(--bs-gutter-x));
 	min-width: var(--dl-img-size);
 	min-height: var(--dl-img-size);
 	position: relative;
@@ -367,7 +387,7 @@ h2 {
 
 .line-grid > .line-row > .line-row {
 	padding: 0;
-	margin-bottom: var(--bs-gutter-x);
+	margin-bottom: var(--dl-gutter, var(--bs-gutter-x));
 }
 
 .line-point,
@@ -379,7 +399,7 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: var(--bs-border-radius);
+	border-radius: var(--dl-border-radius);
 	outline: 4px solid transparent;
 	position: relative;
 }
@@ -401,13 +421,13 @@ a.line-point {
 }
 
 .line-point.y-double .actions {
-	top: calc(25% + 0.5em);
-	bottom: calc(25% + 0.5em);
+	top: calc(25% + var(--dl-gutter, var(--bs-gutter-y)) * 0.25);
+	bottom: calc(25% + var(--dl-gutter, var(--bs-gutter-y)) * 0.25);
 }
 
 .line-point.x-double .actions {
-	left: calc(25% + var(--bs-gutter-x) * 0.25);
-	right: calc(25% + var(--bs-gutter-x) * 0.25);
+	left: calc(25% + var(--dl-gutter, var(--bs-gutter-x)) * 0.25);
+	right: calc(25% + var(--dl-gutter, var(--bs-gutter-x)) * 0.25);
 }
 
 .line-point.editable {
@@ -417,7 +437,7 @@ a.line-point {
 .line-point.editable:hover,
 .line-point.editable:focus {
 	background-color: rgba(255, 255, 255, 0.25);
-	border-radius: var(--bs-border-radius);
+	border-radius: var(--dl-border-radius);
 }
 
 .line-point.editable.pictured:hover,
@@ -444,7 +464,7 @@ a.line-point {
   right: 0;
   z-index: 3;
   background-color: transparent;
-  border-radius: var(--bs-border-radius);
+  border-radius: var(--dl-border-radius);
   transition: all .3s;
 }
 
@@ -551,7 +571,7 @@ a.line-point {
 	background-color: white;
 	width: var(--dl-img-size);
 	height: var(--dl-img-size);
-	border-radius: var(--bs-border-radius);
+	border-radius: var(--dl-border-radius);
 }
 
 .line-point .line-point-safe-zone.gridded {
@@ -633,7 +653,7 @@ a.line-point {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 0.3rem;
+	border-radius: 0.3em;
 }
 
 .line-point .actions:hover,
@@ -695,13 +715,13 @@ a.line-point {
 .line-point .bi.collapse-col-point {
 	top: 50%;
 	left: 100%;
-	transform: translate(0.3rem, -50%);
+	transform: translate(0.3em, -50%);
 }
 
 .line-point .bi.collapse-row-point {
 	top: 100%;
 	left: 50%;
-	transform: translate(-50%, 0.3rem);
+	transform: translate(-50%, 0.3em);
 }
 
 .line-point:hover .bi.collapse-point,
@@ -715,9 +735,9 @@ a.line-point {
 	top: 0;
 	bottom: 0;
 	left: 0;
-	right: calc(-100% - 1.5rem);
+	right: calc(-100% - 1.5em);
 	background-color: rgba(255, 255, 255, 0.25);
-	border-radius: var(--bs-border-radius);
+	border-radius: var(--dl-border-radius);
 }
 
 .line-point:has(.bi.collapse-row-point:hover)::before {
@@ -726,9 +746,9 @@ a.line-point {
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: calc(-100% - 1.5rem);
+	bottom: calc(-100% - 1.5em);
 	background-color: rgba(255, 255, 255, 0.25);
-	border-radius: var(--bs-border-radius);
+	border-radius: var(--dl-border-radius);
 }
 
 .line-point .bi.settings {
@@ -751,7 +771,7 @@ a.line-point {
 	align-items: center;
 	z-index: 2;
 	background-color: white;
-	border-radius: var(--bs-border-radius);
+	border-radius: var(--dl-border-radius);
 	transition: all 0.3s;
 }
 
@@ -761,29 +781,21 @@ a.line-point {
 }
 
 .line-point-settings {
-	--dl-img-size: 15rem;
-	--dl-skin-img-size: 5rem;
-	--dl-md-img-size: 15rem;
-	--dl-md-skin-img-size: 5rem;
-	--dl-xs-img-size: 12rem;
-	--dl-xs-skin-img-size: 3rem;
+	--dl-img-size: 15em;
+	--dl-skin-img-size: 5em;
+	--dl-md-img-size: 15em;
+	--dl-md-skin-img-size: 5em;
+	--dl-xs-img-size: 12em;
+	--dl-xs-skin-img-size: 3em;
 }
 
 .line-image-modal {
-	--dl-img-size: 25rem;
-	--dl-skin-img-size: 10rem;
-	--dl-md-img-size: 25rem;
-	--dl-md-skin-img-size: 10rem;
-	--dl-xs-img-size: 15rem;
-	--dl-xs-skin-img-size: 5rem;
-}
-
-.line-grid.editable {
-	padding-top: 3em;
-}
-
-.line-grid.editable .levels {
-	top: 2em;
+	--dl-img-size: 25em;
+	--dl-skin-img-size: 10em;
+	--dl-md-img-size: 25em;
+	--dl-md-skin-img-size: 10em;
+	--dl-xs-img-size: 15em;
+	--dl-xs-skin-img-size: 5em;
 }
 
 .line-grid.editable .line-point.editable::before {
@@ -795,11 +807,11 @@ a.line-point {
 	right: 0;
 	bottom: 0;
 	background-color: rgba(0, 0, 0, 0.3);
-	border-radius: var(--bs-border-radius);
+	border-radius: var(--dl-border-radius);
 }
 
 .line-grid.editable .line-row {
-	border-radius: var(--bs-border-radius);
+	border-radius: var(--dl-border-radius);
 	transition: background-color 0.3s;
 }
 
@@ -814,7 +826,7 @@ a.line-point {
 	width: 1em;
 	top: 0;
 	bottom: 0;
-	border-radius: var(--bs-border-radius);
+	border-radius: var(--dl-border-radius);
 	background-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -826,8 +838,8 @@ a.line-point {
 	transform: translateY(-100%);
 	opacity: 0;
 	transition: all 0.3s;
-	padding: 0.25rem 0.5rem;
-	border-radius: var(--bs-border-radius);
+	padding: 0.25em 0.5em;
+	border-radius: var(--dl-border-radius);
 	width: min-content;
 }
 
@@ -839,9 +851,12 @@ a.line-point {
 	transform: translate(-50%, -100%);
 	opacity: 0;
 	transition: all 0.3s;
-	padding: 0.25rem 0.5rem;
-	border-radius: var(--bs-border-radius);
+	padding: 0.25em 0.5em;
+	border-radius: var(--dl-border-radius);
 	width: min-content;
+}
+.line-grid.editable .btn .bi-trash3-fill::before {
+	line-height: 1.5;
 }
 
 .line-grid.editable .line-row .btn.add::before,
@@ -871,17 +886,20 @@ a.line-point {
 
 .line-grid .add-row {
 	flex-grow: 1;
-	padding: 0 calc(var(--bs-gutter-x) * 0.5);
+	padding: 0 calc(var(--dl-gutter, var(--bs-gutter-x)) * 0.5);
 	font-size: 1.25em;
 	font-weight: 600;
 	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .line-grid .add-row > div {
-	height: calc(100% - 2rem);
+	height: calc(100% - 2em);
 	width: var(--dl-img-size);
+	padding: 0 calc(var(--dl-gutter, var(--bs-gutter-x)) * 0.5);
 	opacity: 0;
-	border-radius: var(--bs-border-radius);
+	border-radius: var(--dl-border-radius);
 	transition: all 0.3s;
 	padding-top: 1em;
 	cursor: pointer;
@@ -897,14 +915,18 @@ a.line-point {
 	top: 1em;
 	bottom: 0;
 	left: 1em;
-	margin-left: -6px;
+	margin-left: -0.4em;
 	display: flex;
 	flex-direction: column;
 }
 
+.frame .line-grid.editable .levels {
+	top: 2em;
+}
+
 .line-grid .levels .level {
-	height: calc(var(--dl-img-size) + var(--bs-gutter-x));
-	max-width: 4.5rem;
+	height: calc(var(--dl-img-size) + var(--dl-gutter, var(--bs-gutter-x)));
+	max-width: 4.5em;
 	border-left: var(--dl-border);
 	border-right: var(--dl-border);
 	border-top: var(--dl-border);
@@ -912,6 +934,7 @@ a.line-point {
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	white-space: nowrap;
 }
 
 .line-grid .levels .level:last-child {
@@ -928,7 +951,7 @@ a.line-point {
 }
 
 .line-grid .levels .level input {
-	width: 8rem;
+	width: 8em;
 	text-align: center;
 }
 
@@ -939,12 +962,12 @@ a.line-point {
 .line-grid.editable .levels .level .btn.add {
 	display: inline-block;
 	position: absolute;
-	bottom: -1rem;
+	bottom: -1em;
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
 	transition: all 0.3s;
-	padding: 0.25rem 0.5rem;
+	padding: 0.25em 0.5em;
 	z-index: 1;
 }
 
@@ -957,12 +980,12 @@ a.line-point {
 .line-grid.editable .levels .level .btn.btn-danger {
 	display: inline-block;
 	position: absolute;
-	top: 1rem;
+	top: 1em;
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
 	transition: all 0.3s;
-	padding: 0.25rem 0.5rem;
+	padding: 0.25em 0.5em;
 }
 
 .line-grid.editable .levels .level:hover .btn.btn-danger,

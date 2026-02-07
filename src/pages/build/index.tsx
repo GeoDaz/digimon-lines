@@ -22,8 +22,12 @@ import { defaultLicenceContext, LicenceProps, LicenseContext } from '@/context/l
 import { getDubbedSearchList } from '@/functions/search';
 import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
-import { DigimonContext } from '@/context/digimon';
+import { DigimonContext, DigimonProvider } from '@/context/digimon';
 import { Digimon } from '@/types/Digimon';
+import { ZoomProvider } from '@/context/zoom';
+import { DEFAULT_ZOOM } from '@/consts/zooms';
+
+const defaultObject: any = {};
 
 export interface BuildProps {
 	search?: Search;
@@ -39,7 +43,7 @@ export interface BuildProps {
 export const PageBuild = (props: BuildProps) => {
 	const licenceContext = props.context || defaultLicenceContext;
 	const [line, dispatchState] = useReducer(lineReducer, props.line || defaultLine);
-	const [zoom, setZoom] = useState<number>(100);
+	const [zoom, setZoom] = useState<number>(DEFAULT_ZOOM);
 	const [edition, edit] = useState<boolean>(true);
 
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
@@ -65,8 +69,8 @@ export const PageBuild = (props: BuildProps) => {
 		let editionState = edition;
 		let zoomState = zoom;
 		edit(false);
-		setZoom(100);
-		downloadImage(line).then(() => {
+		setZoom(150);
+		downloadImage(line, 150).then(() => {
 			edit(editionState);
 			setZoom(zoomState);
 		});
@@ -150,18 +154,14 @@ export const PageBuild = (props: BuildProps) => {
 			)}
 			<SearchContext.Provider value={props.search}>
 				<LicenseContext.Provider value={licenceContext}>
-					<DigimonContext.Provider
-						value={{
-							dubNames: props.dubNames || {},
-							data: props.digimons || {},
-						}}
-					>
-						<LineGrid
-							line={line}
-							zoom={zoom}
-							handleUpdate={edition ? handleUpdate : undefined}
-						/>
-					</DigimonContext.Provider>
+					<DigimonProvider dubNames={props.dubNames} data={props.digimons}>
+						<ZoomProvider zoom={zoom}>
+							<LineGrid
+								line={line}
+								handleUpdate={edition ? handleUpdate : undefined}
+							/>
+						</ZoomProvider>
+					</DigimonProvider>
 				</LicenseContext.Provider>
 			</SearchContext.Provider>
 		</Layout>

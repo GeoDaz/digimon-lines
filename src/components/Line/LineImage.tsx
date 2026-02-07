@@ -4,6 +4,8 @@ import { capitalize, makeClassName } from '@/functions';
 import { Spinner } from 'react-bootstrap';
 import { DIGIMON, LINE } from '@/consts/ui';
 import { LicenseContext } from '@/context/license';
+import { ZoomContext } from '@/context/zoom';
+import { BASE_IMG_SIZE } from '@/consts/grid';
 import imgPathByLicence from '@/functions/images';
 import LineImageModal from './LineImageModal';
 
@@ -17,6 +19,7 @@ interface Props extends React.ImgHTMLAttributes<any> {
 	expandable?: boolean;
 	loadable?: boolean;
 	mirror?: boolean;
+	zoomable?: boolean;
 	width?: number | string;
 	height?: number | string;
 }
@@ -30,10 +33,12 @@ const LineImage: React.FC<Props> = ({
 	expandable = false,
 	loadable = true,
 	mirror = false,
-	width = 150,
-	height = 150,
+	zoomable = true,
+	width = BASE_IMG_SIZE,
+	height = BASE_IMG_SIZE,
 }) => {
 	const licence = useContext(LicenseContext)?.key || DIGIMON;
+	const { imgSize } = useContext(ZoomContext);
 	const getImgPath = imgPathByLicence[licence];
 	const [src, setSrc] = useState(() => path || getImgPath(name, type));
 	const [open, setOpen] = useState(false);
@@ -41,6 +46,11 @@ const LineImage: React.FC<Props> = ({
 	const [ratioWidth, setRatioWidth] = useState(1);
 	const [ratioHeight, setRatioHeight] = useState(1);
 	const [loadingStyle, setLoadingStyle] = useState({ opacity: 1, zIndex: 2 });
+
+	// Use zoomed dimensions only if default props are used (150)
+	// Otherwise respect explicit width/height props (for modals)
+	const zoomedWidth = zoomable ? imgSize : Number(width);
+	const zoomedHeight = zoomable ? imgSize : Number(height);
 
 	useEffect(() => {
 		if (path) {
@@ -87,8 +97,8 @@ const LineImage: React.FC<Props> = ({
 						setRatioWidth(naturalHeight / naturalWidth || 1);
 					}
 				}}
-				width={Number(width) / ratioWidth}
-				height={Number(height) / ratioHeight}
+				width={zoomedWidth / ratioWidth}
+				height={zoomedHeight / ratioHeight}
 				alt={capitalizedName}
 				title={title || capitalizedName}
 				className={makeClassName(

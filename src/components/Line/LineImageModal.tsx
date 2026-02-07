@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Modal } from 'react-bootstrap';
 import LineImage from './LineImage';
-import { LinePoint } from '@/types/Line';
 import LinePointData from './LinePointData';
 import { DigimonContext } from '@/context/digimon';
 import { capitalize } from '@/functions';
@@ -40,6 +39,7 @@ const LineImageModal: React.FC<Props> = ({
 							mirror={mirror}
 							width={375}
 							height={375}
+							zoomable={false}
 						/>
 					</div>
 				</div>

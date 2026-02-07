@@ -1,13 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { colors } from '@/consts/colors';
-
-export const gridSpacing: number = 22.5;
-const strokeWidth: number = 12;
-const strokeHalf: number = strokeWidth / 2;
-export const pointWidth: number = 150;
-export const pointHeight: number = 150;
-export const xUnit: number = pointWidth + gridSpacing;
-export const yUnit: number = pointHeight + gridSpacing;
+import { ZoomContext } from '@/context/zoom';
+import { BASE_STROKE_WIDTH } from '@/consts/grid';
 
 const defaultFrom = [0, -1];
 
@@ -24,10 +18,23 @@ const LineSvg: React.FC<Props> = ({
 	color,
 	xSize = 0,
 	ySize = 0,
-	baseWidth = pointWidth,
-	baseHeight = pointHeight,
+	baseWidth,
+	baseHeight,
 }) => {
+	const { zoomFactor, imgSize, gridSpacing, unit } = useContext(ZoomContext);
 	if (!from) return null;
+
+	// Apply zoom to all dimensions
+	const strokeWidth = BASE_STROKE_WIDTH * zoomFactor;
+	const strokeHalf = strokeWidth / 2;
+	const pointWidth = imgSize;
+	const pointHeight = imgSize;
+	const xUnit = unit;
+	const yUnit = unit;
+
+	// Use provided baseWidth/baseHeight or default to zoomed values
+	const zoomedBaseWidth = baseWidth ?? pointWidth;
+	const zoomedBaseHeight = baseHeight ?? pointHeight;
 
 	const x: number = from[0] || 0;
 	const y: number = from[1] || 0;
@@ -45,13 +52,13 @@ const LineSvg: React.FC<Props> = ({
 		left = strokeWidth;
 		translateX = '-100%';
 		if (xSize > 1) {
-			left += baseWidth / 4 + strokeHalf;
+			left += zoomedBaseWidth / 4 + strokeHalf;
 		}
 	} else if (x >= 1) {
 		right = strokeWidth;
 		translateX = '100%';
 		if (xSize > 1 && xGap > 0.5) {
-			right += baseWidth / 4 + strokeHalf;
+			right += zoomedBaseWidth / 4 + strokeHalf;
 		}
 	} else if (x == 0.5) {
 		translateX = `calc(50% - ${strokeHalf}px)`;
@@ -63,13 +70,13 @@ const LineSvg: React.FC<Props> = ({
 		top = strokeWidth;
 		translateY = '-100%';
 		if (ySize > 1 && yGap > 0) {
-			top += baseHeight / 4 + strokeHalf;
+			top += zoomedBaseHeight / 4 + strokeHalf;
 		}
 	} else if (y >= 1) {
 		bottom = strokeWidth;
 		translateY = '100%';
 		if (ySize > 1 && yGap > 0) {
-			bottom += baseHeight / 4 + strokeHalf;
+			bottom += zoomedBaseHeight / 4 + strokeHalf;
 		}
 	} else if (y == 0.5) {
 		translateY = `calc(50% - ${strokeHalf}px)`;
