@@ -22,7 +22,7 @@ import { defaultLicenceContext, LicenceProps, LicenseContext } from '@/context/l
 import { getDubbedSearchList } from '@/functions/search';
 import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
-import { DigimonContext, DigimonProvider } from '@/context/digimon';
+import { DigimonProvider } from '@/context/digimon';
 import { Digimon } from '@/types/Digimon';
 import { ZoomProvider } from '@/context/zoom';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
@@ -69,8 +69,8 @@ export const PageBuild = (props: BuildProps) => {
 		let editionState = edition;
 		let zoomState = zoom;
 		edit(false);
-		setZoom(150);
-		downloadImage(line, 150).then(() => {
+		setZoom(DEFAULT_ZOOM);
+		downloadImage(line, DEFAULT_ZOOM).then(() => {
 			edit(editionState);
 			setZoom(zoomState);
 		});

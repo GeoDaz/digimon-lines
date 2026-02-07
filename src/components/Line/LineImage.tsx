@@ -47,8 +47,6 @@ const LineImage: React.FC<Props> = ({
 	const [ratioHeight, setRatioHeight] = useState(1);
 	const [loadingStyle, setLoadingStyle] = useState({ opacity: 1, zIndex: 2 });
 
-	// Use zoomed dimensions only if default props are used (150)
-	// Otherwise respect explicit width/height props (for modals)
 	const zoomedWidth = zoomable ? imgSize : Number(width);
 	const zoomedHeight = zoomable ? imgSize : Number(height);
 
