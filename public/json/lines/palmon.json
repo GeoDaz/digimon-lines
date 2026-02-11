@@ -137,8 +137,8 @@
 			},
 			{ "name": "oleamon", "from": [0, -1], "color": "dark", "collapsable": false },
 			{
-				"name": "ceresmon",
-				"skins": ["ceresmon_bird"],
+				"name": "ceresmon_medium",
+				"skins": ["ceresmon"],
 				"from": [
 					[0, -1],
 					[-1, -1]
@@ -220,8 +220,8 @@
 			},
 			{ "name": "sirenmon", "collapsable": false },
 			{
-				"name": "ceresmon_bird",
-				"skins": ["ceresmon"],
+				"name": "ceresmon",
+				"skins": ["ceresmon_medium"],
 				"from": [
 					[0, -1],
 					[1, -1]
