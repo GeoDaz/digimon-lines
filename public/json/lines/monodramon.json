@@ -4,15 +4,8 @@
 			null,
 			null,
 			null,
-			{
-				"name": "raptordramon",
-				"from": [[1, -1]]
-			},
-			{
-				"name": "cyberdramon_x",
-				"color": ["x"],
-				"from": [[1, 0]]
-			},
+			{ "name": "raptordramon", "from": [[1, -1]] },
+			{ "name": "cyberdramon_x", "color": ["x"], "from": [[1, 0]] },
 			{
 				"name": "justimon_x",
 				"color": ["x", "x"],
@@ -20,173 +13,104 @@
 					[0, -1],
 					[1, 0]
 				]
-			}
+			},
+			null
 		],
 		[
-			{
-				"name": "ketomon",
-				"from": null
-			},
-			{
-				"name": "hopmon"
-			},
-			{
-				"name": "monodramon"
-			},
-			{
-				"name": "strikedramon"
-			},
-			{
-				"name": "cyberdramon"
-			},
+			{ "name": "ketomon", "from": null },
+			{ "name": "hopmon" },
+			{ "name": "monodramon" },
+			{ "name": "strikedramon" },
+			{ "name": "cyberdramon" },
 			{
 				"name": "justimon",
 				"color": ["human"],
 				"skins": ["justimon_critical_arm", "justimon_accel_arm"],
 				"from": [[0, -1]]
-			}
+			},
+			null
 		],
 		[
 			null,
 			null,
 			null,
 			null,
-			{
-				"name": "cyberdramon_2",
-				"from": [[-1, -1]],
-				"color": ["dark"]
-			},
+			{ "name": "cyberdramon_2", "from": [[-1, -1]], "color": ["dark"] },
 			{
 				"name": "darkdramon",
 				"from": [
 					[-1, -1],
-					[1, -1],
 					[0, -1]
 				],
-				"color": ["dark","dark","dark"]
-			}
+				"color": ["dark", "dark"]
+			},
+			null
 		],
 		[
 			null,
 			null,
 			null,
+			{ "name": "rhamphomon", "from": [[-2, -1]] },
 			{
-				"name": "rhamphomon",
-				"from": [[-2, -1]]
+				"name": "azhdarmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": ["dark", "dark"]
 			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "pteranomon", "from": [[-3, -1]] },
 			{
 				"name": "gigadramon",
-				"from": [[0, -1],[1, -1]],
-				"color": ["dark","dark"]
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"color": ["dark", "dark"]
 			},
-			{
-				"name": "heavymetaldramon",
-				"from": [[0, -1]],
-				"color": ["dark"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "pteranomon",
-				"from": [[-3, -1]]
-			},
-			{
-				"name": "maneuvermon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "machinedramon",
-				"from": [[-1, -1]],
-				"color": ["dark"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "pteranomon_x",
-				"from": [[-1, 0]],
-				"color": ["x"]
-			},
-			null,
-			{
-				"name": "chaosdramon",
-				"from": [[-2, -1]],
-				"color": ["dark"]
-			},
+			{ "name": "heavymetaldramon", "from": [[0, -1]], "color": ["dark"] },
 			null
 		],
 		[
 			null,
 			null,
 			null,
+			{ "name": "pteranomon_x", "from": [[-1, 0]], "color": ["x"] },
+			{ "name": "maneuvermon", "from": [[-1, -1]] },
+			{ "name": "machinedramon", "from": [[-1, -1]], "color": ["dark"] },
+			{ "name": "chaosdramon", "from": [[0, -1]], "color": ["dark"] }
+		],
+		[
 			null,
 			null,
-			{
-				"name": "chaosdramon_x",
-				"from": [[-1, 0]],
-				"color": ["x"]
-			},
-			null
+			null,
+			null,
+			null,
+			null,
+			{ "name": "chaosdramon_x", "from": [[-1, 0]], "color": ["x"] }
 		]
 	],
 	"related": [
-		{
-			"name": "greymon",
-			"for": "metalgreymon_blue"
-		},
-		{
-			"name": "jazamon",
-			"from": "pteranomon"
-		},
-		{
-			"name": "betamon",
-			"from": "gigadramon"
-		},
-		{
-			"name": "toyagumon",
-			"for": "machinedramon"
-		},
-		{
-			"name": "tyranomon",
-			"for": "chaosdramon"
-		},
-		{
-			"name": "commandramon",
-			"for": "darkdramon"
-		},
-		{
-			"name": "ultimatechaosmon",
-			"for": "chaosmon"
-		},
-		{
-			"name": "maquinamon",
-			"from": "maneuvermon"
-		},
-		{
-			"name": "dorumon",
-			"for": "raptordramon"
-		},
-		{
-			"name": "greymon",
-			"for": "flarelizardmon"
-		},
-		{
-			"name": "raidenmon",
-			"from": "justimon"
-		},
-		{
-			"name": "starmon",
-			"from": "justimon"
-		},
-		{
-			"name": "bearmon",
-			"for": "pandamon"
-		}
+		{ "name": "greymon", "for": "metalgreymon_blue" },
+		{ "name": "jazamon", "from": "pteranomon" },
+		{ "name": "betamon", "from": "gigadramon" },
+		{ "name": "toyagumon", "for": "machinedramon" },
+		{ "name": "tyranomon", "for": "chaosdramon" },
+		{ "name": "commandramon", "for": "darkdramon" },
+		{ "name": "ultimatechaosmon", "for": "chaosmon" },
+		{ "name": "maquinamon", "from": "maneuvermon" },
+		{ "name": "dorumon", "for": "raptordramon" },
+		{ "name": "greymon", "for": "flarelizardmon" },
+		{ "name": "raidenmon", "from": "justimon" },
+		{ "name": "starmon", "from": "justimon" },
+		{ "name": "bearmon", "for": "pandamon" }
 	],
-	"size": 6
+	"size": 7
 }
