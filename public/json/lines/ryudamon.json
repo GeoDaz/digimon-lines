@@ -1,78 +1,151 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "zanmetsumon",
-				"color": "fusion",
-				"from": [1, -1]
-			},
-			{
-				"name": "samudramon",
-				"from": [[0, -1]],
-				"color": ["x"]
-			},
-			{
-				"name": "samudramon_itto_mode",
-				"from": [[0, -1]],
-				"color": ["mode"]
-			}
-		],
-		[
-			{
-				"name": "fufumon"
-			},
-			{
-				"name": "kyokyomon"
-			},
-			{
-				"name": "ryudamon"
-			},
-			{
-				"name": "ginryumon"
-			},
-			{
-				"name": "hisyaryumon"
-			},
-			{
-				"name": "ouryumon"
-			},
-			{
-				"name": "alphamon_ouryuken",
-				"color": "fusion"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "majiramon",
-				"from": [-1, -1]
-			}
-		]
-	],
-	"related": [
-		{
-			"name": "dorumon",
-			"for": "alphamon"
-		},
-		"kotemon",
-		{
-			"name": "gammamon",
-			"from": "zanmetsumon"
-		},
-		{
-			"name": "greymon",
-			"from": "samudramon"
-		},
-		{
-			"name": "veemon",
-			"for": "azulongmon"
-		}
-	]
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "zanmetsumon",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "samudramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "x"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "samudramon_itto_mode",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "mode"
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            }
+        ],
+        [
+            {
+                "name": "fufumon",
+                "from": null,
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "kyokyomon",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "ryudamon",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "ginryumon",
+                "xCollapsable": true,
+                "yCollapsable": false
+            },
+            {
+                "name": "hisyaryumon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "ouryumon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "alphamon_ouryuken",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": true,
+                "yCollapsable": true
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "majiramon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "azulongmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "color": [
+                    "electric"
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "dorumon",
+            "for": "alphamon"
+        },
+        "kotemon",
+        {
+            "name": "gammamon",
+            "from": "zanmetsumon"
+        },
+        {
+            "name": "greymon",
+            "from": "samudramon"
+        },
+        {
+            "name": "veemon",
+            "for": "azulongmon"
+        }
+    ],
+    "size": 7
 }

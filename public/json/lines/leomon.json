@@ -18,12 +18,16 @@
 			null,
 			null,
 			null,
-			null,
-			null,
+			{
+				"name": "cougarmon",
+				"from": [[2, -1]]
+			},
+			{
+				"name": "murasamemon"
+			},
 			{
 				"name": "leopardmon",
 				"color": "light",
-				"from": [[2, -1]],
 				"skins": ["leopardmon_leopard_mode"]
 			},
 			null,
@@ -39,6 +43,10 @@
 			},
 			{
 				"name": "loaderliomon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
 				"color": "machine"
 			},
 			{
