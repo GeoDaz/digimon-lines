@@ -1,0 +1,241 @@
+{
+    "columns": [
+        [
+            {
+                "name": "chicomon",
+                "from": null,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "chibimon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "veemon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "gargoylemon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "manticoremon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "azulongmon",
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ],
+        [
+            {
+                "name": "bibimon",
+                "from": null,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "dokimon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "pulsemon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "runnermon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "mihiramon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "baihumon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "huanglongmon",
+                "xSize": 2,
+                "color": [
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -1.5,
+                        -1
+                    ],
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ],
+                    [
+                        1.5,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true
+            }
+        ],
+        [
+            {
+                "name": "puwamon",
+                "from": null,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "pinamon",
+                "color": [
+                    "default"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "falcomon",
+                "color": [
+                    "default"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "diatrymon",
+                "color": [
+                    "default"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "yatagaramon",
+                "color": [
+                    "default"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "zhuqiaomon",
+                "color": [
+                    "default"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "huanglongmon_rm",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "xCollapsable": false,
+                "yCollapsable": true,
+                "xSize": 2,
+                "color": [
+                    "dark"
+                ]
+            }
+        ],
+        [
+            {
+                "name": "zurumon",
+                "from": null,
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "pagumon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "gazimon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "deltamon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "orochimon",
+                "xCollapsable": false,
+                "yCollapsable": false
+            },
+            {
+                "name": "xuanwumon",
+                "xCollapsable": false,
+                "yCollapsable": true
+            },
+            null
+        ]
+    ],
+    "related": [
+        "veemon",
+        {
+            "name": "falcomon_2",
+            "for": "falcomon"
+        },
+        "pulsemon",
+        {
+            "name": "elizamon",
+            "for": "orochimon"
+        }
+    ],
+    "size": 7
+}
