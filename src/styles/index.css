@@ -1083,7 +1083,14 @@ a.line-point {
 	background-color: var(--bs-dark);
 	border: 1px solid var(--dl-snd-dark);
 	border-radius: var(--bs-border-radius);
-	overflow: hidden;
+	overflow: auto;
+	max-height: 500px;
+}
+
+@media (max-height: 650px) {
+	.search .previews {
+		max-height: 50vh;
+	}
 }
 
 .search .previews .preview {
