@@ -7,7 +7,6 @@ import { capitalize, makeClassName, unCapitalize } from '@/functions';
 import { Option } from '@/types/Ui';
 import { getSearchPriority } from '@/functions/search';
 
-const NB_PREVIEW = 10;
 interface Props {
 	onSubmit: Function;
 	voidOnSubmit?: boolean;
@@ -48,14 +47,14 @@ const SearchBar: React.FC<Props> = ({
 				setSelection(
 					selection === null
 						? 0
-						: selection == NB_PREVIEW - 1
+						: selection == previews.length - 1
 						? null
 						: selection + 1
 				);
 			} else if (e.key == 'ArrowUp') {
 				setSelection(
 					selection === null
-						? NB_PREVIEW - 1
+						? previews.length - 1
 						: selection === 0
 						? null
 						: selection - 1
@@ -81,7 +80,7 @@ const SearchBar: React.FC<Props> = ({
 					return result;
 				}, [] as any[]);
 				result.sort((a, b) => b.key - a.key);
-				setPreviews(result.slice(0, NB_PREVIEW));
+				setPreviews(result.slice(0, value.length > 3 ? 50 : 10));
 			}
 		} else if (previews.length > 0) {
 			setPreviews([]);
@@ -91,7 +90,7 @@ const SearchBar: React.FC<Props> = ({
 	const handleSubmit = (value: string | number | undefined = undefined) => {
 		setPreviews([]);
 		onSubmit(value || (search && unCapitalize(search)));
-		if (voidOnSubmit){
+		if (voidOnSubmit) {
 			setSearch('');
 		}
 	};
