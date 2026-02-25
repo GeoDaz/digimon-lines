@@ -121,7 +121,7 @@
 				"cockatrimon",
 				"akatorimon",
 				"diatrymon",
-				"thunderdramon",
+				"thunderbirdmon",
 				"xiquemon",
 				"mailbirdramon"
 			],
@@ -144,7 +144,7 @@
 				"zassoumon",
 				"kabukimon"
 			],
-			"from": ["tanamon", "yokomon", "budmon"]
+			"from": ["tanemon", "yokomon", "budmon"]
 		},
 		"toyagumon": {
 			"name": "toyagumon",
@@ -170,7 +170,7 @@
 			"variants": ["modokibetamon"],
 			"modes": ["betamon_x"],
 			"from": ["koromon"],
-			"to": ["seadramon", "airdramon", "landramon", "coealamon", "tylomon"]
+			"to": ["seadramon", "airdramon", "landramon", "coelamon", "tylomon"]
 		},
 		"gizamon": {
 			"name": "gizamon",
@@ -187,7 +187,7 @@
 				"deltamon",
 				"darktyranomon",
 				"devidramon",
-				"dobbermon"
+				"dobermon"
 			]
 		}
 	},
@@ -360,7 +360,7 @@
 		"metalgreymon_blue": {
 			"name": "metalgreymon_blue",
 			"variants": ["metalgreymon", "metalgreymon_blue_2", "skullgreymon"],
-			"to": ["wargreymon_black", "machinedramon", "chaosdramon"],
+			"to": ["black_wargreymon", "machinedramon", "chaosdramon"],
 			"from": ["greymon_blue", "greymon", "darklizardmon"]
 		},
 		"rizegreymon": {
@@ -373,7 +373,7 @@
 			"name": "skullgreymon",
 			"variants": ["metalgreymon", "metalgreymon_blue"],
 			"to": [
-				"wargreymon_black",
+				"black_wargreymon",
 				"machinedramon",
 				"chaosdramon",
 				"blitzgreymon",
@@ -417,7 +417,7 @@
 		"metalgreymon_blue_x": {
 			"name": "metalgreymon_blue_x",
 			"variants": ["metalgreymon_x"],
-			"to": ["wargreymon_black_x", "samudramon"],
+			"to": ["black_wargreymon_x", "samudramon"],
 			"from": ["metalgreymon_blue", "greymon_x"]
 		},
 		"rizegreymon_x": {
