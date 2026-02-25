@@ -385,14 +385,14 @@
 		"weregarurumon": {
 			"name": "weregarurumon",
 			"variants": ["weregarurumon_black"],
-			"to": ["metalgarurumon", "zeedgarurumon", "merukimon", "ancientgarurumon"],
+			"to": ["metalgarurumon", "zeedgarurumon", "mercurymon", "ancientgarurumon"],
 			"from": ["garurumon"]
 		},
 		"weregarurumon_black": {
 			"name": "weregarurumon_black",
 			"variants": ["weregarurumon"],
-			"to": ["metalgarurumon_black","merukimon","grandracmon","plutomon"],
-			"from": ["garurumon_black", "dobbermon","sangloupmon"]
+			"to": ["metalgarurumon_black","mercurymon","grandracmon","plutomon"],
+			"from": ["garurumon_black", "dobermon","sangloupmon"]
 		}
 	},
 	"Ultimate +": {
