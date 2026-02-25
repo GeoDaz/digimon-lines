@@ -38,7 +38,7 @@ const LineImage: React.FC<Props> = ({
 	height = BASE_IMG_SIZE,
 }) => {
 	const licence = useContext(LicenseContext)?.key || DIGIMON;
-	const { imgSize } = useContext(ZoomContext);
+	const { zoomFactor } = useContext(ZoomContext);
 	const getImgPath = imgPathByLicence[licence];
 	const [src, setSrc] = useState(() => path || getImgPath(name, type));
 	const [open, setOpen] = useState(false);
@@ -47,8 +47,8 @@ const LineImage: React.FC<Props> = ({
 	const [ratioHeight, setRatioHeight] = useState(1);
 	const [loadingStyle, setLoadingStyle] = useState({ opacity: 1, zIndex: 2 });
 
-	const zoomedWidth = zoomable ? imgSize : Number(width);
-	const zoomedHeight = zoomable ? imgSize : Number(height);
+	const zoomedWidth = zoomable ? Number(width) * zoomFactor : Number(width);
+	const zoomedHeight = zoomable ? Number(height) * zoomFactor : Number(height);
 
 	useEffect(() => {
 		if (path) {
