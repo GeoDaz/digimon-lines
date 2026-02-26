@@ -30,7 +30,11 @@
 				"from": [[0, -1]],
 				"color": ["fusion"]
 			},
-			null,
+			{
+				"name": "zanbamon",
+				"from": [[0, -1]],
+				"color": ["dark"]
+			},
 			null
 		],
 		[
@@ -109,11 +113,7 @@
 			null,
 			null,
 			null,
-			{
-				"name": "goatmon",
-				"from": [[-1.5, -1]],
-				"color": []
-			},
+			null,
 			{
 				"name": "chirinmon",
 				"from": [[-1, -1]],

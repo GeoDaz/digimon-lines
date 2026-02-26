@@ -38,7 +38,7 @@ const ListItem: React.FC<Props> = ({ digimon, hash }) => {
 					<CardHeader>
 						<div className="text-center">
 							<div className="d-inline-block position-relative">
-								<LineImage name={digimon.name} width={90} height={90} />
+								<LineImage name={digimon.name} width={90} height={90} zoomable={false} />
 							</div>
 						</div>
 						<h3 className="text-center mt-2">
@@ -93,7 +93,7 @@ const RelationItem: React.FC<{ name: string }> = ({ name }) => {
 	return (
 		<AnchorLink hash={name} key={name}>
 			<div className="d-inline-block position-relative">
-				<LineImage name={name} width={60} height={60} />
+				<LineImage name={name} width={60} height={60} zoomable={false} />
 			</div>
 			<span className="sr-only">
 				{capitalize(name)} {dubName && `/ ${capitalize(dubName)}`}
