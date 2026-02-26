@@ -1,3 +1,4 @@
+import { copyToClipboard } from '@/functions';
 import { createFile, downloadFile } from '@/functions/file';
 import { transformLine, prepareLineExport } from '@/functions/line';
 import { defaultLine } from '@/reducers/lineReducer';
@@ -8,10 +9,9 @@ const useDownloadCode = (line: Line, setLine: (line: Line) => void) => {
 	const [name, setName] = useState<string | undefined>();
 
 	const downloadCode = () => {
-		const file = createFile(
-			JSON.stringify(prepareLineExport(line)),
-			'application/json'
-		);
+		const json = JSON.stringify(prepareLineExport(line));
+		copyToClipboard(json);
+		const file = createFile(json, 'application/json');
 		downloadFile(file, (name || 'line') + '.json');
 	};
 	const uploadCode = (name: string, json: Line | null) => {
