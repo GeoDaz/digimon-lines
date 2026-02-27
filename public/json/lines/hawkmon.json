@@ -56,10 +56,10 @@
 			null,
 			null,
 			{
-				"name": "thunderbirdmon",
-				"from": [[2, -1]],
-				"skins": ["friendship", "rinkmon"],
-				"color": ["electric"]
+				"name": "sethmon",
+				"from": [[-1, 0]],
+				"skins": ["love"],
+				"color": ["dark"]
 			},
 			{
 				"name": "hippogriffomon",
@@ -142,10 +142,10 @@
 			null,
 			null,
 			{
-				"name": "allomon",
-				"skins": ["courage"],
+				"name": "thunderbirdmon",
 				"from": [[-2, -1]],
-				"color": ["fire"]
+				"skins": ["friendship", "rinkmon"],
+				"color": ["electric"]
 			},
 			{
 				"name": "jetsilphymon",
@@ -159,10 +159,10 @@
 			null,
 			null,
 			{
-				"name": "flybeemon",
-				"color": ["wind"],
-				"skins": ["knowledge"],
-				"from": [[-3, -1]]
+				"name": "allomon",
+				"skins": ["courage"],
+				"from": [[-3, -1]],
+				"color": ["fire"]
 			},
 			null,
 			null
@@ -172,10 +172,10 @@
 			null,
 			null,
 			{
-				"name": "moosemon",
-				"from": [[-4, -1]],
-				"skins": ["hope"],
-				"color": ["ice"]
+				"name": "flybeemon",
+				"color": ["wind"],
+				"skins": ["knowledge"],
+				"from": [[-4, -1]]
 			},
 			null,
 			null
@@ -197,8 +197,21 @@
 			null,
 			null,
 			{
-				"name": "orcamon",
+				"name": "moosemon",
 				"from": [[-6, -1]],
+				"skins": ["hope"],
+				"color": ["ice"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "orcamon",
+				"from": [[-7, -1]],
 				"skins": ["reliability"],
 				"color": ["marine"]
 			},

@@ -77,3 +77,17 @@ export const stringToKey = (string: string): string =>
 		.normalize('NFD')
 		.replace(/[\s\-_.'’:?%\u0300-\u036f]/g, '')
 		.toLowerCase();
+
+export const copyToClipboard = (content: string) => {
+	if (navigator.clipboard) {
+		navigator.clipboard.writeText(content);
+	} else {
+		const textarea = document.createElement('textarea');
+		textarea.style.display = 'none';
+		textarea.value = content;
+		document.body.appendChild(textarea);
+		textarea.select();
+		document.execCommand('copy');
+		document.body.removeChild(textarea);
+	}
+};
