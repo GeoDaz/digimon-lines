@@ -33,7 +33,7 @@ const ListItem: React.FC<Props> = ({ digimon, hash }) => {
 						'flex-grow-1',
 						hash == digimon.name || (hash == dubName && 'active-outline')
 					)}
-					style={{ width: '23rem' }}
+					style={{ width: '18.5rem' }}
 				>
 					<CardHeader>
 						<div className="text-center">
