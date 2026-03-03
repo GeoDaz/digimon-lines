@@ -6,6 +6,43 @@
 			null,
 			null,
 			{
+				"name": "velgrmon",
+				"from": [1, -1],
+				"color": "dark"
+			},
+			{
+				"name": "ornismon",
+				"from": [[0, -1], [1, -1]],
+				"color": ["dark", "dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "saberdramon",
+				"color": "dark",
+				"from": [2, -1]
+			},
+			{
+				"name": "karatenmon",
+				"color": "dark"
+			},
+			{
+				"name": "tengumon",
+				"from": [[0, -1]],
+				"color": ["dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
 				"name": "garudamon_x",
 				"color": ["x"],
 				"from": [[1, 0]]
@@ -42,39 +79,18 @@
 			null,
 			null,
 			{
-				"name": "saberdramon",
-				"color": "dark",
+				"name": "akatorimon",
+				"color": "fire",
 				"from": [-1, -1]
 			},
 			{
-				"name": "karatenmon",
-				"color": "dark"
+				"name": "sinduramon",
+				"color": "fire"
 			},
 			{
-				"name": "tengumon",
-				"from": [[0, -1]],
-				"color": ["dark"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "thunderbirdmon",
-				"from": [-2, -1],
-				"color": "electric"
-			},
-			{
-				"name": "velgrmon",
-				"from": [-1, -1],
-				"color": "dark"
-			},
-			{
-				"name": "ornismon",
-				"from": [[0, -1], [-1, -1]],
-				"color": ["dark", "dark"]
+				"name": "zhuqiaomon",
+				"color": ["fire", "fire"],
+				"from": [[-1, -1], [0, -1]]
 			},
 			null
 		],
@@ -102,25 +118,6 @@
 				"name": "aegisdramon",
 				"color": "fusion"
 			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "akatorimon",
-				"color": "fire",
-				"from": [-4, -1]
-			},
-			{
-				"name": "sinduramon",
-				"color": "fire"
-			},
-			{
-				"name": "zhuqiaomon",
-				"color": "fire"
-			},
-			null
 		]
 	],
 	"related": [
