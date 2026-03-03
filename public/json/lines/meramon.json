@@ -4,45 +4,27 @@
 			null,
 			null,
 			null,
-			{
-				"name": "meramon_x",
-				"color": ["x"],
-				"from": [[1.5, 0]]
-			},
 			null,
 			null,
+			{ "name": "beelzebumon_behemoth", "from": [[1, -1]], "color": ["dark"] },
 			null
 		],
 		[
-			{
-				"name": "mokumon",
-				"from": null,
-				"xSize": 2
-			},
-			{
-				"name": "demimeramon",
-				"color": "fire",
-				"xSize": 2
-			},
-			{
-				"name": "candlemon",
-				"color": "fire",
-				"xSize": 2
-			},
-			{
-				"name": "meramon",
-				"color": "fire",
-				"xSize": 2
-			},
-			{
-				"name": "deathmeramon",
-				"color": "dark",
-				"from": [[0.5, -1]]
-			},
-			{
-				"name": "boltmon",
-				"color": "electric"
-			},
+			null,
+			null,
+			null,
+			{ "name": "meramon_x", "color": ["x"], "from": [[1.5, 0]] },
+			{ "name": "deathmeramon", "from": [[1, -1]], "color": ["dark"] },
+			{ "name": "boltmon", "from": [[0, -1]], "color": ["electric"] },
+			null
+		],
+		[
+			{ "name": "mokumon", "from": null },
+			{ "name": "demimeramon", "from": null },
+			{ "name": "candlemon", "from": null },
+			{ "name": "meramon", "color": ["fire"], "from": [[0, -3]] },
+			{ "name": "bluemeramon", "color": ["ice"], "from": [[0, -1]] },
+			{ "name": "shroudmon", "color": ["fire"], "from": [[0, -1]] },
 			null
 		],
 		[
@@ -50,36 +32,15 @@
 			null,
 			null,
 			null,
-			{
-				"name": "bluemeramon",
-				"color": ["ice"],
-				"from": [[-0.5, -1]]
-			},
-			{
-				"name": "shroudmon",
-				"color": "fire"
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "asuramon",
-				"from": [[-1.5, -1]],
-				"color": ["fire"]
-			},
-			{
-				"name": "vulcanusmon",
-				"from": [[0, -1]],
-				"color": ["fire"]
-			},
+			{ "name": "asuramon", "from": [[-1, -1]], "color": ["fire"] },
+			{ "name": "vulcanusmon", "from": [[0, -1]], "color": ["fire"] },
 			{
 				"name": "nezhamon_crimson_mode",
-				"from": [[0, -1]],
-				"color": ["fusion"],
+				"from": [
+					[0, -1],
+					[-3, -1]
+				],
+				"color": ["fusion", "fusion"],
 				"skins": ["nezhamon"]
 			}
 		]
@@ -90,6 +51,8 @@
 		{ "name": "toyagumon", "for": "flarelizardmon" },
 		"vorvomon",
 		{ "name": "impmon", "for": "beelzebumon_behemoth" },
+		{ "name": "pulsemon", "for": "shroudmon" },
+		{ "name": "ogremon", "for": "boltmon" },
 		{ "name": "kotemon", "from": "asuramon" },
 		{ "name": "golemon", "from": "vulcanusmon" },
 		{ "name": "jellymon", "from": "vulcanusmon" },

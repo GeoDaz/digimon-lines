@@ -1,28 +1,15 @@
 {
 	"columns": [
 		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "name": "armamon", "from": [[1, -1]], "collapsable": false },
-			{
-				"name": "armamon_burst_mode",
-				"from": [[0, -1]],
-				"color": ["fusion"]
-			},
-			null,
-			null
-		],
-		[
 			{ "name": "ketomon", "from": null, "collapsable": true },
 			{ "name": "hopmon", "collapsable": true },
 			{ "name": "bemmon", "collapsable": true },
 			{ "name": "snatchmon", "collapsable": false },
 			{ "name": "destromon", "collapsable": false },
 			{ "name": "ragnamon", "collapsable": false },
-			{ "name": "gaiamon", "collapsable": false }
+			{ "name": "gaiamon", "collapsable": false },
+			null,
+			null
 		],
 		[
 			null,
@@ -34,16 +21,22 @@
 			null,
 			null,
 			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{ "name": "armamon", "from": [[-1, -1]] },
+			{ "name": "armamon_burst_mode", "from": [[0, -1]], "color": ["mode"] },
+			null,
+			null
 		]
 	],
 	"related": [
-		{
-			"name": "impmon",
-			"for": "barbamon"
-		},
-		{
-			"name": "betamon",
-			"for": "airdramon"
-		}
-	]
+		{ "name": "impmon", "for": "barbamon" },
+		{ "name": "betamon", "for": "airdramon" }
+	],
+	"size": 9
 }

@@ -3,147 +3,105 @@
 		[
 			null,
 			null,
-			null,
-			{
-				"name": "grumblemon",
-				"color": "earth",
-				"from": [2, -1]
-			},
-			{
-				"name": "gigasmon",
-				"color": "earth"
-			},
-			{
-				"name": "ancientvolcamon",
-				"color": "fire"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "ogremon_x",
-				"color": "x",
-				"from": [1, 0]
-			},
-			{
-				"name": "xingtianmon",
-				"from": [1, -1]
-			},
-			{
-				"name": "olegmon"
-			}
-		],
-		[
-			{
-				"name": "zurumon",
-				"from": null
-			},
-			{
-				"name": "pagumon",
-				"color": "dark"
-			},
-			{
-				"name": "goblimon"
-			},
-			{
-				"name": "ogremon"
-			},
-			{
-				"name": "rebellimon",
-				"color": "machine"
-			},
-			{
-				"name": "titamon"
-			},
-			{
-				"name": "titamon_skullbaluchimon",
-				"color": "fusion"
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "shamamon",
-				"from": [-1, -1]
-			},
-			{
-				"name": "fugamon"
-			},
-			{
-				"name": "digitamamon",
-				"from": [[-1, -1]]
-			},
-			{
-				"name": "devitamamon",
-				"from": [[0, -1]],
-				"color": ["dark"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "baromon",
-				"color": "fire",
-				"from": [-1, -1]
-			},
-			{
-				"name": "darumamon",
-				"from": [[0, -1]],
-				"color": ["fire"]
-			},
+			{ "name": "snowgoblimon", "from": [[3, -1]], "color": ["ice"] },
+			{ "name": "hyogamon", "from": [[0, -1]], "color": ["ice"] },
+			{ "name": "xingtianmon", "from": [[0, -1]] },
+			{ "name": "olegmon", "from": [[0, -1]], "color": ["gold"] },
 			null
 		],
 		[
 			null,
 			null,
-			{
-				"name": "snowgoblimon",
-				"color": "ice",
-				"from": [-3, -1]
-			},
-			{
-				"name": "hyogamon",
-				"color": "ice"
-			},
 			null,
+			{ "name": "grumblemon", "color": ["earth"], "from": [[2, -1]] },
+			{ "name": "gigasmon", "color": ["earth"], "from": [[0, -1]] },
+			{ "name": "ancientvolcamon", "color": ["fire"], "from": [[0, -1]] },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "ogremon_x", "color": ["x"], "from": [[1, 0]] },
+			{ "name": "digitamamon", "from": [[1, -1]] },
+			{ "name": "devitamamon", "from": [[0, -1]], "color": ["dark"] },
+			null
+		],
+		[
+			{ "name": "zurumon", "from": null },
+			{ "name": "pagumon", "color": ["dark"], "from": [[0, -1]] },
+			{ "name": "goblimon" },
+			{ "name": "ogremon" },
+			{ "name": "rebellimon", "color": ["machine"], "from": [[0, -1]] },
+			{
+				"name": "titamon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"color": ["dark", "dark"]
+			},
+			{ "name": "titamon_skullbaluchimon", "color": ["fusion"], "from": [[0, -1]] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "kinkakumon", "from": [[-1, -1]], "color": ["electric"] },
+			null,
+			{ "name": "boltmon", "from": [[-1, -1]], "color": ["electric"] },
+			null
+		],
+		[
+			null,
+			null,
+			{ "name": "shamamon", "from": [[-2, -1]] },
+			{ "name": "fugamon" },
+			{ "name": "karatenmon", "from": [[0, -1]], "color": ["dark"] },
+			{ "name": "tengumon", "from": [[0, -1]], "color": ["dark"] },
+			{ "name": "enmamon", "from": [[0, -1]], "color": ["fusion"] }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "asuramon", "from": [[1, -1]], "color": ["fire"] },
+			{ "name": "shroudmon", "from": [[0, -1]], "color": ["fire"] },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "baromon", "color": ["fire"], "from": [[-2, -1]] },
+			{ "name": "skullsatamon", "from": [[0, -1]], "color": ["dark"] },
+			{ "name": "barbamon", "from": [[0, -1]], "color": ["dark"] },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "darumamon", "from": [[-1, -1]], "color": ["fire"] },
+			{ "name": "barbamon_x", "from": [[-1, 0]], "color": ["x"] },
 			null
 		]
 	],
 	"related": [
-		{
-			"name": "tapirmon",
-			"from": "skullbaluchimon"
-		},
-		{
-			"name": "hyokomon",
-			"from": "digitamamon"
-		},
-		{
-			"name": "negamon",
-			"for": "deathmon"
-		},
-		{
-			"name": "golemon",
-			"from": "ancientvolcamon"
-		},
-		{
-			"name": "machmon",
-			"from": "rebellimon"
-		},
-		{
-			"name": "kakamon",
-			"from": "xingtianmon"
-		},
-		{
-			"name": "revolmon",
-			"for": "olegmon",
-			"from": "hookmon"
-		}
+		{ "name": "tapirmon", "from": "skullbaluchimon" },
+		{ "name": "hyokomon", "from": "digitamamon" },
+		{ "name": "machmon", "from": "rebellimon" },
+		"enmamon",
+		{ "name": "negamon", "for": "deathmon" },
+		{ "name": "meramon", "for": "boltmon" },
+		{ "name": "golemon", "from": "ancientvolcamon" },
+		{ "name": "kakamon", "from": "xingtianmon" },
+		{ "name": "revolmon", "for": "olegmon", "from": "hookmon" },
+		{ "name": "devimon", "from": "barbamon" },
+		{ "name": "biyomon", "from": "yatagaramon" },
+		{ "name": "falcomon_2", "from": "yatagaramon" }
 	],
-	"size": 6
+	"size": 7
 }
