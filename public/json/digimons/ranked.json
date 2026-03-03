@@ -51,7 +51,7 @@
 				"rurimon",
 				"commandramon",
 				"toyagumon",
-				"cleartoyagumon_black"
+				"cleartoyagumon"
 			],
 			"modes": ["agumon_x", "agumon_burst_mode", "agumon_yuki_no_kizuma"],
 			"from": ["koromon", "gigimon"],
@@ -130,7 +130,14 @@
 		"tentomon": {
 			"name": "tentomon",
 			"variants": ["kokabuterimon"],
-			"to": ["kabuterimon", "kuwagamon", "snimon", "ballistamon", "blitzmon"],
+			"to": [
+				"kabuterimon",
+				"kuwagamon",
+				"snimon",
+				"gokimon",
+				"ballistamon",
+				"blitzmon"
+			],
 			"from": ["minomon", "mochimon", "puroromon"]
 		},
 		"palmon": {
@@ -175,7 +182,7 @@
 		"gizamon": {
 			"name": "gizamon",
 			"from": ["koromon"],
-			"to": ["cyclomon", "seadramon"]
+			"to": ["cyclomon", "geremon", "seadramon", "coelamon", "gekomon"]
 		},
 		"gazimon": {
 			"name": "gazimon",
