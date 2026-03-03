@@ -53,7 +53,7 @@
 				"toyagumon",
 				"cleartoyagumon_black"
 			],
-			"modes": ["agumon_x", "agumon_yuki_no_kizuma"],
+			"modes": ["agumon_x", "agumon_burst_mode", "agumon_yuki_no_kizuma"],
 			"from": ["koromon", "gigimon"],
 			"to": [
 				"greymon",
@@ -242,7 +242,8 @@
 				"metalgreymon_blue",
 				"skullgreymon",
 				"burninggreymon",
-				"chimeramon"
+				"chimeramon",
+				"triceramon"
 			],
 			"from": ["agumon"]
 		},
@@ -494,11 +495,6 @@
 		}
 	},
 	"Mega+": {
-		"shinegreymon_burst_mode": {
-			"name": "shinegreymon_burst_mode",
-			"variants": ["shinegreymon_ruin_mode"],
-			"from": ["shinegreymon"]
-		},
 		"omegamon": {
 			"name": "omegamon",
 			"variants": [
@@ -513,6 +509,20 @@
 		"susanoomon": {
 			"name": "susanoomon",
 			"fusionFrom": ["emperorgreymon", "magnagarurumon"]
+		},
+		"agumon_burst_mode": {
+			"name": "agumon_burst_mode",
+			"from": ["agumon"]
+		},
+		"shinegreymon_burst_mode": {
+			"name": "shinegreymon_burst_mode",
+			"variants": ["shinegreymon_ruin_mode"],
+			"from": ["shinegreymon"]
+		},
+		"shinegreymon_ruin_mode": {
+			"name": "shinegreymon_ruin_mode",
+			"variants": ["shinegreymon_burst_mode"],
+			"from": ["shinegreymon"]
 		}
 	},
 	"Mega+ X": {
