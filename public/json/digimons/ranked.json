@@ -355,7 +355,13 @@
 				"rizegreymon",
 				"skullgreymon"
 			],
-			"to": ["wargreymon", "blitzgreymon", "victorygreymon", "ancientgreymon", "machinedramon"],
+			"to": [
+				"wargreymon",
+				"blitzgreymon",
+				"victorygreymon",
+				"ancientgreymon",
+				"machinedramon"
+			],
 			"from": ["greymon", "flarelizardmon"]
 		},
 		"metalgreymon_blue": {
@@ -392,8 +398,8 @@
 		"weregarurumon_black": {
 			"name": "weregarurumon_black",
 			"variants": ["weregarurumon"],
-			"to": ["metalgarurumon_black","mercurymon","grandracmon","plutomon"],
-			"from": ["garurumon_black", "dobermon","sangloupmon"]
+			"to": ["metalgarurumon_black", "mercurymon", "grandracmon", "plutomon"],
+			"from": ["garurumon_black", "dobermon", "sangloupmon"]
 		}
 	},
 	"Ultimate +": {
@@ -404,7 +410,7 @@
 		},
 		"weregarurumon_alter_mode": {
 			"name": "weregarurumon_alter_mode",
-			"to": ["metalgarurumon","cresgarurumon","zeedgarurumon"],
+			"to": ["metalgarurumon", "cresgarurumon", "zeedgarurumon"],
 			"from": ["weregarurumon"]
 		}
 	},
@@ -428,7 +434,7 @@
 		},
 		"weregarurumon_x": {
 			"name": "weregarurumon_x",
-			"to": ["metalgarurumon_x","fenriloogamon"],
+			"to": ["metalgarurumon_x", "fenriloogamon"],
 			"from": ["weregarurumon", "garurumon_x"]
 		}
 	},
@@ -457,16 +463,58 @@
 			"variants": ["black_wargreymon", "victorygreymon", "blitzgreymon"],
 			"modes": ["wargreymon_x"],
 			"to": ["omegamon"],
-			"from": ["metalgreymon", "wargrowlmon_orange"]
+			"from": ["metalgreymon", "metalgreymon_alter_mode", "wargrowlmon_orange"]
+		},
+		"black_wargreymon": {
+			"name": "black_wargreymon",
+			"variants": ["wargreymon"],
+			"modes": ["black_wargreymon_x", "samudramon"],
+			"to": ["omegamon_zwart"],
+			"from": ["metalgreymon_blue", "skullgreymon"]
+		},
+		"victorygreymon": {
+			"name": "victorygreymon",
+			"variants": ["wargreymon"],
+			"from": ["rizegreymon", "metalgreymon", "metalgreymon_alter_mode"]
+		},
+		"blitzgreymon": {
+			"name": "blitzgreymon",
+			"variants": ["wargreymon"],
+			"to": ["omegamon_alter_s"],
+			"from": ["metalgreymon", "metalgreymon_alter_mode", "rizegreymon"]
 		},
 		"shinegreymon": {
 			"name": "shinegreymon",
 			"modes": ["shinegreymon_burst_mode", "shinegreymon_ruin_mode"],
 			"from": ["rizegreymon"]
 		},
-		"ancientgreymon": {
-			"name": "ancientgreymon",
-			"from": ["burninggreymon", "aldamon", "metalgreymon", "rizegreymon"]
+		"metalgarurumon": {
+			"name": "metalgarurumon",
+			"variants": ["metalgarurumon_black", "zeedgarurumon", "cresgarurumon"],
+			"to": ["omegamon"],
+			"from": ["weregarurumon", "weregarurumon_alter_mode"]
+		},
+		"metalgarurumon_black": {
+			"name": "metalgarurumon_black",
+			"variants": ["metalgarurumon"],
+			"to": ["omegamon_zwart"],
+			"from": ["weregarurumon_black"]
+		},
+		"zeedgarurumon": {
+			"name": "zeedgarurumon",
+			"variants": ["metalgarurumon"],
+			"from": ["machgaogamon", "weregarurumon", "weregarurumon_alter_mode"]
+		},
+		"cresgarurumon": {
+			"name": "cresgarurumon",
+			"variants": ["metalgarurumon"],
+			"to": ["omegamon_alter_s"],
+			"from": ["weregarurumon", "weregarurumon_alter_mode"]
+		},
+		"miragegaogamon": {
+			"name": "miragegaogamon",
+			"to": ["miragegaogamon_burst_mode"],
+			"from": ["machagaogamon", "raijinludomon"]
 		},
 		"azulongmon": {
 			"name": "azulongmon",
@@ -478,11 +526,19 @@
 		},
 		"baihumon": {
 			"name": "baihumon",
-			"from": ["mihiramon","caturamon", "loaderliomon", "pajiramon"]
+			"from": ["mihiramon", "caturamon", "loaderliomon", "panjyamon"]
 		},
-		"ebonwumon": {
-			"name": "ebonwumon",
+		"xuanwumon": {
+			"name": "xuanwumon",
 			"from": ["orochimon", "cherrymon", "sandiramon", "sangomon"]
+		},
+		"ancientgreymon": {
+			"name": "ancientgreymon",
+			"from": ["burninggreymon", "aldamon", "metalgreymon", "rizegreymon"]
+		},
+		"ancientgarurumon": {
+			"name": "ancientgarurumon",
+			"from": ["kendogarurumon", "beowolfmon", "weregarurumon"]
 		}
 	},
 	"Mega X": {
@@ -506,7 +562,7 @@
 		},
 		"magnagarurumon": {
 			"name": "magnagarurumon",
-			"to": ["ancientgarurumon"],
+			"to": ["susanoomon"],
 			"from": ["beowolfmon"]
 		}
 	},
@@ -521,6 +577,17 @@
 			],
 			"modes": ["omegamon_x", "omegamon_merciful_mode"],
 			"fusionFrom": ["wargreymon", "metalgarurumon"]
+		},
+		"huanglongmon": {
+			"name": "huanglongmon",
+			"from": [
+				"azulongmon",
+				"zhuqiaomon",
+				"baihumon",
+				"xuanwumon",
+				"dinorexmon",
+				"spinomon"
+			]
 		},
 		"susanoomon": {
 			"name": "susanoomon",
@@ -539,6 +606,10 @@
 			"name": "shinegreymon_ruin_mode",
 			"variants": ["shinegreymon_burst_mode"],
 			"from": ["shinegreymon"]
+		},
+		"miragegaogamon_burst_mode": {
+			"name": "miragegaogamon_burst_mode",
+			"from": ["miragegaogamon"]
 		}
 	},
 	"Mega+ X": {
