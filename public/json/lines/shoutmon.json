@@ -7,7 +7,7 @@
 			null,
 			{ "name": "omegashoutmon_x", "from": [[1, 0]], "color": ["x"] },
 			{ "name": "armamon", "from": [[1, -1]] },
-			{ "name": "omegaarmamon", "from": [[0, -1]], "color": ["fusion"] },
+			{ "name": "armamon_burst_mode", "from": [[0, -1]], "color": ["fusion"] },
 			null
 		],
 		[
@@ -108,6 +108,7 @@
 		{ "name": "starmon", "for": "starmons" },
 		{ "name": "jazamon", "for": "sparrowmon" },
 		{ "name": "impmon", "for": "beelzebumon_2" },
+		{ "name": "impmon", "for": "barbamon" },
 		{ "name": "leomon", "for": "spadamon" },
 		{ "name": "pawnchessmon_white", "for": "darkknightmon" }
 	],
