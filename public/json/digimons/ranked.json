@@ -595,13 +595,7 @@
 			"name": "omegamon_zwart_defeat",
 			"modes": ["omegamon_zwart"],
 			"to": ["omegamon_alter_b"],
-			"variants": ["omegamon"],
-			"fusionFrom": [
-				"black_wargreymon",
-				"metalgarurumon_black",
-				"blitzgreymon",
-				"cresgarurumon"
-			]
+			"variants": ["omegamon"]
 		},
 		"omegamon_alter_s": {
 			"name": "omegamon_alter_s",
