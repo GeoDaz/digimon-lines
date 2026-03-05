@@ -577,24 +577,42 @@
 		"omegamon": {
 			"name": "omegamon",
 			"variants": [
-				"omegamon_alter_s",
 				"omegamon_zwart",
 				"omegamon_zwart_defeat",
+				"omegamon_alter_s",
 				"omegamon_alter_b"
 			],
 			"modes": ["omegamon_x", "omegamon_merciful_mode"],
 			"fusionFrom": ["wargreymon", "metalgarurumon"]
 		},
-		"huanglongmon": {
-			"name": "huanglongmon",
-			"from": [
-				"azulongmon",
-				"zhuqiaomon",
-				"baihumon",
-				"xuanwumon",
-				"dinorexmon",
-				"spinomon"
+		"omegamon_zwart": {
+			"name": "omegamon_zwart",
+			"modes": ["omegamon_zwart_defeat"],
+			"variants": ["omegamon", "omegamon_alter_b"],
+			"fusionFrom": ["black_wargreymon", "metalgarurumon_black"]
+		},
+		"omegamon_zwart_defeat": {
+			"name": "omegamon_zwart_defeat",
+			"modes": ["omegamon_zwart"],
+			"to": ["omegamon_alter_b"],
+			"variants": ["omegamon"],
+			"fusionFrom": [
+				"black_wargreymon",
+				"metalgarurumon_black",
+				"blitzgreymon",
+				"cresgarurumon"
 			]
+		},
+		"omegamon_alter_s": {
+			"name": "omegamon_alter_s",
+			"variants": ["omegamon", "omegamon_alter_b"],
+			"fusionFrom": ["blitzgreymon", "cresgarurumon"]
+		},
+		"omegamon_alter_b": {
+			"name": "omegamon_alter_b",
+			"variants": ["omegamon_alter_s", "omegamon", "omegamon_zwart"],
+			"from": ["omegamon_defeat"],
+			"fusionFrom": ["blitzgreymon", "cresgarurumon"]
 		},
 		"susanoomon": {
 			"name": "susanoomon",
@@ -617,6 +635,27 @@
 		"miragegaogamon_burst_mode": {
 			"name": "miragegaogamon_burst_mode",
 			"from": ["miragegaogamon"]
+		},
+		"chaosmon": {
+			"name": "chaosmon",
+			"modes": ["chaosmon_valdur_arm", "ultimatechaosmon"],
+			"fusionFrom": ["bancholeomon", "darkdramon"]
+		},
+		"chaosmon_valdur_arm": {
+			"name": "chaosmon_valdur_arm",
+			"modes": ["chaosmon", "ultimatechaosmon"],
+			"fusionFrom": ["bancholeomon", "valdurmon"]
+		},
+		"huanglongmon": {
+			"name": "huanglongmon",
+			"from": [
+				"azulongmon",
+				"zhuqiaomon",
+				"baihumon",
+				"xuanwumon",
+				"dinorexmon",
+				"spinomon"
+			]
 		}
 	},
 	"Mega+ X": {
@@ -659,6 +698,11 @@
 				"beelzebumon",
 				"leviamon"
 			]
+		},
+		"ultimatechaosmon": {
+			"name": "ultimatechaosmon",
+			"modes": ["chaosmon", "chaosmon_valdur_arm"],
+			"fusionFrom": ["bancholeomon", "darkdramon", "valdurmon", "kentaurosmon"]
 		}
 	},
 	"Ultra X": {
