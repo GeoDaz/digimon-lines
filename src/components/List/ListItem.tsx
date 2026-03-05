@@ -80,7 +80,7 @@ const RelationList: React.FC<{ title: string; relations: string[] | undefined }>
 			style={{
 				backgroundColor: 'var(--bs-card-cap-bg)',
 				border: 'var(--bs-card-border-width) solid var(--bs-card-border-color)',
-				maxWidth: 'calc(60px * 3 + 0.5rem * 2)',
+				maxWidth: 'calc(60px * 3 + 0.5rem * 4)',
 			}}
 		>
 			<strong className="d-block mb-1">{title}&nbsp;:</strong>
