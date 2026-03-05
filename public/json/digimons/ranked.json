@@ -611,7 +611,7 @@
 		"omegamon_alter_b": {
 			"name": "omegamon_alter_b",
 			"variants": ["omegamon_alter_s", "omegamon", "omegamon_zwart"],
-			"from": ["omegamon_defeat"],
+			"from": ["omegamon_zwart_defeat"],
 			"fusionFrom": ["blitzgreymon", "cresgarurumon"]
 		},
 		"susanoomon": {
@@ -635,6 +635,14 @@
 		"miragegaogamon_burst_mode": {
 			"name": "miragegaogamon_burst_mode",
 			"from": ["miragegaogamon"]
+		},
+		"rosemon_burst_mode": {
+			"name": "rosemon_burst_mode",
+			"from": ["rosemon"]
+		},
+		"ravemon_burst_mode": {
+			"name": "ravemon_burst_mode",
+			"from": ["ravemon"]
 		},
 		"chaosmon": {
 			"name": "chaosmon",
