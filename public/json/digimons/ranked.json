@@ -161,7 +161,7 @@
 				"revolmon",
 				"omekamon",
 				"tankmon",
-				"assaultmon",
+				"centarumon",
 				"flarelizardmon",
 				"tyranomon"
 			]
@@ -604,7 +604,7 @@
 		},
 		"omegamon_alter_b": {
 			"name": "omegamon_alter_b",
-			"variants": ["omegamon_alter_s", "omegamon", "omegamon_zwart"],
+			"variants": ["omegamon_alter_s", "omegamon_zwart", "omegamon"],
 			"from": ["omegamon_zwart_defeat"],
 			"fusionFrom": ["blitzgreymon", "cresgarurumon"]
 		},

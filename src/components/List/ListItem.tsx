@@ -38,7 +38,12 @@ const ListItem: React.FC<Props> = ({ digimon, hash }) => {
 					<CardHeader>
 						<div className="text-center">
 							<div className="d-inline-block position-relative">
-								<LineImage name={digimon.name} width={90} height={90} zoomable={false} />
+								<LineImage
+									name={digimon.name}
+									width={90}
+									height={90}
+									zoomable={false}
+								/>
 							</div>
 						</div>
 						<h3 className="text-center mt-2">
@@ -75,6 +80,7 @@ const RelationList: React.FC<{ title: string; relations: string[] | undefined }>
 			style={{
 				backgroundColor: 'var(--bs-card-cap-bg)',
 				border: 'var(--bs-card-border-width) solid var(--bs-card-border-color)',
+				maxWidth: 'calc(60px * 3 + 0.5rem * 2)',
 			}}
 		>
 			<strong className="d-block mb-1">{title}&nbsp;:</strong>
