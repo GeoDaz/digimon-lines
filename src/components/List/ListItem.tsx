@@ -43,6 +43,7 @@ const ListItem: React.FC<Props> = ({ digimon, hash }) => {
 									width={90}
 									height={90}
 									zoomable={false}
+									expandable={true}
 								/>
 							</div>
 						</div>

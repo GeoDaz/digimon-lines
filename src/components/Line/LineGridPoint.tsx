@@ -13,23 +13,19 @@ const LineGridPoint: React.FC<{
 }> = ({ point, coord }) => {
 	const { handleEdit } = useContext(GridContext);
 
-	const handleEditBuffer = (e: any) => {
-		handleEdit && handleEdit(coord);
-	};
-
 	const editable = !!handleEdit;
 	if (!point) {
 		return (
 			<div
 				className={makeClassName('line-point', editable && 'editable')}
-				onClick={editable ? handleEditBuffer : undefined}
+				onClick={editable ? () => handleEdit(coord) : undefined}
 			/>
 		);
 	}
 	return (
 		<LinePoint
 			point={point}
-			handleEdit={editable ? handleEditBuffer : undefined}
+			handleEdit={editable ? () => handleEdit(coord) : undefined}
 			coord={coord}
 		/>
 	);
