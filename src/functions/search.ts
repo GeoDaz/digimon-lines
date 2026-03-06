@@ -1,6 +1,7 @@
 import { StringObject } from '@/types/Ui';
 import { stringToKey } from '.';
 import Search from '@/types/Search';
+import { getDirPaths } from './file';
 
 export const getSearchPriority = (search: string, name: string): number | null => {
 	if (!search.startsWith('app')) {
@@ -39,8 +40,14 @@ export const getDubbedSearchList = (
 
 			// map when there is a name like current name + something and the dub name + something not exists, so create it
 			baseSearchList.forEach(subName => {
-				if (subName != name && !dubList[subName] && subName.startsWith(name)) {
+				if (
+					subName != name &&
+					!dubList[subName] &&
+					subName.match(`${name}_|_${name}`)
+				) {
 					const subDubName = subName.replace(name, dubName);
+					dubList[subName] = subDubName;
+					console.log({ worked: dubList[subName] });
 					result.mapped[subDubName] = subName;
 					result.keys.push(subDubName);
 				}
@@ -53,4 +60,28 @@ export const getDubbedSearchList = (
 			keys: baseSearchList.slice(),
 		} as Search
 	);
+};
+
+export const getDubNames = () => {
+	let dubNames: StringObject = require('../../public/json/dubnames.json');
+	dubNames = {
+		...dubNames,
+		...Object.fromEntries(Object.entries(dubNames).map(([k, v]) => [v, k])),
+	};
+	const nameList: string[] = getDirPaths('images/digimon');
+	nameList.forEach(name => {
+		const dubName = dubNames[name];
+		if (!dubName) return;
+		nameList.forEach(subName => {
+			if (
+				subName != name &&
+				!dubNames[subName] &&
+				subName.match(`${name}_|_${name}`)
+			) {
+				const subDubName = subName.replace(name, dubName);
+				dubNames[subName] = subDubName;
+			}
+		});
+	});
+	return dubNames;
 };

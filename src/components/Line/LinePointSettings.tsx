@@ -10,6 +10,7 @@ import colors, { legend } from '@/consts/colors';
 import UploadImage from '../UploadImage';
 import InputMono from '../InputMono';
 import { LicenseContext } from '@/context/license';
+import { DigimonContext } from '@/context/digimon';
 import { capitalize, makeClassName } from '@/functions';
 import ButtonRemove from '../Button/ButtonRemove';
 
@@ -28,6 +29,7 @@ const LinePointSettings: React.FC<Props> = ({
 	const ref = useRef<HTMLInputElement>(null);
 	const { handleUpdate } = useContext(GridContext);
 	const licenceName = useContext(LicenseContext).name;
+	const { dubNames } = useContext(DigimonContext);
 
 	useEffect(() => {
 		if (show) {
@@ -194,11 +196,13 @@ const LinePointSettings: React.FC<Props> = ({
 								/>
 								<div className="d-flex flex-wrap gap-3">
 									{point.skins?.map((skin, i) => (
-										<h5
-											key={i}
-											className="text-capitalize break-word"
-										>
-											{capitalize(skin)}{' '}
+									<h5
+										key={i}
+										className="text-capitalize break-word"
+									>
+										{capitalize(skin)}
+										{dubNames[skin] &&
+											` / ${capitalize(dubNames[skin])}`}{' '}
 											<ButtonRemove
 												onClick={() => handleRemoveSkin(i)}
 												title="remove skin"
@@ -221,10 +225,14 @@ const ImagePoint: React.FC<{
 	handleRemove: MouseEventHandler<HTMLElement>;
 	handleMirror: MouseEventHandler<HTMLElement>;
 	imgClassName?: string;
-}> = ({ className, point, handleRemove, handleMirror, imgClassName }) => (
+}> = ({ className, point, handleRemove, handleMirror, imgClassName }) => {
+	const { dubNames } = useContext(DigimonContext);
+	const dubName = dubNames[point.name];
+	return (
 	<div className={className}>
 		<h4 className="text-capitalize break-word mb-3">
-			{capitalize(point.name)}{' '}
+			{capitalize(point.name)}
+			{dubName && ` / ${capitalize(dubName)}`}{' '}
 			<ButtonRemove onClick={handleRemove} title="remove digimon" />{' '}
 			<Button title="mirror mode" onClick={handleMirror}>
 				<Icon name="symmetry-vertical" />
@@ -258,7 +266,8 @@ const ImagePoint: React.FC<{
 			</div>
 		</div>
 	</div>
-);
+	);
+};
 
 const SettingFroms: React.FC<{
 	point: LinePoint;

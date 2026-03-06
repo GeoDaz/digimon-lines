@@ -25,6 +25,7 @@ import { DigimonContext, DigimonProvider } from '@/context/digimon';
 import { StringObject } from '@/types/Ui';
 import { ZoomProvider } from '@/context/zoom';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
+import { getDubNames } from '@/functions/search';
 
 const NAME = 'name';
 const defaultObject: any = {};
@@ -208,11 +209,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	const digimons: {
 		[key: string]: Digimon;
 	} = require('../../../public/json/digimons/index.json');
-	let dubNames: StringObject = require('../../../public/json/dubnames.json');
-	dubNames = {
-		...dubNames,
-		...Object.fromEntries(Object.entries(dubNames).map(([k, v]) => [v, k])),
-	};
+	const dubNames: StringObject = getDubNames();
 
 	let prev = null;
 	let next = null;
