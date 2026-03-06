@@ -202,7 +202,7 @@
 		"agumon_x": {
 			"name": "agumon_x",
 			"variants": ["agumon_black_x"],
-			"to": ["greymon_x", "tyranomon_x"],
+			"to": ["greymon_x", "tyranomon_x", "raptordramon"],
 			"from": ["agumon"]
 		},
 		"agumon_black_x": {
@@ -213,7 +213,7 @@
 		},
 		"gabumon_x": {
 			"name": "gabumon_x",
-			"to": ["garurumon_x"],
+			"to": ["garurumon_x", "loogarmon"],
 			"from": ["gabumon"]
 		},
 		"palmon_x": {
@@ -225,13 +225,28 @@
 	"Hybrid I": {
 		"flamon": {
 			"name": "flamon",
-			"to": ["agunimon"],
-			"from": ["sunmon"]
+			"to": ["agunimon", "burninggreymon"],
+			"from": ["sunmon", "koromon", "gigimon"]
 		},
 		"strabimon": {
 			"name": "strabimon",
-			"to": ["wolfmon"],
+			"to": ["wolfmon", "kendogarurumon"],
 			"from": ["moonmon", "wanyamon", "bowmon"]
+		},
+		"tinkermon": {
+			"name": "tinkermon",
+			"to": ["fairymon", "shutumon", "hudiemon", "butterflamon", "petermon"],
+			"from": ["puroromon"]
+		},
+		"kokabuterimon": {
+			"name": "kokabuterimon",
+			"to": ["blitzmon", "bolgmon", "ballistamon"],
+			"from": ["mochimon", "minomon"]
+		},
+		"lucemon": {
+			"name": "lucemon",
+			"to": ["lucemon_falldown_mode"],
+			"from": ["cupimon"]
 		}
 	},
 	"Champion": {
