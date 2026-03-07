@@ -19,7 +19,7 @@ import { areCollapsablePoints } from '@/functions/line';
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
 import { defaultLicenceContext, LicenceProps, LicenseContext } from '@/context/license';
-import { getDubbedSearchList } from '@/functions/search';
+import { getDubbedSearchList, getDubNames } from '@/functions/search';
 import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
 import { DigimonProvider } from '@/context/digimon';
@@ -170,16 +170,11 @@ export const PageBuild = (props: BuildProps) => {
 
 export const getStaticProps: GetStaticProps = async () => {
 	const context: LicenceProps = defaultLicenceContext;
-	try {
-		let dubNames: StringObject = require('../../../public/json/dubnames.json');
-		dubNames = {
-			...dubNames,
-			...Object.fromEntries(Object.entries(dubNames).map(([k, v]) => [v, k])),
-		};
-
+	try {	
 		const digimons: {
 			[key: string]: Digimon;
 		} = require('../../../public/json/digimons/index.json');
+		const dubNames = getDubNames();
 		const searchList: string[] = getDirPaths('images/digimon');
 		const search: Search = getDubbedSearchList(searchList, dubNames);
 		return { props: { search, context, digimons, dubNames } };
