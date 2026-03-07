@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Button, Modal, Form, Row, Col } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import SearchBar from '@/components/SearchBar';
@@ -8,14 +8,26 @@ import { DigimonContext } from '@/context/digimon';
 import ButtonRemove from '../Button/ButtonRemove';
 import LineImage from '../Line/LineImage';
 
+export interface EditData {
+	level: string;
+	digimon: DigimonItem;
+}
+
 interface Props {
 	show: boolean;
 	handleClose: () => void;
-	onSubmit: (level: string, item: DigimonItem) => void;
+	onSubmit: (level: string, item: DigimonItem, originalName?: string) => void;
 	levels: string[];
+	editData?: EditData | null;
 }
 
-const AddDigimonModal: React.FC<Props> = ({ show, handleClose, onSubmit, levels }) => {
+const DigimonModal: React.FC<Props> = ({
+	show,
+	handleClose,
+	onSubmit,
+	levels,
+	editData,
+}) => {
 	const { dubNames } = useContext(DigimonContext);
 	const [level, setLevel] = useState<string>('');
 	const [name, setName] = useState<string>('');
@@ -24,6 +36,22 @@ const AddDigimonModal: React.FC<Props> = ({ show, handleClose, onSubmit, levels 
 	const [from, setFrom] = useState<string[]>([]);
 	const [fusionFrom, setFusionFrom] = useState<string[]>([]);
 	const [to, setTo] = useState<string[]>([]);
+
+	const isEditMode = !!editData;
+
+	useEffect(() => {
+		if (editData) {
+			setLevel(editData.level);
+			setName(editData.digimon.name);
+			setVariants(editData.digimon.variants || []);
+			setModes(editData.digimon.modes || []);
+			setFrom(editData.digimon.from || []);
+			setFusionFrom(editData.digimon.fusionFrom || []);
+			setTo(editData.digimon.to || []);
+		} else {
+			resetForm();
+		}
+	}, [editData, show]);
 
 	const resetForm = () => {
 		setLevel('');
@@ -45,7 +73,8 @@ const AddDigimonModal: React.FC<Props> = ({ show, handleClose, onSubmit, levels 
 		if (fusionFrom.length) item.fusionFrom = fusionFrom;
 		if (to.length) item.to = to;
 
-		onSubmit(level, item);
+		const originalName = isEditMode ? editData.digimon.name : undefined;
+		onSubmit(level, item, originalName);
 		resetForm();
 		handleClose();
 	};
@@ -83,12 +112,14 @@ const AddDigimonModal: React.FC<Props> = ({ show, handleClose, onSubmit, levels 
 	return (
 		<Modal show={show} onHide={handleCancel} size="lg">
 			<Modal.Header closeButton>
-				<Modal.Title>Add a Digimon to the list</Modal.Title>
+				<Modal.Title>
+					{isEditMode ? 'Edit Digimon' : 'Add a Digimon to the list'}
+				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
 				<Form>
-					<Row>
-						<Col md={12}>
+					<Row style={{ rowGap: '1em' }}>
+						<Col md={12} className="gap-2">
 							<h5>Level</h5>
 							<Form.Select
 								value={level}
@@ -103,21 +134,23 @@ const AddDigimonModal: React.FC<Props> = ({ show, handleClose, onSubmit, levels 
 								))}
 							</Form.Select>
 						</Col>
-						<Col md={6}>
+						<Col md={6} className="gap-2">
 							<h5>Name</h5>
 							<SearchBar
 								label="Search a Digimon"
 								onSubmit={handleSelectName}
 							/>
 							{name && (
-								<SelectedDigimon
-									name={name}
-									dubNames={dubNames}
-									onRemove={() => setName('')}
-								/>
+								<div className="d-flex flex-wrap gap-2">
+									<SelectedDigimon
+										name={name}
+										dubNames={dubNames}
+										onRemove={() => setName('')}
+									/>
+								</div>
 							)}
 						</Col>
-						<Col md={6}>
+						<Col md={6} className="gap-2">
 							<ArrayField
 								title="Variants"
 								items={variants}
@@ -128,7 +161,7 @@ const AddDigimonModal: React.FC<Props> = ({ show, handleClose, onSubmit, levels 
 								}
 							/>
 						</Col>
-						<Col md={6}>
+						<Col md={6} className="gap-2">
 							<ArrayField
 								title="Modes"
 								items={modes}
@@ -137,7 +170,7 @@ const AddDigimonModal: React.FC<Props> = ({ show, handleClose, onSubmit, levels 
 								onRemove={i => handleRemoveFromArray(setModes, modes, i)}
 							/>
 						</Col>
-						<Col md={6}>
+						<Col md={6} className="gap-2">
 							<ArrayField
 								title="From"
 								items={from}
@@ -146,7 +179,7 @@ const AddDigimonModal: React.FC<Props> = ({ show, handleClose, onSubmit, levels 
 								onRemove={i => handleRemoveFromArray(setFrom, from, i)}
 							/>
 						</Col>
-						<Col md={6}>
+						<Col md={6} className="gap-2">
 							<ArrayField
 								title="To"
 								items={to}
@@ -155,7 +188,7 @@ const AddDigimonModal: React.FC<Props> = ({ show, handleClose, onSubmit, levels 
 								onRemove={i => handleRemoveFromArray(setTo, to, i)}
 							/>
 						</Col>
-						<Col md={6}>
+						<Col md={6} className="gap-2">
 							<ArrayField
 								title="Fusion From"
 								items={fusionFrom}
@@ -192,10 +225,8 @@ const SelectedDigimon: React.FC<{
 }> = ({ name, dubNames, onRemove }) => {
 	const dubName = dubNames[name];
 	return (
-		<div
-			className="d-flex align-items-center gap-3 mb-3 p-2 rounded border position-relative"
-		>
-			<LineImage name={name} width={60} height={60} zoomable={false} />
+		<div className="d-flex align-items-center gap-2 p-2 rounded position-relative border">
+			<LineImage name={name} width={40} height={40} zoomable={false} />
 			<span className="text-capitalize">
 				{capitalize(name)}
 				{dubName && ` / ${capitalize(dubName)}`}
@@ -211,36 +242,23 @@ const ArrayField: React.FC<{
 	dubNames: Record<string, string>;
 	onAdd: (name: string) => void;
 	onRemove: (index: number) => void;
-}> = ({ title, items, dubNames, onAdd, onRemove }) => {
-	return (
-		<div>
-			<h5>{title}</h5>
-			<SearchBar label="Search a Digimon" onSubmit={onAdd} voidOnSubmit />
-			{items.length > 0 && (
-				<div className="d-flex flex-wrap gap-2 mt-2">
-					{items.map((item, i) => (
-						<div
-							key={i}
-							className="d-flex align-items-center gap-2 p-2 rounded position-relative"
-							style={{ backgroundColor: 'var(--bs-tertiary-bg)' }}
-						>
-							<LineImage
-								name={item}
-								width={40}
-								height={40}
-								zoomable={false}
-							/>
-							<span className="text-capitalize">
-								{capitalize(item)}
-								{dubNames[item] && ` / ${capitalize(dubNames[item])}`}
-							</span>
-							<ButtonRemove onClick={() => onRemove(i)} title="Retirer" />
-						</div>
-					))}
-				</div>
-			)}
-		</div>
-	);
-};
+}> = ({ title, items, dubNames, onAdd, onRemove }) => (
+	<div>
+		<h5>{title}</h5>
+		<SearchBar label="Search a Digimon" onSubmit={onAdd} voidOnSubmit />
+		{items.length > 0 && (
+			<div className="d-flex flex-wrap gap-2">
+				{items.map((item, i) => (
+					<SelectedDigimon
+						key={i}
+						name={item}
+						dubNames={dubNames}
+						onRemove={() => onRemove(i)}
+					/>
+				))}
+			</div>
+		)}
+	</div>
+);
 
-export default AddDigimonModal;
+export default DigimonModal;

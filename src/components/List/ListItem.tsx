@@ -2,15 +2,17 @@ import { DigimonContext } from '@/context/digimon';
 import { capitalize, makeClassName } from '@/functions';
 import { DigimonItem } from '@/types/Digimon';
 import React, { useContext } from 'react';
-import { Card, CardBody, CardHeader } from 'react-bootstrap';
+import { Button, Card, CardBody, CardHeader } from 'react-bootstrap';
 import LineImage from '../Line/LineImage';
 import AnchorLink from '../AnchorLink';
+import Icon from '../Icon';
 
 interface Props {
 	digimon: DigimonItem;
 	hash?: string;
+	onEdit?: (digimon: DigimonItem) => void;
 }
-const ListItem: React.FC<Props> = ({ digimon, hash }) => {
+const ListItem: React.FC<Props> = ({ digimon, hash, onEdit }) => {
 	const { dubNames } = useContext(DigimonContext);
 	const dubName = dubNames[digimon.name];
 	return (
@@ -30,12 +32,23 @@ const ListItem: React.FC<Props> = ({ digimon, hash }) => {
 			>
 				<Card
 					className={makeClassName(
-						'flex-grow-1',
+						'flex-grow-1 position-relative',
 						hash == digimon.name || (hash == dubName && 'active-outline')
 					)}
 					style={{ width: '18.5rem' }}
 				>
 					<CardHeader>
+						{onEdit && (
+							<Button
+								variant="secondary"
+								size="sm"
+								className="position-absolute top-0 end-0 m-2"
+								onClick={() => onEdit(digimon)}
+								title="Edit"
+							>
+								<Icon name="pencil-fill" />
+							</Button>
+						)}
 						<div className="text-center">
 							<div className="d-inline-block position-relative">
 								<LineImage

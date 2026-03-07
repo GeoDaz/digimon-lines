@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout';
 import ListItem from '@/components/List/ListItem';
-import AddDigimonModal from '@/components/List/AddDigimonModal';
+import DigimonModal, { EditData } from '@/components/List/AddDigimonModal';
 import SearchBar from '@/components/SearchBar';
 import { stringToKey } from '@/functions';
 import useHash from '@/hooks/useHash';
@@ -31,7 +31,8 @@ const PageList: React.FC<Props> = props => {
 	const defaultList: DigimonList = props.list || defaultObject;
 	const [list, setList] = useState<DigimonList>(defaultList);
 	const [search, setSearch] = useState<string>();
-	const [showAddModal, setShowAddModal] = useState(false);
+	const [showModal, setShowModal] = useState(false);
+	const [editData, setEditData] = useState<EditData | null>(null);
 	const hash = useHash();
 
 	useEffect(() => {
@@ -74,28 +75,52 @@ const PageList: React.FC<Props> = props => {
 		setSearch(sanitizedSearch);
 	};
 
-	const handleAddDigimon = async (level: string, item: DigimonItem) => {
+	const handleSubmitDigimon = async (level: string, item: DigimonItem, originalName?: string) => {
 		try {
-			const response = await fetch('/api/add-digimon', {
+			const isEdit = !!originalName;
+			const endpoint = isEdit ? '/api/update-digimon' : '/api/add-digimon';
+			const body = isEdit
+				? { level, digimon: item, originalName }
+				: { level, digimon: item };
+
+			const response = await fetch(endpoint, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ level, digimon: item }),
+				body: JSON.stringify(body),
 			});
-			const data = await response.json();
 
 			if (!response.ok) return;
 
-			setList((prev) => ({
-				...prev,
-				[level]: {
-					...prev[level],
+			setList((prev) => {
+				const updated = { ...prev };
+				if (isEdit && originalName !== item.name && updated[level]) {
+					delete updated[level][originalName];
+				}
+				updated[level] = {
+					...updated[level],
 					[item.name]: item,
-				},
-			}));
+				};
+				return updated;
+			});
 
 		} catch (error) {
-			console.error('Failed to add digimon:', error);
+			console.error('Failed to save digimon:', error);
 		}
+	};
+
+	const handleEditDigimon = (level: string, digimon: DigimonItem) => {
+		setEditData({ level, digimon });
+		setShowModal(true);
+	};
+
+	const handleCloseModal = () => {
+		setShowModal(false);
+		setEditData(null);
+	};
+
+	const handleOpenAddModal = () => {
+		setEditData(null);
+		setShowModal(true);
 	};
 
 	return (
@@ -117,7 +142,7 @@ const PageList: React.FC<Props> = props => {
 							<Button
 								variant="primary"
 								className="mb-3"
-								onClick={() => setShowAddModal(true)}
+								onClick={handleOpenAddModal}
 							>
 								<Icon name="plus" /> Add a Digimon
 							</Button>
@@ -128,17 +153,27 @@ const PageList: React.FC<Props> = props => {
 							<h2 className="mb-4">{level}</h2>
 							<div className="d-flex flex-wrap gap-3">
 								{Object.entries(digimons).map(([name, digimon]) => (
-									<ListItem key={name} digimon={digimon} hash={hash} />
+									<ListItem
+										key={name}
+										digimon={digimon}
+										hash={hash}
+										onEdit={
+											process.env.NODE_ENV === 'development'
+												? () => handleEditDigimon(level, digimon)
+												: undefined
+										}
+									/>
 								))}
 							</div>
 						</div>
 					))}
 					{process.env.NODE_ENV === 'development' && (
-						<AddDigimonModal
-							show={showAddModal}
-							handleClose={() => setShowAddModal(false)}
-							onSubmit={handleAddDigimon}
+						<DigimonModal
+							show={showModal}
+							handleClose={handleCloseModal}
+							onSubmit={handleSubmitDigimon}
 							levels={Object.keys(defaultList)}
+							editData={editData}
 						/>
 					)}
 				</DigimonProvider>
