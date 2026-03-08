@@ -1,7 +1,7 @@
 // modules
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { Row, Col } from 'react-bootstrap';
+import { Alert, Row, Col } from 'react-bootstrap';
 import { redirect } from 'next/navigation';
 import { GetStaticProps } from 'next';
 // components
@@ -12,12 +12,17 @@ import LineImage from '@/components/Line/LineImage';
 import CommentLink from '@/components/CommentLink';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
+import DownloadDropdown from '@/components/DownloadDropdown';
+// hooks
+import useDownloadImg from '@/hooks/useDownloadImg';
+import useDownloadCode from '@/hooks/useDownloadCode';
 // functions
 import useQueryParam from '@/hooks/useQueryParam';
 import { capitalize } from '@/functions';
 import transformLine, { thumbsToNames } from '@/functions/line';
 // constants
 import { Line } from '@/types/Line';
+import { defaultLine } from '@/reducers/lineReducer';
 import { APPMON, LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
 import { Digimon } from '@/types/Digimon';
@@ -48,6 +53,19 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 	const router = useRouter();
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
 	const [zoom, setZoom] = useState(DEFAULT_ZOOM);
+
+	const downloadName = ssr.line?.title || name;
+	const { downloadCode } = useDownloadCode(line || defaultLine, setLine);
+	const { downloadImage, downloading, error } = useDownloadImg(downloadName);
+
+	const handleDownloadImg = () => {
+		if (!line) return;
+		let zoomState = zoom;
+		setZoom(DEFAULT_ZOOM);
+		downloadImage(line, DEFAULT_ZOOM).then(() => {
+			setZoom(zoomState);
+		});
+	};
 
 	useEffect(() => {
 		if (window.innerWidth < 576) {
@@ -90,9 +108,20 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 					<Icon name="pencil-fill" className="d-inline-block me-1" /> Edit in
 					builder
 				</button>
+				<DownloadDropdown
+					downloadCode={downloadCode}
+					downloadImage={handleDownloadImg}
+					loading={downloading}
+					error={error}
+				/>
 				<ZoomBar handleZoom={setZoom} />
 				<ColorLegend />
 			</div>
+			{!!error && (
+				<div>
+					<Alert variant="danger">{error}</Alert>
+				</div>
+			)}
 			{line ? (
 				<>
 					<DigimonProvider dubNames={ssr.dubNames} data={ssr.digimons}>

@@ -4,6 +4,7 @@ import DigimonModal, { EditData } from '@/components/List/AddDigimonModal';
 import SearchBar from '@/components/SearchBar';
 import { stringToKey } from '@/functions';
 import useHash from '@/hooks/useHash';
+import useSubmitDigimon, { DigimonList } from '@/hooks/useSubmitDigimon';
 import { Digimon, DigimonItem } from '@/types/Digimon';
 import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
@@ -17,9 +18,6 @@ import { getDirPaths } from '@/functions/file';
 import { getDubNames, getDubbedSearchList } from '@/functions/search';
 
 const defaultObject: any = {};
-interface DigimonList {
-	[key: string]: { [key: string]: DigimonItem };
-}
 
 interface Props {
 	list?: DigimonList;
@@ -30,6 +28,7 @@ interface Props {
 const PageList: React.FC<Props> = props => {
 	const defaultList: DigimonList = props.list || defaultObject;
 	const [list, setList] = useState<DigimonList>(defaultList);
+	const handleSubmitDigimon = useSubmitDigimon(setList);
 	const [search, setSearch] = useState<string>();
 	const [showModal, setShowModal] = useState(false);
 	const [editData, setEditData] = useState<EditData | null>(null);
@@ -73,39 +72,6 @@ const PageList: React.FC<Props> = props => {
 			sanitizedSearch = '';
 		}
 		setSearch(sanitizedSearch);
-	};
-
-	const handleSubmitDigimon = async (level: string, item: DigimonItem, originalName?: string) => {
-		try {
-			const isEdit = !!originalName;
-			const endpoint = isEdit ? '/api/update-digimon' : '/api/add-digimon';
-			const body = isEdit
-				? { level, digimon: item, originalName }
-				: { level, digimon: item };
-
-			const response = await fetch(endpoint, {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify(body),
-			});
-
-			if (!response.ok) return;
-
-			setList((prev) => {
-				const updated = { ...prev };
-				if (isEdit && originalName !== item.name && updated[level]) {
-					delete updated[level][originalName];
-				}
-				updated[level] = {
-					...updated[level],
-					[item.name]: item,
-				};
-				return updated;
-			});
-
-		} catch (error) {
-			console.error('Failed to save digimon:', error);
-		}
 	};
 
 	const handleEditDigimon = (level: string, digimon: DigimonItem) => {

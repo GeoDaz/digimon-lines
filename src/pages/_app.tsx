@@ -8,15 +8,20 @@ import ErrorBoundary from '@/components/ErrorBoundary';
 import Header from '@/components/Header';
 import Donate from '@/components/Donate';
 import Footer from '@/components/Footer';
+import { ToastProvider } from '@/context/toast';
+import ToastStack from '@/components/ToastStack';
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<ErrorBoundary>
-			<Header />
-			<Donate />
-			<Component {...pageProps} />
-			<Analytics />
-			<Footer />
+			<ToastProvider>
+				<Header />
+				<Donate />
+				<Component {...pageProps} />
+				<Analytics />
+				<Footer />
+				<ToastStack />
+			</ToastProvider>
 		</ErrorBoundary>
 	);
 }
