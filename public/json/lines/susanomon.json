@@ -1,0 +1,481 @@
+{
+	"size": 8,
+	"columns": [
+		[
+			{ "name": "nyokimon", "from": null, "xSize": 2 },
+			{ "name": "tanemon", "from": null, "xSize": 2 },
+			{ "name": "mushmon", "from": [[0, -2]], "xSize": 2, "color": ["grass"] },
+			{ "name": "arbormon", "from": [[0.5, -1.5]], "ySize": 2, "color": ["grass"] },
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "petaldramon",
+				"from": [[-0.5, -1.5]],
+				"ySize": 2,
+				"color": ["grass"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "sunamon", "from": null, "xSize": 2 },
+			{ "name": "goromon", "from": null, "xSize": 2 },
+			{ "name": "gottsumon", "from": [[0, -2]], "xSize": 2, "color": ["earth"] },
+			{
+				"name": "grumblemon",
+				"from": [[0.5, -1.5]],
+				"ySize": 2,
+				"color": ["earth"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gigasmon",
+				"from": [[-0.5, -1.5]],
+				"ySize": 2,
+				"color": ["earth"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "snowbotamon", "from": null, "xSize": 2 },
+			{ "name": "hiyarimon", "from": null, "xSize": 2 },
+			{ "name": "penmon", "from": [[0, -2]], "xSize": 2, "color": ["ice"] },
+			{ "name": "chackmon", "from": [[0.5, -1.5]], "ySize": 2, "color": ["ice"] },
+			{
+				"name": "daipenmon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xSize": 2,
+				"ySize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "blizzarmon",
+				"from": [
+					[-0.5, -1.5],
+					[-1, 0]
+				],
+				"ySize": 2,
+				"color": ["ice", "slide"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "pupumon", "from": null, "xSize": 2 },
+			{ "name": "puroromon", "from": null, "xSize": 2 },
+			{
+				"name": "tinkermon",
+				"from": [[0, -2.5]],
+				"xSize": 2,
+				"ySize": 2,
+				"color": ["wind"]
+			},
+			{ "name": "fairymon", "from": [[0.5, -1]], "ySize": 2, "color": ["wind"] },
+			{
+				"name": "jetsilphymon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xSize": 2,
+				"ySize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "shutumon",
+				"from": [
+					[-1, 0],
+					[-0.5, -1]
+				],
+				"ySize": 2,
+				"color": ["slide", "wind"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "botamon", "from": null, "xSize": 2 },
+			{ "name": "sunmon", "from": [[0, -1]], "xSize": 2, "color": ["fire"] },
+			{
+				"name": "flamon",
+				"from": [[0, -1.5]],
+				"xSize": 2,
+				"ySize": 2,
+				"color": ["fire"]
+			},
+			{ "name": "agunimon", "from": [[0.5, -1]], "ySize": 2, "color": ["fire"] },
+			{
+				"name": "aldamon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xSize": 2,
+				"ySize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			{
+				"name": "emperorgreymon",
+				"from": [
+					[0, -1],
+					[-2, -1],
+					[-4, -1],
+					[-5.5, -2],
+					[-6.5, -2],
+					[-7.5, -2],
+					[-8.5, -2]
+				],
+				"xSize": 2,
+				"ySize": 2,
+				"color": [
+					"fusion",
+					"fusion",
+					"fusion",
+					"fusion",
+					"fusion",
+					"fusion",
+					"fusion"
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "burninggreymon",
+				"from": [
+					[-0.5, -1],
+					[-1, 0]
+				],
+				"ySize": 2,
+				"color": ["fire", "slide"]
+			},
+			null,
+			null,
+			{
+				"name": "susanomon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"xSize": 2,
+				"ySize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null
+		],
+		[
+			{ "name": "snowbotamon", "from": null, "xSize": 2 },
+			{ "name": "moonmon", "from": [[0, -1]], "xSize": 2, "color": ["light"] },
+			{
+				"name": "strabimon",
+				"from": [[0, -1.5]],
+				"ySize": 2,
+				"xSize": 2,
+				"color": ["light"]
+			},
+			{ "name": "wolfmon", "from": [[0.5, -1]], "ySize": 2, "color": ["light"] },
+			{
+				"name": "beowolfmon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"ySize": 2,
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			{
+				"name": "magnagarurumon",
+				"from": [
+					[0, -1],
+					[2, -1],
+					[4, -1],
+					[5.5, -2],
+					[6.5, -2],
+					[7.5, -2],
+					[8.5, -2]
+				],
+				"ySize": 2,
+				"xSize": 2,
+				"color": [
+					"fusion",
+					"fusion",
+					"fusion",
+					"fusion",
+					"fusion",
+					"fusion",
+					"fusion"
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "kendogarurumon",
+				"from": [
+					[-0.5, -1],
+					[-1, 0]
+				],
+				"ySize": 2,
+				"color": ["light", "slide"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "dokimon", "from": null, "xSize": 2 },
+			{ "name": "bibimon", "from": null, "xSize": 2 },
+			{
+				"name": "kokabuterimon",
+				"from": [[0, -2.5]],
+				"xSize": 2,
+				"ySize": 2,
+				"color": ["electric"]
+			},
+			{
+				"name": "blitzmon",
+				"from": [[0.5, -1]],
+				"ySize": 2,
+				"color": ["electric"]
+			},
+			{
+				"name": "rhinokabuterimon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xSize": 2,
+				"ySize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "bolgmon",
+				"from": [
+					[-0.5, -1],
+					[-1, 0]
+				],
+				"ySize": 2,
+				"color": ["electric", "slide"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "zurumon", "from": null, "xSize": 2 },
+			{ "name": "pagumon", "from": null, "xSize": 2 },
+			{
+				"name": "elecmon_violet",
+				"from": [[0, -2]],
+				"xSize": 2,
+				"color": ["dark"]
+			},
+			{
+				"name": "loweemon",
+				"from": [[0.5, -1.5]],
+				"ySize": 2,
+				"skins": ["duskmon"],
+				"color": ["dark"]
+			},
+			{
+				"name": "raihimon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xSize": 2,
+				"ySize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "jagerloweemon",
+				"from": [
+					[-0.5, -1.5],
+					[-1, 0]
+				],
+				"ySize": 2,
+				"skins": ["velgrmon"],
+				"color": ["dark", "slide"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "choromon", "from": null, "xSize": 2 },
+			{ "name": "monimon", "from": null, "xSize": 2 },
+			{ "name": "monitamon", "from": [[0, -2]], "xSize": 2, "color": ["machine"] },
+			{
+				"name": "mercuremon",
+				"from": [[0.5, -1.5]],
+				"ySize": 2,
+				"color": ["machine"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "sephirothmon",
+				"from": [
+					[-0.5, -1.5],
+					[-1, 0]
+				],
+				"ySize": 2,
+				"color": ["machine", "slide"]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "pitchmon", "from": null, "xSize": 2 },
+			{ "name": "pukamon", "from": null, "xSize": 2 },
+			{ "name": "shakomon", "from": [[0, -2]], "xSize": 2, "color": ["marine"] },
+			{ "name": "ranamon", "from": [[0.5, -1.5]], "ySize": 2, "color": ["marine"] },
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "calamaramon",
+				"from": [
+					[-0.5, -1.5],
+					[-1, 0]
+				],
+				"ySize": 2,
+				"color": ["marine", "slide"]
+			},
+			null,
+			null,
+			null,
+			null
+		]
+	],
+	"related": [
+		{
+			"name": "greymon",
+			"for": "agunimon"
+		},
+		{
+			"name": "garurumon",
+			"for": "wolfmon"
+		},
+		{
+			"name": "fairymon"
+		},
+		{
+			"name": "tentomon",
+			"for": "blitzmon"
+		},
+		{
+			"name": "bearmon",
+			"for": "chackmon"
+		},
+		{
+			"name": "leomon",
+			"for": "loweemon"
+		},
+		{
+			"name": "jellymon",
+			"for": "ranamon"
+		},
+		{
+			"name": "ogremon",
+			"for": "grumblemon"
+		},
+		{
+			"name": "woodmon",
+			"for": "arbormon"
+		},
+		{
+			"name": "mercuremon"
+		},
+		{
+			"name": "negamon",
+			"for": "duskmon"
+		}
+	]
+}
