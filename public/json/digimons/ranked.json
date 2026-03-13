@@ -2,41 +2,73 @@
 	"Baby I": {
 		"botamon": {
 			"name": "botamon",
-			"to": ["koromon"]
+			"to": [
+				"koromon"
+			]
 		},
 		"punimon": {
 			"name": "punimon",
-			"to": ["tsunomon"]
+			"to": [
+				"tsunomon"
+			]
 		},
 		"zurumon": {
 			"name": "zurumon",
-			"to": ["pagumon"]
+			"to": [
+				"pagumon"
+			]
 		},
 		"kuramon": {
 			"name": "kuramon",
-			"to": ["tsumemon", "arkadimon_2"]
+			"to": [
+				"tsumemon",
+				"arkadimon_2"
+			]
 		}
 	},
 	"Baby II": {
 		"koromon": {
 			"name": "koromon",
-			"to": ["agumon", "agumon_black", "snowagumon", "betamon"],
-			"from": ["botamon"]
+			"to": [
+				"agumon",
+				"agumon_black",
+				"snowagumon",
+				"betamon"
+			],
+			"from": [
+				"botamon"
+			]
 		},
 		"tsunomon": {
 			"name": "tsunomon",
-			"to": ["gabumon", "elecmon"],
-			"from": ["punimon"]
+			"to": [
+				"gabumon",
+				"elecmon"
+			],
+			"from": [
+				"punimon"
+			]
 		},
 		"pagumon": {
 			"name": "pagumon",
-			"to": ["gazimon", "demidevimon"],
-			"from": ["zurumon"]
+			"to": [
+				"gazimon",
+				"demidevimon"
+			],
+			"from": [
+				"zurumon"
+			]
 		},
 		"tsumemon": {
 			"name": "tsumemon",
-			"to": ["keramon", "agumon_black", "gabumon_black"],
-			"from": ["kuramon"]
+			"to": [
+				"keramon",
+				"agumon_black",
+				"gabumon_black"
+			],
+			"from": [
+				"kuramon"
+			]
 		}
 	},
 	"Rookie": {
@@ -53,8 +85,15 @@
 				"toyagumon",
 				"cleartoyagumon"
 			],
-			"modes": ["agumon_x", "agumon_burst_mode", "agumon_yuki_no_kizuma"],
-			"from": ["koromon", "gigimon"],
+			"modes": [
+				"agumon_x",
+				"agumon_burst_mode",
+				"agumon_yuki_no_kizuma"
+			],
+			"from": [
+				"koromon",
+				"gigimon"
+			],
 			"to": [
 				"greymon",
 				"greymon_blue",
@@ -76,8 +115,13 @@
 				"toyagumon_black",
 				"cleartoyagumon_black"
 			],
-			"modes": ["agumon_black_x"],
-			"from": ["koromon", "tsumemon"],
+			"modes": [
+				"agumon_black_x"
+			],
+			"from": [
+				"koromon",
+				"tsumemon"
+			],
 			"to": [
 				"greymon_blue",
 				"greymon_blue_2",
@@ -90,28 +134,76 @@
 		},
 		"snowagumon": {
 			"name": "snowagumon",
-			"variants": ["snowagumon_2", "agumon", "agumon_black"],
-			"from": ["koromon", "hiyarimon"],
-			"to": ["seadramon", "paledramon", "frigimon", "hyogamon", "sorcerymon"]
+			"variants": [
+				"snowagumon_2",
+				"agumon",
+				"agumon_black"
+			],
+			"from": [
+				"koromon",
+				"hiyarimon"
+			],
+			"to": [
+				"seadramon",
+				"paledramon",
+				"frigimon",
+				"hyogamon",
+				"sorcerymon"
+			]
 		},
 		"gabumon": {
 			"name": "gabumon",
-			"modes": ["gabumon_x"],
-			"variants": ["gabumon_black", "psychemon"],
-			"to": ["garurumon", "gururumon", "dorulumon", "drimogemon"],
-			"from": ["tsunomon", "wanyamon", "bowmon"]
+			"modes": [
+				"gabumon_x"
+			],
+			"variants": [
+				"gabumon_black",
+				"psychemon"
+			],
+			"to": [
+				"garurumon",
+				"gururumon",
+				"dorulumon",
+				"drimogemon"
+			],
+			"from": [
+				"tsunomon",
+				"wanyamon",
+				"bowmon"
+			]
 		},
 		"gabumon_black": {
 			"name": "gabumon_black",
-			"variants": ["gabumon", "psychemon"],
-			"to": ["garurumon_black", "sangloupmon", "dobermon"],
-			"from": ["tsunomon", "tsumemon"]
+			"variants": [
+				"gabumon",
+				"psychemon"
+			],
+			"to": [
+				"garurumon_black",
+				"sangloupmon",
+				"dobermon"
+			],
+			"from": [
+				"tsunomon",
+				"tsumemon"
+			]
 		},
 		"psychemon": {
 			"name": "psychemon",
-			"variants": ["gabumon_black", "psychemon"],
-			"to": ["astamon", "gururumon", "garurumon", "nisedrimogemon"],
-			"from": ["tsunomon", "pagumon"]
+			"variants": [
+				"gabumon_black",
+				"psychemon"
+			],
+			"to": [
+				"astamon",
+				"gururumon",
+				"garurumon",
+				"nisedrimogemon"
+			],
+			"from": [
+				"tsunomon",
+				"pagumon"
+			]
 		},
 		"biyomon": {
 			"name": "biyomon",
@@ -125,11 +217,17 @@
 				"xiquemon",
 				"mailbirdramon"
 			],
-			"from": ["poromon", "yokomon", "pinamon"]
+			"from": [
+				"poromon",
+				"yokomon",
+				"pinamon"
+			]
 		},
 		"tentomon": {
 			"name": "tentomon",
-			"variants": ["kokabuterimon"],
+			"variants": [
+				"kokabuterimon"
+			],
 			"to": [
 				"kabuterimon",
 				"kuwagamon",
@@ -138,11 +236,17 @@
 				"ballistamon",
 				"blitzmon"
 			],
-			"from": ["minomon", "mochimon", "puroromon"]
+			"from": [
+				"minomon",
+				"mochimon",
+				"puroromon"
+			]
 		},
 		"palmon": {
 			"name": "palmon",
-			"modes": ["palmon_x"],
+			"modes": [
+				"palmon_x"
+			],
 			"to": [
 				"togemon",
 				"ponchomon",
@@ -151,12 +255,22 @@
 				"zassoumon",
 				"kabukimon"
 			],
-			"from": ["tanemon", "yokomon", "budmon"]
+			"from": [
+				"tanemon",
+				"yokomon",
+				"budmon"
+			]
 		},
 		"toyagumon": {
 			"name": "toyagumon",
-			"variants": ["cleartoyagumon", "toyagumon_black"],
-			"from": ["koromon", "caprimon"],
+			"variants": [
+				"cleartoyagumon",
+				"toyagumon_black"
+			],
+			"from": [
+				"koromon",
+				"caprimon"
+			],
 			"to": [
 				"revolmon",
 				"omekamon",
@@ -168,26 +282,63 @@
 		},
 		"toyagumon_black": {
 			"name": "toyagumon_black",
-			"variants": ["cleartoyagumon_black", "toyagumon"],
-			"from": ["koromon", "caprimon"],
-			"to": ["tankmon", "darktyranomon", "darklizardmon"]
+			"variants": [
+				"cleartoyagumon_black",
+				"toyagumon"
+			],
+			"from": [
+				"koromon",
+				"caprimon"
+			],
+			"to": [
+				"tankmon",
+				"darktyranomon",
+				"darklizardmon"
+			]
 		},
 		"betamon": {
 			"name": "betamon",
-			"variants": ["modokibetamon"],
-			"modes": ["betamon_x"],
-			"from": ["koromon"],
-			"to": ["seadramon", "airdramon", "landramon", "coelamon", "tylomon"]
+			"variants": [
+				"modokibetamon"
+			],
+			"modes": [
+				"betamon_x"
+			],
+			"from": [
+				"koromon"
+			],
+			"to": [
+				"seadramon",
+				"airdramon",
+				"landramon",
+				"coelamon",
+				"tylomon"
+			]
 		},
 		"gizamon": {
 			"name": "gizamon",
-			"from": ["koromon"],
-			"to": ["cyclomon", "geremon", "seadramon", "coelamon", "gekomon"]
+			"from": [
+				"koromon"
+			],
+			"to": [
+				"cyclomon",
+				"geremon",
+				"seadramon",
+				"coelamon",
+				"gekomon"
+			]
 		},
 		"gazimon": {
 			"name": "gazimon",
-			"modes": ["gazimon_x"],
-			"from": ["pagumon", "tsunomon", "wanyamon", "bowmon"],
+			"modes": [
+				"gazimon_x"
+			],
+			"from": [
+				"pagumon",
+				"tsunomon",
+				"wanyamon",
+				"bowmon"
+			],
 			"to": [
 				"gaogamon_black",
 				"fangmon",
@@ -196,57 +347,160 @@
 				"devidramon",
 				"dobermon"
 			]
+		},
+		"patamon": {
+			"name": "patamon",
+			"variants": [
+				"tukaimon"
+			],
+			"from": [
+				"tokomon",
+				"cupimon"
+			],
+			"to": [
+				"angemon",
+				"pegasmon",
+				"unimon",
+				"pidmon"
+			]
+		},
+		"plotmon": {
+			"name": "plotmon",
+			"variants": [
+				"meicoosalamon"
+			],
+			"modes": [
+				"plotmon_x"
+			],
+			"from": [
+				"nyaromon",
+				"cupimon"
+			],
+			"to": [
+				"gatomon",
+				"mikemon",
+				"gatomon_black",
+				"darcmon"
+			]
 		}
 	},
 	"Rookie X": {
 		"agumon_x": {
 			"name": "agumon_x",
-			"variants": ["agumon_black_x"],
-			"to": ["greymon_x", "tyranomon_x", "raptordramon"],
-			"from": ["agumon"]
+			"variants": [
+				"agumon_black_x"
+			],
+			"to": [
+				"greymon_x",
+				"tyranomon_x",
+				"raptordramon"
+			],
+			"from": [
+				"agumon"
+			]
 		},
 		"agumon_black_x": {
 			"name": "agumon_black_x",
-			"variants": ["agumon_x"],
-			"to": ["greymon_blue_x", "darktyranomon_x"],
-			"from": ["agumon_black"]
+			"variants": [
+				"agumon_x"
+			],
+			"to": [
+				"greymon_blue_x",
+				"darktyranomon_x"
+			],
+			"from": [
+				"agumon_black"
+			]
 		},
 		"gabumon_x": {
 			"name": "gabumon_x",
-			"to": ["garurumon_x", "loogarmon"],
-			"from": ["gabumon"]
+			"to": [
+				"garurumon_x",
+				"loogarmon"
+			],
+			"from": [
+				"gabumon"
+			]
 		},
 		"palmon_x": {
 			"name": "palmon_x",
-			"to": ["togemon_x"],
-			"from": ["palmon"]
+			"to": [
+				"togemon_x"
+			],
+			"from": [
+				"palmon"
+			]
+		},
+		"plotmon_x": {
+			"name": "plotmon_x",
+			"from": [
+				"plotmon"
+			],
+			"to": [
+				"gatomon_x",
+				"nefertimon_x",
+				"tobucatmon"
+			]
 		}
 	},
 	"Hybrid I": {
 		"flamon": {
 			"name": "flamon",
-			"to": ["agunimon", "burninggreymon"],
-			"from": ["sunmon", "koromon", "gigimon"]
+			"to": [
+				"agunimon",
+				"burninggreymon"
+			],
+			"from": [
+				"sunmon",
+				"koromon",
+				"gigimon"
+			]
 		},
 		"strabimon": {
 			"name": "strabimon",
-			"to": ["wolfmon", "kendogarurumon"],
-			"from": ["moonmon", "wanyamon", "bowmon"]
+			"to": [
+				"wolfmon",
+				"kendogarurumon"
+			],
+			"from": [
+				"moonmon",
+				"wanyamon",
+				"bowmon"
+			]
 		},
 		"tinkermon": {
 			"name": "tinkermon",
-			"to": ["fairymon", "shutumon", "hudiemon", "butterflamon", "petermon"],
-			"from": ["puroromon"]
+			"to": [
+				"fairymon",
+				"shutumon",
+				"hudiemon",
+				"butterflamon",
+				"petermon"
+			],
+			"from": [
+				"puroromon"
+			]
 		},
 		"kokabuterimon": {
 			"name": "kokabuterimon",
-			"to": ["blitzmon", "bolgmon", "ballistamon"],
-			"from": ["mochimon", "minomon"]
+			"to": [
+				"blitzmon",
+				"bolgmon",
+				"ballistamon"
+			],
+			"from": [
+				"mochimon",
+				"minomon"
+			]
 		},
 		"lucemon": {
 			"name": "lucemon",
-			"to": ["lucemon_falldown_mode"],
-			"from": ["cupimon"]
+			"to": [
+				"lucemon_falldown_mode"
+			],
+			"from": [
+				"cupimon"
+			]
 		}
 	},
 	"Champion": {
@@ -258,7 +512,9 @@
 				"greymon_blue_2",
 				"hicommandramon"
 			],
-			"modes": ["greymon_x"],
+			"modes": [
+				"greymon_x"
+			],
 			"to": [
 				"metalgreymon",
 				"metalgreymon_blue",
@@ -267,110 +523,210 @@
 				"chimeramon",
 				"triceramon"
 			],
-			"from": ["agumon"]
+			"from": [
+				"agumon"
+			]
 		},
 		"greymon_blue": {
 			"name": "greymon_blue",
-			"variants": ["greymon", "greymon_blue_2", "hicommandramon"],
-			"to": ["metalgreymon_blue", "skullgreymon"],
-			"from": ["agumon"]
+			"variants": [
+				"greymon",
+				"greymon_blue_2",
+				"hicommandramon"
+			],
+			"to": [
+				"metalgreymon_blue",
+				"skullgreymon"
+			],
+			"from": [
+				"agumon"
+			]
 		},
 		"geogreymon": {
 			"name": "geogreymon",
-			"variants": ["greymon"],
-			"to": ["rizegreymon"],
-			"from": ["agumon"]
+			"variants": [
+				"greymon"
+			],
+			"to": [
+				"rizegreymon"
+			],
+			"from": [
+				"agumon"
+			]
 		},
 		"garurumon": {
 			"name": "garurumon",
-			"variants": ["garurumon_black", "gururumon", "dorulumon"],
-			"modes": ["garurumon_x"],
+			"variants": [
+				"garurumon_black",
+				"gururumon",
+				"dorulumon"
+			],
+			"modes": [
+				"garurumon_x"
+			],
 			"to": [
 				"weregarurumon",
 				"weregarurumon_black",
 				"kendogarurumon",
 				"chimeramon"
 			],
-			"from": ["agumon"]
+			"from": [
+				"agumon"
+			]
 		},
 		"garurumon_black": {
 			"name": "garurumon_black",
-			"variants": ["garurumon", "gururumon", "dorulumon"],
-			"to": ["weregarurumon_black", "cerberumon"],
-			"from": ["agumon"]
+			"variants": [
+				"garurumon",
+				"gururumon",
+				"dorulumon"
+			],
+			"to": [
+				"weregarurumon_black",
+				"cerberumon"
+			],
+			"from": [
+				"agumon"
+			]
 		}
 	},
 	"Armor I": {
 		"flamedramon": {
 			"name": "flamedramon",
-			"to": ["sagittarimon", "magnamon"],
-			"from": ["veemon"]
+			"to": [
+				"sagittarimon",
+				"magnamon"
+			],
+			"from": [
+				"veemon"
+			]
 		},
 		"raidramon": {
 			"name": "raidramon",
-			"to": ["sagittarimon", "magnamon"],
-			"from": ["veemon"]
+			"to": [
+				"sagittarimon",
+				"magnamon"
+			],
+			"from": [
+				"veemon"
+			]
 		}
 	},
 	"Hybrid II": {
 		"agunimon": {
 			"name": "agunimon",
-			"modes": ["burninggreymon"],
-			"to": ["aldamon"],
-			"from": ["flamon"]
+			"modes": [
+				"burninggreymon"
+			],
+			"to": [
+				"aldamon"
+			],
+			"from": [
+				"flamon"
+			]
 		},
 		"wolfmon": {
 			"name": "wolfmon",
-			"modes": ["kendogarurumon"],
-			"to": ["beowolfmon"],
-			"from": ["strabimon"]
+			"modes": [
+				"kendogarurumon"
+			],
+			"to": [
+				"beowolfmon"
+			],
+			"from": [
+				"strabimon"
+			]
 		}
 	},
 	"Champion X": {
 		"greymon_x": {
 			"name": "greymon_x",
-			"variants": ["greymon_blue_x"],
-			"to": ["metalgreymon_x", "rizegreymon_x"],
-			"from": ["greymon", "agumon_x"]
+			"variants": [
+				"greymon_blue_x"
+			],
+			"to": [
+				"metalgreymon_x",
+				"rizegreymon_x"
+			],
+			"from": [
+				"greymon",
+				"agumon_x"
+			]
 		},
 		"greymon_blue_x": {
 			"name": "greymon_blue_x",
-			"variants": ["greymon_x"],
-			"to": ["metalgreymon_blue_x"],
-			"from": ["greymon_blue", "agumon_black_x"]
+			"variants": [
+				"greymon_x"
+			],
+			"to": [
+				"metalgreymon_blue_x"
+			],
+			"from": [
+				"greymon_blue",
+				"agumon_black_x"
+			]
 		},
 		"garurumon_x": {
 			"name": "garurumon_x",
-			"to": ["weregarurumon_x"],
-			"from": ["garurumon", "gabumon_x"]
+			"to": [
+				"weregarurumon_x"
+			],
+			"from": [
+				"garurumon",
+				"gabumon_x"
+			]
 		}
 	},
 	"Hybrid III": {
 		"burninggreymon": {
 			"name": "burninggreymon",
-			"modes": ["agunimon"],
-			"to": ["aldamon", "ancientgreymon"],
-			"from": ["greymon"]
+			"modes": [
+				"agunimon"
+			],
+			"to": [
+				"aldamon",
+				"ancientgreymon"
+			],
+			"from": [
+				"greymon"
+			]
 		},
 		"kendogarurumon": {
 			"name": "kendogarurumon",
-			"modes": ["wolfmon"],
-			"to": ["beowolfmon"],
-			"from": ["garurumon"]
+			"modes": [
+				"wolfmon"
+			],
+			"to": [
+				"beowolfmon"
+			],
+			"from": [
+				"garurumon"
+			]
 		}
 	},
 	"Armor II": {
 		"sagittarimon": {
 			"name": "sagittarimon",
-			"to": ["magnamon"],
-			"from": ["veemon", "centarumon"],
-			"fusionFrom": ["flamedramon", "raidramon"]
+			"to": [
+				"magnamon"
+			],
+			"from": [
+				"veemon",
+				"centarumon"
+			],
+			"fusionFrom": [
+				"flamedramon",
+				"raidramon"
+			]
 		}
 	},
 	"Ultimate": {
 		"metalgreymon": {
 			"name": "metalgreymon",
-			"modes": ["metalgreymon_alter_mode", "metalgreymon_x"],
+			"modes": [
+				"metalgreymon_alter_mode",
+				"metalgreymon_x"
+			],
 			"variants": [
 				"metalgreymon_blue",
 				"metalgreymon_blue_2",
@@ -384,23 +740,52 @@
 				"ancientgreymon",
 				"machinedramon"
 			],
-			"from": ["greymon", "flarelizardmon"]
+			"from": [
+				"greymon",
+				"flarelizardmon"
+			]
 		},
 		"metalgreymon_blue": {
 			"name": "metalgreymon_blue",
-			"variants": ["metalgreymon", "metalgreymon_blue_2", "skullgreymon"],
-			"to": ["black_wargreymon", "machinedramon", "chaosdramon"],
-			"from": ["greymon_blue", "greymon", "darklizardmon"]
+			"variants": [
+				"metalgreymon",
+				"metalgreymon_blue_2",
+				"skullgreymon"
+			],
+			"to": [
+				"black_wargreymon",
+				"machinedramon",
+				"chaosdramon"
+			],
+			"from": [
+				"greymon_blue",
+				"greymon",
+				"darklizardmon"
+			]
 		},
 		"rizegreymon": {
 			"name": "rizegreymon",
-			"variants": ["metalgreymon"],
-			"to": ["shinegreymon", "victorygreymon", "magnakidmon", "gundramon"],
-			"from": ["geogreymon", "revolmon", "tankmon"]
+			"variants": [
+				"metalgreymon"
+			],
+			"to": [
+				"shinegreymon",
+				"victorygreymon",
+				"magnakidmon",
+				"gundramon"
+			],
+			"from": [
+				"geogreymon",
+				"revolmon",
+				"tankmon"
+			]
 		},
 		"skullgreymon": {
 			"name": "skullgreymon",
-			"variants": ["metalgreymon", "metalgreymon_blue"],
+			"variants": [
+				"metalgreymon",
+				"metalgreymon_blue"
+			],
 			"to": [
 				"black_wargreymon",
 				"machinedramon",
@@ -409,183 +794,389 @@
 				"titamon",
 				"chimeramon"
 			],
-			"from": ["greymon", "greymon_blue", "cyclomon", "deltamon"]
+			"from": [
+				"greymon",
+				"greymon_blue",
+				"cyclomon",
+				"deltamon"
+			]
 		},
 		"weregarurumon": {
 			"name": "weregarurumon",
-			"variants": ["weregarurumon_black"],
-			"to": ["metalgarurumon", "zeedgarurumon", "mercurymon", "ancientgarurumon"],
-			"from": ["garurumon"]
+			"variants": [
+				"weregarurumon_black"
+			],
+			"to": [
+				"metalgarurumon",
+				"zeedgarurumon",
+				"mercurymon",
+				"ancientgarurumon"
+			],
+			"from": [
+				"garurumon"
+			]
 		},
 		"weregarurumon_black": {
 			"name": "weregarurumon_black",
-			"variants": ["weregarurumon"],
-			"to": ["metalgarurumon_black", "mercurymon", "grandracmon", "plutomon"],
-			"from": ["garurumon_black", "dobermon", "sangloupmon"]
+			"variants": [
+				"weregarurumon"
+			],
+			"to": [
+				"metalgarurumon_black",
+				"mercurymon",
+				"grandracmon",
+				"plutomon"
+			],
+			"from": [
+				"garurumon_black",
+				"dobermon",
+				"sangloupmon"
+			]
 		}
 	},
 	"Ultimate +": {
 		"metalgreymon_alter_mode": {
 			"name": "metalgreymon_alter_mode",
-			"to": ["wargreymon", "blitzgreymon", "victorygreymon"],
-			"from": ["metalgreymon"]
+			"to": [
+				"wargreymon",
+				"blitzgreymon",
+				"victorygreymon"
+			],
+			"from": [
+				"metalgreymon"
+			]
 		},
 		"weregarurumon_alter_mode": {
 			"name": "weregarurumon_alter_mode",
-			"to": ["metalgarurumon", "cresgarurumon", "zeedgarurumon"],
-			"from": ["weregarurumon"]
+			"to": [
+				"metalgarurumon",
+				"cresgarurumon",
+				"zeedgarurumon"
+			],
+			"from": [
+				"weregarurumon"
+			]
 		}
 	},
 	"Ultimate X": {
 		"metalgreymon_x": {
 			"name": "metalgreymon_x",
-			"variants": ["metalgreymon_blue_x", "rizegreymon_x"],
-			"to": ["wargreymon_x"],
-			"from": ["metalgreymon", "greymon_x"]
+			"variants": [
+				"metalgreymon_blue_x",
+				"rizegreymon_x"
+			],
+			"to": [
+				"wargreymon_x"
+			],
+			"from": [
+				"metalgreymon",
+				"greymon_x"
+			]
 		},
 		"metalgreymon_blue_x": {
 			"name": "metalgreymon_blue_x",
-			"variants": ["metalgreymon_x"],
-			"to": ["black_wargreymon_x", "samudramon"],
-			"from": ["metalgreymon_blue", "greymon_x"]
+			"variants": [
+				"metalgreymon_x"
+			],
+			"to": [
+				"black_wargreymon_x",
+				"samudramon"
+			],
+			"from": [
+				"metalgreymon_blue",
+				"greymon_x"
+			]
 		},
 		"rizegreymon_x": {
 			"name": "rizegreymon_x",
-			"variants": ["metalgreymon_x", "metalgreymon_blue_x"],
-			"from": ["rizegreymon", "greymon_x"]
+			"variants": [
+				"metalgreymon_x",
+				"metalgreymon_blue_x"
+			],
+			"from": [
+				"rizegreymon",
+				"greymon_x"
+			]
 		},
 		"weregarurumon_x": {
 			"name": "weregarurumon_x",
-			"to": ["metalgarurumon_x", "fenriloogamon"],
-			"from": ["weregarurumon", "garurumon_x"]
+			"to": [
+				"metalgarurumon_x",
+				"fenriloogamon"
+			],
+			"from": [
+				"weregarurumon",
+				"garurumon_x"
+			]
 		}
 	},
 	"Hybrid IV": {
 		"aldamon": {
 			"name": "aldamon",
-			"to": ["emperorgreymon", "ancientgreymon"],
-			"fusionFrom": ["agunimon", "burninggreymon"]
+			"to": [
+				"emperorgreymon",
+				"ancientgreymon"
+			],
+			"fusionFrom": [
+				"agunimon",
+				"burninggreymon"
+			]
 		},
 		"beowolfmon": {
 			"name": "beowolfmon",
-			"to": ["magnagarurumon", "ancientgarurumon"],
-			"from": ["wolfmon", "kendogarurumon"]
+			"to": [
+				"magnagarurumon",
+				"ancientgarurumon"
+			],
+			"from": [
+				"wolfmon",
+				"kendogarurumon"
+			]
 		}
 	},
 	"Armor III": {
 		"magnamon": {
 			"name": "magnamon",
-			"modes": ["magnamon_x"],
-			"from": ["veemon", "flamedramon", "sagittarimon"]
+			"modes": [
+				"magnamon_x"
+			],
+			"from": [
+				"veemon",
+				"flamedramon",
+				"sagittarimon"
+			]
 		}
 	},
 	"Mega": {
 		"wargreymon": {
 			"name": "wargreymon",
-			"variants": ["black_wargreymon", "victorygreymon", "blitzgreymon"],
-			"modes": ["wargreymon_x"],
-			"to": ["omegamon"],
-			"from": ["metalgreymon", "metalgreymon_alter_mode", "wargrowlmon_orange"]
+			"variants": [
+				"black_wargreymon",
+				"victorygreymon",
+				"blitzgreymon"
+			],
+			"modes": [
+				"wargreymon_x"
+			],
+			"to": [
+				"omegamon"
+			],
+			"from": [
+				"metalgreymon",
+				"metalgreymon_alter_mode",
+				"wargrowlmon_orange"
+			]
 		},
 		"black_wargreymon": {
 			"name": "black_wargreymon",
-			"variants": ["wargreymon"],
-			"modes": ["black_wargreymon_x", "samudramon"],
-			"to": ["omegamon_zwart"],
-			"from": ["metalgreymon_blue", "skullgreymon"]
+			"variants": [
+				"wargreymon"
+			],
+			"modes": [
+				"black_wargreymon_x",
+				"samudramon"
+			],
+			"to": [
+				"omegamon_zwart"
+			],
+			"from": [
+				"metalgreymon_blue",
+				"skullgreymon"
+			]
 		},
 		"victorygreymon": {
 			"name": "victorygreymon",
-			"variants": ["wargreymon"],
-			"from": ["rizegreymon", "metalgreymon", "metalgreymon_alter_mode"]
+			"variants": [
+				"wargreymon"
+			],
+			"from": [
+				"rizegreymon",
+				"metalgreymon",
+				"metalgreymon_alter_mode"
+			]
 		},
 		"blitzgreymon": {
 			"name": "blitzgreymon",
-			"variants": ["wargreymon"],
-			"to": ["omegamon_alter_s"],
-			"from": ["metalgreymon", "metalgreymon_alter_mode", "rizegreymon"]
+			"variants": [
+				"wargreymon"
+			],
+			"to": [
+				"omegamon_alter_s"
+			],
+			"from": [
+				"metalgreymon",
+				"metalgreymon_alter_mode",
+				"rizegreymon"
+			]
 		},
 		"shinegreymon": {
 			"name": "shinegreymon",
-			"modes": ["shinegreymon_burst_mode", "shinegreymon_ruin_mode"],
-			"from": ["rizegreymon"]
+			"modes": [
+				"shinegreymon_burst_mode",
+				"shinegreymon_ruin_mode"
+			],
+			"from": [
+				"rizegreymon"
+			]
 		},
 		"metalgarurumon": {
 			"name": "metalgarurumon",
-			"variants": ["metalgarurumon_black", "zeedgarurumon", "cresgarurumon"],
-			"to": ["omegamon"],
-			"from": ["weregarurumon", "weregarurumon_alter_mode"]
+			"variants": [
+				"metalgarurumon_black",
+				"zeedgarurumon",
+				"cresgarurumon"
+			],
+			"to": [
+				"omegamon"
+			],
+			"from": [
+				"weregarurumon",
+				"weregarurumon_alter_mode"
+			]
 		},
 		"metalgarurumon_black": {
 			"name": "metalgarurumon_black",
-			"variants": ["metalgarurumon"],
-			"to": ["omegamon_zwart"],
-			"from": ["weregarurumon_black"]
+			"variants": [
+				"metalgarurumon"
+			],
+			"to": [
+				"omegamon_zwart"
+			],
+			"from": [
+				"weregarurumon_black"
+			]
 		},
 		"zeedgarurumon": {
 			"name": "zeedgarurumon",
-			"variants": ["metalgarurumon"],
-			"from": ["machgaogamon", "weregarurumon", "weregarurumon_alter_mode"]
+			"variants": [
+				"metalgarurumon"
+			],
+			"from": [
+				"machgaogamon",
+				"weregarurumon",
+				"weregarurumon_alter_mode"
+			]
 		},
 		"cresgarurumon": {
 			"name": "cresgarurumon",
-			"variants": ["metalgarurumon"],
-			"to": ["omegamon_alter_s"],
-			"from": ["weregarurumon", "weregarurumon_alter_mode"]
+			"variants": [
+				"metalgarurumon"
+			],
+			"to": [
+				"omegamon_alter_s"
+			],
+			"from": [
+				"weregarurumon",
+				"weregarurumon_alter_mode"
+			]
 		},
 		"miragegaogamon": {
 			"name": "miragegaogamon",
-			"to": ["miragegaogamon_burst_mode"],
-			"from": ["machgaogamon", "raijiludomon"]
+			"to": [
+				"miragegaogamon_burst_mode"
+			],
+			"from": [
+				"machgaogamon",
+				"raijiludomon"
+			]
 		},
 		"azulongmon": {
 			"name": "azulongmon",
-			"from": ["raidramon", "sagittarimon", "manticoremon", "triceramon"]
+			"from": [
+				"raidramon",
+				"sagittarimon",
+				"manticoremon",
+				"triceramon"
+			]
 		},
 		"zhuqiaomon": {
 			"name": "zhuqiaomon",
-			"from": ["sinduramon", "garudamon", "yatagaramon", "hippogriffomon"]
+			"from": [
+				"sinduramon",
+				"garudamon",
+				"yatagaramon",
+				"hippogriffomon"
+			]
 		},
 		"baihumon": {
 			"name": "baihumon",
-			"from": ["mihiramon", "caturamon", "loaderliomon", "panjyamon"]
+			"from": [
+				"mihiramon",
+				"caturamon",
+				"loaderliomon",
+				"panjyamon"
+			]
 		},
 		"xuanwumon": {
 			"name": "xuanwumon",
-			"from": ["orochimon", "cherrymon", "sandiramon", "sagomon"]
+			"from": [
+				"orochimon",
+				"cherrymon",
+				"sandiramon",
+				"sagomon"
+			]
 		},
 		"ancientgreymon": {
 			"name": "ancientgreymon",
-			"from": ["burninggreymon", "aldamon", "metalgreymon", "rizegreymon"]
+			"from": [
+				"burninggreymon",
+				"aldamon",
+				"metalgreymon",
+				"rizegreymon"
+			]
 		},
 		"ancientgarurumon": {
 			"name": "ancientgarurumon",
-			"from": ["kendogarurumon", "beowolfmon", "weregarurumon"]
+			"from": [
+				"kendogarurumon",
+				"beowolfmon",
+				"weregarurumon"
+			]
 		}
 	},
 	"Mega X": {
 		"wargreymon_x": {
 			"name": "wargreymon_x",
-			"variants": ["black_wargreymon_x", "samudramon"],
-			"to": ["omegamon_x"],
-			"from": ["wargreymon", "metalgreymon_x"]
+			"variants": [
+				"black_wargreymon_x",
+				"samudramon"
+			],
+			"to": [
+				"omegamon_x"
+			],
+			"from": [
+				"wargreymon",
+				"metalgreymon_x"
+			]
 		},
 		"magnamon_x": {
 			"name": "magnamon_x",
-			"modes": ["magnamon_x_gold_digizoid"],
-			"from": ["magnamon"]
+			"modes": [
+				"magnamon_x_gold_digizoid"
+			],
+			"from": [
+				"magnamon"
+			]
 		}
 	},
 	"Hybrid V": {
 		"emperorgreymon": {
 			"name": "emperorgreymon",
-			"to": ["susanoomon"],
-			"from": ["aldamon"]
+			"to": [
+				"susanomon"
+			],
+			"from": [
+				"aldamon"
+			]
 		},
 		"magnagarurumon": {
 			"name": "magnagarurumon",
-			"to": ["susanoomon"],
-			"from": ["beowolfmon"]
+			"to": [
+				"susanomon"
+			],
+			"from": [
+				"beowolfmon"
+			]
 		}
 	},
 	"Mega+": {
@@ -597,71 +1188,137 @@
 				"omegamon_alter_s",
 				"omegamon_alter_b"
 			],
-			"modes": ["omegamon_x", "omegamon_merciful_mode"],
-			"fusionFrom": ["wargreymon", "metalgarurumon"]
+			"modes": [
+				"omegamon_x",
+				"omegamon_merciful_mode"
+			],
+			"fusionFrom": [
+				"wargreymon",
+				"metalgarurumon"
+			]
 		},
 		"omegamon_zwart": {
 			"name": "omegamon_zwart",
-			"modes": ["omegamon_zwart_defeat"],
-			"variants": ["omegamon", "omegamon_alter_b"],
-			"fusionFrom": ["black_wargreymon", "metalgarurumon_black"]
+			"modes": [
+				"omegamon_zwart_defeat"
+			],
+			"variants": [
+				"omegamon",
+				"omegamon_alter_b"
+			],
+			"fusionFrom": [
+				"black_wargreymon",
+				"metalgarurumon_black"
+			]
 		},
 		"omegamon_zwart_defeat": {
 			"name": "omegamon_zwart_defeat",
-			"modes": ["omegamon_zwart"],
-			"to": ["omegamon_alter_b"],
-			"variants": ["omegamon"]
+			"modes": [
+				"omegamon_zwart"
+			],
+			"to": [
+				"omegamon_alter_b"
+			],
+			"variants": [
+				"omegamon"
+			]
 		},
 		"omegamon_alter_s": {
 			"name": "omegamon_alter_s",
-			"variants": ["omegamon", "omegamon_alter_b"],
-			"fusionFrom": ["blitzgreymon", "cresgarurumon"]
+			"variants": [
+				"omegamon",
+				"omegamon_alter_b"
+			],
+			"fusionFrom": [
+				"blitzgreymon",
+				"cresgarurumon"
+			]
 		},
 		"omegamon_alter_b": {
 			"name": "omegamon_alter_b",
-			"variants": ["omegamon_alter_s", "omegamon_zwart", "omegamon"],
-			"from": ["omegamon_zwart_defeat"],
-			"fusionFrom": ["blitzgreymon", "cresgarurumon"]
+			"variants": [
+				"omegamon_alter_s",
+				"omegamon_zwart",
+				"omegamon"
+			],
+			"from": [
+				"omegamon_zwart_defeat"
+			],
+			"fusionFrom": [
+				"blitzgreymon",
+				"cresgarurumon"
+			]
 		},
-		"susanoomon": {
-			"name": "susanoomon",
-			"fusionFrom": ["emperorgreymon", "magnagarurumon"]
+		"susanomon": {
+			"name": "susanomon",
+			"fusionFrom": [
+				"emperorgreymon",
+				"magnagarurumon"
+			]
 		},
 		"agumon_burst_mode": {
 			"name": "agumon_burst_mode",
-			"from": ["agumon"]
+			"from": [
+				"agumon"
+			]
 		},
 		"shinegreymon_burst_mode": {
 			"name": "shinegreymon_burst_mode",
-			"variants": ["shinegreymon_ruin_mode"],
-			"from": ["shinegreymon"]
+			"variants": [
+				"shinegreymon_ruin_mode"
+			],
+			"from": [
+				"shinegreymon"
+			]
 		},
 		"shinegreymon_ruin_mode": {
 			"name": "shinegreymon_ruin_mode",
-			"variants": ["shinegreymon_burst_mode"],
-			"from": ["shinegreymon"]
+			"variants": [
+				"shinegreymon_burst_mode"
+			],
+			"from": [
+				"shinegreymon"
+			]
 		},
 		"miragegaogamon_burst_mode": {
 			"name": "miragegaogamon_burst_mode",
-			"from": ["miragegaogamon"]
+			"from": [
+				"miragegaogamon"
+			]
 		},
 		"rosemon_burst_mode": {
 			"name": "rosemon_burst_mode",
-			"from": ["rosemon"]
+			"from": [
+				"rosemon"
+			]
 		},
 		"ravemon_burst_mode": {
 			"name": "ravemon_burst_mode",
-			"from": ["ravemon"]
+			"from": [
+				"ravemon"
+			]
 		},
 		"chaosmon": {
 			"name": "chaosmon",
-			"modes": ["chaosmon_valdur_arm", "ultimatechaosmon"],
-			"fusionFrom": ["bancholeomon", "darkdramon"]
+			"modes": [
+				"chaosmon_valdur_arm",
+				"ultimatechaosmon"
+			],
+			"fusionFrom": [
+				"bancholeomon",
+				"darkdramon"
+			]
 		},
 		"chaosmon_valdur_arm": {
 			"name": "chaosmon_valdur_arm",
-			"modes": ["chaosmon", "ultimatechaosmon"],
-			"fusionFrom": ["bancholeomon", "valdurmon"]
+			"modes": [
+				"chaosmon",
+				"ultimatechaosmon"
+			],
+			"fusionFrom": [
+				"bancholeomon",
+				"valdurmon"
+			]
 		},
 		"huanglongmon": {
 			"name": "huanglongmon",
@@ -678,16 +1335,27 @@
 	"Mega+ X": {
 		"omegamon_x": {
 			"name": "omegamon_x",
-			"from": ["omegamon", "omekamon"],
-			"fusionFrom": ["wargreymon_x", "metalgarurumon_x"]
+			"from": [
+				"omegamon",
+				"omekamon"
+			],
+			"fusionFrom": [
+				"wargreymon_x",
+				"metalgarurumon_x"
+			]
 		},
 		"magnamon_x_gold_digizoid": {
 			"name": "magnamon_x_gold_digizoid",
-			"from": ["magnamon_x"]
+			"from": [
+				"magnamon_x"
+			]
 		},
 		"jesmon_gx": {
 			"name": "jesmon_gx",
-			"from": ["jesmon_x", "gankoomon_x"]
+			"from": [
+				"jesmon_x",
+				"gankoomon_x"
+			]
 		}
 	},
 	"Ultra": {
@@ -705,7 +1373,9 @@
 		},
 		"ogudomon": {
 			"name": "ogudomon",
-			"modes": ["ogudomon_x"],
+			"modes": [
+				"ogudomon_x"
+			],
 			"fusionFrom": [
 				"barbamon",
 				"lilithmon",
@@ -718,14 +1388,24 @@
 		},
 		"ultimatechaosmon": {
 			"name": "ultimatechaosmon",
-			"modes": ["chaosmon", "chaosmon_valdur_arm"],
-			"fusionFrom": ["bancholeomon", "darkdramon", "valdurmon", "kentaurosmon"]
+			"modes": [
+				"chaosmon",
+				"chaosmon_valdur_arm"
+			],
+			"fusionFrom": [
+				"bancholeomon",
+				"darkdramon",
+				"valdurmon",
+				"kentaurosmon"
+			]
 		}
 	},
 	"Ultra X": {
 		"ogudomon_x": {
 			"name": "ogudomon_x",
-			"from": ["ogudomon"],
+			"from": [
+				"ogudomon"
+			],
 			"fusionFrom": [
 				"barbamon_x",
 				"lilithmon_x",

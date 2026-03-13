@@ -7,9 +7,41 @@
 			null,
 			null,
 			{
+				"name": "slashangemon",
+				"from": [
+					[
+						1,
+						-1
+					]
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "kyukimon",
+				"from": [
+					[
+						1,
+						-1
+					]
+				]
+			},
+			{
 				"name": "shivamon",
-				"from": [[1, -1]],
-				"color": ["light"]
+				"from": [
+					[
+						1,
+						-1
+					]
+				],
+				"color": [
+					"light"
+				]
 			},
 			null
 		],
@@ -19,22 +51,45 @@
 			null,
 			{
 				"name": "dinohumon",
-				"from": [[1, -1]]
+				"from": [
+					[
+						1.5,
+						-1
+					]
+				]
 			},
 			{
 				"name": "asuramon",
-				"color": ["fire"],
-				"from": [[1, -1]]
+				"color": [
+					"fire"
+				],
+				"from": [
+					[
+						1,
+						-1
+					]
+				]
 			},
 			{
 				"name": "vulcanusmon",
-				"color": ["fire"]
+				"color": [
+					"fire"
+				]
 			},
 			{
 				"name": "nezhamon_crimson_mode",
-				"from": [[0, -1]],
-				"color": ["fusion"],
-				"skins": ["nezhamon"]
+				"from": [
+					[
+						0,
+						-1
+					]
+				],
+				"color": [
+					"fusion"
+				],
+				"skins": [
+					"nezhamon"
+				]
 			}
 		],
 		[
@@ -46,14 +101,33 @@
 				"name": "caprimon"
 			},
 			{
-				"name": "kotemon"
+				"name": "kotemon",
+				"from": [
+					[
+						-0.5,
+						-1
+					],
+					[
+						0.5,
+						-1
+					]
+				],
+				"xSize": 2
 			},
 			{
-				"name": "musyamon"
+				"name": "musyamon",
+				"from": [
+					[
+						0.5,
+						-1
+					]
+				]
 			},
 			{
 				"name": "oboromon",
-				"color": ["black"]
+				"color": [
+					"black"
+				]
 			},
 			{
 				"name": "zanbamon"
@@ -61,22 +135,91 @@
 			null
 		],
 		[
-			null,
-			null,
+			{
+				"name": "botamon",
+				"from": null
+			},
+			{
+				"name": "koromon",
+				"from": [
+					[
+						0,
+						-1
+					]
+				]
+			},
 			null,
 			{
 				"name": "yaksamon",
-				"from": [[-1, -1]]
+				"from": [
+					[
+						-0.5,
+						-1
+					]
+				]
 			},
 			{
 				"name": "grademon",
-				"from": [[0, -1]],
-				"color": ["gold"]
+				"from": [
+					[
+						0,
+						-1
+					]
+				],
+				"color": [
+					"gold"
+				]
 			},
 			{
 				"name": "kazuchimon",
-				"from": [[0, -1]],
-				"color": ["electric"]
+				"from": [
+					[
+						0,
+						-1
+					]
+				],
+				"color": [
+					"electric"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "revolmon",
+				"from": [
+					[
+						-1.5,
+						-1
+					]
+				]
+			},
+			{
+				"name": "grademon_black",
+				"from": [
+					[
+						-1,
+						-1
+					]
+				],
+				"color": [
+					"dark"
+				]
+			},
+			{
+				"name": "tactimon",
+				"color": [
+					"dark"
+				],
+				"from": [
+					[
+						0,
+						-1
+					]
+				]
 			},
 			null
 		],
@@ -86,14 +229,53 @@
 			null,
 			null,
 			{
-				"name": "grademon_black",
-				"from": [[-1, -1]],
-				"color": ["dark"]
+				"name": "wisemon",
+				"from": [
+					[
+						-1,
+						-1
+					]
+				]
 			},
 			{
-				"name": "tactimon",
-				"color": ["dark"],
-				"from": [[0, -1]]
+				"name": "samudramon",
+				"from": [
+					[
+						-1,
+						-1
+					]
+				],
+				"color": [
+					"dark"
+				]
+			},
+			{
+				"name": "samudramon_itto_mode",
+				"from": [
+					[
+						0,
+						-1
+					]
+				],
+				"color": [
+					"mode"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "ancientwisemon",
+				"from": [
+					[
+						-1,
+						-1
+					]
+				]
 			},
 			null
 		]

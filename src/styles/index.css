@@ -760,7 +760,8 @@ a.line-point {
 	z-index: -2;
 }
 
-.line-point .spinner-wrapper {
+.line-point .spinner-wrapper,
+.position-relative > .spinner-wrapper {
 	position: absolute;
 	top: 0;
 	left: 0;

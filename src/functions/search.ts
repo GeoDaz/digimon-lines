@@ -37,21 +37,6 @@ export const getDubbedSearchList = (
 
 			result.mapped[dubName] = name;
 			result.keys.push(dubName);
-
-			// map when there is a name like current name + something and the dub name + something not exists, so create it
-			baseSearchList.forEach(subName => {
-				if (
-					subName != name &&
-					!dubList[subName] &&
-					subName.match(`${name}_|_${name}`)
-				) {
-					const subDubName = subName.replace(name, dubName);
-					dubList[subName] = subDubName;
-					console.log({ worked: dubList[subName] });
-					result.mapped[subDubName] = subName;
-					result.keys.push(subDubName);
-				}
-			});
 			return result;
 		},
 		{

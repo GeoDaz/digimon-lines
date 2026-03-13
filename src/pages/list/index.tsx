@@ -1,42 +1,51 @@
 import Layout from '@/components/Layout';
 import ListItem from '@/components/List/ListItem';
+import DigimonModal, { EditData } from '@/components/List/AddDigimonModal';
 import SearchBar from '@/components/SearchBar';
 import { stringToKey } from '@/functions';
 import useHash from '@/hooks/useHash';
+import useSubmitDigimon, { DigimonList } from '@/hooks/useSubmitDigimon';
 import { Digimon, DigimonItem } from '@/types/Digimon';
 import { StringObject } from '@/types/Ui';
+import Search from '@/types/Search';
 import { DigimonProvider } from '@/context/digimon';
+import { SearchContext } from '@/context/search';
 import { GetStaticProps } from 'next';
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
+import Icon from '@/components/Icon';
 import { getDirPaths } from '@/functions/file';
-import { getDubNames } from '@/functions/search';
+import { getDubNames, getDubbedSearchList } from '@/functions/search';
 
-interface DigimonList {
-	[key: string]: { [key: string]: DigimonItem };
-}
+const defaultObject: any = {};
 
 interface Props {
-	list: DigimonList;
-	digimons: { [key: string]: Digimon };
-	dubNames: StringObject;
+	list?: DigimonList;
+	digimons?: { [key: string]: Digimon };
+	dubNames?: StringObject;
+	search?: Search;
 }
 const PageList: React.FC<Props> = props => {
-	const [list, setList] = useState<DigimonList>(props.list);
+	const defaultList: DigimonList = props.list || defaultObject;
+	const [list, setList] = useState<DigimonList>(defaultList);
+	const handleSubmitDigimon = useSubmitDigimon(setList);
 	const [search, setSearch] = useState<string>();
+	const [showModal, setShowModal] = useState(false);
+	const [editData, setEditData] = useState<EditData | null>(null);
 	const hash = useHash();
 
 	useEffect(() => {
-		if (hash && Object.keys(props.list).length > 0) {
+		if (hash) {
 			document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' });
 		}
 	}, [hash]);
 
 	useEffect(() => {
 		if (!search) {
-			setList(props.list);
+			setList(defaultList);
 		} else {
 			setList(
-				Object.entries(props.list).reduce((acc, [level, levels]) => {
+				Object.entries(defaultList).reduce((acc, [level, levels]) => {
 					const nextLevel = Object.entries(levels).reduce(
 						(acc, [key, value]) => {
 							if (key.includes(search)) {
@@ -65,47 +74,92 @@ const PageList: React.FC<Props> = props => {
 		setSearch(sanitizedSearch);
 	};
 
+	const handleEditDigimon = (level: string, digimon: DigimonItem) => {
+		setEditData({ level, digimon });
+		setShowModal(true);
+	};
+
+	const handleCloseModal = () => {
+		setShowModal(false);
+		setEditData(null);
+	};
+
+	const handleOpenAddModal = () => {
+		setEditData(null);
+		setShowModal(true);
+	};
+
 	return (
 		<Layout
 			noGoBack
 			title="Digimon by levels"
 			metadescription="List of Digimon by levels"
 		>
-			<DigimonProvider dubNames={props.dubNames} data={props.digimons}>
-				<SearchBar
-					label="Research a digimon"
-					onSubmit={handleSearch}
-					defaultValue={search}
-					width={300}
-				/>
-				{Object.entries(list).map(([level, digimons]) => (
-					<div key={level} className="mb-4">
-						<h2 className="mb-4">{level}</h2>
-						<div className="d-flex flex-wrap gap-3">
-							{Object.entries(digimons).map(([name, digimon]) => (
-								<ListItem key={name} digimon={digimon} hash={hash} />
-							))}
-						</div>
+			<SearchContext.Provider value={props.search}>
+				<DigimonProvider dubNames={props.dubNames} data={props.digimons}>
+					<div className="d-flex gap-3 align-items-center">
+						<SearchBar
+							label="Research a digimon"
+							onSubmit={handleSearch}
+							defaultValue={search}
+							width={300}
+						/>
+						{process.env.NODE_ENV === 'development' && (
+							<Button
+								variant="primary"
+								className="mb-3"
+								onClick={handleOpenAddModal}
+							>
+								<Icon name="plus" /> Add a Digimon
+							</Button>
+						)}
 					</div>
-				))}
-			</DigimonProvider>
+					{Object.entries(list).map(([level, digimons]) => (
+						<div key={level} className="mb-4">
+							<h2 className="mb-4">{level}</h2>
+							<div className="d-flex flex-wrap gap-3">
+								{Object.entries(digimons).map(([name, digimon]) => (
+									<ListItem
+										key={name}
+										digimon={digimon}
+										hash={hash}
+										onEdit={
+											process.env.NODE_ENV === 'development'
+												? () => handleEditDigimon(level, digimon)
+												: undefined
+										}
+									/>
+								))}
+							</div>
+						</div>
+					))}
+					{process.env.NODE_ENV === 'development' && (
+						<DigimonModal
+							show={showModal}
+							handleClose={handleCloseModal}
+							onSubmit={handleSubmitDigimon}
+							levels={Object.keys(defaultList)}
+							editData={editData}
+						/>
+					)}
+				</DigimonProvider>
+			</SearchContext.Provider>
 		</Layout>
 	);
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-	const list: DigimonList = require('../../../public/json/digimons/ranked.json');
-
-	let dubNames: StringObject = {};
-	let digimons: { [key: string]: Digimon } = {};
 	try {
-		digimons = require('../../../public/json/digimons/index.json');
-		dubNames = getDubNames();
+		const list: DigimonList = require('../../../public/json/digimons/ranked.json');
+		const digimons = require('../../../public/json/digimons/index.json');
+		const dubNames = getDubNames();
+		const searchList: string[] = getDirPaths('images/digimon');
+		const search = getDubbedSearchList(searchList, dubNames);
+		return { props: { list, digimons, dubNames, search } };
 	} catch (e) {
 		console.error(e);
+		return { props: {} };
 	}
-
-	return { props: { list, digimons, dubNames } };
 };
 
 export default PageList;
