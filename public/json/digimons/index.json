@@ -1159,8 +1159,8 @@
 		"field": ["Dragon's Roar", "Nature Spirits", "Virus Busters", "Wind Guardians"],
 		"variants": []
 	},
-	"whamonperfect": {
-		"name": "whamonperfect",
+	"whamon": {
+		"name": "whamon",
 		"year": "1998",
 		"url": "https://wikimon.net/Whamon_Perfect",
 		"level": ["Champion", "Ultimate"],
@@ -9777,7 +9777,7 @@
 		"name": "kingwhamon",
 		"year": "2010",
 		"url": "https://wikimon.net/King_Whamon",
-		"level": ["Ultimate", "Mega"],
+		"level": ["Mega"],
 		"type": "Aquatic Mammal",
 		"attribute": "Vaccine",
 		"variants": []
@@ -10315,6 +10315,7 @@
 	},
 	"aircraftcarrierwhamon": {
 		"name": "aircraftcarrierwhamon",
+		"level": ["Champion", "Ultimate"],
 		"year": "2011",
 		"variants": []
 	},
