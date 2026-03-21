@@ -5,6 +5,7 @@ import { defaultLine } from '@/reducers/lineReducer';
 import { useToast } from '@/context/toast';
 import Line from '@/types/Line';
 import { useState } from 'react';
+import { IS_DEV } from '@/consts/env';
 
 const useDownloadCode = (line: Line, setLine: (line: Line) => void) => {
 	const [name, setName] = useState<string | undefined>();
@@ -16,7 +17,7 @@ const useDownloadCode = (line: Line, setLine: (line: Line) => void) => {
 		copyToClipboard(json);
 		const file = createFile(json, 'application/json');
 
-		if (process.env.NODE_ENV === 'development' && name) {
+		if (IS_DEV && name) {
 			try {
 				const response = await fetch('/api/save-line', {
 					method: 'POST',

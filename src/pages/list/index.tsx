@@ -16,6 +16,7 @@ import { Button } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import { getDirPaths } from '@/functions/file';
 import { getDubNames, getDubbedSearchList } from '@/functions/search';
+import { IS_DEV } from '@/consts/env';
 
 const defaultObject: any = {};
 
@@ -104,7 +105,7 @@ const PageList: React.FC<Props> = props => {
 							defaultValue={search}
 							width={300}
 						/>
-						{process.env.NODE_ENV === 'development' && (
+						{IS_DEV && (
 							<Button
 								variant="primary"
 								className="mb-3"
@@ -124,7 +125,7 @@ const PageList: React.FC<Props> = props => {
 										digimon={digimon}
 										hash={hash}
 										onEdit={
-											process.env.NODE_ENV === 'development'
+											IS_DEV
 												? () => handleEditDigimon(level, digimon)
 												: undefined
 										}
@@ -133,7 +134,7 @@ const PageList: React.FC<Props> = props => {
 							</div>
 						</div>
 					))}
-					{process.env.NODE_ENV === 'development' && (
+					{IS_DEV && (
 						<DigimonModal
 							show={showModal}
 							handleClose={handleCloseModal}

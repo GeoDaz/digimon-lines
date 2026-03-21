@@ -994,6 +994,17 @@ a.line-point {
 	opacity: 1;
 }
 
+/* List Item */
+
+.list-item h3{
+	font-size: 1.3rem;
+}
+
+.list-item h4{
+	font-size: 1.2rem;
+	opacity: 0.8;
+}
+
 /* Progress Bar */
 
 .progress-bar {

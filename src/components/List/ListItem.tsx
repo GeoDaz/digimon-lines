@@ -18,7 +18,7 @@ const ListItem: React.FC<Props> = ({ digimon, hash, onEdit }) => {
 	return (
 		<div
 			id={digimon.name}
-			className="d-flex flex-column"
+			className="d-flex flex-column list-item"
 			style={{
 				scrollMarginTop: '72px',
 			}}
@@ -60,10 +60,10 @@ const ListItem: React.FC<Props> = ({ digimon, hash, onEdit }) => {
 								/>
 							</div>
 						</div>
-						<h3 className="text-center mt-2">
-							{capitalize(digimon.name)}{' '}
-							{dubName && `/ ${capitalize(dubName)}`}
-						</h3>
+						<h3 className="text-center mt-2">{capitalize(digimon.name)} </h3>
+						{dubName && (
+							<h4 className="text-center">{capitalize(dubName)}</h4>
+						)}
 					</CardHeader>
 					<CardBody>
 						<div className="d-flex flex-wrap gap-2 align-items-start flex-grow-0">

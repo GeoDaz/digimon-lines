@@ -1,9 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import fs from 'fs';
 import path from 'path';
+import { IS_DEV } from '@/consts/env';
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-	if (process.env.NODE_ENV !== 'development') {
+	if (!IS_DEV) {
 		return res.status(403).json({ error: 'Only available in development mode' });
 	}
 

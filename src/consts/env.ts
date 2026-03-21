@@ -1,6 +1,7 @@
 export const DEV = 'development';
 export const PROD = 'production';
 export const TEST = 'test';
+export const IS_DEV = process.env.NODE_ENV === DEV;
 export const SITE_URL = 'https://digimon-lines.com';
 export const DISCORD_URL = 'https://discord.gg/RJrEuN7cQs';
 export const PUPPETEER_URL = 'https://digimon-lines-puppeteer.onrender.com';

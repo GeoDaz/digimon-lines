@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import fs from 'fs';
 import path from 'path';
 import { DigimonItem } from '@/types/Digimon';
+import { IS_DEV } from '@/consts/env';
 
 interface UpdateDigimonRequest {
 	level: string;
@@ -10,7 +11,7 @@ interface UpdateDigimonRequest {
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-	if (process.env.NODE_ENV !== 'development') {
+	if (!IS_DEV) {
 		return res.status(403).json({ error: 'Only available in development mode' });
 	}
 
