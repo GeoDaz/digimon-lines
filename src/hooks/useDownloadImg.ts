@@ -3,6 +3,7 @@ import { downloadFromUrl, formatFileName } from '@/functions/file';
 import Line from '@/types/Line';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
 import { makeZoomContext } from '@/context/zoom';
+import { wait } from '@/functions';
 
 const useDownloadImg = (name: string | undefined) => {
 	const [downloading, setDownloading] = useState<boolean>(false);
@@ -19,11 +20,12 @@ const useDownloadImg = (name: string | undefined) => {
 			if (!node) {
 				throw new Error('Element .frame non trouvé');
 			}
-
+			
+			await wait(500);
 			node.classList.add('captured');
-
 			await preLoadImages(node);
 			await waitForNextPaint();
+			await wait(500);
 
 			const xCases = line.columns.length;
 			const yCases = line.size;
