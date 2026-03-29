@@ -1,52 +1,52 @@
 {
-    "columns": [
-        [
-            {
-                "name": "kekomon"
-            },
-            {
-                "name": "kekkomon"
-            },
-            {
-                "name": "gekkomon"
-            },
+	"columns": [
+		[
+			{
+				"name": "kekomon"
+			},
+			{
+				"name": "kekkomon"
+			},
+			{
+				"name": "gekkomon"
+			},
 			{
 				"name": "armalizamon"
 			},
 			{
-				"name": "unknown"
+				"name": "monarchlizamon"
 			},
 			{
 				"name": "unknown"
 			}
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "chamelemon",
-                "from": [-1,-1]
-            }
-        ]
-    ],
-    "related": [
-        "gekomon",
-        {
-            "name": "golemon",
-            "for": "sunarizamon"
-        },
-        {
-            "name": "elizamon",
-            "for": "iguneetmon"
-        },
-        {
-            "name": "vorvomon",
-            "for": "salamandermon"
-        },
-        {
-            "name": "gemmon",
-            "for": "reptilimon"
-        }
-    ]
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "chamelemon",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		"gekomon",
+		{
+			"name": "golemon",
+			"for": "sunarizamon"
+		},
+		{
+			"name": "elizamon",
+			"for": "iguneetmon"
+		},
+		{
+			"name": "vorvomon",
+			"for": "salamandermon"
+		},
+		{
+			"name": "gemmon",
+			"for": "reptilimon"
+		}
+	]
 }
