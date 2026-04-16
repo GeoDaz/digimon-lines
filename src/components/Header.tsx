@@ -36,11 +36,11 @@ const Header: React.FC = () => (
 						toggle={{ content: 'Yu-Gi-Oh!' }}
 						items={[
 							{
-								href: 'https://yugioh-lines.vercel.app',
+								href: 'https://yugioh-lines.netlify.app',
 								content: 'Deck Randomizer',
 							},
 							{
-								href: 'https://yugioh-lines.vercel.app/build',
+								href: 'https://yugioh-lines.netlify.app/build',
 								content: 'Steps Builder',
 							},
 						]}
@@ -50,12 +50,12 @@ const Header: React.FC = () => (
 						toggle={{ content: 'Dragon Quest' }}
 						items={[
 							{
-								href: 'https://dragon-quest-synth.vercel.app/build',
+								href: 'https://dragon-quest-synth.netlify.app/build',
 								target: '_blank',
 								content: 'Builder',
 							},
 							{
-								href: 'https://dragon-quest-synth.vercel.app',
+								href: 'https://dragon-quest-synth.netlify.app',
 								target: '_blank',
 								content: 'Synthesis',
 							},
