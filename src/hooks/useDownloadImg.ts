@@ -36,6 +36,7 @@ const useDownloadImg = (name: string | undefined) => {
 				width: 66 * zoomFactor + gridSpacing * 1.5 + unit * xCases,
 				height: gridSpacing * 1.5 + unit * yCases,
 				style: { overflow: 'visible' },
+				corsImg: { url: '/api/proxy-image?url=#{cors}' },
 			});
 
 			const filename = formatFileName((name || 'line') + '.png');
@@ -62,25 +63,24 @@ const preLoadImages = async (node: Element): Promise<void> => {
 		imgs.map(async img => {
 			const src = img.src;
 			if (!src.startsWith('data:')) {
-				try {
-					const isExternal =
-						src.startsWith('http') &&
-						!src.startsWith(window.location.origin);
-					const fetchUrl = isExternal
-						? `/api/proxy-image?url=${encodeURIComponent(src)}`
-						: src;
-					const response = await fetch(fetchUrl);
-					const blob = await response.blob();
-					const dataUrl = await new Promise<string>(resolve => {
-						const reader = new FileReader();
-						reader.onloadend = () => resolve(reader.result as string);
-						reader.readAsDataURL(blob);
-					});
-					img.src = dataUrl;
-					img.removeAttribute('srcset');
-					await img.decode();
-				} catch (err) {
-					console.error({ err });
+				const isExternal =
+					src.startsWith('http') &&
+					!src.startsWith(window.location.origin);
+				if (!isExternal) {
+					try {
+						const response = await fetch(src);
+						const blob = await response.blob();
+						const dataUrl = await new Promise<string>(resolve => {
+							const reader = new FileReader();
+							reader.onloadend = () => resolve(reader.result as string);
+							reader.readAsDataURL(blob);
+						});
+						img.src = dataUrl;
+						img.removeAttribute('srcset');
+						await img.decode();
+					} catch (err) {
+						console.error({ err });
+					}
 				}
 			} else {
 				try {

@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 		const contentType = response.headers.get('content-type') || 'image/png';
 
 		res.setHeader('Content-Type', contentType);
-		res.setHeader('Cache-Control', 'public, max-age=86400');
+		res.setHeader('Cache-Control', 'private, no-store');
 		res.send(Buffer.from(buffer));
 	} catch {
 		res.status(500).json({ error: 'Failed to fetch image' });
