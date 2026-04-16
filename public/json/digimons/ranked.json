@@ -539,11 +539,11 @@
 		"tinkermon": {
 			"name": "tinkermon",
 			"to": [
+				"petermon",
 				"fairymon",
 				"shutumon",
 				"hudiemon",
-				"butterflamon",
-				"petermon"
+				"butterflamon"
 			],
 			"from": [
 				"puroromon"
@@ -671,6 +671,39 @@
 				"groundramon",
 				"loaderliomon",
 				"proganomon"
+			]
+		},
+		"wizardmon": {
+			"name": "wizardmon",
+			"variants": [
+				"sorcerymon",
+				"flamewizardmon",
+				"witchmon"
+			],
+			"modes": [
+				"wizardmon_x"
+			],
+			"from": [
+				"ghostmon",
+				"impmon",
+				"candlemon"
+			],
+			"to": [
+				"mistymon",
+				"baalmon",
+				"wisemon",
+				"deathmeramon",
+				"skullsatamon"
+			]
+		},
+		"petermon": {
+			"name": "petermon",
+			"from": [
+				"tinkermon"
+			],
+			"to": [
+				"captainhookmon",
+				"zamielmon"
 			]
 		}
 	},

@@ -63,7 +63,13 @@ const preLoadImages = async (node: Element): Promise<void> => {
 			const src = img.src;
 			if (!src.startsWith('data:')) {
 				try {
-					const response = await fetch(src);
+					const isExternal =
+						src.startsWith('http') &&
+						!src.startsWith(window.location.origin);
+					const fetchUrl = isExternal
+						? `/api/proxy-image?url=${encodeURIComponent(src)}`
+						: src;
+					const response = await fetch(fetchUrl);
 					const blob = await response.blob();
 					const dataUrl = await new Promise<string>(resolve => {
 						const reader = new FileReader();
@@ -71,6 +77,7 @@ const preLoadImages = async (node: Element): Promise<void> => {
 						reader.readAsDataURL(blob);
 					});
 					img.src = dataUrl;
+					img.removeAttribute('srcset');
 					await img.decode();
 				} catch (err) {
 					console.error({ err });
