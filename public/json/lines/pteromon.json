@@ -7,12 +7,7 @@
 			null,
 			null,
 			{ "name": "medievalgallantmon", "from": [[1, -1]] },
-			{
-				"name": "zephagamon_ace",
-				"from": [[0.5, -1]],
-				"xSize": 2,
-				"color": ["mode"]
-			}
+			null
 		],
 		[
 			{ "name": "yolkmon", "from": null },
@@ -21,7 +16,7 @@
 			{ "name": "galemon", "color": ["wind"], "from": [[0, -1]] },
 			{ "name": "grandgalemon", "color": ["wind"], "from": [[0, -1]] },
 			{ "name": "zephagamon", "from": [[0, -1]], "color": ["wind"] },
-			{ "name": "vortexdramon", "from": [[-0.5, -1]], "xSize": 2 }
+			{ "name": "vortexdramon", "from": [[0, -1]], "color": ["wind"] }
 		],
 		[
 			null,
@@ -29,7 +24,7 @@
 			{ "name": "dark_pteromon", "from": [[-1, -1]], "color": ["dark"] },
 			null,
 			null,
-			{ "name": "dark_zephagamon",  "from": [[-1, -1]], "color": ["dark"]  },
+			{ "name": "dark_zephagamon", "from": [[-1, -1]], "color": ["dark"] },
 			null
 		]
 	],
