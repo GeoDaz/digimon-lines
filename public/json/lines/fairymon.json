@@ -1,25 +1,10 @@
 {
 	"columns": [
 		[
-			{
-				"name": "pupumon",
-				"xSize": 2,
-				"from": null
-			},
-			{
-				"name": "puroromon",
-				"xSize": 2
-			},
-			{
-				"name": "tinkermon",
-				"xSize": 2
-			},
-			{
-				"name": "fairymon",
-				"color": ["wind"],
-				"from": [[0.5, -1.5]],
-				"ySize": 2
-			},
+			{ "name": "pupumon", "xSize": 2, "from": null },
+			{ "name": "puroromon", "xSize": 2 },
+			{ "name": "tinkermon", "xSize": 2 },
+			{ "name": "fairymon", "color": ["wind"], "from": [[0.5, -1.5]], "ySize": 2 },
 			{
 				"name": "jetsilphymon",
 				"color": ["fusion", "fusion"],
@@ -58,32 +43,18 @@
 			null,
 			null,
 			null,
-			{
-				"name": "petermon",
-				"from": [[-1.5, -1]]
-			},
-			null,
-			null
+			{ "name": "petermon", "from": [[-1.5, -1]] },
+			{ "name": "captainhookmon", "from": [[0, -1]], "color": ["dark"] },
+			{ "name": "olegmon", "from": [[0, -1]] }
 		]
 	],
 	"related": [
-		{
-			"name": "wormmon",
-			"for": "hudiemon"
-		},
+		{ "name": "hawkmon", "for": "silphymon" },
+		{ "name": "toyagumon", "for": "hookmon" },
+		{ "name": "wormmon", "for": "hudiemon" },
 		"morphomon",
-		{
-			"name": "hawkmon",
-			"for": "silphymon"
-		},
-		{
-			"name": "jazamon",
-			"for": "sparrowmon"
-		},
-		{
-			"name": "woodmon",
-			"for": "zamielmon"
-		}
+		{ "name": "jazamon", "for": "sparrowmon" },
+		{ "name": "woodmon", "for": "zamielmon" }
 	],
 	"size": 6
 }

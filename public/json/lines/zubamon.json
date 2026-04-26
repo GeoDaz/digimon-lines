@@ -1,38 +1,39 @@
 {
-    "columns": [
-        [
-            {
-                "name": "sakumon"
-            },
-            {
-                "name": "sakuttomon",
-                "color": "gold"
-            },
-            {
-                "name": "zubamon",
-                "color": "gold"
-            },
-            {
-                "name": "zubaeagermon",
-                "color": "gold"
-            },
-            {
-                "name": "duramon",
-                "color": "gold"
-            },
-            {
-                "name": "durandamon",
-                "color": "gold"
-            },
-            {
-                "name": "ragnalordmon",
-                "color": "fusion"
-            }
-        ]
-    ],
-    "related": [
-        "ludomon",
-        {"name": "dorumon", "for": "grademon"}, 
-        "hackmon"
-    ]
+	"columns": [
+		[
+			{
+				"name": "sakumon"
+			},
+			{
+				"name": "sakuttomon",
+				"color": "gold"
+			},
+			{
+				"name": "zubamon",
+				"color": "gold"
+			},
+			{
+				"name": "zubaeagermon",
+				"color": "gold"
+			},
+			{
+				"name": "duramon",
+				"color": "gold"
+			},
+			{
+				"name": "durandamon",
+				"color": "gold"
+			},
+			{
+				"name": "ragnalordmon",
+				"color": "fusion"
+			}
+		]
+	],
+	"related": [
+		"ludomon",
+		{ "name": "dorumon", "for": "grademon" },
+		"hackmon",
+		{ "name": "shoutmon", "for": "omegashoutmon" }
+	]
 }

@@ -44,6 +44,12 @@
 			"to": [
 				"puroromon"
 			]
+		},
+		"fusamon": {
+			"name": "fusamon",
+			"to": [
+				"bowmon"
+			]
 		}
 	},
 	"Baby II": {
@@ -135,6 +141,16 @@
 			],
 			"from": [
 				"pupumon"
+			]
+		},
+		"bowmon": {
+			"name": "bowmon",
+			"from": [
+				"fusamon"
+			],
+			"to": [
+				"loogamon",
+				"dorumon"
 			]
 		}
 	},
@@ -508,6 +524,53 @@
 				"gatomon_x",
 				"nefertimon_x",
 				"tobucatmon"
+			]
+		},
+		"gomamon_x": {
+			"name": "gomamon_x",
+			"from": [
+				"gomamon"
+			],
+			"to": [
+				"gesomon_x",
+				"seadramon_x"
+			]
+		},
+		"dorumon": {
+			"name": "dorumon",
+			"from": [
+				"dorimon",
+				"bowmon"
+			],
+			"to": [
+				"dorugamon",
+				"raptordramon",
+				"sangloupmon",
+				"airdramon"
+			]
+		},
+		"loogamon": {
+			"name": "loogamon",
+			"from": [
+				"bowmon"
+			],
+			"to": [
+				"loogarmon",
+				"gaogamon",
+				"sangloupmon",
+				"gaogamon_black",
+				"fangmon"
+			]
+		},
+		"ryudamon": {
+			"name": "ryudamon",
+			"from": [
+				"kyokyomon"
+			],
+			"to": [
+				"ginryumon",
+				"airdramon",
+				"musyamon"
 			]
 		}
 	},
