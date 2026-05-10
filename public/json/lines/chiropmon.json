@@ -14,7 +14,7 @@
 				"name": "nightchiropmon"
 			},
 			{
-				"name": "unknown"
+				"name": "scourgechiropmon"
 			},
 			{
 				"name": "unknown"
@@ -27,6 +27,18 @@
 			"name": "devimon",
 			"for": "myotismon",
 			"from": "demidevimon"
-		}
+		},
+		{
+			"name": "commandramon",
+			"for": "cargodramon"
+		},
+		{
+			"name": "jazamon",
+			"for": "mailbirdramon"
+		},
+        {
+            "name": "hagurumon",
+            "for": "blimpmon"
+        },
 	]
 }
