@@ -1,1 +1,57 @@
-{"columns":[[null,null,null,null,null,{"name":"slashangemon","color":["light"],"from":[[1,-1]]},null],[{"name":"keemon","from":null},{"name":"yarmon","color":["dark"],"from":[[0,-1]]},{"name":"dracmon","color":["dark"],"from":[[0,-1]]},{"name":"sangloupmon","color":["dark"],"from":[[0,-1]]},{"name":"matadormon","color":["dark"],"from":[[0,-1]]},{"name":"grandracmon","color":["dark"],"from":[[0,-1]]},null],[null,null,null,null,{"name":"myotismon","color":["dark"],"from":[[-1,-1]]},{"name":"venommyotismon","color":["dark","dark"],"from":[0,-1]},{"name":"malomyotismon","color":["dark","dark"],"from":[0,-1]}],[null,null,null,null,{"name":"myotismon_x","from":[[-1,0]],"color":["x"]},{"name":"neomyotismon","color":["dark"],"from":[[-1,-1]]},{"name":"neomyotismon_darkness_mode","from":[0,-1],"color":["fusion","fusion"]}]],"related":[{"name":"devimon","for":"myotismon"},{"name":"patamon","for":"slashangemon"},{"name":"negamon","for":"eyesmon"},{"name":"patamon","for":"bagramon"},{"name":"phascomon","for":"astamon"},{"name":"gabumon","for":"garurumon_black"},{"name":"wankomon","for":"dobermon","from":"labramon"},{"name":"loogamon","from":"sangloupmon"},{"name":"kotemon","for":"yaksamon"},{"name":"toyagumon","for":"boltboutamon"},{"name":"bakemon","for":"piemon"},{"name":"biyomon","for":"ornismon"}],"size":7}
+{
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{ "name": "slashangemon", "color": ["light"], "from": [[1, -1]] },
+			null
+		],
+		[
+			{ "name": "keemon", "from": null },
+			{ "name": "yarmon", "color": ["dark"], "from": [[0, -1]] },
+			{ "name": "dracmon", "color": ["dark"], "from": [[0, -1]] },
+			{ "name": "sangloupmon", "color": ["dark"], "from": [[0, -1]] },
+			{ "name": "matadormon", "color": ["dark"], "from": [[0, -1]] },
+			{ "name": "grandracmon", "color": ["dark"], "from": [[0, -1]] },
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "myotismon", "color": ["dark"], "from": [[-1, -1]] },
+			{ "name": "venommyotismon", "color": ["dark", "dark"], "from": [0, -1] },
+			{ "name": "malomyotismon", "color": ["dark", "dark"], "from": [0, -1] }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "myotismon_x", "from": [[-1, 0]], "color": ["x"] },
+			{ "name": "neomyotismon", "color": ["dark"], "from": [[-1, -1]] },
+			{
+				"name": "neomyotismon_darkness_mode",
+				"from": [0, -1],
+				"color": ["fusion", "fusion"]
+			}
+		]
+	],
+	"related": [
+		{ "name": "devimon", "for": "myotismon" },
+		{ "name": "patamon", "for": "slashangemon" },
+		{ "name": "negamon", "for": "duskmon" },
+		{ "name": "phascomon", "for": "astamon" },
+		{ "name": "gabumon", "for": "garurumon_black" },
+		{ "name": "wankomon", "for": "dobermon", "from": "labramon" },
+		{ "name": "loogamon", "from": "sangloupmon" },
+		{ "name": "kotemon", "for": "yaksamon" },
+		{ "name": "toyagumon", "for": "boltboutamon" },
+		{ "name": "bakemon", "for": "piemon" }
+	],
+	"size": 7
+}
