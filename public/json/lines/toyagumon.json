@@ -86,7 +86,7 @@
 			{ "name": "darklizardmon", "from": [[0, -1]], "color": ["dark"] },
 			{ "name": "gigadramon", "from": [[0, -1]], "color": ["dark"] },
 			{
-				"name": "gundramon",
+				"name": "drakdramon",
 				"from": [
 					[0, -1],
 					[1, -1]
@@ -101,7 +101,14 @@
 			null,
 			{ "name": "tankmon", "from": [[-1, -1]] },
 			{ "name": "tankdramon", "from": [[0, -1]] },
-			null,
+			{
+				"name": "gundramon",
+				"from": [
+					[0, -1],
+					[-1, -1],
+					[1, -1]
+				]
+			},
 			null,
 			null
 		],

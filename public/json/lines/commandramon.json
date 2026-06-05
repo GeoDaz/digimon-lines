@@ -60,7 +60,10 @@
 				"name": "tankmon",
 				"from": [-1, -1]
 			},
-			null,
+			{
+				"name": "vulturemon",
+				"from": [[-1, -1]]
+			},
 			{
 				"name": "cannondramon",
 				"from": [-1, -1]
@@ -81,7 +84,10 @@
 			},
 			{
 				"name": "gundramon",
-				"from": [[0, -1],[-2, -1]]
+				"from": [
+					[0, -1],
+					[-2, -1]
+				]
 			}
 		]
 	],
@@ -124,8 +130,8 @@
 			"for": "cannondramon"
 		},
 		{
-		  "name": "patamon",
-		  "for": "centarumon"
+			"name": "patamon",
+			"for": "centarumon"
 		},
 		{
 			"name": "jazamon",

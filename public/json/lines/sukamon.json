@@ -1,246 +1,141 @@
 {
-    "columns": [
-        [
-            {
-                "name": "cocomon",
-                "from": null
-            },
-            {
-                "name": "chocomon"
-            },
-            {
-                "name": "tyumon"
-            },
-            {
-                "name": "sukamon",
-                "skins": [
-                    "platinumsukamon"
-                ]
-            },
-            {
-                "name": "greatkingsukamon",
-                "color": [
-                    "gold"
-                ]
-            },
-            {
-                "name": "kingetemon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        1,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "gold",
-                    "gold"
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "targetmon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "etemon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        -1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "metaletemon",
-                "color": [
-                    "machine"
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "opossummon",
-                "from": [
-                    [
-                        -2,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "chohakkaimon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "cendrillmon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            },
-            null
-        ],
-        [
-            {
-                "name": "sakumon",
-                "from": null
-            },
-            {
-                "name": "sakuttomon",
-                "from": null
-            },
-            {
-                "name": "tyutyumon",
-                "from": [
-                    [
-                        0,
-                        -2
-                    ]
-                ],
-                "color": [
-                    "gold"
-                ]
-            },
-            {
-                "name": "damemon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "gold"
-                ]
-            },
-            {
-                "name": "kumbhiramon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ],
-                    [
-                        -1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "takutomon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "light"
-                ]
-            },
-            {
-                "name": "takutomon_wrath_mode",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "mode"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "tuwarmon",
-                "from": [
-                    [
-                        -1,
-                        0
-                    ]
-                ],
-                "color": [
-                    "mode"
-                ]
-            },
-            {
-                "name": "deadly_tuwarmon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "skins": [
-                    "deadly_tuwarmon_hell_mode"
-                ],
-                "color": [
-                    "fusion"
-                ]
-            },
-            null,
-            null
-        ]
-    ],
-    "related": [
-        {
-            "name": "app_sukasimon",
-            "for": "app_gomimon"
-        },
-        "numemon",
-        {
-            "name": "shoemon",
-            "from": "cendrillmon"
-        },
-        {
-            "name": "kakamon",
-            "from": "etemon"
-        },
-        {
-            "name": "gatomon",
-            "from": "opossummon"
-        },
-        {
-            "name": "shakamon",
-            "from": "chohakkaimon"
-        },
-        {
-            "name": "machmon",
-            "for": "takutomon"
-        }
-    ],
-    "size": 7
+	"columns": [
+		[
+			{
+				"name": "cocomon",
+				"from": null
+			},
+			{
+				"name": "chocomon"
+			},
+			{
+				"name": "tyumon"
+			},
+			{
+				"name": "sukamon",
+				"skins": ["platinumsukamon"]
+			},
+			{
+				"name": "greatkingsukamon",
+				"color": ["gold"]
+			},
+			{
+				"name": "kingetemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": ["gold", "gold"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "targetmon",
+				"from": [[-1, -1]]
+			},
+			{
+				"name": "etemon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
+			},
+			{
+				"name": "metaletemon",
+				"color": ["machine"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "opossummon",
+				"from": [[-2, -1]]
+			},
+			{
+				"name": "chohakkaimon",
+				"from": [[0, -1]]
+			},
+			{
+				"name": "cendrillmon",
+				"from": [[1, -1]]
+			},
+			null
+		],
+		[
+			{
+				"name": "sakumon",
+				"from": null
+			},
+			{
+				"name": "sakuttomon",
+				"from": null
+			},
+			{
+				"name": "tyutyumon",
+				"from": [[0, -2]],
+				"color": ["gold"]
+			},
+			{
+				"name": "damemon",
+				"from": [[0, -1]],
+				"color": ["gold"]
+			},
+			{
+				"name": "kumbhiramon",
+				"from": [
+					[1, -1],
+					[-1, -1]
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tuwarmon",
+				"from": [[-1, 0]],
+				"color": ["mode"]
+			},
+			{
+				"name": "deadly_tuwarmon",
+				"from": [[0, -1]],
+				"skins": ["deadly_tuwarmon_hell_mode"],
+				"color": ["fusion"]
+			},
+			null,
+			null
+		]
+	],
+	"related": [
+		{
+			"name": "app_sukasimon",
+			"for": "app_gomimon"
+		},
+		"numemon",
+		{
+			"name": "shoemon",
+			"from": "cendrillmon"
+		},
+		{
+			"name": "kakamon",
+			"from": "etemon"
+		},
+		{
+			"name": "gatomon",
+			"from": "opossummon"
+		},
+		{
+			"name": "shakamon",
+			"from": "chohakkaimon"
+		}
+	],
+	"size": 7
 }

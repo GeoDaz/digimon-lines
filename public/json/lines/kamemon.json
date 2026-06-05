@@ -26,9 +26,12 @@
 			{ "name": "gawappamon", "xCollapsable": false, "yCollapsable": false },
 			{ "name": "shawujinmon", "xCollapsable": false, "yCollapsable": false },
 			{
-				"name": "jumbogamemon",
-				"from": [[0, -3]],
-				"color": ["marine"]
+				"name": "takutomon",
+				"color": ["light"]
+			},
+			{
+				"name": "takutomon_wrath_mode",
+				"color": ["mode"]
 			},
 			null
 		],
@@ -45,7 +48,11 @@
 				],
 				"color": ["marine", "marine"]
 			},
-			null,
+			{
+				"name": "jumbogamemon",
+				"from": [[-1, -1]],
+				"color": ["marine"]
+			},
 			null
 		],
 		[
