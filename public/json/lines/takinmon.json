@@ -31,7 +31,7 @@
 				"color": ["fusion"]
 			},
 			{
-				"name": "zanbamon",
+				"name": "gulfmon",
 				"from": [[0, -1]],
 				"color": ["dark"]
 			},
@@ -80,9 +80,9 @@
 			},
 			null,
 			{
-				"name": "takutomon_wrath_mode",
-				"from": [[1, -1]],
-				"color": ["mode"]
+				"name": "shakamon",
+				"from": [[-1, -1]],
+				"color": ["fusion"]
 			}
 		],
 		[
@@ -104,9 +104,9 @@
 				"from": [[0, -1]]
 			},
 			{
-				"name": "shakamon",
+				"name": "takutomon_wrath_mode",
 				"from": [[0, -1]],
-				"color": ["fusion"]
+				"color": ["mode"]
 			}
 		],
 		[

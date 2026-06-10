@@ -4,35 +4,20 @@
 			null,
 			null,
 			null,
-			{
-				"name": "archelomon",
-				"color": "marine",
-				"from": [1, -1]
-			},
-			{
-				"name": "zudomon",
-				"color": "marine"
-			},
+			{ "name": "archelomon", "color": ["marine"], "from": [[1, -1]] },
+			{ "name": "zudomon", "color": ["marine"], "from": [[0, -1]] },
+			{ "name": "jumbogamemon", "from": [[1, -1]] },
 			null,
 			null
 		],
 		[
-			{
-				"name": "pipimon",
-				"from": null
-			},
-			{ "name": "chapmon", "xCollapsable": true, "yCollapsable": false },
-			{ "name": "kamemon", "xCollapsable": true, "yCollapsable": false },
-			{ "name": "gawappamon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "shawujinmon", "xCollapsable": false, "yCollapsable": false },
-			{
-				"name": "takutomon",
-				"color": ["light"]
-			},
-			{
-				"name": "takutomon_wrath_mode",
-				"color": ["mode"]
-			},
+			{ "name": "pipimon", "from": null },
+			{ "name": "chapmon" },
+			{ "name": "kamemon" },
+			{ "name": "gawappamon" },
+			{ "name": "shawujinmon" },
+			{ "name": "takutomon", "color": ["light"] },
+			{ "name": "takutomon_wrath_mode", "color": ["mode"] },
 			null
 		],
 		[
@@ -48,27 +33,16 @@
 				],
 				"color": ["marine", "marine"]
 			},
-			{
-				"name": "jumbogamemon",
-				"from": [[-1, -1]],
-				"color": ["marine"]
-			},
+			{ "name": "erlangmon", "from": [[0, -1]] },
+			{ "name": "erlangmon_blast_mode", "from": [[0, -1]], "color": ["mode"] },
 			null
 		],
 		[
 			null,
 			null,
 			null,
-			{
-				"name": "tortamon",
-				"from": [[-2, -1]],
-				"color": ["earth"]
-			},
-			{
-				"name": "proganomon",
-				"from": [[0, -1]],
-				"color": ["earth"]
-			},
+			{ "name": "tortamon", "from": [[-2, -1]], "color": ["earth"] },
+			{ "name": "proganomon", "from": [[0, -1]], "color": ["earth"] },
 			{
 				"name": "eldoradimon",
 				"from": [
@@ -77,12 +51,10 @@
 				],
 				"color": ["earth", "earth"]
 			},
-			{
-				"name": "tlalocmon",
-				"color": "fusion"
-			}
+			{ "name": "tlalocmon", "color": ["fusion"], "from": [[0, -1]] },
+			null
 		],
-		[null, null, null, null, null, null, null]
+		[null, null, null, null, null, null, null, null]
 	],
 	"related": [
 		{ "name": "shakamon", "from": "sagomon" },
@@ -92,5 +64,5 @@
 		{ "name": "armadillomon", "from": "proganomon" },
 		{ "name": "gomamon", "for": "zudomon" }
 	],
-	"size": 7
+	"size": 8
 }
