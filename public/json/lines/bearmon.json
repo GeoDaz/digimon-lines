@@ -1,382 +1,262 @@
 {
-    "columns": [
-      [
-        {
-          "name": "snowbotamon",
-          "from": null,
-          "xSize": 2
-        },
-        {
-          "name": "hiyarimon",
-          "color": [
-            "ice"
-          ],
-          "xSize": 2
-        },
-        {
-          "name": "bearmon",
-          "xSize": 2
-        },
-        {
-          "name": "grizzlymon",
-          "xSize": 2
-        },
-        {
-          "name": "greatgrizzlymon",
-          "xSize": 2
-        },
-        {
-          "name": "marsmon",
-          "from": [
-            [
-              0.5,
-              -1
-            ]
-          ],
-          "color": [
-            "fire"
-          ]
-        },
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        null,
-        null,
-        {
-          "name": "callismon",
-          "from": [
-            [
-              -0.5,
-              -1
-            ]
-          ],
-          "color": [
-            "dark"
-          ]
-        },
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        {
-          "name": "chackmon",
-          "color": [
-            "ice"
-          ],
-          "from": [
-            [
-              -2,
-              -1.5
-            ]
-          ],
-          "ySize": 2
-        },
-        {
-          "name": "daipenmon",
-          "from": [
-            [
-              0,
-              -1
-            ],
-            [
-              1,
-              -1
-            ]
-          ],
-          "ySize": 2,
-          "color": [
-            "fusion",
-            "fusion"
-          ]
-        },
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        {
-          "name": "blizzarmon",
-          "from": [
-            [
-              -1,
-              0
-            ]
-          ],
-          "ySize": 2,
-          "color": [
-            "slide"
-          ]
-        },
-        null,
-        {
-          "name": "ancientmegatheriumon",
-          "from": [
-            [
-              0,
-              -1.5
-            ],
-            [
-              -1,
-              -0.5
-            ]
-          ],
-          "color": [
-            "ice",
-            "ice"
-          ]
-        },
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        {
-          "name": "frigimon",
-          "color": [
-            "ice"
-          ],
-          "from": [
-            [
-              -3.5,
-              -1
-            ]
-          ],
-          "skins": []
-        },
-        {
-          "name": "polarbearmon",
-          "from": null
-        },
-        {
-          "name": "skadimon",
-          "from": [
-            [
-              0,
-              -2
-            ]
-          ],
-          "color": [
-            "ice"
-          ]
-        },
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        null,
-        {
-          "name": "monzaemon_x",
-          "from": [
-            [
-              1,
-              0
-            ]
-          ],
-          "color": [
-            "x"
-          ]
-        },
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        null,
-        {
-          "name": "monzaemon",
-          "from": [
-            [
-              -2,
-              -1
-            ],
-            [
-              2,
-              -1
-            ]
-          ],
-          "skins": [
-            "monzaemon_red"
-          ]
-        },
-        {
-          "name": "shinmonzaemon",
-          "from": [
-            [
-              0,
-              -1
-            ],
-            [
-              1,
-              -1
-            ]
-          ],
-          "color": [
-            "dark",
-            "dark"
-          ]
-        },
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        {
-          "name": "porcupamon",
-          "color": [
-            "dark"
-          ],
-          "from": [
-            [
-              -6.5,
-              -1
-            ]
-          ]
-        },
-        {
-          "name": "warumonzaemon",
-          "color": [
-            "dark"
-          ],
-          "from": [
-            [
-              0,
-              -1
-            ]
-          ]
-        },
-        null,
-        null
-      ],
-      [
-        {
-          "name": "pupumon",
-          "from": null
-        },
-        {
-          "name": "puroromon",
-          "from": null
-        },
-        {
-          "name": "panbachimon",
-          "from": [
-            [
-              0,
-              -2
-            ]
-          ]
-        },
-        {
-          "name": "mudfrigimon",
-          "from": null
-        },
-        {
-          "name": "pandamon",
-          "from": [
-            [
-              0,
-              -2
-            ]
-          ]
-        },
-        {
-          "name": "gankoomon"
-        },
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        null,
-        null,
-        {
-          "name": "gankoomon_x",
-          "from": [
-            [
-              -1,
-              0
-            ]
-          ],
-          "color": [
-            "x"
-          ]
-        },
-        {
-          "name": "jesmon_gx",
-          "from": [
-            [
-              0,
-              -1
-            ]
-          ],
-          "color": [
-            "fusion"
-          ]
-        }
-      ]
-    ],
-    "related": [
-        {
-          "name": "app_rebootmon",
-          "for": "app_onmon"
-        },
-        {
-          "name": "numemon",
-          "from": "monzaemon"
-        },
-        {
-          "name": "phascomon",
-          "for": "porcupamon"
-        },
-        {
-          "name": "leomon",
-          "for": "grapleomon"
-        },
-        {
-          "name": "garurumon",
-          "for": "marsmon"
-        },
-      {
-        "name": "penmon",
-        "from": "daipenmon"
-      },
-      {
-        "name": "kakamon",
-        "for": "mojyamon"
-      },
-      {
-        "name": "gomamon",
-        "for": "vikemon"
-      },
-      {
-        "name": "blucomon",
-        "from": "frigimon"
-      },
-      {
-        "name": "toyagumon",
-        "for": "olegmon"
-      },
-      {
-        "name": "fanbeemon",
-        "from": "panbachimon"
-      },
-      {
-        "name": "monodramon",
-        "for": "justimon"
-      }
-    ],
-    "size": 7
-  }
+	"columns": [
+		[
+			{
+				"name": "snowbotamon",
+				"from": null,
+				"xSize": 2
+			},
+			{
+				"name": "hiyarimon",
+				"color": ["ice"],
+				"xSize": 2
+			},
+			{
+				"name": "bearmon",
+				"xSize": 2
+			},
+			{
+				"name": "grizzlymon",
+				"xSize": 2
+			},
+			{
+				"name": "greatgrizzlymon",
+				"xSize": 2
+			},
+			{
+				"name": "marsmon",
+				"from": [[0.5, -1]],
+				"color": ["fire"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "callismon",
+				"from": [[-0.5, -1]],
+				"color": ["dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "chackmon",
+				"color": ["ice"],
+				"from": [[-2, -1.5]],
+				"ySize": 2
+			},
+			{
+				"name": "daipenmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"ySize": 2,
+				"color": ["fusion", "fusion"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "blizzarmon",
+				"from": [[-1, 0]],
+				"ySize": 2,
+				"color": ["slide"]
+			},
+			null,
+			{
+				"name": "ancientmegatheriumon",
+				"from": [
+					[0, -1.5],
+					[-1, -0.5]
+				],
+				"color": ["ice", "ice"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "frigimon",
+				"color": ["ice"],
+				"from": [[-3.5, -1]],
+				"skins": []
+			},
+			{
+				"name": "polarbearmon",
+				"from": null
+			},
+			{
+				"name": "skadimon",
+				"from": [[0, -2]],
+				"color": ["ice"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "monzaemon_x",
+				"from": [[1, 0]],
+				"color": ["x"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "monzaemon",
+				"from": [
+					[-2, -1],
+					[2, -1]
+				],
+				"skins": ["monzaemon_red"]
+			},
+			{
+				"name": "shinmonzaemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": ["dark", "dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "porcupamon",
+				"color": ["dark"],
+				"from": [[-6.5, -1]]
+			},
+			{
+				"name": "warumonzaemon",
+				"color": ["dark"],
+				"from": [[0, -1]]
+			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "pupumon",
+				"from": null
+			},
+			{
+				"name": "puroromon",
+				"from": null
+			},
+			{
+				"name": "panbachimon",
+				"from": [[0, -2]]
+			},
+			{
+				"name": "mudfrigimon",
+				"from": null
+			},
+			{
+				"name": "pandamon",
+				"from": [[0, -2]]
+			},
+			{
+				"name": "gankoomon"
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gankoomon_x",
+				"from": [[-1, 0]],
+				"color": ["x"]
+			},
+			{
+				"name": "jesmon_gx",
+				"from": [[0, -1]],
+				"color": ["fusion"]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "app_rebootmon",
+			"for": "app_onmon"
+		},
+		{
+			"name": "numemon",
+			"from": "monzaemon"
+		},
+		{
+			"name": "phascomon",
+			"for": "porcupamon"
+		},
+		{
+			"name": "leomon",
+			"for": "grapleomon"
+		},
+		{
+			"name": "pristimon",
+			"for": "bearcatmon"
+		},
+		{
+			"name": "garurumon",
+			"for": "marsmon"
+		},
+		{
+			"name": "penmon",
+			"from": "daipenmon"
+		},
+		{
+			"name": "kakamon",
+			"for": "mojyamon"
+		},
+		{
+			"name": "gomamon",
+			"for": "vikemon"
+		},
+		{
+			"name": "blucomon",
+			"from": "frigimon"
+		},
+		{
+			"name": "toyagumon",
+			"for": "olegmon"
+		},
+		{
+			"name": "fanbeemon",
+			"from": "panbachimon"
+		},
+		{
+			"name": "monodramon",
+			"for": "justimon"
+		}
+	],
+	"size": 7
+}

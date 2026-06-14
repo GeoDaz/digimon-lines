@@ -1,34 +1,38 @@
 {
-    "columns": [
-        [
-            {
-                "name": "unknown"
-            },
-            {
-                "name": "unknown"
-            },
-            {
-                "name": "pristimon"
-            },
-            {
-                "name": "wolvermon"
-            },
-            {
-                "name": "unknown"
-            },
-            {
-                "name": "unknown"
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "bearmon",
-            "for": "pandamon"
-        },
-        {
-            "name": "renamon",
-            "from": "kudamon"
-        }
-    ]
+	"columns": [
+		[
+			{
+				"name": "pafumon"
+			},
+			{
+				"name": "kyaromon"
+			},
+			{
+				"name": "pristimon"
+			},
+			{
+				"name": "wolvermon"
+			},
+			{
+				"name": "bearcatmon"
+			},
+			{
+				"name": "unknown"
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "bearmon",
+			"for": "pandamon"
+		},
+		{
+			"name": "bearmon",
+			"for": "marsmon"
+		},
+		{
+			"name": "renamon",
+			"from": "kudamon"
+		}
+	]
 }
