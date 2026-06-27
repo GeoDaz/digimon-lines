@@ -25,7 +25,13 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 			return res.status(400).json({ error: 'Missing level or digimon data' });
 		}
 
-		const filePath = path.join(process.cwd(), 'public', 'json', 'digimons', 'ranked.json');
+		const filePath = path.join(
+			process.cwd(),
+			'public',
+			'json',
+			'digimons',
+			'ranked.json'
+		);
 		const fileContent = fs.readFileSync(filePath, 'utf-8');
 		const ranked = JSON.parse(fileContent);
 
@@ -34,12 +40,16 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 		}
 
 		if (ranked[level][digimon.name]) {
-			return res.status(409).json({ error: `Digimon "${digimon.name}" already exists in level "${level}"` });
+			return res
+				.status(409)
+				.json({
+					error: `Digimon "${digimon.name}" already exists in level "${level}"`,
+				});
 		}
 
 		ranked[level][digimon.name] = digimon;
 
-		fs.writeFileSync(filePath, JSON.stringify(ranked, null, '\t'), 'utf-8');
+		fs.writeFileSync(filePath, JSON.stringify(ranked, null, 4), 'utf-8');
 
 		return res.status(200).json({ success: true, digimon, level });
 	} catch (error) {

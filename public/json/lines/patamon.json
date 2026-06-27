@@ -5,34 +5,45 @@
 			null,
 			null,
 			null,
+			null,
+			{ "name": "lucemon_x", "color": ["x"], "from": [[1, -1]] },
+			null,
+			{ "name": "ogudomon_x", "color": ["x"], "from": [[1, 0]] }
+		],
+		[
+			{ "name": "puttimon", "from": null },
+			{ "name": "cupimon", "color": ["light"] },
+			{ "name": "lucemon", "color": ["light"] },
+			null,
 			{
-				"name": "piccolomon",
-				"color": ["light"],
-				"from": [[1, -1]]
+				"name": "lucemon_falldown_mode",
+				"color": ["mode", "fusion"],
+				"from": [
+					[0, -2],
+					[5, -1]
+				]
 			},
-			{
-				"name": "marineangemon",
-				"color": ["marine"]
-			},
+			{ "name": "lucemon_larva", "color": ["mode"] },
+			{ "name": "lucemon_satan_mode", "color": ["mode"] },
+			{ "name": "ogudomon", "color": ["fusion"] }
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{ "name": "piccolomon", "color": ["light"], "from": [[1, -1]] },
+			{ "name": "marineangemon", "color": ["marine"] },
+			null,
 			null,
 			null
 		],
 		[
 			null,
 			null,
-			{
-				"name": "luxmon",
-				"color": ["light"],
-				"from": [[4, -1]]
-			},
-			{
-				"name": "pidmon",
-				"color": ["light"]
-			},
-			{
-				"name": "arkhaiangemon",
-				"color": ["light"]
-			},
+			{ "name": "luxmon", "color": ["light"], "from": [[4, -1]] },
+			{ "name": "pidmon", "color": ["light"] },
+			{ "name": "arkhaiangemon", "color": ["light"] },
 			{
 				"name": "dominimon",
 				"color": ["light", "light"],
@@ -42,49 +53,28 @@
 				]
 			},
 			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "shakkoumon",
-				"color": ["fusion"],
-				"from": [[3, -1]]
-			},
-			{
-				"name": "clavisangemon",
-				"color": ["light"],
-				"from": [[0, -1]]
-			},
 			null,
 			null
 		],
 		[
 			null,
-			{
-				"name": "tokomon_x",
-				"color": ["x"],
-				"from": [[2, 0]]
-			},
 			null,
-			{
-				"name": "pegasmon_x",
-				"from": [[1, 0]],
-				"color": ["x"]
-			},
-			{
-				"name": "rhinomon_x",
-				"from": [[1, 0]],
-				"color": ["x"]
-			},
-			{
-				"name": "metatromon",
-				"from": [[-1, -1]],
-				"color": ["machine"]
-			},
+			null,
+			null,
+			{ "name": "shakkoumon", "color": ["fusion"], "from": [[3, -1]] },
+			{ "name": "clavisangemon", "color": ["light"], "from": [[0, -1]] },
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			{ "name": "tokomon_x", "color": ["x"], "from": [[2, 0]] },
+			null,
+			{ "name": "pegasmon_x", "from": [[1, 0]], "color": ["x"] },
+			{ "name": "rhinomon_x", "from": [[1, 0]], "color": ["x"] },
+			{ "name": "metatromon", "from": [[-1, -1]], "color": ["machine"] },
+			null,
 			null,
 			null
 		],
@@ -104,32 +94,17 @@
 				"color": ["gold"],
 				"skins": ["miracles", "fate"]
 			},
-			{
-				"name": "slashangemon",
-				"from": [[1, -1]]
-			},
+			{ "name": "slashangemon", "from": [[1, -1]] },
+			null,
 			null,
 			null
 		],
 		[
-			{
-				"name": "poyomon",
-				"from": null
-			},
-			{
-				"name": "tokomon"
-			},
-			{
-				"name": "patamon"
-			},
-			{
-				"name": "angemon",
-				"color": ["light"]
-			},
-			{
-				"name": "magnaangemon",
-				"color": ["light"]
-			},
+			{ "name": "poyomon", "from": null },
+			{ "name": "tokomon" },
+			{ "name": "patamon" },
+			{ "name": "angemon", "color": ["light"] },
+			{ "name": "magnaangemon", "color": ["light"] },
 			{
 				"name": "seraphimon",
 				"color": ["light", "light"],
@@ -139,29 +114,6 @@
 				]
 			},
 			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "unimon",
-				"from": [[-1, -1]],
-				"color": ["wind"],
-				"skins": []
-			},
-			{
-				"name": "magnaangemon_priest_mode",
-				"from": [[-2, 0]],
-				"color": ["mode"]
-			},
-			{
-				"name": "black_seraphimon",
-				"color": ["dark"],
-				"from": [[-1, -1]],
-				"skins": ["black_seraphimon_2"]
-			},
 			null,
 			null
 		],
@@ -171,26 +123,20 @@
 			null,
 			{
 				"name": "rinkmon",
-				"from": [[-2, -1]],
+				"from": [[-1, -1]],
 				"color": ["electric"],
 				"skins": ["friendship", "stegomon"]
 			},
+			{ "name": "magnaangemon_priest_mode", "from": [[-2, 0]], "color": ["mode"] },
 			{
-				"name": "chirinmon",
-				"from": [[-1, -1]],
-				"color": ["light", "light"]
-			},
-			{
-				"name": "bagramon",
+				"name": "black_seraphimon",
 				"color": ["dark"],
-				"from": [[-1, -1]]
+				"from": [[-1, -1]],
+				"skins": ["black_seraphimon_2"]
 			},
 			null,
-			{
-				"name": "darkness_bagramon",
-				"color": ["fusion"],
-				"from": [[0, -2]]
-			}
+			null,
+			null
 		],
 		[
 			null,
@@ -198,61 +144,27 @@
 			null,
 			{
 				"name": "mantaraymon",
-				"from": [[-3, -1]],
+				"from": [[-2, -1]],
 				"skins": ["reliability"],
 				"color": ["marine"]
 			},
 			null,
+			{ "name": "bagramon", "color": ["dark"], "from": [[-1, -1]] },
+			null,
+			{ "name": "darkness_bagramon", "color": ["fusion"], "from": [[0, -2]] }
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "mantaraymon_x", "from": [[-1, 0]], "skins": [], "color": ["x"] },
+			null,
 			{
 				"name": "goldramon",
-				"color": ["light", "light"],
-				"from": [
-					[-1, -1],
-					[-3, -1]
-				]
+				"color": ["light"],
+				"from": [[-3, -1]]
 			},
 			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "mantaraymon_x",
-				"from": [[-1, 0]],
-				"skins": [],
-				"color": ["x"]
-			},
-			null,
-			{
-				"name": "goldramon_x",
-				"color": ["x"],
-				"from": [[-1, 0]]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "centarumon",
-				"from": [[-5, -1]]
-			},
-			{
-				"name": "sagittarimon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "kentaurosmon",
-				"from": [
-					[0, -1],
-					[-3, -1]
-				],
-				"skins": []
-			},
 			null,
 			null
 		],
@@ -262,16 +174,12 @@
 			null,
 			{
 				"name": "baromon",
-				"from": [[-6, -1]],
+				"from": [[-4, -1]],
 				"color": ["fire"],
 				"skins": ["courage"]
 			},
 			null,
-			{
-				"name": "kentaurosmon_x",
-				"from": [[-1, 0]],
-				"color": ["x"]
-			},
+			{ "name": "goldramon_x", "color": ["x"], "from": [[-1, 0]] },
 			null,
 			null
 		],
@@ -281,10 +189,11 @@
 			null,
 			{
 				"name": "mothmon",
-				"from": [[-7, -1]],
+				"from": [[-5, -1]],
 				"skins": ["knowledge"],
 				"color": ["default"]
 			},
+			null,
 			null,
 			null,
 			null,
@@ -296,10 +205,11 @@
 			null,
 			{
 				"name": "ponchomon",
-				"from": [[-8, -1]],
+				"from": [[-6, -1]],
 				"skins": ["purity"],
 				"color": ["grass"]
 			},
+			null,
 			null,
 			null,
 			null,
@@ -311,10 +221,11 @@
 			null,
 			{
 				"name": "manbomon",
-				"from": [[-9, -1]],
+				"from": [[-7, -1]],
 				"skins": ["light"],
 				"color": ["marine"]
 			},
+			null,
 			null,
 			null,
 			null,
@@ -324,11 +235,8 @@
 			null,
 			null,
 			null,
-			{
-				"name": "prairiemon",
-				"from": [[-10, -1]],
-				"skins": ["kindness"]
-			},
+			{ "name": "prairiemon", "from": [[-8, -1]], "skins": ["kindness"] },
+			null,
 			null,
 			null,
 			null,
@@ -340,81 +248,64 @@
 			null,
 			{
 				"name": "pipismon",
+				"skins": ["love"],
 				"from": [
-					[1, -1],
-					[-11, -1]
+					[-9, -1],
+					[3, -1]
 				],
-				"color": ["dark", "wind"]
+				"color": ["wind", "dark"]
 			},
-			{
-				"name": "indaramon",
-				"from": [[1, -1]]
-			},
-			{
-				"name": "dullahamon",
-				"from": [[1, -1]]
-			},
+			null,
+			null,
+			null,
 			null,
 			null
 		],
 		[
+			null,
+			null,
+			null,
+			{ "name": "unimon", "from": [[-10, -1]], "color": ["wind"], "skins": [] },
+			{ "name": "chirinmon", "from": [[-1, -1]], "color": ["light", "light"] },
 			{
-				"name": "poyomon",
-				"from": null
+				"name": "kentaurosmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"skins": []
 			},
-			{
-				"name": "tokomon"
-			},
-			{
-				"name": "tukaimon",
-				"from": [[0, -1]],
-				"color": ["dark"]
-			},
-			{
-				"name": "shimaunimon",
-				"from": [[0, -1]],
-				"color": ["dark"]
-			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{ "name": "centarumon", "from": [[-11, -1]] },
+			{ "name": "sagittarimon", "from": [[0, -1]] },
+			{ "name": "kentaurosmon_x", "from": [[-1, 0]], "color": ["x"] },
+			null,
+			null,
+			null
+		],
+		[
+			{ "name": "poyomon", "from": null },
+			{ "name": "tokomon" },
+			{ "name": "tukaimon", "from": [[0, -1]], "color": ["dark"] },
+			{ "name": "shimaunimon", "from": [[0, -1]], "color": ["dark"] },
 			{
 				"name": "enbarrmon",
-				"from": [[0, -1]],
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
 				"color": ["dark"]
 			},
+			{ "name": "dullahamon", "from": [[0, -1]], "color": ["dark"] },
 			null,
-			{
-				"name": "craniummon_enbarrmon",
-				"from": [[0, -2]],
-				"color": ["fusion"]
-			},
-			null
-		],
-		[
-			{
-				"name": "puttimon",
-				"from": null
-			},
-			{
-				"name": "cupimon",
-				"color": ["light"]
-			},
-			{
-				"name": "lucemon",
-				"color": ["light"]
-			},
 			null,
-			{
-				"name": "lucemon_falldown_mode",
-				"color": ["mode"],
-				"from": [[0, -2]]
-			},
-			{
-				"name": "lucemon_larva",
-				"color": ["mode"]
-			},
-			{
-				"name": "lucemon_satan_mode",
-				"color": ["mode"]
-			},
 			null
 		],
 		[
@@ -422,139 +313,44 @@
 			null,
 			null,
 			null,
+			{ "name": "indaramon", "from": [[-1, -1]] },
 			null,
-			{
-				"name": "lucemon_x",
-				"color": ["x"],
-				"from": [[-1, -1]]
-			},
+			{ "name": "craniummon_enbarrmon", "from": [[-1, -2]], "color": ["fusion"] },
 			null,
 			null
 		]
 	],
 	"related": [
-		{
-			"name": "armadillomon",
-			"for": "shakkoumon"
-		},
-		{
-			"name": "devimon",
-			"for": "lucemon_falldown_mode"
-		},
-		{
-			"name": "gatomon",
-			"for": "angewomon"
-		},
-		{
-			"name": "betamon",
-			"for": "goldramon"
-		},
-		{
-			"name": "dracmon",
-			"for": "slashangemon"
-		},
-		{
-			"name": "jellymon",
-			"for": "marineangemon"
-		},
-		{
-			"name": "devimon",
-			"from": "demon"
-		},
-		{
-			"name": "dracmon",
-			"for": "myotismon"
-		},
-		{
-			"name": "ogudomon",
-			"from": "lucemon_falldown_mode"
-		},
-		{
-			"name": "omegamon_merciful_mode",
-			"from": "seraphimon"
-		},
-		{
-			"name": "pawnchessmon_white",
-			"for": "craniummon_enbarrmon"
-		},
-		{
-			"name": "bakemon",
-			"for": "enbarrmon"
-		},
-		{
-			"name": "veemon",
-			"for": "sagittarimon"
-		},
-		{
-			"name": "commandramon",
-			"for": "assaultmon"
-		},
-		{
-			"name": "woodmon",
-			"for": "ancienttroiamon"
-		},
-		{
-			"name": "renamon",
-			"for": "chirinmon",
-			"from": "kudamon"
-		},
-		{
-			"name": "takinmon",
-			"for": "hakubamon"
-		},
-		{
-			"name": "hawkmon",
-			"for": "hippogriffomon"
-		},
-		{
-			"name": "maquinamon",
-			"for": "metatromon"
-		},
-		{
-			"name": "chiropmon",
-			"for": "pipismon"
-		},
-		{
-			"name": "tapirmon",
-			"for": "rhinomon"
-		},
-		{
-			"name": "ogremon",
-			"for": "baromon"
-		},
-		{
-			"name": "morphomon",
-			"for": "mothmon"
-		},
-		{
-			"name": "terriermon",
-			"for": "prairiemon",
-			"from": "lopmon"
-		},
-		{
-			"name": "hawkmon",
-			"for": "rinkmon"
-		},
-		{
-			"name": "swimmon",
-			"for": "mantaraymon"
-		},
-		{
-			"name": "palmon",
-			"for": "ponchomon"
-		},
-		{
-			"name": "swimmon",
-			"for": "manbomon"
-		},
-		{
-			"name": "armadillomon",
-			"for": "stegomon"
-		},
-		{
-			"name": "pawnchessmon_white",
-			"for": "darkknightmon"
-		}
+		{ "name": "armadillomon", "for": "shakkoumon" },
+		{ "name": "devimon", "for": "lucemon_falldown_mode" },
+		{ "name": "gatomon", "for": "angewomon" },
+		{ "name": "betamon", "for": "goldramon" },
+		{ "name": "dracmon", "for": "slashangemon" },
+		{ "name": "jellymon", "for": "marineangemon" },
+		{ "name": "devimon", "from": "demon" },
+		{ "name": "dracmon", "for": "myotismon" },
+		{ "name": "ogudomon", "from": "lucemon_falldown_mode" },
+		{ "name": "omegamon_merciful_mode", "from": "seraphimon" },
+		{ "name": "pawnchessmon_white", "for": "craniummon_enbarrmon" },
+		{ "name": "bakemon", "for": "enbarrmon" },
+		{ "name": "veemon", "for": "sagittarimon" },
+		{ "name": "commandramon", "for": "assaultmon" },
+		{ "name": "woodmon", "for": "ancienttroiamon" },
+		{ "name": "renamon", "for": "chirinmon", "from": "kudamon" },
+		{ "name": "takinmon", "for": "hakubamon" },
+		{ "name": "hawkmon", "for": "hippogriffomon" },
+		{ "name": "maquinamon", "for": "metatromon" },
+		{ "name": "chiropmon", "for": "pipismon" },
+		{ "name": "tapirmon", "for": "rhinomon" },
+		{ "name": "ogremon", "for": "baromon" },
+		{ "name": "morphomon", "for": "mothmon" },
+		{ "name": "terriermon", "for": "prairiemon", "from": "lopmon" },
+		{ "name": "hawkmon", "for": "rinkmon" },
+		{ "name": "swimmon", "for": "mantaraymon" },
+		{ "name": "palmon", "for": "ponchomon" },
+		{ "name": "swimmon", "for": "manbomon" },
+		{ "name": "armadillomon", "for": "stegomon" },
+		{ "name": "pawnchessmon_white", "for": "darkknightmon" }
 	],
-	"size": 8
+	"size": 9
 }

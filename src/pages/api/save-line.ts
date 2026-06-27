@@ -23,12 +23,20 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 			.toLowerCase()
 			.replace(/[^a-z0-9_-]/g, '_');
 
-		const filePath = path.join(process.cwd(), 'public', 'json', 'lines', `${sanitizedName}.json`);
+		const filePath = path.join(
+			process.cwd(),
+			'public',
+			'json',
+			'lines',
+			`${sanitizedName}.json`
+		);
 		const exists = fs.existsSync(filePath);
 
-		fs.writeFileSync(filePath, JSON.stringify(line, null, '\t'), 'utf-8');
+		fs.writeFileSync(filePath, JSON.stringify(line, null, 4), 'utf-8');
 
-		return res.status(200).json({ success: true, name: sanitizedName, created: !exists });
+		return res
+			.status(200)
+			.json({ success: true, name: sanitizedName, created: !exists });
 	} catch (error) {
 		console.error('Error saving line:', error);
 		return res.status(500).json({ error: 'Failed to save line' });

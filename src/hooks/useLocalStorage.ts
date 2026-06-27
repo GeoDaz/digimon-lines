@@ -50,7 +50,7 @@ const useLocalStorage = ({
 
 	const setItemToStorage = (value: any) => {
 		try {
-			localStorage.setItem(key, JSON.stringify(value));
+			localStorage.setItem(key, JSON.stringify(value, null, 4));
 		} catch (error) {
 			console.error(error);
 		}

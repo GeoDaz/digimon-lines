@@ -89,7 +89,7 @@ class WikimonScraper {
 	parseVariants(dom) {
 		const variants = [];
 		const navFrameIds = ['#NavFrame1', '#NavFrame2'];
-		
+
 		navFrameIds.forEach(frameId => {
 			const navFrame = dom.window.document.querySelector(frameId);
 			if (navFrame) {
@@ -249,7 +249,7 @@ class WikimonScraper {
 
 		// Save to JSON file
 		const outputFile = 'wikimon-digimon-data.json';
-		fs.writeFileSync(outputFile, JSON.stringify(digimonData, null, 2));
+		fs.writeFileSync(outputFile, JSON.stringify(digimonData, null, 4));
 		console.log(`Data saved to: ${outputFile}`);
 
 		return digimonData;

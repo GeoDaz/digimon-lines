@@ -23,10 +23,18 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 		const { level, originalName, digimon } = req.body as UpdateDigimonRequest;
 
 		if (!level || !digimon || !digimon.name || !originalName) {
-			return res.status(400).json({ error: 'Missing level, originalName or digimon data' });
+			return res
+				.status(400)
+				.json({ error: 'Missing level, originalName or digimon data' });
 		}
 
-		const filePath = path.join(process.cwd(), 'public', 'json', 'digimons', 'ranked.json');
+		const filePath = path.join(
+			process.cwd(),
+			'public',
+			'json',
+			'digimons',
+			'ranked.json'
+		);
 		const fileContent = fs.readFileSync(filePath, 'utf-8');
 		const ranked = JSON.parse(fileContent);
 
@@ -35,11 +43,19 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 		}
 
 		if (!ranked[level][originalName]) {
-			return res.status(404).json({ error: `Digimon "${originalName}" not found in level "${level}"` });
+			return res
+				.status(404)
+				.json({
+					error: `Digimon "${originalName}" not found in level "${level}"`,
+				});
 		}
 
 		if (originalName !== digimon.name && ranked[level][digimon.name]) {
-			return res.status(409).json({ error: `Digimon "${digimon.name}" already exists in level "${level}"` });
+			return res
+				.status(409)
+				.json({
+					error: `Digimon "${digimon.name}" already exists in level "${level}"`,
+				});
 		}
 
 		if (originalName !== digimon.name) {
@@ -48,7 +64,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
 		ranked[level][digimon.name] = digimon;
 
-		fs.writeFileSync(filePath, JSON.stringify(ranked, null, '\t'), 'utf-8');
+		fs.writeFileSync(filePath, JSON.stringify(ranked, null, 4), 'utf-8');
 
 		return res.status(200).json({ success: true, digimon, level, originalName });
 	} catch (error) {

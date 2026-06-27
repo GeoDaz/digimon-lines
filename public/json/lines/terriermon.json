@@ -6,16 +6,18 @@
 			null,
 			{
 				"name": "gargomon_black",
-				"color": "dark",
-				"from": [1, -1]
+				"color": ["dark"],
+				"from": [[1, -1]]
 			},
 			{
 				"name": "rapidmon_black",
-				"color": "dark"
+				"color": ["dark"],
+				"from": [[0, -1]]
 			},
 			{
 				"name": "megagargomon_black",
-				"color": "dark"
+				"color": ["dark"],
+				"from": [[0, -1]]
 			},
 			null
 		],
@@ -24,16 +26,23 @@
 				"name": "zerimon",
 				"from": null
 			},
-			{ "name": "gummymon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "gummymon"
+			},
 			{
 				"name": "terriermon",
 				"skins": ["terriermon_assistant"]
 			},
-			{ "name": "gargomon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "rapidmon", "xCollapsable": false, "yCollapsable": false },
+			{
+				"name": "gargomon"
+			},
+			{
+				"name": "rapidmon"
+			},
 			{
 				"name": "megagargomon",
-				"color": "human"
+				"color": ["human"],
+				"from": [[0, -1]]
 			},
 			null
 		],
@@ -45,7 +54,7 @@
 			null,
 			{
 				"name": "fujinmon",
-				"from": [-1, -1]
+				"from": [[-1, -1]]
 			},
 			null
 		],
@@ -54,19 +63,20 @@
 			null,
 			{
 				"name": "terriermon_x",
-				"color": "x",
-				"from": [-2, 0]
+				"color": ["x"],
+				"from": [[-2, 0]]
 			},
 			null,
 			{
 				"name": "goldrapidmon",
-				"color": "gold",
+				"color": ["gold"],
 				"skins": ["fate"],
-				"from": [-2, -2]
+				"from": [[-2, -2]]
 			},
 			{
 				"name": "goldrapidmon_x",
-				"color": "x"
+				"color": ["x"],
+				"from": [[0, -1]]
 			},
 			null
 		],
@@ -75,15 +85,15 @@
 			null,
 			{
 				"name": "lopmon_x",
-				"color": "x",
-				"from": [1.5, 0]
+				"color": ["x"],
+				"from": [[1.5, 0]]
 			},
 			null,
 			null,
 			{
 				"name": "cherubimon_virtue_x",
-				"color": "x",
-				"from": [1, 0]
+				"color": ["x"],
+				"from": [[1, 0]]
 			},
 			null
 		],
@@ -103,7 +113,7 @@
 			},
 			{
 				"name": "turuiemon",
-				"from": [0.5, -1]
+				"from": [[0.5, -1]]
 			},
 			{
 				"name": "andiramon",
@@ -116,9 +126,13 @@
 			},
 			{
 				"name": "cherubimon_virtue",
-				"color": "light",
-				"from": [0.5, -1]
-			}
+				"color": ["light", "light"],
+				"from": [
+					[0.5, -1],
+					[3, -1]
+				]
+			},
+			null
 		],
 		[
 			null,
@@ -126,18 +140,19 @@
 			null,
 			{
 				"name": "wendimon",
-				"color": "dark",
-				"from": [-0.5, -1]
+				"color": ["dark"],
+				"from": [[-0.5, -1]]
 			},
 			null,
 			{
 				"name": "cherubimon_vice",
-				"color": "dark",
-				"from": [-0.5, -1]
+				"color": ["dark"],
+				"from": [[-0.5, -1]]
 			},
 			{
 				"name": "jougamon",
-				"color": "fusion"
+				"color": ["fusion"],
+				"from": [[0, -1]]
 			}
 		],
 		[
@@ -145,14 +160,16 @@
 			null,
 			{
 				"name": "pyontomon",
-				"from": [-1.5, -1]
+				"from": [[-1.5, -1]]
 			},
-			{ "name": "prairiemon", "xCollapsable": false, "yCollapsable": true },
+			{
+				"name": "prairiemon"
+			},
 			null,
 			{
 				"name": "cherubimon_vice_x",
-				"color": "x",
-				"from": [-1, 0]
+				"color": ["x"],
+				"from": [[-1, 0]]
 			},
 			null
 		],
@@ -161,15 +178,21 @@
 			null,
 			{
 				"name": "cutemon",
-				"from": [-2.5, -1]
+				"from": [[-2.5, -1]]
 			},
-			{ "name": "rabbitmon", "xCollapsable": true, "yCollapsable": false },
+			{
+				"name": "rabbitmon"
+			},
 			{
 				"name": "luminamon",
 				"from": [[0, -1]],
 				"color": ["light"]
 			},
-			null,
+			{
+				"name": "venusmon",
+				"from": [[0, -1]],
+				"color": ["light"]
+			},
 			null
 		],
 		[
@@ -182,16 +205,30 @@
 				"from": [[-1, 0]],
 				"color": ["human"]
 			},
-			null,
+			{
+				"name": "marineangemon",
+				"from": [[-1, -1]],
+				"color": ["light"]
+			},
 			null
-		]
+		],
+		[null, null, null, null, null, null, null]
 	],
 	"related": [
 		"lunamon",
 		"angoramon",
-		{ "name": "raidenmon", "for": "fujinmon" },
-		{ "name": "negamon", "for": "shademon_nene" },
-		{ "name": "patamon", "for": "piccolomon" }
+		{
+			"name": "raidenmon",
+			"for": "fujinmon"
+		},
+		{
+			"name": "negamon",
+			"for": "shademon_nene"
+		},
+		{
+			"name": "patamon",
+			"for": "piccolomon"
+		}
 	],
 	"size": 7
 }

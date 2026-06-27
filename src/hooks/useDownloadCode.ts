@@ -13,7 +13,7 @@ const useDownloadCode = (line: Line, setLine: (line: Line) => void) => {
 
 	const downloadCode = async () => {
 		const exportedLine = prepareLineExport(line);
-		const json = JSON.stringify(exportedLine);
+		const json = JSON.stringify(exportedLine, null, 4);
 		copyToClipboard(json);
 		const file = createFile(json, 'application/json');
 
@@ -27,9 +27,9 @@ const useDownloadCode = (line: Line, setLine: (line: Line) => void) => {
 				const data = await response.json();
 				if (response.ok) {
 					addToast(
-						data.created
-							? `Line "${data.name}" created successfully`
-							: `Line "${data.name}" updated successfully`
+						data.created ?
+							`Line "${data.name}" created successfully`
+						:	`Line "${data.name}" updated successfully`
 					);
 				} else {
 					addToast(data.error || 'Failed to save line', 'danger');

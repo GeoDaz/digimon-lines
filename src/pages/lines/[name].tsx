@@ -26,7 +26,7 @@ import { defaultLine } from '@/reducers/lineReducer';
 import { APPMON, LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
 import { Digimon } from '@/types/Digimon';
-import { DigimonContext, DigimonProvider } from '@/context/digimon';
+import { DigimonProvider } from '@/context/digimon';
 import { StringObject } from '@/types/Ui';
 import { ZoomProvider } from '@/context/zoom';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
@@ -82,7 +82,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 	}, [ssr.line]);
 
 	const handleEdit = () => {
-		localStorage.setItem('digimon-line', JSON.stringify(line));
+		localStorage.setItem('digimon-line', JSON.stringify(line, null, 4));
 		router.push(`/build/`);
 	};
 
@@ -122,7 +122,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 					<Alert variant="danger">{error}</Alert>
 				</div>
 			)}
-			{line ? (
+			{line ?
 				<>
 					<DigimonProvider dubNames={ssr.dubNames} data={ssr.digimons}>
 						<ZoomProvider zoom={zoom}>
@@ -131,9 +131,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 					</DigimonProvider>
 					<CommentLink />
 				</>
-			) : (
-				<p>Line not found</p>
-			)}
+			:	<p>Line not found</p>}
 			{(!!prev || !!next) && (
 				<div className="row mb-4">
 					<div className="col-6 d-flex justify-content-start">
@@ -179,21 +177,20 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 										line={relation.name}
 										type={type}
 									>
-										{!!relation.from ? (
+										{!!relation.from ?
 											<LineImage
 												className="line-skin" /* from */
 												name={relation.from}
 												loadable={false}
 											/>
-										) : (
-											!!relation.for && (
+										:	!!relation.for && (
 												<LineImage
 													className="line-skin"
 													name={relation.name}
 													loadable={false}
 												/>
 											)
-										)}
+										}
 									</LinePoint>
 								</Col>
 							);
