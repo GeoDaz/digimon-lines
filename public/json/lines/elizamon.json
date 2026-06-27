@@ -45,21 +45,49 @@
 			}
 		],
 		[
-			null,
-			null,
-			null,
 			{
-				"name": "kinkakumon",
-				"from": [[1, -1]],
-				"color": ["electric"]
+				"name": "choromon",
+				"from": null
 			},
 			{
-				"name": "chohakkaimon",
+				"name": "monimon",
 				"from": [[0, -1]]
 			},
 			{
+				"name": "hubmon",
+				"from": [[0, -1]]
+			},
+			{
+				"name": "coatlmon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": ["light", "light"]
+			},
+			null,
+			{
+				"name": "minervamon",
+				"from": [
+					[-1, -1],
+					[2, -1]
+				],
+				"color": ["light", "light", "light", "light"]
+			},
+			{
+				"name": "mervamon",
+				"skins": ["jet_mervamon"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
 				"name": "minervamon_x",
-				"from": [[1, 0]],
+				"from": [[-1, 0]],
 				"color": ["x"]
 			},
 			null
@@ -79,66 +107,35 @@
 				"from": [[0, -1]]
 			},
 			{
-				"name": "coatlmon",
-				"from": [[0, -1], [-1, -1]],
-				"color": ["light", "light"]
-			},
-			{
-				"name": "minervamon",
+				"name": "sandiramon",
 				"from": [
-					[-2, -1],
 					[0, -1],
-					[1, -1],
-					[2, -1]
-				],
-				"color": ["light", "light", "light", "light"]
+					[-2, -1]
+				]
 			},
 			{
-				"name": "mervamon",
-				"skins": ["jet_mervamon"]
+				"name": "lotusmon"
 			}
 		],
 		[
-			{
-				"name": "choromon",
-				"from": null
-			},
-			{
-				"name": "monimon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "hubmon",
-				"from": [[0, -1]]
-			},
+			null,
+			null,
+			null,
 			{
 				"name": "ginkakumon",
 				"from": [[-1, -1]],
 				"color": ["dark"]
 			},
 			{
-				"name": "sandiramon",
-				"from": [[-1, -1]]
-			},
-			{
-				"name": "lotusmon",
-				"from": [[0, -1], [-1, -1]]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
 				"name": "orochimon",
-				"from": [[-1, -1]],
 				"color": ["dark"]
 			},
 			{
 				"name": "nidhoggmon",
-				"from": [[0, -1], [-1, -1]],
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
 				"color": ["dark", "dark"]
 			},
 			null
@@ -147,8 +144,15 @@
 			null,
 			null,
 			null,
-			null,
-			null,
+			{
+				"name": "kinkakumon",
+				"from": [[-2, -1]],
+				"color": ["electric"]
+			},
+			{
+				"name": "chohakkaimon",
+				"from": [[0, -1]]
+			},
 			{
 				"name": "bacchusmon",
 				"from": [[-1, -1]],

@@ -5,7 +5,7 @@
 			{
 				"name": "meicoonyaromon",
 				"xSize": 2,
-				"from": [[5.5, -1]]
+				"from": [[7.5, -1]]
 			},
 			{
 				"name": "meicoosalamon",
@@ -47,7 +47,7 @@
 				"name": "ordinemon",
 				"from": [
 					[0, -1],
-					[4, -1]
+					[6, -1]
 				],
 				"color": ["fusion", "fusion"]
 			},
@@ -80,7 +80,7 @@
 			{
 				"name": "salamon_x",
 				"color": ["x"],
-				"from": [[3, 0]]
+				"from": [[5, 0]]
 			},
 			{
 				"name": "gatomon_x",
@@ -119,11 +119,47 @@
 			null,
 			null,
 			null,
+			null,
+			{
+				"name": "luminamon_nene",
+				"from": [[1, 0]],
+				"color": ["human"]
+			},
+			{
+				"name": "marineangemon",
+				"from": [[1, -1]],
+				"color": ["light"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
 			{
 				"name": "darcmon",
-				"from": [[1, -1]],
+				"from": [[2, -1]],
 				"color": ["wind"]
 			},
+			{
+				"name": "luminamon",
+				"from": [[0, -1]],
+				"color": ["light"]
+			},
+			{
+				"name": "venusmon",
+				"from": [[0, -1]],
+				"color": ["light"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
 			{
 				"name": "betsumon",
 				"from": [[1, -1]],
@@ -159,10 +195,11 @@
 			},
 			{
 				"name": "angewomon",
-				"color": ["light", "light"],
+				"color": ["light", "light", "light"],
 				"from": [
 					[0, -1],
-					[1, -1]
+					[1, -1],
+					[-2, -1]
 				]
 			},
 			{
@@ -360,12 +397,8 @@
 				"name": "bastemon"
 			},
 			{
-				"name": "venusmon",
-				"color": ["light", "light"],
-				"from": [
-					[0, -1],
-					[1, -1]
-				]
+				"name": "ancientsphinxmon",
+				"from": [[0, -1]]
 			},
 			null,
 			null
