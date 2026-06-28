@@ -11,7 +11,9 @@
  *
  * Les originaux ont été sauvegardés dans .image-backup/ avant exécution.
  *
- * Lancement : node cmd/optimize-images.js
+ * Lancement :
+ *   node cmd/optimize-images.js              -> tout public/images
+ *   node cmd/optimize-images.js <fichiers…>  -> seulement ces fichiers (hook)
  */
 const fs = require('fs');
 const path = require('path');
@@ -43,7 +45,19 @@ function fmtMB(bytes) {
 }
 
 (async () => {
-	const files = walk(ROOT);
+	// Sans argument : tout le dossier. Avec arguments : uniquement ces fichiers
+	// (utilisé par le hook pre-commit, qui passe les images stagées).
+	const args = process.argv.slice(2);
+	const files = args.length
+		? args
+				.map(a => path.resolve(a))
+				.filter(f => fs.existsSync(f) && fs.statSync(f).isFile())
+		: walk(ROOT);
+
+	if (files.length === 0) {
+		return; // rien à faire (ex: hook sans image stagée)
+	}
+
 	let before = 0;
 	let after = 0;
 	let changed = 0;

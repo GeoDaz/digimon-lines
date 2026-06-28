@@ -32,7 +32,9 @@
     "dev": "next dev",
     "start": "next dev",
     "build": "next build",
-    "daemon": "next start"
+    "daemon": "next start",
+    "optimize:images": "node cmd/optimize-images.js",
+    "prepare": "node -e \"try{require('child_process').execSync('git config core.hooksPath .githooks')}catch(e){}\""
   },
   "eslintConfig": {
     "extends": [
