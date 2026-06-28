@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# Optimise automatiquement les images stagées (JPEG : redimension 800px + qualité 80,
+# via cmd/optimize-images.js) puis les re-stage, afin que la version committée soit
+# la version optimisée. Les PNG/GIF et petits fichiers sont ignorés par le script.
+#
+# Activé par : git config core.hooksPath .githooks
+# (fait automatiquement par le script "prepare" de package.json lors d'un npm install)
+#
+
+# Images ajoutées/copiées/modifiées dans l'index, sous public/images
+imgs=$(git diff --cached --name-only --diff-filter=ACM -- 'public/images' | grep -Ei '\.(jpe?g|png)$')
+
+# Rien à optimiser
+[ -z "$imgs" ] && exit 0
+
+echo "[pre-commit] Optimisation des images stagées…"
+printf '%s\n' "$imgs" | xargs -d '\n' node cmd/optimize-images.js || {
+	echo "[pre-commit] Échec de l'optimisation des images." >&2
+	exit 1
+}
+
+# Re-stage les versions optimisées
+printf '%s\n' "$imgs" | xargs -d '\n' git add || exit 1
+
+exit 0
