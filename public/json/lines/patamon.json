@@ -35,7 +35,6 @@
 			{ "name": "piccolomon", "color": ["light"], "from": [[1, -1]] },
 			{ "name": "marineangemon", "color": ["marine"] },
 			null,
-			null,
 			null
 		],
 		[
@@ -53,7 +52,6 @@
 				]
 			},
 			null,
-			null,
 			null
 		],
 		[
@@ -64,7 +62,6 @@
 			{ "name": "shakkoumon", "color": ["fusion"], "from": [[3, -1]] },
 			{ "name": "clavisangemon", "color": ["light"], "from": [[0, -1]] },
 			null,
-			null,
 			null
 		],
 		[
@@ -74,7 +71,6 @@
 			{ "name": "pegasmon_x", "from": [[1, 0]], "color": ["x"] },
 			{ "name": "rhinomon_x", "from": [[1, 0]], "color": ["x"] },
 			{ "name": "metatromon", "from": [[-1, -1]], "color": ["machine"] },
-			null,
 			null,
 			null
 		],
@@ -96,7 +92,6 @@
 			},
 			{ "name": "slashangemon", "from": [[1, -1]] },
 			null,
-			null,
 			null
 		],
 		[
@@ -113,7 +108,6 @@
 					[1, -1]
 				]
 			},
-			null,
 			null,
 			null
 		],
@@ -134,7 +128,6 @@
 				"from": [[-1, -1]],
 				"skins": ["black_seraphimon_2"]
 			},
-			null,
 			null,
 			null
 		],
@@ -164,7 +157,6 @@
 				"color": ["light"],
 				"from": [[-3, -1]]
 			},
-			null,
 			null,
 			null
 		],
@@ -196,7 +188,6 @@
 			null,
 			null,
 			null,
-			null,
 			null
 		],
 		[
@@ -209,7 +200,6 @@
 				"skins": ["purity"],
 				"color": ["grass"]
 			},
-			null,
 			null,
 			null,
 			null,
@@ -228,7 +218,6 @@
 			null,
 			null,
 			null,
-			null,
 			null
 		],
 		[
@@ -236,7 +225,6 @@
 			null,
 			null,
 			{ "name": "prairiemon", "from": [[-8, -1]], "skins": ["kindness"] },
-			null,
 			null,
 			null,
 			null,
@@ -258,7 +246,6 @@
 			null,
 			null,
 			null,
-			null,
 			null
 		],
 		[
@@ -266,7 +253,7 @@
 			null,
 			null,
 			{ "name": "unimon", "from": [[-10, -1]], "color": ["wind"], "skins": [] },
-			{ "name": "chirinmon", "from": [[-1, -1]], "color": ["light", "light"] },
+			{ "name": "chirinmon", "from": [[0, -1]], "color": ["light", "light"] },
 			{
 				"name": "kentaurosmon",
 				"from": [
@@ -275,7 +262,6 @@
 				],
 				"skins": []
 			},
-			null,
 			null,
 			null
 		],
@@ -286,7 +272,6 @@
 			{ "name": "centarumon", "from": [[-11, -1]] },
 			{ "name": "sagittarimon", "from": [[0, -1]] },
 			{ "name": "kentaurosmon_x", "from": [[-1, 0]], "color": ["x"] },
-			null,
 			null,
 			null
 		],
@@ -305,7 +290,6 @@
 			},
 			{ "name": "dullahamon", "from": [[0, -1]], "color": ["dark"] },
 			null,
-			null,
 			null
 		],
 		[
@@ -316,7 +300,6 @@
 			{ "name": "indaramon", "from": [[-1, -1]] },
 			null,
 			{ "name": "craniummon_enbarrmon", "from": [[-1, -2]], "color": ["fusion"] },
-			null,
 			null
 		]
 	],
