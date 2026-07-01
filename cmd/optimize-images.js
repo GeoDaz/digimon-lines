@@ -1,13 +1,14 @@
 /*
  * Optimisation des images sources (one-shot).
  *
- * - Ne traite QUE les fichiers réellement encodés en JPEG (détection via sharp,
- *   pas via l'extension : certains .png contiennent en fait du JPEG).
+ * - La sortie est décidée par l'EXTENSION : un .jpg/.jpeg est (ré)encodé en JPEG,
+ *   quel que soit son contenu réel (certains .jpg contiennent en fait du PNG).
+ *   Si un canal alpha existe, il est aplati sur blanc (JPEG = pas de transparence).
  * - Redimensionne à MAX px sur le plus grand côté (sans agrandir) + recompresse
  *   en JPEG qualité Q (mozjpeg), métadonnées strippées.
  * - Réécrit sur le même chemin/nom de fichier (aucune modif de code nécessaire).
  * - N'écrase QUE si le résultat est plus léger que l'original.
- * - Les vrais PNG / GIF sont laissés intacts.
+ * - Les vrais PNG / GIF (extension .png/.gif) sont laissés intacts.
  *
  * Les originaux ont été sauvegardés dans .image-backup/ avant exécution.
  *
@@ -81,8 +82,9 @@ function fmtMB(bytes) {
 			continue;
 		}
 
-		// On ne touche qu'aux JPEG, et on saute les petits fichiers.
-		if (meta.format !== 'jpeg' || orig < MIN_BYTES) {
+		// La sortie dépend de l'extension : seuls les .jpg/.jpeg sont traités
+		// (en JPEG). Les .png/.gif et les petits fichiers sont laissés tels quels.
+		if (!/\.jpe?g$/i.test(file) || orig < MIN_BYTES) {
 			after += orig;
 			skipped++;
 			continue;
@@ -94,6 +96,10 @@ function fmtMB(bytes) {
 				fit: 'inside',
 				withoutEnlargement: true,
 			});
+		}
+		if (meta.hasAlpha) {
+			// JPEG ne gère pas la transparence : aplatissement sur fond blanc.
+			pipeline = pipeline.flatten({ background: '#ffffff' });
 		}
 
 		let buf;
