@@ -303,7 +303,7 @@
 			{ "name": "Tropiamon" }
 		],
 		"B": [
-			{ "name": "MarineChimeramon", "from": [""] },
+			{ "name": "MarineKimeramon", "from": [""] },
 			{ "name": "GranKuwagamon" },
 			{ "name": "Lotosmon", "from": ["Blossomon"] },
 			{
@@ -314,7 +314,7 @@
 		"A": [
 			{ "name": "Rosemon", "from": ["Lilimon"] },
 			{ "name": "HerculesKabuterimon" },
-			{ "name": "Regalescumon", "from": ["Piranimon", "MarineChimeramon"] },
+			{ "name": "Regalescumon", "from": ["Piranimon", "MarineKimeramon"] },
 			{
 				"name": "Neptunemon",
 				"from": ["Whamon", "Dagomon", "Whamon", "Hangyomon"]
@@ -485,7 +485,7 @@
 				"from": ["SkullKnightmon", "Axemon", "SkullSatamon", "SkullGreymon"]
 			},
 			{
-				"name": "Chimeramon",
+				"name": "Kimeramon",
 				"from": [
 					"Greymon",
 					"Garurumon",
@@ -540,7 +540,7 @@
 			},
 			{
 				"name": "Milleniumon",
-				"from": ["Chimeramon", "MachineDramon", "Diablomon", "Gankoomon"]
+				"from": ["Kimeramon", "MachineDramon", "Diablomon", "Gankoomon"]
 			},
 			{
 				"name": "Armageddemon",

@@ -8,12 +8,7 @@
 			null,
 			{
 				"name": "spinomon",
-				"from": [
-					[
-						1,
-						-1
-					]
-				]
+				"from": [[1, -1]]
 			},
 			null,
 			null
@@ -23,15 +18,8 @@
 			null,
 			{
 				"name": "agumon_x",
-				"from": [
-					[
-						2,
-						0
-					]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[2, 0]],
+				"color": ["x"]
 			},
 			{
 				"name": "tyranomon_x",
@@ -40,35 +28,18 @@
 			{
 				"name": "mametyramon",
 				"from": [
-					[
-						0,
-						-1
-					],
-					[
-						1,
-						-1
-					]
+					[0, -1],
+					[1, -1]
 				],
-				"color": [
-					"x",
-					"x"
-				]
+				"color": ["x", "x"]
 			},
 			{
 				"name": "dinorexmon",
 				"from": [
-					[
-						0,
-						-1
-					],
-					[
-						1,
-						-1
-					]
+					[0, -1],
+					[1, -1]
 				],
-				"color": [
-					"x"
-				]
+				"color": ["x"]
 			},
 			null,
 			null
@@ -79,27 +50,14 @@
 			null,
 			{
 				"name": "tuskmon",
-				"from": [
-					[
-						1,
-						-1
-					]
-				],
-				"color": [
-					"dark"
-				]
+				"from": [[1, -1]],
+				"color": ["dark"]
 			},
 			{
 				"name": "triceramon",
 				"from": [
-					[
-						0,
-						-1
-					],
-					[
-						1,
-						-1
-					]
+					[0, -1],
+					[1, -1]
 				]
 			},
 			{
@@ -124,27 +82,14 @@
 			{
 				"name": "mastertyranomon",
 				"from": [
-					[
-						-1,
-						-1
-					],
-					[
-						0,
-						-1
-					]
+					[-1, -1],
+					[0, -1]
 				]
 			},
 			{
 				"name": "dinomon",
-				"color": [
-					"fire"
-				],
-				"from": [
-					[
-						0,
-						-1
-					]
-				]
+				"color": ["fire"],
+				"from": [[0, -1]]
 			},
 			null,
 			null
@@ -154,50 +99,25 @@
 			null,
 			{
 				"name": "agumon_black",
-				"from": [
-					-1,
-					-1
-				],
-				"color": [
-					"dark"
-				]
+				"from": [-1, -1],
+				"color": ["dark"]
 			},
 			{
 				"name": "darktyranomon",
-				"from": [
-					[
-						0,
-						-1
-					]
-				],
-				"color": [
-					"dark"
-				]
+				"from": [[0, -1]],
+				"color": ["dark"]
 			},
 			{
 				"name": "metaltyranomon",
-				"from": [
-					[
-						0,
-						-1
-					]
-				],
-				"color": [
-					"machine"
-				]
+				"from": [[0, -1]],
+				"color": ["machine"]
 			},
 			{
 				"name": "rusttyranomon",
 				"color": "machine",
 				"from": [
-					[
-						-1,
-						-1
-					],
-					[
-						0,
-						-1
-					]
+					[-1, -1],
+					[0, -1]
 				]
 			},
 			null
@@ -207,68 +127,34 @@
 			null,
 			{
 				"name": "agumon_black_x",
-				"color": [
-					"x"
-				],
-				"from": [
-					[
-						-1,
-						0
-					]
-				]
+				"color": ["x"],
+				"from": [[-1, 0]]
 			},
 			{
 				"name": "darktyranomon_x",
 				"color": "x",
 				"from": [
-					[
-						-1,
-						0
-					],
-					[
-						0,
-						-1
-					]
+					[-1, 0],
+					[0, -1]
 				]
 			},
 			{
 				"name": "metaltyranomon_x",
 				"color": "x",
 				"from": [
-					[
-						-1,
-						0
-					],
-					[
-						0,
-						-1
-					]
+					[-1, 0],
+					[0, -1]
 				]
 			},
 			{
 				"name": "machinedramon",
-				"from": [
-					[
-						-1,
-						-1
-					]
-				],
-				"color": [
-					"machine",
-					"machine"
-				]
+				"from": [[-1, -1]],
+				"color": ["machine", "machine"]
 			},
 			{
 				"name": "chaosdramon",
-				"from": [
-					[
-						0,
-						-1
-					]
-				],
-				"color": [
-					"machine"
-				]
+				"from": [[0, -1]],
+				"color": ["machine"]
 			},
 			null
 		],
@@ -277,12 +163,7 @@
 			null,
 			{
 				"name": "minidekachimon",
-				"from": [
-					[
-						-3,
-						-1
-					]
-				]
+				"from": [[-3, -1]]
 			},
 			{
 				"name": "atamadekachimon",
@@ -290,37 +171,17 @@
 			},
 			{
 				"name": "extyranomon",
-				"from": [
-					[
-						0,
-						-1
-					]
-				]
+				"from": [[0, -1]]
 			},
 			{
 				"name": "gundramon",
-				"from": [
-					[
-						-2,
-						-1
-					]
-				],
-				"color": [
-					"machine"
-				]
+				"from": [[-2, -1]],
+				"color": ["machine"]
 			},
 			{
 				"name": "chaosdramon_x",
-				"from": [
-					[
-						-1,
-						0
-					]
-				],
-				"color": [
-					"x",
-					"x"
-				]
+				"from": [[-1, 0]],
+				"color": ["x", "x"]
 			},
 			null
 		],
@@ -329,27 +190,13 @@
 			null,
 			{
 				"name": "gaossmon",
-				"from": [
-					[
-						-4,
-						-1
-					]
-				],
-				"color": [
-					"dark"
-				]
+				"from": [[-4, -1]],
+				"color": ["dark"]
 			},
 			{
 				"name": "deltamon",
-				"from": [
-					[
-						0,
-						-1
-					]
-				],
-				"color": [
-					"dark"
-				]
+				"from": [[0, -1]],
+				"color": ["dark"]
 			},
 			null,
 			null,
@@ -362,12 +209,7 @@
 			null,
 			{
 				"name": "allomon",
-				"from": [
-					[
-						-1,
-						-1
-					]
-				]
+				"from": [[-1, -1]]
 			},
 			null,
 			null,
@@ -381,10 +223,7 @@
 			{
 				"name": "allomon_x",
 				"color": "x",
-				"from": [
-					-1,
-					0
-				]
+				"from": [-1, 0]
 			},
 			null,
 			null,
@@ -426,7 +265,7 @@
 		},
 		"neocrimson",
 		{
-			"name": "chimeramon",
+			"name": "kimeramon",
 			"from": "machinedramon"
 		},
 		{
