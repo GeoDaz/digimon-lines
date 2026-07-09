@@ -1,0 +1,16 @@
+# Règles d'en-têtes Netlify (https://docs.netlify.com/routing/headers/)
+#
+# Images de contenu : les chemins sont stables (ex. /images/digimon/greymon.jpg),
+# donc on autorise un cache navigateur long. Sans ça, Netlify sert ces fichiers
+# en `max-age=0, must-revalidate` : le navigateur ET les crawlers re-téléchargent
+# l'image à chaque affichage -> ~150 Go/mois de bande passante.
+#
+# next/image passe par le Netlify Image CDN, qui hérite du Cache-Control de la
+# source : en cachant /images/*, les WebP/AVIF servis via /_next/image héritent
+# aussi de ce cache long.
+#
+# max-age 7 jours + stale-while-revalidate : les visiteurs de retour et la
+# navigation entre digimon ne re-téléchargent plus rien pendant une semaine ;
+# une image corrigée se propage en ~7 jours (revalidation en tâche de fond).
+/images/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=604800
