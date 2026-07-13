@@ -2,16 +2,17 @@ import Layout from '@/components/Layout';
 import ListItem from '@/components/List/ListItem';
 import DigimonModal, { EditData } from '@/components/List/AddDigimonModal';
 import SearchBar from '@/components/SearchBar';
-import { stringToKey } from '@/functions';
+import { makeClassName, stringToKey } from '@/functions';
 import useHash from '@/hooks/useHash';
 import useSubmitDigimon, { DigimonList } from '@/hooks/useSubmitDigimon';
+import useReorderDigimon from '@/hooks/useReorderDigimon';
 import { Digimon, DigimonItem } from '@/types/Digimon';
 import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
 import { DigimonProvider } from '@/context/digimon';
 import { SearchContext } from '@/context/search';
 import { GetStaticProps } from 'next';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import { getDirPaths } from '@/functions/file';
@@ -27,13 +28,40 @@ interface Props {
 	search?: Search;
 }
 const PageList: React.FC<Props> = props => {
-	const defaultList: DigimonList = props.list || defaultObject;
-	const [list, setList] = useState<DigimonList>(defaultList);
-	const handleSubmitDigimon = useSubmitDigimon(setList);
+	const [fullList, setFullList] = useState<DigimonList>(
+		props.list || defaultObject
+	);
+	const handleSubmitDigimon = useSubmitDigimon(setFullList);
+	const handleReorderDigimon = useReorderDigimon(setFullList);
 	const [search, setSearch] = useState<string>();
 	const [showModal, setShowModal] = useState(false);
 	const [editData, setEditData] = useState<EditData | null>(null);
+	const dragRef = useRef<{ level: string; name: string } | null>(null);
+	const [draggingName, setDraggingName] = useState<string | null>(null);
 	const hash = useHash();
+
+	// Drag & drop reordering is only enabled in dev and when not filtering.
+	const canReorder = IS_DEV && !search;
+
+	const list = useMemo<DigimonList>(() => {
+		if (!search) return fullList;
+		return Object.entries(fullList).reduce((acc, [level, levels]) => {
+			const nextLevel = Object.entries(levels).reduce(
+				(acc, [key, value]) => {
+					if (key.includes(search)) {
+						acc[key] = value;
+					}
+					return acc;
+				},
+				{} as { [key: string]: DigimonItem }
+			);
+
+			if (Object.keys(nextLevel).length > 0) {
+				acc[level] = nextLevel;
+			}
+			return acc;
+		}, {} as DigimonList);
+	}, [fullList, search]);
 
 	useEffect(() => {
 		if (hash) {
@@ -41,30 +69,41 @@ const PageList: React.FC<Props> = props => {
 		}
 	}, [hash]);
 
-	useEffect(() => {
-		if (!search) {
-			setList(defaultList);
-		} else {
-			setList(
-				Object.entries(defaultList).reduce((acc, [level, levels]) => {
-					const nextLevel = Object.entries(levels).reduce(
-						(acc, [key, value]) => {
-							if (key.includes(search)) {
-								acc[key] = value;
-							}
-							return acc;
-						},
-						{} as { [key: string]: DigimonItem }
-					);
+	const handleDragStart = (level: string, name: string) => {
+		dragRef.current = { level, name };
+		setDraggingName(name);
+	};
 
-					if (Object.keys(nextLevel).length > 0) {
-						acc[level] = nextLevel;
-					}
-					return acc;
-				}, {} as DigimonList)
-			);
-		}
-	}, [search]);
+	const handleDragEnd = () => {
+		dragRef.current = null;
+		setDraggingName(null);
+	};
+
+	const handleDragOver = (
+		event: React.DragEvent,
+		level: string,
+		name: string
+	) => {
+		const source = dragRef.current;
+		// Only allow dropping onto another item of the same level.
+		if (!source || source.level !== level || source.name === name) return;
+		event.preventDefault();
+	};
+
+	const handleDrop = (level: string, targetName: string) => {
+		const source = dragRef.current;
+		if (!source || source.level !== level || source.name === targetName) return;
+
+		const names = Object.keys(fullList[level] || {});
+		const fromIndex = names.indexOf(source.name);
+		if (fromIndex === -1) return;
+
+		names.splice(fromIndex, 1);
+		const targetIndex = names.indexOf(targetName);
+		names.splice(targetIndex, 0, source.name);
+
+		handleReorderDigimon(level, names);
+	};
 
 	const handleSearch = (value: string) => {
 		let sanitizedSearch = stringToKey(value);
@@ -120,16 +159,41 @@ const PageList: React.FC<Props> = props => {
 							<h2 className="mb-4">{level}</h2>
 							<div className="d-flex flex-wrap gap-3">
 								{Object.entries(digimons).map(([name, digimon]) => (
-									<ListItem
+									<div
 										key={name}
-										digimon={digimon}
-										hash={hash}
-										onEdit={
-											IS_DEV
-												? () => handleEditDigimon(level, digimon)
+										draggable={canReorder}
+										onDragStart={
+											canReorder
+												? () => handleDragStart(level, name)
 												: undefined
 										}
-									/>
+										onDragEnd={canReorder ? handleDragEnd : undefined}
+										onDragOver={
+											canReorder
+												? e => handleDragOver(e, level, name)
+												: undefined
+										}
+										onDrop={
+											canReorder
+												? () => handleDrop(level, name)
+												: undefined
+										}
+										className={makeClassName(
+											canReorder && 'reorderable',
+											draggingName === name && 'dragging'
+										)}
+										style={canReorder ? { cursor: 'grab' } : undefined}
+									>
+										<ListItem
+											digimon={digimon}
+											hash={hash}
+											onEdit={
+												IS_DEV
+													? () => handleEditDigimon(level, digimon)
+													: undefined
+											}
+										/>
+									</div>
 								))}
 							</div>
 						</div>
@@ -139,7 +203,7 @@ const PageList: React.FC<Props> = props => {
 							show={showModal}
 							handleClose={handleCloseModal}
 							onSubmit={handleSubmitDigimon}
-							levels={Object.keys(defaultList)}
+							levels={Object.keys(fullList)}
 							editData={editData}
 						/>
 					)}

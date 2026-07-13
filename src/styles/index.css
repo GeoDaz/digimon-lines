@@ -1005,6 +1005,18 @@ a.line-point {
 	opacity: 0.8;
 }
 
+.reorderable {
+	transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.reorderable:active {
+	cursor: grabbing;
+}
+
+.reorderable.dragging {
+	opacity: 0.4;
+}
+
 /* Progress Bar */
 
 .progress-bar {
