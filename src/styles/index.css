@@ -1017,6 +1017,13 @@ a.line-point {
 	opacity: 0.4;
 }
 
+/* Let the draggable container handle the drag instead of the inner link/image */
+.reorderable img,
+.reorderable a {
+	-webkit-user-drag: none;
+	user-drag: none;
+}
+
 /* Progress Bar */
 
 .progress-bar {

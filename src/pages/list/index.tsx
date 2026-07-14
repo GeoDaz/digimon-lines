@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout';
 import ListItem from '@/components/List/ListItem';
 import DigimonModal, { EditData } from '@/components/List/AddDigimonModal';
+import LevelFilter from '@/components/List/LevelFilter';
 import SearchBar from '@/components/SearchBar';
 import { makeClassName, stringToKey } from '@/functions';
 import useHash from '@/hooks/useHash';
@@ -34,6 +35,7 @@ const PageList: React.FC<Props> = props => {
 	const handleSubmitDigimon = useSubmitDigimon(setFullList);
 	const handleReorderDigimon = useReorderDigimon(setFullList);
 	const [search, setSearch] = useState<string>();
+	const [levelFilter, setLevelFilter] = useState<string>('');
 	const [showModal, setShowModal] = useState(false);
 	const [editData, setEditData] = useState<EditData | null>(null);
 	const dragRef = useRef<{ level: string; name: string } | null>(null);
@@ -43,25 +45,31 @@ const PageList: React.FC<Props> = props => {
 	// Drag & drop reordering is only enabled in dev and when not filtering.
 	const canReorder = IS_DEV && !search;
 
+	const levels = useMemo(() => Object.keys(fullList), [fullList]);
+
 	const list = useMemo<DigimonList>(() => {
-		if (!search) return fullList;
+		if (!search && !levelFilter) return fullList;
 		return Object.entries(fullList).reduce((acc, [level, levels]) => {
-			const nextLevel = Object.entries(levels).reduce(
-				(acc, [key, value]) => {
-					if (key.includes(search)) {
-						acc[key] = value;
-					}
-					return acc;
-				},
-				{} as { [key: string]: DigimonItem }
-			);
+			if (levelFilter && level !== levelFilter) return acc;
+
+			const nextLevel = search
+				? Object.entries(levels).reduce(
+						(acc, [key, value]) => {
+							if (key.includes(search)) {
+								acc[key] = value;
+							}
+							return acc;
+						},
+						{} as { [key: string]: DigimonItem }
+				  )
+				: levels;
 
 			if (Object.keys(nextLevel).length > 0) {
 				acc[level] = nextLevel;
 			}
 			return acc;
 		}, {} as DigimonList);
-	}, [fullList, search]);
+	}, [fullList, search, levelFilter]);
 
 	useEffect(() => {
 		if (hash) {
@@ -144,6 +152,11 @@ const PageList: React.FC<Props> = props => {
 							defaultValue={search}
 							width={300}
 						/>
+						<LevelFilter
+							levels={levels}
+							value={levelFilter}
+							onChange={setLevelFilter}
+						/>
 						{IS_DEV && (
 							<Button
 								variant="primary"
@@ -203,7 +216,7 @@ const PageList: React.FC<Props> = props => {
 							show={showModal}
 							handleClose={handleCloseModal}
 							onSubmit={handleSubmitDigimon}
-							levels={Object.keys(fullList)}
+							levels={levels}
 							editData={editData}
 						/>
 					)}

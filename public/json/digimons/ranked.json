@@ -29,6 +29,27 @@
                 "tsumemon",
                 "arkadimon_2"
             ]
+        },
+        "snowbotamon": {
+            "name": "snowbotamon",
+            "variants": [
+                "botamon"
+            ],
+            "to": [
+                "hiyarimon",
+                "nyaromon",
+                "meicoonyaromon",
+                "moonmon",
+                "frigimon",
+                "skadimon"
+            ]
+        },
+        "mokumon": {
+            "name": "mokumon",
+            "to": [
+                "demimeramon",
+                "sunmon"
+            ]
         }
     },
     "Baby I X": {
@@ -89,6 +110,18 @@
                 "patamon"
             ]
         },
+        "nyaromon": {
+            "name": "nyaromon",
+            "variants": [
+                "meicoonyaromon"
+            ],
+            "from": [
+                "snowbotamon"
+            ],
+            "to": [
+                "plotmon"
+            ]
+        },
         "pagumon": {
             "name": "pagumon",
             "to": [
@@ -118,6 +151,31 @@
             "to": [
                 "gaomon",
                 "bearmon"
+            ]
+        },
+        "demimeramon": {
+            "name": "demimeramon",
+            "from": [
+                "mokumon"
+            ],
+            "to": [
+                "candlemon",
+                "ghostmon",
+                "vorvomon",
+                "meramon"
+            ]
+        },
+        "hiyarimon": {
+            "name": "hiyarimon",
+            "from": [
+                "snowbotamon"
+            ],
+            "to": [
+                "blucomon",
+                "penmon",
+                "bearmon",
+                "snowagumon",
+                "snowgoblimon"
             ]
         },
         "sunmon": {
@@ -278,23 +336,24 @@
         },
         "gabumon": {
             "name": "gabumon",
-            "modes": [
-                "gabumon_x"
-            ],
             "variants": [
                 "gabumon_black",
                 "psychemon"
             ],
-            "to": [
-                "garurumon",
-                "gururumon",
-                "dorulumon",
-                "drimogemon"
+            "modes": [
+                "gabumon_x"
             ],
             "from": [
                 "tsunomon",
                 "wanyamon",
                 "bowmon"
+            ],
+            "to": [
+                "garurumon",
+                "gururumon",
+                "dorulumon",
+                "drimogemon",
+                "cyclomon"
             ]
         },
         "gabumon_black": {
@@ -761,20 +820,18 @@
                 "agumon"
             ]
         },
-        "ankylomon": {
-            "name": "ankylomon",
+        "cyclomon": {
+            "name": "cyclomon",
             "from": [
-                "armadillomon",
                 "gizamon",
-                "elizamon"
+                "agumon",
+                "gabumon",
+                "armadillomon"
             ],
             "to": [
-                "shakkoumon",
-                "stegomon",
-                "brachiomon",
-                "groundramon",
-                "loaderliomon",
-                "proganomon"
+                "skullgreymon",
+                "megadramon",
+                "digitamamon"
             ]
         },
         "wizardmon": {
@@ -798,6 +855,22 @@
                 "wisemon",
                 "deathmeramon",
                 "skullsatamon"
+            ]
+        },
+        "ankylomon": {
+            "name": "ankylomon",
+            "from": [
+                "armadillomon",
+                "gizamon",
+                "elizamon"
+            ],
+            "to": [
+                "shakkoumon",
+                "stegomon",
+                "brachiomon",
+                "groundramon",
+                "loaderliomon",
+                "proganomon"
             ]
         },
         "petermon": {
@@ -1059,6 +1132,33 @@
                 "sangloupmon"
             ]
         },
+        "paildramon": {
+            "name": "paildramon",
+            "fusionFrom": [
+                "exveemon",
+                "stingmon"
+            ],
+            "to": [
+                "imperialdramon_dragon_mode",
+                "imperialdramon_fighter_mode",
+                "imperialdramon_black",
+                "imperialdramon_fighter_mode_black"
+            ]
+        },
+        "silphymon": {
+            "name": "silphymon",
+            "from": [
+                "harpymon",
+                "shutumon"
+            ],
+            "fusionFrom": [
+                "aquilamon",
+                "gatomon"
+            ],
+            "to": [
+                "valkyrimon"
+            ]
+        },
         "shakkoumon": {
             "name": "shakkoumon",
             "fusionFrom": [
@@ -1070,8 +1170,117 @@
                 "vikemon",
                 "metatromon",
                 "slashangemon",
-                "junomon",
                 "lampmon"
+            ]
+        },
+        "megadramon": {
+            "name": "megadramon",
+            "variants": [
+                "gigadramon"
+            ],
+            "from": [
+                "airdramon",
+                "flarelizardmon",
+                "cyclomon",
+                "tankmon",
+                "guardromon",
+                "revolmon"
+            ],
+            "to": [
+                "machinedramon",
+                "chaosdramon",
+                "goldramon",
+                "magnakidmon",
+                "gundramon",
+                "blitzgreymon",
+                "metalseadramon",
+                "cannondramon"
+            ]
+        },
+        "gigadramon": {
+            "name": "gigadramon",
+            "variants": [
+                "megadramon"
+            ],
+            "from": [
+                "airdramon",
+                "darklizardmon",
+                "revolmon",
+                "pteranomon",
+                "mailbirdramon",
+                "devidramon",
+                "rhamphomon",
+                "tankmon",
+                "mimicmon"
+            ],
+            "to": [
+                "machinedramon",
+                "chaosdramon",
+                "darkdramon",
+                "megidramon",
+                "heavymetaldramon",
+                "gundramon",
+                "avengekidmon",
+                "chaosmetalseadramon"
+            ]
+        },
+        "kimeramon": {
+            "name": "kimeramon",
+            "variants": [
+                "marinekimeramon"
+            ],
+            "from": [
+                "deltamon",
+                "mimicmon"
+            ],
+            "fusionFrom": [
+                "greymon",
+                "garurumon",
+                "airdramon",
+                "monochromon",
+                "devimon",
+                "angemon",
+                "skullgreymon",
+                "metalgreymon"
+            ],
+            "to": [
+                "millenniumon"
+            ]
+        },
+        "marinekimeramon": {
+            "name": "marinekimeramon",
+            "variants": [
+                "kimeramon"
+            ],
+            "fusionFrom": [
+                "coelamon",
+                "ikkakumon",
+                "ebidramon",
+                "octomon",
+                "seadramon",
+                "dolphmon",
+                "hangyomon"
+            ],
+            "to": [
+                "regalecusmon"
+            ]
+        },
+        "lucemon_falldown_mode": {
+            "name": "lucemon_falldown_mode",
+            "modes": [
+                "lucemon_x",
+                "lucemon_satan_mode",
+                "lucemon_larva"
+            ],
+            "from": [
+                "lucemon"
+            ],
+            "fusionFrom": [
+                "angemon",
+                "devimon"
+            ],
+            "to": [
+                "ogudomon"
             ]
         }
     },
@@ -1383,6 +1592,17 @@
                 "sandiramon",
                 "sagomon"
             ]
+        },
+        "millenniumon": {
+            "name": "millenniumon",
+            "modes": [
+                "moonmillenniumon",
+                "zeedmillenniumon"
+            ],
+            "fusionFrom": [
+                "kimeramon",
+                "machinedramon"
+            ]
         }
     },
     "Mega X": {
@@ -1436,6 +1656,16 @@
             "name": "goldrapidmon_x",
             "from": [
                 "goldrapidmon"
+            ]
+        },
+        "lucemon_x": {
+            "name": "lucemon_x",
+            "from": [
+                "lucemon_falldown_mode",
+                "lucemon"
+            ],
+            "to": [
+                "ogudomon_x"
             ]
         }
     },
@@ -1609,6 +1839,16 @@
                 "xuanwumon",
                 "dinorexmon",
                 "spinomon"
+            ]
+        },
+        "lucemon_satan_mode": {
+            "name": "lucemon_satan_mode",
+            "modes": [
+                "lucemon_falldown_mode",
+                "lucemon_larva"
+            ],
+            "to": [
+                "ogudomon"
             ]
         }
     },

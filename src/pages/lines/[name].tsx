@@ -1,18 +1,18 @@
 // modules
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { Alert, Row, Col } from 'react-bootstrap';
+import { Alert } from 'react-bootstrap';
 import { redirect } from 'next/navigation';
 import { GetStaticProps } from 'next';
 // components
 import Layout from '@/components/Layout';
 import LineGrid from '@/components/Line/LineGrid';
 import LinePoint from '@/components/Line/LinePoint';
-import LineImage from '@/components/Line/LineImage';
 import CommentLink from '@/components/CommentLink';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
 import DownloadDropdown from '@/components/DownloadDropdown';
+import RelatedLines from '@/components/Line/RelatedLines';
 // hooks
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
@@ -23,7 +23,7 @@ import transformLine, { thumbsToNames } from '@/functions/line';
 // constants
 import { Line } from '@/types/Line';
 import { defaultLine } from '@/reducers/lineReducer';
-import { APPMON, LINE, titles } from '@/consts/ui';
+import { LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
 import { Digimon } from '@/types/Digimon';
 import { DigimonProvider } from '@/context/digimon';
@@ -83,7 +83,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 
 	const handleEdit = () => {
 		localStorage.setItem('digimon-line', JSON.stringify(line, null, 4));
-		router.push(`/build/`);
+		router.push(`/build/?${NAME}=${encodeURIComponent(name)}`);
 	};
 
 	if (!name) {
@@ -154,50 +154,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 					</div>
 				</div>
 			)}
-			{!!line?.related && (
-				<div className="line-wrapper">
-					<h2>Related lines&nbsp;:</h2>
-					<Row className="line-row">
-						{line.related.map((relation, i) => {
-							if (typeof relation == 'string') {
-								const type = relation.startsWith('app_') ? APPMON : LINE;
-								return (
-									<Col key={i}>
-										<LinePoint name={relation} type={type} />
-									</Col>
-								);
-							}
-							const type =
-								relation.type ||
-								(relation.name.startsWith('app_') ? APPMON : LINE);
-							return (
-								<Col key={i}>
-									<LinePoint
-										name={relation.for || relation.name}
-										line={relation.name}
-										type={type}
-									>
-										{!!relation.from ?
-											<LineImage
-												className="line-skin" /* from */
-												name={relation.from}
-												loadable={false}
-											/>
-										:	!!relation.for && (
-												<LineImage
-													className="line-skin"
-													name={relation.name}
-													loadable={false}
-												/>
-											)
-										}
-									</LinePoint>
-								</Col>
-							);
-						})}
-					</Row>
-				</div>
-			)}
+			<RelatedLines related={line?.related} />
 		</Layout>
 	);
 };

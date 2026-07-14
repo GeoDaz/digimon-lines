@@ -6,12 +6,20 @@
 			null,
 			null,
 			null,
-			{ "name": "barbamon_x", "from": [[1, 0]], "color": ["x"] }
+			{
+				"name": "barbamon_x",
+				"from": [[1, 0]],
+				"color": ["x"]
+			}
 		],
 		[
 			null,
 			null,
-			{ "name": "candlemon", "from": [[2.5, -1]], "color": ["fire"] },
+			{
+				"name": "candlemon",
+				"from": [[2.5, -1]],
+				"color": ["fire"]
+			},
 			{
 				"name": "flamewizardmon",
 				"from": [
@@ -20,21 +28,51 @@
 				],
 				"color": ["fire", "fire"]
 			},
-			{ "name": "skullsatamon", "from": [[2.5, -1]], "color": ["dark"] },
-			{ "name": "barbamon", "from": [[0, -1]], "color": ["dark"] }
+			{
+				"name": "skullsatamon",
+				"from": [[2.5, -1]],
+				"color": ["dark"]
+			},
+			{
+				"name": "barbamon",
+				"from": [[0, -1]],
+				"color": ["dark"]
+			}
 		],
 		[
 			null,
 			null,
 			null,
-			{ "name": "wizardmon_x", "color": ["x"], "from": [[1.5, 0]] },
+			{
+				"name": "wizardmon_x",
+				"color": ["x"],
+				"from": [[1.5, 0]]
+			},
 			null,
-			{ "name": "dynasmon_x", "color": ["x"], "from": [[1, 0]] }
+			{
+				"name": "dynasmon_x",
+				"color": ["x"],
+				"from": [[1, 0]]
+			}
 		],
 		[
-			{ "name": "mokumon", "from": null, "xSize": 2 },
-			{ "name": "demimeramon", "color": ["fire"], "xSize": 2, "from": [[0, -1]] },
-			{ "name": "ghostmon", "color": ["fire"], "xSize": 2, "from": [[0, -1]] },
+			{
+				"name": "mokumon",
+				"from": null,
+				"xSize": 2
+			},
+			{
+				"name": "demimeramon",
+				"color": ["fire"],
+				"xSize": 2,
+				"from": [[0, -1]]
+			},
+			{
+				"name": "ghostmon",
+				"color": ["fire"],
+				"xSize": 2,
+				"from": [[0, -1]]
+			},
 			{
 				"name": "wizardmon",
 				"xSize": 2,
@@ -43,8 +81,15 @@
 					[0, -1]
 				]
 			},
-			{ "name": "mistymon", "from": [[0, -1]], "xSize": 2 },
-			{ "name": "dynasmon", "from": [[0.5, -1]] }
+			{
+				"name": "mistymon",
+				"from": [[0, -1]],
+				"xSize": 2
+			},
+			{
+				"name": "dynasmon",
+				"from": [[0.5, -1]]
+			}
 		],
 		[
 			null,
@@ -52,7 +97,11 @@
 			null,
 			null,
 			null,
-			{ "name": "medievalgallantmon", "from": [[-0.5, -1]], "color": ["wind"] }
+			{
+				"name": "medievalgallantmon",
+				"from": [[-0.5, -1]],
+				"color": ["wind"]
+			}
 		],
 		[
 			null,
@@ -60,13 +109,21 @@
 			null,
 			null,
 			null,
-			{ "name": "hexeblaumon", "from": [[1, -1]], "color": ["ice"] }
+			{
+				"name": "hexeblaumon",
+				"from": [[1, -1]],
+				"color": ["ice"]
+			}
 		],
 		[
 			null,
 			null,
 			null,
-			{ "name": "sorcerymon", "color": ["ice"], "from": [[-2.5, -1]] },
+			{
+				"name": "sorcerymon",
+				"color": ["ice"],
+				"from": [[-2.5, -1]]
+			},
 			{
 				"name": "wisemon",
 				"from": [
@@ -74,41 +131,151 @@
 					[0, -1]
 				]
 			},
-			{ "name": "ancientwisemon", "from": [[0, -1]] }
-		],
-		[null, null, null, null, null, { "name": "jijimon", "from": [[-1, -1]] }],
-		[
-			null,
-			null,
-			null,
-			{ "name": "witchmon", "from": [[-4.5, -1]] },
-			{ "name": "ladydevimon", "from": [[0, -1]], "color": ["dark"] },
-			{ "name": "lilithmon", "from": [[0, -1]], "color": ["dark"] }
+			{
+				"name": "ancientwisemon",
+				"from": [[0, -1]]
+			}
 		],
 		[
 			null,
 			null,
 			null,
 			null,
-			{ "name": "chaperomon", "from": [[-1, -1]] },
-			{ "name": "babamon", "from": [[0, -1]] }
+			null,
+			{
+				"name": "jijimon",
+				"from": [[-1, -1]]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "ladydevimon_x",
+				"from": [[1, 0]],
+				"color": ["x"]
+			},
+			{
+				"name": "lilithmon_x",
+				"from": [
+					[0, -1],
+					[1, 0]
+				],
+				"color": ["x", "x"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "witchmon",
+				"from": [[-5.5, -1]]
+			},
+			{
+				"name": "ladydevimon",
+				"from": [[0, -1]],
+				"color": ["dark"]
+			},
+			{
+				"name": "lilithmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": ["dark", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "arukenimon",
+				"from": [[-1, -1]],
+				"color": ["dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "chaperomon",
+				"from": [[-2, -1]]
+			},
+			{
+				"name": "babamon",
+				"from": [[0, -1]]
+			}
 		]
 	],
 	"related": [
-		{ "name": "impmon", "from": "wizardmon" },
-		{ "name": "meramon", "for": "deathmeramon" },
-		{ "name": "meramon", "for": "demimeramon" },
-		{ "name": "bakemon", "from": "ghostmon" },
-		{ "name": "mercuremon", "from": "ancientwisemon" },
-		{ "name": "guilmon", "for": "medievalgallantmon" },
-		{ "name": "gatomon", "from": "witchmon" },
-		{ "name": "app_mienumon", "for": "app_warudamon" },
-		{ "name": "devimon", "for": "lilithmon" },
-		{ "name": "devimon", "for": "skullsatamon" },
-		{ "name": "blucomon", "for": "hexeblaumon" },
-		{ "name": "shoemon", "for": "chaperomon" },
-		{ "name": "kakamon", "for": "jijimon" },
-		{ "name": "palmon", "for": "babamon" }
+		{
+			"name": "impmon",
+			"from": "wizardmon"
+		},
+		{
+			"name": "meramon",
+			"for": "deathmeramon"
+		},
+		{
+			"name": "meramon",
+			"for": "demimeramon"
+		},
+		{
+			"name": "bakemon",
+			"from": "ghostmon"
+		},
+		{
+			"name": "mercuremon",
+			"from": "ancientwisemon"
+		},
+		{
+			"name": "guilmon",
+			"for": "medievalgallantmon"
+		},
+		{
+			"name": "gatomon",
+			"from": "witchmon"
+		},
+		{
+			"name": "app_mienumon",
+			"for": "app_warudamon"
+		},
+		{
+			"name": "devimon",
+			"for": "lilithmon"
+		},
+		{
+			"name": "devimon",
+			"for": "skullsatamon"
+		},
+		{
+			"name": "dokugumon",
+			"for": "arukenimon"
+		},
+		{
+			"name": "blucomon",
+			"for": "hexeblaumon"
+		},
+		{
+			"name": "shoemon",
+			"for": "chaperomon"
+		},
+		{
+			"name": "kakamon",
+			"for": "jijimon"
+		},
+		{
+			"name": "palmon",
+			"for": "babamon"
+		}
 	],
 	"size": 6
 }

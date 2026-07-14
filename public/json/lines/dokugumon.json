@@ -1,52 +1,53 @@
 {
-    "columns": [
-        [
-            {
-                "name": "leafmon"
-            },
-            {
-                "name": "kodokugumon"
-            },
-            {
-                "name": "kodokugumon_2"
-            },
-            {
-                "name": "dokugumon"
-            },
-            {
-                "name": "arukenimon"
-            },
-            {
-                "name": "parasitemon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "gyukimon",
-                "color": "fusion",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "takinmon",
-            "from": "gyukimon"
-        },
-        {
-            "name": "keramon",
-            "from": "armageddemon"
-        },
-        {
-            "name": "bakemon",
-            "from": "mummymon"
-        }
-    ]
+	"columns": [
+		[
+			{
+				"name": "leafmon"
+			},
+			{
+				"name": "kodokugumon"
+			},
+			{
+				"name": "kodokugumon_2"
+			},
+			{
+				"name": "dokugumon"
+			},
+			{
+				"name": "arukenimon"
+			},
+			{
+				"name": "parasitemon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gyukimon",
+				"color": "fusion",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "takinmon",
+			"from": "gyukimon"
+		},
+		{
+			"name": "keramon",
+			"from": "armageddemon"
+		},
+		{
+			"name": "wizardmon",
+			"for": "witchmon"
+		},
+		{
+			"name": "bakemon",
+			"from": "mummymon"
+		}
+	]
 }

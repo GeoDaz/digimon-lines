@@ -16,7 +16,12 @@ const ToastStack: React.FC = () => {
 	if (!toasts.length) return null;
 
 	return (
-		<ToastContainer position="bottom-end" className="p-3" style={{ zIndex: 9999 }}>
+		<ToastContainer
+			position="bottom-end"
+			containerPosition="fixed"
+			className="p-3"
+			style={{ zIndex: 9999 }}
+		>
 			{toasts.map(toast => (
 				<Toast
 					key={toast.id}

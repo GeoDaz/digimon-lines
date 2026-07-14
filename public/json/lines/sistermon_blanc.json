@@ -1,106 +1,251 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "sistermon_ciel_awake",
-				"color": "mode",
-				"from": [1, 0]
-			},
-			null,
-			{
-				"name": "junomon_hysteric_mode",
-				"color": "mode",
-				"from": [1, 0]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "sistermon_blanc_awake",
-				"color": "mode",
-				"from": [1, 0]
-			},
-			{
-				"name": "sistermon_ciel",
-				"color": "light",
-				"from": [1, -1]
-			},
-			{
-				"name": "angewomon",
-				"color": "light"
-			},
-			{
-				"name": "junomon",
-				"color": "light"
-			}
-		],
-		[
-			{
-				"name": "snowbotamon"
-			},
-			{
-				"name": "nyaromon"
-			},
-			{
-				"name": "sistermon_blanc",
-				"color": "light"
-			},
-			null,
-			null,
-			{
-				"name": "mastemon",
-				"color": "fusion",
-				"from": [
-					[-1, -1],
-					[1, -1]
-				]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "sistermon_noir",
-				"color": "dark",
-				"from": [-1, -1]
-			},
-			{
-				"name": "ladydevimon",
-				"color": "dark"
-			},
-			{
-				"name": "beelstarmon",
-				"color": "dark"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "sistermon_noir_awake",
-				"color": "mode",
-				"from": [-1, 0]
-			},
-			null,
-			{
-				"name": "beelstarmon_x",
-				"color": "x",
-				"from": [-1, 0]
-			}
-		]
-	],
-	"related": [
-		{ "name": "gatomon", "for": "angewomon" },
-		{ "name": "demidevimon", "for": "ladydevimon" },
-		{
-			"name": "impmon",
-			"from": "beelstarmon"
-		}
-	]
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sistermon_ciel_awake",
+                "color": [
+                    "mode"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "angewomon_x",
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            {
+                "name": "junomon_hysteric_mode",
+                "color": [
+                    "mode"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "sistermon_blanc_awake",
+                "color": [
+                    "mode"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "sistermon_ciel",
+                "color": [
+                    "light"
+                ],
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "angewomon",
+                "color": [
+                    "light"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "junomon",
+                "color": [
+                    "light"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "snowbotamon",
+                "from": null
+            },
+            {
+                "name": "nyaromon"
+            },
+            {
+                "name": "sistermon_blanc",
+                "color": [
+                    "light"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            {
+                "name": "mastemon",
+                "color": [
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sistermon_noir",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "ladydevimon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "beelstarmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sistermon_noir_awake",
+                "color": [
+                    "mode"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "ladydevimon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            {
+                "name": "beelstarmon_x",
+                "color": [
+                    "x",
+                    "x"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "gatomon",
+            "for": "angewomon"
+        },
+        {
+            "name": "demidevimon",
+            "for": "ladydevimon"
+        },
+        {
+            "name": "impmon",
+            "from": "beelstarmon"
+        },
+        {
+            "name": "toyagumon",
+            "from": "beelstarmon"
+        }
+    ],
+    "size": 6
 }

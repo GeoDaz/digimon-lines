@@ -1,13 +1,18 @@
-import { useState, useReducer, useMemo } from 'react';
+import { useState, useReducer, useMemo, useEffect } from 'react';
 import { Alert, Button, FormControl, InputGroup } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import { getDirPaths } from '@/functions/file';
 import ZoomBar from '@/components/ZoomBar';
 import ColorLegend from '@/components/ColorLegend';
 import LineGrid from '@/components/Line/LineGrid';
+import RelatedLines from '@/components/Line/RelatedLines';
 import { GetStaticProps } from 'next';
 import { SearchContext } from '@/context/search';
-import lineReducer, { defaultLine, setLineAction } from '@/reducers/lineReducer';
+import lineReducer, {
+	defaultLine,
+	setLineAction,
+	setLineValue,
+} from '@/reducers/lineReducer';
 import Icon from '@/components/Icon';
 import BoostrapSwitch from '@/components/BoostrapSwitch';
 import ReportABugLink from '@/components/ReportABugLink';
@@ -26,6 +31,7 @@ import { DigimonProvider } from '@/context/digimon';
 import { Digimon } from '@/types/Digimon';
 import { ZoomProvider } from '@/context/zoom';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
+import useQueryParam from '@/hooks/useQueryParam';
 
 const defaultObject: any = {};
 
@@ -60,6 +66,24 @@ export const PageBuild = (props: BuildProps) => {
 
 	const { downloadCode, uploadCode, name, setName } = useDownloadCode(line, setLine);
 	const { downloadImage, downloading, error } = useDownloadImg(name);
+
+	// Pre-fill the title when arriving from a line's "Edit in builder" button.
+	const { name: queryName } = useQueryParam('name');
+	useEffect(() => {
+		if (queryName) setName(queryName);
+	}, [queryName]);
+
+	// CTRL/CMD + S triggers "Save as Code" instead of the browser save dialog.
+	useEffect(() => {
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+				e.preventDefault();
+				downloadCode();
+			}
+		};
+		window.addEventListener('keydown', handleKeyDown);
+		return () => window.removeEventListener('keydown', handleKeyDown);
+	}, [downloadCode]);
 
 	const handleUpdate = (action: CallableFunction, ...args: any[]) => {
 		dispatchState(action(...args));
@@ -164,13 +188,22 @@ export const PageBuild = (props: BuildProps) => {
 					</DigimonProvider>
 				</LicenseContext.Provider>
 			</SearchContext.Provider>
+			<SearchContext.Provider value={props.search}>
+				<RelatedLines
+					related={line.related}
+					editable={edition}
+					onChange={related =>
+						handleUpdate(setLineValue, 'related', related)
+					}
+				/>
+			</SearchContext.Provider>
 		</Layout>
 	);
 };
 
 export const getStaticProps: GetStaticProps = async () => {
 	const context: LicenceProps = defaultLicenceContext;
-	try {	
+	try {
 		const digimons: {
 			[key: string]: Digimon;
 		} = require('../../../public/json/digimons/index.json');

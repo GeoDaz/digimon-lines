@@ -1,187 +1,347 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "maildramon",
-				"from": [[2, -1]],
-				"color": ["light"]
-			},
-			null,
-			{
-				"name": "lordknightmon_x",
-				"color": "x",
-				"from": [1, 0]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "gladimon",
-				"from": [1, -1]
-			},
-			{
-				"name": "knightmon"
-			},
-			{
-				"name": "lordknightmon"
-			}
-		],
-		[
-			{
-				"name": "choromon",
-				"xSize": 2,
-				"from": null
-			},
-			{
-				"name": "caprimon",
-				"xSize": 2
-			},
-			{
-				"name": "pawnchessmon_white",
-				"from": [0.5, -1]
-			},
-			{
-				"name": "knightchessmon_white"
-			},
-			{
-				"name": "bishopchessmon_white",
-				"skins": ["rookchessmon_white"]
-			},
-			{
-				"name": "kingchessmon"
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "pawnchessmon_black",
-				"from": [-0.5, -1]
-			},
-			{
-				"name": "knightchessmon_black"
-			},
-			{
-				"name": "rookchessmon_black",
-				"skins": ["bishopchessmon_black"]
-			},
-			{
-				"name": "queenchessmon"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "skullknightmon",
-				"from": [[-1, -1]],
-				"color": ["dark"]
-			},
-			{
-				"name": "darkknightmon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"skins": ["skullknightmon_cavalier", "skullknightmon_axe"],
-				"color": ["fusion", "fusion"]
-			},
-			{
-				"name": "super_darkknightmon",
-				"color": "fusion",
-				"skins": ["greyknightsmon", "darkknightmon_bagramon"],
-				"from": [[0, -1]]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "deadlyaxemon",
-				"from": [[-2, -1]],
-				"color": ["dark"]
-			},
-			null,
-			{
-				"name": "craniummon",
-				"from": [[-1, -1]]
-			},
-			{
-				"name": "craniummon_enbarrmon",
-				"color": "fusion"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "darkmaildramon",
-				"from": [[-3, -1]],
-				"color": ["dark"]
-			},
-			{
-				"name": "darkknightmon_x",
-				"color": "x",
-				"from": [[-2, 0]]
-			},
-			{
-				"name": "craniummon_x",
-				"color": "x",
-				"from": [
-					[-1, 0],
-					[0, -1]
-				]
-			}
-		]
-	],
-	"related": [
-		{ "name": "app_ropuremon", "for": "app_protecmon" },
-		"kotemon",
-		{
-			"name": "shoutmon",
-			"for": "shoutmon_x3sd"
-		},
-		{
-			"name": "growlmon",
-			"for": "gallantmon"
-		},
-		{
-			"name": "wizardmon",
-			"for": "dynasmon"
-		},
-		{
-			"name": "leomon",
-			"for": "leopardmon"
-		},
-		{ "name": "patamon", "for": "enbarrmon" },
-		{
-			"name": "patamon",
-			"for": "bagramon"
-		},
-		{
-			"name": "takinmon",
-			"for": "centarumon"
-		},
-		{
-			"name": "greymon",
-			"for": "metalgreymon_blue_2"
-		},
-		{
-			"name": "greymon",
-			"for": "skullgreymon"
-		},
-		{
-			"name": "devimon",
-			"for": "skullsatamon"
-		}
-	],
-	"size": 6
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "rhinomon_x",
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null,
+            {
+                "name": "lordknightmon_x",
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "rhinomon",
+                "from": [
+                    [
+                        3,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "lordknightmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gladimon",
+                "from": [
+                    [
+                        2,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "knightmon"
+            },
+            {
+                "name": "craniummon"
+            },
+            {
+                "name": "craniummon_enbarrmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "maildramon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            null,
+            {
+                "name": "craniummon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "choromon",
+                "xSize": 2,
+                "from": null
+            },
+            {
+                "name": "caprimon",
+                "xSize": 2
+            },
+            {
+                "name": "pawnchessmon_white",
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "knightchessmon_white"
+            },
+            {
+                "name": "bishopchessmon_white",
+                "skins": [
+                    "rookchessmon_white"
+                ]
+            },
+            {
+                "name": "kingchessmon"
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "pawnchessmon_black",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "knightchessmon_black"
+            },
+            {
+                "name": "rookchessmon_black",
+                "skins": [
+                    "bishopchessmon_black"
+                ]
+            },
+            {
+                "name": "queenchessmon"
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "skullknightmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "darkknightmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "skullknightmon_cavalier",
+                    "skullknightmon_axe"
+                ],
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            },
+            {
+                "name": "super_darkknightmon",
+                "color": [
+                    "fusion"
+                ],
+                "skins": [
+                    "greyknightsmon",
+                    "darkknightmon_bagramon"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "darkness_bagramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "deadlyaxemon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "darkmaildramon",
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "darkknightmon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        -2,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "app_ropuremon",
+            "for": "app_protecmon"
+        },
+        "kotemon",
+        {
+            "name": "leomon",
+            "for": "leopardmon"
+        },
+        {
+            "name": "wizardmon",
+            "for": "dynasmon"
+        },
+        {
+            "name": "growlmon",
+            "for": "gallantmon"
+        },
+        {
+            "name": "shoutmon",
+            "for": "shoutmon_x3sd"
+        },
+        {
+            "name": "patamon",
+            "for": "enbarrmon"
+        },
+        {
+            "name": "takinmon",
+            "for": "centarumon"
+        },
+        {
+            "name": "patamon",
+            "for": "bagramon"
+        },
+        {
+            "name": "greymon",
+            "for": "metalgreymon_blue_2"
+        },
+        {
+            "name": "greymon",
+            "for": "skullgreymon"
+        },
+        {
+            "name": "devimon",
+            "for": "skullsatamon"
+        }
+    ],
+    "size": 7
 }
