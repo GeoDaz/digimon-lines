@@ -1019,9 +1019,18 @@ a.line-point {
 
 /* Let the draggable container handle the drag instead of the inner link/image */
 .reorderable img,
-.reorderable a {
+.reorderable a,
+.line-grid.editable .line-point.pictured img {
 	-webkit-user-drag: none;
 	user-drag: none;
+}
+
+.line-grid.editable .line-point.pictured[draggable='true'] {
+	cursor: grab;
+}
+
+.line-grid.editable .line-point.pictured[draggable='true']:active {
+	cursor: grabbing;
 }
 
 /* Progress Bar */

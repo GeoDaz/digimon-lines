@@ -1,4 +1,4 @@
-import { Fragment, memo, useContext, useMemo, useState } from 'react';
+import { Fragment, memo, useContext, useRef, useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import {
 	Axis,
@@ -10,7 +10,12 @@ import {
 	SizeAttr,
 } from '@/types/Line';
 import { makeClassName } from '@/functions';
-import { addLineColumn, removeLineColumn, setLinePoint } from '@/reducers/lineReducer';
+import {
+	addLineColumn,
+	moveLinePoint,
+	removeLineColumn,
+	setLinePoint,
+} from '@/reducers/lineReducer';
 import { GridContext } from '@/context/grid';
 import { ZoomContext } from '@/context/zoom';
 import LinePointSettings from './LinePointSettings';
@@ -32,6 +37,27 @@ const LineGrid: React.FC<GridProps> = ({ line, handleUpdate }) => {
 	const [drawing, setDrawing] = useState<number[] | undefined>();
 	const [edition, edit] = useState<number[]>();
 	const { zoomFactor } = useContext(ZoomContext);
+	const dragCoord = useRef<number[] | null>(null);
+
+	const handleDragStart = (coord: number[]) => {
+		dragCoord.current = coord;
+	};
+
+	const handleDragEnd = () => {
+		dragCoord.current = null;
+	};
+
+	const handleDragOver = (e: React.DragEvent) => {
+		if (dragCoord.current) e.preventDefault();
+	};
+
+	const handleDrop = (coord: number[]) => {
+		const source = dragCoord.current;
+		dragCoord.current = null;
+		if (!handleUpdate || !source) return;
+		if (source[0] === coord[0] && source[1] === coord[1]) return;
+		handleUpdate(moveLinePoint, source, coord);
+	};
 
 	const handleTarget = (target: number[]) => {
 		if (!handleUpdate || !drawing) return;
@@ -108,6 +134,10 @@ const LineGrid: React.FC<GridProps> = ({ line, handleUpdate }) => {
 				handleTarget,
 				handleXCollapse,
 				handleYCollapse,
+				handleDragStart: handleUpdate ? handleDragStart : undefined,
+				handleDragEnd: handleUpdate ? handleDragEnd : undefined,
+				handleDragOver: handleUpdate ? handleDragOver : undefined,
+				handleDrop: handleUpdate ? handleDrop : undefined,
 			}}
 		>
 			{!!handleUpdate && (

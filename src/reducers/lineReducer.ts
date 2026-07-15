@@ -1,9 +1,10 @@
-import Line from '@/types/Line';
+import Line, { LineFrom, LinePoint } from '@/types/Line';
 // import { createSlice } from '@reduxjs/toolkit';
 
 export const SET_LINE = 'SET_LINE';
 export const SET_LINE_VALUE = 'SET_LINE_VALUE';
 export const SET_LINE_POINT = 'SET_LINE_POINT';
+export const MOVE_LINE_POINT = 'MOVE_LINE_POINT';
 export const SET_LINE_COLUMN = 'SET_LINE_COLUMN';
 export const ADD_LINE_COLUMN = 'ADD_LINE_COLUMN';
 export const REMOVE_LINE_COLUMN = 'REMOVE_LINE_COLUMN';
@@ -36,6 +37,11 @@ export const setLinePoint = (coord: number[], value: any) => ({
 	coord,
 	value,
 });
+export const moveLinePoint = (source: number[], target: number[]) => ({
+	type: MOVE_LINE_POINT,
+	source,
+	target,
+});
 export const setLineColumn = (i: number, value: any) => ({
 	type: SET_LINE_COLUMN,
 	i,
@@ -60,6 +66,37 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
 			columns[action.coord[0]] = columns[action.coord[0]].slice();
 			columns[action.coord[0]][action.coord[1]] = action.value;
 			return { ...line, columns };
+
+		case MOVE_LINE_POINT: {
+			const [sx, sy] = action.source;
+			const [tx, ty] = action.target;
+			if (sx === tx && sy === ty) return line;
+			const sourcePoint = line.columns[sx]?.[sy] as LinePoint | null;
+			if (!sourcePoint || Array.isArray(sourcePoint)) return line;
+			const targetPoint = (line.columns[tx]?.[ty] as LinePoint | null) || null;
+			if (Array.isArray(targetPoint)) return line;
+
+			const dx = tx - sx;
+			const dy = ty - sy;
+			// Keep links anchored to the same absolute cells after the move.
+			const shiftFrom = (from: LineFrom | undefined, ddx: number, ddy: number) => {
+				if (!from) return from;
+				if (Array.isArray(from[0])) {
+					return (from as number[][]).map(f => [f[0] - ddx, f[1] - ddy]);
+				}
+				const f = from as number[];
+				return [f[0] - ddx, f[1] - ddy];
+			};
+
+			columns = line.columns.map((col, x) =>
+				x === sx || x === tx ? col.slice() : col
+			);
+			columns[tx][ty] = { ...sourcePoint, from: shiftFrom(sourcePoint.from, dx, dy) };
+			columns[sx][sy] = targetPoint
+				? { ...targetPoint, from: shiftFrom(targetPoint.from, -dx, -dy) }
+				: null;
+			return { ...line, columns };
+		}
 
 		case SET_LINE_COLUMN:
 			columns = line.columns.slice();
