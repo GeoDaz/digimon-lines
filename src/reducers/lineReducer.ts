@@ -3,8 +3,6 @@ import Line, { LineColumn, LineFrom, LinePoint } from '@/types/Line';
 
 type CellShift = (pos: number[]) => number[];
 
-const NO_SHIFT: CellShift = () => [0, 0];
-
 /**
  * Recompute a point's `from` links so they keep pointing at the same absolute
  * cells, given how the point itself moves (deltaP) and how any linked cell
@@ -118,14 +116,19 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
 
 			const dx = tx - sx;
 			const dy = ty - sy;
-			// Only the moved point(s) shift; linked cells stay put (NO_SHIFT).
-			columns = line.columns.map((col, x) =>
-				x === sx || x === tx ? col.slice() : col
-			);
-			columns[tx][ty] = remapPointFrom(sourcePoint, [sx, sy], [dx, dy], NO_SHIFT);
-			columns[sx][sy] = targetPoint
-				? remapPointFrom(targetPoint, [tx, ty], [-dx, -dy], NO_SHIFT)
-				: null;
+			// Model the move as a grid shift where only the moved point (and the
+			// swapped one, if any) move. remapGridFrom then fixes every point's
+			// links: those leaving the moved point AND those targeting it.
+			const displacement: CellShift = pos => {
+				if (pos[0] === sx && pos[1] === sy) return [dx, dy];
+				if (targetPoint && pos[0] === tx && pos[1] === ty) return [-dx, -dy];
+				return [0, 0];
+			};
+			columns = remapGridFrom(line.columns, displacement);
+			const movedSource = columns[sx][sy];
+			const movedTarget = columns[tx][ty];
+			columns[tx][ty] = movedSource;
+			columns[sx][sy] = targetPoint ? movedTarget : null;
 			return { ...line, columns };
 		}
 
