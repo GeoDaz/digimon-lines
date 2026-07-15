@@ -77,7 +77,6 @@ const LineImage: React.FC<Props> = ({
 			)}
 			<Image
 				src={src}
-				unoptimized={/^https?:\/\//.test(src)}
 				onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
 					setSrc('/images/digimon/unknown.jpg');
 					setLoading(false);
