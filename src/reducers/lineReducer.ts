@@ -1,5 +1,45 @@
-import Line, { LineFrom, LinePoint } from '@/types/Line';
+import Line, { LineColumn, LineFrom, LinePoint } from '@/types/Line';
 // import { createSlice } from '@reduxjs/toolkit';
+
+type CellShift = (pos: number[]) => number[];
+
+const NO_SHIFT: CellShift = () => [0, 0];
+
+/**
+ * Recompute a point's `from` links so they keep pointing at the same absolute
+ * cells, given how the point itself moves (deltaP) and how any linked cell
+ * moves (targetShift). Shared by MOVE_LINE_POINT and column/row insert/remove.
+ */
+const remapPointFrom = (
+	point: LinePoint,
+	pointPos: number[],
+	deltaP: number[],
+	targetShift: CellShift
+): LinePoint => {
+	const { from } = point;
+	if (!from) return point;
+	const remap = (f: number[]): number[] => {
+		const td = targetShift([pointPos[0] + f[0], pointPos[1] + f[1]]);
+		return [f[0] + td[0] - deltaP[0], f[1] + td[1] - deltaP[1]];
+	};
+	const nextFrom = Array.isArray(from[0])
+		? (from as number[][]).map(remap)
+		: remap(from as number[]);
+	return { ...point, from: nextFrom as LineFrom };
+};
+
+/**
+ * Apply a whole-grid shift (a column/row insertion or removal) to every point's
+ * links, so links spanning the changed column/row stay anchored.
+ */
+const remapGridFrom = (columns: LineColumn[], shift: CellShift): LineColumn[] =>
+	columns.map((col, x) =>
+		col.map((point, y) => {
+			if (!point || Array.isArray(point)) return point;
+			const pos = [x, y];
+			return remapPointFrom(point as LinePoint, pos, shift(pos), shift);
+		})
+	);
 
 export const SET_LINE = 'SET_LINE';
 export const SET_LINE_VALUE = 'SET_LINE_VALUE';
@@ -78,22 +118,13 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
 
 			const dx = tx - sx;
 			const dy = ty - sy;
-			// Keep links anchored to the same absolute cells after the move.
-			const shiftFrom = (from: LineFrom | undefined, ddx: number, ddy: number) => {
-				if (!from) return from;
-				if (Array.isArray(from[0])) {
-					return (from as number[][]).map(f => [f[0] - ddx, f[1] - ddy]);
-				}
-				const f = from as number[];
-				return [f[0] - ddx, f[1] - ddy];
-			};
-
+			// Only the moved point(s) shift; linked cells stay put (NO_SHIFT).
 			columns = line.columns.map((col, x) =>
 				x === sx || x === tx ? col.slice() : col
 			);
-			columns[tx][ty] = { ...sourcePoint, from: shiftFrom(sourcePoint.from, dx, dy) };
+			columns[tx][ty] = remapPointFrom(sourcePoint, [sx, sy], [dx, dy], NO_SHIFT);
 			columns[sx][sy] = targetPoint
-				? { ...targetPoint, from: shiftFrom(targetPoint.from, -dx, -dy) }
+				? remapPointFrom(targetPoint, [tx, ty], [-dx, -dy], NO_SHIFT)
 				: null;
 			return { ...line, columns };
 		}
@@ -103,39 +134,50 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
 			columns[action.i] = action.value;
 			return { ...line, columns };
 
-		case ADD_LINE_COLUMN:
-			columns = line.columns.slice();
+		case ADD_LINE_COLUMN: {
 			if (action.i === undefined) {
+				columns = line.columns.slice();
 				columns.push(new Array(line.size).fill(null));
 			} else {
-				columns.splice(action.i, 0, new Array(line.size).fill(null));
+				const at = action.i;
+				// Cells at column >= at move one to the right.
+				columns = remapGridFrom(line.columns, pos => [pos[0] >= at ? 1 : 0, 0]);
+				columns.splice(at, 0, new Array(line.size).fill(null));
 			}
 			return { ...line, columns };
+		}
 
-		case REMOVE_LINE_COLUMN:
-			columns = line.columns.slice();
-			columns.splice(action.i, 1);
+		case REMOVE_LINE_COLUMN: {
+			const at = action.i;
+			// Cells at column > at move one to the left.
+			columns = remapGridFrom(line.columns, pos => [pos[0] > at ? -1 : 0, 0]);
+			columns.splice(at, 1);
 			return { ...line, columns };
+		}
 
-		case ADD_LINE_ROW:
-			columns = line.columns.map(col => {
-				col = col.slice();
-				if (action.i === undefined) {
+		case ADD_LINE_ROW: {
+			if (action.i === undefined) {
+				columns = line.columns.map(col => {
+					col = col.slice();
 					col.push(null);
-				} else {
-					col.splice(action.i + 1, 0, null);
-				}
-				return col;
-			});
+					return col;
+				});
+			} else {
+				const at = action.i + 1;
+				// Cells at row >= at move one down.
+				columns = remapGridFrom(line.columns, pos => [0, pos[1] >= at ? 1 : 0]);
+				columns.forEach((col: LineColumn) => col.splice(at, 0, null));
+			}
 			return { ...line, columns, size: line.size + 1 };
+		}
 
-		case REMOVE_LINE_ROW:
-			columns = line.columns.map(col => {
-				col = col.slice();
-				col.splice(action.i, 1);
-				return col;
-			});
+		case REMOVE_LINE_ROW: {
+			const at = action.i;
+			// Cells at row > at move one up.
+			columns = remapGridFrom(line.columns, pos => [0, pos[1] > at ? -1 : 0]);
+			columns.forEach((col: LineColumn) => col.splice(at, 1));
 			return { ...line, columns, size: line.size - 1 };
+		}
 
 		default:
 			return line;
