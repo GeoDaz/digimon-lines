@@ -9,6 +9,7 @@ import LineLoading from '@/components/Line/LineLoading';
 import LinePoint from '@/components/Line/LinePoint';
 import LineImage from '@/components/Line/LineImage';
 import CommentLink from '@/components/CommentLink';
+import ShareButton from '@/components/ShareButton';
 // functions
 import useFetch from '@/hooks/useFetch';
 import { capitalize, typeOf } from '@/functions';
@@ -51,6 +52,12 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 			metadescription={`List of Digimon in the ${nameCap} group`}
 			metaimg={`groups/${name}.jpg`}
 		>
+			<div className="line-filters">
+				<ShareButton
+					title={`${group?.title || nameCap} Group`}
+					text={`List of Digimon in the ${nameCap} group`}
+				/>
+			</div>
 			{group ? (
 				Array.isArray(group.main) ? (
 					<Row className="line-row">

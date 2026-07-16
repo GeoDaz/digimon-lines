@@ -12,6 +12,7 @@ import CommentLink from '@/components/CommentLink';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
 import DownloadDropdown from '@/components/DownloadDropdown';
+import ShareButton from '@/components/ShareButton';
 import RelatedLines from '@/components/Line/RelatedLines';
 // hooks
 import useDownloadImg from '@/hooks/useDownloadImg';
@@ -116,6 +117,10 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 				/>
 				<ZoomBar handleZoom={setZoom} />
 				<ColorLegend />
+				<ShareButton
+					title={`${line?.title || nameCap} ${typeTitle}`}
+					text={`Evolution line for ${nameCap} species`}
+				/>
 			</div>
 			{!!error && (
 				<div>
