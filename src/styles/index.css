@@ -1033,6 +1033,12 @@ a.line-point {
 	cursor: grabbing;
 }
 
+/* Action buttons on a point keep the pointer cursor, not grab */
+.line-grid.editable .line-point.pictured .actions,
+.line-grid.editable .line-point.pictured .action {
+	cursor: pointer;
+}
+
 /* Progress Bar */
 
 .progress-bar {
