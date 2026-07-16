@@ -14,7 +14,8 @@
         "punimon": {
             "name": "punimon",
             "to": [
-                "tsunomon"
+                "tsunomon",
+                "nyaromon"
             ]
         },
         "zurumon": {
@@ -27,7 +28,8 @@
             "name": "kuramon",
             "to": [
                 "tsumemon",
-                "arkadimon_2"
+                "arkadimon_2",
+                "pagumon"
             ]
         },
         "snowbotamon": {
@@ -50,13 +52,35 @@
                 "demimeramon",
                 "sunmon"
             ]
+        },
+        "choromon": {
+            "name": "choromon",
+            "to": [
+                "caprimon"
+            ]
+        },
+        "bubbmon": {
+            "name": "bubbmon",
+            "to": [
+                "mochimon",
+                "yokomon",
+                "tanemon"
+            ]
+        },
+        "poyomon": {
+            "name": "poyomon",
+            "to": [
+                "pukamon",
+                "tokomon"
+            ]
         }
     },
     "Baby I X": {
         "dodomon": {
             "name": "dodomon",
             "to": [
-                "dorimon"
+                "dorimon",
+                "wanyamon"
             ]
         },
         "fusamon": {
@@ -85,7 +109,15 @@
                 "agumon",
                 "agumon_black",
                 "snowagumon",
-                "betamon"
+                "betamon",
+                "toyagumon",
+                "toyagumon_black",
+                "gizamon",
+                "flamon",
+                "guilmon",
+                "dracomon",
+                "kotemon",
+                "shoutmon"
             ],
             "from": [
                 "botamon"
@@ -95,7 +127,14 @@
             "name": "tsunomon",
             "to": [
                 "gabumon",
-                "elecmon"
+                "elecmon",
+                "gabumon_black",
+                "psychemon",
+                "gazimon",
+                "goblimon",
+                "veemon",
+                "ryudamon",
+                "zubamon"
             ],
             "from": [
                 "punimon"
@@ -107,7 +146,15 @@
                 "tokomon_x"
             ],
             "to": [
-                "patamon"
+                "patamon",
+                "tokomon_x",
+                "coronamon",
+                "terriermon",
+                "armadillomon",
+                "lucemon"
+            ],
+            "from": [
+                "poyomon"
             ]
         },
         "nyaromon": {
@@ -116,20 +163,28 @@
                 "meicoonyaromon"
             ],
             "from": [
-                "snowbotamon"
+                "snowbotamon",
+                "punimon"
             ],
             "to": [
-                "plotmon"
+                "plotmon",
+                "lunamon",
+                "kudamon",
+                "hackmon"
             ]
         },
         "pagumon": {
             "name": "pagumon",
             "to": [
                 "gazimon",
-                "demidevimon"
+                "demidevimon",
+                "psychemon",
+                "impmon",
+                "otamamon"
             ],
             "from": [
-                "zurumon"
+                "zurumon",
+                "kuramon"
             ]
         },
         "tsumemon": {
@@ -137,7 +192,9 @@
             "to": [
                 "keramon",
                 "agumon_black",
-                "gabumon_black"
+                "gabumon_black",
+                "dracmon",
+                "shamamon"
             ],
             "from": [
                 "kuramon"
@@ -146,11 +203,17 @@
         "wanyamon": {
             "name": "wanyamon",
             "from": [
-                "botamon"
+                "botamon",
+                "dodomon"
             ],
             "to": [
                 "gaomon",
-                "bearmon"
+                "bearmon",
+                "gabumon",
+                "gazimon",
+                "strabimon",
+                "tapirmon",
+                "renamon"
             ]
         },
         "demimeramon": {
@@ -203,6 +266,56 @@
                 "lunamon",
                 "strabimon"
             ]
+        },
+        "caprimon": {
+            "name": "caprimon",
+            "from": [
+                "choromon"
+            ],
+            "to": [
+                "hagurumon",
+                "kokuwamon",
+                "toyagumon",
+                "solarmon"
+            ]
+        },
+        "tanemon": {
+            "name": "tanemon",
+            "from": [
+                "bubbmon"
+            ],
+            "to": [
+                "fanbeemon",
+                "lalamon",
+                "palmon",
+                "mushmon",
+                "floramon"
+            ]
+        },
+        "pukamon": {
+            "name": "pukamon",
+            "from": [
+                "poyomon"
+            ],
+            "to": [
+                "kamemon",
+                "crabmon",
+                "gomamon",
+                "gizamon",
+                "shakomon"
+            ]
+        },
+        "mochimon": {
+            "name": "mochimon",
+            "from": [
+                "bubbmon"
+            ],
+            "to": [
+                "tyumon",
+                "tentomon",
+                "wormmon",
+                "gottsumon"
+            ]
         }
     },
     "Baby II X": {
@@ -218,7 +331,10 @@
         "dorimon": {
             "name": "dorimon",
             "to": [
-                "dorumon"
+                "dorumon",
+                "monodramon",
+                "snowgoblimon",
+                "lopmon"
             ],
             "from": [
                 "dodomon"
@@ -231,7 +347,10 @@
             ],
             "to": [
                 "loogamon",
-                "dorumon"
+                "dorumon",
+                "gabumon",
+                "gazimon",
+                "strabimon"
             ]
         },
         "kyokyomon": {
@@ -250,7 +369,8 @@
             ],
             "to": [
                 "fanbeemon",
-                "tinkermon"
+                "tinkermon",
+                "tentomon"
             ]
         }
     },
@@ -284,7 +404,15 @@
                 "tyranomon",
                 "tuskmon",
                 "cyclomon",
-                "flarelizardmon"
+                "flarelizardmon",
+                "agumon_x",
+                "garurumon",
+                "garurumon_black",
+                "agumon_burst_mode",
+                "raptordramon",
+                "numemon",
+                "coredramon_green",
+                "agumon_yuki_no_kizuma"
             ]
         },
         "agumon_black": {
@@ -312,7 +440,11 @@
                 "tuskmon",
                 "deltamon",
                 "darklizardmon",
-                "devidramon"
+                "devidramon",
+                "agumon_black_x",
+                "coredramon_blue",
+                "strikedramon",
+                "devimon"
             ]
         },
         "snowagumon": {
@@ -353,7 +485,12 @@
                 "gururumon",
                 "dorulumon",
                 "drimogemon",
-                "cyclomon"
+                "cyclomon",
+                "gabumon_x",
+                "ikkakumon",
+                "kyubimon",
+                "geremon",
+                "gabumon_yujo_no_kizuma"
             ]
         },
         "gabumon_black": {
@@ -365,7 +502,11 @@
             "to": [
                 "garurumon_black",
                 "sangloupmon",
-                "dobermon"
+                "dobermon",
+                "dorugamon",
+                "fugamon",
+                "gatomon_black",
+                "minotarumon"
             ],
             "from": [
                 "tsunomon",
@@ -399,7 +540,10 @@
                 "diatrymon",
                 "thunderbirdmon",
                 "xiquemon",
-                "mailbirdramon"
+                "mailbirdramon",
+                "aquilamon",
+                "unimon",
+                "wizardmon"
             ],
             "from": [
                 "poromon",
@@ -418,7 +562,9 @@
                 "snimon",
                 "gokimon",
                 "ballistamon",
-                "blitzmon"
+                "blitzmon",
+                "sunflowmon",
+                "waspmon"
             ],
             "from": [
                 "minomon",
@@ -437,7 +583,12 @@
                 "vegimon",
                 "vegimon_red",
                 "zassoumon",
-                "kabukimon"
+                "kabukimon",
+                "palmon_x",
+                "mojyamon",
+                "woodmon",
+                "chrysalimon",
+                "platinumsukamon"
             ],
             "from": [
                 "tanemon",
@@ -458,7 +609,8 @@
                 "angemon",
                 "pegasmon",
                 "unimon",
-                "pidmon"
+                "pidmon",
+                "centarumon"
             ]
         },
         "plotmon": {
@@ -477,7 +629,13 @@
                 "gatomon",
                 "mikemon",
                 "gatomon_black",
-                "darcmon"
+                "darcmon",
+                "plotmon_x",
+                "sangloupmon",
+                "dobermon",
+                "ikkakumon",
+                "veedramon",
+                "drimogemon"
             ]
         },
         "toyagumon": {
@@ -496,7 +654,10 @@
                 "tankmon",
                 "centarumon",
                 "flarelizardmon",
-                "tyranomon"
+                "tyranomon",
+                "blimpmon",
+                "raremon",
+                "gargomon"
             ]
         },
         "toyagumon_black": {
@@ -531,20 +692,29 @@
                 "airdramon",
                 "landramon",
                 "coelamon",
-                "tylomon"
+                "tylomon",
+                "devimon",
+                "numemon",
+                "vegimon",
+                "tuskmon"
             ]
         },
         "gizamon": {
             "name": "gizamon",
             "from": [
-                "koromon"
+                "koromon",
+                "pukamon"
             ],
             "to": [
                 "cyclomon",
                 "geremon",
                 "seadramon",
                 "coelamon",
-                "gekomon"
+                "gekomon",
+                "ankylomon",
+                "flymon",
+                "zubaeagermon",
+                "ranamon"
             ]
         },
         "gazimon": {
@@ -564,7 +734,632 @@
                 "deltamon",
                 "darktyranomon",
                 "devidramon",
-                "dobermon"
+                "dobermon",
+                "sangloupmon",
+                "gatomon_black",
+                "gaogamon",
+                "baohackmon",
+                "dorugamon"
+            ]
+        },
+        "kudamon": {
+            "name": "kudamon",
+            "from": [
+                "nyaromon"
+            ],
+            "to": [
+                "airdramon",
+                "reppamon",
+                "angemon",
+                "ginryumon",
+                "wolfmon",
+                "sorcerymon"
+            ]
+        },
+        "gomamon": {
+            "name": "gomamon",
+            "from": [
+                "pukamon"
+            ],
+            "to": [
+                "mojyamon",
+                "ikkakumon",
+                "frigimon",
+                "hyogamon",
+                "icedevimon"
+            ]
+        },
+        "coronamon": {
+            "name": "coronamon",
+            "from": [
+                "tokomon"
+            ],
+            "to": [
+                "firamon",
+                "meramon",
+                "growlmon",
+                "baohackmon",
+                "birdramon",
+                "agunimon"
+            ]
+        },
+        "zubamon": {
+            "name": "zubamon",
+            "from": [
+                "tsunomon"
+            ],
+            "to": [
+                "musyamon",
+                "buraimon",
+                "tankmon",
+                "zubaeagermon",
+                "ankylomon",
+                "guardromon_gold"
+            ]
+        },
+        "solarmon": {
+            "name": "solarmon",
+            "from": [
+                "caprimon"
+            ],
+            "to": [
+                "starmon",
+                "goldnumemon",
+                "meramon",
+                "guardromon_gold"
+            ]
+        },
+        "terriermon": {
+            "name": "terriermon",
+            "from": [
+                "tokomon"
+            ],
+            "to": [
+                "mojyamon",
+                "lekismon",
+                "gawappamon",
+                "gargomon",
+                "goldrapidmon"
+            ]
+        },
+        "tapirmon": {
+            "name": "tapirmon",
+            "from": [
+                "wanyamon"
+            ],
+            "to": [
+                "meramon",
+                "garurumon",
+                "bakemon",
+                "unimon",
+                "kyubimon"
+            ]
+        },
+        "hyokomon": {
+            "name": "hyokomon",
+            "from": [
+                "yokomon"
+            ],
+            "to": [
+                "peckmon",
+                "birdramon",
+                "dinohumon",
+                "buraimon"
+            ]
+        },
+        "falcomon": {
+            "name": "falcomon",
+            "from": [
+                "yokomon"
+            ],
+            "to": [
+                "peckmon",
+                "ginryumon",
+                "kiwimon"
+            ]
+        },
+        "bearmon": {
+            "name": "bearmon",
+            "from": [
+                "wanyamon"
+            ],
+            "to": [
+                "grizzlymon",
+                "gaogamon",
+                "mojyamon",
+                "leomon",
+                "garurumon_black"
+            ]
+        },
+        "penmon": {
+            "name": "penmon",
+            "from": [
+                "yokomon"
+            ],
+            "to": [
+                "peckmon",
+                "buraimon",
+                "kiwimon",
+                "aquilamon"
+            ]
+        },
+        "monodramon": {
+            "name": "monodramon",
+            "from": [
+                "dorimon"
+            ],
+            "to": [
+                "strikedramon",
+                "raptordramon",
+                "deltamon",
+                "chrysalimon",
+                "cyclomon"
+            ]
+        },
+        "elecmon": {
+            "name": "elecmon",
+            "from": [
+                "tsunomon"
+            ],
+            "to": [
+                "aegiomon",
+                "seadramon",
+                "unimon",
+                "kuwagamon",
+                "gekomon"
+            ]
+        },
+        "gaomon": {
+            "name": "gaomon",
+            "from": [
+                "wanyamon"
+            ],
+            "to": [
+                "strikedramon",
+                "gaogamon",
+                "leomon",
+                "nanimon",
+                "turuiemon"
+            ]
+        },
+        "crabmon": {
+            "name": "crabmon",
+            "from": [
+                "pukamon"
+            ],
+            "to": [
+                "gawappamon",
+                "octomon",
+                "shellmon",
+                "raremon",
+                "snimon",
+                "coelamon"
+            ]
+        },
+        "kamemon": {
+            "name": "kamemon",
+            "from": [
+                "pukamon"
+            ],
+            "to": [
+                "gawappamon",
+                "octomon",
+                "shellmon",
+                "karatukinumemon",
+                "dinohumon",
+                "sorcerymon"
+            ]
+        },
+        "kokuwamon": {
+            "name": "kokuwamon",
+            "from": [
+                "caprimon"
+            ],
+            "to": [
+                "centarumon",
+                "kuwagamon",
+                "clockmon",
+                "waspmon",
+                "mechanorimon"
+            ]
+        },
+        "gottsumon": {
+            "name": "gottsumon",
+            "from": [
+                "mochimon"
+            ],
+            "to": [
+                "starmon",
+                "guardromon",
+                "golemon",
+                "monochromon",
+                "icemon",
+                "frigimon"
+            ]
+        },
+        "kotemon": {
+            "name": "kotemon",
+            "from": [
+                "koromon"
+            ],
+            "to": [
+                "turuiemon",
+                "musyamon",
+                "revolmon",
+                "dinohumon",
+                "coredramon_blue"
+            ]
+        },
+        "shoutmon": {
+            "name": "shoutmon",
+            "from": [
+                "koromon"
+            ],
+            "to": [
+                "omegashoutmon",
+                "zubaeagermon",
+                "gargomon",
+                "guardromon_gold"
+            ]
+        },
+        "dracomon": {
+            "name": "dracomon",
+            "from": [
+                "koromon"
+            ],
+            "to": [
+                "coredramon_green",
+                "coredramon_blue",
+                "deltamon",
+                "veedramon",
+                "seadramon",
+                "tyranomon"
+            ]
+        },
+        "hackmon": {
+            "name": "hackmon",
+            "from": [
+                "nyaromon"
+            ],
+            "to": [
+                "gatomon",
+                "geogreymon",
+                "growlmon",
+                "baohackmon",
+                "greymon"
+            ]
+        },
+        "floramon": {
+            "name": "floramon",
+            "from": [
+                "tanemon"
+            ],
+            "to": [
+                "vegimon",
+                "togemon",
+                "woodmon",
+                "sunflowmon",
+                "kiwimon"
+            ]
+        },
+        "muchomon": {
+            "name": "muchomon",
+            "from": [
+                "yokomon"
+            ],
+            "to": [
+                "airdramon",
+                "peckmon",
+                "birdramon",
+                "fugamon"
+            ]
+        },
+        "lalamon": {
+            "name": "lalamon",
+            "from": [
+                "tanemon"
+            ],
+            "to": [
+                "sunflowmon",
+                "togemon",
+                "revolmon",
+                "frigimon",
+                "turuiemon"
+            ]
+        },
+        "lunamon": {
+            "name": "lunamon",
+            "from": [
+                "nyaromon"
+            ],
+            "to": [
+                "lekismon",
+                "garurumon",
+                "frigimon",
+                "hyogamon",
+                "sorcerymon",
+                "icemon"
+            ]
+        },
+        "renamon": {
+            "name": "renamon",
+            "from": [
+                "wanyamon"
+            ],
+            "to": [
+                "lekismon",
+                "sunflowmon",
+                "reppamon",
+                "kyubimon",
+                "garurumon_black"
+            ]
+        },
+        "lopmon": {
+            "name": "lopmon",
+            "from": [
+                "dorimon"
+            ],
+            "to": [
+                "grizzlymon",
+                "minotarumon",
+                "leomon",
+                "turuiemon",
+                "wendimon",
+                "frigimon"
+            ]
+        },
+        "impmon": {
+            "name": "impmon",
+            "from": [
+                "pagumon"
+            ],
+            "to": [
+                "bakemon",
+                "wizardmon",
+                "clockmon",
+                "sangloupmon",
+                "devimon",
+                "witchmon"
+            ]
+        },
+        "otamamon": {
+            "name": "otamamon",
+            "from": [
+                "pagumon"
+            ],
+            "to": [
+                "seadramon",
+                "numemon",
+                "gekomon",
+                "karatukinumemon",
+                "platinumsukamon"
+            ]
+        },
+        "guilmon": {
+            "name": "guilmon",
+            "from": [
+                "koromon"
+            ],
+            "to": [
+                "geogreymon",
+                "growlmon",
+                "exveemon",
+                "tyranomon",
+                "greymon_blue"
+            ]
+        },
+        "goblimon": {
+            "name": "goblimon",
+            "from": [
+                "tsunomon"
+            ],
+            "to": [
+                "golemon",
+                "wendimon",
+                "deltamon",
+                "tuskmon",
+                "ogremon"
+            ]
+        },
+        "shamamon": {
+            "name": "shamamon",
+            "from": [
+                "tsumemon"
+            ],
+            "to": [
+                "minotarumon",
+                "musyamon",
+                "fugamon",
+                "witchmon"
+            ]
+        },
+        "shakomon": {
+            "name": "shakomon",
+            "from": [
+                "pukamon"
+            ],
+            "to": [
+                "coelamon",
+                "shellmon",
+                "karatukinumemon",
+                "octomon",
+                "raremon"
+            ]
+        },
+        "snowgoblimon": {
+            "name": "snowgoblimon",
+            "from": [
+                "dorimon"
+            ],
+            "to": [
+                "gatomon",
+                "monochromon",
+                "frigimon",
+                "hyogamon",
+                "icedevimon",
+                "icemon"
+            ]
+        },
+        "tyumon": {
+            "name": "tyumon",
+            "from": [
+                "mochimon"
+            ],
+            "to": [
+                "gatomon_black",
+                "sukamon",
+                "gatomon",
+                "gekomon",
+                "geremon",
+                "platinumsukamon"
+            ]
+        },
+        "dracmon": {
+            "name": "dracmon",
+            "from": [
+                "tsumemon"
+            ],
+            "to": [
+                "sangloupmon",
+                "sukamon",
+                "wizardmon",
+                "starmon"
+            ]
+        },
+        "hagurumon": {
+            "name": "hagurumon",
+            "from": [
+                "caprimon"
+            ],
+            "to": [
+                "clockmon",
+                "mechanorimon",
+                "tankmon",
+                "guardromon",
+                "blimpmon"
+            ]
+        },
+        "demidevimon": {
+            "name": "demidevimon",
+            "from": [
+                "pagumon"
+            ],
+            "to": [
+                "bakemon",
+                "icedevimon",
+                "devimon",
+                "ogremon",
+                "greymon_blue"
+            ]
+        },
+        "fanbeemon": {
+            "name": "fanbeemon",
+            "from": [
+                "tanemon"
+            ],
+            "to": [
+                "waspmon",
+                "flymon",
+                "dokugumon",
+                "stingmon",
+                "goldnumemon",
+                "kabuterimon"
+            ]
+        },
+        "mushmon": {
+            "name": "mushmon",
+            "from": [
+                "tanemon"
+            ],
+            "to": [
+                "sukamon",
+                "nanimon",
+                "woodmon",
+                "flymon"
+            ]
+        },
+        "armadillomon": {
+            "name": "armadillomon",
+            "from": [
+                "tokomon"
+            ],
+            "to": [
+                "digmon",
+                "submarimon",
+                "golemon",
+                "ankylomon"
+            ]
+        },
+        "veemon": {
+            "name": "veemon",
+            "from": [
+                "tsunomon"
+            ],
+            "to": [
+                "exveemon",
+                "veedramon",
+                "raidramon",
+                "magnamon",
+                "flamedramon"
+            ]
+        },
+        "hawkmon": {
+            "name": "hawkmon",
+            "from": [
+                "yokomon"
+            ],
+            "to": [
+                "firamon",
+                "halsemon",
+                "shurimon",
+                "aquilamon"
+            ]
+        },
+        "wormmon": {
+            "name": "wormmon",
+            "from": [
+                "mochimon"
+            ],
+            "to": [
+                "stingmon",
+                "dokugumon",
+                "snimon"
+            ]
+        },
+        "keramon": {
+            "name": "keramon",
+            "from": [
+                "tsumemon"
+            ],
+            "to": [
+                "dokugumon",
+                "wendimon",
+                "octomon",
+                "mechanorimon",
+                "chrysalimon"
+            ]
+        },
+        "drimogemon": {
+            "name": "drimogemon",
+            "from": [
+                "plotmon",
+                "gabumon",
+                "dorumon"
+            ],
+            "to": [
+                "triceramon",
+                "loaderliomon",
+                "brachiomon"
+            ]
+        },
+        "starmons": {
+            "name": "starmons",
+            "from": [
+                "deathmeramon",
+                "astamon"
+            ],
+            "to": [
+                "beelzebumon_blast_mode"
             ]
         }
     },
@@ -646,7 +1441,10 @@
             "to": [
                 "dorugamon",
                 "raptordramon",
-                "sangloupmon"
+                "sangloupmon",
+                "airdramon",
+                "exveemon",
+                "drimogemon"
             ]
         },
         "loogamon": {
@@ -665,12 +1463,17 @@
         "ryudamon": {
             "name": "ryudamon",
             "from": [
-                "kyokyomon"
+                "kyokyomon",
+                "tsunomon"
             ],
             "to": [
                 "ginryumon",
                 "airdramon",
-                "musyamon"
+                "musyamon",
+                "reppamon",
+                "coelamon",
+                "greymon",
+                "monochromon"
             ]
         }
     },
@@ -727,10 +1530,12 @@
         "lucemon": {
             "name": "lucemon",
             "to": [
-                "lucemon_falldown_mode"
+                "lucemon_falldown_mode",
+                "lucemon_x"
             ],
             "from": [
-                "cupimon"
+                "cupimon",
+                "tokomon"
             ]
         }
     },
@@ -752,10 +1557,14 @@
                 "skullgreymon",
                 "burninggreymon",
                 "kimeramon",
-                "triceramon"
+                "triceramon",
+                "greymon_x",
+                "megadramon"
             ],
             "from": [
-                "agumon"
+                "agumon",
+                "ryudamon",
+                "hackmon"
             ]
         },
         "greymon_blue": {
@@ -767,10 +1576,16 @@
             ],
             "to": [
                 "metalgreymon_blue",
-                "skullgreymon"
+                "skullgreymon",
+                "greymon_blue_x",
+                "wingdramon",
+                "skullbaluchimon"
             ],
             "from": [
-                "agumon"
+                "agumon",
+                "agumon_black",
+                "guilmon",
+                "demidevimon"
             ]
         },
         "geogreymon": {
@@ -779,10 +1594,14 @@
                 "greymon"
             ],
             "to": [
-                "rizegreymon"
+                "rizegreymon",
+                "metaltyranomon",
+                "cyberdramon"
             ],
             "from": [
-                "agumon"
+                "agumon",
+                "hackmon",
+                "guilmon"
             ]
         },
         "garurumon": {
@@ -799,10 +1618,17 @@
                 "weregarurumon",
                 "weregarurumon_black",
                 "kendogarurumon",
-                "kimeramon"
+                "kimeramon",
+                "garurumon_x",
+                "bluemeramon",
+                "taomon"
             ],
             "from": [
-                "agumon"
+                "agumon",
+                "gabumon",
+                "psychemon",
+                "tapirmon",
+                "lunamon"
             ]
         },
         "garurumon_black": {
@@ -814,10 +1640,15 @@
             ],
             "to": [
                 "weregarurumon_black",
-                "cerberumon"
+                "cerberumon",
+                "pandamon",
+                "skullsatamon"
             ],
             "from": [
-                "agumon"
+                "agumon",
+                "gabumon_black",
+                "bearmon",
+                "renamon"
             ]
         },
         "cyclomon": {
@@ -826,12 +1657,16 @@
                 "gizamon",
                 "agumon",
                 "gabumon",
-                "armadillomon"
+                "armadillomon",
+                "monodramon"
             ],
             "to": [
                 "skullgreymon",
                 "megadramon",
-                "digitamamon"
+                "digitamamon",
+                "grademon",
+                "cyberdramon",
+                "brachiomon"
             ]
         },
         "wizardmon": {
@@ -847,14 +1682,17 @@
             "from": [
                 "ghostmon",
                 "impmon",
-                "candlemon"
+                "candlemon",
+                "biyomon",
+                "dracmon"
             ],
             "to": [
                 "mistymon",
                 "baalmon",
                 "wisemon",
                 "deathmeramon",
-                "skullsatamon"
+                "skullsatamon",
+                "nanomon"
             ]
         },
         "ankylomon": {
@@ -862,7 +1700,8 @@
             "from": [
                 "armadillomon",
                 "gizamon",
-                "elizamon"
+                "elizamon",
+                "zubamon"
             ],
             "to": [
                 "shakkoumon",
@@ -870,7 +1709,8 @@
                 "brachiomon",
                 "groundramon",
                 "loaderliomon",
-                "proganomon"
+                "proganomon",
+                "meteormon"
             ]
         },
         "petermon": {
@@ -881,6 +1721,1241 @@
             "to": [
                 "captainhookmon",
                 "zamielmon"
+            ]
+        },
+        "aegiomon": {
+            "name": "aegiomon",
+            "from": [
+                "elecmon"
+            ],
+            "to": [
+                "aegiochusmon",
+                "aegiochusmon_dark",
+                "aegiochusmon_holly",
+                "aegiochusmon_blue",
+                "aegiochusmon_green"
+            ]
+        },
+        "ikkakumon": {
+            "name": "ikkakumon",
+            "from": [
+                "gomamon",
+                "plotmon",
+                "gabumon"
+            ],
+            "to": [
+                "whamon",
+                "megaseadramon",
+                "zudomon",
+                "skullseadramon"
+            ]
+        },
+        "airdramon": {
+            "name": "airdramon",
+            "from": [
+                "kudamon",
+                "dorumon",
+                "muchomon"
+            ],
+            "to": [
+                "hisyaryumon",
+                "megadramon",
+                "aeroveedramon",
+                "gigadramon"
+            ]
+        },
+        "angemon": {
+            "name": "angemon",
+            "from": [
+                "kudamon",
+                "patamon"
+            ],
+            "to": [
+                "hippogriffomon",
+                "magnaangemon",
+                "sirenmon",
+                "shakkoumon"
+            ]
+        },
+        "kabuterimon": {
+            "name": "kabuterimon",
+            "from": [
+                "tentomon",
+                "fanbeemon"
+            ],
+            "to": [
+                "lilamon",
+                "megakabuterimon",
+                "cannonbeemon",
+                "kimeramon"
+            ]
+        },
+        "ginryumon": {
+            "name": "ginryumon",
+            "from": [
+                "kudamon",
+                "falcomon",
+                "ryudamon"
+            ],
+            "to": [
+                "hisyaryumon",
+                "skullgreymon",
+                "butenmon"
+            ]
+        },
+        "grizzlymon": {
+            "name": "grizzlymon",
+            "from": [
+                "bearmon",
+                "lopmon"
+            ],
+            "to": [
+                "weregarurumon",
+                "grapleomon",
+                "greatgrizzlymon"
+            ]
+        },
+        "coredramon_blue": {
+            "name": "coredramon_blue",
+            "from": [
+                "kotemon",
+                "dracomon",
+                "agumon_black"
+            ],
+            "to": [
+                "wingdramon",
+                "aeroveedramon",
+                "gigadramon"
+            ]
+        },
+        "strikedramon": {
+            "name": "strikedramon",
+            "from": [
+                "monodramon",
+                "gaomon",
+                "agumon_black"
+            ],
+            "to": [
+                "cyberdramon",
+                "saviorhackmon",
+                "locomon"
+            ]
+        },
+        "snimon": {
+            "name": "snimon",
+            "from": [
+                "tentomon",
+                "crabmon",
+                "wormmon"
+            ],
+            "to": [
+                "okuwamon",
+                "phantomon",
+                "arukenimon",
+                "jewelbeemon"
+            ]
+        },
+        "zubaeagermon": {
+            "name": "zubaeagermon",
+            "from": [
+                "zubamon",
+                "shoutmon",
+                "gizamon"
+            ],
+            "to": [
+                "grademon",
+                "wargrowlmon",
+                "duramon",
+                "knightmon"
+            ]
+        },
+        "sorcerymon": {
+            "name": "sorcerymon",
+            "from": [
+                "kudamon",
+                "kamemon",
+                "lunamon"
+            ],
+            "to": [
+                "magnaangemon",
+                "piccolomon",
+                "wisemon"
+            ]
+        },
+        "gatomon": {
+            "name": "gatomon",
+            "from": [
+                "plotmon",
+                "hackmon",
+                "snowgoblimon",
+                "tyumon"
+            ],
+            "to": [
+                "nefertimon",
+                "angewomon",
+                "silphymon"
+            ]
+        },
+        "dobermon": {
+            "name": "dobermon",
+            "from": [
+                "plotmon",
+                "gazimon",
+                "gabumon_black"
+            ],
+            "to": [
+                "matadormon",
+                "darksuperstarmon",
+                "cerberumon",
+                "mummymon"
+            ]
+        },
+        "birdramon": {
+            "name": "birdramon",
+            "from": [
+                "coronamon",
+                "hyokomon",
+                "biyomon",
+                "muchomon"
+            ],
+            "to": [
+                "flaremon",
+                "garudamon",
+                "deathmeramon",
+                "parrotmon"
+            ]
+        },
+        "firamon": {
+            "name": "firamon",
+            "from": [
+                "coronamon",
+                "hawkmon"
+            ],
+            "to": [
+                "flaremon",
+                "saviorhackmon",
+                "mistymon"
+            ]
+        },
+        "veedramon": {
+            "name": "veedramon",
+            "from": [
+                "plotmon",
+                "dracomon",
+                "veemon"
+            ],
+            "to": [
+                "wingdramon",
+                "aeroveedramon",
+                "cyberdramon",
+                "metalgreymon_blue"
+            ]
+        },
+        "buraimon": {
+            "name": "buraimon",
+            "from": [
+                "zubamon",
+                "hyokomon",
+                "penmon"
+            ],
+            "to": [
+                "butenmon",
+                "duramon",
+                "garudamon"
+            ]
+        },
+        "peckmon": {
+            "name": "peckmon",
+            "from": [
+                "hyokomon",
+                "falcomon",
+                "penmon",
+                "muchomon"
+            ],
+            "to": [
+                "chirinmon",
+                "myotismon",
+                "yatagaramon"
+            ]
+        },
+        "mojyamon": {
+            "name": "mojyamon",
+            "from": [
+                "gomamon",
+                "terriermon",
+                "bearmon",
+                "palmon"
+            ],
+            "to": [
+                "zudomon",
+                "piccolomon",
+                "mistymon",
+                "mammon"
+            ]
+        },
+        "frigimon": {
+            "name": "frigimon",
+            "from": [
+                "gomamon",
+                "gottsumon",
+                "lalamon",
+                "lunamon",
+                "lopmon",
+                "snowgoblimon"
+            ],
+            "to": [
+                "crescemon",
+                "angewomon",
+                "panjyamon",
+                "meteormon",
+                "mammon",
+                "delumon",
+                "gerbemon",
+                "andiramon"
+            ]
+        },
+        "unimon": {
+            "name": "unimon",
+            "from": [
+                "tapirmon",
+                "biyomon",
+                "elecmon",
+                "patamon"
+            ],
+            "to": [
+                "hippogriffomon",
+                "magnaangemon",
+                "chirinmon"
+            ]
+        },
+        "raptordramon": {
+            "name": "raptordramon",
+            "from": [
+                "agumon",
+                "monodramon",
+                "dorumon"
+            ],
+            "to": [
+                "grademon",
+                "gigadramon",
+                "tankdramon"
+            ]
+        },
+        "revolmon": {
+            "name": "revolmon",
+            "from": [
+                "toyagumon",
+                "kotemon",
+                "lalamon"
+            ],
+            "to": [
+                "pandamon",
+                "superstarmon",
+                "wisemon"
+            ]
+        },
+        "leomon": {
+            "name": "leomon",
+            "from": [
+                "bearmon",
+                "gaomon",
+                "lopmon"
+            ],
+            "to": [
+                "flaremon",
+                "grapleomon",
+                "panjyamon",
+                "loaderliomon"
+            ]
+        },
+        "reppamon": {
+            "name": "reppamon",
+            "from": [
+                "kudamon",
+                "ryudamon",
+                "renamon"
+            ],
+            "to": [
+                "chirinmon",
+                "megaseadramon",
+                "angewomon",
+                "dorugreymon"
+            ]
+        },
+        "icemon": {
+            "name": "icemon",
+            "from": [
+                "gottsumon",
+                "lunamon",
+                "snowgoblimon"
+            ],
+            "to": [
+                "crescemon",
+                "meteormon",
+                "panjyamon"
+            ]
+        },
+        "witchmon": {
+            "name": "witchmon",
+            "from": [
+                "impmon",
+                "shamamon"
+            ],
+            "to": [
+                "ladydevimon",
+                "angewomon",
+                "lilimon"
+            ]
+        },
+        "gaogamon": {
+            "name": "gaogamon",
+            "from": [
+                "bearmon",
+                "gaomon",
+                "gazimon"
+            ],
+            "to": [
+                "machgaogamon",
+                "saviorhackmon",
+                "darksuperstarmon"
+            ]
+        },
+        "gawappamon": {
+            "name": "gawappamon",
+            "from": [
+                "terriermon",
+                "crabmon",
+                "kamemon"
+            ],
+            "to": [
+                "shawujinmon",
+                "hangyomon",
+                "shogungekomon"
+            ]
+        },
+        "kiwimon": {
+            "name": "kiwimon",
+            "from": [
+                "falcomon",
+                "penmon",
+                "floramon"
+            ],
+            "to": [
+                "lilamon",
+                "sirenmon",
+                "delumon",
+                "cherrymon"
+            ]
+        },
+        "kyubimon": {
+            "name": "kyubimon",
+            "from": [
+                "tapirmon",
+                "gabumon",
+                "renamon"
+            ],
+            "to": [
+                "bluemeramon",
+                "cerberumon",
+                "taomon",
+                "enbarrmon"
+            ]
+        },
+        "clockmon": {
+            "name": "clockmon",
+            "from": [
+                "kokuwamon",
+                "impmon",
+                "hagurumon"
+            ],
+            "to": [
+                "extyranomon",
+                "andromon",
+                "zudomon",
+                "knightmon"
+            ]
+        },
+        "centarumon": {
+            "name": "centarumon",
+            "from": [
+                "kokuwamon",
+                "patamon"
+            ],
+            "to": [
+                "andromon",
+                "nanomon",
+                "rapidmon"
+            ]
+        },
+        "sunflowmon": {
+            "name": "sunflowmon",
+            "from": [
+                "tentomon",
+                "floramon",
+                "lalamon",
+                "renamon"
+            ],
+            "to": [
+                "lilamon",
+                "lilimon",
+                "delumon",
+                "pumpmon"
+            ]
+        },
+        "seadramon": {
+            "name": "seadramon",
+            "from": [
+                "elecmon",
+                "dracomon",
+                "otamamon",
+                "betamon"
+            ],
+            "to": [
+                "whamon",
+                "megaseadramon",
+                "waruseadramon",
+                "hisyaryumon",
+                "sharkmon",
+                "skullseadramon"
+            ]
+        },
+        "coelamon": {
+            "name": "coelamon",
+            "from": [
+                "ryudamon",
+                "crabmon",
+                "shakomon",
+                "betamon"
+            ],
+            "to": [
+                "waruseadramon",
+                "metaltyranomon",
+                "scorpiomon",
+                "hangyomon",
+                "skullseadramon"
+            ]
+        },
+        "shellmon": {
+            "name": "shellmon",
+            "from": [
+                "crabmon",
+                "kamemon",
+                "shakomon"
+            ],
+            "to": [
+                "whamon",
+                "piccolomon",
+                "scorpiomon"
+            ]
+        },
+        "starmon": {
+            "name": "starmon",
+            "from": [
+                "solarmon",
+                "gottsumon",
+                "dracmon"
+            ],
+            "to": [
+                "volcamon",
+                "superstarmon",
+                "darksuperstarmon",
+                "mamemon"
+            ]
+        },
+        "tankmon": {
+            "name": "tankmon",
+            "from": [
+                "zubamon",
+                "toyagumon",
+                "hagurumon"
+            ],
+            "to": [
+                "bigmamemon",
+                "locomon",
+                "tankdramon"
+            ]
+        },
+        "dinohumon": {
+            "name": "dinohumon",
+            "from": [
+                "hyokomon",
+                "kamemon",
+                "kotemon"
+            ],
+            "to": [
+                "shawujinmon",
+                "grademon",
+                "knightmon"
+            ]
+        },
+        "tyranomon": {
+            "name": "tyranomon",
+            "from": [
+                "dracomon",
+                "guilmon"
+            ],
+            "to": [
+                "extyranomon",
+                "groundramon",
+                "metalgreymon",
+                "metaltyranomon"
+            ]
+        },
+        "turuiemon": {
+            "name": "turuiemon",
+            "from": [
+                "gaomon",
+                "kotemon",
+                "lalamon",
+                "lopmon"
+            ],
+            "to": [
+                "matadormon",
+                "machgaogamon",
+                "andiramon"
+            ]
+        },
+        "togemon": {
+            "name": "togemon",
+            "from": [
+                "palmon",
+                "floramon",
+                "lalamon"
+            ],
+            "to": [
+                "lilimon",
+                "cherrymon",
+                "pumpmon"
+            ]
+        },
+        "dorugamon": {
+            "name": "dorugamon",
+            "from": [
+                "dorumon",
+                "gazimon",
+                "gabumon_black"
+            ],
+            "to": [
+                "rizegreymon",
+                "dorugreymon",
+                "greatgrizzlymon",
+                "metalgreymon_blue"
+            ]
+        },
+        "baohackmon": {
+            "name": "baohackmon",
+            "from": [
+                "coronamon",
+                "hackmon",
+                "gazimon"
+            ],
+            "to": [
+                "rizegreymon",
+                "saviorhackmon",
+                "loaderliomon"
+            ]
+        },
+        "blimpmon": {
+            "name": "blimpmon",
+            "from": [
+                "toyagumon",
+                "hagurumon"
+            ],
+            "to": [
+                "locomon",
+                "metalmamemon",
+                "masterblimpmon"
+            ]
+        },
+        "meramon": {
+            "name": "meramon",
+            "from": [
+                "coronamon",
+                "solarmon",
+                "tapirmon"
+            ],
+            "to": [
+                "bigmamemon",
+                "bluemeramon",
+                "deathmeramon"
+            ]
+        },
+        "monochromon": {
+            "name": "monochromon",
+            "from": [
+                "ryudamon",
+                "gottsumon",
+                "snowgoblimon"
+            ],
+            "to": [
+                "triceramon",
+                "cerberumon",
+                "mammon"
+            ]
+        },
+        "lekismon": {
+            "name": "lekismon",
+            "from": [
+                "terriermon",
+                "lunamon",
+                "renamon"
+            ],
+            "to": [
+                "crescemon",
+                "weregarurumon",
+                "grapleomon"
+            ]
+        },
+        "icedevimon": {
+            "name": "icedevimon",
+            "from": [
+                "gomamon",
+                "snowgoblimon",
+                "demidevimon"
+            ],
+            "to": [
+                "crescemon",
+                "ladydevimon",
+                "panjyamon",
+                "enbarrmon"
+            ]
+        },
+        "wendimon": {
+            "name": "wendimon",
+            "from": [
+                "lopmon",
+                "goblimon",
+                "keramon"
+            ],
+            "to": [
+                "arukenimon",
+                "deathmeramon",
+                "andiramon"
+            ]
+        },
+        "woodmon": {
+            "name": "woodmon",
+            "from": [
+                "palmon",
+                "floramon",
+                "mushmon"
+            ],
+            "to": [
+                "cherrymon",
+                "taomon",
+                "pumpmon"
+            ]
+        },
+        "ogremon": {
+            "name": "ogremon",
+            "from": [
+                "goblimon",
+                "demidevimon"
+            ],
+            "to": [
+                "skullsatamon",
+                "mummymon",
+                "digitamamon"
+            ]
+        },
+        "octomon": {
+            "name": "octomon",
+            "from": [
+                "crabmon",
+                "kamemon",
+                "shakomon",
+                "keramon"
+            ],
+            "to": [
+                "dagomon",
+                "digitamamon",
+                "hangyomon"
+            ]
+        },
+        "guardromon": {
+            "name": "guardromon",
+            "from": [
+                "gottsumon",
+                "hagurumon"
+            ],
+            "to": [
+                "catchmamemon",
+                "locomon",
+                "andromon"
+            ]
+        },
+        "karatukinumemon": {
+            "name": "karatukinumemon",
+            "from": [
+                "kamemon",
+                "otamamon",
+                "shakomon"
+            ],
+            "to": [
+                "orochimon",
+                "waruseadramon",
+                "blackkingnumemon",
+                "pandamon"
+            ]
+        },
+        "growlmon": {
+            "name": "growlmon",
+            "from": [
+                "coronamon",
+                "hackmon",
+                "guilmon"
+            ],
+            "to": [
+                "wargrowlmon",
+                "groundramon",
+                "dorugreymon"
+            ]
+        },
+        "kuwagamon": {
+            "name": "kuwagamon",
+            "from": [
+                "tentomon",
+                "elecmon",
+                "kokuwamon"
+            ],
+            "to": [
+                "cherrymon",
+                "okuwamon",
+                "scorpiomon",
+                "kimeramon"
+            ]
+        },
+        "gekomon": {
+            "name": "gekomon",
+            "from": [
+                "elecmon",
+                "otamamon",
+                "tyumon"
+            ],
+            "to": [
+                "sirenmon",
+                "shogungekomon",
+                "hangyomon"
+            ]
+        },
+        "geremon": {
+            "name": "geremon",
+            "from": [
+                "gabumon",
+                "gizamon",
+                "tyumon"
+            ],
+            "to": [
+                "catchmamemon",
+                "superstarmon",
+                "monzaemon"
+            ]
+        },
+        "coredramon_green": {
+            "name": "coredramon_green",
+            "from": [
+                "agumon",
+                "dracomon"
+            ],
+            "to": [
+                "wargrowlmon",
+                "groundramon",
+                "skullgreymon"
+            ]
+        },
+        "goldnumemon": {
+            "name": "goldnumemon",
+            "from": [
+                "solarmon",
+                "fanbeemon"
+            ],
+            "to": [
+                "waruseadramon",
+                "vademon",
+                "blackkingnumemon"
+            ]
+        },
+        "golemon": {
+            "name": "golemon",
+            "from": [
+                "gottsumon",
+                "goblimon",
+                "armadillomon"
+            ],
+            "to": [
+                "volcamon",
+                "mammon",
+                "meteormon",
+                "banchogolemon"
+            ]
+        },
+        "sangloupmon": {
+            "name": "sangloupmon",
+            "from": [
+                "plotmon",
+                "dorumon",
+                "impmon",
+                "gazimon",
+                "dracmon"
+            ],
+            "to": [
+                "matadormon",
+                "myotismon",
+                "astamon",
+                "weregarurumon_black"
+            ]
+        },
+        "sukamon": {
+            "name": "sukamon",
+            "from": [
+                "tyumon",
+                "dracmon",
+                "mushmon"
+            ],
+            "to": [
+                "monzaemon",
+                "etemon",
+                "gerbemon",
+                "mamemon"
+            ]
+        },
+        "tuskmon": {
+            "name": "tuskmon",
+            "from": [
+                "goblimon",
+                "betamon",
+                "agumon_black"
+            ],
+            "to": [
+                "triceramon",
+                "groundramon",
+                "digitamamon"
+            ]
+        },
+        "devimon": {
+            "name": "devimon",
+            "from": [
+                "impmon",
+                "demidevimon",
+                "betamon",
+                "agumon_black"
+            ],
+            "to": [
+                "myotismon",
+                "ladydevimon",
+                "infermon",
+                "skullsatamon",
+                "astamon"
+            ]
+        },
+        "deltamon": {
+            "name": "deltamon",
+            "from": [
+                "monodramon",
+                "dracomon",
+                "goblimon"
+            ],
+            "to": [
+                "orochimon",
+                "kimeramon",
+                "skullbaluchimon",
+                "metalgreymon",
+                "sharkmon"
+            ]
+        },
+        "dokugumon": {
+            "name": "dokugumon",
+            "from": [
+                "fanbeemon",
+                "wormmon",
+                "keramon"
+            ],
+            "to": [
+                "arukenimon",
+                "mummymon",
+                "megakabuterimon",
+                "infermon"
+            ]
+        },
+        "nanimon": {
+            "name": "nanimon",
+            "from": [
+                "gaomon",
+                "mushmon"
+            ],
+            "to": [
+                "volcamon",
+                "superstarmon",
+                "etemon",
+                "mamemon"
+            ]
+        },
+        "numemon": {
+            "name": "numemon",
+            "from": [
+                "agumon",
+                "otamamon",
+                "betamon"
+            ],
+            "to": [
+                "monzaemon",
+                "darksuperstarmon",
+                "etemon"
+            ]
+        },
+        "bakemon": {
+            "name": "bakemon",
+            "from": [
+                "tapirmon",
+                "impmon",
+                "demidevimon"
+            ],
+            "to": [
+                "myotismon",
+                "bluemeramon",
+                "phantomon",
+                "enbarrmon"
+            ]
+        },
+        "hyogamon": {
+            "name": "hyogamon",
+            "from": [
+                "gomamon",
+                "lunamon",
+                "snowgoblimon"
+            ],
+            "to": [
+                "zudomon",
+                "phantomon",
+                "panjyamon"
+            ]
+        },
+        "fugamon": {
+            "name": "fugamon",
+            "from": [
+                "muchomon",
+                "shamamon",
+                "gabumon_black"
+            ],
+            "to": [
+                "volcamon",
+                "skullsatamon",
+                "garudamon"
+            ]
+        },
+        "flymon": {
+            "name": "flymon",
+            "from": [
+                "gizamon",
+                "fanbeemon",
+                "mushmon"
+            ],
+            "to": [
+                "megadramon",
+                "megakabuterimon",
+                "okuwamon",
+                "jewelbeemon"
+            ]
+        },
+        "platinumsukamon": {
+            "name": "platinumsukamon",
+            "from": [
+                "palmon",
+                "otamamon",
+                "tyumon"
+            ],
+            "to": [
+                "vademon",
+                "mamemon",
+                "metalmamemon"
+            ]
+        },
+        "gatomon_black": {
+            "name": "gatomon_black",
+            "from": [
+                "gazimon",
+                "tyumon",
+                "gabumon_black"
+            ],
+            "to": [
+                "pandamon",
+                "ladydevimon",
+                "skullbaluchimon",
+                "weregarurumon_black"
+            ]
+        },
+        "vegimon": {
+            "name": "vegimon",
+            "from": [
+                "palmon",
+                "floramon",
+                "betamon"
+            ],
+            "to": [
+                "shogungekomon",
+                "gerbemon",
+                "vademon"
+            ]
+        },
+        "minotarumon": {
+            "name": "minotarumon",
+            "from": [
+                "lopmon",
+                "shamamon",
+                "gabumon_black"
+            ],
+            "to": [
+                "triceramon",
+                "etemon",
+                "grapleomon"
+            ]
+        },
+        "musyamon": {
+            "name": "musyamon",
+            "from": [
+                "zubamon",
+                "kotemon",
+                "shamamon"
+            ],
+            "to": [
+                "grademon",
+                "butenmon",
+                "hisyaryumon"
+            ]
+        },
+        "mechanorimon": {
+            "name": "mechanorimon",
+            "from": [
+                "kokuwamon",
+                "hagurumon",
+                "keramon"
+            ],
+            "to": [
+                "bigmamemon",
+                "megadramon",
+                "nanomon"
+            ]
+        },
+        "raremon": {
+            "name": "raremon",
+            "from": [
+                "toyagumon",
+                "crabmon",
+                "shakomon"
+            ],
+            "to": [
+                "dagomon",
+                "blackkingnumemon",
+                "shogungekomon",
+                "extyranomon",
+                "skullbaluchimon"
+            ]
+        },
+        "waspmon": {
+            "name": "waspmon",
+            "from": [
+                "tentomon",
+                "kokuwamon",
+                "fanbeemon"
+            ],
+            "to": [
+                "rapidmon",
+                "cannonbeemon",
+                "tankdramon"
+            ]
+        },
+        "aquilamon": {
+            "name": "aquilamon",
+            "from": [
+                "biyomon",
+                "penmon",
+                "hawkmon"
+            ],
+            "to": [
+                "garudamon",
+                "parrotmon",
+                "silphymon",
+                "yatagaramon"
+            ]
+        },
+        "exveemon": {
+            "name": "exveemon",
+            "from": [
+                "dorumon",
+                "guilmon",
+                "veemon"
+            ],
+            "to": [
+                "dinobeemon",
+                "rizegreymon",
+                "paildramon"
+            ]
+        },
+        "guardromon_gold": {
+            "name": "guardromon_gold",
+            "from": [
+                "zubamon",
+                "solarmon",
+                "shoutmon"
+            ],
+            "to": [
+                "duramon",
+                "cannonbeemon",
+                "masterblimpmon"
+            ]
+        },
+        "stingmon": {
+            "name": "stingmon",
+            "from": [
+                "fanbeemon",
+                "wormmon"
+            ],
+            "to": [
+                "okuwamon",
+                "jewelbeemon",
+                "dinobeemon",
+                "paildramon"
+            ]
+        },
+        "chrysalimon": {
+            "name": "chrysalimon",
+            "from": [
+                "monodramon",
+                "palmon",
+                "keramon"
+            ],
+            "to": [
+                "dagomon",
+                "orochimon",
+                "arukenimon",
+                "infermon"
+            ]
+        },
+        "whamon": {
+            "name": "whamon",
+            "from": [
+                "ikkakumon",
+                "seadramon",
+                "shellmon"
+            ],
+            "to": [
+                "leviamon",
+                "neptunemon",
+                "plesiomon",
+                "marineangemon"
+            ]
+        },
+        "astamon": {
+            "name": "astamon",
+            "from": [
+                "sangloupmon",
+                "devimon"
+            ],
+            "to": [
+                "starmons",
+                "plutomon",
+                "belphemon_sleep_mode",
+                "venommyotismon"
             ]
         }
     },
@@ -899,7 +2974,8 @@
             "name": "raidramon",
             "to": [
                 "sagittarimon",
-                "magnamon"
+                "magnamon",
+                "azulongmon"
             ],
             "from": [
                 "veemon"
@@ -913,10 +2989,13 @@
                 "burninggreymon"
             ],
             "to": [
-                "aldamon"
+                "aldamon",
+                "burninggreymon"
             ],
             "from": [
-                "flamon"
+                "flamon",
+                "coronamon",
+                "burninggreymon"
             ]
         },
         "wolfmon": {
@@ -925,10 +3004,13 @@
                 "kendogarurumon"
             ],
             "to": [
-                "beowolfmon"
+                "beowolfmon",
+                "kendogarurumon"
             ],
             "from": [
-                "strabimon"
+                "strabimon",
+                "kudamon",
+                "kendogarurumon"
             ]
         }
     },
@@ -940,7 +3022,8 @@
             ],
             "to": [
                 "metalgreymon_x",
-                "rizegreymon_x"
+                "rizegreymon_x",
+                "metalgreymon_blue_x"
             ],
             "from": [
                 "greymon",
@@ -979,11 +3062,14 @@
             ],
             "to": [
                 "aldamon",
-                "ancientgreymon"
+                "ancientgreymon",
+                "agunimon"
             ],
             "from": [
                 "greymon",
-                "birdramon"
+                "birdramon",
+                "flamon",
+                "agunimon"
             ]
         },
         "kendogarurumon": {
@@ -992,10 +3078,14 @@
                 "wolfmon"
             ],
             "to": [
-                "beowolfmon"
+                "beowolfmon",
+                "ancientgarurumon",
+                "wolfmon"
             ],
             "from": [
-                "garurumon"
+                "garurumon",
+                "strabimon",
+                "wolfmon"
             ]
         }
     },
@@ -1003,11 +3093,14 @@
         "sagittarimon": {
             "name": "sagittarimon",
             "to": [
-                "magnamon"
+                "magnamon",
+                "azulongmon"
             ],
             "from": [
                 "veemon",
-                "centarumon"
+                "centarumon",
+                "flamedramon",
+                "raidramon"
             ],
             "fusionFrom": [
                 "flamedramon",
@@ -1033,11 +3126,16 @@
                 "blitzgreymon",
                 "victorygreymon",
                 "ancientgreymon",
-                "machinedramon"
+                "machinedramon",
+                "metalgreymon_alter_mode",
+                "metalgreymon_x",
+                "samudramon"
             ],
             "from": [
                 "greymon",
-                "flarelizardmon"
+                "flarelizardmon",
+                "tyranomon",
+                "deltamon"
             ]
         },
         "metalgreymon_blue": {
@@ -1050,12 +3148,17 @@
             "to": [
                 "black_wargreymon",
                 "machinedramon",
-                "chaosdramon"
+                "chaosdramon",
+                "metalgreymon_blue_x",
+                "cherubimon_vice",
+                "darkdramon"
             ],
             "from": [
                 "greymon_blue",
                 "greymon",
-                "darklizardmon"
+                "darklizardmon",
+                "veedramon",
+                "dorugamon"
             ]
         },
         "rizegreymon": {
@@ -1067,12 +3170,19 @@
                 "shinegreymon",
                 "victorygreymon",
                 "magnakidmon",
-                "gundramon"
+                "gundramon",
+                "rizegreymon_x",
+                "blitzgreymon",
+                "ancientgreymon",
+                "kentaurosmon"
             ],
             "from": [
                 "geogreymon",
                 "revolmon",
-                "tankmon"
+                "tankmon",
+                "dorugamon",
+                "baohackmon",
+                "exveemon"
             ]
         },
         "skullgreymon": {
@@ -1087,13 +3197,16 @@
                 "chaosdramon",
                 "blitzgreymon",
                 "titamon",
-                "kimeramon"
+                "kimeramon",
+                "skullmammon"
             ],
             "from": [
                 "greymon",
                 "greymon_blue",
                 "cyclomon",
-                "deltamon"
+                "deltamon",
+                "ginryumon",
+                "coredramon_green"
             ]
         },
         "weregarurumon": {
@@ -1106,13 +3219,18 @@
                 "weregarurumon_x"
             ],
             "from": [
-                "garurumon"
+                "garurumon",
+                "grizzlymon",
+                "lekismon"
             ],
             "to": [
                 "metalgarurumon",
                 "zeedgarurumon",
                 "mercurymon",
-                "ancientgarurumon"
+                "ancientgarurumon",
+                "weregarurumon_alter_mode",
+                "weregarurumon_x",
+                "cresgarurumon"
             ]
         },
         "weregarurumon_black": {
@@ -1124,12 +3242,15 @@
                 "metalgarurumon_black",
                 "mercurymon",
                 "grandracmon",
-                "plutomon"
+                "plutomon",
+                "pilevolcamon"
             ],
             "from": [
                 "garurumon_black",
                 "dobermon",
-                "sangloupmon"
+                "sangloupmon",
+                "garurumon",
+                "gatomon_black"
             ]
         },
         "paildramon": {
@@ -1142,21 +3263,31 @@
                 "imperialdramon_dragon_mode",
                 "imperialdramon_fighter_mode",
                 "imperialdramon_black",
-                "imperialdramon_fighter_mode_black"
+                "imperialdramon_fighter_mode_black",
+                "dorugoramon",
+                "darkdramon"
+            ],
+            "from": [
+                "exveemon",
+                "stingmon"
             ]
         },
         "silphymon": {
             "name": "silphymon",
             "from": [
                 "harpymon",
-                "shutumon"
+                "shutumon",
+                "gatomon",
+                "aquilamon"
             ],
             "fusionFrom": [
                 "aquilamon",
                 "gatomon"
             ],
             "to": [
-                "valkyrimon"
+                "valkyrimon",
+                "beelstarmon",
+                "minervamon"
             ]
         },
         "shakkoumon": {
@@ -1170,7 +3301,14 @@
                 "vikemon",
                 "metatromon",
                 "slashangemon",
-                "lampmon"
+                "lampmon",
+                "goldramon",
+                "junomon",
+                "magnadramon"
+            ],
+            "from": [
+                "ankylomon",
+                "angemon"
             ]
         },
         "megadramon": {
@@ -1184,7 +3322,10 @@
                 "cyclomon",
                 "tankmon",
                 "guardromon",
-                "revolmon"
+                "revolmon",
+                "greymon",
+                "flymon",
+                "mechanorimon"
             ],
             "to": [
                 "machinedramon",
@@ -1194,7 +3335,8 @@
                 "gundramon",
                 "blitzgreymon",
                 "metalseadramon",
-                "cannondramon"
+                "cannondramon",
+                "megidramon"
             ]
         },
         "gigadramon": {
@@ -1211,7 +3353,9 @@
                 "devidramon",
                 "rhamphomon",
                 "tankmon",
-                "mimicmon"
+                "mimicmon",
+                "coredramon_blue",
+                "raptordramon"
             ],
             "to": [
                 "machinedramon",
@@ -1231,7 +3375,12 @@
             ],
             "from": [
                 "deltamon",
-                "mimicmon"
+                "mimicmon",
+                "greymon",
+                "garurumon",
+                "skullgreymon",
+                "kabuterimon",
+                "kuwagamon"
             ],
             "fusionFrom": [
                 "greymon",
@@ -1244,7 +3393,9 @@
                 "metalgreymon"
             ],
             "to": [
-                "millenniumon"
+                "millenniumon",
+                "grandracmon",
+                "machinedramon"
             ]
         },
         "marinekimeramon": {
@@ -1280,7 +3431,1276 @@
                 "devimon"
             ],
             "to": [
-                "ogudomon"
+                "ogudomon",
+                "lucemon_x",
+                "lucemon_satan_mode"
+            ]
+        },
+        "aegiochusmon": {
+            "name": "aegiochusmon",
+            "from": [
+                "aegiomon"
+            ],
+            "to": [
+                "jupitermon"
+            ]
+        },
+        "aegiochusmon_green": {
+            "name": "aegiochusmon_green",
+            "from": [
+                "aegiomon"
+            ],
+            "to": [
+                "jupitermon"
+            ]
+        },
+        "aegiochusmon_dark": {
+            "name": "aegiochusmon_dark",
+            "from": [
+                "aegiomon"
+            ],
+            "to": [
+                "chronomon_destroy_mode"
+            ]
+        },
+        "aegiochusmon_blue": {
+            "name": "aegiochusmon_blue",
+            "from": [
+                "aegiomon"
+            ],
+            "to": [
+                "jupitermon"
+            ]
+        },
+        "aegiochusmon_holly": {
+            "name": "aegiochusmon_holly",
+            "from": [
+                "aegiomon"
+            ],
+            "to": [
+                "jupitermon"
+            ]
+        },
+        "megakabuterimon": {
+            "name": "megakabuterimon",
+            "from": [
+                "kabuterimon",
+                "dokugumon",
+                "flymon"
+            ],
+            "to": [
+                "tyrantkabuterimon",
+                "herculeskabuterimon"
+            ]
+        },
+        "andromon": {
+            "name": "andromon",
+            "from": [
+                "clockmon",
+                "centarumon",
+                "guardromon"
+            ],
+            "to": [
+                "hiandromon",
+                "boltmon",
+                "craniummon"
+            ]
+        },
+        "wingdramon": {
+            "name": "wingdramon",
+            "from": [
+                "coredramon_blue",
+                "veedramon",
+                "greymon_blue"
+            ],
+            "to": [
+                "shinegreymon",
+                "valdurmon",
+                "slayerdramon"
+            ]
+        },
+        "aeroveedramon": {
+            "name": "aeroveedramon",
+            "from": [
+                "airdramon",
+                "coredramon_blue",
+                "veedramon"
+            ],
+            "to": [
+                "goldramon",
+                "slayerdramon",
+                "ulforceveedramon"
+            ]
+        },
+        "extyranomon": {
+            "name": "extyranomon",
+            "from": [
+                "clockmon",
+                "tyranomon",
+                "raremon"
+            ],
+            "to": [
+                "rusttyranomon",
+                "belphemon_sleep_mode",
+                "cherubimon_virtue"
+            ]
+        },
+        "angewomon": {
+            "name": "angewomon",
+            "from": [
+                "gatomon",
+                "frigimon",
+                "reppamon",
+                "witchmon"
+            ],
+            "to": [
+                "junomon",
+                "ophanimon",
+                "magnadramon",
+                "mastemon"
+            ]
+        },
+        "garudamon": {
+            "name": "garudamon",
+            "from": [
+                "birdramon",
+                "buraimon",
+                "fugamon",
+                "aquilamon"
+            ],
+            "to": [
+                "griffomon",
+                "phoenixmon",
+                "jesmon"
+            ]
+        },
+        "grapleomon": {
+            "name": "grapleomon",
+            "from": [
+                "grizzlymon",
+                "leomon",
+                "lekismon",
+                "minotarumon"
+            ],
+            "to": [
+                "bancholeomon",
+                "marsmon",
+                "saberleomon",
+                "leopardmon"
+            ]
+        },
+        "grademon": {
+            "name": "grademon",
+            "from": [
+                "zubaeagermon",
+                "raptordramon",
+                "dinohumon",
+                "cyclomon",
+                "musyamon"
+            ],
+            "to": [
+                "alphamon",
+                "durandamon",
+                "dynasmon"
+            ]
+        },
+        "greatgrizzlymon": {
+            "name": "greatgrizzlymon",
+            "from": [
+                "grizzlymon",
+                "dorugamon"
+            ],
+            "to": [
+                "callismon",
+                "cherubimon_vice"
+            ]
+        },
+        "cerberumon": {
+            "name": "cerberumon",
+            "from": [
+                "dobermon",
+                "kyubimon",
+                "monochromon",
+                "cerberumon_werewolf_mode"
+            ],
+            "to": [
+                "plutomon",
+                "cerberumon_werewolf_mode",
+                "saberleomon",
+                "metalgarurumon_black"
+            ]
+        },
+        "cerberumon_werewolf_mode": {
+            "name": "cerberumon_werewolf_mode",
+            "from": [
+                "cerberumon"
+            ],
+            "to": [
+                "cerberumon",
+                "plutomon",
+                "saberleomon",
+                "metalgarurumon_black"
+            ]
+        },
+        "cyberdramon": {
+            "name": "cyberdramon",
+            "from": [
+                "geogreymon",
+                "strikedramon",
+                "veedramon",
+                "cyclomon"
+            ],
+            "to": [
+                "ulforceveedramon",
+                "justimon"
+            ]
+        },
+        "jewelbeemon": {
+            "name": "jewelbeemon",
+            "from": [
+                "snimon",
+                "flymon",
+                "stingmon"
+            ],
+            "to": [
+                "herculeskabuterimon",
+                "tigervespamon",
+                "banchostingmon"
+            ]
+        },
+        "zudomon": {
+            "name": "zudomon",
+            "from": [
+                "ikkakumon",
+                "mojyamon",
+                "clockmon",
+                "hyogamon"
+            ],
+            "to": [
+                "vikemon",
+                "plesiomon"
+            ]
+        },
+        "chirinmon": {
+            "name": "chirinmon",
+            "from": [
+                "peckmon",
+                "unimon",
+                "reppamon"
+            ],
+            "to": [
+                "kentaurosmon",
+                "crossmon",
+                "valkyrimon"
+            ]
+        },
+        "duramon": {
+            "name": "duramon",
+            "from": [
+                "zubaeagermon",
+                "buraimon",
+                "guardromon_gold"
+            ],
+            "to": [
+                "wargreymon",
+                "gallantmon",
+                "durandamon"
+            ]
+        },
+        "parrotmon": {
+            "name": "parrotmon",
+            "from": [
+                "birdramon",
+                "aquilamon"
+            ],
+            "to": [
+                "crossmon",
+                "phoenixmon"
+            ]
+        },
+        "panjyamon": {
+            "name": "panjyamon",
+            "from": [
+                "frigimon",
+                "leomon",
+                "icemon",
+                "icedevimon",
+                "hyogamon"
+            ],
+            "to": [
+                "miragegaogamon",
+                "saberleomon"
+            ]
+        },
+        "hisyaryumon": {
+            "name": "hisyaryumon",
+            "from": [
+                "airdramon",
+                "ginryumon",
+                "seadramon",
+                "musyamon"
+            ],
+            "to": [
+                "ouryumon",
+                "samudramon"
+            ]
+        },
+        "butenmon": {
+            "name": "butenmon",
+            "from": [
+                "ginryumon",
+                "buraimon",
+                "musyamon"
+            ],
+            "to": [
+                "chronomon_holy_mode",
+                "chronomon_destroy_mode",
+                "griffomon",
+                "samudramon"
+            ]
+        },
+        "flaremon": {
+            "name": "flaremon",
+            "from": [
+                "birdramon",
+                "firamon",
+                "leomon"
+            ],
+            "to": [
+                "apollomon",
+                "seraphimon",
+                "black_wargreymon"
+            ]
+        },
+        "magnaangemon": {
+            "name": "magnaangemon",
+            "from": [
+                "angemon",
+                "sorcerymon",
+                "unimon"
+            ],
+            "to": [
+                "goldramon",
+                "seraphimon",
+                "clavisangemon",
+                "slashangemon"
+            ]
+        },
+        "mammon": {
+            "name": "mammon",
+            "from": [
+                "mojyamon",
+                "frigimon",
+                "monochromon",
+                "golemon"
+            ],
+            "to": [
+                "vikemon",
+                "skullmammon"
+            ]
+        },
+        "monzaemon": {
+            "name": "monzaemon",
+            "from": [
+                "geremon",
+                "sukamon",
+                "numemon"
+            ],
+            "to": [
+                "kingetemon",
+                "callismon"
+            ]
+        },
+        "yatagaramon": {
+            "name": "yatagaramon",
+            "from": [
+                "peckmon",
+                "aquilamon"
+            ],
+            "to": [
+                "valdurmon",
+                "ravemon",
+                "kuzuhamon"
+            ]
+        },
+        "rapidmon": {
+            "name": "rapidmon",
+            "from": [
+                "gargomon",
+                "centarumon",
+                "waspmon"
+            ],
+            "to": [
+                "megagargomon",
+                "hiandromon"
+            ]
+        },
+        "loaderliomon": {
+            "name": "loaderliomon",
+            "from": [
+                "leomon",
+                "drimogemon",
+                "baohackmon"
+            ],
+            "to": [
+                "bancholeomon",
+                "metalgarurumon",
+                "chaosdramon"
+            ]
+        },
+        "scorpiomon": {
+            "name": "scorpiomon",
+            "from": [
+                "coelamon",
+                "shellmon",
+                "kuwagamon"
+            ],
+            "to": [
+                "vulcanusmon",
+                "pukumon"
+            ]
+        },
+        "enbarrmon": {
+            "name": "enbarrmon",
+            "from": [
+                "kyubimon",
+                "icedevimon",
+                "bakemon"
+            ],
+            "to": [
+                "kentaurosmon",
+                "skullmammon",
+                "craniummon_enbarrmon"
+            ]
+        },
+        "andiramon": {
+            "name": "andiramon",
+            "from": [
+                "frigimon",
+                "turuiemon",
+                "wendimon"
+            ],
+            "to": [
+                "dianamon",
+                "cherubimon_virtue",
+                "cherubimon_vice"
+            ]
+        },
+        "meteormon": {
+            "name": "meteormon",
+            "from": [
+                "frigimon",
+                "icemon",
+                "golemon",
+                "ankylomon"
+            ],
+            "to": [
+                "metaletemon",
+                "boltmon"
+            ]
+        },
+        "omegashoutmon": {
+            "name": "omegashoutmon",
+            "from": [
+                "shoutmon"
+            ],
+            "to": [
+                "pilevolcamon",
+                "magnakidmon",
+                "durandamon"
+            ]
+        },
+        "catchmamemon": {
+            "name": "catchmamemon",
+            "from": [
+                "gargomon",
+                "guardromon",
+                "geremon"
+            ],
+            "to": [
+                "platinumnumemon",
+                "princemamemon",
+                "metalgarurumon_black"
+            ]
+        },
+        "crescemon": {
+            "name": "crescemon",
+            "from": [
+                "frigimon",
+                "icemon",
+                "lekismon",
+                "icedevimon"
+            ],
+            "to": [
+                "dianamon",
+                "cherubimon_virtue",
+                "lordknightmon"
+            ]
+        },
+        "superstarmon": {
+            "name": "superstarmon",
+            "from": [
+                "revolmon",
+                "starmon",
+                "geremon",
+                "nanimon"
+            ],
+            "to": [
+                "goldramon",
+                "princemamemon",
+                "justimon"
+            ]
+        },
+        "skullbaluchimon": {
+            "name": "skullbaluchimon",
+            "from": [
+                "deltamon",
+                "gatomon_black",
+                "raremon",
+                "greymon_blue"
+            ],
+            "to": [
+                "skullmammon",
+                "titamon_skullbaluchimon"
+            ]
+        },
+        "saviorhackmon": {
+            "name": "saviorhackmon",
+            "from": [
+                "strikedramon",
+                "firamon",
+                "gaogamon",
+                "baohackmon"
+            ],
+            "to": [
+                "gankoomon",
+                "tigervespamon",
+                "jesmon"
+            ]
+        },
+        "sirenmon": {
+            "name": "sirenmon",
+            "from": [
+                "angemon",
+                "kiwimon",
+                "gekomon"
+            ],
+            "to": [
+                "marineangemon",
+                "ceresmon"
+            ]
+        },
+        "taomon": {
+            "name": "taomon",
+            "from": [
+                "garurumon",
+                "kyubimon",
+                "woodmon"
+            ],
+            "to": [
+                "venusmon",
+                "sakuyamon",
+                "kuzuhamon"
+            ]
+        },
+        "digitamamon": {
+            "name": "digitamamon",
+            "from": [
+                "ogremon",
+                "octomon",
+                "tuskmon"
+            ],
+            "to": [
+                "bacchusmon",
+                "titamon"
+            ]
+        },
+        "deathmeramon": {
+            "name": "deathmeramon",
+            "from": [
+                "birdramon",
+                "meramon",
+                "wendimon"
+            ],
+            "to": [
+                "starmons",
+                "boltmon",
+                "avengekidmon"
+            ]
+        },
+        "delumon": {
+            "name": "delumon",
+            "from": [
+                "kiwimon",
+                "sunflowmon",
+                "frigimon"
+            ],
+            "to": [
+                "valdurmon",
+                "ceresmon",
+                "platinumnumemon"
+            ]
+        },
+        "triceramon": {
+            "name": "triceramon",
+            "from": [
+                "drimogemon",
+                "monochromon",
+                "tuskmon",
+                "minotarumon"
+            ],
+            "to": [
+                "breakdramon",
+                "ultimatebrachimon"
+            ]
+        },
+        "dorugreymon": {
+            "name": "dorugreymon",
+            "from": [
+                "reppamon",
+                "dorugamon",
+                "growlmon"
+            ],
+            "to": [
+                "dorugoramon",
+                "alphamon"
+            ]
+        },
+        "knightmon": {
+            "name": "knightmon",
+            "from": [
+                "zubaeagermon",
+                "clockmon",
+                "dinohumon"
+            ],
+            "to": [
+                "zanbamon",
+                "slashangemon",
+                "lordknightmon",
+                "leopardmon"
+            ]
+        },
+        "hangyomon": {
+            "name": "hangyomon",
+            "from": [
+                "gawappamon",
+                "coelamon",
+                "octomon",
+                "gekomon"
+            ],
+            "to": [
+                "neptunemon",
+                "plesiomon"
+            ]
+        },
+        "pandamon": {
+            "name": "pandamon",
+            "from": [
+                "revolmon",
+                "karatukinumemon",
+                "gatomon_black",
+                "garurumon_black"
+            ],
+            "to": [
+                "mercurymon",
+                "miragegaogamon",
+                "justimon"
+            ]
+        },
+        "pumpmon": {
+            "name": "pumpmon",
+            "from": [
+                "sunflowmon",
+                "togemon",
+                "woodmon"
+            ],
+            "to": [
+                "rosemon",
+                "lotusmon"
+            ]
+        },
+        "bigmamemon": {
+            "name": "bigmamemon",
+            "from": [
+                "tankmon",
+                "meramon",
+                "mechanorimon"
+            ],
+            "to": [
+                "platinumnumemon",
+                "princemamemon",
+                "grandlocomon"
+            ]
+        },
+        "piccolomon": {
+            "name": "piccolomon",
+            "from": [
+                "sorcerymon",
+                "mojyamon",
+                "shellmon"
+            ],
+            "to": [
+                "venusmon",
+                "ophanimon",
+                "clavisangemon"
+            ]
+        },
+        "hippogriffomon": {
+            "name": "hippogriffomon",
+            "from": [
+                "angemon",
+                "unimon"
+            ],
+            "to": [
+                "griffomon",
+                "crossmon",
+                "dynasmon"
+            ]
+        },
+        "brachiomon": {
+            "name": "brachiomon",
+            "from": [
+                "drimogemon",
+                "cyclomon",
+                "ankylomon"
+            ],
+            "to": [
+                "ouryumon",
+                "rusttyranomon",
+                "ultimatebrachimon"
+            ]
+        },
+        "volcamon": {
+            "name": "volcamon",
+            "from": [
+                "starmon",
+                "golemon",
+                "nanimon",
+                "fugamon"
+            ],
+            "to": [
+                "bancholeomon",
+                "pilevolcamon",
+                "gankoomon",
+                "apollomon"
+            ]
+        },
+        "masterblimpmon": {
+            "name": "masterblimpmon",
+            "from": [
+                "blimpmon",
+                "guardromon_gold"
+            ],
+            "to": [
+                "grandlocomon",
+                "gundramon"
+            ]
+        },
+        "machgaogamon": {
+            "name": "machgaogamon",
+            "from": [
+                "gargomon",
+                "gaogamon",
+                "turuiemon"
+            ],
+            "to": [
+                "miragegaogamon",
+                "megagargomon"
+            ]
+        },
+        "mamemon": {
+            "name": "mamemon",
+            "from": [
+                "starmon",
+                "sukamon",
+                "nanimon",
+                "platinumsukamon"
+            ],
+            "to": [
+                "pukumon",
+                "princemamemon",
+                "banchomamemon"
+            ]
+        },
+        "megaseadramon": {
+            "name": "megaseadramon",
+            "from": [
+                "ikkakumon",
+                "reppamon",
+                "seadramon"
+            ],
+            "to": [
+                "jumbogamemon",
+                "ouryumon",
+                "metalseadramon"
+            ]
+        },
+        "metalmamemon": {
+            "name": "metalmamemon",
+            "from": [
+                "blimpmon",
+                "platinumsukamon"
+            ],
+            "to": [
+                "metalgarurumon",
+                "magnakidmon"
+            ]
+        },
+        "lilamon": {
+            "name": "lilamon",
+            "from": [
+                "kabuterimon",
+                "kiwimon",
+                "sunflowmon"
+            ],
+            "to": [
+                "lilithmon",
+                "rosemon",
+                "puppetmon"
+            ]
+        },
+        "lilimon": {
+            "name": "lilimon",
+            "from": [
+                "witchmon",
+                "sunflowmon",
+                "togemon"
+            ],
+            "to": [
+                "rosemon",
+                "ceresmon",
+                "bancholilimon"
+            ]
+        },
+        "locomon": {
+            "name": "locomon",
+            "from": [
+                "strikedramon",
+                "tankmon",
+                "blimpmon",
+                "guardromon"
+            ],
+            "to": [
+                "grandlocomon",
+                "hiandromon"
+            ]
+        },
+        "arukenimon": {
+            "name": "arukenimon",
+            "from": [
+                "snimon",
+                "wendimon",
+                "dokugumon",
+                "chrysalimon"
+            ],
+            "to": [
+                "lilithmon",
+                "tyrantkabuterimon",
+                "lotusmon"
+            ]
+        },
+        "myotismon": {
+            "name": "myotismon",
+            "from": [
+                "peckmon",
+                "sangloupmon",
+                "devimon",
+                "bakemon"
+            ],
+            "to": [
+                "demon",
+                "malomyotismon",
+                "venommyotismon"
+            ]
+        },
+        "etemon": {
+            "name": "etemon",
+            "from": [
+                "sukamon",
+                "nanimon",
+                "numemon",
+                "minotarumon"
+            ],
+            "to": [
+                "pilevolcamon",
+                "kingetemon",
+                "metaletemon"
+            ]
+        },
+        "okuwamon": {
+            "name": "okuwamon",
+            "from": [
+                "snimon",
+                "kuwagamon",
+                "flymon",
+                "stingmon"
+            ],
+            "to": [
+                "tyrantkabuterimon",
+                "herculeskabuterimon",
+                "grankuwagamon"
+            ]
+        },
+        "orochimon": {
+            "name": "orochimon",
+            "from": [
+                "karatukinumemon",
+                "deltamon",
+                "chrysalimon"
+            ],
+            "to": [
+                "bacchusmon",
+                "gundramon",
+                "minervamon"
+            ]
+        },
+        "gerbemon": {
+            "name": "gerbemon",
+            "from": [
+                "frigimon",
+                "sukamon",
+                "vegimon"
+            ],
+            "to": [
+                "jumbogamemon",
+                "metaletemon"
+            ]
+        },
+        "cannonbeemon": {
+            "name": "cannonbeemon",
+            "from": [
+                "kabuterimon",
+                "waspmon",
+                "guardromon_gold"
+            ],
+            "to": [
+                "megagargomon",
+                "tigervespamon"
+            ]
+        },
+        "groundramon": {
+            "name": "groundramon",
+            "from": [
+                "tyranomon",
+                "growlmon",
+                "coredramon_green",
+                "tuskmon"
+            ],
+            "to": [
+                "megidramon",
+                "breakdramon"
+            ]
+        },
+        "sharkmon": {
+            "name": "sharkmon",
+            "from": [
+                "seadramon",
+                "deltamon"
+            ],
+            "to": [
+                "neptunemon",
+                "metalseadramon"
+            ]
+        },
+        "shawujinmon": {
+            "name": "shawujinmon",
+            "from": [
+                "gawappamon",
+                "dinohumon"
+            ],
+            "to": [
+                "barbamon",
+                "jumbogamemon",
+                "puppetmon"
+            ]
+        },
+        "cherrymon": {
+            "name": "cherrymon",
+            "from": [
+                "kiwimon",
+                "togemon",
+                "woodmon",
+                "kuwagamon"
+            ],
+            "to": [
+                "puppetmon",
+                "rosemon",
+                "grankuwagamon"
+            ]
+        },
+        "skullsatamon": {
+            "name": "skullsatamon",
+            "from": [
+                "ogremon",
+                "devimon",
+                "fugamon",
+                "garurumon_black"
+            ],
+            "to": [
+                "barbamon",
+                "piemon",
+                "ebemon"
+            ]
+        },
+        "skullseadramon": {
+            "name": "skullseadramon",
+            "from": [
+                "ikkakumon",
+                "seadramon",
+                "coelamon"
+            ],
+            "to": [
+                "leviamon",
+                "metalseadramon"
+            ]
+        },
+        "darksuperstarmon": {
+            "name": "darksuperstarmon",
+            "from": [
+                "dobermon",
+                "gaogamon",
+                "starmon",
+                "numemon"
+            ],
+            "to": [
+                "beelstarmon",
+                "titamon",
+                "ravemon"
+            ]
+        },
+        "dagomon": {
+            "name": "dagomon",
+            "from": [
+                "octomon",
+                "raremon",
+                "chrysalimon"
+            ],
+            "to": [
+                "vulcanusmon",
+                "ebemon",
+                "parallelmon"
+            ]
+        },
+        "tankdramon": {
+            "name": "tankdramon",
+            "from": [
+                "raptordramon",
+                "tankmon",
+                "waspmon"
+            ],
+            "to": [
+                "gundramon",
+                "darkdramon"
+            ]
+        },
+        "shogungekomon": {
+            "name": "shogungekomon",
+            "from": [
+                "gawappamon",
+                "gekomon",
+                "vegimon",
+                "raremon"
+            ],
+            "to": [
+                "kingetemon",
+                "bacchusmon",
+                "pukumon"
+            ]
+        },
+        "nanomon": {
+            "name": "nanomon",
+            "from": [
+                "wizardmon",
+                "centarumon",
+                "mechanorimon"
+            ],
+            "to": [
+                "pharaohmon",
+                "diaboromon"
+            ]
+        },
+        "phantomon": {
+            "name": "phantomon",
+            "from": [
+                "snimon",
+                "bakemon",
+                "hyogamon"
+            ],
+            "to": [
+                "sakuyamon",
+                "piemon",
+                "belphemon_sleep_mode",
+                "ravemon"
+            ]
+        },
+        "blackkingnumemon": {
+            "name": "blackkingnumemon",
+            "from": [
+                "karatukinumemon",
+                "goldnumemon",
+                "raremon"
+            ],
+            "to": [
+                "platinumnumemon",
+                "metaletemon"
+            ]
+        },
+        "bluemeramon": {
+            "name": "bluemeramon",
+            "from": [
+                "garurumon",
+                "kyubimon",
+                "meramon",
+                "bakemon"
+            ],
+            "to": [
+                "marsmon",
+                "pharaohmon"
+            ]
+        },
+        "vademon": {
+            "name": "vademon",
+            "from": [
+                "goldnumemon",
+                "platinumsukamon",
+                "vegimon"
+            ],
+            "to": [
+                "ebemon",
+                "avengekidmon"
+            ]
+        },
+        "matadormon": {
+            "name": "matadormon",
+            "from": [
+                "dobermon",
+                "turuiemon",
+                "sangloupmon"
+            ],
+            "to": [
+                "grandracmon",
+                "slashangemon",
+                "kuzuhamon"
+            ]
+        },
+        "mummymon": {
+            "name": "mummymon",
+            "from": [
+                "dobermon",
+                "ogremon",
+                "dokugumon"
+            ],
+            "to": [
+                "pharaohmon",
+                "hiandromon",
+                "avengekidmon"
+            ]
+        },
+        "mistymon": {
+            "name": "mistymon",
+            "from": [
+                "firamon",
+                "mojyamon",
+                "wizardmon"
+            ],
+            "to": [
+                "chaosgallantmon",
+                "zanbamon",
+                "medievalgallantmon",
+                "dynasmon"
+            ]
+        },
+        "wargrowlmon": {
+            "name": "wargrowlmon",
+            "from": [
+                "zubaeagermon",
+                "growlmon",
+                "coredramon_green"
+            ],
+            "to": [
+                "megidramon",
+                "gallantmon",
+                "chaosgallantmon",
+                "chaosdramon"
+            ]
+        },
+        "metaltyranomon": {
+            "name": "metaltyranomon",
+            "from": [
+                "geogreymon",
+                "coelamon",
+                "tyranomon"
+            ],
+            "to": [
+                "rusttyranomon",
+                "machinedramon",
+                "ultimatebrachimon"
+            ]
+        },
+        "ladydevimon": {
+            "name": "ladydevimon",
+            "from": [
+                "witchmon",
+                "icedevimon",
+                "devimon",
+                "gatomon_black"
+            ],
+            "to": [
+                "lilithmon",
+                "beelstarmon",
+                "mastemon"
+            ]
+        },
+        "wisemon": {
+            "name": "wisemon",
+            "from": [
+                "sorcerymon",
+                "revolmon",
+                "wizardmon"
+            ],
+            "to": [
+                "demon",
+                "chaosgallantmon",
+                "ancientwisemon"
+            ]
+        },
+        "waruseadramon": {
+            "name": "waruseadramon",
+            "from": [
+                "seadramon",
+                "coelamon",
+                "karatukinumemon",
+                "goldnumemon"
+            ],
+            "to": [
+                "leviamon",
+                "megidramon",
+                "metalseadramon"
+            ]
+        },
+        "dinobeemon": {
+            "name": "dinobeemon",
+            "from": [
+                "exveemon",
+                "stingmon"
+            ],
+            "to": [
+                "grankuwagamon",
+                "tigervespamon"
+            ]
+        },
+        "infermon": {
+            "name": "infermon",
+            "from": [
+                "devimon",
+                "dokugumon",
+                "chrysalimon"
+            ],
+            "to": [
+                "malomyotismon",
+                "diaboromon",
+                "cherubimon_vice",
+                "parallelmon"
             ]
         }
     },
@@ -1334,7 +4754,8 @@
             ],
             "from": [
                 "metalgreymon_blue",
-                "greymon_x"
+                "greymon_x",
+                "greymon_blue_x"
             ]
         },
         "rizegreymon_x": {
@@ -1370,6 +4791,10 @@
             "fusionFrom": [
                 "agunimon",
                 "burninggreymon"
+            ],
+            "from": [
+                "agunimon",
+                "burninggreymon"
             ]
         },
         "beowolfmon": {
@@ -1393,7 +4818,12 @@
             "from": [
                 "veemon",
                 "flamedramon",
-                "sagittarimon"
+                "sagittarimon",
+                "raidramon",
+                "magnamon_x"
+            ],
+            "to": [
+                "magnamon_x"
             ]
         },
         "goldrapidmon": {
@@ -1404,6 +4834,9 @@
             "from": [
                 "terriermon",
                 "lopmon"
+            ],
+            "to": [
+                "goldrapidmon_x"
             ]
         }
     },
@@ -1419,12 +4852,15 @@
                 "wargreymon_x"
             ],
             "to": [
-                "omegamon"
+                "omegamon",
+                "wargreymon_x",
+                "omegamon_zwart"
             ],
             "from": [
                 "metalgreymon",
                 "metalgreymon_alter_mode",
-                "wargrowlmon_orange"
+                "wargrowlmon_orange",
+                "duramon"
             ]
         },
         "black_wargreymon": {
@@ -1441,7 +4877,8 @@
             ],
             "from": [
                 "metalgreymon_blue",
-                "skullgreymon"
+                "skullgreymon",
+                "flaremon"
             ]
         },
         "victorygreymon": {
@@ -1466,7 +4903,9 @@
             "from": [
                 "metalgreymon",
                 "metalgreymon_alter_mode",
-                "rizegreymon"
+                "rizegreymon",
+                "skullgreymon",
+                "megadramon"
             ]
         },
         "shinegreymon": {
@@ -1476,7 +4915,12 @@
                 "shinegreymon_ruin_mode"
             ],
             "from": [
-                "rizegreymon"
+                "rizegreymon",
+                "wingdramon"
+            ],
+            "to": [
+                "shinegreymon_burst_mode",
+                "shinegreymon_ruin_mode"
             ]
         },
         "metalgarurumon": {
@@ -1487,11 +4931,15 @@
                 "cresgarurumon"
             ],
             "to": [
-                "omegamon"
+                "omegamon",
+                "metalgarurumon_x",
+                "omegamon_zwart"
             ],
             "from": [
                 "weregarurumon",
-                "weregarurumon_alter_mode"
+                "weregarurumon_alter_mode",
+                "loaderliomon",
+                "metalmamemon"
             ]
         },
         "metalgarurumon_black": {
@@ -1503,7 +4951,10 @@
                 "omegamon_zwart"
             ],
             "from": [
-                "weregarurumon_black"
+                "weregarurumon_black",
+                "cerberumon",
+                "cerberumon_werewolf_mode",
+                "catchmamemon"
             ]
         },
         "zeedgarurumon": {
@@ -1537,7 +4988,9 @@
             ],
             "from": [
                 "machgaogamon",
-                "raijiludomon"
+                "raijiludomon",
+                "panjyamon",
+                "pandamon"
             ]
         },
         "ancientgreymon": {
@@ -1564,6 +5017,9 @@
                 "sagittarimon",
                 "manticoremon",
                 "triceramon"
+            ],
+            "to": [
+                "huanglongmon"
             ]
         },
         "zhuqiaomon": {
@@ -1573,6 +5029,9 @@
                 "garudamon",
                 "yatagaramon",
                 "hippogriffomon"
+            ],
+            "to": [
+                "huanglongmon"
             ]
         },
         "baihumon": {
@@ -1582,6 +5041,9 @@
                 "caturamon",
                 "loaderliomon",
                 "panjyamon"
+            ],
+            "to": [
+                "huanglongmon"
             ]
         },
         "xuanwumon": {
@@ -1591,6 +5053,9 @@
                 "cherrymon",
                 "sandiramon",
                 "sagomon"
+            ],
+            "to": [
+                "huanglongmon"
             ]
         },
         "millenniumon": {
@@ -1602,6 +5067,1043 @@
             "fusionFrom": [
                 "kimeramon",
                 "machinedramon"
+            ],
+            "from": [
+                "kimeramon",
+                "machinedramon"
+            ]
+        },
+        "apollomon": {
+            "name": "apollomon",
+            "from": [
+                "flaremon",
+                "volcamon"
+            ],
+            "to": [
+                "gracenovamon"
+            ]
+        },
+        "alphamon": {
+            "name": "alphamon",
+            "from": [
+                "grademon",
+                "dorugreymon"
+            ],
+            "to": [
+                "alphamon_ouryuken"
+            ]
+        },
+        "ulforceveedramon": {
+            "name": "ulforceveedramon",
+            "from": [
+                "aeroveedramon",
+                "cyberdramon",
+                "ulforceveedramon_x"
+            ],
+            "to": [
+                "ulforceveedramon_x"
+            ]
+        },
+        "valdurmon": {
+            "name": "valdurmon",
+            "from": [
+                "wingdramon",
+                "yatagaramon",
+                "delumon"
+            ],
+            "to": [
+                "chaosmon_valdur_arm"
+            ]
+        },
+        "venusmon": {
+            "name": "venusmon",
+            "from": [
+                "taomon",
+                "piccolomon"
+            ]
+        },
+        "ouryumon": {
+            "name": "ouryumon",
+            "from": [
+                "hisyaryumon",
+                "brachiomon",
+                "megaseadramon"
+            ],
+            "to": [
+                "alphamon_ouryuken"
+            ]
+        },
+        "ophanimon": {
+            "name": "ophanimon",
+            "from": [
+                "angewomon",
+                "piccolomon"
+            ]
+        },
+        "clavisangemon": {
+            "name": "clavisangemon",
+            "from": [
+                "magnaangemon",
+                "piccolomon"
+            ]
+        },
+        "craniummon": {
+            "name": "craniummon",
+            "from": [
+                "andromon"
+            ],
+            "to": [
+                "craniummon_enbarrmon"
+            ]
+        },
+        "crossmon": {
+            "name": "crossmon",
+            "from": [
+                "chirinmon",
+                "parrotmon",
+                "hippogriffomon"
+            ]
+        },
+        "chronomon_holy_mode": {
+            "name": "chronomon_holy_mode",
+            "from": [
+                "butenmon"
+            ]
+        },
+        "cherubimon_vice": {
+            "name": "cherubimon_vice",
+            "from": [
+                "greatgrizzlymon",
+                "andiramon",
+                "infermon",
+                "metalgreymon_blue"
+            ]
+        },
+        "cherubimon_virtue": {
+            "name": "cherubimon_virtue",
+            "from": [
+                "extyranomon",
+                "andiramon",
+                "crescemon"
+            ]
+        },
+        "goldramon": {
+            "name": "goldramon",
+            "from": [
+                "aeroveedramon",
+                "magnaangemon",
+                "superstarmon",
+                "shakkoumon"
+            ]
+        },
+        "justimon": {
+            "name": "justimon",
+            "from": [
+                "cyberdramon",
+                "superstarmon",
+                "pandamon"
+            ]
+        },
+        "skullmammon": {
+            "name": "skullmammon",
+            "from": [
+                "mammon",
+                "enbarrmon",
+                "skullbaluchimon",
+                "skullgreymon"
+            ]
+        },
+        "slashangemon": {
+            "name": "slashangemon",
+            "from": [
+                "magnaangemon",
+                "knightmon",
+                "matadormon"
+            ]
+        },
+        "kentaurosmon": {
+            "name": "kentaurosmon",
+            "from": [
+                "chirinmon",
+                "rizegreymon",
+                "enbarrmon"
+            ]
+        },
+        "slayerdramon": {
+            "name": "slayerdramon",
+            "from": [
+                "wingdramon",
+                "aeroveedramon"
+            ],
+            "to": [
+                "examon"
+            ]
+        },
+        "seraphimon": {
+            "name": "seraphimon",
+            "from": [
+                "flaremon",
+                "magnaangemon"
+            ]
+        },
+        "megagargomon": {
+            "name": "megagargomon",
+            "from": [
+                "rapidmon",
+                "machgaogamon",
+                "cannonbeemon"
+            ]
+        },
+        "durandamon": {
+            "name": "durandamon",
+            "from": [
+                "grademon",
+                "duramon",
+                "omegashoutmon"
+            ]
+        },
+        "neptunemon": {
+            "name": "neptunemon",
+            "from": [
+                "whamon",
+                "hangyomon",
+                "sharkmon"
+            ]
+        },
+        "hiandromon": {
+            "name": "hiandromon",
+            "from": [
+                "andromon",
+                "rapidmon",
+                "locomon",
+                "mummymon"
+            ]
+        },
+        "bancholeomon": {
+            "name": "bancholeomon",
+            "from": [
+                "grapleomon",
+                "loaderliomon",
+                "volcamon"
+            ],
+            "to": [
+                "chaosmon_valdur_arm",
+                "chaosmon"
+            ]
+        },
+        "herculeskabuterimon": {
+            "name": "herculeskabuterimon",
+            "from": [
+                "megakabuterimon",
+                "jewelbeemon",
+                "okuwamon"
+            ]
+        },
+        "phoenixmon": {
+            "name": "phoenixmon",
+            "from": [
+                "garudamon",
+                "parrotmon"
+            ]
+        },
+        "magnadramon": {
+            "name": "magnadramon",
+            "from": [
+                "angewomon",
+                "shakkoumon"
+            ]
+        },
+        "mastemon": {
+            "name": "mastemon",
+            "from": [
+                "angewomon",
+                "ladydevimon"
+            ]
+        },
+        "marineangemon": {
+            "name": "marineangemon",
+            "from": [
+                "whamon",
+                "sirenmon"
+            ]
+        },
+        "marsmon": {
+            "name": "marsmon",
+            "from": [
+                "grapleomon",
+                "bluemeramon"
+            ]
+        },
+        "jupitermon": {
+            "name": "jupitermon",
+            "from": [
+                "aegiochusmon",
+                "aegiochusmon_green",
+                "aegiochusmon_blue",
+                "aegiochusmon_holly"
+            ],
+            "to": [
+                "jupitermon_wrath_mode"
+            ]
+        },
+        "ravemon": {
+            "name": "ravemon",
+            "from": [
+                "yatagaramon",
+                "darksuperstarmon",
+                "phantomon"
+            ],
+            "to": [
+                "ravemon_burst_mode"
+            ]
+        },
+        "ultimatebrachimon": {
+            "name": "ultimatebrachimon",
+            "from": [
+                "triceramon",
+                "brachiomon",
+                "metaltyranomon"
+            ]
+        },
+        "vulcanusmon": {
+            "name": "vulcanusmon",
+            "from": [
+                "scorpiomon",
+                "dagomon"
+            ]
+        },
+        "gankoomon": {
+            "name": "gankoomon",
+            "from": [
+                "saviorhackmon",
+                "volcamon"
+            ]
+        },
+        "kuzuhamon": {
+            "name": "kuzuhamon",
+            "from": [
+                "yatagaramon",
+                "taomon",
+                "matadormon"
+            ]
+        },
+        "grandlocomon": {
+            "name": "grandlocomon",
+            "from": [
+                "bigmamemon",
+                "masterblimpmon",
+                "locomon"
+            ]
+        },
+        "griffomon": {
+            "name": "griffomon",
+            "from": [
+                "garudamon",
+                "butenmon",
+                "hippogriffomon"
+            ]
+        },
+        "ceresmon": {
+            "name": "ceresmon",
+            "from": [
+                "sirenmon",
+                "delumon",
+                "lilimon",
+                "ceresmon_medium"
+            ],
+            "to": [
+                "ceresmon_medium"
+            ]
+        },
+        "ceresmon_medium": {
+            "name": "ceresmon_medium",
+            "from": [
+                "ceresmon"
+            ],
+            "to": [
+                "ceresmon"
+            ]
+        },
+        "saberleomon": {
+            "name": "saberleomon",
+            "from": [
+                "grapleomon",
+                "cerberumon",
+                "cerberumon_werewolf_mode",
+                "panjyamon"
+            ]
+        },
+        "sakuyamon": {
+            "name": "sakuyamon",
+            "from": [
+                "taomon",
+                "phantomon"
+            ]
+        },
+        "jesmon": {
+            "name": "jesmon",
+            "from": [
+                "garudamon",
+                "saviorhackmon",
+                "jesmon_x"
+            ],
+            "to": [
+                "jesmon_x"
+            ]
+        },
+        "jumbogamemon": {
+            "name": "jumbogamemon",
+            "from": [
+                "megaseadramon",
+                "gerbemon",
+                "shawujinmon"
+            ]
+        },
+        "dianamon": {
+            "name": "dianamon",
+            "from": [
+                "andiramon",
+                "crescemon"
+            ],
+            "to": [
+                "gracenovamon"
+            ]
+        },
+        "dynasmon": {
+            "name": "dynasmon",
+            "from": [
+                "grademon",
+                "hippogriffomon",
+                "mistymon"
+            ]
+        },
+        "leopardmon": {
+            "name": "leopardmon",
+            "from": [
+                "grapleomon",
+                "knightmon",
+                "leopardmon_leopard_mode"
+            ],
+            "to": [
+                "leopardmon_leopard_mode"
+            ]
+        },
+        "leopardmon_leopard_mode": {
+            "name": "leopardmon_leopard_mode",
+            "from": [
+                "leopardmon"
+            ],
+            "to": [
+                "leopardmon"
+            ]
+        },
+        "dorugoramon": {
+            "name": "dorugoramon",
+            "from": [
+                "dorugreymon",
+                "paildramon"
+            ]
+        },
+        "pilevolcamon": {
+            "name": "pilevolcamon",
+            "from": [
+                "omegashoutmon",
+                "volcamon",
+                "etemon",
+                "weregarurumon_black"
+            ]
+        },
+        "princemamemon": {
+            "name": "princemamemon",
+            "from": [
+                "catchmamemon",
+                "superstarmon",
+                "bigmamemon",
+                "mamemon"
+            ]
+        },
+        "plesiomon": {
+            "name": "plesiomon",
+            "from": [
+                "zudomon",
+                "whamon",
+                "hangyomon"
+            ]
+        },
+        "boltmon": {
+            "name": "boltmon",
+            "from": [
+                "andromon",
+                "meteormon",
+                "deathmeramon"
+            ]
+        },
+        "metalseadramon": {
+            "name": "metalseadramon",
+            "from": [
+                "megaseadramon",
+                "sharkmon",
+                "skullseadramon",
+                "waruseadramon"
+            ]
+        },
+        "medievalgallantmon": {
+            "name": "medievalgallantmon",
+            "from": [
+                "mistymon"
+            ]
+        },
+        "rosemon": {
+            "name": "rosemon",
+            "from": [
+                "pumpmon",
+                "lilamon",
+                "lilimon",
+                "cherrymon"
+            ],
+            "to": [
+                "rosemon_burst_mode"
+            ]
+        },
+        "lotusmon": {
+            "name": "lotusmon",
+            "from": [
+                "pumpmon",
+                "arukenimon"
+            ]
+        },
+        "avengekidmon": {
+            "name": "avengekidmon",
+            "from": [
+                "deathmeramon",
+                "vademon",
+                "mummymon"
+            ]
+        },
+        "ebemon": {
+            "name": "ebemon",
+            "from": [
+                "skullsatamon",
+                "dagomon",
+                "vademon"
+            ]
+        },
+        "venommyotismon": {
+            "name": "venommyotismon",
+            "from": [
+                "astamon",
+                "myotismon"
+            ]
+        },
+        "ancientwisemon": {
+            "name": "ancientwisemon",
+            "from": [
+                "wisemon"
+            ]
+        },
+        "samudramon": {
+            "name": "samudramon",
+            "from": [
+                "hisyaryumon",
+                "butenmon",
+                "metalgreymon"
+            ]
+        },
+        "chaosgallantmon": {
+            "name": "chaosgallantmon",
+            "from": [
+                "mistymon",
+                "wargrowlmon",
+                "wisemon"
+            ]
+        },
+        "chaosdramon": {
+            "name": "chaosdramon",
+            "from": [
+                "loaderliomon",
+                "gigadramon",
+                "wargrowlmon"
+            ]
+        },
+        "callismon": {
+            "name": "callismon",
+            "from": [
+                "greatgrizzlymon",
+                "monzaemon"
+            ]
+        },
+        "gundramon": {
+            "name": "gundramon",
+            "from": [
+                "masterblimpmon",
+                "orochimon",
+                "gigadramon",
+                "tankdramon"
+            ]
+        },
+        "kingetemon": {
+            "name": "kingetemon",
+            "from": [
+                "monzaemon",
+                "etemon",
+                "shogungekomon"
+            ]
+        },
+        "grandracmon": {
+            "name": "grandracmon",
+            "from": [
+                "kimeramon",
+                "matadormon"
+            ]
+        },
+        "chronomon_destroy_mode": {
+            "name": "chronomon_destroy_mode",
+            "from": [
+                "aegiochusmon_dark",
+                "butenmon"
+            ]
+        },
+        "zanbamon": {
+            "name": "zanbamon",
+            "from": [
+                "knightmon",
+                "mistymon"
+            ]
+        },
+        "zombie_plutomon": {
+            "name": "zombie_plutomon",
+            "from": [
+                "plutomon"
+            ]
+        },
+        "darkdramon": {
+            "name": "darkdramon",
+            "from": [
+                "tankdramon",
+                "paildramon",
+                "metalgreymon_blue"
+            ],
+            "to": [
+                "chaosmon"
+            ]
+        },
+        "tigervespamon": {
+            "name": "tigervespamon",
+            "from": [
+                "jewelbeemon",
+                "saviorhackmon",
+                "cannonbeemon",
+                "dinobeemon"
+            ]
+        },
+        "titamon": {
+            "name": "titamon",
+            "from": [
+                "digitamamon",
+                "skullgreymon",
+                "darksuperstarmon"
+            ],
+            "to": [
+                "titamon_skullbaluchimon"
+            ]
+        },
+        "tyrantkabuterimon": {
+            "name": "tyrantkabuterimon",
+            "from": [
+                "megakabuterimon",
+                "arukenimon",
+                "okuwamon"
+            ]
+        },
+        "demon": {
+            "name": "demon",
+            "from": [
+                "myotismon",
+                "wisemon"
+            ]
+        },
+        "gallantmon": {
+            "name": "gallantmon",
+            "from": [
+                "duramon",
+                "wargrowlmon",
+                "gallantmon_x"
+            ],
+            "to": [
+                "gallantmon_crimson_mode",
+                "gallantmon_x"
+            ]
+        },
+        "bacchusmon": {
+            "name": "bacchusmon",
+            "from": [
+                "digitamamon",
+                "orochimon",
+                "shogungekomon",
+                "bacchusmon"
+            ],
+            "to": [
+                "bacchusmon"
+            ]
+        },
+        "barbamon": {
+            "name": "barbamon",
+            "from": [
+                "shawujinmon",
+                "skullsatamon"
+            ]
+        },
+        "piemon": {
+            "name": "piemon",
+            "from": [
+                "skullsatamon",
+                "phantomon"
+            ],
+            "to": [
+                "apocalymon"
+            ]
+        },
+        "puppetmon": {
+            "name": "puppetmon",
+            "from": [
+                "lilamon",
+                "shawujinmon",
+                "cherrymon"
+            ]
+        },
+        "pharaohmon": {
+            "name": "pharaohmon",
+            "from": [
+                "nanomon",
+                "bluemeramon",
+                "mummymon"
+            ]
+        },
+        "pukumon": {
+            "name": "pukumon",
+            "from": [
+                "scorpiomon",
+                "mamemon",
+                "shogungekomon"
+            ]
+        },
+        "platinumnumemon": {
+            "name": "platinumnumemon",
+            "from": [
+                "catchmamemon",
+                "delumon",
+                "bigmamemon",
+                "blackkingnumemon"
+            ]
+        },
+        "plutomon": {
+            "name": "plutomon",
+            "from": [
+                "cerberumon",
+                "cerberumon_werewolf_mode",
+                "astamon"
+            ],
+            "to": [
+                "zombie_plutomon"
+            ]
+        },
+        "breakdramon": {
+            "name": "breakdramon",
+            "from": [
+                "triceramon",
+                "groundramon"
+            ],
+            "to": [
+                "examon"
+            ]
+        },
+        "malomyotismon": {
+            "name": "malomyotismon",
+            "from": [
+                "myotismon",
+                "infermon"
+            ]
+        },
+        "beelstarmon": {
+            "name": "beelstarmon",
+            "from": [
+                "darksuperstarmon",
+                "ladydevimon",
+                "silphymon"
+            ]
+        },
+        "belphemon_sleep_mode": {
+            "name": "belphemon_sleep_mode",
+            "from": [
+                "extyranomon",
+                "astamon",
+                "phantomon"
+            ],
+            "to": [
+                "belphemon_rage_mode"
+            ]
+        },
+        "magnakidmon": {
+            "name": "magnakidmon",
+            "from": [
+                "rizegreymon",
+                "omegashoutmon",
+                "metalmamemon"
+            ]
+        },
+        "minervamon": {
+            "name": "minervamon",
+            "from": [
+                "orochimon",
+                "silphymon"
+            ],
+            "to": [
+                "mervamon"
+            ]
+        },
+        "machinedramon": {
+            "name": "machinedramon",
+            "from": [
+                "kimeramon",
+                "megadramon",
+                "metaltyranomon"
+            ],
+            "to": [
+                "millenniumon"
+            ]
+        },
+        "megidramon": {
+            "name": "megidramon",
+            "from": [
+                "groundramon",
+                "megadramon",
+                "wargrowlmon",
+                "waruseadramon"
+            ]
+        },
+        "metaletemon": {
+            "name": "metaletemon",
+            "from": [
+                "meteormon",
+                "etemon",
+                "gerbemon",
+                "blackkingnumemon"
+            ]
+        },
+        "mercurymon": {
+            "name": "mercurymon",
+            "from": [
+                "weregarurumon",
+                "pandamon"
+            ]
+        },
+        "junomon": {
+            "name": "junomon",
+            "from": [
+                "angewomon",
+                "shakkoumon",
+                "junomon_hysteric_mode"
+            ],
+            "to": [
+                "junomon_hysteric_mode"
+            ]
+        },
+        "junomon_hysteric_mode": {
+            "name": "junomon_hysteric_mode",
+            "from": [
+                "junomon"
+            ],
+            "to": [
+                "junomon"
+            ]
+        },
+        "rusttyranomon": {
+            "name": "rusttyranomon",
+            "from": [
+                "extyranomon",
+                "brachiomon",
+                "metaltyranomon"
+            ]
+        },
+        "leviamon": {
+            "name": "leviamon",
+            "from": [
+                "whamon",
+                "skullseadramon",
+                "waruseadramon"
+            ]
+        },
+        "lilithmon": {
+            "name": "lilithmon",
+            "from": [
+                "lilamon",
+                "arukenimon",
+                "ladydevimon"
+            ]
+        },
+        "lordknightmon": {
+            "name": "lordknightmon",
+            "from": [
+                "crescemon",
+                "knightmon"
+            ]
+        },
+        "imperialdramon_dragon_mode": {
+            "name": "imperialdramon_dragon_mode",
+            "from": [
+                "paildramon",
+                "imperialdramon_fighter_mode"
+            ],
+            "to": [
+                "imperialdramon_fighter_mode",
+                "imperialdramon_paladin_mode"
+            ]
+        },
+        "imperialdramon_fighter_mode": {
+            "name": "imperialdramon_fighter_mode",
+            "from": [
+                "imperialdramon_dragon_mode"
+            ],
+            "to": [
+                "imperialdramon_dragon_mode",
+                "imperialdramon_paladin_mode"
+            ]
+        },
+        "vikemon": {
+            "name": "vikemon",
+            "from": [
+                "zudomon",
+                "mammon",
+                "shakkoumon"
+            ]
+        },
+        "valkyrimon": {
+            "name": "valkyrimon",
+            "from": [
+                "chirinmon",
+                "silphymon"
+            ]
+        },
+        "grankuwagamon": {
+            "name": "grankuwagamon",
+            "from": [
+                "okuwamon",
+                "cherrymon",
+                "dinobeemon"
+            ]
+        },
+        "diaboromon": {
+            "name": "diaboromon",
+            "from": [
+                "nanomon",
+                "infermon"
+            ],
+            "to": [
+                "armageddemon"
+            ]
+        },
+        "alphamon_ouryuken": {
+            "name": "alphamon_ouryuken",
+            "from": [
+                "alphamon",
+                "ouryumon"
+            ]
+        },
+        "imperialdramon_paladin_mode": {
+            "name": "imperialdramon_paladin_mode",
+            "from": [
+                "imperialdramon_dragon_mode",
+                "imperialdramon_fighter_mode"
+            ]
+        },
+        "gracenovamon": {
+            "name": "gracenovamon",
+            "from": [
+                "apollomon",
+                "dianamon"
+            ]
+        },
+        "examon": {
+            "name": "examon",
+            "from": [
+                "slayerdramon",
+                "breakdramon"
+            ]
+        },
+        "belphemon_rage_mode": {
+            "name": "belphemon_rage_mode",
+            "from": [
+                "belphemon_sleep_mode"
+            ]
+        },
+        "mervamon": {
+            "name": "mervamon",
+            "from": [
+                "minervamon"
+            ]
+        },
+        "apocalymon": {
+            "name": "apocalymon",
+            "from": [
+                "piemon"
+            ]
+        },
+        "parallelmon": {
+            "name": "parallelmon",
+            "from": [
+                "dagomon",
+                "infermon"
+            ]
+        },
+        "banchomamemon": {
+            "name": "banchomamemon",
+            "from": [
+                "mamemon"
+            ]
+        },
+        "bancholilimon": {
+            "name": "bancholilimon",
+            "from": [
+                "lilimon"
+            ]
+        },
+        "banchogolemon": {
+            "name": "banchogolemon",
+            "from": [
+                "golemon"
+            ]
+        },
+        "banchostingmon": {
+            "name": "banchostingmon",
+            "from": [
+                "jewelbeemon"
+            ]
+        },
+        "ulforceveedramon_x": {
+            "name": "ulforceveedramon_x",
+            "from": [
+                "ulforceveedramon"
+            ],
+            "to": [
+                "ulforceveedramon"
+            ]
+        },
+        "jesmon_x": {
+            "name": "jesmon_x",
+            "from": [
+                "jesmon"
+            ],
+            "to": [
+                "jesmon"
+            ]
+        },
+        "gallantmon_x": {
+            "name": "gallantmon_x",
+            "from": [
+                "gallantmon"
+            ],
+            "to": [
+                "gallantmon"
             ]
         }
     },
@@ -1650,6 +6152,10 @@
             ],
             "from": [
                 "magnamon"
+            ],
+            "to": [
+                "magnamon_x_gold_digizoid",
+                "magnamon"
             ]
         },
         "goldrapidmon_x": {
@@ -1682,10 +6188,12 @@
         "magnagarurumon": {
             "name": "magnagarurumon",
             "to": [
-                "susanomon"
+                "susanomon",
+                "magnagarurumon"
             ],
             "from": [
-                "beowolfmon"
+                "beowolfmon",
+                "magnagarurumon"
             ]
         }
     },
@@ -1705,6 +6213,13 @@
             "fusionFrom": [
                 "wargreymon",
                 "metalgarurumon"
+            ],
+            "from": [
+                "wargreymon",
+                "metalgarurumon"
+            ],
+            "to": [
+                "omegamon_x"
             ]
         },
         "omegamon_zwart": {
@@ -1719,6 +6234,20 @@
             "fusionFrom": [
                 "black_wargreymon",
                 "metalgarurumon_black"
+            ],
+            "from": [
+                "black_wargreymon",
+                "metalgarurumon_black",
+                "wargreymon",
+                "metalgarurumon",
+                "omegamon_zwart",
+                "omegamon_x"
+            ],
+            "to": [
+                "omegamon_zwart",
+                "omegamon_merciful_mode",
+                "omegamon_x",
+                "omegamon_zwart_defeat"
             ]
         },
         "omegamon_zwart_defeat": {
@@ -1731,6 +6260,9 @@
             ],
             "variants": [
                 "omegamon"
+            ],
+            "from": [
+                "omegamon_zwart"
             ]
         },
         "omegamon_alter_s": {
@@ -1742,6 +6274,14 @@
             "fusionFrom": [
                 "blitzgreymon",
                 "cresgarurumon"
+            ],
+            "from": [
+                "blitzgreymon",
+                "cresgarurumon",
+                "omegamon_alter_b"
+            ],
+            "to": [
+                "omegamon_alter_b"
             ]
         },
         "omegamon_alter_b": {
@@ -1752,16 +6292,24 @@
                 "omegamon"
             ],
             "from": [
-                "omegamon_zwart_defeat"
+                "omegamon_zwart_defeat",
+                "omegamon_alter_s"
             ],
             "fusionFrom": [
                 "blitzgreymon",
                 "cresgarurumon"
+            ],
+            "to": [
+                "omegamon_alter_s"
             ]
         },
         "susanomon": {
             "name": "susanomon",
             "fusionFrom": [
+                "emperorgreymon",
+                "magnagarurumon"
+            ],
+            "from": [
                 "emperorgreymon",
                 "magnagarurumon"
             ]
@@ -1817,6 +6365,10 @@
             "fusionFrom": [
                 "bancholeomon",
                 "darkdramon"
+            ],
+            "from": [
+                "bancholeomon",
+                "darkdramon"
             ]
         },
         "chaosmon_valdur_arm": {
@@ -1828,6 +6380,10 @@
             "fusionFrom": [
                 "bancholeomon",
                 "valdurmon"
+            ],
+            "from": [
+                "valdurmon",
+                "bancholeomon"
             ]
         },
         "huanglongmon": {
@@ -1849,6 +6405,9 @@
             ],
             "to": [
                 "ogudomon"
+            ],
+            "from": [
+                "lucemon_falldown_mode"
             ]
         }
     },
@@ -1857,11 +6416,17 @@
             "name": "omegamon_x",
             "from": [
                 "omegamon",
-                "omekamon"
+                "omekamon",
+                "wargreymon_x",
+                "metalgarurumon_x",
+                "omegamon_zwart"
             ],
             "fusionFrom": [
                 "wargreymon_x",
                 "metalgarurumon_x"
+            ],
+            "to": [
+                "omegamon_zwart"
             ]
         },
         "magnamon_x_gold_digizoid": {
@@ -1889,6 +6454,9 @@
                 "vikemon",
                 "seraphimon",
                 "magnadramon"
+            ],
+            "from": [
+                "omegamon_zwart"
             ]
         },
         "ogudomon": {
@@ -1904,6 +6472,13 @@
                 "belphemon_rage_mode",
                 "beelzebumon",
                 "leviamon"
+            ],
+            "from": [
+                "lucemon_falldown_mode",
+                "lucemon_satan_mode"
+            ],
+            "to": [
+                "ogudomon_x"
             ]
         },
         "ultimatechaosmon": {
@@ -1924,7 +6499,8 @@
         "ogudomon_x": {
             "name": "ogudomon_x",
             "from": [
-                "ogudomon"
+                "ogudomon",
+                "lucemon_x"
             ],
             "fusionFrom": [
                 "barbamon_x",
@@ -1934,6 +6510,146 @@
                 "belphemon_x",
                 "beelzebumon_x",
                 "leviamon_x"
+            ]
+        }
+    },
+    "In-Training II": {
+        "yokomon": {
+            "name": "yokomon",
+            "from": [
+                "bubbmon"
+            ],
+            "to": [
+                "biyomon",
+                "penmon",
+                "falcomon",
+                "hawkmon",
+                "hyokomon",
+                "muchomon"
+            ]
+        }
+    },
+    "Armor": {
+        "gargomon": {
+            "name": "gargomon",
+            "from": [
+                "terriermon",
+                "toyagumon",
+                "shoutmon"
+            ],
+            "to": [
+                "catchmamemon",
+                "machgaogamon",
+                "rapidmon"
+            ]
+        },
+        "submarimon": {
+            "name": "submarimon",
+            "from": [
+                "armadillomon"
+            ]
+        },
+        "shurimon": {
+            "name": "shurimon",
+            "from": [
+                "hawkmon"
+            ]
+        },
+        "digmon": {
+            "name": "digmon",
+            "from": [
+                "armadillomon"
+            ]
+        },
+        "nefertimon": {
+            "name": "nefertimon",
+            "from": [
+                "gatomon"
+            ]
+        },
+        "pegasmon": {
+            "name": "pegasmon",
+            "from": [
+                "patamon"
+            ]
+        },
+        "halsemon": {
+            "name": "halsemon",
+            "from": [
+                "hawkmon"
+            ]
+        }
+    },
+    "Hybrid": {
+        "ranamon": {
+            "name": "ranamon",
+            "from": [
+                "gizamon",
+                "calamaramon"
+            ],
+            "to": [
+                "calamaramon"
+            ]
+        },
+        "calamaramon": {
+            "name": "calamaramon",
+            "from": [
+                "ranamon"
+            ],
+            "to": [
+                "ranamon"
+            ]
+        }
+    },
+    "Mega +": {
+        "craniummon_enbarrmon": {
+            "name": "craniummon_enbarrmon",
+            "from": [
+                "enbarrmon",
+                "craniummon"
+            ]
+        },
+        "jupitermon_wrath_mode": {
+            "name": "jupitermon_wrath_mode",
+            "from": [
+                "jupitermon"
+            ]
+        },
+        "titamon_skullbaluchimon": {
+            "name": "titamon_skullbaluchimon",
+            "from": [
+                "skullbaluchimon",
+                "titamon"
+            ]
+        },
+        "gallantmon_crimson_mode": {
+            "name": "gallantmon_crimson_mode",
+            "from": [
+                "gallantmon"
+            ]
+        },
+        "beelzebumon_blast_mode": {
+            "name": "beelzebumon_blast_mode",
+            "from": [
+                "starmons"
+            ]
+        },
+        "armageddemon": {
+            "name": "armageddemon",
+            "from": [
+                "diaboromon"
+            ]
+        },
+        "agumon_yuki_no_kizuma": {
+            "name": "agumon_yuki_no_kizuma",
+            "from": [
+                "agumon"
+            ]
+        },
+        "gabumon_yujo_no_kizuma": {
+            "name": "gabumon_yujo_no_kizuma",
+            "from": [
+                "gabumon"
             ]
         }
     }
