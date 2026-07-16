@@ -32,6 +32,7 @@ import { Digimon } from '@/types/Digimon';
 import { ZoomProvider } from '@/context/zoom';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
 import useQueryParam from '@/hooks/useQueryParam';
+import useDragAutoScroll from '@/hooks/useDragAutoScroll';
 
 const defaultObject: any = {};
 
@@ -51,6 +52,8 @@ export const PageBuild = (props: BuildProps) => {
 	const [line, dispatchState] = useReducer(lineReducer, props.line || defaultLine);
 	const [zoom, setZoom] = useState<number>(DEFAULT_ZOOM);
 	const [edition, edit] = useState<boolean>(true);
+
+	useDragAutoScroll();
 
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
 

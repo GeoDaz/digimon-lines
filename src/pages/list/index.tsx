@@ -7,6 +7,7 @@ import { makeClassName, stringToKey } from '@/functions';
 import useHash from '@/hooks/useHash';
 import useSubmitDigimon, { DigimonList } from '@/hooks/useSubmitDigimon';
 import useReorderDigimon from '@/hooks/useReorderDigimon';
+import useDragAutoScroll from '@/hooks/useDragAutoScroll';
 import { Digimon, DigimonItem } from '@/types/Digimon';
 import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
@@ -41,6 +42,8 @@ const PageList: React.FC<Props> = props => {
 	const dragRef = useRef<{ level: string; name: string } | null>(null);
 	const [draggingName, setDraggingName] = useState<string | null>(null);
 	const hash = useHash();
+
+	useDragAutoScroll();
 
 	// Drag & drop reordering is only enabled in dev and when not filtering.
 	const canReorder = IS_DEV && !search;
