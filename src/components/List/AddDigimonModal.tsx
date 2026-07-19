@@ -40,6 +40,7 @@ const DigimonModal: React.FC<Props> = ({
 	const [name, setName] = useState<string>('');
 	const [variants, setVariants] = useState<string[]>([]);
 	const [modes, setModes] = useState<string[]>([]);
+	const [armors, setArmors] = useState<string[]>([]);
 	const [from, setFrom] = useState<string[]>([]);
 	const [fusionFrom, setFusionFrom] = useState<string[]>([]);
 	const [to, setTo] = useState<string[]>([]);
@@ -52,6 +53,7 @@ const DigimonModal: React.FC<Props> = ({
 			setName(editData.digimon.name);
 			setVariants(editData.digimon.variants || []);
 			setModes(editData.digimon.modes || []);
+			setArmors(editData.digimon.armors || []);
 			setFrom(editData.digimon.from || []);
 			setFusionFrom(editData.digimon.fusionFrom || []);
 			setTo(editData.digimon.to || []);
@@ -65,6 +67,7 @@ const DigimonModal: React.FC<Props> = ({
 		setName('');
 		setVariants([]);
 		setModes([]);
+		setArmors([]);
 		setFrom([]);
 		setFusionFrom([]);
 		setTo([]);
@@ -76,6 +79,7 @@ const DigimonModal: React.FC<Props> = ({
 		const item: DigimonItem = { name };
 		if (variants.length) item.variants = variants;
 		if (modes.length) item.modes = modes;
+		if (armors.length) item.armors = armors;
 		if (from.length) item.from = from;
 		if (fusionFrom.length) item.fusionFrom = fusionFrom;
 		if (to.length) item.to = to;
@@ -213,16 +217,23 @@ const DigimonModal: React.FC<Props> = ({
 								}
 							/>
 						</Col>
+						<Col md={12} className="gap-2">
+							<ArrayField
+								title="Armors"
+								items={armors}
+								dubNames={dubNames}
+								onAdd={handleAddToArray(setArmors, armors)}
+								onRemove={i =>
+									handleRemoveFromArray(setArmors, armors, i)
+								}
+							/>
+						</Col>
 					</Row>
 				</Form>
 			</Modal.Body>
 			<Modal.Footer>
 				{isEditMode && onDelete && (
-					<Button
-						variant="danger"
-						className="me-auto"
-						onClick={handleDelete}
-					>
+					<Button variant="danger" className="me-auto" onClick={handleDelete}>
 						Delete
 					</Button>
 				)}

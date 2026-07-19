@@ -75,6 +75,7 @@ const ListItem: React.FC<Props> = ({ digimon, hash, onEdit }) => {
 								relations={digimon.fusionFrom}
 							/>
 							<RelationList title="To" relations={digimon.to} />
+							<RelationList title="Armors" relations={digimon.armors} />
 						</div>
 					</CardBody>
 				</Card>

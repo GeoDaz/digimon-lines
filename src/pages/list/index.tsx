@@ -18,6 +18,7 @@ import { GetStaticProps } from 'next';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Button, Spinner } from 'react-bootstrap';
 import Icon from '@/components/Icon';
+import ScrollUp from '@/components/ScrollUp';
 import { getDirPaths } from '@/functions/file';
 import { getDubNames, getDubbedSearchList } from '@/functions/search';
 import { IS_DEV } from '@/consts/env';
@@ -220,6 +221,7 @@ const PageList: React.FC<Props> = props => {
 			title="Digimon by levels"
 			metadescription="List of Digimon by levels"
 		>
+			<ScrollUp />
 			<SearchContext.Provider value={props.search}>
 				<DigimonProvider dubNames={props.dubNames} data={props.digimons}>
 					<div className="d-flex gap-3 align-items-center">
