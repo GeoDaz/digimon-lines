@@ -6,6 +6,7 @@ import SearchBar from '@/components/SearchBar';
 import { makeClassName, stringToKey } from '@/functions';
 import useHash from '@/hooks/useHash';
 import useSubmitDigimon, { DigimonList } from '@/hooks/useSubmitDigimon';
+import useDeleteDigimon from '@/hooks/useDeleteDigimon';
 import useReorderDigimon from '@/hooks/useReorderDigimon';
 import useDragAutoScroll from '@/hooks/useDragAutoScroll';
 import { Digimon, DigimonItem } from '@/types/Digimon';
@@ -15,13 +16,17 @@ import { DigimonProvider } from '@/context/digimon';
 import { SearchContext } from '@/context/search';
 import { GetStaticProps } from 'next';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Spinner } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import { getDirPaths } from '@/functions/file';
 import { getDubNames, getDubbedSearchList } from '@/functions/search';
 import { IS_DEV } from '@/consts/env';
 
 const defaultObject: any = {};
+
+// Number of cards mounted per "page". The list can hold >1300 entries, each card
+// mounting many relation images, so we render incrementally on scroll.
+const PAGE_SIZE = 60;
 
 interface Props {
 	list?: DigimonList;
@@ -34,6 +39,7 @@ const PageList: React.FC<Props> = props => {
 		props.list || defaultObject
 	);
 	const handleSubmitDigimon = useSubmitDigimon(setFullList);
+	const handleDeleteDigimon = useDeleteDigimon(setFullList);
 	const handleReorderDigimon = useReorderDigimon(setFullList);
 	const [search, setSearch] = useState<string>();
 	const [levelFilter, setLevelFilter] = useState<string>('');
@@ -41,6 +47,8 @@ const PageList: React.FC<Props> = props => {
 	const [editData, setEditData] = useState<EditData | null>(null);
 	const dragRef = useRef<{ level: string; name: string } | null>(null);
 	const [draggingName, setDraggingName] = useState<string | null>(null);
+	const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+	const sentinelRef = useRef<HTMLDivElement | null>(null);
 	const hash = useHash();
 
 	useDragAutoScroll();
@@ -74,11 +82,48 @@ const PageList: React.FC<Props> = props => {
 		}, {} as DigimonList);
 	}, [fullList, search, levelFilter]);
 
+	// Flat render order of names (across levels), used for pagination + hash jumps.
+	const flatNames = useMemo(
+		() => Object.values(list).flatMap(digimons => Object.keys(digimons)),
+		[list]
+	);
+	const totalCount = flatNames.length;
+
+	// Reset pagination whenever the visible list changes (search / filter / edits).
 	useEffect(() => {
-		if (hash) {
-			document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' });
+		setVisibleCount(PAGE_SIZE);
+	}, [search, levelFilter]);
+
+	// Load more cards as the bottom sentinel approaches the viewport.
+	useEffect(() => {
+		const el = sentinelRef.current;
+		if (!el) return;
+		const observer = new IntersectionObserver(
+			entries => {
+				if (entries[0].isIntersecting) {
+					setVisibleCount(v => Math.min(v + PAGE_SIZE, totalCount));
+				}
+			},
+			{ rootMargin: '600px' }
+		);
+		observer.observe(el);
+		return () => observer.disconnect();
+	}, [totalCount, visibleCount]);
+
+	// Deep-link via hash (e.g. clicking a relation): make sure the target card is
+	// mounted before scrolling to it.
+	useEffect(() => {
+		if (!hash) return;
+		let idx = flatNames.indexOf(hash);
+		if (idx < 0 && props.dubNames?.[hash]) {
+			idx = flatNames.indexOf(props.dubNames[hash]);
 		}
-	}, [hash]);
+		if (idx >= 0 && idx >= visibleCount) {
+			setVisibleCount(Math.min(idx + PAGE_SIZE, totalCount));
+			return; // re-runs once visibleCount grows, then scrolls below
+		}
+		document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' });
+	}, [hash, flatNames, visibleCount, totalCount, props.dubNames]);
 
 	const handleDragStart = (level: string, name: string) => {
 		dragRef.current = { level, name };
@@ -170,55 +215,82 @@ const PageList: React.FC<Props> = props => {
 							</Button>
 						)}
 					</div>
-					{Object.entries(list).map(([level, digimons]) => (
-						<div key={level} className="mb-4">
-							<h2 className="mb-4">{level}</h2>
-							<div className="d-flex flex-wrap gap-3">
-								{Object.entries(digimons).map(([name, digimon]) => (
-									<div
-										key={name}
-										draggable={canReorder}
-										onDragStart={
-											canReorder
-												? () => handleDragStart(level, name)
-												: undefined
-										}
-										onDragEnd={canReorder ? handleDragEnd : undefined}
-										onDragOver={
-											canReorder
-												? e => handleDragOver(e, level, name)
-												: undefined
-										}
-										onDrop={
-											canReorder
-												? () => handleDrop(level, name)
-												: undefined
-										}
-										className={makeClassName(
-											canReorder && 'reorderable',
-											draggingName === name && 'dragging'
-										)}
-										style={canReorder ? { cursor: 'grab' } : undefined}
-									>
-										<ListItem
-											digimon={digimon}
-											hash={hash}
-											onEdit={
-												IS_DEV
-													? () => handleEditDigimon(level, digimon)
-													: undefined
-											}
-										/>
+					{(() => {
+						let shown = 0;
+						return Object.entries(list).map(([level, digimons]) => {
+							if (shown >= visibleCount) return null;
+							const slice = Object.entries(digimons).slice(
+								0,
+								visibleCount - shown
+							);
+							shown += slice.length;
+							return (
+								<div key={level} className="mb-4">
+									<h2 className="mb-4">{level}</h2>
+									<div className="d-flex flex-wrap gap-3">
+										{slice.map(([name, digimon]) => (
+											<div
+												key={name}
+												draggable={canReorder}
+												onDragStart={
+													canReorder
+														? () => handleDragStart(level, name)
+														: undefined
+												}
+												onDragEnd={
+													canReorder ? handleDragEnd : undefined
+												}
+												onDragOver={
+													canReorder
+														? e => handleDragOver(e, level, name)
+														: undefined
+												}
+												onDrop={
+													canReorder
+														? () => handleDrop(level, name)
+														: undefined
+												}
+												className={makeClassName(
+													canReorder && 'reorderable',
+													draggingName === name && 'dragging'
+												)}
+												style={
+													canReorder
+														? { cursor: 'grab' }
+														: undefined
+												}
+											>
+												<ListItem
+													digimon={digimon}
+													hash={hash}
+													onEdit={
+														IS_DEV
+															? () =>
+																	handleEditDigimon(
+																		level,
+																		digimon
+																	)
+															: undefined
+													}
+												/>
+											</div>
+										))}
 									</div>
-								))}
-							</div>
+								</div>
+							);
+						});
+					})()}
+					{visibleCount < totalCount && (
+						<div ref={sentinelRef} className="text-center py-4">
+							<Spinner animation="border" />
 						</div>
-					))}
+					)}
 					{IS_DEV && (
 						<DigimonModal
 							show={showModal}
 							handleClose={handleCloseModal}
 							onSubmit={handleSubmitDigimon}
+							onDelete={handleDeleteDigimon}
 							levels={levels}
 							editData={editData}
 						/>

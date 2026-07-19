@@ -16,7 +16,13 @@ export interface EditData {
 interface Props {
 	show: boolean;
 	handleClose: () => void;
-	onSubmit: (level: string, item: DigimonItem, originalName?: string) => void;
+	onSubmit: (
+		level: string,
+		item: DigimonItem,
+		originalName?: string,
+		originalLevel?: string
+	) => void;
+	onDelete?: (level: string, name: string) => Promise<boolean> | void;
 	levels: string[];
 	editData?: EditData | null;
 }
@@ -25,6 +31,7 @@ const DigimonModal: React.FC<Props> = ({
 	show,
 	handleClose,
 	onSubmit,
+	onDelete,
 	levels,
 	editData,
 }) => {
@@ -74,12 +81,24 @@ const DigimonModal: React.FC<Props> = ({
 		if (to.length) item.to = to;
 
 		const originalName = isEditMode ? editData.digimon.name : undefined;
-		onSubmit(level, item, originalName);
+		const originalLevel = isEditMode ? editData.level : undefined;
+		onSubmit(level, item, originalName, originalLevel);
 		resetForm();
 		handleClose();
 	};
 
 	const handleCancel = () => {
+		resetForm();
+		handleClose();
+	};
+
+	const handleDelete = async () => {
+		if (!isEditMode || !editData || !onDelete) return;
+		const confirmed = window.confirm(
+			`Delete "${editData.digimon.name}" from "${editData.level}"?`
+		);
+		if (!confirmed) return;
+		await onDelete(editData.level, editData.digimon.name);
 		resetForm();
 		handleClose();
 	};
@@ -198,6 +217,15 @@ const DigimonModal: React.FC<Props> = ({
 				</Form>
 			</Modal.Body>
 			<Modal.Footer>
+				{isEditMode && onDelete && (
+					<Button
+						variant="danger"
+						className="me-auto"
+						onClick={handleDelete}
+					>
+						Delete
+					</Button>
+				)}
 				<Button variant="secondary" onClick={handleCancel}>
 					Cancel
 				</Button>
