@@ -1,126 +1,108 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "growlmon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "wargrowlmon"
-            },
-            {
-                "name": "suijinmon"
-            }
-        ],
-        [
-            {
-                "name": "jyarimon"
-            },
-            {
-                "name": "gigimon"
-            },
-            {
-                "name": "guilmon"
-            },
-            {
-                "name": "growlmon_orange"
-            },
-            {
-                "name": "wargrowlmon_orange"
-            },
-            {
-                "name": "gallantmon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "growlmon_black",
-                "from": [
-                    -1,
-                    -1
-                ],
-                "color": "dark"
-            },
-            {
-                "name": "black_wargrowlmon",
-                "color": "dark"
-            },
-            {
-                "name": "chaosgallantmon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "punkmon",
-                "mirror": true,
-                "color": "dark",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "loudmon",
-                "mirror": true,
-                "color": "dark"
-            },
-            {
-                "name": "heavymetaldramon",
-                "mirror": true,
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "devidramon",
-                "color": "dark",
-                "from": [
-                    -3,
-                    -1
-                ]
-            },
-            {
-                "name": "megadramon",
-                "color": "dark"
-            },
-            {
-                "name": "megidramon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "gigadramon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        "terriermon",
-        "lunamon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "growlmon",
+				"from": [1, -1]
+			},
+			{
+				"name": "wargrowlmon"
+			},
+			{
+				"name": "suijinmon"
+			}
+		],
+		[
+			{
+				"name": "jyarimon"
+			},
+			{
+				"name": "gigimon"
+			},
+			{
+				"name": "guilmon"
+			},
+			{
+				"name": "growlmon_orange"
+			},
+			{
+				"name": "wargrowlmon_orange"
+			},
+			{
+				"name": "gallantmon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "growlmon_black",
+				"from": [-1, -1],
+				"color": "dark"
+			},
+			{
+				"name": "black_wargrowlmon",
+				"color": "dark"
+			},
+			{
+				"name": "chaosgallantmon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "punkmon",
+				"mirror": true,
+				"color": "dark",
+				"from": [-2, -1]
+			},
+			{
+				"name": "loudmon",
+				"mirror": true,
+				"color": "dark"
+			},
+			{
+				"name": "heavymetaldramon",
+				"mirror": true,
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "devidramon",
+				"color": "dark",
+				"from": [-3, -1]
+			},
+			{
+				"name": "megadramon",
+				"color": "dark"
+			},
+			{
+				"name": "megidramon",
+				"color": "dark"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gigadramon",
+				"color": "dark",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": ["terriermon"]
 }

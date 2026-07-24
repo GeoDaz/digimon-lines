@@ -1,3 +1,7 @@
+// Renommages / migrations de lines : { ancienNom: nouveauNom }.
+// Chaque entrée génère une redirection 301 /lines/ancien -> /lines/nouveau.
+const lineRedirects = require('./redirects.json');
+
 module.exports = () => ({
 	reactStrictMode: true,
 	async redirects() {
@@ -7,6 +11,11 @@ module.exports = () => ({
 				destination: '/',
 				permanent: true,
 			},
+			...Object.entries(lineRedirects).map(([from, to]) => ({
+				source: `/lines/${from}`,
+				destination: `/lines/${to}`,
+				permanent: true,
+			})),
 		];
 	},
 	webpack: config => {

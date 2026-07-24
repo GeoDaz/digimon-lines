@@ -81,6 +81,49 @@
 			null
 		],
 		[
+			{
+				"name": "snowbotamon",
+				"from": null
+			},
+			{
+				"name": "moonmon",
+				"from": [[0, -1]]
+			},
+			{
+				"name": "lunamon",
+				"from": [[0, -1]]
+			},
+			{
+				"name": "lekismon",
+				"from": [[0, -1]]
+			},
+			{
+				"name": "crescemon",
+				"from": [[0, -1]]
+			},
+			{
+				"name": "dianamon",
+				"from": [[0, -1]]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "jougamon",
+				"from": [
+					[-1, -1],
+					[2.5, -1]
+				],
+				"color": ["gold", "gold"]
+			},
+			null
+		],
+		[
 			null,
 			null,
 			{
@@ -119,7 +162,9 @@
 				"name": "andiramon",
 				"from": [
 					[-0.5, -1],
-					[0.5, -1]
+					[0.5, -1],
+					[2.5, -1],
+					[1.5, -1]
 				],
 				"color": ["default", "dark"],
 				"xSize": 2
@@ -149,11 +194,7 @@
 				"color": ["dark"],
 				"from": [[-0.5, -1]]
 			},
-			{
-				"name": "jougamon",
-				"color": ["fusion"],
-				"from": [[0, -1]]
-			}
+			null
 		],
 		[
 			null,
@@ -163,7 +204,11 @@
 				"from": [[-1.5, -1]]
 			},
 			{
-				"name": "prairiemon"
+				"name": "prairiemon",
+				"from": [
+					[-1.5, -1],
+					[0, -1]
+				]
 			},
 			null,
 			{
@@ -215,7 +260,6 @@
 		[null, null, null, null, null, null, null]
 	],
 	"related": [
-		"lunamon",
 		"angoramon",
 		{
 			"name": "raidenmon",
@@ -224,6 +268,15 @@
 		{
 			"name": "negamon",
 			"for": "shademon_nene"
+		},
+		{
+			"name": "gargamon",
+			"for": "luminamon"
+		},
+		{
+			"name": "jellymon",
+			"for": "venusmon",
+			"from": "shakomon"
 		},
 		{
 			"name": "patamon",
