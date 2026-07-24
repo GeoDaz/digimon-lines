@@ -6,82 +6,73 @@
             null,
             {
                 "name": "xiquemon",
-                "color": [
-                    "marine"
-                ],
                 "from": [
                     [
                         1,
                         -1
                     ]
+                ],
+                "color": [
+                    "marine"
                 ]
             },
             {
                 "name": "huankunmon",
-                "color": [
-                    "marine"
-                ],
                 "from": [
                     [
                         0,
                         -1
                     ]
+                ],
+                "color": [
+                    "marine"
                 ]
             },
             {
                 "name": "xiangpengmon",
-                "color": [
-                    "marine",
-                    "marine"
-                ],
                 "from": [
-                    [
-                        1,
-                        -1
-                    ],
                     [
                         0,
                         -1
                     ]
+                ],
+                "color": [
+                    "marine"
                 ]
             },
             null
         ],
         [
-            null,
-            null,
             {
-                "name": "falcomon_2",
+                "name": "puwamon",
+                "from": null
+            },
+            {
+                "name": "pinamon"
+            },
+            {
+                "name": "gargamon"
+            },
+            {
+                "name": "corbamon"
+            },
+            {
+                "name": "panoptemon"
+            },
+            {
+                "name": "junomon",
                 "from": [
                     [
-                        1.5,
+                        0,
                         -1
                     ]
                 ],
                 "color": [
-                    "wind"
+                    "light"
                 ]
             },
             {
-                "name": "peckmon"
-            },
-            {
-                "name": "yatagaramon_2"
-            },
-            {
-                "name": "ravemon",
-                "from": [
-                    [
-                        0,
-                        -3
-                    ]
-                ],
-                "color": [
-                    "wind"
-                ]
-            },
-            {
-                "name": "ravemon_burst_mode",
+                "name": "junomon_hysteric_mode",
                 "color": [
                     "mode"
                 ],
@@ -94,35 +85,63 @@
             }
         ],
         [
-            {
-                "name": "puwamon",
-                "from": null,
-                "xSize": 2
-            },
-            {
-                "name": "pinamon",
-                "from": null,
-                "xSize": 2
-            },
+            null,
             null,
             null,
             {
-                "name": "karatenmon",
-                "color": [
-                    "dark"
-                ],
+                "name": "darcmon",
                 "from": [
                     [
                         -1,
                         -1
                     ]
+                ],
+                "color": [
+                    "light"
                 ]
             },
             {
-                "name": "tengumon",
+                "name": "hippogriffomon",
                 "from": [
                     [
                         0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "griffomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "luminamon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            {
+                "name": "murmukusmon",
+                "from": [
+                    [
+                        -1,
                         -1
                     ]
                 ],
@@ -137,22 +156,28 @@
             null,
             null,
             null,
-            null,
             {
-                "name": "ornismon",
+                "name": "luminamon_nene",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "human"
+                ]
+            },
+            {
+                "name": "venusmon",
                 "from": [
                     [
                         -1,
                         -1
-                    ],
-                    [
-                        1,
-                        -1
                     ]
                 ],
                 "color": [
-                    "dark",
-                    "dark"
+                    "light"
                 ]
             },
             null
@@ -160,44 +185,22 @@
         [
             null,
             null,
+            null,
+            null,
             {
-                "name": "falcomon",
+                "name": "piccolomon",
                 "from": [
                     [
-                        -1.5,
+                        -3,
                         -1
                     ]
                 ],
                 "color": [
-                    "wind"
+                    "light"
                 ]
             },
             {
-                "name": "diatrymon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "wind"
-                ]
-            },
-            {
-                "name": "yatagaramon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "wind"
-                ]
-            },
-            {
-                "name": "valdurmon",
+                "name": "marineangemon",
                 "from": [
                     [
                         0,
@@ -208,81 +211,38 @@
                     "light"
                 ]
             },
-            {
-                "name": "chaosmon_valdur_arm",
-                "color": [
-                    "fusion"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "owlmon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "wind"
-                ]
-            },
-            null,
-            {
-                "name": "zhuqiaomon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "fire"
-                ]
-            },
             null
         ]
     ],
     "related": [
-        "gargamon",
-        {
-            "name": "pteromon",
-            "from": "diatrymon"
-        },
-        {
-            "name": "penmon",
-            "from": "xiquemon"
-        },
-        {
-            "name": "biyomon",
-            "for": "saberdramon"
-        },
-        "ultimatechaosmon",
-        {
-            "name": "leomon",
-            "for": "chaosmon_valdur_arm"
-        },
         {
             "name": "hawkmon",
-            "for": "shurimon"
+            "from": "hippogriffomon"
         },
         {
-            "name": "hyokomon",
-            "for": "butenmon"
+            "name": "falcomon_2",
+            "from": "xiangpengmon"
+        },
+        {
+            "name": "gatomon",
+            "from": "darcmon"
         },
         {
             "name": "fujamon",
             "from": "huankunmon"
+        },
+        {
+            "name": "patamon",
+            "for": "marineangemon"
+        },
+        {
+            "name": "jellymon",
+            "for": "venusmon",
+            "from": "shakomon"
+        },
+        {
+            "name": "lopmon",
+            "for": "luminamon"
         }
     ],
     "size": 7

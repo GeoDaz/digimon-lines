@@ -1,274 +1,460 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "shurimon",
-				"skins": ["purity"],
-				"color": ["grass"],
-				"from": [[4, -1]]
-			},
-			{
-				"name": "butenmon",
-				"color": ["fusion", "fusion"],
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				],
-				"xSize": 2
-			},
-			{
-				"name": "chronomon_holy_mode",
-				"from": [[0.5, -1]],
-				"color": ["light"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "halsemon",
-				"color": ["wind"],
-				"skins": ["love", "owlmon"],
-				"from": [[3, -1]]
-			},
-			{
-				"name": "peacockmon",
-				"from": [[-0.5, -1]],
-				"skins": ["miracles"],
-				"xSize": 2,
-				"color": ["gold"]
-			},
-			{
-				"name": "chronomon_destroy_mode",
-				"from": [
-					[-0.5, -1],
-					[-1, 0]
-				],
-				"color": ["dark", "mode"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "sethmon",
-				"from": [[-1, 0]],
-				"skins": ["love"],
-				"color": ["dark"]
-			},
-			{
-				"name": "hippogriffomon",
-				"from": [
-					[-1.5, -1],
-					[1.5, -1],
-					[0.5, -1]
-				],
-				"xSize": 2,
-				"color": ["wind", "wind", "wind"]
-			},
-			{
-				"name": "murmukusmon",
-				"color": ["dark"],
-				"from": [[0.5, -1]]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "darcmon",
-				"from": [[1, -1]],
-				"color": ["light"]
-			},
-			null,
-			{
-				"name": "griffomon",
-				"from": [[-0.5, -1]],
-				"color": ["wind"]
-			}
-		],
-		[
-			{
-				"name": "pururumon",
-				"from": null
-			},
-			{
-				"name": "poromon"
-			},
-			{
-				"name": "hawkmon",
-				"color": ["wind"]
-			},
-			{
-				"name": "aquilamon",
-				"color": ["wind"]
-			},
-			{
-				"name": "silphymon",
-				"color": ["fusion"]
-			},
-			{
-				"name": "valkyrimon",
-				"color": ["light"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "harpymon",
-				"from": [[-1, -1]],
-				"skins": ["light"],
-				"color": ["wind"]
-			},
-			{
-				"name": "shutumon",
-				"color": ["wind"]
-			},
-			{
-				"name": "ancientirismon",
-				"color": ["light"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "thunderbirdmon",
-				"from": [[-2, -1]],
-				"skins": ["friendship", "rinkmon"],
-				"color": ["electric"]
-			},
-			{
-				"name": "jetsilphymon",
-				"from": [[-1, -1]],
-				"color": ["wind"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "allomon",
-				"skins": ["courage"],
-				"from": [[-3, -1]],
-				"color": ["fire"]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "flybeemon",
-				"color": ["wind"],
-				"skins": ["knowledge"],
-				"from": [[-4, -1]]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "toucanmon",
-				"from": [[-5, -1]],
-				"skins": ["kindness"]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "moosemon",
-				"from": [[-6, -1]],
-				"skins": ["hope"],
-				"color": ["ice"]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "orcamon",
-				"from": [[-7, -1]],
-				"skins": ["reliability"],
-				"color": ["marine"]
-			},
-			null,
-			null
-		]
-	],
-	"related": [
-		{
-			"name": "biyomon",
-			"for": "garudamon"
-		},
-		{
-			"name": "gatomon",
-			"from": "silphymon"
-		},
-		{
-			"name": "fairymon",
-			"from": "shutumon"
-		},
-		{
-			"name": "falcomon_2",
-			"for": "valdurmon",
-			"from": "falcomon"
-		},
-		{
-			"name": "hyokomon",
-			"from": "butenmon"
-		},
-		{
-			"name": "takinmon",
-			"for": "hippogriffomon"
-		},
-		{
-			"name": "penmon",
-			"for": "peacockmon"
-		},
-		{
-			"name": "tyranomon",
-			"for": "allomon"
-		},
-		{
-			"name": "fanbeemon",
-			"for": "flybeemon"
-		},
-		{
-			"name": "hyokomon",
-			"for": "toucanmon"
-		},
-		{
-			"name": "gomamon",
-			"for": "orcamon"
-		},
-		{
-			"name": "tapirmon",
-			"for": "moosemon"
-		}
-	],
-	"size": 6
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shurimon",
+                "skins": [
+                    "purity"
+                ],
+                "color": [
+                    "grass"
+                ],
+                "from": [
+                    [
+                        5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "butenmon",
+                "color": [
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ],
+                "xSize": 2
+            },
+            {
+                "name": "chronomon_holy_mode",
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "halsemon",
+                "color": [
+                    "wind"
+                ],
+                "skins": [
+                    "love",
+                    "owlmon"
+                ],
+                "from": [
+                    [
+                        4,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "peacockmon",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "miracles"
+                ],
+                "xSize": 2,
+                "color": [
+                    "gold"
+                ]
+            },
+            {
+                "name": "chronomon_destroy_mode",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "dark",
+                    "mode"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sethmon",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "skins": [
+                    "love"
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "hippogriffomon",
+                "from": [
+                    [
+                        -1.5,
+                        -1
+                    ],
+                    [
+                        2.5,
+                        -1
+                    ]
+                ],
+                "xSize": 2
+            },
+            {
+                "name": "murmukusmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "griffomon",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "default"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "valdurmon",
+                "from": [
+                    [
+                        -1.5,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            }
+        ],
+        [
+            {
+                "name": "pururumon",
+                "from": null
+            },
+            {
+                "name": "poromon"
+            },
+            {
+                "name": "hawkmon",
+                "color": [
+                    "wind"
+                ]
+            },
+            {
+                "name": "aquilamon",
+                "color": [
+                    "default"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "silphymon",
+                "color": [
+                    "fusion"
+                ]
+            },
+            {
+                "name": "valkyrimon",
+                "color": [
+                    "light"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "harpymon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "light"
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            {
+                "name": "shutumon",
+                "color": [
+                    "wind"
+                ]
+            },
+            {
+                "name": "ancientirismon",
+                "color": [
+                    "light"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "thunderbirdmon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "friendship",
+                    "rinkmon"
+                ],
+                "color": [
+                    "electric"
+                ]
+            },
+            {
+                "name": "jetsilphymon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "wind"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "allomon",
+                "skins": [
+                    "courage"
+                ],
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fire"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "flybeemon",
+                "color": [
+                    "wind"
+                ],
+                "skins": [
+                    "knowledge"
+                ],
+                "from": [
+                    [
+                        -4,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "toucanmon",
+                "from": [
+                    [
+                        -5,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "kindness"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "moosemon",
+                "from": [
+                    [
+                        -6,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "hope"
+                ],
+                "color": [
+                    "ice"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "orcamon",
+                "from": [
+                    [
+                        -7,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "reliability"
+                ],
+                "color": [
+                    "marine"
+                ]
+            },
+            null,
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "biyomon",
+            "for": "garudamon"
+        },
+        {
+            "name": "gatomon",
+            "from": "silphymon"
+        },
+        {
+            "name": "fairymon",
+            "from": "shutumon"
+        },
+        {
+            "name": "gargamon",
+            "for": "darcmon"
+        },
+        {
+            "name": "falcomon_2",
+            "for": "falcomon",
+            "from": "valdurmon"
+        },
+        {
+            "name": "hyokomon",
+            "from": "butenmon"
+        },
+        {
+            "name": "takinmon",
+            "for": "hippogriffomon"
+        },
+        {
+            "name": "penmon",
+            "for": "peacockmon"
+        },
+        {
+            "name": "tyranomon",
+            "for": "allomon"
+        },
+        {
+            "name": "fanbeemon",
+            "for": "flybeemon"
+        },
+        {
+            "name": "hyokomon",
+            "for": "toucanmon"
+        },
+        {
+            "name": "gomamon",
+            "for": "orcamon"
+        },
+        {
+            "name": "tapirmon",
+            "for": "moosemon"
+        }
+    ],
+    "size": 6
 }

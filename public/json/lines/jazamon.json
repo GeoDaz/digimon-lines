@@ -1,247 +1,161 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "sparrowmon",
-                "from": [
-                    [
-                        2,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "gold"
-                ]
-            },
-            {
-                "name": "raptorsparrowmon",
-                "color": [
-                    "gold"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            null,
-            {
-                "name": "zeekgreymon",
-                "color": [
-                    "gold"
-                ],
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "mailbirdramon",
-                "color": [
-                    "dark",
-                    "dark"
-                ],
-                "from": [
-                    [
-                        1,
-                        -1
-                    ],
-                    [
-                        -1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "metalgreymon_blue_2",
-                "color": [
-                    "fusion"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "shoutmon_x3gm",
-                "color": [
-                    "fusion"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            {
-                "name": "bommon",
-                "from": null
-            },
-            {
-                "name": "missimon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "jazamon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "jazardmon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "jazarichmon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "metallicdramon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "mockingbirdmon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "machine"
-                ]
-            },
-            null
-        ]
-    ],
-    "related": [
-        "vorvomon",
-        "blucomon",
-        {
-            "name": "maquinamon",
-            "for": "mockingbirdmon"
-        },
-        {
-            "name": "greymon",
-            "for": "greymon_blue_2"
-        },
-        {
-            "name": "shoutmon",
-            "for": "shoutmon_x3gm"
-        },
-        {
-            "name": "shoutmon",
-            "for": "shoutmon_x5"
-        },
-        {
-            "name": "maquinamon",
-            "for": "maneuvermon"
-        },
-        {
-            "name": "monodramon",
-            "for": "pteranomon"
-        },
-        {
-            "name": "commandramon",
-            "for": "cargodramon"
-        },
-        {
-            "name": "chiropmon",
-            "for": "scourgechiropmon"
-        },
-        {
-            "name": "betamon",
-            "for": "gigadramon"
-        },
-        {
-            "name": "toyagumon",
-            "for": "gigadramon"
-        },
-        {
-            "name": "hagurumon",
-            "for": "masterblimpmon"
-        },
-        {
-            "name": "tentomon",
-            "for": "kokuwamon_x"
-        },
-        "espimon",
-        {
-            "name": "elizamon",
-            "for": "jet_mervamon",
-            "from": "iguneetmon"
-        },
-        {
-            "name": "fairymon",
-            "for": "jetsilphymon"
-        },
-        {
-            "name": "aegiomon",
-            "for": "aegiochusmon_blue"
-        },
-        {
-            "name": "hawkmon",
-            "for": "peacockmon"
-        }
-    ],
-    "size": 6
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "sparrowmon",
+				"from": [[2, -1]],
+				"color": ["gold"]
+			},
+			{
+				"name": "raptorsparrowmon",
+				"color": ["gold"],
+				"from": [[0, -1]]
+			},
+			null,
+			{
+				"name": "zeekgreymon",
+				"color": ["gold"],
+				"from": [[1, -1]]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mailbirdramon",
+				"color": ["dark", "dark"],
+				"from": [
+					[1, -1],
+					[-1, -1]
+				]
+			},
+			{
+				"name": "metalgreymon_blue_2",
+				"color": ["fusion"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "shoutmon_x3gm",
+				"color": ["fusion"],
+				"from": [[0, -1]]
+			}
+		],
+		[
+			{
+				"name": "bommon",
+				"from": null
+			},
+			{
+				"name": "missimon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "jazamon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "jazardmon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "jazarichmon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "metallicdramon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "mockingbirdmon",
+				"from": [[-1, -1]],
+				"color": ["machine"]
+			},
+			null
+		]
+	],
+	"related": [
+		"vorvomon",
+		"blucomon",
+		{
+			"name": "maquinamon",
+			"for": "mockingbirdmon"
+		},
+		{
+			"name": "greymon",
+			"for": "greymon_blue_2"
+		},
+		{
+			"name": "shoutmon",
+			"for": "shoutmon_x3gm"
+		},
+		{
+			"name": "shoutmon",
+			"for": "shoutmon_x5"
+		},
+		{
+			"name": "maquinamon",
+			"for": "maneuvermon"
+		},
+		{
+			"name": "monodramon",
+			"for": "pteranomon"
+		},
+		{
+			"name": "commandramon",
+			"for": "cargodramon"
+		},
+		{
+			"name": "chiropmon",
+			"for": "scourgechiropmon"
+		},
+		{
+			"name": "betamon",
+			"for": "gigadramon"
+		},
+		{
+			"name": "toyagumon",
+			"for": "gigadramon"
+		},
+		{
+			"name": "hagurumon",
+			"for": "masterblimpmon"
+		},
+		{
+			"name": "tentomon",
+			"for": "kokuwamon_x"
+		},
+		"espimon",
+		{
+			"name": "snakemon",
+			"for": "jet_mervamon",
+			"from": "iguneetmon"
+		},
+		{
+			"name": "fairymon",
+			"for": "jetsilphymon"
+		},
+		{
+			"name": "aegiomon",
+			"for": "aegiochusmon_blue"
+		},
+		{
+			"name": "hawkmon",
+			"for": "peacockmon"
+		}
+	],
+	"size": 6
 }
