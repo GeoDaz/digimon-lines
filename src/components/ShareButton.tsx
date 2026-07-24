@@ -31,7 +31,7 @@ const ShareButton: React.FC<Props> = ({ title, text }) => {
 	return (
 		<Button variant="secondary" onClick={handleShare} title="Share">
 			{copied ? 'Copied' : 'Share'}
-			<Icon name={copied ? 'check-lg' : 'share-fill'} className="me-1" />
+			<Icon name={copied ? 'check-lg' : 'share-fill'} className="ms-2" />
 		</Button>
 	);
 };
