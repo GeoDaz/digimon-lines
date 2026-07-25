@@ -4,6 +4,7 @@ import DigimonModal, { EditData } from '@/components/List/AddDigimonModal';
 import LevelFilter from '@/components/List/LevelFilter';
 import SearchBar from '@/components/SearchBar';
 import { makeClassName, stringToKey } from '@/functions';
+import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
 import useHash from '@/hooks/useHash';
 import useSubmitDigimon, { DigimonList } from '@/hooks/useSubmitDigimon';
 import useDeleteDigimon from '@/hooks/useDeleteDigimon';
@@ -59,6 +60,11 @@ const PageList: React.FC<Props> = props => {
 	const canReorder = IS_DEV && !search;
 
 	const levels = useMemo(() => Object.keys(fullList), [fullList]);
+
+	// Flat name -> DigimonItem lookup so components with only a name (e.g. the
+	// expanded image modal) can resolve a digimon's relations.
+	const items = useMemo(() => flattenDigimonItems(fullList), [fullList]);
+	const itemLevels = useMemo(() => getDigimonItemLevels(fullList), [fullList]);
 
 	const list = useMemo<DigimonList>(() => {
 		if (!search && !levelFilter) return fullList;
@@ -223,7 +229,13 @@ const PageList: React.FC<Props> = props => {
 		>
 			<ScrollUp />
 			<SearchContext.Provider value={props.search}>
-				<DigimonProvider dubNames={props.dubNames} data={props.digimons}>
+				<DigimonProvider
+					dubNames={props.dubNames}
+					data={props.digimons}
+					items={items}
+					itemLevels={itemLevels}
+					levels={levels}
+				>
 					<div className="d-flex gap-3 align-items-center">
 						<SearchBar
 							label="Research a digimon"

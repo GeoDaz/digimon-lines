@@ -1,14 +1,17 @@
 import React, { useContext } from 'react';
 import { DigimonContext } from '@/context/digimon';
 import { makeClassName } from '@/functions';
+import { Digimon } from '@/types/Digimon';
 
-const LinePointData: React.FC<{ name: string; className?: string }> = ({
-	name,
-	className,
-}) => {
+const LinePointData: React.FC<{
+	name: string;
+	className?: string;
+	// Explicit datum overrides the context lookup (used to reflect live edits).
+	datum?: Digimon;
+}> = ({ name, className, datum: datumProp }) => {
 	const { data, dubNames } = useContext(DigimonContext);
 	const dubName = dubNames[name];
-	const datum = data[name] || (dubName && data[dubName]);
+	const datum = datumProp || data[name] || (dubName && data[dubName]);
 	if (!datum) return null;
 	return (
 		<div className={makeClassName('grid-2 text-start', className)}>

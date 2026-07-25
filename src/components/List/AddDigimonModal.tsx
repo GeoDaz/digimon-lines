@@ -25,6 +25,9 @@ interface Props {
 	onDelete?: (level: string, name: string) => Promise<boolean> | void;
 	levels: string[];
 	editData?: EditData | null;
+	// Prefill the name in add mode (e.g. adding relations for a digimon opened in
+	// the image modal that has no ranked entry yet).
+	defaultName?: string;
 }
 
 const DigimonModal: React.FC<Props> = ({
@@ -34,6 +37,7 @@ const DigimonModal: React.FC<Props> = ({
 	onDelete,
 	levels,
 	editData,
+	defaultName,
 }) => {
 	const { dubNames } = useContext(DigimonContext);
 	const [level, setLevel] = useState<string>('');
@@ -59,8 +63,9 @@ const DigimonModal: React.FC<Props> = ({
 			setTo(editData.digimon.to || []);
 		} else {
 			resetForm();
+			if (defaultName) setName(defaultName);
 		}
-	}, [editData, show]);
+	}, [editData, show, defaultName]);
 
 	const resetForm = () => {
 		setLevel('');

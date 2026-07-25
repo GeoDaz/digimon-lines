@@ -20,18 +20,22 @@ import useDownloadCode from '@/hooks/useDownloadCode';
 // functions
 import useQueryParam from '@/hooks/useQueryParam';
 import { capitalize } from '@/functions';
+import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
 import transformLine, { thumbsToNames } from '@/functions/line';
 // constants
 import { Line } from '@/types/Line';
 import { defaultLine } from '@/reducers/lineReducer';
 import { LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
-import { Digimon } from '@/types/Digimon';
+import { Digimon, DigimonItem } from '@/types/Digimon';
 import { DigimonProvider } from '@/context/digimon';
 import { StringObject } from '@/types/Ui';
+import Search from '@/types/Search';
 import { ZoomProvider } from '@/context/zoom';
+import { SearchContext } from '@/context/search';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
-import { getDubNames } from '@/functions/search';
+import { getDubbedSearchList, getDubNames } from '@/functions/search';
+import { getDirPaths } from '@/functions/file';
 
 const NAME = 'name';
 const defaultObject: any = {};
@@ -43,7 +47,13 @@ interface StaticProps {
 	digimons?: {
 		[key: string]: Digimon;
 	};
+	items?: {
+		[key: string]: DigimonItem;
+	};
+	itemLevels?: StringObject;
+	levels?: string[];
 	dubNames?: StringObject;
+	search?: Search;
 }
 interface Props {
 	ssr: StaticProps;
@@ -129,11 +139,19 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 			)}
 			{line ?
 				<>
-					<DigimonProvider dubNames={ssr.dubNames} data={ssr.digimons}>
-						<ZoomProvider zoom={zoom}>
-							<LineGrid line={line} />
-						</ZoomProvider>
-					</DigimonProvider>
+					<SearchContext.Provider value={ssr.search}>
+						<DigimonProvider
+							dubNames={ssr.dubNames}
+							data={ssr.digimons}
+							items={ssr.items}
+							itemLevels={ssr.itemLevels}
+							levels={ssr.levels}
+						>
+							<ZoomProvider zoom={zoom}>
+								<LineGrid line={line} />
+							</ZoomProvider>
+						</DigimonProvider>
+					</SearchContext.Provider>
 					<CommentLink />
 				</>
 			:	<p>Line not found</p>}
@@ -197,7 +215,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	const digimons: {
 		[key: string]: Digimon;
 	} = require('../../../public/json/digimons/index.json');
+	const ranked = require('../../../public/json/digimons/ranked.json');
+	const items = flattenDigimonItems(ranked);
+	const itemLevels = getDigimonItemLevels(ranked);
+	const levels = Object.keys(ranked);
 	const dubNames: StringObject = getDubNames();
+	const search: Search = getDubbedSearchList(getDirPaths('images/digimon'), dubNames);
 
 	let prev = null;
 	let next = null;
@@ -217,7 +240,20 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	}
 
 	return {
-		props: { ssr: { name: params.name, line, prev, next, digimons, dubNames } },
+		props: {
+			ssr: {
+				name: params.name,
+				line,
+				prev,
+				next,
+				digimons,
+				items,
+				itemLevels,
+				levels,
+				dubNames,
+				search,
+			},
+		},
 	};
 };
 

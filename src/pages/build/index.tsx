@@ -28,7 +28,8 @@ import { getDubbedSearchList, getDubNames } from '@/functions/search';
 import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
 import { DigimonProvider } from '@/context/digimon';
-import { Digimon } from '@/types/Digimon';
+import { Digimon, DigimonItem } from '@/types/Digimon';
+import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
 import { ZoomProvider } from '@/context/zoom';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
 import useQueryParam from '@/hooks/useQueryParam';
@@ -44,6 +45,11 @@ export interface BuildProps {
 	digimons?: {
 		[key: string]: Digimon;
 	};
+	items?: {
+		[key: string]: DigimonItem;
+	};
+	itemLevels?: StringObject;
+	levels?: string[];
 	dubNames?: StringObject;
 }
 
@@ -181,7 +187,13 @@ export const PageBuild = (props: BuildProps) => {
 			)}
 			<SearchContext.Provider value={props.search}>
 				<LicenseContext.Provider value={licenceContext}>
-					<DigimonProvider dubNames={props.dubNames} data={props.digimons}>
+					<DigimonProvider
+						dubNames={props.dubNames}
+						data={props.digimons}
+						items={props.items}
+						itemLevels={props.itemLevels}
+						levels={props.levels}
+					>
 						<ZoomProvider zoom={zoom}>
 							<LineGrid
 								line={line}
@@ -210,10 +222,16 @@ export const getStaticProps: GetStaticProps = async () => {
 		const digimons: {
 			[key: string]: Digimon;
 		} = require('../../../public/json/digimons/index.json');
+		const ranked = require('../../../public/json/digimons/ranked.json');
+		const items = flattenDigimonItems(ranked);
+		const itemLevels = getDigimonItemLevels(ranked);
+		const levels = Object.keys(ranked);
 		const dubNames = getDubNames();
 		const searchList: string[] = getDirPaths('images/digimon');
 		const search: Search = getDubbedSearchList(searchList, dubNames);
-		return { props: { search, context, digimons, dubNames } };
+		return {
+			props: { search, context, digimons, items, itemLevels, levels, dubNames },
+		};
 	} catch (e) {
 		console.error(e);
 		return { props: { context } };

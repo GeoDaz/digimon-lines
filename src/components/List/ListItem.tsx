@@ -4,8 +4,8 @@ import { DigimonItem } from '@/types/Digimon';
 import React, { useContext } from 'react';
 import { Button, Card, CardBody, CardHeader } from 'react-bootstrap';
 import LineImage from '../Line/LineImage';
-import AnchorLink from '../AnchorLink';
 import Icon from '../Icon';
+import RelationList from './RelationList';
 
 interface Props {
 	digimon: DigimonItem;
@@ -81,45 +81,6 @@ const ListItem: React.FC<Props> = ({ digimon, hash, onEdit }) => {
 				</Card>
 			</div>
 		</div>
-	);
-};
-
-const RelationList: React.FC<{ title: string; relations: string[] | undefined }> = ({
-	title,
-	relations,
-}) => {
-	if (!relations?.length) return null;
-	return (
-		<div
-			className="rounded p-2 pt-1"
-			style={{
-				backgroundColor: 'var(--bs-card-cap-bg)',
-				border: 'var(--bs-card-border-width) solid var(--bs-card-border-color)',
-				maxWidth: 'calc(60px * 3 + 0.5rem * 4 + var(--bs-border-width) * 2)',
-			}}
-		>
-			<strong className="d-block mb-1">{title}&nbsp;:</strong>
-			<div className="d-flex flex-wrap gap-2">
-				{relations.map(name => (
-					<RelationItem name={name} key={name} />
-				))}
-			</div>
-		</div>
-	);
-};
-
-const RelationItem: React.FC<{ name: string }> = ({ name }) => {
-	const { dubNames } = useContext(DigimonContext);
-	const dubName = dubNames[name];
-	return (
-		<AnchorLink hash={name} key={name}>
-			<div className="d-inline-block position-relative">
-				<LineImage name={name} width={60} height={60} zoomable={false} />
-			</div>
-			<span className="sr-only">
-				{capitalize(name)} {dubName && `/ ${capitalize(dubName)}`}
-			</span>
-		</AnchorLink>
 	);
 };
 
