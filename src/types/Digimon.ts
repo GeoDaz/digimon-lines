@@ -17,6 +17,7 @@ export interface DigimonItem {
 	name: string;
 	variants?: string[];
 	modes?: string[];
+	x?: string[];
 	armors?: string[];
 	from?: string[];
 	fusionFrom?: string[];

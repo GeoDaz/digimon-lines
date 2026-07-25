@@ -58,6 +58,7 @@ const LineImageModal: React.FC<Props> = ({
 		item &&
 		(item.variants?.length ||
 			item.modes?.length ||
+			item.x?.length ||
 			item.from?.length ||
 			item.fusionFrom?.length ||
 			item.to?.length ||
@@ -142,6 +143,11 @@ const LineImageModal: React.FC<Props> = ({
 						<RelationList
 							title="Modes"
 							relations={item.modes}
+							onSelect={setCurrentName}
+						/>
+						<RelationList
+							title="X"
+							relations={item.x}
 							onSelect={setCurrentName}
 						/>
 						<RelationList

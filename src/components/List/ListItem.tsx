@@ -69,6 +69,7 @@ const ListItem: React.FC<Props> = ({ digimon, hash, onEdit }) => {
 						<div className="d-flex flex-wrap gap-2 align-items-start flex-grow-0">
 							<RelationList title="Variants" relations={digimon.variants} />
 							<RelationList title="Modes" relations={digimon.modes} />
+							<RelationList title="X" relations={digimon.x} />
 							<RelationList title="From" relations={digimon.from} />
 							<RelationList
 								title="Fusion from"

@@ -44,6 +44,7 @@ const DigimonModal: React.FC<Props> = ({
 	const [name, setName] = useState<string>('');
 	const [variants, setVariants] = useState<string[]>([]);
 	const [modes, setModes] = useState<string[]>([]);
+	const [x, setX] = useState<string[]>([]);
 	const [armors, setArmors] = useState<string[]>([]);
 	const [from, setFrom] = useState<string[]>([]);
 	const [fusionFrom, setFusionFrom] = useState<string[]>([]);
@@ -57,6 +58,7 @@ const DigimonModal: React.FC<Props> = ({
 			setName(editData.digimon.name);
 			setVariants(editData.digimon.variants || []);
 			setModes(editData.digimon.modes || []);
+			setX(editData.digimon.x || []);
 			setArmors(editData.digimon.armors || []);
 			setFrom(editData.digimon.from || []);
 			setFusionFrom(editData.digimon.fusionFrom || []);
@@ -72,6 +74,7 @@ const DigimonModal: React.FC<Props> = ({
 		setName('');
 		setVariants([]);
 		setModes([]);
+		setX([]);
 		setArmors([]);
 		setFrom([]);
 		setFusionFrom([]);
@@ -84,6 +87,7 @@ const DigimonModal: React.FC<Props> = ({
 		const item: DigimonItem = { name };
 		if (variants.length) item.variants = variants;
 		if (modes.length) item.modes = modes;
+		if (x.length) item.x = x;
 		if (armors.length) item.armors = armors;
 		if (from.length) item.from = from;
 		if (fusionFrom.length) item.fusionFrom = fusionFrom;
@@ -195,6 +199,15 @@ const DigimonModal: React.FC<Props> = ({
 						</Col>
 						<Col md={6} className="gap-2">
 							<ArrayField
+								title="X"
+								items={x}
+								dubNames={dubNames}
+								onAdd={handleAddToArray(setX, x)}
+								onRemove={i => handleRemoveFromArray(setX, x, i)}
+							/>
+						</Col>
+						<Col md={6} className="gap-2">
+							<ArrayField
 								title="From"
 								items={from}
 								dubNames={dubNames}
@@ -222,7 +235,7 @@ const DigimonModal: React.FC<Props> = ({
 								}
 							/>
 						</Col>
-						<Col md={12} className="gap-2">
+						<Col md={6} className="gap-2">
 							<ArrayField
 								title="Armors"
 								items={armors}
