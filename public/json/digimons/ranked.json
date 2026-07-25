@@ -412,7 +412,10 @@
             "to": [
                 "biyomon",
                 "pomumon",
-                "floramon"
+                "floramon",
+                "palmon",
+                "alraumon",
+                "lalamon"
             ]
         },
         "mochimon": {
@@ -435,7 +438,8 @@
             "to": [
                 "mushmon",
                 "palmon",
-                "alraumon"
+                "alraumon",
+                "floramon"
             ]
         },
         "pukamon": {
@@ -1170,6 +1174,9 @@
         },
         "palmon": {
             "name": "palmon",
+            "variants": [
+                "alraumon"
+            ],
             "modes": [
                 "palmon_x"
             ],
@@ -1189,7 +1196,8 @@
         "alraumon": {
             "name": "alraumon",
             "from": [
-                "tanemon"
+                "tanemon",
+                "yokomon"
             ],
             "to": [
                 "vegimon",
@@ -1664,7 +1672,10 @@
             "to": [
                 "kiwimon",
                 "vegimon",
-                "vegimon_red"
+                "vegimon_red",
+                "sunflowmon",
+                "parasaumon",
+                "kabukimon"
             ]
         },
         "fujamon": {
@@ -3490,13 +3501,16 @@
         },
         "ballistamon": {
             "name": "ballistamon",
+            "modes": [
+                "darkvolumon"
+            ],
             "from": [
                 "kokabuterimon",
                 "kokuwamon"
             ],
             "to": [
                 "atlurballistamon",
-                "shoutmon_x7"
+                "shoutmon_x2"
             ]
         },
         "baluchimon": {
@@ -5134,11 +5148,14 @@
         "sunflowmon": {
             "name": "sunflowmon",
             "from": [
-                "lalamon"
+                "lalamon",
+                "floramon"
             ],
             "to": [
                 "lilamon",
-                "blossomon"
+                "blossomon",
+                "lilimon",
+                "oleamon"
             ]
         },
         "symbareangoramon": {
@@ -5570,7 +5587,8 @@
         "parasaumon": {
             "name": "parasaumon",
             "from": [
-                "pomumon"
+                "pomumon",
+                "floramon"
             ],
             "to": [
                 "ajatarmon",
@@ -5672,6 +5690,12 @@
                 "ambromon",
                 "sandiramon",
                 "lamiamon"
+            ]
+        },
+        "darkvolumon": {
+            "name": "darkvolumon",
+            "modes": [
+                "ballistamon"
             ]
         }
     },
@@ -6189,6 +6213,10 @@
         },
         "togemon_x": {
             "name": "togemon_x",
+            "from": [
+                "togemon",
+                "palmon_x"
+            ],
             "to": [
                 "lilimon_x"
             ]
@@ -6482,7 +6510,15 @@
             "name": "kabukimon",
             "from": [
                 "salamon",
-                "lalamon"
+                "lalamon",
+                "floramon",
+                "palmon"
+            ],
+            "to": [
+                "lilimon",
+                "lilamon",
+                "oleamon",
+                "blossomon"
             ]
         },
         "kangarumon": {
@@ -7022,11 +7058,13 @@
         "ajatarmon": {
             "name": "ajatarmon",
             "from": [
-                "zassoumon",
-                "parasaumon"
+                "parasaumon",
+                "vegimon",
+                "zassoumon"
             ],
             "to": [
-                "hydramon"
+                "hydramon",
+                "bloomlordmon"
             ]
         },
         "andiramon": {
@@ -7976,7 +8014,8 @@
         "lilamon": {
             "name": "lilamon",
             "from": [
-                "sunflowmon"
+                "sunflowmon",
+                "kabukimon"
             ],
             "to": [
                 "rosemon",
@@ -7986,11 +8025,15 @@
         "lilimon": {
             "name": "lilimon",
             "from": [
-                "togemon"
+                "togemon",
+                "kabukimon",
+                "sunflowmon",
+                "fairymon"
             ],
             "to": [
                 "rosemon",
-                "bancholilimon"
+                "bancholilimon",
+                "lotusmon"
             ]
         },
         "locomon": {
@@ -8424,10 +8467,17 @@
         "oleamon": {
             "name": "oleamon",
             "from": [
-                "vegimon"
+                "vegimon",
+                "zassoumon",
+                "vegimon_red",
+                "sunflowmon",
+                "kabukimon"
             ],
             "to": [
-                "ceresmon_medium"
+                "ceresmon_medium",
+                "lotusmon",
+                "rosemon",
+                "rafflesimon"
             ]
         },
         "omegashoutmon": {
@@ -9651,7 +9701,8 @@
         "lilimon_x": {
             "name": "lilimon_x",
             "from": [
-                "togemon_x"
+                "togemon_x",
+                "lilimon"
             ],
             "to": [
                 "rosemon_x"
@@ -10420,7 +10471,8 @@
         "bloomlordmon": {
             "name": "bloomlordmon",
             "from": [
-                "tropiamon"
+                "tropiamon",
+                "ajatarmon"
             ]
         },
         "boltboutamon": {
@@ -10484,6 +10536,9 @@
         },
         "ceresmon": {
             "name": "ceresmon",
+            "modes": [
+                "ceresmon_medium"
+            ],
             "from": [
                 "sirenmon",
                 "delumon"
@@ -10491,9 +10546,15 @@
         },
         "ceresmon_medium": {
             "name": "ceresmon_medium",
+            "modes": [
+                "ceresmon"
+            ],
             "from": [
-                "oleamon",
-                "blossomon"
+                "sirenmon",
+                "blossomon",
+                "lilimon",
+                "lilamon",
+                "oleamon"
             ]
         },
         "cernumon": {
@@ -11111,7 +11172,8 @@
                 "blossomon",
                 "lilamon",
                 "sandiramon",
-                "lamiamon"
+                "lamiamon",
+                "lilimon"
             ],
             "to": [
                 "rafflesimon"
@@ -11506,6 +11568,9 @@
         "rafflesimon": {
             "name": "rafflesimon",
             "from": [
+                "oleamon"
+            ],
+            "fusionFrom": [
                 "rosemon",
                 "lotusmon"
             ]
@@ -11596,6 +11661,9 @@
         },
         "rosemon": {
             "name": "rosemon",
+            "modes": [
+                "rosemon_x"
+            ],
             "from": [
                 "lilimon",
                 "lilamon"
@@ -12145,7 +12213,8 @@
         "herculeskabuterimon_x": {
             "name": "herculeskabuterimon_x",
             "from": [
-                "herculeskabuterimon"
+                "herculeskabuterimon",
+                "okuwamon_x"
             ]
         },
         "magnamon_x": {
@@ -12392,7 +12461,8 @@
         "rosemon_x": {
             "name": "rosemon_x",
             "from": [
-                "lilimon_x"
+                "lilimon_x",
+                "rosemon"
             ]
         },
         "sakuyamon_x": {
