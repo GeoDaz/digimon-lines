@@ -10,7 +10,9 @@ export const getSearchPriority = (search: string, name: string): number | null =
 	name = stringToKey(name);
 	search = stringToKey(search);
 	let index =
-		search.length > 3 ? name.indexOf(search) : name.startsWith(search) ? 0 : -1; // digimon string contains search string
+		search.length > 3 ? name.indexOf(search)
+		: name.startsWith(search) ? 0
+		: -1; // digimon string contains search string
 	if (index === -1) return null;
 	let priority: number = index * -1;
 	priority -= Math.abs(name.length - search.length);
@@ -61,7 +63,7 @@ export const getDubNames = () => {
 			if (
 				subName != name &&
 				!dubNames[subName] &&
-				subName.match(`${name}_|_${name}`)
+				subName.match(`(^|_)${name}(_|$)`)
 			) {
 				const subDubName = subName.replace(name, dubName);
 				dubNames[subName] = subDubName;
