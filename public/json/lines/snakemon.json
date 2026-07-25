@@ -4,7 +4,6 @@
             null,
             null,
             null,
-            null,
             {
                 "name": "stegomon",
                 "from": [
@@ -15,7 +14,22 @@
                 ]
             },
             {
-                "name": "spinomon"
+                "name": "mametyramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "spinomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
             },
             null
         ],
@@ -49,17 +63,31 @@
                 "name": "lamiamon",
                 "from": [
                     [
-                        0,
+                        0.5,
                         -1
                     ],
                     [
-                        1,
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        2.5,
                         -1
                     ]
+                ],
+                "xSize": 2,
+                "color": [
+                    "gold"
                 ]
             },
             {
-                "name": "medusamon"
+                "name": "medusamon",
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
             },
             {
                 "name": "styracomon"
@@ -101,7 +129,8 @@
                     ]
                 ],
                 "color": [
-                    "light"
+                    "gold",
+                    "default"
                 ]
             },
             null,
@@ -109,12 +138,12 @@
                 "name": "minervamon",
                 "from": [
                     [
-                        -1,
+                        -0.5,
                         -1
                     ]
                 ],
                 "color": [
-                    "light"
+                    "gold"
                 ]
             },
             {
@@ -178,6 +207,9 @@
                         -2,
                         -1
                     ]
+                ],
+                "color": [
+                    "gold"
                 ]
             },
             {
@@ -187,6 +219,9 @@
                         0,
                         -1
                     ]
+                ],
+                "color": [
+                    "gold"
                 ]
             },
             {
@@ -199,6 +234,9 @@
                 ],
                 "skins": [
                     "bacchusmon_drunk"
+                ],
+                "color": [
+                    "gold"
                 ]
             },
             null
@@ -208,7 +246,7 @@
             null,
             null,
             {
-                "name": "kinkakumon",
+                "name": "dinohumon",
                 "from": [
                     [
                         1,
@@ -224,9 +262,16 @@
                         -1
                     ],
                     [
-                        1,
+                        0,
+                        -1
+                    ],
+                    [
+                        -3,
                         -1
                     ]
+                ],
+                "color": [
+                    "default"
                 ]
             },
             {
@@ -236,6 +281,9 @@
                         0,
                         -1
                     ]
+                ],
+                "color": [
+                    "dark"
                 ]
             },
             null
@@ -252,43 +300,10 @@
                 "name": "iguneetmon"
             },
             {
-                "name": "dinohumon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            null,
-            {
-                "name": "nidhoggmon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ],
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "dark",
-                    "dark"
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
                 "name": "ginkakumon",
                 "from": [
                     [
-                        -1,
+                        0,
                         -1
                     ]
                 ],
@@ -314,10 +329,43 @@
                 ]
             },
             {
-                "name": "xuanwumon",
+                "name": "nidhoggmon",
                 "from": [
                     [
                         0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark",
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "kinkakumon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "xuanwumon",
+                "from": [
+                    [
+                        -1,
                         -1
                     ]
                 ],

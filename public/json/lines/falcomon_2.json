@@ -3,53 +3,6 @@
         [
             null,
             null,
-            null,
-            {
-                "name": "xiquemon",
-                "color": [
-                    "marine"
-                ],
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "huankunmon",
-                "color": [
-                    "marine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "xiangpengmon",
-                "color": [
-                    "marine",
-                    "marine"
-                ],
-                "from": [
-                    [
-                        1,
-                        -1
-                    ],
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
             {
                 "name": "falcomon_2",
                 "from": [
@@ -130,7 +83,18 @@
                     "dark"
                 ]
             },
-            null
+            {
+                "name": "enmamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            }
         ],
         [
             null,
@@ -251,6 +215,26 @@
                 ]
             },
             null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "xiangpengmon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "marine"
+                ]
+            },
+            null
         ]
     ],
     "related": [
@@ -261,11 +245,19 @@
         },
         {
             "name": "penmon",
-            "from": "xiquemon"
+            "for": "xiquemon"
+        },
+        {
+            "name": "fujamon",
+            "for": "xiangpengmon"
         },
         {
             "name": "biyomon",
             "for": "saberdramon"
+        },
+        {
+            "name": "ogremon",
+            "for": "tengumon"
         },
         "ultimatechaosmon",
         {
@@ -279,10 +271,6 @@
         {
             "name": "hyokomon",
             "for": "butenmon"
-        },
-        {
-            "name": "fujamon",
-            "from": "huankunmon"
         }
     ],
     "size": 7

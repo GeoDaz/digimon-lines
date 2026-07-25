@@ -5,6 +5,24 @@
 			null,
 			null,
 			{
+				"name": "stegomon",
+				"from": [[3.5, -1]],
+				"skins": []
+			},
+			{
+				"name": "mametyramon",
+				"from": [[0, -1]]
+			},
+			{
+				"name": "spinomon"
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
 				"name": "digmon",
 				"from": [[2, -1]],
 				"xSize": 2,
@@ -86,7 +104,8 @@
 			{
 				"name": "clavisangemon",
 				"from": [[-0.5, -1]],
-				"color": ["light"]
+				"color": ["light"],
+				"skins": ["slashangemon"]
 			},
 			null
 		],
@@ -101,16 +120,14 @@
 				"skins": ["friendship", "kenkimon", "sepikmon"]
 			},
 			{
-				"name": "stegomon",
-				"from": [
-					[-1.5, -1],
-					[0, -1]
-				],
-				"skins": ["friendship"]
+				"name": "brachiomon",
+				"from": [[-1.5, -1]]
 			},
 			{
-				"name": "spinomon"
-			}
+				"name": "ultimatebrachimon",
+				"from": [[0, -1]]
+			},
+			null
 		],
 		[
 			null,
@@ -123,15 +140,14 @@
 				"color": ["fire"]
 			},
 			{
-				"name": "brachiomon",
-				"from": [[-2.5, -1]]
+				"name": "elephantmon",
+				"from": [[0, -1]],
+				"skins": ["miracles"],
+				"color": ["wind"]
 			},
 			{
-				"name": "ultimatebrachimon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				]
+				"name": "cannondramon",
+				"from": [[-1, -1]]
 			},
 			null
 		],
@@ -144,16 +160,8 @@
 				"from": [[-3.5, -1]],
 				"skins": ["hope"]
 			},
-			{
-				"name": "elephantmon",
-				"from": [[-1, -1]],
-				"skins": ["miracles"],
-				"color": ["wind"]
-			},
-			{
-				"name": "cannondramon",
-				"from": [[-1, -1]]
-			},
+			null,
+			null,
 			null
 		],
 		[
@@ -241,6 +249,11 @@
 		{
 			"name": "tyranomon",
 			"for": "spinomon"
+		},
+		{
+			"name": "snakemon",
+			"for": "dimetromon",
+			"from": "elizamon"
 		},
 		{
 			"name": "gammamon",
