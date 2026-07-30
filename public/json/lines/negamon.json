@@ -1,77 +1,324 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{ "name": "shademon_nene", "color": ["human"], "from": [[1, 0]] },
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "shademon", "from": [[1, -1]], "color": ["dark"] },
-			{ "name": "orochimon", "from": [[1, -1]], "color": ["dark"] },
-			{ "name": "nidhoggmon", "color": ["dark"], "from": [[0, -1]] },
-			null
-		],
-		[
-			{ "name": "kuramon", "color": "dark", "from": null },
-			{ "name": "negamon", "color": ["dark"], "from": [[0, -1]] },
-			{ "name": "soundbirdmon", "color": ["dark"], "from": [[0, -1]] },
-			{
-				"name": "eyesmon",
-				"color": ["dark"],
-				"skins": ["eyesmon_scatter_mode"],
-				"from": [[0, -1]]
-			},
-			{ "name": "negamon_evolved", "from": [[0, -1]], "color": ["dark"] },
-			{ "name": "abbadomon", "color": ["dark"], "from": [[0, -1]] },
-			{ "name": "abbadomon_core", "color": ["dark"], "from": [[0, -1]] }
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "raremon", "color": ["dark"], "from": [[-1, -1]] },
-			{ "name": "rareraremon", "from": [[0, -1]], "color": ["dark"] },
-			{ "name": "deathmon", "color": ["dark"], "from": [[0, -1]], "skins": [] },
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "duskmon", "from": [[-2, -1.5]], "ySize": 2, "color": ["dark"] },
-			null,
-			{ "name": "deathmon_black", "from": [[-1, -1]], "color": ["dark"] },
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "velgrmon", "from": [[-1, 0]], "ySize": 2, "color": ["slide"] },
-			null,
-			{ "name": "ornismon", "from": [[0, -1.5]], "color": ["dark"] },
-			null
-		]
-	],
-	"related": [
-		{ "name": "snakemon", "from": "nidhoggmon" },
-		{ "name": "terriermon", "for": "luminamon_nene" },
-		{ "name": "numemon", "from": "raremon" },
-		"dracmon",
-		{ "name": "biyomon", "for": "ornismon" },
-		{ "name": "patamon", "for": "bagramon" },
-		{ "name": "hyokomon", "for": "devitamamon" },
-		"keramon",
-		"algomon",
-		{ "name": "kimeramon", "for": "moonmillenniumon" },
-		{ "name": "omegamon_merciful_mode", "for": "omegamon" }
-	],
-	"size": 7
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shademon_nene",
+                "color": [
+                    "human"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "digitamamon",
+                "from": [
+                    [
+                        2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "devitamamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shademon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "orochimon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "nidhoggmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "kuramon",
+                "color": "dark",
+                "from": null
+            },
+            {
+                "name": "negamon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "soundbirdmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "eyesmon",
+                "color": [
+                    "dark"
+                ],
+                "skins": [
+                    "eyesmon_scatter_mode"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "negamon_evolved",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "abbadomon",
+                "color": [
+                    "dark",
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "abbadomon_core",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "raremon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "rareraremon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "deathmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "skins": []
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "duskmon",
+                "from": [
+                    [
+                        -2,
+                        -1.5
+                    ]
+                ],
+                "ySize": 2,
+                "color": [
+                    "dark"
+                ]
+            },
+            null,
+            {
+                "name": "deathmon_black",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "velgrmon",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "ySize": 2,
+                "color": [
+                    "slide"
+                ]
+            },
+            null,
+            {
+                "name": "ornismon",
+                "from": [
+                    [
+                        0,
+                        -1.5
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "snakemon",
+            "from": "nidhoggmon"
+        },
+        {
+            "name": "terriermon",
+            "for": "luminamon_nene"
+        },
+        {
+            "name": "numemon",
+            "from": "raremon"
+        },
+        "dracmon",
+        {
+            "name": "biyomon",
+            "for": "ornismon"
+        },
+        "keramon",
+        {
+            "name": "goblimon",
+            "for": "digitamamon"
+        },
+        {
+            "name": "hyokomon",
+            "for": "devitamamon"
+        },
+        "algomon",
+        {
+            "name": "patamon",
+            "for": "bagramon"
+        },
+        {
+            "name": "kimeramon",
+            "for": "moonmillenniumon"
+        },
+        {
+            "name": "omegamon_merciful_mode",
+            "for": "omegamon"
+        }
+    ],
+    "size": 7
 }
