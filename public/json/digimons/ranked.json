@@ -1827,7 +1827,6 @@
             "to": [
                 "growlmon",
                 "growlmon_orange",
-                "guilmon_black",
                 "punkmon",
                 "tyranomon",
                 "darktyranomon"
@@ -4245,32 +4244,51 @@
         },
         "growlmon": {
             "name": "growlmon",
+            "variants": [
+                "growlmon_black",
+                "growlmon_orange",
+                "punkmon"
+            ],
+            "x": [
+                "growlmon_x"
+            ],
             "from": [
                 "guilmon"
             ],
             "to": [
                 "wargrowlmon"
-            ],
-            "x": [
-                "growlmon_x"
             ]
         },
         "growlmon_black": {
             "name": "growlmon_black",
+            "variants": [
+                "growlmon",
+                "punkmon",
+                "growlmon_orange"
+            ],
             "from": [
-                "guilmon_black"
+                "guilmon_black",
+                "agumon_black"
             ],
             "to": [
-                "black_wargrowlmon"
+                "black_wargrowlmon",
+                "loudmon"
             ]
         },
         "growlmon_orange": {
             "name": "growlmon_orange",
+            "variants": [
+                "growlmon",
+                "growlmon_black",
+                "punkmon"
+            ],
             "from": [
-                "guilmon"
+                "guilmon",
+                "agumon"
             ],
             "to": [
-                "wargrowlmon_orange"
+                "wargrowlmon_orange",
+                "duramon"
             ]
         },
         "guardromon": {
@@ -4855,11 +4873,18 @@
         },
         "punkmon": {
             "name": "punkmon",
+            "variants": [
+                "growlmon_black",
+                "growlmon",
+                "growlmon_orange"
+            ],
             "from": [
+                "impmon",
                 "guilmon_black"
             ],
             "to": [
-                "loudmon"
+                "loudmon",
+                "black_wargrowlmon"
             ]
         },
         "raptordramon": {
@@ -8092,8 +8117,14 @@
         },
         "loudmon": {
             "name": "loudmon",
+            "variants": [
+                "black_wargrowlmon",
+                "wargrowlmon",
+                "wargrowlmon_orange"
+            ],
             "from": [
-                "punkmon"
+                "punkmon",
+                "growlmon_black"
             ],
             "to": [
                 "heavymetaldramon"
@@ -8205,15 +8236,17 @@
         },
         "mammon": {
             "name": "mammon",
-            "from": [
-                "elephantmon",
-                "baluchimon"
-            ],
-            "to": [
-                "skullmammon"
-            ],
             "x": [
                 "mammon_x"
+            ],
+            "from": [
+                "elephantmon",
+                "baluchimon",
+                "frigimon"
+            ],
+            "to": [
+                "skullmammon",
+                "ancientmegatheriumon"
             ]
         },
         "maneuvermon": {
@@ -9181,22 +9214,42 @@
         },
         "wargrowlmon": {
             "name": "wargrowlmon",
+            "variants": [
+                "black_wargrowlmon",
+                "wargrowlmon_orange",
+                "loudmon"
+            ],
+            "x": [
+                "wargrowlmon_x"
+            ],
             "from": [
                 "growlmon"
             ],
             "to": [
-                "suijinmon",
                 "gallantmon",
-                "megidramon"
-            ],
-            "x": [
-                "wargrowlmon_x"
+                "megidramon",
+                "medievalgallantmon",
+                "suijinmon",
+                "chaosdramon",
+                "rusttyranomon"
             ]
         },
         "wargrowlmon_orange": {
             "name": "wargrowlmon_orange",
+            "variants": [
+                "wargrowlmon",
+                "black_wargrowlmon",
+                "loudmon"
+            ],
             "from": [
-                "growlmon_orange"
+                "growlmon_orange",
+                "raptordramon"
+            ],
+            "to": [
+                "gallantmon",
+                "medievalgallantmon",
+                "wargreymon",
+                "victorygreymon"
             ]
         },
         "warumonzaemon": {
@@ -10638,11 +10691,12 @@
         },
         "chaosgallantmon": {
             "name": "chaosgallantmon",
+            "modes": [
+                "megidramon",
+                "gallantmon_chaos_mode"
+            ],
             "from": [
                 "black_wargrowlmon"
-            ],
-            "to": [
-                "gallantmon_chaos_mode"
             ]
         },
         "chaosmetalseadramon": {
@@ -10928,23 +10982,19 @@
         },
         "gallantmon": {
             "name": "gallantmon",
-            "from": [
-                "wargrowlmon"
+            "variants": [
+                "chaosgallantmon",
+                "medievalgallantmon"
             ],
-            "to": [
+            "modes": [
                 "gallantmon_crimson_mode"
-            ]
-        },
-        "gallantmon_chaos_mode": {
-            "name": "gallantmon_chaos_mode",
+            ],
+            "x": [
+                "gallantmon_x"
+            ],
             "from": [
-                "chaosgallantmon"
-            ]
-        },
-        "gallantmon_crimson_mode": {
-            "name": "gallantmon_crimson_mode",
-            "from": [
-                "gallantmon"
+                "wargrowlmon",
+                "knightmon"
             ]
         },
         "gankoomon": {
@@ -11032,6 +11082,9 @@
         },
         "heavymetaldramon": {
             "name": "heavymetaldramon",
+            "variants": [
+                "megidramon"
+            ],
             "from": [
                 "gigadramon",
                 "loudmon"
@@ -11344,8 +11397,20 @@
         },
         "megidramon": {
             "name": "megidramon",
+            "variants": [
+                "heavymetaldramon"
+            ],
+            "modes": [
+                "chaosgallantmon"
+            ],
+            "x": [
+                "megidramon_x"
+            ],
             "from": [
-                "wargrowlmon"
+                "wargrowlmon",
+                "megadramon",
+                "burninggreymon",
+                "black_wargrowlmon"
             ]
         },
         "mercurymon": {
@@ -11900,7 +11965,8 @@
             ],
             "from": [
                 "mammon",
-                "skullbaluchimon"
+                "skullbaluchimon",
+                "skullgreymon"
             ]
         },
         "slashangemon": {
@@ -12284,6 +12350,22 @@
             "modes": [
                 "bacchusmon"
             ]
+        },
+        "medievalgallantmon": {
+            "name": "medievalgallantmon",
+            "variants": [
+                "gallantmon",
+                "chaosgallantmon"
+            ],
+            "modes": [
+                "gallantmon_x"
+            ],
+            "from": [
+                "wargrowlmon",
+                "wargrowlmon_x",
+                "grandgalemon",
+                "mistymon"
+            ]
         }
     },
     "Mega X": {
@@ -12422,8 +12504,12 @@
         },
         "gallantmon_x": {
             "name": "gallantmon_x",
-            "to": [
+            "modes": [
                 "medievalgallantmon"
+            ],
+            "from": [
+                "gallantmon",
+                "wargrowlmon_x"
             ]
         },
         "gankoomon_x": {
@@ -12506,15 +12592,12 @@
         "magnadramon_x": {
             "name": "magnadramon_x"
         },
-        "medievalgallantmon": {
-            "name": "medievalgallantmon",
-            "from": [
-                "gallantmon_x",
-                "grandgalemon"
-            ]
-        },
         "megidramon_x": {
-            "name": "megidramon_x"
+            "name": "megidramon_x",
+            "from": [
+                "megidramon",
+                "wargrowlmon_x"
+            ]
         },
         "metalpiranimon": {
             "name": "metalpiranimon",
@@ -13178,6 +13261,24 @@
             "name": "jupitermon_wrath_mode",
             "from": [
                 "jupitermon"
+            ]
+        },
+        "gallantmon_chaos_mode": {
+            "name": "gallantmon_chaos_mode",
+            "variants": [
+                "gallantmon_crimson_mode"
+            ],
+            "from": [
+                "chaosgallantmon"
+            ]
+        },
+        "gallantmon_crimson_mode": {
+            "name": "gallantmon_crimson_mode",
+            "variants": [
+                "gallantmon_chaos_mode"
+            ],
+            "from": [
+                "gallantmon"
             ]
         }
     },
