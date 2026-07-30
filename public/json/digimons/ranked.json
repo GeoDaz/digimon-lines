@@ -2926,8 +2926,8 @@
 		},
 		"unimon": {
 			"name": "unimon",
-			"from": ["patamon"],
-			"to": ["chirinmon"]
+			"from": ["patamon", "kudamon", "takinmon", "elecmon"],
+			"to": ["chirinmon", "hippogriffomon", "angewomon"]
 		},
 		"veedramon": {
 			"name": "veedramon",
@@ -3899,7 +3899,7 @@
 		"angewomon": {
 			"name": "angewomon",
 			"x": ["angewomon_x"],
-			"from": ["gatomon", "nefertimon", "darcmon", "sistermon_ciel"],
+			"from": ["gatomon", "nefertimon", "darcmon", "sistermon_ciel", "unimon"],
 			"to": [
 				"ophanimon_falldown_mode",
 				"ophanimon",
