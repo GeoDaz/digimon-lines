@@ -4604,16 +4604,20 @@
         },
         "leomon": {
             "name": "leomon",
+            "variants": [
+                "panjyamon"
+            ],
+            "x": [
+                "leomon_x"
+            ],
             "from": [
                 "elecmon",
                 "liolmon"
             ],
             "to": [
                 "grapleomon",
-                "panjyamon"
-            ],
-            "x": [
-                "leomon_x"
+                "panjyamon",
+                "loaderliomon"
             ]
         },
         "liamon": {
@@ -8617,7 +8621,9 @@
                 "cougarmon"
             ],
             "to": [
-                "leopardmon"
+                "habakirimon",
+                "leopardmon",
+                "bancholeomon"
             ]
         },
         "myotismon": {
@@ -8764,17 +8770,21 @@
         },
         "panjyamon": {
             "name": "panjyamon",
-            "from": [
-                "frigimon",
+            "variants": [
                 "leomon"
-            ],
-            "to": [
-                "bancholeomon",
-                "regulumon",
-                "saberleomon"
             ],
             "x": [
                 "panjyamon_x"
+            ],
+            "from": [
+                "frigimon",
+                "leomon",
+                "hyogamon"
+            ],
+            "to": [
+                "saberleomon",
+                "bancholeomon",
+                "regulumon"
             ]
         },
         "parrotmon": {
@@ -9778,6 +9788,13 @@
                 "metalgreymon_blue_2",
                 "deckerdramon"
             ]
+        },
+        "habakirimon": {
+            "name": "habakirimon",
+            "from": [
+                "murasamemon",
+                "asuramon"
+            ]
         }
     },
     "Ultimate+": {
@@ -10661,7 +10678,13 @@
             "from": [
                 "grapleomon",
                 "loaderliomon",
-                "panjyamon"
+                "panjyamon",
+                "murasamemon"
+            ],
+            "to": [
+                "chaosmon",
+                "chaosmon_valdur_arm",
+                "ultimatechaosmon"
             ]
         },
         "bancholilimon": {
@@ -11543,7 +11566,8 @@
         "marsmon": {
             "name": "marsmon",
             "from": [
-                "grapleomon"
+                "grapleomon",
+                "greatgrizzlymon"
             ]
         },
         "mastemon": {
@@ -12113,9 +12137,9 @@
         "shivamon": {
             "name": "shivamon",
             "from": [
-                "asuramon",
                 "climbmon",
-                "kongoumon"
+                "kongoumon",
+                "asuramon"
             ]
         },
         "shoutmon_x5b": {
@@ -13081,9 +13105,6 @@
             "fusionFrom": [
                 "bancholeomon",
                 "valdurmon"
-            ],
-            "to": [
-                "ultimatechaosmon"
             ]
         },
         "huanglongmon": {
@@ -13391,7 +13412,9 @@
         "tlalocmon": {
             "name": "tlalocmon",
             "from": [
-                "ghilliedhumon",
+                "ghilliedhumon"
+            ],
+            "fusionFrom": [
                 "eldoradimon",
                 "saberleomon"
             ]
@@ -13565,9 +13588,6 @@
                 "darkdramon",
                 "valdurmon",
                 "kentaurosmon"
-            ],
-            "from": [
-                "chaosmon_valdur_arm"
             ]
         },
         "shoutmon_x7_superior_mode": {

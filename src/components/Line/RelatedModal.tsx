@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
-import LineImage from '@/components/Line/LineImage';
-import ButtonRemove from '@/components/Button/ButtonRemove';
-import SearchBar from '@/components/SearchBar';
-import { capitalize } from '@/functions';
+import DigimonField from '@/components/Line/DigimonField';
 import { LineRelation } from '@/types/Line';
 
 interface Props {
@@ -63,23 +60,23 @@ const RelatedModal: React.FC<Props> = ({ show, onClose, onSubmit, initial }) => 
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
-				<RelationField
+				<DigimonField
 					title="Line"
-					value={form.name}
+					values={form.name ? [form.name] : []}
 					onSelect={name => setForm(f => ({ ...f, name }))}
-					onClear={() => setForm(f => ({ ...f, name: '' }))}
+					onRemove={() => setForm(f => ({ ...f, name: '' }))}
 				/>
-				<RelationField
+				<DigimonField
 					title="For"
-					value={form.for}
+					values={form.for ? [form.for] : []}
 					onSelect={value => setForm(f => ({ ...f, for: value }))}
-					onClear={() => setForm(f => ({ ...f, for: '' }))}
+					onRemove={() => setForm(f => ({ ...f, for: '' }))}
 				/>
-				<RelationField
+				<DigimonField
 					title="From"
-					value={form.from}
+					values={form.from ? [form.from] : []}
 					onSelect={value => setForm(f => ({ ...f, from: value }))}
-					onClear={() => setForm(f => ({ ...f, from: '' }))}
+					onRemove={() => setForm(f => ({ ...f, from: '' }))}
 				/>
 			</Modal.Body>
 			<Modal.Footer>
@@ -93,33 +90,5 @@ const RelatedModal: React.FC<Props> = ({ show, onClose, onSubmit, initial }) => 
 		</Modal>
 	);
 };
-
-const RelationField: React.FC<{
-	title: string;
-	value: string;
-	onSelect: (value: string) => void;
-	onClear: () => void;
-}> = ({ title, value, onSelect, onClear }) => (
-	<div className="mb-3">
-		<h5>{title}</h5>
-		<SearchBar
-			label="Search a Digimon"
-			onSubmit={(v?: string) => v && onSelect(v)}
-			voidOnSubmit
-		/>
-		{value && (
-			<div className="d-flex align-items-center gap-2 p-2 rounded border position-relative">
-				<LineImage name={value} width={40} height={40} zoomable={false} />
-				<span className="text-capitalize">{capitalize(value)}</span>
-				<ButtonRemove
-					size="sm"
-					className="ms-auto"
-					title="Remove"
-					onClick={onClear}
-				/>
-			</div>
-		)}
-	</div>
-);
 
 export default RelatedModal;

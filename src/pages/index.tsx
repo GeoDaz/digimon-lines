@@ -15,6 +15,15 @@ import { stringToKey } from '@/functions';
 import { StringArrayObject } from '@/types/Ui';
 import { APPMON } from '@/consts/ui';
 import Link from 'next/link';
+import Icon from '@/components/Icon';
+import NewsModal from '@/components/Line/NewsModal';
+import useSaveNews from '@/hooks/useSaveNews';
+import { SearchContext } from '@/context/search';
+import Search from '@/types/Search';
+import { getDubNames, getDubbedSearchList } from '@/functions/search';
+import { getDirPaths } from '@/functions/file';
+import { BASE_IMG_SIZE } from '@/consts/grid';
+import { IS_DEV } from '@/consts/env';
 
 const SEARCH = 'search';
 const defaultData = {
@@ -30,6 +39,8 @@ interface Props {
 	fusions: LineThumb[];
 	appmons: LineThumb[];
 	searchList: Record<string, string[]>;
+	/** Digimon autocompletion, only built in dev for the news edition. */
+	digimonSearch?: Search;
 }
 const PageLines: React.FC<Props> = props => {
 	const { search: searchParam } = useQueryParam(SEARCH) || props;
@@ -38,6 +49,11 @@ const PageLines: React.FC<Props> = props => {
 	const [fusions, setFusions] = useState<LineThumb[]>(props.fusions);
 	const [appmons, setAppmons] = useState<LineThumb[]>(props.appmons);
 	const [search, setSearch] = useState<string>(searchParam);
+	const [showNewsModal, setShowNewsModal] = useState(false);
+	const saveNews = useSaveNews(setNews);
+
+	// News edition is a dev only tool, and the list is hidden while searching.
+	const editableNews = IS_DEV && !search;
 
 	useEffect(() => {
 		if (!search) {
@@ -75,6 +91,11 @@ const PageLines: React.FC<Props> = props => {
 		setSearch(sanitizedSearch);
 	};
 
+	const handleAddNews = (thumb: LineThumb) => {
+		// A line can only appear once in the news, the newest comes first.
+		saveNews([thumb, ...news.filter(item => item.name !== thumb.name)]);
+	};
+
 	return (
 		<Layout
 			noGoBack
@@ -98,10 +119,13 @@ const PageLines: React.FC<Props> = props => {
 				width={300}
 			/>
 			<>
-				{news.length > 0 && (
+				{(news.length > 0 || editableNews) && (
 					<div>
 						<h2>News&nbsp;:</h2>
-						<LineRow lines={news} />
+						<LineRow
+							lines={news}
+							onAdd={editableNews ? () => setShowNewsModal(true) : undefined}
+						/>
 						<h2>Families&nbsp;:</h2>
 					</div>
 				)}
@@ -119,11 +143,28 @@ const PageLines: React.FC<Props> = props => {
 					</div>
 				)}
 			</>
+			{editableNews && (
+				<SearchContext.Provider value={props.digimonSearch}>
+					<NewsModal
+						show={showNewsModal}
+						onClose={() => setShowNewsModal(false)}
+						onSubmit={handleAddNews}
+					/>
+				</SearchContext.Provider>
+			)}
 		</Layout>
 	);
 };
 
-const LineRow = ({ lines, type }: { lines: LineThumb[]; type?: string }) => (
+const LineRow = ({
+	lines,
+	type,
+	onAdd,
+}: {
+	lines: LineThumb[];
+	type?: string;
+	onAdd?: () => void;
+}) => (
 	<div className="line-wrapper">
 		<Row className="line-row">
 			{lines.map((line, i) => (
@@ -144,6 +185,19 @@ const LineRow = ({ lines, type }: { lines: LineThumb[]; type?: string }) => (
 					</LinePoint>
 				</Col>
 			))}
+			{!!onAdd && (
+				<Col>
+					<button
+						type="button"
+						className="btn btn-outline-secondary d-flex align-items-center justify-content-center rounded"
+						style={{ width: BASE_IMG_SIZE, height: BASE_IMG_SIZE }}
+						title="Add a news line"
+						onClick={onAdd}
+					>
+						<Icon name="plus" style={{ fontSize: '3rem' }} />
+					</button>
+				</Col>
+			)}
 		</Row>
 	</div>
 );
@@ -193,8 +247,13 @@ export const getStaticProps: GetStaticProps = async () => {
 			checkLineAvailability(appmon, searchList, 'appmons')
 		);
 
+		// Only shipped in dev : it feeds the news edition autocompletion.
+		const digimonSearch =
+			IS_DEV ? getDubbedSearchList(getDirPaths('images/digimon'), getDubNames())
+			:	null;
+
 		return {
-			props: { news, lines, fusions, appmons, searchList },
+			props: { news, lines, fusions, appmons, searchList, digimonSearch },
 		};
 	} catch (e) {
 		console.error(e);
