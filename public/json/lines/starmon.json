@@ -1,147 +1,150 @@
 {
     "columns": [
-      [
-        null,
-        null,
-        null,
-        {
-          "name": "starmon_x",
-          "color": [
-            "x"
-          ],
-          "from": [
-            [
-              1,
-              0
-            ]
-          ]
-        },
-        null,
-        {
-          "name": "justimon_x",
-          "color": [
-            "x"
-          ],
-          "from": [
-            [
-              1,
-              0
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "name": "chibickmon",
-          "from": null
-        },
-        {
-          "name": "pickmon"
-        },
-        {
-          "name": "starmons"
-        },
-        {
-          "name": "starmon"
-        },
-        {
-          "name": "superstarmon"
-        },
-        {
-            "name": "justimon",
-            "skins": ["justimon_critical_arm", "justimon_accel_arm"]
-        }
-      ],
-      [
-        null,
-        null,
-        null,
-        null,
-        {
-          "name": "darksuperstarmon",
-          "color": [
-            "dark"
-          ],
-          "from": [
-            [
-              -1,
-              -1
-            ]
-          ]
-        },
-        {
-          "name": "beelstarmon",
-          "from": [
-            [
-              0,
-              -1
-            ]
-          ],
-          "color": [
-            "dark"
-          ]
-        }
-      ],
-      [
-        null,
-        null,
-        null,
-        {
-          "name": "shootingstarmon",
-          "color": [
-            "gold"
-          ],
-          "from": [
-            [
-              -2,
-              -1
-            ]
-          ]
-        },
-        null,
-        {
-          "name": "beelstarmon_x",
-          "from": [
-            [
-              -1,
-              0
-            ]
-          ],
-          "color": [
-            "x"
-          ]
-        }
-      ]
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "starmon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "justimon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "chibickmon",
+                "from": null
+            },
+            {
+                "name": "pickmon"
+            },
+            {
+                "name": "starmons"
+            },
+            {
+                "name": "starmon"
+            },
+            {
+                "name": "superstarmon"
+            },
+            {
+                "name": "justimon",
+                "skins": [
+                    "justimon_critical_arm",
+                    "justimon_accel_arm"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "darksuperstarmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "beelstarmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shootingstarmon",
+                "color": [
+                    "gold"
+                ],
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "beelstarmon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            }
+        ]
     ],
     "related": [
-      {
-        "name": "monodramon",
-        "from": "justimon"
-      },
-      {
-        "name": "shoutmon",
-        "for": "shoutmon_x4"
-      },
-      {
-        "name": "toyagumon",
-        "for": "revolmon"
-      },
-      {
-        "name": "impmon",
-        "from": "beelstarmon"
-      },
-      {
-        "name": "sistermon_blanc",
-        "from": "beelstarmon"
-      },
-      {
-        "name": "bearmon",
-        "for": "pandamon"
-      },
-      {
-        "name": "kakamon",
-        "for": "gankoomon"
-      }
+        {
+            "name": "monodramon",
+            "from": "justimon"
+        },
+        {
+            "name": "shoutmon",
+            "for": "shoutmon_x4"
+        },
+        {
+            "name": "toyagumon",
+            "for": "revolmon"
+        },
+        {
+            "name": "impmon",
+            "from": "beelstarmon"
+        },
+        {
+            "name": "sistermon_blanc",
+            "from": "beelstarmon"
+        },
+        {
+            "name": "shoemon",
+            "for": "pandamon"
+        },
+        {
+            "name": "kakamon",
+            "for": "gankoomon"
+        }
     ],
     "size": 6
-  }
+}

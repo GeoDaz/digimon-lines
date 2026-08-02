@@ -1,48 +1,68 @@
 {
-	"columns": [
-		[
-			{
-				"name": "botamon"
-			},
-			{
-				"name": "koromon"
-			},
-			{
-				"name": "hackmon"
-			},
-			{
-				"name": "baohackmon"
-			},
-			{
-				"name": "saviorhackmon"
-			},
-			{
-				"name": "jesmon"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "jesmon_x",
-				"color": "x",
-				"from": [-1, 0]
-			},
-			{
-				"name": "jesmon_gx",
-				"color": "fusion"
-			}
-		]
-	],
-	"related": [
-		{ "name": "app_hackmon" },
-		"zubamon",
-		{
-			"name": "kakamon",
-			"for": "gankoomon"
-		}
-	]
+    "columns": [
+        [
+            {
+                "name": "botamon",
+                "from": null
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "hackmon"
+            },
+            {
+                "name": "baohackmon"
+            },
+            {
+                "name": "saviorhackmon"
+            },
+            {
+                "name": "jesmon"
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "jesmon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "jesmon_gx",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "app_hackmon"
+        },
+        "zubamon",
+        {
+            "name": "shoemon",
+            "for": "gankoomon"
+        }
+    ],
+    "size": 7
 }

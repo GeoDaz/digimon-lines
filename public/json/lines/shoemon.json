@@ -1,106 +1,324 @@
 {
-	"columns": [
-		[
-			{
-				"name": "pafumon",
-				"from": null
-			},
-			{ "name": "kyaromon", "xCollapsable": true, "yCollapsable": false },
-			{ "name": "shoemon", "xCollapsable": true, "yCollapsable": false },
-			{ "name": "shoeshoemon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "chaperomon", "xCollapsable": false, "yCollapsable": false },
-			{ "name": "cendrillmon", "xCollapsable": true, "yCollapsable": true },
-			{ "name": "nyabootmon", "xCollapsable": true, "yCollapsable": true }
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "tobucatmon",
-				"from": [[-1, -1]]
-			},
-			{
-				"name": "pandamon",
-				"from": [[0, -1]],
-				"skins": [],
-				"color": ["x"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "porcupamon",
-				"from": [[-2, -1]],
-				"color": ["dark"]
-			},
-			{
-				"name": "warumonzaemon",
-				"from": [[0, -1]],
-				"color": ["dark"]
-			},
-			{
-				"name": "shinmonzaemon",
-				"from": [
-					[0, -1],
-					[-1, -1],
-					[1, -1]
-				],
-				"color": ["dark", "dark", "dark"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "dogmon",
-				"from": [[-3, -1]]
-			},
-			{
-				"name": "monzaemon",
-				"from": [[0, -1]]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "monzaemon_x",
-				"from": [[-1, 0]],
-				"color": ["x"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "extyranomon",
-				"from": [[-2, -1]]
-			},
-			null
-		]
-	],
-	"related": [
-		{ "name": "sukamon", "for": "tyumon" },
-		{ "name": "sukamon", "for": "targetmon" },
-		{ "name": "wankomon", "for": "dogmon" },
-		{ "name": "wizardmon", "from": "chaperomon" },
-		{ "name": "gatomon", "from": "nyabootmon" },
-		{ "name": "bearmon", "for": "monzaemon" },
-		{ "name": "tyranomon", "for": "extyranomon" },
-		{ "name": "gatomon", "for": "venusmon" },
-		{ "name": "gatomon", "for": "junomon" },
-		{ "name": "pulsemon", "for": "footmon" }
-	],
-	"size": 6
+    "columns": [
+        [
+            {
+                "name": "pafumon",
+                "from": null
+            },
+            {
+                "name": "kyaromon"
+            },
+            {
+                "name": "shoemon"
+            },
+            {
+                "name": "shoeshoemon"
+            },
+            {
+                "name": "chaperomon"
+            },
+            {
+                "name": "cendrillmon"
+            },
+            {
+                "name": "nyabootmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tobucatmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "jokermon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "piemon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "chaospiemon"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "clockmon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "fantomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "porcupamon",
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "warumonzaemon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "dogmon",
+                "from": [
+                    [
+                        -4,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "monzaemon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "shinmonzaemon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark",
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "monzaemon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "extyranomon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "gankoomon_x",
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "panbachimon",
+                "from": [
+                    [
+                        -7,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "kangarumon",
+                "from": [
+                    [
+                        -7,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "pandamon",
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "skins": []
+            },
+            {
+                "name": "gankoomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "pulsemon",
+            "for": "footmon"
+        },
+        {
+            "name": "sukamon",
+            "for": "targetmon"
+        },
+        {
+            "name": "sukamon",
+            "for": "tyumon"
+        },
+        {
+            "name": "numemon",
+            "for": "monzaemon"
+        },
+        "pristimon",
+        {
+            "name": "bearmon",
+            "from": "monzaemon"
+        },
+        {
+            "name": "wankomon",
+            "from": "dogmon"
+        },
+        {
+            "name": "wizardmon",
+            "from": "chaperomon"
+        },
+        {
+            "name": "gatomon",
+            "from": "nyabootmon"
+        },
+        {
+            "name": "tyranomon",
+            "for": "extyranomon"
+        },
+        {
+            "name": "bakemon",
+            "for": "fantomon"
+        },
+        {
+            "name": "hagurumon",
+            "for": "clockmon"
+        },
+        "toyagumon",
+        {
+            "name": "pulsemon",
+            "for": "gankoomon"
+        },
+        {
+            "name": "hackmon",
+            "for": "jesmon_gx"
+        },
+        {
+            "name": "starmon",
+            "for": "justimon"
+        }
+    ],
+    "size": 7
 }

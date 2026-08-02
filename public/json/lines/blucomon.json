@@ -1,117 +1,111 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			{
-				"name": "snowgoblimon",
-				"from": [[1, -1]],
-				"color": ["ice"]
-			},
-			{
-				"name": "hyogamon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": ["ice", "ice"]
-			},
-			{
-				"name": "frozomon",
-				"from": [[0, -1]],
-				"color": ["ice"]
-			},
-			{
-				"name": "frosvelgrmon",
-				"color": ["ice", "ice"],
-				"from": [
-					[1, -1],
-					[0, -1]
-				]
-			}
-		],
-		[
-			{
-				"name": "snowbotamon",
-				"from": null
-			},
-			{
-				"name": "hiyarimon",
-				"color": "ice"
-			},
-			{
-				"name": "blucomon",
-				"color": "ice"
-			},
-			{
-				"name": "paledramon",
-				"color": "ice"
-			},
-			{
-				"name": "cryspaledramon",
-				"color": "ice"
-			},
-			{
-				"name": "hexeblaumon",
-				"color": "ice"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "frigimon",
-				"color": ["ice"],
-				"from": [[-1, -1]],
-				"skins": ["mudfrigimon"]
-			},
-			{
-				"name": "polarbearmon",
-				"color": ["ice"]
-			},
-			{
-				"name": "skadimon",
-				"color": ["ice"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "sorcerymon",
-				"from": [[-2, -1]],
-				"color": ["ice"]
-			},
-			{
-				"name": "panjyamon",
-				"from": [[-1, -1]],
-				"color": ["ice"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "icedevimon",
-				"from": [[-3, -1]],
-				"color": ["ice"]
-			},
-			null,
-			null
-		]
-	],
-	"related": [
-		"vorvomon",
-		"jazamon",
-		{ "name": "bearmon", "from": "frigimon" },
-		{ "name": "penmon", "for": "frosvelgrmon" },
-		{ "name": "renamon", "for": "yukinamon" },
-		{ "name": "ogremon", "for": "hyogamon" },
-		{ "name": "leomon", "for": "panjyamon" }
-	],
-	"size": 6
+    "columns": [
+        [
+            {
+                "name": "snowbotamon",
+                "from": null
+            },
+            {
+                "name": "hiyarimon",
+                "color": [
+                    "ice"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "blucomon",
+                "color": [
+                    "ice"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "paledramon",
+                "color": [
+                    "ice"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "cryspaledramon",
+                "color": [
+                    "ice"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "hexeblaumon",
+                "color": [
+                    "ice"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "vorvomon",
+        "jazamon",
+        {
+            "name": "penmon",
+            "for": "frosvelgrmon"
+        },
+        {
+            "name": "bearmon",
+            "for": "frigimon"
+        },
+        {
+            "name": "renamon",
+            "for": "yukinamon"
+        },
+        {
+            "name": "ogremon",
+            "for": "hyogamon"
+        },
+        {
+            "name": "leomon",
+            "for": "panjyamon"
+        },
+        {
+            "name": "demidevimon",
+            "for": "icedevimon"
+        },
+        {
+            "name": "hagurumon",
+            "for": "frozomon"
+        },
+        {
+            "name": "greymon",
+            "for": "snowagumon"
+        },
+        {
+            "name": "wizardmon",
+            "for": "sorcerymon"
+        }
+    ],
+    "size": 6
 }

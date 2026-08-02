@@ -158,8 +158,8 @@
 		"field": ["Unknown", "Nightmare Soldiers", "Dragon's Roar"],
 		"variants": []
 	},
-	"metalgreymonvirus": {
-		"name": "metalgreymonvirus",
+	"metalgreymon_blue": {
+		"name": "metalgreymon_blue",
 		"year": "1997",
 		"url": "https://wikimon.net/Metal_Greymon_(Virus)",
 		"level": "Ultimate",
@@ -1256,8 +1256,8 @@
 		"field": ["Nightmare Soldiers", "Unknown", "Virus Busters"],
 		"variants": []
 	},
-	"atlurkabuterimonred": {
-		"name": "atlurkabuterimonred",
+	"atlurkabuterimon": {
+		"name": "atlurkabuterimon",
 		"year": "1999",
 		"url": "https://wikimon.net/Atlur_Kabuterimon_(Red)",
 		"level": "Ultimate",
@@ -10256,8 +10256,8 @@
 		"attribute": ["Virus", "None"],
 		"variants": []
 	},
-	"skullknightmon_cavalier_mode": {
-		"name": "skullknightmon_cavalier_mode",
+	"skullknightmon_cavalier": {
+		"name": "skullknightmon_cavalier",
 		"year": "2010",
 		"url": "https://wikimon.net/Skull_Knightmon:_Cavalier_Mode",
 		"level": ["Champion", "Mega"],
@@ -10519,8 +10519,8 @@
 		"field": "Nightmare Soldiers",
 		"variants": []
 	},
-	"darknessbagramondarkknightmon": {
-		"name": "darknessbagramondarkknightmon",
+	"darkknightmon_bagramon": {
+		"name": "darkknightmon_bagramon",
 		"year": "2011",
 		"url": "https://wikimon.net/Darkness_Bagramon_(Dark_Knightmon)",
 		"level": ["Mega", "Mega+"],
@@ -11365,8 +11365,8 @@
 		"attribute": "Vaccine",
 		"variants": []
 	},
-	"bagramonarchangelform": {
-		"name": "bagramonarchangelform",
+	"bagramon_archangel_form": {
+		"name": "bagramon_archangel_form",
 		"year": "2012",
 		"variants": []
 	},
@@ -12747,8 +12747,8 @@
 		"attribute": "Data",
 		"variants": []
 	},
-	"metalgreymonvirusx": {
-		"name": "metalgreymonvirusx",
+	"metalgreymon_blue_x": {
+		"name": "metalgreymon_blue_x",
 		"year": "2019",
 		"url": "https://wikimon.net/Metal_Greymon_(Virus)_(X-Antibody)",
 		"level": "Ultimate",
@@ -12941,8 +12941,8 @@
 		"year": "2020",
 		"variants": []
 	},
-	"agumonyukinokizuna": {
-		"name": "agumonyukinokizuna",
+	"agumon_yuki_no_kizuma": {
+		"name": "agumon_yuki_no_kizuma",
 		"year": "2020",
 		"url": "https://wikimon.net/Agumon_-Yuki_no_Kizuna-",
 		"level": "Mega",
@@ -13133,8 +13133,8 @@
 		"attribute": "Virus",
 		"variants": []
 	},
-	"gabumonyujonokizuna": {
-		"name": "gabumonyujonokizuna",
+	"gabumon_yujo_no_kizuma": {
+		"name": "gabumon_yujo_no_kizuma",
 		"year": "2020",
 		"url": "https://wikimon.net/Gabumon_-Yujo_no_Kizuna-",
 		"level": "Mega",
@@ -13310,8 +13310,8 @@
 		"attribute": "None",
 		"variants": []
 	},
-	"negamonevolvedform": {
-		"name": "negamonevolvedform",
+	"negamon_evolved": {
+		"name": "negamon_evolved",
 		"year": "2020",
 		"variants": []
 	},
@@ -14617,6 +14617,16 @@
 		"Group": "Royal Base",
 		"variants": []
 	},
+	"queenbeemon_throne": {
+		"name": "queenbeemon_throne",
+		"year": "2024",
+		"url": "https://wikimon.net/Queenbeemon",
+		"level": "Mega",
+		"type": ["Cyborg", "Insect"],
+		"attribute": "Virus",
+		"Group": "Royal Base",
+		"variants": []
+	},
 	"ryugumon": {
 		"name": "ryugumon",
 		"year": "2024",
@@ -15138,6 +15148,258 @@
 		"url": "https://wikimon.net/Yukinamon",
 		"level": "Mega",
 		"type": "Ice-Snow",
+		"attribute": "Virus",
+		"variants": []
+	},
+	"neocrimson": {
+		"name": "neocrimson",
+		"year": "2000",
+		"url": "https://wikimon.net/Neo_Crimson",
+		"level": "Mega",
+		"attribute": "Virus",
+		"variants": []
+	},
+	"gargamon": {
+		"name": "gargamon",
+		"year": "2026",
+		"url": "https://wikimon.net/Gaagamon",
+		"level": "Rookie",
+		"variants": []
+	},
+	"kekkomon": {
+		"name": "kekkomon",
+		"year": "2025",
+		"url": "https://wikimon.net/Kekkomon",
+		"level": "Baby II",
+		"type": "Lesser",
+		"attribute": "None",
+		"variants": []
+	},
+	"kekomon": {
+		"name": "kekomon",
+		"year": "2025",
+		"url": "https://wikimon.net/Kekomon",
+		"level": "Baby I",
+		"type": "Slime",
+		"attribute": "None",
+		"variants": []
+	},
+	"ambromon": {
+		"name": "ambromon",
+		"year": "2026",
+		"url": "https://wikimon.net/Ambromon",
+		"level": "Ultimate",
+		"variants": []
+	},
+	"corvumon": {
+		"name": "corvumon",
+		"year": "2026",
+		"url": "https://wikimon.net/Corvumon",
+		"level": "Champion",
+		"variants": []
+	},
+	"hyemon": {
+		"name": "hyemon",
+		"year": "2025",
+		"url": "https://wikimon.net/Hyemon",
+		"level": "Rookie",
+		"type": "Beast",
+		"attribute": "Data",
+		"variants": []
+	},
+	"snakemon": {
+		"name": "snakemon",
+		"year": "2026",
+		"url": "https://wikimon.net/Snakemon",
+		"level": "Rookie",
+		"variants": []
+	},
+	"styracomon": {
+		"name": "styracomon",
+		"year": "2025",
+		"url": "https://wikimon.net/Styracomon",
+		"level": "Mega",
+		"type": "Dragon Man",
+		"attribute": "Data",
+		"variants": []
+	},
+	"taotiemon": {
+		"name": "taotiemon",
+		"year": "2025",
+		"url": "https://wikimon.net/Taotiemon",
+		"level": "Mega",
+		"type": "Oni",
+		"attribute": "Virus",
+		"Group": "Shikyoju",
+		"variants": []
+	},
+	"taowumon": {
+		"name": "taowumon",
+		"year": "2025",
+		"url": "https://wikimon.net/Taowumon",
+		"level": "Mega",
+		"type": "Demon Beast",
+		"attribute": "Virus",
+		"Group": "Shikyoju",
+		"variants": []
+	},
+	"vipermon": {
+		"name": "vipermon",
+		"year": "2026",
+		"url": "https://wikimon.net/Vipmon",
+		"level": "Champion",
+		"variants": []
+	},
+	"armalizamon": {
+		"name": "armalizamon",
+		"year": "2025",
+		"url": "https://wikimon.net/Arma_Lizamon",
+		"level": "Champion",
+		"type": "Reptile",
+		"attribute": "Data",
+		"variants": []
+	},
+	"azhdarmon": {
+		"name": "azhdarmon",
+		"year": "2026",
+		"url": "https://wikimon.net/Azhdarmon",
+		"level": "Ultimate",
+		"type": "Pterosaur",
+		"attribute": "Virus",
+		"variants": []
+	},
+	"bearcatmon": {
+		"name": "bearcatmon",
+		"year": "2026",
+		"url": "https://wikimon.net/Bearcatmon",
+		"level": "Ultimate",
+		"type": "Beast Man",
+		"attribute": "Vaccine",
+		"variants": []
+	},
+	"dullahamon": {
+		"name": "dullahamon",
+		"year": "2025",
+		"url": "https://wikimon.net/Dullahamon",
+		"level": "Mega",
+		"type": "Ghost",
+		"attribute": "Data",
+		"variants": []
+	},
+	"enbarrmon": {
+		"name": "enbarrmon",
+		"year": "2025",
+		"url": "https://wikimon.net/Enbarrmon",
+		"level": "Ultimate",
+		"type": "Undead",
+		"attribute": "Data",
+		"variants": []
+	},
+	"metatromon": {
+		"name": "metatromon",
+		"year": "2025",
+		"url": "https://wikimon.net/Metatromon",
+		"level": "Mega",
+		"type": "Machine",
+		"attribute": "Vaccine",
+		"variants": []
+	},
+	"rhamphomon": {
+		"name": "rhamphomon",
+		"year": "2026",
+		"url": "https://wikimon.net/Rhamphomon",
+		"level": "Champion",
+		"type": "Pterosaur",
+		"attribute": "Virus",
+		"variants": []
+	},
+	"wolvermon": {
+		"name": "wolvermon",
+		"year": "2025",
+		"url": "https://wikimon.net/Wolvermon",
+		"level": "Champion",
+		"type": "Cyborg",
+		"attribute": "Vaccine",
+		"variants": []
+	},
+	"craniummon_enbarrmon": {
+		"name": "craniummon_enbarrmon",
+		"year": "2025",
+		"url": "https://wikimon.net/Craniummon_+_Enbarrmon",
+		"level": "Mega",
+		"type": "Holy Knight",
+		"attribute": "Vaccine",
+		"Group": "Royal Knights",
+		"variants": []
+	},
+	"monarchlizamon": {
+		"name": "monarchlizamon",
+		"year": "2026",
+		"url": "https://wikimon.net/Monarch_Lizamon",
+		"level": "Ultimate",
+		"type": "Cyborg",
+		"attribute": "Data",
+		"variants": []
+	},
+	"panoptemon": {
+		"name": "panoptemon",
+		"year": "2026",
+		"url": "https://wikimon.net/Panoptemon",
+		"level": "Ultimate",
+		"variants": []
+	},
+	"vortexdramon": {
+		"name": "vortexdramon",
+		"year": "2025",
+		"url": "https://wikimon.net/Vortexdramon",
+		"level": "Mega",
+		"type": "Bird Dragon",
+		"attribute": "Data",
+		"Group": "Vortex Warriors",
+		"variants": []
+	},
+	"zombie_plutomon": {
+		"name": "zombie_plutomon",
+		"year": "2025",
+		"url": "https://wikimon.net/Zombie_Plutomon",
+		"level": "Mega",
+		"type": "Undead",
+		"attribute": "Virus",
+		"variants": []
+	},
+	"exmaquinamon": {
+		"name": "exmaquinamon",
+		"year": "2026",
+		"url": "https://wikimon.net/Ex_Maquinamon",
+		"level": "Mega",
+		"type": "Unique",
+		"attribute": "Data",
+		"variants": []
+	},
+	"greatgrizzlymon": {
+		"name": "greatgrizzlymon",
+		"year": "2025",
+		"url": "https://wikimon.net/Great_Gryzmon",
+		"level": "Ultimate",
+		"type": "Beast Man",
+		"attribute": "Vaccine",
+		"variants": []
+	},
+	"scourgechiropmon": {
+		"name": "scourgechiropmon",
+		"year": "2026",
+		"url": "https://wikimon.net/Scourge_Chiropmon",
+		"level": "Ultimate",
+		"type": "Machine",
+		"attribute": "Virus",
+		"variants": []
+	},
+	"titamon_skullbaluchimon": {
+		"name": "titamon_skullbaluchimon",
+		"year": "2025",
+		"url": "https://wikimon.net/Titamon_+_Skull_Baluchimon",
+		"level": "Mega",
+		"type": ["God Man", "Oni"],
 		"attribute": "Virus",
 		"variants": []
 	}

@@ -5,16 +5,37 @@
             null,
             null,
             {
+                "name": "mudfrigimon",
+                "from": [
+                    [
+                        2,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
                 "name": "burgamon_2",
                 "from": [
-                    1,
-                    -1
+                    [
+                        1,
+                        -1
+                    ]
                 ]
-            }
+            },
+            null,
+            null
         ],
         [
             {
-                "name": "cocomon"
+                "name": "cocomon",
+                "from": null
             },
             {
                 "name": "torikaraballmon"
@@ -27,7 +48,8 @@
             },
             {
                 "name": "jyagamon"
-            }
+            },
+            null
         ],
         [
             null,
@@ -35,8 +57,10 @@
             {
                 "name": "ebiburgamon",
                 "from": [
-                    -1,
-                    -1
+                    [
+                        -1,
+                        -1
+                    ]
                 ]
             },
             {
@@ -44,13 +68,47 @@
             },
             {
                 "name": "burpmon"
-            }
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "shortmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "weddinmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
         ]
     ],
     "related": [
         {
             "name": "sukamon",
             "for": "chohakkaimon"
+        },
+        {
+            "name": "gatomon",
+            "for": "shortmon"
+        },
+        {
+            "name": "bearmon",
+            "for": "mudfrigimon"
         }
-    ]
+    ],
+    "size": 6
 }
