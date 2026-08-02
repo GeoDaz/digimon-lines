@@ -15,14 +15,13 @@ import { stringToKey } from '@/functions';
 import { StringArrayObject } from '@/types/Ui';
 import { APPMON } from '@/consts/ui';
 import Link from 'next/link';
-import Icon from '@/components/Icon';
+import ButtonAdd from '@/components/Button/ButtonAdd';
 import NewsModal from '@/components/Line/NewsModal';
 import useSaveNews from '@/hooks/useSaveNews';
 import { SearchContext } from '@/context/search';
 import Search from '@/types/Search';
 import { getDubNames, getDubbedSearchList } from '@/functions/search';
 import { getDirPaths } from '@/functions/file';
-import { BASE_IMG_SIZE } from '@/consts/grid';
 import { IS_DEV } from '@/consts/env';
 
 const SEARCH = 'search';
@@ -187,15 +186,7 @@ const LineRow = ({
 			))}
 			{!!onAdd && (
 				<Col>
-					<button
-						type="button"
-						className="btn btn-outline-secondary d-flex align-items-center justify-content-center rounded"
-						style={{ width: BASE_IMG_SIZE, height: BASE_IMG_SIZE }}
-						title="Add a news line"
-						onClick={onAdd}
-					>
-						<Icon name="plus" style={{ fontSize: '3rem' }} />
-					</button>
+					<ButtonAdd title="Add a news line" onClick={onAdd} />
 				</Col>
 			)}
 		</Row>

@@ -2,12 +2,11 @@ import React, { useRef, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import LinePoint from '@/components/Line/LinePoint';
 import LineImage from '@/components/Line/LineImage';
-import Icon from '@/components/Icon';
 import ButtonRemove from '@/components/Button/ButtonRemove';
+import ButtonAdd from '@/components/Button/ButtonAdd';
 import RelatedModal from '@/components/Line/RelatedModal';
 import { makeClassName } from '@/functions';
 import { APPMON, LINE } from '@/consts/ui';
-import { BASE_IMG_SIZE } from '@/consts/grid';
 import { LineRelation } from '@/types/Line';
 
 type Related = Array<string | LineRelation>;
@@ -28,10 +27,12 @@ const RelatedLines: React.FC<Props> = ({ related, editable = false, onChange }) 
 	const dragIndex = useRef<number | null>(null);
 	const [draggingIndex, setDraggingIndex] = useState<number | null>(null);
 
-	if (!related?.length) return null;
+	// In edit mode the row stays visible when empty, to add a first relation.
+	if (!related?.length && !editable) return null;
+	const relations = related || [];
 
 	const handleRemove = (index: number) => {
-		onChange?.(related.filter((_, i) => i !== index));
+		onChange?.(relations.filter((_, i) => i !== index));
 	};
 
 	const openAdd = () => {
@@ -45,14 +46,10 @@ const RelatedLines: React.FC<Props> = ({ related, editable = false, onChange }) 
 	};
 
 	const handleSubmit = (relation: string | LineRelation) => {
-		const duplicate = related.some(
-			(item, i) => i !== editIndex && relationName(item) === relationName(relation)
-		);
-		if (duplicate) return;
 		if (editIndex === null) {
-			onChange?.([...related, relation]);
+			onChange?.([...relations, relation]);
 		} else {
-			onChange?.(related.map((item, i) => (i === editIndex ? relation : item)));
+			onChange?.(relations.map((item, i) => (i === editIndex ? relation : item)));
 		}
 	};
 
@@ -75,7 +72,7 @@ const RelatedLines: React.FC<Props> = ({ related, editable = false, onChange }) 
 		const source = dragIndex.current;
 		if (source === null || source === targetIndex) return;
 
-		const next = related.slice();
+		const next = relations.slice();
 		const [moved] = next.splice(source, 1);
 		next.splice(source < targetIndex ? targetIndex - 1 : targetIndex, 0, moved);
 		onChange?.(next);
@@ -85,7 +82,7 @@ const RelatedLines: React.FC<Props> = ({ related, editable = false, onChange }) 
 		<div className="line-wrapper">
 			<h2>Related lines&nbsp;:</h2>
 			<Row className="line-row">
-				{related.map((relation, i) => {
+				{relations.map((relation, i) => {
 					const removeButton = editable && (
 						<ButtonRemove
 							size="sm"
@@ -165,15 +162,7 @@ const RelatedLines: React.FC<Props> = ({ related, editable = false, onChange }) 
 				})}
 				{editable && (
 					<Col>
-						<button
-							type="button"
-							className="btn btn-outline-secondary d-flex align-items-center justify-content-center rounded"
-							style={{ width: BASE_IMG_SIZE, height: BASE_IMG_SIZE }}
-							title="Add a related line"
-							onClick={openAdd}
-						>
-							<Icon name="plus" style={{ fontSize: '3rem' }} />
-						</button>
+						<ButtonAdd title="Add a related line" onClick={openAdd} />
 					</Col>
 				)}
 			</Row>
@@ -182,7 +171,7 @@ const RelatedLines: React.FC<Props> = ({ related, editable = false, onChange }) 
 					show={showModal}
 					onClose={() => setShowModal(false)}
 					onSubmit={handleSubmit}
-					initial={editIndex === null ? null : related[editIndex]}
+					initial={editIndex === null ? null : relations[editIndex]}
 				/>
 			)}
 		</div>

@@ -10,18 +10,27 @@ import LinePoint from '@/components/Line/LinePoint';
 import LineImage from '@/components/Line/LineImage';
 import CommentLink from '@/components/CommentLink';
 import ShareButton from '@/components/ShareButton';
+import GroupRelated from '@/components/Group/GroupRelated';
 // functions
 import useFetch from '@/hooks/useFetch';
+import useSaveGroup from '@/hooks/useSaveGroup';
 import { capitalize, typeOf } from '@/functions';
 import useQueryParam from '@/hooks/useQueryParam';
+import { getDubNames, getDubbedSearchList } from '@/functions/search';
+import { getDirPaths } from '@/functions/file';
 // constants
 import { Group, GroupPoint } from '@/types/Group';
 import GroupGrid from '@/components/Group/GroupGrid';
+import { SearchContext } from '@/context/search';
+import Search from '@/types/Search';
+import { IS_DEV } from '@/consts/env';
 
 const NAME = 'name';
 interface StaticProps {
 	group?: Group;
 	name?: string;
+	/** Digimon autocompletion, only built in dev for the related edition. */
+	digimonSearch?: Search;
 }
 interface Props {
 	ssr: StaticProps;
@@ -29,12 +38,16 @@ interface Props {
 const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 	const { name } = useQueryParam(NAME) || ssr;
 	const [group, setGroup] = useState<Group | undefined>(ssr.group);
+	const saveGroup = useSaveGroup(name, setGroup);
 
 	useEffect(() => {
 		if (group !== ssr.group) {
 			setGroup(ssr.group);
 		}
 	}, [ssr.group]);
+
+	// Related edition is a dev only tool.
+	const editable = IS_DEV && !!group;
 
 	if (!name) {
 		redirect('/groups');
@@ -81,26 +94,13 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 			) : (
 				<p>Group not found</p>
 			)}
-			{group?.related ? (
-				<div className="line-wrapper">
-					<h2>Related to the group&nbsp;:</h2>
-					<Row className="line-row">
-						{group.related.map((relation, i) => (
-							<Col key={i}>
-								<LinePoint name={relation.name} line={relation.line}>
-									{!!relation.line && (
-										<LineImage
-											className="line-skin"
-											name={relation.line}
-											loadable={false}
-										/>
-									)}
-								</LinePoint>
-							</Col>
-						))}
-					</Row>
-				</div>
-			) : null}
+			<SearchContext.Provider value={ssr.digimonSearch}>
+				<GroupRelated
+					related={group?.related}
+					editable={editable}
+					onChange={related => group && saveGroup({ ...group, related })}
+				/>
+			</SearchContext.Provider>
 			{!!group && <CommentLink />}
 		</Layout>
 	);
@@ -127,7 +127,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 			`../../../public/json/groups/${params.name}.json`
 		);
 
-		return { props: { ssr: { name: params.name, group } } };
+		// Only shipped in dev : it feeds the related edition autocompletion.
+		const digimonSearch =
+			IS_DEV ? getDubbedSearchList(getDirPaths('images/digimon'), getDubNames())
+			:	null;
+
+		return { props: { ssr: { name: params.name, group, digimonSearch } } };
 	} catch (e) {
 		console.error(e);
 		return { props: { ssr: { name: params.name } } };
