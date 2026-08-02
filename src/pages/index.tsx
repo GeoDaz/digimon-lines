@@ -16,6 +16,7 @@ import { StringArrayObject } from '@/types/Ui';
 import { APPMON } from '@/consts/ui';
 import Link from 'next/link';
 import ButtonAdd from '@/components/Button/ButtonAdd';
+import ButtonRemove from '@/components/Button/ButtonRemove';
 import NewsModal from '@/components/Line/NewsModal';
 import useSaveNews from '@/hooks/useSaveNews';
 import { SearchContext } from '@/context/search';
@@ -95,6 +96,10 @@ const PageLines: React.FC<Props> = props => {
 		saveNews([thumb, ...news.filter(item => item.name !== thumb.name)]);
 	};
 
+	const handleRemoveNews = (index: number) => {
+		saveNews(news.filter((_, i) => i !== index));
+	};
+
 	return (
 		<Layout
 			noGoBack
@@ -124,6 +129,7 @@ const PageLines: React.FC<Props> = props => {
 						<LineRow
 							lines={news}
 							onAdd={editableNews ? () => setShowNewsModal(true) : undefined}
+							onRemove={editableNews ? handleRemoveNews : undefined}
 						/>
 						<h2>Families&nbsp;:</h2>
 					</div>
@@ -159,15 +165,25 @@ const LineRow = ({
 	lines,
 	type,
 	onAdd,
+	onRemove,
 }: {
 	lines: LineThumb[];
 	type?: string;
 	onAdd?: () => void;
+	onRemove?: (index: number) => void;
 }) => (
 	<div className="line-wrapper">
 		<Row className="line-row">
 			{lines.map((line, i) => (
-				<Col key={i}>
+				<Col key={i} className={onRemove ? 'position-relative' : undefined}>
+					{!!onRemove && (
+						<ButtonRemove
+							size="sm"
+							overlay
+							title="Remove"
+							onClick={() => onRemove(i)}
+						/>
+					)}
 					<LinePoint
 						name={line.name}
 						grid={line.grid}

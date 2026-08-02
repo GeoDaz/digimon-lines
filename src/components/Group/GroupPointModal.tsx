@@ -8,6 +8,8 @@ interface Props {
 	onClose: () => void;
 	onSubmit: (point: GroupPoint) => void;
 	title?: string;
+	/** Main points can point to another line than the one they are pictured in. */
+	withRedirect?: boolean;
 }
 
 const GroupPointModal: React.FC<Props> = ({
@@ -15,21 +17,28 @@ const GroupPointModal: React.FC<Props> = ({
 	onClose,
 	onSubmit,
 	title = 'Add a related Digimon',
+	withRedirect = false,
 }) => {
 	const [name, setName] = useState('');
 	const [line, setLine] = useState('');
+	const [redirect, setRedirect] = useState('');
 
 	// Reset the form each time the modal opens.
 	useEffect(() => {
 		if (show) {
 			setName('');
 			setLine('');
+			setRedirect('');
 		}
 	}, [show]);
 
 	const submit = () => {
 		if (!name) return;
-		onSubmit({ name, ...(line ? { line } : {}) });
+		onSubmit({
+			name,
+			...(line ? { line } : {}),
+			...(withRedirect && redirect ? { redirect } : {}),
+		});
 		onClose();
 	};
 
@@ -51,6 +60,14 @@ const GroupPointModal: React.FC<Props> = ({
 					onSelect={setLine}
 					onRemove={() => setLine('')}
 				/>
+				{withRedirect && (
+					<DigimonField
+						title="Redirect"
+						values={redirect ? [redirect] : []}
+						onSelect={setRedirect}
+						onRemove={() => setRedirect('')}
+					/>
+				)}
 			</Modal.Body>
 			<Modal.Footer>
 				<Button variant="secondary" onClick={onClose}>

@@ -1,46 +1,50 @@
 import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import ButtonAdd from '@/components/Button/ButtonAdd';
+import GroupGrid from '@/components/Group/GroupGrid';
 import GroupPointCol from '@/components/Group/GroupPointCol';
 import GroupPointModal from '@/components/Group/GroupPointModal';
-import { GroupPoint } from '@/types/Group';
+import Group, { GroupPoint } from '@/types/Group';
 
 interface Props {
-	related?: GroupPoint[];
+	group: Group;
 	editable?: boolean;
-	onChange?: (related: GroupPoint[]) => void;
+	onChange?: (main: Group['main']) => void;
 }
 
-const GroupRelated: React.FC<Props> = ({ related, editable = false, onChange }) => {
+const GroupMain: React.FC<Props> = ({ group, editable = false, onChange }) => {
 	const [showModal, setShowModal] = useState(false);
 
-	if (!related?.length && !editable) return null;
-	const relations = related || [];
+	// Grouped by digimon (digimentals, spirits...) : one row per key.
+	if (!Array.isArray(group.main)) {
+		return <GroupGrid group={group} editable={editable} onChange={onChange} />;
+	}
+
+	const points = group.main;
 
 	const handleAdd = (point: GroupPoint) => {
-		if (relations.some(item => item.name === point.name)) return;
-		onChange?.([...relations, point]);
+		if (points.some(item => item.name === point.name)) return;
+		onChange?.([...points, point]);
 	};
 
 	const handleRemove = (index: number) => {
-		onChange?.(relations.filter((_, i) => i !== index));
+		onChange?.(points.filter((_, i) => i !== index));
 	};
 
 	return (
-		<div className="line-wrapper">
-			<h2>Related to the group&nbsp;:</h2>
+		<>
 			<Row className="line-row">
-				{relations.map((relation, i) => (
+				{points.map((point, i) => (
 					<GroupPointCol
 						key={i}
-						point={relation}
+						point={point}
 						onRemove={editable ? () => handleRemove(i) : undefined}
 					/>
 				))}
 				{editable && (
 					<Col>
 						<ButtonAdd
-							title="Add a related Digimon"
+							title="Add a Digimon"
 							onClick={() => setShowModal(true)}
 						/>
 					</Col>
@@ -51,10 +55,12 @@ const GroupRelated: React.FC<Props> = ({ related, editable = false, onChange }) 
 					show={showModal}
 					onClose={() => setShowModal(false)}
 					onSubmit={handleAdd}
+					title="Add a Digimon to the group"
+					withRedirect
 				/>
 			)}
-		</div>
+		</>
 	);
 };
 
-export default GroupRelated;
+export default GroupMain;

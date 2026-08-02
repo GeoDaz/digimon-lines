@@ -4,6 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import LinePoint from '@/components/Line/LinePoint';
 import ButtonAdd from '@/components/Button/ButtonAdd';
+import ButtonRemove from '@/components/Button/ButtonRemove';
 import GroupModal from '@/components/Group/GroupModal';
 import useSaveGroupIndex from '@/hooks/useSaveGroupIndex';
 import { GetStaticProps } from 'next';
@@ -31,6 +32,11 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 		saveGroups([...groups, { name }]);
 	};
 
+	// Only removes the group from the index, its json file is kept.
+	const handleRemove = (index: number) => {
+		saveGroups(groups.filter((_, i) => i !== index));
+	};
+
 	return (
 		<Layout
 			title="Available groups"
@@ -40,7 +46,15 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 			<div className="line-wrapper">
 				<Row className="line-row">
 					{groups.map((group, i) => (
-						<Col key={i}>
+						<Col key={i} className={IS_DEV ? 'position-relative' : undefined}>
+							{IS_DEV && (
+								<ButtonRemove
+									size="sm"
+									overlay
+									title="Remove from the list"
+									onClick={() => handleRemove(i)}
+								/>
+							)}
 							<LinePoint
 								name={group.name}
 								available={group.available}

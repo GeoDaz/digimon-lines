@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import fs from 'fs';
 import path from 'path';
 import { IS_DEV } from '@/consts/env';
+import { formatJsonLike } from '@/functions/json';
 
 interface NewsItem {
 	name: string;
@@ -15,20 +16,6 @@ const sanitizeName = (name: unknown): string =>
 	String(name || '')
 		.toLowerCase()
 		.replace(/[^a-z0-9_-]/g, '_');
-
-// Keep the handwritten formatting of _news.json : one entry per line and grid
-// arrays inlined, so saving from the site does not rewrite the whole file.
-const stringifyNews = (news: Array<string | NewsItem>): string => {
-	const entries = news.map(item => {
-		if (typeof item == 'string') return `\t${JSON.stringify(item)}`;
-		const fields = [`\t\t"name": ${JSON.stringify(item.name)}`];
-		if (item.grid?.length) {
-			fields.push(`\t\t"grid": [${item.grid.map(n => JSON.stringify(n)).join(', ')}]`);
-		}
-		return `\t{\n${fields.join(',\n')}\n\t}`;
-	});
-	return `[\n${entries.join(',\n')}\n]\n`;
-};
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
 	if (!IS_DEV) {
@@ -57,7 +44,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 			return acc;
 		}, []);
 
-		fs.writeFileSync(newsPath, stringifyNews(sanitized), 'utf-8');
+		const previous = fs.existsSync(newsPath) ? fs.readFileSync(newsPath, 'utf-8') : '';
+		fs.writeFileSync(newsPath, formatJsonLike(sanitized, previous), 'utf-8');
 
 		// Send back thumbs so the page can tell which lines actually exist.
 		const thumbs = sanitized.map(item => {

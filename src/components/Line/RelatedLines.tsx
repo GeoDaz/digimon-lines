@@ -86,8 +86,7 @@ const RelatedLines: React.FC<Props> = ({ related, editable = false, onChange }) 
 					const removeButton = editable && (
 						<ButtonRemove
 							size="sm"
-							className="position-absolute top-1"
-							style={{ zIndex: 3, right: 'calc(var(--bs-gutter-x) * .5)' }}
+							overlay
 							title="Remove"
 							data-related-remove
 							onClick={() => handleRemove(i)}
