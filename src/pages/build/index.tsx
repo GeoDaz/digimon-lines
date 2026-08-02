@@ -127,7 +127,7 @@ export const PageBuild = (props: BuildProps) => {
 				together.
 				<br /> Clicking on a Digimon image gives you access to additional options,
 				such as changing the line color or adding sub-images.
-				<br /> The <b>Save as</b>button allows you to export the line as an image
+				<br /> The <b>Save as</b> button allows you to export the line as an image
 				or as code.
 				<br /> The Save as Image option does not work with <b>url images</b>, but
 				it does work with <b>uploaded images</b>.
@@ -207,9 +207,7 @@ export const PageBuild = (props: BuildProps) => {
 				<RelatedLines
 					related={line.related}
 					editable={edition}
-					onChange={related =>
-						handleUpdate(setLineValue, 'related', related)
-					}
+					onChange={related => handleUpdate(setLineValue, 'related', related)}
 				/>
 			</SearchContext.Provider>
 		</Layout>

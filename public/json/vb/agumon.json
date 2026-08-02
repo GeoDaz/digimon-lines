@@ -1,97 +1,95 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "metalgreymon_alter_mode",
-                "color": "mode",
-                "from": [1,-1]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "greymon",
-                "from": [1,-1]
-            },
-            {
-                "name": "metalgreymon"
-            },
-            {
-                "name": "wargreymon"
-            }
-        ],
-        [
-            {
-                "name": "botamon"
-            },
-            {
-                "name": "koromon"
-            },
-            {
-                "name": "agumon"
-            },
-            {
-                "name": "cyclomon"
-            },
-            {
-                "name": "skullgreymon",
-                "color": "dark"
-            },
-            {
-                "name": "blitzgreymon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "geogreymon",
-                "mirror": true,
-                "from": [-1,-1]
-            },
-            {
-                "name": "rizegreymon"
-            },
-            {
-                "name": "victorygreymon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "flarelizardmon",
-                "color": "fire",
-                "from": [-2,-1]
-            },
-            {
-                "name": "burninggreymon",
-                "color": "fire"
-            },
-            {
-                "name": "shinegreymon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "megadramon",
-                "from": [-1,-1]
-            }
-        ]
-    ],
-    "related": [
-        "greymon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metalgreymon_alterous_mode",
+				"color": "mode",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "greymon",
+				"from": [1, -1]
+			},
+			{
+				"name": "metalgreymon"
+			},
+			{
+				"name": "wargreymon"
+			}
+		],
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "koromon"
+			},
+			{
+				"name": "agumon"
+			},
+			{
+				"name": "cyclomon"
+			},
+			{
+				"name": "skullgreymon",
+				"color": "dark"
+			},
+			{
+				"name": "blitzgreymon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "geogreymon",
+				"mirror": true,
+				"from": [-1, -1]
+			},
+			{
+				"name": "rizegreymon"
+			},
+			{
+				"name": "victorygreymon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "flarelizardmon",
+				"color": "fire",
+				"from": [-2, -1]
+			},
+			{
+				"name": "burninggreymon",
+				"color": "fire"
+			},
+			{
+				"name": "shinegreymon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "megadramon",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": ["greymon"]
 }

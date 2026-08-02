@@ -1,187 +1,291 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "blizzarmon",
-				"from": [[1, -1]],
-				"color": ["ice"]
-			},
-			{
-				"name": "ancientmegatheriumon",
-				"from": [[0, -1]],
-				"color": ["slide"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "minotarumon",
-				"from": [[2.5, -1]]
-			},
-			{
-				"name": "gyukimon",
-				"from": [[0, -1]],
-				"color": ["fusion"]
-			},
-			{
-				"name": "gulfmon",
-				"from": [[0, -1]],
-				"color": ["dark"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "bullmon",
-				"from": [[1.5, -1]],
-				"color": []
-			},
-			{
-				"name": "vajramon"
-			},
-			{
-				"name": "zanbamon"
-			},
-			null
-		],
-		[
-			{
-				"name": "fukamon",
-				"from": null,
-				"xSize": 2
-			},
-			{
-				"name": "mokokomon",
-				"xSize": 2
-			},
-			{
-				"name": "takinmon",
-				"xSize": 2
-			},
-			{
-				"name": "kinkakumon",
-				"from": [[0.5, -1]],
-				"color": ["electric"]
-			},
-			{
-				"name": "chohakkaimon",
-				"from": [[0, -1]],
-				"color": ["light"]
-			},
-			null,
-			{
-				"name": "shakamon",
-				"from": [[-1, -1]],
-				"color": ["fusion"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "hakubamon",
-				"from": [[-0.5, -1]],
-				"color": ["light"]
-			},
-			{
-				"name": "sanzomon",
-				"from": [[0, -1]],
-				"color": ["light"]
-			},
-			{
-				"name": "takutomon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "takutomon_wrath_mode",
-				"from": [[0, -1]],
-				"color": ["mode"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "chirinmon",
-				"from": [[-1, -1]],
-				"color": ["light"]
-			},
-			{
-				"name": "kentaurosmon",
-				"from": [[0, -1]],
-				"skins": []
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "kentaurosmon_x",
-				"from": [[-1, 0]],
-				"color": ["x"]
-			},
-			null
-		]
-	],
-	"related": [
-		{
-			"name": "dokugumon",
-			"from": "gyukimon"
-		},
-		"pillowmon",
-		{
-			"name": "bearmon",
-			"from": "ancientmegatheriumon"
-		},
-		{
-			"name": "aegiomon"
-		},
-		{
-			"name": "kotemon",
-			"from": "zanbamon"
-		},
-		{
-			"name": "bakemon",
-			"for": "zanbamon"
-		},
-		{
-			"name": "patamon",
-			"for": "unimon"
-		},
-		{
-			"name": "renamon",
-			"for": "chirinmon",
-			"from": "kudamon"
-		},
-		{
-			"name": "phascomon",
-			"for": "gulfmon"
-		},
-		{
-			"name": "veemon",
-			"from": "sagittarimon"
-		},
-		{
-			"name": "commandramon",
-			"from": "assaultmon"
-		}
-	],
-	"size": 7
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "blizzarmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "ice"
+                ]
+            },
+            {
+                "name": "ancientmegatheriumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "slide"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "minotarumon",
+                "from": [
+                    [
+                        2.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "gyukimon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            },
+            {
+                "name": "gulfmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "bullmon",
+                "from": [
+                    [
+                        1.5,
+                        -1
+                    ]
+                ],
+                "color": []
+            },
+            {
+                "name": "vajramon"
+            },
+            {
+                "name": "zanbamon"
+            },
+            null
+        ],
+        [
+            {
+                "name": "fukamon",
+                "from": null,
+                "xSize": 2
+            },
+            {
+                "name": "mokokomon",
+                "xSize": 2
+            },
+            {
+                "name": "takinmon",
+                "xSize": 2
+            },
+            {
+                "name": "kinkakumon",
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "electric"
+                ]
+            },
+            {
+                "name": "chohakkaimon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            null,
+            {
+                "name": "shakamon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "hakubamon",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            {
+                "name": "sanzomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            {
+                "name": "takutomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "takutomon_wrath_mode",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "mode"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "chirinmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            {
+                "name": "kentaurosmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "skins": []
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "kentaurosmon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "dokugumon",
+            "from": "gyukimon"
+        },
+        "pillowmon",
+        {
+            "name": "bearmon",
+            "from": "ancientmegatheriumon"
+        },
+        {
+            "name": "aegiomon"
+        },
+        {
+            "name": "kotemon",
+            "from": "zanbamon"
+        },
+        {
+            "name": "bakemon",
+            "for": "zanbamon"
+        },
+        {
+            "name": "patamon",
+            "for": "unimon"
+        },
+        {
+            "name": "renamon",
+            "for": "chirinmon",
+            "from": "kudamon"
+        },
+        {
+            "name": "phascomon",
+            "for": "gulfmon"
+        },
+        {
+            "name": "veemon",
+            "from": "sagittarimon"
+        },
+        {
+            "name": "commandramon",
+            "from": "assaultmon"
+        }
+    ],
+    "size": 7
 }

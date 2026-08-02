@@ -1,5 +1,5 @@
 /** Line width above which an array is written on several lines. */
-const PRINT_WIDTH = 100;
+const PRINT_WIDTH = 89;
 /** A tab counts as 4 columns when measuring a line width. */
 const TAB_WIDTH = 4;
 

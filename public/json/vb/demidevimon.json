@@ -1,147 +1,122 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "skullsatamon",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "skullsatamon",
 				"color": "dark",
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "devimon",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "devimon",
 				"color": "dark",
-                "from": [
-                    2,
-                    -1
-                ]
-            },
-            {
-                "name": "neodevimon",
+				"from": [2, -1]
+			},
+			{
+				"name": "neodevimon",
 				"color": "dark"
-            },
-            {
-                "name": "donedevimon",
+			},
+			{
+				"name": "donedevimon",
 				"color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "pipismon",
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pipismon",
 				"color": "dark",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "myotismon",
+				"from": [1, -1]
+			},
+			{
+				"name": "myotismon",
 				"color": "dark"
-            },
-            {
-                "name": "venommyotismon",
+			},
+			{
+				"name": "venommyotismon",
 				"color": "dark"
-            }
-        ],
-        [
-            {
-                "name": "zurumon"
-            },
-            {
-                "name": "pagumon",
+			}
+		],
+		[
+			{
+				"name": "zurumon"
+			},
+			{
+				"name": "pagumon",
 				"color": "dark"
-            },
-            {
-                "name": "demidevimon",
+			},
+			{
+				"name": "demidevimon",
 				"color": "dark"
-            },
-            null,
-            null,
-            {
-                "name": "boltboutamon",
-                "color": ["fusion", "fusion"],
-                "from": [[
-                    -1,
-                    -1
-                ], [
-                    1,
-                    -1
-                ]]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "bakemon",
+			},
+			null,
+			null,
+			{
+				"name": "boltboutamon",
+				"color": ["fusion", "fusion"],
+				"from": [
+					[-1, -1],
+					[1, -1]
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "bakemon",
 				"color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "phantomon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "fantomon",
 				"color": "dark"
-            },
-            {
-                "name": "piemon",
+			},
+			{
+				"name": "piemon",
 				"color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "boogiemon",
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "boogiemon",
 				"color": "dark",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "phelesmon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "phelesmon",
 				"color": "dark"
-            },
-            {
-                "name": "demon",
+			},
+			{
+				"name": "demon",
 				"color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "jokermon",
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "jokermon",
 				"color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        "devimon",
-        "bakemon",
-        "impmon"
-    ]
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": ["devimon", "bakemon", "impmon"]
 }

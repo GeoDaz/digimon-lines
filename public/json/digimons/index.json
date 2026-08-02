@@ -310,8 +310,8 @@
 		"field": "Deep Savers",
 		"variants": []
 	},
-	"atlurkabuterimonblue": {
-		"name": "atlurkabuterimonblue",
+	"atlurkabuterimon_blue": {
+		"name": "atlurkabuterimon_blue",
 		"year": "1998",
 		"url": "https://wikimon.net/Atlur_Kabuterimon_(Blue)",
 		"level": "Ultimate",
@@ -611,8 +611,8 @@
 		"Group": "Angel Army",
 		"variants": []
 	},
-	"holyangemon_pries_mode": {
-		"name": "holyangemon_pries_mode",
+	"holyangemon_priest_mode": {
+		"name": "holyangemon_priest_mode",
 		"year": "1998",
 		"url": "https://wikimon.net/Holy_Angemon:_Priest_Mode",
 		"level": "Ultimate",
@@ -1189,6 +1189,15 @@
 		"variants": []
 	},
 	"zurumon": {
+		"name": "zurumon",
+		"year": "1998",
+		"url": "https://wikimon.net/Zurumon",
+		"level": "Baby I",
+		"type": "Slime",
+		"attribute": ["None", "Free"],
+		"variants": []
+	},
+	"zurumon_2": {
 		"name": "zurumon",
 		"year": "1998",
 		"url": "https://wikimon.net/Zurumon",
@@ -1880,8 +1889,8 @@
 		"field": ["Metal Empire", "Virus Busters"],
 		"variants": []
 	},
-	"kodokugumonbaby": {
-		"name": "kodokugumonbaby",
+	"kodokugumon": {
+		"name": "kodokugumon",
 		"year": "1999",
 		"url": "https://wikimon.net/Kodokugumon_Baby",
 		"level": ["Baby II", "Rookie"],
@@ -2665,12 +2674,72 @@
 		"field": ["Jungle Troopers", "Nightmare Soldiers", "Unknown", "Nature Spirits"],
 		"variants": []
 	},
-	"arkadimonbaby": {
-		"name": "arkadimonbaby",
+	"arkadimon_2": {
+		"name": "arkadimon_2",
 		"year": "2000",
 		"url": "https://wikimon.net/Arkadimon_Baby",
 		"level": "Baby II",
 		"attribute": "Free",
+		"variants": []
+	},
+	"arkadimon": {
+		"name": "arkadimon",
+		"year": "2001",
+		"url": "https://wikimon.net/Arkadimon_Child",
+		"level": "Rookie",
+		"type": "Bewitching Beast",
+		"attribute": "Virus",
+		"field": "Dark Area",
+		"variants": []
+	},
+	"arkadimon_3": {
+		"name": "arkadimon_3",
+		"year": "2001",
+		"url": "https://wikimon.net/Arkadimon_Child",
+		"level": "Rookie",
+		"type": "Bewitching Beast",
+		"attribute": "Virus",
+		"field": "Dark Area",
+		"variants": []
+	},
+	"arkadimon_4": {
+		"name": "arkadimon_4",
+		"year": "2001",
+		"url": "https://wikimon.net/Arkadimon_Adult",
+		"level": "Champion",
+		"type": "Bewitching Beast",
+		"attribute": "Virus",
+		"field": "Dark Area",
+		"variants": []
+	},
+	"arkadimon_5": {
+		"name": "arkadimon_5",
+		"year": "2001",
+		"url": "https://wikimon.net/Arkadimon_Perfect",
+		"level": "Ultimate",
+		"type": "Bewitching Beast",
+		"attribute": "Virus",
+		"field": "Dark Area",
+		"variants": []
+	},
+	"arkadimon_6": {
+		"name": "arkadimon_6",
+		"year": "2001",
+		"url": "https://wikimon.net/Arkadimon_Ultimate",
+		"level": "Mega",
+		"type": "Bewitching Beast",
+		"attribute": "Virus",
+		"field": ["Dark Area", "Nightmare Soldiers"],
+		"variants": []
+	},
+	"arkadimon_7": {
+		"name": "arkadimon_7",
+		"year": "2003",
+		"url": "https://wikimon.net/Arkadimon_Super_Ultimate",
+		"level": "Mega",
+		"type": "Bewitching Beast",
+		"attribute": "Virus",
+		"field": "Dark Area",
 		"variants": []
 	},
 	"armadimon": {
@@ -2830,8 +2899,8 @@
 		"Group": "Chaos Generals",
 		"variants": []
 	},
-	"cherubimonvice": {
-		"name": "cherubimonvice",
+	"cherubimon_vice": {
+		"name": "cherubimon_vice",
 		"year": "2000",
 		"url": "https://wikimon.net/Cherubimon_(Vice)",
 		"level": "Mega",
@@ -2841,8 +2910,8 @@
 		"Group": "Three Archangels",
 		"variants": []
 	},
-	"cherubimonvirtue": {
-		"name": "cherubimonvirtue",
+	"cherubimon_virtue": {
+		"name": "cherubimon_virtue",
 		"year": "2000",
 		"url": "https://wikimon.net/Cherubimon_(Virtue)",
 		"level": "Mega",
@@ -2929,8 +2998,8 @@
 		"field": ["Dark Area", "Nightmare Soldiers"],
 		"variants": []
 	},
-	"deathmonblack": {
-		"name": "deathmonblack",
+	"deathmon_black": {
+		"name": "deathmon_black",
 		"year": "2000",
 		"url": "https://wikimon.net/Deathmon_(Black)",
 		"level": "Mega",
@@ -2995,8 +3064,8 @@
 		"field": ["Dark Area", "Unknown", "Metal Empire"],
 		"variants": []
 	},
-	"elecmonviolet": {
-		"name": "elecmonviolet",
+	"elecmon_violet": {
+		"name": "elecmon_violet",
 		"year": "2000",
 		"url": "https://wikimon.net/Elecmon_(Violet)",
 		"level": "Rookie",
@@ -3040,8 +3109,8 @@
 		"field": ["Deep Savers", "Nature Spirits"],
 		"variants": []
 	},
-	"gabumonblack": {
-		"name": "gabumonblack",
+	"gabumon_black": {
+		"name": "gabumon_black",
 		"year": "2000",
 		"url": "https://wikimon.net/Gabumon_(Black)",
 		"level": "Rookie",
@@ -3070,8 +3139,8 @@
 		"field": "Nightmare Soldiers",
 		"variants": []
 	},
-	"garurumonblack": {
-		"name": "garurumonblack",
+	"garurumon_black": {
+		"name": "garurumon_black",
 		"year": "2000",
 		"url": "https://wikimon.net/Garurumon_(Black)",
 		"level": "Champion",
@@ -3122,8 +3191,8 @@
 		],
 		"variants": []
 	},
-	"greymonblue": {
-		"name": "greymonblue",
+	"greymon_blue": {
+		"name": "greymon_blue",
 		"year": "2000",
 		"url": "https://wikimon.net/Greymon_(Blue)",
 		"level": "Champion",
@@ -3189,8 +3258,8 @@
 		"level": "Mega",
 		"variants": []
 	},
-	"imperialdramon_dragon_mode:drago_mode": {
-		"name": "imperialdramon_dragon_mode:drago_mode",
+	"imperialdramon_dragon_mode": {
+		"name": "imperialdramon_dragon_mode",
 		"year": "2000",
 		"url": "https://wikimon.net/Imperialdramon:_Dragon_Mode",
 		"level": "Mega",
@@ -3205,8 +3274,8 @@
 		],
 		"variants": []
 	},
-	"imperialdramon_dragon_mode:dragonmodeblack": {
-		"name": "imperialdramon_dragon_mode:dragonmodeblack",
+	"imperialdramon_dragon_mode_black": {
+		"name": "imperialdramon_dragon_mode_black",
 		"year": "2000",
 		"url": "https://wikimon.net/Imperialdramon:_Dragon_Mode_(Black)",
 		"level": "Mega",
@@ -3216,7 +3285,7 @@
 		"variants": []
 	},
 	"imperialdramon_fighter_mode": {
-		"name": "imperialdramon_dragon_mode:fighte_mode",
+		"name": "imperialdramon_fighter_mode",
 		"year": "2000",
 		"url": "https://wikimon.net/Imperialdramon:_Fighter_Mode",
 		"level": ["Mega", "Mega+"],
@@ -3409,8 +3478,8 @@
 		"field": "Deep Savers",
 		"variants": []
 	},
-	"metalgarurumonblack": {
-		"name": "metalgarurumonblack",
+	"metalgarurumon_black": {
+		"name": "metalgarurumon_black",
 		"year": "2000",
 		"url": "https://wikimon.net/Metal_Garurumon_(Black)",
 		"level": "Mega",
@@ -3660,8 +3729,8 @@
 		"Group": ["Four Great Dragons", "Four Holy Beasts"],
 		"variants": []
 	},
-	"rapidmonarmor": {
-		"name": "rapidmonarmor",
+	"goldrapidmon": {
+		"name": "goldrapidmon",
 		"year": "2000",
 		"url": "https://wikimon.net/Rapidmon_Armor",
 		"level": ["Armor", "Champion", "Ultimate", "Mega"],
@@ -3671,8 +3740,8 @@
 		"Group": "Miracle IV",
 		"variants": []
 	},
-	"redvdramon": {
-		"name": "redvdramon",
+	"red_vdramon": {
+		"name": "red_vdramon",
 		"year": "2000",
 		"url": "https://wikimon.net/Red_V-dramon",
 		"level": "Champion",
@@ -3831,8 +3900,8 @@
 		"field": ["Metal Empire", "Virus Busters"],
 		"variants": []
 	},
-	"sorcerimon": {
-		"name": "sorcerimon",
+	"sorcerymon": {
+		"name": "sorcerymon",
 		"year": "2000",
 		"url": "https://wikimon.net/Sorcerimon",
 		"level": "Champion",
@@ -4040,8 +4109,8 @@
 		"field": ["Dark Area", "Nature Spirits", "Nightmare Soldiers"],
 		"variants": []
 	},
-	"weregarurumonblack": {
-		"name": "weregarurumonblack",
+	"weregarurumon_black": {
+		"name": "weregarurumon_black",
 		"year": "2000",
 		"url": "https://wikimon.net/Were_Garurumon_(Black)",
 		"level": "Ultimate",
@@ -4169,46 +4238,6 @@
 		"field": ["Unknown", "Nightmare Soldiers"],
 		"variants": []
 	},
-	"arkadimonadult": {
-		"name": "arkadimonadult",
-		"year": "2001",
-		"url": "https://wikimon.net/Arkadimon_Adult",
-		"level": "Champion",
-		"type": "Bewitching Beast",
-		"attribute": "Virus",
-		"field": "Dark Area",
-		"variants": []
-	},
-	"arkadimonchild": {
-		"name": "arkadimonchild",
-		"year": "2001",
-		"url": "https://wikimon.net/Arkadimon_Child",
-		"level": "Rookie",
-		"type": "Bewitching Beast",
-		"attribute": "Virus",
-		"field": "Dark Area",
-		"variants": []
-	},
-	"arkadimonperfect": {
-		"name": "arkadimonperfect",
-		"year": "2001",
-		"url": "https://wikimon.net/Arkadimon_Perfect",
-		"level": "Ultimate",
-		"type": "Bewitching Beast",
-		"attribute": "Virus",
-		"field": "Dark Area",
-		"variants": []
-	},
-	"arkadimonultimate": {
-		"name": "arkadimonultimate",
-		"year": "2001",
-		"url": "https://wikimon.net/Arkadimon_Ultimate",
-		"level": "Mega",
-		"type": "Bewitching Beast",
-		"attribute": "Virus",
-		"field": ["Dark Area", "Nightmare Soldiers"],
-		"variants": []
-	},
 	"armagemon": {
 		"name": "armagemon",
 		"year": "2001",
@@ -4236,8 +4265,25 @@
 		"Group": "Seven Great Demon Lords",
 		"variants": []
 	},
-	"beelzebumon_blas_mode": {
-		"name": "beelzebumon_blas_mode",
+	"beelzebumon_behemoth": {
+		"name": "beelzebumon_behemoth",
+		"year": "2001",
+		"url": "https://wikimon.net/Beelzebumon",
+		"level": "Mega",
+		"type": "Demon Lord",
+		"attribute": "Virus",
+		"field": [
+			"Dark Area",
+			"Metal Empire",
+			"Nature Spirits",
+			"Nightmare Soldiers",
+			"Wind Guardians"
+		],
+		"Group": "Seven Great Demon Lords",
+		"variants": []
+	},
+	"beelzebumon_blast_mode": {
+		"name": "beelzebumon_blast_mode",
 		"year": "2001",
 		"url": "https://wikimon.net/Beelzebumon:_Blast_Mode",
 		"level": ["Mega", "Mega+"],
@@ -4375,8 +4421,8 @@
 		"Group": "Royal Knights",
 		"variants": []
 	},
-	"dukemon_crimso_mode": {
-		"name": "dukemon_crimso_mode",
+	"dukemon_crimson_mode": {
+		"name": "dukemon_crimson_mode",
 		"year": "2001",
 		"url": "https://wikimon.net/Dukemon:_Crimson_Mode",
 		"level": ["Mega", "Mega+", "Ultra"],
@@ -4426,8 +4472,8 @@
 		"field": ["Dragon's Roar", "Metal Empire", "Nature Spirits", "Virus Busters"],
 		"variants": []
 	},
-	"growmonorange": {
-		"name": "growmonorange",
+	"growmon_orange": {
+		"name": "growmon_orange",
 		"year": "2001",
 		"url": "https://wikimon.net/Growmon_(Orange)",
 		"level": "Champion",
@@ -4472,8 +4518,8 @@
 		"field": "Metal Empire",
 		"variants": []
 	},
-	"imperialdramon_dragon_mode:fightermodeblack": {
-		"name": "imperialdramon_dragon_mode:fightermodeblack",
+	"imperialdramon_fighter_mode_black": {
+		"name": "imperialdramon_fighter_mode_black",
 		"year": "2001",
 		"url": "https://wikimon.net/Imperialdramon:_Fighter_Mode_(Black)",
 		"level": ["Mega", "Mega+"],
@@ -4483,7 +4529,7 @@
 		"variants": []
 	},
 	"imperialdramon_paladin_mode": {
-		"name": "imperialdramon_dragon_mode:paladi_mode",
+		"name": "imperialdramon_paladin_mode",
 		"year": "2001",
 		"url": "https://wikimon.net/Imperialdramon:_Paladin_Mode",
 		"level": ["Mega", "Mega+", "Ultra"],
@@ -4527,14 +4573,34 @@
 		"level": "Armor",
 		"variants": []
 	},
-	"justimon_blitzarm": {
-		"name": "justimon_blitzarm",
+	"justimon": {
+		"name": "justimon",
 		"year": "2001",
 		"url": "https://wikimon.net/Justimon:_Blitz_Arm",
 		"level": "Mega",
 		"type": "Cyborg",
 		"attribute": "Vaccine",
 		"field": ["Metal Empire", "Virus Busters", "Wind Guardians"],
+		"variants": []
+	},
+	"justimon_accel_arm": {
+		"name": "justimon_accel_arm",
+		"year": "2002",
+		"url": "https://wikimon.net/Justimon:_Accel_Arm",
+		"level": "Mega",
+		"type": "Cyborg",
+		"attribute": "Vaccine",
+		"field": ["Metal Empire", "Virus Busters"],
+		"variants": []
+	},
+	"justimon_critical_arm": {
+		"name": "justimon_critical_arm",
+		"year": "2002",
+		"url": "https://wikimon.net/Justimon:_Critical_Arm",
+		"level": "Mega",
+		"type": "Cyborg",
+		"attribute": "Vaccine",
+		"field": ["Virus Busters", "Wind Guardians"],
 		"variants": []
 	},
 	"jyarimon": {
@@ -4665,8 +4731,8 @@
 		"field": ["Dragon's Roar", "Metal Empire", "Nature Spirits", "Virus Busters"],
 		"variants": []
 	},
-	"megalogrowmonorange": {
-		"name": "megalogrowmonorange",
+	"megalogrowmon_orange": {
+		"name": "megalogrowmon_orange",
 		"year": "2001",
 		"url": "https://wikimon.net/Megalo_Growmon_(Orange)",
 		"level": "Ultimate",
@@ -4786,8 +4852,8 @@
 		"attribute": ["None", "Free"],
 		"variants": []
 	},
-	"rapidmonperfect": {
-		"name": "rapidmonperfect",
+	"rapidmon": {
+		"name": "rapidmon",
 		"year": "2001",
 		"url": "https://wikimon.net/Rapidmon_Perfect",
 		"level": "Ultimate",
@@ -4840,8 +4906,8 @@
 		],
 		"variants": []
 	},
-	"sakuyamon_mik_mode": {
-		"name": "sakuyamon_mik_mode",
+	"sakuyamon_miko_mode": {
+		"name": "sakuyamon_miko_mode",
 		"year": "2001",
 		"url": "https://wikimon.net/Sakuyamon:_Miko_Mode",
 		"level": "Mega",
@@ -4939,8 +5005,8 @@
 		"level": "Armor",
 		"variants": []
 	},
-	"vdramonblack": {
-		"name": "vdramonblack",
+	"vdramon_black": {
+		"name": "vdramon_black",
 		"year": "2001",
 		"url": "https://wikimon.net/V-dramon_(Black)",
 		"level": "Champion",
@@ -5310,8 +5376,8 @@
 		"field": "Nature Spirits",
 		"variants": []
 	},
-	"burgamonadult": {
-		"name": "burgamonadult",
+	"burgamon_2": {
+		"name": "burgamon_2",
 		"year": "2002",
 		"url": "https://wikimon.net/Burgamon_Adult",
 		"level": "Champion",
@@ -5555,8 +5621,8 @@
 		"field": "Nature Spirits",
 		"variants": []
 	},
-	"fairimon": {
-		"name": "fairimon",
+	"fairymon": {
+		"name": "fairymon",
 		"year": "2002",
 		"url": "https://wikimon.net/Fairimon",
 		"level": ["Hybrid", "Champion", "Ultimate"],
@@ -5614,8 +5680,8 @@
 		"level": "Mega",
 		"variants": []
 	},
-	"gallantmonchao_mode": {
-		"name": "gallantmonchao_mode",
+	"gallantmon_chaos_mode": {
+		"name": "gallantmon_chaos_mode",
 		"year": "2002",
 		"url": "https://wikimon.net/Gallantmon_Chaos_Mode",
 		"level": "Mega",
@@ -5749,26 +5815,6 @@
 		"type": "Insect",
 		"attribute": "Vaccine",
 		"field": ["Nature Spirits", "Virus Busters"],
-		"variants": []
-	},
-	"justimon_accelarm": {
-		"name": "justimon_accelarm",
-		"year": "2002",
-		"url": "https://wikimon.net/Justimon:_Accel_Arm",
-		"level": "Mega",
-		"type": "Cyborg",
-		"attribute": "Vaccine",
-		"field": ["Metal Empire", "Virus Busters"],
-		"variants": []
-	},
-	"justimon_criticalarm": {
-		"name": "justimon_criticalarm",
-		"year": "2002",
-		"url": "https://wikimon.net/Justimon:_Critical_Arm",
-		"level": "Mega",
-		"type": "Cyborg",
-		"attribute": "Vaccine",
-		"field": ["Virus Busters", "Wind Guardians"],
 		"variants": []
 	},
 	"kaisergreymon": {
@@ -6539,16 +6585,6 @@
 		"field": "Deep Savers",
 		"variants": []
 	},
-	"arkadimonsuperultimate": {
-		"name": "arkadimonsuperultimate",
-		"year": "2003",
-		"url": "https://wikimon.net/Arkadimon_Super_Ultimate",
-		"level": "Mega",
-		"type": "Bewitching Beast",
-		"attribute": "Virus",
-		"field": "Dark Area",
-		"variants": []
-	},
 	"barbamon": {
 		"name": "barbamon",
 		"year": "2003",
@@ -6621,8 +6657,8 @@
 		"field": ["Dark Area", "Nightmare Soldiers"],
 		"variants": []
 	},
-	"demonsuperultimate": {
-		"name": "demonsuperultimate",
+	"demon_super_ultimate": {
+		"name": "demon_super_ultimate",
 		"year": "2003",
 		"url": "https://wikimon.net/Demon_Super_Ultimate",
 		"level": "Mega",
@@ -7475,8 +7511,8 @@
 		"Group": "Royal Knights",
 		"variants": []
 	},
-	"ulforcevdramonfutur_mode": {
-		"name": "ulforcevdramonfutur_mode",
+	"ulforcevdramon_future_mode": {
+		"name": "ulforcevdramon_future_mode",
 		"year": "2003",
 		"url": "https://wikimon.net/Ulforce_V-dramon_Future_Mode",
 		"level": "Mega",
@@ -7573,8 +7609,8 @@
 		"Group": "Seven Great Demon Lords",
 		"variants": []
 	},
-	"blackguilmon": {
-		"name": "blackguilmon",
+	"black_guilmon": {
+		"name": "black_guilmon",
 		"year": "2004",
 		"url": "https://wikimon.net/Black_Guilmon",
 		"level": "Rookie",
@@ -8937,8 +8973,8 @@
 		"field": "Wind Guardians",
 		"variants": []
 	},
-	"yo!yo!mon": {
-		"name": "yo!yo!mon",
+	"yoyomon": {
+		"name": "yoyomon",
 		"year": "2006",
 		"url": "https://wikimon.net/Yo!Yo!mon",
 		"level": ["Champion", "Ultimate"],
@@ -9034,8 +9070,8 @@
 		"Group": "Mamemon-species",
 		"variants": []
 	},
-	"chaosdukemoncore": {
-		"name": "chaosdukemoncore",
+	"chaosdukemon_core": {
+		"name": "chaosdukemon_core",
 		"year": "2007",
 		"url": "https://wikimon.net/Chaos_Dukemon_Core",
 		"level": "Mega",
@@ -9335,8 +9371,8 @@
 		"attribute": ["None", "Free"],
 		"variants": []
 	},
-	"rookchessmonwhite": {
-		"name": "rookchessmonwhite",
+	"rookchessmon_white": {
+		"name": "rookchessmon_white",
 		"year": "2007",
 		"url": "https://wikimon.net/Rook_Chessmon_(White)",
 		"level": "Ultimate",
@@ -9404,8 +9440,8 @@
 		"field": ["Dragon's Roar", "Wind Guardians"],
 		"variants": []
 	},
-	"z'dgarurumon": {
-		"name": "z'dgarurumon",
+	"zdgarurumon": {
+		"name": "zdgarurumon",
 		"year": "2007",
 		"url": "https://wikimon.net/Z%27d_Garurumon",
 		"level": "Mega",
@@ -9495,8 +9531,8 @@
 		"field": "Nightmare Soldiers",
 		"variants": []
 	},
-	"beelzebumon+starmons": {
-		"name": "beelzebumon+starmons",
+	"beelzebumon_starmons": {
+		"name": "beelzebumon_starmons",
 		"year": "2010",
 		"url": "https://wikimon.net/Beelzebumon_%2B_Starmons",
 		"level": null,
@@ -9668,8 +9704,8 @@
 		"field": "Nature Spirits",
 		"variants": []
 	},
-	"dorulumon+starmons": {
-		"name": "dorulumon+starmons",
+	"dorulumon_starmons": {
+		"name": "dorulumon_starmons",
 		"year": "2010",
 		"url": "https://wikimon.net/Dorulumon_%2B_Starmons",
 		"level": null,
@@ -9698,8 +9734,8 @@
 		"level": "Champion",
 		"variants": []
 	},
-	"greymon_3": {
-		"name": "greymon_3",
+	"greymon_blue_2": {
+		"name": "greymon_blue_2",
 		"year": "2010",
 		"url": "https://wikimon.net/Greymon_(2010_Anime_Version)",
 		"level": ["Champion"],
@@ -9718,8 +9754,8 @@
 		"attribute": "Virus",
 		"variants": []
 	},
-	"greymon+skullknightmon": {
-		"name": "greymon+skullknightmon",
+	"greymon_skullknightmon": {
+		"name": "greymon_skullknightmon",
 		"year": "2010",
 		"url": "https://wikimon.net/Greymon_%2B_Skull_Knightmon",
 		"level": null,
@@ -9799,22 +9835,22 @@
 		"field": "Nightmare Soldiers",
 		"variants": []
 	},
-	"madleomonfina_mode": {
-		"name": "madleomonfina_mode",
+	"madleomon_final_mode": {
+		"name": "madleomon_final_mode",
 		"year": "2010",
 		"url": "https://wikimon.net/Mad_Leomon_(Final_Mode)",
 		"level": null,
 		"variants": []
 	},
-	"madleomonoroch_mode": {
-		"name": "madleomonoroch_mode",
+	"madleomonorochi_mode": {
+		"name": "madleomonorochi_mode",
 		"year": "2010",
 		"url": "https://wikimon.net/Mad_Leomon_(Orochi_Mode)",
 		"level": null,
 		"variants": []
 	},
-	"madleomon_arme_mode": {
-		"name": "madleomon_arme_mode",
+	"madleomon_armed_mode": {
+		"name": "madleomon_armed_mode",
 		"year": "2010",
 		"url": "https://wikimon.net/Mad_Leomon:_Armed_Mode",
 		"level": null,
@@ -9833,8 +9869,8 @@
 		"field": "Metal Empire",
 		"variants": []
 	},
-	"mailbirdramon+golemon": {
-		"name": "mailbirdramon+golemon",
+	"mailbirdramon_golemon": {
+		"name": "mailbirdramon_golemon",
 		"year": "2010",
 		"url": "https://wikimon.net/Mail_Birdramon_%2B_Golemon",
 		"level": null,
@@ -9865,8 +9901,8 @@
 		"attribute": "Data",
 		"variants": []
 	},
-	"metalgreymon3": {
-		"name": "metalgreymon3",
+	"metalgreymon_blue_2": {
+		"name": "metalgreymon_blue_2",
 		"year": "2010",
 		"url": "https://wikimon.net/Metal_Greymon_(2010_Anime_Version)",
 		"level": ["Ultimate"],
@@ -9875,8 +9911,8 @@
 		"field": "Metal Empire",
 		"variants": []
 	},
-	"metalgreymon+cyberlauncher": {
-		"name": "metalgreymon+cyberlauncher",
+	"metalgreymon_blue_2_cyber_launcher": {
+		"name": "metalgreymon_blue_2_cyber_launcher",
 		"year": "2010",
 		"url": "https://wikimon.net/Metal_Greymon_%2B_Cyber_Launcher",
 		"level": ["Ultimate", "Mega"],
@@ -9923,8 +9959,8 @@
 		"level": null,
 		"variants": []
 	},
-	"omegamonzwart": {
-		"name": "omegamonzwart",
+	"omegamon_zwart": {
+		"name": "omegamon_zwart",
 		"year": "2010",
 		"url": "https://wikimon.net/Omegamon_Zwart",
 		"level": ["Mega", "Mega+"],
@@ -10025,8 +10061,8 @@
 		"attribute": "Data",
 		"variants": []
 	},
-	"shoutmon+dorulucannon": {
-		"name": "shoutmon+dorulucannon",
+	"shoutmon_dorulucannon": {
+		"name": "shoutmon_dorulucannon",
 		"year": "2010",
 		"url": "https://wikimon.net/Shoutmon_%2B_Dorulu_Cannon",
 		"level": null,
@@ -10034,8 +10070,8 @@
 		"attribute": ["Data", "None"],
 		"variants": []
 	},
-	"shoutmon+jetsparrow": {
-		"name": "shoutmon+jetsparrow",
+	"shoutmon_jetsparrow": {
+		"name": "shoutmon_jetsparrow",
 		"year": "2010",
 		"url": "https://wikimon.net/Shoutmon_%2B_Jet_Sparrow",
 		"level": null,
@@ -10043,8 +10079,8 @@
 		"attribute": ["Data", "None"],
 		"variants": []
 	},
-	"shoutmon+starsword": {
-		"name": "shoutmon+starsword",
+	"shoutmon_starsword": {
+		"name": "shoutmon_starsword",
 		"year": "2010",
 		"url": "https://wikimon.net/Shoutmon_%2B_Star_Sword",
 		"level": null,
@@ -10061,8 +10097,8 @@
 		"attribute": "Data",
 		"variants": []
 	},
-	"shoutmonsh": {
-		"name": "shoutmonsh",
+	"shoutmon_sh": {
+		"name": "shoutmon_sh",
 		"year": "2010",
 		"url": "https://wikimon.net/Shoutmon_SH",
 		"level": null,
@@ -10079,14 +10115,14 @@
 		"variants": []
 	},
 	"shoutmon_x2_incomplete_x3": {
-		"name": "shoutmonx2incompletex3",
+		"name": "shoutmon_x2_incomplete_x3",
 		"year": "2010",
 		"url": "https://wikimon.net/Shoutmon_X2_(Incomplete_X3)",
 		"level": null,
 		"variants": []
 	},
-	"shoutmon_x2_plus_m": {
-		"name": "shoutmon_x2_plus_m",
+	"shoutmon_x2m": {
+		"name": "shoutmon_x2m",
 		"year": "2010",
 		"url": "https://wikimon.net/Shoutmon_X2_Plus_M",
 		"level": null,
@@ -10151,8 +10187,8 @@
 		"field": ["Nature Spirits", "Virus Busters"],
 		"variants": []
 	},
-	"shoutmon_x5+skullgreymon": {
-		"name": "shoutmon_x5+skullgreymon",
+	"shoutmon_x5_skullgreymon": {
+		"name": "shoutmon_x5_skullgreymon",
 		"year": "2010",
 		"url": "https://wikimon.net/Shoutmon_X5_%2B_Skull_Greymon",
 		"level": null,
@@ -10167,8 +10203,8 @@
 		"attribute": ["Data", "None"],
 		"variants": []
 	},
-	"shoutmony": {
-		"name": "shoutmony",
+	"shoutmon_yellow": {
+		"name": "shoutmon_yellow",
 		"year": "2010",
 		"url": "https://wikimon.net/Shoutmon_Y",
 		"level": null,
@@ -10195,8 +10231,8 @@
 		"attribute": "Virus",
 		"variants": []
 	},
-	"skullknightmonbr": {
-		"name": "skullknightmonbr",
+	"skullknightmon_red": {
+		"name": "skullknightmon_red",
 		"year": "2010",
 		"url": "https://wikimon.net/Skull_Knightmon_BR",
 		"level": null,
@@ -10211,8 +10247,8 @@
 		"level": ["Champion"],
 		"variants": []
 	},
-	"skullknightmon_big_axe_mode": {
-		"name": "skullknightmon_big_axe_mode",
+	"skullknightmon_axe": {
+		"name": "skullknightmon_axe",
 		"year": "2010",
 		"url": "https://wikimon.net/Skull_Knightmon:_Big_Axe_Mode",
 		"level": ["Champion", "Ultimate"],
@@ -10377,8 +10413,8 @@
 		"level": null,
 		"variants": []
 	},
-	"beelzebumon+revolmon": {
-		"name": "beelzebumon+revolmon",
+	"beelzebumon_revolmon": {
+		"name": "beelzebumon_revolmon",
 		"year": "2011",
 		"url": "https://wikimon.net/Beelzebumon_%2B_Revolmon",
 		"level": null,
@@ -10403,16 +10439,16 @@
 		"attribute": "Data",
 		"variants": []
 	},
-	"black_shoutmonx7": {
-		"name": "black_shoutmonx7",
+	"black_shoutmon_x7": {
+		"name": "black_shoutmon_x7",
 		"year": "2011",
 		"url": "https://wikimon.net/Black_Shoutmon_X7",
 		"level": null,
 		"type": "Composite",
 		"variants": []
 	},
-	"captain_hookmon": {
-		"name": "captain_hookmon",
+	"captainhookmon": {
+		"name": "captainhookmon",
 		"year": "2011",
 		"url": "https://wikimon.net/Captain_Hookmon",
 		"level": "Ultimate",
@@ -10505,8 +10541,8 @@
 		"level": ["Ultimate", "Mega"],
 		"variants": []
 	},
-	"deckerdramonfloa_mode": {
-		"name": "deckerdramonfloa_mode",
+	"deckerdramonfloat_mode": {
+		"name": "deckerdramonfloat_mode",
 		"year": "2011",
 		"url": "https://wikimon.net/Deckerdramon_Float_Mode",
 		"level": null,
@@ -10545,8 +10581,8 @@
 		"type": "Dragon Man",
 		"variants": []
 	},
-	"dracomon+cyberdramon": {
-		"name": "dracomon+cyberdramon",
+	"dracomon_cyberdramon": {
+		"name": "dracomon_cyberdramon",
 		"year": "2011",
 		"url": "https://wikimon.net/Dracomon_%2B_Cyberdramon",
 		"level": null,
@@ -10660,8 +10696,8 @@
 		"type": "Unique",
 		"variants": []
 	},
-	"grandiskuwagamonhone_mode": {
-		"name": "grandiskuwagamonhone_mode",
+	"grandiskuwagamonhoney_mode": {
+		"name": "grandiskuwagamonhoney_mode",
 		"year": "2011",
 		"url": "https://wikimon.net/Grandis_Kuwagamon_Honey_Mode",
 		"level": ["Mega", "Mega+"],
@@ -10678,8 +10714,8 @@
 		"Group": "Big Death-Stars",
 		"variants": []
 	},
-	"gravimondarknes_mode": {
-		"name": "gravimondarknes_mode",
+	"gravimon_darkness_mode": {
+		"name": "gravimon_darkness_mode",
 		"year": "2011",
 		"url": "https://wikimon.net/Gravimon_Darkness_Mode",
 		"level": null,
@@ -10761,8 +10797,8 @@
 		"attribute": "Virus",
 		"variants": []
 	},
-	"knightmonwiseswor_mode": {
-		"name": "knightmonwiseswor_mode",
+	"knightmonwisesword_mode": {
+		"name": "knightmonwisesword_mode",
 		"year": "2011",
 		"url": "https://wikimon.net/Knightmon_Wise_Sword_Mode",
 		"level": null,
@@ -10784,32 +10820,32 @@
 		"level": null,
 		"variants": []
 	},
-	"megablackshoutmonx7": {
-		"name": "megablackshoutmonx7",
+	"mega_black_shoutmon_x7": {
+		"name": "mega_black_shoutmon_x7",
 		"year": "2011",
 		"url": "https://wikimon.net/Mega_Black_Shoutmon_X7",
 		"level": null,
 		"type": "Composite",
 		"variants": []
 	},
-	"megadarknessbagramon": {
-		"name": "megadarknessbagramon",
+	"mega_darkness_bagramon": {
+		"name": "mega_darkness_bagramon",
 		"year": "2011",
 		"url": "https://wikimon.net/Mega_Darkness_Bagramon",
 		"level": null,
 		"type": "Composite",
 		"variants": []
 	},
-	"megadeckergreymon": {
-		"name": "megadeckergreymon",
+	"mega_deckergreymon": {
+		"name": "mega_deckergreymon",
 		"year": "2011",
 		"url": "https://wikimon.net/Mega_Decker_Greymon",
 		"level": null,
 		"type": "Enhancement",
 		"variants": []
 	},
-	"megamusoknightmon": {
-		"name": "megamusoknightmon",
+	"mega_musoknightmon": {
+		"name": "mega_musoknightmon",
 		"year": "2011",
 		"url": "https://wikimon.net/Mega_Muso_Knightmon",
 		"level": null,
@@ -10855,23 +10891,23 @@
 		"Group": "Big Death-Stars",
 		"variants": []
 	},
-	"neovamdemondarknessmodemetalgreymon": {
-		"name": "neovamdemondarknessmodemetalgreymon",
+	"neovamdemon_darkness_mode_metal_greymon": {
+		"name": "neovamdemon_darkness_mode_metal_greymon",
 		"year": "2011",
 		"url": "https://wikimon.net/Neo_Vamdemon_Darkness_Mode_(Metal_Greymon)",
 		"level": ["Mega"],
 		"attribute": "Virus",
 		"variants": []
 	},
-	"neovamdemondarknessmodeshoutmon": {
-		"name": "neovamdemondarknessmodeshoutmon",
+	"neovamdemon_darkness_mode_shoutmon": {
+		"name": "neovamdemon_darkness_mode_shoutmon",
 		"year": "2011",
 		"url": "https://wikimon.net/Neo_Vamdemon_Darkness_Mode_(Shoutmon)",
 		"level": null,
 		"variants": []
 	},
-	"neovamdemondarknessmodevampirearmy": {
-		"name": "neovamdemondarknessmodevampirearmy",
+	"neovamdemon_darkness_mode_vampire_army": {
+		"name": "neovamdemon_darkness_mode_vampire_army",
 		"year": "2011",
 		"url": "https://wikimon.net/Neo_Vamdemon_Darkness_Mode_(Vampire_Army)",
 		"level": ["Mega"],
@@ -10947,8 +10983,8 @@
 		"field": "Wind Guardians",
 		"variants": []
 	},
-	"rampagegreymon": {
-		"name": "rampagegreymon",
+	"rampage_greymon": {
+		"name": "rampage_greymon",
 		"year": "2011",
 		"url": "https://wikimon.net/Rampage_Greymon",
 		"level": null,
@@ -10997,8 +11033,8 @@
 		"attribute": "Virus",
 		"variants": []
 	},
-	"shademonnenever.": {
-		"name": "shademonnenever.",
+	"shademon_nene": {
+		"name": "shademon_nene",
 		"year": "2011",
 		"url": "https://wikimon.net/Shademon_(Nene_Ver.)",
 		"level": "Champion",
@@ -11030,8 +11066,8 @@
 		"level": null,
 		"variants": []
 	},
-	"shoutmonkingver.": {
-		"name": "shoutmonkingver.",
+	"king_shoutmon": {
+		"name": "king_shoutmon",
 		"year": "2011",
 		"url": "https://wikimon.net/Shoutmon_(King_Ver.)",
 		"level": ["Child", "Champion"],
@@ -11084,8 +11120,8 @@
 		"level": ["Ultimate"],
 		"variants": []
 	},
-	"shoutmonx6": {
-		"name": "shoutmonx6",
+	"shoutmon_x6": {
+		"name": "shoutmon_x6",
 		"year": "2011",
 		"url": "https://wikimon.net/Shoutmon_X6",
 		"level": ["Ultimate", "Mega"],
@@ -11102,8 +11138,8 @@
 		"field": "Nature Spirits",
 		"variants": []
 	},
-	"shoutmon_x7:superio_mode": {
-		"name": "shoutmon_x7:superio_mode",
+	"shoutmon_x7_superior_mode": {
+		"name": "shoutmon_x7_superior_mode",
 		"year": "2011",
 		"url": "https://wikimon.net/Shoutmon_X7:_Superior_Mode",
 		"level": ["Mega", "Mega+", "Ultra"],
@@ -11122,8 +11158,8 @@
 		"attribute": ["Virus", "None"],
 		"variants": []
 	},
-	"sparrowmonab": {
-		"name": "sparrowmonab",
+	"sparrowmon_ab": {
+		"name": "sparrowmon_ab",
 		"year": "2011",
 		"url": "https://wikimon.net/Sparrowmon_AB",
 		"level": null,
@@ -11139,8 +11175,8 @@
 		"Group": "Big Death-Stars",
 		"variants": []
 	},
-	"splashmondarknes_mode": {
-		"name": "splashmondarknes_mode",
+	"splashmon_darkness_mode": {
+		"name": "splashmon_darkness_mode",
 		"year": "2011",
 		"url": "https://wikimon.net/Splashmon_Darkness_Mode",
 		"level": ["Ultimate", "Mega"],
@@ -11149,8 +11185,8 @@
 		"Group": "Big Death-Stars",
 		"variants": []
 	},
-	"splashmondarknessmodedrippins": {
-		"name": "splashmondarknessmodedrippins",
+	"splashmon_darkness_mode_drippins": {
+		"name": "splashmon_darkness_mode_drippins",
 		"year": "2011",
 		"url": "https://wikimon.net/Splashmon_Darkness_Mode_(Drippins)",
 		"level": ["Ultimate", "Mega"],
@@ -11206,65 +11242,65 @@
 		"Group": "Olympos XII",
 		"variants": []
 	},
-	"whitelopmon": {
-		"name": "whitelopmon",
+	"lopmon_white": {
+		"name": "lopmon_white",
 		"year": "2011",
 		"url": "https://wikimon.net/White_Lopmon",
 		"level": "Rookie",
 		"type": "Beast",
 		"variants": []
 	},
-	"xrosuparresterdramondobermon": {
-		"name": "xrosuparresterdramondobermon",
+	"arresterdramon_dobermon": {
+		"name": "arresterdramon_dobermon",
 		"year": "2011",
 		"url": "https://wikimon.net/Xros_Up_Arresterdramon_(Dobermon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosuparresterdramonmetaltyranomon": {
-		"name": "xrosuparresterdramonmetaltyranomon",
+	"arresterdramon_metaltyranomon": {
+		"name": "arresterdramon_metaltyranomon",
 		"year": "2011",
 		"url": "https://wikimon.net/Xros_Up_Arresterdramon_(Metal_Tyranomon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosuparresterdramonsagomon": {
-		"name": "xrosuparresterdramonsagomon",
+	"arresterdramon_sagomon": {
+		"name": "arresterdramon_sagomon",
 		"year": "2011",
 		"url": "https://wikimon.net/Xros_Up_Arresterdramon_(Sagomon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosuparresterdramonsparrowmon": {
-		"name": "xrosuparresterdramonsparrowmon",
+	"arresterdramon_sparrowmon": {
+		"name": "arresterdramon_sparrowmon",
 		"year": "2011",
 		"url": "https://wikimon.net/Xros_Up_Arresterdramon_(Sparrowmon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosupgumdramonkotemon": {
-		"name": "xrosupgumdramonkotemon",
+	"gumdramon_kotemon": {
+		"name": "gumdramon_kotemon",
 		"year": "2011",
 		"url": "https://wikimon.net/Xros_Up_Gumdramon_(Kotemon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosupomegashoutmondorulumon": {
-		"name": "xrosupomegashoutmondorulumon",
+	"omegashoutmon_dorulucannon": {
+		"name": "omegashoutmon_dorulucannon",
 		"year": "2011",
 		"url": "https://wikimon.net/Xros_Up_Omega_Shoutmon_(Dorulumon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosupopossummoncandmon": {
-		"name": "xrosupopossummoncandmon",
+	"opossummon_candmon": {
+		"name": "opossummon_candmon",
 		"year": "2011",
 		"url": "https://wikimon.net/Xros_Up_Opossummon_(Candmon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosupshoutmonpinochimon": {
-		"name": "xrosupshoutmonpinochimon",
+	"shoutmon_pinochimon": {
+		"name": "shoutmon_pinochimon",
 		"year": "2011",
 		"url": "https://wikimon.net/Xros_Up_Shoutmon_(Pinochimon)",
 		"level": null,
@@ -11309,8 +11345,8 @@
 		"attribute": "Vaccine",
 		"variants": []
 	},
-	"arresterdramon_superio_mode": {
-		"name": "arresterdramon_superio_mode",
+	"arresterdramon_superior_mode": {
+		"name": "arresterdramon_superior_mode",
 		"year": "2012",
 		"url": "https://wikimon.net/Arresterdramon:_Superior_Mode",
 		"level": ["Ultimate", "Mega", "Mega+"],
@@ -11320,8 +11356,8 @@
 		"field": "Nature Spirits",
 		"variants": []
 	},
-	"arresterdramon_superiormodebravesnatcher": {
-		"name": "arresterdramon_superiormodebravesnatcher",
+	"arresterdramon_superior_mode_brave_snatcher": {
+		"name": "arresterdramon_superior_mode_brave_snatcher",
 		"year": "2012",
 		"url": "https://wikimon.net/Arresterdramon:_Superior_Mode_(Brave_Snatcher)",
 		"level": ["Ultimate", "Mega", "Mega+", "Ultra"],
@@ -11374,8 +11410,8 @@
 		"attribute": ["Vaccine", "None"],
 		"variants": []
 	},
-	"luminamonnenever.": {
-		"name": "luminamonnenever.",
+	"luminamon_nene": {
+		"name": "luminamon_nene",
 		"year": "2012",
 		"url": "https://wikimon.net/Luminamon_(Nene_Ver.)",
 		"level": "Ultimate",
@@ -11421,91 +11457,91 @@
 		"field": "Nature Spirits",
 		"variants": []
 	},
-	"skullknightmonwhite": {
-		"name": "skullknightmonwhite",
+	"skullknightmon_white": {
+		"name": "skullknightmon_white",
 		"year": "2012",
 		"variants": []
 	},
-	"xrosuparresterdramonastamon": {
-		"name": "xrosuparresterdramonastamon",
+	"arresterdramon_astamon": {
+		"name": "arresterdramon_astamon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Arresterdramon_(Astamon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosuparresterdramonblossomon": {
-		"name": "xrosuparresterdramonblossomon",
+	"arresterdramon_blossomon": {
+		"name": "arresterdramon_blossomon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Arresterdramon_(Blossomon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosuparresterdramongigabreakdramon": {
-		"name": "xrosuparresterdramongigabreakdramon",
+	"arresterdramon_gigabreakdramon": {
+		"name": "arresterdramon_gigabreakdramon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Arresterdramon_(Giga_Breakdramon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosuparresterdramonorgemon": {
-		"name": "xrosuparresterdramonorgemon",
+	"arresterdramon_orgemon": {
+		"name": "arresterdramon_orgemon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Arresterdramon_(Orgemon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosupastamoncerberumon": {
-		"name": "xrosupastamoncerberumon",
+	"astamon_cerberumon": {
+		"name": "astamon_cerberumon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Astamon_(Cerberumon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosupastamontriceramon": {
-		"name": "xrosupastamontriceramon",
+	"astamon_triceramon": {
+		"name": "astamon_triceramon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Astamon_(Triceramon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosupballistamonrevolmon": {
-		"name": "xrosupballistamonrevolmon",
+	"ballistamon_revolmon": {
+		"name": "ballistamon_revolmon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Ballistamon_(Revolmon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosupdorulumonpawnchessmonwhite": {
-		"name": "xrosupdorulumonpawnchessmonwhite",
+	"dorulumon_pawnchessmon": {
+		"name": "dorulumon_pawnchessmon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Dorulumon_(Pawn_Chessmon_(White))",
 		"level": null,
 		"variants": []
 	},
-	"xrosupmervamonbeelzebumon": {
-		"name": "xrosupmervamonbeelzebumon",
+	"mervamon_beelzebumon": {
+		"name": "mervamon_beelzebumon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Mervamon_(Beelzebumon)",
 		"level": ["Mega"],
 		"attribute": ["Unknown", "Virus"],
 		"variants": []
 	},
-	"xrosupshoutmonchibikamemon": {
-		"name": "xrosupshoutmonchibikamemon",
+	"shoutmon_chibikamemon": {
+		"name": "shoutmon_chibikamemon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Shoutmon_(Chibi_Kamemon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosupsubmarimonplesiomon": {
-		"name": "xrosupsubmarimonplesiomon",
+	"submarimon_plesiomon": {
+		"name": "submarimon_plesiomon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Submarimon_(Plesiomon)",
 		"level": null,
 		"variants": []
 	},
-	"xrosuptuwarmonsuperstarmon": {
-		"name": "xrosuptuwarmonsuperstarmon",
+	"tuwarmon_superstarmon": {
+		"name": "tuwarmon_superstarmon",
 		"year": "2012",
 		"url": "https://wikimon.net/Xros_Up_Tuwarmon_(Superstarmon)",
 		"level": null,
@@ -11577,6 +11613,17 @@
 		"Group": "Olympos XII",
 		"variants": []
 	},
+	"bacchusmon_drunk": {
+		"name": "bacchusmon_drunk",
+		"year": "2013",
+		"url": "https://wikimon.net/Bacchusmon",
+		"level": "Mega",
+		"type": "God Man",
+		"attribute": "Virus",
+		"field": "Unknown",
+		"Group": "Olympos XII",
+		"variants": []
+	},
 	"beelstarmon": {
 		"name": "beelstarmon",
 		"year": "2013",
@@ -11588,8 +11635,8 @@
 		"Group": "Three Musketeers",
 		"variants": []
 	},
-	"cerberumon_werewol_mode": {
-		"name": "cerberumon_werewol_mode",
+	"cerberumon_werewolf_mode": {
+		"name": "cerberumon_werewolf_mode",
 		"year": "2013",
 		"url": "https://wikimon.net/Cerberumon:_Werewolf_Mode",
 		"level": "Ultimate",
@@ -11608,8 +11655,8 @@
 		"Group": "Olympos XII",
 		"variants": []
 	},
-	"ceresmonmedium": {
-		"name": "ceresmonmedium",
+	"ceresmon_medium": {
+		"name": "ceresmon_medium",
 		"year": "2013",
 		"url": "https://wikimon.net/Ceresmon_Medium",
 		"level": "Mega",
@@ -11629,8 +11676,8 @@
 		"Group": "Olympos XII",
 		"variants": []
 	},
-	"kuzuhamon_mik_mode": {
-		"name": "kuzuhamon_mik_mode",
+	"kuzuhamon_miko_mode": {
+		"name": "kuzuhamon_miko_mode",
 		"year": "2013",
 		"url": "https://wikimon.net/Kuzuhamon:_Miko_Mode",
 		"level": "Mega",
@@ -11822,8 +11869,8 @@
 		"Group": "Olympos XII",
 		"variants": []
 	},
-	"jupitermon_wrat_mode": {
-		"name": "jupitermon_wrat_mode",
+	"jupitermon_wrath_mode": {
+		"name": "jupitermon_wrath_mode",
 		"year": "2014",
 		"url": "https://wikimon.net/Jupitermon:_Wrath_Mode",
 		"level": ["Mega", "Mega+"],
@@ -11890,8 +11937,8 @@
 		"level": "Rookie",
 		"variants": []
 	},
-	"meicrackmon_viciou_mode": {
-		"name": "meicrackmon_viciou_mode",
+	"meicrackmon_vicious_mode": {
+		"name": "meicrackmon_vicious_mode",
 		"year": "2016",
 		"url": "https://wikimon.net/Meicrackmon:_Vicious_Mode",
 		"level": "Ultimate",
@@ -11900,13 +11947,8 @@
 		"field": "Unknown",
 		"variants": []
 	},
-	"montanachan": {
-		"name": "montanachan",
-		"year": "2016",
-		"variants": []
-	},
-	"omegamonalterb": {
-		"name": "omegamonalterb",
+	"omegamon_alter_b": {
+		"name": "omegamon_alter_b",
 		"year": "2016",
 		"url": "https://wikimon.net/Omegamon_Alter-B",
 		"level": ["Mega", "Mega+", "Ultra"],
@@ -11915,8 +11957,8 @@
 		"field": "Virus Busters",
 		"variants": []
 	},
-	"omegamonzwartdefeat": {
-		"name": "omegamonzwartdefeat",
+	"omegamon_zwart_defeat": {
+		"name": "omegamon_zwart_defeat",
 		"year": "2016",
 		"url": "https://wikimon.net/Omegamon_Zwart_Defeat",
 		"level": ["Mega", "Mega+"],
@@ -12042,8 +12084,8 @@
 		"field": "Nature Spirits",
 		"variants": []
 	},
-	"omegamonalters": {
-		"name": "omegamonalters",
+	"omegamon_alter_s": {
+		"name": "omegamon_alter_s",
 		"year": "2017",
 		"url": "https://wikimon.net/Omegamon_Alter-S",
 		"level": ["Mega", "Mega+", "Ultra"],
@@ -12292,8 +12334,8 @@
 		"Group": "Olympos XII",
 		"variants": []
 	},
-	"omegamon_mercifu_mode": {
-		"name": "omegamon_mercifu_mode",
+	"omegamon_merciful_mode": {
+		"name": "omegamon_merciful_mode",
 		"year": "2018",
 		"url": "https://wikimon.net/Omegamon:_Merciful_Mode",
 		"level": ["Mega", "Mega+", "Ultra"],
@@ -12465,8 +12507,8 @@
 		"Group": "Seven Great Demon Lords",
 		"variants": []
 	},
-	"cherubimonvicex": {
-		"name": "cherubimonvicex",
+	"cherubimon_vice_x": {
+		"name": "cherubimon_vice_x",
 		"year": "2019",
 		"url": "https://wikimon.net/Cherubimon_(Vice)_(X-Antibody)",
 		"level": "Mega",
@@ -12475,8 +12517,8 @@
 		"Group": "Three Archangels",
 		"variants": []
 	},
-	"cherubimonvirtuex": {
-		"name": "cherubimonvirtuex",
+	"cherubimon_virtue_x": {
+		"name": "cherubimon_virtue_x",
 		"year": "2019",
 		"url": "https://wikimon.net/Cherubimon_(Virtue)_(X-Antibody)",
 		"level": "Mega",
@@ -12521,16 +12563,6 @@
 		"attribute": "Virus",
 		"field": ["Dark Area", "Nightmare Soldiers", "Unknown"],
 		"Group": "Seven Great Demon Lords",
-		"variants": []
-	},
-	"eosmonperfect": {
-		"name": "eosmonperfect",
-		"year": "2019",
-		"url": "https://wikimon.net/Eosmon_(Perfect)",
-		"level": "Ultimate",
-		"type": "Unknown",
-		"attribute": ["Unknown", "Free"],
-		"field": "Metal Empire",
 		"variants": []
 	},
 	"examon_x": {
@@ -12840,8 +12872,8 @@
 		"attribute": "Data",
 		"variants": []
 	},
-	"rasenmon_fur_mode": {
-		"name": "rasenmon_fur_mode",
+	"rasenmon_fury_mode": {
+		"name": "rasenmon_fury_mode",
 		"year": "2019",
 		"url": "https://wikimon.net/Rasenmon:_Fury_Mode",
 		"level": "Mega",
@@ -13044,8 +13076,8 @@
 		"field": "Wind Guardians",
 		"variants": []
 	},
-	"eosmonadult": {
-		"name": "eosmonadult",
+	"eosmon": {
+		"name": "eosmon",
 		"year": "2020",
 		"url": "https://wikimon.net/Eosmon_(Adult)",
 		"level": "Champion",
@@ -13054,8 +13086,18 @@
 		"field": ["Metal Empire", "Unknown"],
 		"variants": []
 	},
-	"eosmonultimate": {
-		"name": "eosmonultimate",
+	"eosmon_2": {
+		"name": "eosmon_2",
+		"year": "2020",
+		"url": "https://wikimon.net/Eosmon_(Perfect)",
+		"level": "Ultimate",
+		"type": "Unknown",
+		"attribute": ["Unknown", "Free"],
+		"field": "Metal Empire",
+		"variants": []
+	},
+	"eosmon_3": {
+		"name": "eosmon_3",
 		"year": "2020",
 		"url": "https://wikimon.net/Eosmon_(Ultimate)",
 		"level": "Mega",
@@ -13082,8 +13124,8 @@
 		"attribute": "Virus",
 		"variants": []
 	},
-	"eyesmon_scatte_mode": {
-		"name": "eyesmon_scatte_mode",
+	"eyesmon_scatter_mode": {
+		"name": "eyesmon_scatter_mode",
 		"year": "2020",
 		"url": "https://wikimon.net/Eyesmon:_Scatter_Mode",
 		"level": "Champion",
@@ -13210,8 +13252,8 @@
 		"field": "Deep Savers",
 		"variants": []
 	},
-	"metalgreymon_alterou_mode": {
-		"name": "metalgreymon_alterou_mode",
+	"metalgreymon_alterous_mode": {
+		"name": "metalgreymon_alterous_mode",
 		"year": "2020",
 		"url": "https://wikimon.net/Metal_Greymon:_Alterous_Mode",
 		"level": "Ultimate",
@@ -13410,8 +13452,8 @@
 		"field": "Wind Guardians",
 		"variants": []
 	},
-	"weregarurumon_sagittariu_mode": {
-		"name": "weregarurumon_sagittariu_mode",
+	"weregarurumon_sagittarius_mode": {
+		"name": "weregarurumon_sagittarius_mode",
 		"year": "2020",
 		"url": "https://wikimon.net/Were_Garurumon:_Sagittarius_Mode",
 		"level": "Ultimate",
@@ -13550,8 +13592,8 @@
 		"attribute": "Virus",
 		"variants": []
 	},
-	"gaioumon_itt_mode": {
-		"name": "gaioumon_itt_mode",
+	"gaioumon_itto_mode": {
+		"name": "gaioumon_itto_mode",
 		"year": "2021",
 		"url": "https://wikimon.net/Gaioumon:_Itto_Mode",
 		"level": "Mega",
@@ -13645,8 +13687,8 @@
 		"field": "Virus Busters",
 		"variants": []
 	},
-	"kodokugumonchild": {
-		"name": "kodokugumonchild",
+	"kodokugumon_2": {
+		"name": "kodokugumon_2",
 		"year": "2021",
 		"url": "https://wikimon.net/Kodokugumon_Child",
 		"level": "Rookie",
@@ -13915,8 +13957,8 @@
 		"attribute": "Data",
 		"variants": []
 	},
-	"greymonbluex": {
-		"name": "greymonbluex",
+	"greymon_blue_x": {
+		"name": "greymon_blue_x",
 		"year": "2022",
 		"url": "https://wikimon.net/Greymon_(Blue)_(X-Antibody)",
 		"level": "Champion",
@@ -13943,8 +13985,8 @@
 		"Group": "Crack Team",
 		"variants": []
 	},
-	"huanglongmon_rui_mode": {
-		"name": "huanglongmon_rui_mode",
+	"huanglongmon_ruin_mode": {
+		"name": "huanglongmon_ruin_mode",
 		"year": "2022",
 		"url": "https://wikimon.net/Huanglongmon:_Ruin_Mode",
 		"level": "Mega",
@@ -14359,8 +14401,8 @@
 		"Group": ["Tentei Hachibushu", "Saneiketsu"],
 		"variants": []
 	},
-	"erlangmon_blas_mode": {
-		"name": "erlangmon_blas_mode",
+	"erlangmon_blast_mode": {
+		"name": "erlangmon_blast_mode",
 		"year": "2024",
 		"url": "https://wikimon.net/Erlangmon:_Blast_Mode",
 		"level": ["Mega", "Mega+", "Ultra"],
@@ -14612,8 +14654,8 @@
 		"attribute": "Vaccine",
 		"variants": []
 	},
-	"takutoumon_wrat_mode": {
-		"name": "takutoumon_wrat_mode",
+	"takutoumon_wrath_mode": {
+		"name": "takutoumon_wrath_mode",
 		"year": "2024",
 		"url": "https://wikimon.net/Takutoumon:_Wrath_Mode",
 		"level": ["Mega", "Mega+", "Ultra"],
@@ -14632,8 +14674,8 @@
 		"Group": "Royal Base",
 		"variants": []
 	},
-	"wargreymon_\"g\"erosio_mode": {
-		"name": "wargreymon_\"g\"erosio_mode",
+	"wargreymon_\"g\"erosion_mode": {
+		"name": "wargreymon_\"g\"erosion_mode",
 		"year": "2024",
 		"url": "https://wikimon.net/War_Greymon:_%22G%22_Erosion_Mode",
 		"level": "Mega",
@@ -14854,8 +14896,8 @@
 		"attribute": "Data",
 		"variants": []
 	},
-	"metalgreymon_\"g\"erosio_mode": {
-		"name": "metalgreymon_\"g\"erosio_mode",
+	"metalgreymon_\"g\"erosion_mode": {
+		"name": "metalgreymon_\"g\"erosion_mode",
 		"year": "2025",
 		"url": "https://wikimon.net/Metal_Greymon:_%22G%22_Erosion_Mode",
 		"level": "Ultimate",
@@ -14879,8 +14921,8 @@
 		"type": "Smoke",
 		"variants": []
 	},
-	"mugendramon_mfs_mode": {
-		"name": "mugendramon_mfs_mode",
+	"mugendramon_mfs3_mode": {
+		"name": "mugendramon_mfs3_mode",
 		"year": "2025",
 		"url": "https://wikimon.net/Mugendramon:_MFS-3_Mode",
 		"level": "Mega",
@@ -14923,8 +14965,8 @@
 		"attribute": "Virus",
 		"variants": []
 	},
-	"nezhamon_crimso_mode": {
-		"name": "nezhamon_crimso_mode",
+	"nezhamon_crimson_mode": {
+		"name": "nezhamon_crimson_mode",
 		"year": "2025",
 		"url": "https://wikimon.net/Nezhamon:_Crimson_Mode",
 		"level": ["Mega", "Mega+", "Ultra"],
@@ -15017,8 +15059,8 @@
 		"level": "Ultimate",
 		"variants": []
 	},
-	"skullgreymon_\"g\"erosio_mode": {
-		"name": "skullgreymon_\"g\"erosio_mode",
+	"skullgreymon_\"g\"erosion_mode": {
+		"name": "skullgreymon_\"g\"erosion_mode",
 		"year": "2025",
 		"url": "https://wikimon.net/Skull_Greymon:_%22G%22_Erosion_Mode",
 		"level": "Ultimate",

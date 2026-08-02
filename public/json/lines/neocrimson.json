@@ -1,129 +1,105 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "toyagumon_black",
-                "color": "dark",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "darklizardmon",
-                "color": "dark"
-            },
-            {
-                "name": "gigadramon",
-                "color": "dark"
-            },
-            {
-                "name": "chaosdramon",
-                "color": "dark"
-            }
-        ],
-        [
-            {
-                "name": "botamon"
-            },
-            {
-                "name": "koromon"
-            },
-            {
-                "name": "agumon_black",
-                "color": "dark"
-            },
-            {
-                "name": "greymon_blue",
-                "color": "dark"
-            },
-            {
-                "name": "metalgreymon_blue",
-                "color": "dark"
-            },
-            {
-                "name": "chaoswargreymon",
-                "color": "dark"
-            },
-            {
-                "name": "neocrimson",
-                "xSize": 2,
-                "color": "fusion",
-                "from": [
-                    [
-                        -1.5,
-                        -1
-                    ],
-                    [
-                        -0.5,
-                        -1
-                    ],
-                    [
-                        0.5,
-                        -1
-                    ],
-                    [
-                        1.5,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "betamon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "seadramon"
-            },
-            {
-                "name": "waruseadramon",
-                "color": "dark"
-            },
-            {
-                "name": "chaosmetalseadramon",
-                "color": "dark"
-            }
-        ],
-        [
-            {
-                "name": "mokumon"
-            },
-            {
-                "name": "demimeramon",
-                "color": "fire"
-            },
-            {
-                "name": "candlemon",
-                "color": "fire"
-            },
-            {
-                "name": "bakemon",
-                "color": "dark"
-            },
-            {
-                "name": "phantomon",
-                "color": "dark"
-            },
-            {
-                "name": "chaospiemon",
-                "color": "dark"
-            }
-        ]
-    ],
-    "related": [
-        "toyagumon",
-        "greymon",
-        "betamon",
-        "bakemon",
-        "apocalymon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "toyagumon_black",
+				"color": "dark",
+				"from": [1, -1]
+			},
+			{
+				"name": "darklizardmon",
+				"color": "dark"
+			},
+			{
+				"name": "gigadramon",
+				"color": "dark"
+			},
+			{
+				"name": "chaosdramon",
+				"color": "dark"
+			}
+		],
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "koromon"
+			},
+			{
+				"name": "agumon_black",
+				"color": "dark"
+			},
+			{
+				"name": "greymon_blue",
+				"color": "dark"
+			},
+			{
+				"name": "metalgreymon_blue",
+				"color": "dark"
+			},
+			{
+				"name": "chaoswargreymon",
+				"color": "dark"
+			},
+			{
+				"name": "neocrimson",
+				"xSize": 2,
+				"color": "fusion",
+				"from": [
+					[-1.5, -1],
+					[-0.5, -1],
+					[0.5, -1],
+					[1.5, -1]
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "betamon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "seadramon"
+			},
+			{
+				"name": "waruseadramon",
+				"color": "dark"
+			},
+			{
+				"name": "chaosmetalseadramon",
+				"color": "dark"
+			}
+		],
+		[
+			{
+				"name": "mokumon"
+			},
+			{
+				"name": "demimeramon",
+				"color": "fire"
+			},
+			{
+				"name": "candlemon",
+				"color": "fire"
+			},
+			{
+				"name": "bakemon",
+				"color": "dark"
+			},
+			{
+				"name": "fantomon",
+				"color": "dark"
+			},
+			{
+				"name": "chaospiemon",
+				"color": "dark"
+			}
+		]
+	],
+	"related": ["toyagumon", "greymon", "betamon", "bakemon", "apocalymon"]
 }

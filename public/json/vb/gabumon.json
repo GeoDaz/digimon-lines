@@ -1,98 +1,95 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "weregarurumon_alter_mode",
-                "color": "mode",
-                "from": [1,-1]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "garurumon",
-                "from": [1,-1]
-            },
-            {
-                "name": "weregarurumon"
-            },
-            {
-                "name": "metalgarurumon"
-            }
-        ],
-        [
-            {
-                "name": "punimon"
-            },
-            {
-                "name": "tsunomon"
-            },
-            {
-                "name": "gabumon"
-            },
-            {
-                "name": "dorulumon",
-                "mirror": true
-            },
-            {
-                "name": "jaegerdorulumon"
-            },
-            {
-                "name": "cresgarurumon",
-                "mirror": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "tialudomon",
-                "from": [-1,-1]
-            },
-            {
-                "name": "raijiludomon"
-            },
-            {
-                "name": "miragegaogamon",
-                "mirror": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "gaogamon",
-                "from": [-2,-1]
-            },
-            {
-                "name": "machgaogamon"
-            },
-            {
-                "name": "zeedgarurumon",
-                "mirror": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "kendogarurumon",
-                "from": [-1,-1]
-            }
-        ]
-    ],
-    "related": [
-        "garurumon",
-        "ludomon"
-    ]
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "weregarurumon_sagittarius_mode",
+				"color": "mode",
+				"from": [1, -1]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "garurumon",
+				"from": [1, -1]
+			},
+			{
+				"name": "weregarurumon"
+			},
+			{
+				"name": "metalgarurumon"
+			}
+		],
+		[
+			{
+				"name": "punimon"
+			},
+			{
+				"name": "tsunomon"
+			},
+			{
+				"name": "gabumon"
+			},
+			{
+				"name": "dorulumon",
+				"mirror": true
+			},
+			{
+				"name": "jaegerdorulumon"
+			},
+			{
+				"name": "cresgarurumon",
+				"mirror": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tialudomon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "raijiludomon"
+			},
+			{
+				"name": "miragegaogamon",
+				"mirror": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gaogamon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "machgaogamon"
+			},
+			{
+				"name": "zeedgarurumon",
+				"mirror": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "kendogarurumon",
+				"from": [-1, -1]
+			}
+		]
+	],
+	"related": ["garurumon", "ludomon"]
 }
