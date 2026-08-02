@@ -1007,6 +1007,7 @@ a.line-point {
 
 .reorderable {
 	transition: opacity 0.15s ease, transform 0.15s ease;
+	cursor: grab;
 }
 
 .reorderable:active {

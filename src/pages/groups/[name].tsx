@@ -10,6 +10,7 @@ import GroupMain from '@/components/Group/GroupMain';
 import GroupRelated from '@/components/Group/GroupRelated';
 // functions
 import useSaveGroup from '@/hooks/useSaveGroup';
+import useDragAutoScroll from '@/hooks/useDragAutoScroll';
 import { capitalize } from '@/functions';
 import useQueryParam from '@/hooks/useQueryParam';
 import { getDubNames, getDubbedSearchList } from '@/functions/search';
@@ -34,6 +35,9 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 	const { name } = useQueryParam(NAME) || ssr;
 	const [group, setGroup] = useState<Group | undefined>(ssr.group);
 	const saveGroup = useSaveGroup(name, setGroup);
+
+	// Scrolls the wide grids while a point is being dragged.
+	useDragAutoScroll();
 
 	useEffect(() => {
 		if (group !== ssr.group) {

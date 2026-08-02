@@ -1794,7 +1794,9 @@
                 "ikkakumon",
                 "dolphmon",
                 "orcamon",
-                "gesomon"
+                "gesomon",
+                "frigimon",
+                "mojyamon"
             ]
         },
         "gottsumon": {
@@ -5627,7 +5629,9 @@
                 "pomumon"
             ],
             "to": [
-                "monarchlizamon"
+                "monarchlizamon",
+                "ambromon",
+                "proganomon"
             ]
         },
         "eosmon": {
@@ -6432,6 +6436,8 @@
                 "gesomon"
             ],
             "to": [
+                "ancientmermaimon",
+                "shagaramon",
                 "cthyllamon"
             ]
         },
@@ -6544,7 +6550,8 @@
         "chamelemon": {
             "name": "chamelemon",
             "from": [
-                "gekkomon"
+                "gekkomon",
+                "armadillomon"
             ]
         },
         "coatlmon": {
@@ -7560,7 +7567,8 @@
                 "lekismon"
             ],
             "to": [
-                "dianamon"
+                "dianamon",
+                "jougamon"
             ]
         },
         "cryspaledramon": {
@@ -8523,7 +8531,8 @@
             "to": [
                 "ancientmermaimon",
                 "marineangemon",
-                "venusmon"
+                "venusmon",
+                "shagaramon"
             ]
         },
         "metalgreymon_blue_2": {
@@ -8851,11 +8860,16 @@
             "name": "proganomon",
             "from": [
                 "tortamon",
-                "landramon"
+                "landramon",
+                "armalizamon",
+                "digmon",
+                "drimogemon"
             ],
             "to": [
+                "pyramidimon",
                 "eldoradimon",
-                "pyramidimon"
+                "breakdramon",
+                "dinomon"
             ]
         },
         "pumpmon": {
@@ -9642,7 +9656,14 @@
         "monarchlizamon": {
             "name": "monarchlizamon",
             "from": [
-                "armalizamon"
+                "armalizamon",
+                "allomon",
+                "tuskmon"
+            ],
+            "to": [
+                "dinorexmon",
+                "rusttyranomon",
+                "jougamon"
             ]
         },
         "greatgrizzlymon": {
@@ -10807,7 +10828,9 @@
             "name": "breakdramon",
             "from": [
                 "groundramon",
-                "frozomon"
+                "frozomon",
+                "proganomon",
+                "loaderliomon"
             ]
         },
         "brigadramon": {
@@ -10966,8 +10989,13 @@
         },
         "cthyllamon": {
             "name": "cthyllamon",
+            "variants": [
+                "marineangemon"
+            ],
             "from": [
-                "marinedevimon"
+                "marinedevimon",
+                "dagomon",
+                "calamaramon"
             ]
         },
         "dalphomon": {
@@ -11050,11 +11078,13 @@
         },
         "dianamon": {
             "name": "dianamon",
+            "variants": [
+                "jougamon"
+            ],
             "from": [
                 "crescemon"
             ],
             "to": [
-                "jougamon",
                 "gracenovamon"
             ]
         },
@@ -11228,7 +11258,7 @@
         },
         "gracenovamon": {
             "name": "gracenovamon",
-            "from": [
+            "fusionFrom": [
                 "apollomon",
                 "dianamon"
             ]
@@ -11352,9 +11382,13 @@
         },
         "jougamon": {
             "name": "jougamon",
+            "variants": [
+                "dianamon"
+            ],
             "from": [
-                "dianamon",
-                "cherubimon_vice"
+                "crescemon",
+                "andiramon",
+                "monarchlizamon"
             ]
         },
         "jumbogamemon": {
@@ -12116,7 +12150,9 @@
         "shagaramon": {
             "name": "shagaramon",
             "from": [
-                "majiramon"
+                "majiramon",
+                "mermaimon",
+                "calamaramon"
             ]
         },
         "shakamon": {

@@ -3,6 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 import ButtonAdd from '@/components/Button/ButtonAdd';
 import GroupPointCol from '@/components/Group/GroupPointCol';
 import GroupPointModal from '@/components/Group/GroupPointModal';
+import useDragReorder from '@/hooks/useDragReorder';
 import { GroupPoint } from '@/types/Group';
 
 interface Props {
@@ -13,9 +14,10 @@ interface Props {
 
 const GroupRelated: React.FC<Props> = ({ related, editable = false, onChange }) => {
 	const [showModal, setShowModal] = useState(false);
+	const relations = related || [];
+	const { dragProps, draggingIndex } = useDragReorder(relations, onChange);
 
 	if (!related?.length && !editable) return null;
-	const relations = related || [];
 
 	const handleAdd = (point: GroupPoint) => {
 		if (relations.some(item => item.name === point.name)) return;
@@ -35,6 +37,8 @@ const GroupRelated: React.FC<Props> = ({ related, editable = false, onChange }) 
 						key={i}
 						point={relation}
 						onRemove={editable ? () => handleRemove(i) : undefined}
+						dragging={draggingIndex === i}
+						{...(editable ? dragProps(i) : {})}
 					/>
 				))}
 				{editable && (

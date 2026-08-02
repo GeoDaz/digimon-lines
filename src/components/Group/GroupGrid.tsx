@@ -5,6 +5,7 @@ import LineImage from '../Line/LineImage';
 import ButtonAdd from '../Button/ButtonAdd';
 import GroupPointCol from './GroupPointCol';
 import GroupPointModal from './GroupPointModal';
+import useDragReorder from '@/hooks/useDragReorder';
 
 interface Props {
 	group: Group;
@@ -12,7 +13,8 @@ interface Props {
 	onChange?: (main: Group['main']) => void;
 }
 
-type GroupRows = { [key: string]: Array<GroupPoint | null> };
+type GroupRow = Array<GroupPoint | null>;
+type GroupRows = { [key: string]: GroupRow };
 
 const GroupGrid: React.FC<Props> = ({ group, editable = false, onChange }) => {
 	// TODO ajouter le zoom
@@ -27,46 +29,19 @@ const GroupGrid: React.FC<Props> = ({ group, editable = false, onChange }) => {
 		onChange?.({ ...rows, [addRow]: [...row, point] });
 	};
 
-	const handleRemove = (key: string, index: number) => {
-		onChange?.({ ...rows, [key]: rows[key].filter((_, i) => i !== index) });
-	};
-
 	return (
 		<div className="frame">
 			<div className="line-grid ps-4">
 				{Object.entries(rows).map(([key, points]) => (
-					<Row className="line-row" key={key}>
-						<Col>
-							<div title={key} className="line-point pictured">
-								<div className="line-point-safe-zone">
-									<LineImage name={key} type={group.type} />
-								</div>
-							</div>
-						</Col>
-						{points.map((point, i) =>
-							point ? (
-								<GroupPointCol
-									key={i}
-									point={point}
-									onRemove={
-										editable ? () => handleRemove(key, i) : undefined
-									}
-								/>
-							) : (
-								<Col key={i}>
-									<div className="line-point" />
-								</Col>
-							)
-						)}
-						{editable && (
-							<Col>
-								<ButtonAdd
-									title={`Add a Digimon to ${key}`}
-									onClick={() => setAddRow(key)}
-								/>
-							</Col>
-						)}
-					</Row>
+					<GroupGridRow
+						key={key}
+						name={key}
+						type={group.type}
+						points={points}
+						editable={editable}
+						onAdd={() => setAddRow(key)}
+						onChange={row => onChange?.({ ...rows, [key]: row })}
+					/>
 				))}
 			</div>
 			{editable && (
@@ -81,4 +56,59 @@ const GroupGrid: React.FC<Props> = ({ group, editable = false, onChange }) => {
 		</div>
 	);
 };
+
+interface RowProps {
+	name: string;
+	type?: string;
+	points: GroupRow;
+	editable: boolean;
+	onAdd: () => void;
+	onChange: (points: GroupRow) => void;
+}
+
+const GroupGridRow: React.FC<RowProps> = ({
+	name,
+	type,
+	points,
+	editable,
+	onAdd,
+	onChange,
+}) => {
+	const { dragProps, draggingIndex } = useDragReorder(points, onChange);
+
+	const handleRemove = (index: number) => {
+		onChange(points.filter((_, i) => i !== index));
+	};
+
+	return (
+		<Row className="line-row">
+			<Col>
+				<div title={name} className="line-point pictured">
+					<div className="line-point-safe-zone">
+						<LineImage name={name} type={type} />
+					</div>
+				</div>
+			</Col>
+			{points.map((point, i) =>
+				point ?
+					<GroupPointCol
+						key={i}
+						point={point}
+						onRemove={editable ? () => handleRemove(i) : undefined}
+						dragging={draggingIndex === i}
+						{...(editable ? dragProps(i) : {})}
+					/>
+				:	<Col key={i}>
+						<div className="line-point" />
+					</Col>
+			)}
+			{editable && (
+				<Col>
+					<ButtonAdd title={`Add a Digimon to ${name}`} onClick={onAdd} />
+				</Col>
+			)}
+		</Row>
+	);
+};
+
 export default GroupGrid;

@@ -1,10 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import LinePoint from '@/components/Line/LinePoint';
 import LineImage from '@/components/Line/LineImage';
 import ButtonRemove from '@/components/Button/ButtonRemove';
 import ButtonAdd from '@/components/Button/ButtonAdd';
 import RelatedModal from '@/components/Line/RelatedModal';
+import useDragReorder from '@/hooks/useDragReorder';
 import { makeClassName } from '@/functions';
 import { APPMON, LINE } from '@/consts/ui';
 import { LineRelation } from '@/types/Line';
@@ -24,12 +25,11 @@ const RelatedLines: React.FC<Props> = ({ related, editable = false, onChange }) 
 	const [showModal, setShowModal] = useState(false);
 	// null while adding, otherwise the index of the relation being edited.
 	const [editIndex, setEditIndex] = useState<number | null>(null);
-	const dragIndex = useRef<number | null>(null);
-	const [draggingIndex, setDraggingIndex] = useState<number | null>(null);
+	const relations = related || [];
+	const { dragProps, draggingIndex } = useDragReorder(relations, onChange);
 
 	// In edit mode the row stays visible when empty, to add a first relation.
 	if (!related?.length && !editable) return null;
-	const relations = related || [];
 
 	const handleRemove = (index: number) => {
 		onChange?.(relations.filter((_, i) => i !== index));
@@ -53,31 +53,6 @@ const RelatedLines: React.FC<Props> = ({ related, editable = false, onChange }) 
 		}
 	};
 
-	const handleDragStart = (index: number) => {
-		dragIndex.current = index;
-		setDraggingIndex(index);
-	};
-
-	const handleDragEnd = () => {
-		dragIndex.current = null;
-		setDraggingIndex(null);
-	};
-
-	const handleDragOver = (event: React.DragEvent, index: number) => {
-		if (dragIndex.current === null || dragIndex.current === index) return;
-		event.preventDefault();
-	};
-
-	const handleDrop = (targetIndex: number) => {
-		const source = dragIndex.current;
-		if (source === null || source === targetIndex) return;
-
-		const next = relations.slice();
-		const [moved] = next.splice(source, 1);
-		next.splice(source < targetIndex ? targetIndex - 1 : targetIndex, 0, moved);
-		onChange?.(next);
-	};
-
 	return (
 		<div className="line-wrapper">
 			<h2>Related lines&nbsp;:</h2>
@@ -98,13 +73,8 @@ const RelatedLines: React.FC<Props> = ({ related, editable = false, onChange }) 
 							editable && 'reorderable',
 							draggingIndex === i && 'dragging'
 						),
-						style: editable ? { cursor: 'grab' } : undefined,
 						...(editable && {
-							draggable: true,
-							onDragStart: () => handleDragStart(i),
-							onDragEnd: handleDragEnd,
-							onDragOver: (e: React.DragEvent) => handleDragOver(e, i),
-							onDrop: () => handleDrop(i),
+							...dragProps(i),
 							// In edit mode, clicking a relation opens the edit modal
 							// instead of navigating to the line.
 							onClickCapture: (e: React.MouseEvent) => {

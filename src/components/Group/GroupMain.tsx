@@ -4,6 +4,7 @@ import ButtonAdd from '@/components/Button/ButtonAdd';
 import GroupGrid from '@/components/Group/GroupGrid';
 import GroupPointCol from '@/components/Group/GroupPointCol';
 import GroupPointModal from '@/components/Group/GroupPointModal';
+import useDragReorder from '@/hooks/useDragReorder';
 import Group, { GroupPoint } from '@/types/Group';
 
 interface Props {
@@ -14,13 +15,13 @@ interface Props {
 
 const GroupMain: React.FC<Props> = ({ group, editable = false, onChange }) => {
 	const [showModal, setShowModal] = useState(false);
+	const points = Array.isArray(group.main) ? group.main : [];
+	const { dragProps, draggingIndex } = useDragReorder(points, onChange);
 
 	// Grouped by digimon (digimentals, spirits...) : one row per key.
 	if (!Array.isArray(group.main)) {
 		return <GroupGrid group={group} editable={editable} onChange={onChange} />;
 	}
-
-	const points = group.main;
 
 	const handleAdd = (point: GroupPoint) => {
 		if (points.some(item => item.name === point.name)) return;
@@ -39,6 +40,8 @@ const GroupMain: React.FC<Props> = ({ group, editable = false, onChange }) => {
 						key={i}
 						point={point}
 						onRemove={editable ? () => handleRemove(i) : undefined}
+						dragging={draggingIndex === i}
+						{...(editable ? dragProps(i) : {})}
 					/>
 				))}
 				{editable && (

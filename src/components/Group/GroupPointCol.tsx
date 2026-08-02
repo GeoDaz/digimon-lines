@@ -3,17 +3,36 @@ import { Col } from 'react-bootstrap';
 import LinePoint from '@/components/Line/LinePoint';
 import LineImage from '@/components/Line/LineImage';
 import ButtonRemove from '@/components/Button/ButtonRemove';
+import { makeClassName } from '@/functions';
 import { GroupPoint } from '@/types/Group';
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
 	point: GroupPoint;
 	type?: string;
 	onRemove?: () => void;
+	/** Drag and drop props, see useDragReorder. */
+	draggable?: boolean;
+	dragging?: boolean;
 }
 
 /** A group Digimon in its column, with its line skin and its remove button. */
-const GroupPointCol: React.FC<Props> = ({ point, type, onRemove }) => (
-	<Col className={onRemove ? 'position-relative' : undefined}>
+const GroupPointCol: React.FC<Props> = ({
+	point,
+	type,
+	onRemove,
+	dragging = false,
+	className,
+	...props
+}) => (
+	<Col
+		{...props}
+		className={makeClassName(
+			'position-relative',
+			props.draggable && 'reorderable',
+			dragging && 'dragging',
+			className
+		)}
+	>
 		{!!onRemove && (
 			<ButtonRemove size="sm" overlay title="Remove" onClick={onRemove} />
 		)}
