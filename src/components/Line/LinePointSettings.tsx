@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useEffect, MouseEventHandler } from 'react';
 import { Button, ButtonGroup, Dropdown, DropdownButton, Modal } from 'react-bootstrap';
 import Icon from '@/components/Icon';
-import { LineColor, LineFrom, LinePoint } from '@/types/Line';
+import { LineColor, LineFrom, LinePoint, LineSkin } from '@/types/Line';
 import { GridContext } from '@/context/grid';
 import { setLinePoint } from '@/reducers/lineReducer';
 import SearchBar from '@/components/SearchBar';
@@ -12,6 +12,7 @@ import InputMono from '../InputMono';
 import { LicenseContext } from '@/context/license';
 import { DigimonContext } from '@/context/digimon';
 import { capitalize, makeClassName } from '@/functions';
+import { skinImage, skinName } from '@/functions/line';
 import ButtonRemove from '../Button/ButtonRemove';
 
 interface Props {
@@ -115,19 +116,37 @@ const LinePointSettings: React.FC<Props> = ({
 		}
 	};
 
-	const handleChooseSkin = (search: string) => {
+	const handleAddSkin = (skin: LineSkin) => {
 		if (handleUpdate && point) {
 			const nextPoint: LinePoint = {
 				...point,
-				skins: point.skins ? [...point.skins, search] : [search],
+				skins: point.skins ? [...point.skins, skin] : [skin],
 			};
 			handleUpdate(setLinePoint, coord, nextPoint);
 		}
 	};
 
+	const handleChooseSkin = (search: string) => {
+		handleAddSkin(search);
+	};
+
+	const handleSkinImage = (name: string, value: string) => {
+		if (value) {
+			handleAddSkin({ name: 'url', image: value });
+		}
+	};
+
+	const handleSkinUpload = (file: string) => {
+		handleAddSkin({ name: 'upload', image: file });
+	};
+
 	const handleRemoveSkin = (i: number) => {
-		if (handleUpdate && point) {
-			const skins = (point.skins as string[]).slice();
+		if (handleUpdate && point?.skins) {
+			const skins = point.skins.slice();
+			const image = skinImage(skins[i]);
+			if (image) {
+				URL.revokeObjectURL(image);
+			}
 			skins.splice(i, 1);
 			const nextPoint: LinePoint = { ...point, skins };
 			handleUpdate(setLinePoint, coord, nextPoint);
@@ -140,6 +159,8 @@ const LinePointSettings: React.FC<Props> = ({
 			handleUpdate(setLinePoint, coord, nextPoint);
 		}
 	};
+
+	const skinsFull = point?.skins ? point.skins.length > 2 : false;
 
 	return (
 		<Modal show={show} onHide={handleClose} className="line-point-settings">
@@ -179,9 +200,7 @@ const LinePointSettings: React.FC<Props> = ({
 								<h4
 									className={makeClassName(
 										'mt-4',
-										point.skins &&
-											point.skins.length > 2 &&
-											'text-decoration-line-through'
+										skinsFull && 'text-decoration-line-through'
 									)}
 								>
 									Add a skin (max 3)
@@ -190,25 +209,40 @@ const LinePointSettings: React.FC<Props> = ({
 									label={`Research a ${licenceName}`}
 									onSubmit={handleChooseSkin}
 									voidOnSubmit
-									disabled={
-										point.skins ? point.skins.length > 2 : false
-									}
+									disabled={skinsFull}
+								/>
+								<InputMono
+									name="skin-image"
+									onSubmit={handleSkinImage}
+									placeholder="Skin image URL"
+									defaultValue=""
+									disabled={skinsFull}
+								/>
+								<UploadImage
+									handleUpload={handleSkinUpload}
+									id="upload-skin-image"
+									label="Upload a skin"
+									className="mb-3"
+									disabled={skinsFull}
 								/>
 								<div className="d-flex flex-wrap gap-3">
-									{point.skins?.map((skin, i) => (
-									<h5
-										key={i}
-										className="text-capitalize break-word"
-									>
-										{capitalize(skin)}
-										{dubNames[skin] &&
-											` / ${capitalize(dubNames[skin])}`}{' '}
-											<ButtonRemove
-												onClick={() => handleRemoveSkin(i)}
-												title="remove skin"
-											/>
-										</h5>
-									))}
+									{point.skins?.map((skin, i) => {
+										const name = skinName(skin);
+										return (
+											<h5
+												key={i}
+												className="text-capitalize break-word"
+											>
+												{capitalize(name)}
+												{dubNames[name] &&
+													` / ${capitalize(dubNames[name])}`}{' '}
+												<ButtonRemove
+													onClick={() => handleRemoveSkin(i)}
+													title="remove skin"
+												/>
+											</h5>
+										);
+									})}
 								</div>
 							</>
 						)}
@@ -253,7 +287,8 @@ const ImagePoint: React.FC<{
 				{point.skins?.map((skin, i) => (
 					<LineImage
 						key={i}
-						name={skin}
+						name={skinName(skin)}
+						path={skinImage(skin)}
 						className="line-skin"
 						loadable={false}
 						expandable={true}

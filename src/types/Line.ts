@@ -28,7 +28,7 @@ export interface LinePoint {
 	color?: LineColor;
 	mirror?: boolean;
 	from?: LineFrom;
-	skins?: string[];
+	skins?: LineSkin[];
 	image?: string;
 	collapsable?: boolean /** @deprected */;
 	xCollapsable?: boolean;
@@ -38,6 +38,17 @@ export interface LinePoint {
 export type Axis = 'x' | 'y';
 export type SizeAttr = 'xSize' | 'ySize';
 export type CollapseAttr = 'xCollapsable' | 'yCollapsable';
+
+/**
+ * A skin is either the name of a {licence} image, or an image of its own coming
+ * from an url or an upload, exactly like the main image of a point.
+ */
+export type LineSkin = string | LineSkinImage;
+
+export interface LineSkinImage {
+	name: string;
+	image?: string;
+}
 
 export type LineFrom = Array<number[]> | number[] | null;
 

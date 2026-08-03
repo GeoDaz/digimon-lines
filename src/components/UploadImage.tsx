@@ -5,16 +5,19 @@ import { makeClassName } from '@/functions';
 const UploadImage: React.FC<{
 	handleUpload: CallableFunction;
 	className?: string;
-}> = ({ handleUpload, className }) => {
+	id?: string;
+	label?: string;
+	disabled?: boolean;
+}> = ({ handleUpload, className, id = 'upload-image', disabled = false }) => {
 	const getBase64 = (file: File) => {
 		return new Promise<string | null>((resolve, reject) => {
 			const reader = new FileReader();
 			reader.readAsDataURL(file);
 			reader.onload = () =>
 				resolve(
-					reader.result && typeof reader.result === 'object'
-						? reader.result.toString()
-						: reader.result
+					reader.result && typeof reader.result === 'object' ?
+						reader.result.toString()
+					:	reader.result
 				);
 			reader.onerror = error => reject(error);
 		});
@@ -39,8 +42,12 @@ const UploadImage: React.FC<{
 	return (
 		<>
 			<label
-				htmlFor="upload-image"
-				className={makeClassName('btn btn-secondary', className)}
+				htmlFor={id}
+				className={makeClassName(
+					'btn btn-secondary',
+					disabled && 'disabled',
+					className
+				)}
 			>
 				<Icon name="upload" className="me-2" /> Upload an image
 			</label>
@@ -48,9 +55,10 @@ const UploadImage: React.FC<{
 				type="file"
 				className="d-none"
 				accept="image/jpeg,image/png,image/webp" //image/gif,
-				id="upload-image"
-				name="upload-image"
+				id={id}
+				name={id}
 				onChange={handleFiles}
+				disabled={disabled}
 			/>
 		</>
 	);

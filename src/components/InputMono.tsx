@@ -13,6 +13,7 @@ interface Props {
 	width?: number;
 	forwardRef?: React.Ref<HTMLInputElement>;
 	className?: string;
+	disabled?: boolean;
 }
 
 const InputMono: React.FC<Props> = ({
@@ -24,6 +25,7 @@ const InputMono: React.FC<Props> = ({
 	forwardRef,
 	type = 'text',
 	className,
+	disabled = false,
 }) => {
 	const [value, setValue] = useState<string | undefined>(defaultValue);
 
@@ -54,8 +56,14 @@ const InputMono: React.FC<Props> = ({
 				onKeyDown={onKeyDown}
 				autoComplete="off"
 				className="research"
+				disabled={disabled}
 			/>
-			<Button color="primary" type="submit" onClick={e => onSubmit(name, value)}>
+			<Button
+				color="primary"
+				type="submit"
+				onClick={e => onSubmit(name, value)}
+				disabled={disabled}
+			>
 				<Icon name="check-lg" />
 			</Button>
 		</div>

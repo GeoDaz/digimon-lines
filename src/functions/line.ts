@@ -1,6 +1,18 @@
-import Line, { LineColumn, LineFound, LinePoint, LineThumb } from '@/types/Line';
+import Line, {
+	LineColumn,
+	LineFound,
+	LinePoint,
+	LineSkin,
+	LineThumb,
+} from '@/types/Line';
 import { getSearchPriority } from './search';
 import { StringArrayObject } from '@/types/Ui';
+
+export const skinName = (skin: LineSkin): string =>
+	typeof skin === 'string' ? skin : skin.name;
+
+export const skinImage = (skin: LineSkin): string | undefined =>
+	typeof skin === 'string' ? undefined : skin.image;
 
 export const transformLine = (line: Line | undefined): Line | undefined => {
 	if (line) {
