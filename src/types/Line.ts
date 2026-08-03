@@ -6,7 +6,17 @@ export interface Line {
 	size: number;
 	related?: Array<string | LineRelation>;
 	notes?: string[];
+	anchor?: LineAnchor;
 }
+
+/**
+ * Where a diagonal line touches the images it links (whole grid setting).
+ * 'corner' (default) : the corner of the image, current behaviour.
+ * 'x-center' : the middle of the top/bottom side.
+ * 'y-center' : the middle of the left/right side.
+ * Straight lines are always centered on their side, whatever the value.
+ */
+export type LineAnchor = 'corner' | 'x-center' | 'y-center';
 
 export type LineColumn = Array<LinePoint | null>;
 

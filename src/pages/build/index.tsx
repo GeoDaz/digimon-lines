@@ -5,6 +5,7 @@ import { getDirPaths } from '@/functions/file';
 import ZoomBar from '@/components/ZoomBar';
 import ColorLegend from '@/components/ColorLegend';
 import LineGrid from '@/components/Line/LineGrid';
+import LineAnchorSelect from '@/components/Line/LineAnchorSelect';
 import RelatedLines from '@/components/Line/RelatedLines';
 import { GetStaticProps } from 'next';
 import { SearchContext } from '@/context/search';
@@ -169,6 +170,10 @@ export const PageBuild = (props: BuildProps) => {
 						placeholder="_ _ _ _ _"
 					/>
 				</InputGroup>
+				<LineAnchorSelect
+					anchor={line.anchor}
+					onChange={anchor => handleUpdate(setLineValue, 'anchor', anchor)}
+				/>
 				<DownloadDropdown
 					downloadCode={downloadCode}
 					downloadImage={handeDowloadImg}

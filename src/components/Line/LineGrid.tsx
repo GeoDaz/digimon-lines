@@ -128,6 +128,7 @@ const LineGrid: React.FC<GridProps> = ({ line, handleUpdate }) => {
 		<GridContext.Provider
 			value={{
 				drawing,
+				anchor: line.anchor,
 				handleUpdate,
 				handleEdit: handleUpdate ? handleEdit : undefined,
 				handleDraw: setDrawing,

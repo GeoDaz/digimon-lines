@@ -1,7 +1,9 @@
 import { createContext, DragEvent } from 'react';
+import { LineAnchor } from '@/types/Line';
 
 export interface GridContextInterface {
 	drawing?: number[];
+	anchor?: LineAnchor;
 	handleUpdate?: CallableFunction;
 	handleEdit?: CallableFunction;
 	handleDraw?: CallableFunction;

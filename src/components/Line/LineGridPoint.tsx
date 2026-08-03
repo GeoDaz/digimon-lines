@@ -40,6 +40,7 @@ const LinePoint: React.FC<{
 }> = ({ point, coord, handleEdit }) => {
 	const {
 		drawing,
+		anchor,
 		handleDraw,
 		handleTarget,
 		handleXCollapse,
@@ -205,6 +206,7 @@ const LinePoint: React.FC<{
 						baseHeight={height}
 						xSize={xSize}
 						ySize={ySize}
+						anchor={anchor}
 					/>
 				))
 			) : (
@@ -215,6 +217,7 @@ const LinePoint: React.FC<{
 					baseHeight={height}
 					xSize={xSize}
 					ySize={ySize}
+					anchor={anchor}
 				/>
 			)}
 		</div>
