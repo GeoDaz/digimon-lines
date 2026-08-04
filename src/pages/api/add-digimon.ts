@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { DigimonItem } from '@/types/Digimon';
 import { IS_DEV } from '@/consts/env';
+import { syncRelations } from '@/functions/relations';
 
 interface AddDigimonRequest {
 	level: string;
@@ -49,9 +50,20 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
 		ranked[level][digimon.name] = digimon;
 
+		// Report the relations of the new digimon on the digimons it points at,
+		// and pick up the ones already pointing at it.
+		syncRelations(ranked, digimon.name);
+
 		fs.writeFileSync(filePath, JSON.stringify(ranked, null, 4), 'utf-8');
 
-		return res.status(200).json({ success: true, digimon, level });
+		return res.status(200).json({
+			success: true,
+			digimon: ranked[level][digimon.name],
+			level,
+			// Mirroring edits other entries: send the whole list back so the
+			// client doesn't have to guess what changed.
+			list: ranked,
+		});
 	} catch (error) {
 		console.error('Error adding digimon:', error);
 		return res.status(500).json({ error: 'Failed to add digimon' });

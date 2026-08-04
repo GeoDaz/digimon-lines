@@ -33,6 +33,18 @@ const useSubmitDigimon = (setList: React.Dispatch<React.SetStateAction<DigimonLi
 				return;
 			}
 
+			// Saving mirrors the relations onto the other digimons, so the API
+			// answers with the whole list rather than the single entry.
+			if (data.list) {
+				setList(data.list);
+				addToast(
+					isEdit
+						? `"${item.name}" updated in "${level}"`
+						: `"${item.name}" added to "${level}"`
+				);
+				return;
+			}
+
 			setList(prev => {
 				const updated = { ...prev };
 				const movingLevel = srcLevel !== level;

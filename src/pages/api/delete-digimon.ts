@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import fs from 'fs';
 import path from 'path';
 import { IS_DEV } from '@/consts/env';
+import { removeRelationsTo } from '@/functions/relations';
 
 interface DeleteDigimonRequest {
 	level: string;
@@ -51,9 +52,19 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 			delete ranked[level];
 		}
 
+		// No entry left to mirror: drop the relations pointing at it.
+		removeRelationsTo(ranked, name);
+
 		fs.writeFileSync(filePath, JSON.stringify(ranked, null, 4), 'utf-8');
 
-		return res.status(200).json({ success: true, level, name });
+		return res.status(200).json({
+			success: true,
+			level,
+			name,
+			// Removing the relations edits other entries: send the whole list
+			// back so the client doesn't have to guess what changed.
+			list: ranked,
+		});
 	} catch (error) {
 		console.error('Error deleting digimon:', error);
 		return res.status(500).json({ error: 'Failed to delete digimon' });

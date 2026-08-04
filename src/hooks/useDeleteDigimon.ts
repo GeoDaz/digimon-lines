@@ -20,6 +20,14 @@ const useDeleteDigimon = (
 				return false;
 			}
 
+			// Deleting also strips the relations pointing at the digimon, so the
+			// API answers with the whole list rather than the single level.
+			if (data.list) {
+				setList(data.list);
+				addToast(`"${name}" removed from "${level}"`);
+				return true;
+			}
+
 			setList(prev => {
 				const updated = { ...prev };
 				if (updated[level]) {

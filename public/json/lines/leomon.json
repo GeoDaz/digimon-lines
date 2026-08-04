@@ -1,397 +1,693 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "leomon_x",
-				"color": ["x"],
-				"from": [[3, 0]]
-			},
-			{
-				"name": "panjyamon_x",
-				"color": ["x", "x"],
-				"from": [
-					[0, -1],
-					[2, 0]
-				]
-			},
-			{
-				"name": "dinotigermon",
-				"color": ["x", "x"],
-				"from": [
-					[0, -1],
-					[1, 0]
-				]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "saberleomon",
-				"from": [[1, -1]]
-			},
-			{
-				"name": "tlalocmon",
-				"from": [[0, -1]],
-				"color": ["fusion"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "panjyamon",
-				"color": ["ice"],
-				"from": [[1, -1]]
-			},
-			{
-				"name": "regulumon"
-			},
-			null,
-			null
-		],
-		[
-			{
-				"name": "punimon",
-				"from": null
-			},
-			{
-				"name": "tsunomon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "elecmon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "leomon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				]
-			},
-			null,
-			{
-				"name": "marsmon",
-				"from": [[1, -1]],
-				"color": ["fire"]
-			},
-			{
-				"name": "chaosmon",
-				"from": [[0.5, -1]],
-				"xSize": 2,
-				"color": ["fusion"]
-			},
-			null
-		],
-		[
-			{
-				"name": "popomon",
-				"from": null
-			},
-			{
-				"name": "frimon",
-				"from": null
-			},
-			{
-				"name": "liollmon",
-				"from": [[0, -2]]
-			},
-			null,
-			{
-				"name": "grapleomon",
-				"from": [[-1, -1]]
-			},
-			{
-				"name": "bancholeomon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[-2, -1]
-				]
-			},
-			{
-				"name": "chaosmon_valdur_arm",
-				"from": [[-0.5, -1]],
-				"xSize": 2,
-				"color": ["fusion"]
-			},
-			{
-				"name": "ultimatechaosmon",
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				],
-				"color": ["fusion", "fusion"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "liamon",
-				"from": [[-1, -1]]
-			},
-			{
-				"name": "loaderliomon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": ["machine", "machine"]
-			},
-			{
-				"name": "heavyleomon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				],
-				"color": ["machine", "machine"]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "spadamon",
-				"from": [[-2, -1]],
-				"color": ["ice"]
-			},
-			{
-				"name": "cougarmon",
-				"from": [[-2, -1]]
-			},
-			{
-				"name": "murasamemon"
-			},
-			{
-				"name": "habakirimon",
-				"from": [[0, -1]],
-				"color": ["light"]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "leopardmon",
-				"color": ["default", "default"],
-				"skins": ["leopardmon_leopard_mode"],
-				"from": [
-					[-1, -1],
-					[-3, -1]
-				]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "leopardmon_x",
-				"color": ["x"],
-				"from": [[-1, 0]]
-			},
-			null,
-			null
-		],
-		[
-			{
-				"name": "punimon",
-				"from": null,
-				"xSize": 2
-			},
-			{
-				"name": "tsunomon",
-				"from": [[0, -1]],
-				"xSize": 2
-			},
-			{
-				"name": "elecmon_violet",
-				"color": ["dark"],
-				"from": [[0, -1]],
-				"xSize": 2
-			},
-			{
-				"name": "loweemon",
-				"color": ["dark"],
-				"from": [[0.5, -1.5]],
-				"ySize": 2
-			},
-			{
-				"name": "raihimon",
-				"color": ["fusion", "fusion"],
-				"from": [
-					[1, -1],
-					[0, -1]
-				],
-				"ySize": 2
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "jagerloweemon",
-				"from": [
-					[-0.5, -1.5],
-					[-1, 0]
-				],
-				"ySize": 2,
-				"color": ["dark", "slide"]
-			},
-			null,
-			{
-				"name": "ancientsphinxmon",
-				"color": ["dark", "dark"],
-				"from": [
-					[0, -1.5],
-					[-1, -0.5]
-				]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "madleomon",
-				"from": [[-1.5, -1]],
-				"color": ["dark"]
-			},
-			{
-				"name": "madleomon_armed",
-				"from": [[0, -1]],
-				"skins": ["madleomon_orochi", "madleomon_final_mode"],
-				"color": ["fusion"]
-			},
-			{
-				"name": "apollomon_whispered",
-				"from": [[1, 0]],
-				"color": ["dark"],
-				"skins": ["apollomon_darkness_mode"]
-			},
-			null,
-			null
-		],
-		[
-			{
-				"name": "mokumon",
-				"from": null
-			},
-			{
-				"name": "sunmon",
-				"color": ["fire"],
-				"from": [[0, -1]]
-			},
-			{
-				"name": "coronamon",
-				"color": ["fire"],
-				"from": [[0, -1]]
-			},
-			{
-				"name": "firamon",
-				"color": ["fire"],
-				"from": [[0, -1]]
-			},
-			{
-				"name": "flaremon",
-				"color": ["fire"],
-				"from": [[0, -1]]
-			},
-			{
-				"name": "apollomon",
-				"color": ["fire"],
-				"from": [[0, -1]]
-			},
-			{
-				"name": "gracenovamon",
-				"color": ["fusion"],
-				"from": [[0, -1]]
-			},
-			null
-		]
-	],
-	"related": [
-		{
-			"name": "bearmon",
-			"from": "grapleomon"
-		},
-		{
-			"name": "pulsemon",
-			"for": "achillesmon"
-		},
-		"ultimatechaosmon",
-		{
-			"name": "lunamon",
-			"from": "gracenovamon"
-		},
-		{
-			"name": "commandramon",
-			"from": "chaosmon"
-		},
-		{
-			"name": "falcomon_2",
-			"from": "chaosmon_valdur_arm",
-			"for": "falcomon"
-		},
-		{
-			"name": "kamemon",
-			"from": "tlalocmon"
-		},
-		{
-			"name": "pulsemon",
-			"for": "baihumon"
-		},
-		{
-			"name": "tapirmon",
-			"for": "skullbaluchimon"
-		},
-		{
-			"name": "gatomon",
-			"from": "ancientsphinxmon"
-		},
-		{
-			"name": "garurumon",
-			"from": "marsmon"
-		},
-		{
-			"name": "pulsemon",
-			"for": "asuramon"
-		},
-		{
-			"name": "meramon",
-			"from": "marsmon"
-		}
-	],
-	"size": 8
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "leomon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        3,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "panjyamon_x",
+                "color": [
+                    "x",
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        2,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "dinotigermon",
+                "color": [
+                    "x",
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "saberleomon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "tlalocmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "panjyamon",
+                "color": [
+                    "ice"
+                ],
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "regulumon"
+            },
+            null,
+            null
+        ],
+        [
+            {
+                "name": "punimon",
+                "from": null
+            },
+            {
+                "name": "tsunomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "elecmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "leomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "marsmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fire"
+                ]
+            },
+            {
+                "name": "chaosmon",
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ]
+                ],
+                "xSize": 2,
+                "color": [
+                    "fusion"
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "popomon",
+                "from": null
+            },
+            {
+                "name": "frimon",
+                "from": null
+            },
+            {
+                "name": "liollmon",
+                "from": [
+                    [
+                        0,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "grapleomon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "bancholeomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "chaosmon_valdur_arm",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ]
+                ],
+                "xSize": 2,
+                "color": [
+                    "fusion"
+                ]
+            },
+            {
+                "name": "ultimatechaosmon",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "liamon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "loaderliomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "machine",
+                    "machine"
+                ]
+            },
+            {
+                "name": "heavyleomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "machine",
+                    "machine"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "achillesmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "spadamon",
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "ice"
+                ]
+            },
+            {
+                "name": "cougarmon",
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "murasamemon"
+            },
+            {
+                "name": "habakirimon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "leopardmon",
+                "color": [
+                    "light"
+                ],
+                "skins": [
+                    "leopardmon_leopard_mode"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "leopardmon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            {
+                "name": "punimon",
+                "from": null,
+                "xSize": 2
+            },
+            {
+                "name": "tsunomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xSize": 2
+            },
+            {
+                "name": "elecmon_violet",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "xSize": 2
+            },
+            {
+                "name": "loweemon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0.5,
+                        -1.5
+                    ]
+                ],
+                "ySize": 2
+            },
+            {
+                "name": "raihimon",
+                "color": [
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "ySize": 2
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "jagerloweemon",
+                "from": [
+                    [
+                        -0.5,
+                        -1.5
+                    ],
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "ySize": 2,
+                "color": [
+                    "dark",
+                    "slide"
+                ]
+            },
+            null,
+            {
+                "name": "ancientsphinxmon",
+                "color": [
+                    "dark",
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1.5
+                    ],
+                    [
+                        -1,
+                        -0.5
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "madleomon",
+                "from": [
+                    [
+                        -1.5,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "madleomon_armed",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "madleomon_orochi",
+                    "madleomon_final_mode"
+                ],
+                "color": [
+                    "fusion"
+                ]
+            },
+            {
+                "name": "apollomon_whispered",
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ],
+                "skins": [
+                    "apollomon_darkness_mode"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            {
+                "name": "mokumon",
+                "from": null
+            },
+            {
+                "name": "sunmon",
+                "color": [
+                    "fire"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "coronamon",
+                "color": [
+                    "fire"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "firamon",
+                "color": [
+                    "fire"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "flaremon",
+                "color": [
+                    "fire"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "apollomon",
+                "color": [
+                    "fire"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "gracenovamon",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "bearmon",
+            "from": "grapleomon"
+        },
+        {
+            "name": "pulsemon",
+            "for": "achillesmon"
+        },
+        "ultimatechaosmon",
+        {
+            "name": "lunamon",
+            "from": "gracenovamon"
+        },
+        {
+            "name": "commandramon",
+            "from": "chaosmon"
+        },
+        {
+            "name": "falcomon_2",
+            "from": "chaosmon_valdur_arm",
+            "for": "falcomon"
+        },
+        {
+            "name": "kamemon",
+            "from": "tlalocmon"
+        },
+        {
+            "name": "pulsemon",
+            "for": "baihumon"
+        },
+        {
+            "name": "tapirmon",
+            "for": "skullbaluchimon"
+        },
+        {
+            "name": "gatomon",
+            "from": "ancientsphinxmon"
+        },
+        {
+            "name": "garurumon",
+            "for": "gabumon",
+            "from": "marsmon"
+        },
+        {
+            "name": "pulsemon",
+            "for": "asuramon"
+        },
+        {
+            "name": "meramon",
+            "from": "marsmon"
+        }
+    ],
+    "size": 8
 }

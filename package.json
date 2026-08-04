@@ -34,6 +34,7 @@
     "build": "next build",
     "daemon": "next start",
     "optimize:images": "node cmd/optimize-images.js",
+    "mirror:relations": "node cmd/mirrorRelations.cmd.js",
     "prepare": "node -e \"try{require('child_process').execSync('git config core.hooksPath .githooks')}catch(e){}\""
   },
   "eslintConfig": {

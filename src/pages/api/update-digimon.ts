@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { DigimonItem } from '@/types/Digimon';
 import { IS_DEV } from '@/consts/env';
+import { renameRelationsTo, syncRelations } from '@/functions/relations';
 
 interface UpdateDigimonRequest {
 	level: string;
@@ -67,6 +68,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 			});
 		}
 
+		// Relations of the stored entry, to know which ones this edit drops.
+		const previousItem = JSON.parse(
+			JSON.stringify(ranked[originalLevel][originalName])
+		) as DigimonItem;
+
 		if (movingLevel || renaming) {
 			delete ranked[originalLevel][originalName];
 		}
@@ -85,11 +91,25 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 			delete ranked[originalLevel];
 		}
 
+		// Follow the rename in the relations of the other digimons before
+		// mirroring, so they are compared under the new name.
+		if (renaming) {
+			renameRelationsTo(ranked, originalName, digimon.name);
+		}
+		syncRelations(ranked, digimon.name, previousItem);
+
 		fs.writeFileSync(filePath, JSON.stringify(ranked, null, 4), 'utf-8');
 
-		return res
-			.status(200)
-			.json({ success: true, digimon, level, originalLevel, originalName });
+		return res.status(200).json({
+			success: true,
+			digimon: ranked[level][digimon.name],
+			level,
+			originalLevel,
+			originalName,
+			// Mirroring edits other entries: send the whole list back so the
+			// client doesn't have to guess what changed.
+			list: ranked,
+		});
 	} catch (error) {
 		console.error('Error updating digimon:', error);
 		return res.status(500).json({ error: 'Failed to update digimon' });
