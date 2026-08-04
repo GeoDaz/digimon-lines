@@ -2539,7 +2539,10 @@
             ],
             "to": [
                 "wolvermon",
-                "jungle_mojyamon"
+                "jungle_mojyamon",
+                "meicoomon",
+                "kangarumon",
+                "dogmon"
             ]
         },
         "pteromon": {
@@ -3702,11 +3705,15 @@
             "from": [
                 "nisedrimogemon",
                 "porcupamon",
-                "psychemon"
+                "psychemon",
+                "pipismon"
             ],
             "to": [
+                "belphemon_sleep_mode",
                 "belphemon_rage_mode",
-                "grandracmon"
+                "grandracmon",
+                "beelzebumon",
+                "shinmonzaemon"
             ]
         },
         "atamadekachimon": {
@@ -3840,7 +3847,8 @@
             ],
             "to": [
                 "phelesmon",
-                "skullsatamon"
+                "skullsatamon",
+                "mephismon"
             ]
         },
         "bulkmon": {
@@ -4085,7 +4093,8 @@
                 "ladydevimon",
                 "skullsatamon",
                 "gigadramon",
-                "regulusmon"
+                "regulusmon",
+                "mephismon"
             ]
         },
         "devimon": {
@@ -4172,12 +4181,14 @@
                 "shoemon",
                 "labramon",
                 "salamon",
-                "terriermon"
+                "terriermon",
+                "pristimon"
             ],
             "to": [
                 "monzaemon",
                 "extyranomon",
-                "pandamon"
+                "pandamon",
+                "caturamon"
             ]
         },
         "dokugumon": {
@@ -5117,7 +5128,8 @@
                 "black_gatomon"
             ],
             "from": [
-                "meicoosalamon"
+                "meicoosalamon",
+                "pristimon"
             ],
             "to": [
                 "meicrackmon",
@@ -5514,7 +5526,8 @@
             "to": [
                 "matadormon",
                 "myotismon",
-                "weregarurumon_black"
+                "weregarurumon_black",
+                "myotismon_x"
             ]
         },
         "seadramon": {
@@ -7395,7 +7408,8 @@
         "kangarumon": {
             "name": "kangarumon",
             "from": [
-                "veemon"
+                "veemon",
+                "pristimon"
             ],
             "to": [
                 "monzaemon",
@@ -7528,7 +7542,8 @@
                 "dracmon"
             ],
             "to": [
-                "myotismon"
+                "myotismon",
+                "astamon"
             ]
         },
         "ponchomon": {
@@ -7767,7 +7782,8 @@
                 "blitzgreymon",
                 "titamon",
                 "kimeramon",
-                "skullmammon"
+                "skullmammon",
+                "chaoswargreymon"
             ]
         },
         "weregarurumon": {
@@ -7808,7 +7824,8 @@
                 "metalgarurumon_black",
                 "mercurymon",
                 "grandracmon",
-                "plutomon"
+                "plutomon",
+                "belphemon_rage_mode"
             ]
         },
         "paildramon": {
@@ -8327,12 +8344,14 @@
             "name": "caturamon",
             "from": [
                 "siesamon",
-                "cougarmon"
+                "cougarmon",
+                "dogmon"
             ],
             "to": [
                 "erlangmon",
                 "baihumon",
-                "anubimon"
+                "anubimon",
+                "amaterasumon"
             ]
         },
         "cerberumon": {
@@ -9458,11 +9477,16 @@
             ],
             "from": [
                 "porcupamon",
-                "goatmon"
+                "goatmon",
+                "devidramon",
+                "boogiemon"
             ],
             "to": [
                 "gulfmon",
-                "belphemon_rage_mode"
+                "belphemon_rage_mode",
+                "belphemon_sleep_mode",
+                "murmukusmon",
+                "barbamon"
             ]
         },
         "mermaimon": {
@@ -9551,7 +9575,8 @@
             "to": [
                 "baihumon",
                 "ancientsphinxmon",
-                "yihumon"
+                "yihumon",
+                "leopardmon"
             ]
         },
         "mistymon": {
@@ -9640,7 +9665,9 @@
                 "venommyotismon",
                 "malomyotismon",
                 "boltboutamon",
-                "grandracmon"
+                "grandracmon",
+                "demon",
+                "piemon"
             ]
         },
         "nanomon": {
@@ -10045,7 +10072,8 @@
                 "cougarmon"
             ],
             "to": [
-                "amaterasumon"
+                "amaterasumon",
+                "marsmon"
             ]
         },
         "shogungekomon": {
@@ -10179,7 +10207,8 @@
             ],
             "to": [
                 "barbamon",
-                "demon"
+                "demon",
+                "donedevimon"
             ]
         },
         "skullseadramon": {
@@ -10650,6 +10679,9 @@
             "name": "bearcatmon",
             "from": [
                 "wolvermon"
+            ],
+            "to": [
+                "achillesmon"
             ]
         },
         "brachiomon": {
@@ -11216,7 +11248,12 @@
         "myotismon_x": {
             "name": "myotismon_x",
             "from": [
-                "myotismon"
+                "myotismon",
+                "sangloupmon"
+            ],
+            "to": [
+                "demon_x",
+                "grandracmon"
             ]
         },
         "okuwamon_x": {
@@ -11482,7 +11519,8 @@
             "variants": [
                 "black_wargreymon",
                 "victorygreymon",
-                "blitzgreymon"
+                "blitzgreymon",
+                "chaoswargreymon"
             ],
             "x": [
                 "wargreymon_x"
@@ -11499,7 +11537,8 @@
         "black_wargreymon": {
             "name": "black_wargreymon",
             "variants": [
-                "wargreymon"
+                "wargreymon",
+                "chaoswargreymon"
             ],
             "modes": [
                 "samudramon"
@@ -11696,9 +11735,6 @@
             "fusionFrom": [
                 "kimeramon",
                 "machinedramon"
-            ],
-            "to": [
-                "moonmillenniumon"
             ]
         },
         "abbadomon": {
@@ -11725,13 +11761,15 @@
                 "shootmon",
                 "panjyamon",
                 "grapleomon",
-                "murasamemon"
+                "murasamemon",
+                "bearcatmon"
             ]
         },
         "amaterasumon": {
             "name": "amaterasumon",
             "from": [
-                "shishimamon"
+                "shishimamon",
+                "caturamon"
             ],
             "to": [
                 "enmamon"
@@ -11919,7 +11957,8 @@
             ],
             "from": [
                 "skullsatamon",
-                "phelesmon"
+                "phelesmon",
+                "mephismon"
             ],
             "to": [
                 "ogudomon"
@@ -11944,7 +11983,8 @@
             "from": [
                 "deathmeramon",
                 "baalmon",
-                "vulturemon"
+                "vulturemon",
+                "astamon"
             ],
             "to": [
                 "ogudomon"
@@ -12126,6 +12166,9 @@
             "from": [
                 "waruseadramon",
                 "gigadramon"
+            ],
+            "to": [
+                "neocrimson"
             ]
         },
         "chaospiemon": {
@@ -12135,12 +12178,23 @@
             ],
             "from": [
                 "fantomon"
+            ],
+            "to": [
+                "neocrimson"
             ]
         },
         "chaoswargreymon": {
             "name": "chaoswargreymon",
+            "variants": [
+                "black_wargreymon",
+                "wargreymon"
+            ],
             "from": [
-                "metalgreymon_blue"
+                "metalgreymon_blue",
+                "skullgreymon"
+            ],
+            "to": [
+                "neocrimson"
             ]
         },
         "chronomon_destroy_mode": {
@@ -12249,6 +12303,9 @@
         },
         "demon": {
             "name": "demon",
+            "modes": [
+                "demon_2"
+            ],
             "x": [
                 "demon_x"
             ],
@@ -12256,18 +12313,12 @@
                 "neodevimon",
                 "skullsatamon",
                 "magnaangemon",
-                "magnaangemon_priest_mode"
+                "magnaangemon_priest_mode",
+                "myotismon"
             ],
             "to": [
                 "demon_super_ultimate",
                 "ogudomon"
-            ]
-        },
-        "demon_super_ultimate": {
-            "name": "demon_super_ultimate",
-            "from": [
-                "arkadimon_7",
-                "demon"
             ]
         },
         "devitamamon": {
@@ -12340,7 +12391,8 @@
         "donedevimon": {
             "name": "donedevimon",
             "from": [
-                "neodevimon"
+                "neodevimon",
+                "skullsatamon"
             ]
         },
         "dorugoramon": {
@@ -12744,7 +12796,8 @@
                 "knightmon",
                 "murasamemon",
                 "grapleomon",
-                "panjyamon"
+                "panjyamon",
+                "mihiramon"
             ]
         },
         "leviamon": {
@@ -12819,7 +12872,8 @@
             ],
             "to": [
                 "chaosdramon",
-                "millenniumon"
+                "millenniumon",
+                "apocalymon"
             ]
         },
         "magnadramon": {
@@ -12862,7 +12916,8 @@
             "name": "marsmon",
             "from": [
                 "grapleomon",
-                "greatgrizzlymon"
+                "greatgrizzlymon",
+                "shishimamon"
             ]
         },
         "mastemon": {
@@ -12946,7 +13001,8 @@
                 "waruseadramon"
             ],
             "to": [
-                "aegisdramon"
+                "aegisdramon",
+                "apocalymon"
             ]
         },
         "metamormon": {
@@ -12981,21 +13037,13 @@
                 "chirinmon"
             ]
         },
-        "moonmillenniumon": {
-            "name": "moonmillenniumon",
-            "from": [
-                "millenniumon"
-            ],
-            "to": [
-                "zeedmillenniumon"
-            ]
-        },
         "murmukusmon": {
             "name": "murmukusmon",
             "from": [
                 "hippogriffomon",
                 "phelesmon",
-                "mummymon"
+                "mummymon",
+                "mephismon"
             ]
         },
         "necromon": {
@@ -13157,7 +13205,8 @@
             ],
             "from": [
                 "fantomon",
-                "jokermon"
+                "jokermon",
+                "myotismon"
             ],
             "to": [
                 "boltboutamon",
@@ -13487,7 +13536,8 @@
                 "monzaemon",
                 "warumonzaemon",
                 "pandamon",
-                "extyranomon"
+                "extyranomon",
+                "astamon"
             ]
         },
         "shivamon": {
@@ -13741,12 +13791,6 @@
                 "shakamon"
             ]
         },
-        "zeedmillenniumon": {
-            "name": "zeedmillenniumon",
-            "from": [
-                "moonmillenniumon"
-            ]
-        },
         "zeekgreymon": {
             "name": "zeekgreymon",
             "from": [
@@ -13840,7 +13884,8 @@
                 "cerberumon",
                 "cerberumon_werewolf_mode",
                 "myotismon",
-                "weregarurumon_black"
+                "weregarurumon_black",
+                "myotismon_x"
             ]
         },
         "imperialdramon_dragon_mode_black": {
@@ -13907,7 +13952,8 @@
                 "entmon"
             ],
             "to": [
-                "cernumon"
+                "cernumon",
+                "apocalymon"
             ]
         },
         "styracomon": {
@@ -13979,6 +14025,39 @@
             "name": "apollomon_whispered",
             "modes": [
                 "apollomon"
+            ]
+        },
+        "demon_2": {
+            "name": "demon_2",
+            "modes": [
+                "demon"
+            ]
+        },
+        "belphemon_rage_mode": {
+            "name": "belphemon_rage_mode",
+            "modes": [
+                "belphemon_sleep_mode"
+            ],
+            "x": [
+                "belphemon_x"
+            ],
+            "from": [
+                "astamon",
+                "mephismon",
+                "weregarurumon_black"
+            ],
+            "to": [
+                "ogudomon"
+            ]
+        },
+        "belphemon_sleep_mode": {
+            "name": "belphemon_sleep_mode",
+            "modes": [
+                "belphemon_rage_mode"
+            ],
+            "from": [
+                "astamon",
+                "mephismon"
             ]
         }
     },
@@ -14102,7 +14181,8 @@
         "demon_x": {
             "name": "demon_x",
             "from": [
-                "demon"
+                "demon",
+                "myotismon_x"
             ],
             "to": [
                 "ogudomon_x"
@@ -14598,8 +14678,11 @@
         },
         "apocalymon": {
             "name": "apocalymon",
-            "from": [
-                "piemon"
+            "fusionFrom": [
+                "piemon",
+                "machinedramon",
+                "metalseadramon",
+                "puppetmon"
             ]
         },
         "armageddemon": {
@@ -14623,19 +14706,6 @@
             ],
             "to": [
                 "darkness_bagramon"
-            ]
-        },
-        "belphemon_rage_mode": {
-            "name": "belphemon_rage_mode",
-            "x": [
-                "belphemon_x"
-            ],
-            "from": [
-                "astamon",
-                "mephismon"
-            ],
-            "to": [
-                "ogudomon"
             ]
         },
         "chaosdramon": {
@@ -14989,6 +15059,24 @@
                 "mervamon",
                 "sparrowmon"
             ]
+        },
+        "neocrimson": {
+            "name": "neocrimson",
+            "fusionFrom": [
+                "chaosdramon",
+                "chaoswargreymon",
+                "chaospiemon",
+                "chaosmetalseadramon"
+            ]
+        },
+        "moonmillenniumon": {
+            "name": "moonmillenniumon",
+            "modes": [
+                "zeedmillenniumon"
+            ],
+            "from": [
+                "millenniumon"
+            ]
         }
     },
     "Mega+ X": {
@@ -15088,6 +15176,22 @@
             "name": "shoutmon_x7_superior_mode",
             "from": [
                 "shoutmon_x7"
+            ]
+        },
+        "demon_super_ultimate": {
+            "name": "demon_super_ultimate",
+            "fusionFrom": [
+                "demon",
+                "arkadimon_7"
+            ]
+        },
+        "zeedmillenniumon": {
+            "name": "zeedmillenniumon",
+            "modes": [
+                "moonmillenniumon"
+            ],
+            "from": [
+                "millenniumon"
             ]
         }
     },
