@@ -1,255 +1,456 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "stegomon",
-				"from": [[1, -1]]
-			},
-			{
-				"name": "mametyramon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "spinomon",
-				"from": [[0, -1]]
-			},
-			null
-		],
-		[
-			{
-				"name": "jyarimon",
-				"from": null
-			},
-			{
-				"name": "gigimon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "elizamon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "dimetromon"
-			},
-			{
-				"name": "lamiamon",
-				"from": [
-					[0.5, -1],
-					[-0.5, -1],
-					[2.5, -1]
-				],
-				"xSize": 2,
-				"color": ["gold"]
-			},
-			{
-				"name": "medusamon",
-				"from": [[0.5, -1]]
-			},
-			{
-				"name": "styracomon"
-			}
-		],
-		[
-			{
-				"name": "choromon",
-				"from": null
-			},
-			{
-				"name": "monimon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "hubmon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "coatlmon",
-				"from": [
-					[2, -1],
-					[0, -1]
-				],
-				"color": ["gold", "default"]
-			},
-			null,
-			{
-				"name": "minervamon",
-				"from": [[-0.5, -1]],
-				"color": ["gold"]
-			},
-			{
-				"name": "mervamon",
-				"skins": ["jet_mervamon"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "minervamon_x",
-				"from": [[-1, 0]],
-				"color": ["x"]
-			},
-			null
-		],
-		[
-			{
-				"name": "zurumon",
-				"from": null
-			},
-			{
-				"name": "pagumon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "snakemon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "vipermon",
-				"from": [
-					[0, -1],
-					[-2, -1]
-				],
-				"color": ["gold"]
-			},
-			{
-				"name": "ambromon",
-				"from": [[0, -1]],
-				"color": ["gold"]
-			},
-			{
-				"name": "bacchusmon",
-				"from": [[0, -1]],
-				"skins": ["bacchusmon_drunk"],
-				"color": ["gold"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "dinohumon",
-				"from": [[1, -1]]
-			},
-			{
-				"name": "sandiramon",
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[-3, -1]
-				],
-				"color": ["default"]
-			},
-			{
-				"name": "lotusmon",
-				"from": [[0, -1]],
-				"color": ["dark"]
-			},
-			null
-		],
-		[
-			{
-				"name": "kekomon",
-				"from": null
-			},
-			{
-				"name": "kekkomon"
-			},
-			{
-				"name": "iguneetmon"
-			},
-			{
-				"name": "ginkakumon",
-				"from": [[0, -1]],
-				"color": ["dark"]
-			},
-			{
-				"name": "orochimon",
-				"color": ["dark", "dark"],
-				"from": [
-					[-1, -1],
-					[0, -1]
-				]
-			},
-			{
-				"name": "nidhoggmon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				],
-				"color": ["dark", "dark"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "kinkakumon",
-				"from": [[-1, -1]]
-			},
-			null,
-			{
-				"name": "xuanwumon",
-				"from": [[-1, -1]],
-				"color": ["grass"]
-			},
-			null
-		],
-		[null, null, null, null, null, null, null],
-		[null, null, null, null, null, null, null]
-	],
-	"related": [
-		{
-			"name": "gatomon",
-			"from": "minervamon"
-		},
-		"gekkomon",
-		{
-			"name": "tyranomon",
-			"from": "styracomon"
-		},
-		{
-			"name": "gammamon",
-			"from": "styracomon"
-		},
-		{
-			"name": "toyagumon",
-			"for": "deltamon"
-		},
-		{
-			"name": "palmon",
-			"for": "lotusmon"
-		},
-		{
-			"name": "armadillomon",
-			"from": "stegomon"
-		},
-		{
-			"name": "gekomon",
-			"for": "otamamon_red"
-		},
-		{
-			"name": "sukamon",
-			"for": "chohakkaimon"
-		},
-		{
-			"name": "woodmon",
-			"for": "xuanwumon"
-		},
-		{
-			"name": "vorvomon",
-			"for": "salamandermon"
-		}
-	],
-	"size": 7
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "stegomon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "mametyramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "spinomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "jyarimon",
+                "from": null
+            },
+            {
+                "name": "gigimon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "elizamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "dimetromon"
+            },
+            {
+                "name": "lamiamon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        3,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "default"
+                ]
+            },
+            {
+                "name": "medusamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "styracomon"
+            }
+        ],
+        [
+            {
+                "name": "choromon",
+                "from": null
+            },
+            {
+                "name": "monimon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "hubmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "coatlmon",
+                "from": [
+                    [
+                        2,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light",
+                    "light"
+                ]
+            },
+            {
+                "name": "heliosboamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ]
+            },
+            {
+                "name": "minervamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light",
+                    "light"
+                ]
+            },
+            {
+                "name": "mervamon",
+                "skins": [
+                    "jet_mervamon"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "minervamon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "zurumon",
+                "from": null
+            },
+            {
+                "name": "pagumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "snakemon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "vipermon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "gold"
+                ]
+            },
+            {
+                "name": "ambromon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "gold"
+                ]
+            },
+            {
+                "name": "bacchusmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "bacchusmon_drunk"
+                ],
+                "color": [
+                    "gold"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "dinohumon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "sandiramon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -3,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "default"
+                ]
+            },
+            {
+                "name": "lotusmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "kekomon",
+                "from": null
+            },
+            {
+                "name": "kekkomon"
+            },
+            {
+                "name": "iguneetmon"
+            },
+            {
+                "name": "ginkakumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "orochimon",
+                "color": [
+                    "dark",
+                    "dark"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "nidhoggmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark",
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "kinkakumon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "xuanwumon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "grass"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "gatomon",
+            "from": "minervamon"
+        },
+        "gekkomon",
+        {
+            "name": "tyranomon",
+            "from": "styracomon"
+        },
+        {
+            "name": "gammamon",
+            "from": "styracomon"
+        },
+        {
+            "name": "toyagumon",
+            "for": "deltamon"
+        },
+        {
+            "name": "palmon",
+            "for": "lotusmon"
+        },
+        {
+            "name": "armadillomon",
+            "from": "stegomon"
+        },
+        {
+            "name": "gekomon",
+            "for": "otamamon_red"
+        },
+        {
+            "name": "sukamon",
+            "for": "chohakkaimon"
+        },
+        {
+            "name": "woodmon",
+            "for": "xuanwumon"
+        },
+        {
+            "name": "vorvomon",
+            "for": "salamandermon"
+        }
+    ],
+    "size": 7
 }

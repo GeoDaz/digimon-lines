@@ -7,7 +7,7 @@ import { GetStaticProps } from 'next';
 // components
 import Layout from '@/components/Layout';
 import LineGrid from '@/components/Line/LineGrid';
-import LinePoint from '@/components/Line/LinePoint';
+import LineNav from '@/components/Line/LineNav';
 import CommentLink from '@/components/CommentLink';
 import Icon from '@/components/Icon';
 import ColorLegend from '@/components/ColorLegend';
@@ -155,28 +155,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 					<CommentLink />
 				</>
 			:	<p>Line not found</p>}
-			{(!!prev || !!next) && (
-				<div className="row mb-4">
-					<div className="col-6 d-flex justify-content-start">
-						{!!prev && (
-							<LinePoint className="move-link" name={prev} type={type}>
-								<span className="absolute-legend">
-									<Icon name="arrow-left-circle-fill" /> Previous
-								</span>
-							</LinePoint>
-						)}
-					</div>
-					<div className="col-6 d-flex justify-content-end">
-						{!!next && (
-							<LinePoint name={next} className="move-link" type={type}>
-								<span className="absolute-legend">
-									Next <Icon name="arrow-right-circle-fill" />
-								</span>
-							</LinePoint>
-						)}
-					</div>
-				</div>
-			)}
+			<LineNav prev={prev} next={next} type={type} />
 			<RelatedLines related={line?.related} />
 		</Layout>
 	);

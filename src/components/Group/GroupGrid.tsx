@@ -50,7 +50,6 @@ const GroupGrid: React.FC<Props> = ({ group, editable = false, onChange }) => {
 					onClose={() => setAddRow(null)}
 					onSubmit={handleAdd}
 					title={`Add a Digimon to ${addRow}`}
-					withRedirect
 				/>
 			)}
 		</div>

@@ -8,6 +8,7 @@ import CommentLink from '@/components/CommentLink';
 import ShareButton from '@/components/ShareButton';
 import GroupMain from '@/components/Group/GroupMain';
 import GroupRelated from '@/components/Group/GroupRelated';
+import LineNav from '@/components/Line/LineNav';
 // functions
 import useSaveGroup from '@/hooks/useSaveGroup';
 import useDragAutoScroll from '@/hooks/useDragAutoScroll';
@@ -15,16 +16,20 @@ import { capitalize } from '@/functions';
 import useQueryParam from '@/hooks/useQueryParam';
 import { getDubNames, getDubbedSearchList } from '@/functions/search';
 import { getDirPaths } from '@/functions/file';
+import { thumbsToNames } from '@/functions/line';
 // constants
 import { Group } from '@/types/Group';
 import { SearchContext } from '@/context/search';
 import Search from '@/types/Search';
 import { IS_DEV } from '@/consts/env';
+import { GROUP } from '@/consts/ui';
 
 const NAME = 'name';
 interface StaticProps {
 	group?: Group;
 	name?: string;
+	next?: string;
+	prev?: string;
 	/** Digimon autocompletion, only built in dev for the group edition. */
 	digimonSearch?: Search;
 }
@@ -51,6 +56,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 	if (!name) {
 		redirect('/groups');
 	}
+	const { next, prev } = ssr;
 	const nameCap = capitalize(name);
 	return (
 		<Layout
@@ -91,6 +97,7 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 				/>
 			</SearchContext.Provider>
 			{!!group && <CommentLink />}
+			<LineNav prev={prev} next={next} type={GROUP} />
 		</Layout>
 	);
 };
@@ -106,10 +113,23 @@ export async function getStaticPaths() {
 	}
 }
 
+/** Neighbours of the group in the index list, to move from a group to another. */
+const getGroupSiblings = (name: string) => {
+	const groups: string[] = thumbsToNames(
+		require('../../../public/json/groups/_index.json')
+	);
+	const index = groups.findIndex(group => group == name);
+	return {
+		prev: index > 0 ? groups[index - 1] : null,
+		next: index > -1 && index < groups.length - 1 ? groups[index + 1] : null,
+	};
+};
+
 export const getStaticProps: GetStaticProps = async ({ params }) => {
 	if (!params || !params.name) {
 		return { notFound: true };
 	}
+	const { prev, next } = getGroupSiblings(params.name as string);
 	try {
 		// prettier-ignore
 		const group: Group | undefined = require(
@@ -121,10 +141,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 			IS_DEV ? getDubbedSearchList(getDirPaths('images/digimon'), getDubNames())
 			:	null;
 
-		return { props: { ssr: { name: params.name, group, digimonSearch } } };
+		// prettier-ignore
+		return { props: { ssr: { name: params.name, group, prev, next, digimonSearch } } };
 	} catch (e) {
 		console.error(e);
-		return { props: { ssr: { name: params.name } } };
+		return { props: { ssr: { name: params.name, prev, next } } };
 	}
 };
 

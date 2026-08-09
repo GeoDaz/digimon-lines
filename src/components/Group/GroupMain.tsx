@@ -59,7 +59,6 @@ const GroupMain: React.FC<Props> = ({ group, editable = false, onChange }) => {
 					onClose={() => setShowModal(false)}
 					onSubmit={handleAdd}
 					title="Add a Digimon to the group"
-					withRedirect
 				/>
 			)}
 		</>

@@ -1,0 +1,67 @@
+{
+	"title": "Legend-Arms",
+	"main": [
+		{ "name": "zubamon" },
+		{
+			"name": "zubaeagermon",
+			"line": "zubamon"
+		},
+		{
+			"name": "duramon",
+			"line": "zubamon"
+		},
+		{
+			"name": "durandamon",
+			"line": "zubamon"
+		},
+		{
+			"name": "ludomon"
+		},
+		{
+			"name": "tialudomon",
+			"line": "ludomon"
+		},
+		{
+			"name": "raijiludomon",
+			"line": "ludomon"
+		},
+		{
+			"name": "bryweludramon",
+			"line": "ludomon"
+		},
+		{
+			"name": "spadamon",
+			"line": "leomon"
+		},
+		{
+			"name": "armamon",
+			"line": "shoutmon"
+		}
+	],
+	"related": [
+		{
+			"name": "sakumon",
+			"line": "zubamon"
+		},
+		{
+			"name": "sakuttomon",
+			"line": "zubamon"
+		},
+		{
+			"name": "cotsucomon",
+			"line": "ludomon"
+		},
+		{
+			"name": "kakkinmon",
+			"line": "ludomon"
+		},
+		{
+			"name": "armamon_burst_mode",
+			"line": "shoutmon"
+		},
+		{
+			"name": "ragnalordmon",
+			"line": "zubamon"
+		}
+	]
+}

@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Form, Modal } from 'react-bootstrap';
-import { capitalize } from '@/functions';
 
 interface Props {
 	show: boolean;
 	onClose: () => void;
-	onSubmit: (name: string) => void;
+	onSubmit: (name: string, title: string, image?: File) => void;
 }
 
 // Group files are named after a key : lowercase words joined by underscores.
@@ -18,16 +17,30 @@ export const toGroupKey = (value: string): string =>
 
 const GroupModal: React.FC<Props> = ({ show, onClose, onSubmit }) => {
 	const [value, setValue] = useState('');
+	const [image, setImage] = useState<File | undefined>();
+	const [preview, setPreview] = useState('');
 	const name = toGroupKey(value);
+	// The typed value keeps its casing, it becomes the title of the group.
+	const title = value.trim();
 
 	// Reset the form each time the modal opens.
 	useEffect(() => {
-		if (show) setValue('');
+		if (show) {
+			setValue('');
+			setImage(undefined);
+		}
 	}, [show]);
+
+	useEffect(() => {
+		if (!image) return setPreview('');
+		const url = URL.createObjectURL(image);
+		setPreview(url);
+		return () => URL.revokeObjectURL(url);
+	}, [image]);
 
 	const submit = () => {
 		if (!name) return;
-		onSubmit(name);
+		onSubmit(name, title, image);
 		onClose();
 	};
 
@@ -48,9 +61,28 @@ const GroupModal: React.FC<Props> = ({ show, onClose, onSubmit }) => {
 				/>
 				{!!name && (
 					<p className="mt-2 mb-0">
-						File&nbsp;: <code>{name}.json</code> — displayed as{' '}
-						{capitalize(name)}
+						File&nbsp;: <code>{name}.json</code> — displayed as {title}
 					</p>
+				)}
+				<Form.Label htmlFor="group-image" className="mt-3">
+					Illustration <span className="text-muted">(optional)</span>
+				</Form.Label>
+				<Form.Control
+					id="group-image"
+					type="file"
+					accept="image/*"
+					onChange={e =>
+						setImage((e.target as HTMLInputElement).files?.[0] || undefined)
+					}
+				/>
+				{!!preview && (
+					<div className="mt-2 d-flex align-items-center gap-2">
+						{/* eslint-disable-next-line @next/next/no-img-element */}
+						<img src={preview} alt="" className="rounded" height={80} />
+						<span>
+							Saved as <code>images/groups/{name || '…'}.jpg</code>
+						</span>
+					</div>
 				)}
 			</Modal.Body>
 			<Modal.Footer>

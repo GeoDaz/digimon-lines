@@ -29,7 +29,9 @@
                     ]
                 ]
             },
-            null,
+            {
+                "name": "burpmon"
+            },
             null
         ],
         [
@@ -64,22 +66,10 @@
                 ]
             },
             {
-                "name": "yakiimon"
-            },
-            {
-                "name": "burpmon"
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
                 "name": "shortmon",
                 "from": [
                     [
-                        -1,
+                        0,
                         -1
                     ]
                 ]
@@ -93,6 +83,73 @@
                     ]
                 ]
             },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "pomumon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "yakiimon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "ambromon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "bacchusmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "bacchusmon_drunk"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "vipermon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
             null
         ]
     ],
@@ -108,6 +165,14 @@
         {
             "name": "bearmon",
             "for": "mudfrigimon"
+        },
+        {
+            "name": "palmon",
+            "for": "pomumon"
+        },
+        {
+            "name": "snakemon",
+            "for": "ambromon"
         }
     ],
     "size": 6

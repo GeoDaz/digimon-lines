@@ -7,6 +7,7 @@ import ButtonAdd from '@/components/Button/ButtonAdd';
 import ButtonRemove from '@/components/Button/ButtonRemove';
 import GroupModal from '@/components/Group/GroupModal';
 import useSaveGroupIndex from '@/hooks/useSaveGroupIndex';
+import useCreateGroup from '@/hooks/useCreateGroup';
 import { GetStaticProps } from 'next';
 import { LineThumb } from '@/types/Line';
 import { GROUP } from '@/consts/ui';
@@ -26,10 +27,13 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	const [groups, setGroups] = useState<LineThumb[]>(ssr.groups);
 	const [showModal, setShowModal] = useState(false);
 	const saveGroups = useSaveGroupIndex(setGroups);
+	const createGroup = useCreateGroup();
 
-	const handleAdd = (name: string) => {
+	// The json file is written first, so the new group is directly editable.
+	const handleAdd = async (name: string, title: string, image?: File) => {
 		if (groups.some(group => group.name === name)) return;
-		saveGroups([...groups, { name }]);
+		if (!(await createGroup(name, title, image))) return;
+		saveGroups([...groups, { name, available: true }]);
 	};
 
 	// Only removes the group from the index, its json file is kept.

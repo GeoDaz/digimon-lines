@@ -7,7 +7,7 @@
                 "name": "snowgoblimon",
                 "from": [
                     [
-                        3,
+                        4,
                         -1
                     ]
                 ],
@@ -55,29 +55,19 @@
             null,
             null,
             {
-                "name": "grumblemon",
-                "color": [
-                    "earth"
-                ],
-                "from": [
-                    [
-                        2,
-                        -1
-                    ]
-                ]
-            },
-            {
                 "name": "gigasmon",
                 "color": [
-                    "earth"
+                    "slide"
                 ],
                 "from": [
                     [
-                        0,
-                        -1
+                        1,
+                        0
                     ]
-                ]
+                ],
+                "ySize": 2
             },
+            null,
             {
                 "name": "ancientvolcamon",
                 "color": [
@@ -86,10 +76,31 @@
                 "from": [
                     [
                         0,
-                        -1
+                        -2
                     ]
                 ]
             },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "grumblemon",
+                "color": [
+                    "earth"
+                ],
+                "from": [
+                    [
+                        2,
+                        -1.5
+                    ]
+                ],
+                "ySize": 2
+            },
+            null,
+            null,
             null
         ],
         [

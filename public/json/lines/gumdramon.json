@@ -2,7 +2,8 @@
     "columns": [
         [
             {
-                "name": "chicomon"
+                "name": "chicomon",
+                "from": null
             },
             {
                 "name": "chibimon"
@@ -14,15 +15,38 @@
                 "name": "arresterdramon"
             },
             {
-                "name": "arresterdramon_superior_mode"
+                "name": "arresterdramon_superior_mode",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "mode"
+                ]
             },
             {
-                "name": "arresterdramon_superior_mode_brave_snatcher"
+                "name": "arresterdramon_superior_mode_brave_snatcher",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
             }
         ]
     ],
     "related": [
         "shoutmon",
+        {
+            "name": "patamon",
+            "for": "bagramon"
+        },
         "veemon"
-    ]
+    ],
+    "size": 6
 }

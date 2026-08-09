@@ -1,0 +1,568 @@
+{
+    "columns": [
+        [
+            {
+                "name": "botamon",
+                "from": null
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "agumon"
+            },
+            {
+                "name": "greymon"
+            },
+            {
+                "name": "metalgreymon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "punimon",
+                "from": null
+            },
+            {
+                "name": "tsunomon"
+            },
+            {
+                "name": "gabumon"
+            },
+            {
+                "name": "garurumon"
+            },
+            {
+                "name": "skullgreymon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "bubbmon",
+                "from": null
+            },
+            {
+                "name": "mochimon"
+            },
+            {
+                "name": "tentomon"
+            },
+            {
+                "name": "kabuterimon"
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "leafmon",
+                "from": null
+            },
+            {
+                "name": "minomon"
+            },
+            {
+                "name": "kunemon"
+            },
+            {
+                "name": "kuwagamon"
+            },
+            {
+                "name": "kimeramon",
+                "color": [
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion"
+                ],
+                "xSize": 2,
+                "from": [
+                    [
+                        -3.5,
+                        0
+                    ],
+                    [
+                        -3.5,
+                        -1
+                    ],
+                    [
+                        -2.5,
+                        -1
+                    ],
+                    [
+                        -1.5,
+                        -1
+                    ],
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ],
+                    [
+                        1.5,
+                        -1
+                    ],
+                    [
+                        2.5,
+                        -1
+                    ],
+                    [
+                        3.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "millenniumon",
+                "color": [
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        6.5,
+                        0
+                    ]
+                ],
+                "xSize": 2
+            },
+            {
+                "name": "moonmillenniumon",
+                "color": [
+                    "dark"
+                ],
+                "xSize": 2,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "zeedmillenniumon",
+                "color": [
+                    "dark"
+                ],
+                "xSize": 2,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "botamon",
+                "from": null
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "modokibetamon"
+            },
+            {
+                "name": "airdramon"
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "sunamon",
+                "from": null
+            },
+            {
+                "name": "goromon"
+            },
+            {
+                "name": "gottsumon"
+            },
+            {
+                "name": "monochromon"
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "poyomon",
+                "from": null
+            },
+            {
+                "name": "tokomon"
+            },
+            {
+                "name": "patamon"
+            },
+            {
+                "name": "angemon",
+                "color": [
+                    "light"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "zurumon",
+                "from": null
+            },
+            {
+                "name": "pagumon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "demidevimon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "devimon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "toyagumon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "toyagumon_black"
+                ]
+            },
+            {
+                "name": "flarelizardmon",
+                "skins": [
+                    "darklizardmon"
+                ]
+            },
+            {
+                "name": "megadramon",
+                "skins": [
+                    "gigadramon"
+                ]
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "botamon",
+                "from": null
+            },
+            {
+                "name": "koromon"
+            },
+            {
+                "name": "agumon",
+                "skins": [
+                    "agumon_black"
+                ]
+            },
+            {
+                "name": "greymon",
+                "skins": [
+                    "greymon_blue"
+                ]
+            },
+            {
+                "name": "metalgreymon",
+                "skins": [
+                    "metalgreymon_blue"
+                ]
+            },
+            null,
+            {
+                "name": "himachinedramon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tyranomon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "darktyranomon"
+                ]
+            },
+            {
+                "name": "metaltyranomon"
+            },
+            {
+                "name": "machinedramon",
+                "color": [
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "chaosdramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "choromon",
+                "from": null
+            },
+            {
+                "name": "caprimon"
+            },
+            {
+                "name": "hagurumon"
+            },
+            {
+                "name": "guardromon"
+            },
+            {
+                "name": "andromon"
+            },
+            null,
+            {
+                "name": "chaosdramon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "kokuwamon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "thunderballmon",
+                "color": [
+                    "electric"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "metalmamemon"
+            },
+            null,
+            null,
+            null
+        ]
+    ],
+    "notes": [
+        "We choose to use Gottsumon and not Gammamon for Monochromon this time, because we wanted to use digimons that already existed when Kimeramon was released.",
+        "MachineDramon can simply evolve from digimons given as its fusion here, but its body is made of parts of each of them."
+    ],
+    "related": [
+        {
+            "name": "toyagumon"
+        },
+        {
+            "name": "tyranomon",
+            "for": "deltamon"
+        },
+        "marinekimeramon",
+        "greymon",
+        "garurumon",
+        {
+            "name": "tentomon",
+            "for": "kabuterimon"
+        },
+        {
+            "name": "tentomon",
+            "for": "kuwagamon"
+        },
+        {
+            "name": "betamon",
+            "for": "airdramon"
+        },
+        {
+            "name": "gammamon",
+            "for": "monochromon"
+        },
+        {
+            "name": "patamon",
+            "for": "angemon"
+        },
+        "devimon",
+        {
+            "name": "betamon",
+            "for": "megadramon"
+        },
+        {
+            "name": "tyranomon",
+            "for": "metaltyranomon"
+        },
+        {
+            "name": "greymon",
+            "for": "metalgreymon"
+        },
+        {
+            "name": "mamemon",
+            "for": "metalmamemon"
+        },
+        {
+            "name": "hagurumon",
+            "for": "andromon"
+        },
+        {
+            "name": "meramon",
+            "for": "boltmon"
+        },
+        "apocalymon",
+        "neocrimson"
+    ],
+    "size": 8
+}

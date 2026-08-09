@@ -5,15 +5,15 @@
 			"name": "wizardmon"
 		},
 		{
-			"name": "witchmon",
-			"line": "wizardmon"
-		},
-		{
 			"name": "sorcerymon",
 			"line": "wizardmon"
 		},
 		{
 			"name": "flamewizardmon",
+			"line": "wizardmon"
+		},
+		{
+			"name": "witchmon",
 			"line": "wizardmon"
 		},
 		{
@@ -29,26 +29,34 @@
 			"line": "guilmon"
 		},
 		{
-			"name": "grandgalemon",
-			"line": "pteromon"
+			"name": "hexeblaumon",
+			"line": "blucomon"
 		},
 		{
 			"name": "zephagamon",
 			"line": "pteromon"
 		},
 		{
-			"name": "vortexdramon",
+			"name": "grandgalemon",
 			"line": "pteromon"
 		},
 		{
-			"name": "hexeblaumon",
-			"line": "blucomon"
+			"name": "vortexdramon",
+			"line": "pteromon"
 		}
 	],
 	"related": [
 		{
 			"name": "ancientwisemon",
 			"line": "wizardmon"
+		},
+		{
+			"name": "jokermon",
+			"line": "bakemon"
+		},
+		{
+			"name": "piemon",
+			"line": "bakemon"
 		}
 	]
 }

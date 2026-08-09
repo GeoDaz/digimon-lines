@@ -40,7 +40,7 @@
 	"hackmon",
 	"zubamon",
 	"ludomon",
-	"fairymon",
+	{ "name": "tinkermon", "grid": ["fairymon"] },
 	{ "name": "mercuremon", "grid": ["monitamon"] },
 	"dracomon",
 	"kamemon",

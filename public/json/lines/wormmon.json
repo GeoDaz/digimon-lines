@@ -280,7 +280,10 @@
 			"name": "fanbeemon",
 			"from": "jewelbeemon"
 		},
-		"fairymon",
+		{
+			"name": "tinkermon",
+			"for": "fairymon"
+		},
 		{
 			"name": "pulsemon",
 			"for": "exermon"
