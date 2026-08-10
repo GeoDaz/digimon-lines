@@ -3417,8 +3417,7 @@
         "kokabuterimon": {
             "name": "kokabuterimon",
             "variants": [
-                "tentomon",
-                "blitzmon"
+                "tentomon"
             ],
             "from": [
                 "mochimon",
@@ -6792,9 +6791,6 @@
         },
         "blitzmon": {
             "name": "blitzmon",
-            "variants": [
-                "kokabuterimon"
-            ],
             "modes": [
                 "bolgmon"
             ],
@@ -8613,7 +8609,6 @@
             ],
             "to": [
                 "beelzebumon",
-                "beelzebumon_behemoth",
                 "boltmon",
                 "taowumon"
             ]
@@ -10127,7 +10122,9 @@
             ],
             "to": [
                 "takutomon",
-                "seitengokuwmon"
+                "seitengokuwmon",
+                "shakamon",
+                "erlangmon"
             ]
         },
         "saviorhackmon": {
@@ -11537,8 +11534,7 @@
                 "bolgmon"
             ],
             "to": [
-                "ancientbeetlemon",
-                "magnagarurumon"
+                "ancientbeetlemon"
             ]
         }
     },
@@ -12118,7 +12114,8 @@
                 "astamon"
             ],
             "to": [
-                "ogudomon"
+                "ogudomon",
+                "nezhamon_crimson_mode"
             ]
         },
         "beelzebumon_2": {
@@ -12132,13 +12129,7 @@
             ]
         },
         "beelzebumon_behemoth": {
-            "name": "beelzebumon_behemoth",
-            "from": [
-                "deathmeramon"
-            ],
-            "to": [
-                "nezhamon_crimson_mode"
-            ]
+            "name": "beelzebumon_behemoth"
         },
         "beelzebumon_blast_mode": {
             "name": "beelzebumon_blast_mode"
@@ -13676,7 +13667,7 @@
             "name": "shakamon",
             "from": [
                 "seitengokuwmon",
-                "zanbamon"
+                "sanzomon"
             ]
         },
         "shinmonzaemon": {
@@ -13936,9 +13927,6 @@
                 "asuramon",
                 "butenmon",
                 "enbarrmon"
-            ],
-            "to": [
-                "shakamon"
             ]
         },
         "zeekgreymon": {
@@ -14626,13 +14614,12 @@
         },
         "magnagarurumon": {
             "name": "magnagarurumon",
-            "to": [
-                "susanomon"
-            ],
             "from": [
                 "beowolfmon",
-                "rhinokabuterimon",
                 "raihimon"
+            ],
+            "to": [
+                "susanomon"
             ]
         }
     },
@@ -14903,12 +14890,13 @@
         },
         "erlangmon": {
             "name": "erlangmon",
+            "modes": [
+                "erlangmon_blast_mode"
+            ],
             "from": [
                 "sagomon",
-                "caturamon"
-            ],
-            "to": [
-                "erlangmon_blast_mode"
+                "caturamon",
+                "sanzomon"
             ]
         },
         "erlangmon_blast_mode": {
@@ -15001,12 +14989,12 @@
         },
         "nezhamon": {
             "name": "nezhamon",
+            "modes": [
+                "nezhamon_crimson_mode"
+            ],
             "from": [
                 "gokuwmon",
                 "rebellimon"
-            ],
-            "to": [
-                "nezhamon_crimson_mode"
             ]
         },
         "nezhamon_crimson_mode": {
@@ -15016,7 +15004,7 @@
             ],
             "fusionFrom": [
                 "vulcanusmon",
-                "beelzebumon_behemoth"
+                "beelzebumon"
             ]
         },
         "nyabootmon": {
@@ -15092,12 +15080,12 @@
         },
         "takutomon": {
             "name": "takutomon",
+            "modes": [
+                "takutomon_wrath_mode"
+            ],
             "from": [
                 "shawujinmon",
                 "sanzomon"
-            ],
-            "to": [
-                "takutomon_wrath_mode"
             ]
         },
         "takutomon_wrath_mode": {
