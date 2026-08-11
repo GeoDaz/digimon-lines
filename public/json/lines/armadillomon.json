@@ -1,327 +1,510 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "stegomon",
-				"from": [[3.5, -1]],
-				"skins": []
-			},
-			{
-				"name": "mametyramon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "spinomon"
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "digmon",
-				"from": [[2, -1]],
-				"xSize": 2,
-				"color": ["earth"],
-				"skins": ["knowledge"]
-			},
-			{
-				"name": "groundramon",
-				"from": [[2.5, -1]]
-			},
-			{
-				"name": "breakdramon",
-				"from": [[0, -1]]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "submarimon",
-				"color": ["marine"],
-				"from": [[1, -1]],
-				"skins": ["reliability"],
-				"xSize": 2
-			},
-			{
-				"name": "masterblimpmon",
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				],
-				"color": ["fusion", "fusion"]
-			},
-			{
-				"name": "gigabreakdramon",
-				"from": [[0, -1]],
-				"color": ["earth"]
-			},
-			null
-		],
-		[
-			{
-				"name": "tsubumon",
-				"from": null,
-				"xSize": 2
-			},
-			{
-				"name": "upamon",
-				"xSize": 2
-			},
-			{
-				"name": "armadillomon",
-				"xSize": 2
-			},
-			{
-				"name": "ankylomon",
-				"xSize": 2
-			},
-			{
-				"name": "shakkoumon",
-				"color": ["fusion"],
-				"xSize": 2
-			},
-			{
-				"name": "metatromon",
-				"color": ["machine"],
-				"from": [[0.5, -1]]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "clavisangemon",
-				"from": [[-0.5, -1]],
-				"color": ["light"],
-				"skins": ["slashangemon"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "togemogumon",
-				"color": ["ice"],
-				"from": [[-1.5, -1]],
-				"skins": ["friendship", "kenkimon", "sepikmon"]
-			},
-			{
-				"name": "brachiomon",
-				"from": [[-1.5, -1]]
-			},
-			{
-				"name": "ultimatebrachimon",
-				"from": [[0, -1]]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "boarmon",
-				"from": [[-2.5, -1]],
-				"skins": ["courage"],
-				"color": ["fire"]
-			},
-			{
-				"name": "elephantmon",
-				"from": [[0, -1]],
-				"skins": ["miracles"],
-				"color": ["wind"]
-			},
-			{
-				"name": "cannondramon",
-				"from": [[-1, -1]]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "sheepmon",
-				"from": [[-3.5, -1]],
-				"skins": ["hope"]
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "pteranomon",
-				"from": [[-4.5, -1]],
-				"skins": ["love"],
-				"color": ["machine"]
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "pteranomon_x",
-				"from": [[-1, 0]],
-				"color": ["x"]
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "frogmon",
-				"from": [[-6.5, -1]],
-				"skins": ["purity"],
-				"color": ["grass"]
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "chamelemon",
-				"from": [[-7.5, -1]],
-				"skins": ["kindness"]
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "seahomon",
-				"from": [[-8.5, -1]],
-				"skins": ["light"],
-				"color": ["marine"]
-			},
-			null,
-			null,
-			null
-		]
-	],
-	"related": [
-		{
-			"name": "patamon",
-			"for": "shakkoumon"
-		},
-		{
-			"name": "gomamon",
-			"for": "vikemon"
-		},
-		{
-			"name": "maquinamon",
-			"for": "metatromon"
-		},
-		{
-			"name": "tyranomon",
-			"for": "spinomon"
-		},
-		{
-			"name": "snakemon",
-			"for": "dimetromon",
-			"from": "elizamon"
-		},
-		{
-			"name": "gammamon",
-			"for": "brachiomon"
-		},
-		{
-			"name": "kamemon",
-			"for": "tortamon"
-		},
-		{
-			"name": "golemon",
-			"for": "pyramidimon",
-			"from": "sunarizamon"
-		},
-		{
-			"name": "dracomon",
-			"for": "breakdramon"
-		},
-		{
-			"name": "garurumon",
-			"for": "drimogemon",
-			"from": "gabumon"
-		},
-		{
-			"name": "commandramon",
-			"from": "cannondramon"
-		},
-		{
-			"name": "tapirmon",
-			"for": "boarmon"
-		},
-		{
-			"name": "herissmon",
-			"for": "togemogumon"
-		},
-		{
-			"name": "pillowmon",
-			"for": "sheepmon"
-		},
-		{
-			"name": "gekomon",
-			"for": "frogmon"
-		},
-		{
-			"name": "gekkomon",
-			"for": "chamelemon"
-		},
-		{
-			"name": "swimmon",
-			"for": "seahomon"
-		},
-		{
-			"name": "monodramon",
-			"for": "pteranomon"
-		},
-		{
-			"name": "hagurumon",
-			"for": "kenkimon"
-		},
-		{
-			"name": "kakamon",
-			"for": "sepikmon",
-			"from": "monmon"
-		},
-		{
-			"name": "leomon",
-			"for": "loaderliomon"
-		}
-	],
-	"size": 7
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "stegomon",
+                "from": [
+                    [
+                        3.5,
+                        -1
+                    ]
+                ],
+                "skins": []
+            },
+            {
+                "name": "mametyramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "spinomon"
+            },
+            {
+                "name": "huanglongmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "digmon",
+                "from": [
+                    [
+                        2,
+                        -1
+                    ]
+                ],
+                "xSize": 2,
+                "color": [
+                    "earth"
+                ],
+                "skins": [
+                    "knowledge"
+                ]
+            },
+            {
+                "name": "groundramon",
+                "from": [
+                    [
+                        2.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "breakdramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "huanglongmon_ruin_mode",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "submarimon",
+                "color": [
+                    "marine"
+                ],
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "reliability"
+                ],
+                "xSize": 2
+            },
+            {
+                "name": "masterblimpmon",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            },
+            {
+                "name": "gigabreakdramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "earth"
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "tsubumon",
+                "from": null,
+                "xSize": 2
+            },
+            {
+                "name": "upamon",
+                "xSize": 2
+            },
+            {
+                "name": "armadillomon",
+                "xSize": 2
+            },
+            {
+                "name": "ankylomon",
+                "xSize": 2
+            },
+            {
+                "name": "shakkoumon",
+                "color": [
+                    "fusion"
+                ],
+                "xSize": 2
+            },
+            {
+                "name": "metatromon",
+                "color": [
+                    "machine"
+                ],
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "clavisangemon",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light"
+                ],
+                "skins": [
+                    "slashangemon"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "togemogumon",
+                "color": [
+                    "ice"
+                ],
+                "from": [
+                    [
+                        -1.5,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "friendship",
+                    "kenkimon",
+                    "sepikmon"
+                ]
+            },
+            {
+                "name": "brachiomon",
+                "from": [
+                    [
+                        -1.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "ultimatebrachimon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "boarmon",
+                "from": [
+                    [
+                        -2.5,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "courage"
+                ],
+                "color": [
+                    "fire"
+                ]
+            },
+            {
+                "name": "elephantmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "miracles"
+                ],
+                "color": [
+                    "wind"
+                ]
+            },
+            {
+                "name": "cannondramon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sheepmon",
+                "from": [
+                    [
+                        -3.5,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "hope"
+                ]
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "pteranomon",
+                "from": [
+                    [
+                        -4.5,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "love"
+                ],
+                "color": [
+                    "machine"
+                ]
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "pteranomon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "frogmon",
+                "from": [
+                    [
+                        -6.5,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "purity"
+                ],
+                "color": [
+                    "grass"
+                ]
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "chamelemon",
+                "from": [
+                    [
+                        -7.5,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "kindness"
+                ]
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "seahomon",
+                "from": [
+                    [
+                        -8.5,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "light"
+                ],
+                "color": [
+                    "marine"
+                ]
+            },
+            null,
+            null,
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "patamon",
+            "for": "shakkoumon"
+        },
+        {
+            "name": "gomamon",
+            "for": "vikemon"
+        },
+        {
+            "name": "maquinamon",
+            "for": "metatromon"
+        },
+        {
+            "name": "tyranomon",
+            "for": "spinomon"
+        },
+        {
+            "name": "snakemon",
+            "for": "dimetromon",
+            "from": "elizamon"
+        },
+        {
+            "name": "gammamon",
+            "for": "brachiomon"
+        },
+        {
+            "name": "kamemon",
+            "for": "tortamon"
+        },
+        {
+            "name": "golemon",
+            "for": "pyramidimon",
+            "from": "sunarizamon"
+        },
+        {
+            "name": "dracomon",
+            "for": "breakdramon"
+        },
+        {
+            "name": "garurumon",
+            "for": "drimogemon",
+            "from": "gabumon"
+        },
+        {
+            "name": "commandramon",
+            "from": "cannondramon"
+        },
+        {
+            "name": "tapirmon",
+            "for": "boarmon"
+        },
+        {
+            "name": "herissmon",
+            "for": "togemogumon"
+        },
+        {
+            "name": "pillowmon",
+            "for": "sheepmon"
+        },
+        {
+            "name": "gekomon",
+            "for": "frogmon"
+        },
+        {
+            "name": "gekkomon",
+            "for": "chamelemon"
+        },
+        {
+            "name": "swimmon",
+            "for": "seahomon"
+        },
+        {
+            "name": "monodramon",
+            "for": "pteranomon"
+        },
+        {
+            "name": "hagurumon",
+            "for": "kenkimon"
+        },
+        {
+            "name": "kakamon",
+            "for": "sepikmon",
+            "from": "monmon"
+        },
+        {
+            "name": "leomon",
+            "for": "loaderliomon"
+        }
+    ],
+    "size": 7
 }

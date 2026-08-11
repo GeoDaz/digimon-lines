@@ -1,39 +1,6 @@
 {
     "columns": [
         [
-            null,
-            null,
-            null,
-            {
-                "name": "stegomon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "mametyramon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "spinomon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            null
-        ],
-        [
             {
                 "name": "jyarimon",
                 "from": null
@@ -416,6 +383,10 @@
         },
         "gekkomon",
         {
+            "name": "armadillomon",
+            "for": "stegomon"
+        },
+        {
             "name": "tyranomon",
             "from": "styracomon"
         },
@@ -430,10 +401,6 @@
         {
             "name": "palmon",
             "for": "lotusmon"
-        },
-        {
-            "name": "armadillomon",
-            "from": "stegomon"
         },
         {
             "name": "gekomon",
