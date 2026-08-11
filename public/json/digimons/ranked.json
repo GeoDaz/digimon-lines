@@ -1752,7 +1752,8 @@
                 "akatorimon",
                 "saberdramon",
                 "corvumon",
-                "owlmon"
+                "owlmon",
+                "kiwimon"
             ]
         },
         "falcomon_2": {
@@ -2058,7 +2059,8 @@
                 "cockatrimon",
                 "akatorimon",
                 "buraimon",
-                "diatrymon"
+                "diatrymon",
+                "parasaumon"
             ]
         },
         "herissmon": {
@@ -2421,7 +2423,7 @@
             "to": [
                 "akatorimon",
                 "cockatrimon",
-                "airdramon"
+                "birdramon"
             ]
         },
         "mushmon": {
@@ -2567,7 +2569,10 @@
                 "galemon",
                 "cockatrimon",
                 "diatrymon",
-                "airdramon"
+                "airdramon",
+                "pteranomon",
+                "rhamphomon",
+                "kiwimon"
             ]
         },
         "pulsemon": {
@@ -3620,7 +3625,6 @@
                 "dracomon",
                 "ryudamon",
                 "monodramon",
-                "muchomon",
                 "pteromon",
                 "kudamon"
             ],
@@ -3821,7 +3825,8 @@
                 "biyomon",
                 "vorvomon",
                 "hawkmon",
-                "ghostmon"
+                "ghostmon",
+                "muchomon"
             ],
             "to": [
                 "garudamon",
@@ -4937,7 +4942,9 @@
             "name": "kiwimon",
             "from": [
                 "pomumon",
-                "floramon"
+                "floramon",
+                "pteromon",
+                "falcomon"
             ],
             "to": [
                 "sirenmon",
@@ -6141,7 +6148,8 @@
             ],
             "to": [
                 "huankunmon",
-                "daipenmon"
+                "daipenmon",
+                "tempomon"
             ]
         },
         "yakiimon": {
@@ -6324,19 +6332,22 @@
             "name": "parasaumon",
             "from": [
                 "pomumon",
-                "floramon"
+                "floramon",
+                "hawkmon"
             ],
             "to": [
                 "ajatarmon",
                 "tropiamon",
                 "petaldramon",
-                "entmon"
+                "entmon",
+                "garudamon"
             ]
         },
         "rhamphomon": {
             "name": "rhamphomon",
             "from": [
-                "monodramon"
+                "monodramon",
+                "pteromon"
             ],
             "to": [
                 "azhdarmon",
@@ -6529,13 +6540,17 @@
             ],
             "to": [
                 "allomon_x",
-                "monarchlizamon"
+                "monarchlizamon",
+                "garudamon"
             ]
         },
         "allomon_x": {
             "name": "allomon_x",
             "from": [
                 "allomon"
+            ],
+            "to": [
+                "garudamon_x"
             ]
         },
         "baromon": {
@@ -7649,7 +7664,8 @@
             "from": [
                 "monodramon",
                 "jazamon",
-                "armadillomon"
+                "armadillomon",
+                "pteromon"
             ],
             "to": [
                 "azhdarmon",
@@ -8844,13 +8860,16 @@
                 "thunderbirdmon",
                 "dinohumon",
                 "buraimon",
-                "akatorimon"
+                "akatorimon",
+                "allomon",
+                "parasaumon"
             ],
             "to": [
                 "phoenixmon",
                 "zhuqiaomon",
                 "crossmon",
-                "ornismon"
+                "ornismon",
+                "mercurymon"
             ]
         },
         "gerbemon": {
@@ -10443,7 +10462,8 @@
             "from": [
                 "toucanmon",
                 "namakemon",
-                "mojyamon"
+                "mojyamon",
+                "xiquemon"
             ],
             "to": [
                 "frosvelgrmon",
@@ -11277,7 +11297,8 @@
         "garudamon_x": {
             "name": "garudamon_x",
             "from": [
-                "garudamon"
+                "garudamon",
+                "allomon_x"
             ],
             "to": [
                 "phoenixmon_x"
@@ -13111,7 +13132,8 @@
             "from": [
                 "black_machgaogamon",
                 "weregarurumon_black",
-                "weregarurumon"
+                "weregarurumon",
+                "garudamon"
             ]
         },
         "metaletemon": {
