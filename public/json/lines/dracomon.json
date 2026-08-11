@@ -1,85 +1,375 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			{
-				"name": "dracomon_x",
-				"color": "x",
-				"from": [1.5, 0]
-			},
-			null,
-			null,
-			null,
-			{
-				"name": "examon_x",
-				"color": "x",
-				"from": [1.5, 0]
-			}
-		],
-		[
-			{
-				"name": "petitmon",
-				"xSize": 2
-			},
-			{
-				"name": "babydramon",
-				"xSize": 2
-			},
-			{
-				"name": "dracomon",
-				"xSize": 2
-			},
-			{
-				"name": "coredramon_blue",
-				"color": "wind",
-				"from": [0.5, -1]
-			},
-			{
-				"name": "wingdramon",
-				"color": "wind"
-			},
-			{
-				"name": "slayerdramon"
-			},
-			{
-				"name": "examon",
-				"xSize": 2,
-				"color": "fusion",
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "coredramon_green",
-				"from": [-0.5, -1]
-			},
-			{
-				"name": "groundramon",
-				"color": "earth"
-			},
-			{
-				"name": "breakdramon",
-				"color": "machine",
-				"skins": ["gigabreakdramon"]
-			}
-		]
-	],
-	"related": [
-		{ "name": "armadillomon", "for": "gigabreakdramon" },
-		{ "name": "ryudamon", "for": "majiramon" },
-		{ "name": "betamon", "for": "airdramon" },
-		{ "name": "golemon", "for": "landramon", "from": "sunarizamon" },
-		{ "name": "betamon", "for": "seadramon" },
-		{ "name": "hyokomon", "for": "darumamon" },
-		{ "name": "golemon", "for": "proganomon", "from": "sunarizamon" },
-		{ "name": "garurumon", "for": "drimogemon", "from": "gabumon" },
-		{ "name": "hagurumon", "for": "kenkimon" }
-	]
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "dracomon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1.5,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            {
+                "name": "examon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1.5,
+                        0
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "petitmon",
+                "xSize": 2,
+                "from": null
+            },
+            {
+                "name": "babydramon",
+                "xSize": 2
+            },
+            {
+                "name": "dracomon",
+                "xSize": 2
+            },
+            {
+                "name": "coredramon_blue",
+                "color": [
+                    "wind"
+                ],
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "wingdramon",
+                "color": [
+                    "wind"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "slayerdramon"
+            },
+            {
+                "name": "examon",
+                "xSize": 2,
+                "color": [
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "coredramon_green",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "groundramon",
+                "color": [
+                    "earth"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "breakdramon",
+                "color": [
+                    "machine"
+                ],
+                "skins": [
+                    "gigabreakdramon"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "majiramon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "azulongmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "electric"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "shagaramon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "default"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "airdramon",
+                "from": [
+                    [
+                        -3.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "darumamon",
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "goldramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "light",
+                    "light"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "goldramon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "megadramon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "megidramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fire"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "megidramon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "gigadramon",
+                "from": [
+                    [
+                        -4,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "heavymetaldramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "armadillomon",
+            "for": "gigabreakdramon"
+        },
+        {
+            "name": "ryudamon",
+            "for": "majiramon"
+        },
+        {
+            "name": "betamon",
+            "for": "airdramon"
+        },
+        {
+            "name": "golemon",
+            "for": "landramon",
+            "from": "sunarizamon"
+        },
+        {
+            "name": "betamon",
+            "for": "seadramon"
+        },
+        {
+            "name": "hyokomon",
+            "for": "darumamon"
+        },
+        {
+            "name": "golemon",
+            "for": "proganomon",
+            "from": "sunarizamon"
+        },
+        {
+            "name": "garurumon",
+            "for": "drimogemon",
+            "from": "gabumon"
+        },
+        {
+            "name": "hagurumon",
+            "for": "kenkimon"
+        }
+    ],
+    "size": 7
 }

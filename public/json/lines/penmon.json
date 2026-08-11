@@ -155,60 +155,13 @@
             null,
             null,
             {
-                "name": "mojyamon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "skins": [
-                    "jungle_mojyamon"
-                ]
-            },
-            {
-                "name": "panjyamon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ],
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "ice",
-                    "ice"
-                ]
-            },
-            {
-                "name": "vikemon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "ice"
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
                 "name": "xiquemon",
                 "color": [
                     "marine"
                 ],
                 "from": [
                     [
-                        -2,
+                        -1,
                         -1
                     ]
                 ]
@@ -221,7 +174,7 @@
                         -1
                     ],
                     [
-                        -1,
+                        0,
                         -1
                     ]
                 ]
@@ -255,7 +208,7 @@
                 ],
                 "from": [
                     [
-                        -3,
+                        -2,
                         -1
                     ]
                 ]
@@ -356,11 +309,22 @@
         },
         {
             "name": "gomamon",
-            "for": "dolphmon"
+            "for": "vikemon"
         },
         {
             "name": "pulsemon",
             "for": "tempomon"
+        },
+        {
+            "name": "monmon",
+            "for": "mojyamon"
+        },
+        {
+            "name": "gomamon",
+            "for": "dolphmon"
+        },
+        {
+            "name": "aegisdramon"
         },
         {
             "name": "biyomon",
@@ -371,27 +335,24 @@
             "from": "sinduramon"
         },
         {
-            "name": "aegisdramon"
+            "name": "hyokomon",
+            "for": "toucanmon"
         },
         {
             "name": "hawkmon",
             "for": "peacockmon"
         },
         {
-            "name": "hyokomon",
-            "for": "toucanmon"
-        },
-        {
-            "name": "falcomon_2",
-            "for": "xiquemon"
+            "name": "gargamon",
+            "from": "xiquemon"
         },
         {
             "name": "fujamon",
-            "for": "xiquemon"
+            "for": "huankunmon"
         },
         {
-            "name": "monmon",
-            "for": "mojyamon"
+            "name": "falcomon_2",
+            "from": "xiquemon"
         }
     ],
     "size": 7

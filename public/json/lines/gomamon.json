@@ -1,146 +1,243 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			{
-				"name": "gomamon_x",
-				"color": "x",
-				"from": [1.5, 0]
-			},
-			null,
-			null,
-			{
-				"name": "plesiomon_x",
-				"color": "x",
-				"from": [1, 0]
-			}
-		],
-		[
-			{
-				"name": "pitchmon",
-				"color": "marine",
-				"xSize": 2
-			},
-			{
-				"name": "pukamon",
-				"color": "marine",
-				"xSize": 2
-			},
-			{
-				"name": "gomamon",
-				"color": "marine",
-				"xSize": 2
-			},
-			{
-				"name": "ikkakumon",
-				"color": "marine",
-				"xSize": 2
-			},
-			{
-				"name": "zudomon",
-				"color": "marine",
-				"xSize": 2
-			},
-			{
-				"name": "plesiomon",
-				"color": "marine",
-				"from": [0.5, -1]
-			},
-			{
-				"name": "aegisdramon",
-				"color": "fusion"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "vikemon",
-				"color": "ice",
-				"from": [-0.5, -1]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "dolphmon",
-				"color": "marine",
-				"from": [-1.5, -1],
-				"skins": ["orcamon"]
-			},
-			{
-				"name": "whamon",
-				"color": "marine"
-			},
-			{
-				"name": "kingwhamon",
-				"color": "marine"
-			}
-		]
-	],
-	"related": [
-		{
-			"name": "bearmon",
-			"for": "frigimon"
-		},
-		{
-			"name": "kakamon",
-			"for": "mojyamon"
-		},
-		{
-			"name": "bearmon",
-			"for": "blizzarmon"
-		},
-		{
-			"name": "leomon",
-			"for": "panjyamon"
-		},
-		{
-			"name": "aegisdramon"
-		},
-		{
-			"name": "omegamon_merciful_mode",
-			"from": "vikemon"
-		},
-		"marinekimeramon",
-		{
-			"name": "kamemon",
-			"for": "archelomon"
-		},
-		{
-			"name": "toyagumon",
-			"for": "olegmon"
-		},
-		{
-			"name": "jellymon",
-			"for": "neptunemon"
-		},
-		{
-			"name": "patamon",
-			"for": "marineangemon"
-		},
-		{
-			"name": "betamon",
-			"from": "plesiomon"
-		},
-		{
-			"name": "gammamon",
-			"from": "plesiomon"
-		},
-		{
-			"name": "crabmon",
-			"for": "anomalocarimon"
-		},
-		{
-			"name": "penmon",
-			"from": "dolphmon"
-		}
-	]
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "gomamon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1.5,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null,
+            {
+                "name": "plesiomon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "pitchmon",
+                "color": "marine",
+                "xSize": 2,
+                "from": null
+            },
+            {
+                "name": "pukamon",
+                "color": [
+                    "marine"
+                ],
+                "xSize": 2,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "gomamon",
+                "color": [
+                    "marine"
+                ],
+                "xSize": 2,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "ikkakumon",
+                "color": [
+                    "marine"
+                ],
+                "xSize": 2,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "zudomon",
+                "color": [
+                    "marine"
+                ],
+                "xSize": 2,
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "plesiomon",
+                "color": [
+                    "marine"
+                ],
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "aegisdramon",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "vikemon",
+                "color": [
+                    "ice"
+                ],
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "dolphmon",
+                "color": [
+                    "marine"
+                ],
+                "from": [
+                    [
+                        -1.5,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "orcamon"
+                ]
+            },
+            {
+                "name": "whamon",
+                "color": [
+                    "marine"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "kingwhamon",
+                "color": [
+                    "marine"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "bearmon",
+            "for": "frigimon"
+        },
+        {
+            "name": "kakamon",
+            "for": "mojyamon"
+        },
+        {
+            "name": "penmon",
+            "for": "blizzarmon"
+        },
+        {
+            "name": "leomon",
+            "for": "panjyamon"
+        },
+        {
+            "name": "aegisdramon"
+        },
+        {
+            "name": "omegamon_merciful_mode",
+            "from": "vikemon"
+        },
+        "marinekimeramon",
+        {
+            "name": "kamemon",
+            "for": "archelomon"
+        },
+        {
+            "name": "toyagumon",
+            "for": "olegmon"
+        },
+        {
+            "name": "jellymon",
+            "for": "neptunemon"
+        },
+        {
+            "name": "patamon",
+            "for": "marineangemon"
+        },
+        {
+            "name": "betamon",
+            "from": "plesiomon"
+        },
+        {
+            "name": "gammamon",
+            "from": "plesiomon"
+        },
+        {
+            "name": "crabmon",
+            "for": "anomalocarimon"
+        },
+        {
+            "name": "penmon",
+            "from": "dolphmon"
+        }
+    ],
+    "size": 7
 }

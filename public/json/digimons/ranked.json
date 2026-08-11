@@ -9,7 +9,8 @@
             "to": [
                 "koromon",
                 "wanyamon",
-                "sunmon"
+                "sunmon",
+                "budmon"
             ]
         },
         "punimon": {
@@ -45,7 +46,8 @@
             ],
             "to": [
                 "tanemon",
-                "yokomon"
+                "yokomon",
+                "budmon"
             ]
         },
         "bubbmon": {
@@ -60,7 +62,8 @@
         "yuramon": {
             "name": "yuramon",
             "to": [
-                "tanemon"
+                "tanemon",
+                "budmon"
             ]
         },
         "pitchmon": {
@@ -121,7 +124,8 @@
             "name": "leafmon",
             "to": [
                 "minomon",
-                "budmon"
+                "budmon",
+                "tanemon"
             ]
         },
         "jyarimon": {
@@ -454,7 +458,8 @@
             "name": "tanemon",
             "from": [
                 "nyokimon",
-                "yuramon"
+                "yuramon",
+                "leafmon"
             ],
             "to": [
                 "mushmon",
@@ -632,6 +637,9 @@
         "budmon": {
             "name": "budmon",
             "from": [
+                "botamon",
+                "yuramon",
+                "nyokimon",
                 "leafmon"
             ],
             "to": [
@@ -2224,7 +2232,8 @@
             "to": [
                 "reppamon",
                 "unimon",
-                "hakubamon"
+                "hakubamon",
+                "airdramon"
             ]
         },
         "kunemon": {
@@ -2386,7 +2395,8 @@
                 "strikedramon",
                 "rhamphomon",
                 "pteranomon",
-                "raptordramon"
+                "raptordramon",
+                "airdramon"
             ]
         },
         "morphomon": {
@@ -2412,7 +2422,8 @@
             ],
             "to": [
                 "akatorimon",
-                "cockatrimon"
+                "cockatrimon",
+                "airdramon"
             ]
         },
         "mushmon": {
@@ -2557,7 +2568,8 @@
             "to": [
                 "galemon",
                 "cockatrimon",
-                "diatrymon"
+                "diatrymon",
+                "airdramon"
             ]
         },
         "pulsemon": {
@@ -3627,12 +3639,18 @@
                 "modokibetamon",
                 "betamon",
                 "dracomon",
-                "ryudamon"
+                "ryudamon",
+                "monodramon",
+                "muchomon",
+                "pteromon",
+                "kudamon"
             ],
             "to": [
                 "gigadramon",
                 "megadramon",
-                "kimeramon"
+                "kimeramon",
+                "darumamon",
+                "majiramon"
             ]
         },
         "akatorimon": {
@@ -8599,11 +8617,11 @@
                 "toucanmon",
                 "baromon",
                 "coredramon_green",
-                "flamedramon"
+                "flamedramon",
+                "airdramon"
             ],
             "to": [
-                "goldramon",
-                "ouryumon"
+                "goldramon"
             ]
         },
         "deadly_tuwarmon": {
@@ -9386,12 +9404,14 @@
             "from": [
                 "ginryumon",
                 "moosemon",
-                "coredramon_green"
+                "coredramon_green",
+                "airdramon"
             ],
             "to": [
                 "azulongmon",
                 "goldramon",
-                "shagaramon"
+                "shagaramon",
+                "magnadramon"
             ]
         },
         "makuramon": {
@@ -13028,7 +13048,8 @@
         "magnadramon": {
             "name": "magnadramon",
             "from": [
-                "angewomon"
+                "angewomon",
+                "majiramon"
             ],
             "to": [
                 "omegamon_merciful_mode"
@@ -13307,8 +13328,7 @@
         "ouryumon": {
             "name": "ouryumon",
             "from": [
-                "hisyaryumon",
-                "darumamon"
+                "hisyaryumon"
             ],
             "to": [
                 "alphamon_ouryuken"

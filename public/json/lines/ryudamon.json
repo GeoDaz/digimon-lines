@@ -1,60 +1,111 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			{ "name": "zanmetsumon", "color": ["fusion"], "from": [[1, -1]] },
-			{ "name": "samudramon", "from": [[0, -1]], "color": ["x"] },
-			{ "name": "samudramon_itto_mode", "from": [[0, -1]], "color": ["mode"] }
-		],
-		[
-			{ "name": "fufumon", "from": null },
-			{ "name": "kyokyomon" },
-			{ "name": "ryudamon" },
-			{ "name": "ginryumon" },
-			{ "name": "hisyaryumon" },
-			{ "name": "ouryumon" },
-			{ "name": "alphamon_ouryuken", "color": ["fusion"], "from": [[0, -1]] }
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "name": "azulongmon", "from": [[1, -1]], "color": ["electric"] },
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{ "name": "majiramon", "from": [[-2, -1]] },
-			{ "name": "goldramon", "from": [[0, -1]], "color": ["light"] },
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{ "name": "shagaramon", "from": [[-1, -1]], "color": ["marine"] },
-			null
-		]
-	],
-	"related": [
-		{ "name": "dorumon", "for": "alphamon" },
-		"kotemon",
-		{ "name": "gammamon", "from": "zanmetsumon" },
-		{ "name": "greymon", "from": "samudramon" },
-		{ "name": "dracomon", "from": "majiramon" },
-		{ "name": "veemon", "for": "azulongmon" },
-		{ "name": "airdramon", "for": "goldramon" },
-		{ "name": "jellymon", "for": "shagaramon" }
-	],
-	"size": 7
+    "columns": [
+        [
+            {
+                "name": "fufumon",
+                "from": null
+            },
+            {
+                "name": "kyokyomon"
+            },
+            {
+                "name": "ryudamon"
+            },
+            {
+                "name": "ginryumon"
+            },
+            {
+                "name": "hisyaryumon"
+            },
+            {
+                "name": "ouryumon"
+            },
+            {
+                "name": "alphamon_ouryuken",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "zanmetsumon",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "samudramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            {
+                "name": "samudramon_itto_mode",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "mode"
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "dorumon",
+            "for": "alphamon"
+        },
+        "kotemon",
+        {
+            "name": "gammamon",
+            "from": "zanmetsumon"
+        },
+        {
+            "name": "greymon",
+            "from": "samudramon"
+        },
+        {
+            "name": "dracomon",
+            "from": "majiramon"
+        },
+        {
+            "name": "veemon",
+            "for": "azulongmon"
+        },
+        {
+            "name": "airdramon",
+            "for": "goldramon"
+        },
+        {
+            "name": "jellymon",
+            "for": "shagaramon"
+        }
+    ],
+    "size": 7
 }
