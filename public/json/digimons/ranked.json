@@ -1382,7 +1382,8 @@
                 "darktyranomon",
                 "darklizardmon",
                 "mimicmon",
-                "hookmon"
+                "hookmon",
+                "deltamon"
             ]
         },
         "betamon": {
@@ -1801,7 +1802,8 @@
                 "coelamon",
                 "tylomon",
                 "tobiumon",
-                "seadramon"
+                "seadramon",
+                "deltamon"
             ]
         },
         "gammamon": {
@@ -3179,6 +3181,9 @@
             ],
             "from": [
                 "agumon_black"
+            ],
+            "to": [
+                "greymon_blue_x"
             ]
         },
         "gabumon_x": {
@@ -4096,7 +4101,9 @@
             "from": [
                 "gazimon",
                 "gaossmon",
-                "agumon_black"
+                "agumon_black",
+                "toyagumon_black",
+                "fujamon"
             ],
             "to": [
                 "orochimon",
@@ -6922,7 +6929,8 @@
                 "agumon_x"
             ],
             "to": [
-                "metalgreymon_x"
+                "metalgreymon_x",
+                "rizegreymon_x"
             ]
         },
         "greymon_blue_x": {
@@ -6932,7 +6940,11 @@
                 "greymon_blue_2"
             ],
             "from": [
-                "greymon_blue"
+                "greymon_blue",
+                "agumon_black_x"
+            ],
+            "to": [
+                "metalgreymon_blue_x"
             ]
         },
         "garurumon_x": {
@@ -11183,7 +11195,8 @@
                 "rizegreymon_x"
             ],
             "from": [
-                "metalgreymon_blue"
+                "metalgreymon_blue",
+                "greymon_blue_x"
             ],
             "to": [
                 "samudramon",
@@ -11197,7 +11210,8 @@
                 "metalgreymon_blue_x"
             ],
             "from": [
-                "rizegreymon"
+                "rizegreymon",
+                "greymon_x"
             ]
         },
         "weregarurumon_x": {
