@@ -16,23 +16,7 @@
                     ]
                 ]
             },
-            {
-                "name": "monzaemon_x",
-                "color": [
-                    "x",
-                    "x"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        1,
-                        0
-                    ]
-                ]
-            },
+            null,
             null
         ],
         [
@@ -48,36 +32,8 @@
                     ]
                 ]
             },
-            {
-                "name": "monzaemon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "shinmonzaemon",
-                "color": [
-                    "dark",
-                    "dark"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            }
+            null,
+            null
         ],
         [
             null,
@@ -92,18 +48,7 @@
                     ]
                 ]
             },
-            {
-                "name": "warumonzaemon",
-                "color": [
-                    "dark"
-                ],
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ]
-            },
+            null,
             null
         ],
         [
@@ -226,11 +171,7 @@
         },
         {
             "name": "shoemon",
-            "from": "monzaemon"
-        },
-        {
-            "name": "bearmon",
-            "from": "monzaemon"
+            "for": "monzaemon"
         },
         {
             "name": "machmon",

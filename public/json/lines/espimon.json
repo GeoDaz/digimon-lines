@@ -1,93 +1,143 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "vademon_x",
-				"color": "x",
-				"from": [1, 0]
-			},
-			{
-				"name": "ebemon_x",
-				"color": "x"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "vademon",
-				"from": [1, -1]
-			},
-			{
-				"name": "ebemon"
-			}
-		],
-		[
-			{
-				"name": "choromon"
-			},
-			{
-				"name": "caprimon"
-			},
-			{
-				"name": "espimon"
-			},
-			{
-				"name": "hoverespimon"
-			},
-			{
-				"name": "oblivimon"
-			},
-			{
-				"name": "invisimon"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "catchmamemon",
-				"from": [-1, -1]
-			},
-			{
-				"name": "ragnamon"
-			}
-		]
-	],
-	"related": [
-		"bearmon",
-		{ "name": "app_mienumon", "for": "app_medicmon" },
-		{
-			"name": "gaomon",
-			"for": "machgaogamon"
-		},
-		{
-			"name": "bemmon",
-			"for": "ragnamon"
-		},
-		{
-			"name": "mamemon",
-			"for": "catchmamemon"
-		},
-		{
-			"name": "jazamon",
-			"for": "sparrowmon"
-		},
-		{
-			"name": "terriermon",
-			"for": "megagargomon"
-		},
-		{
-			"name": "aegiomon",
-			"for": "aegiochusmon_blue"
-		}
-	]
+    "columns": [
+        [
+            {
+                "name": "choromon",
+                "from": null
+            },
+            {
+                "name": "caprimon"
+            },
+            {
+                "name": "espimon"
+            },
+            {
+                "name": "hoverespimon"
+            },
+            {
+                "name": "oblivimon"
+            },
+            {
+                "name": "invisimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "catchmamemon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "ragnamon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "vademon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "ebemon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "vademon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "ebemon_x",
+                "color": [
+                    "x",
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        0
+                    ]
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "bearmon",
+        {
+            "name": "app_mienumon",
+            "for": "app_medicmon"
+        },
+        {
+            "name": "gaomon",
+            "for": "machgaogamon"
+        },
+        {
+            "name": "bemmon",
+            "for": "ragnamon"
+        },
+        {
+            "name": "mamemon",
+            "for": "catchmamemon"
+        },
+        {
+            "name": "jazamon",
+            "for": "sparrowmon"
+        },
+        {
+            "name": "terriermon",
+            "for": "megagargomon"
+        },
+        {
+            "name": "aegiomon",
+            "for": "aegiochusmon_blue"
+        },
+        {
+            "name": "numemon",
+            "from": "vademon"
+        },
+        {
+            "name": "palmon",
+            "for": "vegimon",
+            "from": "vademon"
+        }
+    ],
+    "size": 6
 }

@@ -1,254 +1,424 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "snimon",
-				"from": [3, -1]
-			},
-			{
-				"name": "scorpiomon",
-				"from": [0, -1],
-				"color": "dark"
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "gokimon",
-				"from": [2, -1],
-				"color": "dark"
-			},
-			{
-				"name": "climbmon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				]
-			},
-			{
-				"name": "shivamon",
-				"from": [0, -1],
-				"color": "light"
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "herculeskabuterimon_x",
-				"color": "x",
-				"from": [1, 0]
-			},
-			null
-		],
-		[
-			{
-				"name": "bubbmon",
-				"from": null
-			},
-			{
-				"name": "mochimon"
-			},
-			{
-				"name": "tentomon"
-			},
-			{
-				"name": "kabuterimon"
-			},
-			{
-				"name": "megakabuterimon",
-				"skins": ["megakabuterimon_blue"]
-			},
-			{
-				"name": "herculeskabuterimon"
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "kuwagamon",
-				"from": [-1, -1]
-			},
-			{
-				"name": "okuwamon",
-				"from": [0, -1]
-			},
-			{
-				"name": "grankuwagamon",
-				"from": [0, -1]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "kokuwamon_x",
-				"from": [1, 0],
-				"color": "x"
-			},
-			{
-				"name": "kuwagamon_x",
-				"from": [-1, 0],
-				"color": "x"
-			},
-			{
-				"name": "okuwamon_x",
-				"from": [
-					[-1, 0],
-					[0, -1]
-				],
-				"color": "x"
-			},
-			{
-				"name": "grandiskuwagamon",
-				"from": [
-					[-1, 0],
-					[0, -1]
-				],
-				"color": ["x", "x"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "kokuwamon",
-				"from": [-3, -1],
-				"color": "machine"
-			},
-			{
-				"name": "bladekuwagamon",
-				"color": "machine",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "metallifekuwagamon",
-				"from": [0, -1],
-				"color": "gold"
-			},
-			{
-				"name": "tyrantkabuterimon",
-				"color": "dark"
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "ballistamon",
-				"color": "machine",
-				"from": [
-					[-1, -1],
-					[1.5, -1]
-				],
-				"skins": ["darkvolumon"]
-			},
-			{
-				"name": "atlurballistamon",
-				"color": "machine"
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "kokabuterimon",
-				"xSize": 2,
-				"from": [-5.5, -1]
-			},
-			{
-				"name": "blitzmon",
-				"color": "electric",
-				"from": [[0.5, -1.5]],
-				"ySize": 2
-			},
-			{
-				"name": "rhinokabuterimon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"ySize": 2,
-				"color": ["fusion", "fusion"]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "bolgmon",
-				"from": [
-					[-0.5, -1.5],
-					[-1, 0]
-				],
-				"ySize": 2,
-				"color": ["electric", "slide"]
-			},
-			null,
-			{
-				"name": "ancientbeetlemon",
-				"from": [
-					[0, -1.5],
-					[-1, -0.5]
-				],
-				"color": ["electric", "electric"]
-			},
-			null
-		]
-	],
-	"related": [
-		"kuwagamon",
-		{
-			"name": "wormmon",
-			"from": "grankuwagamon"
-		},
-		{
-			"name": "hagurumon",
-			"from": "kokuwamon"
-		},
-		{
-			"name": "mamemon",
-			"from": "kokuwamon"
-		},
-		{
-			"name": "pulsemon",
-			"from": "climbmon"
-		},
-		{
-			"name": "kimeramon",
-			"from": "kabuterimon"
-		},
-		{
-			"name": "omegamon_merciful_mode",
-			"from": "herculeskabuterimon"
-		},
-		{
-			"name": "shoutmon",
-			"for": "shoutmon_x2"
-		}
-	],
-	"size": 7
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "snimon",
+                "from": [
+                    [
+                        3,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "scorpiomon",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": [
+                    "dark",
+                    "dark"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gokimon",
+                "from": [
+                    [
+                        2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "climbmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "shivamon",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": [
+                    "light",
+                    "light"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "herculeskabuterimon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "bubbmon",
+                "from": null
+            },
+            {
+                "name": "mochimon"
+            },
+            {
+                "name": "tentomon"
+            },
+            {
+                "name": "kabuterimon"
+            },
+            {
+                "name": "megakabuterimon",
+                "skins": [
+                    "megakabuterimon_blue"
+                ]
+            },
+            {
+                "name": "herculeskabuterimon"
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "kuwagamon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "okuwamon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "name": "grankuwagamon",
+                "from": [
+                    0,
+                    -1
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "kokuwamon_x",
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            {
+                "name": "kuwagamon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            {
+                "name": "okuwamon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "x",
+                    "x"
+                ]
+            },
+            {
+                "name": "grandiskuwagamon",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "x",
+                    "x"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "kokuwamon",
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "default"
+                ]
+            },
+            {
+                "name": "bladekuwagamon",
+                "color": [
+                    "default"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "metallifekuwagamon",
+                "from": [
+                    0,
+                    -1
+                ],
+                "color": [
+                    "gold",
+                    "gold"
+                ]
+            },
+            {
+                "name": "tyrantkabuterimon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "kokabuterimon",
+                "from": [
+                    [
+                        -4,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "ballistamon",
+                "color": [
+                    "default"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "skins": [
+                    "darkvolumon"
+                ]
+            },
+            {
+                "name": "atlurballistamon",
+                "color": [
+                    "default"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "blitzmon",
+                "color": [
+                    "electric"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1.5
+                    ]
+                ],
+                "ySize": 2
+            },
+            {
+                "name": "rhinokabuterimon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "ySize": 2,
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "bolgmon",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ],
+                    [
+                        -2,
+                        -1.5
+                    ]
+                ],
+                "ySize": 2,
+                "color": [
+                    "slide",
+                    "electric"
+                ]
+            },
+            null,
+            {
+                "name": "ancientbeetlemon",
+                "from": [
+                    [
+                        0,
+                        -1.5
+                    ],
+                    [
+                        -1,
+                        -0.5
+                    ]
+                ],
+                "color": [
+                    "electric",
+                    "electric"
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        "kuwagamon",
+        {
+            "name": "wormmon",
+            "from": "grankuwagamon"
+        },
+        {
+            "name": "hagurumon",
+            "from": "kokuwamon"
+        },
+        {
+            "name": "mamemon",
+            "from": "kokuwamon"
+        },
+        {
+            "name": "pulsemon",
+            "from": "climbmon"
+        },
+        {
+            "name": "kimeramon",
+            "from": "kabuterimon"
+        },
+        {
+            "name": "omegamon_merciful_mode",
+            "from": "herculeskabuterimon"
+        },
+        {
+            "name": "shoutmon",
+            "for": "shoutmon_x2"
+        }
+    ],
+    "size": 7
 }
