@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { DigimonContext } from '@/context/digimon';
 import { makeClassName } from '@/functions';
+import { getAttributeIcons, getFieldIcons } from '@/functions/items';
+import ItemIcons from '../ItemIcons';
 import { Digimon } from '@/types/Digimon';
 
 const LinePointData: React.FC<{
@@ -13,20 +15,16 @@ const LinePointData: React.FC<{
 	const dubName = dubNames[name];
 	const datum = datumProp || data[name] || (dubName && data[dubName]);
 	if (!datum) return null;
+	// Le niveau complète l'attribut : Baby I / II « No Data », Armor « Free »,
+	// Hybrid « Variable », même quand la donnée ne le précise pas.
+	const attributes = getAttributeIcons(datum.attribute, datum.level);
+	const fields = getFieldIcons(datum.field);
 	return (
-		<div className={makeClassName('grid-2 text-start', className)}>
+		<div className={makeClassName('grid-2 text-start align-items-center', className)}>
 			{!!datum.level && (
 				<div>
 					<strong>Level&nbsp;:</strong>{' '}
 					{Array.isArray(datum.level) ? datum.level.join(', ') : datum.level}
-				</div>
-			)}
-			{!!datum.attribute && (
-				<div>
-					<strong>Attribute&nbsp;:</strong>{' '}
-					{Array.isArray(datum.attribute)
-						? datum.attribute.join(', ')
-						: datum.attribute}
 				</div>
 			)}
 			{!!datum.type && (
@@ -35,20 +33,19 @@ const LinePointData: React.FC<{
 					{Array.isArray(datum.type) ? datum.type.join(', ') : datum.type}
 				</div>
 			)}
+			{attributes.length > 0 && (
+				<div>
+					<strong>Attribute&nbsp;:</strong> <ItemIcons icons={attributes} />
+				</div>
+			)}
+			{fields.length > 0 && (
+				<div className={fields.length > 3 ? 'full-row' : undefined}>
+					<strong>Field&nbsp;:</strong> <ItemIcons icons={fields} />
+				</div>
+			)}
 			{!!datum.year && (
 				<div>
 					<strong>Year&nbsp;:</strong> {datum.year}
-				</div>
-			)}
-			{!!datum.field && (
-				<div className="full-row">
-					<strong>Field&nbsp;:</strong>{' '}
-					{Array.isArray(datum.field) ? datum.field.join(', ') : datum.field}
-				</div>
-			)}
-			{datum.variants.length > 0 && (
-				<div>
-					<strong>Variants&nbsp;:</strong> {datum.variants.join(', ')}
 				</div>
 			)}
 		</div>

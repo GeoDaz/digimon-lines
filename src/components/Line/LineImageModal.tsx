@@ -110,7 +110,7 @@ const LineImageModal: React.FC<Props> = ({
 					<div className="d-flex gap-2 justify-content-center mt-3">
 						<Button
 							size="sm"
-							variant="outline-secondary"
+							variant="outline-light"
 							onClick={() => setShowRelations(true)}
 						>
 							<Icon name="pencil-fill" /> Relations
@@ -118,7 +118,7 @@ const LineImageModal: React.FC<Props> = ({
 						{hasData && (
 							<Button
 								size="sm"
-								variant="outline-secondary"
+								variant="outline-light"
 								onClick={() => setShowData(true)}
 							>
 								<Icon name="pencil-fill" /> Data

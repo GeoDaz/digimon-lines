@@ -9,7 +9,9 @@ interface Props {
 const Popup: React.FC<Props> = ({ children, trigger }) => (
 	<OverlayTrigger
 		placement="bottom"
-		overlay={<Tooltip>{children}</Tooltip>}
+		// .popup : couleurs sombres du site (cf. index.css), Bootstrap peignant
+		// sinon le tooltip en blanc via --bs-emphasis-color.
+		overlay={<Tooltip className="popup">{children}</Tooltip>}
 	>
 		{trigger}
 	</OverlayTrigger>

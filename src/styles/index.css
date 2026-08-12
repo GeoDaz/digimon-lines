@@ -189,6 +189,19 @@ h2 {
 	font-size: 0.95em;
 }
 
+/* Bootstrap 5.3 peint le tooltip avec --bs-emphasis-color (blanc en thème
+   sombre) : on le repasse sur les couleurs sombres du site. La flèche suit
+   --bs-tooltip-bg, donc pas de bordure ici pour éviter qu'elle décroche. */
+.tooltip.popup {
+	--bs-tooltip-bg: var(--dl-snd-dark);
+	--bs-tooltip-color: var(--bs-body-color);
+	--bs-tooltip-opacity: 1;
+}
+
+.tooltip.popup .tooltip-inner {
+	box-shadow: var(--dl-box-shadow);
+}
+
 .form-control {
 	border: var(--dl-border);
 	background-color: var(--dl-snd-dark);
@@ -267,6 +280,23 @@ h2 {
 
 .grid-2 .full-row {
 	grid-area: 3 / 1 / 4 / 3;
+}
+
+/* icônes d'attribut / de field (public/images/items) */
+
+.item-icons {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.35em;
+	vertical-align: middle;
+}
+
+/* hauteur fixe, largeur auto : les logos de field ne sont pas carrés */
+.item-icons .item-icon {
+	height: 2.75rem;
+	width: auto;
+	object-fit: contain;
 }
 
 /* line */
