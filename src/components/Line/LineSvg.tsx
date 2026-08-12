@@ -57,17 +57,23 @@ const LineSvg: React.FC<Props> = ({
 	const xCentered = anchor == 'x-center' && xGap >= 1 && y != 0;
 	const yCentered = anchor == 'y-center' && yGap >= 1 && x != 0;
 
+	// A point expanded on both axes has an image filling its 4 cells : lines
+	// start on the edge of the point, like a normal one, and are shortened by the
+	// extra half unit the image gains on each axis. A point expanded on a single
+	// axis keeps a one cell image centered in its box : lines have to start
+	// inward, at the edge of that image.
+	const filled = xSize > 1 && ySize > 1;
+	const xInset = !filled && xSize > 1 ? zoomedBaseWidth / 4 + strokeHalf : 0;
+	const yInset = !filled && ySize > 1 ? zoomedBaseHeight / 4 + strokeHalf : 0;
+	const xOverflow = filled ? ((xSize - 1) * xUnit) / 2 : 0;
+	const yOverflow = filled ? ((ySize - 1) * yUnit) / 2 : 0;
+
 	if (x <= -1) {
 		translateX = '-100%';
-		left = xCentered
-			? '50%'
-			: strokeWidth + (xSize > 1 ? zoomedBaseWidth / 4 + strokeHalf : 0);
+		left = xCentered ? '50%' : strokeWidth + xInset;
 	} else if (x >= 1) {
 		translateX = '100%';
-		right = xCentered
-			? '50%'
-			: strokeWidth +
-			  (xSize > 1 && xGap > 0.5 ? zoomedBaseWidth / 4 + strokeHalf : 0);
+		right = xCentered ? '50%' : strokeWidth + xInset;
 	} else if (x == 0.5) {
 		translateX = `calc(50% - ${strokeHalf}px)`;
 	} else if (x == -0.5) {
@@ -76,16 +82,10 @@ const LineSvg: React.FC<Props> = ({
 
 	if (y <= -1) {
 		translateY = '-100%';
-		top = yCentered
-			? '50%'
-			: strokeWidth +
-			  (ySize > 1 && yGap > 0 ? zoomedBaseHeight / 4 + strokeHalf : 0);
+		top = yCentered ? '50%' : strokeWidth + yInset;
 	} else if (y >= 1) {
 		translateY = '100%';
-		bottom = yCentered
-			? '50%'
-			: strokeWidth +
-			  (ySize > 1 && yGap > 0 ? zoomedBaseHeight / 4 + strokeHalf : 0);
+		bottom = yCentered ? '50%' : strokeWidth + yInset;
 	} else if (y == 0.5) {
 		translateY = `calc(50% - ${strokeHalf}px)`;
 	} else if (y == -0.5) {
@@ -94,7 +94,7 @@ const LineSvg: React.FC<Props> = ({
 
 	let xDest: number;
 	if (xGap >= 1) {
-		xDest = xUnit * (xGap - 1) + gridSpacing + strokeWidth;
+		xDest = Math.max(0, xUnit * (xGap - 1) + gridSpacing - xOverflow) + strokeWidth;
 	} else if (xGap > 0) {
 		xDest = xGap * xUnit;
 	} else {
@@ -111,7 +111,7 @@ const LineSvg: React.FC<Props> = ({
 
 	let yDest: number;
 	if (yGap >= 1) {
-		yDest = yUnit * (yGap - 1) + gridSpacing + strokeWidth;
+		yDest = Math.max(0, yUnit * (yGap - 1) + gridSpacing - yOverflow) + strokeWidth;
 	} else if (yGap > 0) {
 		yDest = yGap * yUnit;
 	} else {
