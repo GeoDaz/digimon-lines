@@ -115,15 +115,13 @@ const LineImageModal: React.FC<Props> = ({
 						>
 							<Icon name="pencil-fill" /> Relations
 						</Button>
-						{hasData && (
-							<Button
-								size="sm"
-								variant="outline-light"
-								onClick={() => setShowData(true)}
-							>
-								<Icon name="pencil-fill" /> Data
-							</Button>
-						)}
+						<Button
+							size="sm"
+							variant="outline-light"
+							onClick={() => setShowData(true)}
+						>
+							<Icon name="pencil-fill" /> Data
+						</Button>
 					</div>
 				)}
 				{hasData && (

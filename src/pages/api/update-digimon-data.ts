@@ -35,10 +35,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 		const fileContent = fs.readFileSync(filePath, 'utf-8');
 		const data = JSON.parse(fileContent);
 
-		if (!data[name]) {
-			return res.status(404).json({ error: `Digimon "${name}" not found` });
-		}
-
 		// Merge onto the existing entry so untouched fields (url, evos, tags…) are
 		// preserved, and keep the key's name in sync.
 		data[name] = { ...data[name], ...digimon, name };
