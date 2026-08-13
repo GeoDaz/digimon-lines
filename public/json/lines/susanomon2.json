@@ -39,7 +39,24 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "ancienttroiamon",
+                "from": [
+                    [
+                        -0.5,
+                        -1.5
+                    ],
+                    [
+                        0.5,
+                        -1.5
+                    ]
+                ],
+                "xSize": 2,
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            },
             null,
             null
         ],
@@ -108,7 +125,24 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "ancientvolcamon",
+                "from": [
+                    [
+                        -0.5,
+                        -1.5
+                    ],
+                    [
+                        0.5,
+                        -1.5
+                    ]
+                ],
+                "xSize": 2,
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            },
             null,
             null
         ],
@@ -181,18 +215,22 @@
                 "name": "daipenmon",
                 "from": [
                     [
-                        -0.5,
+                        0,
                         -1.5
                     ],
                     [
-                        0.5,
+                        1,
                         -1.5
+                    ],
+                    [
+                        1,
+                        0
                     ]
                 ],
-                "xSize": 2,
                 "color": [
                     "fusion",
-                    "fusion"
+                    "fusion",
+                    "slide"
                 ]
             },
             null,
@@ -221,7 +259,23 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "ancientmegatheriumon",
+                "from": [
+                    [
+                        -1,
+                        -1.5
+                    ],
+                    [
+                        0,
+                        -1.5
+                    ]
+                ],
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            },
             null,
             null
         ],
@@ -267,15 +321,14 @@
                 "name": "jetsilphymon",
                 "from": [
                     [
-                        -0.5,
+                        0,
                         -1.5
                     ],
                     [
-                        0.5,
+                        1,
                         -1.5
                     ]
                 ],
-                "xSize": 2,
                 "color": [
                     "fusion",
                     "fusion"
@@ -307,7 +360,28 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "ancientirismon",
+                "from": [
+                    [
+                        -1,
+                        -1.5
+                    ],
+                    [
+                        0,
+                        -1.5
+                    ],
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "fusion",
+                    "fusion",
+                    "slide"
+                ]
+            },
             null,
             null
         ],
@@ -362,56 +436,50 @@
                 "name": "aldamon",
                 "from": [
                     [
-                        -0.5,
+                        0,
                         -1.5
                     ],
                     [
-                        0.5,
+                        1,
                         -1.5
+                    ],
+                    [
+                        1,
+                        0
                     ]
                 ],
-                "xSize": 2,
                 "color": [
                     "fusion",
-                    "fusion"
+                    "fusion",
+                    "slide"
                 ]
             },
             {
                 "name": "emperorgreymon",
                 "from": [
                     [
-                        -6.5,
-                        -2.5
-                    ],
-                    [
-                        -7.5,
-                        -2.5
-                    ],
-                    [
-                        -8.5,
-                        -2.5
-                    ],
-                    [
-                        -4,
+                        -8,
                         -1
                     ],
                     [
-                        -2,
+                        -6,
                         -1
                     ],
                     [
-                        0,
+                        -3.5,
                         -1
                     ],
                     [
-                        -5.5,
-                        -2.5
+                        -1.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
                     ]
                 ],
                 "xSize": 2,
                 "color": [
-                    "fusion",
-                    "fusion",
                     "fusion",
                     "fusion",
                     "fusion",
@@ -444,7 +512,23 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "ancientgreymon",
+                "from": [
+                    [
+                        -1,
+                        -1.5
+                    ],
+                    [
+                        0,
+                        -1.5
+                    ]
+                ],
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            },
             null,
             {
                 "name": "susanomon",
@@ -516,15 +600,14 @@
                 "name": "beowolfmon",
                 "from": [
                     [
-                        -0.5,
+                        0,
                         -1.5
                     ],
                     [
-                        0.5,
+                        1,
                         -1.5
                     ]
                 ],
-                "xSize": 2,
                 "color": [
                     "fusion",
                     "fusion"
@@ -534,38 +617,28 @@
                 "name": "magnagarurumon",
                 "from": [
                     [
-                        5.5,
-                        -2.5
-                    ],
-                    [
-                        6.5,
-                        -2.5
-                    ],
-                    [
-                        7.5,
-                        -2.5
-                    ],
-                    [
-                        8.5,
-                        -2.5
-                    ],
-                    [
-                        0,
+                        0.5,
                         -1
                     ],
                     [
-                        2,
+                        2.5,
                         -1
                     ],
                     [
-                        4,
+                        4.5,
+                        -1
+                    ],
+                    [
+                        6,
+                        -1
+                    ],
+                    [
+                        8,
                         -1
                     ]
                 ],
                 "xSize": 2,
                 "color": [
-                    "fusion",
-                    "fusion",
                     "fusion",
                     "fusion",
                     "fusion",
@@ -598,7 +671,28 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "ancientgarurumon",
+                "from": [
+                    [
+                        0,
+                        -1.5
+                    ],
+                    [
+                        -1,
+                        -1.5
+                    ],
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "fusion",
+                    "fusion",
+                    "slide"
+                ]
+            },
             null,
             null
         ],
@@ -644,15 +738,14 @@
                 "name": "rhinokabuterimon",
                 "from": [
                     [
-                        -0.5,
+                        0,
                         -1.5
                     ],
                     [
-                        0.5,
+                        1,
                         -1.5
                     ]
                 ],
-                "xSize": 2,
                 "color": [
                     "fusion",
                     "fusion"
@@ -684,7 +777,28 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "ancientbeetlemon",
+                "from": [
+                    [
+                        -1,
+                        -1.5
+                    ],
+                    [
+                        0,
+                        -1.5
+                    ],
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "fusion",
+                    "fusion",
+                    "slide"
+                ]
+            },
             null,
             null
         ],
@@ -733,15 +847,14 @@
                 "name": "raihimon",
                 "from": [
                     [
-                        -0.5,
+                        0,
                         -1.5
                     ],
                     [
-                        0.5,
+                        1,
                         -1.5
                     ]
                 ],
-                "xSize": 2,
                 "color": [
                     "fusion",
                     "fusion"
@@ -776,7 +889,28 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "ancientsphinxmon",
+                "from": [
+                    [
+                        0,
+                        -1.5
+                    ],
+                    [
+                        -1,
+                        -1.5
+                    ],
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "fusion",
+                    "fusion",
+                    "slide"
+                ]
+            },
             null,
             null
         ],
@@ -818,7 +952,24 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "ancientwisemon",
+                "from": [
+                    [
+                        -0.5,
+                        -1.5
+                    ],
+                    [
+                        0.5,
+                        -1.5
+                    ]
+                ],
+                "xSize": 2,
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            },
             null,
             null
         ],
@@ -887,7 +1038,24 @@
                 ]
             },
             null,
-            null,
+            {
+                "name": "ancientmermaimon",
+                "from": [
+                    [
+                        -0.5,
+                        -1.5
+                    ],
+                    [
+                        0.5,
+                        -1.5
+                    ]
+                ],
+                "xSize": 2,
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            },
             null,
             null
         ],

@@ -1,126 +1,209 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "publimon",
-				"from": [[1, -1]]
-			},
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			{
-				"name": "choromon",
-				"from": null
-			},
-			{
-				"name": "monimon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "monitamon",
-				"from": [[0, -1]]
-			},
-			{
-				"name": "hi_visionmonitamon",
-				"from": [[0, -1]]
-			},
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "mercuremon",
-				"from": [[-1, -1.5]],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "ancientwisemon",
-				"from": [[0, -1.5]]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "sephirothmon",
-				"from": [[-1, 0]],
-				"ySize": 2,
-				"color": ["slide"]
-			},
-			null,
-			{
-				"name": "black_seraphimon",
-				"from": [[0, -1.5]],
-				"color": ["dark"]
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "kimeramon",
-				"from": [[-1, -0.5]],
-				"color": ["slide"]
-			},
-			{
-				"name": "millenniumon",
-				"from": [[0, -1]],
-				"color": ["fusion"]
-			},
-			{
-				"name": "moonmillenniumon",
-				"from": [[0, -1]],
-				"color": ["fusion"]
-			},
-			{
-				"name": "zeedmillenniumon",
-				"from": [[0, -1]],
-				"color": ["fusion"]
-			}
-		]
-	],
-	"related": [
-		{
-			"name": "app_mienumon",
-			"for": "app_mirrormon"
-		},
-		{
-			"name": "patamon",
-			"for": "black_seraphimon"
-		},
-		{
-			"name": "arkadimon",
-			"for": "metamormon"
-		},
-		{
-			"name": "wizardmon",
-			"from": "ancientwisemon"
-		},
-		"kimeramon",
-		{ "name": "toyagumon", "from": "kimeramon" },
-		{
-			"name": "jellymon",
-			"from": "publimon"
-		}
-	],
-	"size": 8
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "publimon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "choromon",
+                "from": null
+            },
+            {
+                "name": "monimon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "monitamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "hi_visionmonitamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "mercuremon",
+                "from": [
+                    [
+                        -1,
+                        -1.5
+                    ]
+                ],
+                "ySize": 2
+            },
+            null,
+            {
+                "name": "ancientwisemon",
+                "from": [
+                    [
+                        0,
+                        -1.5
+                    ],
+                    [
+                        1,
+                        -1.5
+                    ]
+                ],
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "sephirothmon",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "ySize": 2,
+                "color": [
+                    "slide"
+                ]
+            },
+            null,
+            {
+                "name": "black_seraphimon",
+                "from": [
+                    [
+                        0,
+                        -1.5
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "kimeramon",
+                "from": [
+                    [
+                        -1,
+                        -0.5
+                    ]
+                ],
+                "color": [
+                    "slide"
+                ]
+            },
+            {
+                "name": "millenniumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            },
+            {
+                "name": "moonmillenniumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            },
+            {
+                "name": "zeedmillenniumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "app_mienumon",
+            "for": "app_mirrormon"
+        },
+        {
+            "name": "patamon",
+            "for": "black_seraphimon"
+        },
+        {
+            "name": "arkadimon",
+            "for": "metamormon"
+        },
+        {
+            "name": "wizardmon",
+            "from": "ancientwisemon"
+        },
+        "kimeramon",
+        {
+            "name": "toyagumon",
+            "from": "kimeramon"
+        },
+        {
+            "name": "jellymon",
+            "from": "publimon"
+        }
+    ],
+    "size": 8
 }

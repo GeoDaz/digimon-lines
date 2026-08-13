@@ -325,25 +325,24 @@
                 ],
                 "ySize": 2
             },
+            null,
             {
                 "name": "rhinokabuterimon",
                 "from": [
                     [
                         0,
-                        -1
+                        -1.5
                     ],
                     [
                         1,
-                        -1
+                        -1.5
                     ]
                 ],
-                "ySize": 2,
                 "color": [
                     "fusion",
                     "fusion"
                 ]
             },
-            null,
             null
         ],
         [
@@ -378,12 +377,17 @@
                     ],
                     [
                         -1,
-                        -0.5
+                        -1.5
+                    ],
+                    [
+                        -1,
+                        0
                     ]
                 ],
                 "color": [
-                    "electric",
-                    "electric"
+                    "fusion",
+                    "fusion",
+                    "slide"
                 ]
             },
             null

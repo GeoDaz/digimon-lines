@@ -832,42 +832,44 @@
                 ],
                 "ySize": 2
             },
+            null,
             {
                 "name": "aldamon",
                 "color": [
                     "fusion",
-                    "fusion"
+                    "fusion",
+                    "slide"
                 ],
                 "from": [
                     [
                         0,
-                        -1
+                        -1.5
                     ],
                     [
                         1,
-                        -1
+                        -1.5
+                    ],
+                    [
+                        1,
+                        0
                     ]
-                ],
-                "ySize": 2
+                ]
             },
             {
-                "name": "emperorgreymon",
-                "ySize": 2
+                "name": "emperorgreymon"
             },
             {
                 "name": "susanomon",
                 "color": [
                     "fusion"
                 ],
-                "ySize": 2,
                 "from": [
                     [
                         0,
-                        -1
+                        -1.5
                     ]
                 ]
-            },
-            null
+            }
         ],
         [
             null,
@@ -901,8 +903,12 @@
                     ],
                     [
                         -1,
-                        -0.5
+                        -1.5
                     ]
+                ],
+                "color": [
+                    "fusion",
+                    "fusion"
                 ]
             },
             null,

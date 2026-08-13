@@ -7,7 +7,7 @@
                 "name": "snowgoblimon",
                 "from": [
                     [
-                        4,
+                        2,
                         -1
                     ]
                 ],
@@ -45,62 +45,9 @@
                     ]
                 ],
                 "color": [
-                    "gold"
+                    "default"
                 ]
             },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "gigasmon",
-                "color": [
-                    "slide"
-                ],
-                "from": [
-                    [
-                        1,
-                        0
-                    ]
-                ],
-                "ySize": 2
-            },
-            null,
-            {
-                "name": "ancientvolcamon",
-                "color": [
-                    "fire"
-                ],
-                "from": [
-                    [
-                        0,
-                        -2
-                    ]
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "grumblemon",
-                "color": [
-                    "earth"
-                ],
-                "from": [
-                    [
-                        2,
-                        -1.5
-                    ]
-                ],
-                "ySize": 2
-            },
-            null,
-            null,
             null
         ],
         [
@@ -123,16 +70,17 @@
                 "name": "digitamamon",
                 "from": [
                     [
-                        1,
+                        0.5,
                         -1
                     ]
-                ]
+                ],
+                "xSize": 2
             },
             {
                 "name": "devitamamon",
                 "from": [
                     [
-                        0,
+                        0.5,
                         -1
                     ]
                 ],
@@ -172,26 +120,23 @@
                 ],
                 "from": [
                     [
-                        0,
+                        -0.5,
                         -1
                     ]
-                ]
+                ],
+                "xSize": 2
             },
             {
                 "name": "titamon",
                 "from": [
                     [
-                        0,
+                        -0.5,
                         -1
                     ],
                     [
-                        -1,
+                        0.5,
                         -1
                     ]
-                ],
-                "color": [
-                    "dark",
-                    "dark"
                 ]
             },
             {
@@ -211,24 +156,13 @@
             null,
             null,
             null,
-            {
-                "name": "kinkakumon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "electric"
-                ]
-            },
+            null,
             null,
             {
                 "name": "boltmon",
                 "from": [
                     [
-                        -1,
+                        -0.5,
                         -1
                     ]
                 ],
@@ -241,11 +175,70 @@
         [
             null,
             null,
+            null,
+            {
+                "name": "grumblemon",
+                "color": [
+                    "earth"
+                ],
+                "from": [
+                    [
+                        -2,
+                        -1.5
+                    ]
+                ],
+                "ySize": 2
+            },
+            null,
+            {
+                "name": "ancientvolcamon",
+                "color": [
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -0.5,
+                        -1.5
+                    ],
+                    [
+                        0.5,
+                        -1.5
+                    ]
+                ],
+                "xSize": 2
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gigasmon",
+                "color": [
+                    "slide"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "ySize": 2
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
             {
                 "name": "shamamon",
                 "from": [
                     [
-                        -2,
+                        -4,
                         -1
                     ]
                 ]

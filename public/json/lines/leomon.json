@@ -441,25 +441,29 @@
                 ],
                 "ySize": 2
             },
+            null,
             {
                 "name": "raihimon",
                 "color": [
                     "fusion",
-                    "fusion"
+                    "fusion",
+                    "slide"
                 ],
                 "from": [
                     [
                         1,
-                        -1
+                        -1.5
                     ],
                     [
                         0,
-                        -1
+                        -1.5
+                    ],
+                    [
+                        1,
+                        0
                     ]
-                ],
-                "ySize": 2
+                ]
             },
-            null,
             null,
             null
         ],
@@ -489,8 +493,8 @@
             {
                 "name": "ancientsphinxmon",
                 "color": [
-                    "dark",
-                    "dark"
+                    "fusion",
+                    "fusion"
                 ],
                 "from": [
                     [
@@ -499,7 +503,7 @@
                     ],
                     [
                         -1,
-                        -0.5
+                        -1.5
                     ]
                 ]
             },

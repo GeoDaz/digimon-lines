@@ -4,6 +4,23 @@
             null,
             null,
             null,
+            null,
+            null,
+            {
+                "name": "vikemon",
+                "from": [
+                    [
+                        1,
+                        -1.5
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
             {
                 "name": "blizzarmon",
                 "from": [
@@ -27,12 +44,17 @@
                     ],
                     [
                         1,
-                        -0.5
+                        -1.5
+                    ],
+                    [
+                        1,
+                        0
                     ]
                 ],
                 "color": [
-                    "ice",
-                    "ice"
+                    "fusion",
+                    "fusion",
+                    "slide"
                 ]
             },
             null
@@ -54,25 +76,24 @@
                     "ice"
                 ]
             },
+            null,
             {
                 "name": "daipenmon",
                 "from": [
                     [
                         -1,
-                        -1.5
+                        -2
                     ],
                     [
                         0,
-                        -1.5
+                        -2
                     ]
                 ],
-                "ySize": 2,
                 "color": [
                     "fusion",
                     "fusion"
                 ]
             },
-            null,
             null
         ],
         [
@@ -309,19 +330,23 @@
         },
         {
             "name": "gomamon",
-            "for": "vikemon"
+            "for": "dolphmon"
         },
         {
             "name": "pulsemon",
             "for": "tempomon"
         },
         {
-            "name": "monmon",
-            "for": "mojyamon"
+            "name": "gomamon",
+            "for": "vikemon"
         },
         {
-            "name": "gomamon",
-            "for": "dolphmon"
+            "name": "olegmon",
+            "from": "toyagumon"
+        },
+        {
+            "name": "monmon",
+            "for": "mojyamon"
         },
         {
             "name": "aegisdramon"
