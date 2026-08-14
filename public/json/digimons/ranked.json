@@ -912,7 +912,9 @@
                 "kekomon"
             ],
             "to": [
-                "gekkomon"
+                "gekkomon",
+                "iguneetmon",
+                "elizamon"
             ]
         },
         "mokokomon": {
@@ -1722,7 +1724,8 @@
         "elizamon": {
             "name": "elizamon",
             "from": [
-                "gigimon"
+                "gigimon",
+                "kekkomon"
             ],
             "to": [
                 "dimetromon",
@@ -2088,6 +2091,9 @@
         },
         "iguneetmon": {
             "name": "iguneetmon",
+            "from": [
+                "kekkomon"
+            ],
             "to": [
                 "coatlmon",
                 "dinohumon",
@@ -4935,7 +4941,8 @@
                 "takinmon"
             ],
             "to": [
-                "chohakkaimon"
+                "chohakkaimon",
+                "lamiamon"
             ]
         },
         "kiwimon": {
@@ -7379,7 +7386,8 @@
             ],
             "to": [
                 "lamiamon",
-                "sandiramon"
+                "sandiramon",
+                "heliosboamon"
             ]
         },
         "depthmon": {
@@ -9240,7 +9248,8 @@
             "from": [
                 "dimetromon",
                 "coatlmon",
-                "vipermon"
+                "vipermon",
+                "kinkakumon"
             ],
             "to": [
                 "medusamon",
@@ -11103,7 +11112,13 @@
             ]
         },
         "heliosboamon": {
-            "name": "heliosboamon"
+            "name": "heliosboamon",
+            "from": [
+                "coatlmon"
+            ],
+            "to": [
+                "minervamon"
+            ]
         }
     },
     "Ultimate+": {
@@ -13191,7 +13206,8 @@
                 "silphymon",
                 "sirenmon",
                 "angewomon",
-                "ladydevimon"
+                "ladydevimon",
+                "heliosboamon"
             ],
             "to": [
                 "mervamon"
