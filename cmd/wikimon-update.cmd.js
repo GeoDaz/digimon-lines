@@ -79,13 +79,13 @@ const KEY_ORDER = [
 	'name2',
 	'year',
 	'url',
+	'source',
 	'level',
 	'Class',
 	'type',
 	'attribute',
 	'field',
 	'Group',
-	'variants',
 ];
 const PRINT_WIDTH = 84;
 
@@ -223,15 +223,6 @@ const parseStatsTable = document => {
 	return stats;
 };
 
-const parseVariants = document =>
-	['#NavFrame1', '#NavFrame2'].flatMap(frameId => {
-		const navContent = document.querySelector(`${frameId} .NavContent`);
-		if (!navContent) return [];
-		return Array.from(navContent.querySelectorAll('a'))
-			.map(link => link.textContent.trim())
-			.filter(Boolean);
-	});
-
 /** Turn the raw stats table into index.json fields. */
 const toDigimonFields = stats => {
 	const fields = {};
@@ -271,7 +262,6 @@ const scrape = async url => {
 		// No table at all (card pages…) vs. a table wikimon hasn't filled yet.
 		hasTable: !!stats,
 		fields: stats ? toDigimonFields(stats) : {},
-		variants: parseVariants(document),
 	};
 };
 
@@ -297,6 +287,9 @@ const selectTargets = (data, options) => {
 	}
 	return Object.keys(data).filter(key => {
 		const digimon = data[key];
+		// A source stands in for a missing wikimon page (recolors…), so sweeping
+		// for holes would only spend requests on 404s. --only still reaches them.
+		if (digimon.source) return false;
 		const recent = options.minYear && parseInt(digimon.year, 10) >= options.minYear;
 		const incomplete = options.missing && isIncomplete(digimon);
 		return recent || incomplete;
@@ -321,7 +314,7 @@ const update = async original => {
 
 	for (const key of targets) {
 		const isNew = !data[key];
-		const digimon = data[key] || { name: key, variants: [] };
+		const digimon = data[key] || { name: key };
 		const url = urlOf(key, digimon);
 		let result;
 		try {

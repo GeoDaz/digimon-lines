@@ -48,6 +48,11 @@ const LinePointData: React.FC<{
 					<strong>Year&nbsp;:</strong> {datum.year}
 				</div>
 			)}
+			{!!datum.source && (
+				<div>
+					<strong>Source&nbsp;:</strong> {datum.source}
+				</div>
+			)}
 		</div>
 	);
 };

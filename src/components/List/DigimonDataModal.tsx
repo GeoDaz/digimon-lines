@@ -41,7 +41,7 @@ const DigimonDataModal: React.FC<Props> = ({
 	const [attribute, setAttribute] = useState('');
 	const [field, setField] = useState('');
 	const [year, setYear] = useState('');
-	const [variants, setVariants] = useState('');
+	const [source, setSource] = useState('');
 
 	useEffect(() => {
 		setLevel(toText(datum?.level));
@@ -49,17 +49,20 @@ const DigimonDataModal: React.FC<Props> = ({
 		setAttribute(toText(datum?.attribute));
 		setField(toText(datum?.field));
 		setYear(datum?.year || '');
-		setVariants(toText(datum?.variants));
+		setSource(datum?.source || '');
 	}, [datum, show]);
 
 	const handleSubmit = () => {
+		const trimmed = source.trim();
 		onSubmit({
 			level: parseField(level),
 			type: parseField(type),
 			attribute: parseField(attribute),
 			field: parseField(field),
 			year: year.trim(),
-			variants: toList(variants),
+			// Most entries have a wikimon url instead, so only carry the key when it
+			// says something: the update merges, it would add an empty one otherwise.
+			...(trimmed || datum?.source ? { source: trimmed } : {}),
 		});
 		handleClose();
 	};
@@ -111,12 +114,15 @@ const DigimonDataModal: React.FC<Props> = ({
 							<Form.Text muted>Comma-separated for multiple values.</Form.Text>
 						</Col>
 						<Col md={12}>
-							<Form.Label>Variants</Form.Label>
+							<Form.Label>Source</Form.Label>
 							<Form.Control
-								value={variants}
-								onChange={e => setVariants(e.target.value)}
+								value={source}
+								onChange={e => setSource(e.target.value)}
 							/>
-							<Form.Text muted>Comma-separated list.</Form.Text>
+							<Form.Text muted>
+								Where it comes from when Wikimon has no page for it, ex
+								&laquo;&nbsp;DW3&nbsp;&raquo;.
+							</Form.Text>
 						</Col>
 					</Row>
 				</Form>

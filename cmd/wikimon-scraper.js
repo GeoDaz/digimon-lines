@@ -86,29 +86,6 @@ class WikimonScraper {
 		return stats;
 	}
 
-	parseVariants(dom) {
-		const variants = [];
-		const navFrameIds = ['#NavFrame1', '#NavFrame2'];
-
-		navFrameIds.forEach(frameId => {
-			const navFrame = dom.window.document.querySelector(frameId);
-			if (navFrame) {
-				const navContent = navFrame.querySelector('.NavContent');
-				if (navContent) {
-					const links = Array.from(navContent.querySelectorAll('a'));
-					links.forEach(link => {
-						const text = link.textContent.trim();
-						if (text) {
-							variants.push(text);
-						}
-					});
-				}
-			}
-		});
-
-		return variants;
-	}
-
 	trimNames(name) {
 		return name
 			.trim()
@@ -134,11 +111,10 @@ class WikimonScraper {
 				dom.window.document.querySelector('#firstHeading').textContent
 			);
 			const stats = this.parseStatsTable(dom);
-			const variants = this.parseVariants(dom);
 			this.scraped.add(url);
 
 			await this.sleep(this.delay);
-			return { name, stats, variants };
+			return { name, stats };
 		} catch (error) {
 			console.error(`Error scraping ${url}:`, error.message);
 			return null;
@@ -211,13 +187,12 @@ class WikimonScraper {
 					const result = await this.scrapeDigimonPage(digimonUrl);
 
 					if (result && result.stats) {
-						const { name, stats, variants } = result;
+						const { name, stats } = result;
 						allDigimonData[name] = {
 							name: name,
 							year: year,
 							url: digimonUrl,
 							stats: stats,
-							variants: variants,
 						};
 						console.log(`✓ Scraped ${name}`);
 					} else {
