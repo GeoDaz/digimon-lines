@@ -47,7 +47,8 @@ const PageTerms = () => (
 
 		<h2>4. Public and private lines</h2>
 		<p>
-			A private line is visible only to you. A public line is visible to{' '}
+			A private line is not visible to other users; only the site administrators can
+			read it, for moderation. A public line is visible to{' '}
 			<strong>anyone with the link</strong>, may be listed on the site, and may be
 			indexed by search engines. Treat publishing as permanent: assume a public line
 			can be seen, saved, and shared by anyone once it is out.

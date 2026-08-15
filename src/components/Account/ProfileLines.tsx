@@ -33,6 +33,7 @@ const ProfileLines: React.FC<Props> = ({ pseudo }) => {
 
 	// Le quota ne concerne que le propriétaire de la page, et n'est affiché que
 	// s'il le subit vraiment.
+	const isAdmin = !!profile?.is_admin;
 	const quota = isOwner ? profile?.line_quota : undefined;
 	const quotaReached = !!quota && lines.length >= quota;
 
@@ -95,7 +96,7 @@ const ProfileLines: React.FC<Props> = ({ pseudo }) => {
 							const cover = coverOf(line);
 							const caption = (
 								<span className="absolute-legend">
-									{isOwner && (
+									{(isOwner || isAdmin) && (
 										<Icon
 											name={line.is_public ? 'globe' : 'lock'}
 											title={

@@ -21,7 +21,7 @@ export const DISCORD_URL = 'https://discord.gg/RJrEuN7cQs';
 // les demandes RGPD (accès, suppression de compte).
 export const CONTACT_EMAIL = 'contact@digimon-lines.com';
 /** Dernière révision des pages légales (/privacy et /terms). */
-export const LEGAL_UPDATED_AT = '14 August 2026';
+export const LEGAL_UPDATED_AT = '15 August 2026';
 export const PUPPETEER_URL = 'https://digimon-lines-puppeteer.onrender.com';
 export const DONATE_URL = 'https://ko-fi.com/digimonlines';
 export const LINKTREE_URL = 'https://linktr.ee/azeralt';

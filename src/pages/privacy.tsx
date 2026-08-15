@@ -37,8 +37,10 @@ const PagePrivacy = () => (
 		<h3>The lines you create</h3>
 		<p>
 			The content of each line you save, its title, and whether you marked it public
-			or private. Private lines are readable only by you; this is enforced at the
-			database level, not merely hidden in the interface.
+			or private. A private line is not visible to other users — this is enforced at
+			the database level, not merely hidden in the interface. The site
+			administrators can read it, so that they can moderate content when it is
+			reported to them.
 		</p>
 
 		<h3>Audience measurement</h3>

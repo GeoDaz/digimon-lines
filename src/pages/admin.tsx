@@ -213,9 +213,10 @@ const PageAdmin = () => {
 						</tbody>
 					</Table>
 					<p className="text-muted">
-						Line contents are never exposed here — only counts. Private lines
-						stay readable by their author alone, as stated in the{' '}
-						<Link href="/privacy">Privacy Policy</Link>.
+						This table only shows counts. To read someone&apos;s lines,
+						including the unpublished ones, open their profile — an
+						administrator right that the{' '}
+						<Link href="/privacy">Privacy Policy</Link> discloses.
 					</p>
 				</>
 			}
