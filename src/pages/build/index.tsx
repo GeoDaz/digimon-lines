@@ -24,8 +24,6 @@ import UploadCode from '@/components/UploadCode';
 import SaveToAccountItems from '@/components/Line/SaveToAccountItems';
 import SaveLineModal from '@/components/Line/SaveLineModal';
 import useSaveLineFlow from '@/hooks/useSaveLineFlow';
-import { useAuth } from '@/context/auth';
-import { IS_DEV } from '@/consts/env';
 import { areCollapsablePoints } from '@/functions/line';
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
@@ -64,7 +62,6 @@ export const PageBuild = (props: BuildProps) => {
 	const [line, dispatchState] = useReducer(lineReducer, props.line || defaultLine);
 	const [zoom, setZoom] = useState<number>(DEFAULT_ZOOM);
 	const [edition, edit] = useState<boolean>(true);
-	const { enabled: accountEnabled } = useAuth();
 
 	useDragAutoScroll();
 
@@ -189,9 +186,6 @@ export const PageBuild = (props: BuildProps) => {
 					downloadImage={handeDowloadImg}
 					loading={downloading}
 					error={error}
-					// En dev, « Code » écrit la ligne dans public/json/lines : c'est
-					// l'outil de rédaction des lignes officielles, on le garde.
-					showCode={!accountEnabled || IS_DEV}
 				>
 					<SaveToAccountItems
 						saving={saveFlow.saving}

@@ -14,32 +14,18 @@ interface Props {
  * Rend des Dropdown.Item plutôt qu'un menu à part, pour ne pas multiplier les
  * boutons dans une barre d'outils déjà chargée.
  *
+ * Ne rend rien tant qu'on n'est pas connecté : le menu Save se limite alors aux
+ * exports, se connecter passant par le header. Le séparateur fait partie de ce
+ * rendu, pour qu'il n'apparaisse jamais seul.
+ *
  * Purement présentationnel : la modale et l'écriture vivent dans
  * useSaveLineFlow, au niveau de la page — un composant rendu dans un menu
  * déroulant est démonté à sa fermeture.
  */
 const SaveToAccountItems: React.FC<Props> = ({ saving, onRequestSave }) => {
-	const { user, enabled, loading, signIn, devEmail, signInAsDev } = useAuth();
+	const { user, enabled, loading } = useAuth();
 
-	if (!enabled || loading) return null;
-
-	if (!user) {
-		return (
-			<>
-				<Dropdown.Item onClick={() => signIn('discord')}>
-					<Icon name="discord" /> Sign in to save
-				</Dropdown.Item>
-				<Dropdown.Item onClick={() => signIn('google')}>
-					<Icon name="google" /> Sign in with Google
-				</Dropdown.Item>
-				{!!devEmail && (
-					<Dropdown.Item onClick={() => signInAsDev()}>
-						<Icon name="bug" /> Dev: {devEmail.split('@')[0]}
-					</Dropdown.Item>
-				)}
-			</>
-		);
-	}
+	if (!enabled || loading || !user) return null;
 
 	return (
 		<>
@@ -49,6 +35,7 @@ const SaveToAccountItems: React.FC<Props> = ({ saving, onRequestSave }) => {
 			<Dropdown.Item disabled={saving} onClick={() => onRequestSave('public')}>
 				<Icon name="globe" /> Publish
 			</Dropdown.Item>
+			<Dropdown.Divider />
 		</>
 	);
 };
