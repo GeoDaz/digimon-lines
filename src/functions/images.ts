@@ -7,7 +7,7 @@ import { formatPokemonFileName } from './file';
  * Ce sont les seules qui menacent la limite de poids d'une ligne.
  */
 export const isUploadedImage = (image?: string): boolean =>
-	!!image && image.startsWith('data:');
+	!!image && image.trimStart().toLowerCase().startsWith('data:');
 
 /**
  * Poids réel d'une chaîne une fois écrite en base, en octets UTF-8 : c'est ce

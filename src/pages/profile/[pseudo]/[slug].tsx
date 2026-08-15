@@ -191,8 +191,11 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 	try {
 		const digimons = require('../../../../public/json/digimons/index.json');
 		const ranked = require('../../../../public/json/digimons/ranked.json');
-		const dubNames = getDubNames();
-		const searchList: string[] = getDirPaths('images/digimon');
+		const dubNames: StringObject = getDubNames();
+		const search: Search = getDubbedSearchList(
+			getDirPaths('images/digimon'),
+			dubNames
+		);
 		return {
 			props: {
 				digimons,
@@ -200,7 +203,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 				itemLevels: getDigimonItemLevels(ranked),
 				levels: Object.keys(ranked),
 				dubNames,
-				search: getDubbedSearchList(searchList, dubNames),
+				search,
 			},
 		};
 	} catch (e) {

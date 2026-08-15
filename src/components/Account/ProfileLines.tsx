@@ -207,12 +207,6 @@ const ProfileLines: React.FC<Props> = ({ pseudo }) => {
 					</Row>
 				</div>
 			}
-			{!loading && !isOwner && !!lines.length && (
-				<Alert variant="dark" className="mt-4">
-					Want your own? <Link href="/build">Build a line</Link> and save it to
-					your account.
-				</Alert>
-			)}
 		</Layout>
 	);
 };
