@@ -111,6 +111,16 @@ a:active:not(.btn) {
 	--bs-btn-disabled-border-color: var(--bs-primary);
 }
 
+/* Bootstrap câble .btn-link sur --bs-link-color (bleu) et le souligne. On
+   l'aligne sur les liens du site, qui suivent déjà la palette violette. */
+.btn-link {
+	--bs-btn-color: var(--bs-primary-link);
+	--bs-btn-hover-color: var(--bs-primary-hover);
+	--bs-btn-active-color: var(--bs-primary-active);
+	--bs-btn-focus-shadow-rgb: 100, 53, 201;
+	text-decoration: none;
+}
+
 .text-primary {
 	color: var(--bs-primary) !important;
 }
@@ -440,6 +450,7 @@ h2 {
 
 a.line-point {
 	text-decoration: none;
+	display: inline-block;
 }
 
 .line-point.x-double {
@@ -516,6 +527,7 @@ a.line-point {
 	font-weight: bold;
 	transition: all 0.3s;
 	padding: 2px;
+	border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius);
 }
 
 .line-point.move-link {
@@ -1459,4 +1471,52 @@ a.dropdown-item.active {
 	100% {
 		transform: translateY(0);
 	}
+}
+
+/* Sélecteur de Digimon de couverture (modale de sauvegarde d'une ligne).
+   L'ombre interne est portée par un pseudo-élément : un box-shadow inset posé
+   sur l'<img> serait peint sous le contenu de l'image, donc invisible. */
+.cover-option {
+	position: relative;
+	padding: 0;
+	border: 0;
+	background: none;
+	line-height: 0;
+	border-radius: var(--dl-border-radius);
+	overflow: hidden;
+}
+
+.cover-option img {
+	display: block;
+	width: 64px;
+	height: 64px;
+}
+
+.cover-option::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	transition: box-shadow 0.15s ease-in-out;
+}
+
+.cover-option:hover::after {
+	box-shadow: inset 0 0 10px 2px rgba(100, 53, 201, 0.45);
+}
+
+.cover-option[aria-pressed='true']::after {
+	box-shadow:
+		inset 0 0 0 3px var(--bs-primary);
+}
+
+/* Lignes d'un profil : même grille que l'accueil, avec une barre d'actions
+   sous la vignette quand on regarde son propre profil. */
+.profile-line {
+	position: relative;
+}
+
+.profile-line-actions {
+	margin-top: 0.25rem;
+	text-align: center;
+	white-space: nowrap;
 }

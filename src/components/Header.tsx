@@ -5,11 +5,12 @@ import Image from 'next/image';
 import Icon from './Icon';
 import { DISCORD_URL } from '@/consts/env';
 import DropdownMenu from './DropdownMenu';
+import AuthMenu from './Account/AuthMenu';
 
 const Header: React.FC = () => (
 	<header className="sticky-top">
 		<Navbar bg="dark" variant="dark" /* expand="lg" */>
-			<Container fluid className="justify-content-start">
+			<Container fluid className="justify-content-start gap-4">
 				<Navbar.Brand as={Link} href="/">
 					<Image src="/images/icon.png" alt="logo" height="26" width="32" />{' '}
 					<span className="d-none d-sm-inline-block">Digimon Lines</span>
@@ -62,6 +63,7 @@ const Header: React.FC = () => (
 						]}
 					/>
 				</Nav>
+				<AuthMenu />
 				<Link
 					href={DISCORD_URL}
 					target="_blank"

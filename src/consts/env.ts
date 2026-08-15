@@ -7,6 +7,15 @@ export const SITE_URL = 'https://digimon-lines.com';
 // leur usage prévu. Toute la sécurité repose sur les policies RLS.
 export const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? '';
 export const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? '';
+// Compte de test pour se connecter en un clic en local, sans passer par le tour
+// OAuth. C'est un vrai compte Supabase (vraie session, vraie RLS), pas une
+// simulation. Neutralisé hors développement pour que ni l'adresse ni le mot de
+// passe n'atterrissent dans le bundle de production.
+export const DEV_AUTH_EMAIL =
+	IS_DEV ? (process.env.NEXT_PUBLIC_DEV_AUTH_EMAIL ?? '').trim() : '';
+export const DEV_AUTH_PASSWORD =
+	IS_DEV ? process.env.NEXT_PUBLIC_DEV_AUTH_PASSWORD ?? '' : '';
+
 export const DISCORD_URL = 'https://discord.gg/RJrEuN7cQs';
 // TODO à confirmer : adresse affichée dans les pages légales et utilisée pour
 // les demandes RGPD (accès, suppression de compte).

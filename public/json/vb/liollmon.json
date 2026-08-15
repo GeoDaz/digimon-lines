@@ -1,0 +1,116 @@
+{
+	"title": "Bememory Special Beasts",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gracenovamon",
+				"color": "fusion",
+				"from": [1, 0]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "coronamon",
+				"from": [1, -1]
+			},
+			{
+				"name": "firamon"
+			},
+			{
+				"name": "flaremon"
+			},
+			{
+				"name": "apollomon"
+			}
+		],
+		[
+			{
+				"name": "frimon"
+			},
+			{
+				"name": "popomon"
+			},
+			{
+				"name": "liollmon"
+			},
+			{
+				"name": "liamon"
+			},
+			{
+				"name": "loaderliomon"
+			},
+			{
+				"name": "heavyleomon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "bearmon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "grizzlymon"
+			},
+			{
+				"name": "grapleomon"
+			},
+			{
+				"name": "bancholeomon"
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "elecmon",
+				"from": [-2, -1]
+			},
+			{
+				"name": "loweemon"
+			},
+			{
+				"name": "raihimon"
+			},
+			{
+				"name": "leopardmon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "leomon",
+				"from": [-1, -1]
+			},
+			{
+				"name": "panjyamon"
+			},
+			{
+				"name": "saberleomon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "tlalocmon",
+				"color": "fusion",
+				"from": [-1, 0]
+			}
+		]
+	],
+	"related": ["bearmon", "leomon"]
+}

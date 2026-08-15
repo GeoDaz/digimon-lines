@@ -6,11 +6,13 @@ export interface ToastMessage {
 	id: number;
 	message: string;
 	variant: ToastVariant;
+	/** Rend le toast cliquable : il mène à cette page. */
+	href?: string;
 }
 
 interface ToastContextValue {
 	toasts: ToastMessage[];
-	addToast: (message: string, variant?: ToastVariant) => void;
+	addToast: (message: string, variant?: ToastVariant, href?: string) => void;
 	removeToast: (id: number) => void;
 }
 
@@ -30,10 +32,11 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 	}, []);
 
 	const addToast = useCallback(
-		(message: string, variant: ToastVariant = 'success') => {
+		(message: string, variant: ToastVariant = 'success', href?: string) => {
 			const id = nextId++;
-			setToasts(prev => [...prev, { id, message, variant }]);
-			setTimeout(() => removeToast(id), 4000);
+			setToasts(prev => [...prev, { id, message, variant, href }]);
+			// Un toast cliquable laisse le temps de le viser.
+			setTimeout(() => removeToast(id), href ? 8000 : 4000);
 		},
 		[removeToast]
 	);

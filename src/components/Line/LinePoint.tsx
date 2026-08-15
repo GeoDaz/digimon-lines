@@ -15,6 +15,10 @@ interface Props extends React.ImgHTMLAttributes<any> {
 	children?: React.ReactNode;
 	available?: boolean;
 	grid?: string[];
+	/** Destination, quand elle ne se déduit pas de `type`/`line` (lignes de compte). */
+	href?: string;
+	/** Libellé au survol, quand il diffère du nom de l'image (titre d'une ligne). */
+	label?: string;
 }
 const LinePoint: React.FC<Props> = ({
 	name,
@@ -25,9 +29,11 @@ const LinePoint: React.FC<Props> = ({
 	children,
 	className,
 	grid,
+	href,
+	label,
 	...props
 }) => {
-	const capitalizedName = capitalize(name);
+	const capitalizedName = label || capitalize(name);
 	if (available === false) {
 		return (
 			<div
@@ -47,7 +53,7 @@ const LinePoint: React.FC<Props> = ({
 	}
 	return (
 		<Link
-			href={`/${type}/${line}`}
+			href={href || `/${type}/${line}`}
 			title={capitalizedName}
 			className={makeClassName(
 				'line-point pictured',

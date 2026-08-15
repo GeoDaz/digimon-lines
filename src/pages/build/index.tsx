@@ -21,6 +21,11 @@ import useLocalStorage from '@/hooks/useLocalStorage';
 import DownloadDropdown from '@/components/DownloadDropdown';
 import Line from '@/types/Line';
 import UploadCode from '@/components/UploadCode';
+import SaveToAccountItems from '@/components/Line/SaveToAccountItems';
+import SaveLineModal from '@/components/Line/SaveLineModal';
+import useSaveLineFlow from '@/hooks/useSaveLineFlow';
+import { useAuth } from '@/context/auth';
+import { IS_DEV } from '@/consts/env';
 import { areCollapsablePoints } from '@/functions/line';
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
@@ -59,6 +64,7 @@ export const PageBuild = (props: BuildProps) => {
 	const [line, dispatchState] = useReducer(lineReducer, props.line || defaultLine);
 	const [zoom, setZoom] = useState<number>(DEFAULT_ZOOM);
 	const [edition, edit] = useState<boolean>(true);
+	const { enabled: accountEnabled } = useAuth();
 
 	useDragAutoScroll();
 
@@ -83,17 +89,21 @@ export const PageBuild = (props: BuildProps) => {
 		if (queryName) setName(queryName);
 	}, [queryName]);
 
-	// CTRL/CMD + S triggers "Save as Code" instead of the browser save dialog.
+	const saveFlow = useSaveLineFlow({ line, name, setName });
+
+	// CTRL/CMD + S sauvegarde dans le compte quand on est connecté ; sinon (et en
+	// dev, où il écrit dans public/json/lines) il garde l'export "Code".
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
 			if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
 				e.preventDefault();
-				downloadCode();
+				if (saveFlow.canSaveToAccount) saveFlow.requestSave('ask');
+				else downloadCode();
 			}
 		};
 		window.addEventListener('keydown', handleKeyDown);
 		return () => window.removeEventListener('keydown', handleKeyDown);
-	}, [downloadCode]);
+	}, [downloadCode, saveFlow.canSaveToAccount, saveFlow.requestSave]);
 
 	const handleUpdate = (action: CallableFunction, ...args: any[]) => {
 		dispatchState(action(...args));
@@ -128,15 +138,15 @@ export const PageBuild = (props: BuildProps) => {
 				together.
 				<br /> Clicking on a Digimon image gives you access to additional options,
 				such as changing the line color or adding sub-images.
-				<br /> The <b>Save as</b> button allows you to export the line as an image
-				or as code.
-				<br /> The Save as Image option does not work with <b>url images</b>, but
-				it does work with <b>uploaded images</b>.
-				<br /> The Save as Code option can produce very large files when using{' '}
-				<b>uploaded images</b>, but it works well with <b>URL images</b>.
-				<br /> Your work is saved locally in the browser, one line at a time. You
-				can export it to your computer using the <b>Save as Code</b> button and
-				reload it later with the <b>Import from {'{}'}</b> button.
+				<br /> The <b>Save</b> button stores the line in your account — keep it
+				private, or share it with a link — and can also export it as an image.
+				<br /> The Image option does not work with <b>url images</b>, but it does
+				work with <b>uploaded images</b>.
+				<br /> Your work is also saved locally in the browser, one line at a time.
+				Saving it to your account keeps every line and makes it reachable from any
+				device.
+				<br /> You can reload a line file you were sent with the{' '}
+				<b>Import from {'{}'}</b> button.
 			</blockquote>
 			<div className="line-filters align-items-center">
 				<BoostrapSwitch
@@ -179,7 +189,15 @@ export const PageBuild = (props: BuildProps) => {
 					downloadImage={handeDowloadImg}
 					loading={downloading}
 					error={error}
-				/>
+					// En dev, « Code » écrit la ligne dans public/json/lines : c'est
+					// l'outil de rédaction des lignes officielles, on le garde.
+					showCode={!accountEnabled || IS_DEV}
+				>
+					<SaveToAccountItems
+						saving={saveFlow.saving}
+						onRequestSave={saveFlow.requestSave}
+					/>
+				</DownloadDropdown>
 				<UploadCode handleUpload={uploadCode} />
 				<ReportABugLink />
 				<ZoomBar handleZoom={setZoom} />
@@ -208,6 +226,15 @@ export const PageBuild = (props: BuildProps) => {
 					</DigimonProvider>
 				</LicenseContext.Provider>
 			</SearchContext.Provider>
+			<SaveLineModal
+				mode={saveFlow.mode}
+				defaultTitle={saveFlow.defaultTitle}
+				covers={saveFlow.covers}
+				defaultCover={saveFlow.defaultCover}
+				saving={saveFlow.saving}
+				onClose={saveFlow.closeModal}
+				onSubmit={saveFlow.submitFromModal}
+			/>
 			<SearchContext.Provider value={props.search}>
 				<RelatedLines
 					related={line.related}

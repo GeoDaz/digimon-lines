@@ -9,18 +9,21 @@ import Header from '@/components/Header';
 import Donate from '@/components/Donate';
 import Footer from '@/components/Footer';
 import { ToastProvider } from '@/context/toast';
+import { AuthProvider } from '@/context/auth';
 import ToastStack from '@/components/ToastStack';
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<ErrorBoundary>
 			<ToastProvider>
-				<Header />
-				<Donate />
-				<Component {...pageProps} />
-				<Analytics />
-				<Footer />
-				<ToastStack />
+				<AuthProvider>
+					<Header />
+					<Donate />
+					<Component {...pageProps} />
+					<Analytics />
+					<Footer />
+					<ToastStack />
+				</AuthProvider>
 			</ToastProvider>
 		</ErrorBoundary>
 	);

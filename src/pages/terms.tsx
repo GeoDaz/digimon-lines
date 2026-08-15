@@ -71,8 +71,9 @@ const PageTerms = () => (
 			</li>
 		</ul>
 		<p>
-			Accounts are limited to 200 saved lines. If you have a legitimate reason to
-			need more, ask us.
+			Accounts are limited to a number of saved lines, shown to you when you reach
+			it. The limit exists to keep our free database within its storage budget, and
+			we raise it gladly on request — just ask.
 		</p>
 
 		<h2>6. Moderation</h2>
