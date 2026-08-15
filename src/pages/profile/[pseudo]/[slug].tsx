@@ -101,14 +101,16 @@ const PageSharedLine: React.FC<Props> = props => {
 			title={title}
 			metatitle={title}
 			metadescription={
-				pseudo ? `An evolution line shared by ${pseudo}` : 'A shared evolution line'
+				pseudo ?
+					`An evolution line shared by ${pseudo}`
+				:	'A shared evolution line'
 			}
 			// Le Digimon de couverture sert d'aperçu quand le lien est partagé.
 			metaimg={record?.cover ? `digimon/${record.cover}.jpg` : undefined}
 		>
 			{!!pseudo && (
 				<p className="text-muted">
-					Shared by <Link href={`/profile/${pseudo}`}>{pseudo}</Link>
+					By <Link href={`/profile/${pseudo}`}>{pseudo}</Link>
 					{!!record && !record.is_public && (
 						<>
 							{' · '}
@@ -146,12 +148,12 @@ const PageSharedLine: React.FC<Props> = props => {
 							loading={downloading}
 							error={error}
 						/>
-						<ZoomBar handleZoom={setZoom} />
-						<ColorLegend />
 						<ShareButton
 							title={title}
 							text={`An evolution line shared by ${pseudo}`}
 						/>
+						<ZoomBar handleZoom={setZoom} />
+						<ColorLegend />
 					</div>
 					{!!error && (
 						<div>

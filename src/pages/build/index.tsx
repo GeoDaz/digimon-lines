@@ -171,7 +171,8 @@ export const PageBuild = (props: BuildProps) => {
 					<InputGroup.Text>Line title</InputGroup.Text>
 					<FormControl
 						id="line-title"
-						max="100"
+						maxLength={120}
+						max={120}
 						onChange={e => setName(e.target.value)}
 						value={name || ''}
 						placeholder="_ _ _ _ _"

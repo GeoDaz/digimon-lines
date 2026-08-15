@@ -88,6 +88,20 @@ export const findUserLineBySlug = async (
 	return data;
 };
 
+/**
+ * Renomme le profil. La contrainte d'unicité et le format sont vérifiés en
+ * base : l'erreur remonte telle quelle pour être traduite côté interface.
+ */
+export const updatePseudo = async (userId: string, pseudo: string): Promise<void> => {
+	const supabase = await getSupabase();
+	const { error } = await supabase
+		.from('profiles')
+		.update({ pseudo })
+		.eq('id', userId);
+
+	if (error) throw error;
+};
+
 export const setUserLineVisibility = async (
 	id: string,
 	isPublic: boolean

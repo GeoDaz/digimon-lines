@@ -28,6 +28,8 @@ interface AuthContextValue {
 	signOut: () => Promise<void>;
 	/** Compte de test disponible en local ; chaîne vide en production. */
 	devEmail: string;
+	/** Relit le profil depuis la base (changement de pseudo). */
+	refreshProfile: () => Promise<Profile | null>;
 	signInAsDev: () => Promise<void>;
 }
 
@@ -39,6 +41,7 @@ export const AuthContext = createContext<AuthContextValue>({
 	signIn: async () => {},
 	signOut: async () => {},
 	devEmail: '',
+	refreshProfile: async () => null,
 	signInAsDev: async () => {},
 });
 
@@ -136,35 +139,33 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 		};
 	}, [ensureSession]);
 
+	/** Relit le profil : après un changement de pseudo, notamment. */
+	const refreshProfile = useCallback(async () => {
+		if (!user) return null;
+		try {
+			const supabase = await getSupabase();
+			const { data, error } = await supabase
+				.from('profiles')
+				.select('*')
+				.eq('id', user.id)
+				.maybeSingle();
+
+			if (error) throw error;
+			setProfile(data);
+			return data;
+		} catch (error) {
+			console.error('Failed to load profile:', error);
+			return null;
+		}
+	}, [user]);
+
 	useEffect(() => {
 		if (!user) {
 			setProfile(null);
 			return;
 		}
-		let active = true;
-
-		const loadProfile = async () => {
-			try {
-				const supabase = await getSupabase();
-				const { data, error } = await supabase
-					.from('profiles')
-					.select('*')
-					.eq('id', user.id)
-					.maybeSingle();
-
-				if (!active) return;
-				if (error) throw error;
-				setProfile(data);
-			} catch (error) {
-				console.error('Failed to load profile:', error);
-			}
-		};
-
-		loadProfile();
-		return () => {
-			active = false;
-		};
-	}, [user]);
+		refreshProfile();
+	}, [user, refreshProfile]);
 
 	const signIn = useCallback(
 		async (provider: OAuthProvider) => {
@@ -224,8 +225,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 			signOut,
 			devEmail: DEV_AUTH_PASSWORD ? DEV_AUTH_EMAIL : '',
 			signInAsDev,
+			refreshProfile,
 		}),
-		[user, profile, loading, signIn, signOut, signInAsDev]
+		[user, profile, loading, signIn, signOut, signInAsDev, refreshProfile]
 	);
 
 	return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

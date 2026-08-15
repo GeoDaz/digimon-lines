@@ -73,6 +73,7 @@ const SaveLineModal: React.FC<Props> = ({
 							autoFocus
 							value={title}
 							maxLength={120}
+							max={120}
 							onChange={e => setTitle(e.target.value)}
 						/>
 						<Form.Text muted className="mt-2 d-inline-block">

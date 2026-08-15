@@ -5,11 +5,11 @@ import { Alert, Button, Col, Row, Spinner } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import Icon from '@/components/Icon';
 import LinePoint from '@/components/Line/LinePoint';
+import ShareButton from '@/components/ShareButton';
+import PseudoEditor from '@/components/Account/PseudoEditor';
 import ButtonAdd from '@/components/Button/ButtonAdd';
 import { useProfileLines } from '@/hooks/useUserLines';
 import { useAuth } from '@/context/auth';
-import { useToast } from '@/context/toast';
-import { copyToClipboard } from '@/functions';
 import { lineToArray } from '@/functions/line';
 import { DISCORD_URL, SITE_URL } from '@/consts/env';
 import Line from '@/types/Line';
@@ -30,17 +30,11 @@ const ProfileLines: React.FC<Props> = ({ pseudo }) => {
 	const router = useRouter();
 	const { lines, isOwner, loading, remove, toggleVisibility } = useProfileLines(pseudo);
 	const { profile } = useAuth();
-	const { addToast } = useToast();
 
 	// Le quota ne concerne que le propriétaire de la page, et n'est affiché que
 	// s'il le subit vraiment.
 	const quota = isOwner ? profile?.line_quota : undefined;
 	const quotaReached = !!quota && lines.length >= quota;
-
-	const handleShare = (line: UserLineWithAuthor) => {
-		copyToClipboard(`${SITE_URL}/profile/${pseudo}/${line.slug}`);
-		addToast('Share link copied to clipboard');
-	};
 
 	const handleEdit = (line: UserLineWithAuthor) => {
 		localStorage.setItem('digimon-line', JSON.stringify(line.data, null, 4));
@@ -76,19 +70,11 @@ const ProfileLines: React.FC<Props> = ({ pseudo }) => {
 				pseudo ? `Evolution lines shared by ${pseudo}` : 'Shared evolution lines'
 			}
 		>
+			{isOwner && !!pseudo && <PseudoEditor pseudo={pseudo} />}
 			{!loading && !!quota && (
 				<p className={quotaReached ? 'text-warning' : 'text-muted'}>
 					<Icon name={quotaReached ? 'exclamation-triangle-fill' : 'archive'} />{' '}
-					{lines.length} of {quota} saved lines.{' '}
-					{quotaReached ?
-						<>
-							You have reached your limit — delete one to make room, or{' '}
-							<a href={DISCORD_URL} target="_blank" rel="noreferrer">
-								ask us
-							</a>{' '}
-							to raise it.
-						</>
-					:	'The limit keeps our free database within its storage budget.'}
+					{lines.length} / {quota} lines.{' '}
 				</p>
 			)}
 			{loading ?
@@ -173,17 +159,17 @@ const ProfileLines: React.FC<Props> = ({ pseudo }) => {
 											>
 												<Icon name="pencil-fill" />
 											</Button>{' '}
-											<Button
+											<ShareButton
+												compact
 												size="sm"
 												variant={
 													line.is_public ? 'primary' : 'outline'
 												}
-												title="Copy share link"
 												disabled={!line.is_public}
-												onClick={() => handleShare(line)}
-											>
-												<Icon name="link-45deg" />
-											</Button>{' '}
+												title={line.title || line.slug}
+												text={`An evolution line shared by ${pseudo}`}
+												url={`${SITE_URL}/profile/${pseudo}/${line.slug}`}
+											/>{' '}
 											<Button
 												size="sm"
 												variant="outline-danger"
@@ -194,12 +180,27 @@ const ProfileLines: React.FC<Props> = ({ pseudo }) => {
 											</Button>
 										</div>
 									)}
+									{!isOwner && line.is_public && (
+										<div className="profile-line-actions">
+											<ShareButton
+												compact
+												size="sm"
+												title={line.title || line.slug}
+												text={`An evolution line shared by ${pseudo}`}
+												url={`${SITE_URL}/profile/${pseudo}/${line.slug}`}
+											/>
+										</div>
+									)}
 								</Col>
 							);
 						})}
 						{isOwner && (
 							<Col className="profile-line">
-								<ButtonAdd as={Link} href="/build" title="Build a new line" />
+								<ButtonAdd
+									as={Link}
+									href="/build"
+									title="Build a new line"
+								/>
 							</Col>
 						)}
 					</Row>
