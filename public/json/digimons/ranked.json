@@ -5525,7 +5525,8 @@
                 "vulturemon",
                 "rizegreymon",
                 "megadramon",
-                "gigadramon"
+                "gigadramon",
+                "captainhookmon"
             ]
         },
         "runnermon": {
@@ -10866,11 +10867,13 @@
             "name": "captainhookmon",
             "from": [
                 "petermon",
-                "hookmon"
+                "hookmon",
+                "revolmon"
             ],
             "to": [
                 "olegmon",
-                "boltboutamon"
+                "boltboutamon",
+                "avengekidmon"
             ]
         },
         "chirinmon": {
@@ -12058,10 +12061,14 @@
         },
         "avengekidmon": {
             "name": "avengekidmon",
+            "variants": [
+                "magnakidmon"
+            ],
             "from": [
                 "vulturemon",
                 "gigadramon",
-                "mummymon"
+                "mummymon",
+                "captainhookmon"
             ]
         },
         "babamon": {
@@ -13068,6 +13075,9 @@
         },
         "magnakidmon": {
             "name": "magnakidmon",
+            "variants": [
+                "avengekidmon"
+            ],
             "from": [
                 "rizegreymon",
                 "megadramon",

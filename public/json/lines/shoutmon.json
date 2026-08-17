@@ -15,7 +15,18 @@
                     "fusion"
                 ]
             },
-            null,
+            {
+                "name": "shoutmon_dorulucannon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            },
             {
                 "name": "omegashoutmon_x",
                 "from": [
@@ -111,22 +122,22 @@
                 ]
             },
             {
-                "name": "shoutmon_dorulucannon",
+                "name": "shoutmon_x2",
+                "color": [
+                    "fusion"
+                ],
                 "from": [
                     [
                         -1,
                         -1
                     ]
-                ],
-                "color": [
-                    "fusion"
                 ]
             },
             {
-                "name": "shoutmon_x5",
+                "name": "shoutmon_x4s",
                 "from": [
                     [
-                        2,
+                        1,
                         0
                     ]
                 ],
@@ -135,11 +146,11 @@
                 ]
             },
             {
-                "name": "shoutmon_x5b",
+                "name": "shoutmon_x5s",
                 "from": [
                     [
-                        1,
-                        0
+                        0,
+                        -1
                     ]
                 ],
                 "color": [
@@ -158,41 +169,6 @@
                     "dark"
                 ]
             },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "shoutmon_x2",
-                "color": [
-                    "fusion"
-                ],
-                "from": [
-                    [
-                        -2,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "shoutmon_x4",
-                "from": null
-            },
-            {
-                "name": "shoutmon_x4b",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "fusion"
-                ]
-            },
-            null,
             null
         ],
         [
@@ -224,15 +200,15 @@
                 ]
             },
             {
-                "name": "shoutmon_x4k",
-                "color": [
-                    "fusion"
-                ],
+                "name": "shoutmon_x4b",
                 "from": [
                     [
                         0,
                         -1
                     ]
+                ],
+                "color": [
+                    "fusion"
                 ]
             },
             null,
@@ -244,19 +220,27 @@
             null,
             null,
             {
-                "name": "shoutmon_x4s",
-                "from": null
-            },
-            {
-                "name": "shoutmon_x3sd",
-                "color": [
-                    "fusion"
-                ],
+                "name": "shoutmon_x4",
                 "from": [
                     [
                         -1,
-                        -1
+                        0
                     ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            },
+            {
+                "name": "shoutmon_x5b",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "fusion"
                 ]
             },
             null,
@@ -268,7 +252,7 @@
             null,
             null,
             {
-                "name": "shoutmon_x5s",
+                "name": "shoutmon_x5",
                 "from": [
                     [
                         -2,
@@ -280,7 +264,7 @@
                 ]
             },
             {
-                "name": "shoutmon_x3gm",
+                "name": "shoutmon_x4k",
                 "color": [
                     "fusion"
                 ],
@@ -300,7 +284,39 @@
             null,
             null,
             null,
+            {
+                "name": "shoutmon_x3sd",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ]
+                ]
+            },
             null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "shoutmon_x3gm",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -4,
+                        -1
+                    ]
+                ]
+            },
             null,
             null
         ]
@@ -343,16 +359,20 @@
             "for": "beelzebumon_2"
         },
         {
-            "name": "impmon",
-            "for": "barbamon"
-        },
-        {
             "name": "leomon",
             "for": "spadamon"
         },
         {
+            "name": "greymon",
+            "for": "metalgreymon_blue_2"
+        },
+        {
             "name": "pawnchessmon_white",
             "for": "darkknightmon"
+        },
+        {
+            "name": "pawnchessmon_white",
+            "for": "knightmon"
         }
     ],
     "size": 8
