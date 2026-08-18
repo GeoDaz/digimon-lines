@@ -2098,7 +2098,8 @@
                 "coatlmon",
                 "dinohumon",
                 "ginkakumon",
-                "kinkakumon"
+                "kinkakumon",
+                "petermon"
             ]
         },
         "impmon": {
@@ -2328,7 +2329,8 @@
             ],
             "to": [
                 "pidmon",
-                "angemon"
+                "angemon",
+                "petermon"
             ]
         },
         "maquinamon": {
@@ -3607,11 +3609,15 @@
         "petermon": {
             "name": "petermon",
             "from": [
-                "tinkermon"
+                "tinkermon",
+                "iguneetmon",
+                "luxmon"
             ],
             "to": [
                 "captainhookmon",
-                "zamielmon"
+                "zamielmon",
+                "baalmon",
+                "mistymon"
             ]
         },
         "aegiomon": {
@@ -8260,7 +8266,8 @@
         "baalmon": {
             "name": "baalmon",
             "from": [
-                "wizardmon"
+                "wizardmon",
+                "petermon"
             ],
             "to": [
                 "beelzebumon",
@@ -9720,7 +9727,8 @@
             "from": [
                 "wizardmon",
                 "sorcerymon",
-                "flamewizardmon"
+                "flamewizardmon",
+                "petermon"
             ],
             "to": [
                 "dynasmon",
@@ -9900,7 +9908,8 @@
                 "shoutmon_dx",
                 "shoutmon_x7",
                 "magnakidmon",
-                "armamon"
+                "armamon",
+                "durandamon"
             ]
         },
         "orochimon": {
@@ -11454,6 +11463,12 @@
             "name": "omegashoutmon_x",
             "from": [
                 "omegashoutmon"
+            ],
+            "to": [
+                "goldrapidmon_x",
+                "magnamon_x",
+                "armamon",
+                "durandamon"
             ]
         },
         "pandamon": {
@@ -12581,7 +12596,9 @@
             "name": "durandamon",
             "from": [
                 "duramon",
-                "grademon"
+                "grademon",
+                "omegashoutmon",
+                "omegashoutmon_x"
             ],
             "to": [
                 "ragnalordmon"
@@ -14035,7 +14052,8 @@
             "from": [
                 "chaosgrimmon",
                 "omegashoutmon",
-                "duramon"
+                "duramon",
+                "omegashoutmon_x"
             ]
         },
         "cherubimon_vice": {
@@ -14304,7 +14322,8 @@
                 "magnamon_x_gold_digizoid"
             ],
             "from": [
-                "magnamon"
+                "magnamon",
+                "omegashoutmon_x"
             ],
             "to": [
                 "magnamon_x_gold_digizoid"
@@ -14313,7 +14332,8 @@
         "goldrapidmon_x": {
             "name": "goldrapidmon_x",
             "from": [
-                "goldrapidmon"
+                "goldrapidmon",
+                "omegashoutmon_x"
             ]
         },
         "lucemon_x": {

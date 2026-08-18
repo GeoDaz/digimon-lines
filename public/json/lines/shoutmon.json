@@ -174,7 +174,18 @@
         [
             null,
             null,
-            null,
+            {
+                "name": "donshoutmon",
+                "from": [
+                    [
+                        -2,
+                        0
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            },
             {
                 "name": "shoutmon_x2m",
                 "from": [
@@ -217,7 +228,18 @@
         [
             null,
             null,
-            null,
+            {
+                "name": "shonitamon",
+                "from": [
+                    [
+                        -3,
+                        0
+                    ]
+                ],
+                "color": [
+                    "fusion"
+                ]
+            },
             null,
             {
                 "name": "shoutmon_x4",
@@ -322,6 +344,8 @@
         ]
     ],
     "related": [
+        "shoutmon_x7",
+        "shoutmon_ex6",
         {
             "name": "app_gatchmon",
             "for": "app_globemon"
