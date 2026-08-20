@@ -16,17 +16,14 @@ import useDownloadCode from '@/hooks/useDownloadCode';
 import { fetchSharedLine } from '@/functions/userLines';
 import { shouldRestoreSession } from '@/functions/supabase';
 import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
-import { getDubbedSearchList, getDubNames } from '@/functions/search';
-import { getDirPaths } from '@/functions/file';
-import transformLine from '@/functions/line';
+import { getDubNamesFor } from '@/functions/search';
+import transformLine, { lineToArray } from '@/functions/line';
 import { defaultLine } from '@/reducers/lineReducer';
 import { DigimonProvider } from '@/context/digimon';
 import { ZoomProvider } from '@/context/zoom';
-import { SearchContext } from '@/context/search';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
 import { Digimon, DigimonItem } from '@/types/Digimon';
 import { StringObject } from '@/types/Ui';
-import Search from '@/types/Search';
 import Line from '@/types/Line';
 import { UserLineWithAuthor } from '@/types/Account';
 
@@ -36,7 +33,6 @@ interface Props {
 	itemLevels?: StringObject;
 	levels?: string[];
 	dubNames?: StringObject;
-	search?: Search;
 	pseudo?: string;
 	slug?: string;
 	record?: UserLineWithAuthor | null;
@@ -158,19 +154,17 @@ const PageSharedLine: React.FC<Props> = props => {
 							<Alert variant="danger">{error}</Alert>
 						</div>
 					)}
-					<SearchContext.Provider value={props.search}>
-						<DigimonProvider
-							dubNames={props.dubNames}
-							data={props.digimons}
-							items={props.items}
-							itemLevels={props.itemLevels}
-							levels={props.levels}
-						>
-							<ZoomProvider zoom={zoom}>
-								<LineGrid line={line} />
-							</ZoomProvider>
-						</DigimonProvider>
-					</SearchContext.Provider>
+					<DigimonProvider
+						dubNames={props.dubNames}
+						data={props.digimons}
+						items={props.items}
+						itemLevels={props.itemLevels}
+						levels={props.levels}
+					>
+						<ZoomProvider zoom={zoom}>
+							<LineGrid line={line} />
+						</ZoomProvider>
+					</DigimonProvider>
 					<RelatedLines related={line.related} />
 				</>
 			}
@@ -202,11 +196,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({ params, re
 	try {
 		const digimons = require('../../../../public/json/digimons/index.json');
 		const ranked = require('../../../../public/json/digimons/ranked.json');
-		const dubNames: StringObject = getDubNames();
-		const search: Search = getDubbedSearchList(
-			getDirPaths('images/digimon'),
-			dubNames
-		);
+		const dubNames: StringObject = getDubNamesFor(lineToArray(record?.data as any));
 		return {
 			props: {
 				digimons,
@@ -214,7 +204,6 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({ params, re
 				itemLevels: getDigimonItemLevels(ranked),
 				levels: Object.keys(ranked),
 				dubNames,
-				search,
 				pseudo,
 				slug,
 				record,

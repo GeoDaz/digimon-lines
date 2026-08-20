@@ -49,6 +49,26 @@ export const getDubbedSearchList = (
 	);
 };
 
+export const getDubNamesFor = (names: string[]): StringObject => {
+	const dubNames: StringObject = require('../../public/json/dubnames.json');
+	const result: StringObject = {
+		...dubNames,
+		...Object.fromEntries(Object.entries(dubNames).map(([k, v]) => [v, k])),
+	};
+	Object.entries(result).forEach(([name, dubName]) => {
+		names.forEach(subName => {
+			if (
+				subName != name &&
+				!result[subName] &&
+				subName.match(`(^|_)${name}(_|$)`)
+			) {
+				result[subName] = subName.replace(name, dubName);
+			}
+		});
+	});
+	return result;
+};
+
 export const getDubNames = () => {
 	let dubNames: StringObject = require('../../public/json/dubnames.json');
 	dubNames = {
