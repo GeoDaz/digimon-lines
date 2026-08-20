@@ -1,8 +1,9 @@
+import type { SupabaseClient } from '@supabase/supabase-js';
 import { getSupabase } from '@/functions/supabase';
 import { prepareLineExport, stripUploadedImages } from '@/functions/line';
 import Line from '@/types/Line';
 import { UserLineRow, UserLineWithAuthor } from '@/types/Account';
-import { Json } from '@/types/supabase';
+import { Database, Json } from '@/types/supabase';
 
 /** Doit rester compatible avec la contrainte SQL : ^[a-z0-9_-]{1,64}$ */
 export const slugifyLine = (title: string): string => {
@@ -127,9 +128,10 @@ export const deleteUserLine = async (id: string): Promise<void> => {
  */
 export const fetchSharedLine = async (
 	pseudo: string,
-	slug: string
+	slug: string,
+	client?: SupabaseClient<Database>
 ): Promise<UserLineWithAuthor | null> => {
-	const supabase = await getSupabase();
+	const supabase = client ?? (await getSupabase());
 	const { data, error } = await supabase
 		.from('user_lines')
 		.select(SELECT_WITH_AUTHOR)

@@ -28,6 +28,7 @@ import { areCollapsablePoints } from '@/functions/line';
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
 import { defaultLicenceContext, LicenceProps, LicenseContext } from '@/context/license';
+import { capitalize } from '@/functions';
 import { getDubbedSearchList, getDubNames } from '@/functions/search';
 import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
@@ -125,9 +126,10 @@ export const PageBuild = (props: BuildProps) => {
 
 	return (
 		<Layout
-			title="Build your line"
-			metatitle="Builder"
+			title={`Build your own ${licenceContext.name} line`}
+			metatitle={`${capitalize(licenceContext.name)} Builder`}
 			metadescription={`Build your own ${licenceContext.name} lines. be creative your are free.`}
+			metaimg={licenceContext.key + '.png'}
 		>
 			<blockquote className="blockquote">
 				<b>Click</b> on a cell in the grid to set a {licenceContext.name}. The{' '}

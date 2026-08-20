@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { Alert, Spinner } from 'react-bootstrap';
-import { GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import Layout from '@/components/Layout';
 import LineGrid from '@/components/Line/LineGrid';
 import ColorLegend from '@/components/ColorLegend';
@@ -14,6 +14,7 @@ import Icon from '@/components/Icon';
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
 import { fetchSharedLine } from '@/functions/userLines';
+import { shouldRestoreSession } from '@/functions/supabase';
 import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
 import { getDubbedSearchList, getDubNames } from '@/functions/search';
 import { getDirPaths } from '@/functions/file';
@@ -36,20 +37,26 @@ interface Props {
 	levels?: string[];
 	dubNames?: StringObject;
 	search?: Search;
+	pseudo?: string;
+	slug?: string;
+	record?: UserLineWithAuthor | null;
+	serverFailed?: boolean;
 }
 
 const PageSharedLine: React.FC<Props> = props => {
 	const router = useRouter();
-	const { pseudo, slug } = router.query as { pseudo?: string; slug?: string };
+	const { pseudo, slug } = props;
 
-	const [record, setRecord] = useState<UserLineWithAuthor | null>(null);
-	const [line, setLine] = useState<Line | undefined>();
-	const [loading, setLoading] = useState(true);
+	const [record, setRecord] = useState<UserLineWithAuthor | null>(props.record ?? null);
+	const [line, setLine] = useState<Line | undefined>(() =>
+		props.record ? transformLine(props.record.data as unknown as Line) : undefined
+	);
+	const [loading, setLoading] = useState(!props.record);
 	const [failed, setFailed] = useState(false);
 	const [zoom, setZoom] = useState(DEFAULT_ZOOM);
 
 	const { downloadCode } = useDownloadCode(line || defaultLine, setLine);
-	const { downloadImage, downloading, error } = useDownloadImg(record?.title || slug);
+	const { downloadImage, downloading, error } = useDownloadImg(slug);
 
 	useEffect(() => {
 		if (window.innerWidth < 576) setZoom(-2);
@@ -57,7 +64,12 @@ const PageSharedLine: React.FC<Props> = props => {
 	}, []);
 
 	useEffect(() => {
+		if (props.record) return;
 		if (!pseudo || !slug) return;
+		if (!props.serverFailed && !shouldRestoreSession()) {
+			setLoading(false);
+			return;
+		}
 		let active = true;
 
 		const load = async () => {
@@ -80,7 +92,7 @@ const PageSharedLine: React.FC<Props> = props => {
 		return () => {
 			active = false;
 		};
-	}, [pseudo, slug]);
+	}, [props.record, props.serverFailed, pseudo, slug]);
 
 	const handleDownloadImg = () => {
 		if (!line) return;
@@ -91,36 +103,22 @@ const PageSharedLine: React.FC<Props> = props => {
 
 	const handleEdit = () => {
 		localStorage.setItem('digimon-line', JSON.stringify(line, null, 4));
-		router.push(`/build/?name=${encodeURIComponent(record?.title || slug || '')}`);
+		router.push(slug ? `/build/?name=${encodeURIComponent(slug)}` : '/build');
 	};
 
-	const title = record?.title || slug || 'Shared line';
+	const title = record?.title || 'Shared line';
 
 	return (
 		<Layout
-			title={title}
-			metatitle={title}
-			metadescription={
-				pseudo ?
-					`An evolution line shared by ${pseudo}`
-				:	'A shared evolution line'
+			title={
+				<>
+					{title} by <Link href={`/profile/${pseudo}`}>{pseudo}</Link>
+				</>
 			}
-			// Le Digimon de couverture sert d'aperçu quand le lien est partagé.
-			metaimg={record?.cover ? `digimon/${record.cover}.jpg` : undefined}
+			metatitle={`${title} by ${pseudo}`}
+			metadescription={'A Digimon evolution line'}
+			metaimg={record?.cover ? `digimon/${record.cover}.jpg` : 'digimon.png'}
 		>
-			{!!pseudo && (
-				<p className="text-muted">
-					By <Link href={`/profile/${pseudo}`}>{pseudo}</Link>
-					{!!record && !record.is_public && (
-						<>
-							{' · '}
-							<Icon name="lock" title="private" /> Private — only you can
-							see this
-						</>
-					)}
-				</p>
-			)}
-
 			{loading ?
 				<Spinner animation="border" role="status" aria-label="Loading" />
 			: failed ?
@@ -180,14 +178,27 @@ const PageSharedLine: React.FC<Props> = props => {
 	);
 };
 
-export async function getStaticPaths() {
-	// Les URLs partagées ne sont pas connues au build. La coquille est générée à
-	// la première visite puis servie par le CDN ; elle ne contient aucune donnée
-	// utilisateur, celle-ci est chargée côté client sous RLS.
-	return { paths: [], fallback: 'blocking' as const };
-}
+// Rendu serveur : le titre et la couverture doivent être dans le HTML pour les
+// aperçus de partage. La lecture est anonyme, donc limitée aux lignes publiques.
+export const getServerSideProps: GetServerSideProps<Props> = async ({ params, res }) => {
+	const pseudo = String(params?.pseudo ?? '');
+	const slug = String(params?.slug ?? '');
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+	res.setHeader(
+		'Cache-Control',
+		'public, max-age=0, s-maxage=60, stale-while-revalidate=300'
+	);
+
+	let record: UserLineWithAuthor | null = null;
+	let serverFailed = false;
+	try {
+		const { getServerSupabase } = await import('@/functions/supabaseServer');
+		record = await fetchSharedLine(pseudo, slug, await getServerSupabase());
+	} catch (e) {
+		console.error('Failed to load the shared line on the server:', e);
+		serverFailed = true;
+	}
+
 	try {
 		const digimons = require('../../../../public/json/digimons/index.json');
 		const ranked = require('../../../../public/json/digimons/ranked.json');
@@ -204,11 +215,15 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 				levels: Object.keys(ranked),
 				dubNames,
 				search,
+				pseudo,
+				slug,
+				record,
+				serverFailed,
 			},
 		};
 	} catch (e) {
 		console.error(e);
-		return { props: {} };
+		return { props: { pseudo, slug, record, serverFailed } };
 	}
 };
 

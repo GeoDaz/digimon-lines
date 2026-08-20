@@ -11239,7 +11239,8 @@
                 "greymon_x"
             ],
             "to": [
-                "wargreymon_x"
+                "wargreymon_x",
+                "chaosdramon_x"
             ]
         },
         "metalgreymon_blue_x": {
@@ -11254,7 +11255,8 @@
             ],
             "to": [
                 "samudramon",
-                "black_wargreymon_x"
+                "black_wargreymon_x",
+                "chaosdramon_x"
             ]
         },
         "rizegreymon_x": {
@@ -11266,6 +11268,9 @@
             "from": [
                 "rizegreymon",
                 "greymon_x"
+            ],
+            "to": [
+                "chaosdramon_x"
             ]
         },
         "weregarurumon_x": {
@@ -11428,6 +11433,9 @@
             "name": "metaltyranomon_x",
             "from": [
                 "metaltyranomon"
+            ],
+            "to": [
+                "chaosdramon_x"
             ]
         },
         "monzaemon_x": {
@@ -15339,7 +15347,11 @@
             "name": "chaosdramon_x",
             "from": [
                 "chaosdramon",
-                "metalmamemon_x"
+                "metalmamemon_x",
+                "metaltyranomon_x",
+                "metalgreymon_blue_x",
+                "metalgreymon_x",
+                "rizegreymon_x"
             ]
         },
         "dexmon": {
