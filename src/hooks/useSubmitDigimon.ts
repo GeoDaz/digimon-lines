@@ -12,13 +12,16 @@ const useSubmitDigimon = (setList: React.Dispatch<React.SetStateAction<DigimonLi
 		level: string,
 		item: DigimonItem,
 		originalName?: string,
-		originalLevel?: string
+		originalLevel?: string,
+		// The entry the edit started from: the API merges against it so relations
+		// added by the mirroring since then survive the save.
+		baseItem?: DigimonItem
 	) => {
 		const isEdit = !!originalName;
 		const srcLevel = originalLevel || level;
 		const endpoint = isEdit ? '/api/update-digimon' : '/api/add-digimon';
 		const body = isEdit
-			? { level, digimon: item, originalName, originalLevel: srcLevel }
+			? { level, digimon: item, originalName, originalLevel: srcLevel, baseItem }
 			: { level, digimon: item };
 		try {
 			const response = await fetch(endpoint, {

@@ -69,13 +69,16 @@ const LineImageModal: React.FC<Props> = ({
 		level: string,
 		newItem: DigimonItem,
 		originalName?: string,
-		originalLevel?: string
+		originalLevel?: string,
+		baseItem?: DigimonItem
 	) => {
-		submitItem(level, newItem, originalName, originalLevel).then(ok => {
-			if (!ok) return;
-			setItemMap(prev => ({ ...prev, [newItem.name]: newItem }));
-			setLevelMap(prev => ({ ...prev, [newItem.name]: level }));
-			if (newItem.name !== activeName) setCurrentName(newItem.name);
+		submitItem(level, newItem, originalName, originalLevel, baseItem).then(saved => {
+			if (!saved) return;
+			// The saved entry rather than the submitted one: it also holds the
+			// relations the mirroring completed on the side.
+			setItemMap(prev => ({ ...prev, [saved.name]: saved }));
+			setLevelMap(prev => ({ ...prev, [saved.name]: level }));
+			if (saved.name !== activeName) setCurrentName(saved.name);
 		});
 	};
 

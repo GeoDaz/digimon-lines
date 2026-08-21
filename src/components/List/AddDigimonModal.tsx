@@ -20,7 +20,10 @@ interface Props {
 		level: string,
 		item: DigimonItem,
 		originalName?: string,
-		originalLevel?: string
+		originalLevel?: string,
+		// The entry the form was filled from, so the API can tell an intentional
+		// removal from a relation the loaded copy simply didn't know about.
+		baseItem?: DigimonItem
 	) => void;
 	onDelete?: (level: string, name: string) => Promise<boolean> | void;
 	levels: string[];
@@ -95,7 +98,8 @@ const DigimonModal: React.FC<Props> = ({
 
 		const originalName = isEditMode ? editData.digimon.name : undefined;
 		const originalLevel = isEditMode ? editData.level : undefined;
-		onSubmit(level, item, originalName, originalLevel);
+		const baseItem = isEditMode ? editData.digimon : undefined;
+		onSubmit(level, item, originalName, originalLevel, baseItem);
 		resetForm();
 		handleClose();
 	};

@@ -10,14 +10,24 @@ const useEditDigimon = () => {
 		level: string,
 		item: DigimonItem,
 		originalName?: string,
-		originalLevel?: string
-	): Promise<boolean> => {
+		originalLevel?: string,
+		// The entry the edit started from: the API merges against it so relations
+		// added by the mirroring since then survive the save. It matters here in
+		// particular, this hook editing from pages that never refresh their list.
+		baseItem?: DigimonItem
+	): Promise<DigimonItem | null> => {
 		// No originalName -> the digimon has no ranked entry yet: create it.
 		const isEdit = !!originalName;
 		const endpoint = isEdit ? '/api/update-digimon' : '/api/add-digimon';
 		const body =
 			isEdit ?
-				{ level, digimon: item, originalName, originalLevel: originalLevel || level }
+				{
+					level,
+					digimon: item,
+					originalName,
+					originalLevel: originalLevel || level,
+					baseItem,
+				}
 			:	{ level, digimon: item };
 		try {
 			const response = await fetch(endpoint, {
@@ -28,14 +38,16 @@ const useEditDigimon = () => {
 			const data = await response.json();
 			if (!response.ok) {
 				addToast(data.error || 'Failed to save relations', 'danger');
-				return false;
+				return null;
 			}
 			addToast(`Relations of "${item.name}" ${isEdit ? 'updated' : 'added'}`);
-			return true;
+			// The stored entry, merged and mirrored: what the caller has to display
+			// from now on, its own copy being the one the merge was made against.
+			return (data.digimon as DigimonItem) || item;
 		} catch (error) {
 			console.error('Failed to save relations:', error);
 			addToast('Failed to save relations', 'danger');
-			return false;
+			return null;
 		}
 	};
 

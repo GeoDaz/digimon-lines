@@ -3544,7 +3544,11 @@
         "name": "arkadimon_7",
         "year": "2003",
         "url": "https://wikimon.net/Arkadimon_Super_Ultimate",
-        "level": "Mega",
+        "level": [
+            "Mega",
+            "Mega+",
+            "Ultra"
+        ],
         "type": "Bewitching Beast",
         "attribute": "Virus",
         "field": "Dark Area"
@@ -8717,7 +8721,11 @@
         "name": "demon_super_ultimate",
         "year": "2003",
         "url": "https://wikimon.net/Demon_Super_Ultimate",
-        "level": "Mega",
+        "level": [
+            "Mega",
+            "Mega+",
+            "Ultra"
+        ],
         "type": "Demon Lord",
         "attribute": "Virus",
         "field": "Nightmare Soldiers"

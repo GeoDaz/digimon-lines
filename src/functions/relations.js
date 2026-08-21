@@ -106,6 +106,38 @@ const normalizeItem = item => {
 	return next;
 };
 
+/**
+ * Three way merge of the relations of one entry.
+ *
+ * The editors send the whole entry, built from the list they loaded: an entry
+ * mirrored since then holds relations their copy doesn't know about, and saving
+ * it as is would drop them (and, through the mirroring, the opposite side too).
+ * So the submitted relations are only trusted for what they change compared to
+ * `baseItem`, the entry the edit started from: a name it dropped is removed, and
+ * a name `storedItem` gained meanwhile is kept.
+ *
+ * `baseItem` is what the client had, `storedItem` what the file holds now. Pass
+ * nothing as `baseItem` to take `item` as is.
+ */
+const mergeItemRelations = (storedItem, item, baseItem) => {
+	if (!baseItem) return normalizeItem(item);
+	const merged = { ...item };
+	RELATION_KEYS.forEach(key => {
+		const submitted = relations(item, key);
+		const removed = relations(baseItem, key).filter(
+			value => !submitted.includes(value)
+		);
+		// Names the file gained since the client loaded it, minus the ones this
+		// edit removed on purpose.
+		const gained = relations(storedItem, key).filter(
+			value => !submitted.includes(value) && !removed.includes(value)
+		);
+		if (!gained.length) return;
+		merged[key] = submitted.concat(gained);
+	});
+	return normalizeItem(merged);
+};
+
 // name -> { level, item } lookup over the whole ranked list.
 const indexItems = ranked => {
 	const index = {};
@@ -329,6 +361,7 @@ module.exports = {
 	RELATION_KEYS,
 	KEY_ORDER,
 	normalizeItem,
+	mergeItemRelations,
 	spuriousRelations,
 	indexItems,
 	syncRelations,

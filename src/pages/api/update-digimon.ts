@@ -3,13 +3,19 @@ import fs from 'fs';
 import path from 'path';
 import { DigimonItem } from '@/types/Digimon';
 import { IS_DEV } from '@/consts/env';
-import { renameRelationsTo, syncRelations } from '@/functions/relations';
+import {
+	mergeItemRelations,
+	renameRelationsTo,
+	syncRelations,
+} from '@/functions/relations';
 
 interface UpdateDigimonRequest {
 	level: string;
 	originalName: string;
 	originalLevel?: string;
 	digimon: DigimonItem;
+	/** The entry the edit started from, to merge against the stored one. */
+	baseItem?: DigimonItem;
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -22,7 +28,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 	}
 
 	try {
-		const { level, originalName, digimon } = req.body as UpdateDigimonRequest;
+		const { level, originalName, digimon, baseItem } =
+			req.body as UpdateDigimonRequest;
 		// The digimon has no id, so the client sends its previous level to move it.
 		const originalLevel =
 			(req.body as UpdateDigimonRequest).originalLevel || level;
@@ -73,6 +80,14 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 			JSON.stringify(ranked[originalLevel][originalName])
 		) as DigimonItem;
 
+		// The client may have edited a copy the mirroring has completed since:
+		// keep the relations it doesn't know about instead of dropping them.
+		const item = mergeItemRelations(
+			previousItem,
+			digimon,
+			baseItem
+		) as DigimonItem;
+
 		if (movingLevel || renaming) {
 			delete ranked[originalLevel][originalName];
 		}
@@ -80,7 +95,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 		if (!ranked[level]) {
 			ranked[level] = {};
 		}
-		ranked[level][digimon.name] = digimon;
+		ranked[level][item.name] = item;
 
 		// Drop the source level if the move emptied it.
 		if (
@@ -94,15 +109,15 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 		// Follow the rename in the relations of the other digimons before
 		// mirroring, so they are compared under the new name.
 		if (renaming) {
-			renameRelationsTo(ranked, originalName, digimon.name);
+			renameRelationsTo(ranked, originalName, item.name);
 		}
-		syncRelations(ranked, digimon.name, previousItem);
+		syncRelations(ranked, item.name, previousItem);
 
 		fs.writeFileSync(filePath, JSON.stringify(ranked, null, 4), 'utf-8');
 
 		return res.status(200).json({
 			success: true,
-			digimon: ranked[level][digimon.name],
+			digimon: ranked[level][item.name],
 			level,
 			originalLevel,
 			originalName,
