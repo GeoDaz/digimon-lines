@@ -8,9 +8,9 @@ import { Digimon } from '@/types/Digimon';
 const LinePointData: React.FC<{
 	name: string;
 	className?: string;
-	// Explicit datum overrides the context lookup (used to reflect live edits).
 	datum?: Digimon;
-}> = ({ name, className, datum: datumProp }) => {
+	level?: string;
+}> = ({ name, className, datum: datumProp, level }) => {
 	const { data, dubNames } = useContext(DigimonContext);
 	const dubName = dubNames[name];
 	const datum = datumProp || data[name] || (dubName && data[dubName]);
@@ -19,12 +19,20 @@ const LinePointData: React.FC<{
 	// Hybrid « Variable », même quand la donnée ne le précise pas.
 	const attributes = getAttributeIcons(datum.attribute, datum.level);
 	const fields = getFieldIcons(datum.field);
+	const datumLevels =
+		Array.isArray(datum.level) ? datum.level
+		: datum.level ? [datum.level]
+		: [];
+	const mainLevel = level || datumLevels[0];
+	const otherLevels = datumLevels.filter(datumLevel => datumLevel !== mainLevel);
 	return (
 		<div className={makeClassName('grid-2 text-start align-items-center', className)}>
-			{!!datum.level && (
+			{!!mainLevel && (
 				<div>
-					<strong>Level&nbsp;:</strong>{' '}
-					{Array.isArray(datum.level) ? datum.level.join(', ') : datum.level}
+					<strong>Level&nbsp;:</strong> {mainLevel}{' '}
+					{otherLevels.length > 0 && (
+						<small className="text-muted">({otherLevels.join(', ')})</small>
+					)}
 				</div>
 			)}
 			{!!datum.type && (
