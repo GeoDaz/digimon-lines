@@ -130,7 +130,11 @@ const LineImageModal: React.FC<Props> = ({
 				{hasData && (
 					<Card className="mt-3">
 						<CardBody>
-							<LinePointData name={activeName} datum={datum} />
+							<LinePointData
+								name={activeName}
+								datum={datum}
+								level={itemLevel}
+							/>
 						</CardBody>
 					</Card>
 				)}

@@ -9607,7 +9607,8 @@
             "to": [
                 "zeekgreymon",
                 "shoutmon_x3gm",
-                "decker_greymon"
+                "decker_greymon",
+                "neomyotismon_darkness_mode_metal_greymon"
             ]
         },
         "metallifekuwagamon": {
@@ -12441,13 +12442,6 @@
                 "aegiochusmon_green"
             ]
         },
-        "cernumon": {
-            "name": "cernumon",
-            "from": [
-                "hydramon",
-                "puppetmon"
-            ]
-        },
         "chaosgallantmon": {
             "name": "chaosgallantmon",
             "variants": [
@@ -13234,7 +13228,7 @@
         },
         "mastemon": {
             "name": "mastemon",
-            "from": [
+            "fusionFrom": [
                 "angewomon",
                 "ladydevimon"
             ]
@@ -13380,7 +13374,8 @@
             ],
             "to": [
                 "neomyotismon_darkness_mode",
-                "grandgeneramon"
+                "grandgeneramon",
+                "neomyotismon_darkness_mode_metal_greymon"
             ]
         },
         "neomyotismon_darkness_mode": {
@@ -13435,12 +13430,6 @@
             "from": [
                 "angewomon",
                 "arkhaiangemon"
-            ]
-        },
-        "ophanimon_core": {
-            "name": "ophanimon_core",
-            "from": [
-                "ophanimon"
             ]
         },
         "ophanimon_falldown_mode": {
@@ -13608,16 +13597,6 @@
                 "rookchessmon_black"
             ]
         },
-        "rafflesimon": {
-            "name": "rafflesimon",
-            "from": [
-                "oleamon"
-            ],
-            "fusionFrom": [
-                "rosemon",
-                "lotusmon"
-            ]
-        },
         "ragnalordmon": {
             "name": "ragnalordmon",
             "from": [
@@ -13780,12 +13759,6 @@
             ],
             "from": [
                 "taomon"
-            ]
-        },
-        "samudramon_itto_mode": {
-            "name": "samudramon_itto_mode",
-            "from": [
-                "samudramon"
             ]
         },
         "seitengokuwmon": {
@@ -13971,21 +13944,15 @@
         },
         "ulforceveedramon": {
             "name": "ulforceveedramon",
+            "modes": [
+                "ulforceveedramon_future_mode"
+            ],
             "x": [
                 "ulforceveedramon_x"
             ],
             "from": [
                 "aeroveedramon",
                 "wingdramon"
-            ],
-            "to": [
-                "ulforceveedramon_future_mode"
-            ]
-        },
-        "ulforceveedramon_future_mode": {
-            "name": "ulforceveedramon_future_mode",
-            "from": [
-                "ulforceveedramon"
             ]
         },
         "valdurmon": {
@@ -14364,6 +14331,43 @@
             "name": "arresterdramon_superior_mode_brave_snatcher",
             "from": [
                 "arresterdramon_superior_mode"
+            ]
+        },
+        "lucemon_larva": {
+            "name": "lucemon_larva",
+            "modes": [
+                "lucemon_falldown_mode",
+                "lucemon_satan_mode"
+            ],
+            "to": [
+                "ogudomon"
+            ]
+        },
+        "bagramon": {
+            "name": "bagramon",
+            "from": [
+                "magnaangemon_priest_mode",
+                "magnaangemon",
+                "lucemon_falldown_mode"
+            ],
+            "to": [
+                "darkness_bagramon"
+            ]
+        },
+        "imperialdramon_fighter_mode": {
+            "name": "imperialdramon_fighter_mode",
+            "variants": [
+                "imperialdramon_fighter_mode_black"
+            ],
+            "modes": [
+                "imperialdramon_dragon_mode"
+            ],
+            "from": [
+                "paildramon",
+                "dinobeemon"
+            ],
+            "to": [
+                "imperialdramon_paladin_mode"
             ]
         }
     },
@@ -14897,7 +14901,6 @@
                 "metalgarurumon"
             ],
             "to": [
-                "omegamon_merciful_mode",
                 "imperialdramon_paladin_mode"
             ]
         },
@@ -14955,13 +14958,6 @@
             "fusionFrom": [
                 "blitzgreymon",
                 "cresgarurumon"
-            ]
-        },
-        "susanomon": {
-            "name": "susanomon",
-            "fusionFrom": [
-                "emperorgreymon",
-                "magnagarurumon"
             ]
         },
         "agumon_burst_mode": {
@@ -15073,17 +15069,6 @@
                 "armamon"
             ]
         },
-        "bagramon": {
-            "name": "bagramon",
-            "from": [
-                "magnaangemon_priest_mode",
-                "magnaangemon",
-                "lucemon_falldown_mode"
-            ],
-            "to": [
-                "darkness_bagramon"
-            ]
-        },
         "chaosdramon": {
             "name": "chaosdramon",
             "x": [
@@ -15154,22 +15139,6 @@
                 "apollomon"
             ]
         },
-        "imperialdramon_fighter_mode": {
-            "name": "imperialdramon_fighter_mode",
-            "variants": [
-                "imperialdramon_fighter_mode_black"
-            ],
-            "modes": [
-                "imperialdramon_dragon_mode"
-            ],
-            "from": [
-                "paildramon",
-                "dinobeemon"
-            ],
-            "to": [
-                "imperialdramon_paladin_mode"
-            ]
-        },
         "imperialdramon_fighter_mode_black": {
             "name": "imperialdramon_fighter_mode_black",
             "variants": [
@@ -15197,16 +15166,6 @@
             "name": "junomon_hysteric_mode",
             "from": [
                 "junomon"
-            ]
-        },
-        "lucemon_larva": {
-            "name": "lucemon_larva",
-            "modes": [
-                "lucemon_falldown_mode",
-                "lucemon_satan_mode"
-            ],
-            "to": [
-                "ogudomon"
             ]
         },
         "magneticdramon": {
@@ -15472,6 +15431,42 @@
                 "slayerdramon",
                 "breakdramon"
             ]
+        },
+        "rafflesimon": {
+            "name": "rafflesimon",
+            "from": [
+                "oleamon"
+            ],
+            "fusionFrom": [
+                "rosemon",
+                "lotusmon"
+            ]
+        },
+        "cernumon": {
+            "name": "cernumon",
+            "from": [
+                "hydramon",
+                "puppetmon"
+            ]
+        },
+        "ophanimon_core": {
+            "name": "ophanimon_core",
+            "from": [
+                "ophanimon"
+            ]
+        },
+        "neomyotismon_darkness_mode_metal_greymon": {
+            "name": "neomyotismon_darkness_mode_metal_greymon",
+            "fusionFrom": [
+                "neomyotismon",
+                "metalgreymon_blue_2"
+            ]
+        },
+        "ulforceveedramon_future_mode": {
+            "name": "ulforceveedramon_future_mode",
+            "from": [
+                "ulforceveedramon"
+            ]
         }
     },
     "Mega+ X": {
@@ -15521,6 +15516,12 @@
             "from": [
                 "alphamon",
                 "ouryumon"
+            ]
+        },
+        "samudramon_itto_mode": {
+            "name": "samudramon_itto_mode",
+            "from": [
+                "samudramon"
             ]
         }
     },
@@ -15589,6 +15590,13 @@
             ],
             "from": [
                 "millenniumon"
+            ]
+        },
+        "susanomon": {
+            "name": "susanomon",
+            "fusionFrom": [
+                "emperorgreymon",
+                "magnagarurumon"
             ]
         }
     },

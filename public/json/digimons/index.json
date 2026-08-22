@@ -9721,7 +9721,10 @@
         "name": "ulforcevdramon_future_mode",
         "year": "2003",
         "url": "https://wikimon.net/Ulforce_V-dramon_Future_Mode",
-        "level": "Mega",
+        "level": [
+            "Mega",
+            "Ultra"
+        ],
         "type": "Holy Knight",
         "attribute": "Vaccine",
         "field": "Wind Guardians"
@@ -13453,9 +13456,12 @@
         "year": "2011",
         "url": "https://wikimon.net/Neo_Vamdemon_Darkness_Mode_(Metal_Greymon)",
         "level": [
-            "Mega"
+            "Mega",
+            "Mega+"
         ],
-        "attribute": "Virus"
+        "attribute": "Virus",
+        "type": "",
+        "field": ""
     },
     "neovamdemon_darkness_mode_shoutmon": {
         "name": "neovamdemon_darkness_mode_shoutmon",
@@ -15638,7 +15644,10 @@
         "name": "agumon_yuki_no_kizuma",
         "year": "2020",
         "url": "https://wikimon.net/Agumon_-Yuki_no_Kizuna-",
-        "level": "Mega",
+        "level": [
+            "Mega",
+            "Mega+"
+        ],
         "type": [
             "Unknown",
             "Species Unknown"
@@ -18703,5 +18712,27 @@
         "source": "DTBS 2",
         "level": "Baby II",
         "type": "Lesser"
+    },
+    "neomyotismon_darkness_mode": {
+        "level": [
+            "Mega",
+            "Mega+"
+        ],
+        "type": "",
+        "attribute": "",
+        "field": "",
+        "year": "2011",
+        "name": "neomyotismon_darkness_mode"
+    },
+    "magnamon_x_gold_digizoid": {
+        "level": [
+            "Mega",
+            "Mega+"
+        ],
+        "type": "",
+        "attribute": "",
+        "field": "",
+        "year": "",
+        "name": "magnamon_x_gold_digizoid"
     }
 }

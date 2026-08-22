@@ -1,8 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
 import { DigimonContext } from '@/context/digimon';
 import { makeClassName } from '@/functions';
 import { getAttributeIcons, getFieldIcons } from '@/functions/items';
 import ItemIcons from '../ItemIcons';
+import Icon from '../Icon';
 import { Digimon } from '@/types/Digimon';
 
 const LinePointData: React.FC<{
@@ -12,6 +14,12 @@ const LinePointData: React.FC<{
 	level?: string;
 }> = ({ name, className, datum: datumProp, level }) => {
 	const { data, dubNames } = useContext(DigimonContext);
+	// Les niveaux secondaires restent cachés derrière le bouton « … », et se
+	// referment quand le composant passe à un autre digimon.
+	const [showOtherLevels, setShowOtherLevels] = useState(false);
+	useEffect(() => {
+		setShowOtherLevels(false);
+	}, [name]);
 	const dubName = dubNames[name];
 	const datum = datumProp || data[name] || (dubName && data[dubName]);
 	if (!datum) return null;
@@ -30,9 +38,20 @@ const LinePointData: React.FC<{
 			{!!mainLevel && (
 				<div>
 					<strong>Level&nbsp;:</strong> {mainLevel}{' '}
-					{otherLevels.length > 0 && (
-						<small className="text-muted">({otherLevels.join(', ')})</small>
-					)}
+					{otherLevels.length > 0 &&
+						(showOtherLevels ?
+							<small className="text-muted">
+								({otherLevels.join(', ')})
+							</small>
+						:	<Button
+								variant="secondary"
+								size="sm"
+								className="py-0 px-1 lh-1"
+								title="Show the other levels"
+								onClick={() => setShowOtherLevels(true)}
+							>
+								<Icon name="three-dots" />
+							</Button>)}
 				</div>
 			)}
 			{!!datum.type && (
