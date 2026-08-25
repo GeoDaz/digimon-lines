@@ -105,24 +105,19 @@ const DigimonDataModal: React.FC<Props> = ({
 								onChange={e => setAttribute(e.target.value)}
 							/>
 						</Col>
-						<Col md={12}>
+						<Col md={6}>
 							<Form.Label>Field</Form.Label>
 							<Form.Control
 								value={field}
 								onChange={e => setField(e.target.value)}
 							/>
-							<Form.Text muted>Comma-separated for multiple values.</Form.Text>
 						</Col>
-						<Col md={12}>
+						<Col md={6}>
 							<Form.Label>Source</Form.Label>
 							<Form.Control
 								value={source}
 								onChange={e => setSource(e.target.value)}
 							/>
-							<Form.Text muted>
-								Where it comes from when Wikimon has no page for it, ex
-								&laquo;&nbsp;DW3&nbsp;&raquo;.
-							</Form.Text>
 						</Col>
 					</Row>
 				</Form>
