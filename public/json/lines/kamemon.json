@@ -1,68 +1,211 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{ "name": "archelomon", "color": ["marine"], "from": [[1, -1]] },
-			{ "name": "zudomon", "color": ["marine"], "from": [[0, -1]] },
-			{ "name": "jumbogamemon", "from": [[1, -1]] },
-			null,
-			null
-		],
-		[
-			{ "name": "pipimon", "from": null },
-			{ "name": "chapmon" },
-			{ "name": "kamemon" },
-			{ "name": "gawappamon" },
-			{ "name": "shawujinmon" },
-			{ "name": "takutomon", "color": ["light"] },
-			{ "name": "takutomon_wrath_mode", "color": ["mode"] },
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "sagomon",
-				"from": [
-					[-1, -1],
-					[1, -1]
-				],
-				"color": ["marine", "marine"]
-			},
-			{ "name": "erlangmon", "from": [[0, -1]] },
-			{ "name": "erlangmon_blast_mode", "from": [[0, -1]], "color": ["mode"] },
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{ "name": "tortamon", "from": [[-2, -1]], "color": ["earth"] },
-			{ "name": "proganomon", "from": [[0, -1]], "color": ["earth"] },
-			{
-				"name": "eldoradimon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				],
-				"color": ["earth", "earth"]
-			},
-			{ "name": "tlalocmon", "color": ["fusion"], "from": [[0, -1]] },
-			null
-		],
-		[null, null, null, null, null, null, null, null]
-	],
-	"related": [
-		{ "name": "shakamon", "from": "sagomon" },
-		{ "name": "leomon", "from": "tlalocmon" },
-		{ "name": "woodmon", "for": "xuanwumon" },
-		{ "name": "golemon", "for": "tortamon" },
-		{ "name": "armadillomon", "from": "proganomon" },
-		{ "name": "gomamon", "for": "zudomon" }
-	],
-	"size": 8
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "archelomon",
+                "color": [
+                    "marine"
+                ],
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "zudomon",
+                "color": [
+                    "marine"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "jumbogamemon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "pitchmon",
+                "from": null
+            },
+            {
+                "name": "chapmon"
+            },
+            {
+                "name": "kamemon"
+            },
+            {
+                "name": "gawappamon"
+            },
+            {
+                "name": "shawujinmon"
+            },
+            {
+                "name": "takutomon",
+                "color": [
+                    "light"
+                ]
+            },
+            {
+                "name": "takutomon_wrath_mode",
+                "color": [
+                    "mode"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "sagomon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "marine",
+                    "marine"
+                ]
+            },
+            {
+                "name": "erlangmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "erlangmon_blast_mode",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "mode"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tortamon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "earth"
+                ]
+            },
+            {
+                "name": "proganomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "earth"
+                ]
+            },
+            {
+                "name": "eldoradimon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "earth",
+                    "earth"
+                ]
+            },
+            {
+                "name": "tlalocmon",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "shakamon",
+            "from": "sagomon"
+        },
+        {
+            "name": "leomon",
+            "from": "tlalocmon"
+        },
+        {
+            "name": "woodmon",
+            "for": "xuanwumon"
+        },
+        {
+            "name": "golemon",
+            "for": "tortamon"
+        },
+        {
+            "name": "armadillomon",
+            "from": "proganomon"
+        },
+        {
+            "name": "gomamon",
+            "for": "zudomon"
+        }
+    ],
+    "size": 7
 }
