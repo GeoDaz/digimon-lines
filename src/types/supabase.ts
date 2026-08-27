@@ -107,7 +107,6 @@ export type Database = {
           public_count: number
         }[]
       }
-      is_admin: { Args: never; Returns: boolean }
     }
     Enums: {
       [_ in never]: never
