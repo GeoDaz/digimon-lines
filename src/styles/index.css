@@ -258,15 +258,13 @@ h2 {
 .navbar {
 	font-weight: bold;
 }
-
 .navbar.navbar-dark {
 	border-bottom: var(--dl-border);
 	box-shadow: var(--dl-box-shadow);
 }
 
-.navbar .navbar-brand img {
-	/* max-height: 27px; */
-	margin-right: 0.5em;
+.navbar .navbar-brand {
+	margin-right: 0;
 }
 
 .donate {

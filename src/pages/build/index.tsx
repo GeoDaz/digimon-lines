@@ -145,7 +145,7 @@ export const PageBuild = (props: BuildProps) => {
 				Saving it to your account keeps every line and makes it reachable from any
 				device.
 				<br /> You can reload a line file you were sent with the{' '}
-				<b>Import from {'{}'}</b> button.
+				<b>Import from Code</b> button.
 			</blockquote>
 			<div className="line-filters align-items-center">
 				<BoostrapSwitch

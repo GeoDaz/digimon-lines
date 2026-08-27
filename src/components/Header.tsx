@@ -12,7 +12,13 @@ const Header: React.FC = () => (
 		<Navbar bg="dark" variant="dark" /* expand="lg" */>
 			<Container fluid className="justify-content-start gap-4">
 				<Navbar.Brand as={Link} href="/">
-					<Image src="/images/icon.png" alt="logo" height="26" width="32" />{' '}
+					<Image
+						src="/images/icon.png"
+						alt="logo"
+						height="26"
+						width="32"
+						className="mr-sm-2"
+					/>{' '}
 					<span className="d-none d-sm-inline-block">Digimon Lines</span>
 				</Navbar.Brand>
 				<Nav className="flex-grow-1">
