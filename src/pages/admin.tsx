@@ -1,11 +1,13 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Alert, Button, Form, Spinner, Table } from 'react-bootstrap';
+import { Button, Form, Spinner, Table } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import Icon from '@/components/Icon';
+import NotFound from '@/components/NotFound';
 import { useAuth } from '@/context/auth';
 import { useToast } from '@/context/toast';
 import { AdminProfile, listAdminProfiles, setLineQuota } from '@/functions/admin';
+import { redirect } from 'next/navigation';
 
 const PageAdmin = () => {
 	const { profile, loading: authLoading, enabled } = useAuth();
@@ -70,15 +72,17 @@ const PageAdmin = () => {
 		}
 	};
 
-	if (!enabled || (!authLoading && !isAdmin)) {
-		return (
-			<Layout title="Administration" metatitle="Administration">
-				<Alert variant="warning">
-					This page is reserved for administrators.{' '}
-					<Link href="/">Back to the lines</Link>.
-				</Alert>
-			</Layout>
-		);
+	/*
+	 * Page introuvable plutôt que « réservé aux administrateurs » : rien
+	 * n'indique alors que /admin existe. Purement cosmétique — le site est
+	 * statique, donc le statut HTTP reste 200 et la vraie protection est la RLS
+	 * (admin_list_profiles ne renvoie rien à un non-admin).
+	 */
+	if (authLoading) {
+		return <NotFound />;
+	}
+	if (!enabled || !isAdmin) {
+		redirect('/404');
 	}
 
 	const totalLines = profiles.reduce((sum, p) => sum + Number(p.line_count), 0);
