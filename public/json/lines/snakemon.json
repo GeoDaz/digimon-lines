@@ -393,7 +393,10 @@
             "name": "gatomon",
             "from": "minervamon"
         },
-        "gekkomon",
+        {
+            "name": "gekkomon",
+            "for": "albatusmon"
+        },
         {
             "name": "armadillomon",
             "for": "stegomon"

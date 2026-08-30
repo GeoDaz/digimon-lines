@@ -1,52 +1,112 @@
 {
-	"columns": [
-		[
-			{
-				"name": "kekomon"
-			},
-			{
-				"name": "kekkomon"
-			},
-			{
-				"name": "gekkomon"
-			},
-			{
-				"name": "armalizamon"
-			},
-			{
-				"name": "monarchlizamon"
-			},
-			{
-				"name": "unknown"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "chamelemon",
-				"from": [-1, -1]
-			}
-		]
-	],
-	"related": [
-		"gekomon",
-		{
-			"name": "golemon",
-			"for": "sunarizamon"
-		},
-		{
-			"name": "snakemon",
-			"for": "iguneetmon"
-		},
-		{
-			"name": "vorvomon",
-			"for": "salamandermon"
-		},
-		{
-			"name": "gemmon",
-			"for": "reptilimon"
-		}
-	]
+    "columns": [
+        [
+            {
+                "name": "kekomon",
+                "from": null
+            },
+            {
+                "name": "kekkomon"
+            },
+            {
+                "name": "gekkomon"
+            },
+            {
+                "name": "armalizamon"
+            },
+            {
+                "name": "monarchlizamon"
+            },
+            {
+                "name": "atratusmon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "coatlmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "heliosboamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "albatusmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "chamelemon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "snakemon",
+            "for": "heliosboamon"
+        },
+        {
+            "name": "golemon",
+            "for": "sunarizamon"
+        },
+        {
+            "name": "vorvomon",
+            "for": "salamandermon"
+        },
+        {
+            "name": "toyagumon",
+            "for": "flarelizardmon"
+        },
+        {
+            "name": "gemmon",
+            "for": "reptilimon"
+        }
+    ],
+    "size": 6
 }

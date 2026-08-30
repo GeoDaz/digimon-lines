@@ -203,7 +203,7 @@
             null,
             null,
             {
-                "name": "coelamon",
+                "name": "tylomon",
                 "from": [
                     [
                         -3,
@@ -218,7 +218,7 @@
                 "name": "sharkmon",
                 "from": [
                     [
-                        1,
+                        0,
                         -1
                     ]
                 ],
@@ -245,23 +245,12 @@
             null,
             null,
             null,
-            {
-                "name": "tylomon",
-                "from": [
-                    [
-                        -4,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "marine"
-                ]
-            },
+            null,
             {
                 "name": "anomalocarimon",
                 "from": [
                     [
-                        0,
+                        -1,
                         -1
                     ],
                     [
@@ -277,16 +266,11 @@
             {
                 "name": "plesiomon",
                 "color": [
-                    "marine",
                     "marine"
                 ],
                 "from": [
                     [
                         0,
-                        -1
-                    ],
-                    [
-                        2,
                         -1
                     ]
                 ]
@@ -313,7 +297,7 @@
                 "name": "tylomon_x",
                 "from": [
                     [
-                        -1,
+                        -2,
                         0
                     ]
                 ],
@@ -357,60 +341,6 @@
             },
             null,
             null
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "gizamon",
-                "from": [
-                    [
-                        -6,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "dark"
-                ]
-            },
-            {
-                "name": "cyclomon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "dark"
-                ]
-            },
-            {
-                "name": "brachiomon"
-            },
-            {
-                "name": "cannondramon"
-            },
-            null,
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "ultimatebrachimon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ]
-            },
-            null,
-            null
         ]
     ],
     "related": [
@@ -422,69 +352,20 @@
             "from": "seadramon"
         },
         {
-            "name": "golemon",
-            "for": "landramon",
-            "from": "sunarizamon"
-        },
-        {
-            "name": "bemmon",
-            "for": "grimmon"
-        },
-        {
             "name": "dracomon",
-            "from": "airdramon"
-        },
-        {
-            "name": "monodramon",
-            "from": "gigadramon"
-        },
-        {
-            "name": "greymon",
-            "for": "snowagumon"
-        },
-        {
-            "name": "jazamon",
-            "from": "gigadramon"
-        },
-        {
-            "name": "patamon",
-            "for": "goldramon"
-        },
-        {
-            "name": "impmon",
-            "for": "heavymetaldramon"
-        },
-        {
-            "name": "guilmon",
-            "for": "megidramon"
-        },
-        {
-            "name": "veemon",
-            "for": "azulongmon"
-        },
-        {
-            "name": "gatomon",
-            "for": "magnadramon"
-        },
-        {
-            "name": "ryudamon",
-            "for": "ouryumon"
-        },
-        {
-            "name": "greymon",
-            "for": "cyclomon"
-        },
-        {
-            "name": "commandramon",
-            "for": "darkdramon"
+            "for": "airdramon"
         },
         {
             "name": "gomamon",
             "for": "plesiomon"
         },
         {
-            "name": "gammamon",
-            "for": "brachiomon"
+            "name": "greymon",
+            "for": "snowagumon"
+        },
+        {
+            "name": "gekomon",
+            "for": "gizamon"
         },
         {
             "name": "fujamon",
@@ -495,10 +376,6 @@
             "for": "anomalocarimon"
         },
         {
-            "name": "toyagumon",
-            "from": "flarelizardmon"
-        },
-        {
             "name": "gekomon",
             "for": "otamamon"
         },
@@ -507,16 +384,21 @@
             "for": "hangyomon"
         },
         {
-            "name": "falcomon_2",
-            "for": "xiangpengmon"
+            "name": "gammamon",
+            "for": "brachiomon"
         },
         {
-            "name": "apocalymon",
-            "from": "metalseadramon"
+            "name": "golemon",
+            "for": "landramon",
+            "from": "sunarizamon"
         },
         {
             "name": "ogudomon",
             "from": "leviamon"
+        },
+        {
+            "name": "falcomon_2",
+            "for": "xiangpengmon"
         }
     ],
     "size": 8
