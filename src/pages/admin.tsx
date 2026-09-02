@@ -7,10 +7,9 @@ import NotFound from '@/components/NotFound';
 import { useAuth } from '@/context/auth';
 import { useToast } from '@/context/toast';
 import { AdminProfile, listAdminProfiles, setLineQuota } from '@/functions/admin';
-import { redirect } from 'next/navigation';
 
 const PageAdmin = () => {
-	const { profile, loading: authLoading, enabled } = useAuth();
+	const { user, profile, loading: authLoading, enabled } = useAuth();
 	const { addToast } = useToast();
 
 	const [profiles, setProfiles] = useState<AdminProfile[]>([]);
@@ -77,12 +76,14 @@ const PageAdmin = () => {
 	 * n'indique alors que /admin existe. Purement cosmétique — le site est
 	 * statique, donc le statut HTTP reste 200 et la vraie protection est la RLS
 	 * (admin_list_profiles ne renvoie rien à un non-admin).
+	 *
+	 * `authLoading` ne couvre que la session ; le profil, d'où vient le rôle,
+	 * est lu dans un second temps. Sans attendre `profile`, un administrateur se
+	 * verrait refuser sa propre page le temps de cet aller-retour.
 	 */
-	if (authLoading) {
+	const resolving = authLoading || (!!user && !profile);
+	if (!enabled || resolving || !isAdmin) {
 		return <NotFound />;
-	}
-	if (!enabled || !isAdmin) {
-		redirect('/404');
 	}
 
 	const totalLines = profiles.reduce((sum, p) => sum + Number(p.line_count), 0);
