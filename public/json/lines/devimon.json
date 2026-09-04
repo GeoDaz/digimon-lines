@@ -71,7 +71,7 @@
 			null,
 			null,
 			null,
-			null,
+			{ "name": "evilmon", "color": ["dark"], "from": [[1, -1]] },
 			null,
 			{
 				"name": "demon",
@@ -183,8 +183,12 @@
 		{ "name": "app_hackmon", "for": "app_docmon" },
 		{ "name": "toyagumon", "for": "boltboutamon" },
 		{ "name": "jellymon", "for": "marinedevimon" },
-		{ "name": "impmon", "for": "boogiemon" },
 		{ "name": "bakemon", "for": "piemon" },
+		{ "name": "impmon", "for": "boogiemon" },
+		{ "name": "impmon" },
+		{ "name": "bakemon" },
+		{ "name": "ogremon" },
+		{ "name": "negamon", "for": "deathmon" },
 		{ "name": "arkadimon", "from": "demon_super_ultimate" },
 		{ "name": "fujamon", "for": "leviamon" }
 	],
