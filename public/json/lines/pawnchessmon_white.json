@@ -42,6 +42,9 @@
                         3,
                         -1
                     ]
+                ],
+                "color": [
+                    "gold"
                 ]
             },
             null,
@@ -59,12 +62,24 @@
         [
             null,
             null,
-            null,
+            {
+                "name": "kotemon",
+                "from": [
+                    [
+                        2.5,
+                        -1
+                    ]
+                ]
+            },
             {
                 "name": "gladimon",
                 "from": [
                     [
                         2,
+                        -1
+                    ],
+                    [
+                        0,
                         -1
                     ]
                 ]
@@ -104,7 +119,15 @@
                     "light"
                 ]
             },
-            null,
+            {
+                "name": "rookchessmon_white",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
             {
                 "name": "craniummon_x",
                 "from": [
@@ -143,12 +166,16 @@
             },
             {
                 "name": "bishopchessmon_white",
-                "skins": [
-                    "rookchessmon_white"
-                ]
+                "skins": []
             },
             {
-                "name": "kingchessmon"
+                "name": "kingchessmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
             },
             null
         ],
@@ -169,12 +196,55 @@
             },
             {
                 "name": "rookchessmon_black",
-                "skins": [
-                    "bishopchessmon_black"
+                "skins": []
+            },
+            {
+                "name": "queenchessmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "darkmaildramon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
                 ]
             },
             {
-                "name": "queenchessmon"
+                "name": "bishopchessmon_black",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "darkknightmon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
             },
             null
         ],
@@ -186,7 +256,7 @@
                 "name": "skullknightmon",
                 "from": [
                     [
-                        -1,
+                        -2,
                         -1
                     ]
                 ],
@@ -221,7 +291,6 @@
                     "fusion"
                 ],
                 "skins": [
-                    "greyknightsmon",
                     "darkknightmon_bagramon"
                 ],
                 "from": [
@@ -252,26 +321,6 @@
                 "name": "deadlyaxemon",
                 "from": [
                     [
-                        -2,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "dark"
-                ]
-            },
-            null,
-            null,
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "darkmaildramon",
-                "from": [
-                    [
                         -3,
                         -1
                     ]
@@ -280,19 +329,39 @@
                     "dark"
                 ]
             },
+            null,
             {
-                "name": "darkknightmon_x",
-                "color": [
-                    "x"
+                "name": "greyknightsmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
                 ],
+                "color": [
+                    "fusion"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "shoutmon_x3sd",
                 "from": [
                     [
                         -2,
-                        0
+                        -1
                     ]
+                ],
+                "color": [
+                    "fusion"
                 ]
             },
-            null,
             null
         ]
     ],
@@ -307,6 +376,10 @@
             "for": "shoutmon_x4k"
         },
         {
+            "name": "shoutmon",
+            "for": "shoutmon_x3sd"
+        },
+        {
             "name": "leomon",
             "for": "leopardmon"
         },
@@ -319,8 +392,8 @@
             "for": "gallantmon"
         },
         {
-            "name": "shoutmon",
-            "for": "shoutmon_x3sd"
+            "name": "patamon",
+            "for": "bagramon"
         },
         {
             "name": "patamon",
@@ -331,8 +404,8 @@
             "for": "centarumon"
         },
         {
-            "name": "patamon",
-            "for": "bagramon"
+            "name": "sukamon",
+            "for": "deadly_tuwarmon"
         },
         {
             "name": "greymon",
