@@ -5,6 +5,7 @@ import Line, {
 	LineSkin,
 	LineThumb,
 } from '@/types/Line';
+import { levels as defaultLevels } from '@/consts/levels';
 import { getSearchPriority } from './search';
 import { byteSize, isUploadedImage } from './images';
 import { StringArrayObject } from '@/types/Ui';
@@ -61,6 +62,12 @@ export const transformLine = (line: Line | undefined): Line | undefined => {
 	}
 	return line;
 };
+
+export const getLineLevels = (line: Line): string[] =>
+	Array.from(
+		{ length: line.size },
+		(_, i) => line.levels?.[i] ?? defaultLevels[i] ?? ''
+	);
 
 export const prepareLineExport = (line: Line): Line => {
 	const cleanColumns = line.columns.map(col =>

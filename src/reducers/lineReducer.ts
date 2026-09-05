@@ -1,4 +1,6 @@
 import Line, { LineColumn, LineFrom, LinePoint } from '@/types/Line';
+import { levels as defaultLevels } from '@/consts/levels';
+import { getLineLevels } from '@/functions/line';
 // import { createSlice } from '@reduxjs/toolkit';
 
 type CellShift = (pos: number[]) => number[];
@@ -20,9 +22,10 @@ const remapPointFrom = (
 		const td = targetShift([pointPos[0] + f[0], pointPos[1] + f[1]]);
 		return [f[0] + td[0] - deltaP[0], f[1] + td[1] - deltaP[1]];
 	};
-	const nextFrom = Array.isArray(from[0])
-		? (from as number[][]).map(remap)
-		: remap(from as number[]);
+	const nextFrom =
+		Array.isArray(from[0]) ?
+			(from as number[][]).map(remap)
+		:	remap(from as number[]);
 	return { ...point, from: nextFrom as LineFrom };
 };
 
@@ -38,6 +41,14 @@ const remapGridFrom = (columns: LineColumn[], shift: CellShift): LineColumn[] =>
 			return remapPointFrom(point as LinePoint, pos, shift(pos), shift);
 		})
 	);
+
+const insertedLevel = (levels: string[], at: number): string => {
+	if (at === 0) return '';
+	const index = defaultLevels.indexOf(levels[at - 1]);
+	if (index < 0) return '';
+	const next = defaultLevels[index + 1];
+	return next && levels[at] !== next ? next : '';
+};
 
 export const SET_LINE = 'SET_LINE';
 export const SET_LINE_VALUE = 'SET_LINE_VALUE';
@@ -159,6 +170,10 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
 		}
 
 		case ADD_LINE_ROW: {
+			// Les libellés suivent leur ligne : on insère le libellé au même
+			// rang que la ligne, sinon ceux du dessous décaleraient d'un cran.
+			const levels = getLineLevels(line);
+			const at = action.i === undefined ? line.size : action.i + 1;
 			if (action.i === undefined) {
 				columns = line.columns.map(col => {
 					col = col.slice();
@@ -166,12 +181,12 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
 					return col;
 				});
 			} else {
-				const at = action.i + 1;
 				// Cells at row >= at move one down.
 				columns = remapGridFrom(line.columns, pos => [0, pos[1] >= at ? 1 : 0]);
 				columns.forEach((col: LineColumn) => col.splice(at, 0, null));
 			}
-			return { ...line, columns, size: line.size + 1 };
+			levels.splice(at, 0, insertedLevel(levels, at));
+			return { ...line, columns, size: line.size + 1, levels };
 		}
 
 		case REMOVE_LINE_ROW: {
@@ -179,7 +194,8 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
 			// Cells at row > at move one up.
 			columns = remapGridFrom(line.columns, pos => [0, pos[1] > at ? -1 : 0]);
 			columns.forEach((col: LineColumn) => col.splice(at, 1));
-			return { ...line, columns, size: line.size - 1 };
+			const levels = getLineLevels(line).filter((level, i) => i !== at);
+			return { ...line, columns, size: line.size - 1, levels };
 		}
 
 		default:

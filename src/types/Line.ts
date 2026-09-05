@@ -7,6 +7,7 @@ export interface Line {
 	related?: Array<string | LineRelation>;
 	notes?: string[];
 	anchor?: LineAnchor;
+	levels?: string[];
 }
 
 /**
