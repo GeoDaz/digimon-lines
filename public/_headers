@@ -1,16 +1,23 @@
 # Règles d'en-têtes Netlify (https://docs.netlify.com/routing/headers/)
 #
 # Images de contenu : les chemins sont stables (ex. /images/digimon/greymon.jpg),
-# donc on autorise un cache navigateur long. Sans ça, Netlify sert ces fichiers
+# donc on peut les mettre en cache longtemps. Sans ça, Netlify sert ces fichiers
 # en `max-age=0, must-revalidate` : le navigateur ET les crawlers re-téléchargent
 # l'image à chaque affichage -> ~150 Go/mois de bande passante.
 #
+# Deux TTL distincts, parce qu'on a un CDN devant :
+# - s-maxage 30 jours : TTL de l'edge (Cloudflare + Netlify). C'est lui qui
+#   protège la bande passante Netlify, et c'est le seul que `npm run purge:cache`
+#   peut remettre à zéro à la demande.
+# - max-age 1 jour : TTL du navigateur. La purge Cloudflare NE vide PAS le cache
+#   des visiteurs ; garder ce TTL court est ce qui fait qu'une image corrigée se
+#   propage en 24 h max au lieu d'un mois. Coût nul côté Netlify : ces requêtes
+#   sont absorbées par l'edge.
+# - stale-while-revalidate : l'ancienne image reste affichée pendant que la
+#   nouvelle est re-téléchargée en tâche de fond (pas de trou visuel).
+#
 # next/image passe par le Netlify Image CDN, qui hérite du Cache-Control de la
 # source : en cachant /images/*, les WebP/AVIF servis via /_next/image héritent
-# aussi de ce cache long.
-#
-# max-age 7 jours + stale-while-revalidate : les visiteurs de retour et la
-# navigation entre digimon ne re-téléchargent plus rien pendant une semaine ;
-# une image corrigée se propage en ~7 jours (revalidation en tâche de fond).
+# aussi de ce cache.
 /images/*
-  Cache-Control: public, max-age=604800, stale-while-revalidate=604800
+  Cache-Control: public, max-age=86400, s-maxage=2592000, stale-while-revalidate=604800
