@@ -1212,6 +1212,12 @@ a.line-point {
 }
 
 /* dropdown */
+.dropdown.drop-none{
+	> button.dropdown-toggle::after {
+		content: none;
+	}
+}
+
 .dropdown-menu {
 	background-color: var(--bs-dark);
 	border: 1px solid var(--dl-snd-dark);

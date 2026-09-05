@@ -38,6 +38,7 @@
     "optimize:images": "node cmd/optimize-images.js",
     "mirror:relations": "node cmd/mirrorRelations.cmd.js",
     "dev:user": "node cmd/dev-user.cmd.js",
+    "purge:cache": "node cmd/purge-cache.cmd.js",
     "supabase": "node cmd/supabase.cmd.js",
     "supabase:types": "node cmd/supabase.cmd.js gen types typescript --linked --schema public > src/types/supabase.ts",
     "prepare": "node -e \"try{require('child_process').execSync('git config core.hooksPath .githooks')}catch(e){}\""
