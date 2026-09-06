@@ -1,218 +1,413 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "metalmamemon_x",
-				"color": "x",
-				"from": [1, 0]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "kokuwamon_x",
-				"color": "x",
-				"from": [2, 0]
-			},
-			{
-				"name": "thunderballmon_x",
-				"color": "x"
-			},
-			{
-				"name": "mamemon_x",
-				"color": "x"
-			},
-			{
-				"name": "princemamemon_x",
-				"color": "x"
-			}
-		],
-		[
-			{
-				"name": "bommon",
-				"from": null,
-				"xSize": 2
-			},
-			null,
-			null,
-			null,
-			{
-				"name": "mametyramon",
-				"from": [1, -1]
-			},
-			{
-				"name": "pukumon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				]
-			}
-		],
-		[
-			{
-				"name": "bombmon",
-				"from": null,
-				"xSize": 2
-			},
-			{
-				"name": "missimon",
-				"color": "machine",
-				"from": [
-					[-0.5, -1],
-					[0.5, -1]
-				]
-			},
-			{
-				"name": "kokuwamon",
-				"color": "machine"
-			},
-			{
-				"name": "thunderballmon",
-				"color": "electric"
-			},
-			{
-				"name": "mamemon",
-				"skins": ["bigmamemon", "catchmamemon"]
-			},
-			{ "name": "princemamemon", "xCollapsable": false, "yCollapsable": true }
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "metalmamemon",
-				"color": "machine",
-				"from": [-1, 0]
-			},
-			{
-				"name": "tonosamamamemon",
-				"from": [-1, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "nanimon",
-				"from": null
-			},
-			{
-				"name": "shootmon",
-				"from": [
-					[0, -1],
-					[-2, -1]
-				],
-				"color": ["electric", "electric"]
-			},
-			{
-				"name": "banchomamemon",
-				"from": [
-					[-2, -1],
-					[0, -1]
-				]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "bombernanimon",
-				"from": [[1, -1]],
-				"color": ["fire"]
-			},
-			{
-				"name": "bombermon",
-				"from": [[0, -1]],
-				"color": ["fire"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "chikurimon",
-				"from": [[-4, -1]],
-				"color": ["dark"]
-			},
-			{
-				"name": "troopmon",
-				"from": [[0, -1]],
-				"color": ["dark"]
-			},
-			{
-				"name": "giromon",
-				"from": [
-					[0, -1],
-					[-4, -1]
-				],
-				"color": ["dark", "dark"]
-			},
-			null
-		],
-		[
-			{
-				"name": "yuramon",
-				"from": null
-			},
-			{
-				"name": "tanemon",
-				"from": [[0, -1]],
-				"color": ["grass"]
-			},
-			{ "name": "dondokomon", "xCollapsable": true, "yCollapsable": false },
-			{
-				"name": "igamon",
-				"skins": ["kougamon"]
-			},
-			{
-				"name": "tekkamon",
-				"from": [
-					[0, -1],
-					[-5, -1]
-				],
-				"color": ["machine", "machine"]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "fumamon",
-				"from": [[-1, -1]]
-			},
-			null
-		]
-	],
-	"related": [
-		{ "name": "tyranomon", "for": "mametyramon" },
-		{ "name": "gammamon", "for": "bombermon" },
-		{ "name": "pulsemon", "for": "shootmon" },
-		{ "name": "fujamon", "for": "pukumon" },
-		{
-			"name": "patamon",
-			"for": "piccolomon"
-		},
-		{
-			"name": "kakamon",
-			"for": "jijimon"
-		},
-		{ "name": "tentomon", "for": "kokuwamon" },
-		{ "name": "commandramon", "for": "troopmon" },
-		{ "name": "toyagumon", "for": "machinedramon" }
-	],
-	"size": 6
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "metalmamemon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "kokuwamon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        2,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "thunderballmon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "mamemon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "princemamemon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "bommon",
+                "from": null,
+                "xSize": 2
+            },
+            null,
+            null,
+            null,
+            {
+                "name": "mametyramon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "pukumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "bombmon",
+                "from": null,
+                "xSize": 2
+            },
+            {
+                "name": "missimon",
+                "color": [
+                    "machine",
+                    "machine"
+                ],
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "kokuwamon",
+                "color": [
+                    "machine"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "thunderballmon",
+                "color": [
+                    "electric"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "mamemon",
+                "skins": [
+                    "bigmamemon",
+                    "catchmamemon"
+                ],
+                "from": [
+                    [
+                        2,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "princemamemon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "metalmamemon",
+                "color": [
+                    "machine"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "tonosamamamemon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "nanimon",
+                "from": null
+            },
+            {
+                "name": "shootmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "electric",
+                    "electric"
+                ]
+            },
+            {
+                "name": "banchomamemon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "bombernanimon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fire"
+                ]
+            },
+            {
+                "name": "bombermon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fire"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "chikurimon",
+                "from": [
+                    [
+                        -4,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "troopmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "giromon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -4,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark",
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            {
+                "name": "yuramon",
+                "from": null
+            },
+            {
+                "name": "tanemon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "grass"
+                ]
+            },
+            {
+                "name": "dondokomon"
+            },
+            {
+                "name": "igamon",
+                "skins": [
+                    "kougamon"
+                ]
+            },
+            {
+                "name": "tekkamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -5,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "machine",
+                    "machine"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "fumamon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        {
+            "name": "tyranomon",
+            "for": "mametyramon"
+        },
+        {
+            "name": "gammamon",
+            "for": "bombermon"
+        },
+        {
+            "name": "pulsemon",
+            "for": "shootmon"
+        },
+        {
+            "name": "fujamon",
+            "for": "pukumon"
+        },
+        {
+            "name": "patamon",
+            "for": "piccolomon"
+        },
+        {
+            "name": "kakamon",
+            "for": "jijimon"
+        },
+        {
+            "name": "tentomon",
+            "for": "kokuwamon"
+        },
+        {
+            "name": "commandramon",
+            "for": "troopmon"
+        },
+        {
+            "name": "toyagumon",
+            "for": "machinedramon"
+        }
+    ],
+    "size": 6
 }

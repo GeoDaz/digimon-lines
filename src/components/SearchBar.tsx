@@ -30,6 +30,8 @@ const SearchBar: React.FC<Props> = ({
 	const [previews, setPreviews] = useState<Option[]>([]);
 	const [selection, setSelection] = useState<number | null>(null);
 
+	const resetSelection = () => setSelection(0);
+
 	useEffect(() => {
 		if (!search && defaultValue) {
 			setSearch(defaultValue);
@@ -45,19 +47,15 @@ const SearchBar: React.FC<Props> = ({
 		} else if (previews.length > 0) {
 			if (e.key == 'ArrowDown') {
 				setSelection(
-					selection === null
-						? 0
-						: selection == previews.length - 1
-						? null
-						: selection + 1
+					selection === null ? 0
+					: selection == previews.length - 1 ? null
+					: selection + 1
 				);
 			} else if (e.key == 'ArrowUp') {
 				setSelection(
-					selection === null
-						? previews.length - 1
-						: selection === 0
-						? null
-						: selection - 1
+					selection === null ? previews.length - 1
+					: selection === 0 ? null
+					: selection - 1
 				);
 			}
 		}
@@ -81,9 +79,11 @@ const SearchBar: React.FC<Props> = ({
 				}, [] as any[]);
 				result.sort((a, b) => b.key - a.key);
 				setPreviews(result.slice(0, value.length > 3 ? 50 : 10));
+				resetSelection();
 			}
 		} else if (previews.length > 0) {
 			setPreviews([]);
+			resetSelection();
 		}
 	};
 
