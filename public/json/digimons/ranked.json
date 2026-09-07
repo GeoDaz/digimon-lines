@@ -4365,7 +4365,8 @@
             "to": [
                 "jaegerdorulumon",
                 "shoutmon_x7",
-                "shoutmon_x3"
+                "shoutmon_x3",
+                "grapleomon"
             ]
         },
         "ebidramon": {
@@ -4760,7 +4761,8 @@
             ],
             "to": [
                 "greatgrizzlymon",
-                "bearcatmon"
+                "bearcatmon",
+                "grapleomon"
             ]
         },
         "growlmon": {
@@ -5217,7 +5219,9 @@
             ],
             "to": [
                 "loaderliomon",
-                "mihiramon"
+                "mihiramon",
+                "grapleomon",
+                "flaremon"
             ]
         },
         "lianpumon": {
@@ -8532,7 +8536,8 @@
             "to": [
                 "jougamon",
                 "cherubimon_vice",
-                "cherubimon_virtue"
+                "cherubimon_virtue",
+                "lovelyangemon"
             ]
         },
         "andromon": {
@@ -8679,7 +8684,11 @@
             "to": [
                 "ancientsphinxmon",
                 "junomon",
-                "venusmon"
+                "venusmon",
+                "nyabootmon",
+                "leopardmon",
+                "anubimon",
+                "pharaohmon"
             ]
         },
         "betsumon": {
@@ -9256,11 +9265,14 @@
             "from": [
                 "firamon",
                 "lynxmon",
-                "leomon"
+                "leomon",
+                "liamon"
             ],
             "to": [
                 "apollomon",
-                "albatusmon"
+                "albatusmon",
+                "heavyleomon",
+                "marsmon"
             ]
         },
         "footmon": {
@@ -9400,14 +9412,18 @@
             "name": "grapleomon",
             "from": [
                 "leomon",
-                "drimogemon"
+                "grizzlymon",
+                "drimogemon",
+                "dorulumon",
+                "liamon"
             ],
             "to": [
                 "heavyleomon",
                 "bancholeomon",
                 "marsmon",
                 "achillesmon",
-                "leopardmon"
+                "leopardmon",
+                "saberleomon"
             ]
         },
         "gravimon": {
@@ -10024,7 +10040,8 @@
                 "meicoomon"
             ],
             "to": [
-                "rasielmon"
+                "rasielmon",
+                "nyabootmon"
             ]
         },
         "meicrackmon_vicious_mode": {
@@ -11503,7 +11520,8 @@
                 "bancholeomon",
                 "baihumon",
                 "breakdramon",
-                "amaterasumon"
+                "amaterasumon",
+                "saberleomon"
             ]
         },
         "megakabuterimon": {
@@ -12839,7 +12857,8 @@
             "from": [
                 "cerberumon",
                 "helloogarmon",
-                "caturamon"
+                "caturamon",
+                "bastemon"
             ]
         },
         "apollomon": {
@@ -13621,7 +13640,8 @@
             "from": [
                 "loaderliomon",
                 "grapleomon",
-                "rebellimon"
+                "rebellimon",
+                "flaremon"
             ]
         },
         "heavymetaldramon": {
@@ -13845,7 +13865,8 @@
                 "grapleomon",
                 "panjyamon",
                 "mihiramon",
-                "bearcatmon"
+                "bearcatmon",
+                "bastemon"
             ]
         },
         "leviamon": {
@@ -13903,7 +13924,8 @@
         "lovelyangemon": {
             "name": "lovelyangemon",
             "from": [
-                "angewomon"
+                "angewomon",
+                "andiramon"
             ]
         },
         "machinedramon": {
@@ -13976,7 +13998,8 @@
                 "grapleomon",
                 "greatgrizzlymon",
                 "shishimamon",
-                "bearcatmon"
+                "bearcatmon",
+                "flaremon"
             ]
         },
         "mastemon": {
@@ -14231,7 +14254,8 @@
         "pharaohmon": {
             "name": "pharaohmon",
             "from": [
-                "mummymon"
+                "mummymon",
+                "bastemon"
             ]
         },
         "phoenixmon": {
@@ -14506,7 +14530,9 @@
                 "dinotigermon"
             ],
             "from": [
-                "panjyamon"
+                "panjyamon",
+                "loaderliomon",
+                "grapleomon"
             ],
             "to": [
                 "tlalocmon"
@@ -16065,7 +16091,9 @@
         "nyabootmon": {
             "name": "nyabootmon",
             "from": [
-                "cendrillmon"
+                "cendrillmon",
+                "bastemon",
+                "meicrackmon"
             ]
         },
         "ordinemon": {
