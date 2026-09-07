@@ -258,6 +258,29 @@ h2 {
 
 .navbar {
 	font-weight: bold;
+	font-size: var(--bs-body-font-size);
+	--bs-navbar-padding-y: 0.5em;
+	--bs-navbar-brand-padding-y: 0.3125em;
+	--bs-navbar-brand-font-size: 1.25em;
+	--bs-navbar-nav-link-padding-x: 0.5em;
+}
+.navbar .navbar-nav {
+	--bs-nav-link-padding-y: 0.5em;
+}
+.navbar .btn {
+	--bs-btn-padding-x: 0.75em;
+	--bs-btn-padding-y: 0.375em;
+	--bs-btn-font-size: 1em;
+}
+.navbar .fs-4 {
+	font-size: 1.5em !important;
+}
+.navbar .fs-6 {
+	font-size: 1em !important;
+}
+.navbar > .container-fluid {
+	--bs-gutter-x: 1.5em;
+	gap: 1.5em;
 }
 .navbar.navbar-dark {
 	border-bottom: var(--dl-border);
@@ -267,11 +290,21 @@ h2 {
 .navbar .navbar-brand {
 	margin-right: 0;
 }
+.navbar .navbar-brand img {
+	height: 1.75em;
+	width: auto;
+}
 
 .svg-icon {
 	height: 1.5em;
 	width: auto;
 	vertical-align: -0.3em;
+}
+
+@media (max-width: 410px) {
+	.navbar {
+		font-size: calc(100vw * 15 / 410);
+	}
 }
 
 .donate {
@@ -1219,6 +1252,10 @@ a.line-point {
 
 /* dropdown */
 
+.dropdown-header{
+	color: white;
+}
+
 .dropdown > button.dropdown-toggle::after {
 	margin-right: -0.5em;
 	vertical-align: middle;
@@ -1403,16 +1440,16 @@ a.dropdown-item.active {
 		display: none !important;
 	}
 
-	.gap-max-xs-2 {
-		gap: 0.5rem !important;
-	}
-
 	.btn.btn-lg {
 		font-size: 1rem;
 	}
 
-	.navbar .navbar-brand {
-		font-size: 1rem;
+	.navbar {
+		--bs-navbar-brand-font-size: 1em;
+	}
+
+	.navbar > .container-fluid {
+		gap: 0.5em;
 	}
 
 	/* Line */

@@ -28,6 +28,7 @@ const AuthMenu: React.FC<{ className?: string }> = ({ className }) => {
 						</>
 					),
 				}}
+				header={{ content: 'Login', className: 'd-lg-none' }}
 				items={[
 					{
 						content: (
@@ -67,6 +68,7 @@ const AuthMenu: React.FC<{ className?: string }> = ({ className }) => {
 					</>
 				),
 			}}
+			header={{ content: pseudo || 'Account', className: 'd-lg-none' }}
 			items={[
 				{
 					href: '/my-lines',

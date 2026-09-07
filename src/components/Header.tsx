@@ -12,18 +12,25 @@ import Millennium from '@/svgs/millennium';
 import Slime from '@/svgs/slime';
 
 // En dessous de md les libellés laissent la place à une icône, sinon les
-// quatre menus ne tiennent pas sur la largeur.
-const toggleContent = (Svg: React.FC<React.SVGProps<SVGSVGElement>>, label: string) => (
-	<>
-		<Svg className="svg-icon d-md-none" role="img" aria-label={label} />
-		<span className="d-none d-md-inline">{label}</span>
-	</>
-);
+// quatre menus ne tiennent pas sur la largeur ; le libellé est alors repris en
+// tête du dropdown.
+const gameMenu = (Svg: React.FC<React.SVGProps<SVGSVGElement>>, label: string) => ({
+	className: 'nav-link',
+	toggle: {
+		content: (
+			<>
+				<Svg className="svg-icon d-md-none" role="img" aria-label={label} />
+				<span className="d-none d-md-inline">{label}</span>
+			</>
+		),
+	},
+	header: { content: label, className: 'd-md-none' },
+});
 
 const Header: React.FC = () => (
 	<header className="sticky-top">
 		<Navbar bg="dark" variant="dark" /* expand="lg" */>
-			<Container fluid className="justify-content-start gap-4 gap-max-xs-2">
+			<Container fluid className="justify-content-start">
 				<Navbar.Brand as={Link} href="/">
 					<Image
 						src="/images/icon.png"
@@ -36,8 +43,7 @@ const Header: React.FC = () => (
 				</Navbar.Brand>
 				<Nav className="flex-grow-1">
 					<DropdownMenu
-						className="nav-link"
-						toggle={{ content: toggleContent(Digivice, 'Digimon') }}
+						{...gameMenu(Digivice, 'Digimon')}
 						items={[
 							{ href: '/build', content: 'Builder' },
 							{ href: '/', content: 'Families' },
@@ -47,13 +53,11 @@ const Header: React.FC = () => (
 						]}
 					/>
 					<DropdownMenu
-						className="nav-link"
-						toggle={{ content: toggleContent(Pokeball, 'Pokémon') }}
+						{...gameMenu(Pokeball, 'Pokémon')}
 						items={[{ href: '/build/pokemon', content: 'Builder' }]}
 					/>
 					<DropdownMenu
-						className="nav-link"
-						toggle={{ content: toggleContent(Millennium, 'Yu-Gi-Oh!') }}
+						{...gameMenu(Millennium, 'Yu-Gi-Oh!')}
 						items={[
 							{
 								href: 'https://yugioh-lines.netlify.app',
@@ -66,8 +70,7 @@ const Header: React.FC = () => (
 						]}
 					/>
 					<DropdownMenu
-						className="nav-link"
-						toggle={{ content: toggleContent(Slime, 'Dragon Quest') }}
+						{...gameMenu(Slime, 'Dragon Quest')}
 						items={[
 							{
 								href: 'https://dragon-quest-synth.netlify.app/build',
@@ -82,19 +85,21 @@ const Header: React.FC = () => (
 						]}
 					/>
 				</Nav>
-				<AuthMenu />
-				<Link
-					className="btn btn-outline-primary"
-					href={DISCORD_URL}
-					target="_blank"
-					rel="nofollow noopener noreferrer"
-					title="discord"
-				>
-					<span className="d-none d-lg-inline-block align-middle">
-						Join us&nbsp;!
-					</span>{' '}
-					<Icon className="fs-6 align-middle" name="discord" />
-				</Link>
+				<div className="d-flex gap-3 gap-max-xs-2">
+					<AuthMenu />
+					<Link
+						className="btn btn-outline-primary"
+						href={DISCORD_URL}
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						title="discord"
+					>
+						<span className="d-none d-lg-inline-block align-middle">
+							Join us&nbsp;!
+						</span>{' '}
+						<Icon className="fs-6 align-middle" name="discord" />
+					</Link>
+				</div>
 			</Container>
 		</Navbar>
 	</header>
