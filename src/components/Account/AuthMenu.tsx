@@ -23,7 +23,7 @@ const AuthMenu: React.FC<{ className?: string }> = ({ className }) => {
 				toggle={{
 					content: (
 						<>
-							<Icon name="person-circle" />{' '}
+							<Icon name="person-circle fs-6" />{' '}
 							<span className="d-none d-lg-inline-block">Sign in</span>
 						</>
 					),

@@ -268,6 +268,12 @@ h2 {
 	margin-right: 0;
 }
 
+.svg-icon {
+	height: 1.5em;
+	width: auto;
+	vertical-align: -0.3em;
+}
+
 .donate {
 	background-color: var(--bs-primary);
 	color: white;
@@ -1212,6 +1218,12 @@ a.line-point {
 }
 
 /* dropdown */
+
+.dropdown > button.dropdown-toggle::after {
+	margin-right: -0.5em;
+	vertical-align: middle;
+}
+
 .dropdown.drop-none{
 	> button.dropdown-toggle::after {
 		content: none;
@@ -1389,6 +1401,10 @@ a.dropdown-item.active {
 	/* Body */
 	.d-max-xs-none {
 		display: none !important;
+	}
+
+	.gap-max-xs-2 {
+		gap: 0.5rem !important;
 	}
 
 	.btn.btn-lg {
