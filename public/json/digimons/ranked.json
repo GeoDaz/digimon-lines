@@ -1832,7 +1832,8 @@
                 "tylomon",
                 "tobiumon",
                 "seadramon",
-                "deltamon"
+                "deltamon",
+                "ginkakumon"
             ]
         },
         "gammamon": {
@@ -4657,10 +4658,14 @@
         "ginkakumon": {
             "name": "ginkakumon",
             "from": [
-                "iguneetmon"
+                "iguneetmon",
+                "fujamon"
             ],
             "to": [
-                "orochimon"
+                "orochimon",
+                "xingtianmon",
+                "cerberumon",
+                "skullgreymon"
             ]
         },
         "ginryumon": {
@@ -8270,7 +8275,8 @@
                 "cyclomon",
                 "deltamon",
                 "raremon",
-                "tuskmon"
+                "tuskmon",
+                "ginkakumon"
             ],
             "to": [
                 "black_wargreymon",
@@ -8897,7 +8903,8 @@
                 "dobermon",
                 "garurumon_black",
                 "sangloupmon",
-                "dogmon"
+                "dogmon",
+                "ginkakumon"
             ],
             "to": [
                 "anubimon",
@@ -10385,7 +10392,8 @@
                 "nidhoggmon",
                 "bacchusmon",
                 "xuanwumon",
-                "minervamon"
+                "minervamon",
+                "medusamon"
             ]
         },
         "paildramon_black": {
@@ -11269,7 +11277,8 @@
                 "hyogamon",
                 "gorimon",
                 "ogremon",
-                "evilmon"
+                "evilmon",
+                "ginkakumon"
             ],
             "to": [
                 "dijiangmon",
@@ -11691,7 +11700,8 @@
             "to": [
                 "minervamon",
                 "albatusmon",
-                "apollomon"
+                "apollomon",
+                "nidhoggmon"
             ]
         },
         "arresterdramon_superior_mode": {
@@ -14012,7 +14022,8 @@
         "medusamon": {
             "name": "medusamon",
             "from": [
-                "lamiamon"
+                "lamiamon",
+                "orochimon"
             ],
             "to": [
                 "styracomon"
@@ -14178,7 +14189,8 @@
             "from": [
                 "orochimon",
                 "sandiramon",
-                "regulusmon"
+                "regulusmon",
+                "heliosboamon"
             ]
         },
         "noblepumpmon": {
