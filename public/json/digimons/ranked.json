@@ -3296,7 +3296,9 @@
                 "gatomon_x",
                 "nefertimon_x",
                 "tobucatmon",
-                "pegasmon_x"
+                "pegasmon_x",
+                "siesamon_x",
+                "dobermon_x"
             ]
         },
         "dorumon": {
@@ -7242,10 +7244,11 @@
             "from": [
                 "dobermon",
                 "gazimon_x",
-                "plotmon_x"
+                "salamon_x"
             ],
             "to": [
-                "cerberumon_x"
+                "cerberumon_x",
+                "helloogarmon"
             ]
         },
         "gatomon_x": {
@@ -7371,7 +7374,7 @@
             "name": "siesamon_x",
             "from": [
                 "siesamon",
-                "plotmon_x",
+                "salamon_x",
                 "gabumon_x"
             ]
         },
@@ -7959,6 +7962,9 @@
             "from": [
                 "salamon_x",
                 "gatomon_x"
+            ],
+            "to": [
+                "angewomon_x"
             ]
         },
         "nohemon": {
@@ -11960,7 +11966,8 @@
             "name": "angewomon_x",
             "from": [
                 "gatomon_x",
-                "angewomon"
+                "angewomon",
+                "nefertimon_x"
             ],
             "to": [
                 "ophanimon_falldown_mode_x",
@@ -12271,7 +12278,8 @@
                 "lynxmon",
                 "sangloupmon",
                 "dobermon",
-                "garurumon_black"
+                "garurumon_black",
+                "dobermon_x"
             ],
             "to": [
                 "anubimon",
