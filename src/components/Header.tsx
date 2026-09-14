@@ -11,9 +11,6 @@ import Pokeball from '@/svgs/pokeball';
 import Millennium from '@/svgs/millennium';
 import Slime from '@/svgs/slime';
 
-// En dessous de md les libellés laissent la place à une icône, sinon les
-// quatre menus ne tiennent pas sur la largeur ; le libellé est alors repris en
-// tête du dropdown.
 const gameMenu = (Svg: React.FC<React.SVGProps<SVGSVGElement>>, label: string) => ({
 	className: 'nav-link',
 	toggle: {

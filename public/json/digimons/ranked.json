@@ -2417,7 +2417,8 @@
             "to": [
                 "hi_visionmonitamon",
                 "publimon",
-                "mercuremon"
+                "mercuremon",
+                "shonitamon"
             ]
         },
         "monmon": {
@@ -2544,7 +2545,8 @@
                 "gladimon",
                 "maildramon",
                 "rhinomon",
-                "centarumon"
+                "centarumon",
+                "shoutmon_x4k"
             ]
         },
         "penmon": {
@@ -2736,12 +2738,26 @@
             ],
             "to": [
                 "omegashoutmon",
-                "king_shoutmon",
                 "redveedramon",
-                "shoutmon_x2",
-                "shoutmon_x3",
                 "revolmon",
-                "betelgammamon"
+                "betelgammamon",
+                "shoutmon_x2",
+                "shoutmon_x2m",
+                "shoutmon_dorulucannon",
+                "shoutmon_starsword",
+                "shoutmon_jetsparrow",
+                "shoutmon_x3",
+                "shoutmon_x3gm",
+                "shoutmon_x3sd",
+                "shoutmon_x4",
+                "shoutmon_x4s",
+                "shoutmon_x4k",
+                "shoutmon_x5",
+                "shoutmon_x5s",
+                "shoutmon_x5b",
+                "shoutmon_x4b",
+                "donshoutmon",
+                "shonitamon"
             ]
         },
         "sistermon_blanc": {
@@ -2827,7 +2843,8 @@
                 "shoutmon_x5",
                 "shoutmon_x5s",
                 "shoutmon_x5b",
-                "jet_mervamon"
+                "jet_mervamon",
+                "shoutmon_jetsparrow"
             ]
         },
         "starmons": {
@@ -2837,8 +2854,17 @@
             ],
             "to": [
                 "shootingstarmon",
+                "starmon",
+                "shoutmon_x2m",
+                "shoutmon_x4",
+                "shoutmon_x4s",
+                "shoutmon_x4k",
+                "shoutmon_x5",
+                "shoutmon_x5s",
+                "shoutmon_x5b",
                 "shoutmon_x7",
-                "starmon"
+                "shoutmon_x4b",
+                "shoutmon_starsword"
             ]
         },
         "sunarizamon": {
@@ -3149,9 +3175,6 @@
             "variants": [
                 "shoutmon"
             ],
-            "from": [
-                "shoutmon"
-            ],
             "to": [
                 "omegashoutmon"
             ]
@@ -3214,6 +3237,34 @@
             "to": [
                 "vipermon",
                 "coatlmon"
+            ]
+        },
+        "donshoutmon": {
+            "name": "donshoutmon",
+            "fusionFrom": [
+                "shoutmon",
+                "dondokomon"
+            ]
+        },
+        "shonitamon": {
+            "name": "shonitamon",
+            "fusionFrom": [
+                "shoutmon",
+                "monitamon"
+            ]
+        },
+        "shoutmon_starsword": {
+            "name": "shoutmon_starsword",
+            "from": [
+                "shoutmon",
+                "starmons"
+            ]
+        },
+        "shoutmon_jetsparrow": {
+            "name": "shoutmon_jetsparrow",
+            "fusionFrom": [
+                "shoutmon",
+                "sparrowmon"
             ]
         }
     },
@@ -3703,7 +3754,9 @@
                 "baalmon",
                 "wisemon",
                 "deathmeramon",
-                "skullsatamon"
+                "skullsatamon",
+                "jokermon",
+                "mephismon"
             ]
         },
         "ankylomon": {
@@ -3869,7 +3922,8 @@
                 "fantomon",
                 "jokermon",
                 "oboromon",
-                "mummymon"
+                "mummymon",
+                "myotismon"
             ]
         },
         "ballistamon": {
@@ -3886,7 +3940,15 @@
                 "atlurballistamon",
                 "shoutmon_x2",
                 "shoutmon_x3",
-                "shoutmon_x7"
+                "shoutmon_x7",
+                "shoutmon_x2m",
+                "shoutmon_x4",
+                "shoutmon_x5",
+                "shoutmon_x4s",
+                "shoutmon_x4k",
+                "shoutmon_x5b",
+                "shoutmon_x4b",
+                "shoutmon_x5s"
             ]
         },
         "baluchimon": {
@@ -4369,7 +4431,15 @@
                 "jaegerdorulumon",
                 "shoutmon_x7",
                 "shoutmon_x3",
-                "grapleomon"
+                "grapleomon",
+                "shoutmon_x4",
+                "shoutmon_x5",
+                "shoutmon_x4s",
+                "shoutmon_x4k",
+                "shoutmon_x5b",
+                "shoutmon_x4b",
+                "shoutmon_x5s",
+                "shoutmon_dorulucannon"
             ]
         },
         "ebidramon": {
@@ -5838,6 +5908,9 @@
             "name": "shootingstarmon",
             "from": [
                 "starmons"
+            ],
+            "to": [
+                "superstarmon"
             ]
         },
         "shortmon": {
@@ -6606,6 +6679,7 @@
             ],
             "to": [
                 "shoutmon_x4",
+                "shoutmon_x4s",
                 "shoutmon_x3gm",
                 "shoutmon_x3sd"
             ]
@@ -6736,6 +6810,42 @@
                 "skullsatamon",
                 "myotismon",
                 "matadormon"
+            ]
+        },
+        "shoutmon_x2m": {
+            "name": "shoutmon_x2m",
+            "from": [
+                "shoutmon_x2"
+            ],
+            "fusionFrom": [
+                "shoutmon",
+                "ballistamon",
+                "starmons"
+            ]
+        },
+        "shoutmon_x4": {
+            "name": "shoutmon_x4",
+            "from": [
+                "shoutmon_x3"
+            ],
+            "fusionFrom": [
+                "shoutmon",
+                "ballistamon",
+                "dorulumon",
+                "starmons"
+            ],
+            "to": [
+                "shoutmon_x4b",
+                "shoutmon_x4k",
+                "shoutmon_x5",
+                "shoutmon_x4s"
+            ]
+        },
+        "shoutmon_dorulucannon": {
+            "name": "shoutmon_dorulucannon",
+            "fusionFrom": [
+                "shoutmon",
+                "dorulumon"
             ]
         }
     },
@@ -9579,7 +9689,8 @@
                 "bakemon",
                 "tobucatmon",
                 "clockmon",
-                "reppamon"
+                "reppamon",
+                "wizardmon"
             ],
             "to": [
                 "piemon",
@@ -10079,7 +10190,8 @@
                 "porcupamon",
                 "goatmon",
                 "devidramon",
-                "boogiemon"
+                "boogiemon",
+                "wizardmon"
             ],
             "to": [
                 "gulfmon",
@@ -10270,10 +10382,11 @@
                 "myotismon_x"
             ],
             "from": [
-                "pipismon",
                 "devimon",
                 "sangloupmon",
-                "evilmon"
+                "evilmon",
+                "bakemon",
+                "pipismon"
             ],
             "to": [
                 "neomyotismon",
@@ -10383,7 +10496,8 @@
                 "shoutmon_x7",
                 "magnakidmon",
                 "armamon",
-                "durandamon"
+                "durandamon",
+                "shoutmon_ex6"
             ]
         },
         "orochimon": {
@@ -10783,6 +10897,9 @@
         },
         "shoutmon_x3sd": {
             "name": "shoutmon_x3sd",
+            "from": [
+                "shoutmon"
+            ],
             "fusionFrom": [
                 "shoutmon_x3",
                 "darkknightmon"
@@ -10790,8 +10907,14 @@
         },
         "shoutmon_x4b": {
             "name": "shoutmon_x4b",
+            "from": [
+                "shoutmon_x4"
+            ],
             "fusionFrom": [
-                "shoutmon_x4",
+                "shoutmon",
+                "ballistamon",
+                "dorulumon",
+                "starmons",
                 "beelzebumon_2"
             ],
             "to": [
@@ -10800,15 +10923,28 @@
         },
         "shoutmon_x4k": {
             "name": "shoutmon_x4k",
+            "from": [
+                "shoutmon_x4"
+            ],
             "fusionFrom": [
-                "shoutmon_x4",
-                "knightmon"
+                "shoutmon",
+                "ballistamon",
+                "dorulumon",
+                "starmons",
+                "knightmon",
+                "pawnchessmon_white"
             ]
         },
         "shoutmon_x5": {
             "name": "shoutmon_x5",
+            "from": [
+                "shoutmon_x4"
+            ],
             "fusionFrom": [
-                "shoutmon_x4",
+                "shoutmon",
+                "ballistamon",
+                "dorulumon",
+                "starmons",
                 "sparrowmon"
             ],
             "to": [
@@ -10818,10 +10954,16 @@
         },
         "shoutmon_x5s": {
             "name": "shoutmon_x5s",
-            "fusionFrom": [
-                "shoutmon_x5",
-                "spadamon",
+            "from": [
                 "shoutmon_x4s",
+                "shoutmon_x5"
+            ],
+            "fusionFrom": [
+                "shoutmon",
+                "ballistamon",
+                "dorulumon",
+                "starmons",
+                "spadamon",
                 "sparrowmon"
             ]
         },
@@ -10948,7 +11090,8 @@
                 "starmon",
                 "nanimon",
                 "wolvermon",
-                "revolmon"
+                "revolmon",
+                "shootingstarmon"
             ],
             "to": [
                 "justimon",
@@ -11691,6 +11834,13 @@
             "name": "shoutmon_x4s",
             "from": [
                 "shoutmon_x4",
+                "shoutmon_x3"
+            ],
+            "fusionFrom": [
+                "shoutmon",
+                "ballistamon",
+                "dorulumon",
+                "starmons",
                 "spadamon"
             ],
             "to": [
@@ -14639,11 +14789,17 @@
         },
         "shoutmon_x5b": {
             "name": "shoutmon_x5b",
-            "fusionFrom": [
+            "from": [
                 "shoutmon_x4b",
-                "sparrowmon",
-                "shoutmon_x5",
-                "beelzebumon_2"
+                "shoutmon_x5"
+            ],
+            "fusionFrom": [
+                "shoutmon",
+                "ballistamon",
+                "dorulumon",
+                "starmons",
+                "beelzebumon_2",
+                "sparrowmon"
             ]
         },
         "shroudmon": {
@@ -14895,7 +15051,8 @@
             ],
             "to": [
                 "shoutmon_dx",
-                "shoutmon_x7"
+                "shoutmon_x7",
+                "shoutmon_ex6"
             ]
         },
         "zephagamon": {
@@ -15213,6 +15370,9 @@
         },
         "shoutmon_x3gm": {
             "name": "shoutmon_x3gm",
+            "from": [
+                "shoutmon"
+            ],
             "fusionFrom": [
                 "shoutmon_x3",
                 "metalgreymon_blue_2"
@@ -16146,11 +16306,15 @@
             "variants": [
                 "shoutmon_x7"
             ],
+            "from": [
+                "shoutmon_dx"
+            ],
             "fusionFrom": [
-                "shoutmon_dx",
-                "raptorsparrowmon",
+                "omegashoutmon",
+                "zeekgreymon",
+                "jaegerdorulumon",
                 "atlurballistamon",
-                "jaegerdorulumon"
+                "raptorsparrowmon"
             ]
         },
         "shoutmon_x7": {
@@ -16163,13 +16327,15 @@
                 "shoutmon_x7_superior_mode"
             ],
             "from": [
-                "shoutmon_dx",
-                "sparrowmon",
-                "starmons",
+                "shoutmon_dx"
+            ],
+            "fusionFrom": [
+                "omegashoutmon",
+                "zeekgreymon",
                 "ballistamon",
                 "dorulumon",
-                "omegashoutmon",
-                "zeekgreymon"
+                "starmons",
+                "sparrowmon"
             ]
         },
         "black_shoutmon_x7": {
