@@ -11,3 +11,16 @@ export type AuthProvider = 'google' | 'discord';
 export interface UserLineWithAuthor extends UserLineRow {
 	profiles: Pick<Profile, 'pseudo' | 'avatar_url'> | null;
 }
+
+export interface CommunityLine extends Pick<
+	UserLineRow,
+	| 'id'
+	| 'user_id'
+	| 'slug'
+	| 'title'
+	| 'cover'
+	| 'like_count'
+	| 'created_at'
+> {
+	profiles: Pick<Profile, 'pseudo' | 'avatar_url'> | null;
+}

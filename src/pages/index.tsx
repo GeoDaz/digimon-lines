@@ -114,7 +114,11 @@ const PageLines: React.FC<Props> = props => {
 				<Link href="/build" className="btn btn-primary px-2 py-1">
 					Builder
 				</Link>{' '}
-				to create your own lines&nbsp;!
+				to create your own lines, or browse the{' '}
+				<Link href="/community" className="btn btn-primary px-2 py-1">
+					Community
+				</Link>{' '}
+				to see the ones already published&nbsp;!
 			</blockquote>
 			<SearchBar
 				label="Research a digimon"

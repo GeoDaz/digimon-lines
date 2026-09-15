@@ -43,6 +43,7 @@ const Header: React.FC = () => (
 						{...gameMenu(Digivice, 'Digimon')}
 						items={[
 							{ href: '/build', content: 'Builder' },
+							{ href: '/community', content: 'Community' },
 							{ href: '/', content: 'Families' },
 							{ href: '/list', content: 'List' },
 							{ href: '/groups', content: 'Groups' },

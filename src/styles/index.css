@@ -1215,6 +1215,11 @@ a.line-point {
 	position: relative;
 }
 
+.search .form-control {
+	width: 100%;
+	max-width: 100%;
+}
+
 .search .previews {
 	position: absolute;
 	left: 0;
@@ -1595,4 +1600,43 @@ a.dropdown-item.active {
 	margin-top: 0.25rem;
 	text-align: center;
 	white-space: nowrap;
+}
+
+.like-heart {
+	display: inline-flex;
+	align-items: flex-end;
+	vertical-align: middle;
+	line-height: 1;
+	gap: 0.25em;
+}
+
+.like-heart-count {
+	font-size: 0.65em;
+	font-weight: normal;
+}
+
+.like-heart.liked {
+	color: var(--bs-primary);
+}
+
+button.like-heart {
+	background: none;
+	border: 0;
+	padding: 0;
+	color: inherit;
+	cursor: pointer;
+}
+
+button.like-heart:hover,
+button.like-heart:focus-visible {
+	color: var(--bs-primary);
+}
+
+.community-author {
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 0.9em;
+	min-width: 0;
 }

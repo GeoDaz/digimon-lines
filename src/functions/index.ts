@@ -73,6 +73,13 @@ export function objectCompare(
 	return true;
 }
 
+const countFormatter = new Intl.NumberFormat('en', {
+	notation: 'compact',
+	maximumFractionDigits: 1,
+});
+
+export const formatCount = (count: number): string => countFormatter.format(count);
+
 export const stringToKey = (string: string): string =>
 	string
 		.toLowerCase()

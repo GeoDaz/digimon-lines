@@ -14,6 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
+      line_likes: {
+        Row: {
+          created_at: string
+          line_id: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          line_id: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          line_id?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "line_likes_line_id_fkey"
+            columns: ["line_id"]
+            isOneToOne: false
+            referencedRelation: "user_lines"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "line_likes_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       profiles: {
         Row: {
           avatar_url: string | null
@@ -51,6 +84,8 @@ export type Database = {
           data: Json
           id: string
           is_public: boolean
+          like_count: number
+          search_text: string | null
           slug: string
           title: string | null
           updated_at: string
@@ -62,6 +97,7 @@ export type Database = {
           data: Json
           id?: string
           is_public?: boolean
+          like_count?: number
           slug: string
           title?: string | null
           updated_at?: string
@@ -73,6 +109,7 @@ export type Database = {
           data?: Json
           id?: string
           is_public?: boolean
+          like_count?: number
           slug?: string
           title?: string | null
           updated_at?: string
@@ -93,6 +130,14 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      line_search_text: {
+        Args: { data: Json; slug: string; title: string }
+        Returns: string
+      }
+      search_key: {
+        Args: { value: string }
+        Returns: string
+      }
       admin_list_profiles: {
         Args: { search?: string }
         Returns: {

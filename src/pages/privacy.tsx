@@ -28,7 +28,10 @@ const PagePrivacy = () => (
 			provider we receive and store:
 		</p>
 		<ul>
-			<li>your email address (used to identify your account, never displayed publicly);</li>
+			<li>
+				your email address (used to identify your account, never displayed
+				publicly);
+			</li>
 			<li>your display name, which becomes your public pseudonym;</li>
 			<li>your avatar image URL, if your provider supplies one;</li>
 			<li>a provider account identifier.</li>
@@ -41,6 +44,14 @@ const PagePrivacy = () => (
 			the database level, not merely hidden in the interface. The site
 			administrators can read it, so that they can moderate content when it is
 			reported to them.
+		</p>
+		<h3>The lines you like</h3>
+		<p>
+			When you like a published line, we store that you did, so that the heart stays
+			filled when you come back and so the line can be ranked on the{' '}
+			<Link href="/community">community page</Link>. Only you can read the list of
+			lines you liked — other visitors, including the author of the line, see the
+			total and nothing else. Removing your like erases the record.
 		</p>
 
 		<h3>Audience measurement</h3>
@@ -63,8 +74,9 @@ const PagePrivacy = () => (
 		<h2>3. Cookies and local storage</h2>
 		<p>
 			We set no advertising or analytics cookies. When you sign in, your session
-			token is kept in your browser&apos;s local storage so you stay logged in. It is
-			strictly necessary for the account feature and is removed when you sign out.
+			token is kept in your browser&apos;s local storage so you stay logged in. It
+			is strictly necessary for the account feature and is removed when you sign
+			out.
 		</p>
 
 		<h2>4. Where your data is stored</h2>
@@ -94,10 +106,10 @@ const PagePrivacy = () => (
 		<h2>6. How long we keep it</h2>
 		<p>
 			Your account and lines are kept until you ask us to delete them. Deleting your
-			account erases your profile and every line attached to it, including public
-			ones. Deletion from the live database is immediate and permanent. Residual
-			copies may persist briefly in our host&apos;s routine backups before those
-			rotate out.
+			account erases your profile, every line attached to it — including public ones
+			— and every like you gave. Deletion from the live database is immediate and
+			permanent. Residual copies may persist briefly in our host&apos;s routine
+			backups before those rotate out.
 		</p>
 
 		<h2>7. Your rights</h2>
@@ -108,9 +120,9 @@ const PagePrivacy = () => (
 			<a href={DISCORD_URL} target="_blank" rel="noreferrer">
 				Discord server
 			</a>
-			. We answer within 30 days. If you are in the EEA and believe we have mishandled
-			your data, you may lodge a complaint with your national data protection
-			authority.
+			. We answer within 30 days. If you are in the EEA and believe we have
+			mishandled your data, you may lodge a complaint with your national data
+			protection authority.
 		</p>
 
 		<h2>8. Children</h2>
@@ -129,8 +141,8 @@ const PagePrivacy = () => (
 				<strong>Netlify</strong> — hosting and content delivery.
 			</li>
 			<li>
-				<strong>Google and Discord</strong> — sign-in providers, only if you choose
-				to use them.
+				<strong>Google and Discord</strong> — sign-in providers, only if you
+				choose to use them.
 			</li>
 			<li>
 				<strong>Vercel Analytics</strong> — cookieless audience measurement.
@@ -138,7 +150,8 @@ const PagePrivacy = () => (
 		</ul>
 		<p>
 			Some Digimon artwork is loaded directly from external sources by your browser,
-			which means those servers can see your IP address, as with any image on the web.
+			which means those servers can see your IP address, as with any image on the
+			web.
 		</p>
 
 		<h2>10. Changes</h2>

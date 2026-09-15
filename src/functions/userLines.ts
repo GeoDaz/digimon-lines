@@ -18,7 +18,8 @@ export const slugifyLine = (title: string): string => {
 	return slug || 'line';
 };
 
-const SELECT_WITH_AUTHOR = '*, profiles!inner(pseudo, avatar_url)';
+const SELECT_WITH_AUTHOR =
+	'*, profiles!user_lines_user_id_fkey!inner(pseudo, avatar_url)';
 
 export interface SaveUserLineParams {
 	userId: string;

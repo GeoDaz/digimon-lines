@@ -11,8 +11,11 @@ import ShareButton from '@/components/ShareButton';
 import DownloadDropdown from '@/components/DownloadDropdown';
 import RelatedLines from '@/components/Line/RelatedLines';
 import Icon from '@/components/Icon';
+import LikeHeart from '@/components/Account/LikeHeart';
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
+import { useLineLike } from '@/hooks/useCommunityLines';
+import { useAuth } from '@/context/auth';
 import { fetchSharedLine } from '@/functions/userLines';
 import { shouldRestoreSession } from '@/functions/supabase';
 import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
@@ -42,6 +45,7 @@ interface Props {
 const PageSharedLine: React.FC<Props> = props => {
 	const router = useRouter();
 	const { pseudo, slug } = props;
+	const { user } = useAuth();
 
 	const [record, setRecord] = useState<UserLineWithAuthor | null>(props.record ?? null);
 	const [line, setLine] = useState<Line | undefined>(() =>
@@ -53,6 +57,7 @@ const PageSharedLine: React.FC<Props> = props => {
 
 	const { downloadCode } = useDownloadCode(line || defaultLine, setLine);
 	const { downloadImage, downloading, error } = useDownloadImg(slug);
+	const like = useLineLike(record?.id, record?.like_count ?? 0);
 
 	useEffect(() => {
 		if (window.innerWidth < 576) setZoom(-2);
@@ -103,12 +108,31 @@ const PageSharedLine: React.FC<Props> = props => {
 	};
 
 	const title = record?.title || 'Shared line';
+	const isOwn = !!user && record?.user_id === user.id;
 
 	return (
 		<Layout
 			title={
 				<>
 					{title} by <Link href={`/profile/${pseudo}`}>{pseudo}</Link>
+					{!!record?.is_public && (
+						<>
+							{' '}
+							<LikeHeart
+								count={like.count}
+								liked={like.liked}
+								className="ms-3"
+								onClick={isOwn ? undefined : like.toggle}
+								title={
+									isOwn ?
+										`Your line — ${like.count} like${
+											like.count > 1 ? 's' : ''
+										}`
+									:	undefined
+								}
+							/>
+						</>
+					)}
 				</>
 			}
 			metatitle={`${title} by ${pseudo}`}
@@ -172,8 +196,6 @@ const PageSharedLine: React.FC<Props> = props => {
 	);
 };
 
-// Rendu serveur : le titre et la couverture doivent être dans le HTML pour les
-// aperçus de partage. La lecture est anonyme, donc limitée aux lignes publiques.
 export const getServerSideProps: GetServerSideProps<Props> = async ({ params, res }) => {
 	const pseudo = String(params?.pseudo ?? '');
 	const slug = String(params?.slug ?? '');
