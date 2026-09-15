@@ -191,7 +191,7 @@ const CommunityCard = ({ line }: { line: CommunityLine }) => {
 					</Link>
 
 			}
-			<div className="profile-line-actions d-flex align-items-center justify-content-between gap-2 px-1">
+			<div className="profile-line-actions community-line-actions d-flex align-items-center justify-content-between gap-2 px-1">
 				{!!pseudo && (
 					<Link
 						href={`/profile/${pseudo}`}
@@ -201,7 +201,11 @@ const CommunityCard = ({ line }: { line: CommunityLine }) => {
 						<Icon name="person-circle" /> {pseudo}
 					</Link>
 				)}
-				<LikeHeart count={line.like_count} className="ms-auto" />
+				<LikeHeart
+					count={line.like_count}
+					liked={line.liked}
+					className="ms-auto"
+				/>
 			</div>
 		</Col>
 	);

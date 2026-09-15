@@ -23,4 +23,5 @@ export interface CommunityLine extends Pick<
 	| 'created_at'
 > {
 	profiles: Pick<Profile, 'pseudo' | 'avatar_url'> | null;
+	liked?: boolean;
 }

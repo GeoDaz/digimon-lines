@@ -7,6 +7,7 @@ import {
 	DEFAULT_SORT,
 	hasLikedLine,
 	listCommunityLines,
+	listLikedLineIds,
 	setLineLike,
 } from '@/functions/communityLines';
 import { CommunityLine } from '@/types/Account';
@@ -15,7 +16,7 @@ export const useCommunityLines = (
 	search: string,
 	sort: CommunitySortKey = DEFAULT_SORT
 ) => {
-	const { loading: authLoading } = useAuth();
+	const { user, loading: authLoading } = useAuth();
 
 	const [lines, setLines] = useState<CommunityLine[]>([]);
 	const [loading, setLoading] = useState(true);
@@ -26,6 +27,25 @@ export const useCommunityLines = (
 	const page = useRef(0);
 	const request = useRef(0);
 
+	const withLikes = useCallback(
+		async (rows: CommunityLine[]): Promise<CommunityLine[]> => {
+			if (!user || !rows.length) return rows;
+			try {
+				const liked = new Set(
+					await listLikedLineIds(
+						user.id,
+						rows.map(row => row.id)
+					)
+				);
+				return rows.map(row => ({ ...row, liked: liked.has(row.id) }));
+			} catch (error) {
+				console.error('Failed to load the likes:', error);
+				return rows;
+			}
+		},
+		[user]
+	);
+
 	const load = useCallback(
 		async (nextPage: number) => {
 			const id = ++request.current;
@@ -33,7 +53,9 @@ export const useCommunityLines = (
 			else setLoading(true);
 			setFailed(false);
 			try {
-				const rows = await listCommunityLines({ search, sort, page: nextPage });
+				const rows = await withLikes(
+					await listCommunityLines({ search, sort, page: nextPage })
+				);
 				if (id !== request.current) return;
 				page.current = nextPage;
 				setHasMore(rows.length === COMMUNITY_PAGE_SIZE);
@@ -48,7 +70,7 @@ export const useCommunityLines = (
 				}
 			}
 		},
-		[search, sort]
+		[search, sort, withLikes]
 	);
 
 	useEffect(() => {
