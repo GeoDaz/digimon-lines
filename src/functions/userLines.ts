@@ -29,6 +29,7 @@ export interface SaveUserLineParams {
 	isPublic: boolean;
 	/** Nom du Digimon de couverture, résolu en /images/digimon/<cover>.jpg. */
 	cover?: string;
+	licence?: string;
 }
 
 /**
@@ -42,6 +43,7 @@ export const saveUserLine = async ({
 	line,
 	isPublic,
 	cover,
+	licence,
 }: SaveUserLineParams): Promise<UserLineRow> => {
 	const supabase = await getSupabase();
 	const { data, error } = await supabase
@@ -58,6 +60,7 @@ export const saveUserLine = async ({
 				data: prepareLineExport(stripUploadedImages(line)) as unknown as Json,
 				is_public: isPublic,
 				cover: cover || null,
+				licence: licence || 'digimon',
 			},
 			{ onConflict: 'user_id,slug' }
 		)

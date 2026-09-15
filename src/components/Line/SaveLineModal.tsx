@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Button, Form, Modal } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import { SaveMode } from '@/hooks/useSaveLineFlow';
+import { getLicence } from '@/context/license';
+import imgPathByLicence from '@/functions/images';
 
 interface Props {
 	/** null quand la modale est fermée. */
@@ -11,6 +13,7 @@ interface Props {
 	covers: string[];
 	defaultCover?: string;
 	saving: boolean;
+	licence?: string;
 	onClose: () => void;
 	onSubmit: (title: string, isPublic: boolean, cover?: string) => void;
 }
@@ -26,9 +29,12 @@ const SaveLineModal: React.FC<Props> = ({
 	covers,
 	defaultCover,
 	saving,
+	licence,
 	onClose,
 	onSubmit,
 }) => {
+	const licenceProps = getLicence(licence);
+	const coverPath = imgPathByLicence[licenceProps.key];
 	const [title, setTitle] = useState('');
 	const [cover, setCover] = useState<string | undefined>();
 	const show = mode !== null;
@@ -83,7 +89,7 @@ const SaveLineModal: React.FC<Props> = ({
 
 					{!!covers.length && (
 						<Form.Group className="mt-3">
-							<Form.Label>Cover Digimon</Form.Label>
+							<Form.Label>Cover {licenceProps.name}</Form.Label>
 							<div className="d-flex flex-wrap gap-2">
 								{covers.map(name => (
 									<button
@@ -98,7 +104,7 @@ const SaveLineModal: React.FC<Props> = ({
 										    et de licence de LineImage. */}
 										{/* eslint-disable-next-line @next/next/no-img-element */}
 										<img
-											src={`/images/digimon/${name}.jpg`}
+											src={coverPath(name)}
 											alt={name}
 											width={64}
 											height={64}

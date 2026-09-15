@@ -16,6 +16,13 @@ import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
 import { useLineLike } from '@/hooks/useCommunityLines';
 import { useAuth } from '@/context/auth';
+import {
+	getLicence,
+	licenceBuildPath,
+	licenceStorageKey,
+	LicenseContext,
+} from '@/context/license';
+import imgPathByLicence from '@/functions/images';
 import { fetchSharedLine } from '@/functions/userLines';
 import { shouldRestoreSession } from '@/functions/supabase';
 import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
@@ -103,12 +110,14 @@ const PageSharedLine: React.FC<Props> = props => {
 	};
 
 	const handleEdit = () => {
-		localStorage.setItem('digimon-line', JSON.stringify(line, null, 4));
-		router.push(slug ? `/build/?name=${encodeURIComponent(slug)}` : '/build');
+		const build = licenceBuildPath(record?.licence);
+		localStorage.setItem(licenceStorageKey(record?.licence), JSON.stringify(line, null, 4));
+		router.push(slug ? `${build}/?name=${encodeURIComponent(slug)}` : build);
 	};
 
 	const title = record?.title || 'Shared line';
 	const isOwn = !!user && record?.user_id === user.id;
+	const licence = getLicence(record?.licence);
 
 	return (
 		<Layout
@@ -137,7 +146,11 @@ const PageSharedLine: React.FC<Props> = props => {
 			}
 			metatitle={`${title} by ${pseudo}`}
 			metadescription={'A Digimon evolution line'}
-			metaimg={record?.cover ? `digimon/${record.cover}.jpg` : 'digimon.png'}
+			metaimg={
+				record?.cover ?
+					imgPathByLicence[licence.key](record.cover).replace(/^\/images\//, '')
+				:	`${licence.key}.png`
+			}
 		>
 			{loading ?
 				<Spinner animation="border" role="status" aria-label="Loading" />
@@ -178,17 +191,19 @@ const PageSharedLine: React.FC<Props> = props => {
 							<Alert variant="danger">{error}</Alert>
 						</div>
 					)}
-					<DigimonProvider
-						dubNames={props.dubNames}
-						data={props.digimons}
-						items={props.items}
-						itemLevels={props.itemLevels}
-						levels={props.levels}
-					>
-						<ZoomProvider zoom={zoom}>
-							<LineGrid line={line} />
-						</ZoomProvider>
-					</DigimonProvider>
+					<LicenseContext.Provider value={licence}>
+						<DigimonProvider
+							dubNames={props.dubNames}
+							data={props.digimons}
+							items={props.items}
+							itemLevels={props.itemLevels}
+							levels={props.levels}
+						>
+							<ZoomProvider zoom={zoom}>
+								<LineGrid line={line} />
+							</ZoomProvider>
+						</DigimonProvider>
+					</LicenseContext.Provider>
 					<RelatedLines related={line.related} />
 				</>
 			}

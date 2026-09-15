@@ -4,7 +4,7 @@ import { CommunityLine } from '@/types/Account';
 
 /** Colonnes de /community : tout sauf `data`, et le pseudo de l'auteur. */
 const SELECT_COMMUNITY =
-	'id, user_id, slug, title, cover, like_count, created_at, ' +
+	'id, user_id, slug, title, cover, licence, like_count, created_at, ' +
 	'profiles!user_lines_user_id_fkey!inner(pseudo, avatar_url)';
 
 export interface CommunitySort {
@@ -39,6 +39,7 @@ export interface ListCommunityLinesParams {
 	search?: string;
 	sort?: CommunitySortKey;
 	page?: number;
+	licence?: string;
 }
 
 /**
@@ -54,6 +55,7 @@ export const listCommunityLines = async ({
 	search,
 	sort = DEFAULT_SORT,
 	page = 0,
+	licence = 'digimon',
 }: ListCommunityLinesParams = {}): Promise<CommunityLine[]> => {
 	const supabase = await getSupabase();
 	const { column, ascending } = COMMUNITY_SORTS[sort] ?? COMMUNITY_SORTS[DEFAULT_SORT];
@@ -62,6 +64,7 @@ export const listCommunityLines = async ({
 		.from('user_lines')
 		.select(SELECT_COMMUNITY)
 		.eq('is_public', true)
+		.eq('licence', licence)
 		.order(column, { ascending, nullsFirst: false });
 
 	if (column !== 'created_at') {

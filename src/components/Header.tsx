@@ -52,7 +52,10 @@ const Header: React.FC = () => (
 					/>
 					<DropdownMenu
 						{...gameMenu(Pokeball, 'Pokémon')}
-						items={[{ href: '/build/pokemon', content: 'Builder' }]}
+						items={[
+							{ href: '/build/pokemon', content: 'Builder' },
+							{ href: '/community/pokemon', content: 'Community' },
+						]}
 					/>
 					<DropdownMenu
 						{...gameMenu(Millennium, 'Yu-Gi-Oh!')}

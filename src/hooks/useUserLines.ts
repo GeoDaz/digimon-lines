@@ -29,7 +29,8 @@ export const useSaveUserLine = () => {
 			line: Line,
 			title: string | undefined,
 			isPublic: boolean,
-			cover?: string
+			cover?: string,
+			licence?: string
 		) => {
 			if (!user) {
 				addToast('Sign in to save this line to your account', 'warning');
@@ -49,6 +50,7 @@ export const useSaveUserLine = () => {
 					line,
 					isPublic,
 					cover,
+					licence,
 				});
 				// Toast cliquable : mene a la ligne enregistree, en lecture.
 				addToast(

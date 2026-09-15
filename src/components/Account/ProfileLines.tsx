@@ -10,6 +10,12 @@ import PseudoEditor from '@/components/Account/PseudoEditor';
 import ButtonAdd from '@/components/Button/ButtonAdd';
 import { useProfileLines } from '@/hooks/useUserLines';
 import { useAuth } from '@/context/auth';
+import {
+	getLicence,
+	licenceBuildPath,
+	licenceStorageKey,
+	LicenseContext,
+} from '@/context/license';
 import { lineToArray } from '@/functions/line';
 import { DISCORD_URL, SITE_URL } from '@/consts/env';
 import Line from '@/types/Line';
@@ -38,8 +44,15 @@ const ProfileLines: React.FC<Props> = ({ pseudo }) => {
 	const quotaReached = !!quota && lines.length >= quota;
 
 	const handleEdit = (line: UserLineWithAuthor) => {
-		localStorage.setItem('digimon-line', JSON.stringify(line.data, null, 4));
-		router.push(`/build/?name=${encodeURIComponent(line.title || line.slug)}`);
+		localStorage.setItem(
+			licenceStorageKey(line.licence),
+			JSON.stringify(line.data, null, 4)
+		);
+		router.push(
+			`${licenceBuildPath(line.licence)}/?name=${encodeURIComponent(
+				line.title || line.slug
+			)}`
+		);
 	};
 
 	const handleDelete = (line: UserLineWithAuthor) => {
@@ -109,26 +122,30 @@ const ProfileLines: React.FC<Props> = ({ pseudo }) => {
 							);
 							return (
 								<Col key={line.id} className="profile-line">
-									{
-										cover ?
-											<LinePoint
-												name={cover}
-												href={`/profile/${pseudo}/${line.slug}`}
-												label={line.title || line.slug}
-												available
-											>
-												{caption}
-											</LinePoint>
-											// Ligne sans aucun point : pas d'image à montrer.
-										:	<Link
-												href={`/profile/${pseudo}/${line.slug}`}
-												title={line.title || line.slug}
-												className="line-point pictured available"
-											>
-												{caption}
-											</Link>
+									<LicenseContext.Provider
+										value={getLicence(line.licence)}
+									>
+										{
+											cover ?
+												<LinePoint
+													name={cover}
+													href={`/profile/${pseudo}/${line.slug}`}
+													label={line.title || line.slug}
+													available
+												>
+													{caption}
+												</LinePoint>
+												// Ligne sans aucun point : pas d'image à montrer.
+											:	<Link
+													href={`/profile/${pseudo}/${line.slug}`}
+													title={line.title || line.slug}
+													className="line-point pictured available"
+												>
+													{caption}
+												</Link>
 
-									}
+										}
+									</LicenseContext.Provider>
 									{isOwner && (
 										<div className="profile-line-actions">
 											<Button

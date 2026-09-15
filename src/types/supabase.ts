@@ -84,6 +84,7 @@ export type Database = {
           data: Json
           id: string
           is_public: boolean
+          licence: string
           like_count: number
           search_text: string | null
           slug: string
@@ -97,6 +98,7 @@ export type Database = {
           data: Json
           id?: string
           is_public?: boolean
+          licence?: string
           like_count?: number
           slug: string
           title?: string | null
@@ -109,6 +111,7 @@ export type Database = {
           data?: Json
           id?: string
           is_public?: boolean
+          licence?: string
           like_count?: number
           slug?: string
           title?: string | null

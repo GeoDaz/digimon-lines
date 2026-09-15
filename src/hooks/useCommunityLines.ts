@@ -14,7 +14,8 @@ import { CommunityLine } from '@/types/Account';
 
 export const useCommunityLines = (
 	search: string,
-	sort: CommunitySortKey = DEFAULT_SORT
+	sort: CommunitySortKey = DEFAULT_SORT,
+	licence: string = 'digimon'
 ) => {
 	const { user, loading: authLoading } = useAuth();
 
@@ -54,7 +55,7 @@ export const useCommunityLines = (
 			setFailed(false);
 			try {
 				const rows = await withLikes(
-					await listCommunityLines({ search, sort, page: nextPage })
+					await listCommunityLines({ search, sort, page: nextPage, licence })
 				);
 				if (id !== request.current) return;
 				page.current = nextPage;
@@ -70,7 +71,7 @@ export const useCommunityLines = (
 				}
 			}
 		},
-		[search, sort, withLikes]
+		[search, sort, licence, withLikes]
 	);
 
 	useEffect(() => {

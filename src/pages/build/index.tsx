@@ -87,7 +87,7 @@ export const PageBuild = (props: BuildProps) => {
 		if (queryName) setName(queryName);
 	}, [queryName]);
 
-	const saveFlow = useSaveLineFlow({ line, name, setName });
+	const saveFlow = useSaveLineFlow({ line, name, setName, licence: licenceContext.key });
 
 	// CTRL/CMD + S sauvegarde dans le compte quand on est connecté ; sinon (et en
 	// dev, où il écrit dans public/json/lines) il garde l'export "Code".
@@ -229,6 +229,7 @@ export const PageBuild = (props: BuildProps) => {
 				covers={saveFlow.covers}
 				defaultCover={saveFlow.defaultCover}
 				saving={saveFlow.saving}
+				licence={licenceContext.key}
 				onClose={saveFlow.closeModal}
 				onSubmit={saveFlow.submitFromModal}
 			/>

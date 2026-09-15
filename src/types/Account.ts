@@ -19,6 +19,7 @@ export interface CommunityLine extends Pick<
 	| 'slug'
 	| 'title'
 	| 'cover'
+	| 'licence'
 	| 'like_count'
 	| 'created_at'
 > {

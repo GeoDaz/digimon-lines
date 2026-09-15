@@ -15,12 +15,20 @@ import {
 	DEFAULT_SORT,
 	isCommunitySort,
 } from '@/functions/communityLines';
+import {
+	defaultLicenceContext,
+	LicenceProps,
+	licenceBuildPath,
+	licenceCommunityPath,
+	LicenseContext,
+} from '@/context/license';
+import { capitalize } from '@/functions';
 import { CommunityLine } from '@/types/Account';
 
 const SEARCH = 'search';
 const SORT = 'sort';
 
-const PageCommunity = () => {
+export const PageCommunity = ({ licence = defaultLicenceContext }: { licence?: LicenceProps }) => {
 	const params = useQueryParam(SEARCH, SORT);
 	const search = params[SEARCH] || '';
 	const sort: CommunitySortKey =
@@ -29,7 +37,8 @@ const PageCommunity = () => {
 	const { enabled } = useAuth();
 	const { lines, loading, loadingMore, failed, hasMore, loadMore } = useCommunityLines(
 		search,
-		sort
+		sort,
+		licence.key
 	);
 
 	const [draft, setDraft] = useState(search);
@@ -49,18 +58,22 @@ const PageCommunity = () => {
 		return () => observer.disconnect();
 	}, [loadMore]);
 
+	const title = `${licence.name} community lines`;
+	const metatitle = `${capitalize(licence.name)} Community`;
+	const buildPath = licenceBuildPath(licence.key);
+
 	const pushQuery = (next: { search?: string; sort?: CommunitySortKey }) => {
 		const query: Record<string, string> = {};
 		const nextSearch = next.search ?? search;
 		const nextSort = next.sort ?? sort;
 		if (nextSearch) query[SEARCH] = nextSearch;
 		if (nextSort !== DEFAULT_SORT) query[SORT] = nextSort;
-		Router.push({ pathname: '/community', query });
+		Router.push({ pathname: licenceCommunityPath(licence.key), query });
 	};
 
 	if (!enabled) {
 		return (
-			<Layout title="Community lines" metatitle="Community lines">
+			<Layout title={title} metatitle={metatitle}>
 				<Alert variant="warning">
 					Community lines are not available right now.
 				</Alert>
@@ -70,13 +83,14 @@ const PageCommunity = () => {
 
 	return (
 		<Layout
-			title="Community lines"
-			metatitle="Community lines"
-			metadescription="Evolution lines built and published by the Digimon Lines community."
+			title={title}
+			metatitle={metatitle}
+			metadescription={`${licence.name} evolution lines built and published by the community.`}
+			metaimg={`${licence.key}.png`}
 		>
 			<blockquote className="blockquote">
 				Every line here was built and published by a visitor.{' '}
-				<Link href="/build" className="btn btn-primary px-2 py-1">
+				<Link href={buildPath} className="btn btn-primary px-2 py-1">
 					Build your own
 				</Link>{' '}
 				and publish it from <Link href="/my-lines">My lines</Link>&nbsp;!
@@ -91,13 +105,13 @@ const PageCommunity = () => {
 					}}
 				>
 					<Form.Label htmlFor="community-search" visuallyHidden>
-						Research a digimon or a title
+						Research a {licence.name} or a title
 					</Form.Label>
 					<Form.Control
 						type="search"
 						id="community-search"
 						className="research"
-						placeholder="Research a digimon or a title"
+						placeholder={`Research a ${licence.name} or a title`}
 						autoComplete="off"
 						value={draft}
 						onChange={event => {
@@ -137,16 +151,16 @@ const PageCommunity = () => {
 				<p className="text-muted">
 					{search ?
 						<>
-							No line matches “{search}”. Try another Digimon, or a word of
-							the title.
+							No line matches “{search}”. Try another {licence.name}, or a
+							word of the title.
 						</>
 					:	<>
 							No line has been published yet.{' '}
-							<Link href="/build">Be the first one</Link>&nbsp;!
+							<Link href={buildPath}>Be the first one</Link>&nbsp;!
 						</>
 					}
 				</p>
-			:	<>
+			:	<LicenseContext.Provider value={licence}>
 					<div className="line-wrapper">
 						<Row className="line-row">
 							{lines.map(line => (
@@ -166,7 +180,7 @@ const PageCommunity = () => {
 							)}
 						</div>
 					)}
-				</>
+				</LicenseContext.Provider>
 			}
 		</Layout>
 	);
@@ -201,11 +215,7 @@ const CommunityCard = ({ line }: { line: CommunityLine }) => {
 						<Icon name="person-circle" /> {pseudo}
 					</Link>
 				)}
-				<LikeHeart
-					count={line.like_count}
-					liked={line.liked}
-					className="ms-auto"
-				/>
+				<LikeHeart count={line.like_count} liked={line.liked} className="ms-auto" />
 			</div>
 		</Col>
 	);

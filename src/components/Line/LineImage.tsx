@@ -39,7 +39,7 @@ const LineImage: React.FC<Props> = ({
 }) => {
 	const licence = useContext(LicenseContext)?.key || DIGIMON;
 	const { zoomFactor } = useContext(ZoomContext);
-	const getImgPath = imgPathByLicence[licence];
+	const getImgPath = imgPathByLicence[licence] || imgPathByLicence[DIGIMON];
 	const [src, setSrc] = useState(() => path || getImgPath(name, type));
 	const [open, setOpen] = useState(false);
 	const [loading, setLoading] = useState(true);

@@ -25,6 +25,7 @@ interface Params {
 	line: Line;
 	name?: string;
 	setName: (name: string) => void;
+	licence?: string;
 }
 
 /**
@@ -32,7 +33,7 @@ interface Params {
  * quand tout est connu, ouvre la modale quand il manque le titre ou la
  * visibilité.
  */
-const useSaveLineFlow = ({ line, name, setName }: Params) => {
+const useSaveLineFlow = ({ line, name, setName, licence }: Params) => {
 	const { user, profile, enabled } = useAuth();
 	const { save, saving } = useSaveUserLine();
 	const { addToast } = useToast();
@@ -80,7 +81,7 @@ const useSaveLineFlow = ({ line, name, setName }: Params) => {
 				return false;
 			}
 
-			const saved = await save(line, title, isPublic, cover);
+			const saved = await save(line, title, isPublic, cover, licence);
 			if (!saved) return false;
 
 			setName(title);
@@ -90,7 +91,7 @@ const useSaveLineFlow = ({ line, name, setName }: Params) => {
 			}
 			return true;
 		},
-		[save, line, setName, addToast, profile]
+		[save, line, setName, addToast, profile, licence]
 	);
 
 	/**
