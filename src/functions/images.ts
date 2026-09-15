@@ -25,6 +25,22 @@ export const formatBytes = (bytes: number): string => {
 
 const imgDirs = [DIGIMON, GROUP, DIGIEGG];
 
+const coverKeyByLicence: Record<string, (name: string) => string> = {
+	digimon: name => name,
+	pokemon: formatPokemonFileName,
+};
+
+export const coverKey = (name: string, licence: string = DIGIMON): string | undefined => {
+	const format = coverKeyByLicence[licence] || coverKeyByLicence[DIGIMON];
+	const key = format(name)
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.replace(/[^a-z0-9_.-]/g, '')
+		.slice(0, 64);
+	return key || undefined;
+};
+
 const imgPathByLicence: Record<string, CallableFunction> = {
 	digimon: (name: string, type: string) =>
 		`/images/${imgDirs.includes(type) ? type : 'digimon'}/${name}.jpg`,

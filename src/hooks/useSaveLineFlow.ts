@@ -12,7 +12,7 @@ import {
 	lineToArray,
 	stripUploadedImages,
 } from '@/functions/line';
-import { formatBytes } from '@/functions/images';
+import { coverKey, formatBytes } from '@/functions/images';
 import Line from '@/types/Line';
 
 /**
@@ -47,9 +47,11 @@ const useSaveLineFlow = ({ line, name, setName, licence }: Params) => {
 
 	// Digimon présents dans la ligne : ce sont les couvertures possibles.
 	const covers = useMemo(() => {
-		const names = lineToArray(line).filter(Boolean);
-		return names.filter((name, i) => names.indexOf(name) === i);
-	}, [line]);
+		const keys = lineToArray(line)
+			.map(name => coverKey(name, licence))
+			.filter(Boolean) as string[];
+		return keys.filter((key, i) => keys.indexOf(key) === i);
+	}, [line, licence]);
 
 	/** CTRL+S reste l'écriture dans public/json/lines en dev. */
 	const canSaveToAccount = enabled && !!user && !IS_DEV;

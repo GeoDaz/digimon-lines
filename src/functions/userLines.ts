@@ -1,6 +1,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import { getSupabase } from '@/functions/supabase';
 import { prepareLineExport, stripUploadedImages } from '@/functions/line';
+import { coverKey } from '@/functions/images';
 import Line from '@/types/Line';
 import { UserLineRow, UserLineWithAuthor } from '@/types/Account';
 import { Database, Json } from '@/types/supabase';
@@ -59,7 +60,7 @@ export const saveUserLine = async ({
 				// l'appelant.
 				data: prepareLineExport(stripUploadedImages(line)) as unknown as Json,
 				is_public: isPublic,
-				cover: cover || null,
+				cover: (cover && coverKey(cover, licence)) || null,
 				licence: licence || 'digimon',
 			},
 			{ onConflict: 'user_id,slug' }
