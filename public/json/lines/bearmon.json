@@ -1,35 +1,28 @@
 {
     "columns": [
         [
+            null,
+            null,
+            null,
+            null,
             {
-                "name": "botamon",
-                "from": null,
-                "xSize": 2
-            },
-            {
-                "name": "wanyamon",
-                "color": [
-                    "ice"
-                ],
-                "xSize": 2
-            },
-            {
-                "name": "bearmon",
-                "xSize": 2
-            },
-            {
-                "name": "grizzlymon",
-                "xSize": 2
-            },
-            {
-                "name": "greatgrizzlymon",
-                "xSize": 2
+                "name": "grapleomon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
             },
             {
                 "name": "marsmon",
                 "from": [
                     [
-                        0.5,
+                        1,
+                        -1
+                    ],
+                    [
+                        0,
                         -1
                     ]
                 ],
@@ -39,16 +32,36 @@
             }
         ],
         [
-            null,
-            null,
-            null,
-            null,
-            null,
+            {
+                "name": "botamon",
+                "from": null
+            },
+            {
+                "name": "wanyamon",
+                "color": [
+                    "default"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "bearmon"
+            },
+            {
+                "name": "grizzlymon"
+            },
+            {
+                "name": "greatgrizzlymon"
+            },
             {
                 "name": "callismon",
                 "from": [
                     [
-                        -0.5,
+                        0,
                         -1
                     ]
                 ],
@@ -56,20 +69,52 @@
                     "dark"
                 ]
             }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "bearcatmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "artiomon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
         ]
     ],
     "related": [
-        {
-            "name": "app_rebootmon",
-            "for": "app_onmon"
-        },
         {
             "name": "penmon",
             "for": "frigimon"
         },
         {
+            "name": "pristimon",
+            "for": "bearcatmon"
+        },
+        {
             "name": "leomon",
             "for": "grapleomon"
+        },
+        {
+            "name": "app_rebootmon",
+            "for": "app_onmon"
         },
         {
             "name": "numemon",
@@ -78,10 +123,6 @@
         {
             "name": "phascomon",
             "for": "porcupamon"
-        },
-        {
-            "name": "pristimon",
-            "for": "bearcatmon"
         },
         {
             "name": "garurumon",

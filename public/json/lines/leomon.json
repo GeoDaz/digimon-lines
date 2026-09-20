@@ -363,7 +363,7 @@
                 "xSize": 2
             },
             {
-                "name": "achillesmon",
+                "name": "habakirimon",
                 "from": [
                     [
                         0.5,
@@ -382,7 +382,7 @@
             null,
             null,
             {
-                "name": "habakirimon",
+                "name": "achillesmon",
                 "from": [
                     [
                         -0.5,
@@ -644,11 +644,15 @@
             "name": "pulsemon",
             "for": "achillesmon"
         },
-        "ultimatechaosmon",
+        {
+            "name": "pristimon",
+            "for": "artiomon"
+        },
         {
             "name": "lunamon",
             "from": "gracenovamon"
         },
+        "ultimatechaosmon",
         {
             "name": "commandramon",
             "from": "chaosmon"
@@ -680,12 +684,12 @@
             "from": "marsmon"
         },
         {
-            "name": "pulsemon",
-            "for": "asuramon"
+            "name": "meramon",
+            "from": "marsmon"
         },
         {
             "name": "meramon",
-            "from": "marsmon"
+            "for": "asuramon"
         }
     ],
     "size": 8

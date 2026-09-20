@@ -6593,7 +6593,8 @@
             ],
             "to": [
                 "scourgechiropmon",
-                "darksuperstarmon"
+                "darksuperstarmon",
+                "darkknightmon"
             ]
         },
         "parasaumon": {
@@ -9144,7 +9145,8 @@
                 "darkknightmon_x"
             ],
             "from": [
-                "skullknightmon"
+                "skullknightmon",
+                "nightchiropmon"
             ],
             "fusionFrom": [
                 "skullknightmon",
@@ -9154,7 +9156,8 @@
                 "darkness_bagramon",
                 "shoutmon_x3sd",
                 "craniummon",
-                "greyknightsmon"
+                "greyknightsmon",
+                "atratusmon"
             ]
         },
         "darksuperstarmon": {
@@ -10133,7 +10136,8 @@
             ],
             "to": [
                 "slashangemon",
-                "grandracmon"
+                "grandracmon",
+                "nosferamon"
             ]
         },
         "megaseadramon": {
@@ -10395,7 +10399,8 @@
                 "boltboutamon",
                 "grandracmon",
                 "demon",
-                "piemon"
+                "piemon",
+                "nosferamon"
             ]
         },
         "nanomon": {
@@ -11305,7 +11310,8 @@
             "to": [
                 "avengekidmon",
                 "brigadramon",
-                "beelzebumon"
+                "beelzebumon",
+                "nosferamon"
             ]
         },
         "wargrowlmon": {
@@ -11547,7 +11553,8 @@
             "to": [
                 "achillesmon",
                 "marsmon",
-                "leopardmon"
+                "leopardmon",
+                "artiomon"
             ]
         },
         "brachiomon": {
@@ -11647,7 +11654,8 @@
             ],
             "to": [
                 "marsmon",
-                "callismon"
+                "callismon",
+                "artiomon"
             ]
         },
         "greatkingsukamon": {
@@ -11758,6 +11766,11 @@
             "name": "scourgechiropmon",
             "from": [
                 "nightchiropmon"
+            ],
+            "to": [
+                "nosferamon",
+                "atratusmon",
+                "brigadramon"
             ]
         },
         "stefilmon": {
@@ -11881,7 +11894,8 @@
                 "grandracmon",
                 "beelzebumon",
                 "shinmonzaemon",
-                "callismon"
+                "callismon",
+                "nosferamon"
             ]
         },
         "chohakkaimon": {
@@ -13271,7 +13285,8 @@
                 "cargodramon",
                 "vulturemon",
                 "tankdramon",
-                "masterblimpmon"
+                "masterblimpmon",
+                "scourgechiropmon"
             ]
         },
         "bryweludramon": {
@@ -15393,7 +15408,9 @@
             "from": [
                 "monarchlizamon",
                 "crescemon",
-                "regulusmon"
+                "regulusmon",
+                "darkknightmon",
+                "scourgechiropmon"
             ]
         },
         "albatusmon": {
@@ -15416,6 +15433,23 @@
             "name": "sakuyamon_miko_mode",
             "modes": [
                 "sakuyamon"
+            ]
+        },
+        "artiomon": {
+            "name": "artiomon",
+            "from": [
+                "bearcatmon",
+                "greatgrizzlymon"
+            ]
+        },
+        "nosferamon": {
+            "name": "nosferamon",
+            "from": [
+                "scourgechiropmon",
+                "myotismon",
+                "vulturemon",
+                "astamon",
+                "matadormon"
             ]
         }
     },

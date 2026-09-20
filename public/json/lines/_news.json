@@ -1,5 +1,13 @@
 [
 	{
+		"name": "chiropmon",
+		"grid": ["nosferamon"]
+	},
+	{
+		"name": "pristimon",
+		"grid": ["artiomon"]
+	},
+	{
 		"name": "gekkomon",
 		"grid": ["atratusmon"]
 	},
@@ -7,25 +15,13 @@
 		"name": "snakemon",
 		"grid": ["albatusmon", "heliosboamon"]
 	},
+	"gargamon",
 	{
 		"name": "leomon",
 		"grid": ["habakirimon"]
 	},
-	"gargamon",
-	{
-		"name": "pristimon",
-		"grid": ["bearcatmon"]
-	},
 	{
 		"name": "tapirmon",
 		"grid": ["taowumon"]
-	},
-	{
-		"name": "chiropmon",
-		"grid": ["scourgechiropmon"]
-	},
-	{
-		"name": "monodramon",
-		"grid": ["azhdarmon"]
 	}
 ]

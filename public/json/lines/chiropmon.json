@@ -1,44 +1,150 @@
 {
-	"columns": [
-		[
-			{
-				"name": "zurumon_2"
-			},
-			{
-				"name": "pagumon"
-			},
-			{
-				"name": "chiropmon"
-			},
-			{
-				"name": "nightchiropmon"
-			},
-			{
-				"name": "scourgechiropmon"
-			},
-			{
-				"name": "unknown"
-			}
-		],
-		[null, null, null, { "name": "pipismon", "from": [-1, -1] }, null, null]
-	],
-	"related": [
-		{
-			"name": "devimon",
-			"for": "myotismon",
-			"from": "demidevimon"
-		},
-		{
-			"name": "commandramon",
-			"for": "cargodramon"
-		},
-		{
-			"name": "jazamon",
-			"for": "mailbirdramon"
-		},
-		{
-			"name": "hagurumon",
-			"for": "blimpmon"
-		}
-	]
+    "columns": [
+        [
+            {
+                "name": "zurumon_2",
+                "from": null
+            },
+            {
+                "name": "pagumon"
+            },
+            {
+                "name": "chiropmon"
+            },
+            {
+                "name": "nightchiropmon"
+            },
+            {
+                "name": "scourgechiropmon"
+            },
+            {
+                "name": "nosferamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "pipismon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "myotismon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "venommyotismon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "myotismon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            },
+            {
+                "name": "malomyotismon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "neomyotismon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "devimon",
+            "for": "myotismon",
+            "from": "demidevimon"
+        },
+        {
+            "name": "dracmon",
+            "from": "nosferamon"
+        },
+        {
+            "name": "patamon",
+            "for": "pipismon"
+        },
+        {
+            "name": "commandramon",
+            "for": "brigadramon"
+        },
+        {
+            "name": "jazamon",
+            "for": "mailbirdramon"
+        },
+        {
+            "name": "hagurumon",
+            "for": "blimpmon"
+        }
+    ],
+    "size": 6
 }
