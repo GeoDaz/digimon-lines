@@ -1,106 +1,87 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "achillesmon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            {
-                "name": "pafumon",
-                "from": null
-            },
-            {
-                "name": "kyaromon"
-            },
-            {
-                "name": "pristimon"
-            },
-            {
-                "name": "wolvermon"
-            },
-            {
-                "name": "bearcatmon"
-            },
-            {
-                "name": "artiomon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "leopardmon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "skins": [
-                    "leopardmon_leopard_mode"
-                ],
-                "color": [
-                    "x"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "leopardmon_x",
-                "from": [
-                    [
-                        -1,
-                        0
-                    ]
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "pulsemon",
-            "for": "achillesmon"
-        },
-        {
-            "name": "gatomon",
-            "for": "leopardmon"
-        },
-        {
-            "name": "leomon",
-            "from": "leopardmon"
-        },
-        {
-            "name": "bearmon",
-            "for": "marsmon"
-        },
-        {
-            "name": "bearmon",
-            "for": "pandamon"
-        },
-        {
-            "name": "renamon",
-            "for": "kudamon"
-        }
-    ],
-    "size": 6
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "achillesmon",
+				"from": [[1, -1]]
+			}
+		],
+		[
+			{
+				"name": "pafumon",
+				"from": null
+			},
+			{
+				"name": "kyaromon"
+			},
+			{
+				"name": "pristimon"
+			},
+			{
+				"name": "wolvermon"
+			},
+			{
+				"name": "bearcatmon"
+			},
+			{
+				"name": "artiomon"
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "leopardmon",
+				"from": [[-1, -1]],
+				"skins": ["leopardmon_leopard_mode"],
+				"color": ["x"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "leopardmon_x",
+				"from": [[-1, 0]]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "pulsemon",
+			"for": "achillesmon"
+		},
+		{
+			"name": "gatomon",
+			"for": "leopardmon"
+		},
+		{
+			"name": "leomon",
+			"from": "leopardmon"
+		},
+		{
+			"name": "bearmon",
+			"for": "marsmon"
+		},
+		{
+			"name": "shoemon",
+			"for": "pandamon"
+		},
+		{
+			"name": "renamon",
+			"for": "kudamon"
+		}
+	],
+	"size": 6
 }

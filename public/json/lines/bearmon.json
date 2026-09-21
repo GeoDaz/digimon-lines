@@ -1,138 +1,104 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "grapleomon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "marsmon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ],
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "fire"
-                ]
-            }
-        ],
-        [
-            {
-                "name": "botamon",
-                "from": null
-            },
-            {
-                "name": "wanyamon",
-                "color": [
-                    "default"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "bearmon"
-            },
-            {
-                "name": "grizzlymon"
-            },
-            {
-                "name": "greatgrizzlymon"
-            },
-            {
-                "name": "callismon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "dark"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "bearcatmon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "artiomon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ],
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            }
-        ]
-    ],
-    "related": [
-        {
-            "name": "penmon",
-            "for": "frigimon"
-        },
-        {
-            "name": "pristimon",
-            "for": "bearcatmon"
-        },
-        {
-            "name": "leomon",
-            "for": "grapleomon"
-        },
-        {
-            "name": "app_rebootmon",
-            "for": "app_onmon"
-        },
-        {
-            "name": "numemon",
-            "for": "monzaemon"
-        },
-        {
-            "name": "phascomon",
-            "for": "porcupamon"
-        },
-        {
-            "name": "garurumon",
-            "for": "marsmon"
-        },
-        {
-            "name": "kakamon",
-            "for": "mojyamon"
-        },
-        "espimon"
-    ],
-    "size": 6
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "grapleomon",
+				"from": [[1, -1]]
+			},
+			{
+				"name": "marsmon",
+				"from": [
+					[1, -1],
+					[0, -1]
+				],
+				"color": ["fire"]
+			}
+		],
+		[
+			{
+				"name": "botamon",
+				"from": null
+			},
+			{
+				"name": "wanyamon",
+				"color": ["default"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "bearmon"
+			},
+			{
+				"name": "grizzlymon"
+			},
+			{
+				"name": "greatgrizzlymon"
+			},
+			{
+				"name": "callismon",
+				"from": [[0, -1]],
+				"color": ["dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "bearcatmon",
+				"from": [[-1, -1]]
+			},
+			{
+				"name": "artiomon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				]
+			}
+		]
+	],
+	"related": [
+		{
+			"name": "penmon",
+			"for": "chackmon"
+		},
+		{
+			"name": "penmon",
+			"for": "frigimon"
+		},
+		{
+			"name": "pristimon",
+			"for": "bearcatmon"
+		},
+		{
+			"name": "leomon",
+			"for": "grapleomon"
+		},
+		{
+			"name": "app_rebootmon",
+			"for": "app_onmon"
+		},
+		{
+			"name": "shoemon",
+			"for": "monzaemon"
+		},
+		{
+			"name": "phascomon",
+			"for": "porcupamon"
+		},
+		{
+			"name": "garurumon",
+			"for": "marsmon"
+		},
+		{
+			"name": "kakamon",
+			"for": "mojyamon"
+		},
+		"espimon"
+	],
+	"size": 6
 }

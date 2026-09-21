@@ -120,25 +120,16 @@
             {
                 "name": "venommyotismon",
                 "color": [
-                    "dark",
                     "dark"
                 ],
                 "from": [
-                    0,
-                    -1
+                    [
+                        0,
+                        -1
+                    ]
                 ]
             },
-            {
-                "name": "malomyotismon",
-                "color": [
-                    "dark",
-                    "dark"
-                ],
-                "from": [
-                    0,
-                    -1
-                ]
-            }
+            null
         ],
         [
             null,
@@ -158,13 +149,33 @@
                 ]
             },
             {
+                "name": "malomyotismon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
                 "name": "neomyotismon",
                 "color": [
                     "dark"
                 ],
                 "from": [
                     [
-                        -1,
+                        -2,
                         -1
                     ]
                 ]
@@ -191,7 +202,7 @@
                 "name": "nosferamon",
                 "from": [
                     [
-                        -2,
+                        -3,
                         -1
                     ]
                 ]
@@ -209,6 +220,10 @@
             "for": "nosferamon"
         },
         {
+            "name": "phascomon",
+            "for": "astamon"
+        },
+        {
             "name": "patamon",
             "for": "slashangemon"
         },
@@ -217,8 +232,12 @@
             "for": "duskmon"
         },
         {
-            "name": "phascomon",
-            "for": "astamon"
+            "name": "impmon",
+            "for": "beelzebumon"
+        },
+        {
+            "name": "toyagumon",
+            "for": "boltboutamon"
         },
         {
             "name": "gabumon",
@@ -238,13 +257,18 @@
             "for": "yaksamon"
         },
         {
-            "name": "toyagumon",
-            "for": "boltboutamon"
+            "name": "bakemon",
+            "for": "piemon"
         },
         {
             "name": "bakemon",
-            "for": "piemon"
-        }
+            "for": "jokermon"
+        },
+        {
+            "name": "gatomon",
+            "for": "ophanimon_falldown_mode"
+        },
+        "apocalymon"
     ],
     "size": 7
 }

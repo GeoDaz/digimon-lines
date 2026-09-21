@@ -1,145 +1,211 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "deckerdramon",
-				"from": [2, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "hicommandramon",
-				"from": [1, -1]
-			},
-			{
-				"name": "cargodramon"
-			},
-			{
-				"name": "brigadramon"
-			}
-		],
-		[
-			{
-				"name": "bommon"
-			},
-			{
-				"name": "missimon"
-			},
-			{
-				"name": "commandramon"
-			},
-			{
-				"name": "sealsdramon"
-			},
-			{
-				"name": "tankdramon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				]
-			},
-			{
-				"name": "darkdramon"
-			},
-			{
-				"name": "chaosmon",
-				"color": "fusion"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "tankmon",
-				"from": [-1, -1]
-			},
-			{
-				"name": "vulturemon",
-				"from": [[-1, -1]]
-			},
-			{
-				"name": "cannondramon",
-				"from": [-1, -1]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "chikurimon",
-				"from": [-2, -1]
-			},
-			{
-				"name": "troopmon"
-			},
-			{
-				"name": "assaultmon"
-			},
-			{
-				"name": "gundramon",
-				"from": [
-					[0, -1],
-					[-2, -1]
-				]
-			}
-		]
-	],
-	"related": [
-		"ultimatechaosmon",
-		{
-			"name": "leomon",
-			"from": "chaosmon"
-		},
-		{
-			"name": "greymon",
-			"from": "brigadramon"
-		},
-		{
-			"name": "tyranomon",
-			"for": "gundramon"
-		},
-		{
-			"name": "toyagumon",
-			"for": "magnakidmon"
-		},
-		{
-			"name": "impmon",
-			"for": "beelstarmon"
-		},
-		{
-			"name": "hagurumon",
-			"for": "masterblimpmon"
-		},
-		{
-			"name": "monodramon",
-			"from": "darkdramon"
-		},
-		{
-			"name": "bemmon",
-			"for": "destromon"
-		},
-		{
-			"name": "gammamon",
-			"for": "cannondramon"
-		},
-		{
-			"name": "patamon",
-			"for": "centarumon"
-		},
-		{
-			"name": "jazamon",
-			"for": "mailbirdramon"
-		},
-		{
-			"name": "betamon",
-			"for": "gigadramon"
-		}
-	]
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "deckerdramon",
+                "from": [
+                    [
+                        2,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "hicommandramon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "cargodramon"
+            },
+            {
+                "name": "brigadramon"
+            },
+            null
+        ],
+        [
+            {
+                "name": "bommon",
+                "from": null
+            },
+            {
+                "name": "missimon"
+            },
+            {
+                "name": "commandramon"
+            },
+            {
+                "name": "sealsdramon"
+            },
+            {
+                "name": "tankdramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "darkdramon"
+            },
+            {
+                "name": "chaosmon",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tankmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "vulturemon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "cannondramon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "chikurimon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "troopmon"
+            },
+            {
+                "name": "assaultmon"
+            },
+            {
+                "name": "gundramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -2,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ]
+    ],
+    "related": [
+        "ultimatechaosmon",
+        {
+            "name": "leomon",
+            "from": "chaosmon"
+        },
+        {
+            "name": "greymon",
+            "from": "brigadramon"
+        },
+        {
+            "name": "tyranomon",
+            "for": "gundramon"
+        },
+        {
+            "name": "toyagumon",
+            "for": "magnakidmon"
+        },
+        {
+            "name": "impmon",
+            "for": "beelstarmon"
+        },
+        {
+            "name": "toyagumon",
+            "for": "vulturemon"
+        },
+        {
+            "name": "chiropmon",
+            "for": "nosferamon"
+        },
+        {
+            "name": "betamon",
+            "for": "gigadramon"
+        },
+        {
+            "name": "bemmon",
+            "for": "destromon"
+        },
+        {
+            "name": "monodramon",
+            "from": "darkdramon"
+        },
+        {
+            "name": "hagurumon",
+            "for": "masterblimpmon"
+        },
+        {
+            "name": "gammamon",
+            "for": "cannondramon"
+        },
+        {
+            "name": "patamon",
+            "for": "centarumon"
+        },
+        {
+            "name": "jazamon",
+            "for": "mailbirdramon"
+        }
+    ],
+    "size": 7
 }

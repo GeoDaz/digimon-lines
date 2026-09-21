@@ -1,323 +1,745 @@
 {
-	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "ladydevimon_x",
-				"color": "x",
-				"from": [1, 0]
-			},
-			{
-				"name": "lilithmon_x",
-				"color": "x",
-				"from": [
-					[0, -1],
-					[1, 0]
-				]
-			}
-		],
-		[
-			{
-				"name": "snowbotamon"
-			},
-			{
-				"name": "nyaromon"
-			},
-			{
-				"name": "salamon",
-				"color": "light"
-			},
-			{
-				"name": "black_gatomon",
-				"color": "dark"
-			},
-			{
-				"name": "ladydevimon",
-				"color": "dark"
-			},
-			{
-				"name": "lilithmon",
-				"color": "dark"
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "shakomon_x",
-				"color": "x",
-				"from": [[1, 0]]
-			},
-			{
-				"name": "gesomon_x",
-				"color": "x",
-				"from": [
-					[0, -1],
-					[1, 0]
-				]
-			},
-			null,
-			{
-				"name": "leviamon_x",
-				"color": "x",
-				"from": [[1, 0]]
-			}
-		],
-		[
-			{
-				"name": "pitchmon",
-				"color": "marine"
-			},
-			{
-				"name": "pukamon",
-				"color": "marine"
-			},
-			{
-				"name": "shakomon",
-				"color": "marine"
-			},
-			{
-				"name": "gesomon",
-				"color": "marine"
-			},
-			{
-				"name": "marinedevimon",
-				"color": "dark"
-			},
-			{
-				"name": "leviamon",
-				"color": "dark"
-			}
-		],
-		[
-			{
-				"name": "zurumon"
-			},
-			{
-				"name": "pagumon",
-				"color": "dark"
-			},
-			{
-				"name": "demidevimon",
-				"color": "dark"
-			},
-			{
-				"name": "devimon",
-				"color": "dark"
-			},
-			{
-				"name": "neodevimon",
-				"color": "dark"
-			},
-			{
-				"name": "demon",
-				"color": "dark",
-				"skins": ["demon_2"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "demon_x",
-				"color": "x",
-				"from": [-1, 0]
-			}
-		],
-		[
-			{
-				"name": "puttimon"
-			},
-			{
-				"name": "cupimon",
-				"color": "light"
-			},
-			{
-				"name": "lucemon",
-				"color": "light"
-			},
-			null,
-			{
-				"name": "lucemon_falldown_mode",
-				"color": "gold",
-				"from": [0, -2]
-			},
-			{
-				"name": "lucemon_larva",
-				"color": "mode"
-			},
-			{
-				"name": "lucemon_satan_mode",
-				"color": "mode"
-			},
-			{
-				"name": "ogudomon",
-				"color": "fusion",
-				"from": [
-					[-5, -2],
-					[-3, -2],
-					[-2, -2],
-					[0, -1],
-					[3, -2],
-					[4, -2],
-					[6, -2]
-				]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "lucemon_x",
-				"color": "x",
-				"from": [-1, -1]
-			},
-			null,
-			{
-				"name": "ogudomon_x",
-				"color": "x",
-				"from": [-1, 0]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "impmon_x",
-				"color": "x",
-				"from": [1, 0]
-			},
-			{
-				"name": "wizardmon_x",
-				"color": "x",
-				"from": [
-					[0, -1],
-					[1, 0]
-				]
-			},
-			{
-				"name": "baalmon_x",
-				"color": "x",
-				"from": [
-					[0, -1],
-					[1, 0]
-				]
-			},
-			{
-				"name": "beelzebumon_x",
-				"color": "x",
-				"from": [
-					[0, -1],
-					[1, 0]
-				]
-			}
-		],
-		[
-			{
-				"name": "keemon"
-			},
-			{
-				"name": "yarmon",
-				"color": "dark"
-			},
-			{
-				"name": "impmon",
-				"color": "dark"
-			},
-			{
-				"name": "wizardmon",
-				"color": "dark"
-			},
-			{
-				"name": "deathmeramon",
-				"color": "dark"
-			},
-			{
-				"color": "dark",
-				"name": "beelzebumon"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "boogiemon",
-				"color": "dark",
-				"from": [-1, -1]
-			},
-			{
-				"name": "phelesmon",
-				"color": "dark"
-			},
-			{
-				"name": "barbamon",
-				"color": "dark"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "barbamon_x",
-				"color": "x",
-				"from": [-1, 0]
-			}
-		],
-		[
-			null,
-			null,
-			{
-				"name": "phascomon",
-				"color": "dark",
-				"from": [-3, -1]
-			},
-			{
-				"name": "porcupamon",
-				"color": "dark"
-			},
-			{
-				"name": "astamon",
-				"color": "dark"
-			},
-			{
-				"name": "belphemon_rage_mode",
-				"color": "dark",
-				"skins": ["belphemon_sleep_mode"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "belphemon_x",
-				"color": "x",
-				"from": [-1, 0]
-			}
-		]
-	],
-	"related": [
-		"devimon",
-		"impmon",
-		"phascomon",
-		{ "name": "patamon", "for": "lucemon" },
-		{ "name": "betamon", "for": "leviamon" },
-		{ "name": "gatomon", "for": "black_gatomon" },
-		{ "name": "jellymon", "for": "marinedevimon" }
-	]
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "ladydevimon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "lilithmon_x",
+                "color": [
+                    "x",
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            {
+                "name": "snowbotamon",
+                "from": null
+            },
+            {
+                "name": "nyaromon"
+            },
+            {
+                "name": "salamon",
+                "color": [
+                    "light"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "black_gatomon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "ladydevimon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "lilithmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "shakomon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "gesomon_x",
+                "color": [
+                    "x",
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "leviamon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            {
+                "name": "pitchmon",
+                "color": "marine",
+                "from": null
+            },
+            {
+                "name": "pukamon",
+                "color": [
+                    "marine"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "shakomon",
+                "color": [
+                    "marine"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "gesomon",
+                "color": [
+                    "marine"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "marinedevimon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "leviamon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            {
+                "name": "zurumon",
+                "from": null
+            },
+            {
+                "name": "pagumon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "demidevimon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "devimon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "neodevimon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "demon",
+                "color": [
+                    "dark"
+                ],
+                "skins": [
+                    "demon_2"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "demon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            {
+                "name": "puttimon",
+                "from": null
+            },
+            {
+                "name": "cupimon",
+                "color": [
+                    "light"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "lucemon",
+                "color": [
+                    "light"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "lucemon_falldown_mode",
+                "color": [
+                    "gold",
+                    "gold"
+                ],
+                "from": [
+                    0,
+                    -2
+                ]
+            },
+            {
+                "name": "lucemon_larva",
+                "color": [
+                    "mode"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "lucemon_satan_mode",
+                "color": [
+                    "mode"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "ogudomon",
+                "color": [
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion",
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        -5,
+                        -2
+                    ],
+                    [
+                        -3,
+                        -2
+                    ],
+                    [
+                        -2,
+                        -2
+                    ],
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        3,
+                        -2
+                    ],
+                    [
+                        4,
+                        -2
+                    ],
+                    [
+                        6,
+                        -2
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "lucemon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            {
+                "name": "ogudomon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "impmon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "wizardmon_x",
+                "color": [
+                    "x",
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "name": "baalmon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "beelzebumon_x",
+                "color": [
+                    "x",
+                    "x"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            {
+                "name": "keemon",
+                "from": null
+            },
+            {
+                "name": "yarmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "impmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "wizardmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "deathmeramon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "color": [
+                    "dark"
+                ],
+                "name": "beelzebumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "boogiemon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "phelesmon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "barbamon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "barbamon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "phascomon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "porcupamon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "astamon",
+                "color": [
+                    "dark"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "belphemon_rage_mode",
+                "color": [
+                    "dark"
+                ],
+                "skins": [
+                    "belphemon_sleep_mode"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "belphemon_x",
+                "color": [
+                    "x"
+                ],
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ]
+            },
+            null,
+            null
+        ]
+    ],
+    "related": [
+        "devimon",
+        "impmon",
+        "phascomon",
+        {
+            "name": "patamon",
+            "for": "lucemon"
+        },
+        {
+            "name": "betamon",
+            "for": "leviamon"
+        },
+        {
+            "name": "gatomon",
+            "for": "black_gatomon"
+        },
+        {
+            "name": "jellymon",
+            "for": "marinedevimon"
+        }
+    ],
+    "size": 8
 }
