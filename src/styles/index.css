@@ -306,9 +306,9 @@ h2 {
 	vertical-align: -0.3em;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 400px) {
 	.navbar {
-		font-size: calc(100vw * 15 / 410);
+		font-size: calc(100vw * 15 / 400);
 	}
 }
 
