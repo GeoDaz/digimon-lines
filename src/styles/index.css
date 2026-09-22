@@ -255,8 +255,13 @@ h2 {
 }
 
 /* Header */
+header ::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
 
 .navbar {
+	overflow: auto;
 	font-weight: bold;
 	font-size: var(--bs-body-font-size);
 	--bs-navbar-padding-y: 0.5em;
@@ -264,24 +269,30 @@ h2 {
 	--bs-navbar-brand-font-size: 1.25em;
 	--bs-navbar-nav-link-padding-x: 0.5em;
 }
+
 .navbar .navbar-nav {
 	--bs-nav-link-padding-y: 0.5em;
 }
+
 .navbar .btn {
 	--bs-btn-padding-x: 0.75em;
 	--bs-btn-padding-y: 0.375em;
 	--bs-btn-font-size: 1em;
 }
+
 .navbar .fs-4 {
 	font-size: 1.5em !important;
 }
+
 .navbar .fs-6 {
 	font-size: 1em !important;
 }
+
 .navbar > .container-fluid {
 	--bs-gutter-x: 1.5em;
 	gap: 1.5em;
 }
+
 .navbar.navbar-dark {
 	border-bottom: var(--dl-border);
 	box-shadow: var(--dl-box-shadow);
