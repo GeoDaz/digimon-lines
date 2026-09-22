@@ -255,13 +255,7 @@ h2 {
 }
 
 /* Header */
-header ::-webkit-scrollbar {
-	width: 6px;
-	height: 6px;
-}
-
 .navbar {
-	overflow: auto;
 	font-weight: bold;
 	font-size: var(--bs-body-font-size);
 	--bs-navbar-padding-y: 0.5em;
