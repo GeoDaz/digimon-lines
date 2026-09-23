@@ -24,6 +24,7 @@ import Search from '@/types/Search';
 import { getDubNames, getDubbedSearchList } from '@/functions/search';
 import { getDirPaths } from '@/functions/file';
 import { IS_DEV } from '@/consts/env';
+import { BASE_IMG_SIZE } from '@/consts/grid';
 
 const SEARCH = 'search';
 const defaultData = {
@@ -39,7 +40,6 @@ interface Props {
 	fusions: LineThumb[];
 	appmons: LineThumb[];
 	searchList: Record<string, string[]>;
-	/** Digimon autocompletion, only built in dev for the news edition. */
 	digimonSearch?: Search;
 }
 const PageLines: React.FC<Props> = props => {
@@ -52,7 +52,6 @@ const PageLines: React.FC<Props> = props => {
 	const [showNewsModal, setShowNewsModal] = useState(false);
 	const saveNews = useSaveNews(setNews);
 
-	// News edition is a dev only tool, and the list is hidden while searching.
 	const editableNews = IS_DEV && !search;
 
 	useEffect(() => {
@@ -92,7 +91,6 @@ const PageLines: React.FC<Props> = props => {
 	};
 
 	const handleAddNews = (thumb: LineThumb) => {
-		// A line can only appear once in the news, the newest comes first.
 		saveNews([thumb, ...news.filter(item => item.name !== thumb.name)]);
 	};
 
@@ -132,7 +130,9 @@ const PageLines: React.FC<Props> = props => {
 						<h2>News&nbsp;:</h2>
 						<LineRow
 							lines={news}
-							onAdd={editableNews ? () => setShowNewsModal(true) : undefined}
+							onAdd={
+								editableNews ? () => setShowNewsModal(true) : undefined
+							}
 							onRemove={editableNews ? handleRemoveNews : undefined}
 						/>
 						<h2>Families&nbsp;:</h2>
@@ -193,12 +193,15 @@ const LineRow = ({
 						grid={line.grid}
 						available={line.available}
 						type={type}
+						split
 					>
 						{!!line.for && line.for != line.name && (
 							<LineImage
 								className="line-skin"
 								name={line.for}
 								loadable={false}
+								width={BASE_IMG_SIZE / 3}
+								height={BASE_IMG_SIZE / 3}
 							/>
 						)}
 					</LinePoint>
@@ -260,7 +263,8 @@ export const getStaticProps: GetStaticProps = async () => {
 
 		// Only shipped in dev : it feeds the news edition autocompletion.
 		const digimonSearch =
-			IS_DEV ? getDubbedSearchList(getDirPaths('images/digimon'), getDubNames())
+			IS_DEV ?
+				getDubbedSearchList(getDirPaths('images/digimon'), getDubNames())
 			:	null;
 
 		return {

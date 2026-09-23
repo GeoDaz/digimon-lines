@@ -4,6 +4,7 @@ import { capitalize, makeClassName } from '@/functions';
 import Icon from '@/components/Icon';
 import { GROUP, LINE } from '@/consts/ui';
 import LineImage from './LineImage';
+import { BASE_IMG_SIZE } from '@/consts/grid';
 
 interface Props extends React.ImgHTMLAttributes<any> {
 	name: string;
@@ -15,9 +16,7 @@ interface Props extends React.ImgHTMLAttributes<any> {
 	children?: React.ReactNode;
 	available?: boolean;
 	grid?: string[];
-	/** Destination, quand elle ne se déduit pas de `type`/`line` (lignes de compte). */
 	href?: string;
-	/** Libellé au survol, quand il diffère du nom de l'image (titre d'une ligne). */
 	label?: string;
 }
 const LinePoint: React.FC<Props> = ({
@@ -63,11 +62,24 @@ const LinePoint: React.FC<Props> = ({
 			style={style}
 		>
 			<div className={makeClassName('line-point-safe-zone', grid && 'gridded')}>
-				<LineImage name={name} type={type} {...props} />
+				<LineImage
+					name={name}
+					type={type}
+					height={grid ? (BASE_IMG_SIZE * 2) / 3 : BASE_IMG_SIZE}
+					width={grid ? (BASE_IMG_SIZE * 2) / 3 : BASE_IMG_SIZE}
+					{...props}
+				/>
 				<div className="d-flex">
 					{!!grid &&
 						grid.map(name => (
-							<LineImage key={name} name={name} type={type} {...props} />
+							<LineImage
+								key={name}
+								name={name}
+								type={type}
+								height={BASE_IMG_SIZE / 3}
+								width={BASE_IMG_SIZE / 3}
+								{...props}
+							/>
 						))}
 				</div>
 			</div>
