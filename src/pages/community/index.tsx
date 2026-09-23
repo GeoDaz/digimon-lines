@@ -28,7 +28,11 @@ import { CommunityLine } from '@/types/Account';
 const SEARCH = 'search';
 const SORT = 'sort';
 
-export const PageCommunity = ({ licence = defaultLicenceContext }: { licence?: LicenceProps }) => {
+export const PageCommunity = ({
+	licence = defaultLicenceContext,
+}: {
+	licence?: LicenceProps;
+}) => {
 	const params = useQueryParam(SEARCH, SORT);
 	const search = params[SEARCH] || '';
 	const sort: CommunitySortKey =
@@ -194,17 +198,9 @@ const CommunityCard = ({ line }: { line: CommunityLine }) => {
 
 	return (
 		<Col className="profile-line">
-			{
-				line.cover ?
-					<LinePoint name={line.cover} href={href} label={name} available>
-						{caption}
-					</LinePoint>
-					// Ligne sans aucun point : pas d'image à montrer.
-				:	<Link href={href} title={name} className="line-point pictured available">
-						{caption}
-					</Link>
-
-			}
+			<LinePoint name={line.cover || 'unknown'} href={href} label={name} available>
+				{caption}
+			</LinePoint>
 			<div className="profile-line-actions community-line-actions d-flex align-items-center justify-content-between gap-2 px-1">
 				{!!pseudo && (
 					<Link
@@ -215,7 +211,11 @@ const CommunityCard = ({ line }: { line: CommunityLine }) => {
 						<Icon name="person-circle" /> {pseudo}
 					</Link>
 				)}
-				<LikeHeart count={line.like_count} liked={line.liked} className="ms-auto" />
+				<LikeHeart
+					count={line.like_count}
+					liked={line.liked}
+					className="ms-auto"
+				/>
 			</div>
 		</Col>
 	);
