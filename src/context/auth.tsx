@@ -55,6 +55,9 @@ const cleanAuthParamsFromUrl = () => {
 	window.history.replaceState({}, '', url.toString());
 };
 
+const keepSameUser = (next: User | null) => (prev: User | null) =>
+	prev && next && prev.id === next.id && prev.updated_at === next.updated_at ? prev : next;
+
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 	const [user, setUser] = useState<User | null>(null);
 	const [profile, setProfile] = useState<Profile | null>(null);
@@ -97,13 +100,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
 		const { data } = await supabase.auth.getSession();
 		if (!mounted.current) return;
-		setUser(data.session?.user ?? null);
+		setUser(keepSameUser(data.session?.user ?? null));
 		setLoading(false);
 
 		if (!unsubscribe.current) {
 			const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
 				if (!mounted.current) return;
-				setUser(session?.user ?? null);
+				setUser(keepSameUser(session?.user ?? null));
 				setLoading(false);
 			});
 			unsubscribe.current = () => listener.subscription.unsubscribe();

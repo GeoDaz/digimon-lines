@@ -8,6 +8,7 @@ import LinePoint from '@/components/Line/LinePoint';
 import ShareButton from '@/components/ShareButton';
 import PseudoEditor from '@/components/Account/PseudoEditor';
 import ButtonAdd from '@/components/Button/ButtonAdd';
+import LikeHeart from '@/components/Account/LikeHeart';
 import { useProfileLines } from '@/hooks/useUserLines';
 import { useAuth } from '@/context/auth';
 import {
@@ -118,6 +119,12 @@ const ProfileLines: React.FC<Props> = ({ pseudo }) => {
 										/>
 									)}{' '}
 									{line.title || line.slug}
+									{isOwner && (
+										<>
+											{' '}
+											<LikeHeart count={line.like_count} />
+										</>
+									)}
 								</span>
 							);
 							return (
