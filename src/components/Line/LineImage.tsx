@@ -43,8 +43,6 @@ const LineImage: React.FC<Props> = ({
 	const [src, setSrc] = useState(() => path || getImgPath(name, type));
 	const [open, setOpen] = useState(false);
 	const [loading, setLoading] = useState(true);
-	const [ratioWidth, setRatioWidth] = useState(1);
-	const [ratioHeight, setRatioHeight] = useState(1);
 	const [loadingStyle, setLoadingStyle] = useState({ opacity: 1, zIndex: 2 });
 
 	const zoomedWidth = zoomable ? Number(width) * zoomFactor : Number(width);
@@ -88,15 +86,8 @@ const LineImage: React.FC<Props> = ({
 					}, 300);
 					setLoadingStyle({ zIndex: loadingStyle.zIndex, opacity: 0 });
 				}}
-				onLoadingComplete={({ naturalWidth, naturalHeight }) => {
-					if (naturalWidth > naturalHeight) {
-						setRatioHeight(naturalWidth / naturalHeight || 1);
-					} else {
-						setRatioWidth(naturalHeight / naturalWidth || 1);
-					}
-				}}
-				width={zoomedWidth / ratioWidth}
-				height={zoomedHeight / ratioHeight}
+				width={zoomedWidth}
+				height={zoomedHeight}
 				alt={capitalizedName}
 				title={title || capitalizedName}
 				className={makeClassName(

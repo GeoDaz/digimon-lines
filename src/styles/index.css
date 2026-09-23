@@ -683,6 +683,10 @@ a.line-point {
 	flex-direction: column;
 }
 
+.line-img {
+	object-fit: contain;
+}
+
 .line-point .line-img {
 	max-width: var(--dl-img-size);
 	max-height: var(--dl-img-size);
