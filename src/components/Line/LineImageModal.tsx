@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Button, Card, CardBody, Modal } from 'react-bootstrap';
+import { Button, Card, CardBody, Modal, Spinner } from 'react-bootstrap';
 import LineImage from './LineImage';
 import LinePointData from './LinePointData';
 import RelationList from '../List/RelationList';
@@ -27,7 +27,8 @@ const LineImageModal: React.FC<Props> = ({
 	open = false,
 	handleClose,
 }) => {
-	const { data, dubNames, items, itemLevels, levels } = useContext(DigimonContext);
+	const { data, dubNames, items, itemLevels, levels, loading } =
+		useContext(DigimonContext);
 	const { submitItem, submitData } = useEditDigimon();
 	// The digimon currently shown; clicking a relation swaps it in place. Resets
 	// to the clicked digimon whenever the modal is (re)opened for a new name.
@@ -125,6 +126,12 @@ const LineImageModal: React.FC<Props> = ({
 						>
 							<Icon name="pencil-fill" /> Data
 						</Button>
+					</div>
+				)}
+				{/* Fiche et relations pas encore chargées (voir useSharedDigimonData). */}
+				{loading && !hasData && !hasRelations && (
+					<div className="mt-3">
+						<Spinner animation="border" size="sm" />
 					</div>
 				)}
 				{hasData && (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useRef } from 'react';
 import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Icon from './Icon';
@@ -29,6 +29,8 @@ const SearchBar: React.FC<Props> = ({
 	const [search, setSearch] = useState<string | undefined>(defaultValue);
 	const [previews, setPreviews] = useState<Option[]>([]);
 	const [selection, setSelection] = useState<number | null>(null);
+	// Texte tapé avant que la liste de recherche soit disponible.
+	const waitingListRef = useRef(false);
 
 	const resetSelection = () => setSelection(0);
 
@@ -61,33 +63,51 @@ const SearchBar: React.FC<Props> = ({
 		}
 	};
 
+	const updatePreviews = (value: string) => {
+		if (!searchList || searchList.values.length === 0) {
+			waitingListRef.current = true;
+			return;
+		}
+		waitingListRef.current = false;
+		let result = searchList.keys.reduce((result, name) => {
+			const priority = getSearchPriority(value, name);
+			if (priority != null) {
+				result.push({
+					key: priority,
+					value: searchList.mapped[name],
+					text: name,
+				} as Option);
+			}
+			return result;
+		}, [] as any[]);
+		result.sort((a, b) => b.key - a.key);
+		setPreviews(result.slice(0, value.length > 3 ? 50 : 10));
+		resetSelection();
+	};
+
+	// La liste de recherche peut arriver après la frappe (données digimons
+	// chargées à part, voir useSharedDigimonData) : on affiche alors les
+	// suggestions de ce qui est déjà tapé.
+	useEffect(() => {
+		if (waitingListRef.current && search) updatePreviews(search);
+	}, [searchList]);
+
 	const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const value = e.target.value;
 		setSearch(value);
 		if (value) {
-			if (searchList && searchList.values.length > 0) {
-				let result = searchList.keys.reduce((result, name) => {
-					const priority = getSearchPriority(value, name);
-					if (priority != null) {
-						result.push({
-							key: priority,
-							value: searchList.mapped[name],
-							text: name,
-						} as Option);
-					}
-					return result;
-				}, [] as any[]);
-				result.sort((a, b) => b.key - a.key);
-				setPreviews(result.slice(0, value.length > 3 ? 50 : 10));
+			updatePreviews(value);
+		} else {
+			waitingListRef.current = false;
+			if (previews.length > 0) {
+				setPreviews([]);
 				resetSelection();
 			}
-		} else if (previews.length > 0) {
-			setPreviews([]);
-			resetSelection();
 		}
 	};
 
 	const handleSubmit = (value: string | number | undefined = undefined) => {
+		waitingListRef.current = false;
 		setPreviews([]);
 		onSubmit(value || (search && unCapitalize(search)));
 		if (voidOnSubmit) {

@@ -19,23 +19,18 @@ import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
 // functions
 import useQueryParam from '@/hooks/useQueryParam';
+import useSharedDigimonData from '@/hooks/useSharedDigimonData';
 import { capitalize } from '@/functions';
-import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
 import transformLine, { thumbsToNames } from '@/functions/line';
 // constants
 import { Line } from '@/types/Line';
 import { defaultLine } from '@/reducers/lineReducer';
 import { LINE, titles } from '@/consts/ui';
 import ZoomBar from '@/components/ZoomBar';
-import { Digimon, DigimonItem } from '@/types/Digimon';
 import { DigimonProvider } from '@/context/digimon';
-import { StringObject } from '@/types/Ui';
-import Search from '@/types/Search';
 import { ZoomProvider } from '@/context/zoom';
 import { SearchContext } from '@/context/search';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
-import { getDubbedSearchList, getDubNames } from '@/functions/search';
-import { getDirPaths } from '@/functions/file';
 
 const NAME = 'name';
 const defaultObject: any = {};
@@ -44,16 +39,6 @@ interface StaticProps {
 	name?: string;
 	next?: string;
 	prev?: string;
-	digimons?: {
-		[key: string]: Digimon;
-	};
-	items?: {
-		[key: string]: DigimonItem;
-	};
-	itemLevels?: StringObject;
-	levels?: string[];
-	dubNames?: StringObject;
-	search?: Search;
 }
 interface Props {
 	ssr: StaticProps;
@@ -64,6 +49,11 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 	const router = useRouter();
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
 	const [zoom, setZoom] = useState(DEFAULT_ZOOM);
+	// Fiches, relations et noms doublés pour la modale des images : communs à
+	// toutes les lines, ils sont chargés à part (chunk en cache) plutôt que
+	// répétés dans les props de chaque page. Les pages Appmon / VB, qui
+	// réutilisent ce composant, ne les ont jamais reçues : pas de chargement.
+	const { data: shared, loading: sharedLoading } = useSharedDigimonData(type === LINE);
 
 	const downloadName = ssr.line?.title || name;
 	const { downloadCode } = useDownloadCode(line || defaultLine, setLine);
@@ -139,13 +129,14 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 			)}
 			{line ?
 				<>
-					<SearchContext.Provider value={ssr.search}>
+					<SearchContext.Provider value={shared?.search}>
 						<DigimonProvider
-							dubNames={ssr.dubNames}
-							data={ssr.digimons}
-							items={ssr.items}
-							itemLevels={ssr.itemLevels}
-							levels={ssr.levels}
+							dubNames={shared?.dubNames}
+							data={shared?.digimons}
+							items={shared?.items}
+							itemLevels={shared?.itemLevels}
+							levels={shared?.levels}
+							loading={sharedLoading}
 						>
 							<ZoomProvider zoom={zoom}>
 								<LineGrid line={line} />
@@ -191,15 +182,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 	const lines = thumbsToNames(require('../../../public/json/lines/_index.json'));
 	const fusions = thumbsToNames(require('../../../public/json/lines/_fusion.json'));
-	const digimons: {
-		[key: string]: Digimon;
-	} = require('../../../public/json/digimons/index.json');
-	const ranked = require('../../../public/json/digimons/ranked.json');
-	const items = flattenDigimonItems(ranked);
-	const itemLevels = getDigimonItemLevels(ranked);
-	const levels = Object.keys(ranked);
-	const dubNames: StringObject = getDubNames();
-	const search: Search = getDubbedSearchList(getDirPaths('images/digimon'), dubNames);
 
 	let prev = null;
 	let next = null;
@@ -225,12 +207,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 				line,
 				prev,
 				next,
-				digimons,
-				items,
-				itemLevels,
-				levels,
-				dubNames,
-				search,
 			},
 		},
 	};

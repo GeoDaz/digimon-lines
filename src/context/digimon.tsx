@@ -18,6 +18,8 @@ export interface DigimonProps {
 	itemLevels: StringObject;
 	// List of ranked levels, for the level picker in the edit form.
 	levels: string[];
+	// Données communes encore en cours de chargement (voir useSharedDigimonData).
+	loading: boolean;
 }
 
 export const defaultDigimonContext: DigimonProps = {
@@ -26,6 +28,7 @@ export const defaultDigimonContext: DigimonProps = {
 	items: defaultObject,
 	itemLevels: defaultObject,
 	levels: defaultArray,
+	loading: false,
 };
 
 export const DigimonContext = createContext<DigimonProps>(defaultDigimonContext);
@@ -36,6 +39,7 @@ export const DigimonProvider = ({
 	items,
 	itemLevels,
 	levels,
+	loading = false,
 	children,
 }: {
 	dubNames?: StringObject;
@@ -43,6 +47,7 @@ export const DigimonProvider = ({
 	items?: { [key: string]: DigimonItem };
 	itemLevels?: StringObject;
 	levels?: string[];
+	loading?: boolean;
 	children: React.ReactNode;
 }) => {
 	const digimonContext = useMemo(
@@ -52,8 +57,9 @@ export const DigimonProvider = ({
 			items: items || defaultObject,
 			itemLevels: itemLevels || defaultObject,
 			levels: levels || defaultArray,
+			loading,
 		}),
-		[dubNames, data, items, itemLevels, levels]
+		[dubNames, data, items, itemLevels, levels, loading]
 	);
 	return (
 		<DigimonContext.Provider value={digimonContext}>

@@ -10,9 +10,9 @@ import useSubmitDigimon, { DigimonList } from '@/hooks/useSubmitDigimon';
 import useDeleteDigimon from '@/hooks/useDeleteDigimon';
 import useReorderDigimon from '@/hooks/useReorderDigimon';
 import useDragAutoScroll from '@/hooks/useDragAutoScroll';
-import { Digimon, DigimonItem } from '@/types/Digimon';
+import useSharedDigimonData from '@/hooks/useSharedDigimonData';
+import { DigimonItem } from '@/types/Digimon';
 import { StringObject } from '@/types/Ui';
-import Search from '@/types/Search';
 import { DigimonProvider } from '@/context/digimon';
 import { SearchContext } from '@/context/search';
 import { GetStaticProps } from 'next';
@@ -20,8 +20,8 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Button, Spinner } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import ScrollUp from '@/components/ScrollUp';
-import { getDirPaths } from '@/functions/file';
-import { getDubNames, getDubbedSearchList } from '@/functions/search';
+import { getDubNames } from '@/functions/search';
+import { addReverseDubNames } from '@/functions/dubNames';
 import { IS_DEV } from '@/consts/env';
 import { useRouter } from 'next/router';
 
@@ -33,9 +33,8 @@ const PAGE_SIZE = 60;
 
 interface Props {
 	list?: DigimonList;
-	digimons?: { [key: string]: Digimon };
+	// Rendu dans le HTML (noms doublés des cartes) : reste dans les props.
 	dubNames?: StringObject;
-	search?: Search;
 }
 const PageList: React.FC<Props> = props => {
 	const [fullList, setFullList] = useState<DigimonList>(props.list || defaultObject);
@@ -53,6 +52,9 @@ const PageList: React.FC<Props> = props => {
 	const scrolledHashRef = useRef<string | null>(null);
 	const router = useRouter();
 	const hash = useHash();
+	// Fiches (modale des images) et liste de recherche : communes aux autres pages,
+	// chargées à part plutôt que dans les props.
+	const { data: shared, loading: sharedLoading } = useSharedDigimonData();
 
 	useDragAutoScroll();
 
@@ -228,13 +230,14 @@ const PageList: React.FC<Props> = props => {
 			metadescription="List of Digimon by levels"
 		>
 			<ScrollUp />
-			<SearchContext.Provider value={props.search}>
+			<SearchContext.Provider value={shared?.search}>
 				<DigimonProvider
 					dubNames={props.dubNames}
-					data={props.digimons}
+					data={shared?.digimons}
 					items={items}
 					itemLevels={itemLevels}
 					levels={levels}
+					loading={sharedLoading}
 				>
 					<div className="d-flex gap-3 align-items-center">
 						<SearchBar
@@ -348,11 +351,9 @@ const PageList: React.FC<Props> = props => {
 export const getStaticProps: GetStaticProps = async () => {
 	try {
 		const list: DigimonList = require('../../../public/json/digimons/ranked.json');
-		const digimons = require('../../../public/json/digimons/index.json');
-		const dubNames = getDubNames();
-		const searchList: string[] = getDirPaths('images/digimon');
-		const search = getDubbedSearchList(searchList, dubNames);
-		return { props: { list, digimons, dubNames, search } };
+		// Avec le sens inverse, comme la liste de recherche (hash en nom doublé).
+		const dubNames = addReverseDubNames(getDubNames());
+		return { props: { list, dubNames } };
 	} catch (e) {
 		console.error(e);
 		return { props: {} };

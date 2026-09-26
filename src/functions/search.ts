@@ -2,6 +2,7 @@ import { StringObject } from '@/types/Ui';
 import { stringToKey } from '.';
 import Search from '@/types/Search';
 import { getDirPaths } from './file';
+import { addReverseDubNames, buildSearchList, computeDubNames } from './dubNames';
 
 export const getSearchPriority = (search: string, name: string): number | null => {
 	if (!search.startsWith('app')) {
@@ -22,73 +23,10 @@ export const getSearchPriority = (search: string, name: string): number | null =
 export const getDubbedSearchList = (
 	baseSearchList: string[],
 	dubList: StringObject
-): Search => {
-	Object.entries(dubList).forEach(([key, value]) => {
-		dubList[value] = key;
-	});
+): Search => buildSearchList(baseSearchList, addReverseDubNames(dubList));
 
-	return baseSearchList.reduce(
-		(result, name) => {
-			// self map
-			result.mapped[name] = name;
-
-			// dub map
-			const dubName = dubList[name];
-			if (!dubName) return result;
-			if (result.mapped[dubName]) return result;
-
-			result.mapped[dubName] = name;
-			result.keys.push(dubName);
-			return result;
-		},
-		{
-			mapped: {},
-			values: baseSearchList.slice(),
-			keys: baseSearchList.slice(),
-		} as Search
+export const getDubNames = (): StringObject =>
+	computeDubNames(
+		require('../../public/json/dubnames.json'),
+		getDirPaths('images/digimon')
 	);
-};
-
-export const getDubNamesFor = (names: string[]): StringObject => {
-	const dubNames: StringObject = require('../../public/json/dubnames.json');
-	const result: StringObject = {
-		...dubNames,
-		...Object.fromEntries(Object.entries(dubNames).map(([k, v]) => [v, k])),
-	};
-	Object.entries(result).forEach(([name, dubName]) => {
-		names.forEach(subName => {
-			if (
-				subName != name &&
-				!result[subName] &&
-				subName.match(`(^|_)${name}(_|$)`)
-			) {
-				result[subName] = subName.replace(name, dubName);
-			}
-		});
-	});
-	return result;
-};
-
-export const getDubNames = () => {
-	let dubNames: StringObject = require('../../public/json/dubnames.json');
-	dubNames = {
-		...dubNames,
-		...Object.fromEntries(Object.entries(dubNames).map(([k, v]) => [v, k])),
-	};
-	const nameList: string[] = getDirPaths('images/digimon');
-	nameList.forEach(name => {
-		const dubName = dubNames[name];
-		if (!dubName) return;
-		nameList.forEach(subName => {
-			if (
-				subName != name &&
-				!dubNames[subName] &&
-				subName.match(`(^|_)${name}(_|$)`)
-			) {
-				const subDubName = subName.replace(name, dubName);
-				dubNames[subName] = subDubName;
-			}
-		});
-	});
-	return dubNames;
-};
