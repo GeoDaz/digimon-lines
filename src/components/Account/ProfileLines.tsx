@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from '@/components/Link';
 import { useRouter } from 'next/router';
 import { Alert, Button, Col, Row, Spinner } from 'react-bootstrap';
 import Layout from '@/components/Layout';

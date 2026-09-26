@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import Link from 'next/link';
+import Link from '@/components/Link';
 import { Button, Form, Spinner, Table } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import Icon from '@/components/Icon';

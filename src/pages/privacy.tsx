@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from '@/components/Link';
 import Layout from '@/components/Layout';
 import { CONTACT_EMAIL, DISCORD_URL, LEGAL_UPDATED_AT, SITE_URL } from '@/consts/env';
 
