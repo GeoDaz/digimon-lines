@@ -193,7 +193,6 @@ const LineRow = ({
 						grid={line.grid}
 						available={line.available}
 						type={type}
-						split
 					>
 						{!!line.for && line.for != line.name && (
 							<LineImage
