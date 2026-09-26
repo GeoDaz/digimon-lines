@@ -14,7 +14,7 @@ import useQueryParam from '@/hooks/useQueryParam';
 import { stringToKey } from '@/functions';
 import { StringArrayObject } from '@/types/Ui';
 import { APPMON } from '@/consts/ui';
-import Link from 'next/link';
+import Link from '@/components/Link';
 import ButtonAdd from '@/components/Button/ButtonAdd';
 import ButtonRemove from '@/components/Button/ButtonRemove';
 import NewsModal from '@/components/Line/NewsModal';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import Link from 'next/link';
+import Link from '@/components/Link';
 import Image from 'next/image';
 import Icon from './Icon';
 import { DISCORD_URL } from '@/consts/env';

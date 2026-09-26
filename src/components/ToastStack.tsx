@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Link from 'next/link';
+import Link from '@/components/Link';
 import { Toast, ToastContainer } from 'react-bootstrap';
 import { ToastContext } from '@/context/toast';
 import Icon from './Icon';

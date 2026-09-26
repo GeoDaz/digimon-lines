@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 import { useRouter } from 'next/router';
 
 interface AnchorLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {

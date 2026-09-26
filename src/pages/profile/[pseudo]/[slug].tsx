@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
+import Link from '@/components/Link';
 import { Alert, Spinner } from 'react-bootstrap';
 import { GetServerSideProps } from 'next';
 import Layout from '@/components/Layout';
