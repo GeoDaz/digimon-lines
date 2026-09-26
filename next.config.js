@@ -7,6 +7,12 @@ module.exports = () => ({
 	async redirects() {
 		return [
 			{
+				source: '/:path*',
+				has: [{ type: 'host', value: 'www.digimon-lines.com' }],
+				destination: 'https://digimon-lines.com/:path*',
+				permanent: true,
+			},
+			{
 				source: '/lines',
 				destination: '/',
 				permanent: true,
@@ -18,8 +24,11 @@ module.exports = () => ({
 			})),
 		];
 	},
-	webpack: config => {
+	webpack: (config, { dev, isServer, webpack }) => {
 		config.resolve.fallback = { fs: false };
+		if (isServer && !dev) {
+			config.plugins.push(new webpack.IgnorePlugin({ resourceRegExp: /^sharp$/ }));
+		}
 		return config;
 	},
 	// Images servies en statique, sans optimiseur, en dev comme en prod.
