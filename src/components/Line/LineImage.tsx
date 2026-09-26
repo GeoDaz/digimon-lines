@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
-import Image from 'next/image';
+import React, { useCallback, useContext, useEffect, useRef, useState } from 'react';
 import { capitalize, makeClassName } from '@/functions';
 import { Spinner } from 'react-bootstrap';
 import { DIGIMON, LINE } from '@/consts/ui';
@@ -65,6 +64,27 @@ const LineImage: React.FC<Props> = ({
 		}
 	}, [name, path]);
 
+	const handleError = useCallback(() => {
+		setSrc('/images/digimon/unknown.jpg');
+		setLoading(false);
+	}, []);
+
+	const handleLoad = () => {
+		setTimeout(() => {
+			setLoading(false);
+			setLoadingStyle({ opacity: 0, zIndex: 2 });
+		}, 300);
+		setLoadingStyle(prev => ({ zIndex: prev.zIndex, opacity: 0 }));
+	};
+
+	const imgRef = useRef<HTMLImageElement>(null);
+	useEffect(() => {
+		const img = imgRef.current;
+		if (!img?.complete) return;
+		if (img.naturalWidth) handleLoad();
+		else handleError();
+	}, []);
+
 	const capitalizedName = capitalize(name);
 	return (
 		<>
@@ -73,19 +93,13 @@ const LineImage: React.FC<Props> = ({
 					<Spinner animation="border" />
 				</div>
 			)}
-			<Image
+			<img
+				ref={imgRef}
 				src={src}
-				onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-					setSrc('/images/digimon/unknown.jpg');
-					setLoading(false);
-				}}
-				onLoad={e => {
-					setTimeout(() => {
-						setLoading(false);
-						setLoadingStyle({ opacity: 0, zIndex: 2 });
-					}, 300);
-					setLoadingStyle({ zIndex: loadingStyle.zIndex, opacity: 0 });
-				}}
+				loading="lazy"
+				decoding="async"
+				onError={handleError}
+				onLoad={handleLoad}
 				width={zoomedWidth}
 				height={zoomedHeight}
 				alt={capitalizedName}
@@ -96,7 +110,7 @@ const LineImage: React.FC<Props> = ({
 					mirror && 'mirror',
 					className
 				)}
-				style={style}
+				style={{ color: 'transparent', ...style }}
 				onClick={() => expandable && setOpen(true)}
 			/>
 			<span className="sr-only">{capitalizedName}</span>
