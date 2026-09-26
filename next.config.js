@@ -1,6 +1,7 @@
 // Renommages / migrations de lines : { ancienNom: nouveauNom }.
 // Chaque entrée génère une redirection 301 /lines/ancien -> /lines/nouveau.
 const lineRedirects = require('./redirects.json');
+const path = require('path');
 
 module.exports = () => ({
 	reactStrictMode: true,
@@ -20,6 +21,14 @@ module.exports = () => ({
 	},
 	webpack: config => {
 		config.resolve.fallback = { fs: false };
+		// Liste des images digimon + noms doublés, calculés au build depuis le
+		// disque et embarqués dans le chunk des données communes (voir
+		// src/data/sharedDigimonData.ts).
+		config.module.rules.push({
+			test: path.join(__dirname, 'src', 'data', 'digimonNames.js'),
+			enforce: 'pre',
+			use: path.join(__dirname, 'src', 'data', 'digimonNames.loader.js'),
+		});
 		return config;
 	},
 	// Images servies en statique, sans optimiseur, en dev comme en prod.

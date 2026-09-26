@@ -15,8 +15,10 @@ import LikeHeart from '@/components/Account/LikeHeart';
 import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
 import { useLineLike } from '@/hooks/useCommunityLines';
+import useSharedDigimonData from '@/hooks/useSharedDigimonData';
 import { useAuth } from '@/context/auth';
 import {
+	defaultLicenceContext,
 	getLicence,
 	licenceBuildPath,
 	licenceStorageKey,
@@ -25,24 +27,15 @@ import {
 import imgPathByLicence from '@/functions/images';
 import { fetchSharedLine } from '@/functions/userLines';
 import { shouldRestoreSession } from '@/functions/supabase';
-import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
-import { getDubNamesFor } from '@/functions/search';
-import transformLine, { lineToArray } from '@/functions/line';
+import transformLine from '@/functions/line';
 import { defaultLine } from '@/reducers/lineReducer';
 import { DigimonProvider } from '@/context/digimon';
 import { ZoomProvider } from '@/context/zoom';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
-import { Digimon, DigimonItem } from '@/types/Digimon';
-import { StringObject } from '@/types/Ui';
 import Line from '@/types/Line';
 import { UserLineWithAuthor } from '@/types/Account';
 
 interface Props {
-	digimons?: { [key: string]: Digimon };
-	items?: { [key: string]: DigimonItem };
-	itemLevels?: StringObject;
-	levels?: string[];
-	dubNames?: StringObject;
 	pseudo?: string;
 	slug?: string;
 	record?: UserLineWithAuthor | null;
@@ -118,6 +111,11 @@ const PageSharedLine: React.FC<Props> = props => {
 	const title = record?.title || 'Shared line';
 	const isOwn = !!user && record?.user_id === user.id;
 	const licence = getLicence(record?.licence);
+	// Fiches, relations et noms doublés pour la modale des images : communs à
+	// toutes les lines, chargés à part (chunk en cache) plutôt que dans les props.
+	const { data: shared, loading: sharedLoading } = useSharedDigimonData(
+		licence.key === defaultLicenceContext.key
+	);
 
 	return (
 		<Layout
@@ -193,11 +191,12 @@ const PageSharedLine: React.FC<Props> = props => {
 					)}
 					<LicenseContext.Provider value={licence}>
 						<DigimonProvider
-							dubNames={props.dubNames}
-							data={props.digimons}
-							items={props.items}
-							itemLevels={props.itemLevels}
-							levels={props.levels}
+							dubNames={shared?.dubNames}
+							data={shared?.digimons}
+							items={shared?.items}
+							itemLevels={shared?.itemLevels}
+							levels={shared?.levels}
+							loading={sharedLoading}
 						>
 							<ZoomProvider zoom={zoom}>
 								<LineGrid line={line} />
@@ -230,27 +229,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({ params, re
 		serverFailed = true;
 	}
 
-	try {
-		const digimons = require('../../../../public/json/digimons/index.json');
-		const ranked = require('../../../../public/json/digimons/ranked.json');
-		const dubNames: StringObject = getDubNamesFor(lineToArray(record?.data as any));
-		return {
-			props: {
-				digimons,
-				items: flattenDigimonItems(ranked),
-				itemLevels: getDigimonItemLevels(ranked),
-				levels: Object.keys(ranked),
-				dubNames,
-				pseudo,
-				slug,
-				record,
-				serverFailed,
-			},
-		};
-	} catch (e) {
-		console.error(e);
-		return { props: { pseudo, slug, record, serverFailed } };
-	}
+	return { props: { pseudo, slug, record, serverFailed } };
 };
 
 export default PageSharedLine;

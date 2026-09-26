@@ -1,7 +1,6 @@
 import { useState, useReducer, useMemo, useEffect } from 'react';
 import { Alert, Button, FormControl, InputGroup } from 'react-bootstrap';
 import Layout from '@/components/Layout';
-import { getDirPaths } from '@/functions/file';
 import ZoomBar from '@/components/ZoomBar';
 import ColorLegend from '@/components/ColorLegend';
 import LineGrid from '@/components/Line/LineGrid';
@@ -29,16 +28,13 @@ import useDownloadImg from '@/hooks/useDownloadImg';
 import useDownloadCode from '@/hooks/useDownloadCode';
 import { defaultLicenceContext, LicenceProps, LicenseContext } from '@/context/license';
 import { capitalize } from '@/functions';
-import { getDubbedSearchList, getDubNames } from '@/functions/search';
-import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
 import { DigimonProvider } from '@/context/digimon';
-import { Digimon, DigimonItem } from '@/types/Digimon';
-import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
 import { ZoomProvider } from '@/context/zoom';
 import { DEFAULT_ZOOM } from '@/consts/zooms';
 import useQueryParam from '@/hooks/useQueryParam';
 import useDragAutoScroll from '@/hooks/useDragAutoScroll';
+import useSharedDigimonData from '@/hooks/useSharedDigimonData';
 
 const defaultObject: any = {};
 
@@ -47,15 +43,6 @@ export interface BuildProps {
 	line?: Line;
 	context?: LicenceProps;
 	noStorage?: boolean;
-	digimons?: {
-		[key: string]: Digimon;
-	};
-	items?: {
-		[key: string]: DigimonItem;
-	};
-	itemLevels?: StringObject;
-	levels?: string[];
-	dubNames?: StringObject;
 }
 
 export const PageBuild = (props: BuildProps) => {
@@ -63,6 +50,12 @@ export const PageBuild = (props: BuildProps) => {
 	const [line, dispatchState] = useReducer(lineReducer, props.line || defaultLine);
 	const [zoom, setZoom] = useState<number>(DEFAULT_ZOOM);
 	const [edition, edit] = useState<boolean>(true);
+	// Données digimons communes (recherche, noms doublés, fiches), chargées à part
+	// plutôt que dans les props. Le builder Pokémon a sa propre recherche.
+	const { data: shared, loading: sharedLoading } = useSharedDigimonData(
+		licenceContext.key === defaultLicenceContext.key
+	);
+	const search = props.search || shared?.search;
 
 	useDragAutoScroll();
 
@@ -205,14 +198,15 @@ export const PageBuild = (props: BuildProps) => {
 					<Alert variant="danger">{error}</Alert>
 				</div>
 			)}
-			<SearchContext.Provider value={props.search}>
+			<SearchContext.Provider value={search}>
 				<LicenseContext.Provider value={licenceContext}>
 					<DigimonProvider
-						dubNames={props.dubNames}
-						data={props.digimons}
-						items={props.items}
-						itemLevels={props.itemLevels}
-						levels={props.levels}
+						dubNames={shared?.dubNames}
+						data={shared?.digimons}
+						items={shared?.items}
+						itemLevels={shared?.itemLevels}
+						levels={shared?.levels}
+						loading={sharedLoading}
 					>
 						<ZoomProvider zoom={zoom}>
 							<LineGrid
@@ -233,7 +227,7 @@ export const PageBuild = (props: BuildProps) => {
 				onClose={saveFlow.closeModal}
 				onSubmit={saveFlow.submitFromModal}
 			/>
-			<SearchContext.Provider value={props.search}>
+			<SearchContext.Provider value={search}>
 				<RelatedLines
 					related={line.related}
 					editable={edition}
@@ -246,24 +240,7 @@ export const PageBuild = (props: BuildProps) => {
 
 export const getStaticProps: GetStaticProps = async () => {
 	const context: LicenceProps = defaultLicenceContext;
-	try {
-		const digimons: {
-			[key: string]: Digimon;
-		} = require('../../../public/json/digimons/index.json');
-		const ranked = require('../../../public/json/digimons/ranked.json');
-		const items = flattenDigimonItems(ranked);
-		const itemLevels = getDigimonItemLevels(ranked);
-		const levels = Object.keys(ranked);
-		const dubNames = getDubNames();
-		const searchList: string[] = getDirPaths('images/digimon');
-		const search: Search = getDubbedSearchList(searchList, dubNames);
-		return {
-			props: { search, context, digimons, items, itemLevels, levels, dubNames },
-		};
-	} catch (e) {
-		console.error(e);
-		return { props: { context } };
-	}
+	return { props: { context } };
 };
 
 export default PageBuild;
