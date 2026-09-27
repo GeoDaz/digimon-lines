@@ -17,7 +17,7 @@ const Layout: React.FC<Props> = ({
 	children,
 	metatitle,
 	metadescription,
-	metaimg = 'og_image.png',
+	metaimg = 'image.png',
 	noGoBack = false,
 }) => {
 	const trueMetaTitle = metatitle ? `${metatitle} | Digimon Lines` : 'Digimon Lines';
