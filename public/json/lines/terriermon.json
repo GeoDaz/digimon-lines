@@ -405,13 +405,24 @@
             null
         ],
         [
-            null,
-            null,
+            {
+                "name": "nyokimon",
+                "from": null
+            },
+            {
+                "name": "yokomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
             {
                 "name": "cutemon",
                 "from": [
                     [
-                        -2.5,
+                        0,
                         -1
                     ]
                 ]

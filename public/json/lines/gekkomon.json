@@ -3,22 +3,53 @@
         [
             {
                 "name": "kekomon",
-                "from": null
+                "from": null,
+                "xSize": 2
             },
             {
-                "name": "kekkomon"
+                "name": "kekkomon",
+                "xSize": 2
             },
             {
-                "name": "gekkomon"
+                "name": "gekkomon",
+                "xSize": 2
             },
             {
-                "name": "armalizamon"
+                "name": "armalizamon",
+                "from": [
+                    [
+                        0.5,
+                        -1
+                    ]
+                ]
             },
             {
                 "name": "monarchlizamon"
             },
             {
-                "name": "atratusmon"
+                "name": "atratusmon",
+                "skins": [
+                    "atratusmon_masked",
+                    "atratusmon_cloaked"
+                ]
+            },
+            {
+                "name": "volvemon",
+                "from": [
+                    [
+                        -0.5,
+                        -1
+                    ],
+                    [
+                        0.5,
+                        -1
+                    ]
+                ],
+                "xSize": 2,
+                "color": [
+                    "fusion",
+                    "fusion"
+                ]
             }
         ],
         [
@@ -29,7 +60,7 @@
                 "name": "coatlmon",
                 "from": [
                     [
-                        -1,
+                        -0.5,
                         -1
                     ]
                 ]
@@ -50,8 +81,13 @@
                         0,
                         -1
                     ]
+                ],
+                "skins": [
+                    "albatusmon_masked",
+                    "albatusmon_cloaked"
                 ]
-            }
+            },
+            null
         ],
         [
             null,
@@ -61,23 +97,26 @@
                 "name": "chamelemon",
                 "from": [
                     [
-                        -2,
+                        -1.5,
                         -1
                     ]
                 ]
             },
             null,
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
             null,
             null
         ],
         [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
             null,
             null,
             null,
@@ -108,5 +147,14 @@
             "for": "reptilimon"
         }
     ],
-    "size": 6
+    "size": 7,
+    "levels": [
+        "baby I",
+        "baby II",
+        "rookie",
+        "champion",
+        "ultimate",
+        "mega",
+        "mega+"
+    ]
 }

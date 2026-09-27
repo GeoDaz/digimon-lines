@@ -18744,7 +18744,39 @@
         "year": "2026",
         "name": "atratusmon"
     },
+    "atratusmon_masked": {
+        "level": "Mega",
+        "type": "Mutation",
+        "attribute": "Data",
+        "field": "",
+        "year": "2026",
+        "name": "atratusmon"
+    },
+    "atratusmon_cloaked": {
+        "level": "Mega",
+        "type": "Mutation",
+        "attribute": "Data",
+        "field": "",
+        "year": "2026",
+        "name": "atratusmon"
+    },
     "albatusmon": {
+        "level": "Mega",
+        "type": "Mutation",
+        "attribute": "Data",
+        "field": "",
+        "year": "2026",
+        "name": "albatusmon"
+    },
+    "albatusmon_masked": {
+        "level": "Mega",
+        "type": "Mutation",
+        "attribute": "Data",
+        "field": "",
+        "year": "2026",
+        "name": "albatusmon"
+    },
+    "albatusmon_cloaked": {
         "level": "Mega",
         "type": "Mutation",
         "attribute": "Data",
@@ -18790,5 +18822,17 @@
         "field": "",
         "year": "2007",
         "name": "neo"
+    },
+    "volvemon": {
+        "level": [
+            "Mega",
+            "Mega+",
+            "Ultra"
+        ],
+        "type": "Unknown",
+        "attribute": "Unknown",
+        "field": "",
+        "year": "2026",
+        "name": "volvemon"
     }
 }

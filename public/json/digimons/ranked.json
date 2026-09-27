@@ -16,7 +16,8 @@
         "punimon": {
             "name": "punimon",
             "to": [
-                "tsunomon"
+                "tsunomon",
+                "sunmon"
             ]
         },
         "snowbotamon": {
@@ -809,6 +810,7 @@
             ],
             "from": [
                 "mokumon",
+                "punimon",
                 "botamon"
             ],
             "to": [
@@ -15345,12 +15347,19 @@
             "variants": [
                 "albatusmon"
             ],
+            "modes": [
+                "atratusmon_masked",
+                "atratusmon_cloaked"
+            ],
             "from": [
                 "monarchlizamon",
                 "crescemon",
                 "regulusmon",
                 "darkknightmon",
                 "scourgechiropmon"
+            ],
+            "to": [
+                "volvemon"
             ]
         },
         "albatusmon": {
@@ -15358,9 +15367,16 @@
             "variants": [
                 "atratusmon"
             ],
+            "modes": [
+                "albatusmon_masked",
+                "albatusmon_cloaked"
+            ],
             "from": [
                 "heliosboamon",
                 "flaremon"
+            ],
+            "to": [
+                "volvemon"
             ]
         },
         "kuzuhamon_miko_mode": {
@@ -15478,6 +15494,34 @@
             "from": [
                 "murasamemon",
                 "asuramon"
+            ]
+        },
+        "atratusmon_cloaked": {
+            "name": "atratusmon_cloaked",
+            "modes": [
+                "atratusmon",
+                "atratusmon_masked"
+            ]
+        },
+        "atratusmon_masked": {
+            "name": "atratusmon_masked",
+            "modes": [
+                "atratusmon",
+                "atratusmon_cloaked"
+            ]
+        },
+        "albatusmon_masked": {
+            "name": "albatusmon_masked",
+            "modes": [
+                "albatusmon",
+                "albatusmon_cloaked"
+            ]
+        },
+        "albatusmon_cloaked": {
+            "name": "albatusmon_cloaked",
+            "modes": [
+                "albatusmon",
+                "albatusmon_masked"
             ]
         }
     },
@@ -16614,6 +16658,13 @@
             "name": "neomyotismon_darkness_mode",
             "from": [
                 "neomyotismon"
+            ]
+        },
+        "volvemon": {
+            "name": "volvemon",
+            "fusionFrom": [
+                "atratusmon",
+                "albatusmon"
             ]
         }
     },
