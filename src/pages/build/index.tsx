@@ -60,7 +60,7 @@ export interface BuildProps {
 
 export const PageBuild = (props: BuildProps) => {
 	const licenceContext = props.context || defaultLicenceContext;
-	const [line, dispatchState] = useReducer(lineReducer, props.line || defaultLine);
+	const [line, dispatchState] = useReducer<Line, [Record<string, any>]>(lineReducer, props.line || defaultLine);
 	const [zoom, setZoom] = useState<number>(DEFAULT_ZOOM);
 	const [edition, edit] = useState<boolean>(true);
 
