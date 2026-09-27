@@ -22,7 +22,7 @@ const LevelFilter: React.FC<Props> = ({
 	const [query, setQuery] = useState<string>(value);
 	const [open, setOpen] = useState(false);
 	const [selection, setSelection] = useState<number | null>(null);
-	const blurTimeout = useRef<ReturnType<typeof setTimeout>>();
+	const blurTimeout = useRef<ReturnType<typeof setTimeout>>(undefined);
 
 	// Keep the input in sync when the filter is changed from outside.
 	useEffect(() => {
