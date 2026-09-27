@@ -7,6 +7,12 @@ module.exports = () => ({
 	async redirects() {
 		return [
 			{
+				source: '/',
+				has: [{ type: 'host', value: 'www.digimon-lines.com' }],
+				destination: 'https://digimon-lines.com/',
+				permanent: true,
+			},
+			{
 				source: '/:path*',
 				has: [{ type: 'host', value: 'www.digimon-lines.com' }],
 				destination: 'https://digimon-lines.com/:path*',
