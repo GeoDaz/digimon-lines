@@ -1,22 +1,13 @@
 // modules
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { Alert } from 'react-bootstrap';
 import { redirect } from 'next/navigation';
 import { GetStaticProps } from 'next';
 // components
 import Layout from '@/components/Layout';
-import LineGrid from '@/components/Line/LineGrid';
 import LineNav from '@/components/Line/LineNav';
 import CommentLink from '@/components/CommentLink';
-import Icon from '@/components/Icon';
-import ColorLegend from '@/components/ColorLegend';
-import DownloadDropdown from '@/components/DownloadDropdown';
-import ShareButton from '@/components/ShareButton';
 import RelatedLines from '@/components/Line/RelatedLines';
-// hooks
-import useDownloadImg from '@/hooks/useDownloadImg';
-import useDownloadCode from '@/hooks/useDownloadCode';
+import LineViewer from '@/components/Line/LineViewer';
 // functions
 import useQueryParam from '@/hooks/useQueryParam';
 import { capitalize } from '@/functions';
@@ -24,16 +15,10 @@ import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
 import transformLine, { thumbsToNames } from '@/functions/line';
 // constants
 import { Line } from '@/types/Line';
-import { defaultLine } from '@/reducers/lineReducer';
 import { LINE, titles } from '@/consts/ui';
-import ZoomBar from '@/components/ZoomBar';
 import { Digimon, DigimonItem } from '@/types/Digimon';
-import { DigimonProvider } from '@/context/digimon';
 import { StringObject } from '@/types/Ui';
 import Search from '@/types/Search';
-import { ZoomProvider } from '@/context/zoom';
-import { SearchContext } from '@/context/search';
-import { DEFAULT_ZOOM } from '@/consts/zooms';
 import { getDubbedSearchList, getDubNames } from '@/functions/search';
 import { getDirPaths } from '@/functions/file';
 
@@ -61,41 +46,13 @@ interface Props {
 }
 export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) => {
 	const { name } = useQueryParam(NAME) || ssr;
-	const router = useRouter();
 	const [line, setLine] = useState<Line | undefined>(ssr.line);
-	const [zoom, setZoom] = useState(DEFAULT_ZOOM);
-
-	const downloadName = ssr.line?.title || name;
-	const { downloadCode } = useDownloadCode(line || defaultLine, setLine);
-	const { downloadImage, downloading, error } = useDownloadImg(downloadName);
-
-	const handleDownloadImg = () => {
-		if (!line) return;
-		let zoomState = zoom;
-		setZoom(DEFAULT_ZOOM);
-		downloadImage(line, DEFAULT_ZOOM).then(() => {
-			setZoom(zoomState);
-		});
-	};
-
-	useEffect(() => {
-		if (window.innerWidth < 576) {
-			setZoom(-2);
-		} else if (window.innerWidth < 992) {
-			setZoom(-1);
-		}
-	}, []);
 
 	useEffect(() => {
 		if (line !== ssr.line) {
 			setLine(ssr.line);
 		}
 	}, [ssr.line]);
-
-	const handleEdit = () => {
-		localStorage.setItem('digimon-line', JSON.stringify(line, null, 4));
-		router.push(`/build/?${NAME}=${encodeURIComponent(name)}`);
-	};
 
 	if (!name) {
 		redirect('/');
@@ -114,44 +71,21 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 			metadescription={`Evolution line for ${nameCap} species`}
 			metaimg={`digimon/${name}.jpg`}
 		>
-			<div className="line-filters">
-				<button type="button" className="btn btn-primary" onClick={handleEdit}>
-					<Icon name="pencil-fill" className="d-inline-block me-1" /> Edit in
-					builder
-				</button>
-				<DownloadDropdown
-					downloadCode={downloadCode}
-					downloadImage={handleDownloadImg}
-					loading={downloading}
-					error={error}
-				/>
-				<ZoomBar handleZoom={setZoom} />
-				<ColorLegend />
-				<ShareButton
-					title={`${line?.title || nameCap} ${typeTitle}`}
-					text={`Evolution line for ${nameCap} species`}
-				/>
-			</div>
-			{!!error && (
-				<div>
-					<Alert variant="danger">{error}</Alert>
-				</div>
-			)}
 			{line ?
 				<>
-					<SearchContext.Provider value={ssr.search}>
-						<DigimonProvider
-							dubNames={ssr.dubNames}
-							data={ssr.digimons}
-							items={ssr.items}
-							itemLevels={ssr.itemLevels}
-							levels={ssr.levels}
-						>
-							<ZoomProvider zoom={zoom}>
-								<LineGrid line={line} />
-							</ZoomProvider>
-						</DigimonProvider>
-					</SearchContext.Provider>
+					<LineViewer
+						line={line}
+						downloadName={ssr.line?.title || name}
+						editName={name}
+						shareTitle={`${line.title || nameCap} ${typeTitle}`}
+						shareText={`Evolution line for ${nameCap} species`}
+						search={ssr.search}
+						digimons={ssr.digimons}
+						items={ssr.items}
+						itemLevels={ssr.itemLevels}
+						levels={ssr.levels}
+						dubNames={ssr.dubNames}
+					/>
 					<CommentLink />
 				</>
 			:	<p>Line not found</p>}

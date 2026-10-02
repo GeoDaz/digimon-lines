@@ -16,7 +16,9 @@ const useDownloadImg = (name: string | undefined) => {
 		try {
 			const domtoimage = (await import('dom-to-image-more')).default;
 
-			const node = document.querySelector('.line-wrapper') as HTMLElement | null;
+			const node = document.querySelector(
+				'.line-wrapper.line-grid'
+			) as HTMLElement | null;
 			if (!node) {
 				throw new Error('Element .frame non trouvé');
 			}

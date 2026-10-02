@@ -9,20 +9,25 @@ import ShareButton from '@/components/ShareButton';
 import GroupMain from '@/components/Group/GroupMain';
 import GroupRelated from '@/components/Group/GroupRelated';
 import LineNav from '@/components/Line/LineNav';
+import LineViewer from '@/components/Line/LineViewer';
 // functions
 import useSaveGroup from '@/hooks/useSaveGroup';
 import useDragAutoScroll from '@/hooks/useDragAutoScroll';
 import { capitalize } from '@/functions';
 import useQueryParam from '@/hooks/useQueryParam';
-import { getDubNames, getDubbedSearchList } from '@/functions/search';
+import { getDubNames, getDubNamesFor, getDubbedSearchList } from '@/functions/search';
 import { getDirPaths } from '@/functions/file';
-import { thumbsToNames } from '@/functions/line';
+import transformLine, { lineToArray, thumbsToNames } from '@/functions/line';
+import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
 // constants
 import { Group } from '@/types/Group';
+import { Line } from '@/types/Line';
 import { SearchContext } from '@/context/search';
 import Search from '@/types/Search';
 import { IS_DEV } from '@/consts/env';
 import { GROUP } from '@/consts/ui';
+import { Digimon, DigimonItem } from '@/types/Digimon';
+import { StringObject } from '@/types/Ui';
 
 const NAME = 'name';
 interface StaticProps {
@@ -32,6 +37,11 @@ interface StaticProps {
 	prev?: string;
 	/** Digimon autocompletion, only built in dev for the group edition. */
 	digimonSearch?: Search;
+	digimons?: { [key: string]: Digimon };
+	items?: { [key: string]: DigimonItem };
+	itemLevels?: StringObject;
+	levels?: string[];
+	dubNames?: StringObject;
 }
 interface Props {
 	ssr: StaticProps;
@@ -95,6 +105,21 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 						})
 					}
 				/>
+				{!!group?.grid && (
+					<div className="mt-4">
+						<h2>Lines of the group&nbsp;:</h2>
+						<LineViewer
+							line={group.grid}
+							downloadName={group.title || name}
+							search={ssr.digimonSearch}
+							digimons={ssr.digimons}
+							items={ssr.items}
+							itemLevels={ssr.itemLevels}
+							levels={ssr.levels}
+							dubNames={ssr.dubNames}
+						/>
+					</div>
+				)}
 			</SearchContext.Provider>
 			{!!group && <CommentLink />}
 			<LineNav prev={prev} next={next} type={GROUP} />
@@ -125,6 +150,17 @@ const getGroupSiblings = (name: string) => {
 	};
 };
 
+const getGridProps = (grid: Line) => {
+	const ranked = require('../../../public/json/digimons/ranked.json');
+	return {
+		digimons: require('../../../public/json/digimons/index.json'),
+		items: flattenDigimonItems(ranked),
+		itemLevels: getDigimonItemLevels(ranked),
+		levels: Object.keys(ranked),
+		dubNames: getDubNamesFor(lineToArray(grid)),
+	};
+};
+
 export const getStaticProps: GetStaticProps = async ({ params }) => {
 	if (!params || !params.name) {
 		return { notFound: true };
@@ -135,6 +171,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		const group: Group | undefined = require(
 			`../../../public/json/groups/${params.name}.json`
 		);
+		const grid = group?.grid ? transformLine(group.grid) : undefined;
+		const gridProps = grid ? { group: { ...group, grid }, ...getGridProps(grid) } : {};
 
 		// Only shipped in dev : it feeds the related edition autocompletion.
 		const digimonSearch =
@@ -142,7 +180,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 			:	null;
 
 		// prettier-ignore
-		return { props: { ssr: { name: params.name, group, prev, next, digimonSearch } } };
+		return { props: { ssr: { name: params.name, group, prev, next, digimonSearch, ...gridProps } } };
 	} catch (e) {
 		console.error(e);
 		return { props: { ssr: { name: params.name, prev, next } } };

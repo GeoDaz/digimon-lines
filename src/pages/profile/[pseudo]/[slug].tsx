@@ -1,37 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import Link from '@/components/Link';
 import { Alert, Spinner } from 'react-bootstrap';
 import { GetServerSideProps } from 'next';
 import Layout from '@/components/Layout';
-import LineGrid from '@/components/Line/LineGrid';
-import ColorLegend from '@/components/ColorLegend';
-import ZoomBar from '@/components/ZoomBar';
-import ShareButton from '@/components/ShareButton';
-import DownloadDropdown from '@/components/DownloadDropdown';
-import RelatedLines from '@/components/Line/RelatedLines';
-import Icon from '@/components/Icon';
+import LineViewer from '@/components/Line/LineViewer';
 import LikeHeart from '@/components/Account/LikeHeart';
-import useDownloadImg from '@/hooks/useDownloadImg';
-import useDownloadCode from '@/hooks/useDownloadCode';
 import { useLineLike } from '@/hooks/useCommunityLines';
 import { useAuth } from '@/context/auth';
-import {
-	getLicence,
-	licenceBuildPath,
-	licenceStorageKey,
-	LicenseContext,
-} from '@/context/license';
+import { getLicence } from '@/context/license';
 import imgPathByLicence from '@/functions/images';
 import { fetchSharedLine } from '@/functions/userLines';
 import { shouldRestoreSession } from '@/functions/supabase';
 import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
 import { getDubNamesFor } from '@/functions/search';
 import transformLine, { lineToArray } from '@/functions/line';
-import { defaultLine } from '@/reducers/lineReducer';
-import { DigimonProvider } from '@/context/digimon';
-import { ZoomProvider } from '@/context/zoom';
-import { DEFAULT_ZOOM } from '@/consts/zooms';
 import { Digimon, DigimonItem } from '@/types/Digimon';
 import { StringObject } from '@/types/Ui';
 import Line from '@/types/Line';
@@ -50,7 +32,6 @@ interface Props {
 }
 
 const PageSharedLine: React.FC<Props> = props => {
-	const router = useRouter();
 	const { pseudo, slug } = props;
 	const { user } = useAuth();
 
@@ -60,16 +41,7 @@ const PageSharedLine: React.FC<Props> = props => {
 	);
 	const [loading, setLoading] = useState(!props.record);
 	const [failed, setFailed] = useState(false);
-	const [zoom, setZoom] = useState(DEFAULT_ZOOM);
-
-	const { downloadCode } = useDownloadCode(line || defaultLine, setLine);
-	const { downloadImage, downloading, error } = useDownloadImg(slug);
 	const like = useLineLike(record?.id, record?.like_count ?? 0);
-
-	useEffect(() => {
-		if (window.innerWidth < 576) setZoom(-2);
-		else if (window.innerWidth < 992) setZoom(-1);
-	}, []);
 
 	useEffect(() => {
 		if (props.record) return;
@@ -101,19 +73,6 @@ const PageSharedLine: React.FC<Props> = props => {
 			active = false;
 		};
 	}, [props.record, props.serverFailed, pseudo, slug]);
-
-	const handleDownloadImg = () => {
-		if (!line) return;
-		const zoomState = zoom;
-		setZoom(DEFAULT_ZOOM);
-		downloadImage(line, DEFAULT_ZOOM).then(() => setZoom(zoomState));
-	};
-
-	const handleEdit = () => {
-		const build = licenceBuildPath(record?.licence);
-		localStorage.setItem(licenceStorageKey(record?.licence), JSON.stringify(line, null, 4));
-		router.push(slug ? `${build}/?name=${encodeURIComponent(slug)}` : build);
-	};
 
 	const title = record?.title || 'Shared line';
 	const isOwn = !!user && record?.user_id === user.id;
@@ -163,49 +122,19 @@ const PageSharedLine: React.FC<Props> = props => {
 					This line does not exist, or it is private. If it belongs to you, sign
 					in to see it.
 				</Alert>
-			:	<>
-					<div className="line-filters">
-						<button
-							type="button"
-							className="btn btn-primary"
-							onClick={handleEdit}
-						>
-							<Icon name="pencil-fill" className="d-inline-block me-1" />{' '}
-							Edit in builder
-						</button>
-						<DownloadDropdown
-							downloadCode={downloadCode}
-							downloadImage={handleDownloadImg}
-							loading={downloading}
-							error={error}
-						/>
-						<ShareButton
-							title={title}
-							text={`An evolution line shared by ${pseudo}`}
-						/>
-						<ZoomBar handleZoom={setZoom} />
-						<ColorLegend />
-					</div>
-					{!!error && (
-						<div>
-							<Alert variant="danger">{error}</Alert>
-						</div>
-					)}
-					<LicenseContext.Provider value={licence}>
-						<DigimonProvider
-							dubNames={props.dubNames}
-							data={props.digimons}
-							items={props.items}
-							itemLevels={props.itemLevels}
-							levels={props.levels}
-						>
-							<ZoomProvider zoom={zoom}>
-								<LineGrid line={line} />
-							</ZoomProvider>
-						</DigimonProvider>
-					</LicenseContext.Provider>
-					<RelatedLines related={line.related} />
-				</>
+			:	<LineViewer
+					line={line}
+					downloadName={slug}
+					editName={slug}
+					licence={record?.licence}
+					shareTitle={title}
+					shareText={`An evolution line shared by ${pseudo}`}
+					digimons={props.digimons}
+					items={props.items}
+					itemLevels={props.itemLevels}
+					levels={props.levels}
+					dubNames={props.dubNames}
+				/>
 			}
 		</Layout>
 	);

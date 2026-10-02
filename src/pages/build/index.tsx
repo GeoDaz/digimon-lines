@@ -7,6 +7,7 @@ import ColorLegend from '@/components/ColorLegend';
 import LineGrid from '@/components/Line/LineGrid';
 import LineAnchorSelect from '@/components/Line/LineAnchorSelect';
 import RelatedLines from '@/components/Line/RelatedLines';
+import { IS_DEV } from '@/consts/env';
 import { GetStaticProps } from 'next';
 import { SearchContext } from '@/context/search';
 import lineReducer, {
@@ -59,15 +60,20 @@ export interface BuildProps {
 }
 
 export const PageBuild = (props: BuildProps) => {
-	const licenceContext = props.context || defaultLicenceContext;
-	const [line, dispatchState] = useReducer<Line, [Record<string, any>]>(lineReducer, props.line || defaultLine);
 	const [zoom, setZoom] = useState<number>(DEFAULT_ZOOM);
 	const [edition, edit] = useState<boolean>(true);
-
+	// Pre-fill the title when arriving from a line's "Edit in builder" button.
+	const { name: queryName } = useQueryParam('name');
 	useDragAutoScroll();
 
+	const licenceContext = props.context || defaultLicenceContext;
+	const [line, dispatchState] = useReducer(
+		lineReducer,
+		(props.line || defaultLine) as Line
+	);
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
-
+	const { downloadCode, uploadCode, name, setName } = useDownloadCode(line, setLine);
+	const { downloadImage, downloading, error } = useDownloadImg(name);
 	const { removeItemFromStorage } = useLocalStorage({
 		key: licenceContext.key + '-line',
 		item: line,
@@ -75,19 +81,18 @@ export const PageBuild = (props: BuildProps) => {
 		defaultItem: defaultLine,
 		locked: props.noStorage,
 	});
+	const saveFlow = useSaveLineFlow({
+		line,
+		name,
+		setName,
+		licence: licenceContext.key,
+	});
 
 	useMemo(() => areCollapsablePoints(line), [line]);
 
-	const { downloadCode, uploadCode, name, setName } = useDownloadCode(line, setLine);
-	const { downloadImage, downloading, error } = useDownloadImg(name);
-
-	// Pre-fill the title when arriving from a line's "Edit in builder" button.
-	const { name: queryName } = useQueryParam('name');
 	useEffect(() => {
 		if (queryName) setName(queryName);
 	}, [queryName]);
-
-	const saveFlow = useSaveLineFlow({ line, name, setName, licence: licenceContext.key });
 
 	// CTRL/CMD + S sauvegarde dans le compte quand on est connecté ; sinon (et en
 	// dev, où il écrit dans public/json/lines) il garde l'export "Code".
@@ -233,13 +238,17 @@ export const PageBuild = (props: BuildProps) => {
 				onClose={saveFlow.closeModal}
 				onSubmit={saveFlow.submitFromModal}
 			/>
-			<SearchContext.Provider value={props.search}>
-				<RelatedLines
-					related={line.related}
-					editable={edition}
-					onChange={related => handleUpdate(setLineValue, 'related', related)}
-				/>
-			</SearchContext.Provider>
+			{IS_DEV && (
+				<SearchContext.Provider value={props.search}>
+					<RelatedLines
+						related={line.related}
+						editable={edition}
+						onChange={related =>
+							handleUpdate(setLineValue, 'related', related)
+						}
+					/>
+				</SearchContext.Provider>
+			)}
 		</Layout>
 	);
 };
