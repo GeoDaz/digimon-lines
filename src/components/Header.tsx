@@ -44,11 +44,11 @@ const Header: React.FC = () => (
 						items={[
 							{ href: '/build', content: 'Builder' },
 							{ href: '/community', content: 'Community' },
-							{ href: '/', content: 'Families' },
 							{ href: '/list', content: 'List' },
-							{ href: '/groups', content: 'Groups' },
 							{ href: '/games/dsts', content: 'Games' },
 							{ href: '/vbs', content: 'DIM' },
+							{ href: '/groups', content: 'Groups' },
+							{ href: '/', content: 'Families' },
 						]}
 					/>
 					<DropdownMenu

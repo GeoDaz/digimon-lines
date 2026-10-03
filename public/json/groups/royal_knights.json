@@ -125,7 +125,7 @@
 					"skins": ["metalgreymon_alterous_mode", "metalgreymon_x"]
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "wargreymon",
 					"skins": ["wargreymon_x"]
 				},
@@ -136,12 +136,14 @@
 					],
 					"name": "omegamon",
 					"skins": ["omegamon_x"],
-					"xSize": 2
+					"xSize": 2,
+					"color": ["fusion", "fusion"]
 				},
 				{
-					"from": null,
+					"from": [[0, -1]],
 					"name": "omegamon_merciful_mode",
-					"xSize": 2
+					"xSize": 2,
+					"color": ["mode"]
 				}
 			],
 			[
@@ -166,10 +168,10 @@
 				{
 					"from": null,
 					"name": "weregarurumon",
-					"skins": ["weregarurumon_sagittarius_mode"]
+					"skins": ["weregarurumon_sagittarius_mode", "weregarurumon_x"]
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "metalgarurumon",
 					"skins": ["metalgarurumon_x"]
 				},
@@ -190,7 +192,7 @@
 					"name": "veemon"
 				},
 				{
-					"from": null,
+					"from": [[0, -3]],
 					"name": "exveemon"
 				},
 				{
@@ -199,10 +201,11 @@
 						[0.5, -1]
 					],
 					"name": "paildramon",
-					"xSize": 2
+					"xSize": 2,
+					"color": ["fusion", "fusion"]
 				},
 				{
-					"from": null,
+					"from": [[0, -1]],
 					"name": "imperialdramon_dragon_mode",
 					"skins": ["imperialdramon_fighter_mode"],
 					"xSize": 2
@@ -214,7 +217,8 @@
 						[0, -2]
 					],
 					"name": "imperialdramon_paladin_mode",
-					"xSize": 2
+					"xSize": 2,
+					"color": ["fusion", "fusion"]
 				}
 			],
 			[
@@ -231,7 +235,7 @@
 					"name": "wormmon"
 				},
 				{
-					"from": null,
+					"from": [[0, -3]],
 					"name": "stingmon"
 				},
 				null,
@@ -263,7 +267,7 @@
 					"skins": ["dorugreymon"]
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "alphamon"
 				},
 				{
@@ -272,7 +276,8 @@
 						[0.5, -1]
 					],
 					"name": "alphamon_ouryuken",
-					"xSize": 2
+					"xSize": 2,
+					"color": ["fusion", "fusion"]
 				},
 				null
 			],
@@ -299,7 +304,7 @@
 					"name": "hisyaryumon"
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "ouryumon"
 				},
 				null,
@@ -330,13 +335,14 @@
 					"skins": ["wargrowlmon_x"]
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "gallantmon",
 					"skins": ["gallantmon_x"]
 				},
 				{
-					"from": null,
-					"name": "gallantmon_crimson_mode"
+					"from": [[0, -1]],
+					"name": "gallantmon_crimson_mode",
+					"color": ["mode"]
 				},
 				null
 			],
@@ -362,8 +368,9 @@
 					"skins": ["magnamon_x"]
 				},
 				{
-					"from": null,
-					"name": "magnamon_x_gold_digizoid"
+					"from": [[0, -1]],
+					"name": "magnamon_x_gold_digizoid",
+					"color": ["mode"]
 				},
 				null
 			],
@@ -390,11 +397,15 @@
 					"name": "aeroveedramon"
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "ulforceveedramon",
 					"skins": ["ulforceveedramon_x"]
 				},
-				null,
+				{
+					"name": "ulforceveedramon_future_mode",
+					"from": [[0, -1]],
+					"color": ["mode"]
+				},
 				null
 			],
 			[
@@ -420,7 +431,7 @@
 					"name": "chirinmon"
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "kentaurosmon",
 					"skins": ["kentaurosmon_x"]
 				},
@@ -450,7 +461,7 @@
 					"name": "groundramon"
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "breakdramon"
 				},
 				{
@@ -460,7 +471,8 @@
 					],
 					"name": "examon",
 					"skins": ["examon_x"],
-					"xSize": 2
+					"xSize": 2,
+					"color": ["fusion", "fusion"]
 				},
 				null
 			],
@@ -487,7 +499,7 @@
 					"name": "wingdramon"
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "slayerdramon"
 				},
 				null,
@@ -515,7 +527,7 @@
 					"name": "giromon"
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "craniummon",
 					"skins": ["craniummon_x"]
 				},
@@ -525,7 +537,8 @@
 						[0.5, -2]
 					],
 					"name": "craniummon_enbarrmon",
-					"xSize": 2
+					"xSize": 2,
+					"color": ["fusion", "fusion"]
 				},
 				null
 			],
@@ -535,20 +548,22 @@
 					"name": "poyomon"
 				},
 				{
-					"from": null,
+					"from": [[0, -1]],
 					"name": "tokomon"
 				},
 				{
-					"from": null,
-					"name": "tukaimon"
+					"from": [[0, -1]],
+					"name": "tukaimon",
+					"color": ["dark"]
 				},
 				{
-					"from": null,
+					"from": [[0, -1]],
 					"name": "shimaunimon"
 				},
 				{
-					"from": null,
-					"name": "enbarrmon"
+					"from": [[0, -1]],
+					"name": "enbarrmon",
+					"color": ["dark"]
 				},
 				null,
 				null,
@@ -576,7 +591,7 @@
 					"name": "knightmon"
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "lordknightmon",
 					"skins": ["lordknightmon_x"]
 				},
@@ -605,7 +620,7 @@
 					"name": "mistymon"
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "dynasmon",
 					"skins": ["dynasmon_x"]
 				},
@@ -636,7 +651,7 @@
 					"skins": []
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "leopardmon",
 					"skins": ["leopardmon_leopard_mode", "leopardmon_x"]
 				},
@@ -665,7 +680,7 @@
 					"name": "pandamon"
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "gankoomon",
 					"skins": ["gankoomon_x"]
 				},
@@ -675,7 +690,8 @@
 						[0.5, -1]
 					],
 					"name": "jesmon_gx",
-					"xSize": 2
+					"xSize": 2,
+					"color": ["fusion", "fusion"]
 				},
 				null
 			],
@@ -701,7 +717,7 @@
 					"name": "saviorhackmon"
 				},
 				{
-					"from": null,
+					"from": [[0, -5]],
 					"name": "jesmon",
 					"skins": ["jesmon_x"]
 				},

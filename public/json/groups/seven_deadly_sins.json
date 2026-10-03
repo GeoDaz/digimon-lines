@@ -371,7 +371,8 @@
 				},
 				{
 					"from": [[0, -1]],
-					"name": "beelzebumon_blast_mode"
+					"name": "beelzebumon_blast_mode",
+					"color": ["mode"]
 				},
 				null
 			],
@@ -403,7 +404,7 @@
 					"skins": ["diaboromon_x"]
 				},
 				{
-					"from": null,
+					"from": [[0, -1]],
 					"name": "armageddemon"
 				},
 				null
@@ -540,72 +541,12 @@
 				},
 				{
 					"from": null,
-					"name": "jokermon"
+					"name": "andiramon"
 				},
 				{
 					"from": null,
 					"name": "cherubimon_vice",
 					"skins": ["cherubimon_vice_x"]
-				},
-				null,
-				null
-			],
-			[
-				{
-					"from": null,
-					"name": "zurumon"
-				},
-				{
-					"from": null,
-					"name": "pagumon"
-				},
-				{
-					"from": null,
-					"name": "demidevimon"
-				},
-				{
-					"from": null,
-					"name": "devimon"
-				},
-				{
-					"from": null,
-					"name": "skullsatamon"
-				},
-				{
-					"from": null,
-					"name": "boltboutamon"
-				},
-				null,
-				null
-			],
-			[
-				{
-					"from": null,
-					"name": "snowbotamon"
-				},
-				{
-					"from": null,
-					"name": "nyaromon"
-				},
-				{
-					"from": null,
-					"name": "plotmon",
-					"skins": ["plotmon_x"]
-				},
-				{
-					"from": null,
-					"name": "dobermon",
-					"skins": ["dobermon_x"]
-				},
-				{
-					"from": null,
-					"name": "cerberumon",
-					"skins": ["cerberumon_werewolf_mode", "cerberumon_x"]
-				},
-				{
-					"from": null,
-					"name": "plutomon",
-					"skins": ["zombie_plutomon"]
 				},
 				null,
 				null
@@ -634,9 +575,13 @@
 				},
 				{
 					"from": null,
-					"name": "necromon"
+					"name": "piemon"
 				},
-				null,
+				{
+					"name": "apocalymon",
+					"from": [[0, -1]],
+					"color": ["fusion"]
+				},
 				null
 			]
 		],
