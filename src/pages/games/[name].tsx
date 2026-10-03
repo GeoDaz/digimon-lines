@@ -1,10 +1,11 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { Dropdown, DropdownButton, Form } from 'react-bootstrap';
+import { Dropdown, DropdownButton } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import Link from '@/components/Link';
 import Icon from '@/components/Icon';
 import ScrollUp from '@/components/ScrollUp';
+import SearchBar from '@/components/SearchBar';
 import GameDigimonImg from '@/components/Game/GameDigimonImg';
 import GameDigimonModal from '@/components/Game/GameDigimonModal';
 import AttributeIcon from '@/components/Game/AttributeIcon';
@@ -24,6 +25,7 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 	const [generation, setGeneration] = useState<string>();
 	const [attribute, setAttribute] = useState<string>();
 	const [type, setType] = useState<string>();
+	const [resetCount, setResetCount] = useState(0);
 	const [target, setTarget] = useState<string>();
 	const [selected, setSelected] = useState<GameDigimon>();
 	const [details, setDetails] = useState<GameDigimonsDetails>();
@@ -78,6 +80,7 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 		setGeneration(undefined);
 		setAttribute(undefined);
 		setType(undefined);
+		setResetCount(count => count + 1);
 	}, []);
 
 	useEffect(() => {
@@ -132,21 +135,19 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 						key={item.key}
 						href={`/games/${item.key}`}
 						className={makeClassName(
-							'btn',
-							item.key === game.key ? 'btn-primary' : 'btn-dark'
+							'btn btn-dark',
+							item.key === game.key && 'active'
 						)}
 					>
 						{item.shortTitle}
 					</Link>
 				))}
 			</nav>
-			<div className="evolution-filters mb-4">
-				<Form.Control
-					type="search"
-					placeholder="Search a Digimon"
-					value={search}
-					onChange={e => setSearch(e.target.value)}
-					className="evolution-search"
+			<div className="evolution-filters">
+				<SearchBar
+					key={resetCount}
+					label="Search a Digimon"
+					onSubmit={(value?: string) => setSearch(value || '')}
 				/>
 				<FilterDropdown
 					id="generation-selector"
@@ -185,8 +186,14 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 							<tr>
 								<th className="cell-digimon">Digimon</th>
 								<th className="cell-details" />
-								<th className="cell-attribute">{game.labels.attribute}</th>
-								<th className={makeClassName(game.typeIcons && 'cell-attribute')}>
+								<th className="cell-attribute">
+									{game.labels.attribute}
+								</th>
+								<th
+									className={makeClassName(
+										game.typeIcons && 'cell-attribute'
+									)}
+								>
 									{game.labels.type}
 								</th>
 								{!!game.extra && <th>{game.extra.label}</th>}
@@ -207,10 +214,10 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 											id={stringToKey(section.generation)}
 										>
 											<span>{section.generation}</span>
-											<span className="generation-rule" />
 											<span className="generation-count">
-												{section.digimons.length}
+												({section.digimons.length})
 											</span>
+											<span className="generation-rule" />
 										</h2>
 									</th>
 								</tr>
@@ -329,7 +336,11 @@ const EvolutionRow = React.memo(function EvolutionRow({
 				</td>
 			:	<td>{digimon.type}</td>}
 			{!!game.extra && <td>{digimon[game.extra.key] as string}</td>}
-			<RelationsCell slugs={digimon.modes} bySlug={bySlug} onNavigate={onNavigate} />
+			<RelationsCell
+				slugs={digimon.modes}
+				bySlug={bySlug}
+				onNavigate={onNavigate}
+			/>
 			<RelationsCell slugs={digimon.from} bySlug={bySlug} onNavigate={onNavigate} />
 			<RelationsCell slugs={digimon.to} bySlug={bySlug} onNavigate={onNavigate} />
 		</tr>

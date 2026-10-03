@@ -19,6 +19,15 @@
 	--dl-border-radius: 0.375em;
 	--dl-gutter: 1.3333em;
 
+	--dl-panel: #14181e;
+	--dl-panel-soft: #161c23;
+	--dl-border-soft: #414d5c;
+	--dl-border-strong: #55636f;
+	--dl-label: #b3c0cd;
+	--dl-muted: #96a3b3;
+	--dl-accent: #2d95de;
+	--dl-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
 	--bs-body-color: #adb5bd;
 	--bs-body-color-rgb: 173, 181, 189;
 	--bs-body-bg: #212529;
@@ -111,10 +120,6 @@ a:active:not(.btn) {
 	--bs-btn-disabled-border-color: var(--bs-primary);
 }
 
-/* Bootstrap fige #0d6efd en dur dans .btn-outline-primary : contrairement à ce
-   qu'on pourrait croire, la variante outline ne lit pas --bs-primary, d'où un
-   bouton resté bleu. Le texte et la bordure prennent le violet clair des liens,
-   plus lisible sur fond sombre que le violet plein, réservé au survol. */
 .btn-outline-primary {
 	--bs-btn-color: var(--bs-primary-link);
 	--bs-btn-border-color: var(--bs-primary-link);
@@ -129,14 +134,25 @@ a:active:not(.btn) {
 	--bs-btn-disabled-border-color: var(--bs-primary-link);
 }
 
-/* Bootstrap câble .btn-link sur --bs-link-color (bleu) et le souligne. On
-   l'aligne sur les liens du site, qui suivent déjà la palette violette. */
 .btn-link {
 	--bs-btn-color: var(--bs-primary-link);
 	--bs-btn-hover-color: var(--bs-primary-hover);
 	--bs-btn-active-color: var(--bs-primary-active);
 	--bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
 	text-decoration: none;
+}
+
+.btn-dark{
+	border-color:var(--dl-border-strong);
+}
+.btn-dark.active,
+.btn-dark:active{
+		background-color: var(--dl-panel);
+}
+.btn-dark:hover,
+.btn-dark:focus{
+	background-color: var(--dl-snd-dark);
+	border-color: var(--dl-border-strong);
 }
 
 .text-primary {
@@ -1676,52 +1692,146 @@ button.like-heart:focus-visible {
 	gap: 0.5em;
 }
 
+
 .evolution-filters {
 	position: sticky;
 	top: var(--dl-header-height, 56px);
 	z-index: 990;
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
 	gap: 10px;
-	padding: 10px 0;
+	flex-wrap: wrap;
+	margin-left: calc(var(--bs-gutter-x, 1.5rem) * -0.5);
+	margin-right: calc(var(--bs-gutter-x, 1.5rem) * -0.5);
+	padding: 10px calc(var(--bs-gutter-x, 1.5rem) * 0.5);
 	background-color: var(--bs-dark);
-	border-bottom: 1px solid var(--bs-border-color);
+	border-bottom: 1px solid var(--dl-border-soft);
+	box-shadow: 0 6px 12px -8px rgba(0, 0, 0, 0.6);
 }
 
-.evolution-filters .evolution-search {
-	width: auto;
-	min-width: 220px;
-	flex: 0 1 320px;
+@media (max-width: 768px) {
+	.evolution-filters {
+		gap: 6px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+}
+
+.evolution-filters .search {
+	margin-bottom: 0 !important;
+}
+
+.evolution-filters .form-control,
+.evolution-filters .btn {
+	height: 38px;
+	border: 1px solid var(--dl-border-soft);
+	background-color: var(--dl-panel);
+	font-size: 0.9em;
+	transition: all 0.3s;
+}
+.evolution-filters .form-control{
+	background-color: var(--dl-snd-dark);
+}
+.evolution-filters .btn {
+	background-color: var(--dl-panel);
+}
+
+.evolution-filters .form-control.research {
+	border: 1px solid var(--dl-border-soft);
+	border-right: 0;
+	border-radius: 9px 0 0 9px;
+	color: #e7ecf2 !important;
+}
+
+.evolution-filters .form-control::placeholder {
+	color: var(--dl-muted);
+}
+
+.evolution-filters .form-control:focus {
+	background-color: var(--dl-panel);
+	border-color: var(--dl-accent);
+	box-shadow: none;
+}
+
+.evolution-filters .search .btn {
+	border-radius: 0 9px 9px 0;
+	color: var(--dl-label);
+}
+
+.evolution-filters .search .btn:hover,
+.evolution-filters .search .btn:focus {
+	color: #e7ecf2;
+	border-color: var(--dl-accent);
+}
+
+.evolution-filters .dropdown-toggle {
+	padding: 0 14px;
+	border-radius: 9px;
+	font-weight: 600;
+	color: #c3ccd8;
+}
+
+.evolution-filters .dropdown-toggle::after {
+	margin-left: 7px;
+	color: var(--dl-label);
+}
+
+.evolution-filters .dropdown-toggle:hover,
+.evolution-filters .dropdown-toggle:focus,
+.evolution-filters .dropdown-toggle.show {
+	background-color: var(--dl-panel-soft);
+	border-color: var(--dl-border-strong);
+	color: #e7ecf2;
 }
 
 .evolution-filters .filter-active .dropdown-toggle {
-	border-color: var(--bs-primary-link);
+	border-color: var(--dl-accent);
+	color: #e7ecf2;
+}
+
+.evolution-filters .dropdown-menu {
+	background-color: var(--dl-panel);
+	border: 1px solid var(--dl-snd-dark);
+}
+
+.evolution-filters .dropdown-item {
+	color: white;
+}
+
+.evolution-filters .dropdown-item:hover,
+.evolution-filters .dropdown-item:focus,
+.evolution-filters .dropdown-item.active {
+	background-color: var(--dl-snd-dark);
 	color: white;
 }
 
 .evolution-filters .filter-reset {
 	height: 38px;
 	padding: 0 12px;
-	border: 1px dashed var(--bs-border-color);
-	border-radius: var(--dl-border-radius);
+	border: 1px dashed var(--dl-border-soft);
+	border-radius: 9px;
 	background: none;
-	color: var(--bs-body-color);
+	font-size: 0.9em;
+	font-weight: 600;
+	color: var(--dl-label);
 	transition: all 0.3s;
 }
 
 .evolution-filters .filter-reset:hover,
 .evolution-filters .filter-reset:focus {
 	border-style: solid;
-	border-color: var(--bs-primary-link);
-	color: white;
+	border-color: var(--dl-accent);
+	color: #e7ecf2;
 }
 
 .evolution-filters .filter-count {
 	margin-left: auto;
+	font-family: var(--dl-mono);
+	font-size: 0.78em;
 	font-weight: 700;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	color: var(--dl-label);
 }
 
 .evolution-table {
@@ -1736,7 +1846,6 @@ button.like-heart:focus-visible {
 	white-space: nowrap;
 	font-weight: 500;
 	letter-spacing: 0.1em;
-	text-transform: uppercase;
 	color: var(--bs-gray-400);
 }
 
