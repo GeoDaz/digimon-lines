@@ -57,7 +57,7 @@ const LineViewer: React.FC<Props> = ({
 }) => {
 	const router = useRouter();
 	const [zoom, setZoom] = useState(DEFAULT_ZOOM);
-	const { downloadCode } = useDownloadCode(line, noop);
+	const { downloadCode } = useDownloadCode(line);
 	const { downloadImage, downloading, error } = useDownloadImg(downloadName);
 
 	useEffect(() => {

@@ -101,7 +101,7 @@ export const removeLineColumn = (x: number) => ({ type: REMOVE_LINE_COLUMN, i: x
 export const addLineRow = (y: number | undefined) => ({ type: ADD_LINE_ROW, i: y });
 export const removeLineRow = (y: number) => ({ type: REMOVE_LINE_ROW, i: y });
 
-const lineReducer = (line: Line = defaultLine, action: Record<string, any>) => {
+const lineReducer = (line: Line = defaultLine, action: Record<string, any>): Line => {
 	let columns;
 	switch (action.type) {
 		case SET_LINE:

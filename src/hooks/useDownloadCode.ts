@@ -7,7 +7,7 @@ import Line from '@/types/Line';
 import { useState } from 'react';
 import { IS_DEV } from '@/consts/env';
 
-const useDownloadCode = (line: Line, setLine: (line: Line) => void) => {
+const useDownloadCode = (line: Line, setLine?: (line: Line) => void) => {
 	const [name, setName] = useState<string | undefined>();
 	const { addToast } = useToast();
 
@@ -46,7 +46,9 @@ const useDownloadCode = (line: Line, setLine: (line: Line) => void) => {
 
 	const uploadCode = (name: string, json: Line | null) => {
 		setName(name);
-		setLine(json ? (transformLine(json) as Line) : defaultLine);
+		if (setLine) {
+			setLine(json ? (transformLine(json) as Line) : defaultLine);
+		}
 	};
 
 	return { downloadCode, uploadCode, name, setName };
