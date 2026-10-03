@@ -108,5 +108,558 @@
 			"name": "evilmon",
 			"line": "devimon"
 		}
-	]
+	],
+	"grid": {
+		"size": 8,
+		"columns": [
+			[
+				{
+					"from": null,
+					"name": "snowbotamon"
+				},
+				{
+					"name": "nyaromon"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "salamon",
+					"color": ["light"],
+					"skins": ["plotmon_x"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "black_gatomon",
+					"color": ["dark"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "ladydevimon",
+					"color": ["dark"],
+					"skins": ["ladydevimon_x"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "lilithmon",
+					"color": ["dark"],
+					"skins": ["lilithmon_x"]
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "pitchmon",
+					"color": "marine"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "pukamon",
+					"color": ["marine"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "shakomon",
+					"color": ["marine"],
+					"skins": ["shakomon_x"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "gesomon",
+					"color": ["marine"],
+					"skins": ["gesomon_x"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "dagomon",
+					"color": ["dark"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "leviamon",
+					"color": ["dark"],
+					"skins": ["leviamon_x"]
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "zurumon"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "pagumon",
+					"color": ["dark"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "demidevimon",
+					"color": ["dark"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "devimon",
+					"color": ["dark"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "neodevimon",
+					"color": ["dark"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "demon",
+					"color": ["dark"],
+					"skins": ["demon_2", "demon_x"]
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "puttimon"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "cupimon",
+					"color": ["light"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "lucemon",
+					"color": ["light"]
+				},
+				null,
+				{
+					"from": [0, -2],
+					"name": "lucemon_falldown_mode",
+					"color": ["gold", "gold"],
+					"skins": ["lucemon_x"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "lucemon_larva",
+					"color": ["mode"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "lucemon_satan_mode",
+					"color": ["mode"]
+				},
+				{
+					"from": [
+						[-3, -2],
+						[-2, -2],
+						[-1, -2],
+						[0, -1],
+						[3, -2],
+						[1, -2],
+						[2, -2]
+					],
+					"name": "ogudomon",
+					"color": [
+						"fusion",
+						"fusion",
+						"fusion",
+						"fusion",
+						"fusion",
+						"fusion",
+						"fusion"
+					],
+					"skins": ["ogudomon_x"]
+				}
+			],
+			[
+				{
+					"from": null,
+					"name": "keemon"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "yarmon",
+					"color": ["dark"]
+				},
+				{
+					"from": null,
+					"name": "impmon",
+					"skins": ["impmon_x"]
+				},
+				{
+					"from": null,
+					"name": "boogiemon"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "phelesmon",
+					"color": ["dark"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "barbamon",
+					"color": ["dark"],
+					"skins": ["barbamon_x"]
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "keemon"
+				},
+				{
+					"from": null,
+					"name": "yarmon"
+				},
+				{
+					"from": null,
+					"name": "phascomon"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "porcupamon",
+					"color": ["dark"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "astamon",
+					"color": ["dark"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "belphemon_rage_mode",
+					"color": ["dark"],
+					"skins": ["belphemon_sleep_mode", "belphemon_x"]
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "keemon"
+				},
+				{
+					"from": null,
+					"name": "yarmon"
+				},
+				{
+					"from": null,
+					"name": "impmon",
+					"skins": ["impmon_x"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "wizardmon",
+					"color": ["dark"],
+					"skins": ["wizardmon_x"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "baalmon",
+					"color": ["dark"],
+					"skins": ["baalmon_x"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "beelzebumon",
+					"color": ["dark"],
+					"skins": ["beelzebumon_x", "beelzebumon_2"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "beelzebumon_blast_mode"
+				},
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "kuramon"
+				},
+				{
+					"from": null,
+					"name": "tsumemon"
+				},
+				{
+					"from": null,
+					"name": "keramon",
+					"skins": ["keramon_x"]
+				},
+				{
+					"from": null,
+					"name": "chrysalimon"
+				},
+				{
+					"from": null,
+					"name": "infermon"
+				},
+				{
+					"from": null,
+					"name": "diaboromon",
+					"skins": ["diaboromon_x"]
+				},
+				{
+					"from": null,
+					"name": "armageddemon"
+				},
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "zurumon"
+				},
+				{
+					"from": null,
+					"name": "pagumon"
+				},
+				{
+					"from": null,
+					"name": "dracmon"
+				},
+				{
+					"from": null,
+					"name": "sangloupmon"
+				},
+				{
+					"from": null,
+					"name": "matadormon"
+				},
+				{
+					"from": null,
+					"name": "grandracmon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "keemon"
+				},
+				{
+					"from": null,
+					"name": "yarmon"
+				},
+				{
+					"from": null,
+					"name": "impmon"
+				},
+				{
+					"from": null,
+					"name": "witchmon"
+				},
+				{
+					"from": null,
+					"name": "mephismon"
+				},
+				{
+					"from": null,
+					"name": "gulfmon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "puwamon"
+				},
+				{
+					"from": null,
+					"name": "pinamon"
+				},
+				{
+					"from": null,
+					"name": "gargamon"
+				},
+				{
+					"from": null,
+					"name": "darcmon"
+				},
+				{
+					"from": null,
+					"name": "hippogriffomon"
+				},
+				{
+					"from": null,
+					"name": "murmukusmon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "zurumon"
+				},
+				{
+					"from": null,
+					"name": "pagumon"
+				},
+				{
+					"from": null,
+					"name": "chiropmon"
+				},
+				{
+					"from": null,
+					"name": "pipismon"
+				},
+				{
+					"from": null,
+					"name": "myotismon",
+					"skins": ["myotismon_x"]
+				},
+				{
+					"from": null,
+					"name": "malomyotismon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "cocomon"
+				},
+				{
+					"from": null,
+					"name": "chocomon"
+				},
+				{
+					"from": null,
+					"name": "lopmon"
+				},
+				{
+					"from": null,
+					"name": "wendimon"
+				},
+				{
+					"from": null,
+					"name": "jokermon"
+				},
+				{
+					"from": null,
+					"name": "cherubimon_vice",
+					"skins": ["cherubimon_vice_x"]
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "zurumon"
+				},
+				{
+					"from": null,
+					"name": "pagumon"
+				},
+				{
+					"from": null,
+					"name": "demidevimon"
+				},
+				{
+					"from": null,
+					"name": "devimon"
+				},
+				{
+					"from": null,
+					"name": "skullsatamon"
+				},
+				{
+					"from": null,
+					"name": "boltboutamon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "snowbotamon"
+				},
+				{
+					"from": null,
+					"name": "nyaromon"
+				},
+				{
+					"from": null,
+					"name": "plotmon",
+					"skins": ["plotmon_x"]
+				},
+				{
+					"from": null,
+					"name": "dobermon",
+					"skins": ["dobermon_x"]
+				},
+				{
+					"from": null,
+					"name": "cerberumon",
+					"skins": ["cerberumon_werewolf_mode", "cerberumon_x"]
+				},
+				{
+					"from": null,
+					"name": "plutomon",
+					"skins": ["zombie_plutomon"]
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "mokumon"
+				},
+				{
+					"from": null,
+					"name": "demimeramon"
+				},
+				{
+					"from": null,
+					"name": "ghostmon"
+				},
+				{
+					"from": null,
+					"name": "bakemon"
+				},
+				{
+					"from": null,
+					"name": "fantomon",
+					"skins": ["metalfantomon"]
+				},
+				{
+					"from": null,
+					"name": "necromon"
+				},
+				null,
+				null
+			]
+		],
+		"related": [
+			"devimon",
+			"impmon",
+			"phascomon",
+			{
+				"for": "lucemon",
+				"name": "patamon"
+			},
+			{
+				"for": "leviamon",
+				"name": "betamon"
+			},
+			{
+				"for": "black_gatomon",
+				"name": "gatomon"
+			},
+			{
+				"for": "marinedevimon",
+				"name": "jellymon"
+			}
+		]
+	}
 }

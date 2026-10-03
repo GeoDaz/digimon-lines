@@ -47,6 +47,7 @@ const Header: React.FC = () => (
 							{ href: '/', content: 'Families' },
 							{ href: '/list', content: 'List' },
 							{ href: '/groups', content: 'Groups' },
+							{ href: '/games/dsts', content: 'Games' },
 							{ href: '/vbs', content: 'DIM' },
 						]}
 					/>

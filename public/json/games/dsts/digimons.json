@@ -1,0 +1,9208 @@
+[
+	{
+		"slug": "kuramon",
+		"number": "001",
+		"name": "Kuramon",
+		"generation": "In-Training I",
+		"attribute": "No Data",
+		"type": "Unidentified",
+		"personality": "Sly",
+		"image": "kuramon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"pagumon",
+			"tsumemon"
+		]
+	},
+	{
+		"slug": "choromon",
+		"number": "002",
+		"name": "Choromon",
+		"generation": "In-Training I",
+		"attribute": "No Data",
+		"type": "Machine",
+		"personality": "Friendly",
+		"image": "choromon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"kapurimon"
+		]
+	},
+	{
+		"slug": "dodomon",
+		"number": "003",
+		"name": "Dodomon",
+		"generation": "In-Training I",
+		"attribute": "No Data",
+		"type": "Slime",
+		"personality": "Reckless",
+		"image": "dodomon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"wanyamon",
+			"dorimon"
+		]
+	},
+	{
+		"slug": "pabumon",
+		"number": "004",
+		"name": "Pabumon",
+		"generation": "In-Training I",
+		"attribute": "No Data",
+		"type": "Slime",
+		"personality": "Tolerant",
+		"image": "bubbmon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"motimon",
+			"yokomon",
+			"tanemon"
+		]
+	},
+	{
+		"slug": "punimon",
+		"number": "005",
+		"name": "Punimon",
+		"generation": "In-Training I",
+		"attribute": "No Data",
+		"type": "Slime",
+		"personality": "Friendly",
+		"image": "punimon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"tsunomon",
+			"nyaromon"
+		]
+	},
+	{
+		"slug": "botamon",
+		"number": "006",
+		"name": "Botamon",
+		"generation": "In-Training I",
+		"attribute": "No Data",
+		"type": "Slime",
+		"personality": "Daring",
+		"image": "botamon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"koromon"
+		]
+	},
+	{
+		"slug": "poyomon",
+		"number": "007",
+		"name": "Poyomon",
+		"generation": "In-Training I",
+		"attribute": "No Data",
+		"type": "Slime",
+		"personality": "Enlightened",
+		"image": "poyomon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"bukamon",
+			"tokomon"
+		]
+	},
+	{
+		"slug": "kapurimon",
+		"number": "008",
+		"name": "Kapurimon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Lesser",
+		"personality": "Friendly",
+		"image": "caprimon",
+		"modes": [],
+		"from": [
+			"choromon"
+		],
+		"to": [
+			"hagurumon",
+			"kokuwamon",
+			"toyagumon",
+			"solarmon"
+		]
+	},
+	{
+		"slug": "koromon",
+		"number": "009",
+		"name": "Koromon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Lesser",
+		"personality": "Daring",
+		"image": "koromon",
+		"modes": [],
+		"from": [
+			"botamon"
+		],
+		"to": [
+			"agumon",
+			"guilmon",
+			"dracomon",
+			"kotemon",
+			"betamon",
+			"shoutmon"
+		]
+	},
+	{
+		"slug": "tanemon",
+		"number": "010",
+		"name": "Tanemon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Bulb",
+		"personality": "Sociable",
+		"image": "tanemon",
+		"modes": [],
+		"from": [
+			"pabumon"
+		],
+		"to": [
+			"funbeemon",
+			"lalamon",
+			"palmon",
+			"mushroomon",
+			"floramon"
+		]
+	},
+	{
+		"slug": "tsunomon",
+		"number": "011",
+		"name": "Tsunomon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Lesser",
+		"personality": "Friendly",
+		"image": "tsunomon",
+		"modes": [],
+		"from": [
+			"punimon"
+		],
+		"to": [
+			"goblimon",
+			"veemon",
+			"gabumon",
+			"ryudamon",
+			"elecmon",
+			"zubamon"
+		]
+	},
+	{
+		"slug": "tsumemon",
+		"number": "012",
+		"name": "Tsumemon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Unidentified",
+		"personality": "Sly",
+		"image": "tsumemon",
+		"modes": [],
+		"from": [
+			"kuramon"
+		],
+		"to": [
+			"dracmon",
+			"shamamon",
+			"keramon",
+			"agumon-black",
+			"gabumon-black"
+		]
+	},
+	{
+		"slug": "tokomon",
+		"number": "013",
+		"name": "Tokomon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Lesser",
+		"personality": "Enlightened",
+		"image": "tokomon",
+		"modes": [],
+		"from": [
+			"poyomon"
+		],
+		"to": [
+			"patamon",
+			"coronamon",
+			"terriermon",
+			"armadillomon",
+			"lucemon"
+		]
+	},
+	{
+		"slug": "dorimon",
+		"number": "014",
+		"name": "Dorimon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Lesser",
+		"personality": "Reckless",
+		"image": "dorimon",
+		"modes": [],
+		"from": [
+			"dodomon"
+		],
+		"to": [
+			"dorumon",
+			"monodramon",
+			"snowgoblimon",
+			"lopmon"
+		]
+	},
+	{
+		"slug": "nyaromon",
+		"number": "015",
+		"name": "Nyaromon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Lesser",
+		"personality": "Devoted",
+		"image": "nyaromon",
+		"modes": [],
+		"from": [
+			"punimon"
+		],
+		"to": [
+			"lunamon",
+			"kudamon",
+			"salamon",
+			"huckmon"
+		]
+	},
+	{
+		"slug": "pagumon",
+		"number": "016",
+		"name": "Pagumon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Lesser",
+		"personality": "Strategic",
+		"image": "pagumon",
+		"modes": [],
+		"from": [
+			"kuramon"
+		],
+		"to": [
+			"impmon",
+			"demidevimon",
+			"gazimon",
+			"otamamon"
+		]
+	},
+	{
+		"slug": "yokomon",
+		"number": "017",
+		"name": "Yokomon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Bulb",
+		"personality": "Sly",
+		"image": "yokomon",
+		"modes": [],
+		"from": [
+			"pabumon"
+		],
+		"to": [
+			"biyomon",
+			"penmon",
+			"falcomon",
+			"hawkmon",
+			"hyokomon",
+			"muchomon"
+		]
+	},
+	{
+		"slug": "bukamon",
+		"number": "018",
+		"name": "Bukamon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Lesser",
+		"personality": "Reckless",
+		"image": "pukamon",
+		"modes": [],
+		"from": [
+			"poyomon"
+		],
+		"to": [
+			"kamemon",
+			"crabmon",
+			"gomamon",
+			"gizamon",
+			"syakomon"
+		]
+	},
+	{
+		"slug": "motimon",
+		"number": "019",
+		"name": "Motimon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Lesser",
+		"personality": "Tolerant",
+		"image": "mochimon",
+		"modes": [],
+		"from": [
+			"pabumon"
+		],
+		"to": [
+			"chuumon",
+			"tentomon",
+			"wormmon",
+			"gotsumon"
+		]
+	},
+	{
+		"slug": "wanyamon",
+		"number": "020",
+		"name": "Wanyamon",
+		"generation": "In-Training II",
+		"attribute": "No Data",
+		"type": "Lesser",
+		"personality": "Zealous",
+		"image": "wanyamon",
+		"modes": [],
+		"from": [
+			"dodomon"
+		],
+		"to": [
+			"gaomon",
+			"tapirmon",
+			"bearmon",
+			"renamon"
+		]
+	},
+	{
+		"slug": "agumon",
+		"number": "021",
+		"name": "Agumon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Reptile",
+		"personality": "Daring",
+		"image": "agumon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"raptordramon",
+			"geogreymon",
+			"numemon",
+			"greymon",
+			"coredramon-green",
+			"agumon-bond-of-bravery"
+		]
+	},
+	{
+		"slug": "kudamon",
+		"number": "022",
+		"name": "Kudamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Holy Beast",
+		"personality": "Strategic",
+		"image": "kudamon",
+		"modes": [],
+		"from": [
+			"nyaromon"
+		],
+		"to": [
+			"airdramon",
+			"reppamon",
+			"angemon",
+			"ginryumon",
+			"lobomon",
+			"sorcermon"
+		]
+	},
+	{
+		"slug": "gomamon",
+		"number": "023",
+		"name": "Gomamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Sea Beast",
+		"personality": "Reckless",
+		"image": "gomamon",
+		"modes": [],
+		"from": [
+			"bukamon"
+		],
+		"to": [
+			"mojyamon",
+			"ikkakumon",
+			"frigimon",
+			"hyogamon",
+			"icedevimon"
+		]
+	},
+	{
+		"slug": "coronamon",
+		"number": "024",
+		"name": "Coronamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Beast",
+		"personality": "Daring",
+		"image": "coronamon",
+		"modes": [],
+		"from": [
+			"tokomon"
+		],
+		"to": [
+			"firamon",
+			"meramon",
+			"growlmon",
+			"baohuckmon",
+			"birdramon",
+			"agunimon"
+		]
+	},
+	{
+		"slug": "zubamon",
+		"number": "025",
+		"name": "Zubamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Weapon",
+		"personality": "Zealous",
+		"image": "zubamon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"musyamon",
+			"buraimon",
+			"tankmon",
+			"zubaeagermon",
+			"ankylomon",
+			"guardromon-gold"
+		]
+	},
+	{
+		"slug": "solarmon",
+		"number": "026",
+		"name": "Solarmon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Machine",
+		"personality": "Sociable",
+		"image": "solarmon",
+		"modes": [],
+		"from": [
+			"kapurimon"
+		],
+		"to": [
+			"starmon",
+			"goldnumemon",
+			"meramon",
+			"guardromon-gold"
+		]
+	},
+	{
+		"slug": "terriermon",
+		"number": "027",
+		"name": "Terriermon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Beast",
+		"personality": "Tolerant",
+		"image": "terriermon",
+		"modes": [],
+		"from": [
+			"tokomon"
+		],
+		"to": [
+			"mojyamon",
+			"lekismon",
+			"gawappamon",
+			"gargomon",
+			"rapidmon-armor"
+		]
+	},
+	{
+		"slug": "tentomon",
+		"number": "028",
+		"name": "Tentomon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Insectoid",
+		"personality": "Sly",
+		"image": "tentomon",
+		"modes": [],
+		"from": [
+			"motimon"
+		],
+		"to": [
+			"kabuterimon",
+			"sunflowmon",
+			"kuwagamon",
+			"waspmon",
+			"snimon"
+		]
+	},
+	{
+		"slug": "toyagumon",
+		"number": "029",
+		"name": "ToyAgumon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Puppet",
+		"personality": "Friendly",
+		"image": "toyagumon",
+		"modes": [],
+		"from": [
+			"kapurimon"
+		],
+		"to": [
+			"blimpmon",
+			"deputymon",
+			"raremon",
+			"tankmon",
+			"gargomon"
+		]
+	},
+	{
+		"slug": "tapirmon",
+		"number": "030",
+		"name": "Tapirmon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Holy Beast",
+		"personality": "Tolerant",
+		"image": "tapirmon",
+		"modes": [],
+		"from": [
+			"wanyamon"
+		],
+		"to": [
+			"meramon",
+			"garurumon",
+			"bakemon",
+			"unimon",
+			"kyubimon"
+		]
+	},
+	{
+		"slug": "hyokomon",
+		"number": "031",
+		"name": "Hyokomon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Baby Bird",
+		"personality": "Reckless",
+		"image": "hyokomon",
+		"modes": [],
+		"from": [
+			"yokomon"
+		],
+		"to": [
+			"peckmon",
+			"birdramon",
+			"dinohyumon",
+			"buraimon"
+		]
+	},
+	{
+		"slug": "biyomon",
+		"number": "032",
+		"name": "Biyomon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Baby Bird",
+		"personality": "Tolerant",
+		"image": "biyomon",
+		"modes": [],
+		"from": [
+			"yokomon"
+		],
+		"to": [
+			"aquilamon",
+			"birdramon",
+			"unimon",
+			"wizardmon"
+		]
+	},
+	{
+		"slug": "falcomon",
+		"number": "033",
+		"name": "Falcomon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Bird",
+		"personality": "Friendly",
+		"image": "falcomon",
+		"modes": [],
+		"from": [
+			"yokomon"
+		],
+		"to": [
+			"peckmon",
+			"ginryumon",
+			"kiwimon"
+		]
+	},
+	{
+		"slug": "salamon",
+		"number": "034",
+		"name": "Salamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Mammal",
+		"personality": "Tolerant",
+		"image": "salamon",
+		"modes": [],
+		"from": [
+			"nyaromon"
+		],
+		"to": [
+			"gatomon",
+			"sangloupmon",
+			"dobermon",
+			"ikkakumon",
+			"veedramon",
+			"drimogemon"
+		]
+	},
+	{
+		"slug": "bearmon",
+		"number": "035",
+		"name": "Bearmon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Beast",
+		"personality": "Reckless",
+		"image": "bearmon",
+		"modes": [],
+		"from": [
+			"wanyamon"
+		],
+		"to": [
+			"grizzlymon",
+			"gaogamon",
+			"mojyamon",
+			"leomon",
+			"garurumon-black"
+		]
+	},
+	{
+		"slug": "penmon",
+		"number": "036",
+		"name": "Penmon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Bird",
+		"personality": "Daring",
+		"image": "penmon",
+		"modes": [],
+		"from": [
+			"yokomon"
+		],
+		"to": [
+			"peckmon",
+			"buraimon",
+			"kiwimon",
+			"aquilamon"
+		]
+	},
+	{
+		"slug": "monodramon",
+		"number": "037",
+		"name": "Monodramon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Mini Dragon",
+		"personality": "Reckless",
+		"image": "monodramon",
+		"modes": [],
+		"from": [
+			"dorimon"
+		],
+		"to": [
+			"strikedramon",
+			"raptordramon",
+			"deltamon",
+			"kurisarimon",
+			"cyclonemon"
+		]
+	},
+	{
+		"slug": "ryudamon",
+		"number": "038",
+		"name": "Ryudamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Beast",
+		"personality": "Zealous",
+		"image": "ryudamon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"reppamon",
+			"coelamon",
+			"ginryumon",
+			"greymon",
+			"monochromon"
+		]
+	},
+	{
+		"slug": "lucemon",
+		"number": "039",
+		"name": "Lucemon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Angel",
+		"personality": "Enlightened",
+		"image": "lucemon",
+		"modes": [],
+		"from": [
+			"tokomon"
+		],
+		"to": [
+			"lucemon-cm"
+		]
+	},
+	{
+		"slug": "elecmon",
+		"number": "040",
+		"name": "Elecmon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Mammal",
+		"personality": "Friendly",
+		"image": "elecmon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"aegiomon",
+			"seadramon",
+			"unimon",
+			"kuwagamon",
+			"gekomon"
+		]
+	},
+	{
+		"slug": "gaomon",
+		"number": "041",
+		"name": "Gaomon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Beast",
+		"personality": "Zealous",
+		"image": "gaomon",
+		"modes": [],
+		"from": [
+			"wanyamon"
+		],
+		"to": [
+			"strikedramon",
+			"gaogamon",
+			"leomon",
+			"nanimon",
+			"turuiemon"
+		]
+	},
+	{
+		"slug": "crabmon",
+		"number": "042",
+		"name": "Crabmon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Crustacean",
+		"personality": "Opportunistic",
+		"image": "crabmon",
+		"modes": [],
+		"from": [
+			"bukamon"
+		],
+		"to": [
+			"gawappamon",
+			"octomon",
+			"shellmon",
+			"raremon",
+			"snimon",
+			"coelamon"
+		]
+	},
+	{
+		"slug": "gabumon",
+		"number": "043",
+		"name": "Gabumon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Reptile",
+		"personality": "Sociable",
+		"image": "gabumon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"garurumon",
+			"ikkakumon",
+			"drimogemon",
+			"kyubimon",
+			"geremon",
+			"gabumon-bond-of-friendship"
+		]
+	},
+	{
+		"slug": "kamemon",
+		"number": "044",
+		"name": "Kamemon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "kamemon",
+		"modes": [],
+		"from": [
+			"bukamon"
+		],
+		"to": [
+			"gawappamon",
+			"octomon",
+			"shellmon",
+			"shellnumemon",
+			"dinohyumon",
+			"sorcermon"
+		]
+	},
+	{
+		"slug": "kokuwamon",
+		"number": "045",
+		"name": "Kokuwamon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Machine",
+		"personality": "Zealous",
+		"image": "kokuwamon",
+		"modes": [],
+		"from": [
+			"kapurimon"
+		],
+		"to": [
+			"centarumon",
+			"kuwagamon",
+			"clockmon",
+			"waspmon",
+			"mekanorimon"
+		]
+	},
+	{
+		"slug": "gotsumon",
+		"number": "046",
+		"name": "Gotsumon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Ore",
+		"personality": "Friendly",
+		"image": "gottsumon",
+		"modes": [],
+		"from": [
+			"motimon"
+		],
+		"to": [
+			"starmon",
+			"guardromon",
+			"golemon",
+			"monochromon",
+			"icemon",
+			"mudfrigimon"
+		]
+	},
+	{
+		"slug": "kotemon",
+		"number": "047",
+		"name": "Kotemon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Reptile",
+		"personality": "Opportunistic",
+		"image": "kotemon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"turuiemon",
+			"musyamon",
+			"deputymon",
+			"dinohyumon",
+			"coredramon-blue"
+		]
+	},
+	{
+		"slug": "shoutmon",
+		"number": "048",
+		"name": "Shoutmon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Mini Dragon",
+		"personality": "Daring",
+		"image": "shoutmon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"omnishoutmon",
+			"zubaeagermon",
+			"gargomon",
+			"guardromon-gold"
+		]
+	},
+	{
+		"slug": "dracomon",
+		"number": "049",
+		"name": "Dracomon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Dragon",
+		"personality": "Reckless",
+		"image": "dracomon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"coredramon-green",
+			"coredramon-blue",
+			"deltamon",
+			"veedramon",
+			"seadramon",
+			"tyrannomon"
+		]
+	},
+	{
+		"slug": "dorumon",
+		"number": "050",
+		"name": "Dorumon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Beast",
+		"personality": "Reckless",
+		"image": "dorumon",
+		"modes": [],
+		"from": [
+			"dorimon"
+		],
+		"to": [
+			"raptordramon",
+			"airdramon",
+			"sangloupmon",
+			"exveemon",
+			"drimogemon",
+			"dorugamon"
+		]
+	},
+	{
+		"slug": "patamon",
+		"number": "051",
+		"name": "Patamon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Mammal",
+		"personality": "Enlightened",
+		"image": "patamon",
+		"modes": [],
+		"from": [
+			"tokomon"
+		],
+		"to": [
+			"angemon",
+			"pegasusmon",
+			"unimon",
+			"centarumon"
+		]
+	},
+	{
+		"slug": "huckmon",
+		"number": "052",
+		"name": "Huckmon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Mini Dragon",
+		"personality": "Friendly",
+		"image": "hackmon",
+		"modes": [],
+		"from": [
+			"nyaromon"
+		],
+		"to": [
+			"gatomon",
+			"geogreymon",
+			"growlmon",
+			"baohuckmon",
+			"greymon"
+		]
+	},
+	{
+		"slug": "palmon",
+		"number": "053",
+		"name": "Palmon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Vegetation",
+		"personality": "Sociable",
+		"image": "palmon",
+		"modes": [],
+		"from": [
+			"tanemon"
+		],
+		"to": [
+			"mojyamon",
+			"vegiemon",
+			"togemon",
+			"woodmon",
+			"kurisarimon",
+			"platinumsukamon"
+		]
+	},
+	{
+		"slug": "floramon",
+		"number": "054",
+		"name": "Floramon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Vegetation",
+		"personality": "Strategic",
+		"image": "floramon",
+		"modes": [],
+		"from": [
+			"tanemon"
+		],
+		"to": [
+			"vegiemon",
+			"togemon",
+			"woodmon",
+			"sunflowmon",
+			"kiwimon"
+		]
+	},
+	{
+		"slug": "muchomon",
+		"number": "055",
+		"name": "Muchomon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Bird",
+		"personality": "Devoted",
+		"image": "muchomon",
+		"modes": [],
+		"from": [
+			"yokomon"
+		],
+		"to": [
+			"airdramon",
+			"peckmon",
+			"birdramon",
+			"fugamon"
+		]
+	},
+	{
+		"slug": "lalamon",
+		"number": "056",
+		"name": "Lalamon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Vegetation",
+		"personality": "Sociable",
+		"image": "lalamon",
+		"modes": [],
+		"from": [
+			"tanemon"
+		],
+		"to": [
+			"sunflowmon",
+			"togemon",
+			"deputymon",
+			"mudfrigimon",
+			"turuiemon"
+		]
+	},
+	{
+		"slug": "lunamon",
+		"number": "057",
+		"name": "Lunamon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Mammal",
+		"personality": "Enlightened",
+		"image": "lunamon",
+		"modes": [],
+		"from": [
+			"nyaromon"
+		],
+		"to": [
+			"lekismon",
+			"garurumon",
+			"frigimon",
+			"hyogamon",
+			"sorcermon",
+			"icemon"
+		]
+	},
+	{
+		"slug": "renamon",
+		"number": "058",
+		"name": "Renamon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Beast Man",
+		"personality": "Enlightened",
+		"image": "renamon",
+		"modes": [],
+		"from": [
+			"wanyamon"
+		],
+		"to": [
+			"lekismon",
+			"sunflowmon",
+			"reppamon",
+			"kyubimon",
+			"garurumon-black"
+		]
+	},
+	{
+		"slug": "lopmon",
+		"number": "059",
+		"name": "Lopmon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Beast",
+		"personality": "Strategic",
+		"image": "lopmon",
+		"modes": [],
+		"from": [
+			"dorimon"
+		],
+		"to": [
+			"grizzlymon",
+			"minotarumon",
+			"leomon",
+			"turuiemon",
+			"wendigomon",
+			"mudfrigimon"
+		]
+	},
+	{
+		"slug": "impmon",
+		"number": "060",
+		"name": "Impmon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Little Devil",
+		"personality": "Sly",
+		"image": "impmon",
+		"modes": [],
+		"from": [
+			"pagumon"
+		],
+		"to": [
+			"bakemon",
+			"wizardmon",
+			"clockmon",
+			"sangloupmon",
+			"devimon",
+			"witchmon"
+		]
+	},
+	{
+		"slug": "otamamon",
+		"number": "061",
+		"name": "Otamamon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Amphibian",
+		"personality": "Sly",
+		"image": "otamamon",
+		"modes": [],
+		"from": [
+			"pagumon"
+		],
+		"to": [
+			"seadramon",
+			"numemon",
+			"gekomon",
+			"shellnumemon",
+			"platinumsukamon"
+		]
+	},
+	{
+		"slug": "gazimon",
+		"number": "062",
+		"name": "Gazimon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Mammal",
+		"personality": "Daring",
+		"image": "gazimon",
+		"modes": [],
+		"from": [
+			"pagumon"
+		],
+		"to": [
+			"sangloupmon",
+			"blackgatomon",
+			"gaogamon",
+			"baohuckmon",
+			"dobermon",
+			"dorugamon"
+		]
+	},
+	{
+		"slug": "gizamon",
+		"number": "063",
+		"name": "Gizamon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Sea Animal",
+		"personality": "Daring",
+		"image": "gizamon",
+		"modes": [],
+		"from": [
+			"bukamon"
+		],
+		"to": [
+			"cyclonemon",
+			"flymon",
+			"zubaeagermon",
+			"ankylomon",
+			"geremon",
+			"lanamon"
+		]
+	},
+	{
+		"slug": "guilmon",
+		"number": "064",
+		"name": "Guilmon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Reptile",
+		"personality": "Daring",
+		"image": "guilmon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"geogreymon",
+			"growlmon",
+			"exveemon",
+			"tyrannomon",
+			"greymon-blue"
+		]
+	},
+	{
+		"slug": "goblimon",
+		"number": "065",
+		"name": "Goblimon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Demon",
+		"personality": "Daring",
+		"image": "goblimon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"golemon",
+			"wendigomon",
+			"deltamon",
+			"tuskmon",
+			"ogremon"
+		]
+	},
+	{
+		"slug": "shamamon",
+		"number": "066",
+		"name": "Shamamon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Demon",
+		"personality": "Sociable",
+		"image": "shamamon",
+		"modes": [],
+		"from": [
+			"tsumemon"
+		],
+		"to": [
+			"minotarumon",
+			"musyamon",
+			"fugamon",
+			"witchmon"
+		]
+	},
+	{
+		"slug": "syakomon",
+		"number": "067",
+		"name": "Syakomon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Crustacean",
+		"personality": "Daring",
+		"image": "shakomon",
+		"modes": [],
+		"from": [
+			"bukamon"
+		],
+		"to": [
+			"coelamon",
+			"shellmon",
+			"shellnumemon",
+			"octomon",
+			"raremon"
+		]
+	},
+	{
+		"slug": "snowgoblimon",
+		"number": "068",
+		"name": "SnowGoblimon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Demon",
+		"personality": "Friendly",
+		"image": "snowgoblimon",
+		"modes": [],
+		"from": [
+			"dorimon"
+		],
+		"to": [
+			"gatomon",
+			"monochromon",
+			"frigimon",
+			"hyogamon",
+			"icedevimon",
+			"icemon"
+		]
+	},
+	{
+		"slug": "chuumon",
+		"number": "069",
+		"name": "Chuumon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Beast",
+		"personality": "Sociable",
+		"image": "tyumon",
+		"modes": [],
+		"from": [
+			"motimon"
+		],
+		"to": [
+			"blackgatomon",
+			"sukamon",
+			"gatomon",
+			"gekomon",
+			"geremon",
+			"platinumsukamon"
+		]
+	},
+	{
+		"slug": "dracmon",
+		"number": "070",
+		"name": "Dracmon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Undead",
+		"personality": "Reckless",
+		"image": "dracmon",
+		"modes": [],
+		"from": [
+			"tsumemon"
+		],
+		"to": [
+			"sangloupmon",
+			"sukamon",
+			"wizardmon",
+			"starmon"
+		]
+	},
+	{
+		"slug": "hagurumon",
+		"number": "071",
+		"name": "Hagurumon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Machine",
+		"personality": "Sociable",
+		"image": "hagurumon",
+		"modes": [],
+		"from": [
+			"kapurimon"
+		],
+		"to": [
+			"clockmon",
+			"mekanorimon",
+			"tankmon",
+			"guardromon",
+			"blimpmon"
+		]
+	},
+	{
+		"slug": "demidevimon",
+		"number": "072",
+		"name": "DemiDevimon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Little Devil",
+		"personality": "Enlightened",
+		"image": "demidevimon",
+		"modes": [],
+		"from": [
+			"pagumon"
+		],
+		"to": [
+			"bakemon",
+			"icedevimon",
+			"devimon",
+			"ogremon",
+			"greymon-blue"
+		]
+	},
+	{
+		"slug": "funbeemon",
+		"number": "073",
+		"name": "FunBeemon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Insectoid",
+		"personality": "Opportunistic",
+		"image": "fanbeemon",
+		"modes": [],
+		"from": [
+			"tanemon"
+		],
+		"to": [
+			"waspmon",
+			"flymon",
+			"dokugumon",
+			"stingmon",
+			"goldnumemon",
+			"kabuterimon"
+		]
+	},
+	{
+		"slug": "betamon",
+		"number": "074",
+		"name": "Betamon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Amphibian",
+		"personality": "Strategic",
+		"image": "betamon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"seadramon",
+			"coelamon",
+			"devimon",
+			"numemon",
+			"vegiemon",
+			"tuskmon"
+		]
+	},
+	{
+		"slug": "mushroomon",
+		"number": "075",
+		"name": "Mushroomon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Vegetation",
+		"personality": "Friendly",
+		"image": "mushmon",
+		"modes": [],
+		"from": [
+			"tanemon"
+		],
+		"to": [
+			"sukamon",
+			"nanimon",
+			"woodmon",
+			"flymon"
+		]
+	},
+	{
+		"slug": "armadillomon",
+		"number": "076",
+		"name": "Armadillomon",
+		"generation": "Rookie",
+		"attribute": "Free",
+		"type": "Mammal",
+		"personality": "Overprotective",
+		"image": "armadillomon",
+		"modes": [],
+		"from": [
+			"tokomon"
+		],
+		"to": [
+			"digmon",
+			"submarimon",
+			"golemon",
+			"ankylomon"
+		]
+	},
+	{
+		"slug": "veemon",
+		"number": "077",
+		"name": "Veemon",
+		"generation": "Rookie",
+		"attribute": "Free",
+		"type": "Mini Dragon",
+		"personality": "Zealous",
+		"image": "veemon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"exveemon",
+			"veedramon",
+			"lighdramon",
+			"magnamon",
+			"flamedramon"
+		]
+	},
+	{
+		"slug": "hawkmon",
+		"number": "078",
+		"name": "Hawkmon",
+		"generation": "Rookie",
+		"attribute": "Free",
+		"type": "Bird",
+		"personality": "Sociable",
+		"image": "hawkmon",
+		"modes": [],
+		"from": [
+			"yokomon"
+		],
+		"to": [
+			"firamon",
+			"halsemon",
+			"shurimon",
+			"aquilamon"
+		]
+	},
+	{
+		"slug": "wormmon",
+		"number": "079",
+		"name": "Wormmon",
+		"generation": "Rookie",
+		"attribute": "Free",
+		"type": "Larva",
+		"personality": "Tolerant",
+		"image": "wormmon",
+		"modes": [],
+		"from": [
+			"motimon"
+		],
+		"to": [
+			"stingmon",
+			"dokugumon",
+			"snimon"
+		]
+	},
+	{
+		"slug": "keramon",
+		"number": "080",
+		"name": "Keramon",
+		"generation": "Rookie",
+		"attribute": "Unknown",
+		"type": "Unidentified",
+		"personality": "Sly",
+		"image": "keramon",
+		"modes": [],
+		"from": [
+			"tsumemon"
+		],
+		"to": [
+			"dokugumon",
+			"wendigomon",
+			"octomon",
+			"mekanorimon",
+			"kurisarimon"
+		]
+	},
+	{
+		"slug": "aegiomon",
+		"number": "081",
+		"name": "Aegiomon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Friendly",
+		"image": "aegiomon",
+		"modes": [],
+		"from": [
+			"elecmon"
+		],
+		"to": [
+			"aegiochusmon",
+			"aegiochusmon-dark",
+			"aegiochusmon-holy",
+			"aegiochusmon-blue",
+			"aegiochusmon-green"
+		]
+	},
+	{
+		"slug": "ikkakumon",
+		"number": "082",
+		"name": "Ikkakumon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Sea Beast",
+		"personality": "Reckless",
+		"image": "ikkakumon",
+		"modes": [],
+		"from": [
+			"gabumon",
+			"gomamon",
+			"salamon"
+		],
+		"to": [
+			"whamon",
+			"megaseadramon",
+			"zudomon",
+			"skullseadramon"
+		]
+	},
+	{
+		"slug": "airdramon",
+		"number": "083",
+		"name": "Airdramon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Mythical Beast",
+		"personality": "Reckless",
+		"image": "airdramon",
+		"modes": [],
+		"from": [
+			"kudamon",
+			"dorumon",
+			"muchomon"
+		],
+		"to": [
+			"hisyaryumon",
+			"megadramon",
+			"aeroveedramon",
+			"gigadramon"
+		]
+	},
+	{
+		"slug": "angemon",
+		"number": "084",
+		"name": "Angemon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Angel",
+		"personality": "Enlightened",
+		"image": "angemon",
+		"modes": [],
+		"from": [
+			"kudamon",
+			"patamon"
+		],
+		"to": [
+			"hippogryphonmon",
+			"magnaangemon",
+			"sirenmon",
+			"shakkoumon"
+		]
+	},
+	{
+		"slug": "kabuterimon",
+		"number": "085",
+		"name": "Kabuterimon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Insectoid",
+		"personality": "Sly",
+		"image": "kabuterimon",
+		"modes": [],
+		"from": [
+			"funbeemon",
+			"tentomon"
+		],
+		"to": [
+			"lilamon",
+			"megakabuterimon",
+			"cannonbeemon",
+			"kimeramon"
+		]
+	},
+	{
+		"slug": "gargomon",
+		"number": "086",
+		"name": "Gargomon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Beast Man",
+		"personality": "Tolerant",
+		"image": "gargomon",
+		"modes": [],
+		"from": [
+			"shoutmon",
+			"terriermon",
+			"toyagumon"
+		],
+		"to": [
+			"catchmamemon",
+			"machgaogamon",
+			"rapidmon"
+		]
+	},
+	{
+		"slug": "garurumon",
+		"number": "087",
+		"name": "Garurumon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Beast",
+		"personality": "Friendly",
+		"image": "garurumon",
+		"modes": [],
+		"from": [
+			"lunamon",
+			"gabumon",
+			"tapirmon"
+		],
+		"to": [
+			"weregarurumon",
+			"bluemeramon",
+			"taomon",
+			"kimeramon"
+		]
+	},
+	{
+		"slug": "ginryumon",
+		"number": "088",
+		"name": "Ginryumon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Beast Dragon",
+		"personality": "Zealous",
+		"image": "ginryumon",
+		"modes": [],
+		"from": [
+			"kudamon",
+			"ryudamon",
+			"falcomon"
+		],
+		"to": [
+			"hisyaryumon",
+			"skullgreymon",
+			"butenmon"
+		]
+	},
+	{
+		"slug": "grizzlymon",
+		"number": "089",
+		"name": "Grizzlymon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Beast",
+		"personality": "Reckless",
+		"image": "grizzlymon",
+		"modes": [],
+		"from": [
+			"bearmon",
+			"lopmon"
+		],
+		"to": [
+			"weregarurumon",
+			"grapleomon",
+			"greatgrizzlymon"
+		]
+	},
+	{
+		"slug": "greymon",
+		"number": "090",
+		"name": "Greymon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Dinosaur",
+		"personality": "Daring",
+		"image": "greymon",
+		"modes": [],
+		"from": [
+			"agumon",
+			"ryudamon",
+			"huckmon"
+		],
+		"to": [
+			"metalgreymon",
+			"megadramon",
+			"skullgreymon",
+			"kimeramon"
+		]
+	},
+	{
+		"slug": "coredramon-blue",
+		"number": "091",
+		"name": "Coredramon (Blue)",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Dragon",
+		"personality": "Daring",
+		"image": "coredramon_blue",
+		"modes": [],
+		"from": [
+			"dracomon",
+			"kotemon",
+			"agumon-black"
+		],
+		"to": [
+			"wingdramon",
+			"aeroveedramon",
+			"gigadramon"
+		]
+	},
+	{
+		"slug": "geogreymon",
+		"number": "092",
+		"name": "GeoGreymon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Dinosaur",
+		"personality": "Friendly",
+		"image": "geogreymon",
+		"modes": [],
+		"from": [
+			"agumon",
+			"guilmon",
+			"huckmon"
+		],
+		"to": [
+			"rizegreymon",
+			"metaltyrannomon",
+			"cyberdramon"
+		]
+	},
+	{
+		"slug": "strikedramon",
+		"number": "093",
+		"name": "Strikedramon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Dragon Man",
+		"personality": "Reckless",
+		"image": "strikedramon",
+		"modes": [],
+		"from": [
+			"gaomon",
+			"monodramon",
+			"agumon-black"
+		],
+		"to": [
+			"cyberdramon",
+			"saviorhuckmon",
+			"locomon"
+		]
+	},
+	{
+		"slug": "snimon",
+		"number": "094",
+		"name": "Snimon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Insectoid",
+		"personality": "Sociable",
+		"image": "snimon",
+		"modes": [],
+		"from": [
+			"crabmon",
+			"tentomon",
+			"wormmon"
+		],
+		"to": [
+			"okuwamon",
+			"phantomon",
+			"arukenimon",
+			"jewelbeemon"
+		]
+	},
+	{
+		"slug": "zubaeagermon",
+		"number": "095",
+		"name": "ZubaEagermon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Weapon",
+		"personality": "Zealous",
+		"image": "zubaeagermon",
+		"modes": [],
+		"from": [
+			"gizamon",
+			"shoutmon",
+			"zubamon"
+		],
+		"to": [
+			"grademon",
+			"wargrowlmon",
+			"duramon",
+			"knightmon"
+		]
+	},
+	{
+		"slug": "sorcermon",
+		"number": "096",
+		"name": "Sorcermon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Wizard",
+		"personality": "Strategic",
+		"image": "sorcerymon",
+		"modes": [],
+		"from": [
+			"lunamon",
+			"kamemon",
+			"kudamon"
+		],
+		"to": [
+			"magnaangemon",
+			"piximon",
+			"wisemon"
+		]
+	},
+	{
+		"slug": "gatomon",
+		"number": "097",
+		"name": "Gatomon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Holy Beast",
+		"personality": "Tolerant",
+		"image": "gatomon",
+		"modes": [],
+		"from": [
+			"chuumon",
+			"salamon",
+			"snowgoblimon",
+			"huckmon"
+		],
+		"to": [
+			"nefertimon",
+			"angewomon",
+			"silphymon"
+		]
+	},
+	{
+		"slug": "dobermon",
+		"number": "098",
+		"name": "Dobermon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Dark Beast",
+		"personality": "Sociable",
+		"image": "dobermon",
+		"modes": [],
+		"from": [
+			"salamon",
+			"gazimon",
+			"gabumon-black"
+		],
+		"to": [
+			"matadormon",
+			"darksuperstarmon",
+			"cerberusmon",
+			"mummymon"
+		]
+	},
+	{
+		"slug": "birdramon",
+		"number": "099",
+		"name": "Birdramon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Giant Bird",
+		"personality": "Tolerant",
+		"image": "birdramon",
+		"modes": [],
+		"from": [
+			"coronamon",
+			"biyomon",
+			"hyokomon",
+			"muchomon"
+		],
+		"to": [
+			"flaremon",
+			"garudamon",
+			"skullmeramon",
+			"parrotmon"
+		]
+	},
+	{
+		"slug": "firamon",
+		"number": "100",
+		"name": "Firamon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Beast",
+		"personality": "Daring",
+		"image": "firamon",
+		"modes": [],
+		"from": [
+			"coronamon",
+			"hawkmon"
+		],
+		"to": [
+			"flaremon",
+			"saviorhuckmon",
+			"mistymon"
+		]
+	},
+	{
+		"slug": "veedramon",
+		"number": "101",
+		"name": "Veedramon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Mythical Dragon",
+		"personality": "Zealous",
+		"image": "veedramon",
+		"modes": [],
+		"from": [
+			"veemon",
+			"dracomon",
+			"salamon"
+		],
+		"to": [
+			"wingdramon",
+			"aeroveedramon",
+			"cyberdramon",
+			"metalgreymon-blue"
+		]
+	},
+	{
+		"slug": "buraimon",
+		"number": "102",
+		"name": "Buraimon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Bird Man",
+		"personality": "Reckless",
+		"image": "buraimon",
+		"modes": [],
+		"from": [
+			"hyokomon",
+			"penmon",
+			"zubamon"
+		],
+		"to": [
+			"butenmon",
+			"duramon",
+			"garudamon"
+		]
+	},
+	{
+		"slug": "peckmon",
+		"number": "103",
+		"name": "Peckmon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Bird",
+		"personality": "Friendly",
+		"image": "peckmon",
+		"modes": [],
+		"from": [
+			"hyokomon",
+			"penmon",
+			"muchomon",
+			"falcomon"
+		],
+		"to": [
+			"chirinmon",
+			"myotismon",
+			"crowmon"
+		]
+	},
+	{
+		"slug": "mojyamon",
+		"number": "104",
+		"name": "Mojyamon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Rare Animal",
+		"personality": "Tolerant",
+		"image": "mojyamon",
+		"modes": [],
+		"from": [
+			"bearmon",
+			"gomamon",
+			"palmon",
+			"terriermon"
+		],
+		"to": [
+			"zudomon",
+			"piximon",
+			"mistymon",
+			"mammothmon"
+		]
+	},
+	{
+		"slug": "frigimon",
+		"number": "105",
+		"name": "Frigimon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Ice-Snow",
+		"personality": "Friendly",
+		"image": "frigimon",
+		"modes": [],
+		"from": [
+			"lunamon",
+			"gomamon",
+			"snowgoblimon"
+		],
+		"to": [
+			"crescemon",
+			"angewomon",
+			"iceleomon",
+			"meteormon",
+			"mammothmon"
+		]
+	},
+	{
+		"slug": "unimon",
+		"number": "106",
+		"name": "Unimon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Mythical Beast",
+		"personality": "Strategic",
+		"image": "unimon",
+		"modes": [],
+		"from": [
+			"patamon",
+			"tapirmon",
+			"biyomon",
+			"elecmon"
+		],
+		"to": [
+			"hippogryphonmon",
+			"magnaangemon",
+			"chirinmon"
+		]
+	},
+	{
+		"slug": "raptordramon",
+		"number": "107",
+		"name": "Raptordramon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "raptordramon",
+		"modes": [],
+		"from": [
+			"agumon",
+			"dorumon",
+			"monodramon"
+		],
+		"to": [
+			"grademon",
+			"gigadramon",
+			"tankdramon"
+		]
+	},
+	{
+		"slug": "deputymon",
+		"number": "108",
+		"name": "Deputymon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Mutant",
+		"personality": "Friendly",
+		"image": "revolmon",
+		"modes": [],
+		"from": [
+			"lalamon",
+			"kotemon",
+			"toyagumon"
+		],
+		"to": [
+			"pandamon",
+			"superstarmon",
+			"wisemon"
+		]
+	},
+	{
+		"slug": "leomon",
+		"number": "109",
+		"name": "Leomon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Beast Man",
+		"personality": "Zealous",
+		"image": "leomon",
+		"modes": [],
+		"from": [
+			"gaomon",
+			"bearmon",
+			"lopmon"
+		],
+		"to": [
+			"flaremon",
+			"grapleomon",
+			"iceleomon",
+			"loaderleomon"
+		]
+	},
+	{
+		"slug": "reppamon",
+		"number": "110",
+		"name": "Reppamon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Holy Beast",
+		"personality": "Strategic",
+		"image": "reppamon",
+		"modes": [],
+		"from": [
+			"kudamon",
+			"ryudamon",
+			"renamon"
+		],
+		"to": [
+			"chirinmon",
+			"megaseadramon",
+			"angewomon",
+			"dorugreymon"
+		]
+	},
+	{
+		"slug": "icemon",
+		"number": "111",
+		"name": "Icemon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Ice-Snow",
+		"personality": "Sociable",
+		"image": "icemon",
+		"modes": [],
+		"from": [
+			"lunamon",
+			"snowgoblimon",
+			"gotsumon"
+		],
+		"to": [
+			"crescemon",
+			"meteormon",
+			"iceleomon"
+		]
+	},
+	{
+		"slug": "wizardmon",
+		"number": "112",
+		"name": "Wizardmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Wizard",
+		"personality": "Enlightened",
+		"image": "wizardmon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"biyomon",
+			"dracmon"
+		],
+		"to": [
+			"datamon",
+			"mistymon",
+			"wisemon"
+		]
+	},
+	{
+		"slug": "witchmon",
+		"number": "113",
+		"name": "Witchmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Wizard",
+		"personality": "Sly",
+		"image": "witchmon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"shamamon"
+		],
+		"to": [
+			"ladydevimon",
+			"angewomon",
+			"lillymon"
+		]
+	},
+	{
+		"slug": "gaogamon",
+		"number": "114",
+		"name": "Gaogamon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Beast",
+		"personality": "Zealous",
+		"image": "gaogamon",
+		"modes": [],
+		"from": [
+			"gaomon",
+			"bearmon",
+			"gazimon"
+		],
+		"to": [
+			"machgaogamon",
+			"saviorhuckmon",
+			"darksuperstarmon"
+		]
+	},
+	{
+		"slug": "gawappamon",
+		"number": "115",
+		"name": "Gawappamon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "gawappamon",
+		"modes": [],
+		"from": [
+			"kamemon",
+			"crabmon",
+			"terriermon"
+		],
+		"to": [
+			"shaujinmon",
+			"divermon",
+			"shogungekomon"
+		]
+	},
+	{
+		"slug": "kiwimon",
+		"number": "116",
+		"name": "Kiwimon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Ancient Bird",
+		"personality": "Strategic",
+		"image": "kiwimon",
+		"modes": [],
+		"from": [
+			"floramon",
+			"penmon",
+			"falcomon"
+		],
+		"to": [
+			"lilamon",
+			"sirenmon",
+			"deramon",
+			"cherrymon"
+		]
+	},
+	{
+		"slug": "kyubimon",
+		"number": "117",
+		"name": "Kyubimon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Mysterious Beast",
+		"personality": "Enlightened",
+		"image": "kyubimon",
+		"modes": [],
+		"from": [
+			"gabumon",
+			"tapirmon",
+			"renamon"
+		],
+		"to": [
+			"bluemeramon",
+			"cerberusmon",
+			"taomon",
+			"enbarrmon"
+		]
+	},
+	{
+		"slug": "clockmon",
+		"number": "118",
+		"name": "Clockmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Machine",
+		"personality": "Sociable",
+		"image": "clockmon",
+		"modes": [],
+		"from": [
+			"hagurumon",
+			"impmon",
+			"kokuwamon"
+		],
+		"to": [
+			"extyrannomon",
+			"andromon",
+			"zudomon",
+			"knightmon"
+		]
+	},
+	{
+		"slug": "centarumon",
+		"number": "119",
+		"name": "Centarumon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Beast Man",
+		"personality": "Friendly",
+		"image": "centarumon",
+		"modes": [],
+		"from": [
+			"patamon",
+			"kokuwamon"
+		],
+		"to": [
+			"andromon",
+			"datamon",
+			"rapidmon"
+		]
+	},
+	{
+		"slug": "sunflowmon",
+		"number": "120",
+		"name": "Sunflowmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Vegetation",
+		"personality": "Sociable",
+		"image": "sunflowmon",
+		"modes": [],
+		"from": [
+			"lalamon",
+			"tentomon",
+			"renamon",
+			"floramon"
+		],
+		"to": [
+			"lilamon",
+			"lillymon",
+			"deramon",
+			"pumpkinmon"
+		]
+	},
+	{
+		"slug": "seadramon",
+		"number": "121",
+		"name": "Seadramon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Aquatic",
+		"personality": "Strategic",
+		"image": "seadramon",
+		"modes": [],
+		"from": [
+			"dracomon",
+			"betamon",
+			"elecmon",
+			"otamamon"
+		],
+		"to": [
+			"whamon",
+			"megaseadramon",
+			"waruseadramon",
+			"hisyaryumon",
+			"sharkmon",
+			"skullseadramon"
+		]
+	},
+	{
+		"slug": "coelamon",
+		"number": "122",
+		"name": "Coelamon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Ancient Fish",
+		"personality": "Opportunistic",
+		"image": "coelamon",
+		"modes": [],
+		"from": [
+			"crabmon",
+			"ryudamon",
+			"betamon",
+			"syakomon"
+		],
+		"to": [
+			"waruseadramon",
+			"metaltyrannomon",
+			"scorpiomon",
+			"divermon",
+			"skullseadramon"
+		]
+	},
+	{
+		"slug": "shellmon",
+		"number": "123",
+		"name": "Shellmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Mollusk",
+		"personality": "Daring",
+		"image": "shellmon",
+		"modes": [],
+		"from": [
+			"kamemon",
+			"crabmon",
+			"syakomon"
+		],
+		"to": [
+			"whamon",
+			"piximon",
+			"scorpiomon"
+		]
+	},
+	{
+		"slug": "starmon",
+		"number": "124",
+		"name": "Starmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Mutant",
+		"personality": "Sociable",
+		"image": "starmon",
+		"modes": [],
+		"from": [
+			"dracmon",
+			"gotsumon",
+			"solarmon"
+		],
+		"to": [
+			"volcanomon",
+			"superstarmon",
+			"darksuperstarmon",
+			"mamemon"
+		]
+	},
+	{
+		"slug": "tankmon",
+		"number": "125",
+		"name": "Tankmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "tankmon",
+		"modes": [],
+		"from": [
+			"hagurumon",
+			"zubamon",
+			"toyagumon"
+		],
+		"to": [
+			"bigmamemon",
+			"locomon",
+			"tankdramon"
+		]
+	},
+	{
+		"slug": "mudfrigimon",
+		"number": "126",
+		"name": "MudFrigimon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Mutant",
+		"personality": "Friendly",
+		"image": "mudfrigimon",
+		"modes": [],
+		"from": [
+			"lalamon",
+			"gotsumon",
+			"lopmon"
+		],
+		"to": [
+			"deramon",
+			"garbagemon",
+			"antylamon"
+		]
+	},
+	{
+		"slug": "dinohyumon",
+		"number": "127",
+		"name": "Dinohyumon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Dragon Man",
+		"personality": "Reckless",
+		"image": "dinohumon",
+		"modes": [],
+		"from": [
+			"kamemon",
+			"kotemon",
+			"hyokomon"
+		],
+		"to": [
+			"shaujinmon",
+			"grademon",
+			"knightmon"
+		]
+	},
+	{
+		"slug": "tyrannomon",
+		"number": "128",
+		"name": "Tyrannomon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Dinosaur",
+		"personality": "Zealous",
+		"image": "tyranomon",
+		"modes": [],
+		"from": [
+			"guilmon",
+			"dracomon"
+		],
+		"to": [
+			"extyrannomon",
+			"groundramon",
+			"metalgreymon",
+			"metaltyrannomon"
+		]
+	},
+	{
+		"slug": "turuiemon",
+		"number": "129",
+		"name": "Turuiemon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Beast Man",
+		"personality": "Strategic",
+		"image": "turuiemon",
+		"modes": [],
+		"from": [
+			"gaomon",
+			"lalamon",
+			"kotemon",
+			"lopmon"
+		],
+		"to": [
+			"matadormon",
+			"machgaogamon",
+			"antylamon"
+		]
+	},
+	{
+		"slug": "togemon",
+		"number": "130",
+		"name": "Togemon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Vegetation",
+		"personality": "Sociable",
+		"image": "togemon",
+		"modes": [],
+		"from": [
+			"lalamon",
+			"palmon",
+			"floramon"
+		],
+		"to": [
+			"lillymon",
+			"cherrymon",
+			"pumpkinmon"
+		]
+	},
+	{
+		"slug": "drimogemon",
+		"number": "131",
+		"name": "Drimogemon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Beast",
+		"personality": "Zealous",
+		"image": "drimogemon",
+		"modes": [],
+		"from": [
+			"dorumon",
+			"gabumon",
+			"salamon"
+		],
+		"to": [
+			"triceramon",
+			"loaderleomon",
+			"brachiomon"
+		]
+	},
+	{
+		"slug": "dorugamon",
+		"number": "132",
+		"name": "Dorugamon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Beast Dragon",
+		"personality": "Reckless",
+		"image": "dorugamon",
+		"modes": [],
+		"from": [
+			"dorumon",
+			"gazimon",
+			"gabumon-black"
+		],
+		"to": [
+			"rizegreymon",
+			"dorugreymon",
+			"greatgrizzlymon",
+			"metalgreymon-blue"
+		]
+	},
+	{
+		"slug": "baohuckmon",
+		"number": "133",
+		"name": "BaoHuckmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Dinosaur",
+		"personality": "Friendly",
+		"image": "baohackmon",
+		"modes": [],
+		"from": [
+			"coronamon",
+			"gazimon",
+			"huckmon"
+		],
+		"to": [
+			"rizegreymon",
+			"saviorhuckmon",
+			"loaderleomon"
+		]
+	},
+	{
+		"slug": "blimpmon",
+		"number": "134",
+		"name": "Blimpmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Machine",
+		"personality": "Sociable",
+		"image": "blimpmon",
+		"modes": [],
+		"from": [
+			"hagurumon",
+			"toyagumon"
+		],
+		"to": [
+			"locomon",
+			"metalmamemon",
+			"masterblimpmon"
+		]
+	},
+	{
+		"slug": "meramon",
+		"number": "135",
+		"name": "Meramon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Fire",
+		"personality": "Zealous",
+		"image": "meramon",
+		"modes": [],
+		"from": [
+			"coronamon",
+			"tapirmon",
+			"solarmon"
+		],
+		"to": [
+			"bigmamemon",
+			"bluemeramon",
+			"skullmeramon"
+		]
+	},
+	{
+		"slug": "monochromon",
+		"number": "136",
+		"name": "Monochromon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Armored Dragon",
+		"personality": "Zealous",
+		"image": "monochromon",
+		"modes": [],
+		"from": [
+			"ryudamon",
+			"snowgoblimon",
+			"gotsumon"
+		],
+		"to": [
+			"triceramon",
+			"cerberusmon",
+			"mammothmon"
+		]
+	},
+	{
+		"slug": "lekismon",
+		"number": "137",
+		"name": "Lekismon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Beast Man",
+		"personality": "Enlightened",
+		"image": "lekismon",
+		"modes": [],
+		"from": [
+			"lunamon",
+			"renamon",
+			"terriermon"
+		],
+		"to": [
+			"crescemon",
+			"weregarurumon",
+			"grapleomon"
+		]
+	},
+	{
+		"slug": "icedevimon",
+		"number": "138",
+		"name": "IceDevimon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dark Angel",
+		"personality": "Enlightened",
+		"image": "icedevimon",
+		"modes": [],
+		"from": [
+			"demidevimon",
+			"gomamon",
+			"snowgoblimon"
+		],
+		"to": [
+			"crescemon",
+			"ladydevimon",
+			"iceleomon",
+			"enbarrmon"
+		]
+	},
+	{
+		"slug": "wendigomon",
+		"number": "139",
+		"name": "Wendigomon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Beast Man",
+		"personality": "Strategic",
+		"image": "wendimon",
+		"modes": [],
+		"from": [
+			"goblimon",
+			"keramon",
+			"lopmon"
+		],
+		"to": [
+			"arukenimon",
+			"skullmeramon",
+			"antylamon"
+		]
+	},
+	{
+		"slug": "woodmon",
+		"number": "140",
+		"name": "Woodmon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Vegetation",
+		"personality": "Friendly",
+		"image": "woodmon",
+		"modes": [],
+		"from": [
+			"palmon",
+			"mushroomon",
+			"floramon"
+		],
+		"to": [
+			"cherrymon",
+			"taomon",
+			"pumpkinmon"
+		]
+	},
+	{
+		"slug": "ogremon",
+		"number": "141",
+		"name": "Ogremon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Demon",
+		"personality": "Daring",
+		"image": "ogremon",
+		"modes": [],
+		"from": [
+			"demidevimon",
+			"goblimon"
+		],
+		"to": [
+			"skullsatamon",
+			"mummymon",
+			"digitamamon"
+		]
+	},
+	{
+		"slug": "octomon",
+		"number": "142",
+		"name": "Octomon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Mollusk",
+		"personality": "Daring",
+		"image": "octomon",
+		"modes": [],
+		"from": [
+			"kamemon",
+			"crabmon",
+			"keramon",
+			"syakomon"
+		],
+		"to": [
+			"dragomon",
+			"digitamamon",
+			"divermon"
+		]
+	},
+	{
+		"slug": "guardromon",
+		"number": "143",
+		"name": "Guardromon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Machine",
+		"personality": "Devoted",
+		"image": "guardromon",
+		"modes": [],
+		"from": [
+			"hagurumon",
+			"gotsumon"
+		],
+		"to": [
+			"catchmamemon",
+			"locomon",
+			"andromon"
+		]
+	},
+	{
+		"slug": "shellnumemon",
+		"number": "144",
+		"name": "ShellNumemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Crustacean",
+		"personality": "Sociable",
+		"image": "karatukinumemon",
+		"modes": [],
+		"from": [
+			"kamemon",
+			"otamamon",
+			"syakomon"
+		],
+		"to": [
+			"orochimon",
+			"waruseadramon",
+			"blackkingnumemon",
+			"pandamon"
+		]
+	},
+	{
+		"slug": "growlmon",
+		"number": "145",
+		"name": "Growlmon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dark Dragon",
+		"personality": "Daring",
+		"image": "growlmon",
+		"modes": [],
+		"from": [
+			"guilmon",
+			"coronamon",
+			"huckmon"
+		],
+		"to": [
+			"wargrowlmon",
+			"groundramon",
+			"dorugreymon"
+		]
+	},
+	{
+		"slug": "kuwagamon",
+		"number": "146",
+		"name": "Kuwagamon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Insectoid",
+		"personality": "Zealous",
+		"image": "kuwagamon",
+		"modes": [],
+		"from": [
+			"tentomon",
+			"elecmon",
+			"kokuwamon"
+		],
+		"to": [
+			"cherrymon",
+			"okuwamon",
+			"scorpiomon",
+			"kimeramon"
+		]
+	},
+	{
+		"slug": "gekomon",
+		"number": "147",
+		"name": "Gekomon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Amphibian",
+		"personality": "Sly",
+		"image": "gekomon",
+		"modes": [],
+		"from": [
+			"chuumon",
+			"elecmon",
+			"otamamon"
+		],
+		"to": [
+			"sirenmon",
+			"shogungekomon",
+			"divermon"
+		]
+	},
+	{
+		"slug": "geremon",
+		"number": "148",
+		"name": "Geremon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Mollusk",
+		"personality": "Reckless",
+		"image": "geremon",
+		"modes": [],
+		"from": [
+			"chuumon",
+			"gabumon",
+			"gizamon"
+		],
+		"to": [
+			"catchmamemon",
+			"superstarmon",
+			"monzaemon"
+		]
+	},
+	{
+		"slug": "coredramon-green",
+		"number": "149",
+		"name": "Coredramon (Green)",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dragon",
+		"personality": "Reckless",
+		"image": "coredramon_green",
+		"modes": [],
+		"from": [
+			"agumon",
+			"dracomon"
+		],
+		"to": [
+			"wargrowlmon",
+			"groundramon",
+			"skullgreymon"
+		]
+	},
+	{
+		"slug": "goldnumemon",
+		"number": "150",
+		"name": "GoldNumemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Mutant",
+		"personality": "Sociable",
+		"image": "goldnumemon",
+		"modes": [],
+		"from": [
+			"funbeemon",
+			"solarmon"
+		],
+		"to": [
+			"waruseadramon",
+			"vademon",
+			"blackkingnumemon"
+		]
+	},
+	{
+		"slug": "golemon",
+		"number": "151",
+		"name": "Golemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Mineral",
+		"personality": "Friendly",
+		"image": "golemon",
+		"modes": [],
+		"from": [
+			"goblimon",
+			"gotsumon",
+			"armadillomon"
+		],
+		"to": [
+			"volcanomon",
+			"mammothmon",
+			"meteormon",
+			"banchogolemon"
+		]
+	},
+	{
+		"slug": "cyclonemon",
+		"number": "152",
+		"name": "Cyclonemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dragon Man",
+		"personality": "Daring",
+		"image": "cyclomon",
+		"modes": [],
+		"from": [
+			"monodramon",
+			"gizamon"
+		],
+		"to": [
+			"grademon",
+			"cyberdramon",
+			"brachiomon"
+		]
+	},
+	{
+		"slug": "sangloupmon",
+		"number": "153",
+		"name": "Sangloupmon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dark Beast",
+		"personality": "Zealous",
+		"image": "sangloupmon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"dorumon",
+			"salamon",
+			"dracmon",
+			"gazimon"
+		],
+		"to": [
+			"matadormon",
+			"myotismon",
+			"astamon",
+			"weregarurumon-black"
+		]
+	},
+	{
+		"slug": "sukamon",
+		"number": "154",
+		"name": "Sukamon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Abnormal",
+		"personality": "Sociable",
+		"image": "sukamon",
+		"modes": [],
+		"from": [
+			"chuumon",
+			"dracmon",
+			"mushroomon"
+		],
+		"to": [
+			"monzaemon",
+			"etemon",
+			"garbagemon",
+			"mamemon"
+		]
+	},
+	{
+		"slug": "tuskmon",
+		"number": "155",
+		"name": "Tuskmon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dinosaur",
+		"personality": "Zealous",
+		"image": "tuskmon",
+		"modes": [],
+		"from": [
+			"goblimon",
+			"betamon",
+			"agumon-black"
+		],
+		"to": [
+			"triceramon",
+			"groundramon",
+			"digitamamon"
+		]
+	},
+	{
+		"slug": "devimon",
+		"number": "156",
+		"name": "Devimon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dark Angel",
+		"personality": "Enlightened",
+		"image": "devimon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"demidevimon",
+			"betamon",
+			"agumon-black"
+		],
+		"to": [
+			"myotismon",
+			"ladydevimon",
+			"infermon",
+			"skullsatamon",
+			"astamon"
+		]
+	},
+	{
+		"slug": "deltamon",
+		"number": "157",
+		"name": "Deltamon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Composite",
+		"personality": "Friendly",
+		"image": "deltamon",
+		"modes": [],
+		"from": [
+			"goblimon",
+			"dracomon",
+			"monodramon"
+		],
+		"to": [
+			"orochimon",
+			"kimeramon",
+			"skullbaluchimon",
+			"metalgreymon",
+			"sharkmon"
+		]
+	},
+	{
+		"slug": "dokugumon",
+		"number": "158",
+		"name": "Dokugumon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Insectoid",
+		"personality": "Friendly",
+		"image": "dokugumon",
+		"modes": [],
+		"from": [
+			"funbeemon",
+			"wormmon",
+			"keramon"
+		],
+		"to": [
+			"arukenimon",
+			"mummymon",
+			"megakabuterimon",
+			"infermon"
+		]
+	},
+	{
+		"slug": "nanimon",
+		"number": "159",
+		"name": "Nanimon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Invader",
+		"personality": "Reckless",
+		"image": "nanimon",
+		"modes": [],
+		"from": [
+			"gaomon",
+			"mushroomon"
+		],
+		"to": [
+			"volcanomon",
+			"superstarmon",
+			"etemon",
+			"mamemon"
+		]
+	},
+	{
+		"slug": "numemon",
+		"number": "160",
+		"name": "Numemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Mollusk",
+		"personality": "Reckless",
+		"image": "numemon",
+		"modes": [],
+		"from": [
+			"agumon",
+			"betamon",
+			"otamamon"
+		],
+		"to": [
+			"monzaemon",
+			"darksuperstarmon",
+			"etemon"
+		]
+	},
+	{
+		"slug": "bakemon",
+		"number": "161",
+		"name": "Bakemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Ghost",
+		"personality": "Strategic",
+		"image": "bakemon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"demidevimon",
+			"tapirmon"
+		],
+		"to": [
+			"myotismon",
+			"bluemeramon",
+			"phantomon",
+			"enbarrmon"
+		]
+	},
+	{
+		"slug": "hyogamon",
+		"number": "162",
+		"name": "Hyogamon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Ice-Snow",
+		"personality": "Friendly",
+		"image": "hyogamon",
+		"modes": [],
+		"from": [
+			"lunamon",
+			"gomamon",
+			"snowgoblimon"
+		],
+		"to": [
+			"zudomon",
+			"phantomon",
+			"iceleomon"
+		]
+	},
+	{
+		"slug": "fugamon",
+		"number": "163",
+		"name": "Fugamon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Demon",
+		"personality": "Sociable",
+		"image": "fugamon",
+		"modes": [],
+		"from": [
+			"shamamon",
+			"muchomon",
+			"gabumon-black"
+		],
+		"to": [
+			"volcanomon",
+			"skullsatamon",
+			"garudamon"
+		]
+	},
+	{
+		"slug": "flymon",
+		"number": "164",
+		"name": "Flymon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Insectoid",
+		"personality": "Opportunistic",
+		"image": "flymon",
+		"modes": [],
+		"from": [
+			"funbeemon",
+			"gizamon",
+			"mushroomon"
+		],
+		"to": [
+			"megadramon",
+			"megakabuterimon",
+			"okuwamon",
+			"jewelbeemon"
+		]
+	},
+	{
+		"slug": "platinumsukamon",
+		"number": "165",
+		"name": "PlatinumSukamon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Mutant",
+		"personality": "Sociable",
+		"image": "platinumsukamon",
+		"modes": [],
+		"from": [
+			"chuumon",
+			"palmon",
+			"otamamon"
+		],
+		"to": [
+			"vademon",
+			"mamemon",
+			"metalmamemon"
+		]
+	},
+	{
+		"slug": "blackgatomon",
+		"number": "166",
+		"name": "BlackGatomon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dark Beast",
+		"personality": "Enlightened",
+		"image": "black_gatomon",
+		"modes": [],
+		"from": [
+			"chuumon",
+			"gazimon",
+			"gabumon-black"
+		],
+		"to": [
+			"pandamon",
+			"ladydevimon",
+			"skullbaluchimon",
+			"weregarurumon-black"
+		]
+	},
+	{
+		"slug": "vegiemon",
+		"number": "167",
+		"name": "Vegiemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Carnivorous Vegetation",
+		"personality": "Overprotective",
+		"image": "vegimon",
+		"modes": [],
+		"from": [
+			"palmon",
+			"betamon",
+			"floramon"
+		],
+		"to": [
+			"shogungekomon",
+			"garbagemon",
+			"vademon"
+		]
+	},
+	{
+		"slug": "minotarumon",
+		"number": "168",
+		"name": "Minotarumon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Beast Man",
+		"personality": "Opportunistic",
+		"image": "minotarumon",
+		"modes": [],
+		"from": [
+			"shamamon",
+			"lopmon",
+			"gabumon-black"
+		],
+		"to": [
+			"triceramon",
+			"etemon",
+			"grapleomon"
+		]
+	},
+	{
+		"slug": "musyamon",
+		"number": "169",
+		"name": "Musyamon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Wizard",
+		"personality": "Reckless",
+		"image": "musyamon",
+		"modes": [],
+		"from": [
+			"kotemon",
+			"shamamon",
+			"zubamon"
+		],
+		"to": [
+			"grademon",
+			"butenmon",
+			"hisyaryumon"
+		]
+	},
+	{
+		"slug": "mekanorimon",
+		"number": "170",
+		"name": "Mekanorimon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Machine",
+		"personality": "Tolerant",
+		"image": "mechanorimon",
+		"modes": [],
+		"from": [
+			"hagurumon",
+			"kokuwamon",
+			"keramon"
+		],
+		"to": [
+			"bigmamemon",
+			"megadramon",
+			"datamon"
+		]
+	},
+	{
+		"slug": "raremon",
+		"number": "171",
+		"name": "Raremon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Undead",
+		"personality": "Reckless",
+		"image": "raremon",
+		"modes": [],
+		"from": [
+			"crabmon",
+			"toyagumon",
+			"syakomon"
+		],
+		"to": [
+			"dragomon",
+			"blackkingnumemon",
+			"shogungekomon",
+			"extyrannomon",
+			"skullbaluchimon"
+		]
+	},
+	{
+		"slug": "waspmon",
+		"number": "172",
+		"name": "Waspmon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Opportunistic",
+		"image": "waspmon",
+		"modes": [],
+		"from": [
+			"funbeemon",
+			"tentomon",
+			"kokuwamon"
+		],
+		"to": [
+			"rapidmon",
+			"cannonbeemon",
+			"tankdramon"
+		]
+	},
+	{
+		"slug": "aquilamon",
+		"number": "173",
+		"name": "Aquilamon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Giant Bird",
+		"personality": "Sociable",
+		"image": "aquilamon",
+		"modes": [],
+		"from": [
+			"biyomon",
+			"penmon",
+			"hawkmon"
+		],
+		"to": [
+			"garudamon",
+			"parrotmon",
+			"silphymon",
+			"crowmon"
+		]
+	},
+	{
+		"slug": "ankylomon",
+		"number": "174",
+		"name": "Ankylomon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Armored Dragon",
+		"personality": "Overprotective",
+		"image": "ankylomon",
+		"modes": [],
+		"from": [
+			"gizamon",
+			"zubamon",
+			"armadillomon"
+		],
+		"to": [
+			"shakkoumon",
+			"meteormon",
+			"brachiomon"
+		]
+	},
+	{
+		"slug": "exveemon",
+		"number": "175",
+		"name": "ExVeemon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Mythical Dragon",
+		"personality": "Zealous",
+		"image": "exveemon",
+		"modes": [],
+		"from": [
+			"guilmon",
+			"dorumon",
+			"veemon"
+		],
+		"to": [
+			"dinobeemon",
+			"rizegreymon",
+			"paildramon"
+		]
+	},
+	{
+		"slug": "guardromon-gold",
+		"number": "176",
+		"name": "Guardromon (Gold)",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Machine",
+		"personality": "Sociable",
+		"image": "guardromon_gold",
+		"modes": [],
+		"from": [
+			"shoutmon",
+			"zubamon",
+			"solarmon"
+		],
+		"to": [
+			"duramon",
+			"cannonbeemon",
+			"masterblimpmon"
+		]
+	},
+	{
+		"slug": "stingmon",
+		"number": "177",
+		"name": "Stingmon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Insectoid",
+		"personality": "Tolerant",
+		"image": "stingmon",
+		"modes": [],
+		"from": [
+			"funbeemon",
+			"wormmon"
+		],
+		"to": [
+			"okuwamon",
+			"jewelbeemon",
+			"dinobeemon",
+			"paildramon"
+		]
+	},
+	{
+		"slug": "kurisarimon",
+		"number": "178",
+		"name": "Kurisarimon",
+		"generation": "Champion",
+		"attribute": "Unknown",
+		"type": "Unidentified",
+		"personality": "Sly",
+		"image": "chrysalimon",
+		"modes": [],
+		"from": [
+			"palmon",
+			"monodramon",
+			"keramon"
+		],
+		"to": [
+			"dragomon",
+			"orochimon",
+			"arukenimon",
+			"infermon"
+		]
+	},
+	{
+		"slug": "submarimon",
+		"number": "179",
+		"name": "Submarimon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Aquatic",
+		"personality": "Overprotective",
+		"image": "submarimon",
+		"modes": [],
+		"from": [
+			"armadillomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "shurimon",
+		"number": "180",
+		"name": "Shurimon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Mutant",
+		"personality": "Sociable",
+		"image": "shurimon",
+		"modes": [],
+		"from": [
+			"hawkmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "digmon",
+		"number": "181",
+		"name": "Digmon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Insectoid",
+		"personality": "Opportunistic",
+		"image": "digmon",
+		"modes": [],
+		"from": [
+			"armadillomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "nefertimon",
+		"number": "182",
+		"name": "Nefertimon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Holy Beast",
+		"personality": "Enlightened",
+		"image": "nefertimon",
+		"modes": [],
+		"from": [
+			"gatomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "flamedramon",
+		"number": "183",
+		"name": "Flamedramon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Dragon Man",
+		"personality": "Zealous",
+		"image": "flamedramon",
+		"modes": [],
+		"from": [
+			"veemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "pegasusmon",
+		"number": "184",
+		"name": "Pegasusmon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Holy Beast",
+		"personality": "Enlightened",
+		"image": "pegasmon",
+		"modes": [],
+		"from": [
+			"patamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "halsemon",
+		"number": "185",
+		"name": "Halsemon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Beast",
+		"personality": "Strategic",
+		"image": "halsemon",
+		"modes": [],
+		"from": [
+			"hawkmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "lighdramon",
+		"number": "186",
+		"name": "Lighdramon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Beast",
+		"personality": "Sociable",
+		"image": "raidramon",
+		"modes": [],
+		"from": [
+			"veemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "agunimon",
+		"number": "187",
+		"name": "Agunimon",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Wizard",
+		"personality": "Zealous",
+		"image": "agunimon",
+		"modes": [
+			"burninggreymon"
+		],
+		"from": [
+			"coronamon"
+		],
+		"to": [
+			"aldamon"
+		]
+	},
+	{
+		"slug": "burninggreymon",
+		"number": "190",
+		"name": "BurningGreymon",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Dark Dragon",
+		"personality": "Zealous",
+		"image": "burninggreymon",
+		"modes": [
+			"agunimon"
+		],
+		"from": [],
+		"to": [
+			"aldamon"
+		]
+	},
+	{
+		"slug": "lobomon",
+		"number": "188",
+		"name": "Lobomon",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Warrior",
+		"personality": "Friendly",
+		"image": "wolfmon",
+		"modes": [
+			"kendogarurumon"
+		],
+		"from": [
+			"kudamon"
+		],
+		"to": [
+			"beowolfmon"
+		]
+	},
+	{
+		"slug": "kendogarurumon",
+		"number": "192",
+		"name": "KendoGarurumon",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "kendogarurumon",
+		"modes": [
+			"lobomon"
+		],
+		"from": [],
+		"to": [
+			"beowolfmon"
+		]
+	},
+	{
+		"slug": "lanamon",
+		"number": "189",
+		"name": "Lanamon",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Pixie",
+		"personality": "Enlightened",
+		"image": "ranamon",
+		"modes": [
+			"calmaramon"
+		],
+		"from": [
+			"gizamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "calmaramon",
+		"number": "191",
+		"name": "Calmaramon",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Aquatic",
+		"personality": "Enlightened",
+		"image": "calamaramon",
+		"modes": [
+			"lanamon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "aegiochusmon",
+		"number": "193",
+		"name": "Aegiochusmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Friendly",
+		"image": "aegiochusmon",
+		"modes": [],
+		"from": [
+			"aegiomon"
+		],
+		"to": [
+			"jupitermon"
+		]
+	},
+	{
+		"slug": "aegiochusmon-green",
+		"number": "194",
+		"name": "Aegiochusmon: Green",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Friendly",
+		"image": "aegiochusmon_green",
+		"modes": [],
+		"from": [
+			"aegiomon"
+		],
+		"to": [
+			"jupitermon"
+		]
+	},
+	{
+		"slug": "aegiochusmon-dark",
+		"number": "195",
+		"name": "Aegiochusmon: Dark",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Reckless",
+		"image": "aegiochusmon_dark",
+		"modes": [],
+		"from": [
+			"aegiomon"
+		],
+		"to": [
+			"chronomon-dm"
+		]
+	},
+	{
+		"slug": "aegiochusmon-blue",
+		"number": "196",
+		"name": "Aegiochusmon: Blue",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Sociable",
+		"image": "aegiochusmon_blue",
+		"modes": [],
+		"from": [
+			"aegiomon"
+		],
+		"to": [
+			"jupitermon"
+		]
+	},
+	{
+		"slug": "aegiochusmon-holy",
+		"number": "197",
+		"name": "Aegiochusmon: Holy",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Friendly",
+		"image": "aegiochusmon_holy",
+		"modes": [],
+		"from": [
+			"aegiomon"
+		],
+		"to": [
+			"jupitermon"
+		]
+	},
+	{
+		"slug": "megakabuterimon",
+		"number": "198",
+		"name": "MegaKabuterimon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Insectoid",
+		"personality": "Sly",
+		"image": "megakabuterimon",
+		"modes": [],
+		"from": [
+			"kabuterimon",
+			"flymon",
+			"dokugumon"
+		],
+		"to": [
+			"tyrantkabuterimon",
+			"herculeskabuterimon"
+		]
+	},
+	{
+		"slug": "andromon",
+		"number": "199",
+		"name": "Andromon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Android",
+		"personality": "Devoted",
+		"image": "andromon",
+		"modes": [],
+		"from": [
+			"guardromon",
+			"centarumon",
+			"clockmon"
+		],
+		"to": [
+			"hiandromon",
+			"boltmon",
+			"craniamon"
+		]
+	},
+	{
+		"slug": "wingdramon",
+		"number": "200",
+		"name": "Wingdramon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Sky Dragon",
+		"personality": "Daring",
+		"image": "wingdramon",
+		"modes": [],
+		"from": [
+			"coredramon-blue",
+			"veedramon",
+			"greymon-blue"
+		],
+		"to": [
+			"shinegreymon",
+			"varodurumon",
+			"slayerdramon"
+		]
+	},
+	{
+		"slug": "aeroveedramon",
+		"number": "201",
+		"name": "AeroVeedramon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Holy Dragon",
+		"personality": "Zealous",
+		"image": "aeroveedramon",
+		"modes": [],
+		"from": [
+			"airdramon",
+			"coredramon-blue",
+			"veedramon"
+		],
+		"to": [
+			"goldramon",
+			"slayerdramon",
+			"ulforceveedramon"
+		]
+	},
+	{
+		"slug": "extyrannomon",
+		"number": "202",
+		"name": "ExTyrannomon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Puppet",
+		"personality": "Daring",
+		"image": "extyranomon",
+		"modes": [],
+		"from": [
+			"tyrannomon",
+			"clockmon",
+			"raremon"
+		],
+		"to": [
+			"rusttyrannomon",
+			"belphemon-sm",
+			"cherubimon-good"
+		]
+	},
+	{
+		"slug": "angewomon",
+		"number": "203",
+		"name": "Angewomon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "High Angel",
+		"personality": "Tolerant",
+		"image": "angewomon",
+		"modes": [],
+		"from": [
+			"reppamon",
+			"gatomon",
+			"frigimon",
+			"witchmon"
+		],
+		"to": [
+			"junomon",
+			"ophanimon",
+			"magnadramon",
+			"mastemon"
+		]
+	},
+	{
+		"slug": "garudamon",
+		"number": "204",
+		"name": "Garudamon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Bird Man",
+		"personality": "Tolerant",
+		"image": "garudamon",
+		"modes": [],
+		"from": [
+			"aquilamon",
+			"birdramon",
+			"buraimon",
+			"fugamon"
+		],
+		"to": [
+			"gryphonmon",
+			"phoenixmon",
+			"jesmon"
+		]
+	},
+	{
+		"slug": "grapleomon",
+		"number": "205",
+		"name": "GrapLeomon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Beast Man",
+		"personality": "Zealous",
+		"image": "grapleomon",
+		"modes": [],
+		"from": [
+			"lekismon",
+			"minotarumon",
+			"leomon",
+			"grizzlymon"
+		],
+		"to": [
+			"bancholeomon",
+			"marsmon",
+			"saberleomon",
+			"leopardmon"
+		]
+	},
+	{
+		"slug": "grademon",
+		"number": "206",
+		"name": "Grademon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Warrior",
+		"personality": "Friendly",
+		"image": "grademon",
+		"modes": [],
+		"from": [
+			"raptordramon",
+			"musyamon",
+			"cyclonemon",
+			"dinohyumon",
+			"zubaeagermon"
+		],
+		"to": [
+			"alphamon",
+			"durandamon",
+			"dynasmon"
+		]
+	},
+	{
+		"slug": "greatgrizzlymon",
+		"number": "207",
+		"name": "GreatGrizzlymon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Beast Man",
+		"personality": "Reckless",
+		"image": "greatgrizzlymon",
+		"modes": [],
+		"from": [
+			"grizzlymon",
+			"dorugamon"
+		],
+		"to": [
+			"callismon",
+			"cherubimon-black"
+		]
+	},
+	{
+		"slug": "cerberusmon",
+		"number": "208",
+		"name": "Cerberusmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Dark Beast",
+		"personality": "Sociable",
+		"image": "cerberumon",
+		"modes": [
+			"cerberusmon-wm"
+		],
+		"from": [
+			"dobermon",
+			"monochromon",
+			"kyubimon"
+		],
+		"to": [
+			"plutomon",
+			"saberleomon",
+			"metalgarurumon-black"
+		]
+	},
+	{
+		"slug": "cerberusmon-wm",
+		"number": "209",
+		"name": "Cerberusmon WM",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Wizard",
+		"personality": "Sociable",
+		"image": "cerberumon_werewolf_mode",
+		"modes": [
+			"cerberusmon"
+		],
+		"from": [],
+		"to": [
+			"plutomon",
+			"saberleomon",
+			"metalgarurumon-black"
+		]
+	},
+	{
+		"slug": "cyberdramon",
+		"number": "210",
+		"name": "Cyberdramon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Android",
+		"personality": "Reckless",
+		"image": "cyberdramon",
+		"modes": [],
+		"from": [
+			"strikedramon",
+			"geogreymon",
+			"veedramon",
+			"cyclonemon"
+		],
+		"to": [
+			"ulforceveedramon",
+			"justimon"
+		]
+	},
+	{
+		"slug": "jewelbeemon",
+		"number": "211",
+		"name": "JewelBeemon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Insectoid",
+		"personality": "Zealous",
+		"image": "jewelbeemon",
+		"modes": [],
+		"from": [
+			"stingmon",
+			"flymon",
+			"snimon"
+		],
+		"to": [
+			"herculeskabuterimon",
+			"tigervespamon",
+			"banchostingmon"
+		]
+	},
+	{
+		"slug": "zudomon",
+		"number": "212",
+		"name": "Zudomon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Sea Beast",
+		"personality": "Reckless",
+		"image": "zudomon",
+		"modes": [],
+		"from": [
+			"ikkakumon",
+			"mojyamon",
+			"clockmon",
+			"hyogamon"
+		],
+		"to": [
+			"vikemon",
+			"plesiomon"
+		]
+	},
+	{
+		"slug": "chirinmon",
+		"number": "213",
+		"name": "Chirinmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Holy Beast",
+		"personality": "Strategic",
+		"image": "chirinmon",
+		"modes": [],
+		"from": [
+			"reppamon",
+			"unimon",
+			"peckmon"
+		],
+		"to": [
+			"kentaurosmon",
+			"eaglemon",
+			"valkyrimon"
+		]
+	},
+	{
+		"slug": "duramon",
+		"number": "214",
+		"name": "Duramon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Weapon",
+		"personality": "Zealous",
+		"image": "duramon",
+		"modes": [],
+		"from": [
+			"buraimon",
+			"zubaeagermon",
+			"guardromon-gold"
+		],
+		"to": [
+			"wargreymon",
+			"gallantmon",
+			"durandamon"
+		]
+	},
+	{
+		"slug": "parrotmon",
+		"number": "215",
+		"name": "Parrotmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Giant Bird",
+		"personality": "Reckless",
+		"image": "parrotmon",
+		"modes": [],
+		"from": [
+			"aquilamon",
+			"birdramon"
+		],
+		"to": [
+			"eaglemon",
+			"phoenixmon"
+		]
+	},
+	{
+		"slug": "iceleomon",
+		"number": "216",
+		"name": "IceLeomon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Beast Man",
+		"personality": "Devoted",
+		"image": "panjyamon",
+		"modes": [],
+		"from": [
+			"leomon",
+			"frigimon",
+			"hyogamon",
+			"icedevimon",
+			"icemon"
+		],
+		"to": [
+			"miragegaogamon",
+			"saberleomon"
+		]
+	},
+	{
+		"slug": "hisyaryumon",
+		"number": "217",
+		"name": "Hisyaryumon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Beast Dragon",
+		"personality": "Zealous",
+		"image": "hisyaryumon",
+		"modes": [],
+		"from": [
+			"airdramon",
+			"ginryumon",
+			"musyamon",
+			"seadramon"
+		],
+		"to": [
+			"ouryumon",
+			"gaiomon"
+		]
+	},
+	{
+		"slug": "butenmon",
+		"number": "218",
+		"name": "Butenmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Reckless",
+		"image": "butenmon",
+		"modes": [],
+		"from": [
+			"ginryumon",
+			"musyamon",
+			"buraimon"
+		],
+		"to": [
+			"chronomon-hm",
+			"chronomon-dm",
+			"gryphonmon",
+			"gaiomon"
+		]
+	},
+	{
+		"slug": "flaremon",
+		"number": "219",
+		"name": "Flaremon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Beast Man",
+		"personality": "Daring",
+		"image": "flaremon",
+		"modes": [],
+		"from": [
+			"leomon",
+			"firamon",
+			"birdramon"
+		],
+		"to": [
+			"apollomon",
+			"seraphimon",
+			"blackwargreymon"
+		]
+	},
+	{
+		"slug": "whamon",
+		"number": "220",
+		"name": "Whamon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Sea Animal",
+		"personality": "Strategic",
+		"image": "whamon",
+		"modes": [],
+		"from": [
+			"ikkakumon",
+			"seadramon",
+			"shellmon"
+		],
+		"to": [
+			"leviamon",
+			"neptunemon",
+			"plesiomon",
+			"marineangemon"
+		]
+	},
+	{
+		"slug": "magnaangemon",
+		"number": "221",
+		"name": "MagnaAngemon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "High Angel",
+		"personality": "Enlightened",
+		"image": "magnaangemon",
+		"modes": [],
+		"from": [
+			"angemon",
+			"unimon",
+			"sorcermon"
+		],
+		"to": [
+			"goldramon",
+			"seraphimon",
+			"clavisangemon",
+			"slashangemon"
+		]
+	},
+	{
+		"slug": "mammothmon",
+		"number": "222",
+		"name": "Mammothmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Ancient Beast",
+		"personality": "Zealous",
+		"image": "mammon",
+		"modes": [],
+		"from": [
+			"golemon",
+			"monochromon",
+			"frigimon",
+			"mojyamon"
+		],
+		"to": [
+			"vikemon",
+			"skullmammothmon"
+		]
+	},
+	{
+		"slug": "metalgreymon",
+		"number": "223",
+		"name": "MetalGreymon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Android",
+		"personality": "Daring",
+		"image": "metalgreymon",
+		"modes": [],
+		"from": [
+			"deltamon",
+			"greymon",
+			"tyrannomon"
+		],
+		"to": [
+			"wargreymon",
+			"gaiomon",
+			"blitzgreymon"
+		]
+	},
+	{
+		"slug": "monzaemon",
+		"number": "224",
+		"name": "Monzaemon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Puppet",
+		"personality": "Daring",
+		"image": "monzaemon",
+		"modes": [],
+		"from": [
+			"numemon",
+			"sukamon",
+			"geremon"
+		],
+		"to": [
+			"kingetemon",
+			"callismon"
+		]
+	},
+	{
+		"slug": "crowmon",
+		"number": "225",
+		"name": "Crowmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Mysterious Bird",
+		"personality": "Sociable",
+		"image": "yatagaramon",
+		"modes": [],
+		"from": [
+			"aquilamon",
+			"peckmon"
+		],
+		"to": [
+			"varodurumon",
+			"ravemon",
+			"kuzuhamon"
+		]
+	},
+	{
+		"slug": "rizegreymon",
+		"number": "226",
+		"name": "RizeGreymon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "rizegreymon",
+		"modes": [],
+		"from": [
+			"geogreymon",
+			"baohuckmon",
+			"exveemon",
+			"dorugamon"
+		],
+		"to": [
+			"kentaurosmon",
+			"shinegreymon",
+			"magnakidmon"
+		]
+	},
+	{
+		"slug": "rapidmon",
+		"number": "227",
+		"name": "Rapidmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Android",
+		"personality": "Tolerant",
+		"image": "rapidmon",
+		"modes": [],
+		"from": [
+			"centarumon",
+			"waspmon",
+			"gargomon"
+		],
+		"to": [
+			"megagargomon",
+			"hiandromon"
+		]
+	},
+	{
+		"slug": "loaderleomon",
+		"number": "228",
+		"name": "LoaderLeomon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Machine",
+		"personality": "Daring",
+		"image": "loaderliomon",
+		"modes": [],
+		"from": [
+			"leomon",
+			"baohuckmon",
+			"drimogemon"
+		],
+		"to": [
+			"bancholeomon",
+			"metalgarurumon",
+			"chaosdramon"
+		]
+	},
+	{
+		"slug": "weregarurumon",
+		"number": "229",
+		"name": "WereGarurumon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Beast Man",
+		"personality": "Friendly",
+		"image": "weregarurumon",
+		"modes": [],
+		"from": [
+			"lekismon",
+			"garurumon",
+			"grizzlymon"
+		],
+		"to": [
+			"merukimon",
+			"metalgarurumon",
+			"cresgarurumon"
+		]
+	},
+	{
+		"slug": "scorpiomon",
+		"number": "230",
+		"name": "Scorpiomon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Ancient Crustacean",
+		"personality": "Opportunistic",
+		"image": "scorpiomon",
+		"modes": [],
+		"from": [
+			"coelamon",
+			"kuwagamon",
+			"shellmon"
+		],
+		"to": [
+			"vulcanusmon",
+			"pukumon"
+		]
+	},
+	{
+		"slug": "enbarrmon",
+		"number": "231",
+		"name": "Enbarrmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Undead",
+		"personality": "Sly",
+		"image": "enbarrmon",
+		"modes": [],
+		"from": [
+			"bakemon",
+			"kyubimon",
+			"icedevimon"
+		],
+		"to": [
+			"kentaurosmon",
+			"skullmammothmon",
+			"craniamon-plus-enbarrmon"
+		]
+	},
+	{
+		"slug": "antylamon",
+		"number": "232",
+		"name": "Antylamon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Holy Beast",
+		"personality": "Strategic",
+		"image": "andiramon",
+		"modes": [],
+		"from": [
+			"wendigomon",
+			"turuiemon",
+			"mudfrigimon"
+		],
+		"to": [
+			"dianamon",
+			"cherubimon-good",
+			"cherubimon-black"
+		]
+	},
+	{
+		"slug": "meteormon",
+		"number": "233",
+		"name": "Meteormon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Ore",
+		"personality": "Sociable",
+		"image": "meteormon",
+		"modes": [],
+		"from": [
+			"golemon",
+			"frigimon",
+			"ankylomon",
+			"icemon"
+		],
+		"to": [
+			"metaletemon",
+			"boltmon"
+		]
+	},
+	{
+		"slug": "omnishoutmon",
+		"number": "234",
+		"name": "OmniShoutmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Dragon Man",
+		"personality": "Daring",
+		"image": "omegashoutmon",
+		"modes": [],
+		"from": [
+			"shoutmon"
+		],
+		"to": [
+			"pilevolcanomon",
+			"magnakidmon",
+			"durandamon"
+		]
+	},
+	{
+		"slug": "kimeramon",
+		"number": "235",
+		"name": "Kimeramon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Composite",
+		"personality": "Friendly",
+		"image": "kimeramon",
+		"modes": [],
+		"from": [
+			"garurumon",
+			"deltamon",
+			"kabuterimon",
+			"greymon",
+			"kuwagamon"
+		],
+		"to": [
+			"grandracmon",
+			"millenniummon",
+			"machinedramon"
+		]
+	},
+	{
+		"slug": "catchmamemon",
+		"number": "236",
+		"name": "CatchMamemon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Mutant",
+		"personality": "Opportunistic",
+		"image": "catchmamemon",
+		"modes": [],
+		"from": [
+			"guardromon",
+			"gargomon",
+			"geremon"
+		],
+		"to": [
+			"platinumnumemon",
+			"princemamemon",
+			"metalgarurumon-black"
+		]
+	},
+	{
+		"slug": "crescemon",
+		"number": "237",
+		"name": "Crescemon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Wizard",
+		"personality": "Enlightened",
+		"image": "crescemon",
+		"modes": [],
+		"from": [
+			"lekismon",
+			"frigimon",
+			"icedevimon",
+			"icemon"
+		],
+		"to": [
+			"dianamon",
+			"cherubimon-good",
+			"lordknightmon"
+		]
+	},
+	{
+		"slug": "superstarmon",
+		"number": "238",
+		"name": "SuperStarmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Mutant",
+		"personality": "Sociable",
+		"image": "superstarmon",
+		"modes": [],
+		"from": [
+			"starmon",
+			"nanimon",
+			"deputymon",
+			"geremon"
+		],
+		"to": [
+			"goldramon",
+			"princemamemon",
+			"justimon"
+		]
+	},
+	{
+		"slug": "skullbaluchimon",
+		"number": "239",
+		"name": "SkullBaluchimon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Undead",
+		"personality": "Sociable",
+		"image": "skullbaluchimon",
+		"modes": [],
+		"from": [
+			"blackgatomon",
+			"deltamon",
+			"raremon",
+			"greymon-blue"
+		],
+		"to": [
+			"skullmammothmon",
+			"titamon-plus-skullbaluchimon"
+		]
+	},
+	{
+		"slug": "saviorhuckmon",
+		"number": "240",
+		"name": "SaviorHuckmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Dragon Man",
+		"personality": "Friendly",
+		"image": "saviorhackmon",
+		"modes": [],
+		"from": [
+			"strikedramon",
+			"gaogamon",
+			"baohuckmon",
+			"firamon"
+		],
+		"to": [
+			"gankoomon",
+			"tigervespamon",
+			"jesmon"
+		]
+	},
+	{
+		"slug": "sirenmon",
+		"number": "241",
+		"name": "Sirenmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Deity",
+		"personality": "Strategic",
+		"image": "sirenmon",
+		"modes": [],
+		"from": [
+			"angemon",
+			"gekomon",
+			"kiwimon"
+		],
+		"to": [
+			"marineangemon",
+			"ceresmon"
+		]
+	},
+	{
+		"slug": "taomon",
+		"number": "242",
+		"name": "Taomon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Wizard",
+		"personality": "Enlightened",
+		"image": "taomon",
+		"modes": [],
+		"from": [
+			"garurumon",
+			"woodmon",
+			"kyubimon"
+		],
+		"to": [
+			"venusmon",
+			"sakuyamon",
+			"kuzuhamon"
+		]
+	},
+	{
+		"slug": "digitamamon",
+		"number": "243",
+		"name": "Digitamamon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Perfect",
+		"personality": "Reckless",
+		"image": "digitamamon",
+		"modes": [],
+		"from": [
+			"octomon",
+			"ogremon",
+			"tuskmon"
+		],
+		"to": [
+			"bacchusmon",
+			"titamon"
+		]
+	},
+	{
+		"slug": "skullmeramon",
+		"number": "244",
+		"name": "SkullMeramon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Fire",
+		"personality": "Zealous",
+		"image": "deathmeramon",
+		"modes": [],
+		"from": [
+			"meramon",
+			"wendigomon",
+			"birdramon"
+		],
+		"to": [
+			"beelzemon",
+			"boltmon",
+			"avengekidmon"
+		]
+	},
+	{
+		"slug": "deramon",
+		"number": "245",
+		"name": "Deramon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Bird",
+		"personality": "Strategic",
+		"image": "delumon",
+		"modes": [],
+		"from": [
+			"sunflowmon",
+			"kiwimon",
+			"mudfrigimon"
+		],
+		"to": [
+			"varodurumon",
+			"ceresmon",
+			"platinumnumemon"
+		]
+	},
+	{
+		"slug": "triceramon",
+		"number": "246",
+		"name": "Triceramon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Ceratopsian",
+		"personality": "Zealous",
+		"image": "triceramon",
+		"modes": [],
+		"from": [
+			"minotarumon",
+			"monochromon",
+			"drimogemon",
+			"tuskmon"
+		],
+		"to": [
+			"breakdramon",
+			"ultimatebrachiomon"
+		]
+	},
+	{
+		"slug": "dorugreymon",
+		"number": "247",
+		"name": "DoruGreymon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Beast Dragon",
+		"personality": "Reckless",
+		"image": "dorugreymon",
+		"modes": [],
+		"from": [
+			"reppamon",
+			"growlmon",
+			"dorugamon"
+		],
+		"to": [
+			"dorugoramon",
+			"alphamon"
+		]
+	},
+	{
+		"slug": "knightmon",
+		"number": "248",
+		"name": "Knightmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Warrior",
+		"personality": "Zealous",
+		"image": "knightmon",
+		"modes": [],
+		"from": [
+			"clockmon",
+			"dinohyumon",
+			"zubaeagermon"
+		],
+		"to": [
+			"zanbamon",
+			"slashangemon",
+			"lordknightmon",
+			"leopardmon"
+		]
+	},
+	{
+		"slug": "divermon",
+		"number": "249",
+		"name": "Divermon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Aquatic Beast Man",
+		"personality": "Daring",
+		"image": "hangyomon",
+		"modes": [],
+		"from": [
+			"gawappamon",
+			"coelamon",
+			"octomon",
+			"gekomon"
+		],
+		"to": [
+			"neptunemon",
+			"plesiomon"
+		]
+	},
+	{
+		"slug": "pandamon",
+		"number": "250",
+		"name": "Pandamon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Puppet",
+		"personality": "Sociable",
+		"image": "pandamon",
+		"modes": [],
+		"from": [
+			"blackgatomon",
+			"shellnumemon",
+			"deputymon",
+			"garurumon-black"
+		],
+		"to": [
+			"merukimon",
+			"miragegaogamon",
+			"justimon"
+		]
+	},
+	{
+		"slug": "pumpkinmon",
+		"number": "251",
+		"name": "Pumpkinmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Puppet",
+		"personality": "Sly",
+		"image": "pumpmon",
+		"modes": [],
+		"from": [
+			"sunflowmon",
+			"togemon",
+			"woodmon"
+		],
+		"to": [
+			"rosemon",
+			"lotosmon"
+		]
+	},
+	{
+		"slug": "bigmamemon",
+		"number": "252",
+		"name": "BigMamemon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Mutant",
+		"personality": "Sly",
+		"image": "bigmamemon",
+		"modes": [],
+		"from": [
+			"meramon",
+			"mekanorimon",
+			"tankmon"
+		],
+		"to": [
+			"platinumnumemon",
+			"princemamemon",
+			"groundlocomon"
+		]
+	},
+	{
+		"slug": "piximon",
+		"number": "253",
+		"name": "Piximon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Pixie",
+		"personality": "Tolerant",
+		"image": "piccolomon",
+		"modes": [],
+		"from": [
+			"shellmon",
+			"mojyamon",
+			"sorcermon"
+		],
+		"to": [
+			"venusmon",
+			"ophanimon",
+			"clavisangemon"
+		]
+	},
+	{
+		"slug": "hippogryphonmon",
+		"number": "254",
+		"name": "HippoGryphonmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Mythical Beast",
+		"personality": "Strategic",
+		"image": "hippogriffomon",
+		"modes": [],
+		"from": [
+			"angemon",
+			"unimon"
+		],
+		"to": [
+			"gryphonmon",
+			"eaglemon",
+			"dynasmon"
+		]
+	},
+	{
+		"slug": "brachiomon",
+		"number": "255",
+		"name": "Brachiomon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Plesiosaur",
+		"personality": "Devoted",
+		"image": "brachiomon",
+		"modes": [],
+		"from": [
+			"drimogemon",
+			"cyclonemon",
+			"ankylomon"
+		],
+		"to": [
+			"ouryumon",
+			"rusttyrannomon",
+			"ultimatebrachiomon"
+		]
+	},
+	{
+		"slug": "volcanomon",
+		"number": "256",
+		"name": "Volcanomon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "volcamon",
+		"modes": [],
+		"from": [
+			"golemon",
+			"starmon",
+			"nanimon",
+			"fugamon"
+		],
+		"to": [
+			"bancholeomon",
+			"pilevolcanomon",
+			"gankoomon",
+			"apollomon"
+		]
+	},
+	{
+		"slug": "masterblimpmon",
+		"number": "257",
+		"name": "MasterBlimpmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Machine",
+		"personality": "Sociable",
+		"image": "masterblimpmon",
+		"modes": [],
+		"from": [
+			"blimpmon",
+			"guardromon-gold"
+		],
+		"to": [
+			"groundlocomon",
+			"gundramon"
+		]
+	},
+	{
+		"slug": "machgaogamon",
+		"number": "258",
+		"name": "MachGaogamon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Zealous",
+		"image": "machgaogamon",
+		"modes": [],
+		"from": [
+			"gaogamon",
+			"turuiemon",
+			"gargomon"
+		],
+		"to": [
+			"miragegaogamon",
+			"megagargomon"
+		]
+	},
+	{
+		"slug": "mamemon",
+		"number": "259",
+		"name": "Mamemon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Mutant",
+		"personality": "Daring",
+		"image": "mamemon",
+		"modes": [],
+		"from": [
+			"starmon",
+			"sukamon",
+			"nanimon",
+			"platinumsukamon"
+		],
+		"to": [
+			"pukumon",
+			"princemamemon",
+			"banchomamemon"
+		]
+	},
+	{
+		"slug": "megaseadramon",
+		"number": "260",
+		"name": "MegaSeadramon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Aquatic",
+		"personality": "Strategic",
+		"image": "megaseadramon",
+		"modes": [],
+		"from": [
+			"reppamon",
+			"ikkakumon",
+			"seadramon"
+		],
+		"to": [
+			"jumbogamemon",
+			"ouryumon",
+			"metalseadramon"
+		]
+	},
+	{
+		"slug": "metalmamemon",
+		"number": "261",
+		"name": "MetalMamemon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Daring",
+		"image": "metalmamemon",
+		"modes": [],
+		"from": [
+			"blimpmon",
+			"platinumsukamon"
+		],
+		"to": [
+			"metalgarurumon",
+			"magnakidmon"
+		]
+	},
+	{
+		"slug": "lilamon",
+		"number": "262",
+		"name": "Lilamon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Pixie",
+		"personality": "Sociable",
+		"image": "lilamon",
+		"modes": [],
+		"from": [
+			"sunflowmon",
+			"kabuterimon",
+			"kiwimon"
+		],
+		"to": [
+			"lilithmon",
+			"rosemon",
+			"puppetmon"
+		]
+	},
+	{
+		"slug": "lillymon",
+		"number": "263",
+		"name": "Lillymon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Pixie",
+		"personality": "Sociable",
+		"image": "lilimon",
+		"modes": [],
+		"from": [
+			"sunflowmon",
+			"togemon",
+			"witchmon"
+		],
+		"to": [
+			"rosemon",
+			"ceresmon",
+			"bancholillymon"
+		]
+	},
+	{
+		"slug": "locomon",
+		"number": "264",
+		"name": "Locomon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Machine",
+		"personality": "Sociable",
+		"image": "locomon",
+		"modes": [],
+		"from": [
+			"strikedramon",
+			"guardromon",
+			"blimpmon",
+			"tankmon"
+		],
+		"to": [
+			"groundlocomon",
+			"hiandromon"
+		]
+	},
+	{
+		"slug": "astamon",
+		"number": "265",
+		"name": "Astamon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Wizard",
+		"personality": "Zealous",
+		"image": "astamon",
+		"modes": [],
+		"from": [
+			"sangloupmon",
+			"devimon"
+		],
+		"to": [
+			"beelzemon",
+			"plutomon",
+			"belphemon-sm",
+			"venommyotismon"
+		]
+	},
+	{
+		"slug": "arukenimon",
+		"number": "266",
+		"name": "Arukenimon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark Beast",
+		"personality": "Friendly",
+		"image": "arukenimon",
+		"modes": [],
+		"from": [
+			"wendigomon",
+			"dokugumon",
+			"snimon",
+			"kurisarimon"
+		],
+		"to": [
+			"lilithmon",
+			"tyrantkabuterimon",
+			"lotosmon"
+		]
+	},
+	{
+		"slug": "myotismon",
+		"number": "267",
+		"name": "Myotismon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Undead",
+		"personality": "Enlightened",
+		"image": "myotismon",
+		"modes": [],
+		"from": [
+			"bakemon",
+			"sangloupmon",
+			"devimon",
+			"peckmon"
+		],
+		"to": [
+			"creepymon",
+			"malomyotismon",
+			"venommyotismon"
+		]
+	},
+	{
+		"slug": "etemon",
+		"number": "268",
+		"name": "Etemon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Puppet",
+		"personality": "Opportunistic",
+		"image": "etemon",
+		"modes": [],
+		"from": [
+			"minotarumon",
+			"numemon",
+			"sukamon",
+			"nanimon"
+		],
+		"to": [
+			"pilevolcanomon",
+			"kingetemon",
+			"metaletemon"
+		]
+	},
+	{
+		"slug": "okuwamon",
+		"number": "269",
+		"name": "Okuwamon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Insectoid",
+		"personality": "Zealous",
+		"image": "okuwamon",
+		"modes": [],
+		"from": [
+			"stingmon",
+			"kuwagamon",
+			"flymon",
+			"snimon"
+		],
+		"to": [
+			"tyrantkabuterimon",
+			"herculeskabuterimon",
+			"grankuwagamon"
+		]
+	},
+	{
+		"slug": "orochimon",
+		"number": "270",
+		"name": "Orochimon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark Dragon",
+		"personality": "Daring",
+		"image": "orochimon",
+		"modes": [],
+		"from": [
+			"deltamon",
+			"shellnumemon",
+			"kurisarimon"
+		],
+		"to": [
+			"bacchusmon",
+			"gundramon",
+			"minervamon"
+		]
+	},
+	{
+		"slug": "garbagemon",
+		"number": "271",
+		"name": "Garbagemon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Mutant",
+		"personality": "Sociable",
+		"image": "gerbemon",
+		"modes": [],
+		"from": [
+			"sukamon",
+			"vegiemon",
+			"mudfrigimon"
+		],
+		"to": [
+			"jumbogamemon",
+			"metaletemon"
+		]
+	},
+	{
+		"slug": "gigadramon",
+		"number": "272",
+		"name": "Gigadramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Reckless",
+		"image": "gigadramon",
+		"modes": [],
+		"from": [
+			"airdramon",
+			"raptordramon",
+			"coredramon-blue"
+		],
+		"to": [
+			"gundramon",
+			"chaosdramon"
+		]
+	},
+	{
+		"slug": "cannonbeemon",
+		"number": "273",
+		"name": "CannonBeemon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Opportunistic",
+		"image": "cannonbeemon",
+		"modes": [],
+		"from": [
+			"kabuterimon",
+			"waspmon",
+			"guardromon-gold"
+		],
+		"to": [
+			"megagargomon",
+			"tigervespamon"
+		]
+	},
+	{
+		"slug": "groundramon",
+		"number": "274",
+		"name": "Groundramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Earth Dragon",
+		"personality": "Reckless",
+		"image": "groundramon",
+		"modes": [],
+		"from": [
+			"growlmon",
+			"coredramon-green",
+			"tyrannomon",
+			"tuskmon"
+		],
+		"to": [
+			"megidramon",
+			"breakdramon"
+		]
+	},
+	{
+		"slug": "sharkmon",
+		"number": "275",
+		"name": "Sharkmon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Reckless",
+		"image": "sharkmon",
+		"modes": [],
+		"from": [
+			"deltamon",
+			"seadramon"
+		],
+		"to": [
+			"neptunemon",
+			"metalseadramon"
+		]
+	},
+	{
+		"slug": "shaujinmon",
+		"number": "276",
+		"name": "Shaujinmon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Wizard",
+		"personality": "Friendly",
+		"image": "shawujinmon",
+		"modes": [],
+		"from": [
+			"gawappamon",
+			"dinohyumon"
+		],
+		"to": [
+			"barbamon",
+			"jumbogamemon",
+			"puppetmon"
+		]
+	},
+	{
+		"slug": "cherrymon",
+		"number": "277",
+		"name": "Cherrymon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Vegetation",
+		"personality": "Friendly",
+		"image": "cherrymon",
+		"modes": [],
+		"from": [
+			"togemon",
+			"kuwagamon",
+			"woodmon",
+			"kiwimon"
+		],
+		"to": [
+			"puppetmon",
+			"rosemon",
+			"grankuwagamon"
+		]
+	},
+	{
+		"slug": "skullgreymon",
+		"number": "278",
+		"name": "SkullGreymon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Undead",
+		"personality": "Reckless",
+		"image": "skullgreymon",
+		"modes": [],
+		"from": [
+			"ginryumon",
+			"coredramon-green",
+			"greymon"
+		],
+		"to": [
+			"titamon",
+			"skullmammothmon"
+		]
+	},
+	{
+		"slug": "skullsatamon",
+		"number": "279",
+		"name": "SkullSatamon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Undead",
+		"personality": "Enlightened",
+		"image": "skullsatamon",
+		"modes": [],
+		"from": [
+			"devimon",
+			"ogremon",
+			"fugamon",
+			"garurumon-black"
+		],
+		"to": [
+			"barbamon",
+			"piedmon",
+			"ebemon"
+		]
+	},
+	{
+		"slug": "skullseadramon",
+		"number": "280",
+		"name": "SkullSeadramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Undead",
+		"personality": "Strategic",
+		"image": "skullseadramon",
+		"modes": [],
+		"from": [
+			"coelamon",
+			"ikkakumon",
+			"seadramon"
+		],
+		"to": [
+			"leviamon",
+			"metalseadramon"
+		]
+	},
+	{
+		"slug": "darksuperstarmon",
+		"number": "281",
+		"name": "DarkSuperStarmon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Mutant",
+		"personality": "Friendly",
+		"image": "darksuperstarmon",
+		"modes": [],
+		"from": [
+			"starmon",
+			"gaogamon",
+			"numemon",
+			"dobermon"
+		],
+		"to": [
+			"beelstarmon",
+			"titamon",
+			"ravemon"
+		]
+	},
+	{
+		"slug": "dragomon",
+		"number": "282",
+		"name": "Dragomon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Aquatic Beast Man",
+		"personality": "Overprotective",
+		"image": "dagomon",
+		"modes": [],
+		"from": [
+			"octomon",
+			"raremon",
+			"kurisarimon"
+		],
+		"to": [
+			"vulcanusmon",
+			"ebemon",
+			"parallelmon"
+		]
+	},
+	{
+		"slug": "tankdramon",
+		"number": "283",
+		"name": "Tankdramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Machine",
+		"personality": "Friendly",
+		"image": "tankdramon",
+		"modes": [],
+		"from": [
+			"raptordramon",
+			"waspmon",
+			"tankmon"
+		],
+		"to": [
+			"gundramon",
+			"darkdramon"
+		]
+	},
+	{
+		"slug": "shogungekomon",
+		"number": "284",
+		"name": "ShogunGekomon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Amphibian",
+		"personality": "Sly",
+		"image": "shogungekomon",
+		"modes": [],
+		"from": [
+			"gawappamon",
+			"vegiemon",
+			"gekomon",
+			"raremon"
+		],
+		"to": [
+			"kingetemon",
+			"bacchusmon",
+			"pukumon"
+		]
+	},
+	{
+		"slug": "datamon",
+		"number": "285",
+		"name": "Datamon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Machine",
+		"personality": "Strategic",
+		"image": "nanomon",
+		"modes": [],
+		"from": [
+			"centarumon",
+			"wizardmon",
+			"mekanorimon"
+		],
+		"to": [
+			"pharaohmon",
+			"diaboromon"
+		]
+	},
+	{
+		"slug": "phantomon",
+		"number": "286",
+		"name": "Phantomon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Ghost",
+		"personality": "Strategic",
+		"image": "fantomon",
+		"modes": [],
+		"from": [
+			"bakemon",
+			"hyogamon",
+			"snimon"
+		],
+		"to": [
+			"sakuyamon",
+			"piedmon",
+			"belphemon-sm",
+			"ravemon"
+		]
+	},
+	{
+		"slug": "blackkingnumemon",
+		"number": "287",
+		"name": "BlackKingNumemon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Mollusk",
+		"personality": "Sociable",
+		"image": "blackkingnumemon",
+		"modes": [],
+		"from": [
+			"goldnumemon",
+			"shellnumemon",
+			"raremon"
+		],
+		"to": [
+			"platinumnumemon",
+			"metaletemon"
+		]
+	},
+	{
+		"slug": "bluemeramon",
+		"number": "288",
+		"name": "BlueMeramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Fire",
+		"personality": "Zealous",
+		"image": "bluemeramon",
+		"modes": [],
+		"from": [
+			"meramon",
+			"garurumon",
+			"bakemon",
+			"kyubimon"
+		],
+		"to": [
+			"marsmon",
+			"pharaohmon"
+		]
+	},
+	{
+		"slug": "vademon",
+		"number": "289",
+		"name": "Vademon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Alien",
+		"personality": "Overprotective",
+		"image": "vademon",
+		"modes": [],
+		"from": [
+			"goldnumemon",
+			"vegiemon",
+			"platinumsukamon"
+		],
+		"to": [
+			"ebemon",
+			"avengekidmon"
+		]
+	},
+	{
+		"slug": "matadormon",
+		"number": "290",
+		"name": "Matadormon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Undead",
+		"personality": "Zealous",
+		"image": "matadormon",
+		"modes": [],
+		"from": [
+			"sangloupmon",
+			"turuiemon",
+			"dobermon"
+		],
+		"to": [
+			"grandracmon",
+			"slashangemon",
+			"kuzuhamon"
+		]
+	},
+	{
+		"slug": "mummymon",
+		"number": "291",
+		"name": "Mummymon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Undead",
+		"personality": "Reckless",
+		"image": "mummymon",
+		"modes": [],
+		"from": [
+			"dobermon",
+			"ogremon",
+			"dokugumon"
+		],
+		"to": [
+			"pharaohmon",
+			"hiandromon",
+			"avengekidmon"
+		]
+	},
+	{
+		"slug": "mistymon",
+		"number": "292",
+		"name": "Mistymon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Magic Warrior",
+		"personality": "Enlightened",
+		"image": "mistymon",
+		"modes": [],
+		"from": [
+			"firamon",
+			"mojyamon",
+			"wizardmon"
+		],
+		"to": [
+			"chaosgallantmon",
+			"zanbamon",
+			"medievalgallantmon",
+			"dynasmon"
+		]
+	},
+	{
+		"slug": "megadramon",
+		"number": "293",
+		"name": "Megadramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Reckless",
+		"image": "megadramon",
+		"modes": [],
+		"from": [
+			"airdramon",
+			"greymon",
+			"flymon",
+			"mekanorimon"
+		],
+		"to": [
+			"megidramon",
+			"machinedramon"
+		]
+	},
+	{
+		"slug": "wargrowlmon",
+		"number": "294",
+		"name": "WarGrowlmon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Daring",
+		"image": "wargrowlmon",
+		"modes": [],
+		"from": [
+			"growlmon",
+			"coredramon-green",
+			"zubaeagermon"
+		],
+		"to": [
+			"megidramon",
+			"gallantmon",
+			"chaosgallantmon",
+			"chaosdramon"
+		]
+	},
+	{
+		"slug": "metaltyrannomon",
+		"number": "295",
+		"name": "MetalTyrannomon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Zealous",
+		"image": "metaltyranomon",
+		"modes": [],
+		"from": [
+			"geogreymon",
+			"coelamon",
+			"tyrannomon"
+		],
+		"to": [
+			"rusttyrannomon",
+			"machinedramon",
+			"ultimatebrachiomon"
+		]
+	},
+	{
+		"slug": "lucemon-cm",
+		"number": "296",
+		"name": "Lucemon CM",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Evil King",
+		"personality": "Enlightened",
+		"image": "lucemon_falldown_mode",
+		"modes": [],
+		"from": [
+			"lucemon"
+		],
+		"to": [
+			"lucemon-sm"
+		]
+	},
+	{
+		"slug": "ladydevimon",
+		"number": "297",
+		"name": "LadyDevimon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark Angel",
+		"personality": "Enlightened",
+		"image": "ladydevimon",
+		"modes": [],
+		"from": [
+			"blackgatomon",
+			"devimon",
+			"witchmon",
+			"icedevimon"
+		],
+		"to": [
+			"lilithmon",
+			"beelstarmon",
+			"mastemon"
+		]
+	},
+	{
+		"slug": "wisemon",
+		"number": "298",
+		"name": "Wisemon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Wizard",
+		"personality": "Enlightened",
+		"image": "wisemon",
+		"modes": [],
+		"from": [
+			"wizardmon",
+			"deputymon",
+			"sorcermon"
+		],
+		"to": [
+			"creepymon",
+			"chaosgallantmon",
+			"ancientwisemon"
+		]
+	},
+	{
+		"slug": "waruseadramon",
+		"number": "299",
+		"name": "WaruSeadramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Aquatic",
+		"personality": "Sly",
+		"image": "waruseadramon",
+		"modes": [],
+		"from": [
+			"goldnumemon",
+			"coelamon",
+			"seadramon",
+			"shellnumemon"
+		],
+		"to": [
+			"leviamon",
+			"megidramon",
+			"metalseadramon"
+		]
+	},
+	{
+		"slug": "shakkoumon",
+		"number": "300",
+		"name": "Shakkoumon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Mutant",
+		"personality": "Overprotective",
+		"image": "shakkoumon",
+		"modes": [],
+		"from": [
+			"angemon",
+			"ankylomon"
+		],
+		"to": [
+			"goldramon",
+			"junomon",
+			"vikemon",
+			"magnadramon"
+		]
+	},
+	{
+		"slug": "silphymon",
+		"number": "301",
+		"name": "Silphymon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Beast Man",
+		"personality": "Tolerant",
+		"image": "silphymon",
+		"modes": [],
+		"from": [
+			"aquilamon",
+			"gatomon"
+		],
+		"to": [
+			"beelstarmon",
+			"minervamon",
+			"valkyrimon"
+		]
+	},
+	{
+		"slug": "dinobeemon",
+		"number": "302",
+		"name": "Dinobeemon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Mutant",
+		"personality": "Tolerant",
+		"image": "dinobeemon",
+		"modes": [],
+		"from": [
+			"stingmon",
+			"exveemon"
+		],
+		"to": [
+			"grankuwagamon",
+			"tigervespamon"
+		]
+	},
+	{
+		"slug": "paildramon",
+		"number": "303",
+		"name": "Paildramon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Dragon Man",
+		"personality": "Zealous",
+		"image": "paildramon",
+		"modes": [],
+		"from": [
+			"stingmon",
+			"exveemon"
+		],
+		"to": [
+			"dorugoramon",
+			"imperialdramon-dm",
+			"darkdramon"
+		]
+	},
+	{
+		"slug": "infermon",
+		"number": "304",
+		"name": "Infermon",
+		"generation": "Ultimate",
+		"attribute": "Unknown",
+		"type": "Unidentified",
+		"personality": "Sly",
+		"image": "infermon",
+		"modes": [],
+		"from": [
+			"devimon",
+			"dokugumon",
+			"kurisarimon"
+		],
+		"to": [
+			"malomyotismon",
+			"diaboromon",
+			"cherubimon-black",
+			"parallelmon"
+		]
+	},
+	{
+		"slug": "aldamon",
+		"number": "305",
+		"name": "Aldamon",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Wizard",
+		"personality": "Zealous",
+		"image": "aldamon",
+		"modes": [],
+		"from": [
+			"agunimon",
+			"burninggreymon"
+		],
+		"to": [
+			"emperorgreymon"
+		]
+	},
+	{
+		"slug": "beowolfmon",
+		"number": "306",
+		"name": "Beowolfmon",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Warrior",
+		"personality": "Friendly",
+		"image": "beowolfmon",
+		"modes": [],
+		"from": [
+			"lobomon",
+			"kendogarurumon"
+		],
+		"to": [
+			"magnagarurumon"
+		]
+	},
+	{
+		"slug": "apollomon",
+		"number": "307",
+		"name": "Apollomon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Daring",
+		"image": "apollomon",
+		"modes": [],
+		"from": [
+			"volcanomon",
+			"flaremon"
+		],
+		"to": [
+			"gracenovamon"
+		]
+	},
+	{
+		"slug": "alphamon",
+		"number": "308",
+		"name": "Alphamon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Friendly",
+		"image": "alphamon",
+		"modes": [],
+		"from": [
+			"grademon",
+			"dorugreymon"
+		],
+		"to": [
+			"alphamon-ouryuken"
+		]
+	},
+	{
+		"slug": "ulforceveedramon",
+		"number": "309",
+		"name": "UlforceVeedramon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Zealous",
+		"image": "ulforceveedramon",
+		"modes": [
+			"ulforceveedramon-x-antibody"
+		],
+		"from": [
+			"aeroveedramon",
+			"cyberdramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "varodurumon",
+		"number": "310",
+		"name": "Varodurumon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Bird",
+		"personality": "Sociable",
+		"image": "valdurmon",
+		"modes": [],
+		"from": [
+			"wingdramon",
+			"deramon",
+			"crowmon"
+		],
+		"to": [
+			"chaosmon-valdur-arm"
+		]
+	},
+	{
+		"slug": "venusmon",
+		"number": "311",
+		"name": "Venusmon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Tolerant",
+		"image": "venusmon",
+		"modes": [],
+		"from": [
+			"taomon",
+			"piximon"
+		],
+		"to": []
+	},
+	{
+		"slug": "wargreymon",
+		"number": "312",
+		"name": "WarGreymon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Dragon Man",
+		"personality": "Daring",
+		"image": "wargreymon",
+		"modes": [],
+		"from": [
+			"metalgreymon",
+			"duramon"
+		],
+		"to": [
+			"omnimon"
+		]
+	},
+	{
+		"slug": "ouryumon",
+		"number": "313",
+		"name": "Ouryumon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Beast Dragon",
+		"personality": "Zealous",
+		"image": "ouryumon",
+		"modes": [],
+		"from": [
+			"megaseadramon",
+			"hisyaryumon",
+			"brachiomon"
+		],
+		"to": [
+			"alphamon-ouryuken"
+		]
+	},
+	{
+		"slug": "ophanimon",
+		"number": "314",
+		"name": "Ophanimon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Super Angel",
+		"personality": "Tolerant",
+		"image": "ophanimon",
+		"modes": [],
+		"from": [
+			"angewomon",
+			"piximon"
+		],
+		"to": []
+	},
+	{
+		"slug": "clavisangemon",
+		"number": "315",
+		"name": "ClavisAngemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Virtue",
+		"personality": "Devoted",
+		"image": "clavisangemon",
+		"modes": [],
+		"from": [
+			"magnaangemon",
+			"piximon"
+		],
+		"to": []
+	},
+	{
+		"slug": "craniamon",
+		"number": "316",
+		"name": "Craniamon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Devoted",
+		"image": "craniummon",
+		"modes": [],
+		"from": [
+			"andromon"
+		],
+		"to": [
+			"craniamon-plus-enbarrmon"
+		]
+	},
+	{
+		"slug": "eaglemon",
+		"number": "317",
+		"name": "Eaglemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Giant Bird",
+		"personality": "Enlightened",
+		"image": "crossmon",
+		"modes": [],
+		"from": [
+			"hippogryphonmon",
+			"chirinmon",
+			"parrotmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "chronomon-hm",
+		"number": "318",
+		"name": "Chronomon HM",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Bird Man",
+		"personality": "Tolerant",
+		"image": "chronomon_holy_mode",
+		"modes": [],
+		"from": [
+			"butenmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "cherubimon-black",
+		"number": "319",
+		"name": "Cherubimon (Black)",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Cherub",
+		"personality": "Strategic",
+		"image": "cherubimon_vice",
+		"modes": [],
+		"from": [
+			"greatgrizzlymon",
+			"infermon",
+			"antylamon",
+			"metalgreymon-blue"
+		],
+		"to": []
+	},
+	{
+		"slug": "cherubimon-good",
+		"number": "320",
+		"name": "Cherubimon (Good)",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Cherub",
+		"personality": "Strategic",
+		"image": "cherubimon_virtue",
+		"modes": [],
+		"from": [
+			"extyrannomon",
+			"crescemon",
+			"antylamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "goldramon",
+		"number": "321",
+		"name": "Goldramon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Dragon",
+		"personality": "Enlightened",
+		"image": "goldramon",
+		"modes": [],
+		"from": [
+			"superstarmon",
+			"magnaangemon",
+			"aeroveedramon",
+			"shakkoumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "shinegreymon",
+		"number": "322",
+		"name": "ShineGreymon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Shining Dragon",
+		"personality": "Friendly",
+		"image": "shinegreymon",
+		"modes": [],
+		"from": [
+			"rizegreymon",
+			"wingdramon"
+		],
+		"to": [
+			"shinegreymon-bm"
+		]
+	},
+	{
+		"slug": "justimon",
+		"number": "323",
+		"name": "Justimon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Android",
+		"personality": "Reckless",
+		"image": "justimon",
+		"modes": [],
+		"from": [
+			"pandamon",
+			"superstarmon",
+			"cyberdramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "skullmammothmon",
+		"number": "324",
+		"name": "SkullMammothmon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Undead",
+		"personality": "Zealous",
+		"image": "skullmammon",
+		"modes": [],
+		"from": [
+			"skullbaluchimon",
+			"skullgreymon",
+			"mammothmon",
+			"enbarrmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "slashangemon",
+		"number": "325",
+		"name": "SlashAngemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Great Angel",
+		"personality": "Reckless",
+		"image": "slashangemon",
+		"modes": [],
+		"from": [
+			"matadormon",
+			"magnaangemon",
+			"knightmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "kentaurosmon",
+		"number": "326",
+		"name": "Kentaurosmon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Strategic",
+		"image": "kentaurosmon",
+		"modes": [],
+		"from": [
+			"rizegreymon",
+			"chirinmon",
+			"enbarrmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "slayerdramon",
+		"number": "327",
+		"name": "Slayerdramon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Dragon Man",
+		"personality": "Daring",
+		"image": "slayerdramon",
+		"modes": [],
+		"from": [
+			"wingdramon",
+			"aeroveedramon"
+		],
+		"to": [
+			"examon"
+		]
+	},
+	{
+		"slug": "seraphimon",
+		"number": "328",
+		"name": "Seraphimon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Seraph",
+		"personality": "Enlightened",
+		"image": "seraphimon",
+		"modes": [],
+		"from": [
+			"magnaangemon",
+			"flaremon"
+		],
+		"to": []
+	},
+	{
+		"slug": "megagargomon",
+		"number": "329",
+		"name": "MegaGargomon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Machine",
+		"personality": "Tolerant",
+		"image": "megagargomon",
+		"modes": [],
+		"from": [
+			"machgaogamon",
+			"rapidmon",
+			"cannonbeemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "durandamon",
+		"number": "330",
+		"name": "Durandamon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Sword",
+		"personality": "Zealous",
+		"image": "durandamon",
+		"modes": [],
+		"from": [
+			"grademon",
+			"omnishoutmon",
+			"duramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "neptunemon",
+		"number": "331",
+		"name": "Neptunemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Daring",
+		"image": "neptunemon",
+		"modes": [],
+		"from": [
+			"whamon",
+			"divermon",
+			"sharkmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "hiandromon",
+		"number": "332",
+		"name": "HiAndromon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Android",
+		"personality": "Devoted",
+		"image": "hiandromon",
+		"modes": [],
+		"from": [
+			"locomon",
+			"mummymon",
+			"andromon",
+			"rapidmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "bancholeomon",
+		"number": "333",
+		"name": "BanchoLeomon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Beast Man",
+		"personality": "Daring",
+		"image": "bancholeomon",
+		"modes": [],
+		"from": [
+			"volcanomon",
+			"grapleomon",
+			"loaderleomon"
+		],
+		"to": [
+			"chaosmon-valdur-arm",
+			"chaosmon"
+		]
+	},
+	{
+		"slug": "herculeskabuterimon",
+		"number": "334",
+		"name": "HerculesKabuterimon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Insectoid",
+		"personality": "Sly",
+		"image": "herculeskabuterimon",
+		"modes": [],
+		"from": [
+			"megakabuterimon",
+			"okuwamon",
+			"jewelbeemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "phoenixmon",
+		"number": "335",
+		"name": "Phoenixmon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Beast",
+		"personality": "Tolerant",
+		"image": "phoenixmon",
+		"modes": [],
+		"from": [
+			"garudamon",
+			"parrotmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "magnadramon",
+		"number": "336",
+		"name": "Magnadramon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Dragon",
+		"personality": "Tolerant",
+		"image": "magnadramon",
+		"modes": [],
+		"from": [
+			"angewomon",
+			"shakkoumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "mastemon",
+		"number": "337",
+		"name": "Mastemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Angel",
+		"personality": "Tolerant",
+		"image": "mastemon",
+		"modes": [],
+		"from": [
+			"ladydevimon",
+			"angewomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "marineangemon",
+		"number": "338",
+		"name": "MarineAngemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Pixie",
+		"personality": "Tolerant",
+		"image": "marineangemon",
+		"modes": [],
+		"from": [
+			"whamon",
+			"sirenmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "marsmon",
+		"number": "339",
+		"name": "Marsmon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Zealous",
+		"image": "marsmon",
+		"modes": [],
+		"from": [
+			"bluemeramon",
+			"grapleomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "jupitermon",
+		"number": "340",
+		"name": "Jupitermon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Friendly",
+		"image": "jupitermon",
+		"modes": [],
+		"from": [
+			"aegiochusmon",
+			"aegiochusmon-holy",
+			"aegiochusmon-blue",
+			"aegiochusmon-green"
+		],
+		"to": [
+			"jupitermon-wm"
+		]
+	},
+	{
+		"slug": "ravemon",
+		"number": "341",
+		"name": "Ravemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Android",
+		"personality": "Sociable",
+		"image": "ravemon",
+		"modes": [],
+		"from": [
+			"darksuperstarmon",
+			"phantomon",
+			"crowmon"
+		],
+		"to": [
+			"ravemon-bm"
+		]
+	},
+	{
+		"slug": "ultimatebrachiomon",
+		"number": "342",
+		"name": "UltimateBrachiomon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Devoted",
+		"image": "ultimatebrachimon",
+		"modes": [],
+		"from": [
+			"triceramon",
+			"metaltyrannomon",
+			"brachiomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "vulcanusmon",
+		"number": "343",
+		"name": "Vulcanusmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Deity",
+		"personality": "Tolerant",
+		"image": "vulcanusmon",
+		"modes": [],
+		"from": [
+			"dragomon",
+			"scorpiomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gankoomon",
+		"number": "344",
+		"name": "Gankoomon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Holy Knight",
+		"personality": "Zealous",
+		"image": "gankoomon",
+		"modes": [],
+		"from": [
+			"volcanomon",
+			"saviorhuckmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "kuzuhamon",
+		"number": "345",
+		"name": "Kuzuhamon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Deity",
+		"personality": "Enlightened",
+		"image": "kuzuhamon",
+		"modes": [],
+		"from": [
+			"matadormon",
+			"taomon",
+			"crowmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "groundlocomon",
+		"number": "346",
+		"name": "GroundLocomon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Machine",
+		"personality": "Sociable",
+		"image": "grandlocomon",
+		"modes": [],
+		"from": [
+			"bigmamemon",
+			"locomon",
+			"masterblimpmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gryphonmon",
+		"number": "347",
+		"name": "Gryphonmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Mythical Beast",
+		"personality": "Strategic",
+		"image": "griffomon",
+		"modes": [],
+		"from": [
+			"hippogryphonmon",
+			"garudamon",
+			"butenmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "ceresmon",
+		"number": "348",
+		"name": "Ceresmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Deity",
+		"personality": "Strategic",
+		"image": "ceresmon",
+		"modes": [
+			"ceresmon-medium"
+		],
+		"from": [
+			"sirenmon",
+			"lillymon",
+			"deramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "ceresmon-medium",
+		"number": "349",
+		"name": "Ceresmon Medium",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Deity",
+		"personality": "Strategic",
+		"image": "ceresmon_medium",
+		"modes": [
+			"ceresmon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "saberleomon",
+		"number": "350",
+		"name": "SaberLeomon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Ancient Beast",
+		"personality": "Zealous",
+		"image": "saberleomon",
+		"modes": [],
+		"from": [
+			"cerberusmon",
+			"cerberusmon-wm",
+			"grapleomon",
+			"iceleomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "sakuyamon",
+		"number": "351",
+		"name": "Sakuyamon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Deity",
+		"personality": "Enlightened",
+		"image": "sakuyamon",
+		"modes": [],
+		"from": [
+			"taomon",
+			"phantomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "jesmon",
+		"number": "352",
+		"name": "Jesmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Holy Knight",
+		"personality": "Friendly",
+		"image": "jesmon",
+		"modes": [
+			"jesmon-x-antibody"
+		],
+		"from": [
+			"saviorhuckmon",
+			"garudamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "jumbogamemon",
+		"number": "353",
+		"name": "JumboGamemon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "jumbogamemon",
+		"modes": [],
+		"from": [
+			"shaujinmon",
+			"megaseadramon",
+			"garbagemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "dianamon",
+		"number": "354",
+		"name": "Dianamon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Deity",
+		"personality": "Enlightened",
+		"image": "dianamon",
+		"modes": [],
+		"from": [
+			"crescemon",
+			"antylamon"
+		],
+		"to": [
+			"gracenovamon"
+		]
+	},
+	{
+		"slug": "dynasmon",
+		"number": "355",
+		"name": "Dynasmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Holy Knight",
+		"personality": "Enlightened",
+		"image": "dynasmon",
+		"modes": [],
+		"from": [
+			"grademon",
+			"hippogryphonmon",
+			"mistymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "leopardmon",
+		"number": "356",
+		"name": "Leopardmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Holy Knight",
+		"personality": "Zealous",
+		"image": "leopardmon",
+		"modes": [
+			"leopardmon-lm"
+		],
+		"from": [
+			"grapleomon",
+			"knightmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "leopardmon-lm",
+		"number": "357",
+		"name": "Leopardmon LM",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Holy Knight",
+		"personality": "Zealous",
+		"image": "leopardmon_leopard_mode",
+		"modes": [
+			"leopardmon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "dorugoramon",
+		"number": "358",
+		"name": "Dorugoramon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Beast Dragon",
+		"personality": "Reckless",
+		"image": "dorugoramon",
+		"modes": [],
+		"from": [
+			"dorugreymon",
+			"paildramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "pilevolcanomon",
+		"number": "359",
+		"name": "PileVolcanomon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "pilevolcamon",
+		"modes": [],
+		"from": [
+			"volcanomon",
+			"etemon",
+			"omnishoutmon",
+			"weregarurumon-black"
+		],
+		"to": []
+	},
+	{
+		"slug": "princemamemon",
+		"number": "360",
+		"name": "PrinceMamemon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Mutant",
+		"personality": "Sly",
+		"image": "princemamemon",
+		"modes": [],
+		"from": [
+			"bigmamemon",
+			"catchmamemon",
+			"superstarmon",
+			"mamemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "plesiomon",
+		"number": "361",
+		"name": "Plesiomon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Plesiosaur",
+		"personality": "Reckless",
+		"image": "plesiomon",
+		"modes": [],
+		"from": [
+			"whamon",
+			"zudomon",
+			"divermon"
+		],
+		"to": []
+	},
+	{
+		"slug": "boltmon",
+		"number": "362",
+		"name": "Boltmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Zealous",
+		"image": "boltmon",
+		"modes": [],
+		"from": [
+			"andromon",
+			"skullmeramon",
+			"meteormon"
+		],
+		"to": []
+	},
+	{
+		"slug": "miragegaogamon",
+		"number": "363",
+		"name": "MirageGaogamon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Beast Knight",
+		"personality": "Zealous",
+		"image": "miragegaogamon",
+		"modes": [],
+		"from": [
+			"pandamon",
+			"machgaogamon",
+			"iceleomon"
+		],
+		"to": [
+			"miragegaogamon-bm"
+		]
+	},
+	{
+		"slug": "metalgarurumon",
+		"number": "364",
+		"name": "MetalGarurumon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "metalgarurumon",
+		"modes": [],
+		"from": [
+			"weregarurumon",
+			"metalmamemon",
+			"loaderleomon"
+		],
+		"to": [
+			"omnimon"
+		]
+	},
+	{
+		"slug": "metalseadramon",
+		"number": "365",
+		"name": "MetalSeadramon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Android",
+		"personality": "Strategic",
+		"image": "metalseadramon",
+		"modes": [],
+		"from": [
+			"megaseadramon",
+			"waruseadramon",
+			"sharkmon",
+			"skullseadramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "medievalgallantmon",
+		"number": "366",
+		"name": "MedievalGallantmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Warrior",
+		"personality": "Enlightened",
+		"image": "medievalgallantmon",
+		"modes": [],
+		"from": [
+			"mistymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "rosemon",
+		"number": "367",
+		"name": "Rosemon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Pixie",
+		"personality": "Sociable",
+		"image": "rosemon",
+		"modes": [],
+		"from": [
+			"lilamon",
+			"lillymon",
+			"cherrymon",
+			"pumpkinmon"
+		],
+		"to": [
+			"rosemon-bm"
+		]
+	},
+	{
+		"slug": "lotosmon",
+		"number": "368",
+		"name": "Lotosmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Pixie",
+		"personality": "Enlightened",
+		"image": "lotusmon",
+		"modes": [],
+		"from": [
+			"arukenimon",
+			"pumpkinmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "avengekidmon",
+		"number": "369",
+		"name": "AvengeKidmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dragon Man",
+		"personality": "Daring",
+		"image": "avengekidmon",
+		"modes": [],
+		"from": [
+			"mummymon",
+			"skullmeramon",
+			"vademon"
+		],
+		"to": []
+	},
+	{
+		"slug": "ebemon",
+		"number": "370",
+		"name": "Ebemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Overprotective",
+		"image": "ebemon",
+		"modes": [],
+		"from": [
+			"skullsatamon",
+			"dragomon",
+			"vademon"
+		],
+		"to": []
+	},
+	{
+		"slug": "venommyotismon",
+		"number": "371",
+		"name": "VenomMyotismon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark Beast",
+		"personality": "Enlightened",
+		"image": "venommyotismon",
+		"modes": [],
+		"from": [
+			"myotismon",
+			"astamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "ancientwisemon",
+		"number": "372",
+		"name": "AncientWisemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Ancient Mutant",
+		"personality": "Enlightened",
+		"image": "ancientwisemon",
+		"modes": [],
+		"from": [
+			"wisemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gaiomon",
+		"number": "373",
+		"name": "Gaiomon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dragon Man",
+		"personality": "Reckless",
+		"image": "samudramon",
+		"modes": [],
+		"from": [
+			"hisyaryumon",
+			"metalgreymon",
+			"butenmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "chaosgallantmon",
+		"number": "374",
+		"name": "ChaosGallantmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark Knight",
+		"personality": "Reckless",
+		"image": "chaosgallantmon",
+		"modes": [],
+		"from": [
+			"wargrowlmon",
+			"mistymon",
+			"wisemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "chaosdramon",
+		"number": "375",
+		"name": "Chaosdramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Machine",
+		"personality": "Zealous",
+		"image": "chaosdramon",
+		"modes": [],
+		"from": [
+			"wargrowlmon",
+			"gigadramon",
+			"loaderleomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "callismon",
+		"number": "376",
+		"name": "Callismon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark Beast",
+		"personality": "Reckless",
+		"image": "callismon",
+		"modes": [],
+		"from": [
+			"monzaemon",
+			"greatgrizzlymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gundramon",
+		"number": "377",
+		"name": "Gundramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Machine",
+		"personality": "Reckless",
+		"image": "gundramon",
+		"modes": [],
+		"from": [
+			"orochimon",
+			"gigadramon",
+			"masterblimpmon",
+			"tankdramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "kingetemon",
+		"number": "378",
+		"name": "KingEtemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Puppet",
+		"personality": "Daring",
+		"image": "kingetemon",
+		"modes": [],
+		"from": [
+			"monzaemon",
+			"etemon",
+			"shogungekomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "grandracmon",
+		"number": "379",
+		"name": "GranDracmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark Beast",
+		"personality": "Zealous",
+		"image": "grandracmon",
+		"modes": [],
+		"from": [
+			"matadormon",
+			"kimeramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "chronomon-dm",
+		"number": "380",
+		"name": "Chronomon DM",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dragon Man",
+		"personality": "Reckless",
+		"image": "chronomon_destroy_mode",
+		"modes": [],
+		"from": [
+			"aegiochusmon-dark",
+			"butenmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "zanbamon",
+		"number": "381",
+		"name": "Zanbamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Wizard",
+		"personality": "Reckless",
+		"image": "zanbamon",
+		"modes": [],
+		"from": [
+			"mistymon",
+			"knightmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "zombieplutomon",
+		"number": "382",
+		"name": "ZombiePlutomon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Undead",
+		"personality": "Daring",
+		"image": "zombie_plutomon",
+		"modes": [],
+		"from": [
+			"plutomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "darkdramon",
+		"number": "383",
+		"name": "Darkdramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Zealous",
+		"image": "darkdramon",
+		"modes": [],
+		"from": [
+			"paildramon",
+			"tankdramon",
+			"metalgreymon-blue"
+		],
+		"to": [
+			"chaosmon"
+		]
+	},
+	{
+		"slug": "tigervespamon",
+		"number": "384",
+		"name": "TigerVespamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Opportunistic",
+		"image": "tigervespamon",
+		"modes": [],
+		"from": [
+			"dinobeemon",
+			"saviorhuckmon",
+			"jewelbeemon",
+			"cannonbeemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "titamon",
+		"number": "385",
+		"name": "Titamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Deity",
+		"personality": "Reckless",
+		"image": "titamon",
+		"modes": [],
+		"from": [
+			"darksuperstarmon",
+			"digitamamon",
+			"skullgreymon"
+		],
+		"to": [
+			"titamon-plus-skullbaluchimon"
+		]
+	},
+	{
+		"slug": "tyrantkabuterimon",
+		"number": "386",
+		"name": "TyrantKabuterimon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Insectoid",
+		"personality": "Reckless",
+		"image": "tyrantkabuterimon",
+		"modes": [],
+		"from": [
+			"arukenimon",
+			"megakabuterimon",
+			"okuwamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "creepymon",
+		"number": "387",
+		"name": "Creepymon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Evil King",
+		"personality": "Enlightened",
+		"image": "demon",
+		"modes": [],
+		"from": [
+			"myotismon",
+			"wisemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gallantmon",
+		"number": "388",
+		"name": "Gallantmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Holy Knight",
+		"personality": "Daring",
+		"image": "gallantmon",
+		"modes": [
+			"gallantmon-x-antibody"
+		],
+		"from": [
+			"wargrowlmon",
+			"duramon"
+		],
+		"to": [
+			"gallantmon-cm"
+		]
+	},
+	{
+		"slug": "bacchusmon",
+		"number": "389",
+		"name": "Bacchusmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Deity",
+		"personality": "Zealous",
+		"image": "bacchusmon",
+		"modes": [
+			"bacchusmon-dm"
+		],
+		"from": [
+			"orochimon",
+			"digitamamon",
+			"shogungekomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "bacchusmon-dm",
+		"number": "390",
+		"name": "Bacchusmon (DM)",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Deity",
+		"personality": "Zealous",
+		"image": "bacchusmon_drunk",
+		"modes": [
+			"bacchusmon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "barbamon",
+		"number": "391",
+		"name": "Barbamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Evil King",
+		"personality": "Enlightened",
+		"image": "barbamon",
+		"modes": [],
+		"from": [
+			"skullsatamon",
+			"shaujinmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "piedmon",
+		"number": "392",
+		"name": "Piedmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Wizard",
+		"personality": "Strategic",
+		"image": "piemon",
+		"modes": [],
+		"from": [
+			"skullsatamon",
+			"phantomon"
+		],
+		"to": [
+			"apocalymon"
+		]
+	},
+	{
+		"slug": "puppetmon",
+		"number": "393",
+		"name": "Puppetmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Puppet",
+		"personality": "Friendly",
+		"image": "puppetmon",
+		"modes": [],
+		"from": [
+			"lilamon",
+			"shaujinmon",
+			"cherrymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "pharaohmon",
+		"number": "394",
+		"name": "Pharaohmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Wizard",
+		"personality": "Reckless",
+		"image": "pharaohmon",
+		"modes": [],
+		"from": [
+			"bluemeramon",
+			"mummymon",
+			"datamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "pukumon",
+		"number": "395",
+		"name": "Pukumon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Mutant",
+		"personality": "Opportunistic",
+		"image": "pukumon",
+		"modes": [],
+		"from": [
+			"shogungekomon",
+			"mamemon",
+			"scorpiomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "platinumnumemon",
+		"number": "396",
+		"name": "PlatinumNumemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Mutant",
+		"personality": "Sociable",
+		"image": "platinumnumemon",
+		"modes": [],
+		"from": [
+			"bigmamemon",
+			"catchmamemon",
+			"deramon",
+			"blackkingnumemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "plutomon",
+		"number": "397",
+		"name": "Plutomon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Deity",
+		"personality": "Daring",
+		"image": "plutomon",
+		"modes": [],
+		"from": [
+			"cerberusmon",
+			"cerberusmon-wm",
+			"astamon"
+		],
+		"to": [
+			"zombieplutomon"
+		]
+	},
+	{
+		"slug": "breakdramon",
+		"number": "398",
+		"name": "Breakdramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Machine Dragon",
+		"personality": "Reckless",
+		"image": "breakdramon",
+		"modes": [],
+		"from": [
+			"triceramon",
+			"groundramon"
+		],
+		"to": [
+			"examon"
+		]
+	},
+	{
+		"slug": "malomyotismon",
+		"number": "399",
+		"name": "MaloMyotismon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Evil King",
+		"personality": "Enlightened",
+		"image": "malomyotismon",
+		"modes": [],
+		"from": [
+			"myotismon",
+			"infermon"
+		],
+		"to": []
+	},
+	{
+		"slug": "beelstarmon",
+		"number": "400",
+		"name": "BeelStarmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Wizard",
+		"personality": "Daring",
+		"image": "beelstarmon",
+		"modes": [],
+		"from": [
+			"ladydevimon",
+			"darksuperstarmon",
+			"silphymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "beelzemon",
+		"number": "401",
+		"name": "Beelzemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Evil King",
+		"personality": "Zealous",
+		"image": "beelzebumon",
+		"modes": [],
+		"from": [
+			"astamon",
+			"skullmeramon"
+		],
+		"to": [
+			"beelzemon-bm"
+		]
+	},
+	{
+		"slug": "belphemon-sm",
+		"number": "402",
+		"name": "Belphemon SM",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Evil King",
+		"personality": "Zealous",
+		"image": "belphemon_sleep_mode",
+		"modes": [],
+		"from": [
+			"extyrannomon",
+			"astamon",
+			"phantomon"
+		],
+		"to": [
+			"belphemon-rm"
+		]
+	},
+	{
+		"slug": "magnakidmon",
+		"number": "403",
+		"name": "MagnaKidmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dragon Man",
+		"personality": "Zealous",
+		"image": "magnakidmon",
+		"modes": [],
+		"from": [
+			"rizegreymon",
+			"metalmamemon",
+			"omnishoutmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "minervamon",
+		"number": "404",
+		"name": "Minervamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Deity",
+		"personality": "Friendly",
+		"image": "minervamon",
+		"modes": [],
+		"from": [
+			"orochimon",
+			"silphymon"
+		],
+		"to": [
+			"mervamon"
+		]
+	},
+	{
+		"slug": "millenniummon",
+		"number": "405",
+		"name": "Millenniummon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Composite",
+		"personality": "Friendly",
+		"image": "millenniumon",
+		"modes": [],
+		"from": [
+			"kimeramon",
+			"machinedramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "machinedramon",
+		"number": "406",
+		"name": "Machinedramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Machine",
+		"personality": "Reckless",
+		"image": "machinedramon",
+		"modes": [],
+		"from": [
+			"kimeramon",
+			"megadramon",
+			"metaltyrannomon"
+		],
+		"to": [
+			"millenniummon"
+		]
+	},
+	{
+		"slug": "megidramon",
+		"number": "407",
+		"name": "Megidramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Evil Dragon",
+		"personality": "Daring",
+		"image": "megidramon",
+		"modes": [],
+		"from": [
+			"waruseadramon",
+			"wargrowlmon",
+			"groundramon",
+			"megadramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "metaletemon",
+		"number": "408",
+		"name": "MetalEtemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Opportunistic",
+		"image": "metaletemon",
+		"modes": [],
+		"from": [
+			"etemon",
+			"garbagemon",
+			"blackkingnumemon",
+			"meteormon"
+		],
+		"to": []
+	},
+	{
+		"slug": "merukimon",
+		"number": "409",
+		"name": "Merukimon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Deity",
+		"personality": "Friendly",
+		"image": "mercurymon",
+		"modes": [],
+		"from": [
+			"pandamon",
+			"weregarurumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "junomon",
+		"number": "410",
+		"name": "Junomon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Deity",
+		"personality": "Strategic",
+		"image": "junomon",
+		"modes": [
+			"junomon-hm"
+		],
+		"from": [
+			"angewomon",
+			"shakkoumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "junomon-hm",
+		"number": "411",
+		"name": "Junomon HM",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Deity",
+		"personality": "Strategic",
+		"image": "junomon_hysteric_mode",
+		"modes": [
+			"junomon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "rusttyrannomon",
+		"number": "412",
+		"name": "RustTyrannomon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Zealous",
+		"image": "rusttyranomon",
+		"modes": [],
+		"from": [
+			"extyrannomon",
+			"metaltyrannomon",
+			"brachiomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "leviamon",
+		"number": "413",
+		"name": "Leviamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Evil King",
+		"personality": "Strategic",
+		"image": "leviamon",
+		"modes": [],
+		"from": [
+			"whamon",
+			"waruseadramon",
+			"skullseadramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "lilithmon",
+		"number": "414",
+		"name": "Lilithmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Evil King",
+		"personality": "Enlightened",
+		"image": "lilithmon",
+		"modes": [],
+		"from": [
+			"lilamon",
+			"ladydevimon",
+			"arukenimon"
+		],
+		"to": []
+	},
+	{
+		"slug": "lordknightmon",
+		"number": "415",
+		"name": "LordKnightmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Holy Knight",
+		"personality": "Daring",
+		"image": "lordknightmon",
+		"modes": [],
+		"from": [
+			"crescemon",
+			"knightmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "imperialdramon-dm",
+		"number": "416",
+		"name": "Imperialdramon DM",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Ancient Dragon",
+		"personality": "Zealous",
+		"image": "imperialdramon_dragon_mode",
+		"modes": [
+			"imperialdramon-fm"
+		],
+		"from": [
+			"paildramon"
+		],
+		"to": [
+			"imperialdramon-pm"
+		]
+	},
+	{
+		"slug": "imperialdramon-fm",
+		"number": "417",
+		"name": "Imperialdramon FM",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Ancient Dragon Man",
+		"personality": "Zealous",
+		"image": "imperialdramon_fighter_mode",
+		"modes": [
+			"imperialdramon-dm"
+		],
+		"from": [],
+		"to": [
+			"imperialdramon-pm"
+		]
+	},
+	{
+		"slug": "vikemon",
+		"number": "418",
+		"name": "Vikemon",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Beast Man",
+		"personality": "Reckless",
+		"image": "vikemon",
+		"modes": [],
+		"from": [
+			"zudomon",
+			"mammothmon",
+			"shakkoumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "valkyrimon",
+		"number": "419",
+		"name": "Valkyrimon",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Warrior",
+		"personality": "Tolerant",
+		"image": "valkyrimon",
+		"modes": [],
+		"from": [
+			"chirinmon",
+			"silphymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "grankuwagamon",
+		"number": "420",
+		"name": "GranKuwagamon",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Insectoid",
+		"personality": "Zealous",
+		"image": "grankuwagamon",
+		"modes": [],
+		"from": [
+			"dinobeemon",
+			"cherrymon",
+			"okuwamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "diaboromon",
+		"number": "421",
+		"name": "Diaboromon",
+		"generation": "Mega",
+		"attribute": "Unknown",
+		"type": "Unidentified",
+		"personality": "Sly",
+		"image": "diaboromon",
+		"modes": [],
+		"from": [
+			"datamon",
+			"infermon"
+		],
+		"to": [
+			"armageddemon"
+		]
+	},
+	{
+		"slug": "rapidmon-armor",
+		"number": "422",
+		"name": "Rapidmon (Armor)",
+		"generation": "Armor",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Sociable",
+		"image": "goldrapidmon",
+		"modes": [],
+		"from": [
+			"terriermon"
+		],
+		"to": []
+	},
+	{
+		"slug": "magnamon",
+		"number": "423",
+		"name": "Magnamon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Holy Knight",
+		"personality": "Zealous",
+		"image": "magnamon",
+		"modes": [
+			"magnamon-x-antibody"
+		],
+		"from": [
+			"veemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "emperorgreymon",
+		"number": "424",
+		"name": "EmperorGreymon",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Dragon Warrior",
+		"personality": "Zealous",
+		"image": "emperorgreymon",
+		"modes": [],
+		"from": [
+			"aldamon"
+		],
+		"to": [
+			"susanomon"
+		]
+	},
+	{
+		"slug": "magnagarurumon",
+		"number": "425",
+		"name": "MagnaGarurumon",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "magnagarurumon",
+		"modes": [
+			"magnagarurumon-detached"
+		],
+		"from": [
+			"beowolfmon"
+		],
+		"to": [
+			"susanomon"
+		]
+	},
+	{
+		"slug": "magnagarurumon-detached",
+		"number": "426",
+		"name": "MagnaGarurumon (Detached)",
+		"generation": "Hybrid",
+		"attribute": "Variable",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "magnagarurumon_detached",
+		"modes": [
+			"magnagarurumon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "alphamon-ouryuken",
+		"number": "427",
+		"name": "Alphamon: Ouryuken",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "No Data",
+		"personality": "Friendly",
+		"image": "alphamon_ouryuken",
+		"modes": [],
+		"from": [
+			"ouryumon",
+			"alphamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "craniamon-plus-enbarrmon",
+		"number": "428",
+		"name": "Craniamon + Enbarrmon",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Devoted",
+		"image": "craniummon_enbarrmon",
+		"modes": [],
+		"from": [
+			"craniamon",
+			"enbarrmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "imperialdramon-pm",
+		"number": "429",
+		"name": "Imperialdramon PM",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Ancient Holy Knight",
+		"personality": "Zealous",
+		"image": "imperialdramon_paladin_mode",
+		"modes": [],
+		"from": [
+			"imperialdramon-fm",
+			"imperialdramon-dm"
+		],
+		"to": []
+	},
+	{
+		"slug": "omnimon",
+		"number": "430",
+		"name": "Omnimon",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Daring",
+		"image": "omegamon",
+		"modes": [
+			"omnimon-zwart",
+			"omnimon-x-antibody"
+		],
+		"from": [
+			"wargreymon",
+			"metalgarurumon"
+		],
+		"to": [
+			"omnimon-mm"
+		]
+	},
+	{
+		"slug": "omnimon-zwart",
+		"number": "431",
+		"name": "Omnimon Zwart",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Friendly",
+		"image": "omegamon_zwart",
+		"modes": [
+			"omnimon"
+		],
+		"from": [
+			"blackwargreymon",
+			"metalgarurumon-black"
+		],
+		"to": [
+			"omnimon-zwart-defeat"
+		]
+	},
+	{
+		"slug": "chaosmon",
+		"number": "432",
+		"name": "Chaosmon",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Unique",
+		"personality": "Daring",
+		"image": "chaosmon",
+		"modes": [],
+		"from": [
+			"bancholeomon",
+			"darkdramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "chaosmon-valdur-arm",
+		"number": "433",
+		"name": "Chaosmon: Valdur Arm",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Unique",
+		"personality": "Daring",
+		"image": "chaosmon_valdur_arm",
+		"modes": [],
+		"from": [
+			"bancholeomon",
+			"varodurumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gracenovamon",
+		"number": "434",
+		"name": "GraceNovamon",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Galaxy",
+		"personality": "Enlightened",
+		"image": "gracenovamon",
+		"modes": [],
+		"from": [
+			"apollomon",
+			"dianamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "shinegreymon-bm",
+		"number": "435",
+		"name": "ShineGreymon BM",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Shining Dragon",
+		"personality": "Friendly",
+		"image": "shinegreymon_burst_mode",
+		"modes": [],
+		"from": [
+			"shinegreymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "susanomon",
+		"number": "436",
+		"name": "Susanomon",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Zealous",
+		"image": "susanomon",
+		"modes": [],
+		"from": [
+			"emperorgreymon",
+			"magnagarurumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "jupitermon-wm",
+		"number": "437",
+		"name": "Jupitermon WM",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Deity",
+		"personality": "Friendly",
+		"image": "jupitermon_wrath_mode",
+		"modes": [],
+		"from": [
+			"jupitermon"
+		],
+		"to": []
+	},
+	{
+		"slug": "ravemon-bm",
+		"number": "438",
+		"name": "Ravemon BM",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Android",
+		"personality": "Sociable",
+		"image": "ravemon_burst_mode",
+		"modes": [],
+		"from": [
+			"ravemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "examon",
+		"number": "439",
+		"name": "Examon",
+		"generation": "Mega +",
+		"attribute": "Data",
+		"type": "Holy Knight",
+		"personality": "Reckless",
+		"image": "examon",
+		"modes": [],
+		"from": [
+			"slayerdramon",
+			"breakdramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "miragegaogamon-bm",
+		"number": "440",
+		"name": "MirageGaogamon BM",
+		"generation": "Mega +",
+		"attribute": "Data",
+		"type": "Beast Knight",
+		"personality": "Zealous",
+		"image": "miragegaogamon_burst_mode",
+		"modes": [],
+		"from": [
+			"miragegaogamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "rosemon-bm",
+		"number": "441",
+		"name": "Rosemon BM",
+		"generation": "Mega +",
+		"attribute": "Data",
+		"type": "Pixie",
+		"personality": "Sociable",
+		"image": "rosemon_burst_mode",
+		"modes": [],
+		"from": [
+			"rosemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "titamon-plus-skullbaluchimon",
+		"number": "442",
+		"name": "Titamon + SkullBaluchimon",
+		"generation": "Mega +",
+		"attribute": "Virus",
+		"type": "Deity",
+		"personality": "Reckless",
+		"image": "titamon_skullbaluchimon",
+		"modes": [],
+		"from": [
+			"skullbaluchimon",
+			"titamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gallantmon-cm",
+		"number": "443",
+		"name": "Gallantmon CM",
+		"generation": "Mega +",
+		"attribute": "Virus",
+		"type": "Holy Knight",
+		"personality": "Daring",
+		"image": "gallantmon_crimson_mode",
+		"modes": [],
+		"from": [
+			"gallantmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "beelzemon-bm",
+		"number": "444",
+		"name": "Beelzemon BM",
+		"generation": "Mega +",
+		"attribute": "Virus",
+		"type": "Evil King",
+		"personality": "Zealous",
+		"image": "beelzebumon_blast_mode",
+		"modes": [],
+		"from": [
+			"beelzemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "belphemon-rm",
+		"number": "445",
+		"name": "Belphemon RM",
+		"generation": "Mega +",
+		"attribute": "Virus",
+		"type": "Evil King",
+		"personality": "Zealous",
+		"image": "belphemon_rage_mode",
+		"modes": [],
+		"from": [
+			"belphemon-sm"
+		],
+		"to": []
+	},
+	{
+		"slug": "mervamon",
+		"number": "446",
+		"name": "Mervamon",
+		"generation": "Mega +",
+		"attribute": "Virus",
+		"type": "Deity",
+		"personality": "Friendly",
+		"image": "mervamon",
+		"modes": [],
+		"from": [
+			"minervamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "lucemon-sm",
+		"number": "447",
+		"name": "Lucemon SM",
+		"generation": "Mega +",
+		"attribute": "Virus",
+		"type": "Demon God",
+		"personality": "Enlightened",
+		"image": "lucemon_satan_mode",
+		"modes": [],
+		"from": [
+			"lucemon-cm"
+		],
+		"to": []
+	},
+	{
+		"slug": "armageddemon",
+		"number": "448",
+		"name": "Armageddemon",
+		"generation": "Mega +",
+		"attribute": "Unknown",
+		"type": "Unidentified",
+		"personality": "Sly",
+		"image": "armageddemon",
+		"modes": [],
+		"from": [
+			"diaboromon"
+		],
+		"to": []
+	},
+	{
+		"slug": "agumon-bond-of-bravery",
+		"number": "449",
+		"name": "Agumon (Bond of Bravery)",
+		"generation": "Mega +",
+		"attribute": "Unknown",
+		"type": "Unidentified",
+		"personality": "Brave",
+		"image": "agumon_yuki_no_kizuma",
+		"modes": [],
+		"from": [
+			"agumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "apocalymon",
+		"number": "450",
+		"name": "Apocalymon",
+		"generation": "Mega +",
+		"attribute": "Unknown",
+		"type": "Unidentified",
+		"personality": "Strategic",
+		"image": "apocalymon",
+		"modes": [],
+		"from": [
+			"piedmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gabumon-bond-of-friendship",
+		"number": "451",
+		"name": "Gabumon (Bond of Friendship)",
+		"generation": "Mega +",
+		"attribute": "Unknown",
+		"type": "Unidentified",
+		"personality": "Compassionate",
+		"image": "gabumon_yujo_no_kizuma",
+		"modes": [],
+		"from": [
+			"gabumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "cresgarurumon",
+		"number": "452",
+		"name": "CresGarurumon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Beast Knight",
+		"personality": "Zealous",
+		"image": "cresgarurumon",
+		"modes": [],
+		"from": [
+			"weregarurumon"
+		],
+		"to": [
+			"omnimon-alter-s"
+		]
+	},
+	{
+		"slug": "parallelmon",
+		"number": "453",
+		"name": "Parallelmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Mutant",
+		"personality": "Reckless",
+		"image": "parallelmon",
+		"modes": [],
+		"from": [
+			"dragomon",
+			"infermon"
+		],
+		"to": []
+	},
+	{
+		"slug": "blitzgreymon",
+		"number": "454",
+		"name": "BlitzGreymon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Zealous",
+		"image": "blitzgreymon",
+		"modes": [],
+		"from": [
+			"metalgreymon"
+		],
+		"to": [
+			"omnimon-alter-s"
+		]
+	},
+	{
+		"slug": "omnimon-alter-b",
+		"number": "455",
+		"name": "Omnimon Alter-B",
+		"generation": "Mega +",
+		"attribute": "Virus",
+		"type": "Holy Knight",
+		"personality": "Zealous",
+		"image": "omegamon_alter_b",
+		"modes": [
+			"omnimon-alter-s"
+		],
+		"from": [
+			"omnimon-zwart-defeat"
+		],
+		"to": []
+	},
+	{
+		"slug": "omnimon-alter-s",
+		"number": "456",
+		"name": "Omnimon Alter-S",
+		"generation": "Mega +",
+		"attribute": "Virus",
+		"type": "Holy Knight",
+		"personality": "Zealous",
+		"image": "omegamon_alter_s",
+		"modes": [
+			"omnimon-alter-b"
+		],
+		"from": [
+			"blitzgreymon",
+			"cresgarurumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "omnimon-zwart-defeat",
+		"number": "457",
+		"name": "Omnimon Zwart Defeat",
+		"generation": "Mega +",
+		"attribute": "Virus",
+		"type": "Holy Knight",
+		"personality": "Zealous",
+		"image": "omegamon_zwart_defeat",
+		"modes": [],
+		"from": [
+			"omnimon-zwart"
+		],
+		"to": [
+			"omnimon-alter-b"
+		]
+	},
+	{
+		"slug": "banchomamemon",
+		"number": "458",
+		"name": "BanchoMamemon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Mutant",
+		"personality": "Reckless",
+		"image": "banchomamemon",
+		"modes": [],
+		"from": [
+			"mamemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "bancholillymon",
+		"number": "459",
+		"name": "BanchoLillymon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Pixie",
+		"personality": "Daring",
+		"image": "bancholilimon",
+		"modes": [],
+		"from": [
+			"lillymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "banchogolemon",
+		"number": "460",
+		"name": "BanchoGolemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Mineral",
+		"personality": "Daring",
+		"image": "banchogolemon",
+		"modes": [],
+		"from": [
+			"golemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "banchostingmon",
+		"number": "461",
+		"name": "BanchoStingmon",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Insectoid",
+		"personality": "Zealous",
+		"image": "banchostingmon",
+		"modes": [],
+		"from": [
+			"jewelbeemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "omnimon-mm",
+		"number": "462",
+		"name": "Omnimon MM",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Reckless",
+		"image": "omegamon_merciful_mode",
+		"modes": [],
+		"from": [
+			"omnimon"
+		],
+		"to": []
+	},
+	{
+		"slug": "ulforceveedramon-x-antibody",
+		"number": "463",
+		"name": "UlforceVeedramon (X Antibody)",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Zealous",
+		"image": "ulforceveedramon_x",
+		"modes": [
+			"ulforceveedramon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "magnamon-x-antibody",
+		"number": "464",
+		"name": "Magnamon (X Antibody)",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Zealous",
+		"image": "magnamon_x",
+		"modes": [
+			"magnamon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "jesmon-x-antibody",
+		"number": "465",
+		"name": "Jesmon (X Antibody)",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Holy Knight",
+		"personality": "Friendly",
+		"image": "jesmon_x",
+		"modes": [
+			"jesmon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "gallantmon-x-antibody",
+		"number": "466",
+		"name": "Gallantmon (X Antibody)",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Holy Knight",
+		"personality": "Daring",
+		"image": "gallantmon_x",
+		"modes": [
+			"gallantmon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "omnimon-x-antibody",
+		"number": "467",
+		"name": "Omnimon (X Antibody)",
+		"generation": "Mega +",
+		"attribute": "Vaccine",
+		"type": "Holy Knight",
+		"personality": "Daring",
+		"image": "omegamon_x",
+		"modes": [
+			"omnimon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "agumon-black",
+		"number": "468",
+		"name": "Agumon (Black)",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Reptile",
+		"personality": "Reckless",
+		"image": "agumon_black",
+		"modes": [],
+		"from": [
+			"tsumemon"
+		],
+		"to": [
+			"strikedramon",
+			"tuskmon",
+			"devimon",
+			"coredramon-blue",
+			"greymon-blue"
+		]
+	},
+	{
+		"slug": "gabumon-black",
+		"number": "469",
+		"name": "Gabumon (Black)",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Reptile",
+		"personality": "Sly",
+		"image": "gabumon_black",
+		"modes": [],
+		"from": [
+			"tsumemon"
+		],
+		"to": [
+			"minotarumon",
+			"blackgatomon",
+			"dobermon",
+			"dorugamon",
+			"fugamon",
+			"garurumon-black"
+		]
+	},
+	{
+		"slug": "garurumon-black",
+		"number": "470",
+		"name": "Garurumon (Black)",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Beast",
+		"personality": "Friendly",
+		"image": "garurumon_black",
+		"modes": [],
+		"from": [
+			"gabumon-black",
+			"renamon",
+			"bearmon"
+		],
+		"to": [
+			"skullsatamon",
+			"pandamon",
+			"weregarurumon-black"
+		]
+	},
+	{
+		"slug": "greymon-blue",
+		"number": "471",
+		"name": "Greymon (Blue)",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dinosaur",
+		"personality": "Reckless",
+		"image": "greymon_blue",
+		"modes": [],
+		"from": [
+			"agumon-black",
+			"guilmon",
+			"demidevimon"
+		],
+		"to": [
+			"wingdramon",
+			"skullbaluchimon",
+			"metalgreymon-blue"
+		]
+	},
+	{
+		"slug": "metalgreymon-blue",
+		"number": "472",
+		"name": "MetalGreymon (Blue)",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Reckless",
+		"image": "metalgreymon_blue",
+		"modes": [],
+		"from": [
+			"greymon-blue",
+			"dorugamon",
+			"veedramon"
+		],
+		"to": [
+			"blackwargreymon",
+			"darkdramon",
+			"cherubimon-black"
+		]
+	},
+	{
+		"slug": "weregarurumon-black",
+		"number": "473",
+		"name": "WereGarurumon (Black)",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Beast Man",
+		"personality": "Friendly",
+		"image": "weregarurumon_black",
+		"modes": [],
+		"from": [
+			"garurumon-black",
+			"sangloupmon",
+			"blackgatomon"
+		],
+		"to": [
+			"pilevolcanomon",
+			"metalgarurumon-black"
+		]
+	},
+	{
+		"slug": "blackwargreymon",
+		"number": "474",
+		"name": "BlackWarGreymon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dragon Man",
+		"personality": "Reckless",
+		"image": "black_wargreymon",
+		"modes": [],
+		"from": [
+			"metalgreymon-blue",
+			"flaremon"
+		],
+		"to": [
+			"omnimon-zwart"
+		]
+	},
+	{
+		"slug": "metalgarurumon-black",
+		"number": "475",
+		"name": "MetalGarurumon (Black)",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Android",
+		"personality": "Friendly",
+		"image": "metalgarurumon_black",
+		"modes": [],
+		"from": [
+			"weregarurumon-black",
+			"catchmamemon",
+			"cerberusmon",
+			"cerberusmon-wm"
+		],
+		"to": [
+			"omnimon-zwart"
+		]
+	}
+]

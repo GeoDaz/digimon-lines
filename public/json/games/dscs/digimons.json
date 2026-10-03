@@ -1,0 +1,6836 @@
+[
+	{
+		"slug": "kuramon",
+		"number": "001",
+		"name": "Kuramon",
+		"generation": "Training 1",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "2",
+		"image": "kuramon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"arcadiamon-in-tr",
+			"tsumemon",
+			"pagumon"
+		]
+	},
+	{
+		"slug": "pabumon",
+		"number": "002",
+		"name": "Pabumon",
+		"generation": "Training 1",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "2",
+		"image": "bubbmon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"tanemon",
+			"yokomon",
+			"motimon"
+		]
+	},
+	{
+		"slug": "punimon",
+		"number": "003",
+		"name": "Punimon",
+		"generation": "Training 1",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "2",
+		"image": "punimon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"tsunomon",
+			"nyaromon"
+		]
+	},
+	{
+		"slug": "botamon",
+		"number": "004",
+		"name": "Botamon",
+		"generation": "Training 1",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "2",
+		"image": "botamon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"koromon",
+			"wanyamon"
+		]
+	},
+	{
+		"slug": "poyomon",
+		"number": "005",
+		"name": "Poyomon",
+		"generation": "Training 1",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "2",
+		"image": "poyomon",
+		"modes": [],
+		"from": [],
+		"to": [
+			"tokomon",
+			"bukamon"
+		]
+	},
+	{
+		"slug": "arcadiamon-in-tr",
+		"number": "006",
+		"name": "Arcadiamon In-Tr.",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Dark",
+		"memory": "3",
+		"image": "arkadimon_2",
+		"modes": [],
+		"from": [
+			"kuramon"
+		],
+		"to": [
+			"arcadiamon-rookie"
+		]
+	},
+	{
+		"slug": "koromon",
+		"number": "007",
+		"name": "Koromon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Fire",
+		"memory": "3",
+		"image": "koromon",
+		"modes": [],
+		"from": [
+			"botamon"
+		],
+		"to": [
+			"agumon",
+			"guilmon",
+			"toyagumon",
+			"dracomon",
+			"hackmon",
+			"shoutmon"
+		]
+	},
+	{
+		"slug": "tanemon",
+		"number": "008",
+		"name": "Tanemon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Plant",
+		"memory": "3",
+		"image": "tanemon",
+		"modes": [],
+		"from": [
+			"pabumon"
+		],
+		"to": [
+			"palmon",
+			"fanbeemon",
+			"lalamon",
+			"renamon"
+		]
+	},
+	{
+		"slug": "tsunomon",
+		"number": "009",
+		"name": "Tsunomon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Earth",
+		"memory": "3",
+		"image": "tsunomon",
+		"modes": [],
+		"from": [
+			"punimon"
+		],
+		"to": [
+			"gabumon",
+			"gabumon-blk",
+			"goblimon",
+			"zubamon",
+			"veemon",
+			"monodramon"
+		]
+	},
+	{
+		"slug": "tsumemon",
+		"number": "010",
+		"name": "Tsumemon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Dark",
+		"memory": "3",
+		"image": "tsumemon",
+		"modes": [],
+		"from": [
+			"kuramon"
+		],
+		"to": [
+			"agumon-blk",
+			"keramon",
+			"dracmon",
+			"demidevimon"
+		]
+	},
+	{
+		"slug": "tokomon",
+		"number": "011",
+		"name": "Tokomon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "3",
+		"image": "tokomon",
+		"modes": [],
+		"from": [
+			"poyomon"
+		],
+		"to": [
+			"patamon",
+			"falcomon",
+			"hawkmon",
+			"lucemon",
+			"sistermon-blanc"
+		]
+	},
+	{
+		"slug": "nyaromon",
+		"number": "012",
+		"name": "Nyaromon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Light",
+		"memory": "3",
+		"image": "nyaromon",
+		"modes": [],
+		"from": [
+			"punimon"
+		],
+		"to": [
+			"armadillomon",
+			"terriermon",
+			"salamon",
+			"lunamon"
+		]
+	},
+	{
+		"slug": "pagumon",
+		"number": "013",
+		"name": "Pagumon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Dark",
+		"memory": "3",
+		"image": "pagumon",
+		"modes": [],
+		"from": [
+			"kuramon"
+		],
+		"to": [
+			"impmon",
+			"gazimon",
+			"chuumon",
+			"lopmon"
+		]
+	},
+	{
+		"slug": "yokomon",
+		"number": "014",
+		"name": "Yokomon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Plant",
+		"memory": "3",
+		"image": "yokomon",
+		"modes": [],
+		"from": [
+			"pabumon"
+		],
+		"to": [
+			"elecmon",
+			"biyomon",
+			"mushroomon",
+			"wormmon"
+		]
+	},
+	{
+		"slug": "bukamon",
+		"number": "015",
+		"name": "Bukamon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Water",
+		"memory": "3",
+		"image": "pukamon",
+		"modes": [],
+		"from": [
+			"poyomon"
+		],
+		"to": [
+			"otamamon",
+			"gomamon",
+			"syakomon",
+			"betamon"
+		]
+	},
+	{
+		"slug": "motimon",
+		"number": "016",
+		"name": "Motimon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "3",
+		"image": "mochimon",
+		"modes": [],
+		"from": [
+			"pabumon"
+		],
+		"to": [
+			"gotsumon",
+			"solarmon",
+			"tentomon",
+			"hagurumon"
+		]
+	},
+	{
+		"slug": "wanyamon",
+		"number": "017",
+		"name": "Wanyamon",
+		"generation": "Training 2",
+		"attribute": "Free",
+		"type": "Wind",
+		"memory": "3",
+		"image": "wanyamon",
+		"modes": [],
+		"from": [
+			"botamon"
+		],
+		"to": [
+			"gaomon",
+			"kudamon",
+			"dorumon",
+			"ryudamon"
+		]
+	},
+	{
+		"slug": "agumon",
+		"number": "018",
+		"name": "Agumon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "5",
+		"image": "agumon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"agunimon",
+			"greymon",
+			"geogreymon",
+			"sukamon",
+			"tyrannomon",
+			"meramon"
+		]
+	},
+	{
+		"slug": "agumon-blk",
+		"number": "019",
+		"name": "Agumon (Blk)",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "5",
+		"image": "agumon_black",
+		"modes": [],
+		"from": [
+			"tsumemon"
+		],
+		"to": [
+			"growlmon",
+			"greymon-blue",
+			"cyclonemon",
+			"tankmon",
+			"tyrannomon",
+			"monochromon"
+		]
+	},
+	{
+		"slug": "arcadiamon-rookie",
+		"number": "020",
+		"name": "Arcadiamon Rookie",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "5",
+		"image": "arkadimon_3",
+		"modes": [],
+		"from": [
+			"arcadiamon-in-tr"
+		],
+		"to": [
+			"arcadiamon-champion",
+			"kurisarimon",
+			"leomon"
+		]
+	},
+	{
+		"slug": "armadillomon",
+		"number": "021",
+		"name": "Armadillomon",
+		"generation": "Rookie",
+		"attribute": "Free",
+		"type": "Earth",
+		"memory": "4",
+		"image": "armadillomon",
+		"modes": [],
+		"from": [
+			"nyaromon"
+		],
+		"to": [
+			"ankylomon",
+			"geremon",
+			"goldnumemon",
+			"golemon",
+			"cyclonemon",
+			"tankmon"
+		]
+	},
+	{
+		"slug": "impmon",
+		"number": "022",
+		"name": "Impmon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "5",
+		"image": "impmon",
+		"modes": [],
+		"from": [
+			"pagumon"
+		],
+		"to": [
+			"icedevimon",
+			"wizardmon",
+			"ogremon",
+			"socerimon",
+			"bakemon",
+			"blackgatomon"
+		]
+	},
+	{
+		"slug": "elecmon",
+		"number": "023",
+		"name": "Elecmon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Electric",
+		"memory": "4",
+		"image": "elecmon",
+		"modes": [],
+		"from": [
+			"yokomon"
+		],
+		"to": [
+			"garurumon",
+			"garurumon-blk",
+			"geremon",
+			"sukamon",
+			"nanimon",
+			"leomon"
+		]
+	},
+	{
+		"slug": "otamamon",
+		"number": "024",
+		"name": "Otamamon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Water",
+		"memory": "4",
+		"image": "otamamon",
+		"modes": [],
+		"from": [
+			"bukamon"
+		],
+		"to": [
+			"shellnumemon",
+			"gekomon",
+			"seadramon",
+			"coelamon",
+			"numemon",
+			"raremon"
+		]
+	},
+	{
+		"slug": "gaomon",
+		"number": "025",
+		"name": "Gaomon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Neutral",
+		"memory": "5",
+		"image": "gaomon",
+		"modes": [],
+		"from": [
+			"wanyamon"
+		],
+		"to": [
+			"ogremon",
+			"gaogamon",
+			"gargomon",
+			"sangloupmon",
+			"togemon",
+			"leomon"
+		]
+	},
+	{
+		"slug": "gazimon",
+		"number": "026",
+		"name": "Gazimon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "4",
+		"image": "gazimon",
+		"modes": [],
+		"from": [
+			"pagumon"
+		],
+		"to": [
+			"gaogamon",
+			"garurumon-blk",
+			"kurisarimon",
+			"dorugamon",
+			"nanimon",
+			"leomon"
+		]
+	},
+	{
+		"slug": "gabumon",
+		"number": "027",
+		"name": "Gabumon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "5",
+		"image": "gabumon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"lobomon",
+			"garurumon",
+			"dorugamon",
+			"numemon",
+			"veedramon",
+			"frigimon"
+		]
+	},
+	{
+		"slug": "gabumon-blk",
+		"number": "028",
+		"name": "Gabumon (Blk)",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "5",
+		"image": "gabumon_black",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"garurumon-blk",
+			"vegiemon",
+			"frigimon",
+			"raremon",
+			"reppamon"
+		]
+	},
+	{
+		"slug": "guilmon",
+		"number": "029",
+		"name": "Guilmon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "5",
+		"image": "guilmon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"agunimon",
+			"growlmon",
+			"greymon-blue",
+			"geogreymon",
+			"tyrannomon",
+			"meramon"
+		]
+	},
+	{
+		"slug": "kudamon",
+		"number": "030",
+		"name": "Kudamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "5",
+		"image": "kudamon",
+		"modes": [],
+		"from": [
+			"wanyamon"
+		],
+		"to": [
+			"lobomon",
+			"angemon",
+			"goldnumemon",
+			"peckmon",
+			"reppamon"
+		]
+	},
+	{
+		"slug": "keramon",
+		"number": "031",
+		"name": "Keramon",
+		"generation": "Rookie",
+		"attribute": "Free",
+		"type": "Dark",
+		"memory": "5",
+		"image": "keramon",
+		"modes": [],
+		"from": [
+			"tsumemon"
+		],
+		"to": [
+			"arcadiamon-champion",
+			"wizardmon",
+			"kurisarimon",
+			"bakemon",
+			"platinumsukamon"
+		]
+	},
+	{
+		"slug": "gotsumon",
+		"number": "032",
+		"name": "Gotsumon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "5",
+		"image": "gottsumon",
+		"modes": [],
+		"from": [
+			"motimon"
+		],
+		"to": [
+			"icemon",
+			"ankylomon",
+			"clockmon",
+			"golemon",
+			"starmon",
+			"tankmon"
+		]
+	},
+	{
+		"slug": "goblimon",
+		"number": "033",
+		"name": "Goblimon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "4",
+		"image": "goblimon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"ogremon",
+			"gaogamon",
+			"growlmon",
+			"greymon-blue",
+			"coredramon-green",
+			"nanimon"
+		]
+	},
+	{
+		"slug": "gomamon",
+		"number": "034",
+		"name": "Gomamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Water",
+		"memory": "5",
+		"image": "gomamon",
+		"modes": [],
+		"from": [
+			"bukamon"
+		],
+		"to": [
+			"icemon",
+			"ankylomon",
+			"ikkakumon",
+			"strikedramon",
+			"socerimon",
+			"frigimon"
+		]
+	},
+	{
+		"slug": "syakomon",
+		"number": "035",
+		"name": "Syakomon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Water",
+		"memory": "4",
+		"image": "shakomon",
+		"modes": [],
+		"from": [
+			"bukamon"
+		],
+		"to": [
+			"ikkakumon",
+			"shellnumemon",
+			"gekomon",
+			"seadramon",
+			"coelamon"
+		]
+	},
+	{
+		"slug": "zubamon",
+		"number": "036",
+		"name": "Zubamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "5",
+		"image": "zubamon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"goldnumemon",
+			"zubaeagermon",
+			"baohuckmon",
+			"ginryumon"
+		]
+	},
+	{
+		"slug": "solarmon",
+		"number": "037",
+		"name": "Solarmon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "4",
+		"image": "solarmon",
+		"modes": [],
+		"from": [
+			"motimon"
+		],
+		"to": [
+			"guardromon-gold",
+			"clockmon",
+			"geremon",
+			"golemon",
+			"starmon",
+			"meramon"
+		]
+	},
+	{
+		"slug": "chuumon",
+		"number": "038",
+		"name": "Chuumon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "4",
+		"image": "tyumon",
+		"modes": [],
+		"from": [
+			"pagumon"
+		],
+		"to": [
+			"sukamon",
+			"nanimon",
+			"blackgatomon",
+			"raremon"
+		]
+	},
+	{
+		"slug": "terriermon",
+		"number": "039",
+		"name": "Terriermon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "4",
+		"image": "terriermon",
+		"modes": [],
+		"from": [
+			"nyaromon"
+		],
+		"to": [
+			"ikkakumon",
+			"gargomon",
+			"gatomon",
+			"unimon",
+			"rapidmon-armor"
+		]
+	},
+	{
+		"slug": "tentomon",
+		"number": "040",
+		"name": "Tentomon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Plant",
+		"memory": "4",
+		"image": "tentomon",
+		"modes": [],
+		"from": [
+			"motimon"
+		],
+		"to": [
+			"kabuterimon",
+			"kuwagamon",
+			"sunflowmon",
+			"stingmon",
+			"waspmon"
+		]
+	},
+	{
+		"slug": "toyagumon",
+		"number": "041",
+		"name": "ToyAgumon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "4",
+		"image": "toyagumon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"guardromon",
+			"guardromon-gold",
+			"greymon",
+			"clockmon",
+			"sukamon",
+			"starmon"
+		]
+	},
+	{
+		"slug": "dracmon",
+		"number": "042",
+		"name": "Dracmon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "5",
+		"image": "dracmon",
+		"modes": [],
+		"from": [
+			"tsumemon"
+		],
+		"to": [
+			"arcadiamon-champion",
+			"sangloupmon",
+			"devimon",
+			"raremon",
+			"sistermon-ciel"
+		]
+	},
+	{
+		"slug": "dracomon",
+		"number": "043",
+		"name": "Dracomon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "5",
+		"image": "dracomon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"coredramon-blue",
+			"coredramon-green",
+			"veedramon",
+			"ginryumon"
+		]
+	},
+	{
+		"slug": "dorumon",
+		"number": "044",
+		"name": "Dorumon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Neutral",
+		"memory": "5",
+		"image": "dorumon",
+		"modes": [],
+		"from": [
+			"wanyamon"
+		],
+		"to": [
+			"guardromon",
+			"cyclonemon",
+			"dorugamon",
+			"raptordramon",
+			"waspmon"
+		]
+	},
+	{
+		"slug": "hagurumon",
+		"number": "045",
+		"name": "Hagurumon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "4",
+		"image": "hagurumon",
+		"modes": [],
+		"from": [
+			"motimon"
+		],
+		"to": [
+			"guardromon",
+			"clockmon",
+			"goldnumemon",
+			"starmon",
+			"platinumsukamon"
+		]
+	},
+	{
+		"slug": "patamon",
+		"number": "046",
+		"name": "Patamon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Wind",
+		"memory": "4",
+		"image": "patamon",
+		"modes": [],
+		"from": [
+			"tokomon"
+		],
+		"to": [
+			"exveemon",
+			"angemon",
+			"gatomon",
+			"birdramon",
+			"unimon",
+			"reppamon"
+		]
+	},
+	{
+		"slug": "hackmon",
+		"number": "047",
+		"name": "Hackmon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "5",
+		"image": "hackmon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"greymon",
+			"geogreymon",
+			"zubaeagermon",
+			"baohuckmon",
+			"platinumsukamon",
+			"monochromon"
+		]
+	},
+	{
+		"slug": "palmon",
+		"number": "048",
+		"name": "Palmon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Plant",
+		"memory": "5",
+		"image": "palmon",
+		"modes": [],
+		"from": [
+			"tanemon"
+		],
+		"to": [
+			"woodmon",
+			"kuwagamon",
+			"sunflowmon",
+			"mudfrigimon",
+			"togemon",
+			"vegiemon"
+		]
+	},
+	{
+		"slug": "demidevimon",
+		"number": "049",
+		"name": "DemiDevimon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "4",
+		"image": "demidevimon",
+		"modes": [],
+		"from": [
+			"tsumemon"
+		],
+		"to": [
+			"icedevimon",
+			"kyubimon",
+			"kurisarimon",
+			"devimon",
+			"bakemon"
+		]
+	},
+	{
+		"slug": "biyomon",
+		"number": "050",
+		"name": "Biyomon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "4",
+		"image": "biyomon",
+		"modes": [],
+		"from": [
+			"yokomon"
+		],
+		"to": [
+			"aquilamon",
+			"airdramon",
+			"kabuterimon",
+			"kyubimon",
+			"birdramon"
+		]
+	},
+	{
+		"slug": "falcomon",
+		"number": "051",
+		"name": "Falcomon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "5",
+		"image": "falcomon",
+		"modes": [],
+		"from": [
+			"tokomon"
+		],
+		"to": [
+			"aquilamon",
+			"exveemon",
+			"stingmon",
+			"peckmon"
+		]
+	},
+	{
+		"slug": "fanbeemon",
+		"number": "052",
+		"name": "FanBeemon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Plant",
+		"memory": "4",
+		"image": "fanbeemon",
+		"modes": [],
+		"from": [
+			"tanemon"
+		],
+		"to": [
+			"guardromon-gold",
+			"stingmon",
+			"togemon",
+			"raptordramon",
+			"waspmon"
+		]
+	},
+	{
+		"slug": "veemon",
+		"number": "053",
+		"name": "Veemon",
+		"generation": "Rookie",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "5",
+		"image": "veemon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"lobomon",
+			"exveemon",
+			"strikedramon",
+			"veedramon",
+			"flamedramon",
+			"magnamon"
+		]
+	},
+	{
+		"slug": "salamon",
+		"number": "054",
+		"name": "Salamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "4",
+		"image": "salamon",
+		"modes": [],
+		"from": [
+			"nyaromon"
+		],
+		"to": [
+			"socerimon",
+			"gatomon",
+			"baohuckmon",
+			"veedramon",
+			"frigimon",
+			"reppamon"
+		]
+	},
+	{
+		"slug": "betamon",
+		"number": "055",
+		"name": "Betamon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Water",
+		"memory": "4",
+		"image": "betamon",
+		"modes": [],
+		"from": [
+			"bukamon"
+		],
+		"to": [
+			"airdramon",
+			"shellnumemon",
+			"gekomon",
+			"seadramon",
+			"numemon",
+			"vegiemon"
+		]
+	},
+	{
+		"slug": "hawkmon",
+		"number": "056",
+		"name": "Hawkmon",
+		"generation": "Rookie",
+		"attribute": "Free",
+		"type": "Wind",
+		"memory": "5",
+		"image": "hawkmon",
+		"modes": [],
+		"from": [
+			"tokomon"
+		],
+		"to": [
+			"aquilamon",
+			"airdramon",
+			"birdramon",
+			"peckmon",
+			"meramon"
+		]
+	},
+	{
+		"slug": "mushroomon",
+		"number": "057",
+		"name": "Mushroomon",
+		"generation": "Rookie",
+		"attribute": "Virus",
+		"type": "Plant",
+		"memory": "4",
+		"image": "mushmon",
+		"modes": [],
+		"from": [
+			"yokomon"
+		],
+		"to": [
+			"woodmon",
+			"sunflowmon",
+			"mudfrigimon",
+			"vegiemon"
+		]
+	},
+	{
+		"slug": "monodramon",
+		"number": "058",
+		"name": "Monodramon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "4",
+		"image": "monodramon",
+		"modes": [],
+		"from": [
+			"tsunomon"
+		],
+		"to": [
+			"kurisarimon",
+			"coredramon-blue",
+			"strikedramon",
+			"dorugamon",
+			"raptordramon"
+		]
+	},
+	{
+		"slug": "lalamon",
+		"number": "059",
+		"name": "Lalamon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Plant",
+		"memory": "4",
+		"image": "lalamon",
+		"modes": [],
+		"from": [
+			"tanemon"
+		],
+		"to": [
+			"woodmon",
+			"sunflowmon",
+			"togemon",
+			"vegiemon"
+		]
+	},
+	{
+		"slug": "lucemon",
+		"number": "060",
+		"name": "Lucemon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "14",
+		"image": "lucemon",
+		"modes": [],
+		"from": [
+			"tokomon"
+		],
+		"to": [
+			"angemon",
+			"devimon",
+			"lucemon-fm"
+		]
+	},
+	{
+		"slug": "lunamon",
+		"number": "061",
+		"name": "Lunamon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "5",
+		"image": "lunamon",
+		"modes": [],
+		"from": [
+			"nyaromon"
+		],
+		"to": [
+			"sangloupmon",
+			"gatomon",
+			"lekismon",
+			"sistermon-ciel"
+		]
+	},
+	{
+		"slug": "renamon",
+		"number": "062",
+		"name": "Renamon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Plant",
+		"memory": "5",
+		"image": "renamon",
+		"modes": [],
+		"from": [
+			"tanemon"
+		],
+		"to": [
+			"woodmon",
+			"garurumon",
+			"kyubimon",
+			"turuiemon",
+			"blackgatomon",
+			"lekismon"
+		]
+	},
+	{
+		"slug": "lopmon",
+		"number": "063",
+		"name": "Lopmon",
+		"generation": "Rookie",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "4",
+		"image": "lopmon",
+		"modes": [],
+		"from": [
+			"pagumon"
+		],
+		"to": [
+			"wizardmon",
+			"gargomon",
+			"mudfrigimon",
+			"devimon",
+			"turuiemon",
+			"blackgatomon"
+		]
+	},
+	{
+		"slug": "wormmon",
+		"number": "064",
+		"name": "Wormmon",
+		"generation": "Rookie",
+		"attribute": "Free",
+		"type": "Plant",
+		"memory": "4",
+		"image": "wormmon",
+		"modes": [],
+		"from": [
+			"yokomon"
+		],
+		"to": [
+			"icedevimon",
+			"kabuterimon",
+			"kuwagamon",
+			"stingmon",
+			"hudiemon",
+			"waspmon"
+		]
+	},
+	{
+		"slug": "icedevimon",
+		"number": "065",
+		"name": "IceDevimon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Water",
+		"memory": "8",
+		"image": "icedevimon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"demidevimon",
+			"wormmon"
+		],
+		"to": [
+			"arcadiamon-ultimate",
+			"myotismon",
+			"cherrymon",
+			"dragomon",
+			"ladydevimon"
+		]
+	},
+	{
+		"slug": "icemon",
+		"number": "066",
+		"name": "Icemon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "6",
+		"image": "icemon",
+		"modes": [],
+		"from": [
+			"gotsumon",
+			"gomamon"
+		],
+		"to": [
+			"meteormon",
+			"zudomon",
+			"panjyamon"
+		]
+	},
+	{
+		"slug": "aquilamon",
+		"number": "067",
+		"name": "Aquilamon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Wind",
+		"memory": "8",
+		"image": "aquilamon",
+		"modes": [],
+		"from": [
+			"biyomon",
+			"falcomon",
+			"hawkmon"
+		],
+		"to": [
+			"aeroveedramon",
+			"garudamon",
+			"silphymon",
+			"hippogryphonmon",
+			"crowmon"
+		]
+	},
+	{
+		"slug": "agunimon",
+		"number": "068",
+		"name": "Agunimon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Fire",
+		"memory": "8",
+		"image": "agunimon",
+		"modes": [],
+		"from": [
+			"agumon",
+			"guilmon"
+		],
+		"to": [
+			"burninggreymon",
+			"skullmeramon",
+			"matadormon",
+			"rizegreymon"
+		]
+	},
+	{
+		"slug": "arcadiamon-champion",
+		"number": "069",
+		"name": "Arcadiamon Champion",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "8",
+		"image": "arkadimon_4",
+		"modes": [],
+		"from": [
+			"arcadiamon-rookie",
+			"keramon",
+			"dracmon"
+		],
+		"to": [
+			"arcadiamon-ultimate",
+			"infermon",
+			"skullsatamon"
+		]
+	},
+	{
+		"slug": "ankylomon",
+		"number": "070",
+		"name": "Ankylomon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Earth",
+		"memory": "6",
+		"image": "ankylomon",
+		"modes": [],
+		"from": [
+			"armadillomon",
+			"gotsumon",
+			"gomamon"
+		],
+		"to": [
+			"meteormon",
+			"groundramon",
+			"shakkoumon",
+			"skullgreymon",
+			"magnaangemon"
+		]
+	},
+	{
+		"slug": "ikkakumon",
+		"number": "071",
+		"name": "Ikkakumon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Water",
+		"memory": "8",
+		"image": "ikkakumon",
+		"modes": [],
+		"from": [
+			"gomamon",
+			"syakomon",
+			"terriermon"
+		],
+		"to": [
+			"zudomon",
+			"triceramon",
+			"whamon",
+			"machgaogamon"
+		]
+	},
+	{
+		"slug": "wizardmon",
+		"number": "072",
+		"name": "Wizardmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Dark",
+		"memory": "8",
+		"image": "wizardmon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"keramon",
+			"lopmon"
+		],
+		"to": [
+			"myotismon",
+			"skullmeramon",
+			"phantomon",
+			"wisemon"
+		]
+	},
+	{
+		"slug": "lobomon",
+		"number": "073",
+		"name": "Lobomon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Light",
+		"memory": "8",
+		"image": "wolfmon",
+		"modes": [],
+		"from": [
+			"gabumon",
+			"kudamon",
+			"veemon"
+		],
+		"to": [
+			"kendogarurumon",
+			"knightmon",
+			"weregarurumon"
+		]
+	},
+	{
+		"slug": "woodmon",
+		"number": "074",
+		"name": "Woodmon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Plant",
+		"memory": "6",
+		"image": "woodmon",
+		"modes": [],
+		"from": [
+			"palmon",
+			"mushroomon",
+			"lalamon",
+			"renamon"
+		],
+		"to": [
+			"cherrymon",
+			"taomon",
+			"pumpkinmon"
+		]
+	},
+	{
+		"slug": "airdramon",
+		"number": "075",
+		"name": "Airdramon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "6",
+		"image": "airdramon",
+		"modes": [],
+		"from": [
+			"biyomon",
+			"betamon",
+			"hawkmon"
+		],
+		"to": [
+			"wingdramon",
+			"megaseadramon",
+			"megadramon",
+			"metalgreymon"
+		]
+	},
+	{
+		"slug": "exveemon",
+		"number": "076",
+		"name": "ExVeemon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "8",
+		"image": "exveemon",
+		"modes": [],
+		"from": [
+			"patamon",
+			"falcomon",
+			"veemon"
+		],
+		"to": [
+			"wingdramon",
+			"dinobeemon",
+			"paildramon",
+			"magnaangemon",
+			"rizegreymon"
+		]
+	},
+	{
+		"slug": "angemon",
+		"number": "077",
+		"name": "Angemon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "8",
+		"image": "angemon",
+		"modes": [],
+		"from": [
+			"kudamon",
+			"patamon",
+			"lucemon"
+		],
+		"to": [
+			"garudamon",
+			"shakkoumon",
+			"saviorhuckmon",
+			"hippogryphonmon",
+			"magnaangemon"
+		]
+	},
+	{
+		"slug": "ogremon",
+		"number": "078",
+		"name": "Ogremon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "8",
+		"image": "ogremon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"gaomon",
+			"goblimon"
+		],
+		"to": [
+			"skullsatamon",
+			"digitamamon",
+			"skullmeramon",
+			"weregarurumon"
+		]
+	},
+	{
+		"slug": "guardromon",
+		"number": "079",
+		"name": "Guardromon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "6",
+		"image": "guardromon",
+		"modes": [],
+		"from": [
+			"toyagumon",
+			"dorumon",
+			"hagurumon"
+		],
+		"to": [
+			"andromon",
+			"catchmamemon",
+			"grapleomon",
+			"datamon",
+			"metalmamemon"
+		]
+	},
+	{
+		"slug": "guardromon-gold",
+		"number": "080",
+		"name": "Guardromon (Gold)",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Electric",
+		"memory": "6",
+		"image": "guardromon_gold",
+		"modes": [],
+		"from": [
+			"solarmon",
+			"toyagumon",
+			"fanbeemon"
+		],
+		"to": [
+			"andromon",
+			"grademon",
+			"duramon",
+			"magnamon",
+			"rapidmon-armor"
+		]
+	},
+	{
+		"slug": "gaogamon",
+		"number": "081",
+		"name": "GaoGamon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Wind",
+		"memory": "8",
+		"image": "gaogamon",
+		"modes": [],
+		"from": [
+			"gaomon",
+			"gazimon",
+			"goblimon"
+		],
+		"to": [
+			"grapleomon",
+			"machgaogamon",
+			"weregarurumon"
+		]
+	},
+	{
+		"slug": "kabuterimon",
+		"number": "082",
+		"name": "Kabuterimon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Plant",
+		"memory": "6",
+		"image": "kabuterimon",
+		"modes": [],
+		"from": [
+			"tentomon",
+			"biyomon",
+			"wormmon"
+		],
+		"to": [
+			"megakabuterimon",
+			"cherrymon",
+			"lilamon"
+		]
+	},
+	{
+		"slug": "shellnumemon",
+		"number": "083",
+		"name": "ShellNumemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Water",
+		"memory": "6",
+		"image": "karatukinumemon",
+		"modes": [],
+		"from": [
+			"otamamon",
+			"syakomon",
+			"betamon"
+		],
+		"to": [
+			"shogungekomon",
+			"blackkingnumemon",
+			"megaseadramon"
+		]
+	},
+	{
+		"slug": "gargomon",
+		"number": "084",
+		"name": "Gargomon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Electric",
+		"memory": "6",
+		"image": "gargomon",
+		"modes": [],
+		"from": [
+			"gaomon",
+			"terriermon",
+			"lopmon",
+			"sistermon-blanc"
+		],
+		"to": [
+			"antylamon",
+			"wargrowlmon",
+			"rapidmon"
+		]
+	},
+	{
+		"slug": "garurumon",
+		"number": "085",
+		"name": "Garurumon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "8",
+		"image": "garurumon",
+		"modes": [],
+		"from": [
+			"elecmon",
+			"gabumon",
+			"renamon"
+		],
+		"to": [
+			"zudomon",
+			"dorugreymon",
+			"panjyamon",
+			"weregarurumon"
+		]
+	},
+	{
+		"slug": "garurumon-blk",
+		"number": "086",
+		"name": "Garurumon (Blk)",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "8",
+		"image": "garurumon_black",
+		"modes": [],
+		"from": [
+			"elecmon",
+			"gazimon",
+			"gabumon-blk"
+		],
+		"to": [
+			"pandamon",
+			"bluemeramon",
+			"machgaogamon",
+			"weregarurumon-blk"
+		]
+	},
+	{
+		"slug": "kyubimon",
+		"number": "087",
+		"name": "Kyubimon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "8",
+		"image": "kyubimon",
+		"modes": [],
+		"from": [
+			"demidevimon",
+			"biyomon",
+			"renamon"
+		],
+		"to": [
+			"taomon",
+			"monzaemon",
+			"ladydevimon"
+		]
+	},
+	{
+		"slug": "growlmon",
+		"number": "088",
+		"name": "Growlmon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "8",
+		"image": "growlmon",
+		"modes": [],
+		"from": [
+			"agumon-blk",
+			"guilmon",
+			"goblimon"
+		],
+		"to": [
+			"burninggreymon",
+			"gigadramon",
+			"wargrowlmon",
+			"metalgreymon",
+			"metaltyrannomon"
+		]
+	},
+	{
+		"slug": "kurisarimon",
+		"number": "089",
+		"name": "Kurisarimon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Dark",
+		"memory": "8",
+		"image": "chrysalimon",
+		"modes": [],
+		"from": [
+			"arcadiamon-rookie",
+			"gazimon",
+			"keramon",
+			"demidevimon",
+			"monodramon"
+		],
+		"to": [
+			"arcadiamon-ultimate",
+			"infermon",
+			"cyberdramon",
+			"taomon"
+		]
+	},
+	{
+		"slug": "greymon",
+		"number": "090",
+		"name": "Greymon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "8",
+		"image": "greymon",
+		"modes": [],
+		"from": [
+			"agumon",
+			"toyagumon",
+			"hackmon"
+		],
+		"to": [
+			"skullgreymon",
+			"megadramon",
+			"metalgreymon",
+			"metalgreymon-blue"
+		]
+	},
+	{
+		"slug": "greymon-blue",
+		"number": "091",
+		"name": "Greymon (Blue)",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "8",
+		"image": "greymon_blue",
+		"modes": [],
+		"from": [
+			"agumon-blk",
+			"guilmon",
+			"goblimon"
+		],
+		"to": [
+			"triceramon",
+			"dorugreymon",
+			"knightmon",
+			"metalgreymon-blue"
+		]
+	},
+	{
+		"slug": "clockmon",
+		"number": "092",
+		"name": "Clockmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Electric",
+		"memory": "6",
+		"image": "clockmon",
+		"modes": [],
+		"from": [
+			"gotsumon",
+			"solarmon",
+			"toyagumon",
+			"hagurumon"
+		],
+		"to": [
+			"andromon",
+			"knightmon",
+			"datamon",
+			"wisemon"
+		]
+	},
+	{
+		"slug": "kuwagamon",
+		"number": "093",
+		"name": "Kuwagamon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Plant",
+		"memory": "6",
+		"image": "kuwagamon",
+		"modes": [],
+		"from": [
+			"tentomon",
+			"palmon",
+			"wormmon"
+		],
+		"to": [
+			"okuwamon",
+			"cannonbeemon",
+			"cherrymon"
+		]
+	},
+	{
+		"slug": "gekomon",
+		"number": "094",
+		"name": "Gekomon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Water",
+		"memory": "6",
+		"image": "gekomon",
+		"modes": [],
+		"from": [
+			"otamamon",
+			"syakomon",
+			"betamon"
+		],
+		"to": [
+			"shogungekomon",
+			"whamon",
+			"megaseadramon"
+		]
+	},
+	{
+		"slug": "geremon",
+		"number": "095",
+		"name": "Geremon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "6",
+		"image": "geremon",
+		"modes": [],
+		"from": [
+			"armadillomon",
+			"elecmon",
+			"solarmon"
+		],
+		"to": [
+			"etemon",
+			"superstarmon",
+			"metalmamemon"
+		]
+	},
+	{
+		"slug": "coredramon-blue",
+		"number": "096",
+		"name": "Coredramon (Blue)",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "8",
+		"image": "coredramon_blue",
+		"modes": [],
+		"from": [
+			"dracomon",
+			"monodramon"
+		],
+		"to": [
+			"wingdramon",
+			"aeroveedramon",
+			"bluemeramon"
+		]
+	},
+	{
+		"slug": "coredramon-green",
+		"number": "097",
+		"name": "Coredramon (Green)",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "8",
+		"image": "coredramon_green",
+		"modes": [],
+		"from": [
+			"goblimon",
+			"dracomon"
+		],
+		"to": [
+			"groundramon",
+			"triceramon",
+			"wargrowlmon"
+		]
+	},
+	{
+		"slug": "goldnumemon",
+		"number": "098",
+		"name": "GoldNumemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Light",
+		"memory": "6",
+		"image": "goldnumemon",
+		"modes": [],
+		"from": [
+			"armadillomon",
+			"kudamon",
+			"zubamon",
+			"hagurumon"
+		],
+		"to": [
+			"blackkingnumemon",
+			"vademon",
+			"platinumnumemon"
+		]
+	},
+	{
+		"slug": "golemon",
+		"number": "099",
+		"name": "Golemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "6",
+		"image": "golemon",
+		"modes": [],
+		"from": [
+			"armadillomon",
+			"gotsumon",
+			"solarmon"
+		],
+		"to": [
+			"meteormon",
+			"pumpkinmon",
+			"volcanomon"
+		]
+	},
+	{
+		"slug": "cyclonemon",
+		"number": "100",
+		"name": "Cyclonemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "6",
+		"image": "cyclomon",
+		"modes": [],
+		"from": [
+			"agumon-blk",
+			"armadillomon",
+			"dorumon"
+		],
+		"to": [
+			"dorugreymon",
+			"datamon",
+			"megadramon"
+		]
+	},
+	{
+		"slug": "sangloupmon",
+		"number": "101",
+		"name": "Sangloupmon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "6",
+		"image": "sangloupmon",
+		"modes": [],
+		"from": [
+			"gaomon",
+			"dracmon",
+			"lunamon"
+		],
+		"to": [
+			"myotismon",
+			"kendogarurumon",
+			"matadormon",
+			"weregarurumon-blk"
+		]
+	},
+	{
+		"slug": "sunflowmon",
+		"number": "102",
+		"name": "Sunflowmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Plant",
+		"memory": "6",
+		"image": "sunflowmon",
+		"modes": [],
+		"from": [
+			"tentomon",
+			"palmon",
+			"mushroomon",
+			"lalamon"
+		],
+		"to": [
+			"angewomon",
+			"lilamon",
+			"lillymon"
+		]
+	},
+	{
+		"slug": "seadramon",
+		"number": "103",
+		"name": "Seadramon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "6",
+		"image": "seadramon",
+		"modes": [],
+		"from": [
+			"otamamon",
+			"syakomon",
+			"betamon"
+		],
+		"to": [
+			"shogungekomon",
+			"whamon",
+			"megaseadramon",
+			"hisyaryumon"
+		]
+	},
+	{
+		"slug": "coelamon",
+		"number": "104",
+		"name": "Coelamon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "6",
+		"image": "coelamon",
+		"modes": [],
+		"from": [
+			"otamamon",
+			"syakomon"
+		],
+		"to": [
+			"andromon",
+			"dragomon",
+			"megaseadramon",
+			"hisyaryumon"
+		]
+	},
+	{
+		"slug": "geogreymon",
+		"number": "105",
+		"name": "GeoGreymon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "8",
+		"image": "geogreymon",
+		"modes": [],
+		"from": [
+			"agumon",
+			"guilmon",
+			"hackmon"
+		],
+		"to": [
+			"gigadramon",
+			"groundramon",
+			"skullgreymon",
+			"rizegreymon"
+		]
+	},
+	{
+		"slug": "sukamon",
+		"number": "106",
+		"name": "Sukamon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "6",
+		"image": "sukamon",
+		"modes": [],
+		"from": [
+			"agumon",
+			"elecmon",
+			"chuumon",
+			"toyagumon"
+		],
+		"to": [
+			"etemon",
+			"superstarmon",
+			"vademon"
+		]
+	},
+	{
+		"slug": "starmon",
+		"number": "107",
+		"name": "Starmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Neutral",
+		"memory": "6",
+		"image": "starmon",
+		"modes": [],
+		"from": [
+			"gotsumon",
+			"solarmon",
+			"toyagumon",
+			"hagurumon"
+		],
+		"to": [
+			"catchmamemon",
+			"crescemon",
+			"superstarmon",
+			"mamemon",
+			"metalmamemon"
+		]
+	},
+	{
+		"slug": "stingmon",
+		"number": "108",
+		"name": "Stingmon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Plant",
+		"memory": "8",
+		"image": "stingmon",
+		"modes": [],
+		"from": [
+			"tentomon",
+			"falcomon",
+			"fanbeemon",
+			"wormmon"
+		],
+		"to": [
+			"infermon",
+			"okuwamon",
+			"dinobeemon",
+			"paildramon"
+		]
+	},
+	{
+		"slug": "strikedramon",
+		"number": "109",
+		"name": "Strikedramon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Earth",
+		"memory": "6",
+		"image": "strikedramon",
+		"modes": [],
+		"from": [
+			"gomamon",
+			"veemon",
+			"monodramon"
+		],
+		"to": [
+			"cyberdramon",
+			"saviorhuckmon",
+			"weregarurumon"
+		]
+	},
+	{
+		"slug": "zubaeagermon",
+		"number": "110",
+		"name": "Zubaeagermon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "8",
+		"image": "zubaeagermon",
+		"modes": [],
+		"from": [
+			"zubamon",
+			"hackmon"
+		],
+		"to": [
+			"kendogarurumon",
+			"duramon",
+			"phantomon"
+		]
+	},
+	{
+		"slug": "socerimon",
+		"number": "111",
+		"name": "Socerimon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Water",
+		"memory": "8",
+		"image": "sorcerymon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"gomamon",
+			"salamon"
+		],
+		"to": [
+			"antylamon",
+			"piximon",
+			"wisemon"
+		]
+	},
+	{
+		"slug": "tankmon",
+		"number": "112",
+		"name": "Tankmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Electric",
+		"memory": "6",
+		"image": "tankmon",
+		"modes": [],
+		"from": [
+			"agumon-blk",
+			"armadillomon",
+			"gotsumon"
+		],
+		"to": [
+			"andromon",
+			"gigadramon",
+			"cannonbeemon",
+			"knightmon",
+			"volcanomon"
+		]
+	},
+	{
+		"slug": "mudfrigimon",
+		"number": "113",
+		"name": "MudFrigimon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "6",
+		"image": "mudfrigimon",
+		"modes": [],
+		"from": [
+			"palmon",
+			"mushroomon",
+			"lopmon"
+		],
+		"to": [
+			"meteormon",
+			"pandamon",
+			"pumpkinmon"
+		]
+	},
+	{
+		"slug": "tyrannomon",
+		"number": "114",
+		"name": "Tyrannomon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "6",
+		"image": "tyranomon",
+		"modes": [],
+		"from": [
+			"agumon",
+			"agumon-blk",
+			"guilmon"
+		],
+		"to": [
+			"mamemon",
+			"megadramon",
+			"metalgreymon-blue",
+			"metaltyrannomon"
+		]
+	},
+	{
+		"slug": "gatomon",
+		"number": "115",
+		"name": "Gatomon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "8",
+		"image": "gatomon",
+		"modes": [],
+		"from": [
+			"terriermon",
+			"patamon",
+			"salamon",
+			"lunamon"
+		],
+		"to": [
+			"angewomon",
+			"silphymon",
+			"pandamon",
+			"lillymon"
+		]
+	},
+	{
+		"slug": "devimon",
+		"number": "116",
+		"name": "Devimon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "8",
+		"image": "devimon",
+		"modes": [],
+		"from": [
+			"dracmon",
+			"demidevimon",
+			"lucemon",
+			"lopmon"
+		],
+		"to": [
+			"infermon",
+			"myotismon",
+			"skullsatamon",
+			"bluemeramon",
+			"metalgreymon-blue"
+		]
+	},
+	{
+		"slug": "turuiemon",
+		"number": "117",
+		"name": "Turuiemon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "6",
+		"image": "turuiemon",
+		"modes": [],
+		"from": [
+			"renamon",
+			"lopmon"
+		],
+		"to": [
+			"antylamon",
+			"cyberdramon",
+			"monzaemon"
+		]
+	},
+	{
+		"slug": "togemon",
+		"number": "118",
+		"name": "Togemon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Plant",
+		"memory": "8",
+		"image": "togemon",
+		"modes": [],
+		"from": [
+			"gaomon",
+			"palmon",
+			"fanbeemon",
+			"lalamon"
+		],
+		"to": [
+			"pumpkinmon",
+			"machgaogamon",
+			"lillymon"
+		]
+	},
+	{
+		"slug": "dorugamon",
+		"number": "119",
+		"name": "Dorugamon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "8",
+		"image": "dorugamon",
+		"modes": [],
+		"from": [
+			"gazimon",
+			"gabumon",
+			"dorumon",
+			"monodramon"
+		],
+		"to": [
+			"grademon",
+			"chirinmon",
+			"dorugreymon",
+			"rizegreymon"
+		]
+	},
+	{
+		"slug": "nanimon",
+		"number": "120",
+		"name": "Nanimon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "6",
+		"image": "nanimon",
+		"modes": [],
+		"from": [
+			"elecmon",
+			"gazimon",
+			"goblimon",
+			"chuumon"
+		],
+		"to": [
+			"meteormon",
+			"superstarmon",
+			"digitamamon"
+		]
+	},
+	{
+		"slug": "numemon",
+		"number": "121",
+		"name": "Numemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "6",
+		"image": "numemon",
+		"modes": [],
+		"from": [
+			"otamamon",
+			"gabumon",
+			"betamon"
+		],
+		"to": [
+			"etemon",
+			"blackkingnumemon",
+			"monzaemon"
+		]
+	},
+	{
+		"slug": "birdramon",
+		"number": "122",
+		"name": "Birdramon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "8",
+		"image": "birdramon",
+		"modes": [],
+		"from": [
+			"patamon",
+			"biyomon",
+			"hawkmon"
+		],
+		"to": [
+			"burninggreymon",
+			"aeroveedramon",
+			"garudamon",
+			"chirinmon",
+			"hippogryphonmon",
+			"crowmon"
+		]
+	},
+	{
+		"slug": "baohuckmon",
+		"number": "123",
+		"name": "BaoHuckmon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "8",
+		"image": "baohackmon",
+		"modes": [],
+		"from": [
+			"zubamon",
+			"hackmon",
+			"salamon"
+		],
+		"to": [
+			"kendogarurumon",
+			"saviorhuckmon",
+			"rizegreymon"
+		]
+	},
+	{
+		"slug": "bakemon",
+		"number": "124",
+		"name": "Bakemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "6",
+		"image": "bakemon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"keramon",
+			"demidevimon"
+		],
+		"to": [
+			"myotismon",
+			"pumpkinmon",
+			"phantomon",
+			"bluemeramon",
+			"matadormon",
+			"ladydevimon"
+		]
+	},
+	{
+		"slug": "veedramon",
+		"number": "125",
+		"name": "Veedramon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "8",
+		"image": "veedramon",
+		"modes": [],
+		"from": [
+			"gabumon",
+			"dracomon",
+			"veemon",
+			"salamon"
+		],
+		"to": [
+			"aeroveedramon",
+			"cyberdramon",
+			"wargrowlmon",
+			"metaltyrannomon"
+		]
+	},
+	{
+		"slug": "hudiemon",
+		"number": "126",
+		"name": "Hudiemon",
+		"generation": "Champion",
+		"attribute": "Free",
+		"type": "Plant",
+		"memory": "8",
+		"image": "hudiemon",
+		"modes": [],
+		"from": [
+			"wormmon"
+		],
+		"to": [
+			"cannonbeemon",
+			"lilamon",
+			"lillymon"
+		]
+	},
+	{
+		"slug": "platinumsukamon",
+		"number": "127",
+		"name": "PlatinumSukamon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Neutral",
+		"memory": "6",
+		"image": "platinumsukamon",
+		"modes": [],
+		"from": [
+			"keramon",
+			"hagurumon",
+			"hackmon"
+		],
+		"to": [
+			"etemon",
+			"catchmamemon",
+			"vademon",
+			"metalmamemon"
+		]
+	},
+	{
+		"slug": "blackgatomon",
+		"number": "128",
+		"name": "BlackGatomon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "8",
+		"image": "black_gatomon",
+		"modes": [],
+		"from": [
+			"impmon",
+			"chuumon",
+			"renamon",
+			"lopmon"
+		],
+		"to": [
+			"cyberdramon",
+			"knightmon",
+			"ladydevimon",
+			"weregarurumon-blk"
+		]
+	},
+	{
+		"slug": "vegiemon",
+		"number": "129",
+		"name": "Vegiemon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Plant",
+		"memory": "6",
+		"image": "vegimon",
+		"modes": [],
+		"from": [
+			"gabumon-blk",
+			"palmon",
+			"betamon",
+			"mushroomon",
+			"lalamon"
+		],
+		"to": [
+			"megakabuterimon",
+			"digitamamon",
+			"lilamon"
+		]
+	},
+	{
+		"slug": "peckmon",
+		"number": "130",
+		"name": "Peckmon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "8",
+		"image": "peckmon",
+		"modes": [],
+		"from": [
+			"kudamon",
+			"falcomon",
+			"hawkmon"
+		],
+		"to": [
+			"antylamon",
+			"piximon",
+			"crowmon"
+		]
+	},
+	{
+		"slug": "meramon",
+		"number": "131",
+		"name": "Meramon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "6",
+		"image": "meramon",
+		"modes": [],
+		"from": [
+			"agumon",
+			"guilmon",
+			"solarmon",
+			"hawkmon"
+		],
+		"to": [
+			"burninggreymon",
+			"skullmeramon",
+			"panjyamon",
+			"bluemeramon",
+			"volcanomon",
+			"mamemon"
+		]
+	},
+	{
+		"slug": "monochromon",
+		"number": "132",
+		"name": "Monochromon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "6",
+		"image": "monochromon",
+		"modes": [],
+		"from": [
+			"agumon-blk",
+			"hackmon"
+		],
+		"to": [
+			"skullgreymon",
+			"triceramon",
+			"metaltyrannomon"
+		]
+	},
+	{
+		"slug": "frigimon",
+		"number": "133",
+		"name": "Frigimon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Water",
+		"memory": "6",
+		"image": "frigimon",
+		"modes": [],
+		"from": [
+			"gabumon",
+			"gabumon-blk",
+			"gomamon",
+			"salamon"
+		],
+		"to": [
+			"angewomon",
+			"crescemon",
+			"zudomon",
+			"monzaemon"
+		]
+	},
+	{
+		"slug": "unimon",
+		"number": "134",
+		"name": "Unimon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "6",
+		"image": "unimon",
+		"modes": [],
+		"from": [
+			"terriermon",
+			"patamon"
+		],
+		"to": [
+			"piximon",
+			"hippogryphonmon",
+			"magnaangemon"
+		]
+	},
+	{
+		"slug": "raptordramon",
+		"number": "135",
+		"name": "Raptordramon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "6",
+		"image": "raptordramon",
+		"modes": [],
+		"from": [
+			"dorumon",
+			"fanbeemon",
+			"monodramon",
+			"ryudamon"
+		],
+		"to": [
+			"gigadramon",
+			"grademon",
+			"duramon",
+			"dorugreymon"
+		]
+	},
+	{
+		"slug": "raremon",
+		"number": "136",
+		"name": "Raremon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "6",
+		"image": "raremon",
+		"modes": [],
+		"from": [
+			"otamamon",
+			"gabumon-blk",
+			"chuumon",
+			"dracmon"
+		],
+		"to": [
+			"skullsatamon",
+			"dragomon",
+			"phantomon",
+			"blackkingnumemon",
+			"metalgreymon-blue"
+		]
+	},
+	{
+		"slug": "leomon",
+		"number": "137",
+		"name": "Leomon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Earth",
+		"memory": "8",
+		"image": "leomon",
+		"modes": [],
+		"from": [
+			"arcadiamon-rookie",
+			"elecmon",
+			"gaomon",
+			"gazimon"
+		],
+		"to": [
+			"meteormon",
+			"grapleomon",
+			"grademon",
+			"panjyamon",
+			"metalgreymon"
+		]
+	},
+	{
+		"slug": "lekismon",
+		"number": "138",
+		"name": "Lekismon",
+		"generation": "Champion",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "6",
+		"image": "lekismon",
+		"modes": [],
+		"from": [
+			"lunamon",
+			"renamon",
+			"sistermon-blanc"
+		],
+		"to": [
+			"antylamon",
+			"crescemon",
+			"machgaogamon"
+		]
+	},
+	{
+		"slug": "reppamon",
+		"number": "139",
+		"name": "Reppamon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "8",
+		"image": "reppamon",
+		"modes": [],
+		"from": [
+			"gabumon-blk",
+			"kudamon",
+			"patamon",
+			"salamon",
+			"ryudamon"
+		],
+		"to": [
+			"chirinmon",
+			"piximon",
+			"rapidmon"
+		]
+	},
+	{
+		"slug": "waspmon",
+		"number": "140",
+		"name": "Waspmon",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "6",
+		"image": "waspmon",
+		"modes": [],
+		"from": [
+			"tentomon",
+			"dorumon",
+			"fanbeemon",
+			"wormmon"
+		],
+		"to": [
+			"megakabuterimon",
+			"okuwamon",
+			"cannonbeemon",
+			"rapidmon"
+		]
+	},
+	{
+		"slug": "megakabuterimon",
+		"number": "141",
+		"name": "MegaKabuterimon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Plant",
+		"memory": "12",
+		"image": "megakabuterimon",
+		"modes": [],
+		"from": [
+			"kabuterimon",
+			"vegiemon",
+			"waspmon"
+		],
+		"to": [
+			"grankuwagamon",
+			"herculeskabuterimon",
+			"magnadramon"
+		]
+	},
+	{
+		"slug": "arcadiamon-ultimate",
+		"number": "142",
+		"name": "Arcadiamon Ultimate",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "14",
+		"image": "arkadimon_5",
+		"modes": [],
+		"from": [
+			"icedevimon",
+			"arcadiamon-champion",
+			"kurisarimon"
+		],
+		"to": [
+			"arcadiamon-mega",
+			"diaboromon",
+			"creepymon"
+		]
+	},
+	{
+		"slug": "antylamon",
+		"number": "143",
+		"name": "Antylamon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Neutral",
+		"memory": "12",
+		"image": "andiramon",
+		"modes": [],
+		"from": [
+			"gargomon",
+			"socerimon",
+			"turuiemon",
+			"peckmon",
+			"lekismon"
+		],
+		"to": [
+			"kerpymon-blk",
+			"kerpymon-good",
+			"dianamon",
+			"diaboromon"
+		]
+	},
+	{
+		"slug": "andromon",
+		"number": "144",
+		"name": "Andromon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Electric",
+		"memory": "12",
+		"image": "andromon",
+		"modes": [],
+		"from": [
+			"guardromon",
+			"guardromon-gold",
+			"clockmon",
+			"coelamon",
+			"tankmon"
+		],
+		"to": [
+			"craniamon",
+			"tigervespamon",
+			"hiandromon"
+		]
+	},
+	{
+		"slug": "meteormon",
+		"number": "145",
+		"name": "Meteormon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "12",
+		"image": "meteormon",
+		"modes": [],
+		"from": [
+			"icemon",
+			"ankylomon",
+			"golemon",
+			"mudfrigimon",
+			"nanimon",
+			"leomon"
+		],
+		"to": [
+			"ebemon",
+			"dianamon",
+			"metaletemon"
+		]
+	},
+	{
+		"slug": "infermon",
+		"number": "146",
+		"name": "Infermon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Dark",
+		"memory": "14",
+		"image": "infermon",
+		"modes": [],
+		"from": [
+			"arcadiamon-champion",
+			"kurisarimon",
+			"stingmon",
+			"devimon"
+		],
+		"to": [
+			"arcadiamon-mega",
+			"venommyotismon",
+			"diaboromon",
+			"beelzemon"
+		]
+	},
+	{
+		"slug": "myotismon",
+		"number": "147",
+		"name": "Myotismon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "14",
+		"image": "myotismon",
+		"modes": [],
+		"from": [
+			"icedevimon",
+			"wizardmon",
+			"sangloupmon",
+			"devimon",
+			"bakemon"
+		],
+		"to": [
+			"arcadiamon-mega",
+			"venommyotismon",
+			"grandracmon",
+			"barbamon",
+			"piedmon"
+		]
+	},
+	{
+		"slug": "wingdramon",
+		"number": "148",
+		"name": "Wingdramon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "14",
+		"image": "wingdramon",
+		"modes": [],
+		"from": [
+			"airdramon",
+			"exveemon",
+			"coredramon-blue"
+		],
+		"to": [
+			"ulforceveedramon",
+			"slayerdramon",
+			"dynasmon"
+		]
+	},
+	{
+		"slug": "burninggreymon",
+		"number": "149",
+		"name": "BurningGreymon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Fire",
+		"memory": "14",
+		"image": "burninggreymon",
+		"modes": [],
+		"from": [
+			"agunimon",
+			"growlmon",
+			"birdramon",
+			"meramon"
+		],
+		"to": [
+			"kaisergreymon"
+		]
+	},
+	{
+		"slug": "aeroveedramon",
+		"number": "150",
+		"name": "AeroVeedramon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "14",
+		"image": "aeroveedramon",
+		"modes": [],
+		"from": [
+			"aquilamon",
+			"coredramon-blue",
+			"birdramon",
+			"veedramon"
+		],
+		"to": [
+			"ulforceveedramon",
+			"goldramon",
+			"dynasmon",
+			"ravemon"
+		]
+	},
+	{
+		"slug": "etemon",
+		"number": "151",
+		"name": "Etemon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "12",
+		"image": "etemon",
+		"modes": [],
+		"from": [
+			"geremon",
+			"sukamon",
+			"numemon",
+			"platinumsukamon"
+		],
+		"to": [
+			"kingetemon",
+			"pilevolcamon",
+			"piedmon",
+			"platinumnumemon",
+			"metaletemon"
+		]
+	},
+	{
+		"slug": "angewomon",
+		"number": "152",
+		"name": "Angewomon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "14",
+		"image": "angewomon",
+		"modes": [],
+		"from": [
+			"sunflowmon",
+			"gatomon",
+			"frigimon"
+		],
+		"to": [
+			"valkyrimon",
+			"ophanimon",
+			"magnadramon",
+			"mastemon"
+		]
+	},
+	{
+		"slug": "okuwamon",
+		"number": "153",
+		"name": "Okuwamon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Plant",
+		"memory": "12",
+		"image": "okuwamon",
+		"modes": [],
+		"from": [
+			"kuwagamon",
+			"stingmon",
+			"waspmon"
+		],
+		"to": [
+			"grankuwagamon",
+			"diaboromon",
+			"herculeskabuterimon"
+		]
+	},
+	{
+		"slug": "garudamon",
+		"number": "154",
+		"name": "Garudamon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "12",
+		"image": "garudamon",
+		"modes": [],
+		"from": [
+			"aquilamon",
+			"angemon",
+			"birdramon"
+		],
+		"to": [
+			"varodurumon",
+			"gryphonmon",
+			"justimon",
+			"hououmon",
+			"ravemon"
+		]
+	},
+	{
+		"slug": "kendogarurumon",
+		"number": "155",
+		"name": "KendoGarurumon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Light",
+		"memory": "14",
+		"image": "kendogarurumon",
+		"modes": [],
+		"from": [
+			"lobomon",
+			"sangloupmon",
+			"zubaeagermon",
+			"baohuckmon"
+		],
+		"to": [
+			"magnagarurumon"
+		]
+	},
+	{
+		"slug": "gigadramon",
+		"number": "156",
+		"name": "Gigadramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Wind",
+		"memory": "12",
+		"image": "gigadramon",
+		"modes": [],
+		"from": [
+			"growlmon",
+			"geogreymon",
+			"tankmon",
+			"raptordramon"
+		],
+		"to": [
+			"groundlocomon",
+			"darkdramon",
+			"dorugoramon",
+			"machinedramon",
+			"megidramon",
+			"metalseadramon"
+		]
+	},
+	{
+		"slug": "catchmamemon",
+		"number": "157",
+		"name": "CatchMamemon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Electric",
+		"memory": "10",
+		"image": "catchmamemon",
+		"modes": [],
+		"from": [
+			"guardromon",
+			"starmon",
+			"platinumsukamon"
+		],
+		"to": [
+			"justimon",
+			"puppetmon",
+			"princemamemon"
+		]
+	},
+	{
+		"slug": "cannonbeemon",
+		"number": "158",
+		"name": "CannonBeemon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "12",
+		"image": "cannonbeemon",
+		"modes": [],
+		"from": [
+			"kuwagamon",
+			"tankmon",
+			"hudiemon",
+			"waspmon",
+			"ginryumon"
+		],
+		"to": [
+			"groundlocomon",
+			"megagargomon",
+			"tigervespamon"
+		]
+	},
+	{
+		"slug": "groundramon",
+		"number": "159",
+		"name": "Groundramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "14",
+		"image": "groundramon",
+		"modes": [],
+		"from": [
+			"ankylomon",
+			"coredramon-green",
+			"geogreymon"
+		],
+		"to": [
+			"vikemon",
+			"brakedramon",
+			"megidramon"
+		]
+	},
+	{
+		"slug": "grapleomon",
+		"number": "160",
+		"name": "GrapLeomon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Electric",
+		"memory": "12",
+		"image": "grapleomon",
+		"modes": [],
+		"from": [
+			"guardromon",
+			"gaogamon",
+			"leomon"
+		],
+		"to": [
+			"saberleomon",
+			"leopardmon",
+			"pilevolcamon",
+			"bancholeomon"
+		]
+	},
+	{
+		"slug": "grademon",
+		"number": "161",
+		"name": "Grademon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "12",
+		"image": "grademon",
+		"modes": [],
+		"from": [
+			"guardromon-gold",
+			"dorugamon",
+			"raptordramon",
+			"leomon"
+		],
+		"to": [
+			"alphamon",
+			"tigervespamon",
+			"durandamon",
+			"dorugoramon",
+			"ouryumon"
+		]
+	},
+	{
+		"slug": "crescemon",
+		"number": "162",
+		"name": "Crescemon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "12",
+		"image": "crescemon",
+		"modes": [],
+		"from": [
+			"starmon",
+			"frigimon",
+			"lekismon"
+		],
+		"to": [
+			"kerpymon-good",
+			"kentaurosmon",
+			"dianamon"
+		]
+	},
+	{
+		"slug": "cyberdramon",
+		"number": "163",
+		"name": "Cyberdramon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Dark",
+		"memory": "14",
+		"image": "cyberdramon",
+		"modes": [],
+		"from": [
+			"kurisarimon",
+			"strikedramon",
+			"turuiemon",
+			"veedramon",
+			"blackgatomon"
+		],
+		"to": [
+			"alphamon",
+			"justimon",
+			"titamon"
+		]
+	},
+	{
+		"slug": "shakkoumon",
+		"number": "164",
+		"name": "Shakkoumon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Light",
+		"memory": "14",
+		"image": "shakkoumon",
+		"modes": [],
+		"from": [
+			"ankylomon",
+			"angemon"
+		],
+		"to": [
+			"vikemon",
+			"chaosgallantmon",
+			"kerpymon-good"
+		]
+	},
+	{
+		"slug": "cherrymon",
+		"number": "165",
+		"name": "Cherrymon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Plant",
+		"memory": "12",
+		"image": "cherrymon",
+		"modes": [],
+		"from": [
+			"icedevimon",
+			"woodmon",
+			"kabuterimon",
+			"kuwagamon"
+		],
+		"to": [
+			"kuzuhamon",
+			"grankuwagamon",
+			"puppetmon"
+		]
+	},
+	{
+		"slug": "silphymon",
+		"number": "166",
+		"name": "Silphymon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Wind",
+		"memory": "14",
+		"image": "silphymon",
+		"modes": [],
+		"from": [
+			"aquilamon",
+			"gatomon"
+		],
+		"to": [
+			"valkyrimon",
+			"gryphonmon",
+			"sakuyamon",
+			"dynasmon",
+			"hououmon"
+		]
+	},
+	{
+		"slug": "superstarmon",
+		"number": "167",
+		"name": "SuperStarmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Light",
+		"memory": "12",
+		"image": "superstarmon",
+		"modes": [],
+		"from": [
+			"geremon",
+			"sukamon",
+			"starmon",
+			"nanimon"
+		],
+		"to": [
+			"gankoomon",
+			"justimon",
+			"platinumnumemon"
+		]
+	},
+	{
+		"slug": "skullgreymon",
+		"number": "168",
+		"name": "SkullGreymon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "14",
+		"image": "skullgreymon",
+		"modes": [],
+		"from": [
+			"ankylomon",
+			"greymon",
+			"geogreymon",
+			"monochromon"
+		],
+		"to": [
+			"shinegreymon",
+			"titamon",
+			"creepymon"
+		]
+	},
+	{
+		"slug": "skullsatamon",
+		"number": "169",
+		"name": "SkullSatamon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "12",
+		"image": "skullsatamon",
+		"modes": [],
+		"from": [
+			"arcadiamon-champion",
+			"ogremon",
+			"devimon",
+			"raremon"
+		],
+		"to": [
+			"grandracmon",
+			"diaboromon",
+			"creepymon"
+		]
+	},
+	{
+		"slug": "zudomon",
+		"number": "170",
+		"name": "Zudomon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Water",
+		"memory": "12",
+		"image": "zudomon",
+		"modes": [],
+		"from": [
+			"icemon",
+			"ikkakumon",
+			"garurumon",
+			"frigimon"
+		],
+		"to": [
+			"vikemon",
+			"plesiomon",
+			"marineangemon",
+			"metalgarurumon"
+		]
+	},
+	{
+		"slug": "saviorhuckmon",
+		"number": "171",
+		"name": "SaviorHuckmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "14",
+		"image": "saviorhackmon",
+		"modes": [],
+		"from": [
+			"angemon",
+			"strikedramon",
+			"baohuckmon"
+		],
+		"to": [
+			"valkyrimon",
+			"jesmon",
+			"slayerdramon"
+		]
+	},
+	{
+		"slug": "taomon",
+		"number": "172",
+		"name": "Taomon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Dark",
+		"memory": "12",
+		"image": "taomon",
+		"modes": [],
+		"from": [
+			"woodmon",
+			"kyubimon",
+			"kurisarimon"
+		],
+		"to": [
+			"kuzuhamon",
+			"sakuyamon",
+			"dianamon"
+		]
+	},
+	{
+		"slug": "dragomon",
+		"number": "173",
+		"name": "Dragomon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Water",
+		"memory": "12",
+		"image": "dagomon",
+		"modes": [],
+		"from": [
+			"icedevimon",
+			"coelamon",
+			"raremon"
+		],
+		"to": [
+			"ebemon",
+			"neptunemon",
+			"leviamon"
+		]
+	},
+	{
+		"slug": "chirinmon",
+		"number": "174",
+		"name": "Chirinmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "14",
+		"image": "chirinmon",
+		"modes": [],
+		"from": [
+			"dorugamon",
+			"birdramon",
+			"reppamon"
+		],
+		"to": [
+			"kentaurosmon",
+			"seraphimon",
+			"metalgarurumon"
+		]
+	},
+	{
+		"slug": "dinobeemon",
+		"number": "175",
+		"name": "Dinobeemon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Plant",
+		"memory": "14",
+		"image": "dinobeemon",
+		"modes": [],
+		"from": [
+			"exveemon",
+			"stingmon"
+		],
+		"to": [
+			"imperialdramon-dm",
+			"grankuwagamon"
+		]
+	},
+	{
+		"slug": "digitamamon",
+		"number": "176",
+		"name": "Digitamamon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Neutral",
+		"memory": "12",
+		"image": "digitamamon",
+		"modes": [],
+		"from": [
+			"ogremon",
+			"nanimon",
+			"vegiemon"
+		],
+		"to": [
+			"titamon",
+			"belphemon-sm",
+			"minervamon"
+		]
+	},
+	{
+		"slug": "skullmeramon",
+		"number": "177",
+		"name": "SkullMeramon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "12",
+		"image": "deathmeramon",
+		"modes": [],
+		"from": [
+			"agunimon",
+			"wizardmon",
+			"ogremon",
+			"meramon"
+		],
+		"to": [
+			"gankoomon",
+			"beelzemon",
+			"boltmon"
+		]
+	},
+	{
+		"slug": "duramon",
+		"number": "178",
+		"name": "Duramon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "14",
+		"image": "duramon",
+		"modes": [],
+		"from": [
+			"guardromon-gold",
+			"zubaeagermon",
+			"raptordramon"
+		],
+		"to": [
+			"jesmon",
+			"tigervespamon",
+			"durandamon"
+		]
+	},
+	{
+		"slug": "shogungekomon",
+		"number": "179",
+		"name": "ShogunGekomon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Water",
+		"memory": "12",
+		"image": "shogungekomon",
+		"modes": [],
+		"from": [
+			"shellnumemon",
+			"gekomon",
+			"seadramon"
+		],
+		"to": [
+			"vikemon",
+			"kingetemon",
+			"plesiomon",
+			"leviamon"
+		]
+	},
+	{
+		"slug": "triceramon",
+		"number": "180",
+		"name": "Triceramon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "12",
+		"image": "triceramon",
+		"modes": [],
+		"from": [
+			"ikkakumon",
+			"greymon-blue",
+			"coredramon-green",
+			"monochromon"
+		],
+		"to": [
+			"grankuwagamon",
+			"saberleomon",
+			"brakedramon"
+		]
+	},
+	{
+		"slug": "dorugreymon",
+		"number": "181",
+		"name": "DoruGreymon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "14",
+		"image": "dorugreymon",
+		"modes": [],
+		"from": [
+			"garurumon",
+			"greymon-blue",
+			"cyclonemon",
+			"dorugamon",
+			"raptordramon"
+		],
+		"to": [
+			"alphamon",
+			"kentaurosmon",
+			"dorugoramon",
+			"brakedramon"
+		]
+	},
+	{
+		"slug": "knightmon",
+		"number": "182",
+		"name": "Knightmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Neutral",
+		"memory": "12",
+		"image": "knightmon",
+		"modes": [],
+		"from": [
+			"lobomon",
+			"greymon-blue",
+			"clockmon",
+			"tankmon",
+			"blackgatomon"
+		],
+		"to": [
+			"craniamon",
+			"durandamon",
+			"leopardmon",
+			"crusadermon"
+		]
+	},
+	{
+		"slug": "datamon",
+		"number": "183",
+		"name": "Datamon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "12",
+		"image": "nanomon",
+		"modes": [],
+		"from": [
+			"guardromon",
+			"clockmon",
+			"cyclonemon"
+		],
+		"to": [
+			"groundlocomon",
+			"machinedramon",
+			"metalgarurumon-blk"
+		]
+	},
+	{
+		"slug": "paildramon",
+		"number": "184",
+		"name": "Paildramon",
+		"generation": "Ultimate",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "14",
+		"image": "paildramon",
+		"modes": [],
+		"from": [
+			"exveemon",
+			"stingmon"
+		],
+		"to": [
+			"imperialdramon-dm"
+		]
+	},
+	{
+		"slug": "panjyamon",
+		"number": "185",
+		"name": "Panjyamon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Water",
+		"memory": "12",
+		"image": "panjyamon",
+		"modes": [],
+		"from": [
+			"icemon",
+			"garurumon",
+			"meramon",
+			"leomon"
+		],
+		"to": [
+			"saberleomon",
+			"bancholeomon",
+			"miragegaogamon"
+		]
+	},
+	{
+		"slug": "pandamon",
+		"number": "186",
+		"name": "Pandamon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "12",
+		"image": "pandamon",
+		"modes": [],
+		"from": [
+			"garurumon",
+			"mudfrigimon",
+			"gatomon",
+			"sistermon-ciel"
+		],
+		"to": [
+			"kingetemon",
+			"justimon",
+			"bancholeomon"
+		]
+	},
+	{
+		"slug": "pumpkinmon",
+		"number": "187",
+		"name": "Pumpkinmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "10",
+		"image": "pumpmon",
+		"modes": [],
+		"from": [
+			"woodmon",
+			"golemon",
+			"mudfrigimon",
+			"togemon",
+			"bakemon"
+		],
+		"to": [
+			"puppetmon",
+			"boltmon",
+			"rosemon"
+		]
+	},
+	{
+		"slug": "piximon",
+		"number": "188",
+		"name": "Piximon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Light",
+		"memory": "12",
+		"image": "piccolomon",
+		"modes": [],
+		"from": [
+			"socerimon",
+			"peckmon",
+			"unimon",
+			"reppamon"
+		],
+		"to": [
+			"ophanimon",
+			"hououmon",
+			"marineangemon"
+		]
+	},
+	{
+		"slug": "hippogryphonmon",
+		"number": "189",
+		"name": "HippoGryphonmon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Wind",
+		"memory": "12",
+		"image": "hippogriffomon",
+		"modes": [],
+		"from": [
+			"aquilamon",
+			"angemon",
+			"birdramon",
+			"unimon"
+		],
+		"to": [
+			"varodurumon",
+			"gryphonmon",
+			"seraphimon"
+		]
+	},
+	{
+		"slug": "phantomon",
+		"number": "190",
+		"name": "Phantomon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "12",
+		"image": "fantomon",
+		"modes": [],
+		"from": [
+			"wizardmon",
+			"zubaeagermon",
+			"bakemon",
+			"raremon"
+		],
+		"to": [
+			"venommyotismon",
+			"titamon",
+			"barbamon"
+		]
+	},
+	{
+		"slug": "blackkingnumemon",
+		"number": "191",
+		"name": "BlackKingNumemon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "10",
+		"image": "blackkingnumemon",
+		"modes": [],
+		"from": [
+			"shellnumemon",
+			"goldnumemon",
+			"numemon",
+			"raremon"
+		],
+		"to": [
+			"platinumnumemon",
+			"princemamemon",
+			"metaletemon"
+		]
+	},
+	{
+		"slug": "bluemeramon",
+		"number": "192",
+		"name": "BlueMeramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "12",
+		"image": "bluemeramon",
+		"modes": [],
+		"from": [
+			"garurumon-blk",
+			"coredramon-blue",
+			"devimon",
+			"bakemon",
+			"meramon"
+		],
+		"to": [
+			"darkdramon",
+			"creepymon",
+			"barbamon",
+			"boltmon"
+		]
+	},
+	{
+		"slug": "vademon",
+		"number": "193",
+		"name": "Vademon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "10",
+		"image": "vademon",
+		"modes": [],
+		"from": [
+			"goldnumemon",
+			"sukamon",
+			"platinumsukamon"
+		],
+		"to": [
+			"ebemon",
+			"hiandromon",
+			"herculeskabuterimon"
+		]
+	},
+	{
+		"slug": "whamon",
+		"number": "194",
+		"name": "Whamon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Water",
+		"memory": "12",
+		"image": "whamon",
+		"modes": [],
+		"from": [
+			"ikkakumon",
+			"gekomon",
+			"seadramon"
+		],
+		"to": [
+			"neptunemon",
+			"plesiomon",
+			"marineangemon",
+			"metalseadramon"
+		]
+	},
+	{
+		"slug": "magnaangemon",
+		"number": "195",
+		"name": "MagnaAngemon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "14",
+		"image": "magnaangemon",
+		"modes": [],
+		"from": [
+			"ankylomon",
+			"exveemon",
+			"angemon",
+			"unimon"
+		],
+		"to": [
+			"valkyrimon",
+			"goldramon",
+			"shinegreymon",
+			"seraphimon",
+			"crusadermon"
+		]
+	},
+	{
+		"slug": "volcanomon",
+		"number": "196",
+		"name": "Volcanomon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "12",
+		"image": "volcamon",
+		"modes": [],
+		"from": [
+			"golemon",
+			"tankmon",
+			"meramon"
+		],
+		"to": [
+			"gankoomon",
+			"pilevolcamon",
+			"metaletemon"
+		]
+	},
+	{
+		"slug": "matadormon",
+		"number": "197",
+		"name": "Matadormon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "12",
+		"image": "matadormon",
+		"modes": [],
+		"from": [
+			"agunimon",
+			"sangloupmon",
+			"bakemon"
+		],
+		"to": [
+			"venommyotismon",
+			"grandracmon",
+			"piedmon"
+		]
+	},
+	{
+		"slug": "machgaogamon",
+		"number": "198",
+		"name": "MachGaogamon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Wind",
+		"memory": "12",
+		"image": "machgaogamon",
+		"modes": [],
+		"from": [
+			"ikkakumon",
+			"gaogamon",
+			"garurumon-blk",
+			"togemon",
+			"lekismon"
+		],
+		"to": [
+			"megagargomon",
+			"bancholeomon",
+			"miragegaogamon",
+			"merukimon"
+		]
+	},
+	{
+		"slug": "mamemon",
+		"number": "199",
+		"name": "Mamemon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "10",
+		"image": "mamemon",
+		"modes": [],
+		"from": [
+			"starmon",
+			"tyrannomon",
+			"meramon"
+		],
+		"to": [
+			"wargreymon",
+			"puppetmon",
+			"princemamemon"
+		]
+	},
+	{
+		"slug": "megaseadramon",
+		"number": "200",
+		"name": "MegaSeadramon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "12",
+		"image": "megaseadramon",
+		"modes": [],
+		"from": [
+			"airdramon",
+			"shellnumemon",
+			"gekomon",
+			"seadramon",
+			"coelamon",
+			"ginryumon"
+		],
+		"to": [
+			"neptunemon",
+			"plesiomon",
+			"metalseadramon",
+			"leviamon"
+		]
+	},
+	{
+		"slug": "megadramon",
+		"number": "201",
+		"name": "Megadramon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Wind",
+		"memory": "12",
+		"image": "megadramon",
+		"modes": [],
+		"from": [
+			"airdramon",
+			"greymon",
+			"cyclonemon",
+			"tyrannomon"
+		],
+		"to": [
+			"ulforceveedramon",
+			"goldramon",
+			"blackwargreymon",
+			"machinedramon",
+			"megidramon"
+		]
+	},
+	{
+		"slug": "wargrowlmon",
+		"number": "202",
+		"name": "WarGrowlmon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "14",
+		"image": "wargrowlmon",
+		"modes": [],
+		"from": [
+			"gargomon",
+			"growlmon",
+			"coredramon-green",
+			"veedramon"
+		],
+		"to": [
+			"chaosgallantmon",
+			"darkdramon",
+			"gallantmon",
+			"megidramon",
+			"rusttyranomon"
+		]
+	},
+	{
+		"slug": "metalgreymon",
+		"number": "203",
+		"name": "MetalGreymon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "14",
+		"image": "metalgreymon",
+		"modes": [],
+		"from": [
+			"airdramon",
+			"growlmon",
+			"greymon",
+			"leomon"
+		],
+		"to": [
+			"wargreymon",
+			"gaiomon",
+			"rusttyranomon"
+		]
+	},
+	{
+		"slug": "metalgreymon-blue",
+		"number": "204",
+		"name": "MetalGreymon (Blue)",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "14",
+		"image": "metalgreymon_blue",
+		"modes": [],
+		"from": [
+			"greymon",
+			"greymon-blue",
+			"tyrannomon",
+			"devimon",
+			"raremon"
+		],
+		"to": [
+			"wargreymon",
+			"gaiomon",
+			"kerpymon-blk",
+			"blackwargreymon"
+		]
+	},
+	{
+		"slug": "metaltyrannomon",
+		"number": "205",
+		"name": "MetalTyrannomon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "12",
+		"image": "metaltyranomon",
+		"modes": [],
+		"from": [
+			"growlmon",
+			"tyrannomon",
+			"veedramon",
+			"monochromon"
+		],
+		"to": [
+			"gallantmon",
+			"blackwargreymon",
+			"brakedramon",
+			"rusttyranomon"
+		]
+	},
+	{
+		"slug": "metalmamemon",
+		"number": "206",
+		"name": "MetalMamemon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Electric",
+		"memory": "10",
+		"image": "metalmamemon",
+		"modes": [],
+		"from": [
+			"guardromon",
+			"geremon",
+			"starmon",
+			"platinumsukamon"
+		],
+		"to": [
+			"ebemon",
+			"hiandromon",
+			"princemamemon"
+		]
+	},
+	{
+		"slug": "monzaemon",
+		"number": "207",
+		"name": "Monzaemon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "12",
+		"image": "monzaemon",
+		"modes": [],
+		"from": [
+			"kyubimon",
+			"turuiemon",
+			"numemon",
+			"frigimon"
+		],
+		"to": [
+			"saberleomon",
+			"sakuyamon",
+			"minervamon"
+		]
+	},
+	{
+		"slug": "crowmon",
+		"number": "208",
+		"name": "Crowmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "12",
+		"image": "yatagaramon",
+		"modes": [],
+		"from": [
+			"aquilamon",
+			"birdramon",
+			"peckmon"
+		],
+		"to": [
+			"varodurumon",
+			"kuzuhamon",
+			"minervamon",
+			"ravemon",
+			"ouryumon"
+		]
+	},
+	{
+		"slug": "rizegreymon",
+		"number": "209",
+		"name": "RizeGreymon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "14",
+		"image": "rizegreymon",
+		"modes": [],
+		"from": [
+			"agunimon",
+			"exveemon",
+			"geogreymon",
+			"dorugamon",
+			"baohuckmon"
+		],
+		"to": [
+			"gaiomon",
+			"shinegreymon",
+			"slayerdramon"
+		]
+	},
+	{
+		"slug": "lilamon",
+		"number": "210",
+		"name": "Lilamon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Plant",
+		"memory": "12",
+		"image": "lilamon",
+		"modes": [],
+		"from": [
+			"kabuterimon",
+			"sunflowmon",
+			"hudiemon",
+			"vegiemon"
+		],
+		"to": [
+			"lilithmon",
+			"rosemon",
+			"lotosmon"
+		]
+	},
+	{
+		"slug": "rapidmon",
+		"number": "211",
+		"name": "Rapidmon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Electric",
+		"memory": "12",
+		"image": "rapidmon",
+		"modes": [],
+		"from": [
+			"gargomon",
+			"reppamon",
+			"waspmon"
+		],
+		"to": [
+			"megagargomon",
+			"tigervespamon",
+			"metalgarurumon-blk"
+		]
+	},
+	{
+		"slug": "lillymon",
+		"number": "212",
+		"name": "Lillymon",
+		"generation": "Ultimate",
+		"attribute": "Data",
+		"type": "Plant",
+		"memory": "12",
+		"image": "lilimon",
+		"modes": [],
+		"from": [
+			"sunflowmon",
+			"gatomon",
+			"togemon",
+			"hudiemon"
+		],
+		"to": [
+			"magnadramon",
+			"rosemon",
+			"lotosmon"
+		]
+	},
+	{
+		"slug": "lucemon-fm",
+		"number": "213",
+		"name": "Lucemon FM",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Neutral",
+		"memory": "22",
+		"image": "lucemon_falldown_mode",
+		"modes": [],
+		"from": [
+			"lucemon"
+		],
+		"to": [
+			"lucemon-sm"
+		]
+	},
+	{
+		"slug": "ladydevimon",
+		"number": "214",
+		"name": "LadyDevimon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "14",
+		"image": "ladydevimon",
+		"modes": [],
+		"from": [
+			"icedevimon",
+			"kyubimon",
+			"bakemon",
+			"blackgatomon",
+			"sistermon-ciel"
+		],
+		"to": [
+			"mastemon",
+			"lilithmon",
+			"lotosmon"
+		]
+	},
+	{
+		"slug": "weregarurumon",
+		"number": "215",
+		"name": "WereGarurumon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Earth",
+		"memory": "12",
+		"image": "weregarurumon",
+		"modes": [],
+		"from": [
+			"lobomon",
+			"ogremon",
+			"gaogamon",
+			"garurumon",
+			"strikedramon"
+		],
+		"to": [
+			"miragegaogamon",
+			"metalgarurumon",
+			"metalgarurumon-blk"
+		]
+	},
+	{
+		"slug": "weregarurumon-blk",
+		"number": "216",
+		"name": "WereGarurumon (Blk)",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "12",
+		"image": "weregarurumon_black",
+		"modes": [],
+		"from": [
+			"garurumon-blk",
+			"sangloupmon",
+			"blackgatomon"
+		],
+		"to": [
+			"bancholeomon",
+			"minervamon",
+			"metalgarurumon-blk",
+			"merukimon"
+		]
+	},
+	{
+		"slug": "wisemon",
+		"number": "217",
+		"name": "Wisemon",
+		"generation": "Ultimate",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "12",
+		"image": "wisemon",
+		"modes": [],
+		"from": [
+			"wizardmon",
+			"clockmon",
+			"socerimon"
+		],
+		"to": [
+			"venommyotismon",
+			"piedmon",
+			"belphemon-sm"
+		]
+	},
+	{
+		"slug": "arcadiamon-mega",
+		"number": "218",
+		"name": "Arcadiamon Mega",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "20",
+		"image": "arkadimon_6",
+		"modes": [],
+		"from": [
+			"arcadiamon-ultimate",
+			"infermon",
+			"myotismon"
+		],
+		"to": [
+			"arcadiamon-ultra"
+		]
+	},
+	{
+		"slug": "alphamon",
+		"number": "219",
+		"name": "Alphamon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "22",
+		"image": "alphamon",
+		"modes": [],
+		"from": [
+			"grademon",
+			"cyberdramon",
+			"dorugreymon"
+		],
+		"to": [
+			"alphamon-ouryuken"
+		]
+	},
+	{
+		"slug": "ulforceveedramon",
+		"number": "220",
+		"name": "UlforceVeedramon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "22",
+		"image": "ulforceveedramon",
+		"modes": [],
+		"from": [
+			"wingdramon",
+			"aeroveedramon",
+			"megadramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "ebemon",
+		"number": "221",
+		"name": "Ebemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "16",
+		"image": "ebemon",
+		"modes": [],
+		"from": [
+			"meteormon",
+			"dragomon",
+			"vademon",
+			"metalmamemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "imperialdramon-dm",
+		"number": "222",
+		"name": "Imperialdramon DM",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Fire",
+		"memory": "20",
+		"image": "imperialdramon_dragon_mode",
+		"modes": [
+			"imperialdramon-fm"
+		],
+		"from": [
+			"dinobeemon",
+			"paildramon"
+		],
+		"to": [
+			"imperialdramon-pm"
+		]
+	},
+	{
+		"slug": "imperialdramon-fm",
+		"number": "223",
+		"name": "Imperialdramon FM",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "20",
+		"image": "imperialdramon_fighter_mode",
+		"modes": [
+			"imperialdramon-dm"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "vikemon",
+		"number": "224",
+		"name": "Vikemon",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Water",
+		"memory": "18",
+		"image": "vikemon",
+		"modes": [],
+		"from": [
+			"groundramon",
+			"shakkoumon",
+			"zudomon",
+			"shogungekomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "valkyrimon",
+		"number": "225",
+		"name": "Valkyrimon",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Wind",
+		"memory": "18",
+		"image": "valkyrimon",
+		"modes": [],
+		"from": [
+			"angewomon",
+			"silphymon",
+			"saviorhuckmon",
+			"magnaangemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "varodurumon",
+		"number": "226",
+		"name": "Varodurumon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "20",
+		"image": "valdurmon",
+		"modes": [],
+		"from": [
+			"garudamon",
+			"hippogryphonmon",
+			"crowmon"
+		],
+		"to": [
+			"chaosmon-va"
+		]
+	},
+	{
+		"slug": "venommyotismon",
+		"number": "227",
+		"name": "VenomMyotismon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "20",
+		"image": "venommyotismon",
+		"modes": [],
+		"from": [
+			"infermon",
+			"myotismon",
+			"phantomon",
+			"matadormon",
+			"wisemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "wargreymon",
+		"number": "228",
+		"name": "WarGreymon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "20",
+		"image": "wargreymon",
+		"modes": [],
+		"from": [
+			"mamemon",
+			"metalgreymon",
+			"metalgreymon-blue"
+		],
+		"to": [
+			"omnimon"
+		]
+	},
+	{
+		"slug": "ophanimon",
+		"number": "229",
+		"name": "Ophanimon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "20",
+		"image": "ophanimon",
+		"modes": [],
+		"from": [
+			"angewomon",
+			"piximon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gaiomon",
+		"number": "230",
+		"name": "Gaiomon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "18",
+		"image": "samudramon",
+		"modes": [],
+		"from": [
+			"metalgreymon",
+			"metalgreymon-blue",
+			"rizegreymon",
+			"hisyaryumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "kaisergreymon",
+		"number": "231",
+		"name": "KaiserGreymon",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Fire",
+		"memory": "20",
+		"image": "emperorgreymon",
+		"modes": [],
+		"from": [
+			"burninggreymon"
+		],
+		"to": [
+			"susanomon"
+		]
+	},
+	{
+		"slug": "chaosgallantmon",
+		"number": "232",
+		"name": "ChaosGallantmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "22",
+		"image": "chaosgallantmon",
+		"modes": [],
+		"from": [
+			"shakkoumon",
+			"wargrowlmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "chaosdramon",
+		"number": "233",
+		"name": "Chaosdramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "20",
+		"image": "chaosdramon",
+		"modes": [],
+		"from": [
+			"machinedramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gankoomon",
+		"number": "234",
+		"name": "Gankoomon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "22",
+		"image": "gankoomon",
+		"modes": [],
+		"from": [
+			"superstarmon",
+			"skullmeramon",
+			"volcanomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "kingetemon",
+		"number": "235",
+		"name": "KingEtemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "18",
+		"image": "kingetemon",
+		"modes": [],
+		"from": [
+			"etemon",
+			"shogungekomon",
+			"pandamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "kuzuhamon",
+		"number": "236",
+		"name": "Kuzuhamon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Dark",
+		"memory": "18",
+		"image": "kuzuhamon",
+		"modes": [],
+		"from": [
+			"cherrymon",
+			"taomon",
+			"crowmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "grankuwagamon",
+		"number": "237",
+		"name": "GranKuwagamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Plant",
+		"memory": "18",
+		"image": "grankuwagamon",
+		"modes": [],
+		"from": [
+			"megakabuterimon",
+			"okuwamon",
+			"cherrymon",
+			"dinobeemon",
+			"triceramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "grandracmon",
+		"number": "238",
+		"name": "GranDracmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "20",
+		"image": "grandracmon",
+		"modes": [],
+		"from": [
+			"myotismon",
+			"skullsatamon",
+			"matadormon"
+		],
+		"to": []
+	},
+	{
+		"slug": "groundlocomon",
+		"number": "239",
+		"name": "GroundLocomon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Electric",
+		"memory": "18",
+		"image": "grandlocomon",
+		"modes": [],
+		"from": [
+			"gigadramon",
+			"cannonbeemon",
+			"datamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gryphonmon",
+		"number": "240",
+		"name": "Gryphonmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Wind",
+		"memory": "18",
+		"image": "griffomon",
+		"modes": [],
+		"from": [
+			"garudamon",
+			"silphymon",
+			"hippogryphonmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "craniamon",
+		"number": "241",
+		"name": "Craniamon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Earth",
+		"memory": "22",
+		"image": "craniummon",
+		"modes": [],
+		"from": [
+			"andromon",
+			"knightmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "kerpymon-blk",
+		"number": "242",
+		"name": "Kerpymon (Blk)",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "20",
+		"image": "cherubimon_vice",
+		"modes": [],
+		"from": [
+			"antylamon",
+			"metalgreymon-blue"
+		],
+		"to": []
+	},
+	{
+		"slug": "kerpymon-good",
+		"number": "243",
+		"name": "Kerpymon (Good)",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "20",
+		"image": "cherubimon_virtue",
+		"modes": [],
+		"from": [
+			"antylamon",
+			"crescemon",
+			"shakkoumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "goldramon",
+		"number": "244",
+		"name": "Goldramon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "20",
+		"image": "goldramon",
+		"modes": [],
+		"from": [
+			"aeroveedramon",
+			"magnaangemon",
+			"megadramon",
+			"hisyaryumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "saberleomon",
+		"number": "245",
+		"name": "SaberLeomon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Wind",
+		"memory": "18",
+		"image": "saberleomon",
+		"modes": [],
+		"from": [
+			"grapleomon",
+			"triceramon",
+			"panjyamon",
+			"monzaemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "sakuyamon",
+		"number": "246",
+		"name": "Sakuyamon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Light",
+		"memory": "18",
+		"image": "sakuyamon",
+		"modes": [],
+		"from": [
+			"silphymon",
+			"taomon",
+			"monzaemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "jesmon",
+		"number": "247",
+		"name": "Jesmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Neutral",
+		"memory": "22",
+		"image": "jesmon",
+		"modes": [],
+		"from": [
+			"saviorhuckmon",
+			"duramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "shinegreymon",
+		"number": "248",
+		"name": "ShineGreymon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "20",
+		"image": "shinegreymon",
+		"modes": [],
+		"from": [
+			"skullgreymon",
+			"magnaangemon",
+			"rizegreymon"
+		],
+		"to": [
+			"shinegreymon-bm"
+		]
+	},
+	{
+		"slug": "shinegreymon-bm",
+		"number": "249",
+		"name": "ShineGreymon BM",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "22",
+		"image": "shinegreymon_burst_mode",
+		"modes": [],
+		"from": [
+			"shinegreymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "justimon",
+		"number": "250",
+		"name": "Justimon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "18",
+		"image": "justimon",
+		"modes": [],
+		"from": [
+			"garudamon",
+			"catchmamemon",
+			"cyberdramon",
+			"superstarmon",
+			"pandamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "kentaurosmon",
+		"number": "251",
+		"name": "Kentaurosmon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "22",
+		"image": "kentaurosmon",
+		"modes": [],
+		"from": [
+			"crescemon",
+			"chirinmon",
+			"dorugreymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "slayerdramon",
+		"number": "252",
+		"name": "Slayerdramon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "20",
+		"image": "slayerdramon",
+		"modes": [],
+		"from": [
+			"wingdramon",
+			"saviorhuckmon",
+			"rizegreymon"
+		],
+		"to": [
+			"examon"
+		]
+	},
+	{
+		"slug": "seraphimon",
+		"number": "253",
+		"name": "Seraphimon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "20",
+		"image": "seraphimon",
+		"modes": [],
+		"from": [
+			"chirinmon",
+			"hippogryphonmon",
+			"magnaangemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "megagargomon",
+		"number": "254",
+		"name": "MegaGargomon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Electric",
+		"memory": "18",
+		"image": "megagargomon",
+		"modes": [],
+		"from": [
+			"cannonbeemon",
+			"machgaogamon",
+			"rapidmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "darkdramon",
+		"number": "255",
+		"name": "Darkdramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "18",
+		"image": "darkdramon",
+		"modes": [],
+		"from": [
+			"gigadramon",
+			"bluemeramon",
+			"wargrowlmon"
+		],
+		"to": [
+			"chaosmon"
+		]
+	},
+	{
+		"slug": "tigervespamon",
+		"number": "256",
+		"name": "TigerVespamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "18",
+		"image": "tigervespamon",
+		"modes": [],
+		"from": [
+			"andromon",
+			"cannonbeemon",
+			"grademon",
+			"duramon",
+			"rapidmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "titamon",
+		"number": "257",
+		"name": "Titamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "18",
+		"image": "titamon",
+		"modes": [],
+		"from": [
+			"cyberdramon",
+			"skullgreymon",
+			"digitamamon",
+			"phantomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "tyrantkabuterimon",
+		"number": "258",
+		"name": "TyrantKabuterimon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Plant",
+		"memory": "20",
+		"image": "tyrantkabuterimon",
+		"modes": [],
+		"from": [
+			"herculeskabuterimon"
+		],
+		"to": []
+	},
+	{
+		"slug": "dianamon",
+		"number": "259",
+		"name": "Dianamon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "20",
+		"image": "dianamon",
+		"modes": [],
+		"from": [
+			"antylamon",
+			"meteormon",
+			"crescemon",
+			"taomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "diaboromon",
+		"number": "260",
+		"name": "Diaboromon",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Dark",
+		"memory": "20",
+		"image": "diaboromon",
+		"modes": [],
+		"from": [
+			"arcadiamon-ultimate",
+			"antylamon",
+			"infermon",
+			"okuwamon",
+			"skullsatamon"
+		],
+		"to": [
+			"armageddemon"
+		]
+	},
+	{
+		"slug": "creepymon",
+		"number": "261",
+		"name": "Creepymon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "22",
+		"image": "demon",
+		"modes": [],
+		"from": [
+			"arcadiamon-ultimate",
+			"skullgreymon",
+			"skullsatamon",
+			"bluemeramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gallantmon",
+		"number": "262",
+		"name": "Gallantmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Light",
+		"memory": "22",
+		"image": "gallantmon",
+		"modes": [],
+		"from": [
+			"wargrowlmon",
+			"metaltyrannomon"
+		],
+		"to": [
+			"gallantmon-cm"
+		]
+	},
+	{
+		"slug": "dynasmon",
+		"number": "263",
+		"name": "Dynasmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Wind",
+		"memory": "22",
+		"image": "dynasmon",
+		"modes": [],
+		"from": [
+			"wingdramon",
+			"aeroveedramon",
+			"silphymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "durandamon",
+		"number": "264",
+		"name": "Durandamon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "20",
+		"image": "durandamon",
+		"modes": [],
+		"from": [
+			"grademon",
+			"duramon",
+			"knightmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "leopardmon",
+		"number": "265",
+		"name": "Leopardmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Light",
+		"memory": "22",
+		"image": "leopardmon",
+		"modes": [
+			"leopardmon-lm"
+		],
+		"from": [
+			"grapleomon",
+			"knightmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "leopardmon-lm",
+		"number": "266",
+		"name": "Leopardmon LM",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Earth",
+		"memory": "25",
+		"image": "leopardmon_leopard_mode",
+		"modes": [
+			"leopardmon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "dorugoramon",
+		"number": "267",
+		"name": "Dorugoramon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Dark",
+		"memory": "18",
+		"image": "dorugoramon",
+		"modes": [],
+		"from": [
+			"gigadramon",
+			"grademon",
+			"dorugreymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "neptunemon",
+		"number": "268",
+		"name": "Neptunemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Water",
+		"memory": "20",
+		"image": "neptunemon",
+		"modes": [],
+		"from": [
+			"dragomon",
+			"whamon",
+			"megaseadramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "hiandromon",
+		"number": "269",
+		"name": "HiAndromon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Electric",
+		"memory": "18",
+		"image": "hiandromon",
+		"modes": [],
+		"from": [
+			"andromon",
+			"vademon",
+			"metalmamemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "pilevolcamon",
+		"number": "270",
+		"name": "PileVolcamon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Fire",
+		"memory": "18",
+		"image": "pilevolcamon",
+		"modes": [],
+		"from": [
+			"etemon",
+			"grapleomon",
+			"volcanomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "barbamon",
+		"number": "271",
+		"name": "Barbamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "22",
+		"image": "barbamon",
+		"modes": [],
+		"from": [
+			"myotismon",
+			"phantomon",
+			"bluemeramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "bancholeomon",
+		"number": "272",
+		"name": "BanchoLeomon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Earth",
+		"memory": "18",
+		"image": "bancholeomon",
+		"modes": [],
+		"from": [
+			"grapleomon",
+			"panjyamon",
+			"pandamon",
+			"machgaogamon",
+			"weregarurumon-blk"
+		],
+		"to": [
+			"chaosmon",
+			"chaosmon-va"
+		]
+	},
+	{
+		"slug": "piedmon",
+		"number": "273",
+		"name": "Piedmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "18",
+		"image": "piemon",
+		"modes": [],
+		"from": [
+			"myotismon",
+			"etemon",
+			"matadormon",
+			"wisemon"
+		],
+		"to": [
+			"apocalymon"
+		]
+	},
+	{
+		"slug": "puppetmon",
+		"number": "274",
+		"name": "Puppetmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Plant",
+		"memory": "18",
+		"image": "puppetmon",
+		"modes": [],
+		"from": [
+			"catchmamemon",
+			"cherrymon",
+			"pumpkinmon",
+			"mamemon"
+		],
+		"to": [
+			"apocalymon"
+		]
+	},
+	{
+		"slug": "platinumnumemon",
+		"number": "275",
+		"name": "PlatinumNumemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Neutral",
+		"memory": "16",
+		"image": "platinumnumemon",
+		"modes": [],
+		"from": [
+			"goldnumemon",
+			"etemon",
+			"superstarmon",
+			"blackkingnumemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "blackwargreymon",
+		"number": "276",
+		"name": "BlackWarGreymon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "20",
+		"image": "black_wargreymon",
+		"modes": [],
+		"from": [
+			"megadramon",
+			"metalgreymon-blue",
+			"metaltyrannomon"
+		],
+		"to": [
+			"omnimon-zwart"
+		]
+	},
+	{
+		"slug": "princemamemon",
+		"number": "277",
+		"name": "PrinceMamemon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Neutral",
+		"memory": "16",
+		"image": "princemamemon",
+		"modes": [],
+		"from": [
+			"catchmamemon",
+			"blackkingnumemon",
+			"mamemon",
+			"metalmamemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "brakedramon",
+		"number": "278",
+		"name": "Brakedramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "20",
+		"image": "breakdramon",
+		"modes": [],
+		"from": [
+			"groundramon",
+			"triceramon",
+			"dorugreymon",
+			"metaltyrannomon"
+		],
+		"to": [
+			"examon"
+		]
+	},
+	{
+		"slug": "plesiomon",
+		"number": "279",
+		"name": "Plesiomon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "18",
+		"image": "plesiomon",
+		"modes": [],
+		"from": [
+			"zudomon",
+			"shogungekomon",
+			"whamon",
+			"megaseadramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "herculeskabuterimon",
+		"number": "280",
+		"name": "HerculesKabuterimon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Plant",
+		"memory": "18",
+		"image": "herculeskabuterimon",
+		"modes": [],
+		"from": [
+			"megakabuterimon",
+			"okuwamon",
+			"vademon"
+		],
+		"to": [
+			"tyrantkabuterimon"
+		]
+	},
+	{
+		"slug": "beelzemon",
+		"number": "281",
+		"name": "Beelzemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "22",
+		"image": "beelzebumon",
+		"modes": [],
+		"from": [
+			"infermon",
+			"skullmeramon"
+		],
+		"to": [
+			"beelzemon-bm"
+		]
+	},
+	{
+		"slug": "beelzemon-bm",
+		"number": "282",
+		"name": "Beelzemon BM",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "25",
+		"image": "beelzebumon_blast_mode",
+		"modes": [],
+		"from": [
+			"beelzemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "belphemon-sm",
+		"number": "283",
+		"name": "Belphemon SM",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "22",
+		"image": "belphemon_sleep_mode",
+		"modes": [
+			"belphemon-rm"
+		],
+		"from": [
+			"digitamamon",
+			"wisemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "hououmon",
+		"number": "284",
+		"name": "Hououmon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Fire",
+		"memory": "18",
+		"image": "phoenixmon",
+		"modes": [],
+		"from": [
+			"garudamon",
+			"silphymon",
+			"piximon"
+		],
+		"to": []
+	},
+	{
+		"slug": "magnadramon",
+		"number": "285",
+		"name": "Magnadramon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "20",
+		"image": "magnadramon",
+		"modes": [],
+		"from": [
+			"megakabuterimon",
+			"angewomon",
+			"lillymon"
+		],
+		"to": []
+	},
+	{
+		"slug": "boltmon",
+		"number": "286",
+		"name": "Boltmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Electric",
+		"memory": "18",
+		"image": "boltmon",
+		"modes": [],
+		"from": [
+			"skullmeramon",
+			"pumpkinmon",
+			"bluemeramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "magnagarurumon",
+		"number": "287",
+		"name": "MagnaGarurumon",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Light",
+		"memory": "18",
+		"image": "magnagarurumon",
+		"modes": [
+			"magnagarurumon-sv"
+		],
+		"from": [
+			"kendogarurumon"
+		],
+		"to": [
+			"susanomon"
+		]
+	},
+	{
+		"slug": "magnagarurumon-sv",
+		"number": "288",
+		"name": "MagnaGarurumon (SV)",
+		"generation": "Mega",
+		"attribute": "Free",
+		"type": "Light",
+		"memory": "18",
+		"image": "magnagarurumon_detached",
+		"modes": [
+			"magnagarurumon"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "mastemon",
+		"number": "289",
+		"name": "Mastemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "22",
+		"image": "mastemon",
+		"modes": [],
+		"from": [
+			"angewomon",
+			"ladydevimon"
+		],
+		"to": []
+	},
+	{
+		"slug": "marineangemon",
+		"number": "290",
+		"name": "MarineAngemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Water",
+		"memory": "18",
+		"image": "marineangemon",
+		"modes": [],
+		"from": [
+			"zudomon",
+			"piximon",
+			"whamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "minervamon",
+		"number": "291",
+		"name": "Minervamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Neutral",
+		"memory": "20",
+		"image": "minervamon",
+		"modes": [],
+		"from": [
+			"digitamamon",
+			"monzaemon",
+			"crowmon",
+			"weregarurumon-blk",
+			"hisyaryumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "miragegaogamon",
+		"number": "292",
+		"name": "MirageGaogamon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Wind",
+		"memory": "18",
+		"image": "miragegaogamon",
+		"modes": [],
+		"from": [
+			"panjyamon",
+			"machgaogamon",
+			"weregarurumon"
+		],
+		"to": [
+			"miragegaogamon-bm"
+		]
+	},
+	{
+		"slug": "miragegaogamon-bm",
+		"number": "293",
+		"name": "MirageGaogamon BM",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Light",
+		"memory": "20",
+		"image": "miragegaogamon_burst_mode",
+		"modes": [],
+		"from": [
+			"miragegaogamon"
+		],
+		"to": []
+	},
+	{
+		"slug": "machinedramon",
+		"number": "294",
+		"name": "Machinedramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "18",
+		"image": "machinedramon",
+		"modes": [],
+		"from": [
+			"gigadramon",
+			"datamon",
+			"megadramon"
+		],
+		"to": [
+			"chaosdramon",
+			"apocalymon"
+		]
+	},
+	{
+		"slug": "megidramon",
+		"number": "295",
+		"name": "Megidramon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Fire",
+		"memory": "20",
+		"image": "megidramon",
+		"modes": [],
+		"from": [
+			"gigadramon",
+			"groundramon",
+			"megadramon",
+			"wargrowlmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "metaletemon",
+		"number": "296",
+		"name": "MetalEtemon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Earth",
+		"memory": "18",
+		"image": "metaletemon",
+		"modes": [],
+		"from": [
+			"meteormon",
+			"etemon",
+			"blackkingnumemon",
+			"volcanomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "metalgarurumon",
+		"number": "297",
+		"name": "MetalGarurumon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "18",
+		"image": "metalgarurumon",
+		"modes": [],
+		"from": [
+			"zudomon",
+			"chirinmon",
+			"weregarurumon"
+		],
+		"to": [
+			"omnimon"
+		]
+	},
+	{
+		"slug": "metalgarurumon-blk",
+		"number": "298",
+		"name": "MetalGarurumon (Blk)",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "18",
+		"image": "metalgarurumon_black",
+		"modes": [],
+		"from": [
+			"datamon",
+			"rapidmon",
+			"weregarurumon",
+			"weregarurumon-blk"
+		],
+		"to": [
+			"omnimon-zwart"
+		]
+	},
+	{
+		"slug": "metalseadramon",
+		"number": "299",
+		"name": "MetalSeadramon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Water",
+		"memory": "18",
+		"image": "metalseadramon",
+		"modes": [],
+		"from": [
+			"gigadramon",
+			"whamon",
+			"megaseadramon"
+		],
+		"to": [
+			"apocalymon"
+		]
+	},
+	{
+		"slug": "merukimon",
+		"number": "300",
+		"name": "Merukimon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Wind",
+		"memory": "20",
+		"image": "mercurymon",
+		"modes": [],
+		"from": [
+			"machgaogamon",
+			"weregarurumon-blk"
+		],
+		"to": []
+	},
+	{
+		"slug": "rusttyranomon",
+		"number": "301",
+		"name": "RustTyranomon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Electric",
+		"memory": "18",
+		"image": "rusttyranomon",
+		"modes": [],
+		"from": [
+			"wargrowlmon",
+			"metalgreymon",
+			"metaltyrannomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "leviamon",
+		"number": "302",
+		"name": "Leviamon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Water",
+		"memory": "22",
+		"image": "leviamon",
+		"modes": [],
+		"from": [
+			"dragomon",
+			"shogungekomon",
+			"megaseadramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "lilithmon",
+		"number": "303",
+		"name": "Lilithmon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "22",
+		"image": "lilithmon",
+		"modes": [],
+		"from": [
+			"lilamon",
+			"ladydevimon"
+		],
+		"to": []
+	},
+	{
+		"slug": "ravemon",
+		"number": "304",
+		"name": "Ravemon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "18",
+		"image": "ravemon",
+		"modes": [],
+		"from": [
+			"aeroveedramon",
+			"garudamon",
+			"crowmon"
+		],
+		"to": [
+			"ravemon-bm"
+		]
+	},
+	{
+		"slug": "ravemon-bm",
+		"number": "305",
+		"name": "Ravemon BM",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Wind",
+		"memory": "20",
+		"image": "ravemon_burst_mode",
+		"modes": [],
+		"from": [
+			"ravemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "crusadermon",
+		"number": "306",
+		"name": "Crusadermon",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "22",
+		"image": "lordknightmon",
+		"modes": [],
+		"from": [
+			"knightmon",
+			"magnaangemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "rosemon",
+		"number": "307",
+		"name": "Rosemon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Plant",
+		"memory": "18",
+		"image": "rosemon",
+		"modes": [],
+		"from": [
+			"pumpkinmon",
+			"lilamon",
+			"lillymon"
+		],
+		"to": [
+			"rosemon-bm"
+		]
+	},
+	{
+		"slug": "rosemon-bm",
+		"number": "308",
+		"name": "Rosemon BM",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Plant",
+		"memory": "20",
+		"image": "rosemon_burst_mode",
+		"modes": [],
+		"from": [
+			"rosemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "lotosmon",
+		"number": "309",
+		"name": "Lotosmon",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Plant",
+		"memory": "18",
+		"image": "lotusmon",
+		"modes": [],
+		"from": [
+			"lilamon",
+			"lillymon",
+			"ladydevimon"
+		],
+		"to": []
+	},
+	{
+		"slug": "armageddemon",
+		"number": "310",
+		"name": "Armageddemon",
+		"generation": "Ultra",
+		"attribute": "Free",
+		"type": "Dark",
+		"memory": "25",
+		"image": "armageddemon",
+		"modes": [],
+		"from": [
+			"diaboromon"
+		],
+		"to": []
+	},
+	{
+		"slug": "arcadiamon-ultra",
+		"number": "311",
+		"name": "Arcadiamon Ultra",
+		"generation": "Ultra",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "25",
+		"image": "arkadimon_7",
+		"modes": [],
+		"from": [
+			"arcadiamon-mega"
+		],
+		"to": []
+	},
+	{
+		"slug": "alphamon-ouryuken",
+		"number": "312",
+		"name": "Alphamon Ouryuken",
+		"generation": "Ultra",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "25",
+		"image": "alphamon_ouryuken",
+		"modes": [],
+		"from": [
+			"alphamon",
+			"ouryumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "imperialdramon-pm",
+		"number": "313",
+		"name": "Imperialdramon PM",
+		"generation": "Ultra",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "25",
+		"image": "imperialdramon_paladin_mode",
+		"modes": [],
+		"from": [
+			"imperialdramon-dm"
+		],
+		"to": []
+	},
+	{
+		"slug": "examon",
+		"number": "314",
+		"name": "Examon",
+		"generation": "Ultra",
+		"attribute": "Data",
+		"type": "Wind",
+		"memory": "25",
+		"image": "examon",
+		"modes": [],
+		"from": [
+			"slayerdramon",
+			"brakedramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "omnimon",
+		"number": "315",
+		"name": "Omnimon",
+		"generation": "Ultra",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "25",
+		"image": "omegamon",
+		"modes": [],
+		"from": [
+			"wargreymon",
+			"metalgarurumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "omnimon-zwart",
+		"number": "316",
+		"name": "Omnimon Zwart",
+		"generation": "Ultra",
+		"attribute": "Vaccine",
+		"type": "Dark",
+		"memory": "25",
+		"image": "omegamon_zwart",
+		"modes": [],
+		"from": [
+			"blackwargreymon",
+			"metalgarurumon-blk"
+		],
+		"to": []
+	},
+	{
+		"slug": "chaosmon",
+		"number": "317",
+		"name": "Chaosmon",
+		"generation": "Ultra",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "25",
+		"image": "chaosmon",
+		"modes": [],
+		"from": [
+			"darkdramon",
+			"bancholeomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "chaosmon-va",
+		"number": "318",
+		"name": "Chaosmon VA",
+		"generation": "Ultra",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "25",
+		"image": "chaosmon_valdur_arm",
+		"modes": [],
+		"from": [
+			"varodurumon",
+			"bancholeomon"
+		],
+		"to": []
+	},
+	{
+		"slug": "susanomon",
+		"number": "319",
+		"name": "Susanomon",
+		"generation": "Ultra",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "25",
+		"image": "susanomon",
+		"modes": [],
+		"from": [
+			"kaisergreymon",
+			"magnagarurumon"
+		],
+		"to": []
+	},
+	{
+		"slug": "gallantmon-cm",
+		"number": "320",
+		"name": "Gallantmon CM",
+		"generation": "Ultra",
+		"attribute": "Virus",
+		"type": "Light",
+		"memory": "25",
+		"image": "gallantmon_crimson_mode",
+		"modes": [],
+		"from": [
+			"gallantmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "belphemon-rm",
+		"number": "321",
+		"name": "Belphemon RM",
+		"generation": "Ultra",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "25",
+		"image": "belphemon_rage_mode",
+		"modes": [
+			"belphemon-sm"
+		],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "lucemon-sm",
+		"number": "322",
+		"name": "Lucemon SM",
+		"generation": "Ultra",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "25",
+		"image": "lucemon_satan_mode",
+		"modes": [],
+		"from": [
+			"lucemon-fm"
+		],
+		"to": []
+	},
+	{
+		"slug": "flamedramon",
+		"number": "323",
+		"name": "Flamedramon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Fire",
+		"memory": "8",
+		"image": "flamedramon",
+		"modes": [],
+		"from": [
+			"veemon"
+		],
+		"to": []
+	},
+	{
+		"slug": "magnamon",
+		"number": "324",
+		"name": "Magnamon",
+		"generation": "Armor",
+		"attribute": "Free",
+		"type": "Earth",
+		"memory": "22",
+		"image": "magnamon",
+		"modes": [],
+		"from": [
+			"veemon",
+			"guardromon-gold"
+		],
+		"to": []
+	},
+	{
+		"slug": "rapidmon-armor",
+		"number": "325",
+		"name": "Rapidmon (Armor)",
+		"generation": "Armor",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "18",
+		"image": "goldrapidmon",
+		"modes": [],
+		"from": [
+			"terriermon",
+			"guardromon-gold"
+		],
+		"to": []
+	},
+	{
+		"slug": "shoutmon",
+		"number": "326",
+		"name": "Shoutmon",
+		"generation": "-",
+		"attribute": "Free",
+		"type": "Fire",
+		"memory": "5",
+		"image": "shoutmon",
+		"modes": [],
+		"from": [
+			"koromon"
+		],
+		"to": [
+			"omnishoutmon"
+		]
+	},
+	{
+		"slug": "omnishoutmon",
+		"number": "327",
+		"name": "OmniShoutmon",
+		"generation": "-",
+		"attribute": "Free",
+		"type": "Fire",
+		"memory": "20",
+		"image": "omegashoutmon",
+		"modes": [],
+		"from": [
+			"shoutmon"
+		],
+		"to": []
+	},
+	{
+		"slug": "ryudamon",
+		"number": "328",
+		"name": "Ryudamon",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "5",
+		"image": "ryudamon",
+		"modes": [],
+		"from": [
+			"wanyamon"
+		],
+		"to": [
+			"raptordramon",
+			"reppamon",
+			"ginryumon"
+		]
+	},
+	{
+		"slug": "ginryumon",
+		"number": "329",
+		"name": "Ginryumon",
+		"generation": "Champion",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "8",
+		"image": "ginryumon",
+		"modes": [],
+		"from": [
+			"zubamon",
+			"dracomon",
+			"ryudamon"
+		],
+		"to": [
+			"cannonbeemon",
+			"megaseadramon",
+			"hisyaryumon"
+		]
+	},
+	{
+		"slug": "hisyaryumon",
+		"number": "330",
+		"name": "Hisyaryumon",
+		"generation": "Ultimate",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "14",
+		"image": "hisyaryumon",
+		"modes": [],
+		"from": [
+			"seadramon",
+			"coelamon",
+			"ginryumon"
+		],
+		"to": [
+			"gaiomon",
+			"goldramon",
+			"minervamon",
+			"ouryumon"
+		]
+	},
+	{
+		"slug": "ouryumon",
+		"number": "331",
+		"name": "Ouryumon",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "20",
+		"image": "ouryumon",
+		"modes": [],
+		"from": [
+			"grademon",
+			"crowmon",
+			"hisyaryumon"
+		],
+		"to": [
+			"alphamon-ouryuken"
+		]
+	},
+	{
+		"slug": "apocalymon",
+		"number": "332",
+		"name": "Apocalymon",
+		"generation": "Ultra",
+		"attribute": "Free",
+		"type": "Neutral",
+		"memory": "25",
+		"image": "apocalymon",
+		"modes": [],
+		"from": [
+			"piedmon",
+			"puppetmon",
+			"machinedramon",
+			"metalseadramon"
+		],
+		"to": []
+	},
+	{
+		"slug": "sistermon-blanc",
+		"number": "333",
+		"name": "Sistermon Blanc",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "4",
+		"image": "sistermon_blanc",
+		"modes": [],
+		"from": [
+			"tokomon"
+		],
+		"to": [
+			"gargomon",
+			"lekismon",
+			"sistermon-b-awake",
+			"sistermon-ciel"
+		]
+	},
+	{
+		"slug": "sistermon-b-awake",
+		"number": "334",
+		"name": "Sistermon B (Awake.)",
+		"generation": "Rookie",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "18",
+		"image": "sistermon_blanc_awake",
+		"modes": [],
+		"from": [
+			"sistermon-blanc"
+		],
+		"to": []
+	},
+	{
+		"slug": "sistermon-ciel",
+		"number": "335",
+		"name": "Sistermon Ciel",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Light",
+		"memory": "6",
+		"image": "sistermon_ciel",
+		"modes": [],
+		"from": [
+			"dracmon",
+			"lunamon",
+			"sistermon-blanc"
+		],
+		"to": [
+			"pandamon",
+			"ladydevimon",
+			"sistermon-c-awake"
+		]
+	},
+	{
+		"slug": "sistermon-c-awake",
+		"number": "336",
+		"name": "Sistermon C (Awake.)",
+		"generation": "Champion",
+		"attribute": "Virus",
+		"type": "Light",
+		"memory": "18",
+		"image": "sistermon_ciel_awake",
+		"modes": [],
+		"from": [
+			"sistermon-ciel"
+		],
+		"to": []
+	},
+	{
+		"slug": "alphamon-nx",
+		"number": "337",
+		"name": "Alphamon NX",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Neutral",
+		"memory": "6",
+		"icon": "https://www.grindosaur.com/img/games/digimon-story-cyber-sleuth/icons/alphamon-nx-icon.png",
+		"modes": [],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "crusadermon-nx",
+		"number": "338",
+		"name": "Crusadermon NX",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Dark",
+		"memory": "6",
+		"icon": "https://www.grindosaur.com/img/games/digimon-story-cyber-sleuth/icons/crusadermon-nx-icon.png",
+		"modes": [],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "leopardmon-nx",
+		"number": "339",
+		"name": "Leopardmon NX",
+		"generation": "Mega",
+		"attribute": "Data",
+		"type": "Light",
+		"memory": "6",
+		"icon": "https://www.grindosaur.com/img/games/digimon-story-cyber-sleuth/icons/leopardmon-nx-icon.png",
+		"modes": [],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "omnimon-nx",
+		"number": "340",
+		"name": "Omnimon NX",
+		"generation": "Mega",
+		"attribute": "Vaccine",
+		"type": "Light",
+		"memory": "6",
+		"icon": "https://www.grindosaur.com/img/games/digimon-story-cyber-sleuth/icons/omnimon-nx-icon.png",
+		"modes": [],
+		"from": [],
+		"to": []
+	},
+	{
+		"slug": "gallantmon-nx",
+		"number": "341",
+		"name": "Gallantmon NX",
+		"generation": "Mega",
+		"attribute": "Virus",
+		"type": "Light",
+		"memory": "6",
+		"icon": "https://www.grindosaur.com/img/games/digimon-story-cyber-sleuth/icons/gallantmon-nx-icon.png",
+		"modes": [],
+		"from": [],
+		"to": []
+	}
+]

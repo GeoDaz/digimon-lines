@@ -112,5 +112,449 @@
 			"name": "ginkakumon",
 			"line": "snakemon"
 		}
-	]
+	],
+	"grid": {
+		"size": 8,
+		"columns": [
+			[
+				{
+					"from": null,
+					"name": "pitchmon"
+				},
+				{
+					"from": null,
+					"name": "chapmon"
+				},
+				{
+					"from": null,
+					"name": "kamemon"
+				},
+				{
+					"from": null,
+					"name": "gawappamon"
+				},
+				{
+					"from": null,
+					"name": "shawujinmon"
+				},
+				{
+					"from": null,
+					"name": "takutomon"
+				},
+				{
+					"from": null,
+					"name": "takutomon_wrath_mode"
+				},
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "pitchmon"
+				},
+				{
+					"from": null,
+					"name": "chapmon"
+				},
+				{
+					"from": null,
+					"name": "kamemon"
+				},
+				{
+					"from": null,
+					"name": "gawappamon"
+				},
+				{
+					"from": null,
+					"name": "sagomon"
+				},
+				{
+					"from": null,
+					"name": "erlangmon"
+				},
+				{
+					"from": null,
+					"name": "erlangmon_blast_mode"
+				},
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "keemon"
+				},
+				{
+					"from": null,
+					"name": "yarmon"
+				},
+				{
+					"from": null,
+					"name": "impmon"
+				},
+				{
+					"from": null,
+					"name": "meramon"
+				},
+				{
+					"from": null,
+					"name": "deathmeramon"
+				},
+				{
+					"from": null,
+					"name": "nezhamon"
+				},
+				{
+					"from": null,
+					"name": "nezhamon_crimson_mode"
+				},
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "fukamon"
+				},
+				{
+					"from": null,
+					"name": "mokokomon"
+				},
+				{
+					"from": null,
+					"name": "takinmon"
+				},
+				{
+					"from": null,
+					"name": "hakubamon"
+				},
+				{
+					"from": null,
+					"name": "sanzomon"
+				},
+				{
+					"from": null,
+					"name": "goldramon",
+					"skins": ["goldramon_x"]
+				},
+				{
+					"from": null,
+					"name": "shakamon"
+				},
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "punimon"
+				},
+				{
+					"from": null,
+					"name": "tsunomon"
+				},
+				{
+					"from": null,
+					"name": "shamamon"
+				},
+				{
+					"from": null,
+					"name": "fugamon"
+				},
+				{
+					"from": null,
+					"name": "karatenmon"
+				},
+				{
+					"from": null,
+					"name": "tengumon"
+				},
+				{
+					"from": null,
+					"name": "enmamon"
+				},
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "tomorimon"
+				},
+				{
+					"from": null,
+					"name": "onibimon"
+				},
+				{
+					"from": null,
+					"name": "wankomon"
+				},
+				{
+					"from": null,
+					"name": "siesamon"
+				},
+				{
+					"from": null,
+					"name": "shishimamon"
+				},
+				{
+					"from": null,
+					"name": "amaterasumon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "yuramon"
+				},
+				{
+					"from": null,
+					"name": "tanemon"
+				},
+				{
+					"from": null,
+					"name": "hanimon"
+				},
+				{
+					"from": null,
+					"name": "kokeshimon"
+				},
+				{
+					"from": null,
+					"name": "karakurumon"
+				},
+				{
+					"from": null,
+					"name": "kaguyamon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "puyomon"
+				},
+				{
+					"from": null,
+					"name": "puyoyomon"
+				},
+				{
+					"from": null,
+					"name": "sangomon"
+				},
+				{
+					"from": null,
+					"name": "shellmon"
+				},
+				{
+					"from": null,
+					"name": "marinbullmon"
+				},
+				{
+					"from": null,
+					"name": "ryugumon"
+				},
+				{
+					"from": null,
+					"name": "ariemon"
+				},
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "fukamon"
+				},
+				{
+					"from": null,
+					"name": "mokokomon"
+				},
+				{
+					"from": null,
+					"name": "kakamon"
+				},
+				{
+					"from": null,
+					"name": "apemon"
+				},
+				{
+					"from": null,
+					"name": "gokuwmon"
+				},
+				{
+					"from": null,
+					"name": "seitengokuwmon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "fukamon"
+				},
+				{
+					"from": null,
+					"name": "mokokomon"
+				},
+				{
+					"from": null,
+					"name": "takinmon"
+				},
+				{
+					"from": null,
+					"name": "kinkakumon"
+				},
+				{
+					"from": null,
+					"name": "chohakkaimon"
+				},
+				{
+					"from": null,
+					"name": "shagaramon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "cocomon"
+				},
+				{
+					"from": null,
+					"name": "chocomon"
+				},
+				{
+					"from": null,
+					"name": "lopmon"
+				},
+				{
+					"from": null,
+					"name": "turuiemon"
+				},
+				{
+					"from": null,
+					"name": "andiramon"
+				},
+				{
+					"from": null,
+					"name": "jougamon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "fukamon"
+				},
+				{
+					"from": null,
+					"name": "mokokomon"
+				},
+				{
+					"from": null,
+					"name": "kakamon"
+				},
+				{
+					"from": null,
+					"name": "lianpumon"
+				},
+				{
+					"from": null,
+					"name": "xingtianmon"
+				},
+				{
+					"from": null,
+					"name": "dijiangmon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "dokimon"
+				},
+				{
+					"from": null,
+					"name": "bibimon"
+				},
+				{
+					"from": null,
+					"name": "pulsemon"
+				},
+				{
+					"from": null,
+					"name": "runnermon"
+				},
+				{
+					"from": null,
+					"name": "mihiramon"
+				},
+				{
+					"from": null,
+					"name": "yihumon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "punimon"
+				},
+				{
+					"from": null,
+					"name": "tsunomon"
+				},
+				{
+					"from": null,
+					"name": "pillowmon"
+				},
+				{
+					"from": null,
+					"name": "sheepmon"
+				},
+				{
+					"from": null,
+					"name": "pajiramon"
+				},
+				{
+					"from": null,
+					"name": "taotiemon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
+					"name": "mokumon"
+				},
+				{
+					"from": null,
+					"name": "demimeramon"
+				},
+				{
+					"from": null,
+					"name": "tapirmon"
+				},
+				{
+					"from": null,
+					"name": "boarmon"
+				},
+				{
+					"from": null,
+					"name": "vikaralamon"
+				},
+				{
+					"from": null,
+					"name": "taowumon"
+				},
+				null,
+				null
+			]
+		]
+	}
 }

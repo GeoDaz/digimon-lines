@@ -1667,3 +1667,331 @@ button.like-heart:focus-visible {
 	white-space: nowrap;
 	font-size: 0.9em;
 }
+
+/* Game evolutions */
+
+.game-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+}
+
+.evolution-filters {
+	position: sticky;
+	top: var(--dl-header-height, 56px);
+	z-index: 990;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding: 10px 0;
+	background-color: var(--bs-dark);
+	border-bottom: 1px solid var(--bs-border-color);
+}
+
+.evolution-filters .evolution-search {
+	width: auto;
+	min-width: 220px;
+	flex: 0 1 320px;
+}
+
+.evolution-filters .filter-active .dropdown-toggle {
+	border-color: var(--bs-primary-link);
+	color: white;
+}
+
+.evolution-filters .filter-reset {
+	height: 38px;
+	padding: 0 12px;
+	border: 1px dashed var(--bs-border-color);
+	border-radius: var(--dl-border-radius);
+	background: none;
+	color: var(--bs-body-color);
+	transition: all 0.3s;
+}
+
+.evolution-filters .filter-reset:hover,
+.evolution-filters .filter-reset:focus {
+	border-style: solid;
+	border-color: var(--bs-primary-link);
+	color: white;
+}
+
+.evolution-filters .filter-count {
+	margin-left: auto;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.evolution-table {
+	--bs-table-bg: transparent;
+	--dl-tile-size: 64px;
+	--dl-small-tile-size: 40px;
+	border-color: var(--bs-border-color);
+}
+
+.evolution-table > thead th {
+	padding: 14px 12px;
+	white-space: nowrap;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--bs-gray-400);
+}
+
+.evolution-table > tbody > tr > td {
+	padding: 10px 12px;
+	vertical-align: middle;
+}
+
+.evolution-table > tbody > tr.evolution-row:hover > td {
+	background-color: rgba(255, 255, 255, 0.04);
+}
+
+.evolution-table tr.evolution-row {
+	scroll-margin-top: 140px;
+}
+
+.evolution-table tr.evolution-row.active-outline > td {
+	background-color: rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.evolution-table .group-cell {
+	padding: 18px 12px 10px;
+}
+
+.evolution-table .generation-heading {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--bs-gray-300);
+	scroll-margin-top: 140px;
+}
+
+.evolution-table .generation-rule {
+	flex: 1;
+	height: 1px;
+	background: var(--bs-border-color);
+}
+
+.evolution-table .generation-count {
+	font-size: 0.8em;
+	color: var(--bs-gray-500);
+}
+
+.evolution-table .cell-digimon {
+	min-width: 240px;
+}
+
+.evolution-table .cell-details {
+	width: 60px;
+}
+
+.evolution-table .cell-relations {
+	min-width: 180px;
+}
+
+.evolution-table .digimon-identity {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.evolution-table .digimon-name {
+	font-weight: 700;
+	color: var(--bs-gray-100);
+}
+
+.evolution-table .digimon-number {
+	display: block;
+	font-size: 0.8em;
+	font-weight: 400;
+	color: var(--bs-gray-500);
+}
+
+.game-digimon-tile {
+	flex: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--dl-tile-size, 64px);
+	height: var(--dl-tile-size, 64px);
+	overflow: hidden;
+	border-radius: calc(var(--dl-tile-size, 64px) * 3 / 16);
+	background-color: var(--dl-snd-dark);
+	text-decoration: none;
+	transition: box-shadow 0.3s;
+}
+
+.game-digimon-tile.small {
+	width: var(--dl-small-tile-size, 40px);
+	height: var(--dl-small-tile-size, 40px);
+	border-radius: calc(var(--dl-small-tile-size, 40px) * 3 / 16);
+}
+
+a.game-digimon-tile:hover,
+a.game-digimon-tile:focus {
+	box-shadow: 0 0 0 2px var(--bs-primary-link);
+}
+
+.game-digimon-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.game-digimon-img.icon {
+	object-fit: contain;
+}
+
+.relation-tiles {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.evolution-table .cell-empty,
+.game-digimon-modal .cell-empty {
+	color: var(--bs-gray-600);
+}
+
+.game-digimon-modal .details-title {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.game-digimon-modal .details-title .game-digimon-tile {
+	--dl-tile-size: 96px;
+}
+
+.game-digimon-modal .details-subtitle {
+	font-size: 0.6em;
+	color: var(--bs-gray-500);
+}
+
+.game-digimon-modal .details-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5em;
+	align-items: start;
+}
+
+.game-digimon-modal .details-block.wide {
+	grid-column: 1 / -1;
+}
+
+.game-digimon-modal .details-block h5 {
+	font-size: 1em;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--bs-gray-500);
+}
+
+.game-digimon-modal .details-misc,
+.game-digimon-modal .details-resistances {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.game-digimon-modal .details-misc li,
+.game-digimon-modal .details-resistances li {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 4px 0;
+	border-bottom: 1px solid var(--bs-border-color);
+}
+
+.game-digimon-modal .details-misc span,
+.game-digimon-modal .details-resistances span {
+	color: var(--bs-gray-500);
+}
+
+.game-digimon-modal .details-resistances {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 0 20px;
+}
+
+.game-digimon-modal .details-resistances .immune b {
+	color: #3faae4;
+}
+
+.game-digimon-modal .details-resistances .resist b {
+	color: #1dca7f;
+}
+
+.game-digimon-modal .details-resistances .neutral b {
+	color: var(--bs-gray-500);
+}
+
+.game-digimon-modal .details-resistances .weak b {
+	color: #f76666;
+}
+
+.game-digimon-modal .details-description {
+	margin: 0;
+	font-style: italic;
+	color: var(--bs-gray-400);
+}
+
+.game-digimon-modal .details-support p {
+	margin: 0.25em 0 0.75em;
+}
+
+.game-digimon-modal .details-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.game-digimon-modal .details-table th,
+.game-digimon-modal .details-table td {
+	padding: 4px 12px 4px 0;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 1px solid var(--bs-border-color);
+}
+
+.game-digimon-modal .details-table th {
+	font-weight: 400;
+	white-space: nowrap;
+	color: var(--bs-gray-500);
+}
+
+.game-digimon-modal .details-table .cell-description {
+	min-width: 220px;
+	font-size: 0.9em;
+}
+
+@media (max-width: 576px) {
+	.game-digimon-modal .details-grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.game-digimon-modal .details-resistances {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.evolution-table {
+		--dl-tile-size: 48px;
+		--dl-small-tile-size: 32px;
+	}
+}
+
+.evolution-table .cell-attribute {
+	text-align: center;
+}
+
+.attribute-icon {
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
+}

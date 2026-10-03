@@ -1,31 +1,121 @@
 {
-    "title": "Three Musketeers",
-    "main": [
-        {
-            "name": "beelstarmon",
-            "line": "impmon"
-        },
-        {
-            "name": "magnakidmon",
-            "line": "toyagumon"
-        },
-        {
-            "name": "gundramon",
-            "line": "commandramon"
-        }
-    ],
-    "related": [
-        {
-            "name": "beelzebumon",
-            "line": "impmon"
-        },
-        {
-            "name": "avengekidmon",
-            "line": "toyagumon"
-        },
-        {
-            "name": "revolmon",
-            "line": "toyagumon"
-        }
-    ]
+	"title": "Three Musketeers",
+	"main": [
+		{
+			"name": "beelstarmon",
+			"line": "impmon"
+		},
+		{
+			"name": "magnakidmon",
+			"line": "toyagumon"
+		},
+		{
+			"name": "gundramon",
+			"line": "commandramon"
+		}
+	],
+	"related": [
+		{
+			"name": "beelzebumon",
+			"line": "impmon"
+		},
+		{
+			"name": "avengekidmon",
+			"line": "toyagumon"
+		},
+		{
+			"name": "revolmon",
+			"line": "toyagumon"
+		}
+	],
+	"grid": {
+		"size": 6,
+		"levels": ["baby I", "baby II", "rookie", "champion", "ultimate", "mega"],
+		"columns": [
+			[
+				null,
+				null,
+				{
+					"from": null,
+					"name": "sparrowmon"
+				},
+				null,
+				{
+					"from": [[1, -1]],
+					"name": "darksuperstarmon",
+					"skins": ["vulturemon"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "beelstarmon"
+				}
+			],
+			[
+				null,
+				null,
+				{
+					"from": null,
+					"name": "toyagumon"
+				},
+				{
+					"from": [
+						[-1, -1],
+						[0, -1],
+						[1, -1],
+						[2, -1]
+					],
+					"name": "revolmon"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "rizegreymon"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "magnakidmon"
+				}
+			],
+			[
+				null,
+				null,
+				{
+					"from": null,
+					"name": "toyagumon_black"
+				},
+				null,
+				{
+					"from": [[-1, -1]],
+					"name": "gigadramon"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "gundramon"
+				}
+			],
+			[
+				null,
+				null,
+				{
+					"from": null,
+					"name": "monmon"
+				},
+				{
+					"from": [[0, -1]],
+					"name": "hookmon"
+				},
+				{
+					"from": [
+						[-2, -1],
+						[0, -1]
+					],
+					"name": "captainhookmon",
+					"skins": ["mummymon"]
+				},
+				{
+					"from": [[0, -1]],
+					"name": "avengekidmon"
+				}
+			]
+		]
+	}
 }
