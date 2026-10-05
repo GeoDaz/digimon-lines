@@ -17,9 +17,9 @@ interface Props {
 const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 	return (
 		<Layout
-			title="Available DIM"
-			metatitle="DIM"
-			metadescription="List of available Digimon DIM"
+			title="Available Vpets"
+			metatitle="Vpets"
+			metadescription="List of available Digimon Vpets"
 		>
 			<div>
 				<p className="mb-1">
@@ -49,19 +49,17 @@ const PageLines: React.FC<Props> = ({ ssr = defaultData }) => {
 			<div className="line-wrapper">
 				<Row className="line-row">
 					{ssr.lines.map((line, i) =>
-						typeof line === 'string' ? (
+						typeof line === 'string' ?
 							<Col key={i}>
 								<LinePoint name={line} type={VB} />
 							</Col>
-						) : (
-							<Col key={i}>
+						:	<Col key={i}>
 								<LinePoint
 									name={line.name}
 									available={line.available}
 									type={VB}
 								/>
 							</Col>
-						)
 					)}
 				</Row>
 			</div>
