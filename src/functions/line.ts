@@ -20,9 +20,9 @@ export const skinImage = (skin: LineSkin): string | undefined =>
 export const MAX_SKINS = 6;
 const SKINS_PER_COLUMN = 3;
 
-export const skinStyle = (index: number): CSSProperties => {
+export const skinStyle = (index: number, ratio: number = 1): CSSProperties => {
 	const style: CSSProperties = {
-		bottom: 3.3 * (index % SKINS_PER_COLUMN) + 'em',
+		bottom: 3.3 * ratio * (index % SKINS_PER_COLUMN) + 'em',
 	};
 	if (index >= SKINS_PER_COLUMN) {
 		style.left = 0;

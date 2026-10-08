@@ -1,5 +1,12 @@
-import React, { useContext, useRef, useEffect, MouseEventHandler } from 'react';
-import { Button, ButtonGroup, Dropdown, DropdownButton, Modal } from 'react-bootstrap';
+import React, { useContext, useRef, useEffect, useState, MouseEventHandler } from 'react';
+import {
+	Button,
+	ButtonGroup,
+	Collapse,
+	Dropdown,
+	DropdownButton,
+	Modal,
+} from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import { LineColor, LineFrom, LinePoint, LineSkin } from '@/types/Line';
 import { GridContext } from '@/context/grid';
@@ -15,6 +22,7 @@ import { DigimonContext } from '@/context/digimon';
 import { capitalize, makeClassName } from '@/functions';
 import { MAX_SKINS, skinImage, skinName, skinStyle } from '@/functions/line';
 import ButtonRemove from '../Button/ButtonRemove';
+import { BASE_IMG_SIZE } from '@/consts/grid';
 
 interface Props {
 	handleClose: () => void;
@@ -29,6 +37,7 @@ const LinePointSettings: React.FC<Props> = ({
 	show = false,
 }) => {
 	const searchRef = useRef<HTMLInputElement>(null);
+	const [showSkinFields, setShowSkinFields] = useState(false);
 	const { handleUpdate } = useContext(GridContext);
 	const licenceName = useContext(LicenseContext).name;
 	const { dubNames } = useContext(DigimonContext);
@@ -200,7 +209,7 @@ const LinePointSettings: React.FC<Props> = ({
 											expandable={true}
 											width={225}
 											height={225}
-											style={skinStyle(i)}
+											style={skinStyle(i, 225 / BASE_IMG_SIZE)}
 											zoomable={false}
 										/>
 									))}
@@ -230,20 +239,36 @@ const LinePointSettings: React.FC<Props> = ({
 								<div className="separator mt-3 mb-2" />
 								<div>
 									<h4
+										role="button"
+										aria-expanded={showSkinFields}
+										aria-controls="line-point-settings_skin-fields"
+										onClick={() => setShowSkinFields(s => !s)}
 										className={makeClassName(
+											'user-select-none',
 											skinsFull && 'text-decoration-line-through'
 										)}
 									>
+										<Icon
+											name={
+												showSkinFields ? 'chevron-down' : (
+													'chevron-right'
+												)
+											}
+										/>{' '}
 										Add a skin (max {MAX_SKINS})
 									</h4>
-									<DigimonSelector
-										licenceName={licenceName}
-										point={point}
-										handleChoose={handleChooseSkin}
-										handleImage={handleSkinImage}
-										handleUpload={handleSkinUpload}
-										disabled={skinsFull}
-									/>
+									<Collapse in={showSkinFields}>
+										<div id="line-point-settings_skin-fields">
+											<DigimonSelector
+												licenceName={licenceName}
+												point={point}
+												handleChoose={handleChooseSkin}
+												handleImage={handleSkinImage}
+												handleUpload={handleSkinUpload}
+												disabled={skinsFull}
+											/>
+										</div>
+									</Collapse>
 									<div className="d-flex flex-wrap gap-3">
 										{point.skins?.map((skin, i) => {
 											const name = skinName(skin);
