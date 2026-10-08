@@ -1,10 +1,15 @@
 import Layout from '@/components/Layout';
 import ListItem from '@/components/List/ListItem';
 import DigimonModal, { EditData } from '@/components/List/AddDigimonModal';
-import LevelFilter from '@/components/List/LevelFilter';
+import ComboBox from '@/components/ComboBox';
 import SearchBar from '@/components/SearchBar';
 import { makeClassName, stringToKey } from '@/functions';
 import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
+import {
+	findDigimonData,
+	getDigimonFilterOptions,
+	matchDigimonFilters,
+} from '@/functions/digimonFilters';
 import useHash from '@/hooks/useHash';
 import useSubmitDigimon, { DigimonList } from '@/hooks/useSubmitDigimon';
 import useDeleteDigimon from '@/hooks/useDeleteDigimon';
@@ -44,6 +49,8 @@ const PageList: React.FC<Props> = props => {
 	const handleReorderDigimon = useReorderDigimon(setFullList);
 	const [search, setSearch] = useState<string>();
 	const [levelFilter, setLevelFilter] = useState<string>('');
+	const [attributeFilter, setAttributeFilter] = useState<string>('');
+	const [typeFilter, setTypeFilter] = useState<string>('');
 	const [showModal, setShowModal] = useState(false);
 	const [editData, setEditData] = useState<EditData | null>(null);
 	const dragRef = useRef<{ level: string; name: string } | null>(null);
@@ -60,6 +67,10 @@ const PageList: React.FC<Props> = props => {
 	const canReorder = IS_DEV && !search;
 
 	const levels = useMemo(() => Object.keys(fullList), [fullList]);
+	const filterOptions = useMemo(
+		() => getDigimonFilterOptions(props.digimons || defaultObject),
+		[props.digimons]
+	);
 
 	// Flat name -> DigimonItem lookup so components with only a name (e.g. the
 	// expanded image modal) can resolve a digimon's relations.
@@ -67,15 +78,28 @@ const PageList: React.FC<Props> = props => {
 	const itemLevels = useMemo(() => getDigimonItemLevels(fullList), [fullList]);
 
 	const list = useMemo<DigimonList>(() => {
-		if (!search && !levelFilter) return fullList;
+		const dataFilters = { level: '', attribute: attributeFilter, type: typeFilter };
+		const hasDataFilters = !!(attributeFilter || typeFilter);
+		if (!search && !levelFilter && !hasDataFilters) return fullList;
 		return Object.entries(fullList).reduce((acc, [level, levels]) => {
 			if (levelFilter && level !== levelFilter) return acc;
 
 			const nextLevel =
-				search ?
+				search || hasDataFilters ?
 					Object.entries(levels).reduce(
 						(acc, [key, value]) => {
-							if (key.includes(search)) {
+							if (
+								(!search || key.includes(search)) &&
+								(!hasDataFilters ||
+									matchDigimonFilters(
+										findDigimonData(
+											props.digimons || defaultObject,
+											key,
+											props.dubNames
+										),
+										dataFilters
+									))
+							) {
 								acc[key] = value;
 							}
 							return acc;
@@ -89,7 +113,15 @@ const PageList: React.FC<Props> = props => {
 			}
 			return acc;
 		}, {} as DigimonList);
-	}, [fullList, search, levelFilter]);
+	}, [
+		fullList,
+		search,
+		levelFilter,
+		attributeFilter,
+		typeFilter,
+		props.digimons,
+		props.dubNames,
+	]);
 
 	// Flat render order of names (across levels), used for pagination + hash jumps.
 	const flatNames = useMemo(
@@ -101,7 +133,7 @@ const PageList: React.FC<Props> = props => {
 	// Reset pagination whenever the visible list changes (search / filter / edits).
 	useEffect(() => {
 		setVisibleCount(PAGE_SIZE);
-	}, [search, levelFilter]);
+	}, [search, levelFilter, attributeFilter, typeFilter]);
 
 	// Load more cards as the bottom sentinel approaches the viewport.
 	useEffect(() => {
@@ -236,18 +268,43 @@ const PageList: React.FC<Props> = props => {
 					itemLevels={itemLevels}
 					levels={levels}
 				>
-					<div className="d-flex gap-3 align-items-center">
+					<div className="d-flex flex-wrap gap-3 align-items-center">
 						<SearchBar
 							label="Research a digimon"
 							onSubmit={handleSearch}
 							defaultValue={search}
 							width={300}
 						/>
-						<LevelFilter
-							levels={levels}
+						<ComboBox
+							id="level-filter"
+							options={levels}
 							value={levelFilter}
 							onChange={setLevelFilter}
+							label="Filter by level"
+							allLabel="All levels"
 						/>
+						{filterOptions.attributes.length > 0 && (
+							<ComboBox
+								id="attribute-filter"
+								options={filterOptions.attributes}
+								value={attributeFilter}
+								onChange={setAttributeFilter}
+								label="Filter by attribute"
+								allLabel="All attributes"
+								width={250}
+							/>
+						)}
+						{filterOptions.types.length > 0 && (
+							<ComboBox
+								id="type-filter"
+								options={filterOptions.types}
+								value={typeFilter}
+								onChange={setTypeFilter}
+								label="Filter by type"
+								allLabel="All types"
+								width={250}
+							/>
+						)}
 						{IS_DEV && (
 							<Button
 								variant="primary"

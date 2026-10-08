@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Button, Modal, Form, Row, Col } from 'react-bootstrap';
 import SearchBar from '@/components/SearchBar';
-import LevelFilter from '@/components/List/LevelFilter';
+import ComboBox from '@/components/ComboBox';
 import { DigimonItem } from '@/types/Digimon';
 import { capitalize } from '@/functions';
 import { DigimonContext } from '@/context/digimon';
@@ -157,11 +157,13 @@ const DigimonModal: React.FC<Props> = ({
 					<Row style={{ rowGap: '1em' }}>
 						<Col md={12} className="gap-2">
 							<h5>Level</h5>
-							<LevelFilter
-								levels={levels}
+							<ComboBox
+								id="level-select"
+								options={levels}
 								value={level}
 								onChange={setLevel}
 								label="Select a level"
+								allLabel="All levels"
 								width="100%"
 							/>
 						</Col>

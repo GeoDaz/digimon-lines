@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import Line, {
 	LineColumn,
 	LineFound,
@@ -15,6 +16,20 @@ export const skinName = (skin: LineSkin): string =>
 
 export const skinImage = (skin: LineSkin): string | undefined =>
 	typeof skin === 'string' ? undefined : skin.image;
+
+export const MAX_SKINS = 6;
+const SKINS_PER_COLUMN = 3;
+
+export const skinStyle = (index: number): CSSProperties => {
+	const style: CSSProperties = {
+		bottom: 3.3 * (index % SKINS_PER_COLUMN) + 'em',
+	};
+	if (index >= SKINS_PER_COLUMN) {
+		style.left = 0;
+		style.right = 'auto';
+	}
+	return style;
+};
 
 export const transformLine = (line: Line | undefined): Line | undefined => {
 	if (line) {

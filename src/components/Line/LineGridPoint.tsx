@@ -2,7 +2,7 @@ import React, { MouseEventHandler, useMemo, useContext } from 'react';
 import { LinePoint as LinePointInterface } from '@/types/Line';
 import LineImage from '@/components/Line/LineImage';
 import { makeClassName } from '@/functions';
-import { skinImage, skinName } from '@/functions/line';
+import { skinImage, skinName, skinStyle } from '@/functions/line';
 import Icon from '@/components/Icon';
 import { GridContext } from '@/context/grid';
 import { ZoomContext } from '@/context/zoom';
@@ -142,7 +142,7 @@ const LinePoint: React.FC<{
 						path={skinImage(skin)}
 						className="line-skin"
 						loadable={false}
-						style={{ bottom: 3.3 * i + 'em' }}
+						style={skinStyle(i)}
 						expandable={!handleEdit}
 					/>
 				))}

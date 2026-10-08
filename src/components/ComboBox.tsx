@@ -1,23 +1,29 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Icon from '@/components/Icon';
 import { makeClassName } from '@/functions';
 
 interface Props {
-	levels: string[];
+	id: string;
+	options: string[];
 	value: string;
-	onChange: (level: string) => void;
+	onChange: (value: string) => void;
 	label?: string;
+	allLabel?: string;
 	width?: number | string;
+	className?: string;
+	disabled?: boolean;
 }
 
-const LevelFilter: React.FC<Props> = ({
-	levels,
+const ComboBox: React.FC<Props> = ({
+	id,
+	options,
 	value,
 	onChange,
-	label = 'Filter by level',
-	width = 300,
+	label = 'Filter',
+	allLabel = 'All',
+	className,
+	disabled,
 }) => {
 	const [query, setQuery] = useState<string>(value);
 	const [open, setOpen] = useState(false);
@@ -29,15 +35,15 @@ const LevelFilter: React.FC<Props> = ({
 		setQuery(value);
 	}, [value]);
 
-	// All matching levels, without any count limit.
+	// All matching options, without any count limit.
 	const previews =
 		query ?
-			levels.filter(level => level.toLowerCase().includes(query.toLowerCase()))
-		:	levels;
+			options.filter(option => option.toLowerCase().includes(query.toLowerCase()))
+		:	options;
 
-	const select = (level: string) => {
-		onChange(level);
-		setQuery(level);
+	const select = (option: string) => {
+		onChange(option);
+		setQuery(option);
 		setOpen(false);
 		setSelection(null);
 	};
@@ -51,6 +57,7 @@ const LevelFilter: React.FC<Props> = ({
 
 	const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
 		if (e.key === 'Escape') {
+			if (open) e.stopPropagation();
 			setOpen(false);
 			setSelection(null);
 			return;
@@ -82,13 +89,13 @@ const LevelFilter: React.FC<Props> = ({
 	};
 
 	return (
-		<div className="form search d-flex mb-3" style={{ width, maxWidth: '100%' }}>
-			<Form.Label htmlFor="level-filter" visuallyHidden>
+		<div className={makeClassName('form search combobox', className)}>
+			<Form.Label htmlFor={id} visuallyHidden>
 				{label}
 			</Form.Label>
 			<Form.Control
 				type="text"
-				id="level-filter"
+				id={id}
 				placeholder={label}
 				onChange={e => {
 					setQuery(e.target.value);
@@ -103,6 +110,7 @@ const LevelFilter: React.FC<Props> = ({
 				onKeyDown={onKeyDown}
 				autoComplete="off"
 				className="research flex-grow-1 mw-100"
+				disabled={disabled}
 			/>
 			{open && previews.length > 0 && (
 				<div
@@ -115,33 +123,34 @@ const LevelFilter: React.FC<Props> = ({
 						onClick={clear}
 						style={{ fontStyle: 'italic', opacity: 0.8 }}
 					>
-						All levels
+						{allLabel}
 					</span>
-					{previews.map((level, i) => (
+					{previews.map((option, i) => (
 						<span
-							key={level}
+							key={option}
 							className={makeClassName(
 								'preview',
 								selection === i && 'selected',
-								value === level && 'fw-bold'
+								value === option && 'fw-bold'
 							)}
-							onClick={() => select(level)}
+							onClick={() => select(option)}
 						>
-							{level}
+							{option}
 						</span>
 					))}
 				</div>
 			)}
-			<Button
-				variant="secondary"
+			<button
 				type="button"
-				title={value ? 'Clear level filter' : 'Show levels'}
+				title={value ? `Clear ${label.toLowerCase()}` : 'Show options'}
+				className="combox-button"
 				onClick={() => (value ? clear() : setOpen(o => !o))}
+				disabled={disabled}
 			>
 				<Icon name={value ? 'x-lg' : 'chevron-down'} />
-			</Button>
+			</button>
 		</div>
 	);
 };
 
-export default LevelFilter;
+export default ComboBox;

@@ -5,6 +5,7 @@ import { LineColor, LineFrom, LinePoint, LineSkin } from '@/types/Line';
 import { GridContext } from '@/context/grid';
 import { setLinePoint } from '@/reducers/lineReducer';
 import SearchBar from '@/components/SearchBar';
+import DigimonFinder from './DigimonFinder';
 import LineImage from './LineImage';
 import colors, { legend } from '@/consts/colors';
 import UploadImage from '../UploadImage';
@@ -12,7 +13,7 @@ import InputMono from '../InputMono';
 import { LicenseContext } from '@/context/license';
 import { DigimonContext } from '@/context/digimon';
 import { capitalize, makeClassName } from '@/functions';
-import { skinImage, skinName } from '@/functions/line';
+import { MAX_SKINS, skinImage, skinName, skinStyle } from '@/functions/line';
 import ButtonRemove from '../Button/ButtonRemove';
 
 interface Props {
@@ -27,14 +28,15 @@ const LinePointSettings: React.FC<Props> = ({
 	coord,
 	show = false,
 }) => {
-	const ref = useRef<HTMLInputElement>(null);
+	const searchRef = useRef<HTMLInputElement>(null);
 	const { handleUpdate } = useContext(GridContext);
 	const licenceName = useContext(LicenseContext).name;
 	const { dubNames } = useContext(DigimonContext);
+	const dubName = point && dubNames[point.name];
 
 	useEffect(() => {
 		if (show) {
-			ref.current?.focus();
+			searchRef.current?.focus();
 		}
 	}, [show]);
 
@@ -43,11 +45,9 @@ const LinePointSettings: React.FC<Props> = ({
 			if (point?.image) {
 				URL.revokeObjectURL(point.image);
 			}
-			const nextPoint: LinePoint = point
-				? { ...point, name: search }
-				: { name: search, from: null };
+			const nextPoint: LinePoint =
+				point ? { ...point, name: search } : { name: search, from: null };
 			handleUpdate(setLinePoint, coord, nextPoint);
-			handleClose();
 		}
 	};
 
@@ -55,7 +55,6 @@ const LinePointSettings: React.FC<Props> = ({
 		if (handleUpdate) {
 			const newPoint: LinePoint = { name: 'url', from: null, image: value };
 			handleUpdate(setLinePoint, coord, newPoint);
-			handleClose();
 		}
 	};
 
@@ -63,7 +62,6 @@ const LinePointSettings: React.FC<Props> = ({
 		if (handleUpdate) {
 			const newPoint: LinePoint = { name: 'upload', from: null, image: file };
 			handleUpdate(setLinePoint, coord, newPoint);
-			handleClose();
 		}
 	};
 
@@ -160,89 +158,113 @@ const LinePointSettings: React.FC<Props> = ({
 		}
 	};
 
-	const skinsFull = point?.skins ? point.skins.length > 2 : false;
+	const skinsFull = point?.skins ? point.skins.length >= MAX_SKINS : false;
 
 	return (
-		<Modal show={show} onHide={handleClose} className="line-point-settings">
+		<Modal show={show} onHide={handleClose} size="lg" className="line-point-settings">
 			<Modal.Header closeButton>
 				<Modal.Title>
 					<Icon name="sliders2" /> Element Options
 				</Modal.Title>
 			</Modal.Header>
-			<Modal.Body>
-				<SearchBar
-					label={`Research a ${licenceName}`}
-					onSubmit={handleChoose}
-					forwardRef={ref}
+			<Modal.Body className="d-flex flex-column gap-3">
+				<DigimonSelector
+					licenceName={licenceName}
+					point={point}
+					handleChoose={handleChoose}
+					handleImage={handleImage}
+					handleUpload={handleUpload}
+					searchRef={searchRef}
 				/>
-				<InputMono
-					name="image"
-					onSubmit={handleImage}
-					placeholder="Image URL"
-					defaultValue={(point && point.name == 'url' && point.image) || ''}
-				/>
-				<UploadImage handleUpload={handleUpload} className="mb-3" />
 				{!!point && (
 					<>
-						<ImagePoint
-							className="mb-3"
-							point={point}
-							handleRemove={handleRemove}
-							handleMirror={handleMirror}
-						/>
-						<SettingFroms
-							point={point}
-							handleSelectColor={handleSelectColor}
-							handleRemoveFrom={handleRemoveFrom}
-						/>
+						<div className="d-flex flex-column flex-sm-row gap-4 align-items-center align-items-sm-start">
+							<div className="line-point width-min-content">
+								<div className="line-point-safe-zone">
+									<LineImage
+										name={point.name}
+										path={point.image}
+										mirror={point.mirror}
+										expandable={true}
+										width={225}
+										height={225}
+										zoomable={false}
+									/>
+									{point.skins?.map((skin, i) => (
+										<LineImage
+											key={i}
+											name={skinName(skin)}
+											path={skinImage(skin)}
+											className="line-skin"
+											loadable={false}
+											expandable={true}
+											width={225}
+											height={225}
+											style={skinStyle(i)}
+											zoomable={false}
+										/>
+									))}
+								</div>
+							</div>
+							<div>
+								<h4 className="text-capitalize break-word mb-3">
+									{capitalize(point.name)}
+									{dubName && ` / ${capitalize(dubName)}`}{' '}
+									<ButtonRemove
+										onClick={handleRemove}
+										title="remove digimon"
+									/>{' '}
+									<Button title="mirror mode" onClick={handleMirror}>
+										<Icon name="symmetry-vertical" />
+									</Button>
+								</h4>
+								<SettingFroms
+									point={point}
+									handleSelectColor={handleSelectColor}
+									handleRemoveFrom={handleRemoveFrom}
+								/>
+							</div>
+						</div>
 						{!!point.name && (
 							<>
-								<h4
-									className={makeClassName(
-										'mt-4',
-										skinsFull && 'text-decoration-line-through'
-									)}
-								>
-									Add a skin (max 3)
-								</h4>
-								<SearchBar
-									label={`Research a ${licenceName}`}
-									onSubmit={handleChooseSkin}
-									voidOnSubmit
-									disabled={skinsFull}
-								/>
-								<InputMono
-									name="skin-image"
-									onSubmit={handleSkinImage}
-									placeholder="Skin image URL"
-									defaultValue=""
-									disabled={skinsFull}
-								/>
-								<UploadImage
-									handleUpload={handleSkinUpload}
-									id="upload-skin-image"
-									label="Upload a skin"
-									className="mb-3"
-									disabled={skinsFull}
-								/>
-								<div className="d-flex flex-wrap gap-3">
-									{point.skins?.map((skin, i) => {
-										const name = skinName(skin);
-										return (
-											<h5
-												key={i}
-												className="text-capitalize break-word"
-											>
-												{capitalize(name)}
-												{dubNames[name] &&
-													` / ${capitalize(dubNames[name])}`}{' '}
-												<ButtonRemove
-													onClick={() => handleRemoveSkin(i)}
-													title="remove skin"
-												/>
-											</h5>
-										);
-									})}
+								<div className="separator mt-3 mb-2" />
+								<div>
+									<h4
+										className={makeClassName(
+											skinsFull && 'text-decoration-line-through'
+										)}
+									>
+										Add a skin (max {MAX_SKINS})
+									</h4>
+									<DigimonSelector
+										licenceName={licenceName}
+										point={point}
+										handleChoose={handleChooseSkin}
+										handleImage={handleSkinImage}
+										handleUpload={handleSkinUpload}
+										disabled={skinsFull}
+									/>
+									<div className="d-flex flex-wrap gap-3">
+										{point.skins?.map((skin, i) => {
+											const name = skinName(skin);
+											return (
+												<h5
+													key={i}
+													className="text-capitalize break-word"
+												>
+													{capitalize(name)}
+													{dubNames[name] &&
+														` / ${capitalize(dubNames[name])}`}{' '}
+													<ButtonRemove
+														onClick={() =>
+															handleRemoveSkin(i)
+														}
+														title="remove skin"
+													/>
+												</h5>
+											);
+										})}
+									</div>
 								</div>
 							</>
 						)}
@@ -253,56 +275,47 @@ const LinePointSettings: React.FC<Props> = ({
 	);
 };
 
-const ImagePoint: React.FC<{
-	className?: string;
-	point: LinePoint;
-	handleRemove: MouseEventHandler<HTMLElement>;
-	handleMirror: MouseEventHandler<HTMLElement>;
-	imgClassName?: string;
-}> = ({ className, point, handleRemove, handleMirror, imgClassName }) => {
-	const { dubNames } = useContext(DigimonContext);
-	const dubName = dubNames[point.name];
-	return (
-	<div className={className}>
-		<h4 className="text-capitalize break-word mb-3">
-			{capitalize(point.name)}
-			{dubName && ` / ${capitalize(dubName)}`}{' '}
-			<ButtonRemove onClick={handleRemove} title="remove digimon" />{' '}
-			<Button title="mirror mode" onClick={handleMirror}>
-				<Icon name="symmetry-vertical" />
-			</Button>
-		</h4>
-		<div className="line-point width-min-content">
-			<div className="line-point-safe-zone">
-				<LineImage
-					name={point.name}
-					path={point.image}
-					mirror={point.mirror}
-					className={imgClassName}
-					expandable={true}
-					width={225}
-					height={225}
-					zoomable={false}
-				/>
-				{point.skins?.map((skin, i) => (
-					<LineImage
-						key={i}
-						name={skinName(skin)}
-						path={skinImage(skin)}
-						className="line-skin"
-						loadable={false}
-						expandable={true}
-						width={225}
-						height={225}
-						style={{ bottom: 3.3 * i + 'em' }}
-						zoomable={false}
-					/>
-				))}
-			</div>
+const DigimonSelector: React.FC<{
+	licenceName: string;
+	point?: LinePoint;
+	handleChoose: (search: string) => void;
+	handleImage: (name: string, value: string) => void;
+	handleUpload: (file: string) => void;
+	searchRef?: React.Ref<HTMLInputElement>;
+	disabled?: boolean;
+}> = ({
+	licenceName,
+	point,
+	handleChoose,
+	handleImage,
+	handleUpload,
+	searchRef,
+	disabled,
+}) => (
+	<div>
+		<DigimonFinder
+			label={`Research a ${licenceName}`}
+			onSelect={handleChoose}
+			forwardRef={searchRef}
+			disabled={disabled}
+		/>
+		<div className="d-sm-flex gap-3">
+			<InputMono
+				name="image"
+				onSubmit={handleImage}
+				placeholder="Image URL"
+				defaultValue={(point && point.name == 'url' && point.image) || ''}
+				className="flex-grow-1"
+				disabled={disabled}
+			/>
+			<UploadImage
+				handleUpload={handleUpload}
+				className="mb-3"
+				disabled={disabled}
+			/>
 		</div>
 	</div>
-	);
-};
+);
 
 const SettingFroms: React.FC<{
 	point: LinePoint;
