@@ -6,7 +6,7 @@ import Icon from '@/components/Icon';
 import LineImage from './LineImage';
 import { SearchContext } from '@/context/search';
 import { DigimonContext } from '@/context/digimon';
-import { capitalize, makeClassName, unCapitalize } from '@/functions';
+import { capitalize, makeClassName, stringToKey, unCapitalize } from '@/functions';
 import { getSearchPriority } from '@/functions/search';
 import {
 	DigimonFilters,
@@ -24,6 +24,8 @@ const PAGE_SIZE = 100;
 interface Result {
 	name: string;
 	priority: number;
+	prefix: boolean;
+	official: boolean;
 	digimon?: Digimon;
 }
 
@@ -56,22 +58,39 @@ const DigimonFinder: React.FC<Props> = ({
 	const results = useMemo<Result[]>(() => {
 		if (!searchList || (!trimmedQuery && !filtered)) return [];
 		const names = trimmedQuery ? searchList.keys : searchList.values;
+		const queryKey = stringToKey(trimmedQuery);
 		const seen = new Map<string, Result>();
 		names.forEach(key => {
 			const priority = trimmedQuery ? getSearchPriority(trimmedQuery, key) : 0;
 			if (priority == null) return;
+			const prefix =
+				!!queryKey &&
+				stringToKey(
+					queryKey.startsWith('app') ? key : key.replace(/^app_/, '')
+				).startsWith(queryKey);
 			const name = searchList.mapped[key] || key;
 			const previous = seen.get(name);
 			if (previous) {
 				if (priority > previous.priority) previous.priority = priority;
+				if (prefix) previous.prefix = true;
 				return;
 			}
 			const digimon = findDigimonData(data, name, dubNames);
 			if (!matchDigimonFilters(digimon, filters)) return;
-			seen.set(name, { name, priority, digimon });
+			seen.set(name, {
+				name,
+				priority,
+				prefix,
+				official: !!data[name]?.year,
+				digimon,
+			});
 		});
 		return Array.from(seen.values()).sort(
-			(a, b) => b.priority - a.priority || a.name.localeCompare(b.name)
+			(a, b) =>
+				Number(b.official) - Number(a.official) ||
+				Number(b.prefix) - Number(a.prefix) ||
+				b.priority - a.priority ||
+				a.name.localeCompare(b.name)
 		);
 	}, [searchList, data, dubNames, trimmedQuery, filters, filtered]);
 
