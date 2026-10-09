@@ -7,7 +7,7 @@ import { StringObject } from '@/types/Ui';
 export const attributeIcons: string[] = [
 	'data',
 	'free',
-	'no_data',
+	'none',
 	'unknown',
 	'vaccine',
 	'variable',
@@ -29,8 +29,8 @@ export const fieldIcons: string[] = [
 // Attribut déduit du niveau, quand celui-ci le détermine : les Baby I / II n'ont
 // pas de donnée d'attribut, les Armor sont Free et les Hybrid sont Variable.
 export const levelAttributes: StringObject = {
-	'baby i': 'No Data',
-	'baby ii': 'No Data',
+	'baby i': 'None',
+	'baby ii': 'None',
 	armor: 'Free',
 	hybrid: 'Variable',
 };

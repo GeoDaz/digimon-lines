@@ -5201,7 +5201,7 @@
 		"url": "https://wikimon.net/Huanglongmon",
 		"level": "Mega",
 		"type": "God Beast",
-		"attribute": ["Data", "No Data", "Free"],
+		"attribute": ["Data", "None", "Free"],
 		"field": [
 			"Metal Empire",
 			"Nature Spirits",
@@ -5904,7 +5904,7 @@
 		"year": "2003",
 		"url": "https://wikimon.net/Alphamon:_Ouryuken",
 		"level": ["Mega", "Mega+", "Ultra"],
-		"type": ["No Data", "Holy Knight"],
+		"type": ["None", "Holy Knight"],
 		"attribute": "Vaccine",
 		"field": "Virus Busters",
 		"Group": "Royal Knights"
@@ -12531,7 +12531,7 @@
 		"url": "https://wikimon.net/Huanglongmon:_Ruin_Mode",
 		"level": "Mega",
 		"type": "God Beast",
-		"attribute": ["No Data", "Data"]
+		"attribute": ["None", "Data"]
 	},
 	"huankunmon": {
 		"name": "huankunmon",
@@ -14414,6 +14414,32 @@
 		"level": "Baby II",
 		"year": "2026",
 		"type": "Lesser",
-		"attribute": ["Free"]
+		"attribute": "None",
+		"field": "",
+		"name": "suzumon"
+	},
+	"ficusmon": {
+		"level": "Champion",
+		"type": "Parasite",
+		"attribute": "Virus",
+		"field": "",
+		"year": "2026",
+		"name": "ficusmon"
+	},
+	"rootmon": {
+		"level": "Baby I",
+		"type": "Parasite",
+		"attribute": "None",
+		"field": "",
+		"year": "2026",
+		"name": "rootmon"
+	},
+	"sekiryumon": {
+		"level": "Champion",
+		"type": "Beast Dragon",
+		"attribute": "Data",
+		"field": "",
+		"year": "2026",
+		"name": "sekiryumon"
 	}
 }

@@ -17,7 +17,18 @@
                     "grass"
                 ]
             },
-            null,
+            {
+                "name": "bloomlordmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "grass"
+                ]
+            },
             null
         ],
         [
@@ -42,11 +53,39 @@
         ],
         [
             {
+                "name": "rootmon",
+                "from": [
+                    [
+                        0,
+                        1
+                    ]
+                ],
+                "color": [
+                    "grass"
+                ]
+            },
+            {
                 "name": "unknown",
                 "from": null
             },
             {
-                "name": "rootmon",
+                "name": "unknown",
+                "from": null
+            },
+            {
+                "name": "ficusmon",
+                "from": [
+                    [
+                        0,
+                        -3
+                    ]
+                ],
+                "color": [
+                    "grass"
+                ]
+            },
+            {
+                "name": "ajatarmon",
                 "from": [
                     [
                         0,
@@ -58,23 +97,37 @@
                 ]
             },
             {
-                "name": "unknown",
-                "from": null
-            },
-            {
-                "name": "ficusmon",
+                "name": "hydramon",
                 "from": [
                     [
                         0,
-                        -2
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -2,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1.5
                     ]
                 ],
                 "color": [
+                    "grass",
+                    "grass",
+                    "grass",
+                    "grass",
                     "grass"
                 ]
             },
-            null,
-            null,
             null
         ],
         [
@@ -131,7 +184,7 @@
                 ],
                 "from": [
                     [
-                        1,
+                        -2,
                         -1.5
                     ]
                 ],
@@ -143,7 +196,18 @@
         ],
         [
             null,
-            null,
+            {
+                "name": "tanemon",
+                "from": [
+                    [
+                        -3,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "grass"
+                ]
+            },
             {
                 "name": "mushmon",
                 "color": [
@@ -151,7 +215,7 @@
                 ],
                 "from": [
                     [
-                        -3,
+                        0,
                         -1
                     ]
                 ]
@@ -297,15 +361,15 @@
     "related": [
         {
             "name": "palmon",
-            "from": "cernumon"
-        },
-        {
-            "name": "palmon",
-            "for": "ceresmon_medium"
+            "for": "ajatarmon"
         },
         {
             "name": "palmon",
             "for": "tropiamon"
+        },
+        {
+            "name": "palmon",
+            "for": "ceresmon"
         },
         "hanimon",
         {

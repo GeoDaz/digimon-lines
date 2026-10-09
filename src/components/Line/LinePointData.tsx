@@ -23,7 +23,7 @@ const LinePointData: React.FC<{
 	const dubName = dubNames[name];
 	const datum = datumProp || data[name] || (dubName && data[dubName]);
 	if (!datum) return null;
-	// Le niveau complète l'attribut : Baby I / II « No Data », Armor « Free »,
+	// Le niveau complète l'attribut : Baby I / II « None », Armor « Free »,
 	// Hybrid « Variable », même quand la donnée ne le précise pas.
 	const attributes = getAttributeIcons(datum.attribute, datum.level);
 	const fields = getFieldIcons(datum.field);

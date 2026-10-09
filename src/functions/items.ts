@@ -8,7 +8,9 @@ export interface ItemIcon {
 }
 
 const toList = (value: string | string[] | undefined): string[] =>
-	Array.isArray(value) ? value : value ? [value] : [];
+	Array.isArray(value) ? value
+	: value ? [value]
+	: [];
 
 // Nom de fichier d'une valeur : « Dragon's Roar » -> dragons_roar.
 const toSlug = (value: string): string =>
@@ -48,16 +50,16 @@ const isBaby = (level: string | string[] | undefined): boolean =>
 	toList(level).some(value => value.trim().toLowerCase().startsWith('baby'));
 
 // Un même attribut ne veut pas dire la même chose selon le niveau : chez les
-// Baby I / II, « None » et « Free » valent absence de donnée (No Data) ; ailleurs
+// Baby I / II, « None » et « Free » valent absence de donnée (None) ; ailleurs
 // « None » veut juste dire non renseigné (Unknown).
 const resolveAttribute = (label: string, baby: boolean): string => {
 	const normalized = label.trim().toLowerCase();
-	if (baby) return normalized === 'none' || normalized === 'free' ? 'No Data' : label;
+	if (baby) return normalized === 'none' || normalized === 'free' ? 'None' : label;
 	return normalized === 'none' ? 'Unknown' : label;
 };
 
 // Les attributs du digimon, complétés par celui que son niveau implique : les
-// Baby I / II gardent toujours l'icône « No Data », les Armor « Free » et les
+// Baby I / II gardent toujours l'icône « None », les Armor « Free » et les
 // Hybrid « Variable », même quand la donnée ne le précise pas.
 export const getAttributeIcons = (
 	attribute: string | string[] | undefined,
