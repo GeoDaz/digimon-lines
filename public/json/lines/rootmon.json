@@ -4,199 +4,98 @@
             null,
             null,
             null,
+            null,
             {
-                "name": "chamblemon",
+                "name": "tropiamon",
                 "from": [
                     [
-                        1,
+                        2,
                         -1
                     ]
                 ],
                 "color": [
-                    "dark"
+                    "grass"
                 ]
             },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
             {
                 "name": "entmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
                 "color": [
                     "dark"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
                 ]
             },
-            {
-                "name": "xuanwumon",
-                "color": [
-                    "grass"
-                ],
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            },
+            null,
             null
         ],
         [
             {
-                "name": "yuramon",
+                "name": "unknown",
                 "from": null
             },
             {
-                "name": "tanemon",
-                "color": [
-                    "grass"
-                ],
+                "name": "rootmon",
                 "from": [
                     [
                         0,
                         -1
                     ]
+                ],
+                "color": [
+                    "grass"
                 ]
             },
             {
-                "name": "mushmon",
-                "color": [
-                    "grass"
-                ],
+                "name": "unknown",
+                "from": null
+            },
+            {
+                "name": "ficusmon",
                 "from": [
                     [
                         0,
-                        -1
+                        -2
                     ]
-                ]
-            },
-            {
-                "name": "woodmon",
+                ],
                 "color": [
                     "grass"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
                 ]
             },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
             {
-                "name": "cherrymon",
-                "color": [
-                    "grass"
-                ],
+                "name": "petaldramon",
                 "from": [
                     [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "puppetmon",
-                "color": [
-                    "grass",
-                    "grass"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
+                        1,
+                        0
                     ],
                     [
-                        1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "cernumon",
-                "color": [
-                    "fusion"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            {
-                "name": "tomorimon",
-                "from": null
-            },
-            {
-                "name": "onibimon"
-            },
-            {
-                "name": "hanimon",
-                "color": [
-                    "grass"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "kokeshimon",
-                "color": [
-                    "grass"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "karakurumon",
-                "color": [
-                    "grass"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "kaguyamon",
-                "color": [
-                    "grass"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "arbormon",
-                "color": [
-                    "grass"
-                ],
-                "from": [
-                    [
                         -1,
-                        -1.5
+                        -0.5
                     ]
+                ],
+                "color": [
+                    "slide",
+                    "grass"
                 ],
                 "ySize": 2
             },
@@ -226,15 +125,15 @@
             null,
             null,
             {
-                "name": "petaldramon",
+                "name": "arbormon",
+                "color": [
+                    "grass"
+                ],
                 "from": [
                     [
-                        -1,
-                        0
+                        1,
+                        -1.5
                     ]
-                ],
-                "color": [
-                    "slide"
                 ],
                 "ySize": 2
             },
@@ -243,34 +142,39 @@
             null
         ],
         [
+            null,
+            null,
             {
-                "name": "yuramon",
-                "from": null
-            },
-            {
-                "name": "tanemon",
-                "from": null
-            },
-            {
-                "name": "bacomon",
+                "name": "mushmon",
+                "color": [
+                    "grass"
+                ],
                 "from": [
                     [
-                        0,
-                        -2
-                    ]
-                ]
-            },
-            {
-                "name": "nohemon",
-                "from": [
-                    [
-                        0,
+                        -3,
                         -1
                     ]
                 ]
             },
             {
-                "name": "zamielmon",
+                "name": "woodmon",
+                "color": [
+                    "grass",
+                    "grass"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        -3,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "cherrymon",
                 "color": [
                     "grass"
                 ],
@@ -281,6 +185,102 @@
                     ]
                 ]
             },
+            {
+                "name": "puppetmon",
+                "color": [
+                    "grass"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "cernumon",
+                "color": [
+                    "fusion"
+                ],
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "chamblemon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "name": "pistmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "electric"
+                ]
+            },
+            {
+                "name": "xuanwumon",
+                "color": [
+                    "grass"
+                ],
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "ceresmon",
+                "from": [
+                    [
+                        -2,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "grass"
+                ],
+                "skins": [
+                    "ceresmon_medium"
+                ]
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
             null,
             null
         ],
@@ -307,9 +307,14 @@
             "name": "palmon",
             "for": "tropiamon"
         },
+        "hanimon",
+        {
+            "name": "pulsemon",
+            "for": "pistmon"
+        },
         {
             "name": "kamemon",
-            "from": "xuanwumon"
+            "for": "xuanwumon"
         }
     ],
     "size": 7

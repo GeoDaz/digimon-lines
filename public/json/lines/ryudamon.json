@@ -1,6 +1,35 @@
 {
     "columns": [
         [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "majiramon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "goldramon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null
+        ],
+        [
             {
                 "name": "fufumon",
                 "from": null
@@ -78,6 +107,10 @@
     ],
     "related": [
         {
+            "name": "suzumon",
+            "for": "sekiryumon"
+        },
+        {
             "name": "dorumon",
             "for": "alphamon"
         },
@@ -92,15 +125,11 @@
         },
         {
             "name": "dracomon",
-            "from": "majiramon"
+            "from": "goldramon"
         },
         {
             "name": "veemon",
             "for": "azulongmon"
-        },
-        {
-            "name": "airdramon",
-            "for": "goldramon"
         },
         {
             "name": "jellymon",

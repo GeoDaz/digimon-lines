@@ -1,163 +1,99 @@
 {
-    "columns": [
-        [
-            {
-                "name": "pupumon",
-                "from": null
-            },
-            {
-                "name": "puroromon"
-            },
-            {
-                "name": "tinkermon"
-            },
-            {
-                "name": "petermon",
-                "from": null
-            },
-            {
-                "name": "captainhookmon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "dark"
-                ]
-            },
-            {
-                "name": "olegmon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "fairymon",
-                "color": [
-                    "wind"
-                ],
-                "from": [
-                    [
-                        -1,
-                        -1.5
-                    ]
-                ],
-                "ySize": 2
-            },
-            null,
-            {
-                "name": "jetsilphymon",
-                "color": [
-                    "fusion",
-                    "fusion"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1.5
-                    ],
-                    [
-                        1,
-                        -1.5
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "shutumon",
-                "from": [
-                    [
-                        -1,
-                        0
-                    ],
-                    [
-                        -2,
-                        -1.5
-                    ]
-                ],
-                "ySize": 2,
-                "color": [
-                    "slide",
-                    "wind"
-                ]
-            },
-            null,
-            {
-                "name": "ancientirismon",
-                "from": [
-                    [
-                        0,
-                        -1.5
-                    ],
-                    [
-                        -1,
-                        -1.5
-                    ],
-                    [
-                        -1,
-                        0
-                    ]
-                ],
-                "color": [
-                    "fusion",
-                    "fusion",
-                    "slide"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-        ]
-    ],
-    "related": [
-        "morphomon",
-        {
-            "name": "wormmon",
-            "for": "hudiemon"
-        },
-        {
-            "name": "toyagumon",
-            "for": "hookmon"
-        },
-        {
-            "name": "hawkmon",
-            "for": "silphymon"
-        },
-        {
-            "name": "jazamon",
-            "for": "sparrowmon"
-        },
-        {
-            "name": "woodmon",
-            "for": "zamielmon"
-        }
-    ],
-    "size": 6
+	"columns": [
+		[
+			{
+				"name": "pupumon",
+				"from": null
+			},
+			{
+				"name": "puroromon"
+			},
+			{
+				"name": "tinkermon"
+			},
+			{
+				"name": "petermon",
+				"from": null
+			},
+			{
+				"name": "captainhookmon",
+				"from": [[0, -1]],
+				"color": ["dark"]
+			},
+			{
+				"name": "olegmon",
+				"from": [[0, -1]]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "fairymon",
+				"color": ["wind"],
+				"from": [[-1, -1.5]],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "jetsilphymon",
+				"color": ["fusion", "fusion"],
+				"from": [
+					[0, -1.5],
+					[1, -1.5]
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "shutumon",
+				"from": [
+					[-1, 0],
+					[-2, -1.5]
+				],
+				"ySize": 2,
+				"color": ["slide", "wind"]
+			},
+			null,
+			{
+				"name": "ancientirismon",
+				"from": [
+					[0, -1.5],
+					[-1, -1.5],
+					[-1, 0]
+				],
+				"color": ["fusion", "fusion", "slide"]
+			}
+		],
+		[null, null, null, null, null, null],
+		[null, null, null, null, null, null]
+	],
+	"related": [
+		"morphomon",
+		{
+			"name": "wormmon",
+			"for": "hudiemon"
+		},
+		{
+			"name": "toyagumon",
+			"for": "hookmon"
+		},
+		{
+			"name": "hawkmon",
+			"for": "silphymon"
+		},
+		{
+			"name": "jazamon",
+			"for": "sparrowmon"
+		},
+		{
+			"name": "hanimon",
+			"for": "zamielmon"
+		}
+	],
+	"size": 6
 }

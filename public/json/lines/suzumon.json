@@ -1,0 +1,40 @@
+{
+    "columns": [
+        [
+            {
+                "name": "mon",
+                "from": null
+            },
+            {
+                "name": "suzumon"
+            },
+            {
+                "name": "mon"
+            },
+            {
+                "name": "sekiryumon"
+            },
+            {
+                "name": "mon"
+            },
+            {
+                "name": "mon"
+            }
+        ]
+    ],
+    "related": [
+        {
+            "name": "ryudamon",
+            "from": "sekiryumon"
+        },
+        {
+            "name": "guilmon",
+            "for": "growlmon"
+        },
+        {
+            "name": "renamon",
+            "for": "kyubimon"
+        }
+    ],
+    "size": 6
+}

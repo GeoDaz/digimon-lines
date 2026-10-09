@@ -1,5 +1,13 @@
 [
 	{
+		"name": "suzumon",
+		"grid": ["sekiryumon"]
+	},
+	{
+		"name": "rootmon",
+		"grid": ["ficusmon"]
+	},
+	{
 		"name": "gekkomon",
 		"grid": ["atratusmon", "volvemon", "albatusmon"]
 	},
@@ -20,11 +28,11 @@
 		"grid": ["habakirimon"]
 	},
 	{
-		"name": "snakemon"
+		"name": "snakemon",
+		"grid": ["vipermon", "ambromon"]
 	},
-	"gargamon",
 	{
-		"name": "tapirmon",
-		"grid": ["taowumon"]
+		"name": "gargamon",
+		"grid": ["corvumon", "panoptemon"]
 	}
 ]

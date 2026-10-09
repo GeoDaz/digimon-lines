@@ -104,7 +104,10 @@
 			"for": "darktyranomon"
 		},
 		"betamon",
-		"woodmon",
+		{
+			"name": "rootmon",
+			"for": "woodmon"
+		},
 		"neocrimson"
 	]
 }

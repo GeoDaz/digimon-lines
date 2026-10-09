@@ -32,7 +32,10 @@
 			},
 			{
 				"name": "pajiramon",
-				"from": [[0, -1], [-1, -1]]
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
 			},
 			{
 				"name": "taotiemon"
@@ -98,7 +101,7 @@
 		]
 	],
 	"related": [
-        "aegiomon",
+		"aegiomon",
 		{
 			"name": "takinmon",
 			"for": "goatmon"
@@ -112,7 +115,7 @@
 			"from": "moosemon"
 		},
 		{
-			"name": "woodmon",
+			"name": "rootmon",
 			"for": "cernumon"
 		},
 		{

@@ -57,6 +57,7 @@ const LinePointSettings: React.FC<Props> = ({
 			const nextPoint: LinePoint =
 				point ? { ...point, name: search } : { name: search, from: null };
 			handleUpdate(setLinePoint, coord, nextPoint);
+			handleClose();
 		}
 	};
 
@@ -64,6 +65,7 @@ const LinePointSettings: React.FC<Props> = ({
 		if (handleUpdate) {
 			const newPoint: LinePoint = { name: 'url', from: null, image: value };
 			handleUpdate(setLinePoint, coord, newPoint);
+			handleClose();
 		}
 	};
 
@@ -71,6 +73,7 @@ const LinePointSettings: React.FC<Props> = ({
 		if (handleUpdate) {
 			const newPoint: LinePoint = { name: 'upload', from: null, image: file };
 			handleUpdate(setLinePoint, coord, newPoint);
+			handleClose();
 		}
 	};
 

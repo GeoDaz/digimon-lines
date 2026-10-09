@@ -1,407 +1,236 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            {
-                "name": "hagurumon_x",
-                "color": [
-                    "x"
-                ],
-                "from": [
-                    [
-                        1,
-                        0
-                    ]
-                ]
-            },
-            {
-                "name": "blimpmon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "masterblimpmon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "machine"
-                ]
-            },
-            null
-        ],
-        [
-            {
-                "name": "choromon",
-                "from": null
-            },
-            {
-                "name": "caprimon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "hagurumon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "guardromon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "andromon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "hiandromon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "giromon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "craniummon",
-                "from": [
-                    [
-                        -1,
-                        -1
-                    ],
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "tekkamon",
-                "from": [
-                    [
-                        -2,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "craniummon_x",
-                "from": [
-                    [
-                        -1,
-                        0
-                    ]
-                ],
-                "color": [
-                    "x"
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "kokuwamon",
-                "from": [
-                    [
-                        -3,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "machine"
-                ]
-            },
-            {
-                "name": "mechanorimon",
-                "color": [
-                    "machine",
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        -3,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "nanomon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "quantumon",
-                "color": [
-                    "light"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "kokuwamon_x",
-                "from": [
-                    [
-                        -1,
-                        0
-                    ]
-                ],
-                "color": [
-                    "x"
-                ]
-            },
-            {
-                "name": "clockmon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        -4,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "valvemon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        1,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "machine",
-                    "machine"
-                ]
-            },
-            {
-                "name": "quartzmon",
-                "color": [
-                    "dark"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "kenkimon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            },
-            null,
-            {
-                "name": "breakdramon",
-                "color": [
-                    "machine"
-                ],
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            {
-                "name": "solarmon",
-                "color": [
-                    "fire"
-                ],
-                "from": [
-                    [
-                        -6,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "guardromon_gold",
-                "color": [
-                    "gold"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ]
-            },
-            {
-                "name": "frozomon",
-                "color": [
-                    "ice",
-                    "ice"
-                ],
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        -1,
-                        -1
-                    ]
-                ]
-            },
-            null
-        ]
-    ],
-    "related": [
-        {
-            "name": "greymon",
-            "for": "machinedramon"
-        },
-        {
-            "name": "betamon",
-            "for": "megadramon"
-        },
-        {
-            "name": "machmon",
-            "for": "grandlocomon"
-        },
-        {
-            "name": "tentomon",
-            "for": "kokuwamon"
-        },
-        {
-            "name": "commandramon",
-            "for": "brigadramon"
-        },
-        {
-            "name": "jazamon",
-            "from": "mailbirdramon"
-        },
-        {
-            "name": "mamemon",
-            "from": "kokuwamon"
-        },
-        {
-            "name": "mamemon",
-            "for": "giromon"
-        },
-        {
-            "name": "dracomon",
-            "for": "breakdramon"
-        },
-        {
-            "name": "leomon",
-            "for": "loaderliomon"
-        },
-        {
-            "name": "phascomon",
-            "for": "astamon"
-        },
-        {
-            "name": "armadillomon",
-            "from": "kenkimon"
-        }
-    ],
-    "size": 6
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "hagurumon_x",
+				"color": ["x"],
+				"from": [[1, 0]]
+			},
+			{
+				"name": "blimpmon",
+				"color": ["machine"],
+				"from": [[1, -1]]
+			},
+			{
+				"name": "masterblimpmon",
+				"from": [[0, -1]],
+				"color": ["machine"]
+			},
+			null
+		],
+		[
+			{
+				"name": "choromon",
+				"from": null
+			},
+			{
+				"name": "caprimon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "hagurumon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "guardromon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "andromon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "hiandromon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "giromon",
+				"from": [[-1, -1]]
+			},
+			{
+				"name": "craniummon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "tekkamon",
+				"from": [[-2, -1]]
+			},
+			{
+				"name": "craniummon_x",
+				"from": [[-1, 0]],
+				"color": ["x"]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "kokuwamon",
+				"from": [[-3, -1]],
+				"color": ["machine"]
+			},
+			{
+				"name": "mechanorimon",
+				"color": ["machine", "machine"],
+				"from": [
+					[0, -1],
+					[-3, -1]
+				]
+			},
+			{
+				"name": "nanomon",
+				"color": ["machine"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "quantumon",
+				"color": ["light"],
+				"from": [[0, -1]]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "kokuwamon_x",
+				"from": [[-1, 0]],
+				"color": ["x"]
+			},
+			{
+				"name": "clockmon",
+				"color": ["machine"],
+				"from": [[-4, -1]]
+			},
+			{
+				"name": "valvemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": ["machine", "machine"]
+			},
+			{
+				"name": "quartzmon",
+				"color": ["dark"],
+				"from": [[0, -1]]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "kenkimon",
+				"color": ["machine"],
+				"from": [[1, -1]]
+			},
+			null,
+			{
+				"name": "breakdramon",
+				"color": ["machine"],
+				"from": [[1, -1]]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "solarmon",
+				"color": ["fire"],
+				"from": [[-6, -1]]
+			},
+			{
+				"name": "guardromon_gold",
+				"color": ["gold"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "frozomon",
+				"color": ["ice", "ice"],
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
+			},
+			null
+		]
+	],
+	"related": [
+		{
+			"name": "greymon",
+			"for": "machinedramon"
+		},
+		{
+			"name": "dracomon",
+			"for": "megadramon"
+		},
+		{
+			"name": "monodramon",
+			"for": "gigadramon"
+		},
+		{
+			"name": "machmon",
+			"for": "grandlocomon"
+		},
+		{
+			"name": "tentomon",
+			"for": "kokuwamon"
+		},
+		{
+			"name": "commandramon",
+			"for": "brigadramon"
+		},
+		{
+			"name": "jazamon",
+			"from": "mailbirdramon"
+		},
+		{
+			"name": "mamemon",
+			"from": "kokuwamon"
+		},
+		{
+			"name": "mamemon",
+			"for": "giromon"
+		},
+		{
+			"name": "dracomon",
+			"for": "breakdramon"
+		},
+		{
+			"name": "leomon",
+			"for": "loaderliomon"
+		},
+		{
+			"name": "phascomon",
+			"for": "astamon",
+			"from": "quartzmon"
+		},
+		{
+			"name": "armadillomon",
+			"for": "kenkimon"
+		}
+	],
+	"size": 6
 }
