@@ -7,8 +7,8 @@ import { VbThumb } from '@/types/Line';
 import { VB } from '@/consts/ui';
 
 const DEVICES = [
-	{ key: 'dim', title: 'Vital Bracelet DIM', url: 'https://humulos.com/digimon/vbdm/' },
-	{ key: 'bem', title: 'Vital Bracelet BE', url: 'https://humulos.com/digimon/vbbe/' },
+	{ key: 'dim', title: 'Vital Bracelet DIM' },
+	{ key: 'bem', title: 'Vital Bracelet BE' },
 ];
 
 const defaultData = { vbs: [] };
@@ -25,28 +25,13 @@ const PageVbs: React.FC<Props> = ({ ssr = defaultData }) => {
 			metatitle="Vpets"
 			metadescription="List of available Digimon Vpets"
 		>
-			<p>
-				Evolution charts from{' '}
-				<a
-					href="https://humulos.com/digimon/"
-					target="_blank"
-					rel="noopener noreferrer nofollow"
-				>
-					humulos.com
-				</a>
-				.
-			</p>
 			{DEVICES.map(device => {
 				const vbs = ssr.vbs.filter(vb => vb.device === device.key);
 				if (!vbs.length) return null;
 				const series = Array.from(new Set(vbs.map(vb => vb.series)));
 				return (
 					<section key={device.key} className="mb-4">
-						<h2 className="h3">
-							<a href={device.url} target="_blank" rel="noopener noreferrer nofollow">
-								{device.title}
-							</a>
-						</h2>
+						<h2 className="h3">{device.title}</h2>
 						{series.map(serie => (
 							<div key={serie} className="mb-3">
 								<h3 className="h5">{serie}</h3>
