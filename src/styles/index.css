@@ -213,6 +213,14 @@ i.click:hover {
 	display: inline-block;
 }
 
+.vertical-align-middle {
+	vertical-align: middle;
+}
+
+.vertical-align-top {
+	vertical-align: top;
+}
+
 h1 {
 	margin-bottom: 1em;
 	font-weight: 700;
@@ -1140,17 +1148,6 @@ a.line-point {
 	opacity: 1;
 }
 
-/* List Item */
-
-.list-item h3{
-	font-size: 1.3rem;
-}
-
-.list-item h4{
-	font-size: 1.2rem;
-	opacity: 0.8;
-}
-
 .reorderable {
 	transition: opacity 0.15s ease, transform 0.15s ease;
 	cursor: grab;
@@ -2009,7 +2006,8 @@ button.like-heart:focus-visible {
 }
 
 a.game-digimon-tile:hover,
-a.game-digimon-tile:focus {
+a.game-digimon-tile:focus,
+.game-digimon-tile:has(> .line-img.click):hover {
 	box-shadow: 0 0 0 2px var(--bs-primary-link);
 }
 
@@ -2032,6 +2030,11 @@ a.game-digimon-tile:focus {
 .evolution-table .cell-empty,
 .game-digimon-modal .cell-empty {
 	color: var(--bs-gray-600);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: var(--dl-tile-size, 64px);
+	width: var(--dl-tile-size, 64px);
 }
 
 .game-digimon-modal .details-title {
@@ -2167,4 +2170,38 @@ a.game-digimon-tile:focus {
 	width: 32px;
 	height: 32px;
 	object-fit: contain;
+}
+
+.list-table .cell-digimon{
+	vertical-align: top;
+}
+
+.list-table .cell-relations {
+	--dl-cell-tiles: 1;
+	min-width: calc(
+		var(--dl-tile-size, 64px) * var(--dl-cell-tiles) + 6px * (var(--dl-cell-tiles) - 1) +
+			24px
+	);
+	vertical-align: top;
+}
+.list-table .cell-relations.void {
+}
+
+.list-table .cell-tiles-2 {
+	--dl-cell-tiles: 2;
+}
+
+.list-table .cell-tiles-3 {
+	--dl-cell-tiles: 3;
+}
+
+.list-table .relation-label {
+	display: block;
+	margin: 8px 0 4px;
+	font-size: 0.9em;
+	color: var(--bs-gray-400);
+}
+
+.list-table .relation-label:first-child {
+	margin-top: 0;
 }

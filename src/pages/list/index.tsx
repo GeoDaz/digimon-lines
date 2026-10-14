@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout';
-import ListItem from '@/components/List/ListItem';
+import ListRow, { relationColumns } from '@/components/List/ListRow';
 import DigimonModal, { EditData } from '@/components/List/AddDigimonModal';
 import ComboBox from '@/components/ComboBox';
 import SearchBar from '@/components/SearchBar';
@@ -55,6 +55,7 @@ const PageList: React.FC<Props> = props => {
 	const [editData, setEditData] = useState<EditData | null>(null);
 	const dragRef = useRef<{ level: string; name: string } | null>(null);
 	const [draggingName, setDraggingName] = useState<string | null>(null);
+	const [resetCount, setResetCount] = useState(0);
 	const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 	const sentinelRef = useRef<HTMLDivElement | null>(null);
 	const scrolledHashRef = useRef<string | null>(null);
@@ -130,6 +131,30 @@ const PageList: React.FC<Props> = props => {
 	);
 	const totalCount = flatNames.length;
 
+	const columns = useMemo(
+		() =>
+			relationColumns.filter(column =>
+				Object.values(list).some(digimons =>
+					Object.values(digimons).some(
+						digimon =>
+							digimon[column.key]?.length ||
+							(column.extraKey && digimon[column.extraKey]?.length)
+					)
+				)
+			),
+		[list]
+	);
+
+	const hasFilters = !!search || !!levelFilter || !!attributeFilter || !!typeFilter;
+
+	const resetFilters = () => {
+		setSearch('');
+		setLevelFilter('');
+		setAttributeFilter('');
+		setTypeFilter('');
+		setResetCount(count => count + 1);
+	};
+
 	// Reset pagination whenever the visible list changes (search / filter / edits).
 	useEffect(() => {
 		setVisibleCount(PAGE_SIZE);
@@ -168,9 +193,11 @@ const PageList: React.FC<Props> = props => {
 			setVisibleCount(Math.min(idx + PAGE_SIZE, totalCount));
 			return; // re-runs once visibleCount grows, then scrolls below
 		}
-		const target = document.getElementById(hash);
+		const target =
+			document.getElementById(hash) ||
+			(props.dubNames?.[hash] && document.getElementById(props.dubNames[hash]));
 		if (target) {
-			target.scrollIntoView({ behavior: 'smooth' });
+			target.scrollIntoView({ behavior: 'smooth', block: 'center' });
 			scrolledHashRef.current = hash;
 		}
 	}, [hash, flatNames, visibleCount, totalCount, props.dubNames]);
@@ -268,12 +295,12 @@ const PageList: React.FC<Props> = props => {
 					itemLevels={itemLevels}
 					levels={levels}
 				>
-					<div className="d-flex flex-wrap gap-3 align-items-center">
+					<div className="evolution-filters">
 						<SearchBar
-							label="Research a digimon"
+							key={resetCount}
+							label="Search a Digimon"
 							onSubmit={handleSearch}
 							defaultValue={search}
-							width={300}
 						/>
 						<ComboBox
 							id="level-filter"
@@ -291,7 +318,6 @@ const PageList: React.FC<Props> = props => {
 								onChange={setAttributeFilter}
 								label="Filter by attribute"
 								allLabel="All attributes"
-								width={250}
 							/>
 						)}
 						{filterOptions.types.length > 0 && (
@@ -302,85 +328,123 @@ const PageList: React.FC<Props> = props => {
 								onChange={setTypeFilter}
 								label="Filter by type"
 								allLabel="All types"
-								width={250}
 							/>
 						)}
-						{IS_DEV && (
-							<Button
-								variant="primary"
-								className="mb-3"
-								onClick={handleOpenAddModal}
+						{hasFilters && (
+							<button
+								type="button"
+								className="filter-reset"
+								onClick={resetFilters}
 							>
+								<Icon name="x" /> Clear filters
+							</button>
+						)}
+						{IS_DEV && (
+							<Button variant="primary" onClick={handleOpenAddModal}>
 								<Icon name="plus" /> Add a Digimon
 							</Button>
 						)}
+						<span className="filter-count">{totalCount}&nbsp;Digimon</span>
 					</div>
-					{(() => {
-						let shown = 0;
-						return Object.entries(list).map(([level, digimons]) => {
-							if (shown >= visibleCount) return null;
-							const slice = Object.entries(digimons).slice(
-								0,
-								visibleCount - shown
-							);
-							shown += slice.length;
-							return (
-								<div key={level} className="mb-4">
-									<h2 className="mb-4">{level}</h2>
-									<div className="d-flex flex-wrap gap-3">
-										{slice.map(([name, digimon]) => (
-											<div
-												key={name}
-												draggable={canReorder}
-												onDragStart={
-													canReorder ?
-														() => handleDragStart(level, name)
-													:	undefined
-												}
-												onDragEnd={
-													canReorder ? handleDragEnd : undefined
-												}
-												onDragOver={
-													canReorder ?
-														e =>
-															handleDragOver(e, level, name)
-													:	undefined
-												}
-												onDrop={
-													canReorder ?
-														() => handleDrop(level, name)
-													:	undefined
-												}
+					{totalCount ?
+						<div className="table-responsive">
+							<table className="table evolution-table list-table">
+								<thead>
+									<tr>
+										<th className="cell-digimon">Digimon</th>
+										{columns.map(column => (
+											<th
+												key={column.key}
 												className={makeClassName(
-													canReorder && 'reorderable',
-													draggingName === name && 'dragging'
+													'cell-relations',
+													column.className
 												)}
-												style={
-													canReorder ?
-														{ cursor: 'grab' }
-													:	undefined
-												}
 											>
-												<ListItem
-													digimon={digimon}
-													hash={hash}
-													onEdit={
-														IS_DEV ?
-															() =>
-																handleEditDigimon(
-																	level,
-																	digimon
-																)
-														:	undefined
-													}
-												/>
-											</div>
+												{column.label}
+											</th>
 										))}
-									</div>
-								</div>
-							);
-						});
-					})()}
+									</tr>
+								</thead>
+								{(() => {
+									let shown = 0;
+									return Object.entries(list).map(([level, digimons]) => {
+										if (shown >= visibleCount) return null;
+										const entries = Object.entries(digimons);
+										const slice = entries.slice(0, visibleCount - shown);
+										shown += slice.length;
+										return (
+											<tbody key={level}>
+												<tr>
+													<th
+														colSpan={columns.length + 1}
+														className="group-cell"
+													>
+														<h2
+															className="generation-heading"
+															id={stringToKey(level)}
+														>
+															<span>{level}</span>
+															<span className="generation-count">
+																({entries.length})
+															</span>
+															<span className="generation-rule" />
+														</h2>
+													</th>
+												</tr>
+												{slice.map(([name, digimon]) => (
+													<ListRow
+														key={name}
+														digimon={digimon}
+														columns={columns}
+														active={
+															!!hash &&
+															(hash === name ||
+																hash === props.dubNames?.[name])
+														}
+														onEdit={
+															IS_DEV ?
+																() =>
+																	handleEditDigimon(
+																		level,
+																		digimon
+																	)
+															:	undefined
+														}
+														draggable={canReorder}
+														onDragStart={
+															canReorder ?
+																() => handleDragStart(level, name)
+															:	undefined
+														}
+														onDragEnd={
+															canReorder ? handleDragEnd : undefined
+														}
+														onDragOver={
+															canReorder ?
+																e => handleDragOver(e, level, name)
+															:	undefined
+														}
+														onDrop={
+															canReorder ?
+																() => handleDrop(level, name)
+															:	undefined
+														}
+														className={makeClassName(
+															canReorder && 'reorderable',
+															draggingName === name && 'dragging'
+														)}
+														style={
+															canReorder ? { cursor: 'grab' } : undefined
+														}
+													/>
+												))}
+											</tbody>
+										);
+									});
+								})()}
+							</table>
+						</div>
+					:	<p>No Digimon found.</p>}
 					{visibleCount < totalCount && (
 						<div ref={sentinelRef} className="text-center py-4">
 							<Spinner animation="border" />

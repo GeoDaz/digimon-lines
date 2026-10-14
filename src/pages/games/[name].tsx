@@ -328,11 +328,11 @@ const EvolutionRow = React.memo(function EvolutionRow({
 				</button>
 			</td>
 			<td className="cell-attribute">
-				<AttributeIcon game={game.key} attribute={digimon.attribute} />
+				<AttributeIcon attribute={digimon.attribute} />
 			</td>
 			{game.typeIcons ?
 				<td className="cell-attribute">
-					<AttributeIcon game={game.key} attribute={digimon.type} />
+					<AttributeIcon attribute={digimon.type} />
 				</td>
 			:	<td>{digimon.type}</td>}
 			{!!game.extra && <td>{digimon[game.extra.key] as string}</td>}

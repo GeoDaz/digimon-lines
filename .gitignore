@@ -49,3 +49,7 @@ tsconfig.tsbuildinfo
 .open-next
 .wrangler
 .dev.vars
+
+# Claude
+.claude/settings.local.json
+.claude/worktrees/
