@@ -1,0 +1,193 @@
+{
+	"title": "Chackmon EX",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "chackmon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "daipenmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "olegmon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1],
+					[4, -1]
+				],
+				"color": [
+					"x",
+					"ice",
+					"fire",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "bearmon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "gryzmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "blizzarmon",
+				"from": [
+					[-1, -1],
+					[2, -1]
+				],
+				"color": [
+					"x",
+					"gold"
+				]
+			},
+			{
+				"name": "frosvelgrmon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"ice",
+					"fusion"
+				]
+			}
+		],
+		[
+			{
+				"name": "snowbotamon"
+			},
+			{
+				"name": "hiyarimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "snowgoblimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "icemon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "panjyamon_x",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "ancientmegatheriumon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"x",
+					"fire"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mojyamon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "nanomon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"gold"
+				]
+			},
+			{
+				"name": "dynasmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fusion",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "astamon",
+				"from": [
+					[-3, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			null
+		]
+	]
+}

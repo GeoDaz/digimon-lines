@@ -1,0 +1,211 @@
+{
+	"title": "Renamon EX",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "kumbhiramon",
+				"from": [
+					[1, -1],
+					[4, -1]
+				],
+				"color": [
+					"grass",
+					"x"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "kyubimon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "vikaralamon",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"slide",
+					"fusion"
+				]
+			},
+			{
+				"name": "sakuyamon",
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"slide"
+				]
+			}
+		],
+		[
+			{
+				"name": "relemon"
+			},
+			{
+				"name": "pokomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "renamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "youkomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "taomon",
+				"from": [
+					[-1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"x"
+				]
+			},
+			{
+				"name": "kuzuhamon_miko_mode",
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"gold",
+					"slide",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "icedevimon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "doumon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"slide",
+					"fusion"
+				]
+			},
+			{
+				"name": "parasitemon",
+				"from": [
+					[-2, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"gold",
+					"grass",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "lynxmon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "caturamon",
+				"from": [
+					[-3, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"x"
+				]
+			},
+			{
+				"name": "sakuyamon_x",
+				"from": [
+					[-4, -1],
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"grass"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "indaramon",
+				"from": [
+					[-3, -1],
+					[-2, -1]
+				],
+				"color": [
+					"slide",
+					"fusion"
+				]
+			},
+			null
+		]
+	]
+}

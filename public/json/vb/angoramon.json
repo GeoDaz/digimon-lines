@@ -1,28 +1,46 @@
 {
+	"title": "Angoramon",
 	"columns": [
 		[
 			null,
 			null,
 			null,
-			null,
 			{
-				"name": "monzaemon",
-				"from": [1, -1]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "siesamon",
-				"from": [1, -1]
+				"name": "symbareangoramon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
 			},
 			{
-				"name": "chirinmon"
+				"name": "lamortmon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass",
+					"fusion"
+				]
 			},
 			{
-				"name": "kentaurosmon"
+				"name": "anubimon",
+				"from": [
+					[0, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"fusion"
+				]
 			}
 		],
 		[
@@ -30,19 +48,55 @@
 				"name": "pyonmon"
 			},
 			{
-				"name": "bosamon"
+				"name": "bosamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
 			},
 			{
-				"name": "angoramon"
+				"name": "angoramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
 			},
 			{
-				"name": "symbareangoramon"
+				"name": "leomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
 			},
 			{
-				"name": "lamortmon"
+				"name": "grapleomon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
 			},
 			{
-				"name": "diarbbitmon"
+				"name": "saberleomon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"fusion"
+				]
 			}
 		],
 		[
@@ -51,13 +105,36 @@
 			null,
 			{
 				"name": "komondomon",
-				"from": [-1, -1]
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fire"
+				]
 			},
 			{
-				"name": "caturamon"
+				"name": "skullbaluchimon",
+				"from": [
+					[-2, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
 			},
 			{
-				"name": "anubimon"
+				"name": "griffomon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass"
+				]
 			}
 		],
 		[
@@ -65,26 +142,24 @@
 			null,
 			null,
 			{
-				"name": "frigimon",
-				"from": [-2, -1]
+				"name": "porcupamon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fire"
+				]
 			},
 			{
-				"name": "blizzarmon"
+				"name": "warumonzaemon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"grass"
+				]
 			},
-			{
-				"name": "vikemon"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "panjyamon",
-				"from": [-1, -1]
-			}
+			null
 		]
-	],
-	"related": ["angoramon", "renamon", "wankomon", "bearmon"]
+	]
 }

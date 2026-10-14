@@ -1,0 +1,284 @@
+{
+	"title": "Ryudamon",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "hisyaryumon",
+				"from": [
+					[1, -1],
+					[4, -1],
+					[5, -1]
+				],
+				"color": [
+					"fire",
+					"dark",
+					"earth"
+				]
+			},
+			{
+				"name": "ouryumon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[5, -1]
+				],
+				"color": [
+					"fire",
+					"fusion",
+					"earth"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ginryumon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "cargodramon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"fusion",
+					"earth"
+				]
+			},
+			{
+				"name": "brigadramon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"fusion",
+					"earth"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "ryudamon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "hicommandramon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "orochimon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "nidhoggmon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "fufumon"
+			},
+			{
+				"name": "kyokyomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "commandramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "deltamon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "monzaemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"dark",
+					"dark"
+				]
+			},
+			{
+				"name": "shinmonzaemon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"dark",
+					"gold"
+				]
+			},
+			{
+				"name": "alphamon_ouryuken",
+				"from": [
+					[-3, -1]
+				],
+				"color": [
+					"fire"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "numemon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "etemon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"dark",
+					"dark"
+				]
+			},
+			{
+				"name": "kingetemon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "sealsdramon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "tankdramon",
+				"from": [
+					[-3, -1],
+					[0, -1]
+				],
+				"color": [
+					"fusion",
+					"earth"
+				]
+			},
+			{
+				"name": "metaletemon",
+				"from": [
+					[-3, -1],
+					[-1, -1]
+				],
+				"color": [
+					"dark",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "darkdramon",
+				"from": [
+					[-5, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fusion",
+					"earth"
+				]
+			},
+			null
+		]
+	]
+}

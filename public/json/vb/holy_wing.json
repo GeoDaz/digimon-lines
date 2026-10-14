@@ -1,0 +1,271 @@
+{
+	"title": "Holy Wing",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "birdramon",
+				"from": [
+					[1, -1],
+					[2, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass"
+				]
+			},
+			{
+				"name": "garudamon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass"
+				]
+			},
+			{
+				"name": "phoenixmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "biyomon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "pidmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			{
+				"name": "arkhaiangemon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			{
+				"name": "dominimon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "nyokimon"
+			},
+			{
+				"name": "yokomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "luxmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "peckmon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"mode"
+				]
+			},
+			{
+				"name": "yatagaramon_2",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"mode",
+					"human"
+				]
+			},
+			{
+				"name": "ravemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"mode",
+					"human"
+				]
+			},
+			{
+				"name": "shakamon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"gold",
+					"human"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "falcomon_2",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "xiquemon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"mode"
+				]
+			},
+			{
+				"name": "huankunmon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"human"
+				]
+			},
+			{
+				"name": "xiangpengmon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"human"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "jazamon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "thunderbirdmon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"mode",
+					"grass"
+				]
+			},
+			{
+				"name": "jazarichmon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"mode",
+					"grass"
+				]
+			},
+			{
+				"name": "ravemon_burst_mode",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"mode"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metallicdramon",
+				"from": [
+					[-3, -1],
+					[-1, -1]
+				],
+				"color": [
+					"mode",
+					"grass"
+				]
+			},
+			null
+		]
+	]
+}

@@ -1,0 +1,87 @@
+{
+	"title": "Impmon GP",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "beelzebumon_2",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			}
+		],
+		[
+			{
+				"name": "kiimon"
+			},
+			{
+				"name": "yaamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "impmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "wizardmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "baalmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "beelzebumon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "beelzebumon_blast_mode",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			}
+		]
+	]
+}

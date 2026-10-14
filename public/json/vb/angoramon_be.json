@@ -1,0 +1,303 @@
+{
+	"title": "Angoramon",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "lamortmon",
+				"from": [
+					[2, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "cerberumon",
+				"from": [
+					[1, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "symbareangoramon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "hippogriffomon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			{
+				"name": "diarbbitmon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[6, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "angoramon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "siesamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "digitamamon",
+				"from": [
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"grass",
+					"slide"
+				]
+			},
+			{
+				"name": "marsmon",
+				"from": [
+					[-3, -1],
+					[-1, -1],
+					[5, -1],
+					[-2, -1],
+					[2, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"grass",
+					"gold",
+					"dark",
+					"earth"
+				]
+			}
+		],
+		[
+			{
+				"name": "pyonmon"
+			},
+			{
+				"name": "bosamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "dracmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "dogmon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "matadormon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "plutomon",
+				"from": [
+					[-4, -1],
+					[-2, -1],
+					[-1, -1],
+					[0, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"slide",
+					"fusion",
+					"earth"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "sangloupmon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "mephismon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "grandracmon",
+				"from": [
+					[-4, -1],
+					[-1, -1],
+					[1, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"fusion",
+					"dark",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "publimon",
+				"from": [
+					[-3, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "phelesmon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "piemon",
+				"from": [
+					[-4, -1],
+					[-3, -1],
+					[0, -1],
+					[-1, -1]
+				],
+				"color": [
+					"grass",
+					"slide",
+					"dark",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "oleamon",
+				"from": [
+					[-3, -1],
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"slide"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "bastemon",
+				"from": [
+					[-5, -1]
+				],
+				"color": [
+					"gold"
+				]
+			},
+			null
+		]
+	]
+}

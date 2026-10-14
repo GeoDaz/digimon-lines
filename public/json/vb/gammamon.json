@@ -1,134 +1,165 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "zanmetsumon",
-                "mirror": true,
-                "from": [
-                    1,
-                    -1
-                ]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "kausgammamon",
-                "from": [
-                    2,
-                    -1
-                ]
-            },
-            {
-                "name": "fumamon"
-            },
-            {
-                "name": "samudramon",
-                "mirror": true
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "betelgammamon",
-                "from": [
-                    1,
-                    -1
-                ]
-            },
-            {
-                "name": "canoweissmon"
-            },
-            {
-                "name": "siriusmon"
-            }
-        ],
-        [
-            {
-                "name": "curimon"
-            },
-            {
-                "name": "gurimon"
-            },
-            {
-                "name": "gammamon"
-            },
-            null,
-            null,
-            {
-                "name": "proximamon",
-                "color": ["fusion", "fusion"],
-                "from": [[
-                    -1,
-                    0
-                ], [
-                    1,
-                    0
-                ]]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "gulusgammamon",
-                "color": "dark",
-                "from": [
-                    -1,
-                    -1
-                ]
-            },
-            {
-                "name": "regulusmon",
-                "color": "dark"
-            },
-            {
-                "name": "arcturusmon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "wezengammamon",
-                "from": [
-                    -2,
-                    -1
-                ]
-            },
-            {
-                "name": "ghilliedhumon"
-            },
-            {
-                "name": "ultimatebrachimon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "bombermon",
-                "from": [
-                    -1,
-                    -1
-                ]
-            }
-        ]
-    ],
-    "related": [
-        "gammamon"
-    ]
+	"title": "Gammamon",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "betelgammamon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "canoweissmon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"slide",
+					"fusion"
+				]
+			},
+			{
+				"name": "aegisdramon",
+				"from": [
+					[0, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			}
+		],
+		[
+			{
+				"name": "curimon"
+			},
+			{
+				"name": "gurimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "gammamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "kausgammamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "brachiomon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "ultimatebrachiomon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"slide"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "wezengammamon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "kimeramon",
+				"from": [
+					[-2, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "chaosdramon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"slide",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gulusgammamon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "tankdramon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"slide"
+				]
+			},
+			null
+		]
+	]
 }

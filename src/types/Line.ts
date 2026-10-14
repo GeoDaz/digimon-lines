@@ -70,6 +70,14 @@ export interface LineThumb {
 	grid?: string[];
 }
 
+export interface VbThumb {
+	name: string;
+	title: string;
+	digimon: string;
+	device: string;
+	series: string;
+}
+
 export interface LineFound {
 	name: string;
 	found: string;

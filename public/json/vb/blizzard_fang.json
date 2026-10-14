@@ -1,0 +1,121 @@
+{
+	"title": "Blizzard Fang",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "crescemon",
+				"from": [[1, -1], [3, -1]],
+				"color": ["fire", "x"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "frigimon",
+				"from": [[1, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "mammon",
+				"from": [[0, -1], [2, -1]],
+				"color": ["fire", "x"]
+			},
+			{
+				"name": "skullmammon",
+				"from": [[0, -1], [4, -1], [2, -1]],
+				"color": ["fire", "gold", "x"]
+			}
+		],
+		[
+			{
+				"name": "snowbotamon",
+				"from": null
+			},
+			{
+				"name": "hiyarimon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "blucomon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "paledramon",
+				"from": [[0, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "cryspaledramon",
+				"from": [[0, -1], [2, -1]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "hexeblaumon",
+				"from": [[0, -1], [-2, -1], [2, -1]],
+				"color": ["grass", "slide", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "moosemon",
+				"from": [[-1, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "daipenmon",
+				"from": [[-2, -1], [0, -1]],
+				"color": ["fire", "x"]
+			},
+			{
+				"name": "frosvelgrmon",
+				"from": [[2, -1], [-3, -1], [0, -1]],
+				"color": ["gold", "slide", "x"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "hyogamon",
+				"from": [[-2, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "frozomon",
+				"from": [[-2, -1], [0, -1]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "ancientmegatheriumon",
+				"from": [[-3, -1], [-2, -1], [0, -1]],
+				"color": ["fire", "grass", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "panjyamon",
+				"from": [[-3, -1], [-1, -1]],
+				"color": ["grass", "fusion"]
+			},
+			null
+		]
+	],
+	"size": 6
+}

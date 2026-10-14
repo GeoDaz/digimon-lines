@@ -1,0 +1,121 @@
+{
+	"title": "Volcanic Beat",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "groundramon",
+				"from": [[4, -1], [1, -1]],
+				"color": ["grass", "slide"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tyranomon",
+				"from": [[1, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "mastertyranomon",
+				"from": [[2, -1], [0, -1]],
+				"color": ["fire", "slide"]
+			},
+			{
+				"name": "cannondramon",
+				"from": [[0, -1], [1, -1], [-1, -1]],
+				"color": ["fire", "fusion", "dark"]
+			}
+		],
+		[
+			{
+				"name": "mokumon",
+				"from": null
+			},
+			{
+				"name": "demimeramon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "vorvomon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "lavorvomon",
+				"from": [[0, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "lavogaritamon",
+				"from": [[1, -1], [0, -1]],
+				"color": ["fire", "fusion"]
+			},
+			{
+				"name": "volcanicdramon",
+				"from": [[-1, -1], [1, -1], [0, -1]],
+				"color": ["fire", "slide", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "birdramon",
+				"from": [[-1, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "volcamon",
+				"from": [[0, -1], [-1, -1]],
+				"color": ["fire", "fusion"]
+			},
+			{
+				"name": "ancientvolcamon",
+				"from": [[2, -1], [1, -1], [0, -1]],
+				"color": ["gold", "grass", "slide"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "meramon",
+				"from": [[-2, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "deathmeramon",
+				"from": [[0, -1], [-3, -1]],
+				"color": ["grass", "slide"]
+			},
+			{
+				"name": "marsmon",
+				"from": [[1, -1], [0, -1], [-4, -1]],
+				"color": ["gold", "grass", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "flaremon",
+				"from": [[-1, -1], [-3, -1]],
+				"color": ["grass", "fusion"]
+			},
+			null
+		]
+	],
+	"size": 6
+}

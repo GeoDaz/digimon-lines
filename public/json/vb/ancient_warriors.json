@@ -1,0 +1,155 @@
+{
+	"title": "Ancient Warriors",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "digitamamon",
+				"from": [
+					[3, -1],
+					[4, -1]
+				],
+				"color": ["fire", "dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "veedramon",
+				"from": [[1, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "aeroveedramon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": ["wind", "fire"]
+			},
+			{
+				"name": "ulforceveedramon",
+				"from": [
+					[0, -1],
+					[3, -1],
+					[-1, -1]
+				],
+				"color": ["wind", "fire", "grass"]
+			}
+		],
+		[
+			{
+				"name": "chicomon",
+				"from": null
+			},
+			{
+				"name": "chibimon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "veemon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "exveemon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "paildramon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": ["x", "dark"]
+			},
+			{
+				"name": "imperialdramon_dragon_mode",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": ["wind", "x", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "flamedramon",
+				"from": [[-1, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "dinobeemon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": ["x", "dark"]
+			},
+			{
+				"name": "imperialdramon_fighter_mode",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": ["x", "dark", "gold"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "raidramon",
+				"from": [[-2, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "sagittarimon",
+				"from": [
+					[-3, -1],
+					[-1, -1]
+				],
+				"color": ["wind", "fire"]
+			},
+			{
+				"name": "magnamon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[-4, -1]
+				],
+				"color": ["fire", "gold", "grass"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "goldveedramon",
+				"from": [
+					[-4, -1],
+					[-3, -1]
+				],
+				"color": ["wind", "x"]
+			},
+			null
+		]
+	],
+	"size": 6
+}

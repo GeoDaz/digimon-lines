@@ -1,0 +1,275 @@
+{
+	"title": "Draconic Blaze",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "geogreymon",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "rizegreymon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			{
+				"name": "shinegreymon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "agumon_2",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "coredramon_blue",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"slide"
+				]
+			},
+			{
+				"name": "wingdramon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			{
+				"name": "slayerdramon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "petitmon"
+			},
+			{
+				"name": "babydramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "dracomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "baohackmon",
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"slide",
+					"gold"
+				]
+			},
+			{
+				"name": "saviorhackmon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"mode"
+				]
+			},
+			{
+				"name": "jesmon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"mode"
+				]
+			},
+			{
+				"name": "examon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"gold",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "hackmon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "coredramon_green",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "groundramon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "breakdramon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "gumdramon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "arresterdramon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"slide",
+					"gold"
+				]
+			},
+			{
+				"name": "arresterdramon_superior_mode",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"mode"
+				]
+			},
+			{
+				"name": "shinegreymon_burst_mode",
+				"from": [
+					[-4, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "magnakidmon",
+				"from": [
+					[-3, -1],
+					[-1, -1]
+				],
+				"color": [
+					"grass",
+					"mode"
+				]
+			},
+			null
+		]
+	]
+}

@@ -1,0 +1,134 @@
+{
+    "columns": [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "zanmetsumon",
+                "mirror": true,
+                "from": [
+                    1,
+                    -1
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "kausgammamon",
+                "from": [
+                    2,
+                    -1
+                ]
+            },
+            {
+                "name": "fumamon"
+            },
+            {
+                "name": "samudramon",
+                "mirror": true
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "betelgammamon",
+                "from": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "name": "canoweissmon"
+            },
+            {
+                "name": "siriusmon"
+            }
+        ],
+        [
+            {
+                "name": "curimon"
+            },
+            {
+                "name": "gurimon"
+            },
+            {
+                "name": "gammamon"
+            },
+            null,
+            null,
+            {
+                "name": "proximamon",
+                "color": ["fusion", "fusion"],
+                "from": [[
+                    -1,
+                    0
+                ], [
+                    1,
+                    0
+                ]]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "gulusgammamon",
+                "color": "dark",
+                "from": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "name": "regulusmon",
+                "color": "dark"
+            },
+            {
+                "name": "arcturusmon",
+                "color": "dark"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "wezengammamon",
+                "from": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "name": "ghilliedhumon"
+            },
+            {
+                "name": "ultimatebrachimon"
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "name": "bombermon",
+                "from": [
+                    -1,
+                    -1
+                ]
+            }
+        ]
+    ],
+    "related": [
+        "gammamon"
+    ]
+}

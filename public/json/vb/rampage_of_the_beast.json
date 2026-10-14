@@ -1,0 +1,279 @@
+{
+	"title": "Rampage of the Beast",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gaogamon",
+				"from": [
+					[1, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"grass",
+					"fire",
+					"slide"
+				]
+			},
+			{
+				"name": "machgaogamon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"fire",
+					"slide"
+				]
+			},
+			{
+				"name": "miragegaogamon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"fire",
+					"slide"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "gaomon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "firamon",
+				"from": [
+					[1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "flaremon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			{
+				"name": "apollomon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "wanyamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "coronamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "lekismon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"slide"
+				]
+			},
+			{
+				"name": "crescemon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"slide"
+				]
+			},
+			{
+				"name": "dianamon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"slide"
+				]
+			},
+			{
+				"name": "gracenovamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"slide"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "lunamon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "leomon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "grapleomon",
+				"from": [
+					[-3, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"gold",
+					"fusion"
+				]
+			},
+			{
+				"name": "heavyleomon",
+				"from": [
+					[-2, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "phascomon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "madleomon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"slide",
+					"fusion"
+				]
+			},
+			{
+				"name": "astamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"fusion"
+				]
+			},
+			{
+				"name": "miragegaogamon_burst_mode",
+				"from": [
+					[-4, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "belphemon_rage_mode",
+				"from": [
+					[-3, -1],
+					[-1, -1]
+				],
+				"color": [
+					"slide",
+					"fusion"
+				]
+			},
+			null
+		]
+	]
+}

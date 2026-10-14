@@ -4,14 +4,13 @@ import { GetStaticProps } from 'next';
 import { PageLine as PageVB } from '@/pages/lines/[name]';
 import transformLine from '@/functions/line';
 // constants
-import { Line } from '@/types/Line';
-import { DEV } from '@/consts/env';
+import { Line, VbThumb } from '@/types/Line';
 import { VB } from '@/consts/ui';
 
 export async function getStaticPaths() {
 	try {
-		const vbs: string[] = require('../../../public/json/vb/_index.json');
-		const paths = vbs.map(name => ({ params: { name } }));
+		const vbs: VbThumb[] = require('../../../public/json/vb/_index.json');
+		const paths = vbs.map(({ name }) => ({ params: { name } }));
 
 		return { paths, fallback: false };
 	} catch {
@@ -31,20 +30,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		console.error(e);
 	}
 
-	const lines = require('../../../public/json/vb/_index.json');
+	const list: VbThumb[] = require('../../../public/json/vb/_index.json');
 
-	let prev = null;
-	let next = null;
-	let list = lines;
-	let index = lines.findIndex((name: string) => name == params.name);
-	if (index > 0) {
-		prev = list[index - 1];
-	}
-	if (index > -1 && index < list.length - 1) {
-		next = list[index + 1];
-	}
+	const index = list.findIndex(vb => vb.name == params.name);
+	const prev = index > 0 ? list[index - 1] : null;
+	const next = index > -1 && index < list.length - 1 ? list[index + 1] : null;
+	const image = list[index]?.digimon || null;
 
-	return { props: { ssr: { name: params.name, line, prev, next }, type: VB } };
+	return { props: { ssr: { name: params.name, line, image, prev, next }, type: VB } };
 };
 
 export default PageVB;

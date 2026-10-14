@@ -1,0 +1,121 @@
+{
+	"title": "Infinite Tide",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "dagomon",
+				"from": [[2, -1], [1, -1]],
+				"color": ["slide", "fusion"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "octomon",
+				"from": [[1, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "marinekimeramon",
+				"from": [[2, -1], [0, -1]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "plesiomon",
+				"from": [[0, -1], [2, -1], [-1, -1]],
+				"color": ["gold", "slide", "dark"]
+			}
+		],
+		[
+			{
+				"name": "pitchmon",
+				"from": null
+			},
+			{
+				"name": "pukamon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "sangomon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "shellmon",
+				"from": [[0, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "mermaimon",
+				"from": [[2, -1], [0, -1]],
+				"color": ["fire", "slide"]
+			},
+			{
+				"name": "neptunemon",
+				"from": [[3, -1], [0, -1], [2, -1]],
+				"color": ["fire", "grass", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "seadramon",
+				"from": [[-1, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "megaseadramon",
+				"from": [[0, -1], [-2, -1]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "metalseadramon",
+				"from": [[-1, -1], [0, -1], [-3, -1]],
+				"color": ["grass", "slide", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tobiumon",
+				"from": [[-2, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "piranimon",
+				"from": [[0, -1], [-1, -1]],
+				"color": ["fire", "grass"]
+			},
+			{
+				"name": "regalecusmon",
+				"from": [[1, -1], [-3, -1], [0, -1]],
+				"color": ["fire", "gold", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gusokumon",
+				"from": [[-1, -1], [-3, -1]],
+				"color": ["fire", "slide"]
+			},
+			null
+		]
+	],
+	"size": 6
+}

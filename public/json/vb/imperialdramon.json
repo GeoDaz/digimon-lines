@@ -1,0 +1,123 @@
+{
+	"title": "Imperialdramon",
+	"columns": [
+		[
+			{
+				"name": "chicomon"
+			},
+			{
+				"name": "chibimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "veemon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "exveemon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "paildramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "imperialdramon_dragon_mode",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			}
+		],
+		[
+			{
+				"name": "leafmon"
+			},
+			{
+				"name": "minomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"ice"
+				]
+			},
+			{
+				"name": "wormmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"ice"
+				]
+			},
+			{
+				"name": "stingmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"ice"
+				]
+			},
+			{
+				"name": "dinobeemon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"ice"
+				]
+			},
+			{
+				"name": "imperialdramon_paladin_mode",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"x",
+					"ice"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "imperialdramon_fighter_mode",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"ice"
+				]
+			}
+		]
+	]
+}

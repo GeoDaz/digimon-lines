@@ -1,0 +1,211 @@
+{
+	"title": "Impulse City",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "boutmon",
+				"from": [
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "bulkmon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "shootmon",
+				"from": [
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "kazuchimon",
+				"from": [
+					[-1, -1],
+					[2, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"slide",
+					"dark"
+				]
+			}
+		],
+		[
+			{
+				"name": "dokimon"
+			},
+			{
+				"name": "bibimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "pulsemon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "exermon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "divemon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "shivamon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"gold",
+					"grass",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "runnermon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "tempomon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "achillesmon",
+				"from": [
+					[-2, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"gold",
+					"slide",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "namakemon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "climbmon",
+				"from": [
+					[-3, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"dark"
+				]
+			},
+			{
+				"name": "shroudmon",
+				"from": [
+					[-4, -1],
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "pistmon",
+				"from": [
+					[-3, -1],
+					[-2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			null
+		]
+	]
+}

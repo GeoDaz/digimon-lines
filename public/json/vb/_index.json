@@ -1,59 +1,366 @@
 [
-	"agumon",
-	"agumon_black",
-	"gabumon",
-	"gabumon_black",
-	"palmon",
-	"alraumon",
-	"biyomon",
-	"tentomon",
-	"gomamon",
-	"patamon",
-	"demidevimon",
-	"gatomon",
-	"betamon",
-	"toyagumon",
-	"gaossmon_red",
-	"veemon",
-	"hawkmon",
-	"armadillomon",
-	"guilmon",
-	"renamon",
-	"terriermon",
-	"impmon",
-	"gammamon",
-	"jellymon",
-	"angoramon",
-	"vorvomon",
-	"blucomon",
-	"jazamon",
-	"sunarizamon",
-	"pulsemon",
-	"loogamon",
-	"fanbeemon",
-	"ghostmon",
-	"eyesmon",
-	"zenimon",
-	"ekakimon",
-	"aequcedramon",
-	"rurimon",
-	"ganvivormon",
-	"pyontomon",
-	"madomon",
-	"paildramon",
-	"silphymon",
-	"shakkoumon",
-	"lucemon_falldown_mode",
-	"omegamon",
-	"commandramon",
-	"agunimon",
-	"wolfmon",
-	"loweemon",
-	"dracomon",
-	"falcomon_2",
-	"liollmon",
-	"zubamon",
-	"ludomon",
-	"toyagumon_black",
-	"keramon"
+	{
+		"name": "impulse_city",
+		"title": "Impulse City",
+		"digimon": "pulsemon",
+		"device": "dim",
+		"series": "Bundled"
+	},
+	{
+		"name": "ancient_warriors",
+		"title": "Ancient Warriors",
+		"digimon": "veemon",
+		"device": "dim",
+		"series": "Bundled"
+	},
+	{
+		"name": "dinosaur_roar",
+		"title": "Dinosaur Roar",
+		"digimon": "agumon",
+		"device": "dim",
+		"series": "Bundled"
+	},
+	{
+		"name": "wolf_howl",
+		"title": "Wolf Howl",
+		"digimon": "gabumon",
+		"device": "dim",
+		"series": "Bundled"
+	},
+	{
+		"name": "dynasty_of_the_evil",
+		"title": "Dynasty of the Evil",
+		"digimon": "ghostmon",
+		"device": "dim",
+		"series": "Bundled"
+	},
+	{
+		"name": "primeval_warriors",
+		"title": "Primeval Warriors",
+		"digimon": "wormmon",
+		"device": "dim",
+		"series": "Bundled"
+	},
+	{
+		"name": "volcanic_beat",
+		"title": "Volcanic Beat",
+		"digimon": "vorvomon",
+		"device": "dim",
+		"series": "Vol Series"
+	},
+	{
+		"name": "blizzard_fang",
+		"title": "Blizzard Fang",
+		"digimon": "blucomon",
+		"device": "dim",
+		"series": "Vol Series"
+	},
+	{
+		"name": "infinite_tide",
+		"title": "Infinite Tide",
+		"digimon": "sangomon",
+		"device": "dim",
+		"series": "Vol Series"
+	},
+	{
+		"name": "titan_of_dust",
+		"title": "Titan of Dust",
+		"digimon": "sunarizamon",
+		"device": "dim",
+		"series": "Vol Series"
+	},
+	{
+		"name": "hermit_in_the_jungle",
+		"title": "Hermit in the Jungle",
+		"digimon": "palmon",
+		"device": "dim",
+		"series": "Vol Series"
+	},
+	{
+		"name": "nu_metal_empire",
+		"title": "Nu Metal Empire",
+		"digimon": "hagurumon",
+		"device": "dim",
+		"series": "Vol Series"
+	},
+	{
+		"name": "mad_black_roar",
+		"title": "Mad Black Roar",
+		"digimon": "agumon_black",
+		"device": "dim",
+		"series": "Vol Series"
+	},
+	{
+		"name": "true_shadow_howl",
+		"title": "True Shadow Howl",
+		"digimon": "gabumon_black",
+		"device": "dim",
+		"series": "Vol Series"
+	},
+	{
+		"name": "agumon_ex",
+		"title": "Agumon EX",
+		"digimon": "agumon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "gabumon_ex",
+		"title": "Gabumon EX",
+		"digimon": "gabumon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "guilmon_ex",
+		"title": "Guilmon EX",
+		"digimon": "guilmon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "terriermon_ex",
+		"title": "Terriermon EX",
+		"digimon": "terriermon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "renamon_ex",
+		"title": "Renamon EX",
+		"digimon": "renamon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "agnimon_ex",
+		"title": "Agnimon EX",
+		"digimon": "flamon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "fairimon_ex",
+		"title": "Fairimon EX",
+		"digimon": "tinkermon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "chackmon_ex",
+		"title": "Chackmon EX",
+		"digimon": "bearmon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "wolfmon_ex",
+		"title": "Wolfmon EX",
+		"digimon": "strabimon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "blitzmon_ex",
+		"title": "Blitzmon EX",
+		"digimon": "kokabuterimon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "louwemon_ex",
+		"title": "Louwemon EX",
+		"digimon": "liollmon",
+		"device": "dim",
+		"series": "EX Series"
+	},
+	{
+		"name": "gammamon",
+		"title": "Gammamon",
+		"digimon": "gammamon",
+		"device": "dim",
+		"series": "V Series"
+	},
+	{
+		"name": "angoramon",
+		"title": "Angoramon",
+		"digimon": "angoramon",
+		"device": "dim",
+		"series": "V Series"
+	},
+	{
+		"name": "jellymon",
+		"title": "Jellymon",
+		"digimon": "jellymon",
+		"device": "dim",
+		"series": "V Series"
+	},
+	{
+		"name": "espimon",
+		"title": "Espimon",
+		"digimon": "ludomon",
+		"device": "dim",
+		"series": "V Series"
+	},
+	{
+		"name": "ryudamon",
+		"title": "Ryudamon",
+		"digimon": "zubamon",
+		"device": "dim",
+		"series": "V Series"
+	},
+	{
+		"name": "medarot",
+		"title": "Medarot",
+		"digimon": "tinpet",
+		"device": "dim",
+		"series": "Other"
+	},
+	{
+		"name": "black_roar",
+		"title": "Black Roar",
+		"digimon": "agumon_black",
+		"device": "dim",
+		"series": "Other"
+	},
+	{
+		"name": "shadow_howl",
+		"title": "Shadow Howl",
+		"digimon": "gabumon_black",
+		"device": "dim",
+		"series": "Other"
+	},
+	{
+		"name": "guilmon_gp",
+		"title": "Guilmon GP",
+		"digimon": "guilmon",
+		"device": "dim",
+		"series": "Other"
+	},
+	{
+		"name": "impmon_gp",
+		"title": "Impmon GP",
+		"digimon": "impmon",
+		"device": "dim",
+		"series": "Other"
+	},
+	{
+		"name": "renamon_gp",
+		"title": "Renamon GP",
+		"digimon": "renamon",
+		"device": "dim",
+		"series": "Other"
+	},
+	{
+		"name": "monodramon_gp",
+		"title": "Monodramon GP",
+		"digimon": "monodramon",
+		"device": "dim",
+		"series": "Other"
+	},
+	{
+		"name": "draconic_blaze",
+		"title": "Draconic Blaze",
+		"digimon": "agumon_2",
+		"device": "bem",
+		"series": "Special Selection"
+	},
+	{
+		"name": "rampage_of_the_beast",
+		"title": "Rampage of the Beast",
+		"digimon": "gaomon",
+		"device": "bem",
+		"series": "Special Selection"
+	},
+	{
+		"name": "holy_wing",
+		"title": "Holy Wing",
+		"digimon": "biyomon",
+		"device": "bem",
+		"series": "Special Selection"
+	},
+	{
+		"name": "forest_guardian",
+		"title": "Forest Guardian",
+		"digimon": "tentomon",
+		"device": "bem",
+		"series": "Special Selection"
+	},
+	{
+		"name": "loogamon",
+		"title": "Loogamon",
+		"digimon": "loogamon",
+		"device": "bem",
+		"series": "Seekers"
+	},
+	{
+		"name": "ryudamon_be",
+		"title": "Ryudamon",
+		"digimon": "ryudamon",
+		"device": "bem",
+		"series": "Seekers"
+	},
+	{
+		"name": "dorumon",
+		"title": "DORUmon",
+		"digimon": "dorumon",
+		"device": "bem",
+		"series": "Seekers"
+	},
+	{
+		"name": "pulsemon",
+		"title": "Pulsemon",
+		"digimon": "pulsemon",
+		"device": "bem",
+		"series": "Seekers"
+	},
+	{
+		"name": "gammamon_be",
+		"title": "Gammamon",
+		"digimon": "gammamon",
+		"device": "bem",
+		"series": "Anime"
+	},
+	{
+		"name": "angoramon_be",
+		"title": "Angoramon",
+		"digimon": "angoramon",
+		"device": "bem",
+		"series": "Anime"
+	},
+	{
+		"name": "jellymon_be",
+		"title": "Jellymon",
+		"digimon": "jellymon",
+		"device": "bem",
+		"series": "Anime"
+	},
+	{
+		"name": "d_3_white_and_yellow",
+		"title": "D-3 White and Yellow",
+		"digimon": "armadillomon",
+		"device": "bem",
+		"series": "Anime"
+	},
+	{
+		"name": "d_3_white_and_red",
+		"title": "D-3 White and Red",
+		"digimon": "hawkmon",
+		"device": "bem",
+		"series": "Anime"
+	},
+	{
+		"name": "25th_anniversary",
+		"title": "25th Anniversary",
+		"digimon": "agumon",
+		"device": "bem",
+		"series": "Other"
+	},
+	{
+		"name": "imperialdramon",
+		"title": "Imperialdramon",
+		"digimon": "veemon",
+		"device": "bem",
+		"series": "Other"
+	}
 ]

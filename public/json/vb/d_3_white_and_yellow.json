@@ -1,0 +1,202 @@
+{
+	"title": "D-3 White and Yellow",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ankylomon",
+				"from": [
+					[2, -1],
+					[3, -1]
+				],
+				"color": ["x", "grass"]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "angemon",
+				"from": [[2, -1]],
+				"color": ["grass"]
+			},
+			null,
+			{
+				"name": "vikemon",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": ["x", "fire"]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "armadillomon",
+				"from": [[1, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "exveemon",
+				"from": [[2, -1]],
+				"color": ["ice"]
+			},
+			{
+				"name": "shakkoumon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": ["x", "fire"]
+			},
+			{
+				"name": "seraphimon",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": ["fire", "ice"]
+			}
+		],
+		[
+			{
+				"name": "tsubumon"
+			},
+			{
+				"name": "upamon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "patamon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "digmon",
+				"from": [[-1, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "magnaangemon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[4, -1],
+					[0, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"color": ["fire", "ice", "marine", "marine", "x", "ice"]
+			},
+			{
+				"name": "imperialdramon_dragon_mode",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": ["ice", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "veemon",
+				"from": [[-1, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "submarimon",
+				"from": [[-2, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "paildramon",
+				"from": [
+					[-2, -1],
+					[0, -1],
+					[3, -1],
+					[-4, -1],
+					[-1, -1],
+					[2, -1]
+				],
+				"color": ["ice", "marine", "marine", "x", "marine", "ice"]
+			},
+			{
+				"name": "magnamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": ["fire", "ice"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "pegasmon",
+				"from": [[-2, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "arukenimon",
+				"from": [
+					[-5, -1],
+					[-4, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": ["x", "fire", "marine", "x"]
+			},
+			{
+				"name": "malomyotismon",
+				"from": [
+					[-3, -1],
+					[0, -1]
+				],
+				"color": ["x", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "flamedramon",
+				"from": [[-2, -1]],
+				"color": ["ice"]
+			},
+			null,
+			{
+				"name": "black_wargreymon",
+				"from": [
+					[-4, -1],
+					[-1, -1]
+				],
+				"color": ["x", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "raidramon",
+				"from": [[-3, -1]],
+				"color": ["ice"]
+			},
+			null,
+			null
+		]
+	]
+}

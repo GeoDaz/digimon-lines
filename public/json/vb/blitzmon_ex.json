@@ -1,0 +1,193 @@
+{
+	"title": "Blitzmon EX",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "blitzmon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "rhinokabuterimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "ancientbeetlemon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"x",
+					"ice",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "kokabuterimon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "thunderballmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "bolgmon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"x",
+					"grass"
+				]
+			},
+			{
+				"name": "grandiskuwagamon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"x",
+					"ice",
+					"fusion"
+				]
+			}
+		],
+		[
+			{
+				"name": "choromon"
+			},
+			{
+				"name": "caprimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "kokuwamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "mercuremon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "sephirothmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"ice"
+				]
+			},
+			{
+				"name": "ancientwisemon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"marine",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "bladekuwagamon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "metallifekuwagamon",
+				"from": [
+					[0, -1],
+					[-2, -1]
+				],
+				"color": [
+					"fusion",
+					"grass"
+				]
+			},
+			{
+				"name": "murmukusmon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"marine",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "wisemon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"ice",
+					"fusion"
+				]
+			},
+			null
+		]
+	]
+}

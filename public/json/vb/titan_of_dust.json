@@ -1,0 +1,121 @@
+{
+	"title": "Titan of Dust",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "vulturemon",
+				"from": [[1, -1], [2, -1]],
+				"color": ["grass", "fusion"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "togemon",
+				"from": [[1, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "jyagamon",
+				"from": [[0, -1], [3, -1]],
+				"color": ["grass", "x"]
+			},
+			{
+				"name": "ancientsphinxmon",
+				"from": [[0, -1], [4, -1], [3, -1]],
+				"color": ["gold", "slide", "dark"]
+			}
+		],
+		[
+			{
+				"name": "sunamon",
+				"from": null
+			},
+			{
+				"name": "goromon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "sunarizamon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "golemon",
+				"from": [[0, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "gogmamon",
+				"from": [[1, -1], [0, -1]],
+				"color": ["fire", "fusion"]
+			},
+			{
+				"name": "blastmon",
+				"from": [[0, -1], [-1, -1], [3, -1]],
+				"color": ["fire", "gold", "slide"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tortamon",
+				"from": [[-1, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "triceramon",
+				"from": [[-2, -1], [-1, -1]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "dinorexmon",
+				"from": [[-1, -1], [0, -1], [-3, -1]],
+				"color": ["fire", "grass", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "digmon",
+				"from": [[-2, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "mummymon",
+				"from": [[-1, -1], [0, -1]],
+				"color": ["fire", "x"]
+			},
+			{
+				"name": "pharaohmon",
+				"from": [[-1, -1], [-4, -1], [0, -1]],
+				"color": ["grass", "fusion", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "scorpiomon",
+				"from": [[-2, -1], [-1, -1]],
+				"color": ["fire", "x"]
+			},
+			null
+		]
+	],
+	"size": 6
+}

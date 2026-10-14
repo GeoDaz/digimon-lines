@@ -1,0 +1,64 @@
+{
+	"title": "Shadow Howl",
+	"columns": [
+		[
+			{
+				"name": "punimon"
+			},
+			{
+				"name": "tsunomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "gabumon_black",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "garurumon_black",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "weregarurumon_black",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "metalgarurumon_black",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "omegamon_zwart",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			}
+		]
+	]
+}

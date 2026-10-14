@@ -1,0 +1,200 @@
+{
+	"title": "Agnimon EX",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "agunimon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "aldamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "flamon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "meramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "burninggreymon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"color": [
+					"grass",
+					"x"
+				]
+			},
+			{
+				"name": "emperorgreymon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"x",
+					"ice",
+					"grass"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "mokumon"
+			},
+			{
+				"name": "demimeramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "gottsumon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "starmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "superstarmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"slide",
+					"ice"
+				]
+			},
+			{
+				"name": "ancientgreymon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"x",
+					"ice",
+					"marine",
+					"fusion"
+				]
+			},
+			{
+				"name": "susanomon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "grottemon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "gigasmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"ice"
+				]
+			},
+			{
+				"name": "ancientvolcamon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"marine",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "darksuperstarmon",
+				"from": [
+					[-3, -1],
+					[-2, -1]
+				],
+				"color": [
+					"grass",
+					"slide"
+				]
+			},
+			null,
+			null
+		]
+	]
+}

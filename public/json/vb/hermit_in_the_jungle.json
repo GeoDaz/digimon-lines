@@ -1,0 +1,121 @@
+{
+	"title": "Hermit in the Jungle",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "ajatarmon",
+				"from": [[1, -1], [4, -1]],
+				"color": ["fusion", "dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "parasaumon",
+				"from": [[1, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "tropiamon",
+				"from": [[1, -1], [0, -1]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "spinomon",
+				"from": [[-1, -1], [3, -1], [0, -1]],
+				"color": ["fire", "slide", "fusion"]
+			}
+		],
+		[
+			{
+				"name": "yuramon",
+				"from": null
+			},
+			{
+				"name": "tanemon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "palmon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "sunflowmon",
+				"from": [[0, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "lilimon",
+				"from": [[0, -1], [-1, -1]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "rafflesimon",
+				"from": [[1, -1], [0, -1], [3, -1]],
+				"color": ["gold", "grass", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "snimon",
+				"from": [[-1, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "jewelbeemon",
+				"from": [[0, -1], [-1, -1]],
+				"color": ["fire", "grass"]
+			},
+			{
+				"name": "bloomlordmon",
+				"from": [[-3, -1], [0, -1], [-1, -1]],
+				"color": ["fire", "gold", "grass"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "vegimon",
+				"from": [[-2, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "blossomon",
+				"from": [[-1, -1], [0, -1]],
+				"color": ["fire", "dark"]
+			},
+			{
+				"name": "hydramon",
+				"from": [[0, -1], [-3, -1], [1, -1]],
+				"color": ["slide", "fusion", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "arukenimon",
+				"from": [[-2, -1], [-1, -1]],
+				"color": ["fire", "dark"]
+			},
+			null
+		]
+	],
+	"size": 6
+}

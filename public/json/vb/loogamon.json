@@ -1,103 +1,275 @@
 {
+	"title": "Loogamon",
 	"columns": [
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "helloogarmon",
-				"color": "dark",
-				"from": [1, -1]
-			}
-		],
 		[
 			null,
 			null,
 			null,
 			{
 				"name": "loogarmon",
-				"from": [1, -1]
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fusion",
+					"grass"
+				]
 			},
 			{
-				"name": "soloogarmon"
+				"name": "soloogarmon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fusion",
+					"grass",
+					"slide"
+				]
 			},
 			{
-				"name": "fenriloogamon"
-			}
+				"name": "fenriloogamon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fusion",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "loogamon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "filmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fusion",
+					"grass"
+				]
+			},
+			{
+				"name": "stefilmon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fusion",
+					"grass"
+				]
+			},
+			{
+				"name": "rasenmon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fusion",
+					"grass"
+				]
+			},
+			null
 		],
 		[
 			{
 				"name": "fusamon"
 			},
 			{
-				"name": "bowmon"
+				"name": "bowmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
 			},
 			{
-				"name": "loogamon"
+				"name": "herissmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
 			},
 			{
-				"name": "gaogamon"
+				"name": "tyranomon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"fusion",
+					"x"
+				]
 			},
 			{
-				"name": "machgaogamon"
+				"name": "helloogarmon",
+				"from": [
+					[-2, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fusion",
+					"slide",
+					"x"
+				]
 			},
 			{
-				"name": "miragegaogamon"
+				"name": "rasenmon_fury_mode",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "fenriloogamon_takemikazuchi",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fusion"
+				]
 			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "bemmon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "damemon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"x"
+				]
+			},
+			{
+				"name": "andromon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "hiandromon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"x"
+				]
+			},
+			null
 		],
 		[
 			null,
 			null,
 			null,
 			{
-				"name": "fangmon",
-				"color": "dark",
-				"from": [-1, -1]
+				"name": "snatchmon",
+				"from": [
+					[-3, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fusion",
+					"x"
+				]
 			},
 			{
-				"name": "cerberumon",
-				"color": "dark"
+				"name": "mastertyranomon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"slide",
+					"x"
+				]
 			},
 			{
-				"name": "anubimon",
-				"color": "light"
-			}
+				"name": "rusttyranomon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			null
 		],
 		[
 			null,
 			null,
 			null,
+			null,
 			{
-				"name": "sangloupmon",
-				"color": "dark",
-				"from": [-2, -1]
+				"name": "destromon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"dark",
+					"x"
+				]
 			},
 			{
-				"name": "assaultmon",
-				"color": "dark"
+				"name": "ragnamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"x"
+				]
 			},
-			{
-				"name": "grandracmon",
-				"color": "dark"
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "matadormon",
-				"color": "dark",
-				"from": [-1, -1]
-			}
+			null
 		]
-	],
-	"related": [
-		"loogamon",
-		"garurumon",
-		"wankomon",
-		{ "name": "app_rebootmon", "for": "app_offmon" }
 	]
 }

@@ -1,0 +1,121 @@
+{
+	"title": "Nu Metal Empire",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "rebellimon",
+				"from": [[1, -1], [3, -1]],
+				"color": ["fire", "fusion"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "machmon",
+				"from": [[1, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "loaderliomon",
+				"from": [[0, -1], [2, -1]],
+				"color": ["fire", "fusion"]
+			},
+			{
+				"name": "heavyleomon",
+				"from": [[0, -1], [2, -1], [-1, -1]],
+				"color": ["fire", "grass", "fusion"]
+			}
+		],
+		[
+			{
+				"name": "bommon",
+				"from": null
+			},
+			{
+				"name": "missimon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "hagurumon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "mailbirdramon",
+				"from": [[0, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "metalgreymon_blue_2",
+				"from": [[2, -1], [0, -1]],
+				"color": ["gold", "grass"]
+			},
+			{
+				"name": "zeekgreymon",
+				"from": [[2, -1], [-2, -1], [0, -1]],
+				"color": ["slide", "fusion", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "raremon",
+				"from": [[-1, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "metalmamemon",
+				"from": [[-2, -1], [0, -1]],
+				"color": ["fire", "fusion"]
+			},
+			{
+				"name": "machinedramon",
+				"from": [[2, -1], [0, -1], [-1, -1]],
+				"color": ["gold", "grass", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ballistamon",
+				"from": [[-2, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "locomon",
+				"from": [[0, -1], [-2, -1]],
+				"color": ["gold", "grass"]
+			},
+			{
+				"name": "grandlocomon",
+				"from": [[-3, -1], [1, -1], [0, -1]],
+				"color": ["fire", "gold", "slide"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "atlurballistamon",
+				"from": [[-1, -1], [-3, -1]],
+				"color": ["gold", "grass"]
+			},
+			null
+		]
+	],
+	"size": 6
+}

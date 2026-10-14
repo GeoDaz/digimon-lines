@@ -1,94 +1,165 @@
 {
-    "columns": [
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "mermaimon",
-                "from": [1,-1]
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "ranamon",
-                "from": [1,-1]
-            },
-            {
-                "name": "calamaramon"
-            },
-            {
-                "name": "ancientmermaimon"
-            }
-        ],
-        [
-            {
-                "name": "puyomon"
-            },
-            {
-                "name": "puyoyomon"
-            },
-            {
-                "name": "jellymon"
-            },
-            {
-                "name": "teslajellymon"
-            },
-            {
-                "name": "thetismon"
-            },
-            {
-                "name": "amphimon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "depthmon",
-                "from": [-1,-1]
-            },
-            {
-                "name": "hangyomon"
-            },
-            {
-                "name": "neptunemon"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            {
-                "name": "gesomon",
-                "from": [-2,-1]
-            },
-            {
-                "name": "marinedevimon",
-                "color": "dark"
-            },
-            {
-                "name": "cthyllamon",
-                "color": "dark"
-            }
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
-                "name": "dagomon",
-                "from": [-1,-1]
-            }
-        ]
-    ],
-    "related": [
-        "jellymon"
-    ]
+	"title": "Jellymon",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dolphmon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "whamon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "marineangemon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"fusion"
+				]
+			}
+		],
+		[
+			{
+				"name": "puyomon"
+			},
+			{
+				"name": "puyoyomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "jellymon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "teslajellymon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "thetismon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"x"
+				]
+			},
+			{
+				"name": "ancientmermaimon",
+				"from": [
+					[0, -1],
+					[2, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"slide"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gesomon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "hangyomon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fusion",
+					"x"
+				]
+			},
+			{
+				"name": "pukumon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"slide"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "manbomon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "marinedevimon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			null
+		]
+	]
 }

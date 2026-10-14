@@ -1,6 +1,10 @@
 // Renommages / migrations de lines : { ancienNom: nouveauNom }.
 // Chaque entrée génère une redirection 301 /lines/ancien -> /lines/nouveau.
 const lineRedirects = require('./redirects.json');
+const vbNames = require('./public/json/vb/_index.json').map(vb => vb.name);
+const archivedVbs = require('./public/json/archive/vb/_index.json').filter(
+	name => !vbNames.includes(name)
+);
 
 module.exports = () => ({
 	reactStrictMode: true,
@@ -26,6 +30,11 @@ module.exports = () => ({
 			...Object.entries(lineRedirects).map(([from, to]) => ({
 				source: `/lines/${from}`,
 				destination: `/lines/${to}`,
+				permanent: true,
+			})),
+			...archivedVbs.map(name => ({
+				source: `/vbs/${name}`,
+				destination: '/vbs',
 				permanent: true,
 			})),
 		];

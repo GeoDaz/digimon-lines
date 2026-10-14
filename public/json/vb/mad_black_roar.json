@@ -1,0 +1,211 @@
+{
+	"title": "Mad Black Roar",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metalgreymon_alterous_mode",
+				"from": [
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "greymon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "extyranomon",
+				"from": [
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "victorygreymon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass"
+				]
+			}
+		],
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "koromon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "agumon_black",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "monochromon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "vermillimon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "black_wargreymon",
+				"from": [
+					[-1, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"gold",
+					"fusion",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "greymon_blue",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "mametyramon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "samudramon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"slide",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "darktyranomon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "metalgreymon_blue",
+				"from": [
+					[-3, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "omegamon_zwart",
+				"from": [
+					[-4, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"slide",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "skullgreymon",
+				"from": [
+					[-4, -1],
+					[-2, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			null
+		]
+	]
+}

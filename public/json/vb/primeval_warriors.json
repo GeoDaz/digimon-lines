@@ -1,0 +1,153 @@
+{
+	"title": "Primeval Warriors",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "jewelbeemon",
+				"from": [
+					[1, -1],
+					[3, -1]
+				],
+				"color": ["x", "grass"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "stingmon",
+				"from": [[1, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "paildramon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": ["x", "grass"]
+			},
+			{
+				"name": "banchostingmon",
+				"from": [
+					[-1, -1],
+					[2, -1],
+					[4, -1]
+				],
+				"color": ["electric", "grass", "grass"]
+			}
+		],
+		[
+			{
+				"name": "leafmon"
+			},
+			{
+				"name": "minomon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "wormmon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "shadramon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "dinobeemon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": ["gold", "fusion"]
+			},
+			{
+				"name": "grankuwagamon",
+				"from": [
+					[-2, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": ["electric", "grass", "grass"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "hudiemon",
+				"from": [[-1, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "kongoumon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": ["gold", "fusion"]
+			},
+			{
+				"name": "imperialdramon_dragon_mode",
+				"from": [
+					[-1, -1],
+					[-2, -1],
+					[1, -1]
+				],
+				"color": ["gold", "x", "holy"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gokimon",
+				"from": [[-2, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "pucchiemon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": ["gold", "fusion"]
+			},
+			{
+				"name": "imperialdramon_paladin_mode",
+				"from": [
+					[-2, -1],
+					[-3, -1],
+					[0, -1]
+				],
+				"color": ["gold", "x", "holy"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "pucchiemon_green",
+				"from": [
+					[-4, -1],
+					[-2, -1]
+				],
+				"color": ["x", "grass"]
+			},
+			null
+		]
+	]
+}

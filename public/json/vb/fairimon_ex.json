@@ -1,0 +1,193 @@
+{
+	"title": "Fairimon EX",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "fairymon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "jetsilphymon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "ancientirismon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"x",
+					"ice",
+					"machine"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "tinkermon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "cockatrimon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "shutumon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"x",
+					"grass"
+				]
+			},
+			{
+				"name": "lotusmon",
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"x",
+					"marine",
+					"machine"
+				]
+			}
+		],
+		[
+			{
+				"name": "yuramon"
+			},
+			{
+				"name": "tanemon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "pomumon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "arbormon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "petaldramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"ice"
+				]
+			},
+			{
+				"name": "ancienttroiamon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"marine",
+					"grass"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "zassoumon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "peacockmon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "lordknightmon",
+				"from": [
+					[-2, -1],
+					[1, -1]
+				],
+				"color": [
+					"ice",
+					"grass"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "zamielmon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"ice",
+					"fusion"
+				]
+			},
+			null
+		]
+	]
+}

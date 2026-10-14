@@ -14,7 +14,7 @@ import { capitalize } from '@/functions';
 import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
 import transformLine, { thumbsToNames } from '@/functions/line';
 // constants
-import { Line } from '@/types/Line';
+import { Line, VbThumb } from '@/types/Line';
 import { LINE, titles } from '@/consts/ui';
 import { Digimon, DigimonItem } from '@/types/Digimon';
 import { StringObject } from '@/types/Ui';
@@ -27,8 +27,9 @@ const defaultObject: any = {};
 interface StaticProps {
 	line?: Line;
 	name?: string;
-	next?: string;
-	prev?: string;
+	image?: string;
+	next?: string | VbThumb;
+	prev?: string | VbThumb;
 	digimons?: {
 		[key: string]: Digimon;
 	};
@@ -69,7 +70,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 			}
 			metatitle={nameCap + ' ' + typeTitle}
 			metadescription={`Evolution line for ${nameCap} species`}
-			metaimg={`digimon/${name}.jpg`}
+			metaimg={`digimon/${ssr.image || name}.jpg`}
 		>
 			{line ?
 				<>

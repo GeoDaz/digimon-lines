@@ -1,0 +1,211 @@
+{
+	"title": "True Shadow Howl",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "weregarurumon_sagittarius_mode",
+				"from": [
+					[1, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "garurumon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "cerberumon",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "zeedgarurumon",
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"x",
+					"grass"
+				]
+			}
+		],
+		[
+			{
+				"name": "punimon"
+			},
+			{
+				"name": "tsunomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "gabumon_black",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "drimogemon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "rhinomon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "metalgarurumon_black",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"gold",
+					"x",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dorulumon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "pandamon",
+				"from": [
+					[-2, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"dark"
+				]
+			},
+			{
+				"name": "mercurymon",
+				"from": [
+					[-2, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"gold",
+					"grass",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "garurumon_black",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "weregarurumon_black",
+				"from": [
+					[-3, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"dark"
+				]
+			},
+			{
+				"name": "omegamon_zwart",
+				"from": [
+					[-4, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "jaegerdorulumon",
+				"from": [
+					[-3, -1],
+					[-2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			null
+		]
+	]
+}

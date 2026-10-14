@@ -1,0 +1,87 @@
+{
+	"title": "Monodramon GP",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "justimon_accel_arm",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			}
+		],
+		[
+			{
+				"name": "ketomon"
+			},
+			{
+				"name": "hopmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "monodramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "strikedramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "cyberdramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "justimon_blitz_arm",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "justimon_critical_arm",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			}
+		]
+	]
+}

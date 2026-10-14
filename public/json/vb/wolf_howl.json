@@ -1,0 +1,109 @@
+{
+	"title": "Wolf Howl",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "drimogemon",
+				"from": [[1, -1], [2, -1]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "pandamon",
+				"from": [[1, -1], [0, -1], [3, -1], [2, -1]],
+				"color": ["fire", "grass", "fusion", "dark"]
+			},
+			{
+				"name": "zeedgarurumon",
+				"from": [[1, -1], [0, -1], [3, -1]],
+				"color": ["fire", "grass", "fusion"]
+			},
+			null
+		],
+		[
+			{
+				"name": "punimon",
+				"from": null
+			},
+			{
+				"name": "tsunomon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "gabumon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "garurumon",
+				"from": [[0, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "weregarurumon",
+				"from": [[0, -1], [2, -1]],
+				"color": ["fire", "fusion"]
+			},
+			{
+				"name": "metalgarurumon",
+				"from": [[0, -1], [-1, -1], [1, -1]],
+				"color": ["fire", "grass", "dark"]
+			},
+			{
+				"name": "omegamon",
+				"from": [[0, -1]],
+				"color": ["grass"]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "gabumon_black",
+				"from": [[-1, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "garurumon_black",
+				"from": [[0, -1]],
+				"color": ["fusion"]
+			},
+			{
+				"name": "weregarurumon_black",
+				"from": [[-2, -1], [0, -1]],
+				"color": ["grass", "dark"]
+			},
+			{
+				"name": "metalgarurumon_black",
+				"from": [[1, -1], [0, -1]],
+				"color": ["fusion", "dark"]
+			},
+			{
+				"name": "omegamon_zwart",
+				"from": [[0, -1]],
+				"color": ["fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dorulumon",
+				"from": [[-2, -1], [-1, -1]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "jaegerdorulumon",
+				"from": [[-2, -1], [-3, -1], [0, -1], [-1, -1]],
+				"color": ["fire", "grass", "fusion", "dark"]
+			},
+			null,
+			null
+		]
+	],
+	"size": 7
+}

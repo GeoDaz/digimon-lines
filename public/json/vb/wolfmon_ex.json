@@ -1,0 +1,200 @@
+{
+	"title": "Wolfmon EX",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "wolfmon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "beowolfmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "strabimon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "dobermon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "kendogarurumon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"x",
+					"fire"
+				]
+			},
+			{
+				"name": "magnagarurumon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"x",
+					"ice",
+					"marine"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "wanyamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "gizamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "ranamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "calamaramon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"ice"
+				]
+			},
+			{
+				"name": "ancientgarurumon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"x",
+					"ice",
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "susanomon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ebidramon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "sirenmon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				],
+				"color": [
+					"grass",
+					"ice"
+				]
+			},
+			{
+				"name": "ancientmermaimon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"marine",
+					"grass",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "splashmon",
+				"from": [
+					[-3, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			null,
+			null
+		]
+	]
+}

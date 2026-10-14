@@ -1,0 +1,153 @@
+{
+	"title": "Medarot",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "greymon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "greywars",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "weatheredmedal"
+			},
+			{
+				"name": "medal",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "tinpet",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "garurumon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "garurumetal",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"gold"
+				]
+			},
+			{
+				"name": "omegaknight",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "metabee",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "metabee",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"marine",
+					"machine"
+				]
+			},
+			{
+				"name": "omedamon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"x",
+					"ice",
+					"marine",
+					"machine"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "rokusho",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "rokusho",
+				"from": [
+					[-3, -1],
+					[-2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"marine",
+					"machine"
+				]
+			},
+			null
+		]
+	]
+}

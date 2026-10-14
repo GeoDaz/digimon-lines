@@ -1,0 +1,211 @@
+{
+	"title": "Terriermon EX",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "rapidmon",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gargomon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "sinduramon",
+				"from": [
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"x",
+					"fusion"
+				]
+			},
+			{
+				"name": "megagargomon",
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"slide",
+					"fusion"
+				]
+			}
+		],
+		[
+			{
+				"name": "zerimon"
+			},
+			{
+				"name": "gummymon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "terriermon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "turuiemon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "makuramon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"x"
+				]
+			},
+			{
+				"name": "cherubimon_virtue",
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"grass",
+					"grass",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "harpymon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "andiramon_deva",
+				"from": [
+					[-2, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "cherubimon_vice",
+				"from": [
+					[-2, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"grass",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "wendimon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "pajiramon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"grass",
+					"x"
+				]
+			},
+			{
+				"name": "goldrapidmon",
+				"from": [
+					[-4, -1],
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"slide",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "andiramon",
+				"from": [
+					[-4, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			null
+		]
+	]
+}

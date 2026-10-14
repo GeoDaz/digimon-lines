@@ -1,0 +1,64 @@
+{
+	"title": "Black Roar",
+	"columns": [
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "koromon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "agumon_black",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "greymon_blue",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "metalgreymon_blue",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "black_wargreymon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "omegamon_zwart",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			}
+		]
+	]
+}

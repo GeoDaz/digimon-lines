@@ -1,0 +1,277 @@
+{
+	"title": "Forest Guardian",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "kabuterimon",
+				"from": [
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "megakabuterimon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "herculeskabuterimon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "tentomon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "sunflowmon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "lilamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "rosemon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "bubbmon"
+			},
+			{
+				"name": "mochimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "lalamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "waspmon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"gold"
+				]
+			},
+			{
+				"name": "cannonbeemon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"dark",
+					"x"
+				]
+			},
+			{
+				"name": "tigervespamon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fusion",
+					"dark",
+					"x"
+				]
+			},
+			{
+				"name": "tyrantkabuterimon",
+				"from": [
+					[-2, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"x"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "fanbeemon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "kuwagamon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "okuwamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "grankuwagamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fusion",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "morphomon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "hudiemon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"gold"
+				]
+			},
+			{
+				"name": "eosmon_perfect",
+				"from": [
+					[-3, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"x"
+				]
+			},
+			{
+				"name": "rosemon_burst_mode",
+				"from": [
+					[-3, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "bancholilimon",
+				"from": [
+					[-4, -1],
+					[-1, -1]
+				],
+				"color": [
+					"grass",
+					"x"
+				]
+			},
+			null
+		]
+	]
+}

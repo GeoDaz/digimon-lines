@@ -1,0 +1,121 @@
+{
+	"title": "Dynasty of the Evil",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "cyberdramon_2",
+				"from": [[4, -1], [3, -1]],
+				"color": ["fire", "dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "devimon",
+				"from": [[1, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "myotismon",
+				"from": [[3, -1], [0, -1]],
+				"color": ["fire", "fusion"]
+			},
+			{
+				"name": "neomyotismon",
+				"from": [[-1, -1], [0, -1], [3, -1]],
+				"color": ["fire", "fusion", "dark"]
+			}
+		],
+		[
+			{
+				"name": "zurumon",
+				"from": null
+			},
+			{
+				"name": "pagumon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "ghostmon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "wizardmon",
+				"from": [[0, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "baalmon",
+				"from": [[0, -1], [-1, -1]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "beelzebumon_2",
+				"from": [[0, -1], [-2, -1], [3, -1]],
+				"color": ["x", "fire", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "bakemon",
+				"from": [[-1, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "pumpmon",
+				"from": [[-1, -1], [0, -1]],
+				"color": ["grass", "dark"]
+			},
+			{
+				"name": "noblepumpmon",
+				"from": [[-1, -1], [0, -1], [1, -1]],
+				"color": ["x", "grass", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "saberdramon",
+				"from": [[-2, -1]],
+				"color": ["grass"]
+			},
+			{
+				"name": "fantomon",
+				"from": [[0, -1], [-1, -1]],
+				"color": ["fire", "dark"]
+			},
+			{
+				"name": "piemon",
+				"from": [[-1, -1], [-3, -1], [1, -1]],
+				"color": ["grass", "fusion", "dark"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "jokermon",
+				"from": [[-3, -1], [-4, -1]],
+				"color": ["grass", "fusion"]
+			},
+			null
+		]
+	],
+	"size": 6
+}

@@ -1,0 +1,219 @@
+{
+	"title": "Agumon EX",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metalgreymon",
+				"from": [
+					[1, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"dark"
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "greymon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "andromon",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "blitzgreymon",
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[2, -1],
+					[3, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"slide",
+					"fusion",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "botamon"
+			},
+			{
+				"name": "koromon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "agumon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "coelamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "anomalocarimon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "donedevimon",
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"gold",
+					"slide",
+					"fusion"
+				]
+			},
+			{
+				"name": "omegamon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ogremon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "mamemon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "wargreymon",
+				"from": [
+					[-3, -1],
+					[-2, -1],
+					[-1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "algomon_adult",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "neodevimon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metaltyranomon",
+				"from": [
+					[-4, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"dark"
+				]
+			},
+			null,
+			null
+		]
+	]
+}

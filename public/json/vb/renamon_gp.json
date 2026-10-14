@@ -1,0 +1,87 @@
+{
+	"title": "Renamon GP",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "sakuyamon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"grass"
+				]
+			}
+		],
+		[
+			{
+				"name": "relemon"
+			},
+			{
+				"name": "pokomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "renamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "kyubimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "taomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"grass"
+				]
+			},
+			{
+				"name": "kuzuhamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"grass"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "sakuyamon_miko_mode",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"grass"
+				]
+			}
+		]
+	]
+}

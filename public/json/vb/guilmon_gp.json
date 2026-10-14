@@ -1,0 +1,87 @@
+{
+	"title": "Guilmon GP",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "medievalgallantmon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			}
+		],
+		[
+			{
+				"name": "jyarimon"
+			},
+			{
+				"name": "gigimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "guilmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "growlmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "wargrowlmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			},
+			{
+				"name": "gallantmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "chaosgallantmon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fusion"
+				]
+			}
+		]
+	]
+}

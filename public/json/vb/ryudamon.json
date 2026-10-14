@@ -1,0 +1,212 @@
+{
+	"title": "Ryudamon",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "zubaeagermon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "duramon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "zubamon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "ginryumon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"gold"
+				]
+			},
+			{
+				"name": "hisyaryumon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"gold",
+					"dark"
+				]
+			},
+			{
+				"name": "durandamon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"mode"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "sakumon"
+			},
+			{
+				"name": "sakuttomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "ryudamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "musyamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			{
+				"name": "asuramon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "ouryumon",
+				"from": [
+					[-1, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"gold",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "ragnalordmon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dokugumon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"gold"
+				]
+			},
+			{
+				"name": "gyukimon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"dark"
+				]
+			},
+			{
+				"name": "zanbamon",
+				"from": [
+					[-3, -1],
+					[-2, -1],
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"mode",
+					"fusion",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "oboromon",
+				"from": [
+					[-4, -1],
+					[-3, -1],
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"fusion",
+					"dark"
+				]
+			},
+			null,
+			null
+		]
+	]
+}

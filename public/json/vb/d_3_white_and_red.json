@@ -1,0 +1,275 @@
+{
+	"title": "D-3 White and Red",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "aquilamon",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"x",
+					"fire"
+				]
+			},
+			{
+				"name": "silphymon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"x",
+					"fire"
+				]
+			},
+			{
+				"name": "valkyrimon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[4, -1]
+				],
+				"color": [
+					"x",
+					"fire",
+					"grass"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "hawkmon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "gatomon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "angewomon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[3, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"ice",
+					"marine",
+					"marine"
+				]
+			},
+			{
+				"name": "magnadramon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"x",
+					"fire",
+					"ice"
+				]
+			}
+		],
+		[
+			{
+				"name": "pururumon"
+			},
+			{
+				"name": "poromon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "gatomon_rookie",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "stingmon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"ice"
+				]
+			},
+			{
+				"name": "dinobeemon",
+				"from": [
+					[-2, -1],
+					[0, -1],
+					[3, -1],
+					[1, -1]
+				],
+				"color": [
+					"x",
+					"ice",
+					"x",
+					"marine"
+				]
+			},
+			{
+				"name": "imperialdramon_fighter_mode",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"ice",
+					"fusion",
+					"grass"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "wormmon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "halsemon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"x",
+					"ice"
+				]
+			},
+			{
+				"name": "mummymon",
+				"from": [
+					[-2, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"x"
+				]
+			},
+			{
+				"name": "imperialdramon_paladin_mode",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"ice",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "ukkomon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "nefertimon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"fire"
+				]
+			},
+			{
+				"name": "kimeramon",
+				"from": [
+					[0, -1],
+					[-4, -1]
+				],
+				"color": [
+					"marine",
+					"x"
+				]
+			},
+			{
+				"name": "armageddemon",
+				"from": [
+					[-1, -1],
+					[-4, -1],
+					[0, -1]
+				],
+				"color": [
+					"fusion",
+					"x",
+					"grass"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "shurimon",
+				"from": [
+					[-2, -1],
+					[-4, -1]
+				],
+				"color": [
+					"ice",
+					"x"
+				]
+			},
+			null,
+			{
+				"name": "big_ukkomon",
+				"from": [
+					[-1, -3]
+				],
+				"color": [
+					"marine"
+				]
+			}
+		]
+	]
+}

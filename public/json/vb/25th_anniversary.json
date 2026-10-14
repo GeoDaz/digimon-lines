@@ -1,0 +1,225 @@
+{
+	"title": "25th Anniversary",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "tyranomon",
+				"from": [[2, -1]],
+				"color": ["fire"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "airdramon",
+				"from": [[2, -1]],
+				"color": ["grass"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			{
+				"name": "botamon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "koromon",
+				"from": [[0, -1]],
+				"color": [],
+				"xCollapsable": false,
+				"yCollapsable": false,
+				"xSize": 2
+			},
+			{
+				"name": "agumon",
+				"from": [[0.5, -1]],
+				"color": [],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "greymon",
+				"from": [[0, -1]],
+				"color": ["fire"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "metalgreymon_blue",
+				"from": [
+					[0, -1],
+					[-1, -1],
+					[2, -1]
+				],
+				"color": ["fire", "fire", "fire"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "blitzgreymon",
+				"from": [[0, -1]],
+				"color": ["fire"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "betamon",
+				"from": [[-0.5, -1]],
+				"color": [],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "seadramon",
+				"from": [[0, -1]],
+				"color": ["grass"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "mamemon",
+				"from": [
+					[-3, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": ["grass", "grass", "grass"],
+				"xCollapsable": true,
+				"yCollapsable": false
+			},
+			{
+				"name": "banchomamemon",
+				"from": [[0, -1]],
+				"color": ["grass"],
+				"xCollapsable": true,
+				"yCollapsable": true
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "devimon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": ["fire", "grass"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "meramon",
+				"from": [
+					[-3, -1],
+					[-2, -1]
+				],
+				"color": ["fire", "grass"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "numemon",
+				"from": [
+					[-4, -1],
+					[-3, -1]
+				],
+				"color": ["fire", "grass"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "monzaemon",
+				"from": [[0, -1]],
+				"color": ["dark"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "shinmonzaemon",
+				"from": [[0, -1]],
+				"color": ["dark"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		],
+		[
+			{
+				"name": "dokimon",
+				"from": null,
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "bibimon",
+				"from": [[0, -1]],
+				"color": ["electric"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "pulsemon",
+				"from": [[0, -1]],
+				"color": ["electric"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "bulkmon",
+				"from": [[0, -1]],
+				"color": ["electric"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "boutmon",
+				"from": [[0, -1]],
+				"color": ["electric"],
+				"xCollapsable": false,
+				"yCollapsable": false
+			},
+			{
+				"name": "kazuchimon",
+				"from": [[0, -1]],
+				"color": ["electric"],
+				"xCollapsable": false,
+				"yCollapsable": true
+			}
+		]
+	],
+	"size": 6
+}
