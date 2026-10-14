@@ -63,7 +63,7 @@ export const PageBuild = (props: BuildProps) => {
 	const [zoom, setZoom] = useState<number>(DEFAULT_ZOOM);
 	const [edition, edit] = useState<boolean>(true);
 	// Pre-fill the title when arriving from a line's "Edit in builder" button.
-	const { name: queryName } = useQueryParam('name');
+	const { name: queryName, type: queryType } = useQueryParam('name', 'type');
 	useDragAutoScroll();
 
 	const licenceContext = props.context || defaultLicenceContext;
@@ -72,7 +72,11 @@ export const PageBuild = (props: BuildProps) => {
 		(props.line || defaultLine) as Line
 	);
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
-	const { downloadCode, uploadCode, name, setName } = useDownloadCode(line, setLine);
+	const { downloadCode, uploadCode, name, setName } = useDownloadCode(
+		line,
+		setLine,
+		queryType
+	);
 	const { downloadImage, downloading, error } = useDownloadImg(name);
 	const { removeItemFromStorage } = useLocalStorage({
 		key: licenceContext.key + '-line',

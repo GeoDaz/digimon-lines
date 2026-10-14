@@ -111,6 +111,8 @@ const PageGroup: React.FC<Props> = ({ ssr = {} }) => {
 						<LineViewer
 							line={group.grid}
 							downloadName={group.title || name}
+							editName={name}
+							editType={GROUP}
 							search={ssr.digimonSearch}
 							digimons={ssr.digimons}
 							items={ssr.items}

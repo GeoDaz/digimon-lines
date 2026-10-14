@@ -28,6 +28,7 @@ interface Props {
 	line: Line;
 	downloadName?: string;
 	editName?: string;
+	editType?: string;
 	licence?: string | null;
 	shareTitle?: string;
 	shareText?: string;
@@ -45,6 +46,7 @@ const LineViewer: React.FC<Props> = ({
 	line,
 	downloadName,
 	editName,
+	editType,
 	licence,
 	shareTitle,
 	shareText,
@@ -79,7 +81,11 @@ const LineViewer: React.FC<Props> = ({
 	const handleEdit = () => {
 		const build = licenceBuildPath(licence);
 		localStorage.setItem(licenceStorageKey(licence), JSON.stringify(line, null, 4));
-		router.push(editName ? `${build}/?name=${encodeURIComponent(editName)}` : build);
+		const params = new URLSearchParams();
+		if (editName) params.set('name', editName);
+		if (editName && editType) params.set('type', editType);
+		const query = params.toString();
+		router.push(query ? `${build}/?${query}` : build);
 	};
 
 	return (

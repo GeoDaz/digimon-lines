@@ -78,6 +78,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 						line={line}
 						downloadName={ssr.line?.title || name}
 						editName={name}
+						editType={type}
 						shareTitle={`${line.title || nameCap} ${typeTitle}`}
 						shareText={`Evolution line for ${nameCap} species`}
 						search={ssr.search}

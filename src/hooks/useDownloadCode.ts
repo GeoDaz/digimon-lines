@@ -7,7 +7,7 @@ import Line from '@/types/Line';
 import { useState } from 'react';
 import { IS_DEV } from '@/consts/env';
 
-const useDownloadCode = (line: Line, setLine?: (line: Line) => void) => {
+const useDownloadCode = (line: Line, setLine?: (line: Line) => void, type?: string) => {
 	const [name, setName] = useState<string | undefined>();
 	const { addToast } = useToast();
 
@@ -22,14 +22,14 @@ const useDownloadCode = (line: Line, setLine?: (line: Line) => void) => {
 				const response = await fetch('/api/save-line', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json' },
-					body: JSON.stringify({ name, line: exportedLine }),
+					body: JSON.stringify({ name, line: exportedLine, type }),
 				});
 				const data = await response.json();
 				if (response.ok) {
 					addToast(
 						data.created ?
-							`Line "${data.name}" created successfully`
-						:	`Line "${data.name}" updated successfully`
+							`Line "${data.dir}/${data.name}" created successfully`
+						:	`Line "${data.dir}/${data.name}" updated successfully`
 					);
 				} else {
 					addToast(data.error || 'Failed to save line', 'danger');
