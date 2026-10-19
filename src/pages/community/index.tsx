@@ -114,7 +114,7 @@ export const PageCommunity = ({
 					<Form.Control
 						type="search"
 						id="community-search"
-						className="research"
+						className="research buttoned"
 						placeholder={`Research a ${licence.name} or a title`}
 						autoComplete="off"
 						value={draft}

@@ -55,7 +55,7 @@ const InputMono: React.FC<Props> = ({
 				value={value}
 				onKeyDown={onKeyDown}
 				autoComplete="off"
-				className="research"
+				className="research buttoned"
 				disabled={disabled}
 			/>
 			<Button

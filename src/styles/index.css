@@ -1797,11 +1797,14 @@ button.like-heart:focus-visible {
 	background-color: var(--dl-panel);
 }
 
-.evolution-filters .form-control.research {
+.evolution-filters .form-control {
 	border: 1px solid var(--dl-border-soft);
+	color: #e7ecf2 !important;
+}
+
+.evolution-filters .form-control.buttoned {
 	border-right: 0;
 	border-radius: 9px 0 0 9px;
-	color: #e7ecf2 !important;
 }
 
 .evolution-filters .form-control::placeholder {

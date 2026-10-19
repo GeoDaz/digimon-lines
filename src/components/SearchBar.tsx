@@ -110,7 +110,7 @@ const SearchBar: React.FC<Props> = ({
 				value={search || ''}
 				onKeyDown={onKeyDown}
 				autoComplete="off"
-				className="research"
+				className="research buttoned"
 				disabled={disabled}
 			/>
 			{previews.length > 0 && (
