@@ -391,7 +391,7 @@
 		"name": "drimogemon",
 		"year": "1998",
 		"url": "https://wikimon.net/Drimogemon",
-		"level": ["Rookie"],
+		"level": ["Champion", "Rookie"],
 		"type": "Beast",
 		"attribute": "Data",
 		"field": "Nature Spirits"
@@ -2795,8 +2795,8 @@
 		"attribute": "Virus",
 		"field": "Nature Spirits"
 	},
-	"galgomon": {
-		"name": "galgomon",
+	"gargomon": {
+		"name": "gargomon",
 		"year": "2000",
 		"url": "https://wikimon.net/Galgomon",
 		"level": "Champion",
@@ -2804,8 +2804,8 @@
 		"attribute": "Vaccine",
 		"field": ["Nature Spirits", "Wind Guardians"]
 	},
-	"gargomon": {
-		"name": "gargomon",
+	"gargoylemon": {
+		"name": "gargoylemon",
 		"year": "2000",
 		"url": "https://wikimon.net/Gargomon",
 		"level": ["Armor", "Champion"],
@@ -13897,7 +13897,7 @@
 	"drimogemon_brown": {
 		"name": "drimogemon_brown",
 		"source": "DW3",
-		"level": ["Rookie"],
+		"level": ["Champion"],
 		"type": "Beast"
 	},
 	"ebidramon_pink": {
