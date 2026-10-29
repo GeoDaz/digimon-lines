@@ -1626,7 +1626,7 @@
 			"name": "renamon",
 			"x": ["renamon_x"],
 			"from": ["pokomon", "suzumon"],
-			"to": ["kyubimon", "youkomon", "tenkomon", "reppamon"]
+			"to": ["kyubimon", "youkomon", "tenkomon", "reppamon", "igamon"]
 		},
 		"sangomon": {
 			"name": "sangomon",
@@ -2938,8 +2938,15 @@
 		},
 		"igamon": {
 			"name": "igamon",
-			"from": ["dondokomon", "falcomon_2"],
-			"to": ["tekkamon", "fumamon"]
+			"from": ["dondokomon", "falcomon_2", "renamon"],
+			"variants": ["kougamon"],
+			"to": ["fumamon", "tekkamon"]
+		},
+		"kougamon": {
+			"name": "kougamon",
+			"from": ["falcomon_2", "dondokomon"],
+			"variants": ["igamon"],
+			"to": ["fumamon", "tekkamon", "doumon"]
 		},
 		"ikkakumon": {
 			"name": "ikkakumon",
@@ -5066,7 +5073,7 @@
 		"doumon": {
 			"name": "doumon",
 			"variants": ["taomon"],
-			"from": ["youkomon", "reppamon"],
+			"from": ["youkomon", "reppamon", "kougamon"],
 			"to": ["kuzuhamon", "taotiemon", "taowumon", "mitamamon"]
 		},
 		"duramon": {
