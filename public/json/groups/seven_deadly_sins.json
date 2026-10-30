@@ -171,7 +171,7 @@
 				},
 				{
 					"from": [[0, -1]],
-					"name": "dagomon",
+					"name": "marinedevimon",
 					"color": ["dark"]
 				},
 				{
@@ -440,6 +440,35 @@
 			[
 				{
 					"from": null,
+					"name": "zurumon"
+				},
+				{
+					"from": null,
+					"name": "pagumon"
+				},
+				{
+					"from": null,
+					"name": "chiropmon"
+				},
+				{
+					"from": null,
+					"name": "pipismon"
+				},
+				{
+					"from": null,
+					"name": "myotismon",
+					"skins": ["myotismon_x"]
+				},
+				{
+					"from": null,
+					"name": "malomyotismon"
+				},
+				null,
+				null
+			],
+			[
+				{
+					"from": null,
 					"name": "keemon"
 				},
 				{
@@ -489,64 +518,6 @@
 				{
 					"from": null,
 					"name": "murmukusmon"
-				},
-				null,
-				null
-			],
-			[
-				{
-					"from": null,
-					"name": "zurumon"
-				},
-				{
-					"from": null,
-					"name": "pagumon"
-				},
-				{
-					"from": null,
-					"name": "chiropmon"
-				},
-				{
-					"from": null,
-					"name": "pipismon"
-				},
-				{
-					"from": null,
-					"name": "myotismon",
-					"skins": ["myotismon_x"]
-				},
-				{
-					"from": null,
-					"name": "malomyotismon"
-				},
-				null,
-				null
-			],
-			[
-				{
-					"from": null,
-					"name": "cocomon"
-				},
-				{
-					"from": null,
-					"name": "chocomon"
-				},
-				{
-					"from": null,
-					"name": "lopmon"
-				},
-				{
-					"from": null,
-					"name": "wendimon"
-				},
-				{
-					"from": null,
-					"name": "andiramon"
-				},
-				{
-					"from": null,
-					"name": "cherubimon_vice",
-					"skins": ["cherubimon_vice_x"]
 				},
 				null,
 				null
