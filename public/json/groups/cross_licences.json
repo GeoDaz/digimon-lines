@@ -1,89 +1,180 @@
 {
-    "title": "Cross Licences",
-    "main": [
-        {
-            "name": "omedamon",
-            "line": "omegamon_merciful_mode"
-        },
-        {
-            "name": "omegaknight",
-            "line": "omegamon_merciful_mode"
-        },
-        {
-            "name": "greywars",
-            "line": "greymon"
-        },
-        {
-            "name": "garurumetal",
-            "line": "metalgarurumon"
-        },
-        {
-            "name": "metaknights",
-            "line": "veemon"
-        },
-        {
-            "name": "imperialdrago",
-            "line": "veemon"
-        },
-        {
-            "name": "dukeknights",
-            "line": "guilmon"
-        },
-        {
-            "name": "mugendraborg",
-            "line": "toyagumon"
-        },
-        {
-            "name": "apocalypseend",
-            "line": "apocalymon"
-        },
-        {
-            "name": "beelzebusatan",
-            "line": "impmon"
-        },
-        {
-            "name": "greymon_g_erosion_mode",
-            "line": "greymon"
-        },
-        {
-            "name": "metalgreymon_g_erosion_mode",
-            "line": "greymon"
-        },
-        {
-            "name": "wargreymon_g_erosion_mode",
-            "line": "greymon"
-        },
-        {
-            "name": "metalgreymon_blue_g_erosion_mode",
-            "line": "greymon"
-        },
-        {
-            "name": "black_wargreymon_g_erosion_mode",
-            "line": "greymon"
-        },
-        {
-            "name": "metalgarurumon_g_erosion_mode",
-            "line": "garurumon"
-        },
-        {
-            "name": "omegamon_g_fusion_mode",
-            "line": "omegamon_merciful_mode"
-        },
-        {
-            "name": "skullgreymon_g_erosion_mode",
-            "line": "greymon"
-        },
-        {
-            "name": "machinedramon_mfs_3_mode",
-            "line": "toyagumon"
-        },
-        {
-            "name": "rathalosgreymon",
-            "line": "greymon"
-        },
-        {
-            "name": "jinougarurumon",
-            "line": "garurumon"
-        }
-    ]
+	"title": "Cross Licences",
+	"main": [
+		{
+			"name": "omedamon",
+			"line": "omegamon_merciful_mode"
+		},
+		{
+			"name": "omegaknight",
+			"line": "omegamon_merciful_mode"
+		},
+		{
+			"name": "greywars",
+			"line": "greymon"
+		},
+		{
+			"name": "garurumetal",
+			"line": "metalgarurumon"
+		},
+		{
+			"name": "metaknights",
+			"line": "veemon"
+		},
+		{
+			"name": "imperialdrago",
+			"line": "veemon"
+		},
+		{
+			"name": "dukeknights",
+			"line": "guilmon"
+		},
+		{
+			"name": "mugendraborg",
+			"line": "toyagumon"
+		},
+		{
+			"name": "apocalypseend",
+			"line": "apocalymon"
+		},
+		{
+			"name": "beelzebusatan",
+			"line": "impmon"
+		},
+		{
+			"name": "greymon_g_erosion_mode",
+			"line": "greymon"
+		},
+		{
+			"name": "metalgreymon_g_erosion_mode",
+			"line": "greymon"
+		},
+		{
+			"name": "wargreymon_g_erosion_mode",
+			"line": "greymon"
+		},
+		{
+			"name": "metalgreymon_blue_g_erosion_mode",
+			"line": "greymon"
+		},
+		{
+			"name": "black_wargreymon_g_erosion_mode",
+			"line": "greymon"
+		},
+		{
+			"name": "metalgarurumon_g_erosion_mode",
+			"line": "garurumon"
+		},
+		{
+			"name": "omegamon_g_fusion_mode",
+			"line": "omegamon_merciful_mode"
+		},
+		{
+			"name": "skullgreymon_g_erosion_mode",
+			"line": "greymon"
+		},
+		{
+			"name": "machinedramon_mfs_3_mode",
+			"line": "toyagumon"
+		},
+		{
+			"name": "rathalosgreymon",
+			"line": "greymon"
+		},
+		{
+			"name": "jinougarurumon",
+			"line": "garurumon"
+		}
+	],
+	"grid": {
+		"size": 7,
+		"columns": [
+			[
+				null,
+				null,
+				null,
+				null,
+				null,
+				{
+					"name": "metalgarurumon_g_erosion_mode",
+					"from": [[1, -1]]
+				},
+				{
+					"name": "omegamon_g_fusion_mode",
+					"from": [
+						[-0.5, -1],
+						[0.5, -1]
+					],
+					"xSize": 2,
+					"color": ["fusion", "fusion"]
+				}
+			],
+			[
+				{
+					"name": "botamon",
+					"from": null
+				},
+				{
+					"name": "koromon",
+					"from": null
+				},
+				{
+					"name": "agumon",
+					"from": [[0, -2]]
+				},
+				{
+					"name": "greymon_g_erosion_mode",
+					"from": [[0, -1]]
+				},
+				{
+					"name": "metalgreymon_g_erosion_mode",
+					"from": [[0, -1]]
+				},
+				{
+					"name": "wargreymon_g_erosion_mode",
+					"from": [[0, -1]]
+				},
+				null
+			],
+			[
+				null,
+				null,
+				null,
+				null,
+				{
+					"name": "skullgreymon_g_erosion_mode",
+					"from": [[-1, -1]],
+					"color": ["dark"]
+				},
+				{
+					"name": "machinedramon_mfs_3_mode",
+					"from": [
+						[1, -1],
+						[0, -1],
+						[-1, -1]
+					],
+					"color": ["machine", "machine", "machine"]
+				},
+				null
+			],
+			[
+				null,
+				null,
+				null,
+				null,
+				{
+					"name": "metalgreymon_blue_g_erosion_mode",
+					"from": [[-2, -1]],
+					"color": ["dark"]
+				},
+				{
+					"name": "black_wargreymon_g_erosion_mode",
+					"from": [[0, -1]],
+					"color": ["dark"]
+				},
+				null
+			]
+		],
+		"levels": ["baby I", "baby II", "rookie", "champion", "ultimate", "mega", "mega+"]
+	}
 }
