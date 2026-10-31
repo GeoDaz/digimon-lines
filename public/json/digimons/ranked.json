@@ -727,7 +727,7 @@
 			"name": "psychemon",
 			"variants": ["gabumon_black", "gabumon"],
 			"from": ["tsunomon", "pagumon"],
-			"to": ["astamon", "gururumon", "garurumon", "nisedrimogemon"]
+			"to": ["astamon", "gururumon", "garurumon", "nisedrimogemon", "shimaunimon"]
 		},
 		"biyomon": {
 			"name": "biyomon",
@@ -3309,7 +3309,8 @@
 		},
 		"shimaunimon": {
 			"name": "shimaunimon",
-			"from": ["tukaimon", "patamon", "elecmon"],
+			"variants": ["unimon"],
+			"from": ["tukaimon", "patamon", "psychemon", "elecmon"],
 			"to": ["enbarrmon", "indaramon", "mammon", "chirinmon"]
 		},
 		"shoeshoemon": {
@@ -3509,6 +3510,7 @@
 		},
 		"unimon": {
 			"name": "unimon",
+			"variants": ["shimaunimon"],
 			"from": ["patamon", "kudamon", "takinmon", "elecmon"],
 			"to": ["chirinmon", "hippogriffomon", "angewomon"]
 		},
