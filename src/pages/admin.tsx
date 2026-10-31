@@ -92,6 +92,7 @@ const PageAdmin = () => {
 		<Layout
 			title="Administration"
 			metatitle="Administration"
+			noIndex
 			metadescription="Accounts and saved line quotas."
 		>
 			<Form

@@ -34,7 +34,7 @@ const DropdownMenu = ({ toggle, header, items, ...props }: DropdownMenuProps) =>
 	return (
 		<Dropdown {...props} data-bs-theme="dark">
 			<Dropdown.Toggle {...toggleProps}>{toggleContent}</Dropdown.Toggle>
-			<Dropdown.Menu>
+			<Dropdown.Menu renderOnMount>
 				{headerContent != null && (
 					<>
 						<Dropdown.Header {...headerProps}>{headerContent}</Dropdown.Header>

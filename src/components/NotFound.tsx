@@ -13,7 +13,7 @@ const NotFound: React.FC = () => {
 	const router = useRouter();
 
 	return (
-		<Layout title="Page not found" metatitle="Error 404">
+		<Layout title="Page not found" metatitle="Error 404" noIndex>
 			<Button variant="primary" onClick={() => router.push('/')}>
 				<Icon name="home" /> Go back to Home
 			</Button>

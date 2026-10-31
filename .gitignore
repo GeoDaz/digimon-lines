@@ -53,3 +53,5 @@ tsconfig.tsbuildinfo
 # Claude
 .claude/settings.local.json
 .claude/worktrees/
+# generated at build
+/public/sitemap.xml

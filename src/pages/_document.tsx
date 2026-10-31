@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import { SITE_URL } from '@/consts/env';
 
 export default function Document() {
 	return (
@@ -11,8 +10,6 @@ export default function Document() {
 				<meta name="MobileOptimized" content="width" />
 				<meta property="og:site_name" content="Digimon Lines" />
 				<meta property="og:type" content="website" />
-				<meta name="robots" content="index, follow" />
-				<meta property="og:url" content={SITE_URL} />
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="apple-touch-icon" href="/images/icons/maskable_icon_x192.png" />
 				<link rel="manifest" href="/manifest.json" />

@@ -284,7 +284,8 @@ const PageList: React.FC<Props> = props => {
 		<Layout
 			noGoBack
 			title="Digimon by levels"
-			metadescription="List of Digimon by levels"
+			metatitle="Digimon list by level"
+			metadescription="Every Digimon sorted by level, from Baby to Mega and Ultra, with Armor and Hybrid levels. Search any Digimon by name."
 		>
 			<ScrollUp />
 			<SearchContext.Provider value={props.search}>

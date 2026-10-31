@@ -137,7 +137,7 @@ export const PageBuild = (props: BuildProps) => {
 		<Layout
 			title={`Build your own ${licenceContext.name} line`}
 			metatitle={`${capitalize(licenceContext.name)} Builder`}
-			metadescription={`Build your own ${licenceContext.name} lines. be creative your are free.`}
+			metadescription={`Build your own ${licenceContext.name} evolution lines on a grid and export them as an image.`}
 			metaimg={licenceContext.key + '.png'}
 		>
 			<blockquote className="blockquote">

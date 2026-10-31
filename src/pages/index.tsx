@@ -102,7 +102,8 @@ const PageLines: React.FC<Props> = props => {
 		<Layout
 			noGoBack
 			title="Available lines"
-			metadescription="The aim of this site is to present evolutionary lines designed to bring together members of the same species."
+			metatitle="Digimon evolution lines by species"
+			metadescription="Digimon evolution lines grouped by species: follow how Agumon, Gabumon, Patamon and 100+ other Digimon digivolve, plus game evolutions, Vpets and Digimon groups."
 		>
 			<blockquote className="blockquote">
 				The aim of this site is to present evolutionary lines designed to bring

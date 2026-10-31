@@ -75,12 +75,12 @@ const Header: React.FC = () => (
 						{...gameMenu(Slime, 'Dragon Quest')}
 						items={[
 							{
-								href: 'https://dragon-quest-synth.netlify.app/build',
+								href: 'https://dragon-quest-synth.com/build',
 								target: '_blank',
 								content: 'Builder',
 							},
 							{
-								href: 'https://dragon-quest-synth.netlify.app',
+								href: 'https://dragon-quest-synth.com',
 								target: '_blank',
 								content: 'Synthesis',
 							},

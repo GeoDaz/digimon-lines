@@ -14,7 +14,7 @@ const PageMyLines = () => {
 
 	if (!enabled) {
 		return (
-			<Layout title="My lines" metatitle="My lines">
+			<Layout title="My lines" metatitle="My lines" noIndex>
 				<Alert variant="warning">Accounts are not available right now.</Alert>
 			</Layout>
 		);
@@ -22,7 +22,7 @@ const PageMyLines = () => {
 
 	if (!loading && !user) {
 		return (
-			<Layout title="My lines" metatitle="My lines">
+			<Layout title="My lines" metatitle="My lines" noIndex>
 				<p>Sign in to save your lines and share them.</p>
 				<Button variant="primary" onClick={() => signIn('discord')}>
 					<Icon name="discord" /> Continue with Discord
@@ -46,7 +46,7 @@ const PageMyLines = () => {
 	// lancer une requête sur un profil indéfini.
 	if (!profile?.pseudo) {
 		return (
-			<Layout title="My lines" metatitle="My lines">
+			<Layout title="My lines" metatitle="My lines" noIndex>
 				<Spinner animation="border" role="status" aria-label="Loading" />
 			</Layout>
 		);
