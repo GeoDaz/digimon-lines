@@ -23,8 +23,9 @@ module.exports = () => ({
 				permanent: true,
 			},
 			{
-				source: '/lines',
-				destination: '/',
+				source: '/',
+				has: [{ type: 'query', key: 'search' }],
+				destination: '/lines',
 				permanent: true,
 			},
 			...Object.entries(lineRedirects).map(([from, to]) => ({

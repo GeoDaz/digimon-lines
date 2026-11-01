@@ -4,6 +4,7 @@ import GoBack from '@/components/GoBack';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { SITE_URL } from '@/consts/env';
+import { makeClassName } from '@/functions';
 
 interface Props {
 	title: string | React.ReactNode;
@@ -13,6 +14,8 @@ interface Props {
 	metaimg?: string;
 	noGoBack?: boolean;
 	noIndex?: boolean;
+	noTitle?: boolean;
+	className?: string;
 }
 const Layout: React.FC<Props> = ({
 	title,
@@ -22,6 +25,8 @@ const Layout: React.FC<Props> = ({
 	metaimg = 'image.png',
 	noGoBack = false,
 	noIndex = false,
+	noTitle = false,
+	className,
 }) => {
 	const router = useRouter();
 	const trueMetaTitle = metatitle ? `${metatitle} | Digimon Lines` : 'Digimon Lines';
@@ -51,10 +56,12 @@ const Layout: React.FC<Props> = ({
 				<meta name="twitter:image" content={`${SITE_URL}/images/${metaimg}`} />
 			</Head>
 			<main>
-				<Container className="page" fluid>
-					<h1>
-						{!noGoBack && <GoBack />} {title}
-					</h1>
+				<Container className={makeClassName('page', className)} fluid>
+					{!noTitle && (
+						<h1>
+							{!noGoBack && <GoBack />} {title}
+						</h1>
+					)}
 					{children}
 				</Container>
 			</main>

@@ -256,4 +256,31 @@ export const areCollapsablePoints = (line: Line): Line => {
 	return line;
 };
 
+export const lineExcerpt = (line: Line, columns: number[], rows: number): Line => {
+	const index = new Map(columns.map((x, i) => [x, i]));
+	const { related, ...rest } = line;
+	return {
+		...rest,
+		size: rows,
+		columns: columns.map(x =>
+			line.columns[x].slice(0, rows).map((point, y) => {
+				if (!point || point.from === undefined) return point;
+				if (point.from === null || y === 0) return { ...point, from: null };
+				const from = Array.isArray(point.from[0]) ?
+					(point.from as number[][])
+				:	[point.from as number[]];
+				const colors = Array.isArray(point.color) ? point.color : undefined;
+				const kept = from
+					.map((link, i) => ({ link, color: colors?.[i] }))
+					.filter(({ link: [dx, dy] }) => index.has(x + dx) && y + dy >= 0);
+				return {
+					...point,
+					from: kept.map(({ link: [dx, dy] }) => [index.get(x + dx)! - index.get(x)!, dy]),
+					...(colors ? { color: kept.map(({ color }) => color || 'default') } : {}),
+				};
+			})
+		),
+	};
+};
+
 export default transformLine;

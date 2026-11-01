@@ -48,12 +48,13 @@ const Header: React.FC = () => (
 							{ href: '/games/dsts', content: 'Games' },
 							{ href: '/vbs', content: 'Vpets' },
 							{ href: '/groups', content: 'Groups' },
-							{ href: '/', content: 'Families' },
+							{ href: '/lines', content: 'Families' },
 						]}
 					/>
 					<DropdownMenu
 						{...gameMenu(Pokeball, 'Pokémon')}
 						items={[
+							{ href: '/pokemon', content: 'Overview' },
 							{ href: '/build/pokemon', content: 'Builder' },
 							{ href: '/community/pokemon', content: 'Community' },
 						]}

@@ -1,279 +1,253 @@
-import React, { useEffect, useState } from 'react';
-import Router from 'next/router';
-import { Row, Col } from 'react-bootstrap';
-import colors from '@/consts/colors';
-import Layout from '@/components/Layout';
-import LinePoint from '@/components/Line/LinePoint';
-import LineImage from '@/components/Line/LineImage';
+import React from 'react';
 import { GetStaticProps } from 'next';
-import { LineThumb } from '@/types/Line';
-import Line, { LineFound } from '@/types/Line';
-import { filterlinesFound, foundLines, lineToArray } from '@/functions/line';
-import SearchBar from '@/components/SearchBar';
-import useQueryParam from '@/hooks/useQueryParam';
-import { stringToKey } from '@/functions';
-import { StringArrayObject } from '@/types/Ui';
-import { APPMON } from '@/consts/ui';
+import Head from 'next/head';
+import { Row, Col } from 'react-bootstrap';
+import Layout from '@/components/Layout';
 import Link from '@/components/Link';
-import ButtonAdd from '@/components/Button/ButtonAdd';
-import ButtonRemove from '@/components/Button/ButtonRemove';
-import NewsModal from '@/components/Line/NewsModal';
-import useSaveNews from '@/hooks/useSaveNews';
-import { SearchContext } from '@/context/search';
-import Search from '@/types/Search';
-import { getDubNames, getDubbedSearchList } from '@/functions/search';
-import { getDirPaths } from '@/functions/file';
-import { IS_DEV } from '@/consts/env';
-import { BASE_IMG_SIZE } from '@/consts/grid';
+import Icon from '@/components/Icon';
+import LinePoint from '@/components/Line/LinePoint';
+import LineShowcase from '@/components/Home/LineShowcase';
+import transformLine, { lineExcerpt, thumbsToNames } from '@/functions/line';
+import { digimonGames } from '@/consts/games';
+import { DISCORD_URL, SITE_URL } from '@/consts/env';
+import { Line, LineThumb } from '@/types/Line';
 
-const SEARCH = 'search';
-const defaultData = {
-	lines: [],
-	news: [],
-	fusions: [],
-	appmons: [],
-	searchList: {},
+const FEATURED = 14;
+
+const websiteJsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'WebSite',
+	name: 'Digimon Lines',
+	url: `${SITE_URL}/`,
+	potentialAction: {
+		'@type': 'SearchAction',
+		target: `${SITE_URL}/lines?search={search_term_string}`,
+		'query-input': 'required name=search_term_string',
+	},
 };
-interface Props {
-	lines: LineThumb[];
-	news: LineThumb[];
-	fusions: LineThumb[];
-	appmons: LineThumb[];
-	searchList: Record<string, string[]>;
-	digimonSearch?: Search;
+
+interface Stats {
+	lines: number;
+	digimons: number;
+	vpets: number;
+	groups: number;
 }
-const PageLines: React.FC<Props> = props => {
-	const { search: searchParam } = useQueryParam(SEARCH) || props;
-	const [news, setNews] = useState<LineThumb[]>(props.news);
-	const [lines, setLines] = useState<LineThumb[]>(props.lines);
-	const [fusions, setFusions] = useState<LineThumb[]>(props.fusions);
-	const [appmons, setAppmons] = useState<LineThumb[]>(props.appmons);
-	const [search, setSearch] = useState<string>(searchParam);
-	const [showNewsModal, setShowNewsModal] = useState(false);
-	const saveNews = useSaveNews(setNews);
 
-	const editableNews = IS_DEV && !search;
+interface Props {
+	agumon: Line;
+	gekkomon: Line;
+	featured: LineThumb[];
+	stats: Stats;
+}
 
-	useEffect(() => {
-		if (!search) {
-			if (searchParam) {
-				setNews(props.news);
-				setLines(props.lines);
-				setFusions(props.fusions);
-				setAppmons(props.appmons);
-				Router.push({ pathname: '/', query: null });
-			}
-		} else {
-			const foundList: LineFound[] = foundLines(search, props.searchList);
-			setNews([]);
-			setLines(filterlinesFound(props.lines, foundList));
-			setFusions(filterlinesFound(props.fusions, foundList));
-			setAppmons(filterlinesFound(props.appmons, foundList));
-			if (search != searchParam) {
-				Router.push({ pathname: '/', query: { search } });
-			}
-		}
-	}, [search]);
+const formatNumber = (value: number) => value.toLocaleString('en-US');
 
-	useEffect(() => {
-		if (searchParam != search) {
-			setSearch(searchParam);
-		}
-	}, [searchParam]);
-
-	const handleSearch = (value: string) => {
-		let sanitizedSearch = stringToKey(value);
-		if (sanitizedSearch == search) return;
-		if (sanitizedSearch.length < 3) {
-			sanitizedSearch = '';
-		}
-		setSearch(sanitizedSearch);
-	};
-
-	const handleAddNews = (thumb: LineThumb) => {
-		saveNews([thumb, ...news.filter(item => item.name !== thumb.name)]);
-	};
-
-	const handleRemoveNews = (index: number) => {
-		saveNews(news.filter((_, i) => i !== index));
-	};
-
-	return (
-		<Layout
-			noGoBack
-			title="Available lines"
-			metatitle="Digimon evolution lines by species"
-			metadescription="Digimon evolution lines grouped by species: follow how Agumon, Gabumon, Patamon and 100+ other Digimon digivolve, plus game evolutions, Vpets and Digimon groups."
-		>
-			<blockquote className="blockquote">
-				The aim of this site is to present evolutionary lines designed to bring
-				together members of the same species.
-				<br />
-				You can go to the{' '}
-				<Link href="/build" className="btn btn-primary px-2 py-1">
-					Builder
-				</Link>{' '}
-				to create your own lines, or browse the{' '}
-				<Link href="/community" className="btn btn-primary px-2 py-1">
-					Community
-				</Link>{' '}
-				to see the ones already published&nbsp;!
-			</blockquote>
-			<SearchBar
-				label="Research a digimon"
-				onSubmit={handleSearch}
-				defaultValue={search}
-				width={300}
+const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
+	<Layout
+		noTitle
+		title="Digimon Lines"
+		metatitle="Digimon evolution lines, builder and Vpets"
+		metadescription="Every Digimon evolution line grouped by species, from Agumon to Gekkomon: follow each digivolution from Baby to Mega, build and share your own lines, and explore game evolutions, Vpets and Digimon groups."
+		className="home"
+	>
+		<Head>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
 			/>
-			<>
-				{(news.length > 0 || editableNews) && (
-					<div>
-						<h2>News&nbsp;:</h2>
-						<LineRow
-							lines={news}
-							onAdd={
-								editableNews ? () => setShowNewsModal(true) : undefined
-							}
-							onRemove={editableNews ? handleRemoveNews : undefined}
-						/>
-						<h2>Families&nbsp;:</h2>
-					</div>
-				)}
-				{lines.length > 0 && <LineRow lines={lines} />}
-				{fusions.length > 0 && (
-					<div>
-						<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
-						<LineRow lines={fusions} />
-					</div>
-				)}
-				{appmons.length > 0 && (
-					<div>
-						<h2>Appmons&nbsp;:</h2>
-						<LineRow lines={appmons} type={APPMON} />
-					</div>
-				)}
-			</>
-			{editableNews && (
-				<SearchContext.Provider value={props.digimonSearch}>
-					<NewsModal
-						show={showNewsModal}
-						onClose={() => setShowNewsModal(false)}
-						onSubmit={handleAddNews}
-					/>
-				</SearchContext.Provider>
-			)}
-		</Layout>
-	);
-};
+		</Head>
 
-const LineRow = ({
-	lines,
-	type,
-	onAdd,
-	onRemove,
-}: {
-	lines: LineThumb[];
-	type?: string;
-	onAdd?: () => void;
-	onRemove?: (index: number) => void;
-}) => (
-	<div className="line-wrapper">
-		<Row className="line-row">
-			{lines.map((line, i) => (
-				<Col key={i} className={onRemove ? 'position-relative' : undefined}>
-					{!!onRemove && (
-						<ButtonRemove
-							size="sm"
-							overlay
-							title="Remove"
-							onClick={() => onRemove(i)}
-						/>
-					)}
-					<LinePoint
-						name={line.name}
-						grid={line.grid}
-						available={line.available}
-						type={type}
+		<section className="home-hero">
+			<div className="home-hero-text">
+				<p className="home-eyebrow">
+					<Icon name="stars" /> Free · Fan-made · {formatNumber(stats.digimons)}{' '}
+					Digimon
+				</p>
+				<h1 className="home-title">
+					Every Digimon evolution line,{' '}
+					<span className="home-title-accent">grouped by species</span>
+				</h1>
+				<p className="home-lead">
+					Follow how each species digivolves from Baby to Mega, explore game
+					evolutions and Vpets, and build your own lines to share with the
+					community.
+				</p>
+				<div className="home-actions">
+					<Link href="/lines" className="btn btn-primary btn-lg">
+						Browse the lines <Icon name="arrow-right" />
+					</Link>
+					<Link href="/build" className="btn btn-outline-light btn-lg">
+						<Icon name="pencil-fill" /> Open the builder
+					</Link>
+				</div>
+			</div>
+			<div className="home-hero-visual">
+				<LineShowcase line={agumon} label="Agumon line" zoom={40} />
+			</div>
+		</section>
+
+		<section className="home-featured">
+			<div className="home-section-head">
+				<h2 className="home-section-title">Start with a species</h2>
+				<Link href="/lines" className="home-section-link">
+					See all {formatNumber(stats.lines)} lines <Icon name="arrow-right" />
+				</Link>
+			</div>
+			<div className="line-wrapper">
+				<Row className="line-row">
+					{featured.map(line => (
+						<Col key={line.name}>
+							<LinePoint name={line.name} grid={line.grid} />
+						</Col>
+					))}
+				</Row>
+			</div>
+		</section>
+
+		<ul className="home-stats">
+			<li>
+				<b>{formatNumber(stats.lines)}</b>
+				<span>evolution lines</span>
+			</li>
+			<li>
+				<b>{formatNumber(stats.digimons)}</b>
+				<span>Digimon</span>
+			</li>
+			<li>
+				<b>{formatNumber(stats.vpets)}</b>
+				<span>Vpets</span>
+			</li>
+			<li>
+				<b>{formatNumber(stats.groups)}</b>
+				<span>groups</span>
+			</li>
+		</ul>
+
+		<section className="home-feature reverse">
+			<div className="home-feature-text">
+				<p className="home-kicker">
+					<Icon name="pencil-fill" /> Builder
+				</p>
+				<h2 className="home-feature-title">Build and share your own lines</h2>
+				<p>
+					Place Digimon on a grid, link them together, color each evolution path
+					and add sub-images. Recent Digimon like Gekkomon are already there.
+				</p>
+				<ul className="home-checks">
+					<li>
+						<Icon name="check2" />
+						Export your line as an image or as a code file
+					</li>
+					<li>
+						<Icon name="check2" />
+						Sign in with Discord to keep your lines on every device
+					</li>
+					<li>
+						<Icon name="check2" />
+						Keep a line private, share it with a link or publish it to the
+						community
+					</li>
+				</ul>
+				<Link href="/build" className="btn btn-primary mt-4">
+					Start building <Icon name="arrow-right" />
+				</Link>
+			</div>
+			<div className="home-feature-visual">
+				<LineShowcase line={gekkomon} label="Gekkomon line" zoom={40} />
+			</div>
+		</section>
+
+		<section className="home-more">
+			<h2 className="home-more-title">Explore more</h2>
+			<div className="home-more-grid">
+				<Link href="/list" className="home-more-card">
+					<Icon name="list-ol" className="home-more-icon" />
+					<h3>Digimon by level</h3>
+					<p>Every Digimon sorted by level, from Baby to Mega and Ultra.</p>
+				</Link>
+				{Object.values(digimonGames).map(game => (
+					<Link
+						key={game.key}
+						href={`/games/${game.key}`}
+						className="home-more-card"
 					>
-						{!!line.for && line.for != line.name && (
-							<LineImage
-								className="line-skin"
-								name={line.for}
-								loadable={false}
-								width={BASE_IMG_SIZE / 3}
-								height={BASE_IMG_SIZE / 3}
-							/>
-						)}
-					</LinePoint>
-				</Col>
-			))}
-			{!!onAdd && (
-				<Col>
-					<ButtonAdd title="Add a news line" onClick={onAdd} />
-				</Col>
-			)}
-		</Row>
-	</div>
+						<Icon name="controller" className="home-more-icon" />
+						<h3>{game.shortTitle} evolutions</h3>
+						<p>
+							Every Digimon of {game.title}: digivolutions, conditions,
+							stats, resistances and skills.
+						</p>
+					</Link>
+				))}
+				<Link href="/community" className="home-more-card">
+					<Icon name="people-fill" className="home-more-icon" />
+					<h3>Community lines</h3>
+					<p>
+						Lines built and published by other fans. Search them by Digimon or
+						title, and like your favorites.
+					</p>
+				</Link>
+				<Link href="/vbs" className="home-more-card">
+					<Icon name="smartwatch" className="home-more-icon" />
+					<h3>Virtual devices</h3>
+					<p>The Digimon of every Vital Bracelet DIM and BE card.</p>
+				</Link>
+				<Link href="/groups" className="home-more-card">
+					<Icon name="shield-shaded" className="home-more-icon" />
+					<h3>Digimon groups</h3>
+					<p>
+						Royal Knights, Olympus Twelve, Seven Great Demon Lords and more.
+					</p>
+				</Link>
+			</div>
+		</section>
+
+		<section className="home-cta home-cta-pokemon">
+			<p className="home-kicker">
+				<Icon name="stars" /> Not only Digimon
+			</p>
+			<h2>Pokémon lines too</h2>
+			<p>
+				The same builder works with Pokémon: draw any evolution tree and share it.
+			</p>
+			<div className="home-cta-actions">
+				<Link href="/pokemon" className="btn btn-primary btn-lg">
+					Discover Pokémon lines <Icon name="arrow-right" />
+				</Link>
+				<Link
+					href={DISCORD_URL}
+					target="_blank"
+					rel="nofollow noopener noreferrer"
+					className="btn btn-outline-light btn-lg"
+				>
+					<Icon name="discord" /> Join the Discord
+				</Link>
+			</div>
+		</section>
+	</Layout>
 );
 
-const checkLineAvailability = (
-	item: string | LineThumb,
-	searchList?: StringArrayObject,
-	type: string = 'lines'
-): LineThumb => {
-	let name: string;
-	if (typeof item === 'string') {
-		name = item;
-		item = { name: item } as LineThumb;
-	} else {
-		name = item.name;
-	}
-	try {
-		const line: Line | undefined = require(`../../public/json/${type}/${name}.json`);
-		if (!line) throw new Error(`line ${name} not found`);
-		const lineArray = lineToArray(line);
-		if (searchList) {
-			lineArray.forEach(digimon => {
-				if (!searchList[digimon]) searchList[digimon] = [];
-				searchList[digimon].push(name);
-			});
-		}
-		return { ...item, available: true } as LineThumb;
-	} catch (e) {
-		return { ...item, available: false } as LineThumb;
-	}
-};
-
 export const getStaticProps: GetStaticProps = async () => {
-	try {
-		let lines = require('../../public/json/lines/_index.json');
-		let news = require('../../public/json/lines/_news.json');
-		let fusions = require('../../public/json/lines/_fusion.json');
-		let appmons = require('../../public/json/appmons/_index.json');
-
-		const searchList: StringArrayObject = {};
-		lines = lines.map((line: string) => checkLineAvailability(line, searchList));
-		news = news.map((line: string) => checkLineAvailability(line));
-		fusions = fusions.map((fusion: string) =>
-			checkLineAvailability(fusion, searchList)
-		);
-		appmons = appmons.map((appmon: string) =>
-			checkLineAvailability(appmon, searchList, 'appmons')
-		);
-
-		// Only shipped in dev : it feeds the news edition autocompletion.
-		const digimonSearch =
-			IS_DEV ?
-				getDubbedSearchList(getDirPaths('images/digimon'), getDubNames())
-			:	null;
-
-		return {
-			props: { news, lines, fusions, appmons, searchList, digimonSearch },
-		};
-	} catch (e) {
-		console.error(e);
-		return { props: { defaultData } };
-	}
+	const lines: LineThumb[] = require('../../public/json/lines/_index.json').map(
+		(line: string | LineThumb) => (typeof line === 'string' ? { name: line } : line)
+	);
+	const fusions = thumbsToNames(require('../../public/json/lines/_fusion.json'));
+	const agumon = transformLine(require('../../public/json/home/agumon.json'));
+	const gekkomon = transformLine(require('../../public/json/home/gekkomon.json'));
+	return {
+		props: {
+			agumon,
+			gekkomon,
+			featured: lines.slice(0, FEATURED),
+			stats: {
+				lines: lines.length + fusions.length,
+				digimons: Object.keys(require('../../public/json/digimons/index.json'))
+					.length,
+				vpets: require('../../public/json/vb/_index.json').length,
+				groups: require('../../public/json/groups/_index.json').length,
+			},
+		},
+	};
 };
 
-export default PageLines;
+export default PageHome;

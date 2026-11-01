@@ -1,0 +1,134 @@
+{
+	"columns": [
+		[
+			null,
+			null,
+			{
+				"name": "agumon_x",
+				"from": [[3, 0]],
+				"color": ["x"]
+			},
+			{
+				"name": "greymon_x",
+				"color": ["x", "x"],
+				"from": [
+					[0, -1],
+					[2, 0]
+				]
+			},
+			{
+				"name": "metalgreymon_x",
+				"color": ["x"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "wargreymon_x",
+				"color": ["x"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "omegamon_x",
+				"color": ["x", "x"],
+				"from": [[0, -1]]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metalgreymon_alterous_mode",
+				"from": [[1, 0]],
+				"color": ["mode"]
+			},
+			{
+				"name": "blitzgreymon",
+				"from": [
+					[0, -1],
+					[1, -1]
+				]
+			},
+			{
+				"name": "omegamon_alter_s",
+				"from": [[0, -1]],
+				"color": ["fusion"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "greymon",
+				"from": [[1, -1]]
+			},
+			{
+				"name": "metalgreymon"
+			},
+			{
+				"name": "wargreymon",
+				"from": [
+					[0, -1],
+					[-1, -1]
+				]
+			},
+			{
+				"name": "omegamon",
+				"color": ["fusion"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "omegamon_merciful_mode",
+				"color": ["fusion"],
+				"from": [[0, -1]]
+			}
+		],
+		[
+			{
+				"name": "botamon",
+				"from": null
+			},
+			{
+				"name": "koromon"
+			},
+			{
+				"name": "agumon",
+				"skins": ["agumon_2"]
+			},
+			null,
+			null,
+			null,
+			{
+				"name": "agumon_yuki_no_kizuma",
+				"color": ["mode"],
+				"from": [[0, -4]]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "geogreymon",
+				"from": [[-1, -1]]
+			},
+			{
+				"name": "rizegreymon"
+			},
+			{
+				"name": "shinegreymon",
+				"from": [[0, -1]]
+			},
+			{
+				"name": "shinegreymon_burst_mode",
+				"color": ["mode"],
+				"from": [[0, -1]]
+			},
+			null
+		]
+	]
+}

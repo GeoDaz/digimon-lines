@@ -1,0 +1,58 @@
+{
+	"columns": [
+		[
+			{
+				"name": "kekomon",
+				"from": null,
+				"xSize": 2
+			},
+			{
+				"name": "kekkomon",
+				"xSize": 2
+			},
+			{
+				"name": "gekkomon",
+				"xSize": 2
+			},
+			{
+				"name": "armalizamon",
+				"from": [[0.5, -1]]
+			},
+			{
+				"name": "monarchlizamon"
+			},
+			{
+				"name": "atratusmon",
+				"skins": ["atratusmon_masked", "atratusmon_cloaked"]
+			},
+			{
+				"name": "volvemon",
+				"from": [
+					[-0.5, -1],
+					[0.5, -1]
+				],
+				"xSize": 2,
+				"color": ["fusion", "fusion"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "coatlmon",
+				"from": [[-0.5, -1]]
+			},
+			{
+				"name": "heliosboamon",
+				"from": [[0, -1]]
+			},
+			{
+				"name": "albatusmon",
+				"from": [[0, -1]],
+				"skins": ["albatusmon_masked", "albatusmon_cloaked"]
+			},
+			null
+		]
+	]
+}

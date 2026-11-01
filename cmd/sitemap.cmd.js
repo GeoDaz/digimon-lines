@@ -15,6 +15,8 @@ const games = [...gamesBlock.matchAll(/^\t([a-z0-9_]+): \{$/gm)].map(match => ma
 
 const pages = [
 	['/', 1],
+	['/lines', 0.9],
+	['/pokemon', 0.6],
 	['/list', 0.8],
 	['/build', 0.6],
 	['/build/pokemon', 0.4],

@@ -1,0 +1,279 @@
+import React, { useEffect, useState } from 'react';
+import Router from 'next/router';
+import { Row, Col } from 'react-bootstrap';
+import colors from '@/consts/colors';
+import Layout from '@/components/Layout';
+import LinePoint from '@/components/Line/LinePoint';
+import LineImage from '@/components/Line/LineImage';
+import { GetStaticProps } from 'next';
+import { LineThumb } from '@/types/Line';
+import Line, { LineFound } from '@/types/Line';
+import { filterlinesFound, foundLines, lineToArray } from '@/functions/line';
+import SearchBar from '@/components/SearchBar';
+import useQueryParam from '@/hooks/useQueryParam';
+import { stringToKey } from '@/functions';
+import { StringArrayObject } from '@/types/Ui';
+import { APPMON } from '@/consts/ui';
+import Link from '@/components/Link';
+import ButtonAdd from '@/components/Button/ButtonAdd';
+import ButtonRemove from '@/components/Button/ButtonRemove';
+import NewsModal from '@/components/Line/NewsModal';
+import useSaveNews from '@/hooks/useSaveNews';
+import { SearchContext } from '@/context/search';
+import Search from '@/types/Search';
+import { getDubNames, getDubbedSearchList } from '@/functions/search';
+import { getDirPaths } from '@/functions/file';
+import { IS_DEV } from '@/consts/env';
+import { BASE_IMG_SIZE } from '@/consts/grid';
+
+const SEARCH = 'search';
+const defaultData = {
+	lines: [],
+	news: [],
+	fusions: [],
+	appmons: [],
+	searchList: {},
+};
+interface Props {
+	lines: LineThumb[];
+	news: LineThumb[];
+	fusions: LineThumb[];
+	appmons: LineThumb[];
+	searchList: Record<string, string[]>;
+	digimonSearch?: Search;
+}
+const PageLines: React.FC<Props> = props => {
+	const { search: searchParam } = useQueryParam(SEARCH) || props;
+	const [news, setNews] = useState<LineThumb[]>(props.news);
+	const [lines, setLines] = useState<LineThumb[]>(props.lines);
+	const [fusions, setFusions] = useState<LineThumb[]>(props.fusions);
+	const [appmons, setAppmons] = useState<LineThumb[]>(props.appmons);
+	const [search, setSearch] = useState<string>(searchParam);
+	const [showNewsModal, setShowNewsModal] = useState(false);
+	const saveNews = useSaveNews(setNews);
+
+	const editableNews = IS_DEV && !search;
+
+	useEffect(() => {
+		if (!search) {
+			if (searchParam) {
+				setNews(props.news);
+				setLines(props.lines);
+				setFusions(props.fusions);
+				setAppmons(props.appmons);
+				Router.push({ pathname: '/lines', query: null });
+			}
+		} else {
+			const foundList: LineFound[] = foundLines(search, props.searchList);
+			setNews([]);
+			setLines(filterlinesFound(props.lines, foundList));
+			setFusions(filterlinesFound(props.fusions, foundList));
+			setAppmons(filterlinesFound(props.appmons, foundList));
+			if (search != searchParam) {
+				Router.push({ pathname: '/lines', query: { search } });
+			}
+		}
+	}, [search]);
+
+	useEffect(() => {
+		if (searchParam != search) {
+			setSearch(searchParam);
+		}
+	}, [searchParam]);
+
+	const handleSearch = (value: string) => {
+		let sanitizedSearch = stringToKey(value);
+		if (sanitizedSearch == search) return;
+		if (sanitizedSearch.length < 3) {
+			sanitizedSearch = '';
+		}
+		setSearch(sanitizedSearch);
+	};
+
+	const handleAddNews = (thumb: LineThumb) => {
+		saveNews([thumb, ...news.filter(item => item.name !== thumb.name)]);
+	};
+
+	const handleRemoveNews = (index: number) => {
+		saveNews(news.filter((_, i) => i !== index));
+	};
+
+	return (
+		<Layout
+			noGoBack
+			title="Digimon lines"
+			metatitle="All Digimon evolution lines by species"
+			metadescription="Digimon evolution lines grouped by species: follow how Agumon, Gabumon, Patamon and 100+ other Digimon digivolve, plus game evolutions, Vpets and Digimon groups."
+		>
+			<blockquote className="blockquote">
+				The aim of this site is to present evolutionary lines designed to bring
+				together members of the same species.
+				<br />
+				You can go to the{' '}
+				<Link href="/build" className="btn btn-primary px-2 py-1">
+					Builder
+				</Link>{' '}
+				to create your own lines, or browse the{' '}
+				<Link href="/community" className="btn btn-primary px-2 py-1">
+					Community
+				</Link>{' '}
+				to see the ones already published&nbsp;!
+			</blockquote>
+			<SearchBar
+				label="Research a digimon"
+				onSubmit={handleSearch}
+				defaultValue={search}
+				width={300}
+			/>
+			<>
+				{(news.length > 0 || editableNews) && (
+					<div>
+						<h2>News&nbsp;:</h2>
+						<LineRow
+							lines={news}
+							onAdd={
+								editableNews ? () => setShowNewsModal(true) : undefined
+							}
+							onRemove={editableNews ? handleRemoveNews : undefined}
+						/>
+						<h2>Families&nbsp;:</h2>
+					</div>
+				)}
+				{lines.length > 0 && <LineRow lines={lines} />}
+				{fusions.length > 0 && (
+					<div>
+						<h2 style={{ color: colors.fusion }}>Fusions&nbsp;:</h2>
+						<LineRow lines={fusions} />
+					</div>
+				)}
+				{appmons.length > 0 && (
+					<div>
+						<h2>Appmons&nbsp;:</h2>
+						<LineRow lines={appmons} type={APPMON} />
+					</div>
+				)}
+			</>
+			{editableNews && (
+				<SearchContext.Provider value={props.digimonSearch}>
+					<NewsModal
+						show={showNewsModal}
+						onClose={() => setShowNewsModal(false)}
+						onSubmit={handleAddNews}
+					/>
+				</SearchContext.Provider>
+			)}
+		</Layout>
+	);
+};
+
+const LineRow = ({
+	lines,
+	type,
+	onAdd,
+	onRemove,
+}: {
+	lines: LineThumb[];
+	type?: string;
+	onAdd?: () => void;
+	onRemove?: (index: number) => void;
+}) => (
+	<div className="line-wrapper">
+		<Row className="line-row">
+			{lines.map((line, i) => (
+				<Col key={i} className={onRemove ? 'position-relative' : undefined}>
+					{!!onRemove && (
+						<ButtonRemove
+							size="sm"
+							overlay
+							title="Remove"
+							onClick={() => onRemove(i)}
+						/>
+					)}
+					<LinePoint
+						name={line.name}
+						grid={line.grid}
+						available={line.available}
+						type={type}
+					>
+						{!!line.for && line.for != line.name && (
+							<LineImage
+								className="line-skin"
+								name={line.for}
+								loadable={false}
+								width={BASE_IMG_SIZE / 3}
+								height={BASE_IMG_SIZE / 3}
+							/>
+						)}
+					</LinePoint>
+				</Col>
+			))}
+			{!!onAdd && (
+				<Col>
+					<ButtonAdd title="Add a news line" onClick={onAdd} />
+				</Col>
+			)}
+		</Row>
+	</div>
+);
+
+const checkLineAvailability = (
+	item: string | LineThumb,
+	searchList?: StringArrayObject,
+	type: string = 'lines'
+): LineThumb => {
+	let name: string;
+	if (typeof item === 'string') {
+		name = item;
+		item = { name: item } as LineThumb;
+	} else {
+		name = item.name;
+	}
+	try {
+		const line: Line | undefined = require(`../../../public/json/${type}/${name}.json`);
+		if (!line) throw new Error(`line ${name} not found`);
+		const lineArray = lineToArray(line);
+		if (searchList) {
+			lineArray.forEach(digimon => {
+				if (!searchList[digimon]) searchList[digimon] = [];
+				searchList[digimon].push(name);
+			});
+		}
+		return { ...item, available: true } as LineThumb;
+	} catch (e) {
+		return { ...item, available: false } as LineThumb;
+	}
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+	try {
+		let lines = require('../../../public/json/lines/_index.json');
+		let news = require('../../../public/json/lines/_news.json');
+		let fusions = require('../../../public/json/lines/_fusion.json');
+		let appmons = require('../../../public/json/appmons/_index.json');
+
+		const searchList: StringArrayObject = {};
+		lines = lines.map((line: string) => checkLineAvailability(line, searchList));
+		news = news.map((line: string) => checkLineAvailability(line));
+		fusions = fusions.map((fusion: string) =>
+			checkLineAvailability(fusion, searchList)
+		);
+		appmons = appmons.map((appmon: string) =>
+			checkLineAvailability(appmon, searchList, 'appmons')
+		);
+
+		// Only shipped in dev : it feeds the news edition autocompletion.
+		const digimonSearch =
+			IS_DEV ?
+				getDubbedSearchList(getDirPaths('images/digimon'), getDubNames())
+			:	null;
+
+		return {
+			props: { news, lines, fusions, appmons, searchList, digimonSearch },
+		};
+	} catch (e) {
+		console.error(e);
+		return { props: { defaultData } };
+	}
+};
+
+export default PageLines;
