@@ -59,10 +59,6 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 
 		<section className="home-hero">
 			<div className="home-hero-text">
-				<p className="home-eyebrow">
-					<Icon name="stars" /> Free · Fan-made · {formatNumber(stats.digimons)}{' '}
-					Digimon
-				</p>
 				<h1 className="home-title">
 					Every Digimon evolution line,{' '}
 					<span className="home-title-accent">grouped by species</span>

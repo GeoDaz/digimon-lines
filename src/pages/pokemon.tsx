@@ -44,28 +44,34 @@ const PagePokemon: React.FC = () => (
 	>
 		<section className="home-hero">
 			<div className="home-hero-text">
-				<p className="home-eyebrow">
-					<Icon name="stars" /> Free · Fan-made · No install
-				</p>
 				<h1 className="home-title">
-					Draw any <span className="home-title-accent">Pokémon evolution line</span>
+					Draw any{' '}
+					<span className="home-title-accent">Pokémon evolution line</span>
 				</h1>
 				<p className="home-lead">
-					The Digimon Lines builder works with Pokémon too: place them on a grid,
-					link their evolutions, color each branch, then export or share your
-					line.
+					The Digimon Lines builder works with Pokémon too: place them on a
+					grid, link their evolutions, color each branch, then export or share
+					your line.
 				</p>
 				<div className="home-actions">
 					<Link href="/build/pokemon" className="btn btn-primary btn-lg">
 						Open the Pokémon builder <Icon name="arrow-right" />
 					</Link>
-					<Link href="/community/pokemon" className="btn btn-outline-light btn-lg">
+					<Link
+						href="/community/pokemon"
+						className="btn btn-outline-light btn-lg"
+					>
 						<Icon name="people-fill" /> Community lines
 					</Link>
 				</div>
 			</div>
 			<div className="home-hero-visual">
-				<LineShowcase line={eevee} label="Eevee line" licence="pokemon" zoom={35} />
+				<LineShowcase
+					line={eevee}
+					label="Eevee line"
+					licence="pokemon"
+					zoom={35}
+				/>
 			</div>
 		</section>
 
@@ -100,8 +106,8 @@ const PagePokemon: React.FC = () => (
 				</p>
 				<h2 className="home-feature-title">Share it with other fans</h2>
 				<p>
-					Sign in with Discord to keep your lines on every device, then keep them
-					private, share them with a link or publish them to the community.
+					Sign in with Discord to keep your lines on every device, then keep
+					them private, share them with a link or publish them to the community.
 				</p>
 				<ul className="home-checks">
 					<li>
@@ -122,7 +128,9 @@ const PagePokemon: React.FC = () => (
 
 		<section className="home-cta">
 			<h2>Ready to draw your first line?</h2>
-			<p>Start from scratch, or have a look at the Digimon lines for inspiration.</p>
+			<p>
+				Start from scratch, or have a look at the Digimon lines for inspiration.
+			</p>
 			<div className="home-cta-actions">
 				<Link href="/build/pokemon" className="btn btn-primary btn-lg">
 					Open the Pokémon builder <Icon name="arrow-right" />
