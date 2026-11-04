@@ -1979,8 +1979,13 @@ button.like-heart:focus-visible {
 }
 
 .evolution-table .digimon-name {
+	text-decoration: none;
 	font-weight: 700;
 	color: var(--bs-gray-100);
+}
+
+.evolution-table a.digimon-name:hover {
+	text-decoration: underline;
 }
 
 .evolution-table .digimon-number {
@@ -2033,7 +2038,8 @@ a.game-digimon-tile:focus,
 }
 
 .evolution-table .cell-empty,
-.game-digimon-modal .cell-empty {
+.game-digimon-modal .cell-empty,
+.game-digimon-page .cell-empty {
 	color: var(--bs-gray-600);
 	display: flex;
 	justify-content: center;
@@ -2057,33 +2063,33 @@ a.game-digimon-tile:focus,
 	color: var(--bs-gray-500);
 }
 
-.game-digimon-modal .details-grid {
+:is(.game-digimon-modal, .game-digimon-page) .details-grid {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 1.5em;
 	align-items: start;
 }
 
-.game-digimon-modal .details-block.wide {
+:is(.game-digimon-modal, .game-digimon-page) .details-block.wide {
 	grid-column: 1 / -1;
 }
 
-.game-digimon-modal .details-block h5 {
+:is(.game-digimon-modal, .game-digimon-page) .details-block :is(h2, h5) {
 	font-size: 1em;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;
 	color: var(--bs-gray-500);
 }
 
-.game-digimon-modal .details-misc,
-.game-digimon-modal .details-resistances {
+:is(.game-digimon-modal, .game-digimon-page) .details-misc,
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.game-digimon-modal .details-misc li,
-.game-digimon-modal .details-resistances li {
+:is(.game-digimon-modal, .game-digimon-page) .details-misc li,
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances li {
 	display: flex;
 	justify-content: space-between;
 	gap: 12px;
@@ -2091,73 +2097,138 @@ a.game-digimon-tile:focus,
 	border-bottom: 1px solid var(--bs-border-color);
 }
 
-.game-digimon-modal .details-misc span,
-.game-digimon-modal .details-resistances span {
+:is(.game-digimon-modal, .game-digimon-page) .details-misc span,
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances span {
 	color: var(--bs-gray-500);
 }
 
-.game-digimon-modal .details-resistances {
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 0 20px;
 }
 
-.game-digimon-modal .details-resistances .immune b {
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances .immune b {
 	color: #3faae4;
 }
 
-.game-digimon-modal .details-resistances .resist b {
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances .resist b {
 	color: #1dca7f;
 }
 
-.game-digimon-modal .details-resistances .neutral b {
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances .neutral b {
 	color: var(--bs-gray-500);
 }
 
-.game-digimon-modal .details-resistances .weak b {
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances .weak b {
 	color: #f76666;
 }
 
-.game-digimon-modal .details-description {
+:is(.game-digimon-modal, .game-digimon-page) .details-description {
 	margin: 0;
 	font-style: italic;
 	color: var(--bs-gray-400);
 }
 
-.game-digimon-modal .details-support p {
+:is(.game-digimon-modal, .game-digimon-page) .details-support p {
 	margin: 0.25em 0 0.75em;
 }
 
-.game-digimon-modal .details-table {
+:is(.game-digimon-modal, .game-digimon-page) .details-table {
 	width: 100%;
 	border-collapse: collapse;
 }
 
-.game-digimon-modal .details-table th,
-.game-digimon-modal .details-table td {
+:is(.game-digimon-modal, .game-digimon-page) .details-table th,
+:is(.game-digimon-modal, .game-digimon-page) .details-table td {
 	padding: 4px 12px 4px 0;
 	text-align: left;
 	vertical-align: top;
 	border-bottom: 1px solid var(--bs-border-color);
 }
 
-.game-digimon-modal .details-table th {
+:is(.game-digimon-modal, .game-digimon-page) .details-table th {
 	font-weight: 400;
 	white-space: nowrap;
 	color: var(--bs-gray-500);
 }
 
-.game-digimon-modal .details-table .cell-description {
+:is(.game-digimon-modal, .game-digimon-page) .details-table .cell-description {
 	min-width: 220px;
 	font-size: 0.9em;
 }
 
+.game-digimon-page .breadcrumb {
+	font-size: 0.9em;
+}
+
+.game-digimon-page .cell-empty {
+	justify-content: flex-start;
+}
+
+.game-digimon-header {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 1.5em;
+	--dl-tile-size: 112px;
+}
+
+.game-digimon-intro {
+	margin: 0;
+	max-width: 70ch;
+	color: var(--bs-gray-300);
+}
+
+.game-digimon-page .details-grid {
+	margin-bottom: 1.5em;
+}
+
+.game-relations,
+.game-see-also {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.game-relations {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 16px;
+}
+
+.game-relations a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	color: var(--bs-gray-100);
+}
+
+.game-relations small {
+	display: block;
+	font-size: 0.8em;
+	color: var(--bs-gray-500);
+}
+
+.game-see-also li {
+	padding: 4px 0;
+}
+
+.game-digimon-pager {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	margin: 2em 0 1em;
+}
+
 @media (max-width: 576px) {
-	.game-digimon-modal .details-grid {
+	:is(.game-digimon-modal, .game-digimon-page) .details-grid {
 		grid-template-columns: minmax(0, 1fr);
 	}
 
-	.game-digimon-modal .details-resistances {
+	:is(.game-digimon-modal, .game-digimon-page) .details-resistances {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 

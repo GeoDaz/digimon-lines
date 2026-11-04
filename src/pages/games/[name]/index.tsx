@@ -11,22 +11,26 @@ import GameDigimonModal from '@/components/Game/GameDigimonModal';
 import AttributeIcon from '@/components/Game/AttributeIcon';
 import { digimonGames } from '@/consts/games';
 import { makeClassName, stringToKey } from '@/functions';
+import { getDubNamesFor } from '@/functions/search';
+import { StringObject } from '@/types/Ui';
 import { DigimonGame, GameDigimon, GameDigimonsDetails } from '@/types/GameDigimon';
 
 interface Props {
 	game: DigimonGame;
 	digimons: GameDigimon[];
+	aliases: StringObject;
 }
 
 const getHash = () => decodeURIComponent(window.location.hash.replace('#', ''));
 
-const PageGame: React.FC<Props> = ({ game, digimons }) => {
+const PageGame: React.FC<Props> = ({ game, digimons, aliases }) => {
 	const [search, setSearch] = useState('');
 	const [generation, setGeneration] = useState<string>();
 	const [attribute, setAttribute] = useState<string>();
 	const [type, setType] = useState<string>();
 	const [resetCount, setResetCount] = useState(0);
 	const [target, setTarget] = useState<string>();
+	const [only, setOnly] = useState<string>();
 	const [selected, setSelected] = useState<GameDigimon>();
 	const [details, setDetails] = useState<GameDigimonsDetails>();
 	const [loading, setLoading] = useState(false);
@@ -53,15 +57,19 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 	);
 
 	const filtered = useMemo(() => {
+		if (only) return bySlug[only] ? [bySlug[only]] : [];
 		const key = stringToKey(search);
 		return digimons.filter(
 			digimon =>
-				(!key || stringToKey(digimon.name).includes(key)) &&
+				(!key ||
+					stringToKey(digimon.name).includes(key) ||
+					(!!aliases[digimon.slug] &&
+						stringToKey(aliases[digimon.slug]).includes(key))) &&
 				(!generation || digimon.generation === generation) &&
 				(!attribute || digimon.attribute === attribute) &&
 				(!type || digimon.type === type)
 		);
-	}, [digimons, search, generation, attribute, type]);
+	}, [digimons, aliases, bySlug, only, search, generation, attribute, type]);
 
 	const sections = useMemo(() => {
 		const groups: { [generation: string]: GameDigimon[] } = {};
@@ -76,6 +84,7 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 	}, [filtered, game.generations]);
 
 	const resetFilters = useCallback(() => {
+		setOnly(undefined);
 		setSearch('');
 		setGeneration(undefined);
 		setAttribute(undefined);
@@ -101,10 +110,21 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 			?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 	}, [target, filtered, bySlug, resetFilters]);
 
-	const navigate = useCallback((slug: string) => {
-		window.history.replaceState(null, '', `#${slug}`);
-		setTarget(slug);
-	}, []);
+	const navigate = useCallback(
+		(slug: string) => {
+			if (search && bySlug[slug]) {
+				setOnly(slug);
+				setSearch(bySlug[slug].name);
+				setGeneration(undefined);
+				setAttribute(undefined);
+				setType(undefined);
+				setResetCount(count => count + 1);
+			}
+			window.history.replaceState(null, '', `#${slug}`);
+			setTarget(slug);
+		},
+		[search, bySlug]
+	);
 
 	const openDetails = useCallback(
 		(digimon: GameDigimon) => {
@@ -119,6 +139,25 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 		},
 		[details, loading, game.key]
 	);
+
+	const clearTarget = useCallback(() => {
+		if (window.location.hash) {
+			window.history.replaceState(
+				null,
+				'',
+				window.location.pathname + window.location.search
+			);
+		}
+		setTarget(undefined);
+	}, []);
+
+	const withoutTarget =
+		<T,>(setter: (value: T) => void) =>
+		(value: T) => {
+			clearTarget();
+			setOnly(undefined);
+			setter(value);
+		};
 
 	const hasFilters = !!search || !!generation || !!attribute || !!type;
 
@@ -147,21 +186,22 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 				<SearchBar
 					key={resetCount}
 					label="Search a Digimon"
-					onSubmit={(value?: string) => setSearch(value || '')}
+					defaultValue={search}
+					onSubmit={withoutTarget((value?: string) => setSearch(value || ''))}
 				/>
 				<FilterDropdown
 					id="generation-selector"
 					label={game.labels.generation}
 					value={generation}
 					options={game.generations}
-					onChange={setGeneration}
+					onChange={withoutTarget(setGeneration)}
 				/>
 				<FilterDropdown
 					id="attribute-selector"
 					label={game.labels.attribute}
 					value={attribute}
 					options={attributes}
-					onChange={setAttribute}
+					onChange={withoutTarget(setAttribute)}
 				/>
 				{!!game.typeFilter && (
 					<FilterDropdown
@@ -169,11 +209,11 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 						label={game.labels.type}
 						value={type}
 						options={types}
-						onChange={setType}
+						onChange={withoutTarget(setType)}
 					/>
 				)}
 				{hasFilters && (
-					<button type="button" className="filter-reset" onClick={resetFilters}>
+					<button type="button" className="filter-reset" onClick={withoutTarget(resetFilters)}>
 						<Icon name="x" /> Clear filters
 					</button>
 				)}
@@ -242,6 +282,7 @@ const PageGame: React.FC<Props> = ({ game, digimons }) => {
 					digimon={selected}
 					details={details?.[selected.slug]}
 					loading={loading}
+					href={`/games/${game.key}/${selected.slug}`}
 					handleClose={() => setSelected(undefined)}
 				/>
 			)}
@@ -310,10 +351,13 @@ const EvolutionRow = React.memo(function EvolutionRow({
 					<span className="game-digimon-tile">
 						<GameDigimonImg digimon={digimon} />
 					</span>
-					<span className="digimon-name">
+					<Link
+						href={`/games/${game.key}/${digimon.slug}`}
+						className="digimon-name"
+					>
 						{digimon.name}
 						<span className="digimon-number">#{digimon.number}</span>
-					</span>
+					</Link>
 				</div>
 			</td>
 			<td className="cell-details">
@@ -389,9 +433,15 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	const game = digimonGames[params?.name as string];
 	if (!game) return { notFound: true };
 	const digimons: GameDigimon[] = require(
-		`../../../public/json/games/${game.key}/digimons.json`
+		`../../../../public/json/games/${game.key}/digimons.json`
 	);
-	return { props: { game, digimons } };
+	const dubNames = getDubNamesFor(digimons.map(digimon => digimon.slug));
+	const aliases: StringObject = Object.fromEntries(
+		digimons
+			.filter(digimon => dubNames[digimon.slug])
+			.map(digimon => [digimon.slug, dubNames[digimon.slug]])
+	);
+	return { props: { game, digimons, aliases } };
 };
 
 export default PageGame;

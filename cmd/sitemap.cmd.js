@@ -25,6 +25,12 @@ const pages = [
 	['/groups', 0.7],
 	['/vbs', 0.7],
 	...games.map(name => [`/games/${name}`, 0.8]),
+	...games.flatMap(name =>
+		readJson(`games/${name}/digimons.json`).map(digimon => [
+			`/games/${name}/${digimon.slug}`,
+			0.7,
+		])
+	),
 	...toNames(readJson('lines/_index.json')).map(name => [`/lines/${name}`, 0.8]),
 	...toNames(readJson('lines/_fusion.json')).map(name => [`/lines/${name}`, 0.6]),
 	...toNames(readJson('groups/_index.json')).map(name => [`/groups/${name}`, 0.6]),

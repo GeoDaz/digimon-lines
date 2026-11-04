@@ -68,13 +68,24 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 					evolutions and Vpets, and build your own lines to share with the
 					community.
 				</p>
-				<div className="home-actions">
+				<div className="home-actions mb-3">
 					<Link href="/lines" className="btn btn-primary btn-lg">
 						Browse the lines <Icon name="arrow-right" />
 					</Link>
-					<Link href="/build" className="btn btn-outline-light btn-lg">
-						<Icon name="pencil-fill" /> Open the builder
+					<Link href="/build" className="btn btn-outline-primary btn-lg">
+						<Icon name="diagram-2-fill" /> Build a line
 					</Link>
+				</div>
+				<div className="home-actions">
+					{Object.values(digimonGames).map(game => (
+						<Link
+							key={game.key}
+							href={`/games/${game.key}`}
+							className="btn btn-outline-light btn-lg"
+						>
+							<Icon name="controller" /> {game.shortTitle}
+						</Link>
+					))}
 				</div>
 			</div>
 			<div className="home-hero-visual">
@@ -189,7 +200,7 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 					<p>The Digimon of every Vital Bracelet DIM and BE card.</p>
 				</Link>
 				<Link href="/groups" className="home-more-card">
-					<Icon name="shield-shaded" className="home-more-icon" />
+					<Icon name="grid-3x3-gap-fill" className="home-more-icon" />
 					<h3>Digimon groups</h3>
 					<p>
 						Royal Knights, Olympus Twelve, Seven Great Demon Lords and more.
