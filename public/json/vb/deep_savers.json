@@ -1,0 +1,420 @@
+{
+	"title": "Deep Savers",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "dolphmon",
+				"from": [
+					[2, -1],
+					[3, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"default"
+				]
+			},
+			{
+				"name": "whamon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass",
+					"slide"
+				]
+			},
+			{
+				"name": "marineangemon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1],
+					[4, -1],
+					[5, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass",
+					"grass",
+					"default"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ikkakumon",
+				"from": [
+					[1, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "zudomon",
+				"from": [
+					[0, -1],
+					[-1, -1],
+					[3, -1],
+					[4, -1]
+				],
+				"color": [
+					"gold",
+					"fire",
+					"grass",
+					"default"
+				]
+			},
+			{
+				"name": "vikemon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"slide"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "gomamon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "seadramon",
+				"from": [
+					[1, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"grass",
+					"default",
+					"fusion"
+				]
+			},
+			{
+				"name": "megaseadramon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"grass",
+					"slide",
+					"default"
+				]
+			},
+			{
+				"name": "metalseadramon",
+				"from": [
+					[0, -1],
+					[3, -1],
+					[5, -1]
+				],
+				"color": [
+					"grass",
+					"default",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "pitchmon"
+			},
+			{
+				"name": "pukamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "crabmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "coelamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "anomalocarimon",
+				"from": [
+					[-2, -1],
+					[0, -1],
+					[1, -1],
+					[4, -1]
+				],
+				"color": [
+					"gold",
+					"slide",
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "jumbogamemon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[1, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"grass",
+					"grass",
+					"slide"
+				]
+			},
+			{
+				"name": "mitamamon",
+				"from": [
+					[-3, -1]
+				],
+				"color": [
+					"fire"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "jellymon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "ebidramon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"default"
+				]
+			},
+			{
+				"name": "hangyomon",
+				"from": [
+					[-4, -1],
+					[-2, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "plesiomon",
+				"from": [
+					[-4, -1],
+					[-1, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"slide",
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "aegisdramon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"grass"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "shakomon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "teslajellymon",
+				"from": [
+					[-1, -1]
+				]
+			},
+			{
+				"name": "thetismon",
+				"from": [
+					[0, -1]
+				]
+			},
+			{
+				"name": "amphimon",
+				"from": [
+					[0, -1]
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "octomon",
+				"from": [
+					[-4, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "dagomon",
+				"from": [
+					[-4, -1],
+					[-3, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"slide",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "pukumon",
+				"from": [
+					[-4, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gesomon",
+				"from": [
+					[-4, -1],
+					[-2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "marinedevimon",
+				"from": [
+					[-3, -1],
+					[-2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"default",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "cthyllamon",
+				"from": [
+					[-4, -1],
+					[-3, -1],
+					[-2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"slide",
+					"grass",
+					"default",
+					"fusion",
+					"dark"
+				]
+			},
+			null
+		]
+	]
+}

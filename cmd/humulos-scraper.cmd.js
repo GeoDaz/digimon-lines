@@ -14,12 +14,14 @@ const PAGES = [
 	{ device: 'bem', series: 'Seekers', url: `${BASE_URL}/vbbe/seekers/` },
 	{ device: 'bem', series: 'Anime', url: `${BASE_URL}/vbbe/anime/` },
 	{ device: 'bem', series: 'Other', url: `${BASE_URL}/vbbe/other/` },
+	{ device: 'penc', series: 'Pendulum Color', url: `${BASE_URL}/penc/` },
 ];
 const DUB_NAMES = require('../public/json/dubnames.json');
 const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'json', 'vb');
 const IMAGES_DIR = path.join(__dirname, '..', 'public', 'images', 'digimon');
 const LEVELS = ['baby', 'babyII', 'child', 'adult', 'perfect', 'ultimate', 'super'];
-const DEVICE_SUFFIXES = { dim: 'dim', bem: 'be' };
+const FORCE = process.argv.includes('--force');
+const DEVICE_SUFFIXES = { dim: 'dim', bem: 'be', penc: 'penc' };
 
 const COLORS = {
 	Red: 'fire',
@@ -42,7 +44,9 @@ const COLORS = {
 
 const NAMES = {
 	'Aero V-dramon': 'aeroveedramon',
+	'Apollomon Whispered': 'apollomon_whispered',
 	'Atlur Kabuterimon (Red)': 'megakabuterimon',
+	'Bacchusmon: Drunk Mode': 'bacchusmon_drunk',
 	'Big Ukkomon': 'big_ukkomon',
 	'Black Tailmon Uver.': 'gatomon_buver',
 	'Dukemon X': 'gallantmon_x',
@@ -58,11 +62,13 @@ const NAMES = {
 	'Shoutmon X7': 'shoutmon_x7',
 	Susanoomon: 'susanomon',
 	'Tailmon (Child)': 'gatomon_rookie',
+	'Titamon + Skull Baluchimon': 'titamon_skullbaluchimon',
 	'Were Garurumon: Saggitarius Mode': 'weregarurumon_sagittarius_mode',
 	'Agumon (2006)': 'agumon_2',
 	Babydmon: 'babydramon',
 	'Beelzebumon (2010)': 'beelzebumon_2',
 	'Black War Greymon': 'black_wargreymon',
+	Centaurmon: 'centarumon',
 	'Cyberdramon (2010)': 'cyberdramon_2',
 	Fladramon: 'flamedramon',
 	'Gold V-dramon': 'goldveedramon',
@@ -79,6 +85,7 @@ const NAMES = {
 	Wizarmon: 'wizardmon',
 	'XV-mon': 'exveemon',
 	"Z'd Garurumon": 'zeedgarurumon',
+	'Zombie Plutomon': 'zombie_plutomon',
 };
 
 const clean = text => (text || '').replace(/\s+/g, ' ').trim();
@@ -105,10 +112,12 @@ const digimonName = title => {
 	return imageExists(found) ? found : DUB_NAMES[found];
 };
 
-const lineColor = element => {
+const rawColor = element => {
 	const className = Array.from(element.classList).find(name => /^line[A-Z]/.test(name));
-	return className ? COLORS[className.slice(4)] : undefined;
+	return className ? className.slice(4) : undefined;
 };
+
+const lineColor = element => COLORS[rawColor(element)];
 
 const fetchPage = url =>
 	execFileSync('curl', ['-sL', '--compressed', '-H', 'User-Agent: Mozilla/5.0', url], {
@@ -153,6 +162,8 @@ const parseChart = anchor => {
 						parents,
 						colors,
 						color: lineOut ? lineColor(lineOut) : undefined,
+						outColor: lineOut ? rawColor(lineOut) : undefined,
+						reqColors: Array.from(row.querySelectorAll('[class*="_Req_line"]')).map(rawColor),
 					};
 				})
 		);
@@ -176,7 +187,15 @@ const toLine = ({ title, levels }) => {
 		nodes.forEach((node, i) => {
 			let parents = node.parents.filter(parent => positions[parent]);
 			if (!parents.length && level > 0) {
-				if (previous.length === nodes.length) parents = [previous[i].key];
+				const base = previous.find(
+					parent => parent.key.length > 3 && node.key.includes(parent.key)
+				);
+				const byColor = previous.filter(parent =>
+					node.reqColors.includes(parent.outColor)
+				);
+				if (base) parents = [base.key];
+				else if (byColor.length) parents = byColor.map(parent => parent.key);
+				else if (previous.length === nodes.length) parents = [previous[i].key];
 				else if (previous.length === 1) parents = [previous[0].key];
 			}
 			const { lane } = positions[node.key];
@@ -209,7 +228,8 @@ const main = () => {
 			const chart = parseChart(anchor);
 			let name = slugify(chart.title);
 			if (index.some(vb => vb.name === name)) name += '_' + DEVICE_SUFFIXES[device];
-			fs.writeFileSync(path.join(OUTPUT_DIR, `${name}.json`), stringify(toLine(chart)));
+			const file = path.join(OUTPUT_DIR, `${name}.json`);
+			if (FORCE || !fs.existsSync(file)) fs.writeFileSync(file, stringify(toLine(chart)));
 			index.push({
 				name,
 				title: chart.title,

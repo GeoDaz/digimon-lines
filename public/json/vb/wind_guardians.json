@@ -1,0 +1,433 @@
+{
+	"title": "Wind Guardians",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "veedramon",
+				"from": [
+					[2, -1],
+					[5, -1],
+					[4, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"default"
+				]
+			},
+			{
+				"name": "aeroveedramon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass",
+					"default"
+				]
+			},
+			{
+				"name": "ulforceveedramon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[3, -1],
+					[5, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"slide",
+					"default"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "biyomon",
+				"from": [
+					[2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "birdramon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"default"
+				]
+			},
+			{
+				"name": "garudamon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"slide"
+				]
+			},
+			{
+				"name": "phoenixmon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass",
+					"grass"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "floramon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "togemon",
+				"from": [
+					[1, -1],
+					[3, -1],
+					[2, -1]
+				],
+				"color": [
+					"slide",
+					"fusion",
+					"default"
+				]
+			},
+			{
+				"name": "lilimon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"slide",
+					"default"
+				]
+			},
+			{
+				"name": "rosemon",
+				"from": [
+					[0, -1],
+					[2, -1],
+					[4, -1]
+				],
+				"color": [
+					"grass",
+					"grass",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "nyokimon"
+			},
+			{
+				"name": "yokomon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "palmon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "kiwimon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"slide"
+				]
+			},
+			{
+				"name": "blossomon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"grass",
+					"slide"
+				]
+			},
+			{
+				"name": "rafflesimon",
+				"from": [
+					[-3, -1],
+					[-1, -1],
+					[0, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"slide",
+					"dark"
+				]
+			},
+			{
+				"name": "mitamamon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"gold"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "pteromon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "galemon",
+				"from": [
+					[-2, -1],
+					[1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"default"
+				]
+			},
+			{
+				"name": "delumon",
+				"from": [
+					[-4, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "griffomon",
+				"from": [
+					[-3, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"gold",
+					"slide",
+					"grass"
+				]
+			},
+			{
+				"name": "cernumon",
+				"from": [
+					[0, -1],
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "mushmon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "woodmon",
+				"from": [
+					[-4, -1],
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"slide",
+					"fusion"
+				]
+			},
+			{
+				"name": "grandgalemon",
+				"from": [
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"slide",
+					"default"
+				]
+			},
+			{
+				"name": "zephagamon",
+				"from": [
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"default",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "redvegimon",
+				"from": [
+					[-5, -1],
+					[-4, -1],
+					[-3, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"slide",
+					"fusion"
+				]
+			},
+			{
+				"name": "cherrymon",
+				"from": [
+					[-4, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "puppetmon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"default",
+					"fusion",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "gerbemon",
+				"from": [
+					[-4, -1],
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"slide",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "hydramon",
+				"from": [
+					[-5, -1],
+					[-4, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"slide",
+					"fusion",
+					"dark"
+				]
+			},
+			null
+		]
+	]
+}

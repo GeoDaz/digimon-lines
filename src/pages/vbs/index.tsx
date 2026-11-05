@@ -9,6 +9,7 @@ import { VB } from '@/consts/ui';
 const DEVICES = [
 	{ key: 'dim', title: 'Vital Bracelet DIM' },
 	{ key: 'bem', title: 'Vital Bracelet BE' },
+	{ key: 'penc', title: 'Pendulum Color' },
 ];
 
 const defaultData = { vbs: [] };
@@ -34,7 +35,7 @@ const PageVbs: React.FC<Props> = ({ ssr = defaultData }) => {
 						<h2 className="h3">{device.title}</h2>
 						{series.map(serie => (
 							<div key={serie} className="mb-3">
-								<h3 className="h5">{serie}</h3>
+								{serie !== device.title && <h3 className="h5">{serie}</h3>}
 								<div className="line-wrapper">
 									<Row className="line-row">
 										{vbs

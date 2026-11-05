@@ -1,0 +1,475 @@
+{
+	"title": "Virus Busters",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "greymon",
+				"from": [
+					[3, -1],
+					[5, -1]
+				],
+				"color": [
+					"fire",
+					"human"
+				]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "leomon",
+				"from": [
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "metalgreymon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[5, -1],
+					[2, -1],
+					[7, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"fire",
+					"grass",
+					"grass"
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "garurumon",
+				"from": [
+					[2, -1],
+					[3, -1]
+				],
+				"color": [
+					"grass",
+					"human"
+				]
+			},
+			{
+				"name": "asuramon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[2, -1],
+					[7, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"default",
+					"fusion"
+				]
+			},
+			{
+				"name": "wargreymon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[2, -1],
+					[3, -1],
+					[5, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"grass",
+					"default",
+					"fire"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "agumon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "igamon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"human"
+				]
+			},
+			{
+				"name": "weregarurumon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[4, -1],
+					[2, -1]
+				],
+				"color": [
+					"mode",
+					"grass",
+					"slide",
+					"human"
+				]
+			},
+			{
+				"name": "metalgarurumon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1],
+					[2, -1],
+					[5, -1]
+				],
+				"color": [
+					"gold",
+					"mode",
+					"grass",
+					"default",
+					"fusion"
+				]
+			},
+			{
+				"name": "omegamon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			}
+		],
+		[
+			{
+				"name": "snowbotamon"
+			},
+			{
+				"name": "nyaromon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "gabumon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "angemon",
+				"from": [
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"human"
+				]
+			},
+			{
+				"name": "metalmamemon",
+				"from": [
+					[-4, -1],
+					[-3, -1],
+					[2, -1],
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"fire",
+					"mode",
+					"grass"
+				]
+			},
+			{
+				"name": "dominimon",
+				"from": [
+					[-2, -1],
+					[1, -1],
+					[-1, -1],
+					[2, -1]
+				],
+				"color": [
+					"gold",
+					"default",
+					"mode",
+					"human"
+				]
+			},
+			{
+				"name": "mastemon",
+				"from": [
+					[2, -2]
+				],
+				"color": [
+					"human"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "plotmon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "gatomon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"human"
+				]
+			},
+			{
+				"name": "magnaangemon",
+				"from": [
+					[-3, -1],
+					[0, -1],
+					[-1, -1],
+					[4, -1]
+				],
+				"color": [
+					"mode",
+					"human",
+					"default",
+					"fusion"
+				]
+			},
+			{
+				"name": "quantumon",
+				"from": [
+					[-4, -1],
+					[-1, -1],
+					[-2, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"mode",
+					"human"
+				]
+			},
+			{
+				"name": "proximamon",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"mode",
+					"fusion"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "gammamon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "betelgammamon",
+				"from": [
+					[-3, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "angewomon",
+				"from": [
+					[-4, -1],
+					[-3, -1],
+					[-2, -1],
+					[-1, -1]
+				],
+				"color": [
+					"mode",
+					"grass",
+					"default",
+					"human"
+				]
+			},
+			{
+				"name": "siriusmon",
+				"from": [
+					[-5, -1],
+					[-2, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"fire",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "kausgammamon",
+				"from": [
+					[-3, -1],
+					[-1, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "canoweissmon",
+				"from": [
+					[-4, -1],
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"fire",
+					"slide",
+					"grass"
+				]
+			},
+			{
+				"name": "arcturusmon",
+				"from": [
+					[-6, -1],
+					[-3, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"fire",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "wezengammamon",
+				"from": [
+					[-4, -1],
+					[-3, -1],
+					[-2, -1]
+				],
+				"color": [
+					"grass",
+					"human",
+					"fusion"
+				]
+			},
+			{
+				"name": "regulusmon",
+				"from": [
+					[-5, -1],
+					[-1, -1],
+					[0, -1],
+					[1, -1]
+				],
+				"color": [
+					"grass",
+					"slide",
+					"grass",
+					"fusion"
+				]
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gulusgammamon",
+				"from": [
+					[-6, -1],
+					[-4, -1],
+					[-3, -1]
+				],
+				"color": [
+					"fire",
+					"human",
+					"fusion"
+				]
+			},
+			null,
+			null,
+			null
+		]
+	]
+}

@@ -1,0 +1,431 @@
+{
+	"title": "Metal Empire",
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "greymon",
+				"from": [
+					[2, -1],
+					[4, -1],
+					[5, -1]
+				],
+				"color": [
+					"fire",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "metalgreymon",
+				"from": [
+					[0, -1],
+					[2, -1],
+					[4, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"grass"
+				]
+			},
+			{
+				"name": "wargreymon",
+				"from": [
+					[0, -1],
+					[4, -1],
+					[7, -1]
+				],
+				"color": [
+					"fire",
+					"slide",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "revolmon",
+				"from": [
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "andromon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"gold",
+					"grass",
+					"grass"
+				]
+			},
+			{
+				"name": "hiandromon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[2, -1],
+					[4, -1]
+				],
+				"color": [
+					"gold",
+					"mode",
+					"grass",
+					"fusion"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "toyagumon",
+				"from": [
+					[1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "clockmon",
+				"from": [
+					[0, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "cyberdramon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"fire",
+					"gold",
+					"slide"
+				]
+			},
+			{
+				"name": "ragnamon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"gold",
+					"mode",
+					"grass",
+					"slide"
+				]
+			},
+			null
+		],
+		[
+			{
+				"name": "choromon"
+			},
+			{
+				"name": "caprimon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "kokuwamon",
+				"from": [
+					[0, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "thunderballmon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			},
+			{
+				"name": "bigmamemon",
+				"from": [
+					[-3, -1],
+					[0, -1],
+					[1, -1],
+					[3, -1]
+				],
+				"color": [
+					"fire",
+					"slide",
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "metalgarurumon",
+				"from": [
+					[-2, -1],
+					[0, -1],
+					[3, -1]
+				],
+				"color": [
+					"gold",
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "omegamon",
+				"from": [
+					[-3, -1],
+					[0, -1]
+				],
+				"color": [
+					"fire",
+					"grass"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "hagurumon",
+				"from": [
+					[-1, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "tankmon",
+				"from": [
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"fusion"
+				]
+			},
+			{
+				"name": "knightmon",
+				"from": [
+					[-3, -1],
+					[-2, -1],
+					[-1, -1],
+					[1, -1]
+				],
+				"color": [
+					"gold",
+					"grass",
+					"slide",
+					"fusion"
+				]
+			},
+			{
+				"name": "zeekgreymon",
+				"from": [
+					[-4, -1],
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"slide",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "chaosdramon",
+				"from": [
+					[-3, -1],
+					[1, -1]
+				],
+				"color": [
+					"gold",
+					"dark"
+				]
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "commandramon",
+				"from": [
+					[-2, -1]
+				],
+				"color": [
+					"x"
+				]
+			},
+			{
+				"name": "guardromon",
+				"from": [
+					[-2, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "megadramon",
+				"from": [
+					[-1, -1],
+					[0, -1],
+					[1, -1],
+					[2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"dark",
+					"dark"
+				]
+			},
+			{
+				"name": "machinedramon",
+				"from": [
+					[-5, -1],
+					[0, -1],
+					[2, -1]
+				],
+				"color": [
+					"fire",
+					"fusion",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "mechanorimon",
+				"from": [
+					[-4, -1],
+					[-2, -1]
+				],
+				"color": [
+					"fire",
+					"fusion"
+				]
+			},
+			{
+				"name": "warumonzaemon",
+				"from": [
+					[-4, -1],
+					[-3, -1],
+					[-1, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"slide",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "venommyotismon",
+				"from": [
+					[-4, -1],
+					[-3, -1],
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"mode",
+					"grass",
+					"slide",
+					"dark"
+				]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "hicommandramon",
+				"from": [
+					[-4, -1],
+					[-3, -1],
+					[-2, -1]
+				],
+				"color": [
+					"grass",
+					"fusion",
+					"dark"
+				]
+			},
+			{
+				"name": "cargodramon",
+				"from": [
+					[-3, -1],
+					[0, -1]
+				],
+				"color": [
+					"grass",
+					"dark"
+				]
+			},
+			{
+				"name": "brigadramon",
+				"from": [
+					[-2, -1],
+					[0, -1]
+				],
+				"color": [
+					"fusion",
+					"dark"
+				]
+			},
+			null
+		]
+	]
+}
