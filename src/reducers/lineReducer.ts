@@ -1,4 +1,4 @@
-import Line, { LineColumn, LineFrom, LinePoint } from '@/types/Line';
+import Line, { Axis, LineColumn, LineFrom, LinePoint, SizeAttr } from '@/types/Line';
 import { levels as defaultLevels } from '@/consts/levels';
 import { getLineLevels } from '@/functions/line';
 // import { createSlice } from '@reduxjs/toolkit';
@@ -59,6 +59,7 @@ export const ADD_LINE_COLUMN = 'ADD_LINE_COLUMN';
 export const REMOVE_LINE_COLUMN = 'REMOVE_LINE_COLUMN';
 export const ADD_LINE_ROW = 'ADD_LINE_ROW';
 export const REMOVE_LINE_ROW = 'REMOVE_LINE_ROW';
+export const RESIZE_LINE_POINT = 'RESIZE_LINE_POINT';
 
 export const defaultColumn = [null, null, null, null, null, null, null, null];
 export const defaultLine: Line = {
@@ -100,6 +101,11 @@ export const addLineColumn = (x: number | undefined) => ({ type: ADD_LINE_COLUMN
 export const removeLineColumn = (x: number) => ({ type: REMOVE_LINE_COLUMN, i: x });
 export const addLineRow = (y: number | undefined) => ({ type: ADD_LINE_ROW, i: y });
 export const removeLineRow = (y: number) => ({ type: REMOVE_LINE_ROW, i: y });
+export const resizeLinePoint = (coord: number[], axis: Axis) => ({
+	type: RESIZE_LINE_POINT,
+	coord,
+	axis,
+});
 
 const lineReducer = (line: Line = defaultLine, action: Record<string, any>): Line => {
 	let columns;
@@ -196,6 +202,28 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>): Lin
 			columns.forEach((col: LineColumn) => col.splice(at, 1));
 			const levels = getLineLevels(line).filter((level, i) => i !== at);
 			return { ...line, columns, size: line.size - 1, levels };
+		}
+
+		case RESIZE_LINE_POINT: {
+			const [x, y] = action.coord;
+			const point = line.columns[x]?.[y] as LinePoint | null;
+			if (!point || Array.isArray(point)) return line;
+			const axisKey = action.axis == 'x' ? 0 : 1;
+			const sizeAttr = (action.axis + 'Size') as SizeAttr;
+			const collapse = point[sizeAttr] == 2;
+			const center = [x + (point.xSize == 2 ? 0.5 : 0), y + (point.ySize == 2 ? 0.5 : 0)];
+			const delta = [0, 0];
+			delta[axisKey] = collapse ? -0.5 : 0.5;
+			const isAt = (pos: number[], target: number[]) =>
+				Math.abs(pos[0] - target[0]) < 1e-9 && Math.abs(pos[1] - target[1]) < 1e-9;
+			columns = remapGridFrom(line.columns, pos =>
+				isAt(pos, [x, y]) || isAt(pos, center) ? delta : [0, 0]
+			);
+			columns[x][y] = {
+				...(columns[x][y] as LinePoint),
+				[sizeAttr]: collapse ? undefined : 2,
+			};
+			return { ...line, columns };
 		}
 
 		default:

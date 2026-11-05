@@ -1,19 +1,12 @@
 import { Fragment, memo, useContext, useRef, useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
-import {
-	Axis,
-	CollapseAttr,
-	Line,
-	LineColumn,
-	LineFrom,
-	LinePoint,
-	SizeAttr,
-} from '@/types/Line';
+import { Axis, CollapseAttr, Line, LineColumn, LineFrom, LinePoint, SizeAttr } from '@/types/Line';
 import { makeClassName } from '@/functions';
 import {
 	addLineColumn,
 	moveLinePoint,
 	removeLineColumn,
+	resizeLinePoint,
 	setLinePoint,
 } from '@/reducers/lineReducer';
 import { GridContext } from '@/context/grid';
@@ -90,30 +83,10 @@ const LineGrid: React.FC<GridProps> = ({ line, handleUpdate }) => {
 	const handleCollapse = (axis: Axis, coord: number[]) => {
 		const point: LinePoint | null = line.columns[coord[0]][coord[1]];
 		if (!handleUpdate || !point) return;
-		let from: LineFrom | undefined = point.from;
 		const sizeAttr = (axis + 'Size') as SizeAttr;
 		const collapsableAttr = (axis + 'Collapsable') as CollapseAttr;
-		const uncollapse = point[sizeAttr] == 2;
-		if (!point[collapsableAttr] && !uncollapse) return;
-		if (from) {
-			const axisKey: number = axis == 'x' ? 0 : 1;
-			if (Array.isArray(from[0])) {
-				from = (from as Array<number[]>).map(subFrom => {
-					subFrom = subFrom.slice();
-					subFrom[axisKey] += 0.5 * (uncollapse ? 1 : -1);
-					return subFrom;
-				}) as LineFrom;
-			} else {
-				from = (from as number[]).slice();
-				from[axisKey] += 0.5 * (uncollapse ? 1 : -1);
-			}
-		}
-		const nextPoint = {
-			...point,
-			from,
-			[sizeAttr]: uncollapse ? undefined : 2,
-		} as LinePoint;
-		handleUpdate(setLinePoint, coord, nextPoint);
+		if (!point[collapsableAttr] && point[sizeAttr] != 2) return;
+		handleUpdate(resizeLinePoint, coord, axis);
 	};
 
 	const handleXCollapse = (coord: number[]) => {
