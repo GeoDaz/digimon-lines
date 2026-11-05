@@ -2,41 +2,69 @@
 	"title": "Draconic Blaze",
 	"columns": [
 		[
-			null,
-			null,
-			null,
 			{
-				"name": "geogreymon",
-				"from": [
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"fire",
-					"grass"
-				]
+				"name": "petitmon",
+				"from": null,
+				"xSize": 2
 			},
 			{
-				"name": "rizegreymon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"fire",
-					"gold"
-				]
+				"name": "babydramon",
+				"from": [[0, -1]],
+				"color": ["x"],
+				"xSize": 2
 			},
 			{
-				"name": "shinegreymon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"fire",
-					"gold"
-				]
+				"name": "dracomon",
+				"from": [[0, -1]],
+				"color": ["x"],
+				"xSize": 2
+			},
+			null,
+			{
+				"name": "coredramon_green",
+				"from": [[2, -2], [0.5, -2]],
+				"color": ["fire", "grass"]
+			},
+			null,
+			{
+				"name": "groundramon",
+				"from": [[3, -2], [0, -2]],
+				"color": ["grass", "fusion"]
+			},
+			null,
+			{
+				"name": "breakdramon",
+				"from": [[3, -2], [0, -2]],
+				"color": ["grass", "fusion"]
+			},
+			{
+				"name": "examon",
+				"from": [[0.5, -1], [-0.5, -1]],
+				"color": ["gold", "fusion"],
+				"xSize": 2
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "coredramon_blue",
+				"from": [[-0.5, -2], [2, -2]],
+				"color": ["grass", "slide"]
+			},
+			null,
+			{
+				"name": "wingdramon",
+				"from": [[1, -2], [0, -2]],
+				"color": ["fire", "gold"]
+			},
+			null,
+			{
+				"name": "slayerdramon",
+				"from": [[1, -2], [0, -2]],
+				"color": ["fire", "gold"]
 			},
 			null
 		],
@@ -45,119 +73,31 @@
 			null,
 			{
 				"name": "agumon_2",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[-1.5, -1]],
+				"color": ["x"]
+			},
+			null,
+			{
+				"name": "geogreymon",
+				"from": [[0, -2], [-1.5, -2]],
+				"color": ["fire", "grass"]
+			},
+			null,
+			{
+				"name": "rizegreymon",
+				"from": [[0, -2], [-1, -2]],
+				"color": ["fire", "gold"]
+			},
+			null,
+			{
+				"name": "shinegreymon",
+				"from": [[0, -2], [-1, -2]],
+				"color": ["fire", "gold"]
 			},
 			{
-				"name": "coredramon_blue",
-				"from": [
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"grass",
-					"slide"
-				]
-			},
-			{
-				"name": "wingdramon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"gold"
-				]
-			},
-			{
-				"name": "slayerdramon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"gold"
-				]
-			},
-			null
-		],
-		[
-			{
-				"name": "petitmon"
-			},
-			{
-				"name": "babydramon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
-			},
-			{
-				"name": "dracomon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
-			},
-			{
-				"name": "baohackmon",
-				"from": [
-					[-1, -1],
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"fire",
-					"slide",
-					"gold"
-				]
-			},
-			{
-				"name": "saviorhackmon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"grass",
-					"fusion",
-					"mode"
-				]
-			},
-			{
-				"name": "jesmon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"grass",
-					"fusion",
-					"mode"
-				]
-			},
-			{
-				"name": "examon",
-				"from": [
-					[-1, -1],
-					[1, -1]
-				],
-				"color": [
-					"gold",
-					"fusion"
-				]
+				"name": "shinegreymon_burst_mode",
+				"from": [[0, -3]],
+				"color": ["fire"]
 			}
 		],
 		[
@@ -165,45 +105,26 @@
 			null,
 			{
 				"name": "hackmon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[-2.5, -1]],
+				"color": ["x"]
 			},
+			null,
 			{
-				"name": "coredramon_green",
-				"from": [
-					[-2, -1],
-					[-1, -1]
-				],
-				"color": [
-					"fire",
-					"grass"
-				]
+				"name": "baohackmon",
+				"from": [[-1, -2], [0, -2], [1, -2]],
+				"color": ["fire", "slide", "gold"]
 			},
+			null,
 			{
-				"name": "groundramon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"grass",
-					"fusion"
-				]
+				"name": "saviorhackmon",
+				"from": [[0, -2], [-3, -2], [1, -2]],
+				"color": ["grass", "fusion", "mode"]
 			},
+			null,
 			{
-				"name": "breakdramon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"grass",
-					"fusion"
-				]
+				"name": "jesmon",
+				"from": [[0, -2], [-3, -2], [1, -2]],
+				"color": ["grass", "fusion", "mode"]
 			},
 			null
 		],
@@ -212,64 +133,41 @@
 			null,
 			{
 				"name": "gumdramon",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[-3.5, -1]],
+				"color": ["x"]
 			},
+			null,
 			{
 				"name": "arresterdramon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"slide",
-					"gold"
-				]
+				"from": [[-1, -2], [0, -2]],
+				"color": ["slide", "gold"]
 			},
+			null,
 			{
 				"name": "arresterdramon_superior_mode",
-				"from": [
-					[-2, -1],
-					[0, -1]
-				],
-				"color": [
-					"grass",
-					"mode"
-				]
+				"from": [[-1, -2], [0, -2]],
+				"color": ["grass", "mode"]
 			},
-			{
-				"name": "shinegreymon_burst_mode",
-				"from": [
-					[-4, -1]
-				],
-				"color": [
-					"fire"
-				]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
 			null,
 			{
 				"name": "magnakidmon",
-				"from": [
-					[-3, -1],
-					[-1, -1]
-				],
-				"color": [
-					"grass",
-					"mode"
-				]
+				"from": [[-1, -2], [0, -2]],
+				"color": ["grass", "mode"]
 			},
 			null
 		]
+	],
+	"size": 10,
+	"levels": [
+		"baby I",
+		"baby II",
+		"rookie",
+		"",
+		"champion",
+		"",
+		"ultimate",
+		"",
+		"mega",
+		"mega+"
 	]
 }

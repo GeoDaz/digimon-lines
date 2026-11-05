@@ -6,19 +6,14 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
-				"name": "canoweissmon",
-				"from": [
-					[1, -1],
-					[2, -1],
-					[3, -1]
-				],
-				"color": [
-					"fire",
-					"grass",
-					"slide"
-				]
+				"name": "zanmetsumon",
+				"from": [[3, -2], [2, -2]],
+				"color": ["fire", "grass"]
 			},
+			null,
 			null,
 			null
 		],
@@ -26,261 +21,174 @@
 			null,
 			null,
 			null,
-			{
-				"name": "betelgammamon",
-				"from": [
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"fusion",
-					"fire"
-				]
-			},
-			{
-				"name": "fumamon",
-				"from": [
-					[0, -1],
-					[4, -1]
-				],
-				"color": [
-					"fire",
-					"dark"
-				]
-			},
-			{
-				"name": "siriusmon",
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[3, -1]
-				],
-				"color": [
-					"fire",
-					"grass",
-					"dark"
-				]
-			},
-			null
-		],
-		[
 			null,
-			null,
-			{
-				"name": "gammamon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
-			},
-			{
-				"name": "kausgammamon",
-				"from": [
-					[0, -1],
-					[2, -1]
-				],
-				"color": [
-					"fusion",
-					"dark"
-				]
-			},
-			{
-				"name": "ghilliedhumon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"slide"
-				]
-			},
-			{
-				"name": "cannondramon",
-				"from": [
-					[-2, -1],
-					[0, -1],
-					[-1, -1]
-				],
-				"color": [
-					"fire",
-					"slide",
-					"grass"
-				]
-			},
-			null
-		],
-		[
-			{
-				"name": "curimon"
-			},
-			{
-				"name": "gurimon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
-			},
-			{
-				"name": "bokomon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
-			},
 			{
 				"name": "wezengammamon",
-				"from": [
-					[-1, -1],
-					[1, -1]
-				],
-				"color": [
-					"fusion",
-					"dark"
-				]
+				"from": [[2, -2], [1, -2]],
+				"color": ["fusion", "dark"]
 			},
+			null,
 			{
-				"name": "bombermon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"grass",
-					"slide"
-				]
+				"name": "ghilliedhumon",
+				"from": [[0, -2]],
+				"color": ["slide"]
 			},
+			null,
 			{
-				"name": "spinomon",
-				"from": [
-					[-3, -1],
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"slide",
-					"fusion"
-				]
+				"name": "cannondramon",
+				"from": [[2, -2], [0, -2], [4, -2]],
+				"color": ["fire", "slide", "grass"]
 			},
-			{
-				"name": "proximamon",
-				"from": [
-					[-2, -1],
-					[2, -1]
-				],
-				"color": [
-					"fire",
-					"dark"
-				]
-			}
+			null
 		],
 		[
 			null,
 			null,
 			{
 				"name": "monmon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[1, -1]],
+				"color": ["x"]
 			},
+			null,
 			{
-				"name": "gulusgammamon",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"name": "kausgammamon",
+				"from": [[1, -2], [0, -2]],
+				"color": ["fusion", "dark"]
 			},
+			null,
 			{
-				"name": "zanmetsumon",
-				"from": [
-					[-3, -1],
-					[-2, -1]
-				],
-				"color": [
-					"fire",
-					"grass"
-				]
+				"name": "bombermon",
+				"from": [[0, -2], [-1, -2]],
+				"color": ["grass", "slide"]
 			},
+			null,
 			{
-				"name": "kuzuhamon",
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[2, -1]
-				],
-				"color": [
-					"fusion",
-					"dark",
-					"earth"
-				]
+				"name": "spinomon",
+				"from": [[1, -2], [-1, -2], [0, -2]],
+				"color": ["fire", "slide", "fusion"]
 			},
 			null
 		],
 		[
+			{
+				"name": "curimon",
+				"from": null
+			},
+			{
+				"name": "gurimon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			{
+				"name": "gammamon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			null,
+			{
+				"name": "betelgammamon",
+				"from": [[0, -2], [1, -2]],
+				"color": ["fusion", "fire"]
+			},
+			null,
+			{
+				"name": "canoweissmon",
+				"from": [[0, -2], [-1, -2], [-2, -2]],
+				"color": ["fire", "grass", "slide"]
+			},
+			null,
+			{
+				"name": "siriusmon",
+				"from": [[0, -2], [2, -2], [-3, -2]],
+				"color": ["fire", "grass", "dark"]
+			},
+			{
+				"name": "proximamon",
+				"from": [[-0.5, -1], [0.5, -1]],
+				"color": ["fire", "dark"],
+				"xSize": 2
+			}
+		],
+		[
+			null,
+			null,
+			{
+				"name": "bokomon",
+				"from": [[-1, -1]],
+				"color": ["x"]
+			},
+			null,
+			{
+				"name": "gulusgammamon",
+				"from": [[-1, -2]],
+				"color": ["fusion"]
+			},
+			null,
+			{
+				"name": "regulusmon",
+				"from": [[0, -2]],
+				"color": ["fusion"]
+			},
+			null,
+			{
+				"name": "arcturusmon",
+				"from": [[0, -2], [2, -2]],
+				"color": ["dark", "earth"]
+			},
+			null
+		],
+		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "sealsdramon",
-				"from": [
-					[-3, -1],
-					[-2, -1]
-				],
-				"color": [
-					"fusion",
-					"fire"
-				]
+				"from": [[-2, -2], [-1, -2]],
+				"color": ["fusion", "fire"]
 			},
+			null,
 			{
-				"name": "regulusmon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"name": "fumamon",
+				"from": [[-2, -2], [0, -2]],
+				"color": ["fire", "dark"]
 			},
+			null,
 			{
-				"name": "arcturusmon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"dark",
-					"earth"
-				]
+				"name": "kuzuhamon",
+				"from": [[-3, -2], [-5, -2], [1, -2]],
+				"color": ["fusion", "dark", "earth"]
 			},
 			null
 		],
 		[
+			null,
+			null,
 			null,
 			null,
 			null,
 			null,
 			{
 				"name": "myotismon",
-				"from": [
-					[-2, -1],
-					[-1, -1]
-				],
-				"color": [
-					"fusion",
-					"dark"
-				]
+				"from": [[-2, -2], [-1, -2]],
+				"color": ["fusion", "dark"]
 			},
+			null,
 			null,
 			null
 		]
+	],
+	"size": 10,
+	"levels": [
+		"baby I",
+		"baby II",
+		"rookie",
+		"",
+		"champion",
+		"",
+		"ultimate",
+		"",
+		"mega",
+		"mega+"
 	]
 }

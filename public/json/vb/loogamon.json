@@ -5,271 +5,178 @@
 			null,
 			null,
 			null,
-			{
-				"name": "loogarmon",
-				"from": [
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"fusion",
-					"grass"
-				]
-			},
-			{
-				"name": "soloogarmon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"fusion",
-					"grass",
-					"slide"
-				]
-			},
-			{
-				"name": "fenriloogamon",
-				"from": [
-					[0, -1],
-					[2, -1]
-				],
-				"color": [
-					"fusion",
-					"dark"
-				]
-			},
-			null
-		],
-		[
+			null,
 			null,
 			null,
 			{
-				"name": "loogamon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"name": "helloogarmon",
+				"from": [[1, -2], [3, -2], [5, -2]],
+				"color": ["fusion", "slide", "x"]
 			},
+			null,
 			{
-				"name": "filmon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"fusion",
-					"grass"
-				]
-			},
-			{
-				"name": "stefilmon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fusion",
-					"grass"
-				]
-			},
-			{
-				"name": "rasenmon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fusion",
-					"grass"
-				]
+				"name": "rasenmon_fury_mode",
+				"from": [[2, -2], [0, -2]],
+				"color": ["grass", "dark"]
 			},
 			null
 		],
 		[
 			{
-				"name": "fusamon"
+				"name": "fusamon",
+				"from": null
 			},
 			{
 				"name": "bowmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1]],
+				"color": ["x"]
 			},
 			{
-				"name": "herissmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"name": "loogamon",
+				"from": [[0, -1]],
+				"color": ["x"]
 			},
+			null,
 			{
-				"name": "tyranomon",
-				"from": [
-					[-1, -1],
-					[1, -1]
-				],
-				"color": [
-					"fusion",
-					"x"
-				]
+				"name": "loogarmon",
+				"from": [[0, -2], [1, -2]],
+				"color": ["fusion", "grass"]
 			},
+			null,
 			{
-				"name": "helloogarmon",
-				"from": [
-					[-2, -1],
-					[0, -1],
-					[2, -1]
-				],
-				"color": [
-					"fusion",
-					"slide",
-					"x"
-				]
+				"name": "soloogarmon",
+				"from": [[0, -2], [1, -2], [2, -2]],
+				"color": ["fusion", "grass", "slide"]
 			},
+			null,
 			{
-				"name": "rasenmon_fury_mode",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"grass",
-					"dark"
-				]
+				"name": "fenriloogamon",
+				"from": [[0, -2], [-1, -2]],
+				"color": ["fusion", "dark"]
 			},
 			{
 				"name": "fenriloogamon_takemikazuchi",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1]],
+				"color": ["fusion"]
 			}
 		],
 		[
 			null,
 			null,
 			{
-				"name": "bemmon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"name": "herissmon",
+				"from": [[-1, -1]],
+				"color": ["x"]
 			},
+			null,
 			{
-				"name": "damemon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"grass",
-					"x"
-				]
+				"name": "filmon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["fusion", "grass"]
 			},
+			null,
 			{
-				"name": "andromon",
-				"from": [
-					[-2, -1],
-					[0, -1]
-				],
-				"color": [
-					"grass",
-					"dark"
-				]
+				"name": "stefilmon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["fusion", "grass"]
 			},
+			null,
 			{
-				"name": "hiandromon",
-				"from": [
-					[0, -1],
-					[2, -1]
-				],
-				"color": [
-					"fire",
-					"x"
-				]
+				"name": "rasenmon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["fusion", "grass"]
 			},
 			null
 		],
 		[
 			null,
 			null,
+			null,
+			null,
+			{
+				"name": "tyranomon",
+				"from": [[-2, -2], [2, -2]],
+				"color": ["fusion", "x"]
+			},
+			null,
+			{
+				"name": "mastertyranomon",
+				"from": [[0, -2], [2, -2]],
+				"color": ["slide", "x"]
+			},
+			null,
+			{
+				"name": "rusttyranomon",
+				"from": [[1, -2], [0, -2]],
+				"color": ["fire", "gold"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "damemon",
+				"from": [[-2, -2], [1, -2]],
+				"color": ["grass", "x"]
+			},
+			null,
+			{
+				"name": "andromon",
+				"from": [[-2, -2], [0, -2]],
+				"color": ["grass", "dark"]
+			},
+			null,
+			{
+				"name": "hiandromon",
+				"from": [[0, -2], [1, -2]],
+				"color": ["fire", "x"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "bemmon",
+				"from": [[-4, -1]],
+				"color": ["x"]
+			},
 			null,
 			{
 				"name": "snatchmon",
-				"from": [
-					[-3, -1],
-					[-1, -1]
-				],
-				"color": [
-					"fusion",
-					"x"
-				]
+				"from": [[-4, -2], [0, -2]],
+				"color": ["fusion", "x"]
 			},
-			{
-				"name": "mastertyranomon",
-				"from": [
-					[-2, -1],
-					[0, -1]
-				],
-				"color": [
-					"slide",
-					"x"
-				]
-			},
-			{
-				"name": "rusttyranomon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"gold"
-				]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
 			null,
 			{
 				"name": "destromon",
-				"from": [
-					[-2, -1],
-					[-1, -1]
-				],
-				"color": [
-					"dark",
-					"x"
-				]
+				"from": [[-1, -2], [0, -2]],
+				"color": ["dark", "x"]
 			},
+			null,
 			{
 				"name": "ragnamon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"gold",
-					"x"
-				]
+				"from": [[-2, -2], [0, -2]],
+				"color": ["gold", "x"]
 			},
 			null
-		]
+		],
+		[null, null, null, null, null, null, null, null, null, null]
+	],
+	"size": 10,
+	"levels": [
+		"baby I",
+		"baby II",
+		"rookie",
+		"",
+		"champion",
+		"",
+		"ultimate",
+		"",
+		"mega",
+		"mega+"
 	]
 }

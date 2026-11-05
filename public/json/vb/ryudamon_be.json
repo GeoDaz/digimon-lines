@@ -7,257 +7,136 @@
 			null,
 			null,
 			{
-				"name": "hisyaryumon",
-				"from": [
-					[1, -1],
-					[4, -1],
-					[5, -1]
-				],
-				"color": [
-					"fire",
-					"dark",
-					"earth"
-				]
+				"name": "deltamon",
+				"from": [[1, -2]],
+				"color": ["fire"]
 			},
-			{
-				"name": "ouryumon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[5, -1]
-				],
-				"color": [
-					"fire",
-					"fusion",
-					"earth"
-				]
-			},
-			null
-		],
-		[
 			null,
-			null,
-			null,
-			{
-				"name": "ginryumon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"fire"
-				]
-			},
-			{
-				"name": "cargodramon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[4, -1]
-				],
-				"color": [
-					"fire",
-					"fusion",
-					"earth"
-				]
-			},
-			{
-				"name": "brigadramon",
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[4, -1]
-				],
-				"color": [
-					"fire",
-					"fusion",
-					"earth"
-				]
-			},
-			null
-		],
-		[
-			null,
-			null,
-			{
-				"name": "ryudamon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
-			},
-			{
-				"name": "hicommandramon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"fusion"
-				]
-			},
 			{
 				"name": "orochimon",
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"fire",
-					"fusion",
-					"dark"
-				]
+				"from": [[1, -2], [2, -2], [0, -2]],
+				"color": ["fire", "fusion", "dark"]
 			},
+			null,
 			{
 				"name": "nidhoggmon",
-				"from": [
-					[-2, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"dark"
-				]
+				"from": [[1, -2], [0, -2]],
+				"color": ["fire", "dark"]
 			},
 			null
 		],
 		[
 			{
-				"name": "fufumon"
+				"name": "fufumon",
+				"from": null
 			},
 			{
 				"name": "kyokyomon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1]],
+				"color": ["x"]
 			},
 			{
-				"name": "commandramon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"name": "ryudamon",
+				"from": [[0, -1]],
+				"color": ["x"]
 			},
+			null,
 			{
-				"name": "deltamon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"name": "ginryumon",
+				"from": [[0, -2]],
+				"color": ["fire"]
 			},
+			null,
 			{
-				"name": "monzaemon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"dark",
-					"dark"
-				]
+				"name": "hisyaryumon",
+				"from": [[0, -2], [3, -2], [2, -2]],
+				"color": ["fire", "dark", "earth"]
 			},
+			null,
 			{
-				"name": "shinmonzaemon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"dark",
-					"gold"
-				]
+				"name": "ouryumon",
+				"from": [[0, -2], [1, -2], [2, -2]],
+				"color": ["fire", "fusion", "earth"]
 			},
 			{
 				"name": "alphamon_ouryuken",
-				"from": [
-					[-3, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[0, -1]],
+				"color": ["fire"]
 			}
 		],
 		[
 			null,
 			null,
+			{
+				"name": "commandramon",
+				"from": [[-1, -1]],
+				"color": ["x"]
+			},
 			null,
 			{
-				"name": "numemon",
-				"from": [
-					[-2, -1],
-					[-1, -1]
-				],
-				"color": [
-					"fire",
-					"fusion"
-				]
+				"name": "hicommandramon",
+				"from": [[0, -2]],
+				"color": ["fusion"]
 			},
+			null,
 			{
-				"name": "etemon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"dark",
-					"dark"
-				]
+				"name": "cargodramon",
+				"from": [[-1, -2], [0, -2], [1, -2]],
+				"color": ["fire", "fusion", "earth"]
 			},
+			null,
 			{
-				"name": "kingetemon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"gold",
-					"dark"
-				]
+				"name": "brigadramon",
+				"from": [[-1, -2], [0, -2], [1, -2]],
+				"color": ["fire", "fusion", "earth"]
 			},
 			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "sealsdramon",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[-1, -2]],
+				"color": ["fusion"]
 			},
+			null,
 			{
 				"name": "tankdramon",
-				"from": [
-					[-3, -1],
-					[0, -1]
-				],
-				"color": [
-					"fusion",
-					"earth"
-				]
+				"from": [[-1, -2], [0, -2]],
+				"color": ["fusion", "earth"]
 			},
+			null,
 			{
-				"name": "metaletemon",
-				"from": [
-					[-3, -1],
-					[-1, -1]
-				],
-				"color": [
-					"dark",
-					"dark"
-				]
+				"name": "darkdramon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["fusion", "earth"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "numemon",
+				"from": [[-3, -2], [-2, -2]],
+				"color": ["fire", "fusion"]
+			},
+			null,
+			{
+				"name": "monzaemon",
+				"from": [[-4, -2], [0, -2]],
+				"color": ["dark", "dark"]
+			},
+			null,
+			{
+				"name": "shinmonzaemon",
+				"from": [[-4, -2], [0, -2]],
+				"color": ["dark", "gold"]
 			},
 			null
 		],
@@ -267,18 +146,48 @@
 			null,
 			null,
 			null,
+			null,
 			{
-				"name": "darkdramon",
-				"from": [
-					[-5, -1],
-					[-1, -1]
-				],
-				"color": [
-					"fusion",
-					"earth"
-				]
+				"name": "etemon",
+				"from": [[-5, -2], [-1, -2]],
+				"color": ["dark", "dark"]
+			},
+			null,
+			{
+				"name": "kingetemon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["gold", "dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "metaletemon",
+				"from": [[-6, -2], [-1, -2]],
+				"color": ["dark", "dark"]
 			},
 			null
 		]
+	],
+	"size": 10,
+	"levels": [
+		"baby I",
+		"baby II",
+		"rookie",
+		"",
+		"champion",
+		"",
+		"ultimate",
+		"",
+		"mega",
+		"mega+"
 	]
 }

@@ -4,156 +4,96 @@
 		[
 			null,
 			null,
+			{
+				"name": "jazamon",
+				"from": [[1, -1]],
+				"color": ["x"]
+			},
 			null,
 			{
-				"name": "birdramon",
-				"from": [
-					[1, -1],
-					[2, -1],
-					[4, -1]
-				],
-				"color": [
-					"fire",
-					"gold",
-					"grass"
-				]
+				"name": "thunderbirdmon",
+				"from": [[3, -2], [0, -2]],
+				"color": ["mode", "grass"]
 			},
-			{
-				"name": "garudamon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[4, -1]
-				],
-				"color": [
-					"fire",
-					"gold",
-					"grass"
-				]
-			},
-			{
-				"name": "phoenixmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fire"
-				]
-			},
-			null
-		],
-		[
-			null,
 			null,
 			{
-				"name": "biyomon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"name": "jazarichmon",
+				"from": [[3, -2], [0, -2]],
+				"color": ["mode", "grass"]
 			},
+			null,
 			{
-				"name": "pidmon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"fire",
-					"gold"
-				]
-			},
-			{
-				"name": "arkhaiangemon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"gold"
-				]
-			},
-			{
-				"name": "dominimon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"gold"
-				]
+				"name": "metallicdramon",
+				"from": [[3, -2], [0, -2]],
+				"color": ["mode", "grass"]
 			},
 			null
 		],
 		[
 			{
-				"name": "nyokimon"
+				"name": "nyokimon",
+				"from": null
 			},
 			{
 				"name": "yokomon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1]],
+				"color": ["x"]
 			},
+			{
+				"name": "biyomon",
+				"from": [[0, -1]],
+				"color": ["x"]
+			},
+			null,
+			{
+				"name": "birdramon",
+				"from": [[0, -2], [1, -2], [-1, -2]],
+				"color": ["fire", "gold", "grass"]
+			},
+			null,
+			{
+				"name": "garudamon",
+				"from": [[0, -2], [1, -2], [-1, -2]],
+				"color": ["fire", "gold", "grass"]
+			},
+			null,
+			{
+				"name": "phoenixmon",
+				"from": [[0, -2]],
+				"color": ["fire"]
+			},
+			null
+		],
+		[
+			null,
+			null,
 			{
 				"name": "luxmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[-1, -1]],
+				"color": ["x"]
 			},
+			null,
 			{
-				"name": "peckmon",
-				"from": [
-					[-1, -1],
-					[1, -1]
-				],
-				"color": [
-					"fire",
-					"mode"
-				]
+				"name": "pidmon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["fire", "gold"]
 			},
+			null,
 			{
-				"name": "yatagaramon_2",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"mode",
-					"human"
-				]
+				"name": "arkhaiangemon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["fire", "gold"]
 			},
+			null,
 			{
-				"name": "ravemon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"mode",
-					"human"
-				]
+				"name": "dominimon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["fire", "gold"]
 			},
 			{
 				"name": "shakamon",
-				"from": [
-					[-1, -1],
-					[1, -1]
-				],
-				"color": [
-					"gold",
-					"human"
-				]
+				"from": [[0, -1], [2, -1]],
+				"color": ["gold", "human"]
 			}
 		],
 		[
@@ -161,111 +101,71 @@
 			null,
 			{
 				"name": "falcomon_2",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[-2, -1]],
+				"color": ["x"]
 			},
-			{
-				"name": "xiquemon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"gold",
-					"mode"
-				]
-			},
-			{
-				"name": "huankunmon",
-				"from": [
-					[-2, -1],
-					[0, -1]
-				],
-				"color": [
-					"gold",
-					"human"
-				]
-			},
-			{
-				"name": "xiangpengmon",
-				"from": [
-					[-2, -1],
-					[0, -1]
-				],
-				"color": [
-					"gold",
-					"human"
-				]
-			},
-			null
-		],
-		[
-			null,
 			null,
 			{
-				"name": "jazamon",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"x"
-				]
+				"name": "peckmon",
+				"from": [[-2, -2], [0, -2]],
+				"color": ["fire", "mode"]
 			},
+			null,
 			{
-				"name": "thunderbirdmon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"mode",
-					"grass"
-				]
+				"name": "yatagaramon_2",
+				"from": [[0, -2], [1, -2]],
+				"color": ["mode", "human"]
 			},
+			null,
 			{
-				"name": "jazarichmon",
-				"from": [
-					[-2, -1],
-					[0, -1]
-				],
-				"color": [
-					"mode",
-					"grass"
-				]
+				"name": "ravemon",
+				"from": [[0, -2], [1, -2]],
+				"color": ["mode", "human"]
 			},
 			{
 				"name": "ravemon_burst_mode",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"mode"
-				]
-			},
-			null
+				"from": [[0, -3]],
+				"color": ["mode"]
+			}
 		],
 		[
 			null,
 			null,
 			null,
 			null,
+			{
+				"name": "xiquemon",
+				"from": [[-2, -2], [-1, -2]],
+				"color": ["gold", "mode"]
+			},
 			null,
 			{
-				"name": "metallicdramon",
-				"from": [
-					[-3, -1],
-					[-1, -1]
-				],
-				"color": [
-					"mode",
-					"grass"
-				]
+				"name": "huankunmon",
+				"from": [[-2, -2], [0, -2]],
+				"color": ["gold", "human"]
+			},
+			null,
+			{
+				"name": "xiangpengmon",
+				"from": [[-2, -2], [0, -2]],
+				"color": ["gold", "human"]
 			},
 			null
-		]
+		],
+		[null, null, null, null, null, null, null, null, null, null],
+		[null, null, null, null, null, null, null, null, null, null]
+	],
+	"size": 10,
+	"levels": [
+		"baby I",
+		"baby II",
+		"rookie",
+		"",
+		"champion",
+		"",
+		"ultimate",
+		"",
+		"mega",
+		"mega+"
 	]
 }

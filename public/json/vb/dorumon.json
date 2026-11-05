@@ -7,257 +7,156 @@
 			null,
 			null,
 			{
-				"name": "dorugreymon",
-				"from": [
-					[1, -1],
-					[2, -1],
-					[5, -1]
-				],
-				"color": [
-					"grass",
-					"fusion",
-					"gold"
-				]
+				"name": "dexdorugamon",
+				"from": [[2, -2], [3, -2]],
+				"color": ["grass", "fusion"]
 			},
+			null,
 			{
-				"name": "dorugoramon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[5, -1]
-				],
-				"color": [
-					"grass",
-					"fusion",
-					"fire"
-				]
+				"name": "dexdorugreymon",
+				"from": [[1, -2], [0, -2], [2, -2]],
+				"color": ["grass", "fusion", "gold"]
+			},
+			null,
+			{
+				"name": "dexdorugoramon",
+				"from": [[1, -2], [0, -2], [2, -2]],
+				"color": ["grass", "fusion", "fire"]
 			},
 			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "dorugamon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"grass"
-				]
+				"from": [[1, -2]],
+				"color": ["grass"]
 			},
-			{
-				"name": "dexdorugreymon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[4, -1]
-				],
-				"color": [
-					"grass",
-					"fusion",
-					"gold"
-				]
-			},
-			{
-				"name": "dexdorugoramon",
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[4, -1]
-				],
-				"color": [
-					"grass",
-					"fusion",
-					"fire"
-				]
-			},
-			null
-		],
-		[
-			null,
 			null,
 			{
-				"name": "dorumon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"name": "dorugreymon",
+				"from": [[0, -2], [-1, -2], [1, -2]],
+				"color": ["grass", "fusion", "gold"]
 			},
+			null,
 			{
-				"name": "dexdorugamon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"grass",
-					"fusion"
-				]
-			},
-			{
-				"name": "metaltyranomon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"fusion",
-					"dark",
-					"fire"
-				]
-			},
-			{
-				"name": "chaosdramon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fusion",
-					"dark"
-				]
+				"name": "dorugoramon",
+				"from": [[0, -2], [-1, -2], [1, -2]],
+				"color": ["grass", "fusion", "fire"]
 			},
 			null
 		],
 		[
 			{
-				"name": "dodomon"
+				"name": "dodomon",
+				"from": null
 			},
 			{
 				"name": "dorimon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1]],
+				"color": ["x"]
 			},
 			{
-				"name": "agumon_black",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"name": "dorumon",
+				"from": [[0, -1]],
+				"color": ["x"]
 			},
+			null,
 			{
-				"name": "darktyranomon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"name": "raptordramon",
+				"from": [[0, -2]],
+				"color": ["grass"]
 			},
+			null,
 			{
-				"name": "megadramon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"dark",
-					"fire"
-				]
+				"name": "grademon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["grass", "gold"]
 			},
+			null,
 			{
-				"name": "metalseadramon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"dark",
-					"earth"
-				]
+				"name": "alphamon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["grass", "fire"]
 			},
 			{
 				"name": "alphamon_ouryuken",
-				"from": [
-					[3, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[0, -1]],
+				"color": ["fire"]
 			}
 		],
 		[
 			null,
 			null,
+			{
+				"name": "agumon_black",
+				"from": [[-1, -1]],
+				"color": ["x"]
+			},
+			null,
+			{
+				"name": "darktyranomon",
+				"from": [[0, -2]],
+				"color": ["fusion"]
+			},
+			null,
+			{
+				"name": "metaltyranomon",
+				"from": [[-3, -2], [0, -2], [1, -2]],
+				"color": ["fusion", "dark", "fire"]
+			},
+			null,
+			{
+				"name": "machinedramon",
+				"from": [[0, -2], [1, -2]],
+				"color": ["dark", "dark"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
 			null,
 			{
 				"name": "airdramon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[-1, -2]],
+				"color": ["fusion"]
 			},
+			null,
+			{
+				"name": "megadramon",
+				"from": [[-1, -2], [0, -2]],
+				"color": ["dark", "fire"]
+			},
+			null,
+			{
+				"name": "metalseadramon",
+				"from": [[0, -2], [1, -2]],
+				"color": ["dark", "earth"]
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
 			{
 				"name": "gigadramon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"dark",
-					"fire"
-				]
+				"from": [[-2, -2], [-1, -2]],
+				"color": ["dark", "fire"]
 			},
-			{
-				"name": "machinedramon",
-				"from": [
-					[-2, -1],
-					[-1, -1]
-				],
-				"color": [
-					"dark",
-					"dark"
-				]
-			},
-			null
-		],
-		[
 			null,
-			null,
-			null,
-			{
-				"name": "raptordramon",
-				"from": [
-					[-3, -1]
-				],
-				"color": [
-					"grass"
-				]
-			},
-			{
-				"name": "grademon",
-				"from": [
-					[-4, -1],
-					[0, -1]
-				],
-				"color": [
-					"grass",
-					"gold"
-				]
-			},
 			{
 				"name": "gundramon",
-				"from": [
-					[-3, -1],
-					[-1, -1]
-				],
-				"color": [
-					"dark",
-					"earth"
-				]
+				"from": [[-2, -2], [0, -2]],
+				"color": ["dark", "earth"]
 			},
 			null
 		],
@@ -267,18 +166,28 @@
 			null,
 			null,
 			null,
+			null,
+			null,
+			null,
 			{
-				"name": "alphamon",
-				"from": [
-					[-6, -1],
-					[-1, -1]
-				],
-				"color": [
-					"grass",
-					"fire"
-				]
+				"name": "chaosdramon",
+				"from": [[-6, -2], [-3, -2]],
+				"color": ["fusion", "dark"]
 			},
 			null
 		]
+	],
+	"size": 10,
+	"levels": [
+		"baby I",
+		"baby II",
+		"rookie",
+		"",
+		"champion",
+		"",
+		"ultimate",
+		"",
+		"mega",
+		"mega+"
 	]
 }
