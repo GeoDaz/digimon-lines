@@ -4,24 +4,35 @@ import LineImage from '@/components/Line/LineImage';
 import { makeClassName } from '@/functions';
 import { skinImage, skinName, skinStyle } from '@/functions/line';
 import Icon from '@/components/Icon';
-import { GridContext } from '@/context/grid';
+import { GridContext, ReorderState } from '@/context/grid';
 import { ZoomContext } from '@/context/zoom';
 import LineSvg from './LineSvg';
+
+const rowReorderClass = (reorder: ReorderState | null | undefined, coord: number[]) => {
+	if (reorder?.axis !== 'row') return undefined;
+	if (reorder.from === coord[1]) return 'row-dragging';
+	if (reorder.over === coord[1]) return 'row-drop-target';
+	return undefined;
+};
 
 const LineGridPoint: React.FC<{
 	point?: LinePointInterface | null;
 	coord: number[];
 }> = ({ point, coord }) => {
-	const { handleEdit, handleDragOver, handleDrop } = useContext(GridContext);
+	const { handleEdit, handleDragOver, handleDrop, reorder } = useContext(GridContext);
 
 	const editable = !!handleEdit;
 	if (!point) {
 		return (
 			<div
-				className={makeClassName('line-point', editable && 'editable')}
+				className={makeClassName(
+					'line-point',
+					editable && 'editable',
+					rowReorderClass(reorder, coord)
+				)}
 				onClick={editable ? () => handleEdit(coord) : undefined}
-				onDragOver={handleDragOver}
-				onDrop={handleDrop ? () => handleDrop(coord) : undefined}
+				onDragOver={handleDragOver ? e => handleDragOver(e, coord) : undefined}
+				onDrop={handleDrop ? e => handleDrop(e, coord) : undefined}
 			/>
 		);
 	}
@@ -50,6 +61,7 @@ const LinePoint: React.FC<{
 		handleDragEnd,
 		handleDragOver,
 		handleDrop,
+		reorder,
 	} = React.useContext(GridContext);
 	const { zoomFactor, imgSize, unit } = useContext(ZoomContext);
 	const isDrawing: boolean =
@@ -117,16 +129,17 @@ const LinePoint: React.FC<{
 				'line-point pictured',
 				xSize == 2 && 'x-double',
 				ySize == 2 && 'y-double',
-				handleEdit && 'editable'
+				handleEdit && 'editable',
+				rowReorderClass(reorder, coord)
 			)}
 			style={{ width: width + 'px', height: height + 'px' }}
 			data-coord={coord}
 			onClick={handleEdit ? handleEdit : undefined}
 			draggable={!!handleEdit}
-			onDragStart={handleDragStart ? () => handleDragStart(coord) : undefined}
+			onDragStart={handleDragStart ? e => handleDragStart(e, coord) : undefined}
 			onDragEnd={handleDragEnd}
-			onDragOver={handleDragOver}
-			onDrop={handleDrop ? () => handleDrop(coord) : undefined}
+			onDragOver={handleDragOver ? e => handleDragOver(e, coord) : undefined}
+			onDrop={handleDrop ? e => handleDrop(e, coord) : undefined}
 		>
 			<div className="line-point-safe-zone">
 				<LineImage

@@ -1017,7 +1017,8 @@ a.line-point {
 }
 
 .line-grid.editable .line-row .btn.add::before,
-.line-grid.editable .line-row .btn.btn-danger::before {
+.line-grid.editable .line-row .btn.btn-danger::before,
+.line-grid.editable .line-row .btn.grip::before {
 	content: '\f229';
 	font-family: bootstrap-icons !important;
 	display: inline-block;
@@ -1032,6 +1033,10 @@ a.line-point {
 
 .line-grid.editable .line-row .btn.btn-danger::before {
 	color: var(--bs-danger);
+}
+
+.line-grid.editable .line-row .btn.grip::before {
+	color: var(--bs-secondary);
 }
 
 .line-grid.editable .line-row:hover .btn.btn-danger,
@@ -1145,9 +1150,61 @@ a.line-point {
 	padding: 0.25em 0.5em;
 }
 
+.line-grid.editable .levels .level .btn.grip {
+	display: inline-block;
+	position: absolute;
+	bottom: 1.25em;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: all 0.3s;
+	padding: 0.25em 0.5em;
+	cursor: grab;
+}
+
 .line-grid.editable .levels .level:hover .btn.btn-danger,
-.line-grid.editable .levels .level:hover .btn.add {
+.line-grid.editable .levels .level:hover .btn.add,
+.line-grid.editable .levels .level:hover .btn.grip {
 	opacity: 1;
+}
+
+.line-grid.editable .line-row:has(> .btn.grip) > .btn.btn-danger {
+	transform: translate(calc(-100% - 0.1em), -100%);
+}
+
+.line-grid.editable .line-row .btn.grip {
+	display: inline-block;
+	position: absolute;
+	top: -0.5em;
+	left: 50%;
+	transform: translate(0.1em, -100%);
+	opacity: 0;
+	transition: all 0.3s;
+	padding: 0.25em 0.5em;
+	border-radius: var(--dl-border-radius);
+	width: min-content;
+	cursor: grab;
+}
+
+.line-grid.editable .line-row:hover > .btn.grip,
+.line-grid.editable .line-row > .btn.grip:hover {
+	opacity: 1;
+}
+
+.line-grid.editable .btn.grip:active {
+	cursor: grabbing;
+}
+
+.line-grid.editable .line-row.dragging,
+.line-grid.editable .levels .level.dragging,
+.line-grid.editable .line-point.row-dragging {
+	opacity: 0.4;
+}
+
+.line-grid.editable .line-row.drop-target,
+.line-grid.editable .levels .level.drop-target,
+.line-grid.editable .line-point.row-drop-target {
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .reorderable {

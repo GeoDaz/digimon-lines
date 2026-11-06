@@ -4,12 +4,15 @@ import { Axis, CollapseAttr, Line, LineColumn, LineFrom, LinePoint, SizeAttr } f
 import { makeClassName } from '@/functions';
 import {
 	addLineColumn,
+	moveLineColumn,
 	moveLinePoint,
+	moveLineRow,
 	removeLineColumn,
 	resizeLinePoint,
 	setLinePoint,
 } from '@/reducers/lineReducer';
-import { GridContext } from '@/context/grid';
+import { GridContext, ReorderAxis, ReorderState } from '@/context/grid';
+import { pointMainImage, setDragGhost } from '@/functions/dragGhost';
 import { ZoomContext } from '@/context/zoom';
 import LinePointSettings from './LinePointSettings';
 import LineGridPoint from './LineGridPoint';
@@ -22,6 +25,10 @@ export interface LineEdition {
 	coord: number[];
 }
 
+type DragSource =
+	| { axis: 'cell'; coord: number[] }
+	| { axis: ReorderAxis; index: number };
+
 interface GridProps {
 	line: Line;
 	handleUpdate?: CallableFunction;
@@ -30,26 +37,101 @@ const LineGrid: React.FC<GridProps> = ({ line, handleUpdate }) => {
 	const [drawing, setDrawing] = useState<number[] | undefined>();
 	const [edition, edit] = useState<number[]>();
 	const { zoomFactor } = useContext(ZoomContext);
-	const dragCoord = useRef<number[] | null>(null);
+	const dragSource = useRef<DragSource | null>(null);
+	const [reorder, setReorder] = useState<ReorderState | null>(null);
 
-	const handleDragStart = (coord: number[]) => {
-		dragCoord.current = coord;
+	const startDrag = (e: React.DragEvent, source: DragSource) => {
+		dragSource.current = source;
+		e.dataTransfer.effectAllowed = 'move';
+		e.dataTransfer.setData('text/plain', '');
+	};
+
+	const handleDragStart = (e: React.DragEvent, coord: number[]) => {
+		startDrag(e, { axis: 'cell', coord });
+		const img = pointMainImage(e.currentTarget);
+		if (!img) return;
+		const rect = img.getBoundingClientRect();
+		setDragGhost(e, [img], {
+			size: rect.width,
+			offset: [e.clientX - rect.left, e.clientY - rect.top],
+		});
+	};
+
+	const handleAxisDragStart = (e: React.DragEvent, axis: ReorderAxis, index: number) => {
+		e.stopPropagation();
+		startDrag(e, { axis, index });
+		setReorder({ axis, from: index });
+		const grid = (e.currentTarget as HTMLElement).closest('.line-grid');
+		if (!grid) return;
+		const points = Array.from(
+			grid.querySelectorAll<HTMLElement>('.line-point.pictured[data-coord]')
+		)
+			.map(el => ({ el, coord: (el.dataset.coord || '').split(',').map(Number) }))
+			.filter(({ coord }) => coord[axis === 'column' ? 0 : 1] === index)
+			.sort((a, b) => (axis === 'column' ? a.coord[1] - b.coord[1] : a.coord[0] - b.coord[0]));
+		setDragGhost(
+			e,
+			points.map(({ el }) => pointMainImage(el)),
+			{ size: 48, direction: axis === 'column' ? 'column' : 'row' }
+		);
 	};
 
 	const handleDragEnd = () => {
-		dragCoord.current = null;
+		dragSource.current = null;
+		setReorder(null);
 	};
 
-	const handleDragOver = (e: React.DragEvent) => {
-		if (dragCoord.current) e.preventDefault();
+	const setOver = (axis: ReorderAxis, index: number) => {
+		setReorder(current =>
+			current && current.axis === axis && current.over !== index ?
+				{ ...current, over: index }
+			:	current
+		);
 	};
 
-	const handleDrop = (coord: number[]) => {
-		const source = dragCoord.current;
-		dragCoord.current = null;
+	const handleDragOver = (e: React.DragEvent, coord: number[]) => {
+		const source = dragSource.current;
+		if (!source) return;
+		if (source.axis === 'cell') {
+			e.preventDefault();
+		} else if (source.axis === 'row') {
+			e.preventDefault();
+			setOver('row', coord[1]);
+		}
+	};
+
+	const handleAxisDragOver = (e: React.DragEvent, axis: ReorderAxis, index: number) => {
+		if (dragSource.current?.axis !== axis) return;
+		e.preventDefault();
+		setOver(axis, index);
+	};
+
+	const moveAxis = (axis: ReorderAxis, from: number, to: number) => {
+		if (!handleUpdate || from === to) return;
+		handleUpdate(axis === 'column' ? moveLineColumn : moveLineRow, from, to);
+	};
+
+	const handleDrop = (e: React.DragEvent, coord: number[]) => {
+		const source = dragSource.current;
 		if (!handleUpdate || !source) return;
-		if (source[0] === coord[0] && source[1] === coord[1]) return;
-		handleUpdate(moveLinePoint, source, coord);
+		if (source.axis === 'cell') {
+			e.preventDefault();
+			handleDragEnd();
+			if (source.coord[0] === coord[0] && source.coord[1] === coord[1]) return;
+			handleUpdate(moveLinePoint, source.coord, coord);
+		} else if (source.axis === 'row') {
+			e.preventDefault();
+			handleDragEnd();
+			moveAxis('row', source.index, coord[1]);
+		}
+	};
+
+	const handleAxisDrop = (e: React.DragEvent, axis: ReorderAxis, index: number) => {
+		const source = dragSource.current;
+		if (!source || source.axis !== axis) return;
+		e.preventDefault();
+		handleDragEnd();
+		moveAxis(axis, source.index, index);
 	};
 
 	const handleTarget = (target: number[]) => {
@@ -108,10 +190,14 @@ const LineGrid: React.FC<GridProps> = ({ line, handleUpdate }) => {
 				handleTarget,
 				handleXCollapse,
 				handleYCollapse,
+				reorder,
 				handleDragStart: handleUpdate ? handleDragStart : undefined,
 				handleDragEnd: handleUpdate ? handleDragEnd : undefined,
 				handleDragOver: handleUpdate ? handleDragOver : undefined,
 				handleDrop: handleUpdate ? handleDrop : undefined,
+				handleAxisDragStart: handleUpdate ? handleAxisDragStart : undefined,
+				handleAxisDragOver: handleUpdate ? handleAxisDragOver : undefined,
+				handleAxisDrop: handleUpdate ? handleAxisDrop : undefined,
 			}}
 		>
 			{!!handleUpdate && (
@@ -149,9 +235,20 @@ interface RowProps {
 	column?: LineColumn;
 	x: number;
 	y?: number; // for sub rows
+	nested?: boolean;
 }
-const LineRow: React.FC<RowProps> = ({ column, x, y }) => {
-	const { handleEdit, handleUpdate } = useContext(GridContext);
+const LineRow: React.FC<RowProps> = ({ column, x, y, nested }) => {
+	const {
+		handleEdit,
+		handleUpdate,
+		reorder,
+		handleAxisDragStart,
+		handleAxisDragOver,
+		handleAxisDrop,
+		handleDragEnd,
+	} = useContext(GridContext);
+	const reorderable = !nested && !!handleAxisDragStart;
+	const columnReorder = reorder?.axis === 'column' ? reorder : null;
 
 	const handleRemove = (e: any) => {
 		if (handleUpdate) {
@@ -166,7 +263,24 @@ const LineRow: React.FC<RowProps> = ({ column, x, y }) => {
 
 	if (!column) return null;
 	return (
-		<Row className="line-row">
+		<Row
+			className={makeClassName(
+				'line-row',
+				!nested && columnReorder?.from === x && 'dragging',
+				!nested &&
+					columnReorder?.over === x &&
+					columnReorder.from !== x &&
+					'drop-target'
+			)}
+			onDragOver={
+				reorderable && handleAxisDragOver ?
+					e => handleAxisDragOver(e, 'column', x)
+				:	undefined
+			}
+			onDrop={
+				reorderable && handleAxisDrop ? e => handleAxisDrop(e, 'column', x) : undefined
+			}
+		>
 			{!!handleEdit && (
 				<>
 					<Button
@@ -180,13 +294,25 @@ const LineRow: React.FC<RowProps> = ({ column, x, y }) => {
 					<Button variant="danger" title="remove column" onClick={handleRemove}>
 						<Icon name="trash3-fill" />
 					</Button>
+					{reorderable && (
+						<Button
+							variant="secondary"
+							className="grip"
+							title="drag to move column"
+							draggable
+							onDragStart={e => handleAxisDragStart!(e, 'column', x)}
+							onDragEnd={handleDragEnd}
+						>
+							<Icon name="grip-vertical" />
+						</Button>
+					)}
 				</>
 			)}
 			{column.map((point, i) => {
 				if (Array.isArray(point)) {
 					return (
 						<Fragment key={i}>
-							<LineRow x={x} column={point} />
+							<LineRow x={x} column={point} nested />
 						</Fragment>
 					);
 				}

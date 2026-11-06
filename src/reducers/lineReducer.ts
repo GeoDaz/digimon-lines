@@ -42,7 +42,22 @@ const remapGridFrom = (columns: LineColumn[], shift: CellShift): LineColumn[] =>
 		})
 	);
 
-const insertedLevel = (levels: string[], at: number): string => {
+const moveIndexShift = (from: number, to: number) => (pos: number): number => {
+	const index = Math.floor(pos);
+	if (index === from) return to - from;
+	if (from < to && index > from && index <= to) return -1;
+	if (to < from && index >= to && index < from) return 1;
+	return 0;
+};
+
+const moveItem = <T>(items: T[], from: number, to: number): T[] => {
+	const next = items.slice();
+	const [item] = next.splice(from, 1);
+	next.splice(to, 0, item);
+	return next;
+};
+
+const insertedLevel =(levels: string[], at: number): string => {
 	if (at === 0) return '';
 	const index = defaultLevels.indexOf(levels[at - 1]);
 	if (index < 0) return '';
@@ -60,6 +75,8 @@ export const REMOVE_LINE_COLUMN = 'REMOVE_LINE_COLUMN';
 export const ADD_LINE_ROW = 'ADD_LINE_ROW';
 export const REMOVE_LINE_ROW = 'REMOVE_LINE_ROW';
 export const RESIZE_LINE_POINT = 'RESIZE_LINE_POINT';
+export const MOVE_LINE_COLUMN = 'MOVE_LINE_COLUMN';
+export const MOVE_LINE_ROW = 'MOVE_LINE_ROW';
 
 export const defaultColumn = [null, null, null, null, null, null, null, null];
 export const defaultLine: Line = {
@@ -101,7 +118,17 @@ export const addLineColumn = (x: number | undefined) => ({ type: ADD_LINE_COLUMN
 export const removeLineColumn = (x: number) => ({ type: REMOVE_LINE_COLUMN, i: x });
 export const addLineRow = (y: number | undefined) => ({ type: ADD_LINE_ROW, i: y });
 export const removeLineRow = (y: number) => ({ type: REMOVE_LINE_ROW, i: y });
-export const resizeLinePoint = (coord: number[], axis: Axis) => ({
+export const moveLineColumn = (from: number, to: number) => ({
+	type: MOVE_LINE_COLUMN,
+	from,
+	to,
+});
+export const moveLineRow = (from: number, to: number) => ({
+	type: MOVE_LINE_ROW,
+	from,
+	to,
+});
+export const resizeLinePoint =(coord: number[], axis: Axis) => ({
 	type: RESIZE_LINE_POINT,
 	coord,
 	axis,
@@ -202,6 +229,29 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>): Lin
 			columns.forEach((col: LineColumn) => col.splice(at, 1));
 			const levels = getLineLevels(line).filter((level, i) => i !== at);
 			return { ...line, columns, size: line.size - 1, levels };
+		}
+
+		case MOVE_LINE_COLUMN: {
+			const { from, to } = action;
+			if (from === to || !line.columns[from] || to < 0 || to >= line.columns.length) {
+				return line;
+			}
+			const shift = moveIndexShift(from, to);
+			columns = remapGridFrom(line.columns, pos => [shift(pos[0]), 0]);
+			return { ...line, columns: moveItem(columns, from, to) };
+		}
+
+		case MOVE_LINE_ROW: {
+			const { from, to } = action;
+			if (from === to || from < 0 || to < 0 || from >= line.size || to >= line.size) {
+				return line;
+			}
+			const shift = moveIndexShift(from, to);
+			columns = remapGridFrom(line.columns, pos => [0, shift(pos[1])]).map(col =>
+				moveItem(col, from, to)
+			);
+			const levels = moveItem(getLineLevels(line), from, to);
+			return { ...line, columns, levels };
 		}
 
 		case RESIZE_LINE_POINT: {

@@ -5,12 +5,22 @@ import { addLineRow, removeLineRow, setLineValue } from '@/reducers/lineReducer'
 import { getLineLevels } from '@/functions/line';
 import Icon from '../Icon';
 import Line from '@/types/Line';
+import { makeClassName } from '@/functions';
 
 interface Props {
 	line: Line;
 }
 const LineLevels: React.FC<Props> = ({ line }) => {
-	const { handleEdit, handleUpdate } = useContext(GridContext);
+	const {
+		handleEdit,
+		handleUpdate,
+		reorder,
+		handleAxisDragStart,
+		handleAxisDragOver,
+		handleAxisDrop,
+		handleDragEnd,
+	} = useContext(GridContext);
+	const rowReorder = reorder?.axis === 'row' ? reorder : null;
 	const [editingIndex, setEditingIndex] = useState<number | null>(null);
 
 	const levelsPicked = useMemo(() => getLineLevels(line), [line]);
@@ -63,8 +73,16 @@ const LineLevels: React.FC<Props> = ({ line }) => {
 			{levelsPicked.map((level, i) => (
 				<div
 					key={i}
-					className="level click"
+					className={makeClassName(
+						'level click',
+						rowReorder?.from === i && 'dragging',
+						rowReorder?.over === i && rowReorder.from !== i && 'drop-target'
+					)}
 					onClick={e => handleLevelClick(e, i)}
+					onDragOver={
+						handleAxisDragOver ? e => handleAxisDragOver(e, 'row', i) : undefined
+					}
+					onDrop={handleAxisDrop ? e => handleAxisDrop(e, 'row', i) : undefined}
 				>
 					{!!handleEdit && editingIndex !== i && (
 						<>
@@ -93,6 +111,19 @@ const LineLevels: React.FC<Props> = ({ line }) => {
 							>
 								<Icon name="trash3-fill" />
 							</Button>
+							{!!handleAxisDragStart && (
+								<Button
+									variant="secondary"
+									className="grip"
+									title="drag to move row"
+									draggable
+									onClick={e => e.stopPropagation()}
+									onDragStart={e => handleAxisDragStart(e, 'row', i)}
+									onDragEnd={handleDragEnd}
+								>
+									<Icon name="grip-horizontal" />
+								</Button>
+							)}
 						</>
 					)}
 					{editingIndex === i ?
