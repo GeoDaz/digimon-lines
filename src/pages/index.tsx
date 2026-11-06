@@ -69,11 +69,11 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 					community.
 				</p>
 				<div className="home-actions mb-3">
-					<Link href="/lines" className="btn btn-primary btn-lg">
-						Browse the lines <Icon name="arrow-right" />
-					</Link>
-					<Link href="/build" className="btn btn-outline-primary btn-lg">
+					<Link href="/build" className="btn btn-primary btn-lg">
 						<Icon name="diagram-2-fill" /> Build a line
+					</Link>
+					<Link href="/lines" className="btn btn-primary btn-lg">
+						<Icon name="grid-3x3-gap-fill" /> Browse the lines
 					</Link>
 				</div>
 				<div className="home-actions">
