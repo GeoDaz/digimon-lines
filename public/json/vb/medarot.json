@@ -5,24 +5,20 @@
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "greymon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[1, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "greywars",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fire"]
 			},
+			null,
 			null
 		],
 		[
@@ -31,123 +27,81 @@
 			},
 			{
 				"name": "medal",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "tinpet",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "garurumon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "garurumetal",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"gold"
-				]
+				"from": [[0, -1.5]],
+				"color": ["gold"]
 			},
 			{
 				"name": "omegaknight",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"x"
-				]
-			}
+				"from": [[-1, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "metabee",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[-1, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "metabee",
-				"from": [
-					[-2, -1],
-					[-1, -1],
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"fire",
-					"gold",
-					"marine",
-					"machine"
-				]
+				"from": [[-2, -1.5], [-1, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["fire", "gold", "marine", "machine"]
 			},
 			{
 				"name": "omedamon",
-				"from": [
-					[-2, -1],
-					[-1, -1],
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"x",
-					"ice",
-					"marine",
-					"machine"
-				]
-			}
+				"from": [[-2, -1.5], [-1, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["x", "ice", "marine", "machine"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "rokusho",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[-2, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "rokusho",
-				"from": [
-					[-3, -1],
-					[-2, -1],
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"gold",
-					"marine",
-					"machine"
-				]
+				"from": [[-3, -1.5], [-2, -1.5], [-1, -1.5], [0, -1.5]],
+				"color": ["fire", "gold", "marine", "machine"]
 			},
+			null,
 			null
 		]
-	]
+	],
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }

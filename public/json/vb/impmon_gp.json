@@ -7,15 +7,15 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "beelzebumon_2",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
-			}
+				"from": [[1, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			{
@@ -23,49 +23,35 @@
 			},
 			{
 				"name": "yaamon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "impmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "wizardmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "baalmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"grass"
-				]
+				"from": [[0, -1.5]],
+				"color": ["grass"]
 			},
 			{
 				"name": "beelzebumon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
-			}
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			null,
@@ -73,15 +59,16 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "beelzebumon_blast_mode",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"x"
-				]
-			}
+				"from": [[-1, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
+			null
 		]
-	]
+	],
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }

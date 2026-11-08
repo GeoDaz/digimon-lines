@@ -10,7 +10,7 @@
 			null,
 			{
 				"name": "kyukimon",
-				"from": [[1, -2], [3, -2]],
+				"from": [[1, -1.5], [3, -1.5]],
 				"color": ["gold", "fusion"]
 			},
 			null,
@@ -20,29 +20,31 @@
 		[
 			null,
 			null,
-			{
-				"name": "kudamon",
-				"from": [[1, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "kudamon",
+				"from": [[1, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "reppamon",
-				"from": [[0, -2], [4, -2]],
-				"color": ["gold", "grass"]
+				"from": [[0, -1.5], [4, -1.5]],
+				"color": ["gold", "grass"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "chirinmon",
-				"from": [[0, -2], [4, -2]],
+				"from": [[0, -1.5], [4, -1.5]],
 				"color": ["gold", "slide"]
 			},
-			null,
 			{
 				"name": "mitamamon",
-				"from": [[0, -2], [-1, -2]],
-				"color": ["gold", "fusion"]
+				"from": [[0, -1.5], [-1, -1.5]],
+				"color": ["gold", "fusion"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -52,35 +54,38 @@
 			},
 			{
 				"name": "bibimon",
-				"from": [[0, -1]],
-				"color": ["x"]
-			},
-			{
-				"name": "pulsemon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
 			null,
 			{
+				"name": "pulsemon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "bulkmon",
-				"from": [[0, -2], [3, -2]],
-				"color": ["fire", "grass"]
+				"from": [[0, -1.5], [3, -1.5]],
+				"color": ["fire", "grass"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "boutmon",
-				"from": [[0, -2], [2, -2], [3, -2]],
+				"from": [[0, -1.5], [2, -1.5], [3, -1.5]],
 				"color": ["fire", "grass", "slide"]
+			},
+			{
+				"name": "kazuchimon",
+				"from": [[0, -1.5], [3, -1.5]],
+				"color": ["fire", "grass"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "kazuchimon",
-				"from": [[0, -2], [3, -2]],
-				"color": ["fire", "grass"]
-			},
-			{
 				"name": "fenriloogamon_takemikazuchi",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["fire"]
 			}
 		],
@@ -91,21 +96,23 @@
 			null,
 			{
 				"name": "bladekuwagamon",
-				"from": [[-2, -2]],
-				"color": ["gold"]
+				"from": [[-2, -1.5]],
+				"color": ["gold"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "metallifekuwagamon",
-				"from": [[-1, -2], [1, -2], [2, -2]],
+				"from": [[-1, -1.5], [1, -1.5], [2, -1.5]],
 				"color": ["fire", "grass", "slide"]
 			},
-			null,
 			{
 				"name": "raidenmon",
-				"from": [[-2, -2], [1, -2], [0, -2]],
-				"color": ["gold", "mode", "dark"]
+				"from": [[-2, -1.5], [1, -1.5], [0, -1.5]],
+				"color": ["gold", "mode", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -115,49 +122,53 @@
 			null,
 			{
 				"name": "thunderballmon",
-				"from": [[-2, -2], [-3, -2]],
-				"color": ["fire", "gold"]
+				"from": [[-2, -1.5], [-3, -1.5]],
+				"color": ["fire", "gold"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "giromon",
-				"from": [[-3, -2], [-1, -2], [0, -2]],
+				"from": [[-3, -1.5], [-1, -1.5], [0, -1.5]],
 				"color": ["gold", "fusion", "grass"]
 			},
-			null,
 			{
 				"name": "raijinmon",
-				"from": [[0, -2], [-4, -2], [-1, -2]],
-				"color": ["mode", "fusion", "dark"]
+				"from": [[0, -1.5], [-4, -1.5], [-1, -1.5]],
+				"color": ["mode", "fusion", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
 			null,
 			null,
-			{
-				"name": "shoutmon",
-				"from": [[-3, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "shoutmon",
+				"from": [[-3, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "shoutmon_x4",
-				"from": [[-3, -2], [0, -2]],
-				"color": ["fire", "grass"]
+				"from": [[-3, -1.5], [0, -1.5]],
+				"color": ["fire", "grass"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "omegashoutmon",
-				"from": [[-3, -2], [0, -2]],
+				"from": [[-3, -1.5], [0, -1.5]],
 				"color": ["fire", "slide"]
 			},
-			null,
 			{
 				"name": "shoutmon_dx",
-				"from": [[-3, -2], [0, -2]],
-				"color": ["fire", "grass"]
+				"from": [[-3, -1.5], [0, -1.5]],
+				"color": ["fire", "grass"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "shoutmon_x7",
 				"from": [[0, -3]],
@@ -169,13 +180,13 @@
 	"levels": [
 		"baby I",
 		"baby II",
-		"rookie",
 		"",
+		"rookie",
 		"champion",
 		"",
 		"ultimate",
-		"",
 		"mega",
+		"",
 		"mega+"
 	]
 }

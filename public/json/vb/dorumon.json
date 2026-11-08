@@ -8,21 +8,23 @@
 			null,
 			{
 				"name": "dexdorugamon",
-				"from": [[2, -2], [3, -2]],
-				"color": ["grass", "fusion"]
+				"from": [[2, -1.5], [3, -1.5]],
+				"color": ["grass", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "dexdorugreymon",
-				"from": [[1, -2], [0, -2], [2, -2]],
+				"from": [[1, -1.5], [0, -1.5], [2, -1.5]],
 				"color": ["grass", "fusion", "gold"]
 			},
-			null,
 			{
 				"name": "dexdorugoramon",
-				"from": [[1, -2], [0, -2], [2, -2]],
-				"color": ["grass", "fusion", "fire"]
+				"from": [[1, -1.5], [0, -1.5], [2, -1.5]],
+				"color": ["grass", "fusion", "fire"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -32,21 +34,23 @@
 			null,
 			{
 				"name": "dorugamon",
-				"from": [[1, -2]],
-				"color": ["grass"]
+				"from": [[1, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "dorugreymon",
-				"from": [[0, -2], [-1, -2], [1, -2]],
+				"from": [[0, -1.5], [-1, -1.5], [1, -1.5]],
 				"color": ["grass", "fusion", "gold"]
 			},
-			null,
 			{
 				"name": "dorugoramon",
-				"from": [[0, -2], [-1, -2], [1, -2]],
-				"color": ["grass", "fusion", "fire"]
+				"from": [[0, -1.5], [-1, -1.5], [1, -1.5]],
+				"color": ["grass", "fusion", "fire"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -56,64 +60,69 @@
 			},
 			{
 				"name": "dorimon",
-				"from": [[0, -1]],
-				"color": ["x"]
-			},
-			{
-				"name": "dorumon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
 			null,
 			{
+				"name": "dorumon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "raptordramon",
-				"from": [[0, -2]],
-				"color": ["grass"]
+				"from": [[0, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "grademon",
-				"from": [[-1, -2], [0, -2]],
+				"from": [[-1, -1.5], [0, -1.5]],
 				"color": ["grass", "gold"]
+			},
+			{
+				"name": "alphamon",
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["grass", "fire"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "alphamon",
-				"from": [[-1, -2], [0, -2]],
-				"color": ["grass", "fire"]
-			},
-			{
 				"name": "alphamon_ouryuken",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["fire"]
 			}
 		],
 		[
 			null,
 			null,
-			{
-				"name": "agumon_black",
-				"from": [[-1, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "agumon_black",
+				"from": [[-1, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "darktyranomon",
-				"from": [[0, -2]],
-				"color": ["fusion"]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "metaltyranomon",
-				"from": [[-3, -2], [0, -2], [1, -2]],
+				"from": [[-3, -1.5], [0, -1.5], [1, -1.5]],
 				"color": ["fusion", "dark", "fire"]
 			},
-			null,
 			{
 				"name": "machinedramon",
-				"from": [[0, -2], [1, -2]],
-				"color": ["dark", "dark"]
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["dark", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -123,21 +132,23 @@
 			null,
 			{
 				"name": "airdramon",
-				"from": [[-1, -2]],
-				"color": ["fusion"]
+				"from": [[-1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "megadramon",
-				"from": [[-1, -2], [0, -2]],
+				"from": [[-1, -1.5], [0, -1.5]],
 				"color": ["dark", "fire"]
 			},
-			null,
 			{
 				"name": "metalseadramon",
-				"from": [[0, -2], [1, -2]],
-				"color": ["dark", "earth"]
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["dark", "earth"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -149,15 +160,16 @@
 			null,
 			{
 				"name": "gigadramon",
-				"from": [[-2, -2], [-1, -2]],
+				"from": [[-2, -1.5], [-1, -1.5]],
 				"color": ["dark", "fire"]
 			},
-			null,
 			{
 				"name": "gundramon",
-				"from": [[-2, -2], [0, -2]],
-				"color": ["dark", "earth"]
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["dark", "earth"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -168,12 +180,13 @@
 			null,
 			null,
 			null,
-			null,
 			{
 				"name": "chaosdramon",
-				"from": [[-6, -2], [-3, -2]],
-				"color": ["fusion", "dark"]
+				"from": [[-6, -1.5], [-3, -1.5]],
+				"color": ["fusion", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		]
 	],
@@ -181,13 +194,13 @@
 	"levels": [
 		"baby I",
 		"baby II",
-		"rookie",
 		"",
+		"rookie",
 		"champion",
 		"",
 		"ultimate",
-		"",
 		"mega",
+		"",
 		"mega+"
 	]
 }

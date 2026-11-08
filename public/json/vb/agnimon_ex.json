@@ -5,72 +5,51 @@
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "agunimon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[1, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "aldamon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
+			null,
 			null,
 			null
 		],
 		[
 			null,
 			null,
+			null,
 			{
 				"name": "flamon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[1, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "meramon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "burninggreymon",
-				"from": [
-					[0, -1],
-					[-1, -1]
-				],
-				"color": [
-					"grass",
-					"x"
-				]
+				"from": [[0, -1.5], [-1, -1.5]],
+				"color": ["grass", "x"]
 			},
 			{
 				"name": "emperorgreymon",
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"x",
-					"ice",
-					"grass"
-				]
+				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["x", "ice", "grass"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -79,102 +58,65 @@
 			},
 			{
 				"name": "demimeramon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "gottsumon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "starmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"grass"
-				]
+				"from": [[0, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "superstarmon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"slide",
-					"ice"
-				]
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["slide", "ice"]
 			},
 			{
 				"name": "ancientgreymon",
-				"from": [
-					[-2, -1],
-					[-1, -1],
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"x",
-					"ice",
-					"marine",
-					"fusion"
-				]
+				"from": [[-2, -1.5], [-1, -1.5], [1, -1.5], [2, -1.5]],
+				"color": ["x", "ice", "marine", "fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "susanomon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[-1, -1.5]],
+				"color": ["x"]
 			}
 		],
 		[
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "grottemon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"grass"
-				]
+				"from": [[-1, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "gigasmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"ice"
-				]
+				"from": [[0, -1.5]],
+				"color": ["ice"]
 			},
 			{
 				"name": "ancientvolcamon",
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"grass",
-					"marine",
-					"fusion"
-				]
+				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["grass", "marine", "fusion"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -182,19 +124,28 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "darksuperstarmon",
-				"from": [
-					[-3, -1],
-					[-2, -1]
-				],
-				"color": [
-					"grass",
-					"slide"
-				]
+				"from": [[-3, -1.5], [-2, -1.5]],
+				"color": ["grass", "slide"]
 			},
+			null,
 			null,
 			null
 		]
+	],
+	"levels": [
+		"baby I",
+		"baby II",
+		"",
+		"rookie",
+		"champion",
+		"",
+		"ultimate",
+		"mega",
+		"",
+		"mega+"
 	]
 }

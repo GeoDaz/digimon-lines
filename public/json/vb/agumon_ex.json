@@ -6,17 +6,14 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "metalgreymon",
-				"from": [
-					[1, -1],
-					[4, -1]
-				],
-				"color": [
-					"fire",
-					"dark"
-				]
+				"from": [[1, -1.5], [4, -1.5]],
+				"color": ["fire", "dark"]
 			},
+			null,
 			null,
 			null
 		],
@@ -24,43 +21,26 @@
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "greymon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[1, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "andromon",
-				"from": [
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"grass",
-					"fusion"
-				]
+				"from": [[1, -1.5], [2, -1.5]],
+				"color": ["grass", "fusion"]
 			},
 			{
 				"name": "blitzgreymon",
-				"from": [
-					[-1, -1],
-					[1, -1],
-					[2, -1],
-					[3, -1],
-					[4, -1]
-				],
-				"color": [
-					"fire",
-					"grass",
-					"slide",
-					"fusion",
-					"dark"
-				]
+				"from": [[-1, -1.5], [1, -1.5], [2, -1.5], [3, -1.5], [4, -1.5]],
+				"color": ["fire", "grass", "slide", "fusion", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -69,151 +49,115 @@
 			},
 			{
 				"name": "koromon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "agumon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "coelamon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "anomalocarimon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"grass"
-				]
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["fire", "grass"]
 			},
 			{
 				"name": "donedevimon",
-				"from": [
-					[-1, -1],
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"gold",
-					"slide",
-					"fusion"
-				]
+				"from": [[-1, -1.5], [1, -1.5], [2, -1.5]],
+				"color": ["gold", "slide", "fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "omegamon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[1, -1.5]],
+				"color": ["fire"]
 			}
 		],
 		[
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "ogremon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[-1, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "mamemon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"fusion",
-					"dark"
-				]
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["fusion", "dark"]
 			},
 			{
 				"name": "wargreymon",
-				"from": [
-					[-3, -1],
-					[-2, -1],
-					[-1, -1],
-					[2, -1]
-				],
-				"color": [
-					"fire",
-					"gold",
-					"grass",
-					"dark"
-				]
+				"from": [[-3, -1.5], [-2, -1.5], [-1, -1.5], [2, -1.5]],
+				"color": ["fire", "gold", "grass", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "algomon_adult",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[-2, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "neodevimon",
-				"from": [
-					[-2, -1],
-					[-1, -1]
-				],
-				"color": [
-					"grass",
-					"fusion"
-				]
+				"from": [[-2, -1.5], [-1, -1.5]],
+				"color": ["grass", "fusion"]
 			},
+			null,
 			null,
 			null
 		],
 		[
+			null,
+			null,
 			null,
 			null,
 			null,
 			null,
 			{
 				"name": "metaltyranomon",
-				"from": [
-					[-4, -1],
-					[-1, -1]
-				],
-				"color": [
-					"fire",
-					"dark"
-				]
+				"from": [[-4, -1.5], [-1, -1.5]],
+				"color": ["fire", "dark"]
 			},
+			null,
 			null,
 			null
 		]
+	],
+	"levels": [
+		"baby I",
+		"baby II",
+		"",
+		"rookie",
+		"champion",
+		"",
+		"ultimate",
+		"mega",
+		"",
+		"mega+"
 	]
 }

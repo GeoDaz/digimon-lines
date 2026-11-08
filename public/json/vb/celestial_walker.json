@@ -8,52 +8,56 @@
 			null,
 			{
 				"name": "garurumon_black",
-				"from": [[1, -2]],
-				"color": ["dark"]
+				"from": [[1, -1.5]],
+				"color": ["dark"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "weregarurumon_black",
-				"from": [[0, -2], [1, -2]],
+				"from": [[0, -1.5], [1, -1.5]],
 				"color": ["dark"]
 			},
-			null,
 			{
 				"name": "mercurymon",
-				"from": [[3, -2], [0, -2]],
-				"color": ["fire", "dark"]
+				"from": [[3, -1.5], [0, -1.5]],
+				"color": ["fire", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
 			null,
 			null,
-			{
-				"name": "elecmon",
-				"from": [[2, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "elecmon",
+				"from": [[2, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "aegiomon",
-				"from": [[4, -2], [0, -2]],
-				"color": ["fusion"]
+				"from": [[4, -1.5], [0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "aegiochusmon",
-				"from": [[0, -2]],
+				"from": [[0, -1.5]],
 				"color": ["gold"]
+			},
+			{
+				"name": "jupitermon",
+				"from": [[0, -1.5]],
+				"color": ["gold"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "jupitermon",
-				"from": [[0, -2]],
-				"color": ["gold"]
-			},
-			{
 				"name": "jupitermon_wrath_mode",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["gold"]
 			}
 		],
@@ -64,23 +68,25 @@
 			null,
 			{
 				"name": "blimpmon",
-				"from": [[1, -2]]
+				"from": [[1, -1.5]],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "masterblimpmon",
-				"from": [[0, -2]],
+				"from": [[0, -1.5]],
 				"color": ["grass"]
+			},
+			{
+				"name": "vulcanusmon",
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["gold", "grass"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "vulcanusmon",
-				"from": [[-1, -2], [0, -2]],
-				"color": ["gold", "grass"]
-			},
-			{
 				"name": "gracenovamon",
-				"from": [[0.5, -1]],
+				"from": [[0.5, -1.5]],
 				"color": ["gold"],
 				"xSize": 2
 			}
@@ -92,35 +98,38 @@
 			},
 			{
 				"name": "sunmon",
-				"from": [[0, -1]],
-				"color": ["x"]
-			},
-			{
-				"name": "coronamon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
 			null,
 			{
+				"name": "coronamon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "firamon",
-				"from": [[0, -2]],
-				"color": ["fire"]
+				"from": [[0, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "flaremon",
-				"from": [[0, -2]],
+				"from": [[0, -1.5]],
 				"color": ["fire"]
+			},
+			{
+				"name": "apollomon",
+				"from": [[0, -1.5], [-2, -1.5]],
+				"color": ["fire", "gold"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "apollomon",
-				"from": [[0, -2], [-2, -2]],
-				"color": ["fire", "gold"]
-			},
-			{
 				"name": "apollomon_whispered",
-				"from": [[-0.5, -1]],
+				"from": [[-0.5, -1.5]],
 				"color": ["dark"],
 				"xSize": 2
 			}
@@ -132,51 +141,55 @@
 			null,
 			{
 				"name": "coelamon",
-				"from": [[1, -2]]
+				"from": [[1, -1.5]],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "skullseadramon",
-				"from": [[0, -2], [2, -2]],
+				"from": [[0, -1.5], [2, -1.5]],
 				"color": ["slide", "x"]
 			},
-			null,
 			{
 				"name": "kingwhamon",
-				"from": [[0, -2], [2, -2]],
-				"color": ["dark", "marine"]
+				"from": [[0, -1.5], [2, -1.5]],
+				"color": ["dark", "marine"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
 			null,
 			null,
-			{
-				"name": "snakemon",
-				"from": [[-2, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "snakemon",
+				"from": [[-2, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "vipermon",
-				"from": [[0, -2]],
-				"color": ["fusion"]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "ambromon",
-				"from": [[0, -2], [2, -2]],
+				"from": [[0, -1.5], [2, -1.5]],
 				"color": ["fusion"]
+			},
+			{
+				"name": "bacchusmon",
+				"from": [[0, -1.5], [2, -1.5], [1, -1.5]],
+				"color": ["fusion", "grass", "marine"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "bacchusmon",
-				"from": [[0, -2], [2, -2], [1, -2]],
-				"color": ["fusion", "grass", "marine"]
-			},
-			{
 				"name": "bacchusmon_drunk",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["fusion"]
 			}
 		],
@@ -187,20 +200,22 @@
 			null,
 			{
 				"name": "tylomon",
-				"from": [[-1, -2]]
+				"from": [[-1, -1.5]],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "sharkmon",
-				"from": [[0, -2]],
+				"from": [[0, -1.5]],
 				"color": ["x"]
 			},
-			null,
 			{
 				"name": "neptunemon",
-				"from": [[-2, -2], [0, -2]],
-				"color": ["dark", "marine"]
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["dark", "marine"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -210,23 +225,25 @@
 			null,
 			{
 				"name": "ogremon",
-				"from": [[-6, -2]]
+				"from": [[-6, -1.5]],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "digitamamon",
-				"from": [[0, -2]],
+				"from": [[0, -1.5]],
 				"color": ["earth"]
+			},
+			{
+				"name": "titamon",
+				"from": [[0, -1.5], [-3, -1.5]],
+				"color": ["grass", "dark"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "titamon",
-				"from": [[0, -2], [-3, -2]],
-				"color": ["grass", "dark"]
-			},
-			{
 				"name": "titamon_skullbaluchimon",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["earth"]
 			}
 		]
@@ -235,13 +252,13 @@
 	"levels": [
 		"baby I",
 		"baby II",
-		"rookie",
 		"",
+		"rookie",
 		"champion",
 		"",
 		"ultimate",
-		"",
 		"mega",
+		"",
 		"mega+"
 	]
 }

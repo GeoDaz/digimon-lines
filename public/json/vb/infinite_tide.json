@@ -6,32 +6,40 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "dagomon",
-				"from": [[2, -1], [1, -1]],
+				"from": [[2, -1.5], [1, -1.5]],
 				"color": ["slide", "fusion"]
 			},
+			null,
 			null
 		],
 		[
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "octomon",
-				"from": [[1, -1]],
-				"color": ["grass"]
+				"from": [[1, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "marinekimeramon",
-				"from": [[2, -1], [0, -1]],
+				"from": [[2, -1.5], [0, -1.5]],
 				"color": ["grass", "fusion"]
 			},
 			{
 				"name": "plesiomon",
-				"from": [[0, -1], [2, -1], [-1, -1]],
-				"color": ["gold", "slide", "dark"]
-			}
+				"from": [[0, -1.5], [2, -1.5], [-1, -1.5]],
+				"color": ["gold", "slide", "dark"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			{
@@ -40,82 +48,102 @@
 			},
 			{
 				"name": "pukamon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "sangomon",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["x"]
 			},
 			{
 				"name": "shellmon",
-				"from": [[0, -1]],
-				"color": ["grass"]
+				"from": [[0, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "mermaimon",
-				"from": [[2, -1], [0, -1]],
+				"from": [[2, -1.5], [0, -1.5]],
 				"color": ["fire", "slide"]
 			},
 			{
 				"name": "neptunemon",
-				"from": [[3, -1], [0, -1], [2, -1]],
-				"color": ["fire", "grass", "fusion"]
-			}
+				"from": [[3, -1.5], [0, -1.5], [2, -1.5]],
+				"color": ["fire", "grass", "fusion"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "seadramon",
-				"from": [[-1, -1]],
-				"color": ["grass"]
+				"from": [[-1, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "megaseadramon",
-				"from": [[0, -1], [-2, -1]],
+				"from": [[0, -1.5], [-2, -1.5]],
 				"color": ["grass", "fusion"]
 			},
 			{
 				"name": "metalseadramon",
-				"from": [[-1, -1], [0, -1], [-3, -1]],
-				"color": ["grass", "slide", "dark"]
-			}
+				"from": [[-1, -1.5], [0, -1.5], [-3, -1.5]],
+				"color": ["grass", "slide", "dark"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "tobiumon",
-				"from": [[-2, -1]],
-				"color": ["grass"]
+				"from": [[-2, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "piranimon",
-				"from": [[0, -1], [-1, -1]],
+				"from": [[0, -1.5], [-1, -1.5]],
 				"color": ["fire", "grass"]
 			},
 			{
 				"name": "regalecusmon",
-				"from": [[1, -1], [-3, -1], [0, -1]],
-				"color": ["fire", "gold", "fusion"]
-			}
+				"from": [[1, -1.5], [-3, -1.5], [0, -1.5]],
+				"color": ["fire", "gold", "fusion"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
+			null,
 			null,
 			null,
 			null,
 			null,
 			{
 				"name": "gusokumon",
-				"from": [[-1, -1], [-3, -1]],
+				"from": [[-1, -1.5], [-3, -1.5]],
 				"color": ["fire", "slide"]
 			},
+			null,
 			null
 		]
 	],
-	"size": 6
+	"size": 9,
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }

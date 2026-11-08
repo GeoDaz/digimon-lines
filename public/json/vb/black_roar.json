@@ -7,58 +7,52 @@
 			},
 			{
 				"name": "koromon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "agumon_black",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "greymon_blue",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "metalgreymon_blue",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fusion"]
 			},
 			{
 				"name": "black_wargreymon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "omegamon_zwart",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fusion"]
 			}
 		]
+	],
+	"levels": [
+		"baby I",
+		"baby II",
+		"",
+		"rookie",
+		"champion",
+		"",
+		"ultimate",
+		"mega",
+		"",
+		"mega+"
 	]
 }

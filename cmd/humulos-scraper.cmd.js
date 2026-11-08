@@ -170,6 +170,12 @@ const parseChart = anchor => {
 	return { title, levels };
 };
 
+const LEVEL_NAMES = ['baby I', 'baby II', 'rookie', 'champion', 'ultimate', 'mega', 'mega+'];
+
+const rowOf = level => level + Math.floor(level / 2);
+const isDouble = level => level % 2 === 1;
+const centerRow = level => rowOf(level) + (isDouble(level) ? 0.5 : 0);
+
 const toLine = ({ title, levels }) => {
 	const width = Math.max(...levels.map(nodes => nodes.length));
 	const positions = {};
@@ -181,7 +187,9 @@ const toLine = ({ title, levels }) => {
 			byKey[node.key] = node;
 		});
 	});
-	const columns = Array.from({ length: width }, () => Array(levels.length).fill(null));
+	const last = levels.length - 1;
+	const size = rowOf(last) + (isDouble(last) ? 2 : 1);
+	const columns = Array.from({ length: width }, () => Array(size).fill(null));
 	levels.forEach((nodes, level) => {
 		const previous = levels[level - 1] || [];
 		nodes.forEach((node, i) => {
@@ -203,21 +211,25 @@ const toLine = ({ title, levels }) => {
 			if (parents.length) {
 				point.from = parents.map(parent => [
 					positions[parent].lane - lane,
-					positions[parent].level - level,
+					centerRow(positions[parent].level) - centerRow(level),
 				]);
 				const colors = parents.map(
 					parent => node.colors[parent] || byKey[parent].color || 'default'
 				);
 				if (colors.some(color => color !== 'default')) point.color = colors;
 			}
-			columns[lane][level] = point;
+			if (isDouble(level)) point.ySize = 2;
+			columns[lane][rowOf(level)] = point;
 		});
 	});
-	return { title, columns };
+	const names = levels.flatMap((nodes, level) =>
+		isDouble(level) ? [LEVEL_NAMES[level] || '', ''] : [LEVEL_NAMES[level] || '']
+	);
+	return { title, columns, levels: names };
 };
 
 const stringify = value =>
-	JSON.stringify(value, null, '\t').replace(/\[\s+(-?\d+),\s+(-?\d+)\s+\]/g, '[$1, $2]') + '\n';
+	JSON.stringify(value, null, '\t').replace(/\[\s+(-?[\d.]+),\s+(-?[\d.]+)\s+\]/g, '[$1, $2]') + '\n';
 
 const main = () => {
 	const index = [];

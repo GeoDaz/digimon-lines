@@ -6,32 +6,40 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "groundramon",
-				"from": [[4, -1], [1, -1]],
+				"from": [[4, -1.5], [1, -1.5]],
 				"color": ["grass", "slide"]
 			},
+			null,
 			null
 		],
 		[
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "tyranomon",
-				"from": [[1, -1]],
-				"color": ["fusion"]
+				"from": [[1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "mastertyranomon",
-				"from": [[2, -1], [0, -1]],
+				"from": [[2, -1.5], [0, -1.5]],
 				"color": ["fire", "slide"]
 			},
 			{
 				"name": "cannondramon",
-				"from": [[0, -1], [1, -1], [-1, -1]],
-				"color": ["fire", "fusion", "dark"]
-			}
+				"from": [[0, -1.5], [1, -1.5], [-1, -1.5]],
+				"color": ["fire", "fusion", "dark"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			{
@@ -40,82 +48,102 @@
 			},
 			{
 				"name": "demimeramon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "vorvomon",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["x"]
 			},
 			{
 				"name": "lavorvomon",
-				"from": [[0, -1]],
-				"color": ["fusion"]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "lavogaritamon",
-				"from": [[1, -1], [0, -1]],
+				"from": [[1, -1.5], [0, -1.5]],
 				"color": ["fire", "fusion"]
 			},
 			{
 				"name": "volcanicdramon",
-				"from": [[-1, -1], [1, -1], [0, -1]],
-				"color": ["fire", "slide", "fusion"]
-			}
+				"from": [[-1, -1.5], [1, -1.5], [0, -1.5]],
+				"color": ["fire", "slide", "fusion"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "birdramon",
-				"from": [[-1, -1]],
-				"color": ["fusion"]
+				"from": [[-1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "volcamon",
-				"from": [[0, -1], [-1, -1]],
+				"from": [[0, -1.5], [-1, -1.5]],
 				"color": ["fire", "fusion"]
 			},
 			{
 				"name": "ancientvolcamon",
-				"from": [[2, -1], [1, -1], [0, -1]],
-				"color": ["gold", "grass", "slide"]
-			}
+				"from": [[2, -1.5], [1, -1.5], [0, -1.5]],
+				"color": ["gold", "grass", "slide"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "meramon",
-				"from": [[-2, -1]],
-				"color": ["fusion"]
+				"from": [[-2, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "deathmeramon",
-				"from": [[0, -1], [-3, -1]],
+				"from": [[0, -1.5], [-3, -1.5]],
 				"color": ["grass", "slide"]
 			},
 			{
 				"name": "marsmon",
-				"from": [[1, -1], [0, -1], [-4, -1]],
-				"color": ["gold", "grass", "dark"]
-			}
+				"from": [[1, -1.5], [0, -1.5], [-4, -1.5]],
+				"color": ["gold", "grass", "dark"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
+			null,
 			null,
 			null,
 			null,
 			null,
 			{
 				"name": "flaremon",
-				"from": [[-1, -1], [-3, -1]],
+				"from": [[-1, -1.5], [-3, -1.5]],
 				"color": ["grass", "fusion"]
 			},
+			null,
 			null
 		]
 	],
-	"size": 6
+	"size": 9,
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }

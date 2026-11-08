@@ -8,21 +8,23 @@
 			null,
 			{
 				"name": "deltamon",
-				"from": [[1, -2]],
-				"color": ["fire"]
+				"from": [[1, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "orochimon",
-				"from": [[1, -2], [2, -2], [0, -2]],
+				"from": [[1, -1.5], [2, -1.5], [0, -1.5]],
 				"color": ["fire", "fusion", "dark"]
 			},
-			null,
 			{
 				"name": "nidhoggmon",
-				"from": [[1, -2], [0, -2]],
-				"color": ["fire", "dark"]
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["fire", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -32,64 +34,69 @@
 			},
 			{
 				"name": "kyokyomon",
-				"from": [[0, -1]],
-				"color": ["x"]
-			},
-			{
-				"name": "ryudamon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
 			null,
 			{
+				"name": "ryudamon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "ginryumon",
-				"from": [[0, -2]],
-				"color": ["fire"]
+				"from": [[0, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "hisyaryumon",
-				"from": [[0, -2], [3, -2], [2, -2]],
+				"from": [[0, -1.5], [3, -1.5], [2, -1.5]],
 				"color": ["fire", "dark", "earth"]
+			},
+			{
+				"name": "ouryumon",
+				"from": [[0, -1.5], [1, -1.5], [2, -1.5]],
+				"color": ["fire", "fusion", "earth"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "ouryumon",
-				"from": [[0, -2], [1, -2], [2, -2]],
-				"color": ["fire", "fusion", "earth"]
-			},
-			{
 				"name": "alphamon_ouryuken",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["fire"]
 			}
 		],
 		[
 			null,
 			null,
-			{
-				"name": "commandramon",
-				"from": [[-1, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "commandramon",
+				"from": [[-1, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "hicommandramon",
-				"from": [[0, -2]],
-				"color": ["fusion"]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "cargodramon",
-				"from": [[-1, -2], [0, -2], [1, -2]],
+				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
 				"color": ["fire", "fusion", "earth"]
 			},
-			null,
 			{
 				"name": "brigadramon",
-				"from": [[-1, -2], [0, -2], [1, -2]],
-				"color": ["fire", "fusion", "earth"]
+				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["fire", "fusion", "earth"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -99,21 +106,23 @@
 			null,
 			{
 				"name": "sealsdramon",
-				"from": [[-1, -2]],
-				"color": ["fusion"]
+				"from": [[-1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "tankdramon",
-				"from": [[-1, -2], [0, -2]],
+				"from": [[-1, -1.5], [0, -1.5]],
 				"color": ["fusion", "earth"]
 			},
-			null,
 			{
 				"name": "darkdramon",
-				"from": [[-1, -2], [0, -2]],
-				"color": ["fusion", "earth"]
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["fusion", "earth"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -123,21 +132,23 @@
 			null,
 			{
 				"name": "numemon",
-				"from": [[-3, -2], [-2, -2]],
-				"color": ["fire", "fusion"]
+				"from": [[-3, -1.5], [-2, -1.5]],
+				"color": ["fire", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "monzaemon",
-				"from": [[-4, -2], [0, -2]],
+				"from": [[-4, -1.5], [0, -1.5]],
 				"color": ["dark", "dark"]
 			},
-			null,
 			{
 				"name": "shinmonzaemon",
-				"from": [[-4, -2], [0, -2]],
-				"color": ["dark", "gold"]
+				"from": [[-4, -1.5], [0, -1.5]],
+				"color": ["dark", "gold"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -149,15 +160,16 @@
 			null,
 			{
 				"name": "etemon",
-				"from": [[-5, -2], [-1, -2]],
+				"from": [[-5, -1.5], [-1, -1.5]],
 				"color": ["dark", "dark"]
 			},
-			null,
 			{
 				"name": "kingetemon",
-				"from": [[-1, -2], [0, -2]],
-				"color": ["gold", "dark"]
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["gold", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -168,12 +180,13 @@
 			null,
 			null,
 			null,
-			null,
 			{
 				"name": "metaletemon",
-				"from": [[-6, -2], [-1, -2]],
-				"color": ["dark", "dark"]
+				"from": [[-6, -1.5], [-1, -1.5]],
+				"color": ["dark", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		]
 	],
@@ -181,13 +194,13 @@
 	"levels": [
 		"baby I",
 		"baby II",
-		"rookie",
 		"",
+		"rookie",
 		"champion",
 		"",
 		"ultimate",
-		"",
 		"mega",
+		"",
 		"mega+"
 	]
 }

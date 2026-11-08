@@ -8,32 +8,35 @@
 			},
 			{
 				"name": "wanyamon",
-				"from": [[0, -1]],
-				"color": ["x"]
-			},
-			{
-				"name": "gaomon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
 			null,
 			{
+				"name": "gaomon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "gaogamon",
-				"from": [[0, -2], [1, -2], [2, -2]],
-				"color": ["grass", "fire", "slide"]
+				"from": [[0, -1.5], [1, -1.5], [2, -1.5]],
+				"color": ["grass", "fire", "slide"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "machgaogamon",
-				"from": [[0, -2], [1, -2], [2, -2]],
+				"from": [[0, -1.5], [1, -1.5], [2, -1.5]],
 				"color": ["grass", "fire", "slide"]
 			},
-			null,
 			{
 				"name": "miragegaogamon",
-				"from": [[0, -2], [1, -2], [2, -2]],
-				"color": ["grass", "fire", "slide"]
+				"from": [[0, -1.5], [1, -1.5], [2, -1.5]],
+				"color": ["grass", "fire", "slide"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "miragegaogamon_burst_mode",
 				"from": [[0, -3]],
@@ -43,32 +46,34 @@
 		[
 			null,
 			null,
-			{
-				"name": "coronamon",
-				"from": [[-1, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "coronamon",
+				"from": [[-1, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "firamon",
-				"from": [[0, -2], [-1, -2]],
-				"color": ["fire", "grass"]
+				"from": [[0, -1.5], [-1, -1.5]],
+				"color": ["fire", "grass"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "flaremon",
-				"from": [[0, -2], [3, -2]],
+				"from": [[0, -1.5], [3, -1.5]],
 				"color": ["fire", "gold"]
+			},
+			{
+				"name": "apollomon",
+				"from": [[0, -1.5], [3, -1.5]],
+				"color": ["fire", "gold"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "apollomon",
-				"from": [[0, -2], [3, -2]],
-				"color": ["fire", "gold"]
-			},
-			{
 				"name": "gracenovamon",
-				"from": [[-0.5, -1], [0.5, -1]],
+				"from": [[-0.5, -1.5], [0.5, -1.5]],
 				"color": ["fire", "slide"],
 				"xSize": 2
 			}
@@ -76,57 +81,61 @@
 		[
 			null,
 			null,
-			{
-				"name": "lunamon",
-				"from": [[-2, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "lunamon",
+				"from": [[-2, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "lekismon",
-				"from": [[-2, -2], [0, -2]],
-				"color": ["grass", "slide"]
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["grass", "slide"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "crescemon",
-				"from": [[-2, -2], [0, -2]],
+				"from": [[-2, -1.5], [0, -1.5]],
 				"color": ["grass", "slide"]
 			},
-			null,
 			{
 				"name": "dianamon",
-				"from": [[-2, -2], [0, -2]],
-				"color": ["grass", "slide"]
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["grass", "slide"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
 			null,
 			null,
-			{
-				"name": "phascomon",
-				"from": [[-3, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "phascomon",
+				"from": [[-3, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "madleomon",
-				"from": [[-1, -2], [0, -2]],
-				"color": ["slide", "fusion"]
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["slide", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "astamon",
-				"from": [[1, -2], [0, -2]],
+				"from": [[1, -1.5], [0, -1.5]],
 				"color": ["gold", "fusion"]
 			},
-			null,
 			{
 				"name": "belphemon_rage_mode",
-				"from": [[-1, -2], [0, -2]],
-				"color": ["slide", "fusion"]
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["slide", "fusion"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -136,21 +145,23 @@
 			null,
 			{
 				"name": "leomon",
-				"from": [[-3, -2], [-1, -2]],
-				"color": ["fire", "fusion"]
+				"from": [[-3, -1.5], [-1, -1.5]],
+				"color": ["fire", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "grapleomon",
-				"from": [[-4, -2], [0, -2], [-1, -2]],
+				"from": [[-4, -1.5], [0, -1.5], [-1, -1.5]],
 				"color": ["grass", "gold", "fusion"]
 			},
-			null,
 			{
 				"name": "heavyleomon",
-				"from": [[-3, -2], [0, -2], [-1, -2]],
-				"color": ["fire", "gold", "fusion"]
+				"from": [[-3, -1.5], [0, -1.5], [-1, -1.5]],
+				"color": ["fire", "gold", "fusion"],
+				"ySize": 2
 			},
+			null,
 			null
 		]
 	],
@@ -158,13 +169,13 @@
 	"levels": [
 		"baby I",
 		"baby II",
-		"rookie",
 		"",
+		"rookie",
 		"champion",
 		"",
 		"ultimate",
-		"",
 		"mega",
+		"",
 		"mega+"
 	]
 }

@@ -8,21 +8,23 @@
 			null,
 			{
 				"name": "monochromon",
-				"from": [[1, -2], [2, -2]],
-				"color": ["fire", "fusion"]
+				"from": [[1, -1.5], [2, -1.5]],
+				"color": ["fire", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "vermillimon",
-				"from": [[1, -2], [0, -2], [2, -2], [3, -2]],
+				"from": [[1, -1.5], [0, -1.5], [2, -1.5], [3, -1.5]],
 				"color": ["fire", "grass", "dark", "fusion"]
 			},
-			null,
 			{
 				"name": "victorygreymon",
-				"from": [[1, -2], [0, -2], [3, -2]],
-				"color": ["fire", "grass", "dark"]
+				"from": [[1, -1.5], [0, -1.5], [3, -1.5]],
+				"color": ["fire", "grass", "dark"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -32,67 +34,72 @@
 			},
 			{
 				"name": "koromon",
-				"from": [[0, -1]],
-				"color": ["x"]
-			},
-			{
-				"name": "agumon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
 			null,
 			{
+				"name": "agumon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "greymon",
-				"from": [[0, -2]],
-				"color": ["fire"]
+				"from": [[0, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "metalgreymon",
-				"from": [[0, -2], [2, -2]],
+				"from": [[0, -1.5], [2, -1.5]],
 				"color": ["fire", "fusion"]
+			},
+			{
+				"name": "wargreymon",
+				"from": [[0, -1.5], [-1, -1.5], [1, -1.5]],
+				"color": ["fire", "grass", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "wargreymon",
-				"from": [[0, -2], [-1, -2], [1, -2]],
-				"color": ["fire", "grass", "fusion"]
-			},
-			{
 				"name": "omegamon",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["fire"]
 			}
 		],
 		[
 			null,
 			null,
-			{
-				"name": "agumon_black",
-				"from": [[-1, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "agumon_black",
+				"from": [[-1, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "greymon_blue",
-				"from": [[0, -2]],
-				"color": ["fusion"]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "metalgreymon_blue",
-				"from": [[-2, -2], [0, -2]],
+				"from": [[-2, -1.5], [0, -1.5]],
 				"color": ["grass", "dark"]
+			},
+			{
+				"name": "black_wargreymon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["dark", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "black_wargreymon",
-				"from": [[1, -2], [0, -2]],
-				"color": ["dark", "fusion"]
-			},
-			{
 				"name": "omegamon_zwart",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["fusion"]
 			}
 		],
@@ -103,13 +110,14 @@
 			null,
 			{
 				"name": "darktyranomon",
-				"from": [[-2, -2], [-1, -2]],
-				"color": ["fire", "fusion"]
+				"from": [[-2, -1.5], [-1, -1.5]],
+				"color": ["fire", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "skullgreymon",
-				"from": [[-2, -2], [-3, -2], [-1, -2], [0, -2]],
+				"from": [[-2, -1.5], [-3, -1.5], [-1, -1.5], [0, -1.5]],
 				"color": ["fire", "grass", "dark", "fusion"]
 			},
 			null,
@@ -121,13 +129,13 @@
 	"levels": [
 		"baby I",
 		"baby II",
-		"rookie",
 		"",
+		"rookie",
 		"champion",
 		"",
 		"ultimate",
-		"",
 		"mega",
+		"",
 		"mega+"
 	]
 }

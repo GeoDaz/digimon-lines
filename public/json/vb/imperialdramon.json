@@ -7,49 +7,35 @@
 			},
 			{
 				"name": "chibimon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "veemon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "exveemon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "paildramon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "imperialdramon_dragon_mode",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
-			}
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			{
@@ -57,51 +43,35 @@
 			},
 			{
 				"name": "minomon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"ice"
-				]
+				"from": [[0, -1.5]],
+				"color": ["ice"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "wormmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"ice"
-				]
+				"from": [[0, -1.5]],
+				"color": ["ice"]
 			},
 			{
 				"name": "stingmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"ice"
-				]
+				"from": [[0, -1.5]],
+				"color": ["ice"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "dinobeemon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"ice"
-				]
+				"from": [[0, -1.5]],
+				"color": ["ice"]
 			},
 			{
 				"name": "imperialdramon_paladin_mode",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"x",
-					"ice"
-				]
-			}
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["x", "ice"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			null,
@@ -109,15 +79,16 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "imperialdramon_fighter_mode",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"ice"
-				]
-			}
+				"from": [[-1, -1.5]],
+				"color": ["ice"],
+				"ySize": 2
+			},
+			null
 		]
-	]
+	],
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }

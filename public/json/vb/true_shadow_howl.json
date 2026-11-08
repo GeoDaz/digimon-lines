@@ -6,56 +6,40 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "weregarurumon_sagittarius_mode",
-				"from": [
-					[1, -1],
-					[4, -1]
-				],
-				"color": [
-					"fire",
-					"dark"
-				]
+				"from": [[1, -1.5], [4, -1.5]],
+				"color": ["fire", "dark"]
 			},
+			null,
 			null
 		],
 		[
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "garurumon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "cerberumon",
-				"from": [
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"grass",
-					"fusion"
-				]
+				"from": [[1, -1.5], [2, -1.5]],
+				"color": ["grass", "fusion"]
 			},
 			{
 				"name": "zeedgarurumon",
-				"from": [
-					[-1, -1],
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"fire",
-					"x",
-					"grass"
-				]
-			}
+				"from": [[-1, -1.5], [1, -1.5], [2, -1.5]],
+				"color": ["fire", "x", "grass"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			{
@@ -63,149 +47,101 @@
 			},
 			{
 				"name": "tsunomon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "gabumon_black",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "drimogemon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "rhinomon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"grass",
-					"fusion"
-				]
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["grass", "fusion"]
 			},
 			{
 				"name": "metalgarurumon_black",
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[2, -1]
-				],
-				"color": [
-					"gold",
-					"x",
-					"fusion"
-				]
-			}
+				"from": [[-1, -1.5], [0, -1.5], [2, -1.5]],
+				"color": ["gold", "x", "fusion"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "dorulumon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[-1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "pandamon",
-				"from": [
-					[-2, -1],
-					[1, -1]
-				],
-				"color": [
-					"fire",
-					"dark"
-				]
+				"from": [[-2, -1.5], [1, -1.5]],
+				"color": ["fire", "dark"]
 			},
 			{
 				"name": "mercurymon",
-				"from": [
-					[-2, -1],
-					[0, -1],
-					[2, -1]
-				],
-				"color": [
-					"gold",
-					"grass",
-					"dark"
-				]
-			}
+				"from": [[-2, -1.5], [0, -1.5], [2, -1.5]],
+				"color": ["gold", "grass", "dark"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "garurumon_black",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[-2, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "weregarurumon_black",
-				"from": [
-					[-3, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"dark"
-				]
+				"from": [[-3, -1.5], [0, -1.5]],
+				"color": ["fire", "dark"]
 			},
 			{
 				"name": "omegamon_zwart",
-				"from": [
-					[-4, -1],
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"fire",
-					"fusion",
-					"dark"
-				]
-			}
+				"from": [[-4, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["fire", "fusion", "dark"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
+			null,
 			null,
 			null,
 			null,
 			null,
 			{
 				"name": "jaegerdorulumon",
-				"from": [
-					[-3, -1],
-					[-2, -1]
-				],
-				"color": [
-					"grass",
-					"fusion"
-				]
+				"from": [[-3, -1.5], [-2, -1.5]],
+				"color": ["grass", "fusion"]
 			},
+			null,
 			null
 		]
-	]
+	],
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }

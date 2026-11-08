@@ -5,91 +5,55 @@
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "aquilamon",
-				"from": [
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"x",
-					"fire"
-				]
+				"from": [[1, -1.5], [2, -1.5]],
+				"color": ["x", "fire"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "silphymon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"x",
-					"fire"
-				]
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["x", "fire"]
 			},
 			{
 				"name": "valkyrimon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[4, -1]
-				],
-				"color": [
-					"x",
-					"fire",
-					"grass"
-				]
-			}
+				"from": [[0, -1.5], [1, -1.5], [4, -1.5]],
+				"color": ["x", "fire", "grass"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			null,
 			null,
+			null,
 			{
 				"name": "hawkmon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[1, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "gatomon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[1, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "angewomon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[3, -1],
-					[2, -1]
-				],
-				"color": [
-					"fire",
-					"ice",
-					"marine",
-					"marine"
-				]
+				"from": [[0, -1.5], [1, -1.5], [3, -1.5], [2, -1.5]],
+				"color": ["fire", "ice", "marine", "marine"]
 			},
 			{
 				"name": "magnadramon",
-				"from": [
-					[-1, -1],
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"x",
-					"fire",
-					"ice"
-				]
-			}
+				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["x", "fire", "ice"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			{
@@ -97,179 +61,115 @@
 			},
 			{
 				"name": "poromon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "gatomon_rookie",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "stingmon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"ice"
-				]
+				"from": [[1, -1.5]],
+				"color": ["ice"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "dinobeemon",
-				"from": [
-					[-2, -1],
-					[0, -1],
-					[3, -1],
-					[1, -1]
-				],
-				"color": [
-					"x",
-					"ice",
-					"x",
-					"marine"
-				]
+				"from": [[-2, -1.5], [0, -1.5], [3, -1.5], [1, -1.5]],
+				"color": ["x", "ice", "x", "marine"]
 			},
 			{
 				"name": "imperialdramon_fighter_mode",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[2, -1]
-				],
-				"color": [
-					"ice",
-					"fusion",
-					"grass"
-				]
-			}
+				"from": [[0, -1.5], [1, -1.5], [2, -1.5]],
+				"color": ["ice", "fusion", "grass"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			{
 				"name": "wormmon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[-1, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "halsemon",
-				"from": [
-					[-2, -1],
-					[0, -1]
-				],
-				"color": [
-					"x",
-					"ice"
-				]
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["x", "ice"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "mummymon",
-				"from": [
-					[-2, -1],
-					[2, -1]
-				],
-				"color": [
-					"fire",
-					"x"
-				]
+				"from": [[-2, -1.5], [2, -1.5]],
+				"color": ["fire", "x"]
 			},
 			{
 				"name": "imperialdramon_paladin_mode",
-				"from": [
-					[-2, -1],
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"ice",
-					"fusion"
-				]
-			}
+				"from": [[-2, -1.5], [-1, -1.5], [0, -1.5]],
+				"color": ["fire", "ice", "fusion"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			{
 				"name": "ukkomon",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[-2, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "nefertimon",
-				"from": [
-					[-2, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[-2, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "kimeramon",
-				"from": [
-					[0, -1],
-					[-4, -1]
-				],
-				"color": [
-					"marine",
-					"x"
-				]
+				"from": [[0, -1.5], [-4, -1.5]],
+				"color": ["marine", "x"]
 			},
 			{
 				"name": "armageddemon",
-				"from": [
-					[-1, -1],
-					[-4, -1],
-					[0, -1]
-				],
-				"color": [
-					"fusion",
-					"x",
-					"grass"
-				]
-			}
+				"from": [[-1, -1.5], [-4, -1.5], [0, -1.5]],
+				"color": ["fusion", "x", "grass"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "shurimon",
-				"from": [
-					[-2, -1],
-					[-4, -1]
-				],
-				"color": [
-					"ice",
-					"x"
-				]
+				"from": [[-2, -1.5], [-4, -1.5]],
+				"color": ["ice", "x"],
+				"ySize": 2
 			},
+			null,
 			null,
 			{
 				"name": "big_ukkomon",
-				"from": [
-					[-1, -3]
-				],
-				"color": [
-					"marine"
-				]
-			}
+				"from": [[-1, -4.5]],
+				"color": ["marine"],
+				"ySize": 2
+			},
+			null
 		]
-	]
+	],
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }

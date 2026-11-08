@@ -5,83 +5,55 @@
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "chackmon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[1, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "daipenmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "olegmon",
-				"from": [
-					[0, -1],
-					[1, -1],
-					[2, -1],
-					[4, -1]
-				],
-				"color": [
-					"x",
-					"ice",
-					"fire",
-					"dark"
-				]
-			}
+				"from": [[0, -1.5], [1, -1.5], [2, -1.5], [4, -1.5]],
+				"color": ["x", "ice", "fire", "dark"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			null,
 			null,
+			null,
 			{
 				"name": "bearmon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[1, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "gryzmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "blizzarmon",
-				"from": [
-					[-1, -1],
-					[2, -1]
-				],
-				"color": [
-					"x",
-					"gold"
-				]
+				"from": [[-1, -1.5], [2, -1.5]],
+				"color": ["x", "gold"]
 			},
 			{
 				"name": "frosvelgrmon",
-				"from": [
-					[0, -1],
-					[2, -1]
-				],
-				"color": [
-					"ice",
-					"fusion"
-				]
-			}
+				"from": [[0, -1.5], [2, -1.5]],
+				"color": ["ice", "fusion"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			{
@@ -89,105 +61,76 @@
 			},
 			{
 				"name": "hiyarimon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "snowgoblimon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "icemon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "panjyamon_x",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"fire",
-					"grass"
-				]
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["fire", "grass"]
 			},
 			{
 				"name": "ancientmegatheriumon",
-				"from": [
-					[-2, -1],
-					[0, -1]
-				],
-				"color": [
-					"x",
-					"fire"
-				]
-			}
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["x", "fire"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "mojyamon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[-1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "nanomon",
-				"from": [
-					[-1, -1],
-					[0, -1]
-				],
-				"color": [
-					"grass",
-					"gold"
-				]
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["grass", "gold"]
 			},
 			{
 				"name": "dynasmon",
-				"from": [
-					[0, -1],
-					[1, -1]
-				],
-				"color": [
-					"fusion",
-					"dark"
-				]
-			}
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["fusion", "dark"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
+			null,
 			null,
 			null,
 			null,
 			null,
 			{
 				"name": "astamon",
-				"from": [
-					[-3, -1]
-				],
-				"color": [
-					"fire"
-				]
+				"from": [[-3, -1.5]],
+				"color": ["fire"]
 			},
+			null,
 			null
 		]
-	]
+	],
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }

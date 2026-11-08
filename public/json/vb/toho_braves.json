@@ -4,28 +4,29 @@
 		[
 			null,
 			null,
-			{
-				"name": "hanimon",
-				"from": [[3, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "hanimon",
+				"from": [[3, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "kokeshimon",
-				"from": [[2, -2], [0, -2]],
-				"color": ["fire", "grass"]
+				"from": [[2, -1.5], [0, -1.5]],
+				"color": ["fire", "grass"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "karakurumon",
-				"from": [[2, -2], [0, -2], [6, -2], [7, -2]],
+				"from": [[2, -1.5], [0, -1.5], [6, -1.5], [7, -1.5]],
 				"color": ["fire", "grass", "slide", "fusion"]
 			},
-			null,
 			{
 				"name": "kaguyamon",
-				"from": [[5, -2], [0, -2], [6, -2]],
-				"color": ["gold", "grass", "slide"]
+				"from": [[5, -1.5], [0, -1.5], [6, -1.5]],
+				"color": ["gold", "grass", "slide"],
+				"ySize": 2
 			},
 			null,
 			null
@@ -37,20 +38,21 @@
 			null,
 			{
 				"name": "manekimon",
-				"from": [[-1, -2], [5, -2]],
-				"color": ["grass", "fusion"]
+				"from": [[-1, -1.5], [5, -1.5]],
+				"color": ["grass", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "darumamon",
-				"from": [[1, -2], [-1, -2], [0, -2], [3, -2]],
+				"from": [[1, -1.5], [-1, -1.5], [0, -1.5], [3, -1.5]],
 				"color": ["fire", "grass", "mode", "dark"]
 			},
-			null,
 			{
 				"name": "ariemon",
-				"from": [[1, -2], [0, -2], [3, -2]],
-				"color": ["fire", "mode", "dark"]
+				"from": [[1, -1.5], [0, -1.5], [3, -1.5]],
+				"color": ["fire", "mode", "dark"],
+				"ySize": 2
 			},
 			null,
 			null
@@ -58,28 +60,29 @@
 		[
 			null,
 			null,
-			{
-				"name": "wankomon",
-				"from": [[1, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "wankomon",
+				"from": [[1, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "siesamon",
-				"from": [[0, -2], [2, -2]],
-				"color": ["fire", "slide"]
+				"from": [[0, -1.5], [2, -1.5]],
+				"color": ["fire", "slide"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "shishimamon",
-				"from": [[0, -2], [3, -2], [2, -2]],
+				"from": [[0, -1.5], [3, -1.5], [2, -1.5]],
 				"color": ["fire", "gold", "dark"]
 			},
-			null,
 			{
 				"name": "amaterasumon",
-				"from": [[0, -2], [4, -2], [5, -2], [-1, -2]],
-				"color": ["fire", "slide", "fusion", "mode"]
+				"from": [[0, -1.5], [4, -1.5], [5, -1.5], [-1, -1.5]],
+				"color": ["fire", "slide", "fusion", "mode"],
+				"ySize": 2
 			},
 			null,
 			null
@@ -91,40 +94,42 @@
 			},
 			{
 				"name": "onibimon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
 			null,
 			null,
 			{
 				"name": "fugamon",
-				"from": [[-3, -2], [1, -2]],
-				"color": ["grass", "slide"]
+				"from": [[-3, -1.5], [1, -1.5]],
+				"color": ["grass", "slide"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "karatenmon",
-				"from": [[2, -2], [4, -2], [0, -2]],
+				"from": [[2, -1.5], [4, -1.5], [0, -1.5]],
 				"color": ["gold", "fusion", "dark"]
 			},
-			null,
 			{
 				"name": "tengumon",
-				"from": [[2, -2], [4, -2], [0, -2]],
-				"color": ["gold", "fusion", "dark"]
+				"from": [[2, -1.5], [4, -1.5], [0, -1.5]],
+				"color": ["gold", "fusion", "dark"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "enmamon",
 				"from": [
-					[-3, -2],
-					[3, -2],
-					[-1, -2],
-					[2, -2],
-					[4, -2],
-					[0, -2],
-					[-2, -2],
-					[1, -2]
+					[-3, -1.5],
+					[3, -1.5],
+					[-1, -1.5],
+					[2, -1.5],
+					[4, -1.5],
+					[0, -1.5],
+					[-2, -1.5],
+					[1, -1.5]
 				],
 				"color": [
 					"grass",
@@ -141,28 +146,29 @@
 		[
 			null,
 			null,
-			{
-				"name": "renamon",
-				"from": [[-1, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "renamon",
+				"from": [[-1, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "tenkomon",
-				"from": [[-2, -2], [0, -2]],
-				"color": ["fire", "slide"]
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["fire", "slide"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "sekkamon",
-				"from": [[2, -2], [-3, -2], [0, -2]],
+				"from": [[2, -1.5], [-3, -1.5], [0, -1.5]],
 				"color": ["slide", "mode", "dark"]
 			},
-			null,
 			{
 				"name": "yukinamon",
-				"from": [[-4, -2], [2, -2], [0, -2]],
-				"color": ["grass", "slide", "dark"]
+				"from": [[-4, -1.5], [2, -1.5], [0, -1.5]],
+				"color": ["grass", "slide", "dark"],
+				"ySize": 2
 			},
 			null,
 			null
@@ -174,53 +180,55 @@
 			null,
 			{
 				"name": "peckmon",
-				"from": [[1, -2], [-1, -2]],
-				"color": ["fusion", "slide"]
+				"from": [[1, -1.5], [-1, -1.5]],
+				"color": ["fusion", "slide"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "yatagaramon_2",
-				"from": [[0, -2], [1, -2], [-4, -2]],
+				"from": [[0, -1.5], [1, -1.5], [-4, -1.5]],
 				"color": ["gold", "slide", "mode"]
 			},
-			null,
 			{
 				"name": "ravemon",
-				"from": [[0, -2], [-5, -2], [-2, -2]],
-				"color": ["gold", "grass", "dark"]
+				"from": [[0, -1.5], [-5, -1.5], [-2, -1.5]],
+				"color": ["gold", "grass", "dark"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "ravemon_burst_mode",
-				"from": [[0, -2]],
+				"from": [[0, -1.5]],
 				"color": ["gold"]
 			}
 		],
 		[
 			null,
 			null,
-			{
-				"name": "gasamon",
-				"from": [[-3, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "gasamon",
+				"from": [[-3, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "shellmon",
-				"from": [[-6, -2], [0, -2]],
-				"color": ["grass", "fusion"]
+				"from": [[-6, -1.5], [0, -1.5]],
+				"color": ["grass", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "marinbullmon",
-				"from": [[-6, -2], [0, -2], [-3, -2]],
+				"from": [[-6, -1.5], [0, -1.5], [-3, -1.5]],
 				"color": ["grass", "slide", "dark"]
 			},
-			null,
 			{
 				"name": "ryugumon",
-				"from": [[-6, -2], [0, -2], [-2, -2]],
-				"color": ["grass", "slide", "dark"]
+				"from": [[-6, -1.5], [0, -1.5], [-2, -1.5]],
+				"color": ["grass", "slide", "dark"],
+				"ySize": 2
 			},
 			null,
 			null
@@ -232,37 +240,37 @@
 			null,
 			{
 				"name": "musyamon",
-				"from": [[-5, -2], [-1, -2]],
-				"color": ["fire", "fusion"]
+				"from": [[-5, -1.5], [-1, -1.5]],
+				"color": ["fire", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "oboromon",
-				"from": [[-7, -2], [0, -2], [-4, -2]],
+				"from": [[-7, -1.5], [0, -1.5], [-4, -1.5]],
 				"color": ["grass", "fusion", "dark"]
 			},
-			null,
 			{
 				"name": "zanbamon",
-				"from": [[-5, -2], [-6, -2], [0, -2], [-4, -2]],
-				"color": ["fire", "mode", "fusion", "dark"]
+				"from": [[-5, -1.5], [-6, -1.5], [0, -1.5], [-4, -1.5]],
+				"color": ["fire", "mode", "fusion", "dark"],
+				"ySize": 2
 			},
 			null,
 			null
 		],
-		[null, null, null, null, null, null, null, null, null, null, null],
-		[null, null, null, null, null, null, null, null, null, null, null]
+		[null, null, null, null, null, null, null, null, null, null],
+		[null, null, null, null, null, null, null, null, null, null]
 	],
-	"size": 11,
+	"size": 10,
 	"levels": [
 		"baby I",
 		"baby II",
-		"rookie",
 		"",
+		"rookie",
 		"champion",
 		"",
 		"ultimate",
-		"",
 		"mega",
 		"",
 		"mega+"

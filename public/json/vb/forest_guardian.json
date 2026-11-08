@@ -8,24 +8,26 @@
 			null,
 			{
 				"name": "kuwagamon",
-				"from": [[1, -2], [2, -2]],
-				"color": ["fire", "fusion"]
+				"from": [[1, -1.5], [2, -1.5]],
+				"color": ["fire", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "okuwamon",
-				"from": [[2, -2], [0, -2]],
+				"from": [[2, -1.5], [0, -1.5]],
 				"color": ["fusion", "dark"]
+			},
+			{
+				"name": "grankuwagamon",
+				"from": [[2, -1.5], [0, -1.5]],
+				"color": ["fusion", "dark"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "grankuwagamon",
-				"from": [[2, -2], [0, -2]],
-				"color": ["fusion", "dark"]
-			},
-			{
 				"name": "tyrantkabuterimon",
-				"from": [[0.5, -1], [-0.5, -1]],
+				"from": [[0.5, -1.5], [-0.5, -1.5]],
 				"color": ["fire", "x"],
 				"xSize": 2
 			}
@@ -33,29 +35,31 @@
 		[
 			null,
 			null,
-			{
-				"name": "tentomon",
-				"from": [[1.5, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "tentomon",
+				"from": [[1.5, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "kabuterimon",
-				"from": [[0, -2], [1, -2]],
-				"color": ["fire", "fusion"]
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["fire", "fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "megakabuterimon",
-				"from": [[0, -2], [1, -2]],
+				"from": [[0, -1.5], [1, -1.5]],
 				"color": ["fire", "fusion"]
 			},
-			null,
 			{
 				"name": "herculeskabuterimon",
-				"from": [[0, -2], [1, -2]],
-				"color": ["fire", "fusion"]
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["fire", "fusion"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -66,61 +70,66 @@
 			},
 			{
 				"name": "mochimon",
-				"from": [[0, -1]],
+				"from": [[0, -1.5]],
 				"color": ["x"],
-				"xSize": 2
-			},
-			{
-				"name": "fanbeemon",
-				"from": [[0.5, -1]],
-				"color": ["x"]
+				"xSize": 2,
+				"ySize": 2
 			},
 			null,
 			{
+				"name": "fanbeemon",
+				"from": [[0.5, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "waspmon",
-				"from": [[1, -2], [0, -2], [2, -2]],
-				"color": ["grass", "fusion", "gold"]
+				"from": [[1, -1.5], [0, -1.5], [2, -1.5]],
+				"color": ["grass", "fusion", "gold"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "cannonbeemon",
-				"from": [[1, -2], [0, -2], [-2, -2], [2, -2]],
+				"from": [[1, -1.5], [0, -1.5], [-2, -1.5], [2, -1.5]],
 				"color": ["grass", "fusion", "dark", "x"]
 			},
-			null,
 			{
 				"name": "tigervespamon",
-				"from": [[0, -2], [-2, -2], [2, -2]],
-				"color": ["fusion", "dark", "x"]
+				"from": [[0, -1.5], [-2, -1.5], [2, -1.5]],
+				"color": ["fusion", "dark", "x"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
 			null,
 			null,
-			{
-				"name": "lalamon",
-				"from": [[-0.5, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "lalamon",
+				"from": [[-0.5, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "sunflowmon",
-				"from": [[-2, -2], [0, -2]],
-				"color": ["fire", "grass"]
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["fire", "grass"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "lilamon",
-				"from": [[-2, -2], [0, -2]],
+				"from": [[-2, -1.5], [0, -1.5]],
 				"color": ["fire", "grass"]
 			},
-			null,
 			{
 				"name": "rosemon",
-				"from": [[-2, -2], [0, -2]],
-				"color": ["fire", "grass"]
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["fire", "grass"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "rosemon_burst_mode",
 				"from": [[0, -3]],
@@ -130,29 +139,31 @@
 		[
 			null,
 			null,
-			{
-				"name": "morphomon",
-				"from": [[-1.5, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "morphomon",
+				"from": [[-1.5, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "hudiemon",
-				"from": [[-1, -2], [0, -2]],
-				"color": ["grass", "gold"]
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["grass", "gold"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "eosmon_2",
-				"from": [[-1, -2], [0, -2]],
+				"from": [[-1, -1.5], [0, -1.5]],
 				"color": ["grass", "x"]
 			},
-			null,
 			{
 				"name": "bancholilimon",
-				"from": [[-1, -2], [0, -2]],
-				"color": ["grass", "x"]
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["grass", "x"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[null, null, null, null, null, null, null, null, null, null],
@@ -162,13 +173,13 @@
 	"levels": [
 		"baby I",
 		"baby II",
-		"rookie",
 		"",
+		"rookie",
 		"champion",
 		"",
 		"ultimate",
-		"",
 		"mega",
+		"",
 		"mega+"
 	]
 }

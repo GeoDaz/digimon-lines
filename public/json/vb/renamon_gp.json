@@ -7,15 +7,15 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "sakuyamon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"grass"
-				]
-			}
+				"from": [[1, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			{
@@ -23,49 +23,35 @@
 			},
 			{
 				"name": "pokomon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "renamon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "kyubimon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"grass"
-				]
+				"from": [[0, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "taomon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"grass"
-				]
+				"from": [[0, -1.5]],
+				"color": ["grass"]
 			},
 			{
 				"name": "kuzuhamon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"grass"
-				]
-			}
+				"from": [[0, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			null,
@@ -73,15 +59,16 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "sakuyamon_miko_mode",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"grass"
-				]
-			}
+				"from": [[-1, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
+			},
+			null
 		]
-	]
+	],
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }

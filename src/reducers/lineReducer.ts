@@ -10,16 +10,28 @@ type CellShift = (pos: number[]) => number[];
  * cells, given how the point itself moves (deltaP) and how any linked cell
  * moves (targetShift). Shared by MOVE_LINE_POINT and column/row insert/remove.
  */
+const centerOf = (point: LinePoint, pos: number[]): number[] => [
+	pos[0] + (point.xSize == 2 ? 0.5 : 0),
+	pos[1] + (point.ySize == 2 ? 0.5 : 0),
+];
+
+const samePos = (a: number[], b: number[]) =>
+	Math.abs(a[0] - b[0]) < 1e-9 && Math.abs(a[1] - b[1]) < 1e-9;
+
+type CellOrigin = (center: number[]) => number[];
+
 const remapPointFrom = (
 	point: LinePoint,
 	pointPos: number[],
 	deltaP: number[],
-	targetShift: CellShift
+	targetShift: CellShift,
+	originOf: CellOrigin = center => center
 ): LinePoint => {
 	const { from } = point;
 	if (!from) return point;
+	const pointCenter = centerOf(point, pointPos);
 	const remap = (f: number[]): number[] => {
-		const td = targetShift([pointPos[0] + f[0], pointPos[1] + f[1]]);
+		const td = targetShift(originOf([pointCenter[0] + f[0], pointCenter[1] + f[1]]));
 		return [f[0] + td[0] - deltaP[0], f[1] + td[1] - deltaP[1]];
 	};
 	const nextFrom =
@@ -33,14 +45,25 @@ const remapPointFrom = (
  * Apply a whole-grid shift (a column/row insertion or removal) to every point's
  * links, so links spanning the changed column/row stay anchored.
  */
-const remapGridFrom = (columns: LineColumn[], shift: CellShift): LineColumn[] =>
-	columns.map((col, x) =>
+const remapGridFrom = (columns: LineColumn[], shift: CellShift): LineColumn[] => {
+	const cells: { center: number[]; origin: number[] }[] = [];
+	columns.forEach((col, x) =>
+		col.forEach((point, y) => {
+			if (point && !Array.isArray(point)) {
+				cells.push({ center: centerOf(point as LinePoint, [x, y]), origin: [x, y] });
+			}
+		})
+	);
+	const originOf: CellOrigin = center =>
+		cells.find(cell => samePos(cell.center, center))?.origin || center;
+	return columns.map((col, x) =>
 		col.map((point, y) => {
 			if (!point || Array.isArray(point)) return point;
 			const pos = [x, y];
-			return remapPointFrom(point as LinePoint, pos, shift(pos), shift);
+			return remapPointFrom(point as LinePoint, pos, shift(pos), shift, originOf);
 		})
 	);
+};
 
 const moveIndexShift = (from: number, to: number) => (pos: number): number => {
 	const index = Math.floor(pos);
@@ -261,14 +284,9 @@ const lineReducer = (line: Line = defaultLine, action: Record<string, any>): Lin
 			const axisKey = action.axis == 'x' ? 0 : 1;
 			const sizeAttr = (action.axis + 'Size') as SizeAttr;
 			const collapse = point[sizeAttr] == 2;
-			const center = [x + (point.xSize == 2 ? 0.5 : 0), y + (point.ySize == 2 ? 0.5 : 0)];
 			const delta = [0, 0];
 			delta[axisKey] = collapse ? -0.5 : 0.5;
-			const isAt = (pos: number[], target: number[]) =>
-				Math.abs(pos[0] - target[0]) < 1e-9 && Math.abs(pos[1] - target[1]) < 1e-9;
-			columns = remapGridFrom(line.columns, pos =>
-				isAt(pos, [x, y]) || isAt(pos, center) ? delta : [0, 0]
-			);
+			columns = remapGridFrom(line.columns, pos => (samePos(pos, [x, y]) ? delta : [0, 0]));
 			columns[x][y] = {
 				...(columns[x][y] as LinePoint),
 				[sizeAttr]: collapse ? undefined : 2,

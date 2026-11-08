@@ -7,15 +7,15 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "medievalgallantmon",
-				"from": [
-					[1, -1]
-				],
-				"color": [
-					"fusion"
-				]
-			}
+				"from": [[1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			{
@@ -23,49 +23,35 @@
 			},
 			{
 				"name": "gigimon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "guilmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"x"
-				]
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "growlmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
+			null,
 			{
 				"name": "wargrowlmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
+				"from": [[0, -1.5]],
+				"color": ["fusion"]
 			},
 			{
 				"name": "gallantmon",
-				"from": [
-					[0, -1]
-				],
-				"color": [
-					"fusion"
-				]
-			}
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			null,
@@ -73,15 +59,16 @@
 			null,
 			null,
 			null,
+			null,
+			null,
 			{
 				"name": "chaosgallantmon",
-				"from": [
-					[-1, -1]
-				],
-				"color": [
-					"fusion"
-				]
-			}
+				"from": [[-1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
+			},
+			null
 		]
-	]
+	],
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }

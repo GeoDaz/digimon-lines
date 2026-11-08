@@ -10,7 +10,7 @@
 			null,
 			{
 				"name": "zanmetsumon",
-				"from": [[3, -2], [2, -2]],
+				"from": [[3, -1.5], [2, -1.5]],
 				"color": ["fire", "grass"]
 			},
 			null,
@@ -24,49 +24,53 @@
 			null,
 			{
 				"name": "wezengammamon",
-				"from": [[2, -2], [1, -2]],
-				"color": ["fusion", "dark"]
+				"from": [[2, -1.5], [1, -1.5]],
+				"color": ["fusion", "dark"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "ghilliedhumon",
-				"from": [[0, -2]],
+				"from": [[0, -1.5]],
 				"color": ["slide"]
 			},
-			null,
 			{
 				"name": "cannondramon",
-				"from": [[2, -2], [0, -2], [4, -2]],
-				"color": ["fire", "slide", "grass"]
+				"from": [[2, -1.5], [0, -1.5], [4, -1.5]],
+				"color": ["fire", "slide", "grass"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
 			null,
 			null,
-			{
-				"name": "monmon",
-				"from": [[1, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "monmon",
+				"from": [[1, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "kausgammamon",
-				"from": [[1, -2], [0, -2]],
-				"color": ["fusion", "dark"]
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["fusion", "dark"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "bombermon",
-				"from": [[0, -2], [-1, -2]],
+				"from": [[0, -1.5], [-1, -1.5]],
 				"color": ["grass", "slide"]
 			},
-			null,
 			{
 				"name": "spinomon",
-				"from": [[1, -2], [-1, -2], [0, -2]],
-				"color": ["fire", "slide", "fusion"]
+				"from": [[1, -1.5], [-1, -1.5], [0, -1.5]],
+				"color": ["fire", "slide", "fusion"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -76,35 +80,38 @@
 			},
 			{
 				"name": "gurimon",
-				"from": [[0, -1]],
-				"color": ["x"]
-			},
-			{
-				"name": "gammamon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
 			null,
 			{
+				"name": "gammamon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "betelgammamon",
-				"from": [[0, -2], [1, -2]],
-				"color": ["fusion", "fire"]
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["fusion", "fire"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "canoweissmon",
-				"from": [[0, -2], [-1, -2], [-2, -2]],
+				"from": [[0, -1.5], [-1, -1.5], [-2, -1.5]],
 				"color": ["fire", "grass", "slide"]
+			},
+			{
+				"name": "siriusmon",
+				"from": [[0, -1.5], [2, -1.5], [-3, -1.5]],
+				"color": ["fire", "grass", "dark"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "siriusmon",
-				"from": [[0, -2], [2, -2], [-3, -2]],
-				"color": ["fire", "grass", "dark"]
-			},
-			{
 				"name": "proximamon",
-				"from": [[-0.5, -1], [0.5, -1]],
+				"from": [[-0.5, -1.5], [0.5, -1.5]],
 				"color": ["fire", "dark"],
 				"xSize": 2
 			}
@@ -112,29 +119,31 @@
 		[
 			null,
 			null,
-			{
-				"name": "bokomon",
-				"from": [[-1, -1]],
-				"color": ["x"]
-			},
 			null,
 			{
+				"name": "bokomon",
+				"from": [[-1, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "gulusgammamon",
-				"from": [[-1, -2]],
-				"color": ["fusion"]
+				"from": [[-1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "regulusmon",
-				"from": [[0, -2]],
+				"from": [[0, -1.5]],
 				"color": ["fusion"]
 			},
-			null,
 			{
 				"name": "arcturusmon",
-				"from": [[0, -2], [2, -2]],
-				"color": ["dark", "earth"]
+				"from": [[0, -1.5], [2, -1.5]],
+				"color": ["dark", "earth"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -144,21 +153,23 @@
 			null,
 			{
 				"name": "sealsdramon",
-				"from": [[-2, -2], [-1, -2]],
-				"color": ["fusion", "fire"]
+				"from": [[-2, -1.5], [-1, -1.5]],
+				"color": ["fusion", "fire"],
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "fumamon",
-				"from": [[-2, -2], [0, -2]],
+				"from": [[-2, -1.5], [0, -1.5]],
 				"color": ["fire", "dark"]
 			},
-			null,
 			{
 				"name": "kuzuhamon",
-				"from": [[-3, -2], [-5, -2], [1, -2]],
-				"color": ["fusion", "dark", "earth"]
+				"from": [[-3, -1.5], [-5, -1.5], [1, -1.5]],
+				"color": ["fusion", "dark", "earth"],
+				"ySize": 2
 			},
+			null,
 			null
 		],
 		[
@@ -170,7 +181,7 @@
 			null,
 			{
 				"name": "myotismon",
-				"from": [[-2, -2], [-1, -2]],
+				"from": [[-2, -1.5], [-1, -1.5]],
 				"color": ["fusion", "dark"]
 			},
 			null,
@@ -182,13 +193,13 @@
 	"levels": [
 		"baby I",
 		"baby II",
-		"rookie",
 		"",
+		"rookie",
 		"champion",
 		"",
 		"ultimate",
-		"",
 		"mega",
+		"",
 		"mega+"
 	]
 }

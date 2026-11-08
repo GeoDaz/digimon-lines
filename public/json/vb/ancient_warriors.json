@@ -7,9 +7,10 @@
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "goldveedramon",
-				"from": [[1, -2], [2, -2]],
+				"from": [[1, -1.5], [2.5, -1.5]],
 				"color": ["wind", "x"]
 			},
 			null,
@@ -19,116 +20,134 @@
 			null,
 			null,
 			null,
+			null,
 			{
 				"name": "veedramon",
-				"from": [[1, -1]],
-				"color": ["x"]
+				"from": null,
+				"ySize": 2
 			},
 			null,
 			{
 				"name": "aeroveedramon",
-				"from": [[0, -2], [3, -2]],
+				"from": [[0, -1.5], [4, -1.5]],
 				"color": ["wind", "fire"]
 			},
-			null,
 			{
 				"name": "ulforceveedramon",
-				"from": [[0, -2], [3, -2], [4, -2]],
-				"color": ["wind", "fire", "grass"]
-			}
+				"from": [[0, -1.5], [3, -1.5], [4, -1.5]],
+				"color": ["wind", "fire", "grass"],
+				"ySize": 2
+			},
+			null
 		],
 		[
 			{
 				"name": "chicomon",
-				"from": null
+				"from": null,
+				"xSize": 2
 			},
 			{
 				"name": "chibimon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2,
+				"xSize": 2
 			},
+			null,
 			{
 				"name": "veemon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"xSize": 2
 			},
 			{
 				"name": "exveemon",
-				"from": [[0, -1]],
-				"color": ["x"]
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2,
+				"xSize": 2
 			},
 			null,
 			{
 				"name": "paildramon",
-				"from": [[0, -2], [1, -2]],
+				"from": [[0.5, -1.5], [2, -1.5]],
 				"color": ["x", "dark"]
 			},
-			null,
 			{
 				"name": "imperialdramon_dragon_mode",
-				"from": [[-1, -2], [0, -2], [1, -2]],
-				"color": ["wind", "x", "dark"]
-			}
+				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["wind", "x", "dark"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "dinobeemon",
+				"from": [[-0.5, -1.5], [1, -1.5]],
+				"color": ["x", "dark"]
+			},
+			{
+				"name": "imperialdramon_fighter_mode",
+				"from": [[-1, -1.5], [0, -1.5], [-3, -1.5]],
+				"color": ["x", "dark", "gold"],
+				"ySize": 2
+			},
+			null
+		],
+		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "raidramon",
-				"from": [[-1, -1]],
-				"color": ["x"]
+				"from": [[-1.5, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
 			null,
 			{
-				"name": "dinobeemon",
-				"from": [[-1, -2], [0, -2]],
-				"color": ["x", "dark"]
+				"name": "sagittarimon",
+				"from": [[-3, -1.5], [1, -1.5]],
+				"color": ["wind", "fire"]
 			},
-			null,
 			{
-				"name": "imperialdramon_fighter_mode",
-				"from": [[-1, -2], [0, -2], [-3, -2]],
-				"color": ["x", "dark", "gold"]
-			}
+				"name": "magnamon",
+				"from": [[0, -1.5], [-4, -1.5], [1, -1.5]],
+				"color": ["fire", "gold", "grass"],
+				"ySize": 2
+			},
+			null
 		],
 		[
+			null,
 			null,
 			null,
 			null,
 			{
 				"name": "flamedramon",
-				"from": [[-2, -1]],
-				"color": ["x"]
+				"from": [[-2.5, -1.5]],
+				"color": ["x"],
+				"ySize": 2
 			},
-			null,
-			{
-				"name": "sagittarimon",
-				"from": [[-3, -2], [0, -2]],
-				"color": ["wind", "fire"]
-			},
-			null,
-			{
-				"name": "magnamon",
-				"from": [[0, -2], [-4, -2], [1, -2]],
-				"color": ["fire", "gold", "grass"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			null,
 			null,
 			{
 				"name": "digitamamon",
-				"from": [[-1, -2], [-2, -2]],
+				"from": [[0, -1.5], [-1, -1.5]],
 				"color": ["fire", "dark"]
 			},
 			null,
 			null
-		]
+		],
+		[null, null, null, null, null, null, null, null, null]
 	],
-	"size": 8,
-	"levels": ["baby I", "baby II", "rookie", "champion", "", "ultimate", "", "mega"]
+	"size": 9,
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
 }
