@@ -2112,69 +2112,366 @@ a.game-digimon-tile:focus,
 }
 
 .game-digimon-modal .details-subtitle {
-	font-size: 0.6em;
-	color: var(--bs-gray-500);
+	font-family: var(--dl-mono);
+	font-size: 0.55em;
+	letter-spacing: 0.08em;
+	color: var(--dl-muted);
+}
+
+.game-digimon-modal .modal-body {
+	background-color: var(--dl-snd-dark);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) {
+	--dl-weak: #f76666;
+	--dl-resist: #1dca7f;
+	--dl-immune: #3faae4;
+	--dl-text: #e7ecf2;
 }
 
 :is(.game-digimon-modal, .game-digimon-page) .details-grid {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 1.5em;
+	gap: 16px;
 	align-items: start;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-block {
+	min-width: 0;
+	padding: 18px 20px;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 14px;
+	background-color: var(--dl-panel);
 }
 
 :is(.game-digimon-modal, .game-digimon-page) .details-block.wide {
 	grid-column: 1 / -1;
 }
 
-:is(.game-digimon-modal, .game-digimon-page) .details-block :is(h2, h5) {
-	font-size: 1em;
-	letter-spacing: 0.14em;
-	text-transform: uppercase;
-	color: var(--bs-gray-500);
+:is(.game-digimon-modal, .game-digimon-page) .details-block-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px 12px;
+	margin-bottom: 14px;
 }
 
-:is(.game-digimon-modal, .game-digimon-page) .details-misc,
-:is(.game-digimon-modal, .game-digimon-page) .details-resistances {
+:is(.game-digimon-modal, .game-digimon-page) .details-block :is(h2, h5),
+:is(.game-digimon-modal, .game-digimon-page) .details-subheading {
+	margin: 0;
+	font-family: var(--dl-mono);
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--dl-label);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-subheading {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 10px;
+	font-size: 0.7rem;
+	color: var(--dl-muted);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-count {
+	padding: 1px 8px;
+	border-radius: 999px;
+	background-color: var(--dl-panel-soft);
+	border: 1px solid var(--dl-border-soft);
+	font-family: var(--dl-mono);
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	color: var(--dl-muted);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-empty {
+	margin: 0;
+	font-size: 0.9em;
+	color: var(--bs-gray-600);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 2px 10px;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 999px;
+	background-color: var(--dl-panel-soft);
+	font-size: 0.85em;
+	font-weight: 600;
+	color: var(--dl-text);
+	white-space: nowrap;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-chip b {
+	font-family: var(--dl-mono);
+	font-size: 0.9em;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-chip.weak {
+	border-color: rgba(247, 102, 102, 0.45);
+	background-color: rgba(247, 102, 102, 0.12);
+	color: #ffb3b3;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-chip.strong {
+	border-color: rgba(29, 202, 127, 0.45);
+	background-color: rgba(29, 202, 127, 0.12);
+	color: #a6f0cd;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-segmented {
+	display: inline-flex;
+	padding: 3px;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 10px;
+	background-color: var(--dl-snd-dark);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-segmented button {
+	padding: 3px 10px;
+	border: 0;
+	border-radius: 7px;
+	background: none;
+	font-family: var(--dl-mono);
+	font-size: 0.75rem;
+	font-weight: 700;
+	color: var(--dl-muted);
+	transition:
+		background-color 0.2s,
+		color 0.2s;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-segmented button:hover {
+	color: var(--dl-text);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-segmented button.active {
+	background-color: var(--dl-accent);
+	color: white;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-segmented button:focus-visible {
+	outline: 2px solid var(--dl-accent);
+	outline-offset: 1px;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-facts {
+	display: grid;
+	gap: 0;
+	margin: 0;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-facts > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 8px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-facts > div:last-child {
+	border-bottom: 0;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-facts dt {
+	font-weight: 400;
+	color: var(--dl-muted);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-facts dd {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 4px;
+	margin: 0;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-stats {
+	display: grid;
+	gap: 9px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-:is(.game-digimon-modal, .game-digimon-page) .details-misc li,
-:is(.game-digimon-modal, .game-digimon-page) .details-resistances li {
-	display: flex;
-	justify-content: space-between;
+:is(.game-digimon-modal, .game-digimon-page) .details-stats li {
+	display: grid;
+	grid-template-columns: 3.2em minmax(0, 1fr) 3.6em;
+	align-items: center;
 	gap: 12px;
-	padding: 4px 0;
-	border-bottom: 1px solid var(--bs-border-color);
 }
 
-:is(.game-digimon-modal, .game-digimon-page) .details-misc span,
-:is(.game-digimon-modal, .game-digimon-page) .details-resistances span {
-	color: var(--bs-gray-500);
+:is(.game-digimon-modal, .game-digimon-page) .details-stat-name {
+	font-family: var(--dl-mono);
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	color: var(--dl-label);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-stat-bar {
+	height: 8px;
+	overflow: hidden;
+	border-radius: 999px;
+	background-color: var(--dl-snd-dark);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-stat-bar > span {
+	display: block;
+	height: 100%;
+	border-radius: inherit;
+	background: linear-gradient(90deg, var(--bs-primary-link), var(--dl-accent));
+	transition: width 0.35s ease;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-stat-value {
+	font-family: var(--dl-mono);
+	font-size: 0.85rem;
+	text-align: right;
+	color: var(--dl-text);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-stats-total {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 14px;
+	padding-top: 10px;
+	border-top: 1px solid var(--dl-border-soft);
+	font-family: var(--dl-mono);
+	font-size: 0.8rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--dl-muted);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-stats-total b {
+	font-size: 1rem;
+	letter-spacing: 0;
+	color: var(--dl-text);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-weakness {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 16px;
+	padding: 10px 12px;
+	border-radius: 10px;
+	background-color: var(--dl-panel-soft);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-weakness > span:first-child {
+	margin-right: 4px;
+	font-family: var(--dl-mono);
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--dl-muted);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-resistance-group + .details-resistance-group {
+	margin-top: 14px;
 }
 
 :is(.game-digimon-modal, .game-digimon-page) .details-resistances {
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-	gap: 0 20px;
+	grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-:is(.game-digimon-modal, .game-digimon-page) .details-resistances .immune b {
-	color: #3faae4;
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances li {
+	--dl-res: var(--dl-border-soft);
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	padding: 8px 10px;
+	border: 1px solid var(--dl-res);
+	border-left-width: 3px;
+	border-radius: 10px;
+	background-color: var(--dl-panel-soft);
 }
 
-:is(.game-digimon-modal, .game-digimon-page) .details-resistances .resist b {
-	color: #1dca7f;
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances span {
+	overflow: hidden;
+	font-size: 0.82em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: var(--dl-muted);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances b {
+	font-family: var(--dl-mono);
+	font-size: 1.05em;
+	color: var(--dl-text);
 }
 
 :is(.game-digimon-modal, .game-digimon-page) .details-resistances .neutral b {
 	color: var(--bs-gray-500);
 }
 
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances .weak {
+	--dl-res: var(--dl-weak);
+	background-color: rgba(247, 102, 102, 0.1);
+}
+
 :is(.game-digimon-modal, .game-digimon-page) .details-resistances .weak b {
-	color: #f76666;
+	color: var(--dl-weak);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances .resist {
+	--dl-res: var(--dl-resist);
+	background-color: rgba(29, 202, 127, 0.08);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances .resist b {
+	color: var(--dl-resist);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances .immune {
+	--dl-res: var(--dl-immune);
+	background-color: rgba(63, 170, 228, 0.1);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-resistances .immune b {
+	color: var(--dl-immune);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-matchup {
+	display: grid;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-matchup li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-matchup li > span {
+	color: var(--dl-muted);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-matchup li > div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
 }
 
 :is(.game-digimon-modal, .game-digimon-page) .details-description {
@@ -2183,58 +2480,352 @@ a.game-digimon-tile:focus,
 	color: var(--bs-gray-400);
 }
 
+:is(.game-digimon-modal, .game-digimon-page) .details-support + .details-support {
+	margin-top: 12px;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-support b {
+	color: var(--dl-text);
+}
+
 :is(.game-digimon-modal, .game-digimon-page) .details-support p {
-	margin: 0.25em 0 0.75em;
+	margin: 4px 0 0;
 }
 
-:is(.game-digimon-modal, .game-digimon-page) .details-table {
-	width: 100%;
-	border-collapse: collapse;
+:is(.game-digimon-modal, .game-digimon-page) .details-conditions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-:is(.game-digimon-modal, .game-digimon-page) .details-table th,
-:is(.game-digimon-modal, .game-digimon-page) .details-table td {
-	padding: 4px 12px 4px 0;
-	text-align: left;
-	vertical-align: top;
-	border-bottom: 1px solid var(--bs-border-color);
+:is(.game-digimon-modal, .game-digimon-page) .details-conditions li {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 8px;
+	padding: 6px 12px;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 10px;
+	background-color: var(--dl-panel-soft);
 }
 
-:is(.game-digimon-modal, .game-digimon-page) .details-table th {
-	font-weight: 400;
-	white-space: nowrap;
-	color: var(--bs-gray-500);
+:is(.game-digimon-modal, .game-digimon-page) .details-conditions span {
+	font-size: 0.85em;
+	color: var(--dl-muted);
 }
 
-:is(.game-digimon-modal, .game-digimon-page) .details-table .cell-description {
-	min-width: 220px;
+:is(.game-digimon-modal, .game-digimon-page) .details-conditions b {
+	font-family: var(--dl-mono);
 	font-size: 0.9em;
+	color: var(--dl-text);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skills {
+	display: grid;
+	gap: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skills > li {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	padding: 12px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skills > li:first-child {
+	padding-top: 0;
+	border-top: 0;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skill-level {
+	flex: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 10px;
+	background-color: var(--dl-snd-dark);
+	font-family: var(--dl-mono);
+	font-weight: 700;
+	line-height: 1;
+	color: var(--dl-text);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skill-level small {
+	margin-bottom: 3px;
+	font-size: 0.6rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--dl-muted);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skill-body {
+	flex: 1;
+	min-width: 0;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skill-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px 8px;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skill-head > b {
+	font-size: 1.02em;
+	color: var(--dl-text);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skill-body p {
+	margin: 6px 0 0;
+	font-size: 0.92em;
+	color: var(--bs-gray-400);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skill-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin: 8px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skill-meta li {
+	display: inline-flex;
+	gap: 6px;
+	padding: 2px 8px;
+	border-radius: 6px;
+	background-color: var(--dl-snd-dark);
+	font-size: 0.78em;
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skill-meta span {
+	color: var(--dl-muted);
+}
+
+:is(.game-digimon-modal, .game-digimon-page) .details-skill-meta b {
+	font-family: var(--dl-mono);
+	color: var(--dl-text);
+}
+
+.details-element {
+	--dl-el: #8c97a5;
+	display: inline-flex;
+	align-items: center;
+	padding: 1px 9px;
+	border: 1px solid color-mix(in srgb, var(--dl-el) 55%, transparent);
+	border-radius: 999px;
+	background-color: color-mix(in srgb, var(--dl-el) 16%, transparent);
+	font-family: var(--dl-mono);
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: color-mix(in srgb, var(--dl-el) 70%, white);
+}
+
+.details-element.el-fire {
+	--dl-el: #f0743e;
+}
+.details-element.el-water {
+	--dl-el: #3f8fe4;
+}
+.details-element.el-plant {
+	--dl-el: #4cbf5a;
+}
+.details-element.el-ice {
+	--dl-el: #7fd6ec;
+}
+.details-element:is(.el-electricity, .el-electric) {
+	--dl-el: #f2c94c;
+}
+.details-element.el-earth {
+	--dl-el: #b98a52;
+}
+.details-element.el-steel {
+	--dl-el: #9fb1c2;
+}
+.details-element.el-wind {
+	--dl-el: #5fd1b3;
+}
+.details-element.el-light {
+	--dl-el: #f5e27a;
+}
+.details-element.el-dark {
+	--dl-el: #9a6ae0;
+}
+.details-element:is(.el-buff, .el-recovery) {
+	--dl-el: #1dca7f;
+}
+.details-element.el-debuff {
+	--dl-el: #f76666;
 }
 
 .game-digimon-page .breadcrumb {
+	margin-top: 12px;
 	font-size: 0.9em;
 }
 
-.game-digimon-page .cell-empty {
-	justify-content: flex-start;
-}
-
-.game-digimon-header {
+.game-digimon-hero {
+	position: relative;
 	display: flex;
 	align-items: center;
-	gap: 16px;
-	margin-bottom: 1.5em;
-	--dl-tile-size: 112px;
+	gap: 24px;
+	margin-bottom: 16px;
+	padding: 22px;
+	overflow: hidden;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 14px;
+	background:
+		radial-gradient(
+			circle at 0 0,
+			rgba(var(--bs-primary-rgb), 0.35),
+			transparent 55%
+		),
+		var(--dl-panel);
+	--dl-tile-size: 140px;
+}
+
+.game-digimon-hero > .game-digimon-tile {
+	box-shadow:
+		0 0 0 1px var(--dl-border-strong),
+		0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.game-digimon-hero-body {
+	flex: 1;
+	min-width: 0;
+}
+
+.game-digimon-kicker {
+	display: flex;
+	gap: 10px;
+	font-family: var(--dl-mono);
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--dl-muted);
+}
+
+.game-digimon-kicker span + span::before {
+	content: '·';
+	margin-right: 10px;
+}
+
+.game-digimon-hero h1 {
+	margin: 4px 0 12px;
+	font-size: 2.2rem;
+	font-weight: 800;
+	overflow-wrap: anywhere;
+	color: var(--dl-text);
+}
+
+.game-digimon-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 0 0 14px;
+	padding: 0;
+	list-style: none;
+}
+
+.game-digimon-tags li {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 5px 12px 5px 8px;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+.game-digimon-tags li:not(:has(img)) {
+	padding-left: 12px;
+}
+
+.game-digimon-tags .attribute-icon {
+	width: 26px;
+	height: 26px;
+}
+
+.game-digimon-tags span {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.2;
+	font-weight: 700;
+	color: var(--dl-text);
+}
+
+.game-digimon-tags small {
+	font-family: var(--dl-mono);
+	font-size: 0.62rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--dl-muted);
 }
 
 .game-digimon-intro {
 	margin: 0;
-	max-width: 70ch;
+	max-width: 72ch;
+	font-size: 0.92em;
+	color: var(--bs-gray-400);
+}
+
+.game-digimon-description {
+	margin: 0 0 16px;
+	padding: 14px 20px;
+	border-left: 3px solid var(--bs-primary-link);
+	border-radius: 0 14px 14px 0;
+	background-color: var(--dl-panel-soft);
+	font-style: italic;
 	color: var(--bs-gray-300);
 }
 
-.game-digimon-page .details-grid {
-	margin-bottom: 1.5em;
+.game-evolution {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+	gap: 16px;
+	align-items: start;
+}
+
+.game-evolution-current {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	align-self: center;
+	--dl-tile-size: 72px;
+}
+
+.game-evolution-current .game-digimon-tile {
+	box-shadow: 0 0 0 2px var(--bs-primary-link);
+}
+
+.game-evolution-arrow {
+	font-size: 1.1rem;
+	color: var(--dl-muted);
+}
+
+.game-relations-column + .game-relations-column,
+.game-evolution + .game-relations-column {
+	margin-top: 16px;
+}
+
+.game-evolution-conditions {
+	margin-top: 16px;
+	padding-top: 14px;
+	border-top: 1px solid var(--dl-border-soft);
 }
 
 .game-relations,
@@ -2245,44 +2836,224 @@ a.game-digimon-tile:focus,
 }
 
 .game-relations {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 8px 16px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+	gap: 8px;
 }
 
 .game-relations a {
 	display: flex;
 	align-items: center;
-	gap: 8px;
+	gap: 10px;
+	height: 100%;
+	padding: 6px 10px 6px 6px;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 12px;
+	background-color: var(--dl-panel-soft);
 	text-decoration: none;
-	color: var(--bs-gray-100);
+	font-weight: 600;
+	color: var(--dl-text);
+	transition:
+		border-color 0.2s,
+		transform 0.2s;
+}
+
+.game-relations a:hover,
+.game-relations a:focus-visible {
+	border-color: var(--dl-accent);
+	transform: translateY(-1px);
+}
+
+.game-relations a > span:last-child {
+	min-width: 0;
+	overflow-wrap: anywhere;
+	line-height: 1.25;
 }
 
 .game-relations small {
 	display: block;
-	font-size: 0.8em;
-	color: var(--bs-gray-500);
+	font-size: 0.78em;
+	font-weight: 400;
+	color: var(--dl-muted);
 }
 
-.game-see-also li {
-	padding: 4px 0;
+.game-see-also {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.game-see-also a {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 14px;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 10px;
+	background-color: var(--dl-panel-soft);
+	text-decoration: none;
+	font-weight: 600;
+	color: var(--dl-text);
+	transition: border-color 0.2s;
+}
+
+.game-see-also a:hover,
+.game-see-also a:focus-visible {
+	border-color: var(--dl-accent);
 }
 
 .game-digimon-pager {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 12px;
+	margin: 24px 0 12px;
+}
+
+.game-digimon-pager-link {
 	display: flex;
-	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px;
+	min-width: 0;
+	padding: 10px 14px;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 14px;
+	background-color: var(--dl-panel);
+	text-decoration: none;
+	font-weight: 700;
+	color: var(--dl-text);
+	transition: border-color 0.2s;
+}
+
+.game-digimon-pager-link.next {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.game-digimon-pager-link.void {
+	visibility: hidden;
+}
+
+.game-digimon-pager-link:hover,
+.game-digimon-pager-link:focus-visible {
+	border-color: var(--dl-accent);
+}
+
+.game-digimon-pager-link > span:last-child {
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.game-digimon-pager-link small {
+	display: block;
+	font-family: var(--dl-mono);
+	font-size: 0.65rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--dl-muted);
+}
+
+.game-digimon-pager.compact {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	display: flex;
+	gap: 6px;
+	margin: 0;
+}
+
+.game-digimon-pager.compact .game-digimon-pager-link {
 	justify-content: center;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+.game-digimon-back {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1.5em;
+}
+
+.game-digimon-back .btn {
+	display: inline-flex;
+	align-items: center;
 	gap: 8px;
-	margin: 2em 0 1em;
+	border: 1px solid var(--dl-border-soft);
+	border-radius: 10px;
+	background-color: var(--dl-panel);
+}
+
+@media (max-width: 768px) {
+	.game-evolution {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.game-evolution-current {
+		justify-self: center;
+		transform: rotate(90deg);
+		--dl-tile-size: 56px;
+	}
+
+	.game-evolution-current .game-digimon-tile {
+		transform: rotate(-90deg);
+	}
 }
 
 @media (max-width: 576px) {
 	:is(.game-digimon-modal, .game-digimon-page) .details-grid {
 		grid-template-columns: minmax(0, 1fr);
+		gap: 12px;
+	}
+
+	:is(.game-digimon-modal, .game-digimon-page) .details-block {
+		padding: 14px;
 	}
 
 	:is(.game-digimon-modal, .game-digimon-page) .details-resistances {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 6px;
+	}
+
+	:is(.game-digimon-modal, .game-digimon-page) .details-resistances li {
+		padding: 6px 8px;
+	}
+
+	:is(.game-digimon-modal, .game-digimon-page) .details-skills > li {
+		gap: 10px;
+	}
+
+	:is(.game-digimon-modal, .game-digimon-page) .details-skill-level {
+		width: 38px;
+		height: 38px;
+	}
+
+	.game-digimon-hero {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 14px;
+		padding: 16px;
+		--dl-tile-size: 104px;
+	}
+
+	.game-digimon-hero h1 {
+		font-size: 1.7rem;
+	}
+
+	.game-relations {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.game-digimon-pager-link {
+		padding: 8px 10px;
+		gap: 8px;
+	}
+
+	.game-digimon-pager-link .game-digimon-tile {
+		display: none;
 	}
 
 	.evolution-table {

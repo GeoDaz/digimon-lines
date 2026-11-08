@@ -9,6 +9,7 @@ import SearchBar from '@/components/SearchBar';
 import GameDigimonImg from '@/components/Game/GameDigimonImg';
 import GameDigimonModal from '@/components/Game/GameDigimonModal';
 import AttributeIcon from '@/components/Game/AttributeIcon';
+import { getStatScale } from '@/components/Game/GameDigimonDetails';
 import { digimonGames } from '@/consts/games';
 import { makeClassName, stringToKey } from '@/functions';
 import { getDubNamesFor } from '@/functions/search';
@@ -34,6 +35,7 @@ const PageGame: React.FC<Props> = ({ game, digimons, aliases }) => {
 	const [selected, setSelected] = useState<GameDigimon>();
 	const [details, setDetails] = useState<GameDigimonsDetails>();
 	const [loading, setLoading] = useState(false);
+	const statScale = useMemo(() => details && getStatScale(details), [details]);
 
 	const bySlug = useMemo(
 		() => Object.fromEntries(digimons.map(digimon => [digimon.slug, digimon])),
@@ -281,6 +283,7 @@ const PageGame: React.FC<Props> = ({ game, digimons, aliases }) => {
 				<GameDigimonModal
 					digimon={selected}
 					details={details?.[selected.slug]}
+					scale={statScale}
 					loading={loading}
 					href={`/games/${game.key}/${selected.slug}`}
 					handleClose={() => setSelected(undefined)}

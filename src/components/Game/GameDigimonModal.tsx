@@ -4,11 +4,12 @@ import Link from '@/components/Link';
 import Icon from '@/components/Icon';
 import { GameDigimon, GameDigimonDetails } from '@/types/GameDigimon';
 import GameDigimonImg from './GameDigimonImg';
-import GameDigimonDetailsGrid from './GameDigimonDetails';
+import GameDigimonDetailsGrid, { StatScale } from './GameDigimonDetails';
 
 interface Props {
 	digimon: GameDigimon;
 	details?: GameDigimonDetails;
+	scale?: StatScale;
 	loading: boolean;
 	href?: string;
 	handleClose: () => void;
@@ -16,6 +17,7 @@ interface Props {
 const GameDigimonModal: React.FC<Props> = ({
 	digimon,
 	details,
+	scale,
 	loading,
 	href,
 	handleClose,
@@ -41,7 +43,7 @@ const GameDigimonModal: React.FC<Props> = ({
 				</div>
 			: !details ?
 				<p className="cell-empty">No data for this Digimon.</p>
-			:	<GameDigimonDetailsGrid details={details} />}
+			:	<GameDigimonDetailsGrid details={details} scale={scale} />}
 		</Modal.Body>
 		{!!href && (
 			<Modal.Footer>
