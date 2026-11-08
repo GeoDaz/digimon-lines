@@ -972,11 +972,11 @@ a.line-point {
 	transition: background-color 0.3s;
 }
 
-.line-grid.editable .line-row:has(> .btn.btn-danger:hover) {
+.line-grid.editable .line-row:has(> .action-btns .btn:hover) {
 	background-color: rgba(0, 0, 0, 0.25);
 }
 
-.line-grid.editable .line-row:has(> .btn.add:hover)::before {
+.line-grid.editable .line-row:has(> .action-btns .btn.add:hover)::before {
 	content: '';
 	position: absolute;
 	left: -0.5em;
@@ -993,7 +993,6 @@ a.line-point {
 	top: -0.5em;
 	left: -1em;
 	transform: translateY(-100%);
-	opacity: 0;
 	transition: all 0.3s;
 	padding: 0.25em 0.5em;
 	border-radius: var(--dl-border-radius);
@@ -1006,7 +1005,6 @@ a.line-point {
 	top: -0.5em;
 	left: 50%;
 	transform: translate(-50%, -100%);
-	opacity: 0;
 	transition: all 0.3s;
 	padding: 0.25em 0.5em;
 	border-radius: var(--dl-border-radius);
@@ -1016,9 +1014,16 @@ a.line-point {
 	line-height: 1.5;
 }
 
-.line-grid.editable .line-row .btn.add::before,
-.line-grid.editable .line-row .btn.btn-danger::before,
-.line-grid.editable .line-row .btn.grip::before {
+.line-grid.editable .line-row .action-btns .btn{
+	opacity: 0;
+}
+
+.line-grid.editable .line-row:hover .action-btns .btn,
+.line-grid.editable .line-row .action-btns .btn:hover{
+	opacity: 1;
+}
+
+.line-grid.editable .line-row .action-btns .btn::before {
 	content: '\f229';
 	font-family: bootstrap-icons !important;
 	display: inline-block;
@@ -1036,14 +1041,7 @@ a.line-point {
 }
 
 .line-grid.editable .line-row .btn.grip::before {
-	color: var(--bs-secondary);
-}
-
-.line-grid.editable .line-row:hover .btn.btn-danger,
-.line-grid.editable .line-row .btn.btn-danger:hover,
-.line-grid.editable .line-row:hover .btn.add,
-.line-grid.editable .line-row .btn.add:hover {
-	opacity: 1;
+	color: var(--bs-gray-700);
 }
 
 .line-grid .add-row {
@@ -1121,13 +1119,20 @@ a.line-point {
 	background-color: var(--dl-snd-dark);
 }
 
+.line-grid.editable .levels .level .btn {
+	opacity: 0;
+}
+.line-grid.editable .levels .level:hover .btn,
+.line-grid.editable .levels .level .btn:hover  {
+	opacity: 1;
+}
+
 .line-grid.editable .levels .level .btn.add {
 	display: inline-block;
 	position: absolute;
 	bottom: -1em;
 	left: 50%;
 	transform: translateX(-50%);
-	opacity: 0;
 	transition: all 0.3s;
 	padding: 0.25em 0.5em;
 	z-index: 1;
@@ -1145,7 +1150,6 @@ a.line-point {
 	top: 1em;
 	left: 50%;
 	transform: translateX(-50%);
-	opacity: 0;
 	transition: all 0.3s;
 	padding: 0.25em 0.5em;
 }
@@ -1156,20 +1160,13 @@ a.line-point {
 	bottom: 1.25em;
 	left: 50%;
 	transform: translateX(-50%);
-	opacity: 0;
 	transition: all 0.3s;
 	padding: 0.25em 0.5em;
 	cursor: grab;
 }
 
-.line-grid.editable .levels .level:hover .btn.btn-danger,
-.line-grid.editable .levels .level:hover .btn.add,
-.line-grid.editable .levels .level:hover .btn.grip {
-	opacity: 1;
-}
-
-.line-grid.editable .line-row:has(> .btn.grip) > .btn.btn-danger {
-	transform: translate(calc(-100% - 0.1em), -100%);
+.line-grid.editable .line-row .btn.grip+.btn.btn-danger {
+	transform: translate(0.1em, -100%);
 }
 
 .line-grid.editable .line-row .btn.grip {
@@ -1177,8 +1174,7 @@ a.line-point {
 	position: absolute;
 	top: -0.5em;
 	left: 50%;
-	transform: translate(0.1em, -100%);
-	opacity: 0;
+	transform: translate(calc(-100% - 0.1em), -100%);
 	transition: all 0.3s;
 	padding: 0.25em 0.5em;
 	border-radius: var(--dl-border-radius);

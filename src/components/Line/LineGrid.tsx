@@ -1,6 +1,14 @@
 import { Fragment, memo, useContext, useRef, useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
-import { Axis, CollapseAttr, Line, LineColumn, LineFrom, LinePoint, SizeAttr } from '@/types/Line';
+import {
+	Axis,
+	CollapseAttr,
+	Line,
+	LineColumn,
+	LineFrom,
+	LinePoint,
+	SizeAttr,
+} from '@/types/Line';
 import { makeClassName } from '@/functions';
 import {
 	addLineColumn,
@@ -57,7 +65,11 @@ const LineGrid: React.FC<GridProps> = ({ line, handleUpdate }) => {
 		});
 	};
 
-	const handleAxisDragStart = (e: React.DragEvent, axis: ReorderAxis, index: number) => {
+	const handleAxisDragStart = (
+		e: React.DragEvent,
+		axis: ReorderAxis,
+		index: number
+	) => {
 		e.stopPropagation();
 		startDrag(e, { axis, index });
 		setReorder({ axis, from: index });
@@ -68,7 +80,9 @@ const LineGrid: React.FC<GridProps> = ({ line, handleUpdate }) => {
 		)
 			.map(el => ({ el, coord: (el.dataset.coord || '').split(',').map(Number) }))
 			.filter(({ coord }) => coord[axis === 'column' ? 0 : 1] === index)
-			.sort((a, b) => (axis === 'column' ? a.coord[1] - b.coord[1] : a.coord[0] - b.coord[0]));
+			.sort((a, b) =>
+				axis === 'column' ? a.coord[1] - b.coord[1] : a.coord[0] - b.coord[0]
+			);
 		setDragGhost(
 			e,
 			points.map(({ el }) => pointMainImage(el)),
@@ -204,9 +218,9 @@ const LineGrid: React.FC<GridProps> = ({ line, handleUpdate }) => {
 				<LinePointSettings
 					show={!!edition}
 					point={
-						edition
-							? (line.columns[edition[0]][edition[1]] as LinePoint)
-							: undefined
+						edition ?
+							(line.columns[edition[0]][edition[1]] as LinePoint)
+						:	undefined
 					}
 					coord={edition}
 					handleClose={() => edit(undefined)}
@@ -278,11 +292,13 @@ const LineRow: React.FC<RowProps> = ({ column, x, y, nested }) => {
 				:	undefined
 			}
 			onDrop={
-				reorderable && handleAxisDrop ? e => handleAxisDrop(e, 'column', x) : undefined
+				reorderable && handleAxisDrop ?
+					e => handleAxisDrop(e, 'column', x)
+				:	undefined
 			}
 		>
 			{!!handleEdit && (
-				<>
+				<div className="action-btns">
 					<Button
 						variant="primary"
 						className="add"
@@ -290,9 +306,6 @@ const LineRow: React.FC<RowProps> = ({ column, x, y, nested }) => {
 						onClick={handleAdd}
 					>
 						<Icon name="plus-lg" />
-					</Button>
-					<Button variant="danger" title="remove column" onClick={handleRemove}>
-						<Icon name="trash3-fill" />
 					</Button>
 					{reorderable && (
 						<Button
@@ -306,7 +319,10 @@ const LineRow: React.FC<RowProps> = ({ column, x, y, nested }) => {
 							<Icon name="grip-vertical" />
 						</Button>
 					)}
-				</>
+					<Button variant="danger" title="remove column" onClick={handleRemove}>
+						<Icon name="trash3-fill" />
+					</Button>
+				</div>
 			)}
 			{column.map((point, i) => {
 				if (Array.isArray(point)) {
