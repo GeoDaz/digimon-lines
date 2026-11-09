@@ -7,46 +7,21 @@
 			null,
 			null,
 			{
-				"name": "wolfmon",
-				"from": [[1, -1.5]],
-				"color": ["x"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "beowolfmon",
-				"from": [[0, -1.5]],
-				"color": ["x"]
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "strabimon",
-				"from": [[1, -1.5]],
-				"color": ["x"]
-			},
-			{
 				"name": "dobermon",
-				"from": [[0, -1.5]],
+				"from": [[1, -1.5]],
 				"color": ["x"],
 				"ySize": 2
 			},
 			null,
 			{
 				"name": "kendogarurumon",
-				"from": [[-1, -1.5], [0, -1.5]],
+				"from": [[1, -1.5], [0, -1.5]],
 				"color": ["x", "fire"]
 			},
 			{
-				"name": "magnagarurumon",
-				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
-				"color": ["x", "ice", "marine"],
+				"name": "ancientgarurumon",
+				"from": [[1, -1.5], [0, -1.5], [3, -1.5], [4, -1.5]],
+				"color": ["x", "ice", "grass", "fusion"],
 				"ySize": 2
 			},
 			null,
@@ -54,7 +29,8 @@
 		],
 		[
 			{
-				"name": "botamon"
+				"name": "botamon",
+				"from": null
 			},
 			{
 				"name": "wanyamon",
@@ -64,8 +40,42 @@
 			},
 			null,
 			{
-				"name": "gizamon",
+				"name": "strabimon",
 				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
+				"name": "wolfmon",
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "beowolfmon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
+				"name": "magnagarurumon",
+				"from": [[0, -1.5], [-1, -1.5], [1, -1.5]],
+				"color": ["x", "ice", "marine"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "susanomon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "gizamon",
+				"from": [[-1, -1.5]],
 				"color": ["x"]
 			},
 			{
@@ -81,17 +91,13 @@
 				"color": ["ice"]
 			},
 			{
-				"name": "ancientgarurumon",
-				"from": [[-2, -1.5], [-1, -1.5], [1, -1.5], [2, -1.5]],
-				"color": ["x", "ice", "grass", "fusion"],
+				"name": "ancientmermaimon",
+				"from": [[0, -1.5], [1, -1.5], [2, -1.5]],
+				"color": ["marine", "grass", "fusion"],
 				"ySize": 2
 			},
 			null,
-			{
-				"name": "susanomon",
-				"from": [[-1, -1.5]],
-				"color": ["x"]
-			}
+			null
 		],
 		[
 			null,
@@ -110,12 +116,7 @@
 				"from": [[0, -1.5], [-1, -1.5]],
 				"color": ["grass", "ice"]
 			},
-			{
-				"name": "ancientmermaimon",
-				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
-				"color": ["marine", "grass", "fusion"],
-				"ySize": 2
-			},
+			null,
 			null,
 			null
 		],
@@ -128,7 +129,7 @@
 			null,
 			{
 				"name": "splashmon",
-				"from": [[-3, -1.5], [-1, -1.5]],
+				"from": [[-4, -1.5], [-1, -1.5]],
 				"color": ["fire", "grass"]
 			},
 			null,
@@ -147,5 +148,6 @@
 		"mega",
 		"",
 		"mega+"
-	]
+	],
+	"size": 10
 }

@@ -9,9 +9,9 @@
 			null,
 			null,
 			{
-				"name": "vajramon",
-				"from": [[1, -1.5], [4, -1.5]],
-				"color": ["fire", "dark"]
+				"name": "sandiramon",
+				"from": [[2, -1.5], [1, -1.5]],
+				"color": ["fusion", "dark"]
 			},
 			null,
 			null
@@ -22,7 +22,7 @@
 			null,
 			null,
 			{
-				"name": "siesamon",
+				"name": "devidramon",
 				"from": [[1, -1.5]],
 				"color": ["fusion"],
 				"ySize": 2
@@ -30,20 +30,21 @@
 			null,
 			{
 				"name": "majiramon",
-				"from": [[0, -1.5], [3, -1.5]],
+				"from": [[3, -1.5], [0, -1.5]],
 				"color": ["fire", "dark"]
 			},
 			{
-				"name": "gallantmon",
-				"from": [[-1, -1.5], [0, -1.5], [1, -1.5], [3, -1.5]],
-				"color": ["fire", "grass", "slide", "fusion"],
+				"name": "megidramon",
+				"from": [[4, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["fire", "grass", "fusion"],
 				"ySize": 2
 			},
 			null
 		],
 		[
 			{
-				"name": "jyarimon"
+				"name": "jyarimon",
+				"from": null
 			},
 			{
 				"name": "gigimon",
@@ -58,21 +59,21 @@
 				"color": ["x"]
 			},
 			{
-				"name": "growlmon_orange",
+				"name": "growlmon",
 				"from": [[0, -1.5]],
 				"color": ["fusion"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "mihiramon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["fire", "grass"]
+				"name": "wargrowlmon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["grass", "fusion"]
 			},
 			{
-				"name": "gallantmon_x",
-				"from": [[0, -1.5], [1, -1.5], [3, -1.5]],
-				"color": ["slide", "grass", "dark"],
+				"name": "gallantmon",
+				"from": [[3, -1.5], [-1, -1.5], [2, -1.5], [0, -1.5]],
+				"color": ["fire", "grass", "slide", "fusion"],
 				"ySize": 2
 			},
 			null
@@ -83,7 +84,7 @@
 			null,
 			null,
 			{
-				"name": "growlmon",
+				"name": "growlmon_orange",
 				"from": [[-1, -1.5]],
 				"color": ["fusion"],
 				"ySize": 2
@@ -91,37 +92,12 @@
 			null,
 			{
 				"name": "wargrowlmon_orange",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["grass", "fusion"]
-			},
-			{
-				"name": "megidramon",
-				"from": [[-3, -1.5], [-2, -1.5], [1, -1.5]],
-				"color": ["fire", "grass", "fusion"],
-				"ySize": 2
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "devidramon",
-				"from": [[-2, -1.5]],
-				"color": ["fusion"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "wargrowlmon",
-				"from": [[-2, -1.5], [-1, -1.5]],
+				"from": [[0, -1.5], [-1, -1.5]],
 				"color": ["grass", "fusion"]
 			},
 			{
 				"name": "gallantmon_crimson_mode",
-				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
+				"from": [[0, -1.5], [-1, -1.5], [-3, -1.5]],
 				"color": ["grass", "fusion", "dark"],
 				"ySize": 2
 			},
@@ -132,16 +108,42 @@
 			null,
 			null,
 			null,
+			{
+				"name": "siesamon",
+				"from": [[-2, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "mihiramon",
+				"from": [[0, -1.5], [-1, -1.5]],
+				"color": ["fire", "grass"]
+			},
+			{
+				"name": "gallantmon_x",
+				"from": [[0, -1.5], [-1, -1.5], [-4, -1.5]],
+				"color": ["slide", "grass", "dark"],
+				"ySize": 2
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
 			null,
 			null,
 			{
-				"name": "sandiramon",
-				"from": [[-2, -1.5], [-1, -1.5]],
-				"color": ["fusion", "dark"]
+				"name": "vajramon",
+				"from": [[-1, -1.5], [-4, -1.5]],
+				"color": ["fire", "dark"]
 			},
 			null,
 			null
 		]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }

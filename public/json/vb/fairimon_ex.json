@@ -7,8 +7,45 @@
 			null,
 			null,
 			{
+				"name": "cockatrimon",
+				"from": [[2, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "shutumon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["x", "grass"]
+			},
+			{
+				"name": "lordknightmon",
+				"from": [[0, -1.5], [3, -1.5]],
+				"color": ["ice", "grass"],
+				"ySize": 2
+			},
+			null
+		],
+		[
+			{
+				"name": "yuramon",
+				"from": null
+			},
+			{
+				"name": "tanemon",
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "tinkermon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "fairymon",
-				"from": [[1, -1.5]],
+				"from": [[0, -1.5]],
 				"color": ["fusion"],
 				"ySize": 2
 			},
@@ -20,7 +57,7 @@
 			},
 			{
 				"name": "ancientirismon",
-				"from": [[0, -1.5], [1, -1.5], [3, -1.5]],
+				"from": [[0, -1.5], [-1, -1.5], [3, -1.5]],
 				"color": ["x", "ice", "machine"],
 				"ySize": 2
 			},
@@ -31,44 +68,8 @@
 			null,
 			null,
 			{
-				"name": "tinkermon",
-				"from": [[1, -1.5]],
-				"color": ["x"]
-			},
-			{
-				"name": "cockatrimon",
-				"from": [[1, -1.5]],
-				"color": ["grass"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "shutumon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["x", "grass"]
-			},
-			{
-				"name": "lotusmon",
-				"from": [[-1, -1.5], [1, -1.5], [2, -1.5]],
-				"color": ["x", "marine", "machine"],
-				"ySize": 2
-			},
-			null
-		],
-		[
-			{
-				"name": "yuramon"
-			},
-			{
-				"name": "tanemon",
-				"from": [[0, -1.5]],
-				"color": ["x"],
-				"ySize": 2
-			},
-			null,
-			{
 				"name": "pomumon",
-				"from": [[0, -1.5]],
+				"from": [[-1, -1.5]],
 				"color": ["x"]
 			},
 			{
@@ -85,7 +86,7 @@
 			},
 			{
 				"name": "ancienttroiamon",
-				"from": [[0, -1.5], [2, -1.5]],
+				"from": [[0, -1.5], [1, -1.5]],
 				"color": ["marine", "grass"],
 				"ySize": 2
 			},
@@ -104,14 +105,14 @@
 			},
 			null,
 			{
-				"name": "peacockmon",
-				"from": [[-2, -1.5], [0, -1.5]],
-				"color": ["grass", "fusion"]
+				"name": "zamielmon",
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["ice", "fusion"]
 			},
 			{
-				"name": "lordknightmon",
-				"from": [[-2, -1.5], [1, -1.5]],
-				"color": ["ice", "grass"],
+				"name": "lotusmon",
+				"from": [[-2, -1.5], [-1, -1.5], [1, -1.5]],
+				"color": ["x", "marine", "machine"],
 				"ySize": 2
 			},
 			null
@@ -124,13 +125,14 @@
 			null,
 			null,
 			{
-				"name": "zamielmon",
-				"from": [[-2, -1.5], [-1, -1.5]],
-				"color": ["ice", "fusion"]
+				"name": "peacockmon",
+				"from": [[-4, -1.5], [-1, -1.5]],
+				"color": ["grass", "fusion"]
 			},
 			null,
 			null
 		]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }

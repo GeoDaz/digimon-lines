@@ -7,8 +7,45 @@
 			null,
 			null,
 			{
-				"name": "blitzmon",
+				"name": "thunderballmon",
 				"from": [[1, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "bolgmon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["x", "grass"]
+			},
+			{
+				"name": "grandiskuwagamon",
+				"from": [[1, -1.5], [0, -1.5], [4, -1.5]],
+				"color": ["x", "ice", "fusion"],
+				"ySize": 2
+			},
+			null
+		],
+		[
+			{
+				"name": "choromon",
+				"from": null
+			},
+			{
+				"name": "caprimon",
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "kokabuterimon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
+				"name": "blitzmon",
+				"from": [[0, -1.5]],
 				"color": ["fusion"],
 				"ySize": 2
 			},
@@ -20,7 +57,7 @@
 			},
 			{
 				"name": "ancientbeetlemon",
-				"from": [[0, -1.5], [1, -1.5], [3, -1.5]],
+				"from": [[0, -1.5], [-1, -1.5], [3, -1.5]],
 				"color": ["x", "ice", "fusion"],
 				"ySize": 2
 			},
@@ -29,46 +66,10 @@
 		[
 			null,
 			null,
-			null,
-			{
-				"name": "kokabuterimon",
-				"from": [[1, -1.5]],
-				"color": ["x"]
-			},
-			{
-				"name": "thunderballmon",
-				"from": [[0, -1.5]],
-				"color": ["fusion"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "bolgmon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["x", "grass"]
-			},
-			{
-				"name": "grandiskuwagamon",
-				"from": [[-1, -1.5], [0, -1.5], [2, -1.5]],
-				"color": ["x", "ice", "fusion"],
-				"ySize": 2
-			},
-			null
-		],
-		[
-			{
-				"name": "choromon"
-			},
-			{
-				"name": "caprimon",
-				"from": [[0, -1.5]],
-				"color": ["x"],
-				"ySize": 2
-			},
 			null,
 			{
 				"name": "kokuwamon",
-				"from": [[0, -1.5]],
+				"from": [[-1, -1.5]],
 				"color": ["x"]
 			},
 			{
@@ -85,7 +86,7 @@
 			},
 			{
 				"name": "ancientwisemon",
-				"from": [[0, -1.5], [2, -1.5]],
+				"from": [[0, -1.5], [1, -1.5]],
 				"color": ["marine", "dark"],
 				"ySize": 2
 			},
@@ -104,13 +105,13 @@
 			},
 			null,
 			{
-				"name": "metallifekuwagamon",
-				"from": [[0, -1.5], [-2, -1.5]],
-				"color": ["fusion", "grass"]
+				"name": "wisemon",
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["ice", "fusion"]
 			},
 			{
 				"name": "murmukusmon",
-				"from": [[-1, -1.5], [1, -1.5]],
+				"from": [[-1, -1.5], [0, -1.5]],
 				"color": ["marine", "dark"],
 				"ySize": 2
 			},
@@ -124,13 +125,14 @@
 			null,
 			null,
 			{
-				"name": "wisemon",
-				"from": [[-2, -1.5], [-1, -1.5]],
-				"color": ["ice", "fusion"]
+				"name": "metallifekuwagamon",
+				"from": [[-1, -1.5], [-4, -1.5]],
+				"color": ["fusion", "grass"]
 			},
 			null,
 			null
 		]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }

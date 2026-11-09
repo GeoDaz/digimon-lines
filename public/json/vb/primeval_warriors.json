@@ -9,8 +9,8 @@
 			null,
 			null,
 			{
-				"name": "jewelbeemon",
-				"from": [[1, -1.5], [3, -1.5]],
+				"name": "pucchiemon_green",
+				"from": [[1, -1.5], [2, -1.5]],
 				"color": ["x", "grass"]
 			},
 			null,
@@ -29,13 +29,13 @@
 			},
 			null,
 			{
-				"name": "paildramon",
-				"from": [[0, -1.5], [2, -1.5]],
+				"name": "jewelbeemon",
+				"from": [[0, -1.5], [1, -1.5]],
 				"color": ["x", "grass"]
 			},
 			{
 				"name": "banchostingmon",
-				"from": [[-1, -1.5], [2, -1.5], [4, -1.5]],
+				"from": [[0, -1.5], [3, -1.5], [-1, -1.5]],
 				"color": ["electric", "grass", "grass"],
 				"ySize": 2
 			},
@@ -43,7 +43,8 @@
 		],
 		[
 			{
-				"name": "leafmon"
+				"name": "leafmon",
+				"from": null
 			},
 			{
 				"name": "minomon",
@@ -58,21 +59,21 @@
 				"color": ["x"]
 			},
 			{
-				"name": "shadramon",
+				"name": "hudiemon",
 				"from": [[0, -1.5]],
 				"color": ["x"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "dinobeemon",
-				"from": [[0, -1.5], [2, -1.5]],
-				"color": ["gold", "fusion"]
+				"name": "paildramon",
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["x", "grass"]
 			},
 			{
-				"name": "grankuwagamon",
-				"from": [[-2, -1.5], [1, -1.5], [3, -1.5]],
-				"color": ["electric", "grass", "grass"],
+				"name": "imperialdramon_paladin_mode",
+				"from": [[1, -1.5], [0, -1.5], [3, -1.5]],
+				"color": ["gold", "x", "holy"],
 				"ySize": 2
 			},
 			null
@@ -83,20 +84,20 @@
 			null,
 			null,
 			{
-				"name": "hudiemon",
+				"name": "shadramon",
 				"from": [[-1, -1.5]],
 				"color": ["x"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "kongoumon",
-				"from": [[-1, -1.5], [1, -1.5]],
+				"name": "dinobeemon",
+				"from": [[0, -1.5], [1, -1.5]],
 				"color": ["gold", "fusion"]
 			},
 			{
 				"name": "imperialdramon_dragon_mode",
-				"from": [[-1, -1.5], [-2, -1.5], [1, -1.5]],
+				"from": [[0, -1.5], [-1, -1.5], [2, -1.5]],
 				"color": ["gold", "x", "holy"],
 				"ySize": 2
 			},
@@ -115,14 +116,14 @@
 			},
 			null,
 			{
-				"name": "pucchiemon",
-				"from": [[-2, -1.5], [0, -1.5]],
+				"name": "kongoumon",
+				"from": [[-1, -1.5], [0, -1.5]],
 				"color": ["gold", "fusion"]
 			},
 			{
-				"name": "imperialdramon_paladin_mode",
-				"from": [[-2, -1.5], [-3, -1.5], [0, -1.5]],
-				"color": ["gold", "x", "holy"],
+				"name": "grankuwagamon",
+				"from": [[-3, -1.5], [0, -1.5], [-4, -1.5]],
+				"color": ["electric", "grass", "grass"],
 				"ySize": 2
 			},
 			null
@@ -135,13 +136,14 @@
 			null,
 			null,
 			{
-				"name": "pucchiemon_green",
-				"from": [[-4, -1.5], [-2, -1.5]],
-				"color": ["x", "grass"]
+				"name": "pucchiemon",
+				"from": [[-2, -1.5], [-1, -1.5]],
+				"color": ["gold", "fusion"]
 			},
 			null,
 			null
 		]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }

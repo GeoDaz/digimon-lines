@@ -7,21 +7,21 @@
 			null,
 			null,
 			{
-				"name": "betelgammamon",
+				"name": "kausgammamon",
 				"from": [[1, -1.5]],
 				"color": ["fusion"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "canoweissmon",
-				"from": [[0, -1.5], [1, -1.5], [2, -1.5], [3, -1.5]],
-				"color": ["fire", "grass", "slide", "fusion"]
+				"name": "brachiomon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["fire", "grass"]
 			},
 			{
-				"name": "aegisdramon",
-				"from": [[0, -1.5], [3, -1.5]],
-				"color": ["fire", "fusion"],
+				"name": "ultimatebrachimon",
+				"from": [[1, -1.5], [0, -1.5], [3, -1.5]],
+				"color": ["fire", "grass", "slide"],
 				"ySize": 2
 			},
 			null
@@ -44,21 +44,21 @@
 				"color": ["x"]
 			},
 			{
-				"name": "kausgammamon",
+				"name": "betelgammamon",
 				"from": [[0, -1.5]],
 				"color": ["fusion"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "brachiomon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["fire", "grass"]
+				"name": "canoweissmon",
+				"from": [[0, -1.5], [-1, -1.5], [1, -1.5], [2, -1.5]],
+				"color": ["fire", "grass", "slide", "fusion"]
 			},
 			{
-				"name": "ultimatebrachimon",
-				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
-				"color": ["fire", "grass", "slide"],
+				"name": "aegisdramon",
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["fire", "fusion"],
 				"ySize": 2
 			},
 			null
@@ -76,13 +76,13 @@
 			},
 			null,
 			{
-				"name": "kimeramon",
-				"from": [[-2, -1.5], [1, -1.5]],
-				"color": ["fire", "fusion"]
+				"name": "tankdramon",
+				"from": [[0, -1.5]],
+				"color": ["slide"]
 			},
 			{
 				"name": "chaosdramon",
-				"from": [[-2, -1.5], [-1, -1.5], [0, -1.5], [1, -1.5]],
+				"from": [[-1, -1.5], [-2, -1.5], [1, -1.5], [0, -1.5]],
 				"color": ["fire", "grass", "slide", "fusion"],
 				"ySize": 2
 			},
@@ -101,9 +101,9 @@
 			},
 			null,
 			{
-				"name": "tankdramon",
-				"from": [[-1, -1.5]],
-				"color": ["slide"]
+				"name": "kimeramon",
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["fire", "fusion"]
 			},
 			null,
 			null

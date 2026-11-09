@@ -9,9 +9,9 @@
 			null,
 			null,
 			{
-				"name": "raihimon",
-				"from": [[1, -1.5]],
-				"color": ["x"]
+				"name": "loaderliomon",
+				"from": [[1, -1.5], [4, -1.5]],
+				"color": ["fire", "fusion"]
 			},
 			null,
 			null
@@ -22,7 +22,7 @@
 			null,
 			null,
 			{
-				"name": "louwemon",
+				"name": "liamon",
 				"from": [[1, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
@@ -30,48 +30,51 @@
 			null,
 			{
 				"name": "jagerloweemon",
-				"from": [[0, -1.5], [1, -1.5]],
+				"from": [[1, -1.5], [0, -1.5]],
 				"color": ["x", "fire"]
 			},
 			{
-				"name": "deathmon",
-				"from": [[0, -1.5], [2, -1.5], [3, -1.5]],
-				"color": ["ice", "marine", "fusion"],
+				"name": "ancientsphinxmon",
+				"from": [[1, -1.5], [0, -1.5], [-1, -1.5]],
+				"color": ["x", "ice", "fire"],
 				"ySize": 2
 			},
 			null
 		],
 		[
 			{
-				"name": "popomon"
+				"name": "popomon",
+				"from": null,
+				"xSize": 2
 			},
 			{
 				"name": "frimon",
 				"from": [[0, -1.5]],
 				"color": ["x"],
-				"ySize": 2
+				"ySize": 2,
+				"xSize": 2
 			},
 			null,
 			{
 				"name": "liollmon",
-				"from": [[0, -1.5]],
+				"from": [[0.5, -1.5]],
 				"color": ["x"]
 			},
 			{
-				"name": "liamon",
+				"name": "loweemon",
 				"from": [[0, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "loaderliomon",
-				"from": [[0, -1.5], [2, -1.5]],
-				"color": ["fire", "fusion"]
+				"name": "raihimon",
+				"from": [[0, -1.5]],
+				"color": ["x"]
 			},
 			{
 				"name": "dinotigermon",
-				"from": [[-2, -1.5], [0, -1.5], [1, -1.5], [2, -1.5]],
+				"from": [[0, -1.5], [-2, -1.5], [1, -1.5], [2, -1.5]],
 				"color": ["x", "fire", "marine", "fusion"],
 				"ySize": 2
 			},
@@ -83,7 +86,7 @@
 			null,
 			{
 				"name": "gazimon",
-				"from": [[-1, -1.5]],
+				"from": [[-0.5, -1.5]],
 				"color": ["x"]
 			},
 			{
@@ -99,9 +102,9 @@
 				"color": ["ice"]
 			},
 			{
-				"name": "ancientsphinxmon",
-				"from": [[-3, -1.5], [-2, -1.5], [-1, -1.5]],
-				"color": ["x", "ice", "fire"],
+				"name": "deathmon",
+				"from": [[-2, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["ice", "marine", "fusion"],
 				"ySize": 2
 			},
 			null
@@ -142,5 +145,6 @@
 			null
 		]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }

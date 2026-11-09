@@ -9,8 +9,8 @@
 			null,
 			null,
 			{
-				"name": "weregarurumon",
-				"from": [[1, -1.5], [4, -1.5]],
+				"name": "waruseadramon",
+				"from": [[2, -1.5], [1, -1.5]],
 				"color": ["fire", "dark"]
 			},
 			null,
@@ -23,20 +23,20 @@
 			null,
 			null,
 			{
-				"name": "garurumon",
+				"name": "algomon_3",
 				"from": [[1, -1.5]],
 				"color": ["grass"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "parrotmon",
-				"from": [[1, -1.5], [2, -1.5]],
-				"color": ["grass", "fusion"]
+				"name": "bigmamemon",
+				"from": [[2, -1.5], [0, -1.5]],
+				"color": ["fusion", "dark"]
 			},
 			{
 				"name": "cresgarurumon",
-				"from": [[-1, -1.5], [1, -1.5], [2, -1.5], [3, -1.5], [4, -1.5]],
+				"from": [[1, -1.5], [4, -1.5], [0, -1.5], [2, -1.5], [-1, -1.5]],
 				"color": ["fire", "grass", "slide", "fusion", "dark"],
 				"ySize": 2
 			},
@@ -45,7 +45,8 @@
 		],
 		[
 			{
-				"name": "punimon"
+				"name": "punimon",
+				"from": null
 			},
 			{
 				"name": "tsunomon",
@@ -60,27 +61,27 @@
 				"color": ["x"]
 			},
 			{
-				"name": "gorimon",
+				"name": "garurumon",
 				"from": [[0, -1.5]],
 				"color": ["grass"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "valvemon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["fire", "grass"]
+				"name": "weregarurumon",
+				"from": [[0, -1.5], [-1, -1.5]],
+				"color": ["fire", "dark"]
 			},
 			{
-				"name": "nidhoggmon",
-				"from": [[-1, -1.5], [1, -1.5], [2, -1.5]],
-				"color": ["gold", "slide", "fusion"],
+				"name": "metalgarurumon",
+				"from": [[0, -1.5], [2, -1.5], [3, -1.5], [-2, -1.5]],
+				"color": ["fire", "gold", "grass", "dark"],
 				"ySize": 2
 			},
 			null,
 			{
 				"name": "omegamon",
-				"from": [[1, -1.5]],
+				"from": [[0, -1.5]],
 				"color": ["slide"]
 			}
 		],
@@ -97,14 +98,14 @@
 			},
 			null,
 			{
-				"name": "bigmamemon",
-				"from": [[0, -1.5], [1, -1.5]],
-				"color": ["fusion", "dark"]
+				"name": "orochimon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["grass", "fusion"]
 			},
 			{
-				"name": "metalgarurumon",
-				"from": [[-3, -1.5], [-2, -1.5], [-1, -1.5], [2, -1.5]],
-				"color": ["fire", "gold", "grass", "dark"],
+				"name": "nidhoggmon",
+				"from": [[1, -1.5], [-2, -1.5], [0, -1.5]],
+				"color": ["gold", "slide", "fusion"],
 				"ySize": 2
 			},
 			null,
@@ -116,15 +117,15 @@
 			null,
 			null,
 			{
-				"name": "algomon_adult",
+				"name": "gorimon",
 				"from": [[-2, -1.5]],
 				"color": ["grass"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "orochimon",
-				"from": [[-2, -1.5], [-1, -1.5]],
+				"name": "parrotmon",
+				"from": [[0, -1.5], [-1, -1.5]],
 				"color": ["grass", "fusion"]
 			},
 			null,
@@ -139,9 +140,9 @@
 			null,
 			null,
 			{
-				"name": "waruseadramon",
-				"from": [[-4, -1.5], [-1, -1.5]],
-				"color": ["fire", "dark"]
+				"name": "valvemon",
+				"from": [[-3, -1.5], [-1, -1.5]],
+				"color": ["fire", "grass"]
 			},
 			null,
 			null,
@@ -159,5 +160,6 @@
 		"mega",
 		"",
 		"mega+"
-	]
+	],
+	"size": 10
 }

@@ -7,23 +7,24 @@
 			null,
 			null,
 			{
-				"name": "greymon",
+				"name": "garurumon",
 				"from": [[1, -1.5]],
 				"color": ["x"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "greywars",
+				"name": "garurumetal",
 				"from": [[0, -1.5]],
-				"color": ["fire"]
+				"color": ["gold"]
 			},
 			null,
 			null
 		],
 		[
 			{
-				"name": "weatheredmedal"
+				"name": "weatheredmedal",
+				"from": null
 			},
 			{
 				"name": "medal",
@@ -38,20 +39,20 @@
 				"color": ["x"]
 			},
 			{
-				"name": "garurumon",
+				"name": "greymon",
 				"from": [[0, -1.5]],
 				"color": ["x"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "garurumetal",
+				"name": "greywars",
 				"from": [[0, -1.5]],
-				"color": ["gold"]
+				"color": ["fire"]
 			},
 			{
 				"name": "omegaknight",
-				"from": [[-1, -1.5]],
+				"from": [[0, -1.5]],
 				"color": ["x"],
 				"ySize": 2
 			},
@@ -71,12 +72,12 @@
 			null,
 			{
 				"name": "metabee",
-				"from": [[-2, -1.5], [-1, -1.5], [0, -1.5], [1, -1.5]],
+				"from": [[-1, -1.5], [-2, -1.5], [0, -1.5], [1, -1.5]],
 				"color": ["fire", "gold", "marine", "machine"]
 			},
 			{
 				"name": "omedamon",
-				"from": [[-2, -1.5], [-1, -1.5], [0, -1.5], [1, -1.5]],
+				"from": [[-1, -1.5], [-2, -1.5], [0, -1.5], [1, -1.5]],
 				"color": ["x", "ice", "marine", "machine"],
 				"ySize": 2
 			},
@@ -96,12 +97,13 @@
 			null,
 			{
 				"name": "rokusho",
-				"from": [[-3, -1.5], [-2, -1.5], [-1, -1.5], [0, -1.5]],
+				"from": [[-2, -1.5], [-3, -1.5], [-1, -1.5], [0, -1.5]],
 				"color": ["fire", "gold", "marine", "machine"]
 			},
 			null,
 			null
 		]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }

@@ -9,8 +9,8 @@
 			null,
 			null,
 			{
-				"name": "metalgreymon_alterous_mode",
-				"from": [[1, -1.5], [3, -1.5]],
+				"name": "skullgreymon",
+				"from": [[1, -1.5], [2, -1.5]],
 				"color": ["fire", "fusion"]
 			},
 			null,
@@ -29,13 +29,13 @@
 			},
 			null,
 			{
-				"name": "extyranomon",
-				"from": [[1, -1.5], [3, -1.5]],
-				"color": ["grass", "dark"]
+				"name": "metalgreymon_alterous_mode",
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["fire", "fusion"]
 			},
 			{
 				"name": "victorygreymon",
-				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
+				"from": [[0, -1.5], [4, -1.5], [2, -1.5]],
 				"color": ["fire", "gold", "grass"],
 				"ySize": 2
 			},
@@ -43,7 +43,8 @@
 		],
 		[
 			{
-				"name": "botamon"
+				"name": "botamon",
+				"from": null
 			},
 			{
 				"name": "koromon",
@@ -58,20 +59,20 @@
 				"color": ["x"]
 			},
 			{
-				"name": "monochromon",
+				"name": "greymon_blue",
 				"from": [[0, -1.5]],
 				"color": ["fusion"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "vermillimon",
-				"from": [[0, -1.5], [2, -1.5]],
-				"color": ["grass", "dark"]
+				"name": "metalgreymon_blue",
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["fire", "fusion"]
 			},
 			{
 				"name": "black_wargreymon",
-				"from": [[-1, -1.5], [2, -1.5], [3, -1.5]],
+				"from": [[3, -1.5], [0, -1.5], [-2, -1.5]],
 				"color": ["gold", "fusion", "dark"],
 				"ySize": 2
 			},
@@ -83,20 +84,20 @@
 			null,
 			null,
 			{
-				"name": "greymon_blue",
+				"name": "monochromon",
 				"from": [[-1, -1.5]],
 				"color": ["fusion"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "mametyramon",
-				"from": [[-1, -1.5], [1, -1.5]],
+				"name": "vermillimon",
+				"from": [[0, -1.5], [1, -1.5]],
 				"color": ["grass", "dark"]
 			},
 			{
 				"name": "samudramon",
-				"from": [[-1, -1.5], [0, -1.5], [2, -1.5]],
+				"from": [[0, -1.5], [1, -1.5], [-3, -1.5]],
 				"color": ["grass", "slide", "dark"],
 				"ySize": 2
 			},
@@ -115,13 +116,13 @@
 			},
 			null,
 			{
-				"name": "metalgreymon_blue",
-				"from": [[-3, -1.5], [-1, -1.5]],
-				"color": ["fire", "fusion"]
+				"name": "mametyramon",
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["grass", "dark"]
 			},
 			{
 				"name": "omegamon_zwart",
-				"from": [[-4, -1.5], [-1, -1.5], [0, -1.5]],
+				"from": [[-3, -1.5], [0, -1.5], [-2, -1.5]],
 				"color": ["fire", "slide", "fusion"],
 				"ySize": 2
 			},
@@ -135,13 +136,14 @@
 			null,
 			null,
 			{
-				"name": "skullgreymon",
-				"from": [[-4, -1.5], [-2, -1.5]],
-				"color": ["fire", "fusion"]
+				"name": "extyranomon",
+				"from": [[-2, -1.5], [-1, -1.5]],
+				"color": ["grass", "dark"]
 			},
 			null,
 			null
 		]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }

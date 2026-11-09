@@ -5,116 +5,10 @@
 			null,
 			null,
 			null,
-			{
-				"name": "jazamon",
-				"from": [[1, -1.5]],
-				"color": ["x"]
-			},
-			{
-				"name": "thunderbirdmon",
-				"from": [[3, -1.5], [0, -1.5]],
-				"color": ["mode", "grass"],
-				"ySize": 2
-			},
 			null,
-			{
-				"name": "jazarichmon",
-				"from": [[3, -1.5], [0, -1.5]],
-				"color": ["mode", "grass"]
-			},
-			{
-				"name": "metallicdramon",
-				"from": [[3, -1.5], [0, -1.5]],
-				"color": ["mode", "grass"],
-				"ySize": 2
-			},
-			null,
-			null
-		],
-		[
-			{
-				"name": "nyokimon",
-				"from": null
-			},
-			{
-				"name": "yokomon",
-				"from": [[0, -1.5]],
-				"color": ["x"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "biyomon",
-				"from": [[0, -1.5]],
-				"color": ["x"]
-			},
-			{
-				"name": "birdramon",
-				"from": [[0, -1.5], [1, -1.5], [-1, -1.5]],
-				"color": ["fire", "gold", "grass"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "garudamon",
-				"from": [[0, -1.5], [1, -1.5], [-1, -1.5]],
-				"color": ["fire", "gold", "grass"]
-			},
-			{
-				"name": "phoenixmon",
-				"from": [[0, -1.5]],
-				"color": ["fire"],
-				"ySize": 2
-			},
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "luxmon",
-				"from": [[-1, -1.5]],
-				"color": ["x"]
-			},
-			{
-				"name": "pidmon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["fire", "gold"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "arkhaiangemon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["fire", "gold"]
-			},
-			{
-				"name": "dominimon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["fire", "gold"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "shakamon",
-				"from": [[0, -1.5], [2, -1.5]],
-				"color": ["gold", "human"]
-			}
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "falcomon_2",
-				"from": [[-2, -1.5]],
-				"color": ["x"]
-			},
 			{
 				"name": "peckmon",
-				"from": [[-2, -1.5], [0, -1.5]],
+				"from": [[3, -1.5], [1, -1.5]],
 				"color": ["fire", "mode"],
 				"ySize": 2
 			},
@@ -138,31 +32,139 @@
 			}
 		],
 		[
-			null,
-			null,
-			null,
+			{
+				"name": "nyokimon",
+				"from": null
+			},
+			{
+				"name": "yokomon",
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
 			null,
 			{
+				"name": "falcomon_2",
+				"from": [[0, -1.5]],
+				"color": ["x"]
+			},
+			{
 				"name": "xiquemon",
-				"from": [[-2, -1.5], [-1, -1.5]],
+				"from": [[1, -1.5], [0, -1.5]],
 				"color": ["gold", "mode"],
 				"ySize": 2
 			},
 			null,
 			{
 				"name": "huankunmon",
-				"from": [[-2, -1.5], [0, -1.5]],
+				"from": [[1, -1.5], [0, -1.5]],
 				"color": ["gold", "human"]
 			},
 			{
 				"name": "xiangpengmon",
-				"from": [[-2, -1.5], [0, -1.5]],
+				"from": [[1, -1.5], [0, -1.5]],
 				"color": ["gold", "human"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "shakamon",
+				"from": [[0.5, -1.5], [-0.5, -1.5]],
+				"color": ["gold", "human"],
+				"xSize": 2
+			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "luxmon",
+				"from": [[-1, -1.5]],
+				"color": ["x"]
+			},
+			{
+				"name": "pidmon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["fire", "gold"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "arkhaiangemon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["fire", "gold"]
+			},
+			{
+				"name": "dominimon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["fire", "gold"],
 				"ySize": 2
 			},
 			null,
 			null
 		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "biyomon",
+				"from": [[-2, -1.5]],
+				"color": ["x"]
+			},
+			{
+				"name": "birdramon",
+				"from": [[0, -1.5], [-1, -1.5], [1, -1.5]],
+				"color": ["fire", "gold", "grass"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "garudamon",
+				"from": [[0, -1.5], [-1, -1.5], [1, -1.5]],
+				"color": ["fire", "gold", "grass"]
+			},
+			{
+				"name": "phoenixmon",
+				"from": [[0, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "jazamon",
+				"from": [[-3, -1.5]],
+				"color": ["x"]
+			},
+			{
+				"name": "thunderbirdmon",
+				"from": [[-3, -1.5], [0, -1.5]],
+				"color": ["mode", "grass"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "jazarichmon",
+				"from": [[-4, -1.5], [0, -1.5]],
+				"color": ["mode", "grass"]
+			},
+			{
+				"name": "metallicdramon",
+				"from": [[-4, -1.5], [0, -1.5]],
+				"color": ["mode", "grass"],
+				"ySize": 2
+			},
+			null,
+			null
+		],
+		[null, null, null, null, null, null, null, null, null, null],
 		[null, null, null, null, null, null, null, null, null, null],
 		[null, null, null, null, null, null, null, null, null, null]
 	],

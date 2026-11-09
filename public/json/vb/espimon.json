@@ -7,54 +7,25 @@
 			null,
 			null,
 			{
-				"name": "tialudomon",
-				"from": [[1, -1.5]],
-				"color": ["grass"],
+				"name": "gatomon_buver",
+				"from": [[1, -1.5], [2, -1.5]],
+				"color": ["grass", "fusion"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "raijiludomon",
-				"from": [[0, -1.5], [2, -1.5]],
-				"color": ["grass", "fire"]
-			},
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			{
-				"name": "ludomon",
-				"from": [[1, -1.5]],
-				"color": ["x"]
-			},
-			{
-				"name": "hoverespimon",
-				"from": [[1, -1.5]],
-				"color": ["fusion"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "digitamamon",
-				"from": [[0, -1.5], [2, -1.5]],
+				"name": "piccolomon",
+				"from": [[2, -1.5], [0, -1.5]],
 				"color": ["fusion", "dark"]
 			},
-			{
-				"name": "bryweludramon",
-				"from": [[-1, -1.5], [1, -1.5]],
-				"color": ["grass", "grass"],
-				"ySize": 2
-			},
+			null,
 			null,
 			null
 		],
 		[
 			{
-				"name": "cotsucomon"
+				"name": "cotsucomon",
+				"from": null
 			},
 			{
 				"name": "kakkinmon",
@@ -64,32 +35,32 @@
 			},
 			null,
 			{
-				"name": "espimon",
+				"name": "ludomon",
 				"from": [[0, -1.5]],
 				"color": ["x"]
 			},
 			{
-				"name": "reppamon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["grass", "fusion"],
+				"name": "tialudomon",
+				"from": [[0, -1.5]],
+				"color": ["grass"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "piccolomon",
-				"from": [[-1, -1.5], [1, -1.5]],
-				"color": ["fusion", "dark"]
+				"name": "raijiludomon",
+				"from": [[0, -1.5], [2, -1.5]],
+				"color": ["grass", "fire"]
 			},
 			{
-				"name": "deathmon_black",
-				"from": [[-1, -1.5], [1, -1.5], [2, -1.5]],
-				"color": ["slide", "fusion", "dark"],
+				"name": "bryweludramon",
+				"from": [[0, -1.5], [-1, -1.5]],
+				"color": ["grass", "grass"],
 				"ySize": 2
 			},
 			null,
 			{
 				"name": "ragnalordmon",
-				"from": [[-1, -1.5]],
+				"from": [[0, -1.5]],
 				"color": ["grass"]
 			}
 		],
@@ -97,9 +68,39 @@
 			null,
 			null,
 			null,
+			{
+				"name": "espimon",
+				"from": [[-1, -1.5]],
+				"color": ["x"]
+			},
+			{
+				"name": "hoverespimon",
+				"from": [[0, -1.5]],
+				"color": ["fusion"],
+				"ySize": 2
+			},
 			null,
 			{
-				"name": "gatomon_buver",
+				"name": "digitamamon",
+				"from": [[0, -1.5], [-2, -1.5]],
+				"color": ["fusion", "dark"]
+			},
+			{
+				"name": "devitamamon",
+				"from": [[-1, -1.5], [0, -1.5], [-2, -1.5], [1, -1.5], [2, -1.5]],
+				"color": ["grass", "slide", "grass", "fusion", "dark"],
+				"ySize": 2
+			},
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "reppamon",
 				"from": [[-2, -1.5], [-1, -1.5]],
 				"color": ["grass", "fusion"],
 				"ySize": 2
@@ -107,13 +108,13 @@
 			null,
 			{
 				"name": "rareraremon",
-				"from": [[-3, -1.5], [-1, -1.5]],
+				"from": [[-2, -1.5], [0, -1.5]],
 				"color": ["grass", "fire"]
 			},
 			{
-				"name": "devitamamon",
-				"from": [[-3, -1.5], [-2, -1.5], [-1, -1.5], [0, -1.5], [1, -1.5]],
-				"color": ["grass", "slide", "grass", "fusion", "dark"],
+				"name": "deathmon_black",
+				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["slide", "fusion", "dark"],
 				"ySize": 2
 			},
 			null,
@@ -128,7 +129,7 @@
 			null,
 			{
 				"name": "manticoremon",
-				"from": [[-4, -1.5], [-3, -1.5], [-2, -1.5], [-1, -1.5]],
+				"from": [[-3, -1.5], [-2, -1.5], [-1, -1.5], [-4, -1.5]],
 				"color": ["grass", "fusion", "fire", "dark"]
 			},
 			null,
@@ -147,5 +148,6 @@
 		"mega",
 		"",
 		"mega+"
-	]
+	],
+	"size": 10
 }

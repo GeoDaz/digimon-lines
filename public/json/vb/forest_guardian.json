@@ -33,12 +33,20 @@
 			}
 		],
 		[
-			null,
-			null,
+			{
+				"name": "bubbmon",
+				"from": null
+			},
+			{
+				"name": "mochimon",
+				"from": [[0, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
 			null,
 			{
 				"name": "tentomon",
-				"from": [[1.5, -1.5]],
+				"from": [[0, -1.5]],
 				"color": ["x"]
 			},
 			{
@@ -63,22 +71,12 @@
 			null
 		],
 		[
-			{
-				"name": "bubbmon",
-				"from": null,
-				"xSize": 2
-			},
-			{
-				"name": "mochimon",
-				"from": [[0, -1.5]],
-				"color": ["x"],
-				"xSize": 2,
-				"ySize": 2
-			},
+			null,
+			null,
 			null,
 			{
 				"name": "fanbeemon",
-				"from": [[0.5, -1.5]],
+				"from": [[-1, -1.5]],
 				"color": ["x"]
 			},
 			{
@@ -108,7 +106,7 @@
 			null,
 			{
 				"name": "lalamon",
-				"from": [[-0.5, -1.5]],
+				"from": [[-2, -1.5]],
 				"color": ["x"]
 			},
 			{
@@ -142,7 +140,7 @@
 			null,
 			{
 				"name": "morphomon",
-				"from": [[-1.5, -1.5]],
+				"from": [[-3, -1.5]],
 				"color": ["x"]
 			},
 			{

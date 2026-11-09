@@ -6,16 +6,11 @@
 			null,
 			null,
 			null,
-			{
-				"name": "zubaeagermon",
-				"from": [[1, -1.5]],
-				"color": ["fire"],
-				"ySize": 2
-			},
+			null,
 			null,
 			{
-				"name": "duramon",
-				"from": [[0, -1.5], [2, -1.5]],
+				"name": "asuramon",
+				"from": [[2, -1.5], [1, -1.5]],
 				"color": ["fire", "fusion"]
 			},
 			null,
@@ -26,27 +21,23 @@
 			null,
 			null,
 			null,
+			null,
 			{
-				"name": "zubamon",
-				"from": [[1, -1.5]],
-				"color": ["x"]
-			},
-			{
-				"name": "ginryumon",
-				"from": [[1, -1.5]],
-				"color": ["gold"],
+				"name": "musyamon",
+				"from": [[1, -1.5], [2, -1.5]],
+				"color": ["fire", "gold"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "hisyaryumon",
-				"from": [[0, -1.5], [2, -1.5]],
-				"color": ["gold", "dark"]
+				"name": "oboromon",
+				"from": [[1, -1.5], [2, -1.5], [0, -1.5], [3, -1.5]],
+				"color": ["fire", "gold", "fusion", "dark"]
 			},
 			{
-				"name": "durandamon",
-				"from": [[-1, -1.5], [1, -1.5]],
-				"color": ["fire", "mode"],
+				"name": "zanbamon",
+				"from": [[1, -1.5], [2, -1.5], [-1, -1.5], [3, -1.5], [0, -1.5]],
+				"color": ["fire", "gold", "mode", "fusion", "dark"],
 				"ySize": 2
 			},
 			null,
@@ -54,7 +45,8 @@
 		],
 		[
 			{
-				"name": "sakumon"
+				"name": "sakumon",
+				"from": null
 			},
 			{
 				"name": "sakuttomon",
@@ -64,34 +56,64 @@
 			},
 			null,
 			{
-				"name": "ryudamon",
+				"name": "zubamon",
 				"from": [[0, -1.5]],
 				"color": ["x"]
 			},
 			{
-				"name": "musyamon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["fire", "gold"],
+				"name": "zubaeagermon",
+				"from": [[0, -1.5]],
+				"color": ["fire"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "asuramon",
-				"from": [[-2, -1.5], [0, -1.5]],
+				"name": "duramon",
+				"from": [[0, -1.5], [-1, -1.5]],
 				"color": ["fire", "fusion"]
 			},
 			{
-				"name": "ouryumon",
-				"from": [[-1, -1.5], [1, -1.5], [2, -1.5]],
-				"color": ["gold", "fusion", "dark"],
+				"name": "durandamon",
+				"from": [[0, -1.5], [-2, -1.5]],
+				"color": ["fire", "mode"],
 				"ySize": 2
 			},
 			null,
 			{
 				"name": "ragnalordmon",
-				"from": [[-1, -1.5]],
+				"from": [[0, -1.5]],
 				"color": ["fire"]
 			}
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ryudamon",
+				"from": [[-1, -1.5]],
+				"color": ["x"]
+			},
+			{
+				"name": "ginryumon",
+				"from": [[0, -1.5]],
+				"color": ["gold"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "hisyaryumon",
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["gold", "dark"]
+			},
+			{
+				"name": "ouryumon",
+				"from": [[0, -1.5], [1, -1.5], [-2, -1.5]],
+				"color": ["gold", "fusion", "dark"],
+				"ySize": 2
+			},
+			null,
+			null
 		],
 		[
 			null,
@@ -107,34 +129,14 @@
 			null,
 			{
 				"name": "gyukimon",
-				"from": [[-2, -1.5], [0, -1.5]],
+				"from": [[-1, -1.5], [0, -1.5]],
 				"color": ["gold", "dark"]
 			},
-			{
-				"name": "zanbamon",
-				"from": [[-3, -1.5], [-2, -1.5], [-1, -1.5], [0, -1.5], [1, -1.5]],
-				"color": ["fire", "gold", "mode", "fusion", "dark"],
-				"ySize": 2
-			},
+			null,
 			null,
 			null
 		],
-		[
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "oboromon",
-				"from": [[-4, -1.5], [-3, -1.5], [-2, -1.5], [-1, -1.5]],
-				"color": ["fire", "gold", "fusion", "dark"]
-			},
-			null,
-			null,
-			null
-		]
+		[null, null, null, null, null, null, null, null, null, null]
 	],
 	"levels": [
 		"baby I",
@@ -147,5 +149,6 @@
 		"mega",
 		"",
 		"mega+"
-	]
+	],
+	"size": 10
 }

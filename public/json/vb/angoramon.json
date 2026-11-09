@@ -7,28 +7,29 @@
 			null,
 			null,
 			{
-				"name": "symbareangoramon",
+				"name": "leomon",
 				"from": [[1, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "lamortmon",
-				"from": [[0, -1.5], [1, -1.5], [2, -1.5], [3, -1.5]],
-				"color": ["fire", "gold", "grass", "fusion"]
+				"name": "grapleomon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["fire", "gold"]
 			},
 			{
-				"name": "anubimon",
-				"from": [[0, -1.5], [2, -1.5], [3, -1.5]],
-				"color": ["fire", "grass", "fusion"],
+				"name": "saberleomon",
+				"from": [[1, -1.5], [0, -1.5], [3, -1.5]],
+				"color": ["fire", "gold", "fusion"],
 				"ySize": 2
 			},
 			null
 		],
 		[
 			{
-				"name": "pyonmon"
+				"name": "pyonmon",
+				"from": null
 			},
 			{
 				"name": "bosamon",
@@ -43,45 +44,20 @@
 				"color": ["x"]
 			},
 			{
-				"name": "leomon",
+				"name": "symbareangoramon",
 				"from": [[0, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "grapleomon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["fire", "gold"]
-			},
-			{
-				"name": "saberleomon",
-				"from": [[-1, -1.5], [0, -1.5], [2, -1.5]],
-				"color": ["fire", "gold", "fusion"],
-				"ySize": 2
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "komondomon",
-				"from": [[-1, -1.5]],
-				"color": ["fire"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "skullbaluchimon",
-				"from": [[-2, -1.5], [1, -1.5]],
-				"color": ["fire", "fusion"]
+				"name": "lamortmon",
+				"from": [[0, -1.5], [-1, -1.5], [2, -1.5], [1, -1.5]],
+				"color": ["fire", "gold", "grass", "fusion"]
 			},
 			{
 				"name": "griffomon",
-				"from": [[-2, -1.5], [-1, -1.5], [0, -1.5]],
+				"from": [[0, -1.5], [-1, -1.5], [1, -1.5]],
 				"color": ["fire", "gold", "grass"],
 				"ySize": 2
 			},
@@ -94,6 +70,31 @@
 			null,
 			{
 				"name": "porcupamon",
+				"from": [[-1, -1.5]],
+				"color": ["fire"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "skullbaluchimon",
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["fire", "fusion"]
+			},
+			{
+				"name": "anubimon",
+				"from": [[-1, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["fire", "grass", "fusion"],
+				"ySize": 2
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "komondomon",
 				"from": [[-2, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
@@ -101,12 +102,13 @@
 			null,
 			{
 				"name": "warumonzaemon",
-				"from": [[-1, -1.5]],
+				"from": [[0, -1.5]],
 				"color": ["grass"]
 			},
 			null,
 			null
 		]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }

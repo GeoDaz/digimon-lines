@@ -9,9 +9,9 @@
 			null,
 			null,
 			{
-				"name": "rapidmon",
-				"from": [[1, -1.5], [2, -1.5]],
-				"color": ["fire", "grass"]
+				"name": "makuramon",
+				"from": [[3, -1.5], [1, -1.5]],
+				"color": ["grass", "x"]
 			},
 			null,
 			null
@@ -22,7 +22,7 @@
 			null,
 			null,
 			{
-				"name": "gargomon",
+				"name": "harpymon",
 				"from": [[1, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
@@ -30,12 +30,12 @@
 			null,
 			{
 				"name": "sinduramon",
-				"from": [[2, -1.5], [3, -1.5]],
+				"from": [[0, -1.5], [3, -1.5]],
 				"color": ["x", "fusion"]
 			},
 			{
-				"name": "megagargomon",
-				"from": [[-1, -1.5], [1, -1.5], [3, -1.5]],
+				"name": "goldrapidmon",
+				"from": [[1, -1.5], [-1, -1.5], [4, -1.5]],
 				"color": ["fire", "slide", "fusion"],
 				"ySize": 2
 			},
@@ -43,7 +43,8 @@
 		],
 		[
 			{
-				"name": "zerimon"
+				"name": "zerimon",
+				"from": null
 			},
 			{
 				"name": "gummymon",
@@ -58,21 +59,21 @@
 				"color": ["x"]
 			},
 			{
-				"name": "turuiemon",
+				"name": "gargomon",
 				"from": [[0, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "makuramon",
+				"name": "rapidmon",
 				"from": [[0, -1.5], [1, -1.5]],
-				"color": ["grass", "x"]
+				"color": ["fire", "grass"]
 			},
 			{
-				"name": "cherubimon_virtue",
-				"from": [[-1, -1.5], [1, -1.5], [3, -1.5]],
-				"color": ["grass", "grass", "dark"],
+				"name": "megagargomon",
+				"from": [[0, -1.5], [-2, -1.5], [3, -1.5]],
+				"color": ["fire", "slide", "fusion"],
 				"ySize": 2
 			},
 			null
@@ -83,20 +84,20 @@
 			null,
 			null,
 			{
-				"name": "harpymon",
+				"name": "turuiemon",
 				"from": [[-1, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "andiramon_deva",
-				"from": [[-2, -1.5], [1, -1.5]],
+				"name": "andiramon",
+				"from": [[-1, -1.5], [1, -1.5]],
 				"color": ["fire", "fusion"]
 			},
 			{
-				"name": "cherubimon_vice",
-				"from": [[-2, -1.5], [0, -1.5], [2, -1.5]],
+				"name": "cherubimon_virtue",
+				"from": [[-2, -1.5], [1, -1.5], [0, -1.5]],
 				"color": ["grass", "grass", "dark"],
 				"ySize": 2
 			},
@@ -115,14 +116,14 @@
 			},
 			null,
 			{
-				"name": "pajiramon",
-				"from": [[-2, -1.5], [-1, -1.5]],
-				"color": ["grass", "x"]
+				"name": "andiramon_2",
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["fire", "fusion"]
 			},
 			{
-				"name": "goldrapidmon",
-				"from": [[-4, -1.5], [-2, -1.5], [0, -1.5]],
-				"color": ["fire", "slide", "fusion"],
+				"name": "cherubimon_vice",
+				"from": [[-3, -1.5], [0, -1.5], [-1, -1.5]],
+				"color": ["grass", "grass", "dark"],
 				"ySize": 2
 			},
 			null
@@ -135,13 +136,14 @@
 			null,
 			null,
 			{
-				"name": "andiramon",
-				"from": [[-4, -1.5], [-1, -1.5]],
-				"color": ["fire", "fusion"]
+				"name": "pajiramon",
+				"from": [[-2, -1.5], [-4, -1.5]],
+				"color": ["grass", "x"]
 			},
 			null,
 			null
 		]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }

@@ -10,7 +10,7 @@
 			null,
 			{
 				"name": "kumbhiramon",
-				"from": [[1, -1.5], [4, -1.5]],
+				"from": [[2, -1.5], [1, -1.5]],
 				"color": ["grass", "x"]
 			},
 			null,
@@ -22,28 +22,29 @@
 			null,
 			null,
 			{
-				"name": "kyubimon",
+				"name": "lynxmon",
 				"from": [[1, -1.5]],
 				"color": ["grass"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "vikaralamon",
-				"from": [[1, -1.5], [2, -1.5]],
-				"color": ["slide", "fusion"]
+				"name": "caturamon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["grass", "x"]
 			},
 			{
-				"name": "sakuyamon",
-				"from": [[-1, -1.5], [1, -1.5], [2, -1.5]],
-				"color": ["fire", "grass", "slide"],
+				"name": "sakuyamon_x",
+				"from": [[-1, -1.5], [1, -1.5], [0, -1.5]],
+				"color": ["fire", "grass", "grass"],
 				"ySize": 2
 			},
 			null
 		],
 		[
 			{
-				"name": "relemon"
+				"name": "relemon",
+				"from": null
 			},
 			{
 				"name": "pokomon",
@@ -58,7 +59,7 @@
 				"color": ["x"]
 			},
 			{
-				"name": "youkomon",
+				"name": "kyubimon",
 				"from": [[0, -1.5]],
 				"color": ["grass"],
 				"ySize": 2
@@ -66,12 +67,37 @@
 			null,
 			{
 				"name": "taomon",
-				"from": [[-1, -1.5], [2, -1.5]],
+				"from": [[0, -1.5], [-1, -1.5]],
 				"color": ["grass", "x"]
 			},
 			{
+				"name": "sakuyamon",
+				"from": [[-2, -1.5], [0, -1.5], [1, -1.5]],
+				"color": ["fire", "grass", "slide"],
+				"ySize": 2
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "youkomon",
+				"from": [[-1, -1.5]],
+				"color": ["grass"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "doumon",
+				"from": [[0, -1.5], [1, -1.5]],
+				"color": ["slide", "fusion"]
+			},
+			{
 				"name": "kuzuhamon_miko_mode",
-				"from": [[-1, -1.5], [1, -1.5], [3, -1.5]],
+				"from": [[2, -1.5], [0, -1.5], [1, -1.5]],
 				"color": ["gold", "slide", "fusion"],
 				"ySize": 2
 			},
@@ -84,19 +110,19 @@
 			null,
 			{
 				"name": "icedevimon",
-				"from": [[-1, -1.5]],
+				"from": [[-2, -1.5]],
 				"color": ["grass"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "doumon",
+				"name": "indaramon",
 				"from": [[-1, -1.5], [0, -1.5]],
 				"color": ["slide", "fusion"]
 			},
 			{
 				"name": "parasitemon",
-				"from": [[-2, -1.5], [1, -1.5], [2, -1.5]],
+				"from": [[1, -1.5], [-3, -1.5], [0, -1.5]],
 				"color": ["gold", "grass", "fusion"],
 				"ySize": 2
 			},
@@ -107,41 +133,17 @@
 			null,
 			null,
 			null,
-			{
-				"name": "lynxmon",
-				"from": [[-2, -1.5]],
-				"color": ["grass"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "caturamon",
-				"from": [[-3, -1.5], [0, -1.5]],
-				"color": ["grass", "x"]
-			},
-			{
-				"name": "sakuyamon_x",
-				"from": [[-4, -1.5], [-2, -1.5], [0, -1.5]],
-				"color": ["fire", "grass", "grass"],
-				"ySize": 2
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
 			null,
 			null,
 			{
-				"name": "indaramon",
-				"from": [[-3, -1.5], [-2, -1.5]],
+				"name": "vikaralamon",
+				"from": [[-2, -1.5], [-1, -1.5]],
 				"color": ["slide", "fusion"]
 			},
 			null,
 			null
 		]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }

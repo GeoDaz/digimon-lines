@@ -9,8 +9,8 @@
 			null,
 			null,
 			{
-				"name": "metalgreymon",
-				"from": [[1, -1.5], [4, -1.5]],
+				"name": "metaltyranomon",
+				"from": [[2, -1.5], [1, -1.5]],
 				"color": ["fire", "dark"]
 			},
 			null,
@@ -23,20 +23,20 @@
 			null,
 			null,
 			{
-				"name": "greymon",
+				"name": "algomon_3",
 				"from": [[1, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "andromon",
-				"from": [[1, -1.5], [2, -1.5]],
-				"color": ["grass", "fusion"]
+				"name": "mamemon",
+				"from": [[2, -1.5], [0, -1.5]],
+				"color": ["fusion", "dark"]
 			},
 			{
 				"name": "blitzgreymon",
-				"from": [[-1, -1.5], [1, -1.5], [2, -1.5], [3, -1.5], [4, -1.5]],
+				"from": [[1, -1.5], [3, -1.5], [0, -1.5], [2, -1.5], [-1, -1.5]],
 				"color": ["fire", "grass", "slide", "fusion", "dark"],
 				"ySize": 2
 			},
@@ -45,7 +45,8 @@
 		],
 		[
 			{
-				"name": "botamon"
+				"name": "botamon",
+				"from": null
 			},
 			{
 				"name": "koromon",
@@ -60,27 +61,27 @@
 				"color": ["x"]
 			},
 			{
-				"name": "coelamon",
+				"name": "greymon",
 				"from": [[0, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "anomalocarimon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["fire", "grass"]
+				"name": "metalgreymon",
+				"from": [[0, -1.5], [-1, -1.5]],
+				"color": ["fire", "dark"]
 			},
 			{
-				"name": "donedevimon",
-				"from": [[-1, -1.5], [1, -1.5], [2, -1.5]],
-				"color": ["gold", "slide", "fusion"],
+				"name": "wargreymon",
+				"from": [[0, -1.5], [3, -1.5], [2, -1.5], [-2, -1.5]],
+				"color": ["fire", "gold", "grass", "dark"],
 				"ySize": 2
 			},
 			null,
 			{
 				"name": "omegamon",
-				"from": [[1, -1.5]],
+				"from": [[0, -1.5]],
 				"color": ["fire"]
 			}
 		],
@@ -97,14 +98,14 @@
 			},
 			null,
 			{
-				"name": "mamemon",
-				"from": [[0, -1.5], [1, -1.5]],
-				"color": ["fusion", "dark"]
+				"name": "neodevimon",
+				"from": [[1, -1.5], [0, -1.5]],
+				"color": ["grass", "fusion"]
 			},
 			{
-				"name": "wargreymon",
-				"from": [[-3, -1.5], [-2, -1.5], [-1, -1.5], [2, -1.5]],
-				"color": ["fire", "gold", "grass", "dark"],
+				"name": "donedevimon",
+				"from": [[2, -1.5], [-2, -1.5], [0, -1.5]],
+				"color": ["gold", "slide", "fusion"],
 				"ySize": 2
 			},
 			null,
@@ -116,16 +117,16 @@
 			null,
 			null,
 			{
-				"name": "algomon_adult",
+				"name": "coelamon",
 				"from": [[-2, -1.5]],
 				"color": ["fire"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "neodevimon",
-				"from": [[-2, -1.5], [-1, -1.5]],
-				"color": ["grass", "fusion"]
+				"name": "anomalocarimon",
+				"from": [[-2, -1.5], [0, -1.5]],
+				"color": ["fire", "grass"]
 			},
 			null,
 			null,
@@ -139,9 +140,9 @@
 			null,
 			null,
 			{
-				"name": "metaltyranomon",
-				"from": [[-4, -1.5], [-1, -1.5]],
-				"color": ["fire", "dark"]
+				"name": "andromon",
+				"from": [[-1, -1.5], [-2, -1.5]],
+				"color": ["grass", "fusion"]
 			},
 			null,
 			null,
@@ -159,5 +160,6 @@
 		"mega",
 		"",
 		"mega+"
-	]
+	],
+	"size": 10
 }

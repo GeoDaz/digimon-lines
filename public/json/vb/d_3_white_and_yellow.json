@@ -7,35 +7,14 @@
 			null,
 			null,
 			{
-				"name": "ankylomon",
-				"from": [[2, -1.5], [3, -1.5]],
-				"color": ["x", "grass"],
-				"ySize": 2
-			},
-			null,
-			null,
-			null,
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "angemon",
-				"from": [[2, -1.5]],
+				"name": "pegasmon",
+				"from": [[1, -1.5]],
 				"color": ["grass"],
 				"ySize": 2
 			},
 			null,
 			null,
-			{
-				"name": "vikemon",
-				"from": [[1, -1.5], [2, -1.5]],
-				"color": ["x", "fire"],
-				"ySize": 2
-			},
+			null,
 			null
 		],
 		[
@@ -43,25 +22,32 @@
 			null,
 			null,
 			{
-				"name": "armadillomon",
+				"name": "patamon",
 				"from": [[1, -1.5]],
 				"color": ["x"]
 			},
 			{
-				"name": "exveemon",
-				"from": [[2, -1.5]],
-				"color": ["ice"],
+				"name": "angemon",
+				"from": [[0, -1.5]],
+				"color": ["grass"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "shakkoumon",
-				"from": [[-2, -1.5], [-1, -1.5]],
-				"color": ["x", "fire"]
+				"name": "magnaangemon",
+				"from": [
+					[0, -1.5],
+					[4, -1.5],
+					[6, -1.5],
+					[2, -1.5],
+					[-1, -1.5],
+					[5, -1.5]
+				],
+				"color": ["fire", "ice", "marine", "marine", "x", "ice"]
 			},
 			{
 				"name": "seraphimon",
-				"from": [[1, -1.5], [2, -1.5]],
+				"from": [[0, -1.5], [4, -1.5]],
 				"color": ["fire", "ice"],
 				"ySize": 2
 			},
@@ -69,7 +55,8 @@
 		],
 		[
 			{
-				"name": "tsubumon"
+				"name": "tsubumon",
+				"from": null
 			},
 			{
 				"name": "upamon",
@@ -79,10 +66,35 @@
 			},
 			null,
 			{
-				"name": "patamon",
+				"name": "armadillomon",
 				"from": [[0, -1.5]],
 				"color": ["x"]
 			},
+			{
+				"name": "ankylomon",
+				"from": [[0, -1.5], [-1, -1.5]],
+				"color": ["x", "grass"],
+				"ySize": 2
+			},
+			null,
+			{
+				"name": "shakkoumon",
+				"from": [[0, -1.5], [-1, -1.5]],
+				"color": ["x", "fire"]
+			},
+			{
+				"name": "vikemon",
+				"from": [[0, -1.5], [-1, -1.5]],
+				"color": ["x", "fire"],
+				"ySize": 2
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
 			{
 				"name": "digmon",
 				"from": [[-1, -1.5]],
@@ -91,21 +103,35 @@
 			},
 			null,
 			{
-				"name": "magnaangemon",
-				"from": [
-					[-2, -1.5],
-					[-1, -1.5],
-					[4, -1.5],
-					[0, -1.5],
-					[2, -1.5],
-					[3, -1.5]
-				],
-				"color": ["fire", "ice", "marine", "marine", "x", "ice"]
+				"name": "arukenimon",
+				"from": [[-1, -1.5], [-2, -1.5], [1, -1.5], [-3, -1.5]],
+				"color": ["x", "fire", "marine", "x"]
 			},
 			{
-				"name": "imperialdramon_dragon_mode",
-				"from": [[1, -1.5], [2, -1.5]],
-				"color": ["ice", "fusion"],
+				"name": "black_wargreymon",
+				"from": [[-1, -1.5], [0, -1.5]],
+				"color": ["x", "fusion"],
+				"ySize": 2
+			},
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			null,
+			{
+				"name": "submarimon",
+				"from": [[-2, -1.5]],
+				"color": ["x"],
+				"ySize": 2
+			},
+			null,
+			null,
+			{
+				"name": "malomyotismon",
+				"from": [[-2, -1.5], [-1, -1.5]],
+				"color": ["x", "fusion"],
 				"ySize": 2
 			},
 			null
@@ -116,57 +142,32 @@
 			null,
 			{
 				"name": "veemon",
-				"from": [[-1, -1.5]],
+				"from": [[-3, -1.5]],
 				"color": ["x"]
 			},
 			{
-				"name": "submarimon",
-				"from": [[-2, -1.5]],
-				"color": ["x"],
+				"name": "exveemon",
+				"from": [[0, -1.5]],
+				"color": ["ice"],
 				"ySize": 2
 			},
 			null,
 			{
 				"name": "paildramon",
 				"from": [
-					[-2, -1.5],
 					[0, -1.5],
-					[3, -1.5],
-					[-4, -1.5],
 					[-1, -1.5],
-					[2, -1.5]
+					[2, -1.5],
+					[-3, -1.5],
+					[-2, -1.5],
+					[1, -1.5]
 				],
 				"color": ["ice", "marine", "marine", "x", "marine", "ice"]
 			},
 			{
-				"name": "magnamon",
-				"from": [[-1, -1.5], [0, -1.5]],
-				"color": ["fire", "ice"],
-				"ySize": 2
-			},
-			null
-		],
-		[
-			null,
-			null,
-			null,
-			null,
-			{
-				"name": "pegasmon",
-				"from": [[-2, -1.5]],
-				"color": ["grass"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "arukenimon",
-				"from": [[-5, -1.5], [-4, -1.5], [-1, -1.5], [0, -1.5]],
-				"color": ["x", "fire", "marine", "x"]
-			},
-			{
-				"name": "malomyotismon",
-				"from": [[-3, -1.5], [0, -1.5]],
-				"color": ["x", "fusion"],
+				"name": "imperialdramon_dragon_mode",
+				"from": [[0, -1.5], [-2, -1.5]],
+				"color": ["ice", "fusion"],
 				"ySize": 2
 			},
 			null
@@ -178,16 +179,16 @@
 			null,
 			{
 				"name": "flamedramon",
-				"from": [[-2, -1.5]],
+				"from": [[-1, -1.5]],
 				"color": ["ice"],
 				"ySize": 2
 			},
 			null,
 			null,
 			{
-				"name": "black_wargreymon",
-				"from": [[-4, -1.5], [-1, -1.5]],
-				"color": ["x", "fusion"],
+				"name": "magnamon",
+				"from": [[-5, -1.5], [-1, -1.5]],
+				"color": ["fire", "ice"],
 				"ySize": 2
 			},
 			null
@@ -199,7 +200,7 @@
 			null,
 			{
 				"name": "raidramon",
-				"from": [[-3, -1.5]],
+				"from": [[-2, -1.5]],
 				"color": ["ice"],
 				"ySize": 2
 			},
@@ -207,7 +208,9 @@
 			null,
 			null,
 			null
-		]
+		],
+		[null, null, null, null, null, null, null, null, null]
 	],
-	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""]
+	"levels": ["baby I", "baby II", "", "rookie", "champion", "", "ultimate", "mega", ""],
+	"size": 9
 }
