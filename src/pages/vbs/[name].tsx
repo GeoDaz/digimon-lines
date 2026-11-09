@@ -6,6 +6,7 @@ import transformLine from '@/functions/line';
 // constants
 import { Line, VbThumb } from '@/types/Line';
 import { VB } from '@/consts/ui';
+import { VB_DEVICES } from '@/consts/vbs';
 
 export async function getStaticPaths() {
 	try {
@@ -36,8 +37,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	const prev = index > 0 ? list[index - 1] : null;
 	const next = index > -1 && index < list.length - 1 ? list[index + 1] : null;
 	const image = list[index]?.digimon || null;
+	const category =
+		VB_DEVICES.find(device => device.key === list[index]?.device)?.title || null;
 
-	return { props: { ssr: { name: params.name, line, image, prev, next }, type: VB } };
+	return {
+		props: { ssr: { name: params.name, line, image, category, prev, next }, type: VB },
+	};
 };
 
 export default PageVB;

@@ -5,12 +5,7 @@ import LinePoint from '@/components/Line/LinePoint';
 import { GetStaticProps } from 'next';
 import { VbThumb } from '@/types/Line';
 import { VB } from '@/consts/ui';
-
-const DEVICES = [
-	{ key: 'dim', title: 'Vital Bracelet DIM' },
-	{ key: 'bem', title: 'Vital Bracelet BE' },
-	{ key: 'penc', title: 'Pendulum Color' },
-];
+import { VB_DEVICES } from '@/consts/vbs';
 
 const defaultData = { vbs: [] };
 interface StaticProps {
@@ -26,7 +21,7 @@ const PageVbs: React.FC<Props> = ({ ssr = defaultData }) => {
 			metatitle="Vpets"
 			metadescription="List of available Digimon Vpets"
 		>
-			{DEVICES.map(device => {
+			{VB_DEVICES.map(device => {
 				const vbs = ssr.vbs.filter(vb => vb.device === device.key);
 				if (!vbs.length) return null;
 				const series = Array.from(new Set(vbs.map(vb => vb.series)));

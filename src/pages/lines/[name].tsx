@@ -28,6 +28,7 @@ interface StaticProps {
 	line?: Line;
 	name?: string;
 	image?: string;
+	category?: string;
 	next?: string | VbThumb;
 	prev?: string | VbThumb;
 	digimons?: {
@@ -60,7 +61,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 	}
 	const { next, prev } = ssr;
 	const nameCap = capitalize(name);
-	const typeTitle = titles[type];
+	const typeTitle = ssr.category || titles[type];
 	return (
 		<Layout
 			title={
