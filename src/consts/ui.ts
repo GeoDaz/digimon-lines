@@ -8,7 +8,7 @@ export const DIGIEGG = 'digieggs';
 export const APPMON = 'appmons';
 
 export const titles: StringObject = {
-	[VB]: 'Vpets',
+	[VB]: 'Virtual Pets',
 	[LINE]: 'Line',
 	[APPMON]: 'Line',
 	[GROUP]: 'Group',

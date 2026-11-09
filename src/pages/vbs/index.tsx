@@ -17,9 +17,9 @@ interface Props {
 const PageVbs: React.FC<Props> = ({ ssr = defaultData }) => {
 	return (
 		<Layout
-			title="Available Vpets"
-			metatitle="Vpets"
-			metadescription="List of available Digimon Vpets"
+			title="Available Virtual Pets"
+			metatitle="Virtual Pets"
+			metadescription="List of available Digimon Virtual Pets"
 		>
 			{VB_DEVICES.map(device => {
 				const vbs = ssr.vbs.filter(vb => vb.device === device.key);
@@ -30,7 +30,9 @@ const PageVbs: React.FC<Props> = ({ ssr = defaultData }) => {
 						<h2 className="h3">{device.title}</h2>
 						{series.map(serie => (
 							<div key={serie} className="mb-3">
-								{serie !== device.title && <h3 className="h5">{serie}</h3>}
+								{serie !== device.title && (
+									<h3 className="h5">{serie}</h3>
+								)}
 								<div className="line-wrapper">
 									<Row className="line-row">
 										{vbs
@@ -44,7 +46,9 @@ const PageVbs: React.FC<Props> = ({ ssr = defaultData }) => {
 														type={VB}
 														available
 													>
-														<span className="absolute-legend">{vb.title}</span>
+														<span className="absolute-legend">
+															{vb.title}
+														</span>
 													</LinePoint>
 												</Col>
 											))}

@@ -46,8 +46,8 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 	<Layout
 		noTitle
 		title="Digimon Lines"
-		metatitle="Digimon evolution lines, builder and Vpets"
-		metadescription="Every Digimon evolution line grouped by species, from Agumon to Gekkomon: follow each digivolution from Baby to Mega, build and share your own lines, and explore game evolutions, Vpets and Digimon groups."
+		metatitle="Digimon evolution lines, builder and Virtual Pets"
+		metadescription="Every Digimon evolution line grouped by species, from Agumon to Gekkomon: follow each digivolution from Baby to Mega, build and share your own lines, and explore game evolutions, Virtual Pets and Digimon groups."
 		className="home"
 	>
 		<Head>
@@ -65,8 +65,8 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 				</h1>
 				<p className="home-lead">
 					Follow how each species digivolves from Baby to Mega, explore game
-					evolutions and Vpets, and build your own lines to share with the
-					community.
+					evolutions and Virtual Pets, and build your own lines to share with
+					the community.
 				</p>
 				<div className="home-actions mb-3">
 					<Link href="/build" className="btn btn-primary btn-lg">
@@ -122,7 +122,7 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 			</li>
 			<li>
 				<b>{formatNumber(stats.vpets)}</b>
-				<span>Vpets</span>
+				<span>Virtual Pets</span>
 			</li>
 			<li>
 				<b>{formatNumber(stats.groups)}</b>

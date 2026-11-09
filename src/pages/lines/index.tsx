@@ -103,7 +103,7 @@ const PageLines: React.FC<Props> = props => {
 			noGoBack
 			title="Digimon lines"
 			metatitle="All Digimon evolution lines by species"
-			metadescription="Digimon evolution lines grouped by species: follow how Agumon, Gabumon, Patamon and 100+ other Digimon digivolve, plus game evolutions, Vpets and Digimon groups."
+			metadescription="Digimon evolution lines grouped by species: follow how Agumon, Gabumon, Patamon and 100+ other Digimon digivolve, plus game evolutions, Virtual Pets and Digimon groups."
 		>
 			<blockquote className="blockquote">
 				The aim of this site is to present evolutionary lines designed to bring
@@ -229,7 +229,9 @@ const checkLineAvailability = (
 		name = item.name;
 	}
 	try {
-		const line: Line | undefined = require(`../../../public/json/${type}/${name}.json`);
+		const line: Line | undefined = require(
+			`../../../public/json/${type}/${name}.json`
+		);
 		if (!line) throw new Error(`line ${name} not found`);
 		const lineArray = lineToArray(line);
 		if (searchList) {
