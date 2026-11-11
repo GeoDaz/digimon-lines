@@ -49,12 +49,12 @@
 			null,
 			{
 				"name": "panoptemon",
-				"from": [[0, -1.5], [-1, -1.5], [1, -1.5]],
+				"from": [[0, -1.5], [-1, -1.5], [3, -1.5]],
 				"color": ["fusion", "slide"]
 			},
 			{
 				"name": "junomon",
-				"from": [[0, -1.5], [1, -1.5], [-1, -1.5]],
+				"from": [[0, -1.5], [3, -1.5], [-1, -1.5]],
 				"color": ["fusion", "dark", "x"],
 				"ySize": 2
 			},
@@ -71,29 +71,25 @@
 			null,
 			null,
 			{
-				"name": "coatlmon",
-				"from": [[1, -1.5], [-1, -1.5]],
-				"color": ["grass"],
+				"name": "darcmon",
+				"from": [[-1, -1.5], [1, -1.5]],
+				"color": ["fusion"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "lamiamon",
-				"from": [[0, -1.5]],
-				"color": ["x"]
-			},
-			{
-				"name": "minervamon",
-				"from": [[0, -1.5], [-2, -1.5]],
-				"color": ["dark", "x"],
-				"ySize": 2
-			},
-			null,
-			{
-				"name": "mervamon",
-				"from": [[0, -1.5]],
+				"name": "luminamon",
+				"from": [[0, -1.5], [1, -1.5], [2, -1.5]],
 				"color": ["gold"]
-			}
+			},
+			{
+				"name": "venusmon",
+				"from": [[0, -1.5], [-2, -1.5]],
+				"color": ["gold", "x"],
+				"ySize": 2
+			},
+			null,
+			null
 		],
 		[
 			{
@@ -143,25 +139,29 @@
 			null,
 			null,
 			{
-				"name": "darcmon",
-				"from": [[-3, -1.5], [-1, -1.5]],
-				"color": ["fusion"],
+				"name": "coatlmon",
+				"from": [[-1, -1.5], [-3, -1.5]],
+				"color": ["grass"],
 				"ySize": 2
 			},
 			null,
 			{
-				"name": "luminamon",
-				"from": [[0, -1.5], [-1, -1.5], [-2, -1.5]],
-				"color": ["gold"]
+				"name": "lamiamon",
+				"from": [[0, -1.5], [-2, -1.5]],
+				"color": ["x"]
 			},
 			{
-				"name": "venusmon",
+				"name": "minervamon",
 				"from": [[0, -1.5], [-4, -1.5]],
-				"color": ["gold", "x"],
+				"color": ["dark", "x"],
 				"ySize": 2
 			},
 			null,
-			null
+			{
+				"name": "mervamon",
+				"from": [[0, -1.5]],
+				"color": ["gold"]
+			}
 		],
 		[
 			null,
