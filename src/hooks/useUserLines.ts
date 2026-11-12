@@ -8,6 +8,7 @@ import {
 	setUserLineVisibility,
 	slugifyLine,
 } from '@/functions/userLines';
+import { isLineEmpty } from '@/functions/line';
 import Line from '@/types/Line';
 import { UserLineWithAuthor } from '@/types/Account';
 
@@ -17,6 +18,9 @@ import { UserLineWithAuthor } from '@/types/Account';
  * quel plutôt que de coder un nombre en dur côté client.
  */
 const QUOTA_ERROR = 'Line quota reached';
+
+const EMPTY_PUBLIC_ERROR = 'user_lines_public_not_empty';
+const EMPTY_PUBLIC_MESSAGE = 'This line cannot be published: add at least one Digimon or an image URL (uploaded images are not saved)';
 
 /** Sauvegarde de la ligne courante du builder vers le compte connecté. */
 export const useSaveUserLine = () => {
@@ -38,6 +42,10 @@ export const useSaveUserLine = () => {
 			}
 			if (!title?.trim()) {
 				addToast('Give your line a title before saving it', 'warning');
+				return null;
+			}
+			if (isPublic && isLineEmpty(line)) {
+				addToast(EMPTY_PUBLIC_MESSAGE, 'warning');
 				return null;
 			}
 
@@ -64,7 +72,8 @@ export const useSaveUserLine = () => {
 				addToast(
 					error?.message?.includes(QUOTA_ERROR) ?
 						`${error.message}. Delete a line, or ask us to raise your quota.`
-					:	'Failed to save the line',
+					: error?.message?.includes(EMPTY_PUBLIC_ERROR) ? EMPTY_PUBLIC_MESSAGE
+					: 'Failed to save the line',
 					'danger'
 				);
 				return null;
@@ -134,6 +143,11 @@ export const useProfileLines = (pseudo?: string) => {
 
 	const toggleVisibility = useCallback(
 		async (id: string, isPublic: boolean) => {
+			const target = lines.find(l => l.id === id);
+			if (isPublic && target && isLineEmpty(target.data as unknown as Line)) {
+				addToast(EMPTY_PUBLIC_MESSAGE, 'warning');
+				return;
+			}
 			let previous: UserLineWithAuthor[] = [];
 			setLines(prev => {
 				previous = prev;
@@ -148,7 +162,7 @@ export const useProfileLines = (pseudo?: string) => {
 				addToast('Failed to change the visibility', 'danger');
 			}
 		},
-		[addToast]
+		[lines, addToast]
 	);
 
 	return {

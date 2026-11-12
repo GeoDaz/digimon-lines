@@ -9,7 +9,6 @@ import { MAX_LINE_DATA_BYTES } from '@/consts/images';
 import {
 	getLineDataBytes,
 	getLineUploadedImages,
-	lineToArray,
 	stripUploadedImages,
 } from '@/functions/line';
 import { coverKey, formatBytes } from '@/functions/images';
@@ -20,6 +19,8 @@ import Line from '@/types/Line';
  * titre s'il manque. 'ask' : déclenché par CTRL+S, la modale propose les deux.
  */
 export type SaveMode = 'private' | 'public' | 'ask';
+
+const NO_COVER_NAMES = ['upload', 'url', 'unknown'];
 
 interface Params {
 	line: Line;
@@ -47,8 +48,10 @@ const useSaveLineFlow = ({ line, name, setName, licence }: Params) => {
 
 	// Digimon présents dans la ligne : ce sont les couvertures possibles.
 	const covers = useMemo(() => {
-		const keys = lineToArray(line)
-			.map(name => coverKey(name, licence))
+		const keys = line.columns
+			.flat()
+			.filter(point => point && !point.image && !NO_COVER_NAMES.includes(point.name))
+			.map(point => coverKey(point!.name, licence))
 			.filter(Boolean) as string[];
 		return keys.filter((key, i) => keys.indexOf(key) === i);
 	}, [line, licence]);

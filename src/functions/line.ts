@@ -187,6 +187,19 @@ export const clearLine = (line: Line): Line => {
 export const thumbsToNames = (lines: Array<LineThumb | string>): string[] =>
 	lines.map(line => (typeof line === 'string' ? line : line.name));
 
+const PLACEHOLDER_NAMES = ['upload', 'url', 'unknown'];
+
+const isMeaningfulPoint = (point: LinePoint | null): boolean => {
+	if (!point) return false;
+	if (typeof point.image === 'string' && point.image.trim() && !isUploadedImage(point.image))
+		return true;
+	const name = typeof point.name === 'string' ? point.name.trim().toLowerCase() : '';
+	return !!name && !PLACEHOLDER_NAMES.includes(name);
+};
+
+export const isLineEmpty = (line: Line | undefined): boolean =>
+	!line?.columns?.some(column => column?.some(isMeaningfulPoint));
+
 export const lineToArray = (line: Line | undefined): string[] => {
 	const result: string[] = [];
 	if (line) {
