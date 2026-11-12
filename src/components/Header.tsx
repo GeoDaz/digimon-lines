@@ -28,7 +28,7 @@ const Header: React.FC = () => (
 	<header className="sticky-top">
 		<Navbar bg="dark" variant="dark" /* expand="lg" */>
 			<Container fluid className="justify-content-start">
-				<Navbar.Brand as={Link} href="/">
+				<Navbar.Brand as={Link} href="/lines">
 					<Image
 						src="/images/icon.png"
 						alt="logo"

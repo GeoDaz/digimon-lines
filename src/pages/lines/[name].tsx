@@ -57,7 +57,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 	}, [ssr.line]);
 
 	if (!name) {
-		redirect('/');
+		redirect('/lines');
 	}
 	const { next, prev } = ssr;
 	const nameCap = capitalize(name);
