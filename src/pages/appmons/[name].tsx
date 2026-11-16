@@ -3,6 +3,7 @@ import { GetStaticProps } from 'next';
 // components
 import { PageLine as PageAppmon } from '@/pages/lines/[name]';
 import transformLine, { thumbsToNames } from '@/functions/line';
+import { buildLineSummary, resolveRelated } from '@/functions/lineSummary';
 // constants
 import { Line } from '@/types/Line';
 import { APPMON } from '@/consts/ui';
@@ -46,7 +47,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		next = list[index + 1];
 	}
 
-	return { props: { ssr: { name: params.name, line, prev, next }, type: APPMON } };
+	if (line) {
+		line = { ...line, related: resolveRelated(line.related) || null } as Line;
+	}
+	const summary = line ? buildLineSummary(line, params.name as string, line.title) : null;
+
+	return { props: { ssr: { name: params.name, line, prev, next, summary }, type: APPMON } };
 };
 
 export default PageAppmon;

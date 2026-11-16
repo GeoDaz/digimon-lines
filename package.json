@@ -30,7 +30,7 @@
   "scripts": {
     "dev": "next dev --webpack",
     "start": "next dev --webpack",
-    "prebuild": "node cmd/sitemap.cmd.js",
+    "prebuild": "node cmd/sitemap.cmd.js && node cmd/thumbnails.cmd.js",
     "build": "next build --webpack",
     "daemon": "next start",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
@@ -38,6 +38,7 @@
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "optimize:images": "node cmd/optimize-images.js",
+    "thumbnails": "node cmd/thumbnails.cmd.js",
     "mirror:relations": "node cmd/mirrorRelations.cmd.js",
     "dev:user": "node cmd/dev-user.cmd.js",
     "purge:cache": "node cmd/purge-cache.cmd.js",

@@ -1,7 +1,8 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 import Layout from '@/components/Layout';
+import JsonLd from '@/components/JsonLd';
 import Link from '@/components/Link';
 import Icon from '@/components/Icon';
 import ScrollUp from '@/components/ScrollUp';
@@ -13,18 +14,97 @@ import { getStatScale } from '@/components/Game/GameDigimonDetails';
 import { digimonGames } from '@/consts/games';
 import { makeClassName, stringToKey } from '@/functions';
 import { getDubNamesFor } from '@/functions/search';
+import { breadcrumbJsonLd, graphJsonLd, listNames, webPageJsonLd } from '@/functions/seo';
 import { StringObject } from '@/types/Ui';
 import { DigimonGame, GameDigimon, GameDigimonsDetails } from '@/types/GameDigimon';
 
+type PackedRelations = (number | string)[];
+
+type PackedDigimon = [
+	slug: string,
+	number: string,
+	name: string,
+	generation: number,
+	attribute: string,
+	type: string,
+	extra: string,
+	image: string | null,
+	modes: PackedRelations,
+	from: PackedRelations,
+	to: PackedRelations,
+	icon?: string,
+];
+
 interface Props {
 	game: DigimonGame;
-	digimons: GameDigimon[];
+	generations: string[];
+	packed: PackedDigimon[];
 	aliases: StringObject;
 }
 
+const packDigimons = (
+	game: DigimonGame,
+	digimons: GameDigimon[],
+	generations: string[]
+): PackedDigimon[] => {
+	const indexes = Object.fromEntries(digimons.map((digimon, index) => [digimon.slug, index]));
+	const packRelations = (slugs: string[]) => slugs.map(slug => indexes[slug] ?? slug);
+	return digimons.map(digimon => {
+		const packed: PackedDigimon = [
+			digimon.slug,
+			digimon.number,
+			digimon.name,
+			generations.indexOf(digimon.generation),
+			digimon.attribute ?? '',
+			digimon.type ?? '',
+			game.extra ? ((digimon[game.extra.key] as string | undefined) ?? '') : '',
+			digimon.image === digimon.slug ? '' : (digimon.image ?? null),
+			packRelations(digimon.modes),
+			packRelations(digimon.from),
+			packRelations(digimon.to),
+		];
+		if (digimon.icon) packed.push(digimon.icon);
+		return packed;
+	});
+};
+
+const unpackDigimons = (
+	game: DigimonGame,
+	packed: PackedDigimon[],
+	generations: string[]
+): GameDigimon[] => {
+	const unpackRelations = (relations: PackedRelations) =>
+		relations.map(relation =>
+			typeof relation === 'number' ? packed[relation][0] : relation
+		);
+	return packed.map(
+		([slug, number, name, generation, attribute, type, extra, image, modes, from, to, icon]) => {
+			const digimon: GameDigimon = {
+				slug,
+				number,
+				name,
+				generation: generations[generation],
+				attribute: attribute || undefined,
+				type: type || undefined,
+				image: image === '' ? slug : (image ?? undefined),
+				icon,
+				modes: unpackRelations(modes),
+				from: unpackRelations(from),
+				to: unpackRelations(to),
+			};
+			if (game.extra && extra) Object.assign(digimon, { [game.extra.key]: extra });
+			return digimon;
+		}
+	);
+};
+
 const getHash = () => decodeURIComponent(window.location.hash.replace('#', ''));
 
-const PageGame: React.FC<Props> = ({ game, digimons, aliases }) => {
+const PageGame: React.FC<Props> = ({ game, generations, packed, aliases }) => {
+	const digimons = useMemo(
+		() => unpackDigimons(game, packed, generations),
+		[game, packed, generations]
+	);
 	const [search, setSearch] = useState('');
 	const [generation, setGeneration] = useState<string>();
 	const [attribute, setAttribute] = useState<string>();
@@ -162,13 +242,32 @@ const PageGame: React.FC<Props> = ({ game, digimons, aliases }) => {
 		};
 
 	const hasFilters = !!search || !!generation || !!attribute || !!type;
+	const counts = game.generations
+		.map(name => ({ name, count: digimons.filter(d => d.generation === name).length }))
+		.filter(item => item.count);
+	const columns = [
+		game.labels.attribute.toLowerCase(),
+		game.labels.type.toLowerCase(),
+		game.extra?.label.toLowerCase(),
+		'modes',
+	].filter(Boolean) as string[];
+	const path = `/games/${game.key}`;
+	const metatitle = `${game.title} evolution chart (${digimons.length} Digimon)`;
+	const metadescription = `Complete ${game.title} digivolution chart: all ${digimons.length} Digimon with what they evolve from and into, evolution conditions, stats, resistances and skills.`;
+	const jsonLd = graphJsonLd(
+		breadcrumbJsonLd([{ name: `${game.shortTitle} evolution chart`, path }]),
+		webPageJsonLd('CollectionPage', path, metatitle, metadescription, {
+			about: { '@type': 'VideoGame', name: game.title },
+		})
+	);
 
 	return (
 		<Layout
-			title={`${game.title} evolutions`}
-			metatitle={`${game.shortTitle} evolutions`}
-			metadescription={`Every Digimon of ${game.title}: digivolutions, conditions, stats, resistances and skills.`}
+			title={`${game.title} evolution chart`}
+			metatitle={metatitle}
+			metadescription={metadescription}
 		>
+			<JsonLd data={jsonLd} />
 			<ScrollUp />
 			<nav className="game-tabs mb-3">
 				{Object.values(digimonGames).map(item => (
@@ -184,6 +283,14 @@ const PageGame: React.FC<Props> = ({ game, digimons, aliases }) => {
 					</Link>
 				))}
 			</nav>
+			<p className="game-intro">
+				This {game.title} evolution chart lists all {digimons.length} Digimon of the
+				game by {game.labels.generation.toLowerCase()}:{' '}
+				{listNames(counts.map(item => `${item.name} (${item.count})`))}. For each
+				Digimon, the table shows its {listNames(columns)}, and every Digimon it
+				digivolves from and into. Search or filter the list, then open a Digimon for
+				its evolution conditions, stats, resistances and skills.
+			</p>
 			<div className="evolution-filters">
 				<SearchBar
 					key={resetCount}
@@ -329,6 +436,43 @@ const FilterDropdown = ({
 	</DropdownButton>
 );
 
+const revealCallbacks = new Map<Element, () => void>();
+let revealObserver: IntersectionObserver | undefined;
+
+const observeReveal = (element: Element, callback: () => void) => {
+	if (typeof IntersectionObserver === 'undefined') {
+		callback();
+		return undefined;
+	}
+	revealObserver ??= new IntersectionObserver(
+		entries =>
+			entries.forEach(entry => {
+				if (!entry.isIntersecting) return;
+				revealObserver?.unobserve(entry.target);
+				const reveal = revealCallbacks.get(entry.target);
+				revealCallbacks.delete(entry.target);
+				reveal?.();
+			}),
+		{ rootMargin: '800px 0px' }
+	);
+	revealCallbacks.set(element, callback);
+	revealObserver.observe(element);
+	return () => {
+		revealObserver?.unobserve(element);
+		revealCallbacks.delete(element);
+	};
+};
+
+const useReveal = <T extends Element>(force: boolean) => {
+	const ref = useRef<T>(null);
+	const [revealed, setRevealed] = useState(false);
+	useEffect(() => {
+		if (revealed || !ref.current) return;
+		return observeReveal(ref.current, () => setRevealed(true));
+	}, [revealed]);
+	return [ref, revealed || force] as const;
+};
+
 const EvolutionRow = React.memo(function EvolutionRow({
 	game,
 	digimon,
@@ -344,52 +488,67 @@ const EvolutionRow = React.memo(function EvolutionRow({
 	onNavigate: (slug: string) => void;
 	onDetails: (digimon: GameDigimon) => void;
 }) {
+	const [ref, revealed] = useReveal<HTMLTableRowElement>(active);
 	return (
 		<tr
+			ref={ref}
 			id={digimon.slug}
 			className={makeClassName('evolution-row', active && 'active-outline')}
 		>
-			<td className="cell-digimon">
+			<td>
 				<div className="digimon-identity">
 					<span className="game-digimon-tile">
-						<GameDigimonImg digimon={digimon} />
+						{revealed && <GameDigimonImg digimon={digimon} />}
 					</span>
 					<Link
 						href={`/games/${game.key}/${digimon.slug}`}
 						className="digimon-name"
 					>
 						{digimon.name}
-						<span className="digimon-number">#{digimon.number}</span>
+						<span className="digimon-number">{`#${digimon.number}`}</span>
 					</Link>
 				</div>
 			</td>
-			<td className="cell-details">
+			<td>
 				<button
 					type="button"
-					className="btn btn-primary details-button"
-					aria-label="Details"
-					title="Details"
+					className="btn btn-primary"
 					onClick={() => onDetails(digimon)}
 				>
 					Details
 				</button>
 			</td>
 			<td className="cell-attribute">
-				<AttributeIcon attribute={digimon.attribute} />
+				{revealed ?
+					<AttributeIcon attribute={digimon.attribute} />
+				:	digimon.attribute}
 			</td>
 			{game.typeIcons ?
 				<td className="cell-attribute">
-					<AttributeIcon attribute={digimon.type} />
+					{revealed ?
+						<AttributeIcon attribute={digimon.type} />
+					:	digimon.type}
 				</td>
 			:	<td>{digimon.type}</td>}
 			{!!game.extra && <td>{digimon[game.extra.key] as string}</td>}
 			<RelationsCell
 				slugs={digimon.modes}
 				bySlug={bySlug}
+				revealed={revealed}
 				onNavigate={onNavigate}
 			/>
-			<RelationsCell slugs={digimon.from} bySlug={bySlug} onNavigate={onNavigate} />
-			<RelationsCell slugs={digimon.to} bySlug={bySlug} onNavigate={onNavigate} />
+			<RelationsCell
+				slugs={digimon.from}
+				bySlug={bySlug}
+				revealed={revealed}
+				onNavigate={onNavigate}
+			/>
+			<RelationsCell
+				slugs={digimon.to}
+				bySlug={bySlug}
+				revealed={revealed}
+				onNavigate={onNavigate}
+			/>
 		</tr>
 	);
 });
@@ -397,33 +556,33 @@ const EvolutionRow = React.memo(function EvolutionRow({
 const RelationsCell = ({
 	slugs,
 	bySlug,
+	revealed,
 	onNavigate,
 }: {
 	slugs: string[];
 	bySlug: { [slug: string]: GameDigimon };
+	revealed: boolean;
 	onNavigate: (slug: string) => void;
 }) => (
-	<td className="cell-relations">
+	<td>
 		{slugs.length ?
 			<div className="relation-tiles">
 				{slugs.map(slug => (
 					<a
 						key={slug}
 						href={`#${slug}`}
-						className="game-digimon-tile"
-						title={bySlug[slug]?.name || slug}
 						onClick={e => {
 							e.preventDefault();
 							onNavigate(slug);
 						}}
 					>
-						{bySlug[slug] ?
+						{revealed && bySlug[slug] ?
 							<GameDigimonImg digimon={bySlug[slug]} />
-						:	<span>{slug}</span>}
+						:	bySlug[slug]?.name || slug}
 					</a>
 				))}
 			</div>
-		:	<span className="cell-empty">&mdash;</span>}
+		:	null}
 	</td>
 );
 
@@ -444,7 +603,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 			.filter(digimon => dubNames[digimon.slug])
 			.map(digimon => [digimon.slug, dubNames[digimon.slug]])
 	);
-	return { props: { game, digimons, aliases } };
+	const generations = Array.from(new Set(digimons.map(digimon => digimon.generation)));
+	const packed = packDigimons(game, digimons, generations);
+	return { props: { game, generations, packed, aliases } };
 };
 
 export default PageGame;

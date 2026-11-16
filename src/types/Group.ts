@@ -14,6 +14,7 @@ export interface GroupPoint {
 	line?: string;
 	redirect?: string;
 	skin?: string;
+	available?: boolean;
 }
 
 export default Group;

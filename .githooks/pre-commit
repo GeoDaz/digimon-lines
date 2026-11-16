@@ -9,18 +9,31 @@
 #
 
 # Images ajoutées/copiées/modifiées dans l'index, sous public/images
-imgs=$(git diff --cached --name-only --diff-filter=ACM -- 'public/images' | grep -Ei '\.(jpe?g|png)$')
+imgs=$(git diff --cached --no-renames --name-only --diff-filter=ACM -- 'public/images' | grep -Ei '\.(jpe?g|png)$')
+deleted=$(git diff --cached --no-renames --name-only --diff-filter=D -- 'public/images/digimon' | grep -Ei '^public/images/digimon/[^/]+\.jpe?g$')
 
 # Rien à optimiser
-[ -z "$imgs" ] && exit 0
+[ -z "$imgs" ] && [ -z "$deleted" ] && exit 0
 
-echo "[pre-commit] Optimisation des images stagées…"
-printf '%s\n' "$imgs" | xargs -d '\n' node cmd/optimize-images.js || {
-	echo "[pre-commit] Échec de l'optimisation des images." >&2
+if [ -n "$imgs" ]; then
+	echo "[pre-commit] Optimisation des images stagées…"
+	printf '%s\n' "$imgs" | xargs -d '\n' node cmd/optimize-images.js || {
+		echo "[pre-commit] Échec de l'optimisation des images." >&2
+		exit 1
+	}
+
+	# Re-stage les versions optimisées
+	printf '%s\n' "$imgs" | xargs -d '\n' git add || exit 1
+fi
+
+sources=$(printf '%s\n%s\n' "$imgs" "$deleted" | grep -Ei '^public/images/digimon/[^/]+\.jpe?g$')
+[ -z "$sources" ] && exit 0
+
+echo "[pre-commit] Miniatures des images Digimon…"
+thumbs=$(printf '%s\n' "$sources" | xargs -d '\n' node cmd/thumbnails.cmd.js) || {
+	echo "[pre-commit] Échec de la génération des miniatures." >&2
 	exit 1
 }
-
-# Re-stage les versions optimisées
-printf '%s\n' "$imgs" | xargs -d '\n' git add || exit 1
+[ -n "$thumbs" ] && { printf '%s\n' "$thumbs" | xargs -d '\n' git add -A -- || exit 1; }
 
 exit 0

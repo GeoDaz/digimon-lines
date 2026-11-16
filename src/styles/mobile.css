@@ -1,0 +1,117 @@
+@media (max-width: 768px) {
+	body,
+	.btn,
+	.blockquote {
+		font-size: clamp(14px, 3.9vw, 15px);
+	}
+
+	.navbar .btn {
+		font-size: var(--bs-body-font-size-sm);
+	}
+
+	.progress-bar .step .legend {
+		font-size: 0.82em;
+	}
+
+	.line-filters {
+		column-gap: 0.75em;
+	}
+
+	.line-summary-levels li {
+		line-height: 1.75;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.navbar {
+		--bs-navbar-padding-y: 0.25em;
+	}
+
+	.navbar .navbar-brand {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 44px;
+		min-height: 44px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.navbar .nav-link.dropdown {
+		padding: 0 0.25em;
+	}
+
+	.navbar .container-fluid > .d-flex {
+		gap: 0.25em !important;
+	}
+
+	.navbar .btn {
+		padding-top: calc(var(--bs-btn-padding-x) / 1.5);
+		padding-bottom: calc(var(--bs-btn-padding-x) / 1.5);
+		padding-left: calc(var(--bs-btn-padding-x) / 3);
+		padding-right: calc(var(--bs-btn-padding-x) / 3);
+		min-width: 44px;
+	}
+
+	.line-grid .btn:not(.btn-sm):not(.btn-link),
+	.dropdown-menu .btn:not(.btn-sm):not(.btn-link),
+	.table .btn:not(.btn-sm):not(.btn-link),
+	.btn-group-sm > .btn:not(.btn-sm):not(.btn-link) {
+		padding-top: var(--bs-btn-padding-y);
+		padding-bottom: var(--bs-btn-padding-y);
+		min-width: 0;
+	}
+
+	.form-control:not(.form-control-sm):not(.form-control-color):not([type='range']),
+	.form-select:not(.form-select-sm) {
+		min-height: 44px;
+	}
+
+	.dropdown-menu .dropdown-item {
+		padding-top: 0.6em;
+		padding-bottom: 0.6em;
+	}
+
+	.home-section-link,
+	.footer a {
+		display: inline-block;
+		min-width: 44px;
+		padding: calc((44px - 1.5em) / 2) 0.25em;
+		text-align: center;
+	}
+
+	.line-summary-evolutions summary {
+		display: flex;
+		align-items: center;
+		min-height: 44px;
+	}
+
+	.line-summary-evolutions summary::before {
+		content: '▸';
+		margin-right: 0.4em;
+	}
+
+	.line-summary-evolutions[open] summary::before {
+		content: '▾';
+	}
+}
+
+@media (max-width: 374.98px) {
+	.navbar > .container-fluid {
+		--bs-gutter-x: 1em;
+		gap: 0.25em;
+	}
+
+	.navbar .navbar-brand {
+		min-width: 36px;
+	}
+
+	.navbar .nav-link.dropdown {
+		padding: 0 0.1em;
+	}
+
+	.navbar .btn:not(.btn-sm):not(.btn-link) {
+		--bs-btn-padding-x: 0.4em;
+		min-width: 36px;
+	}
+}

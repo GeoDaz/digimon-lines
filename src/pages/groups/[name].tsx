@@ -15,10 +15,10 @@ import useSaveGroup from '@/hooks/useSaveGroup';
 import useDragAutoScroll from '@/hooks/useDragAutoScroll';
 import { capitalize } from '@/functions';
 import useQueryParam from '@/hooks/useQueryParam';
-import { getDubNames, getDubNamesFor, getDubbedSearchList } from '@/functions/search';
+import { getDubNames, getDubbedSearchList } from '@/functions/search';
 import { getDirPaths } from '@/functions/file';
 import transformLine, { lineToArray, thumbsToNames } from '@/functions/line';
-import { flattenDigimonItems, getDigimonItemLevels } from '@/functions/items';
+import { getLineDigimonProps, resolveGroup } from '@/functions/lineSummary';
 // constants
 import { Group } from '@/types/Group';
 import { Line } from '@/types/Line';
@@ -152,16 +152,7 @@ const getGroupSiblings = (name: string) => {
 	};
 };
 
-const getGridProps = (grid: Line) => {
-	const ranked = require('../../../public/json/digimons/ranked.json');
-	return {
-		digimons: require('../../../public/json/digimons/index.json'),
-		items: flattenDigimonItems(ranked),
-		itemLevels: getDigimonItemLevels(ranked),
-		levels: Object.keys(ranked),
-		dubNames: getDubNamesFor(lineToArray(grid)),
-	};
-};
+const getGridProps = (grid: Line) => getLineDigimonProps(lineToArray(grid));
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
 	if (!params || !params.name) {
@@ -170,9 +161,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	const { prev, next } = getGroupSiblings(params.name as string);
 	try {
 		// prettier-ignore
-		const group: Group | undefined = require(
+		const source: Group | undefined = require(
 			`../../../public/json/groups/${params.name}.json`
 		);
+		const group = source && !IS_DEV ? resolveGroup(source) : source;
 		const grid = group?.grid ? transformLine(group.grid) : undefined;
 		const gridProps = grid ? { group: { ...group, grid }, ...getGridProps(grid) } : {};
 

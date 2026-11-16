@@ -3,6 +3,7 @@ import { GetStaticProps } from 'next';
 // components
 import { PageLine as PageVB } from '@/pages/lines/[name]';
 import transformLine from '@/functions/line';
+import { buildLineSummary } from '@/functions/lineSummary';
 // constants
 import { Line, VbThumb } from '@/types/Line';
 import { VB } from '@/consts/ui';
@@ -40,8 +41,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	const category =
 		VB_DEVICES.find(device => device.key === list[index]?.device)?.title || null;
 
+	const summary =
+		line ? buildLineSummary(line, params.name as string, line.title || list[index]?.title) : null;
+
 	return {
-		props: { ssr: { name: params.name, line, image, category, prev, next }, type: VB },
+		props: {
+			ssr: { name: params.name, line, image, category, prev, next, summary },
+			type: VB,
+		},
 	};
 };
 

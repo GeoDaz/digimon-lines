@@ -1,7 +1,7 @@
 import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Head from 'next/head';
 import Layout from '@/components/Layout';
+import JsonLd from '@/components/JsonLd';
 import Link from '@/components/Link';
 import Icon from '@/components/Icon';
 import GameDigimonImg from '@/components/Game/GameDigimonImg';
@@ -20,8 +20,9 @@ import {
 } from '@/components/Game/GameDigimonDetails';
 import { digimonGames } from '@/consts/games';
 import { SITE_URL } from '@/consts/env';
-import { capitalize, makeClassName } from '@/functions';
-import { lineToArray, thumbsToNames } from '@/functions/line';
+import { makeClassName } from '@/functions';
+import { breadcrumbJsonLd, fitSentences, graphJsonLd, listUpTo, webPageJsonLd } from '@/functions/seo';
+import { digimonLabel, getLineByDigimon } from '@/functions/lineSummary';
 import {
 	DigimonGame,
 	GameDigimon,
@@ -38,7 +39,8 @@ interface Props {
 	details: GameDigimonDetails | null;
 	scale: StatScale;
 	related: { [slug: string]: RelatedDigimon };
-	line: string | null;
+	line: { name: string; label: string } | null;
+	japaneseName: string | null;
 	otherGames: { key: string; title: string }[];
 	prev: RelatedDigimon | null;
 	next: RelatedDigimon | null;
@@ -49,9 +51,6 @@ const listNames = (names: string[]) =>
 		names.join('')
 	:	`${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
 
-const truncate = (text: string, max: number) =>
-	text.length <= max ? text : `${text.slice(0, max - 1).replace(/[\s,]+\S*$/, '')}…`;
-
 const hiddenFacts = ['Name'];
 
 const PageGameDigimon: React.FC<Props> = ({
@@ -61,6 +60,7 @@ const PageGameDigimon: React.FC<Props> = ({
 	scale,
 	related,
 	line,
+	japaneseName,
 	otherGames,
 	prev,
 	next,
@@ -74,7 +74,7 @@ const PageGameDigimon: React.FC<Props> = ({
 		.join(' ');
 
 	const intro = [
-		`${digimon.name} is a${/^[AEIOU]/i.test(profile) ? 'n' : ''} ${profile} Digimon in ${game.title} (#${digimon.number}).`,
+		`${digimon.name}${japaneseName ? ` (${japaneseName} in Japanese)` : ''} is a${/^[AEIOU]/i.test(profile) ? 'n' : ''} ${profile} Digimon in ${game.title} (#${digimon.number}).`,
 		digimon.from.length ?
 			`It digivolves from ${listNames(names(digimon.from))}.`
 		:	`It has no pre-evolution in ${game.shortTitle}.`,
@@ -83,26 +83,28 @@ const PageGameDigimon: React.FC<Props> = ({
 		:	`It has no further digivolution in ${game.shortTitle}.`,
 	].join(' ');
 
-	const metadescription = truncate(
-		[
-			`${digimon.name} (${profile}) in ${game.title}: stats, resistances, skills and evolution conditions.`,
-			digimon.from.length && `From ${listNames(names(digimon.from))}.`,
-			digimon.to.length && `Into ${listNames(names(digimon.to))}.`,
-		]
-			.filter(Boolean)
-			.join(' '),
-		160,
-	);
+	const metadescription = fitSentences([
+		`${digimon.name} (${profile}) in ${game.title}: stats, resistances, skills and evolution conditions.`,
+		digimon.from.length > 0 && `From ${listUpTo(names(digimon.from), 30)}.`,
+		digimon.to.length > 0 && `Into ${listUpTo(names(digimon.to), 30)}.`,
+	]);
 
-	const breadcrumbJsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'BreadcrumbList',
-		itemListElement: [
-			{ name: 'Digimon Lines', item: `${SITE_URL}/` },
-			{ name: `${game.shortTitle} evolutions`, item: `${SITE_URL}${gameUrl}` },
-			{ name: digimon.name, item: `${SITE_URL}${href(digimon.slug)}` },
-		].map((crumb, i) => ({ '@type': 'ListItem', position: i + 1, ...crumb })),
-	};
+	const metatitle = `${digimon.name}${japaneseName ? ` (${japaneseName})` : ''} evolutions, stats & skills – ${game.shortTitle}`;
+	const jsonLd = graphJsonLd(
+		breadcrumbJsonLd([
+			{ name: `${game.shortTitle} evolution chart`, path: gameUrl },
+			{ name: digimon.name, path: href(digimon.slug) },
+		]),
+		webPageJsonLd('WebPage', href(digimon.slug), metatitle, metadescription, {
+			about: {
+				'@type': 'Thing',
+				name: digimon.name,
+				...(japaneseName && { alternateName: japaneseName }),
+				description: `${profile} Digimon in ${game.title}`,
+			},
+			...(digimon.image && { primaryImageOfPage: `${SITE_URL}/images/digimon/${digimon.image}.jpg` }),
+		})
+	);
 
 	const tags = [
 		{ label: game.labels.generation, value: digimon.generation, icon: false },
@@ -120,18 +122,13 @@ const PageGameDigimon: React.FC<Props> = ({
 	return (
 		<Layout
 			title={digimon.name}
-			metatitle={`${digimon.name} evolutions, stats & skills – ${game.shortTitle}`}
+			metatitle={metatitle}
 			metadescription={metadescription}
 			metaimg={digimon.image ? `digimon/${digimon.image}.jpg` : undefined}
 			className="game-digimon-page"
 			noTitle
 		>
-			<Head>
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-				/>
-			</Head>
+			<JsonLd data={jsonLd} />
 			<nav aria-label="breadcrumb">
 				<ol className="breadcrumb">
 					<li className="breadcrumb-item">
@@ -154,7 +151,10 @@ const PageGameDigimon: React.FC<Props> = ({
 						<span>#{digimon.number}</span>
 						<span>{game.shortTitle}</span>
 					</div>
-					<h1>{digimon.name}</h1>
+					<h1>
+						{digimon.name}
+						{!!japaneseName && <small className="game-digimon-alias"> ({japaneseName})</small>}
+					</h1>
 					{!!tags.length && (
 						<ul className="game-digimon-tags">
 							{tags.map(tag => (
@@ -258,8 +258,8 @@ const PageGameDigimon: React.FC<Props> = ({
 						<ul className="game-see-also">
 							{!!line && (
 								<li>
-									<Link href={`/lines/${line}`}>
-										<Icon name="diagram-3" /> {capitalize(line)} evolution line
+									<Link href={`/lines/${line.name}`}>
+										<Icon name="diagram-3" /> {line.label} evolution line
 									</Link>
 								</li>
 							)}
@@ -368,24 +368,6 @@ const RelationsColumn = ({
 	</div>
 );
 
-let lineByDigimon: { [name: string]: string } | undefined;
-const getLineByDigimon = () => {
-	if (lineByDigimon) return lineByDigimon;
-	lineByDigimon = {};
-	const lines = thumbsToNames(require('../../../../public/json/lines/_index.json'));
-	for (const line of lines) {
-		try {
-			lineToArray(require(`../../../../public/json/lines/${line}.json`)).forEach(
-				name => (lineByDigimon![name] ??= line),
-			);
-		} catch (e) {
-			console.error(e);
-		}
-	}
-	lines.forEach(line => (lineByDigimon![line] = line));
-	return lineByDigimon;
-};
-
 const loadDigimons = (key: string): GameDigimon[] =>
 	require(`../../../../public/json/games/${key}/digimons.json`);
 
@@ -425,8 +407,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 			.map(slug => [slug, toRelated(bySlug[slug])]),
 	);
 	const lines = getLineByDigimon();
-	const line =
+	const lineName =
 		lines[digimon.image || ''] || lines[digimon.slug.replace(/-/g, '_')] || null;
+	const line = lineName ? { name: lineName, label: digimonLabel(lineName) } : null;
+	const dubNames: { [name: string]: string } = require('../../../../public/json/dubnames.json');
+	const japaneseKey = Object.keys(dubNames).find(
+		key => dubNames[key] === digimon.slug.replace(/-/g, '_')
+	);
+	const japaneseName = japaneseKey ? digimonLabel(japaneseKey) : null;
 	const otherGames = Object.values(digimonGames)
 		.filter(
 			other =>
@@ -443,6 +431,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 			scale: statScales[game.key],
 			related,
 			line,
+			japaneseName,
 			otherGames,
 			prev: index > 0 ? toRelated(digimons[index - 1]) : null,
 			next: index < digimons.length - 1 ? toRelated(digimons[index + 1]) : null,

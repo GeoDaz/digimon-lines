@@ -6,8 +6,28 @@ const archivedVbs = require('./public/json/archive/vb/_index.json').filter(
 	name => !vbNames.includes(name)
 );
 
+const groupNames = require('./public/json/groups/_index.json').map(group =>
+	typeof group === 'string' ? group : group.name
+);
+const unpublishedGroups = require('fs')
+	.readdirSync('./public/json/groups')
+	.filter(file => file.endsWith('.json') && !file.startsWith('_'))
+	.map(file => file.replace(/.json$/, ''))
+	.filter(name => process.env.NODE_ENV === 'production' && !groupNames.includes(name));
+
+const securityHeaders = [
+	{ key: 'Strict-Transport-Security', value: 'max-age=31536000' },
+	{ key: 'X-Content-Type-Options', value: 'nosniff' },
+	{ key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+	{ key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+	{ key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+];
+
 module.exports = () => ({
 	reactStrictMode: true,
+	async headers() {
+		return [{ source: '/:path*', headers: securityHeaders }];
+	},
 	async redirects() {
 		return [
 			{
@@ -32,6 +52,11 @@ module.exports = () => ({
 				source: `/lines/${from}`,
 				destination: `/lines/${to}`,
 				permanent: true,
+			})),
+			...unpublishedGroups.map(name => ({
+				source: `/groups/${name}`,
+				destination: '/groups',
+				permanent: false,
 			})),
 			...archivedVbs.map(name => ({
 				source: `/vbs/${name}`,

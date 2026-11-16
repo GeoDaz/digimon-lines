@@ -1,29 +1,48 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
-import Head from 'next/head';
 import { Row, Col } from 'react-bootstrap';
 import Layout from '@/components/Layout';
+import JsonLd from '@/components/JsonLd';
 import Link from '@/components/Link';
 import Icon from '@/components/Icon';
 import LinePoint from '@/components/Line/LinePoint';
 import LineShowcase from '@/components/Home/LineShowcase';
 import transformLine, { lineExcerpt, thumbsToNames } from '@/functions/line';
 import { digimonGames } from '@/consts/games';
-import { DISCORD_URL, SITE_URL } from '@/consts/env';
+import { DISCORD_URL, DONATE_URL, SITE_URL } from '@/consts/env';
+import { ORGANIZATION_ID, WEBSITE_ID } from '@/functions/seo';
 import { Line, LineThumb } from '@/types/Line';
 
 const FEATURED = 14;
 
 const websiteJsonLd = {
 	'@context': 'https://schema.org',
-	'@type': 'WebSite',
-	name: 'Digimon Lines',
-	url: `${SITE_URL}/`,
-	potentialAction: {
-		'@type': 'SearchAction',
-		target: `${SITE_URL}/lines?search={search_term_string}`,
-		'query-input': 'required name=search_term_string',
-	},
+	'@graph': [
+		{
+			'@type': 'WebSite',
+			'@id': WEBSITE_ID,
+			name: 'Digimon Lines',
+			url: `${SITE_URL}/`,
+			inLanguage: 'en',
+			publisher: { '@id': ORGANIZATION_ID },
+			potentialAction: {
+				'@type': 'SearchAction',
+				target: {
+					'@type': 'EntryPoint',
+					urlTemplate: `${SITE_URL}/lines?search={search_term_string}`,
+				},
+				'query-input': 'required name=search_term_string',
+			},
+		},
+		{
+			'@type': 'Organization',
+			'@id': ORGANIZATION_ID,
+			name: 'Digimon Lines',
+			url: `${SITE_URL}/`,
+			logo: `${SITE_URL}/images/icons/maskable_icon_x192.png`,
+			sameAs: [DISCORD_URL, DONATE_URL],
+		},
+	],
 };
 
 interface Stats {
@@ -50,12 +69,7 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 		metadescription="Every Digimon evolution line grouped by species, from Agumon to Gekkomon: follow each digivolution from Baby to Mega, build and share your own lines, and explore game evolutions, Virtual Pets and Digimon groups."
 		className="home"
 	>
-		<Head>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-			/>
-		</Head>
+		<JsonLd data={websiteJsonLd} />
 
 		<section className="home-hero">
 			<div className="home-hero-text">

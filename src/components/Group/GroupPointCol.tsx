@@ -36,7 +36,12 @@ const GroupPointCol: React.FC<Props> = ({
 		{!!onRemove && (
 			<ButtonRemove size="sm" overlay title="Remove" onClick={onRemove} />
 		)}
-		<LinePoint name={point.name} line={point.redirect || point.line} type={type}>
+		<LinePoint
+			name={point.name}
+			line={point.redirect || point.line}
+			type={type}
+			available={point.available}
+		>
 			{!!point.line && (
 				<LineImage className="line-skin" name={point.line} loadable={false} />
 			)}

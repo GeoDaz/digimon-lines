@@ -2025,6 +2025,14 @@ button.like-heart:focus-visible {
 	min-width: 180px;
 }
 
+.evolution-table > tbody > tr.evolution-row > td:empty::before {
+	content: '\2014';
+	display: inline-block;
+	width: var(--dl-tile-size, 64px);
+	text-align: center;
+	color: var(--bs-gray-600);
+}
+
 .evolution-table .digimon-identity {
 	display: flex;
 	align-items: center;
@@ -2048,7 +2056,8 @@ button.like-heart:focus-visible {
 	color: var(--bs-gray-500);
 }
 
-.game-digimon-tile {
+.game-digimon-tile,
+.relation-tiles > a {
 	flex: none;
 	display: inline-flex;
 	align-items: center;
@@ -2070,6 +2079,8 @@ button.like-heart:focus-visible {
 
 a.game-digimon-tile:hover,
 a.game-digimon-tile:focus,
+.relation-tiles > a:hover,
+.relation-tiles > a:focus,
 .game-digimon-tile:has(> .line-img.click):hover {
 	box-shadow: 0 0 0 2px var(--bs-primary-link);
 }
@@ -2088,6 +2099,19 @@ a.game-digimon-tile:focus,
 	display: flex;
 	flex-wrap: wrap;
 	gap: 6px;
+}
+
+.relation-tiles > a {
+	padding: 2px;
+	font-size: 0.625rem;
+	line-height: 1.1;
+	text-align: center;
+	overflow-wrap: anywhere;
+	color: var(--bs-gray-300);
+}
+
+.relation-tiles > a:has(> img) {
+	padding: 0;
 }
 
 .evolution-table .cell-empty,
@@ -3469,4 +3493,42 @@ a.game-digimon-tile:focus,
 	.home-stats b {
 		font-size: 1.5rem;
 	}
+}
+
+.line-summary {
+	max-width: 960px;
+	margin: 1.5rem 0;
+	color: var(--bs-gray-300);
+}
+
+.line-summary h2 {
+	font-size: 1.3rem;
+}
+
+.line-summary-levels {
+	padding-left: 1.2rem;
+}
+
+.line-summary-levels li {
+	margin-bottom: 0.35rem;
+}
+
+.line-summary-evolutions summary {
+	cursor: pointer;
+}
+
+.line-summary-evolutions summary h3 {
+	display: inline;
+	font-size: 1.05rem;
+}
+
+.game-intro {
+	max-width: 960px;
+	color: var(--bs-gray-300);
+}
+
+.game-digimon-alias {
+	font-size: 0.55em;
+	font-weight: 400;
+	color: var(--bs-gray-400);
 }

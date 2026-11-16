@@ -31,12 +31,13 @@ const Header: React.FC = () => (
 				<Navbar.Brand as={Link} href="/lines">
 					<Image
 						src="/images/icon.png"
-						alt="logo"
+						alt="Digimon Lines"
 						height="26"
 						width="32"
+						priority
 						className="mr-sm-2"
 					/>{' '}
-					<span className="d-none d-sm-inline-block">Digimon Lines</span>
+					<span className="d-none d-sm-inline-block ms-2">Digimon Lines</span>
 				</Navbar.Brand>
 				<Nav className="flex-grow-1">
 					<DropdownMenu

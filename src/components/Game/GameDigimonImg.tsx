@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { makeClassName } from '@/functions';
 import { GameDigimon } from '@/types/GameDigimon';
 
@@ -6,14 +7,15 @@ interface Props {
 	digimon?: GameDigimon;
 }
 const GameDigimonImg: React.FC<Props> = ({ digimon }) => {
-	if (!digimon) return null;
-	const src = digimon.image ? `/images/digimon/${digimon.image}.jpg` : digimon.icon;
+	const src = digimon?.image ? `/images/digimon-thumbs/${digimon.image}.webp` : digimon?.icon;
+	if (!digimon || !src) return null;
 	return (
-		<img
+		<Image
 			src={src}
 			alt={digimon.name}
 			title={digimon.name}
-			loading="lazy"
+			width={64}
+			height={64}
 			className={makeClassName('game-digimon-img', !digimon.image && 'icon')}
 		/>
 	);
