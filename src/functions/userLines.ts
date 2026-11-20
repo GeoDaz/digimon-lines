@@ -1,6 +1,10 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import { getSupabase } from '@/functions/supabase';
-import { prepareLineExport, stripUploadedImages } from '@/functions/line';
+import {
+	prepareLineExport,
+	stripUntrustedImages,
+	stripUploadedImages,
+} from '@/functions/line';
 import { coverKey } from '@/functions/images';
 import Line from '@/types/Line';
 import { UserLineRow, UserLineWithAuthor } from '@/types/Account';
@@ -58,7 +62,9 @@ export const saveUserLine = async ({
 				// images uploadées. Le retrait est fait ici, au plus près de
 				// l'écriture, pour que l'invariant tienne quel que soit
 				// l'appelant.
-				data: prepareLineExport(stripUploadedImages(line)) as unknown as Json,
+				data: prepareLineExport(
+					stripUploadedImages(isPublic ? stripUntrustedImages(line) : line)
+				) as unknown as Json,
 				is_public: isPublic,
 				cover: (cover && coverKey(cover, licence)) || null,
 				licence: licence || 'digimon',

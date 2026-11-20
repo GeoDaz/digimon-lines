@@ -8,7 +8,7 @@ import Line, {
 } from '@/types/Line';
 import { levels as defaultLevels } from '@/consts/levels';
 import { getSearchPriority } from './search';
-import { byteSize, isUploadedImage } from './images';
+import { byteSize, isUntrustedImageUrl, isUploadedImage } from './images';
 import { StringArrayObject } from '@/types/Ui';
 
 export const skinName = (skin: LineSkin): string =>
@@ -149,11 +149,9 @@ export const getLineDataBytes = (line: Line): number =>
  * Purement fonctionnel : la ligne d'origine n'est pas modifiée, le builder
  * garde donc ses images à l'écran après la sauvegarde.
  */
-export const stripUploadedImages = (line: Line): Line => {
-	if (!getLineUploadedImages(line).length) return line;
-
+const stripImages = (line: Line, shouldStrip: (image?: string) => boolean): Line => {
 	const cleanSkin = (skin: LineSkin): LineSkin => {
-		if (typeof skin === 'string' || !isUploadedImage(skin.image)) return skin;
+		if (typeof skin === 'string' || !shouldStrip(skin.image)) return skin;
 		const { image, ...rest } = skin;
 		return rest;
 	};
@@ -164,13 +162,29 @@ export const stripUploadedImages = (line: Line): Line => {
 			column.map(point => {
 				if (!point) return point;
 				const cleaned: LinePoint = { ...point };
-				if (isUploadedImage(cleaned.image)) delete cleaned.image;
+				if (shouldStrip(cleaned.image)) delete cleaned.image;
 				if (cleaned.skins) cleaned.skins = cleaned.skins.map(cleanSkin);
 				return cleaned;
 			})
 		),
 	};
 };
+
+export const stripUploadedImages = (line: Line): Line =>
+	getLineUploadedImages(line).length ? stripImages(line, isUploadedImage) : line;
+
+export const hasUntrustedImages = (line: Line): boolean =>
+	line.columns.some(column =>
+		column.some(
+			point =>
+				!!point &&
+				(isUntrustedImageUrl(point.image) ||
+					!!point.skins?.some(skin => isUntrustedImageUrl(skinImage(skin))))
+		)
+	);
+
+export const stripUntrustedImages = (line: Line): Line =>
+	hasUntrustedImages(line) ? stripImages(line, isUntrustedImageUrl) : line;
 
 export const clearLine = (line: Line): Line => {
 	const columns = line.columns.map(col =>
@@ -191,7 +205,12 @@ const PLACEHOLDER_NAMES = ['upload', 'url', 'unknown'];
 
 const isMeaningfulPoint = (point: LinePoint | null): boolean => {
 	if (!point) return false;
-	if (typeof point.image === 'string' && point.image.trim() && !isUploadedImage(point.image))
+	if (
+		typeof point.image === 'string' &&
+		point.image.trim() &&
+		!isUploadedImage(point.image) &&
+		!isUntrustedImageUrl(point.image)
+	)
 		return true;
 	const name = typeof point.name === 'string' ? point.name.trim().toLowerCase() : '';
 	return !!name && !PLACEHOLDER_NAMES.includes(name);

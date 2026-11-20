@@ -9,6 +9,45 @@ import { formatPokemonFileName } from './file';
 export const isUploadedImage = (image?: string): boolean =>
 	!!image && image.trimStart().toLowerCase().startsWith('data:');
 
+const TRUSTED_IMAGE_HOSTS = [
+	'fandom.com',
+	'wikia.com',
+	'wikia.nocookie.net',
+	'bulbagarden.net',
+	'masterduelmeta.com',
+	'duellinksmeta.com',
+	'ygoprodeck.com',
+	'yugioh-card.com',
+	'ygorganization.com',
+	'digimoncard.com',
+	'digimoncard.io',
+	'digimoncard.app',
+	'digimoncard.dev',
+	'takaotaku.de',
+	'orangeswim.dev',
+	'cardlist.dev',
+	'digimon.net',
+];
+const WIKI_LABEL = /wiki|pedia/;
+
+export const isTrustedImageUrl = (image?: string): boolean => {
+	if (!image) return false;
+	try {
+		const { protocol, hostname } = new URL(image.trim());
+		if (protocol !== 'https:') return false;
+		const host = hostname.toLowerCase();
+		return (
+			TRUSTED_IMAGE_HOSTS.some(trusted => host === trusted || host.endsWith(`.${trusted}`)) ||
+			host.split('.').some(label => WIKI_LABEL.test(label))
+		);
+	} catch {
+		return false;
+	}
+};
+
+export const isUntrustedImageUrl = (image?: string): boolean =>
+	!!image && !!image.trim() && !isUploadedImage(image) && !isTrustedImageUrl(image);
+
 /**
  * Poids réel d'une chaîne une fois écrite en base, en octets UTF-8 : c'est ce
  * que compte `octet_length` côté Postgres.
