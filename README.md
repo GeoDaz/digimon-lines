@@ -1,6 +1,6 @@
 # Digimon Lines
 
-Run `npm run dev` to launch local compilation
+Run `pnpm install` then `pnpm run dev` to launch local compilation
 
 Prod : https://digimon-lines.vercel.app/
 

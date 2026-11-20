@@ -5,7 +5,7 @@
 # la version optimisée. Les PNG/GIF et petits fichiers sont ignorés par le script.
 #
 # Activé par : git config core.hooksPath .githooks
-# (fait automatiquement par le script "prepare" de package.json lors d'un npm install)
+# (fait automatiquement par le script "prepare" de package.json lors d'un pnpm install)
 #
 
 # Images ajoutées/copiées/modifiées dans l'index, sous public/images
