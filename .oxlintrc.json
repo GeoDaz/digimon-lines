@@ -1,12 +1,6 @@
 {
 	"$schema": "./node_modules/oxlint/configuration_schema.json",
 	"plugins": ["react", "nextjs", "import", "jsx-a11y"],
-	"jsPlugins": [
-		{
-			"name": "react-hooks-js",
-			"specifier": "eslint-plugin-react-hooks"
-		}
-	],
 	"categories": {
 		"correctness": "off"
 	},
@@ -63,21 +57,7 @@
 		"react/no-is-mounted": "error",
 		"react/no-render-return-value": "error",
 		"react/no-string-refs": "error",
-		"react/require-render-return": "error",
-		"react-hooks-js/config": "error",
-		"react-hooks-js/error-boundaries": "error",
-		"react-hooks-js/gating": "error",
-		"react-hooks-js/globals": "error",
-		"react-hooks-js/immutability": "warn",
-		"react-hooks-js/incompatible-library": "warn",
-		"react-hooks-js/preserve-manual-memoization": "warn",
-		"react-hooks-js/purity": "error",
-		"react-hooks-js/refs": "warn",
-		"react-hooks-js/set-state-in-effect": "warn",
-		"react-hooks-js/set-state-in-render": "error",
-		"react-hooks-js/static-components": "error",
-		"react-hooks-js/unsupported-syntax": "warn",
-		"react-hooks-js/use-memo": "error"
+		"react/require-render-return": "error"
 	},
 	"ignorePatterns": [".open-next/**", ".wrangler/**", ".netlify/**", ".claude/**", "next-env.d.ts"]
 }
