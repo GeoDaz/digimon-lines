@@ -3,3 +3,9 @@ allowBuilds:
   workerd: true
 
 nodeLinker: hoisted
+
+packageExtensions:
+  eslint-plugin-react-hooks:
+    peerDependenciesMeta:
+      eslint:
+        optional: true

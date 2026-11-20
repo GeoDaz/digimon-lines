@@ -20,8 +20,6 @@
   },
   "devDependencies": {
     "@opennextjs/cloudflare": "^1.20.14",
-    "eslint": "^9.39.5",
-    "eslint-config-next": "^16.4.3",
     "eslint-plugin-react-hooks": "7.1.1",
     "jsdom": "^22.1.0",
     "oxlint": "1.94.0",
@@ -50,12 +48,6 @@
     "supabase": "node cmd/supabase.cmd.js",
     "supabase:types": "node cmd/supabase.cmd.js gen types typescript --linked --schema public > src/types/supabase.ts",
     "prepare": "node -e \"try{require('child_process').execSync('git config core.hooksPath .githooks')}catch(e){}\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
