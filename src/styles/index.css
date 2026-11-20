@@ -3501,8 +3501,17 @@ a.game-digimon-tile:focus,
 	color: var(--bs-gray-300);
 }
 
+.line-summary summary {
+	cursor: pointer;
+}
+
 .line-summary h2 {
+	display: inline;
 	font-size: 1.3rem;
+}
+
+.line-summary > p {
+	margin-top: 0.75rem;
 }
 
 .line-summary-levels {
@@ -3511,10 +3520,6 @@ a.game-digimon-tile:focus,
 
 .line-summary-levels li {
 	margin-bottom: 0.35rem;
-}
-
-.line-summary-evolutions summary {
-	cursor: pointer;
 }
 
 .line-summary-evolutions summary h3 {

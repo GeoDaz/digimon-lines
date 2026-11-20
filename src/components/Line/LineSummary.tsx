@@ -20,8 +20,10 @@ const MemberName: React.FC<{ member: SummaryMember }> = ({ member }) =>
 	:	<>{member.label}</>;
 
 const LineSummary: React.FC<Props> = ({ summary, heading, intro }) => (
-	<section className="line-summary">
-		<h2>{heading}</h2>
+	<details className="line-summary">
+		<summary>
+			<h2>{heading}</h2>
+		</summary>
 		<p>{intro}</p>
 		<ul className="line-summary-levels">
 			{summary.levels.map(level => (
@@ -50,7 +52,7 @@ const LineSummary: React.FC<Props> = ({ summary, heading, intro }) => (
 				</ul>
 			</details>
 		)}
-	</section>
+	</details>
 );
 
 export default LineSummary;

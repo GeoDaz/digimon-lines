@@ -80,18 +80,19 @@
 		text-align: center;
 	}
 
-	.line-summary-evolutions summary {
+	.line-summary summary {
 		display: flex;
 		align-items: center;
 		min-height: 44px;
 	}
 
-	.line-summary-evolutions summary::before {
+	.line-summary summary::before {
 		content: '▸';
 		margin-right: 0.4em;
 	}
 
-	.line-summary-evolutions[open] summary::before {
+	.line-summary details[open] > summary::before,
+	.line-summary[open] > summary::before {
 		content: '▾';
 	}
 }

@@ -98,9 +98,13 @@ const useFullDigimonData = (enabled: boolean) => {
 
 const levelLabels = (level: SummaryLevel) => level.members.map(member => member.label);
 
+const isBabyLevel = (level: SummaryLevel) => /^baby\b/i.test(level.level);
+
 const describeLine = (summary: Summary, isVb: boolean, typeTitle: string) => {
-	const first = summary.levels[0];
-	const last = summary.levels[summary.levels.length - 1];
+	const levels = summary.levels.filter(level => !isBabyLevel(level));
+	const count = levels.reduce((total, level) => total + level.members.length, 0);
+	const first = levels[0];
+	const last = levels[levels.length - 1];
 	const aliasText = summary.aliases.length ? ` (${summary.aliases.join(', ')})` : '';
 	const heading =
 		isVb ? `${summary.title} ${typeTitle} evolutions` : `${summary.title} evolution line`;
@@ -116,8 +120,8 @@ const describeLine = (summary: Summary, isVb: boolean, typeTitle: string) => {
 	const hasGames = summary.levels.some(level => level.members.some(member => member.game));
 	const intro = [
 		isVb ?
-			`The ${summary.title} ${typeTitle} features ${summary.count} Digimon, ${range}.`
-		:	`The ${summary.title} evolution line${aliasText} gathers ${summary.count} Digimon of the same species, ${range}.`,
+			`The ${summary.title} ${typeTitle} features ${count} Digimon, ${range}.`
+		:	`The ${summary.title} evolution line${aliasText} gathers ${count} Digimon of the same species, ${range}.`,
 		summary.evolutions.length ?
 			`It covers ${summary.evolutions.length} digivolution paths, detailed level by level below.`
 		:	'',
@@ -128,8 +132,8 @@ const describeLine = (summary: Summary, isVb: boolean, typeTitle: string) => {
 		.filter(Boolean)
 		.join(' ');
 	const description = withList(
-		`${heading}: ${summary.count} Digimon from ${first.level} to ${last.level}, including `,
-		summary.levels.flatMap(levelLabels),
+		`${heading}: ${count} Digimon from ${first.level} to ${last.level}, including `,
+		levels.flatMap(levelLabels),
 		'. Full digivolution chart.'
 	);
 	return { heading, metatitle, intro, description };
@@ -167,7 +171,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 				mainEntity: itemListJsonLd(summary.levels.flatMap(levelLabels)),
 			})
 		);
-	const shareText = texts?.description || `Evolution line for ${nameCap} species`;
+	const metadescription = texts?.description || `Evolution line for ${nameCap} species`;
 	return (
 		<Layout
 			title={
@@ -178,7 +182,7 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 				:	<>{title} evolution line</>
 			}
 			metatitle={texts?.metatitle || `${nameCap} ${typeTitle}`}
-			metadescription={shareText}
+			metadescription={metadescription}
 			metaimg={`digimon/${ssr.image || name}.jpg`}
 		>
 			{!!jsonLd && <JsonLd data={jsonLd} />}
@@ -190,7 +194,6 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 						editName={name}
 						editType={type}
 						shareTitle={`${title} ${typeTitle}`}
-						shareText={shareText}
 						search={ssr.search}
 						digimons={fullData?.digimons || ssr.digimons}
 						items={fullData?.items || ssr.items}
@@ -198,18 +201,14 @@ export const PageLine: React.FC<Props> = ({ ssr = defaultObject, type = LINE }) 
 						levels={ssr.levels}
 						dubNames={ssr.dubNames}
 					/>
-					{!!summary && !!texts && (
-						<LineSummary
-							summary={summary}
-							heading={texts.heading}
-							intro={texts.intro}
-						/>
-					)}
 					<CommentLink />
 				</>
 			:	<p>Line not found</p>}
 			<LineNav prev={prev} next={next} type={type} />
 			<RelatedLines related={line?.related} />
+			{!!line && !!summary && !!texts && (
+				<LineSummary summary={summary} heading={texts.heading} intro={texts.intro} />
+			)}
 		</Layout>
 	);
 };
