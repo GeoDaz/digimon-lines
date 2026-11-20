@@ -44,12 +44,13 @@ const Header: React.FC = () => (
 						{...gameMenu(Digivice, 'Digimon')}
 						items={[
 							{ href: '/build', content: 'Builder' },
-							{ href: '/community', content: 'Community' },
-							{ href: '/list', content: 'List' },
+							{ href: '/cards', content: 'Card lines' },
+							{ href: '/community', content: 'Community Lines' },
 							{ href: '/games/dsts', content: 'Games' },
-							{ href: '/vbs', content: 'Virtual Pets' },
+							{ href: '/lines', content: 'Families Lines' },
 							{ href: '/groups', content: 'Groups' },
-							{ href: '/lines', content: 'Families' },
+							{ href: '/list', content: 'Digimon List' },
+							{ href: '/vbs', content: 'Virtual Pets' },
 						]}
 					/>
 					<DropdownMenu

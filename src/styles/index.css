@@ -3537,3 +3537,168 @@ a.game-digimon-tile:focus,
 	font-weight: 400;
 	color: var(--bs-gray-400);
 }
+
+.card-maker-intro,
+.card-maker-credits {
+	max-width: 960px;
+	color: var(--bs-gray-300);
+}
+
+.card-maker-credits {
+	margin-top: 1.5rem;
+	font-size: 0.85rem;
+	color: var(--bs-gray-500);
+}
+
+.card-maker-preview canvas {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+}
+
+.card-maker-slots {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+
+.card-maker-slot {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 150px;
+}
+
+.card-maker-slot-card,
+.card-maker-add {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	aspect-ratio: 430 / 600;
+	padding: 0;
+	overflow: hidden;
+	border: 2px dashed var(--bs-gray-600);
+	border-radius: 0.5rem;
+	background: var(--bs-gray-900);
+	color: var(--bs-gray-400);
+}
+
+.card-maker-slot-card:hover,
+.card-maker-add:hover {
+	border-color: var(--bs-primary);
+	color: var(--bs-white);
+}
+
+.card-maker-slot-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-maker-slot-card span {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.card-maker-add {
+	width: 100%;
+	gap: 0.35rem;
+}
+
+.card-maker-gradient {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 1rem;
+}
+
+.card-maker-gradient-color {
+	flex-wrap: nowrap;
+	width: auto;
+}
+
+.card-maker-color-field {
+	position: relative;
+	flex: 1 1 auto;
+}
+
+.card-maker-color-field .form-select {
+	padding-left: 2.25rem;
+}
+
+.card-maker-color-field:not(:last-child) .form-select {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.card-maker-swatch {
+	position: absolute;
+	top: 50%;
+	left: 0.75rem;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.card-maker-options {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 1rem 1.5rem;
+}
+
+.card-picker-filters {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.75rem 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.card-picker-filters .form-control {
+	flex: 1 1 280px;
+}
+
+.card-picker-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	gap: 0.75rem;
+}
+
+.card-picker-item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	padding: 0.25rem;
+	border: 2px solid transparent;
+	border-radius: 0.5rem;
+	background: none;
+	color: var(--bs-gray-300);
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.card-picker-item:hover,
+.card-picker-item:focus-visible {
+	border-color: var(--bs-primary);
+}
+
+.card-picker-item img {
+	width: 100%;
+	aspect-ratio: 430 / 600;
+	object-fit: cover;
+	border-radius: 0.35rem;
+	background: var(--bs-gray-800);
+}
+
+.card-picker-item small {
+	display: block;
+	color: var(--bs-gray-500);
+}

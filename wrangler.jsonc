@@ -3,14 +3,29 @@
 	"name": "digimon-lines",
 	"main": ".open-next/worker.js",
 	"compatibility_date": "2026-09-25",
-	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
 	"assets": {
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
 	},
 	"routes": [
-		{ "pattern": "digimon-lines.com", "custom_domain": true },
-		{ "pattern": "www.digimon-lines.com", "custom_domain": true }
+		{
+			"pattern": "digimon-lines.com",
+			"custom_domain": true
+		},
+		{
+			"pattern": "www.digimon-lines.com",
+			"custom_domain": true
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "CARD_IMAGES",
+			"bucket_name": "digimon-lines-cards"
+		}
 	],
 	"observability": {
 		"enabled": true
