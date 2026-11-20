@@ -3674,6 +3674,41 @@ a.game-digimon-tile:focus,
 	padding-left: 1.85rem;
 }
 
+.card-maker-background {
+	display: flex;
+	flex: 1 1 100%;
+	order: 1;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.card-maker-background .card-picker-custom {
+	flex: 1 1 auto;
+}
+
+.card-maker-background-thumb {
+	position: relative;
+	flex: 0 0 auto;
+}
+
+.card-maker-background-thumb img {
+	display: block;
+	height: 38px;
+	max-width: 120px;
+	object-fit: cover;
+	border-radius: 0.375rem;
+}
+
+.card-maker-background-thumb .btn {
+	position: absolute;
+	top: -0.5rem;
+	right: -0.5rem;
+	padding: 0 0.25rem;
+	border-radius: 50%;
+	background: var(--bs-dark);
+	font-size: 0.7rem;
+}
+
 .card-picker-custom {
 	display: flex;
 	flex-wrap: wrap;

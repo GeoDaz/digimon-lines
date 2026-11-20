@@ -3,6 +3,7 @@ import { Button, ButtonGroup, Form, InputGroup } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import CardPickerModal from '@/components/Cards/CardPickerModal';
 import ColorSelect from '@/components/Cards/ColorSelect';
+import CustomImageInput from '@/components/Cards/CustomImageInput';
 import {
 	CARD_COLORS,
 	CardPattern,
@@ -37,6 +38,8 @@ const PATTERNS: Array<{ value: CardPattern; label: string }> = [
 ];
 const AUTO = 'auto';
 const CUSTOM = 'custom';
+const IMAGE = 'image';
+const BACKGROUND_MAX_SIZE = 2400;
 const MAX_COLORS = 3;
 const MAX_AUTO_COLORS = 4;
 
@@ -51,11 +54,12 @@ const defaultSlots = (): Slot[] => DEFAULT_CARD_LEVELS.map(level => ({ level, id
 const isCustomImage = (value: unknown): value is string =>
 	typeof value === 'string' && /^(data:image\/(png|jpeg|webp|gif);base64,|https?:\/\/)/.test(value);
 
-const slotSource = (slot: Slot) =>
-	slot.id ? cardImageUrl(slot.id)
-	: !slot.image ? null
-	: slot.image.startsWith('data:') ? slot.image
-	: `/api/proxy-image?url=${encodeURIComponent(slot.image)}`;
+const imageSource = (image?: string | null) =>
+	!image ? null
+	: image.startsWith('data:') ? image
+	: `/api/proxy-image?url=${encodeURIComponent(image)}`;
+
+const slotSource = (slot: Slot) => (slot.id ? cardImageUrl(slot.id) : imageSource(slot.image));
 
 interface StoredCardLine {
 	slots: Slot[];
@@ -63,6 +67,7 @@ interface StoredCardLine {
 	seed: number;
 	colorMode: string;
 	customColors: string[];
+	backgroundImage: string;
 }
 
 const readStoredCardLine = (): Partial<StoredCardLine> | null => {
@@ -84,7 +89,8 @@ const readStoredCardLine = (): Partial<StoredCardLine> | null => {
 		}
 		if (PATTERNS.some(item => item.value === data.pattern)) result.pattern = data.pattern;
 		if (Number.isInteger(data.seed)) result.seed = data.seed;
-		if (data.colorMode === AUTO || data.colorMode === CUSTOM) result.colorMode = data.colorMode;
+		if ([AUTO, CUSTOM, IMAGE].includes(data.colorMode)) result.colorMode = data.colorMode;
+		if (isCustomImage(data.backgroundImage)) result.backgroundImage = data.backgroundImage;
 		if (Array.isArray(data.customColors)) {
 			const colors = data.customColors.filter(isColorValue).slice(0, MAX_COLORS);
 			if (colors.length) result.customColors = colors;
@@ -111,6 +117,7 @@ const CardLineMaker: React.FC = () => {
 	const [seed, setSeed] = useState(DEFAULT_SEED);
 	const [colorMode, setColorMode] = useState(AUTO);
 	const [customColors, setCustomColors] = useState<string[]>(DEFAULT_CUSTOM_COLORS);
+	const [backgroundImage, setBackgroundImage] = useState<string | null>(null);
 	const [restored, setRestored] = useState(false);
 	const [cards, setCards] = useState<Record<string, DcgCard>>({});
 	const [images, setImages] = useState<Record<string, HTMLImageElement | null>>({});
@@ -124,6 +131,7 @@ const CardLineMaker: React.FC = () => {
 		if (stored?.seed !== undefined) setSeed(stored.seed);
 		if (stored?.colorMode) setColorMode(stored.colorMode);
 		if (stored?.customColors) setCustomColors(stored.customColors);
+		if (stored?.backgroundImage) setBackgroundImage(stored.backgroundImage);
 		setRestored(true);
 	}, []);
 
@@ -132,10 +140,10 @@ const CardLineMaker: React.FC = () => {
 		try {
 			localStorage.setItem(
 				STORAGE_KEY,
-				JSON.stringify({ slots, pattern, seed, colorMode, customColors })
+				JSON.stringify({ slots, pattern, seed, colorMode, customColors, backgroundImage })
 			);
 		} catch {}
-	}, [restored, slots, pattern, seed, colorMode, customColors]);
+	}, [restored, slots, pattern, seed, colorMode, customColors, backgroundImage]);
 
 	useEffect(() => {
 		const element = previewRef.current;
@@ -153,6 +161,7 @@ const CardLineMaker: React.FC = () => {
 		setSeed(DEFAULT_SEED);
 		setColorMode(AUTO);
 		setCustomColors(DEFAULT_CUSTOM_COLORS);
+		setBackgroundImage(null);
 	};
 
 	useEffect(() => {
@@ -162,10 +171,15 @@ const CardLineMaker: React.FC = () => {
 	}, []);
 
 	const sources = useMemo(() => slots.map(slotSource), [slots]);
+	const backgroundSource = colorMode === IMAGE ? imageSource(backgroundImage) : null;
 
 	useEffect(() => {
 		const missing = Array.from(
-			new Set(sources.filter((src): src is string => !!src && !(src in images)))
+			new Set(
+				[...sources, backgroundSource].filter(
+					(src): src is string => !!src && !(src in images)
+				)
+			)
 		);
 		if (!missing.length) return;
 		let active = true;
@@ -177,7 +191,7 @@ const CardLineMaker: React.FC = () => {
 		return () => {
 			active = false;
 		};
-	}, [sources, images]);
+	}, [sources, backgroundSource, images]);
 
 	const slotColor = useCallback(
 		(slot: Slot) =>
@@ -209,9 +223,10 @@ const CardLineMaker: React.FC = () => {
 				pattern,
 				seed,
 				width: previewWidth / PREVIEW_SCALE,
+				background: backgroundSource ? images[backgroundSource] || null : null,
 			}
 		);
-	}, [sources, images, colors, pattern, seed, previewWidth]);
+	}, [sources, backgroundSource, images, colors, pattern, seed, previewWidth]);
 
 	const updateSlot = useCallback(
 		(index: number, change: Partial<Slot>) =>
@@ -339,8 +354,33 @@ const CardLineMaker: React.FC = () => {
 					<Form.Select value={colorMode} onChange={e => setColorMode(e.target.value)}>
 						<option value={AUTO}>Card colors</option>
 						<option value={CUSTOM}>Custom gradient</option>
+						<option value={IMAGE}>Image</option>
 					</Form.Select>
 				</Form.Group>
+				{colorMode === IMAGE && (
+					<div className="card-maker-background">
+						{backgroundImage && (
+							<div className="card-maker-background-thumb">
+								<img src={backgroundSource || undefined} alt="Background" />
+								<Button
+									variant="outline-secondary"
+									size="sm"
+									onClick={() => setBackgroundImage(null)}
+									title="Remove the background image"
+								>
+									<Icon name="x-lg" />
+								</Button>
+							</div>
+						)}
+						<CustomImageInput
+							id="card-maker-background"
+							placeholder="Background image URL"
+							maxWidth={BACKGROUND_MAX_SIZE}
+							maxHeight={BACKGROUND_MAX_SIZE}
+							onSelect={setBackgroundImage}
+						/>
+					</div>
+				)}
 				{colorMode === CUSTOM && (
 					<div className="card-maker-gradient">
 						{customColors.map((color, index) => (

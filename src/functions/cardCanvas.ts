@@ -5,6 +5,7 @@ export interface CardCanvasOptions {
 	pattern: CardPattern;
 	seed: number;
 	width: number;
+	background?: HTMLImageElement | null;
 }
 
 export const CARD_COLORS: Record<string, string> = {
@@ -228,6 +229,30 @@ const roundedRect = (
 	ctx.roundRect(x, y, w, h, r);
 };
 
+const drawCover = (
+	ctx: CanvasRenderingContext2D,
+	image: HTMLImageElement,
+	x: number,
+	y: number,
+	w: number,
+	h: number
+) => {
+	const scale = Math.max(w / image.naturalWidth, h / image.naturalHeight);
+	const sw = w / scale;
+	const sh = h / scale;
+	ctx.drawImage(
+		image,
+		(image.naturalWidth - sw) / 2,
+		(image.naturalHeight - sh) / 2,
+		sw,
+		sh,
+		x,
+		y,
+		w,
+		h
+	);
+};
+
 const drawCard = (
 	ctx: CanvasRenderingContext2D,
 	image: HTMLImageElement | null,
@@ -253,20 +278,7 @@ const drawCard = (
 	roundedRect(ctx, x, y, w, h, radius);
 	ctx.clip();
 	if (image) {
-		const scale = Math.max(w / image.naturalWidth, h / image.naturalHeight);
-		const sw = w / scale;
-		const sh = h / scale;
-		ctx.drawImage(
-			image,
-			(image.naturalWidth - sw) / 2,
-			(image.naturalHeight - sh) / 2,
-			sw,
-			sh,
-			x,
-			y,
-			w,
-			h
-		);
+		drawCover(ctx, image, x, y, w, h);
 	} else {
 		ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
 		ctx.fillRect(x, y, w, h);
@@ -289,7 +301,8 @@ export const drawCardLine = (
 	const colors = options.colors.length ? options.colors : [CARD_COLORS.White];
 
 	ctx.clearRect(0, 0, width, height);
-	drawGradient(ctx, colors, width, height);
+	if (options.background) drawCover(ctx, options.background, 0, 0, width, height);
+	else drawGradient(ctx, colors, width, height);
 	drawPattern(ctx, options.pattern, colors, width, height, options.seed);
 	drawVignette(ctx, width, height);
 	layout.positions.forEach((position, i) =>
