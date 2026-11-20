@@ -8,6 +8,14 @@
 # (fait automatiquement par le script "prepare" de package.json lors d'un pnpm install)
 #
 
+sources_js=$(git diff --cached --name-only --diff-filter=ACMR | grep -Ei '\.(jsx?|tsx?|mjs|cjs)$')
+if [ -n "$sources_js" ]; then
+	printf '%s\n' "$sources_js" | xargs -d '\n' ./node_modules/.bin/oxlint --no-error-on-unmatched-pattern || {
+		echo "[pre-commit] oxlint a trouvé des erreurs." >&2
+		exit 1
+	}
+fi
+
 # Images ajoutées/copiées/modifiées dans l'index, sous public/images
 imgs=$(git diff --cached --no-renames --name-only --diff-filter=ACM -- 'public/images' | grep -Ei '\.(jpe?g|png)$')
 deleted=$(git diff --cached --no-renames --name-only --diff-filter=D -- 'public/images/digimon' | grep -Ei '^public/images/digimon/[^/]+\.jpe?g$')
