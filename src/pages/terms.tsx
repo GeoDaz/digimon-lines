@@ -90,8 +90,9 @@ const PageTerms = () => (
 			Digimon, Digital Monsters, and all related names, characters, and images are
 			trademarks or registered trademarks of Bandai Co., Ltd. © Bandai. Digimon Lines
 			is not affiliated with, sponsored, endorsed, or approved by Bandai Co., Ltd.,
-			Toei Animation, or any of their subsidiaries or affiliates. Franchise material
-			is used here in a non-commercial fan context.
+			Toei Animation, or any of their subsidiaries or affiliates. Digimon Card Game
+			card images © Bandai. Franchise material is used here in a non-commercial fan
+			context.
 		</p>
 
 		<h2>8. Availability and warranty</h2>

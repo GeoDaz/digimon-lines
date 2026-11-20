@@ -8,7 +8,7 @@ import {
 	setUserLineVisibility,
 	slugifyLine,
 } from '@/functions/userLines';
-import { isLineEmpty } from '@/functions/line';
+import { hasUntrustedImages, isLineEmpty, stripUntrustedImages } from '@/functions/line';
 import Line from '@/types/Line';
 import { UserLineWithAuthor } from '@/types/Account';
 
@@ -20,7 +20,8 @@ import { UserLineWithAuthor } from '@/types/Account';
 const QUOTA_ERROR = 'Line quota reached';
 
 const EMPTY_PUBLIC_ERROR = 'user_lines_public_not_empty';
-const EMPTY_PUBLIC_MESSAGE = 'This line cannot be published: add at least one Digimon or an image URL (uploaded images are not saved)';
+const EMPTY_PUBLIC_MESSAGE = 'This line cannot be published: add at least one Digimon or an image URL from a wiki, Fandom or a card database (uploaded images are not saved)';
+const UNTRUSTED_IMAGES_MESSAGE = 'Image URLs from other sites than a wiki, Fandom or a card database were removed from the published line';
 
 /** Sauvegarde de la ligne courante du builder vers le compte connecté. */
 export const useSaveUserLine = () => {
@@ -66,6 +67,9 @@ export const useSaveUserLine = () => {
 					'success',
 					profile?.pseudo ? `/profile/${profile.pseudo}/${saved.slug}` : undefined
 				);
+				if (isPublic && hasUntrustedImages(line)) {
+					addToast(UNTRUSTED_IMAGES_MESSAGE, 'warning');
+				}
 				return saved;
 			} catch (error: any) {
 				console.error('Failed to save line to account:', error);
@@ -151,11 +155,25 @@ export const useProfileLines = (pseudo?: string) => {
 			let previous: UserLineWithAuthor[] = [];
 			setLines(prev => {
 				previous = prev;
-				return prev.map(l => (l.id === id ? { ...l, is_public: isPublic } : l));
+				return prev.map(l =>
+					l.id === id ?
+						{
+							...l,
+							is_public: isPublic,
+							data:
+								isPublic ?
+									(stripUntrustedImages(l.data as unknown as Line) as unknown as typeof l.data)
+								:	l.data,
+						}
+					:	l
+				);
 			});
 			try {
 				await setUserLineVisibility(id, isPublic);
 				addToast(isPublic ? 'Line is now public' : 'Line is now private');
+				if (isPublic && target && hasUntrustedImages(target.data as unknown as Line)) {
+					addToast(UNTRUSTED_IMAGES_MESSAGE, 'warning');
+				}
 			} catch (error) {
 				console.error('Failed to change visibility:', error);
 				setLines(previous);
