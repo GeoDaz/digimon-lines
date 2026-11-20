@@ -1,10 +1,10 @@
 /**
  * Purge ciblée du cache Cloudflare pour les images modifiées depuis un commit.
  *
- *   npm run purge:cache                 -> images modifiées depuis SINCE_DEFAULT
- *   npm run purge:cache -- HEAD~3       -> depuis une autre référence git
- *   npm run purge:cache -- --dry-run    -> affiche les URLs sans rien purger
- *   npm run purge:cache -- --since=<ref> --to=<ref>
+ *   pnpm run purge:cache                -> images modifiées depuis SINCE_DEFAULT
+ *   pnpm run purge:cache HEAD~3         -> depuis une autre référence git
+ *   pnpm run purge:cache --dry-run      -> affiche les URLs sans rien purger
+ *   pnpm run purge:cache --since=<ref> --to=<ref>
  *
  * Pourquoi : les chemins d'images sont stables (/images/digimon/greymon.jpg) et
  * public/_headers leur donne un cache long. Une image corrigée reste donc servie

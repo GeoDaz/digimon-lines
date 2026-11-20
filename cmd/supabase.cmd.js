@@ -1,9 +1,9 @@
 /**
  * Wrapper autour de la CLI Supabase : charge .env.local puis passe la main.
  *
- *   npm run supabase -- config push
- *   npm run supabase -- db push
- *   npm run supabase -- gen types typescript --linked --schema public
+ *   pnpm run supabase config push
+ *   pnpm run supabase db push
+ *   pnpm run supabase gen types typescript --linked --schema public
  *
  * Évite d'exposer les secrets (token d'accès, mot de passe DB, secrets OAuth)
  * dans l'historique du shell.
@@ -37,11 +37,11 @@ if (!env.SUPABASE_DB_PASSWORD && env.SUPABASE_DB_PWD) {
 const args = process.argv.slice(2);
 
 if (!args.length) {
-	console.error('Usage : npm run supabase -- <commande CLI supabase>');
+	console.error('Usage : pnpm run supabase <commande CLI supabase>');
 	process.exit(1);
 }
 
-const result = spawnSync('npx', ['supabase', ...args], {
+const result = spawnSync('pnpm', ['exec', 'supabase', ...args], {
 	env,
 	stdio: 'inherit',
 	shell: true,

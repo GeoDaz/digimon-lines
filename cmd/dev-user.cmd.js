@@ -2,7 +2,7 @@
  * Crée (ou vérifie) le compte de test local défini par NEXT_PUBLIC_DEV_AUTH_EMAIL
  * et NEXT_PUBLIC_DEV_AUTH_PASSWORD.
  *
- *   npm run dev:user
+ *   pnpm run dev:user
  *
  * C'est un vrai compte Supabase : il permet de se connecter en un clic en local
  * avec une vraie session et une vraie RLS, sans faire le tour OAuth.
@@ -113,7 +113,7 @@ if (!email || !password) {
 		);
 	}
 
-	console.log('\nLance `npm run dev` : le compte apparaît dans le menu « Sign in ».');
+	console.log('\nLance `pnpm run dev` : le compte apparaît dans le menu « Sign in ».');
 })().catch(e => {
 	console.error('ERREUR:', e.message);
 	process.exit(1);
