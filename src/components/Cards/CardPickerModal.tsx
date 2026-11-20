@@ -1,5 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Alert, Button, Form, Modal, Spinner } from 'react-bootstrap';
+import InputMono from '@/components/InputMono';
+import UploadImage from '@/components/UploadImage';
+import { useToast } from '@/context/toast';
 import {
 	CARD_LEVELS,
 	DcgCard,
@@ -15,9 +18,40 @@ interface Props {
 	level: number | null;
 	onClose: () => void;
 	onSelect: (card: DcgCard) => void;
+	onSelectImage: (src: string) => void;
 }
 
-const CardPickerModal: React.FC<Props> = ({ show, level, onClose, onSelect }) => {
+const MAX_WIDTH = 430;
+const MAX_HEIGHT = 600;
+
+const shrinkImage = (src: string) =>
+	new Promise<string>((resolve, reject) => {
+		const image = new Image();
+		image.onload = () => {
+			const scale = Math.min(1, MAX_WIDTH / image.naturalWidth, MAX_HEIGHT / image.naturalHeight);
+			const canvas = document.createElement('canvas');
+			canvas.width = Math.round(image.naturalWidth * scale);
+			canvas.height = Math.round(image.naturalHeight * scale);
+			const ctx = canvas.getContext('2d');
+			if (!ctx) return reject(new Error('Canvas unavailable'));
+			ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+			resolve(canvas.toDataURL('image/webp', 0.9));
+		};
+		image.onerror = reject;
+		image.src = src;
+	});
+
+const isHttpUrl = (value: string) => {
+	try {
+		const url = new URL(value);
+		return url.protocol === 'http:' || url.protocol === 'https:';
+	} catch {
+		return false;
+	}
+};
+
+const CardPickerModal: React.FC<Props> = ({ show, level, onClose, onSelect, onSelectImage }) => {
+	const { addToast } = useToast();
 	const [cards, setCards] = useState<DcgCard[] | null>(null);
 	const [pairs, setPairs] = useState<NamePairs>([]);
 	const [failed, setFailed] = useState(false);
@@ -37,6 +71,22 @@ const CardPickerModal: React.FC<Props> = ({ show, level, onClose, onSelect }) =>
 		setSameLevel(true);
 	};
 
+	const handleUrl = (_name: string, value?: string) => {
+		const url = value?.trim() || '';
+		if (!isHttpUrl(url)) {
+			addToast('Enter an http(s) image URL', 'danger');
+			return;
+		}
+		onSelectImage(url);
+	};
+
+	const handleUpload = (base64: string | null) => {
+		if (!base64) return;
+		shrinkImage(base64)
+			.then(onSelectImage)
+			.catch(() => addToast('This image could not be read', 'danger'));
+	};
+
 	const results = useMemo(
 		() =>
 			cards && query.trim().length >= 2 ?
@@ -46,7 +96,7 @@ const CardPickerModal: React.FC<Props> = ({ show, level, onClose, onSelect }) =>
 	);
 
 	return (
-		<Modal show={show} onHide={onClose} onExited={clear} size="xl" scrollable>
+		<Modal show={show} onHide={onClose} onExited={clear} size="lg" scrollable>
 			<Modal.Header closeButton>
 				<Modal.Title>
 					Choose a card{level && CARD_LEVELS[level] ? ` (${CARD_LEVELS[level]})` : ''}
@@ -65,11 +115,20 @@ const CardPickerModal: React.FC<Props> = ({ show, level, onClose, onSelect }) =>
 						<Form.Check
 							type="switch"
 							id="card-picker-level"
-							label={`Lv.${level} only`}
+							label={`Lv.${level}`}
 							checked={sameLevel}
 							onChange={e => setSameLevel(e.target.checked)}
 						/>
 					)}
+				</div>
+				<div className="card-picker-custom">
+					<InputMono
+						name="card-image-url"
+						onSubmit={handleUrl}
+						placeholder="Custom card image URL"
+						className="flex-grow-1"
+					/>
+					<UploadImage handleUpload={handleUpload} id="card-picker-upload" className="mb-3" />
 				</div>
 				{failed ?
 					<Alert variant="danger">The card list could not be loaded.</Alert>

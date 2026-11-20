@@ -24,7 +24,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 	}
 
 	try {
-		const response = await fetch(target, { headers: { Accept: 'image/*' } });
+		const response = await fetch(target, {
+			headers: {
+				Accept: 'image/*',
+				'User-Agent': 'DigimonLinesImageProxy/1.0 (+https://digimon-lines.com)',
+			},
+		});
 		if (!response.ok) {
 			return res.status(502).json({ error: 'Failed to fetch image' });
 		}

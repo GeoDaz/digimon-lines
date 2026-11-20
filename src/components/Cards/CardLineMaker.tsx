@@ -2,7 +2,15 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Button, ButtonGroup, Form, InputGroup } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import CardPickerModal from '@/components/Cards/CardPickerModal';
-import { CARD_COLORS, CardPattern, drawCardLine } from '@/functions/cardCanvas';
+import ColorSelect from '@/components/Cards/ColorSelect';
+import {
+	CARD_COLORS,
+	CardPattern,
+	PREVIEW_SCALE,
+	drawCardLine,
+	isColorValue,
+	resolveColor,
+} from '@/functions/cardCanvas';
 import {
 	CARD_LEVELS,
 	DEFAULT_CARD_LEVELS,
@@ -15,9 +23,11 @@ import { downloadFromUrl } from '@/functions/file';
 interface Slot {
 	level: number;
 	id: string | null;
+	image?: string;
+	color?: string;
 }
 
-const MAX_SLOTS = 8;
+const MAX_SLOTS = 60;
 const PATTERNS: Array<{ value: CardPattern; label: string }> = [
 	{ value: 'hexagons', label: 'Hexagons' },
 	{ value: 'sparkles', label: 'Sparkles' },
@@ -28,6 +38,7 @@ const PATTERNS: Array<{ value: CardPattern; label: string }> = [
 const AUTO = 'auto';
 const CUSTOM = 'custom';
 const MAX_COLORS = 3;
+const MAX_AUTO_COLORS = 4;
 
 const STORAGE_KEY = 'card-line';
 const CARD_ID = /^[A-Z]{1,4}\d{0,2}-\d{1,3}(_P\d{1,2})?$/;
@@ -36,6 +47,15 @@ const DEFAULT_SEED = 7;
 const DEFAULT_CUSTOM_COLORS = ['Purple', 'Blue'];
 
 const defaultSlots = (): Slot[] => DEFAULT_CARD_LEVELS.map(level => ({ level, id: null }));
+
+const isCustomImage = (value: unknown): value is string =>
+	typeof value === 'string' && /^(data:image\/(png|jpeg|webp|gif);base64,|https?:\/\/)/.test(value);
+
+const slotSource = (slot: Slot) =>
+	slot.id ? cardImageUrl(slot.id)
+	: !slot.image ? null
+	: slot.image.startsWith('data:') ? slot.image
+	: `/api/proxy-image?url=${encodeURIComponent(slot.image)}`;
 
 interface StoredCardLine {
 	slots: Slot[];
@@ -52,18 +72,21 @@ const readStoredCardLine = (): Partial<StoredCardLine> | null => {
 		const data = JSON.parse(raw);
 		const result: Partial<StoredCardLine> = {};
 		if (Array.isArray(data.slots) && data.slots.length) {
-			result.slots = data.slots.slice(0, MAX_SLOTS).map((slot: Partial<Slot>) => ({
-				level: CARD_LEVELS[Number(slot?.level)] ? Number(slot?.level) : 0,
-				id: typeof slot?.id === 'string' && CARD_ID.test(slot.id) ? slot.id : null,
-			}));
+			result.slots = data.slots.slice(0, MAX_SLOTS).map((slot: Partial<Slot>) => {
+				const id = typeof slot?.id === 'string' && CARD_ID.test(slot.id) ? slot.id : null;
+				return {
+					level: CARD_LEVELS[Number(slot?.level)] ? Number(slot?.level) : 0,
+					id,
+					image: !id && isCustomImage(slot?.image) ? slot.image : undefined,
+					color: isColorValue(slot?.color) ? slot.color : undefined,
+				};
+			});
 		}
 		if (PATTERNS.some(item => item.value === data.pattern)) result.pattern = data.pattern;
 		if (Number.isInteger(data.seed)) result.seed = data.seed;
 		if (data.colorMode === AUTO || data.colorMode === CUSTOM) result.colorMode = data.colorMode;
 		if (Array.isArray(data.customColors)) {
-			const colors = data.customColors
-				.filter((color: unknown) => typeof color === 'string' && CARD_COLORS[color])
-				.slice(0, MAX_COLORS);
+			const colors = data.customColors.filter(isColorValue).slice(0, MAX_COLORS);
 			if (colors.length) result.customColors = colors;
 		}
 		return result;
@@ -82,6 +105,7 @@ const loadImage = (src: string) =>
 
 const CardLineMaker: React.FC = () => {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
+	const previewRef = useRef<HTMLDivElement>(null);
 	const [slots, setSlots] = useState<Slot[]>(defaultSlots);
 	const [pattern, setPattern] = useState<CardPattern>(DEFAULT_PATTERN);
 	const [seed, setSeed] = useState(DEFAULT_SEED);
@@ -91,6 +115,7 @@ const CardLineMaker: React.FC = () => {
 	const [cards, setCards] = useState<Record<string, DcgCard>>({});
 	const [images, setImages] = useState<Record<string, HTMLImageElement | null>>({});
 	const [picking, setPicking] = useState<number | null>(null);
+	const [previewWidth, setPreviewWidth] = useState(1000);
 
 	useEffect(() => {
 		const stored = readStoredCardLine();
@@ -112,6 +137,16 @@ const CardLineMaker: React.FC = () => {
 		} catch {}
 	}, [restored, slots, pattern, seed, colorMode, customColors]);
 
+	useEffect(() => {
+		const element = previewRef.current;
+		if (!element) return;
+		const update = () => setPreviewWidth(element.clientWidth || 1000);
+		update();
+		const observer = new ResizeObserver(update);
+		observer.observe(element);
+		return () => observer.disconnect();
+	}, []);
+
 	const reset = () => {
 		setSlots(defaultSlots());
 		setPattern(DEFAULT_PATTERN);
@@ -126,13 +161,15 @@ const CardLineMaker: React.FC = () => {
 			.catch(() => {});
 	}, []);
 
+	const sources = useMemo(() => slots.map(slotSource), [slots]);
+
 	useEffect(() => {
-		const missing = slots
-			.map(slot => slot.id)
-			.filter((id): id is string => !!id && !(id in images));
+		const missing = Array.from(
+			new Set(sources.filter((src): src is string => !!src && !(src in images)))
+		);
 		if (!missing.length) return;
 		let active = true;
-		Promise.all(missing.map(id => loadImage(cardImageUrl(id)).then(image => [id, image] as const))).then(
+		Promise.all(missing.map(src => loadImage(src).then(image => [src, image] as const))).then(
 			loaded => {
 				if (active) setImages(prev => ({ ...prev, ...Object.fromEntries(loaded) }));
 			}
@@ -140,26 +177,41 @@ const CardLineMaker: React.FC = () => {
 		return () => {
 			active = false;
 		};
-	}, [slots, images]);
+	}, [sources, images]);
+
+	const slotColor = useCallback(
+		(slot: Slot) =>
+			resolveColor(slot.color) || (slot.id ? resolveColor(cards[slot.id]?.colors[0]) : null),
+		[cards]
+	);
 
 	const colors = useMemo(() => {
-		if (colorMode === CUSTOM) return customColors.map(color => CARD_COLORS[color]);
+		if (colorMode === CUSTOM) {
+			return customColors.map(resolveColor).filter((color): color is string => !!color);
+		}
 		const picked = slots
-			.map(slot => (slot.id ? cards[slot.id]?.colors[0] : undefined))
-			.filter((color): color is string => !!color && !!CARD_COLORS[color])
-			.map(color => CARD_COLORS[color])
+			.map(slotColor)
+			.filter((color): color is string => !!color)
 			.filter((color, i, list) => i === 0 || color !== list[i - 1]);
-		return picked.length ? picked : [CARD_COLORS.Yellow, CARD_COLORS.Purple];
-	}, [colorMode, customColors, slots, cards]);
+		if (!picked.length) return [CARD_COLORS.Yellow, CARD_COLORS.Purple];
+		return picked.length > MAX_AUTO_COLORS ?
+				Array.from(new Set(picked)).slice(0, MAX_COLORS)
+			:	picked;
+	}, [colorMode, customColors, slots, slotColor]);
 
 	useEffect(() => {
 		if (!canvasRef.current) return;
 		drawCardLine(
 			canvasRef.current,
-			slots.map(slot => (slot.id ? images[slot.id] || null : null)),
-			{ colors, pattern, seed }
+			sources.map(src => (src ? images[src] || null : null)),
+			{
+				colors,
+				pattern,
+				seed,
+				width: previewWidth / PREVIEW_SCALE,
+			}
 		);
-	}, [slots, images, colors, pattern, seed]);
+	}, [sources, images, colors, pattern, seed, previewWidth]);
 
 	const updateSlot = useCallback(
 		(index: number, change: Partial<Slot>) =>
@@ -191,17 +243,20 @@ const CardLineMaker: React.FC = () => {
 		);
 	};
 
-	const chosen = slots.filter(slot => slot.id).length;
+	const chosen = slots.filter(slot => slot.id || slot.image).length;
 
 	return (
 		<div className="card-maker">
-			<div className="card-maker-preview">
+			<div className="card-maker-preview" ref={previewRef}>
 				<canvas ref={canvasRef} aria-label="Card line preview" />
 			</div>
 
 			<div className="card-maker-slots">
 				{slots.map((slot, index) => {
 					const card = slot.id ? cards[slot.id] : undefined;
+					const source = sources[index];
+					const cardColors = card?.colors.filter(color => CARD_COLORS[color]) || [];
+					const pickColor = !!slot.image || cardColors.length > 1;
 					return (
 						<div key={index} className="card-maker-slot">
 							<Form.Select
@@ -221,21 +276,37 @@ const CardLineMaker: React.FC = () => {
 								type="button"
 								className="card-maker-slot-card"
 								onClick={() => setPicking(index)}
-								title={card ? `${card.name} ${card.id}` : 'Choose a card'}
+								title={
+									card ? `${card.name} ${card.id}`
+									: slot.image ? 'Custom card'
+									: 'Choose a card'
+								}
 							>
-								{slot.id ?
-									<img src={cardImageUrl(slot.id)} alt={card?.name || slot.id} />
+								{source ?
+									<img src={source} alt={card?.name || slot.id || 'Custom card'} />
 								:	<span>
 										<Icon name="plus-lg" />
 										{CARD_LEVELS[slot.level] || 'Card'}
 									</span>
 								}
 							</button>
+							{pickColor && (
+								<ColorSelect
+									size="sm"
+									value={slot.color || (slot.image ? null : cardColors[0])}
+									options={slot.image ? undefined : cardColors}
+									emptyLabel={slot.image ? 'No color' : undefined}
+									onChange={color => updateSlot(index, { color: color || undefined })}
+									ariaLabel="Card color"
+								/>
+							)}
 							<ButtonGroup size="sm">
 								<Button
 									variant="outline-secondary"
-									onClick={() => updateSlot(index, { id: null })}
-									disabled={!slot.id}
+									onClick={() =>
+										updateSlot(index, { id: null, image: undefined, color: undefined })
+									}
+									disabled={!slot.id && !slot.image}
 									title="Clear"
 								>
 									<Icon name="eraser" />
@@ -276,26 +347,16 @@ const CardLineMaker: React.FC = () => {
 							<Form.Group key={index}>
 								<Form.Label>Color {index + 1}</Form.Label>
 								<InputGroup className="card-maker-gradient-color">
-									<div className="card-maker-color-field">
-										<span
-											className="card-maker-swatch"
-											style={{ background: CARD_COLORS[color] }}
-										/>
-										<Form.Select
-											value={color}
-											onChange={e =>
-												setCustomColors(prev =>
-													prev.map((value, i) => (i === index ? e.target.value : value))
-												)
-											}
-										>
-											{Object.keys(CARD_COLORS).map(option => (
-												<option key={option} value={option}>
-													{option}
-												</option>
-											))}
-										</Form.Select>
-									</div>
+									<ColorSelect
+										value={color}
+										onChange={value =>
+											value &&
+											setCustomColors(prev =>
+												prev.map((item, i) => (i === index ? value : item))
+											)
+										}
+										ariaLabel={`Color ${index + 1}`}
+									/>
 									{customColors.length > 1 && (
 										<Button
 											variant="outline-secondary"
@@ -350,7 +411,13 @@ const CardLineMaker: React.FC = () => {
 				level={picking !== null ? slots[picking]?.level || null : null}
 				onClose={() => setPicking(null)}
 				onSelect={card => {
-					if (picking !== null) updateSlot(picking, { id: card.id });
+					if (picking !== null) {
+						updateSlot(picking, { id: card.id, image: undefined, color: undefined });
+					}
+					setPicking(null);
+				}}
+				onSelectImage={image => {
+					if (picking !== null) updateSlot(picking, { id: null, image, color: undefined });
 					setPicking(null);
 				}}
 			/>

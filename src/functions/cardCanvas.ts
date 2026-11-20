@@ -4,6 +4,7 @@ export interface CardCanvasOptions {
 	colors: string[];
 	pattern: CardPattern;
 	seed: number;
+	width: number;
 }
 
 export const CARD_COLORS: Record<string, string> = {
@@ -16,29 +17,50 @@ export const CARD_COLORS: Record<string, string> = {
 	White: '#d9dce4',
 };
 
-export const CANVAS_WIDTH = 2000;
-const CARD_RATIO = 600 / 430;
-const PADDING = 50;
-const GAP = 32;
-const MAX_CARD_WIDTH = 330;
-const VERTICAL_MARGIN = 100;
+const HEX_COLOR = /^#[0-9a-f]{6}$/i;
 
-export const cardLayout = (count: number) => {
-	const slots = Math.max(count, 1);
-	const width = Math.min(
-		MAX_CARD_WIDTH,
-		(CANVAS_WIDTH - PADDING * 2 - GAP * (slots - 1)) / slots
+export const isColorValue = (value: unknown): value is string =>
+	typeof value === 'string' && (!!CARD_COLORS[value] || HEX_COLOR.test(value));
+
+export const resolveColor = (value?: string | null): string | null =>
+	!value ? null
+	: CARD_COLORS[value] ? CARD_COLORS[value]
+	: HEX_COLOR.test(value) ? value.toLowerCase()
+	: null;
+
+const MAX_CARD_WIDTH = 640;
+const MIN_CARD_WIDTH = 400;
+const CARD_RATIO = 600 / 430;
+const PADDING = 70;
+const GAP = 36;
+const VERTICAL_MARGIN = 110;
+const MIN_COLUMNS = 3;
+const REFERENCE_AREA = 2000 * 660;
+
+export const PREVIEW_SCALE = 320 / MAX_CARD_WIDTH;
+
+export const cardLayout = (count: number, availableWidth: number) => {
+	const total = Math.max(count, 1);
+	const span = (n: number, width: number) => n * width + GAP * (n - 1);
+	const canvasWidth = Math.round(
+		Math.max(availableWidth, span(MIN_COLUMNS, MIN_CARD_WIDTH) + PADDING * 2)
 	);
+	const inner = canvasWidth - PADDING * 2;
+	const columns = Math.min(total, Math.max(1, Math.floor((inner + GAP) / (MIN_CARD_WIDTH + GAP))));
+	const width = Math.min(MAX_CARD_WIDTH, (inner - GAP * (columns - 1)) / columns);
 	const height = width * CARD_RATIO;
-	const canvasHeight = Math.round(Math.max(height, MAX_CARD_WIDTH * CARD_RATIO * 0.8) + VERTICAL_MARGIN * 2);
-	const total = width * slots + GAP * (slots - 1);
-	const left = (CANVAS_WIDTH - total) / 2;
-	const top = (canvasHeight - height) / 2;
+	const rows = Math.ceil(total / columns);
+	const canvasHeight = Math.round(rows * height + GAP * (rows - 1) + VERTICAL_MARGIN * 2);
+	const left = (canvasWidth - span(columns, width)) / 2;
 	return {
+		canvasWidth,
 		canvasHeight,
 		width,
 		height,
-		positions: Array.from({ length: slots }, (_, i) => ({ x: left + i * (width + GAP), y: top })),
+		positions: Array.from({ length: total }, (_, i) => ({
+			x: left + (i % columns) * (width + GAP),
+			y: VERTICAL_MARGIN + Math.floor(i / columns) * (height + GAP),
+		})),
 	};
 };
 
@@ -68,23 +90,33 @@ const rgba = (hex: string, alpha: number) => {
 	return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 };
 
-const lightening = (color: string) => (color === CARD_COLORS.Black ? 0.04 : 0.28);
+const luminance = (hex: string) => {
+	const [r, g, b] = hexToRgb(hex);
+	return (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+};
 
-const drawGradient = (ctx: CanvasRenderingContext2D, colors: string[], height: number) => {
-	const gradient = ctx.createLinearGradient(0, 0, CANVAS_WIDTH, 0);
+const lightening = (color: string) => (luminance(color) < 0.12 ? 0.04 : 0.28);
+
+const drawGradient = (
+	ctx: CanvasRenderingContext2D,
+	colors: string[],
+	width: number,
+	height: number
+) => {
+	const gradient = ctx.createLinearGradient(0, 0, width, 0);
 	const stops = colors.length > 1 ? colors : [colors[0], colors[0]];
 	stops.forEach((color, i) => {
 		gradient.addColorStop(i / (stops.length - 1), mix(color, '#ffffff', lightening(color)));
 	});
 	ctx.fillStyle = gradient;
-	ctx.fillRect(0, 0, CANVAS_WIDTH, height);
+	ctx.fillRect(0, 0, width, height);
 
 	const depth = ctx.createLinearGradient(0, 0, 0, height);
 	depth.addColorStop(0, 'rgba(255, 255, 255, 0.3)');
 	depth.addColorStop(0.5, 'rgba(255, 255, 255, 0)');
 	depth.addColorStop(1, 'rgba(255, 255, 255, 0.3)');
 	ctx.fillStyle = depth;
-	ctx.fillRect(0, 0, CANVAS_WIDTH, height);
+	ctx.fillRect(0, 0, width, height);
 };
 
 const hexagon = (ctx: CanvasRenderingContext2D, x: number, y: number, r: number) => {
@@ -125,17 +157,19 @@ const drawPattern = (
 	ctx: CanvasRenderingContext2D,
 	pattern: CardPattern,
 	colors: string[],
+	width: number,
 	height: number,
 	seed: number
 ) => {
 	if (pattern === 'none') return;
 	const next = random(seed);
-	const count = pattern === 'bubbles' ? 26 : 34;
+	const base = pattern === 'bubbles' ? 26 : 34;
+	const count = Math.max(Math.round(base / 2), Math.round((base * width * height) / REFERENCE_AREA));
 	ctx.save();
 	for (let i = 0; i < count; i++) {
-		const x = next() * CANVAS_WIDTH;
+		const x = next() * width;
 		const y = next() * height;
-		const color = colors[Math.min(colors.length - 1, Math.floor((x / CANVAS_WIDTH) * colors.length))];
+		const color = colors[Math.min(colors.length - 1, Math.floor((x / width) * colors.length))];
 		const size = 18 + next() * (pattern === 'bubbles' ? 70 : 42);
 		const alpha = 0.25 + next() * 0.35;
 		if (pattern === 'hexagons') {
@@ -167,19 +201,19 @@ const drawPattern = (
 	ctx.restore();
 };
 
-const drawVignette = (ctx: CanvasRenderingContext2D, height: number) => {
+const drawVignette = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
 	const gradient = ctx.createRadialGradient(
-		CANVAS_WIDTH / 2,
+		width / 2,
 		height / 2,
-		height * 0.4,
-		CANVAS_WIDTH / 2,
+		Math.min(width, height) * 0.4,
+		width / 2,
 		height / 2,
-		CANVAS_WIDTH * 0.62
+		Math.max(width, height) * 0.62
 	);
 	gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
 	gradient.addColorStop(1, 'rgba(255, 255, 255, 0.4)');
 	ctx.fillStyle = gradient;
-	ctx.fillRect(0, 0, CANVAS_WIDTH, height);
+	ctx.fillRect(0, 0, width, height);
 };
 
 const roundedRect = (
@@ -219,7 +253,20 @@ const drawCard = (
 	roundedRect(ctx, x, y, w, h, radius);
 	ctx.clip();
 	if (image) {
-		ctx.drawImage(image, x, y, w, h);
+		const scale = Math.max(w / image.naturalWidth, h / image.naturalHeight);
+		const sw = w / scale;
+		const sh = h / scale;
+		ctx.drawImage(
+			image,
+			(image.naturalWidth - sw) / 2,
+			(image.naturalHeight - sh) / 2,
+			sw,
+			sh,
+			x,
+			y,
+			w,
+			h
+		);
 	} else {
 		ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
 		ctx.fillRect(x, y, w, h);
@@ -232,18 +279,19 @@ export const drawCardLine = (
 	images: Array<HTMLImageElement | null>,
 	options: CardCanvasOptions
 ) => {
-	const layout = cardLayout(images.length);
-	canvas.width = CANVAS_WIDTH;
-	canvas.height = layout.canvasHeight;
+	const layout = cardLayout(images.length, options.width);
+	const width = layout.canvasWidth;
+	const height = layout.canvasHeight;
+	canvas.width = width;
+	canvas.height = height;
 	const ctx = canvas.getContext('2d');
 	if (!ctx) return;
 	const colors = options.colors.length ? options.colors : [CARD_COLORS.White];
-	const height = layout.canvasHeight;
 
-	ctx.clearRect(0, 0, CANVAS_WIDTH, height);
-	drawGradient(ctx, colors, height);
-	drawPattern(ctx, options.pattern, colors, height, options.seed);
-	drawVignette(ctx, height);
+	ctx.clearRect(0, 0, width, height);
+	drawGradient(ctx, colors, width, height);
+	drawPattern(ctx, options.pattern, colors, width, height, options.seed);
+	drawVignette(ctx, width, height);
 	layout.positions.forEach((position, i) =>
 		drawCard(ctx, images[i], position.x, position.y, layout.width, layout.height)
 	);
