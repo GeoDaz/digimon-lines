@@ -91,8 +91,11 @@ const PageTerms = () => (
 			trademarks or registered trademarks of Bandai Co., Ltd. © Bandai. Digimon Lines
 			is not affiliated with, sponsored, endorsed, or approved by Bandai Co., Ltd.,
 			Toei Animation, or any of their subsidiaries or affiliates. Digimon Card Game
-			card images © Bandai. Franchise material is used here in a non-commercial fan
-			context.
+			card images © Bandai. Pokémon and all related names, characters, and images are
+			© Pokémon / Nintendo / Creatures / GAME FREAK; Pokémon Trading Card Game card
+			images © The Pokémon Company, provided through TCGdex. Digimon Lines is not
+			affiliated with, sponsored, or endorsed by Nintendo or The Pokémon Company.
+			Franchise material is used here in a non-commercial fan context.
 		</p>
 
 		<h2>8. Availability and warranty</h2>

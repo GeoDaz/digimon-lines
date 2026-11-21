@@ -8,24 +8,17 @@ export interface CardCanvasOptions {
 	background?: HTMLImageElement | null;
 }
 
-export const CARD_COLORS: Record<string, string> = {
-	Red: '#e8243a',
-	Blue: '#1e90e6',
-	Yellow: '#f5c400',
-	Green: '#13a86b',
-	Black: '#121218',
-	Purple: '#8a4fd0',
-	White: '#d9dce4',
-};
+export type ColorPalette = Record<string, string>;
 
 const HEX_COLOR = /^#[0-9a-f]{6}$/i;
+const FALLBACK_COLOR = '#d9dce4';
 
-export const isColorValue = (value: unknown): value is string =>
-	typeof value === 'string' && (!!CARD_COLORS[value] || HEX_COLOR.test(value));
+export const isColorValue = (value: unknown, palette: ColorPalette): value is string =>
+	typeof value === 'string' && (!!palette[value] || HEX_COLOR.test(value));
 
-export const resolveColor = (value?: string | null): string | null =>
+export const resolveColor = (value: string | null | undefined, palette: ColorPalette): string | null =>
 	!value ? null
-	: CARD_COLORS[value] ? CARD_COLORS[value]
+	: palette[value] ? palette[value]
 	: HEX_COLOR.test(value) ? value.toLowerCase()
 	: null;
 
@@ -298,7 +291,7 @@ export const drawCardLine = (
 	canvas.height = height;
 	const ctx = canvas.getContext('2d');
 	if (!ctx) return;
-	const colors = options.colors.length ? options.colors : [CARD_COLORS.White];
+	const colors = options.colors.length ? options.colors : [FALLBACK_COLOR];
 
 	ctx.clearRect(0, 0, width, height);
 	if (options.background) drawCover(ctx, options.background, 0, 0, width, height);

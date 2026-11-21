@@ -1,26 +1,20 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Alert, Button, Form, Modal, Spinner } from 'react-bootstrap';
 import CustomImageInput from '@/components/Cards/CustomImageInput';
-import {
-	CARD_LEVELS,
-	DcgCard,
-	NamePairs,
-	cardImageUrl,
-	loadDcgCards,
-	loadNamePairs,
-	searchDcgCards,
-} from '@/functions/dcgCards';
+import type { CardGame, CardSearch, GameCard } from '@/functions/cardGames';
 
 interface Props {
+	game: CardGame;
 	show: boolean;
 	level: number | null;
 	onClose: () => void;
-	onSelect: (card: DcgCard) => void;
+	onSelect: (card: GameCard) => void;
 	onSelectImage: (src: string) => void;
 	current?: { src: string; title: string } | null;
 }
 
 const CardPickerModal: React.FC<Props> = ({
+	game,
 	show,
 	level,
 	onClose,
@@ -28,38 +22,39 @@ const CardPickerModal: React.FC<Props> = ({
 	onSelectImage,
 	current,
 }) => {
-	const [cards, setCards] = useState<DcgCard[] | null>(null);
-	const [pairs, setPairs] = useState<NamePairs>([]);
+	const [search, setSearch] = useState<{ run: CardSearch } | null>(null);
 	const [failed, setFailed] = useState(false);
 	const [query, setQuery] = useState('');
 	const [sameLevel, setSameLevel] = useState(true);
 
 	useEffect(() => {
-		if (!show || cards) return;
-		loadDcgCards()
-			.then(setCards)
+		if (!show || search) return;
+		game
+			.prepareSearch()
+			.then(run => setSearch({ run }))
 			.catch(() => setFailed(true));
-		loadNamePairs().then(setPairs);
-	}, [show, cards]);
+	}, [show, search, game]);
 
 	const clear = () => {
 		setQuery('');
 		setSameLevel(true);
 	};
 
+	const levelLabel = level && game.levels?.[level];
+
 	const results = useMemo(
 		() =>
-			cards && query.trim().length >= 2 ?
-				searchDcgCards(cards, query, sameLevel ? level : null, pairs)
+			search && query.trim().length >= 2 ?
+				search.run(query, sameLevel && levelLabel ? level : null)
 			:	[],
-		[cards, query, sameLevel, level, pairs]
+		[search, query, sameLevel, level, levelLabel]
 	);
 
 	return (
 		<Modal show={show} onHide={onClose} onExited={clear} size="lg" scrollable>
 			<Modal.Header closeButton>
 				<Modal.Title>
-					Choose a card{level && CARD_LEVELS[level] ? ` (${CARD_LEVELS[level]})` : ''}
+					Choose a card{levelLabel ? ` (${levelLabel})` : ''}
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
@@ -67,11 +62,11 @@ const CardPickerModal: React.FC<Props> = ({
 					<Form.Control
 						autoFocus
 						type="search"
-						placeholder="Digimon name or card number (BT1-010)"
+						placeholder={game.searchPlaceholder}
 						value={query}
 						onChange={e => setQuery(e.target.value)}
 					/>
-					{!!level && (
+					{!!levelLabel && (
 						<Form.Check
 							type="switch"
 							id="card-picker-level"
@@ -90,7 +85,7 @@ const CardPickerModal: React.FC<Props> = ({
 				/>
 				{failed ?
 					<Alert variant="danger">The card list could not be loaded.</Alert>
-				: !cards ?
+				: !search ?
 					<Spinner animation="border" role="status" aria-label="Loading" />
 				: query.trim().length < 2 ?
 					current ?
@@ -110,7 +105,7 @@ const CardPickerModal: React.FC<Props> = ({
 								onClick={() => onSelect(card)}
 								title={`${card.name} ${card.id}${card.version ? ` - ${card.version}` : ''}`}
 							>
-								<img src={cardImageUrl(card.id)} alt={card.name} loading="lazy" />
+								<img src={card.thumbnail} alt={card.name} loading="lazy" />
 								<span>
 									{card.id}
 									{card.version && <small>{card.version}</small>}

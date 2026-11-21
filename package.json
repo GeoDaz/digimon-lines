@@ -42,6 +42,7 @@
     "optimize:images": "node cmd/optimize-images.js",
     "thumbnails": "node cmd/thumbnails.cmd.js",
     "dcg:cards": "node cmd/dcg-cards.cmd.js",
+    "pkm:cards": "node cmd/pkm-cards.cmd.js",
     "mirror:relations": "node cmd/mirrorRelations.cmd.js",
     "dev:user": "node cmd/dev-user.cmd.js",
     "purge:cache": "node cmd/purge-cache.cmd.js",

@@ -1,13 +1,13 @@
 import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
-import { CARD_COLORS, resolveColor } from '@/functions/cardCanvas';
+import { ColorPalette, resolveColor } from '@/functions/cardCanvas';
 
 const CUSTOM = '__custom';
-const COLOR_NAMES = Object.keys(CARD_COLORS);
 
 interface Props {
 	value: string | null | undefined;
 	onChange: (value: string | null) => void;
+	palette: ColorPalette;
 	options?: string[];
 	emptyLabel?: string;
 	size?: 'sm' | 'lg';
@@ -18,16 +18,17 @@ interface Props {
 const ColorSelect: React.FC<Props> = ({
 	value,
 	onChange,
-	options = COLOR_NAMES,
+	palette,
+	options = Object.keys(palette),
 	emptyLabel,
 	size,
 	className,
 	ariaLabel = 'Color',
 }) => {
 	const pickerRef = useRef<HTMLInputElement>(null);
-	const hex = resolveColor(value);
-	const custom = !!value && !CARD_COLORS[value] && !!hex;
-	const named = options.filter(option => CARD_COLORS[option]);
+	const hex = resolveColor(value, palette);
+	const custom = !!value && !palette[value] && !!hex;
+	const named = options.filter(option => palette[option]);
 
 	return (
 		<div className={className ? `card-maker-color-field ${className}` : 'card-maker-color-field'}>

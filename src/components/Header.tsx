@@ -58,6 +58,7 @@ const Header: React.FC = () => (
 						items={[
 							{ href: '/pokemon', content: 'Overview' },
 							{ href: '/build/pokemon', content: 'Builder' },
+							{ href: '/pokemon/cards', content: 'Card lines' },
 							{ href: '/community/pokemon', content: 'Community' },
 						]}
 					/>
