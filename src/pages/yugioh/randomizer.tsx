@@ -12,6 +12,7 @@ import { RegulationLabels, Regulations } from '@/consts/yugioh/limitations';
 import SelectField from '@/components/Field/SelectField';
 import Range from '@/components/Field/Range';
 import { consistencyLevels } from '@/consts/yugioh/consistency';
+import { STAPLE_MIN_DECK_TYPES } from '@/consts/yugioh/deck';
 
 type Props = Omit<RandomizeDeckArgs, 'regulation' & 'consitency'>;
 
@@ -124,8 +125,8 @@ export const getStaticProps: GetStaticProps = async () => {
 			}
 		});
 
-		const staples: RandomizeDeckArgs['staples'] = require('../../json/yugioh/staples.json').map(
-			(name: string) => names[name]
+		const staples: RandomizeDeckArgs['staples'] = mainCards.filter(
+			id => cards[id].deckTypes.length >= STAPLE_MIN_DECK_TYPES
 		);
 
 		return { props: { cards, names, mainCards, extraCards, staples } };

@@ -2,6 +2,7 @@ import { Deck } from '@/types/YugiohDeck';
 import { Card } from '@/types/YugiohCard';
 import { getRegulationRelease, getLimitationValue, isExtraDeck } from './card';
 import { Regulations } from '@/consts/yugioh/limitations';
+import { STAPLE_MIN_DECK_TYPES } from '@/consts/yugioh/deck';
 
 export type RandomizeDeckArgs = {
 	cards: Record<string, Card>;
@@ -140,7 +141,7 @@ export const randomizeDeck = ({
 		if (card.archetype) return card.archetype;
 		if (card.deckTypes.length === 0) return null;
 		if (card.deckTypes.length === 1) return card.deckTypes[0];
-		if (card.deckTypes.length > 9) return '1';
+		if (card.deckTypes.length >= STAPLE_MIN_DECK_TYPES) return '1';
 		return card.deckTypes.sort((a, b) => a.localeCompare(b))[0];
 	};
 

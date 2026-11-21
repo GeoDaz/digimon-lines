@@ -44,6 +44,8 @@
     "dcg:cards": "node cmd/dcg-cards.cmd.js",
     "pkm:cards": "node cmd/pkm-cards.cmd.js",
     "ygo:cards": "node cmd/ygo-cards.cmd.js",
+    "ygo:top": "node cmd/ygo-top.cmd.js",
+    "cards:update": "node cmd/dcg-cards.cmd.js && node cmd/pkm-cards.cmd.js && node cmd/ygo-cards.cmd.js && node cmd/ygo-top.cmd.js",
     "mirror:relations": "node cmd/mirrorRelations.cmd.js",
     "dev:user": "node cmd/dev-user.cmd.js",
     "purge:cache": "node cmd/purge-cache.cmd.js",

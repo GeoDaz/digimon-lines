@@ -1,0 +1,63 @@
+name: Update card lists
+
+on:
+  schedule:
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-cards
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Digimon cards
+        id: digimon
+        continue-on-error: true
+        run: node cmd/dcg-cards.cmd.js
+
+      - name: Pokémon cards
+        id: pokemon
+        continue-on-error: true
+        run: node cmd/pkm-cards.cmd.js
+
+      - name: Yu-Gi-Oh! cards
+        id: yugioh
+        continue-on-error: true
+        run: node cmd/ygo-cards.cmd.js
+
+      - name: Yu-Gi-Oh! randomizer meta
+        id: yugioh_top
+        continue-on-error: true
+        run: node cmd/ygo-top.cmd.js
+
+      - name: Commit changes
+        run: |
+          git add public/json/dcg/cards.json public/json/pkm/cards.json public/json/ygo/cards.json src/json/yugioh/top.json
+          if git diff --cached --quiet; then
+            echo "No card list changed."
+            exit 0
+          fi
+          git diff --cached --stat
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Met à jour les listes de cartes"
+          git push
+
+      - name: Report failed sources
+        if: steps.digimon.outcome == 'failure' || steps.pokemon.outcome == 'failure' || steps.yugioh.outcome == 'failure' || steps.yugioh_top.outcome == 'failure'
+        run: |
+          echo "::error::A card source failed: digimon=${{ steps.digimon.outcome }}, pokemon=${{ steps.pokemon.outcome }}, yugioh=${{ steps.yugioh.outcome }}, yugioh_top=${{ steps.yugioh_top.outcome }}"
+          exit 1

@@ -13,12 +13,12 @@ export interface Card {
 	atk?: number;
 	def?: number;
 	description: string;
-	__v: number;
-	linkArrows: string[];
-	handtrap: boolean;
+	__v?: number;
+	linkArrows?: string[];
+	handtrap?: boolean;
 	archetype?: string | null; // Calculated
 	deckTypes: string[];
-	obtain: {
+	obtain?: {
 		source: {
 			_id: string;
 			type: string;
@@ -35,7 +35,7 @@ export interface Card {
 	tcgBanStatus?: keyof typeof Limitations;
 	ocgBanStatus?: keyof typeof Limitations;
 	gameId?: string;
-	alternateArt: boolean;
-	mostUsedDeckTypes: string[];
+	alternateArt?: boolean;
+	mostUsedDeckTypes?: string[];
 	required?: boolean;
 }
