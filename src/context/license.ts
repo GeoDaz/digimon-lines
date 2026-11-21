@@ -13,6 +13,7 @@ export const defaultLicenceContext: LicenceProps = {
 export const licences: Record<string, LicenceProps> = {
 	digimon: defaultLicenceContext,
 	pokemon: { key: 'pokemon', name: 'Pokémon' },
+	yugioh: { key: 'yugioh', name: 'Yu-Gi-Oh!' },
 };
 
 export const getLicence = (key?: string | null): LicenceProps =>

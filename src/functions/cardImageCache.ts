@@ -53,7 +53,11 @@ const fetchFirst = async (urls: string[]): Promise<CachedImage | null> => {
 	return null;
 };
 
-export const sendCachedImage = async (res: NextApiResponse, key: string, urls: string[]) => {
+export const sendCachedImage = async (
+	res: NextApiResponse,
+	key: string,
+	urls: string[] | (() => Promise<string[]>)
+) => {
 	const bucket = await getBucket();
 	let image: CachedImage | null = null;
 
@@ -68,7 +72,7 @@ export const sendCachedImage = async (res: NextApiResponse, key: string, urls: s
 	}
 
 	if (!image) {
-		image = await fetchFirst(urls);
+		image = await fetchFirst(typeof urls === 'function' ? await urls().catch(() => []) : urls);
 		if (!image) {
 			res.setHeader('Cache-Control', 'public, max-age=3600');
 			return res.status(404).json({ error: 'Card image not found' });

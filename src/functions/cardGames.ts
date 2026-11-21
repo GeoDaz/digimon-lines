@@ -8,6 +8,7 @@ import {
 	searchDcgCards,
 } from '@/functions/dcgCards';
 import { loadPokemonCards, searchPokemonCards } from '@/functions/pokemonCards';
+import { loadYugiohCards, searchYugiohCards } from '@/functions/yugiohCards';
 
 export interface GameCard {
 	id: string;
@@ -16,8 +17,12 @@ export interface GameCard {
 	colors: string[];
 	thumbnail: string;
 	image: string;
+	code?: string;
 	version?: string;
 }
+
+export const cardTitle = (card: GameCard) =>
+	[card.name, card.code, card.version].filter(Boolean).join(' - ');
 
 export type CardSearch = (query: string, level: number | null) => GameCard[];
 
@@ -48,14 +53,28 @@ export const POKEMON_COLORS: ColorPalette = {
 	Grass: '#4fae47',
 	Fire: '#e8542a',
 	Water: '#2f8fe0',
-	Lightning: '#f5cd1e',
+	Electric: '#f5cd1e',
 	Psychic: '#9b59c6',
 	Fighting: '#c0612b',
 	Darkness: '#1f2430',
-	Metal: '#9aa3ad',
+	Steel: '#9aa3ad',
 	Dragon: '#b39a2e',
 	Fairy: '#e67fb5',
-	Colorless: '#d8d8d0',
+	Normal: '#d8d8d0',
+};
+
+export const YUGIOH_COLORS: ColorPalette = {
+	Normal: '#d8b25c',
+	Effect: '#c8743a',
+	Ritual: '#4d7fc4',
+	Fusion: '#8b55a8',
+	Synchro: '#e6e6ea',
+	Xyz: '#23232a',
+	Link: '#234f93',
+	Pendulum: '#3aa596',
+	Token: '#9a9a9a',
+	Spell: '#1d9a86',
+	Trap: '#b23a7f',
 };
 
 let digimonCards: Promise<GameCard[]> | null = null;
@@ -70,6 +89,7 @@ const loadDigimonCards = () =>
 				colors: card.colors,
 				thumbnail: cardImageUrl(card.id),
 				image: cardImageUrl(card.id),
+				code: card.id,
 				version: card.version,
 			}))
 		)
@@ -96,7 +116,7 @@ export const DIGIMON_GAME: CardGame = {
 		]);
 		const byId = new Map(gameCards.map(card => [card.id, card]));
 		return (query, level) =>
-			searchDcgCards(cards, query, level, pairs)
+			searchDcgCards(cards, query, level, pairs, Infinity)
 				.map(card => byId.get(card.id))
 				.filter((card): card is GameCard => !!card);
 	},
@@ -114,6 +134,22 @@ export const POKEMON_GAME: CardGame = {
 	loadCards: loadPokemonCards,
 	prepareSearch: async () => {
 		const cards = await loadPokemonCards();
-		return query => searchPokemonCards(cards, query);
+		return query => searchPokemonCards(cards, query, Infinity);
+	},
+};
+
+export const YUGIOH_GAME: CardGame = {
+	storageKey: 'yugioh-card-line',
+	palette: YUGIOH_COLORS,
+	fallbackColors: ['Spell', 'Trap'],
+	defaultCustomColors: ['Xyz', 'Fusion'],
+	levels: null,
+	defaultLevels: [0, 0, 0],
+	cardId: /^[0-9a-f]{24}$/,
+	searchPlaceholder: 'Card name',
+	loadCards: loadYugiohCards,
+	prepareSearch: async () => {
+		const cards = await loadYugiohCards();
+		return query => searchYugiohCards(cards, query, Infinity);
 	},
 };

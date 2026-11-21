@@ -32,6 +32,10 @@ const Layout: React.FC<Props> = ({
 	const trueMetaTitle = metatitle ? `${metatitle} | Digimon Lines` : 'Digimon Lines';
 	const url = `${SITE_URL}${router.asPath.split(/[?#]/)[0]}`;
 	const indexable = !noIndex;
+	const metaImageUrl =
+		/^https?:\/\//.test(metaimg) ? metaimg
+		: metaimg.startsWith('/') ? `${SITE_URL}${metaimg}`
+		: `${SITE_URL}/images/${metaimg}`;
 	return (
 		<>
 			<Head>
@@ -51,9 +55,9 @@ const Layout: React.FC<Props> = ({
 					property="og:description"
 					content={metadescription || 'List lines of Digimon species'}
 				/>
-				<meta property="og:image" content={`${SITE_URL}/images/${metaimg}`} />
+				<meta property="og:image" content={metaImageUrl} />
 				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:image" content={`${SITE_URL}/images/${metaimg}`} />
+				<meta name="twitter:image" content={metaImageUrl} />
 			</Head>
 			<main>
 				<Container className={makeClassName('page', className)} fluid>

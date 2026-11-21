@@ -57,6 +57,7 @@ export interface BuildProps {
 	itemLevels?: StringObject;
 	levels?: string[];
 	dubNames?: StringObject;
+	defaultLine?: Line;
 }
 
 export const PageBuild = (props: BuildProps) => {
@@ -67,9 +68,10 @@ export const PageBuild = (props: BuildProps) => {
 	useDragAutoScroll();
 
 	const licenceContext = props.context || defaultLicenceContext;
+	const baseLine = props.defaultLine || defaultLine;
 	const [line, dispatchState] = useReducer(
 		lineReducer,
-		(props.line || defaultLine) as Line
+		(props.line || baseLine) as Line
 	);
 	const setLine = (line: Line) => dispatchState(setLineAction(line));
 	const { downloadCode, uploadCode, name, setName } = useDownloadCode(
@@ -82,7 +84,7 @@ export const PageBuild = (props: BuildProps) => {
 		key: licenceContext.key + '-line',
 		item: line,
 		setItem: setLine,
-		defaultItem: defaultLine,
+		defaultItem: baseLine,
 		locked: props.noStorage,
 	});
 	const saveFlow = useSaveLineFlow({
@@ -128,7 +130,7 @@ export const PageBuild = (props: BuildProps) => {
 	};
 
 	const handleVoid = () => {
-		setLine(defaultLine);
+		setLine(baseLine);
 		// default value is not automaticaly stored in localstorage
 		removeItemFromStorage();
 	};
@@ -173,7 +175,7 @@ export const PageBuild = (props: BuildProps) => {
 				/>
 				<Button
 					variant="danger"
-					disabled={line === defaultLine}
+					disabled={line === baseLine}
 					onClick={handleVoid}
 				>
 					<Icon name="trash3-fill" /> Void

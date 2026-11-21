@@ -1,8 +1,13 @@
 import React, { useRef } from 'react';
-import { Form } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 import { ColorPalette, resolveColor } from '@/functions/cardCanvas';
 
-const CUSTOM = '__custom';
+const ColorDot: React.FC<{ color: string | null }> = ({ color }) => (
+	<span
+		className={color ? 'card-maker-color-dot' : 'card-maker-color-dot card-maker-color-dot-empty'}
+		style={color ? { background: color } : undefined}
+	/>
+);
 
 interface Props {
 	value: string | null | undefined;
@@ -30,41 +35,61 @@ const ColorSelect: React.FC<Props> = ({
 	const custom = !!value && !palette[value] && !!hex;
 	const named = options.filter(option => palette[option]);
 
+	const label =
+		custom && value ? value.toUpperCase()
+		: value && named.includes(value) ? value
+		: (emptyLabel ?? '-');
+
 	return (
-		<div className={className ? `card-maker-color-field ${className}` : 'card-maker-color-field'}>
-			<label
-				className={hex ? 'card-maker-swatch' : 'card-maker-swatch card-maker-swatch-empty'}
-				style={hex ? { background: hex } : undefined}
-				title="Custom color"
-			>
-				<input
-					ref={pickerRef}
-					type="color"
-					value={hex || '#ffffff'}
-					onChange={e => onChange(e.target.value)}
-					aria-label="Custom color"
-				/>
-			</label>
-			<Form.Select
-				size={size}
-				value={custom ? CUSTOM : value && named.includes(value) ? value : ''}
-				onChange={e => {
-					if (e.target.value === CUSTOM) pickerRef.current?.click();
-					else onChange(e.target.value || null);
-				}}
+		<Dropdown className={className ? `card-maker-color-field ${className}` : 'card-maker-color-field'}>
+			<Dropdown.Toggle
+				as="button"
+				type="button"
+				className={`form-select${size ? ` form-select-${size}` : ''} card-maker-color-toggle`}
 				aria-label={ariaLabel}
 			>
-				{(emptyLabel !== undefined || !value || (!custom && !named.includes(value))) && (
-					<option value="">{emptyLabel ?? '-'}</option>
+				<ColorDot color={hex} />
+				<span>{label}</span>
+			</Dropdown.Toggle>
+			<Dropdown.Menu className="card-maker-color-menu">
+				{emptyLabel !== undefined && (
+					<Dropdown.Item as="button" type="button" active={!value} onClick={() => onChange(null)}>
+						<ColorDot color={null} />
+						{emptyLabel}
+					</Dropdown.Item>
 				)}
 				{named.map(option => (
-					<option key={option} value={option}>
+					<Dropdown.Item
+						key={option}
+						as="button"
+						type="button"
+						active={value === option}
+						onClick={() => onChange(option)}
+					>
+						<ColorDot color={palette[option]} />
 						{option}
-					</option>
+					</Dropdown.Item>
 				))}
-				<option value={CUSTOM}>{custom && value ? value.toUpperCase() : 'Custom…'}</option>
-			</Form.Select>
-		</div>
+				<Dropdown.Item
+					as="button"
+					type="button"
+					active={custom}
+					onClick={() => pickerRef.current?.click()}
+				>
+					<ColorDot color={custom ? hex : null} />
+					{custom && value ? value.toUpperCase() : 'Custom…'}
+				</Dropdown.Item>
+			</Dropdown.Menu>
+			<input
+				ref={pickerRef}
+				type="color"
+				className="card-maker-color-input"
+				value={hex || '#ffffff'}
+				onChange={e => onChange(e.target.value)}
+				tabIndex={-1}
+				aria-label="Custom color"
+			/>
+		</Dropdown>
 	);
 };
 

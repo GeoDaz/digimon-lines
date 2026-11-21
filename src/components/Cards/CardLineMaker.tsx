@@ -12,7 +12,7 @@ import {
 	isColorValue,
 	resolveColor,
 } from '@/functions/cardCanvas';
-import type { CardGame, GameCard } from '@/functions/cardGames';
+import { CardGame, GameCard, cardTitle } from '@/functions/cardGames';
 import { downloadFromUrl } from '@/functions/file';
 
 interface Slot {
@@ -257,7 +257,7 @@ const CardLineMaker: React.FC<{ game: CardGame }> = ({ game }) => {
 		pickingSource ?
 			{
 				src: pickingSource,
-				title: pickingCard ? `${pickingCard.name} ${pickingCard.id}` : 'Custom card',
+				title: pickingCard ? cardTitle(pickingCard) : 'Custom card',
 			}
 		:	null;
 
@@ -336,7 +336,7 @@ const CardLineMaker: React.FC<{ game: CardGame }> = ({ game }) => {
 								className="card-maker-slot-card"
 								onClick={() => setPicking(index)}
 								title={
-									card ? `${card.name} ${card.id}`
+									card ? cardTitle(card)
 									: slot.image ? 'Custom card'
 									: 'Choose a card'
 								}

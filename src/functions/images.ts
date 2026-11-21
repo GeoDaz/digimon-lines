@@ -62,6 +62,7 @@ export const formatBytes = (bytes: number): string => {
 	return `${(kilo / 1024).toFixed(1)} MB`;
 };
 
+const YUGIOH = 'yugioh';
 const imgDirs = [DIGIMON, GROUP, DIGIEGG];
 
 const coverKeyByLicence: Record<string, (name: string) => string> = {
@@ -70,6 +71,7 @@ const coverKeyByLicence: Record<string, (name: string) => string> = {
 };
 
 export const coverKey = (name: string, licence: string = DIGIMON): string | undefined => {
+	if (licence === YUGIOH) return name.trim().toLowerCase().slice(0, 100) || undefined;
 	const format = coverKeyByLicence[licence] || coverKeyByLicence[DIGIMON];
 	const key = format(name)
 		.normalize('NFD')
@@ -85,6 +87,10 @@ const imgPathByLicence: Record<string, CallableFunction> = {
 		`/images/${imgDirs.includes(type) ? type : 'digimon'}/${name}.jpg`,
 	pokemon: (name: string) =>
 		`https://www.coupcritique.fr/images/pokemons/${formatPokemonFileName(name)}.png`,
+	yugioh: (name: string) =>
+		/^[0-9a-f]{24}$/.test(name) ?
+			`/api/yugioh-card/${name}/w260`
+		:	`/api/yugioh-card/name/${encodeURIComponent(name)}`,
 };
 
 export default imgPathByLicence;

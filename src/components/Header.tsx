@@ -56,7 +56,6 @@ const Header: React.FC = () => (
 					<DropdownMenu
 						{...gameMenu(Pokeball, 'Pokémon')}
 						items={[
-							{ href: '/pokemon', content: 'Overview' },
 							{ href: '/build/pokemon', content: 'Builder' },
 							{ href: '/pokemon/cards', content: 'Card lines' },
 							{ href: '/community/pokemon', content: 'Community' },
@@ -65,14 +64,10 @@ const Header: React.FC = () => (
 					<DropdownMenu
 						{...gameMenu(Millennium, 'Yu-Gi-Oh!')}
 						items={[
-							{
-								href: 'https://yugioh-lines.netlify.app',
-								content: 'Deck Randomizer',
-							},
-							{
-								href: 'https://yugioh-lines.netlify.app/build',
-								content: 'Steps Builder',
-							},
+							{ href: '/yugioh/cards', content: 'Card lines' },
+							{ href: '/yugioh/randomizer', content: 'Deck Randomizer' },
+							{ href: '/build/yugioh', content: 'Steps Builder' },
+							{ href: '/community/yugioh', content: 'Community' },
 						]}
 					/>
 					<DropdownMenu

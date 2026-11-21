@@ -18,6 +18,7 @@ const TYPES = [
 	'Water',
 ];
 const CATEGORIES = { Trainer: 'T', Energy: 'E' };
+const TYPE_NAMES = { Lightning: 'Electric', Colorless: 'Normal', Metal: 'Steel' };
 
 const get = async url => {
 	const response = await fetch(url, { headers: { 'User-Agent': 'DigimonLinesCardList/1.0' } });
@@ -31,7 +32,7 @@ const main = async () => {
 	const types = {};
 	for (const type of TYPES) {
 		for (const card of await get(`${API}/en/cards?types=${type}`)) {
-			(types[card.id] ??= []).push(type);
+			(types[card.id] ??= []).push(TYPE_NAMES[type] || type);
 		}
 	}
 	const categories = {};

@@ -37,6 +37,7 @@ export const loadPokemonCards = (): Promise<PokemonCard[]> =>
 					colors: row[3],
 					category: row[4],
 					level: 0,
+					code: row[0],
 					thumbnail: `${path}/low`,
 					image: `${path}/high`,
 				};

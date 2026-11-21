@@ -1,7 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Alert, Button, Form, Modal, Spinner } from 'react-bootstrap';
 import CustomImageInput from '@/components/Cards/CustomImageInput';
-import type { CardGame, CardSearch, GameCard } from '@/functions/cardGames';
+import { CardGame, CardSearch, GameCard, cardTitle } from '@/functions/cardGames';
+
+const PAGE_SIZE = 60;
 
 interface Props {
 	game: CardGame;
@@ -26,6 +28,7 @@ const CardPickerModal: React.FC<Props> = ({
 	const [failed, setFailed] = useState(false);
 	const [query, setQuery] = useState('');
 	const [sameLevel, setSameLevel] = useState(true);
+	const [shown, setShown] = useState({ key: '', count: PAGE_SIZE });
 
 	useEffect(() => {
 		if (!show || search) return;
@@ -49,6 +52,8 @@ const CardPickerModal: React.FC<Props> = ({
 			:	[],
 		[search, query, sameLevel, level, levelLabel]
 	);
+	const resultsKey = `${query}|${sameLevel}|${level}`;
+	const visible = shown.key === resultsKey ? shown.count : PAGE_SIZE;
 
 	return (
 		<Modal show={show} onHide={onClose} onExited={clear} size="lg" scrollable>
@@ -96,23 +101,40 @@ const CardPickerModal: React.FC<Props> = ({
 					:	<p className="text-secondary">Type at least 2 characters.</p>
 				: !results.length ?
 					<p className="text-secondary">No card found.</p>
-				:	<div className="card-picker-grid">
-						{results.map(card => (
-							<button
-								key={card.id}
-								type="button"
-								className="card-picker-item"
-								onClick={() => onSelect(card)}
-								title={`${card.name} ${card.id}${card.version ? ` - ${card.version}` : ''}`}
-							>
-								<img src={card.thumbnail} alt={card.name} loading="lazy" />
-								<span>
-									{card.id}
-									{card.version && <small>{card.version}</small>}
-								</span>
-							</button>
-						))}
-					</div>
+				:	<>
+						<p className="card-picker-count">
+							{results.length} card{results.length > 1 ? 's' : ''}
+						</p>
+						<div className="card-picker-grid">
+							{results.slice(0, visible).map(card => (
+								<button
+									key={card.id}
+									type="button"
+									className="card-picker-item"
+									onClick={() => onSelect(card)}
+									title={cardTitle(card)}
+								>
+									<img src={card.thumbnail} alt={card.name} loading="lazy" />
+									<span>
+										{card.code || card.name}
+										{card.version && <small>{card.version}</small>}
+									</span>
+								</button>
+							))}
+						</div>
+						{results.length > visible && (
+							<div className="card-picker-more">
+								<Button
+									variant="outline-secondary"
+									onClick={() =>
+										setShown({ key: resultsKey, count: visible + PAGE_SIZE })
+									}
+								>
+									Show more ({results.length - visible} left)
+								</Button>
+							</div>
+						)}
+					</>
 				}
 			</Modal.Body>
 			<Modal.Footer>

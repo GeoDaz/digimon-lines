@@ -95,6 +95,9 @@ const PageTerms = () => (
 			© Pokémon / Nintendo / Creatures / GAME FREAK; Pokémon Trading Card Game card
 			images © The Pokémon Company, provided through TCGdex. Digimon Lines is not
 			affiliated with, sponsored, or endorsed by Nintendo or The Pokémon Company.
+			Yu-Gi-Oh! and all related names, characters, and card images are © Studio Dice /
+			SHUEISHA, TV TOKYO, KONAMI; card data and images are provided through Master Duel
+			Meta. Digimon Lines is not affiliated with, sponsored, or endorsed by KONAMI.
 			Franchise material is used here in a non-commercial fan context.
 		</p>
 
