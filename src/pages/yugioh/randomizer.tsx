@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { Alert, Button } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import { GetStaticProps } from 'next';
 import { randomizeDeck, RandomizeDeckArgs } from '@/functions/yugioh/deckRandomizer';
@@ -13,6 +13,7 @@ import SelectField from '@/components/Field/SelectField';
 import Range from '@/components/Field/Range';
 import { consistencyLevels } from '@/consts/yugioh/consistency';
 import { STAPLE_MIN_DECK_TYPES } from '@/consts/yugioh/deck';
+import { randomTopDeck } from '@/functions/yugioh/topDecks';
 
 type Props = Omit<RandomizeDeckArgs, 'regulation' & 'consitency'>;
 
@@ -24,6 +25,7 @@ const defaultProps: Props = {
 	staples: [],
 };
 const defaultDeck: DeckType = { mainDeck: [], extraDeck: [] };
+const TOP_DECK = 4;
 
 const PageLines: React.FC<Props> = props => {
 	const [deck, setDeck] = useState<DeckType>(defaultDeck);
@@ -31,16 +33,22 @@ const PageLines: React.FC<Props> = props => {
 	const [loading, setLoading] = useState(false);
 	const [regulation, setRegulation] = useState<Regulations>(Regulations.md);
 	const [consistency, setConsistency] = useState<number>(1);
+	const [failed, setFailed] = useState(false);
 
 	const handleRandomize = async () => {
 		setLoading(true);
-		randomizeDeck({ ...props, regulation, consistency }).then(deck => {
-			setDeck(deck);
-			setLoading(false);
-		});
+		setFailed(false);
+		const next =
+			consistency === TOP_DECK ?
+				randomTopDeck(regulation)
+			:	randomizeDeck({ ...props, regulation, consistency });
+		next
+			.then(setDeck)
+			.catch(() => setFailed(true))
+			.finally(() => setLoading(false));
 	};
 
-	const { mainDeck, extraDeck } = deck;
+	const { mainDeck, extraDeck, source } = deck;
 	return (
 		<Layout
 			noGoBack
@@ -83,6 +91,27 @@ const PageLines: React.FC<Props> = props => {
 					options={consistencyLevels}
 				/>
 			</div>
+			{failed && (
+				<Alert variant="danger" className="mt-4">
+					The top decks could not be loaded.
+				</Alert>
+			)}
+			{source && mainDeck.length > 0 && (
+				<p className="mt-4 mb-0">
+					<strong>{source.name}</strong>
+					{source.author && <> by {source.author}</>}
+					{source.event && <> · {source.event}</>}
+					{source.date && <> · {source.date}</>}
+					{source.url && (
+						<>
+							{' · '}
+							<a href={source.url} target="_blank" rel="noopener noreferrer nofollow">
+								See the original list
+							</a>
+						</>
+					)}
+				</p>
+			)}
 			{/* TODO add a void deck section with a plus button */}
 			{mainDeck.length > 0 && (
 				<div className="mt-4">
