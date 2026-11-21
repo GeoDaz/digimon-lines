@@ -8,6 +8,7 @@ import {
 	CARD_COLORS,
 	CardPattern,
 	PREVIEW_SCALE,
+	cardLayout,
 	drawCardLine,
 	isColorValue,
 	resolveColor,
@@ -244,6 +245,32 @@ const CardLineMaker: React.FC = () => {
 	const removeSlot = (index: number) =>
 		setSlots(prev => (prev.length <= 1 ? prev : prev.filter((_, i) => i !== index)));
 
+	const pickingSlot = picking !== null ? slots[picking] : undefined;
+	const pickingSource = pickingSlot ? slotSource(pickingSlot) : null;
+	const pickingCard = pickingSlot?.id ? cards[pickingSlot.id] : undefined;
+	const pickingCurrent =
+		pickingSource ?
+			{
+				src: pickingSource,
+				title: pickingCard ? `${pickingCard.name} ${pickingCard.id}` : 'Custom card',
+			}
+		:	null;
+
+	const slotAt = (event: React.MouseEvent<HTMLCanvasElement>) => {
+		const canvas = event.currentTarget;
+		const rect = canvas.getBoundingClientRect();
+		const x = ((event.clientX - rect.left) * canvas.width) / rect.width;
+		const y = ((event.clientY - rect.top) * canvas.height) / rect.height;
+		const layout = cardLayout(slots.length, previewWidth / PREVIEW_SCALE);
+		return layout.positions.findIndex(
+			position =>
+				x >= position.x &&
+				x <= position.x + layout.width &&
+				y >= position.y &&
+				y <= position.y + layout.height
+		);
+	};
+
 	const download = () => {
 		const canvas = canvasRef.current;
 		if (!canvas) return;
@@ -263,7 +290,17 @@ const CardLineMaker: React.FC = () => {
 	return (
 		<div className="card-maker">
 			<div className="card-maker-preview" ref={previewRef}>
-				<canvas ref={canvasRef} aria-label="Card line preview" />
+				<canvas
+					ref={canvasRef}
+					aria-label="Card line preview"
+					onClick={event => {
+						const index = slotAt(event);
+						if (index >= 0) setPicking(index);
+					}}
+					onMouseMove={event => {
+						event.currentTarget.style.cursor = slotAt(event) >= 0 ? 'pointer' : '';
+					}}
+				/>
 			</div>
 
 			<div className="card-maker-slots">
@@ -449,6 +486,7 @@ const CardLineMaker: React.FC = () => {
 			<CardPickerModal
 				show={picking !== null}
 				level={picking !== null ? slots[picking]?.level || null : null}
+				current={pickingCurrent}
 				onClose={() => setPicking(null)}
 				onSelect={card => {
 					if (picking !== null) {

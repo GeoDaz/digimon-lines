@@ -3767,6 +3767,23 @@ a.game-digimon-tile:focus,
 	background: var(--bs-gray-800);
 }
 
+.card-picker-current {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0;
+	color: var(--bs-gray-300);
+}
+
+.card-picker-current img {
+	width: 220px;
+	max-width: 100%;
+	aspect-ratio: 430 / 600;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+
 .card-picker-item small {
 	display: block;
 	color: var(--bs-gray-500);

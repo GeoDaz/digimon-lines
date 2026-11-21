@@ -17,9 +17,17 @@ interface Props {
 	onClose: () => void;
 	onSelect: (card: DcgCard) => void;
 	onSelectImage: (src: string) => void;
+	current?: { src: string; title: string } | null;
 }
 
-const CardPickerModal: React.FC<Props> = ({ show, level, onClose, onSelect, onSelectImage }) => {
+const CardPickerModal: React.FC<Props> = ({
+	show,
+	level,
+	onClose,
+	onSelect,
+	onSelectImage,
+	current,
+}) => {
 	const [cards, setCards] = useState<DcgCard[] | null>(null);
 	const [pairs, setPairs] = useState<NamePairs>([]);
 	const [failed, setFailed] = useState(false);
@@ -85,7 +93,12 @@ const CardPickerModal: React.FC<Props> = ({ show, level, onClose, onSelect, onSe
 				: !cards ?
 					<Spinner animation="border" role="status" aria-label="Loading" />
 				: query.trim().length < 2 ?
-					<p className="text-secondary">Type at least 2 characters.</p>
+					current ?
+						<figure className="card-picker-current">
+							<img src={current.src} alt={current.title} />
+							<figcaption>{current.title}</figcaption>
+						</figure>
+					:	<p className="text-secondary">Type at least 2 characters.</p>
 				: !results.length ?
 					<p className="text-secondary">No card found.</p>
 				:	<div className="card-picker-grid">
