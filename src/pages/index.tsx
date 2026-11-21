@@ -230,13 +230,17 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 			<p className="home-kicker">
 				<Icon name="stars" /> Not only Digimon
 			</p>
-			<h2>Pokémon lines too</h2>
+			<h2>Pokémon and Yu-Gi-Oh! lines too</h2>
 			<p>
-				The same builder works with Pokémon: draw any evolution tree and share it.
+				The same builder works with Pokémon evolution trees and Yu-Gi-Oh! combos:
+				draw them and share them.
 			</p>
 			<div className="home-cta-actions">
 				<Link href="/pokemon" className="btn btn-primary btn-lg">
 					Discover Pokémon lines <Icon name="arrow-right" />
+				</Link>
+				<Link href="/yugioh" className="btn btn-primary btn-lg">
+					Discover Yu-Gi-Oh! lines <Icon name="arrow-right" />
 				</Link>
 				<Link
 					href={DISCORD_URL}

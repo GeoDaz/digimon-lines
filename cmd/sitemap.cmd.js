@@ -49,6 +49,7 @@ const pages = [
 	['/build/pokemon'],
 	['/cards'],
 	['/pokemon/cards'],
+	['/yugioh'],
 	['/build/yugioh'],
 	['/yugioh/cards'],
 	['/community/yugioh'],

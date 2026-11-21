@@ -7,6 +7,7 @@ const PagePokemonCards: React.FC = () => (
 	<Layout
 		title="Pokémon card line maker"
 		metatitle="Pokémon TCG evolution line maker"
+		metaimg="pokemon-cards.jpg"
 		metadescription="Line up Pokémon Trading Card Game cards on a colorful background, from a single evolution line to a whole deck, then download the picture to share it."
 	>
 		<p className="card-maker-intro">

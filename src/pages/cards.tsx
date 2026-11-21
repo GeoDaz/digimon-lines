@@ -7,6 +7,7 @@ const PageCards: React.FC = () => (
 	<Layout
 		title="Card line maker"
 		metatitle="Digimon Card Game evolution line maker"
+		metaimg="digimon-cards.jpg"
 		metadescription="Line up Digimon Card Game cards from Rookie to Mega and Ultra on a colorful background, then download the picture to share your favorite evolution line."
 	>
 		<p className="card-maker-intro">

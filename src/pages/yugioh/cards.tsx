@@ -8,7 +8,7 @@ const PageYugiohCards: React.FC = () => (
 		title="Yu-Gi-Oh! card line maker"
 		metatitle="Yu-Gi-Oh! card line maker"
 		metadescription="Line up Yu-Gi-Oh! cards on a colorful background, from a combo to a whole deck, then download the picture to share it."
-		metaimg="yugioh.png"
+		metaimg="yugioh-cards.jpg"
 	>
 		<p className="card-maker-intro">
 			Pick your cards, choose a background, then download the picture. Click a slot to
