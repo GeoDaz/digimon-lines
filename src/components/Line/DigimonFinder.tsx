@@ -139,7 +139,12 @@ const DigimonFinder: React.FC<Props> = ({
 	return (
 		<div className="digimon-finder mb-4">
 			<Row style={{ rowGap: '1.5em' }}>
-				<Col className={'col-xs-6'} sm={6} lg={3}>
+				<Col
+					className={hasOptions ? 'col-xs-6' : undefined}
+					xs={hasOptions ? undefined : 12}
+					sm={hasOptions ? 6 : 12}
+					lg={hasOptions ? 3 : 12}
+				>
 					<div className="position-relative">
 						<Form.Label htmlFor="digimon-finder-search" visuallyHidden>
 							{label}

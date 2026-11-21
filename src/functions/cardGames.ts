@@ -130,7 +130,7 @@ export const POKEMON_GAME: CardGame = {
 	levels: null,
 	defaultLevels: [0, 0, 0],
 	cardId: /^[A-Za-z0-9.-]{1,40}$/,
-	searchPlaceholder: 'Pokémon name (English or French) or card number (sv03.5-006)',
+	searchPlaceholder: 'Pokémon name or card number (sv03.5-006)',
 	loadCards: loadPokemonCards,
 	prepareSearch: async () => {
 		const cards = await loadPokemonCards();

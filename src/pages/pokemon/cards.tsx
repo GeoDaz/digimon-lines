@@ -12,7 +12,7 @@ const PagePokemonCards: React.FC = () => (
 	>
 		<p className="card-maker-intro">
 			Pick your cards, choose a background, then download the picture. Click a slot to
-			search a card by English or French name, or by card number.
+			search a card by name or by card number.
 		</p>
 		<CardLineMaker game={POKEMON_GAME} />
 		<p className="card-maker-credits">
