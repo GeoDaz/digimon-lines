@@ -102,8 +102,7 @@ export const searchDcgCards = (
 	const aliases = aliasesFor(query, pairs);
 	const results: DcgCard[] = [];
 	for (const card of cards) {
-		if (card.type === 'T' || card.type === 'O') continue;
-		if (level && card.level !== level) continue;
+		if (level && card.level && card.level !== level) continue;
 		const haystack = normalize(`${card.name} ${card.id}`);
 		const compactName = compact(card.name);
 		if (
