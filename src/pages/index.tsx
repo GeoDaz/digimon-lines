@@ -86,7 +86,7 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 					<Link href="/build" className="btn btn-primary btn-lg">
 						<Icon name="diagram-2-fill" /> Build a line
 					</Link>
-					<Link href="/lines" className="btn btn-primary btn-lg">
+					<Link href="/cards" className="btn btn-primary btn-lg">
 						<Icon name="person-badge-fill" /> Build a cards line
 					</Link>
 					<Link href="/lines" className="btn btn-primary btn-lg">
