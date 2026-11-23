@@ -158,7 +158,11 @@
                 ],
                 "from": [
                     [
-                        2,
+                        0,
+                        -1
+                    ],
+                    [
+                        5,
                         -1
                     ]
                 ]
@@ -198,26 +202,10 @@
             null,
             null,
             null,
-            {
-                "name": "nanimon",
-                "from": null
-            },
+            null,
             {
                 "name": "shootmon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        -2,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "electric",
-                    "electric"
-                ]
+                "from": null
             },
             {
                 "name": "banchomamemon",
@@ -236,41 +224,11 @@
         [
             null,
             null,
-            null,
-            {
-                "name": "bombernanimon",
-                "from": [
-                    [
-                        1,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "fire"
-                ]
-            },
-            {
-                "name": "bombermon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "fire"
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
             {
                 "name": "chikurimon",
                 "from": [
                     [
-                        -4,
+                        -3,
                         -1
                     ]
                 ],
@@ -298,7 +256,7 @@
                         -1
                     ],
                     [
-                        -4,
+                        -3,
                         -1
                     ]
                 ],
@@ -307,15 +265,34 @@
                     "dark"
                 ]
             },
-            null
+            {
+                "name": "craniummon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
         ],
         [
+            null,
+            null,
+            null,
             {
-                "name": "yuramon",
-                "from": null
+                "name": "bombernanimon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "fire"
+                ]
             },
             {
-                "name": "tanemon",
+                "name": "bombermon",
                 "from": [
                     [
                         0,
@@ -323,7 +300,110 @@
                     ]
                 ],
                 "color": [
-                    "grass"
+                    "fire"
+                ]
+            },
+            {
+                "name": "craniummon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "nanimon",
+                "from": null
+            },
+            {
+                "name": "deathmeramon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "dark",
+                    "dark"
+                ]
+            },
+            {
+                "name": "gankoomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            }
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "name": "tarakomon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "tekkamon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "machine"
+                ]
+            },
+            {
+                "name": "gankoomon_x",
+                "from": [
+                    [
+                        -1,
+                        0
+                    ]
+                ],
+                "color": [
+                    "x"
+                ]
+            }
+        ],
+        [
+            {
+                "name": "tomorimon",
+                "from": null
+            },
+            {
+                "name": "onibimon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ],
+                "color": [
+                    "default"
                 ]
             },
             {
@@ -336,34 +416,10 @@
                 ]
             },
             {
-                "name": "tekkamon",
-                "from": [
-                    [
-                        0,
-                        -1
-                    ],
-                    [
-                        -5,
-                        -1
-                    ]
-                ],
-                "color": [
-                    "machine",
-                    "machine"
-                ]
-            },
-            null
-        ],
-        [
-            null,
-            null,
-            null,
-            null,
-            {
                 "name": "fumamon",
                 "from": [
                     [
-                        -1,
+                        0,
                         -1
                     ]
                 ]
