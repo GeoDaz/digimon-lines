@@ -34,7 +34,7 @@
 			null,
 			null,
 			{
-				"name": "unknown",
+				"name": "tamamon",
 				"from": [[0.5, -1]],
 				"xSize": 2
 			},
@@ -49,20 +49,20 @@
 		],
 		[
 			{
-				"name": "unknown",
+				"name": "babymon",
 				"from": null
 			},
 			{
-				"name": "unknown",
+				"name": "marumon",
 				"from": [[0, -1]]
 			},
 			{
-				"name": "unknown",
+				"name": "kuchitamamon",
 				"from": [[-0.5, -1]],
 				"xSize": 2
 			},
 			{
-				"name": "mamechimon",
+				"name": "mametchimon",
 				"from": [
 					[0.5, -1],
 					[-0.5, -1]
@@ -124,9 +124,7 @@
 			null,
 			null,
 			null
-		],
-		[null, null, null, null, null, null, null, null],
-		[null, null, null, null, null, null, null, null]
+		]
 	],
 	"related": [
 		{
