@@ -5,24 +5,28 @@
 			null,
 			{
 				"name": "impmon_x",
-				"color": "x",
+				"color": ["x"],
 				"xSize": 2,
-				"from": [2, 0]
+				"from": [[2.5, 0]]
 			},
 			{
-				"name": "wizardmon_x",
-				"color": "x",
-				"xSize": 2
+				"name": "meramon_x",
+				"from": [[0.5, -1]],
+				"color": ["x"]
 			},
 			{
 				"name": "baalmon_x",
-				"color": "x",
-				"xSize": 2
+				"color": ["x", "x"],
+				"xSize": 2,
+				"from": [
+					[0.5, -1],
+					[-0.5, -1]
+				]
 			},
 			{
 				"name": "beelzebumon_x",
-				"color": "x",
-				"from": [0.5, -1]
+				"color": ["x"],
+				"from": [[0.5, -1]]
 			},
 			null
 		],
@@ -30,12 +34,16 @@
 			null,
 			null,
 			null,
-			null,
+			{
+				"name": "wizardmon_x",
+				"color": ["x"],
+				"from": [[-0.5, -1]]
+			},
 			null,
 			{
 				"name": "beelstarmon_x",
-				"color": "x",
-				"from": [-0.5, -1]
+				"color": ["x"],
+				"from": [[-0.5, -1]]
 			},
 			{
 				"name": "nezhamon_crimson_mode",
@@ -46,51 +54,62 @@
 			}
 		],
 		[
+			null,
+			null,
+			null,
 			{
-				"name": "keemon",
-				"xSize": 2,
-				"from": null
-			},
-			{
-				"name": "yarmon",
-				"color": "dark",
-				"xSize": 2
-			},
-			{
-				"name": "impmon",
-				"color": "dark",
-				"xSize": 2
-			},
-			{
-				"name": "wizardmon",
-				"xSize": 2
+				"name": "meramon",
+				"from": [[1, -1]],
+				"color": ["fire"]
 			},
 			{
 				"name": "deathmeramon",
-				"from": [[0.5, -1]],
-				"color": ["dark"]
+				"from": [
+					[1, -1],
+					[0, -1]
+				],
+				"color": ["dark", "dark"]
 			},
 			{
-				"color": ["dark"],
+				"color": ["dark", "dark"],
 				"name": "beelzebumon",
-				"from": [[0, -1]],
+				"from": [
+					[0, -1],
+					[1, -1]
+				],
 				"skins": ["beelzebumon_behemoth"]
 			},
 			{
 				"name": "beelzebumon_blast_mode",
-				"color": "mode",
+				"color": ["mode"],
 				"from": [[-0.5, -1]],
 				"xSize": 2
 			}
 		],
 		[
-			null,
-			null,
-			null,
-			null,
+			{
+				"name": "keemon",
+				"from": null
+			},
+			{
+				"name": "yarmon",
+				"color": ["dark"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "impmon",
+				"color": ["dark"],
+				"from": [[0, -1]]
+			},
+			{
+				"name": "wizardmon"
+			},
 			{
 				"name": "baalmon",
-				"from": [[-0.5, -1]]
+				"from": [
+					[0, -1],
+					[1, -1]
+				]
 			},
 			{
 				"name": "beelzebumon_2",
@@ -104,10 +123,13 @@
 			null,
 			{
 				"name": "petitmamon",
-				"from": [[-1.5, -1]],
+				"from": [[-1, -1]],
 				"color": ["dark"]
 			},
-			null,
+			{
+				"name": "maskmon",
+				"from": [[-1, -1]]
+			},
 			null,
 			{
 				"name": "beelstarmon",
@@ -123,15 +145,17 @@
 			{
 				"name": "punkmon",
 				"color": ["dark"],
-				"from": [[-2.5, -1]]
+				"from": [[-2, -1]]
 			},
 			{
 				"name": "loudmon",
-				"color": "dark"
+				"color": ["dark"],
+				"from": [[0, -1]]
 			},
 			{
 				"name": "heavymetaldramon",
-				"color": "dark"
+				"color": ["dark"],
+				"from": [[0, -1]]
 			},
 			null
 		],
@@ -142,15 +166,17 @@
 			{
 				"name": "boogiemon",
 				"color": ["dark"],
-				"from": [[-3.5, -1]]
+				"from": [[-3, -1]]
 			},
 			{
 				"name": "phelesmon",
-				"color": "dark"
+				"color": ["dark"],
+				"from": [[0, -1]]
 			},
 			{
 				"name": "barbamon",
-				"color": "dark"
+				"color": ["dark"],
+				"from": [[0, -1]]
 			},
 			null
 		],
@@ -162,8 +188,8 @@
 			null,
 			{
 				"name": "barbamon_x",
-				"color": "x",
-				"from": [-1, 0]
+				"color": ["x"],
+				"from": [[-1, 0]]
 			},
 			null
 		]
@@ -172,18 +198,55 @@
 		"guilmon",
 		"ogudomon",
 		"wizardmon",
-		{ "name": "meramon", "for": "deathmeramon" },
-		{ "name": "devimon", "for": "skullsatamon" },
-		{ "name": "app_mienumon", "for": "app_vegasmon" },
-		{ "name": "app_cameramon", "for": "app_scopemon" },
-		{ "name": "shoutmon", "for": "shoutmon_x4b" },
-		{ "name": "machmon", "from": "nezhamon" },
-		{ "name": "golemon", "for": "vulcanusmon" },
-		{ "name": "kakamon", "for": "dijiangmon" },
-		{ "name": "toyagumon", "for": "avengekidmon" },
-		{ "name": "bemmon", "for": "armamon_burst_mode" },
-		{ "name": "gatomon", "for": "ladydevimon" },
-		{ "name": "sistermon_blanc", "for": "sistermon_noir_awake" }
+		"meramon",
+		{
+			"name": "devimon",
+			"for": "skullsatamon"
+		},
+		{
+			"name": "app_mienumon",
+			"for": "app_vegasmon"
+		},
+		{
+			"name": "app_cameramon",
+			"for": "app_scopemon"
+		},
+		{
+			"name": "shoutmon",
+			"for": "shoutmon_x4b"
+		},
+		{
+			"name": "machmon",
+			"from": "nezhamon"
+		},
+		{
+			"name": "golemon",
+			"for": "vulcanusmon"
+		},
+		{
+			"name": "kakamon",
+			"for": "dijiangmon"
+		},
+		{
+			"name": "mamemon",
+			"for": "tarakomon"
+		},
+		{
+			"name": "toyagumon",
+			"for": "avengekidmon"
+		},
+		{
+			"name": "bemmon",
+			"for": "armamon_burst_mode"
+		},
+		{
+			"name": "gatomon",
+			"for": "ladydevimon"
+		},
+		{
+			"name": "sistermon_blanc",
+			"for": "sistermon_noir_awake"
+		}
 	],
 	"size": 7
 }
