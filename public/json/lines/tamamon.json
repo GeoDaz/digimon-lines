@@ -1,0 +1,149 @@
+{
+	"size": 8,
+	"columns": [
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "bombernanimon",
+				"from": [[2.5, -1]]
+			},
+			{
+				"name": "bombermon",
+				"from": [[0, -1]]
+			},
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "nanimon",
+				"from": [[1.5, -1]]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			{
+				"name": "unknown",
+				"from": [[0.5, -1]],
+				"xSize": 2
+			},
+			{
+				"name": "tarakomon",
+				"from": [[0.5, -1]]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			{
+				"name": "unknown",
+				"from": null
+			},
+			{
+				"name": "unknown",
+				"from": [[0, -1]]
+			},
+			{
+				"name": "unknown",
+				"from": [[-0.5, -1]],
+				"xSize": 2
+			},
+			{
+				"name": "mamechimon",
+				"from": [
+					[0.5, -1],
+					[-0.5, -1]
+				]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "nyoromon",
+				"from": [[-0.5, -1]]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "ginjiromon",
+				"from": [[-1.5, -1]]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "maskmon",
+				"from": [[-2.5, -1]]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "kuchipamon",
+				"from": [[-3.5, -1]]
+			},
+			null,
+			null,
+			null,
+			null
+		],
+		[null, null, null, null, null, null, null, null],
+		[null, null, null, null, null, null, null, null]
+	],
+	"related": [
+		{
+			"name": "mamemon",
+			"for": "nanimon"
+		},
+		{
+			"name": "impmon",
+			"from": "maskmon"
+		},
+		{
+			"name": "penmon",
+			"from": "ginjiromon"
+		},
+		{
+			"name": "gabumon",
+			"from": "ginjiromon"
+		}
+	]
+}
