@@ -22,12 +22,31 @@
 			},
 			null,
 			null
+		],
+		[
+			null,
+			null,
+			null,
+			{
+				"name": "elfmon"
+			},
+			{
+				"name": "highelfmon"
+			},
+			{
+				"name": "silvamon"
+			},
+			null,
+			null
 		]
 	],
 	"related": [
+		"aegiomon",
 		{ "name": "pteromon", "from": "liskmon" },
 		{ "name": "greymon", "from": "reptilimon" },
 		{ "name": "guilmon", "from": "rubeusdramon" },
-		{ "name": "guilmon", "for": "medievalgallantmon" }
+		{ "name": "guilmon", "for": "medievalgallantmon" },
+		{ "name": "palmon", "for": "ceresmon_medium" },
+		{ "name": "rootmon", "for": "cherrymon" }
 	]
 }
