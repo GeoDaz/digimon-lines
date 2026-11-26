@@ -16,6 +16,7 @@ export const loadYugiohCards = (): Promise<GameCard[]> =>
 				name,
 				level: 0,
 				colors: [frame],
+				kind: frame === 'Spell' ? 'S' : frame === 'Trap' ? 'T' : 'M',
 				thumbnail: `/api/yugioh-card/${id}/w260`,
 				image: `/api/yugioh-card/${id}/w420`,
 				version: alternateArt ? 'Alt art' : undefined,

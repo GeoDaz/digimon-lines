@@ -1,5 +1,6 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { Alert, Button, Form, Modal, Spinner } from 'react-bootstrap';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { Alert, Button, Form, InputGroup, Modal, Spinner } from 'react-bootstrap';
+import Icon from '@/components/Icon';
 import CustomImageInput from '@/components/Cards/CustomImageInput';
 import { CardGame, CardSearch, GameCard, cardTitle } from '@/functions/cardGames';
 
@@ -27,7 +28,10 @@ const CardPickerModal: React.FC<Props> = ({
 	const [search, setSearch] = useState<{ run: CardSearch } | null>(null);
 	const [failed, setFailed] = useState(false);
 	const [query, setQuery] = useState('');
-	const [sameLevel, setSameLevel] = useState(true);
+	const [levelChoice, setLevelChoice] = useState<string | null>(null);
+	const [kind, setKind] = useState('');
+	const [color, setColor] = useState('');
+	const inputRef = useRef<HTMLInputElement>(null);
 	const [shown, setShown] = useState({ key: '', count: PAGE_SIZE });
 
 	useEffect(() => {
@@ -40,19 +44,27 @@ const CardPickerModal: React.FC<Props> = ({
 
 	const clear = () => {
 		setQuery('');
-		setSameLevel(true);
+		setLevelChoice(null);
+		setKind('');
+		setColor('');
 	};
 
-	const levelLabel = level && game.levels?.[level];
-
+	const levels = game.levels;
+	const selectedLevel = Number(levelChoice ?? (level && levels?.[level] ? level : 0));
+	const levelApplies = !kind || !game.leveledTypes || game.leveledTypes.includes(kind);
+	const activeLevel = levelApplies ? selectedLevel : 0;
+	const levelLabel = activeLevel ? levels?.[activeLevel] : undefined;
 	const results = useMemo(
 		() =>
-			search && query.trim().length >= 2 ?
-				search.run(query, sameLevel && levelLabel ? level : null)
+			search ?
+				search
+					.run(query.trim(), activeLevel || null)
+					.filter(card => !kind || card.kind === kind)
+					.filter(card => !color || card.colors.includes(color))
 			:	[],
-		[search, query, sameLevel, level, levelLabel]
+		[search, query, activeLevel, kind, color]
 	);
-	const resultsKey = `${query}|${sameLevel}|${level}`;
+	const resultsKey = `${query}|${activeLevel}|${kind}|${color}`;
 	const visible = shown.key === resultsKey ? shown.count : PAGE_SIZE;
 
 	return (
@@ -63,24 +75,65 @@ const CardPickerModal: React.FC<Props> = ({
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
-				<div className="card-picker-filters">
-					<Form.Control
-						autoFocus
-						type="search"
-						placeholder={game.searchPlaceholder}
-						value={query}
-						onChange={e => setQuery(e.target.value)}
-					/>
-					{!!levelLabel && (
-						<Form.Check
-							type="switch"
-							id="card-picker-level"
-							label={`Lv.${level}`}
-							checked={sameLevel}
-							onChange={e => setSameLevel(e.target.checked)}
-						/>
+				<div className="card-picker-selects">
+					{levels && (
+						<Form.Select
+							value={selectedLevel}
+							onChange={e => setLevelChoice(e.target.value)}
+							disabled={!levelApplies}
+							aria-label="Level"
+						>
+							<option value={0}>All levels</option>
+							{Object.entries(levels).map(([value, label]) => (
+								<option key={value} value={value}>
+									Lv.{value} {label}
+								</option>
+							))}
+						</Form.Select>
 					)}
+					<Form.Select value={kind} onChange={e => setKind(e.target.value)} aria-label="Card type">
+						<option value="">All card types</option>
+						{Object.entries(game.cardTypes).map(([value, label]) => (
+							<option key={value} value={value}>
+								{label}
+							</option>
+						))}
+					</Form.Select>
+					<Form.Select
+						value={color}
+						onChange={e => setColor(e.target.value)}
+						aria-label={game.colorLabel}
+					>
+						<option value="">All {game.colorLabel.toLowerCase()}s</option>
+						{Object.keys(game.palette).map(value => (
+							<option key={value} value={value}>
+								{value}
+							</option>
+						))}
+					</Form.Select>
 				</div>
+				<Form
+					className="card-picker-filters"
+					onSubmit={e => {
+						e.preventDefault();
+						inputRef.current?.blur();
+					}}
+				>
+					<InputGroup>
+						<Form.Control
+							ref={inputRef}
+							autoFocus
+							type="search"
+							placeholder={game.searchPlaceholder}
+							value={query}
+							onChange={e => setQuery(e.target.value)}
+							aria-label={game.searchPlaceholder}
+						/>
+						<Button type="submit" variant="primary" title="Search">
+							<Icon name="check-lg" />
+						</Button>
+					</InputGroup>
+				</Form>
 				<CustomImageInput
 					id="card-picker-image"
 					placeholder="Custom card image URL"
@@ -92,16 +145,18 @@ const CardPickerModal: React.FC<Props> = ({
 					<Alert variant="danger">The card list could not be loaded.</Alert>
 				: !search ?
 					<Spinner animation="border" role="status" aria-label="Loading" />
-				: query.trim().length < 2 ?
-					current ?
-						<figure className="card-picker-current">
-							<img src={current.src} alt={current.title} />
-							<figcaption>{current.title}</figcaption>
-						</figure>
-					:	<p className="text-secondary">Type at least 2 characters.</p>
 				: !results.length ?
 					<p className="text-secondary">No card found.</p>
 				:	<>
+						{current && !query.trim() && (
+							<figure className="card-picker-current">
+								<img src={current.src} alt={current.title} />
+								<figcaption>
+									<small>Current card</small>
+									{current.title}
+								</figcaption>
+							</figure>
+						)}
 						<p className="card-picker-count">
 							{results.length} card{results.length > 1 ? 's' : ''}
 						</p>

@@ -71,6 +71,7 @@ const CustomImageInput: React.FC<Props> = ({
 				onSubmit={handleUrl}
 				placeholder={placeholder}
 				className="flex-grow-1"
+				variant="outline-secondary"
 			/>
 			<UploadImage handleUpload={handleUpload} id={`${id}-upload`} className="mb-3" />
 		</div>

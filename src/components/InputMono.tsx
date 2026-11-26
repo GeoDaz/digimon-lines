@@ -14,6 +14,7 @@ interface Props {
 	forwardRef?: React.Ref<HTMLInputElement>;
 	className?: string;
 	disabled?: boolean;
+	variant?: string;
 }
 
 const InputMono: React.FC<Props> = ({
@@ -26,6 +27,7 @@ const InputMono: React.FC<Props> = ({
 	type = 'text',
 	className,
 	disabled = false,
+	variant = 'primary',
 }) => {
 	const [value, setValue] = useState<string | undefined>(defaultValue);
 
@@ -59,7 +61,7 @@ const InputMono: React.FC<Props> = ({
 				disabled={disabled}
 			/>
 			<Button
-				color="primary"
+				variant={variant}
 				type="submit"
 				onClick={e => onSubmit(name, value)}
 				disabled={disabled}

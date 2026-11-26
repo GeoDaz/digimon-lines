@@ -18,6 +18,7 @@ export interface GameCard {
 	thumbnail: string;
 	image: string;
 	code?: string;
+	kind?: string;
 	version?: string;
 }
 
@@ -32,9 +33,12 @@ export interface CardGame {
 	fallbackColors: string[];
 	defaultCustomColors: string[];
 	levels: Record<number, string> | null;
+	leveledTypes?: string[];
 	defaultLevels: number[];
 	cardId: RegExp;
 	searchPlaceholder: string;
+	cardTypes: Record<string, string>;
+	colorLabel: string;
 	loadCards: () => Promise<GameCard[]>;
 	prepareSearch: () => Promise<CardSearch>;
 }
@@ -90,6 +94,7 @@ const loadDigimonCards = () =>
 				thumbnail: cardImageUrl(card.id),
 				image: cardImageUrl(card.id),
 				code: card.id,
+				kind: card.type === 'E' ? 'D' : card.type,
 				version: card.version,
 			}))
 		)
@@ -104,9 +109,12 @@ export const DIGIMON_GAME: CardGame = {
 	fallbackColors: ['Yellow', 'Purple'],
 	defaultCustomColors: ['Purple', 'Blue'],
 	levels: CARD_LEVELS,
+	leveledTypes: ['D'],
 	defaultLevels: DEFAULT_CARD_LEVELS,
 	cardId: /^[A-Z]{1,4}\d{0,2}-\d{1,3}(_P\d{1,2})?$/,
-	searchPlaceholder: 'Digimon name or card number (BT1-010)',
+	searchPlaceholder: 'Search a Digimon name or card number (BT1-010)',
+	cardTypes: { D: 'Digimon', T: 'Tamer', O: 'Option' },
+	colorLabel: 'Color',
 	loadCards: loadDigimonCards,
 	prepareSearch: async () => {
 		const [cards, gameCards, pairs] = await Promise.all([
@@ -130,7 +138,9 @@ export const POKEMON_GAME: CardGame = {
 	levels: null,
 	defaultLevels: [0, 0, 0],
 	cardId: /^[A-Za-z0-9.-]{1,40}$/,
-	searchPlaceholder: 'Pokémon name or card number (sv03.5-006)',
+	searchPlaceholder: 'Search a Pokémon name or card number (sv03.5-006)',
+	cardTypes: { P: 'Pokémon', T: 'Trainer', E: 'Energy' },
+	colorLabel: 'Energy type',
 	loadCards: loadPokemonCards,
 	prepareSearch: async () => {
 		const cards = await loadPokemonCards();
@@ -146,7 +156,9 @@ export const YUGIOH_GAME: CardGame = {
 	levels: null,
 	defaultLevels: [0, 0, 0],
 	cardId: /^[0-9a-f]{24}$/,
-	searchPlaceholder: 'Card name',
+	searchPlaceholder: 'Search a card name',
+	cardTypes: { M: 'Monster', S: 'Spell', T: 'Trap' },
+	colorLabel: 'Frame',
 	loadCards: loadYugiohCards,
 	prepareSearch: async () => {
 		const cards = await loadYugiohCards();
