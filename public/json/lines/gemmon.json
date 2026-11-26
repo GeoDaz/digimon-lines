@@ -12,13 +12,16 @@
 				"name": "gemmon"
 			},
 			{
-				"name": "liskmon"
+				"name": "liskmon",
+				"color": "fire"
 			},
 			{
-				"name": "reptilimon"
+				"name": "reptilimon",
+				"color": "fire"
 			},
 			{
-				"name": "rubeusdramon"
+				"name": "rubeusdramon",
+				"color": "fire"
 			},
 			null,
 			null
@@ -28,13 +31,17 @@
 			null,
 			null,
 			{
-				"name": "elfmon"
+				"name": "elfmon",
+				"from": [-1, -1],
+				"color": "grass"
 			},
 			{
-				"name": "highelfmon"
+				"name": "highelfmon",
+				"color": "grass"
 			},
 			{
-				"name": "silvamon"
+				"name": "silvamon",
+				"color": "grass"
 			},
 			null,
 			null
