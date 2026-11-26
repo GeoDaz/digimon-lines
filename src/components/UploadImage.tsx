@@ -51,7 +51,7 @@ const UploadImage: React.FC<{
 			<label
 				htmlFor={id}
 				className={makeClassName(
-					'btn btn-secondary',
+					'btn btn-outline-primary',
 					disabled && 'disabled',
 					className
 				)}

@@ -278,6 +278,14 @@ h2 {
 	color: white !important;
 }
 
+.form-select.research,
+.card-maker .form-select,
+.card-maker-color-menu {
+	background-color: var(--dl-snd-dark) !important;
+	border: 1px solid var(--dl-snd-dark);
+	color: white !important;
+}
+
 .combobox{
 	display: flex;
 	position: relative;

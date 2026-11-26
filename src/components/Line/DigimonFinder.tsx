@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
-import { Button, Row, Col } from 'react-bootstrap';
+import { Button, Col, InputGroup, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import ComboBox from '@/components/ComboBox';
 import Icon from '@/components/Icon';
@@ -114,17 +114,21 @@ const DigimonFinder: React.FC<Props> = ({
 		setQuery('');
 	};
 
+	const submit = () => {
+		if (results[selection]) {
+			handleSelect(results[selection].name);
+		} else if (trimmedQuery) {
+			handleSelect(unCapitalize(trimmedQuery));
+		}
+	};
+
 	const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
 		if (e.key !== 'Enter' && e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
 		e.preventDefault();
 		e.stopPropagation();
 		const visible = Math.min(results.length, limit);
 		if (e.key === 'Enter') {
-			if (results[selection]) {
-				handleSelect(results[selection].name);
-			} else if (trimmedQuery) {
-				handleSelect(unCapitalize(trimmedQuery));
-			}
+			submit();
 		} else if (visible > 0) {
 			setSelection(
 				e.key === 'ArrowDown' ?
@@ -145,7 +149,7 @@ const DigimonFinder: React.FC<Props> = ({
 					sm={hasOptions ? 6 : 12}
 					lg={hasOptions ? 3 : 12}
 				>
-					<div className="position-relative">
+					<InputGroup>
 						<Form.Label htmlFor="digimon-finder-search" visuallyHidden>
 							{label}
 						</Form.Label>
@@ -158,14 +162,18 @@ const DigimonFinder: React.FC<Props> = ({
 							onChange={e => setQuery(e.target.value)}
 							onKeyDown={onKeyDown}
 							autoComplete="off"
-							className="research digimon-finder-search pe-4"
+							className="research digimon-finder-search"
 							disabled={disabled}
 						/>
-						<Icon
-							name="search"
-							className="position-absolute top-50 end-0 p-2 translate-middle-y translate-middle-x"
-						/>
-					</div>
+						<Button
+							variant="primary"
+							onClick={submit}
+							disabled={disabled || (!results.length && !trimmedQuery)}
+							title="Search"
+						>
+							<Icon name="search" />
+						</Button>
+					</InputGroup>
 				</Col>
 				{hasOptions && (
 					<>

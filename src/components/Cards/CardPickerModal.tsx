@@ -76,7 +76,12 @@ const CardPickerModal: React.FC<Props> = ({
 			</Modal.Header>
 			<Modal.Body>
 				<div className="card-picker-selects">
-					<Form.Select value={kind} onChange={e => setKind(e.target.value)} aria-label="Card type">
+					<Form.Select
+						className="research"
+						value={kind}
+						onChange={e => setKind(e.target.value)}
+						aria-label="Card type"
+					>
 						<option value="">All card types</option>
 						{Object.entries(game.cardTypes).map(([value, label]) => (
 							<option key={value} value={value}>
@@ -86,6 +91,7 @@ const CardPickerModal: React.FC<Props> = ({
 					</Form.Select>
 					{levels && (
 						<Form.Select
+							className="research"
 							value={selectedLevel}
 							onChange={e => setLevelChoice(e.target.value)}
 							disabled={!levelApplies}
@@ -100,6 +106,7 @@ const CardPickerModal: React.FC<Props> = ({
 						</Form.Select>
 					)}
 					<Form.Select
+						className="research"
 						value={color}
 						onChange={e => setColor(e.target.value)}
 						aria-label={game.colorLabel}
@@ -124,13 +131,14 @@ const CardPickerModal: React.FC<Props> = ({
 							ref={inputRef}
 							autoFocus
 							type="search"
+							className="research"
 							placeholder={game.searchPlaceholder}
 							value={query}
 							onChange={e => setQuery(e.target.value)}
 							aria-label={game.searchPlaceholder}
 						/>
 						<Button type="submit" variant="primary" title="Search">
-							<Icon name="check-lg" />
+							<Icon name="search" />
 						</Button>
 					</InputGroup>
 				</Form>

@@ -332,6 +332,7 @@ const DigimonSelector: React.FC<{
 				name="image"
 				onSubmit={handleImage}
 				placeholder="Image URL"
+				variant="outline-primary"
 				defaultValue={(point && point.name == 'url' && point.image) || ''}
 				className="flex-grow-1"
 				disabled={disabled}
