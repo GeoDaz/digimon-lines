@@ -76,6 +76,14 @@ const CardPickerModal: React.FC<Props> = ({
 			</Modal.Header>
 			<Modal.Body>
 				<div className="card-picker-selects">
+					<Form.Select value={kind} onChange={e => setKind(e.target.value)} aria-label="Card type">
+						<option value="">All card types</option>
+						{Object.entries(game.cardTypes).map(([value, label]) => (
+							<option key={value} value={value}>
+								{label}
+							</option>
+						))}
+					</Form.Select>
 					{levels && (
 						<Form.Select
 							value={selectedLevel}
@@ -91,14 +99,6 @@ const CardPickerModal: React.FC<Props> = ({
 							))}
 						</Form.Select>
 					)}
-					<Form.Select value={kind} onChange={e => setKind(e.target.value)} aria-label="Card type">
-						<option value="">All card types</option>
-						{Object.entries(game.cardTypes).map(([value, label]) => (
-							<option key={value} value={value}>
-								{label}
-							</option>
-						))}
-					</Form.Select>
 					<Form.Select
 						value={color}
 						onChange={e => setColor(e.target.value)}
