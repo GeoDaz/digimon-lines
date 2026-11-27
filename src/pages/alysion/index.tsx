@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GetStaticProps } from 'next';
+import { Button, Modal } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 import Link from '@/components/Link';
 import Icon from '@/components/Icon';
@@ -38,6 +39,7 @@ const formatDate = (date: string) =>
 	});
 
 const PageAlysion: React.FC<Props> = ({ decks, restricted, updated }) => {
+	const [showRestricted, setShowRestricted] = useState(false);
 	const tiers = decks
 		.map(deck => deck.tier)
 		.filter((tier, index, list) => list.indexOf(tier) === index)
@@ -63,6 +65,9 @@ const PageAlysion: React.FC<Props> = ({ decks, restricted, updated }) => {
 				<Link href="/alysion/builder" className="btn btn-outline-light">
 					<Icon name="plus-lg" /> Create your deck
 				</Link>
+				<Button variant="outline-warning" onClick={() => setShowRestricted(true)}>
+					<Icon name="slash-circle" /> Restricted cards
+				</Button>
 			</div>
 			{tiers.map(tier => (
 				<section key={tier} className="alysion-tier alysion-panel">
@@ -88,25 +93,29 @@ const PageAlysion: React.FC<Props> = ({ decks, restricted, updated }) => {
 					</div>
 				</section>
 			))}
-			<section className="alysion-restricted alysion-panel">
-				<h2 className="alysion-section-title">Restricted cards</h2>
-				<p className="alysion-intro">
-					The official Alysion list limits these cards to one copy per deck. No card is
-					banned for now.
-				</p>
-				<div className="alysion-key-cards">
-					{restricted.map(card => (
-						<figure key={card.id} className="alysion-card">
-							<CardImage src={cardImageUrl(card.id)} name={card.name} code={card.id} />
-							<span className="alysion-card-count">×1</span>
-							<figcaption>
-								{card.name}
-								<small>{card.id}</small>
-							</figcaption>
-						</figure>
-					))}
-				</div>
-			</section>
+			<Modal show={showRestricted} onHide={() => setShowRestricted(false)} centered>
+				<Modal.Header closeButton>
+					<Modal.Title>Restricted cards</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>
+					<p className="alysion-intro">
+						The official Alysion list limits these cards to one copy per deck. No card is
+						banned for now.
+					</p>
+					<div className="alysion-key-cards">
+						{restricted.map(card => (
+							<figure key={card.id} className="alysion-card">
+								<CardImage src={cardImageUrl(card.id)} name={card.name} code={card.id} />
+								<span className="alysion-card-count">×1</span>
+								<figcaption>
+									{card.name}
+									<small>{card.id}</small>
+								</figcaption>
+							</figure>
+						))}
+					</div>
+				</Modal.Body>
+			</Modal>
 			<p className="alysion-credits">
 				Decklists gathered from community guides such as Game8. Digimon Card Game card
 				images © Bandai. Fan-made site, not affiliated with Bandai.
