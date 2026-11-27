@@ -2,6 +2,7 @@ import React from 'react';
 import { GetStaticProps } from 'next';
 import Layout from '@/components/Layout';
 import Link from '@/components/Link';
+import Icon from '@/components/Icon';
 import AlysionColors from '@/components/Alysion/AlysionColors';
 import CardImage from '@/components/Cards/CardImage';
 import { cardImageUrl } from '@/functions/dcgCards';
@@ -55,6 +56,14 @@ const PageAlysion: React.FC<Props> = ({ decks, restricted, updated }) => {
 				guides, not from tournament results yet: expect it to move. Last update:{' '}
 				{formatDate(updated)}.
 			</p>
+			<div className="alysion-links">
+				<Link href="/alysion/community" className="btn btn-primary">
+					<Icon name="people-fill" /> Community decks
+				</Link>
+				<Link href="/alysion/builder" className="btn btn-outline-light">
+					<Icon name="plus-lg" /> Create your deck
+				</Link>
+			</div>
 			{tiers.map(tier => (
 				<section key={tier} className="alysion-tier alysion-panel">
 					<h2 className={`alysion-tier-title alysion-tier-${tier}`}>

@@ -1,7 +1,17 @@
 import { DcgCardType } from '@/functions/dcgCards';
+import {
+	ALYSION_RESTRICTED,
+	AlysionCard,
+	compareCards,
+	DeckEntry,
+	toAlysionCard,
+} from '@/functions/alysionCards';
+
+export type { AlysionCard } from '@/functions/alysionCards';
+export { CARD_SECTIONS, decklistText, TIER_LABELS } from '@/functions/alysionCards';
 
 type CardRow = [string, string, number, string[], DcgCardType, string?];
-type Entry = [string, number];
+type Entry = DeckEntry;
 
 interface RawDeck {
 	slug: string;
@@ -14,15 +24,6 @@ interface RawDeck {
 	eggs: Entry[];
 	main: Entry[];
 	source: string;
-}
-
-export interface AlysionCard {
-	id: string;
-	name: string;
-	level: number;
-	type: DcgCardType;
-	count: number;
-	restricted?: boolean;
 }
 
 export interface AlysionDeckSummary {
@@ -42,53 +43,22 @@ export interface AlysionDeck extends Omit<AlysionDeckSummary, 'cover' | 'coverNa
 	source: string;
 }
 
-export const TIER_LABELS: Record<number, string> = {
-	1: 'Tier 1',
-	2: 'Tier 2',
-	3: 'Tier 3',
-	4: 'Rogue',
-};
-
-export const CARD_SECTIONS: Array<{ type: DcgCardType; title: string }> = [
-	{ type: 'E', title: 'Digi-Eggs' },
-	{ type: 'D', title: 'Digimon' },
-	{ type: 'T', title: 'Tamers' },
-	{ type: 'O', title: 'Options' },
-];
-
-const TYPE_ORDER: DcgCardType[] = ['E', 'D', 'T', 'O'];
-
-const loadRaw = (): { updated: string; restricted: string[]; decks: RawDeck[] } =>
+const loadRaw = (): { updated: string; decks: RawDeck[] } =>
 	require('../../public/json/alysion/decks.json');
 
 const loadCards = (): Map<string, CardRow> =>
 	new Map((require('../../public/json/dcg/cards.json') as CardRow[]).map(row => [row[0], row]));
 
-const toCard = (cards: Map<string, CardRow>, [id, count]: Entry): AlysionCard => {
-	const row = cards.get(id);
-	const restricted = loadRaw().restricted.includes(id);
-	const level = row?.[2] || 0;
-	const type = row?.[4] || 'D';
-	return {
-		id,
-		name: row?.[1] || id,
-		level,
-		type: type === 'D' && !level ? 'T' : type,
-		count,
-		...(restricted && { restricted }),
-	};
+const toCard = (cards: Map<string, CardRow>, entry: Entry): AlysionCard => {
+	const row = cards.get(entry[0]);
+	return toAlysionCard(entry, row && { name: row[1], level: row[2], type: row[4], colors: row[3] });
 };
-
-const compareCards = (a: AlysionCard, b: AlysionCard) =>
-	TYPE_ORDER.indexOf(a.type) - TYPE_ORDER.indexOf(b.type) ||
-	a.level - b.level ||
-	a.id.localeCompare(b.id, 'en', { numeric: true });
 
 export const getAlysionUpdated = () => loadRaw().updated;
 
 export const getAlysionRestricted = (): AlysionCard[] => {
 	const cards = loadCards();
-	return loadRaw().restricted.map(id => toCard(cards, [id, 1]));
+	return ALYSION_RESTRICTED.map(id => toCard(cards, [id, 1]));
 };
 
 export const getAlysionSlugs = () => loadRaw().decks.map(deck => deck.slug);
@@ -118,6 +88,3 @@ export const getAlysionDeck = (slug: string): AlysionDeck | null => {
 		cards: list,
 	};
 };
-
-export const decklistText = (cards: AlysionCard[]) =>
-	cards.map(card => `${card.count} ${card.id} ${card.name}`).join('\n');

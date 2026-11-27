@@ -14,6 +14,104 @@ export type Database = {
   }
   public: {
     Tables: {
+      alysion_deck_likes: {
+        Row: {
+          created_at: string
+          deck_id: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          deck_id: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          deck_id?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "alysion_deck_likes_deck_id_fkey"
+            columns: ["deck_id"]
+            isOneToOne: false
+            referencedRelation: "alysion_decks"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "alysion_deck_likes_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      alysion_decks: {
+        Row: {
+          best_rank: string | null
+          cards: Json
+          colors: string[]
+          cover: string | null
+          created_at: string
+          description: string | null
+          id: string
+          is_public: boolean
+          like_count: number
+          losses: number
+          slug: string
+          title: string
+          title_key: string | null
+          updated_at: string
+          user_id: string
+          wins: number
+        }
+        Insert: {
+          best_rank?: string | null
+          cards: Json
+          colors?: string[]
+          cover?: string | null
+          created_at?: string
+          description?: string | null
+          id?: string
+          is_public?: boolean
+          like_count?: number
+          losses?: number
+          slug: string
+          title: string
+          title_key?: string | null
+          updated_at?: string
+          user_id: string
+          wins?: number
+        }
+        Update: {
+          best_rank?: string | null
+          cards?: Json
+          colors?: string[]
+          cover?: string | null
+          created_at?: string
+          description?: string | null
+          id?: string
+          is_public?: boolean
+          like_count?: number
+          losses?: number
+          slug?: string
+          title?: string
+          title_key?: string | null
+          updated_at?: string
+          user_id?: string
+          wins?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "alysion_decks_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       line_likes: {
         Row: {
           created_at: string

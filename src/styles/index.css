@@ -4109,3 +4109,152 @@ a.game-digimon-tile:focus,
 	border: none;
 	border-radius: 0;
 }
+
+.alysion-community-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+}
+
+.alysion-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin-top: 1rem;
+}
+
+.alysion-record {
+	display: block;
+	font-size: 0.85rem;
+	color: var(--bs-gray-300);
+}
+
+.alysion-record small {
+	margin-left: 0.35rem;
+	font-style: italic;
+	color: var(--bs-gray-500);
+}
+
+.alysion-builder-fields {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+}
+
+.alysion-color-toggles {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.alysion-color-toggle {
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	opacity: 0.35;
+}
+
+.alysion-color-toggle.active {
+	border-color: var(--bs-white);
+	opacity: 1;
+}
+
+.alysion-builder-save {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.alysion-builder-save .form-check {
+	margin-right: auto;
+}
+
+.alysion-builder-errors {
+	font-size: 0.9rem;
+}
+
+.alysion-builder-search {
+	display: grid;
+	grid-template-columns: minmax(220px, 2fr) repeat(2, minmax(140px, 1fr));
+	gap: 0.75rem;
+}
+
+@media (max-width: 575.98px) {
+	.alysion-builder-search {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.alysion-builder-search .input-group {
+		grid-column: 1 / -1;
+	}
+}
+
+.alysion-builder-result {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	padding: 0.25rem;
+	border: 2px solid transparent;
+	border-radius: 0.5rem;
+	background: none;
+	text-align: left;
+	font-size: 0.85rem;
+	line-height: 1.2;
+	color: var(--bs-gray-200);
+}
+
+.alysion-builder-result:hover,
+.alysion-builder-result:focus-visible {
+	border-color: var(--bs-primary);
+}
+
+.alysion-builder-result img {
+	width: 100%;
+	aspect-ratio: 430 / 600;
+	object-fit: cover;
+	border-radius: 0.4rem;
+	background: var(--bs-gray-800);
+}
+
+.alysion-builder-result small {
+	display: block;
+	color: var(--bs-gray-500);
+}
+
+.alysion-builder-result .alysion-card-count {
+	top: 0.6rem;
+	right: 0.6rem;
+}
+
+.alysion-card-actions {
+	display: flex;
+	gap: 0.25rem;
+	margin-top: 0.35rem;
+}
+
+.alysion-card-actions .btn {
+	flex: 1;
+	padding: 0.1rem 0;
+}
+
+.alysion-builder-paste {
+	margin-top: 1rem;
+}
+
+.alysion-builder-paste summary {
+	margin-bottom: 0.5rem;
+	color: var(--bs-gray-300);
+	cursor: pointer;
+}
+
+.alysion-panel .form-control {
+	max-width: none;
+}
