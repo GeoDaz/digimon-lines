@@ -4258,3 +4258,48 @@ a.game-digimon-tile:focus,
 .alysion-panel .form-control {
 	max-width: none;
 }
+
+.home-alysion-cards {
+	display: flex;
+	justify-content: center;
+	padding: 1rem 0 1.5rem;
+}
+
+.home-alysion-card {
+	display: block;
+	width: 26%;
+	max-width: 170px;
+	margin: 0 -2%;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.45);
+	transition: transform 0.2s ease;
+}
+
+.home-alysion-card img,
+.home-alysion-card .card-image-missing {
+	display: block;
+	width: 100%;
+	aspect-ratio: 430 / 600;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+
+.home-alysion-card:nth-child(1) {
+	transform: rotate(-10deg) translateY(12px);
+}
+
+.home-alysion-card:nth-child(2) {
+	transform: rotate(-3deg);
+}
+
+.home-alysion-card:nth-child(3) {
+	transform: rotate(3deg);
+}
+
+.home-alysion-card:nth-child(4) {
+	transform: rotate(10deg) translateY(12px);
+}
+
+.home-alysion-cards:hover .home-alysion-card {
+	transform: none;
+}

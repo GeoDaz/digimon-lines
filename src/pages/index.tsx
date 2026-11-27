@@ -7,6 +7,9 @@ import Link from '@/components/Link';
 import Icon from '@/components/Icon';
 import LinePoint from '@/components/Line/LinePoint';
 import LineShowcase from '@/components/Home/LineShowcase';
+import CardImage from '@/components/Cards/CardImage';
+import { cardImageUrl } from '@/functions/dcgCards';
+import { AlysionDeckSummary, getAlysionDeckSummaries } from '@/functions/alysion';
 import transformLine, { lineExcerpt, thumbsToNames } from '@/functions/line';
 import { digimonGames } from '@/consts/games';
 import { DISCORD_URL, DONATE_URL, SITE_URL } from '@/consts/env';
@@ -57,11 +60,12 @@ interface Props {
 	gekkomon: Line;
 	featured: LineThumb[];
 	stats: Stats;
+	alysion: AlysionDeckSummary[];
 }
 
 const formatNumber = (value: number) => value.toLocaleString('en-US');
 
-const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
+const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats, alysion }) => (
 	<Layout
 		noTitle
 		title="Digimon Lines"
@@ -181,6 +185,48 @@ const PageHome: React.FC<Props> = ({ agumon, gekkomon, featured, stats }) => (
 			</div>
 		</section>
 
+		<section className="home-feature">
+			<div className="home-feature-text">
+				<p className="home-kicker">
+					<Icon name="trophy-fill" /> Digimon Alysion
+				</p>
+				<h2 className="home-feature-title">Find the best Alysion decks</h2>
+				<p>
+					New to the Digimon Card Game app? See which decks are strong right now and
+					copy a full decklist to build your own.
+				</p>
+				<ul className="home-checks">
+					<li>
+						<Icon name="check2" />
+						Tier list with complete decklists, key cards and strategy
+					</li>
+					<li>
+						<Icon name="check2" />
+						Build your deck with the Alysion card pool and the official rules
+					</li>
+					<li>
+						<Icon name="check2" />
+						Share it with the community, with your ranked record
+					</li>
+				</ul>
+				<div className="home-actions mt-4">
+					<Link href="/alysion" className="btn btn-primary">
+						See the tier list <Icon name="arrow-right" />
+					</Link>
+					<Link href="/alysion/community" className="btn btn-outline-light">
+						<Icon name="people-fill" /> Community decks
+					</Link>
+				</div>
+			</div>
+			<Link href="/alysion" className="home-feature-visual home-alysion-cards">
+				{alysion.map(deck => (
+					<span key={deck.slug} className="home-alysion-card" title={deck.name}>
+						<CardImage src={cardImageUrl(deck.cover)} name={deck.coverName} code={deck.cover} />
+					</span>
+				))}
+			</Link>
+		</section>
+
 		<section className="home-more">
 			<h2 className="home-more-title">Explore more</h2>
 			<div className="home-more-grid">
@@ -267,6 +313,7 @@ export const getStaticProps: GetStaticProps = async () => {
 			agumon,
 			gekkomon,
 			featured: lines.slice(0, FEATURED),
+			alysion: getAlysionDeckSummaries().filter(deck => deck.tier === 1),
 			stats: {
 				lines: lines.length + fusions.length,
 				digimons: Object.keys(require('../../public/json/digimons/index.json'))
