@@ -264,7 +264,7 @@ const PageAlysionBuilder: React.FC = () => {
 			title={deckId ? 'Edit your deck' : 'Deck builder'}
 			metatitle="Digimon Alysion deck builder"
 			metadescription="Build a Digimon Alysion deck, check the deck rules and share it with the community."
-			metaimg="digimon-cards.jpg"
+			metaimg="alysion.jpg"
 		>
 			{(poolFailed || loadingDeck) && (
 				<div className="mb-3">

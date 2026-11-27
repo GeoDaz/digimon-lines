@@ -112,7 +112,7 @@ const PageAlysionCommunity: React.FC = () => {
 			title="Community decks"
 			metatitle="Digimon Alysion community decks"
 			metadescription="Decks built and shared by Digimon Alysion players, with their declared ranked results."
-			metaimg="digimon-cards.jpg"
+			metaimg="alysion.jpg"
 		>
 			<div className="alysion-community-head">
 				<p className="alysion-intro mb-0">

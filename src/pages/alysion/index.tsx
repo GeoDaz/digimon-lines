@@ -50,7 +50,7 @@ const PageAlysion: React.FC<Props> = ({ decks, restricted, updated }) => {
 			title="Digimon Alysion meta"
 			metatitle="Digimon Alysion tier list and top decks"
 			metadescription="The strongest decks of Digimon Alysion, the Digimon Card Game app, ranked by tier with full decklists, key cards and strategy."
-			metaimg="digimon-cards.jpg"
+			metaimg="alysion.jpg"
 		>
 			<p className="alysion-intro">
 				The best decks of the Digimon Alysion app, with full decklists to build

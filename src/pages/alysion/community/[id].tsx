@@ -65,7 +65,7 @@ const PageCommunityDeck: React.FC = () => {
 			title={deck?.title || 'Community deck'}
 			metatitle={deck ? `${deck.title} - Digimon Alysion deck` : 'Digimon Alysion community deck'}
 			metadescription="A Digimon Alysion deck shared by the community."
-			metaimg="digimon-cards.jpg"
+			metaimg="alysion.jpg"
 		>
 			{loading ?
 				<Spinner animation="border" role="status" aria-label="Loading" />
