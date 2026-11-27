@@ -105,8 +105,10 @@ const PageAlysion: React.FC<Props> = ({ decks, restricted, updated }) => {
 					<div className="alysion-key-cards">
 						{restricted.map(card => (
 							<figure key={card.id} className="alysion-card">
-								<CardImage src={cardImageUrl(card.id)} name={card.name} code={card.id} />
-								<span className="alysion-card-count">×1</span>
+								<span className="alysion-card-media">
+									<CardImage src={cardImageUrl(card.id)} name={card.name} code={card.id} />
+									<span className="alysion-card-count">×1</span>
+								</span>
 								<figcaption>
 									{card.name}
 									<small>{card.id}</small>
