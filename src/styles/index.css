@@ -4039,10 +4039,30 @@ a.game-digimon-tile:focus,
 	margin: 0;
 }
 
+.alysion-card-media {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	border: none;
+	border-radius: 0.4rem;
+	background: none;
+}
+
+button.alysion-card-media {
+	cursor: zoom-in;
+}
+
+button.alysion-card-media:hover img,
+button.alysion-card-media:focus-visible img {
+	outline: 2px solid var(--bs-primary);
+	outline-offset: 1px;
+}
+
 .alysion-card-count {
 	position: absolute;
-	top: 0.35rem;
 	right: 0.35rem;
+	bottom: 0.35rem;
 	padding: 0.05rem 0.45rem;
 	border-radius: 0.4rem;
 	background: rgba(0, 0, 0, 0.8);
@@ -4229,11 +4249,6 @@ a.game-digimon-tile:focus,
 	color: var(--bs-gray-500);
 }
 
-.alysion-builder-result .alysion-card-count {
-	top: 0.6rem;
-	right: 0.6rem;
-}
-
 .alysion-card-actions {
 	display: flex;
 	gap: 0.25rem;
@@ -4302,4 +4317,139 @@ a.game-digimon-tile:focus,
 
 .home-alysion-cards:hover .home-alysion-card {
 	transform: none;
+}
+
+.alysion-card-modal .modal-title small {
+	margin-left: 0.4rem;
+	font-size: 0.9rem;
+	color: var(--bs-gray-500);
+}
+
+.alysion-card-modal-body {
+	display: grid;
+	grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+	gap: 1.25rem;
+	align-items: start;
+}
+
+@media (max-width: 575.98px) {
+	.alysion-card-modal-body {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.alysion-card-modal-image {
+		width: 100%;
+		max-width: 220px;
+		margin: 0 auto;
+	}
+}
+
+.alysion-card-modal-image img,
+.alysion-card-modal-image .card-image-missing {
+	display: flex;
+	width: 100%;
+	aspect-ratio: 430 / 600;
+	object-fit: cover;
+	border-radius: 0.6rem;
+}
+
+.alysion-card-modal-tags {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem;
+	margin-bottom: 0.75rem;
+}
+
+.alysion-card-modal-traits {
+	margin-bottom: 0.75rem;
+	color: var(--bs-gray-400);
+}
+
+.alysion-card-modal-stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.alysion-card-modal-stats div {
+	padding: 0.35rem 0.75rem;
+	border: 1px solid #3b424b;
+	border-radius: 0.5rem;
+	background: #2a2f36;
+}
+
+.alysion-card-modal-stats dt {
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: var(--bs-gray-500);
+}
+
+.alysion-card-modal-stats dd {
+	margin: 0;
+	font-weight: 700;
+}
+
+.alysion-effect h4 {
+	margin-bottom: 0.3rem;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	color: var(--bs-gray-500);
+}
+
+.alysion-effect p {
+	white-space: pre-line;
+	line-height: 1.5;
+}
+
+.alysion-effect-tag {
+	display: inline-block;
+	padding: 0 0.4rem;
+	border-radius: 0.3rem;
+	background: #3d3566;
+	color: #e5dcff;
+	font-size: 0.85em;
+	font-weight: 600;
+}
+
+.alysion-qty-badge {
+	background: rgba(0, 0, 0, 0.8);
+	color: var(--bs-white);
+}
+
+.alysion-color-badge {
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	color: var(--bs-white);
+}
+
+.alysion-color-badge.light {
+	color: #111;
+}
+
+.alysion-rarity-badge {
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	background: #5c636a;
+	color: var(--bs-white);
+}
+
+.alysion-rarity-badge.rarity-u {
+	background: #2f7d5b;
+}
+
+.alysion-rarity-badge.rarity-r {
+	background: #2f6fbf;
+}
+
+.alysion-rarity-badge.rarity-sr {
+	background: linear-gradient(135deg, #c9a227, #f3d77a);
+	color: #111;
+}
+
+.alysion-rarity-badge.rarity-sec {
+	background: linear-gradient(135deg, #8a4fd0, #e05aa8);
+}
+
+.alysion-rarity-badge.rarity-p {
+	background: #b2513a;
 }

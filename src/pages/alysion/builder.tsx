@@ -449,10 +449,12 @@ const PageAlysionBuilder: React.FC = () => {
 							onClick={() => changeCount(card.id, 1)}
 							title={`Add ${card.name} (${card.id})`}
 						>
-							<CardImage src={cardImageUrl(card.id)} name={card.name} code={card.id} />
-							{countOf(card.id) > 0 && (
-								<span className="alysion-card-count">×{countOf(card.id)}</span>
-							)}
+							<span className="alysion-card-media">
+								<CardImage src={cardImageUrl(card.id)} name={card.name} code={card.id} />
+								{countOf(card.id) > 0 && (
+									<span className="alysion-card-count">×{countOf(card.id)}</span>
+								)}
+							</span>
 							<span>
 								{card.name}
 								<small>

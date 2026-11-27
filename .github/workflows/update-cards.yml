@@ -28,6 +28,11 @@ jobs:
         continue-on-error: true
         run: node cmd/dcg-cards.cmd.js
 
+      - name: Alysion card details
+        id: alysion
+        continue-on-error: true
+        run: node cmd/alysion-cards.cmd.js
+
       - name: Pokémon cards
         id: pokemon
         continue-on-error: true
@@ -50,7 +55,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git add public/json/dcg/cards.json public/json/pkm/cards.json public/json/ygo/cards.json src/json/yugioh/top.json public/json/ygo/top-decks.json
+          git add public/json/dcg/cards.json public/json/alysion/cards.json public/json/pkm/cards.json public/json/ygo/cards.json src/json/yugioh/top.json public/json/ygo/top-decks.json
           if git diff --cached --quiet; then
             echo "No card list changed."
             exit 0
@@ -62,7 +67,7 @@ jobs:
           git push
 
       - name: Report failed sources
-        if: steps.digimon.outcome == 'failure' || steps.pokemon.outcome == 'failure' || steps.yugioh.outcome == 'failure' || steps.yugioh_top.outcome == 'failure' || steps.yugioh_decks.outcome == 'failure'
+        if: steps.digimon.outcome == 'failure' || steps.alysion.outcome == 'failure' || steps.pokemon.outcome == 'failure' || steps.yugioh.outcome == 'failure' || steps.yugioh_top.outcome == 'failure' || steps.yugioh_decks.outcome == 'failure'
         run: |
-          echo "::error::A card source failed: digimon=${{ steps.digimon.outcome }}, pokemon=${{ steps.pokemon.outcome }}, yugioh=${{ steps.yugioh.outcome }}, yugioh_top=${{ steps.yugioh_top.outcome }}, yugioh_decks=${{ steps.yugioh_decks.outcome }}"
+          echo "::error::A card source failed: digimon=${{ steps.digimon.outcome }}, alysion=${{ steps.alysion.outcome }}, pokemon=${{ steps.pokemon.outcome }}, yugioh=${{ steps.yugioh.outcome }}, yugioh_top=${{ steps.yugioh_top.outcome }}, yugioh_decks=${{ steps.yugioh_decks.outcome }}"
           exit 1
