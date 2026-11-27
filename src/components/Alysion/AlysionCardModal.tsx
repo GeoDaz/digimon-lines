@@ -8,15 +8,6 @@ import { AlysionCardDetails, loadAlysionDetails } from '@/functions/alysionDetai
 
 const LIGHT_COLORS = ['Yellow', 'White'];
 
-const RARITY_LABELS: Record<string, string> = {
-	C: 'Common',
-	U: 'Uncommon',
-	R: 'Rare',
-	SR: 'Super Rare',
-	SEC: 'Secret Rare',
-	P: 'Promo',
-};
-
 const TYPE_LABELS: Record<string, string> = {
 	D: 'Digimon',
 	E: 'Digi-Egg',
@@ -64,7 +55,10 @@ const AlysionCardModal: React.FC<Props> = ({ card, show, onHide }) => {
 		stats.push({ label: 'DP', value: details.dp.toLocaleString('en-US') });
 	}
 	for (const [color, level, cost] of details?.digivolve || []) {
-		stats.push({ label: 'Digivolve', value: `${cost} from Lv.${level} ${color}` });
+		stats.push({
+			label: 'Digivolve',
+			value: [String(cost), level && `from Lv.${level}`, color].filter(Boolean).join(' '),
+		});
 	}
 
 	return (
@@ -100,14 +94,6 @@ const AlysionCardModal: React.FC<Props> = ({ card, show, onHide }) => {
 								<Badge bg="secondary">
 									Lv.{card.level} {CARD_LEVELS[card.level]}
 								</Badge>
-							)}
-							{details?.rarity && (
-								<span
-									className={`badge alysion-rarity-badge rarity-${details.rarity.toLowerCase()}`}
-									title={RARITY_LABELS[details.rarity] || details.rarity}
-								>
-									{details.rarity}
-								</span>
 							)}
 							{card.restricted && (
 								<Badge bg="warning" text="dark">

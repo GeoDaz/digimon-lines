@@ -4426,30 +4426,3 @@ button.alysion-card-media:focus-visible img {
 .alysion-color-badge.light {
 	color: #111;
 }
-
-.alysion-rarity-badge {
-	border: 1px solid rgba(255, 255, 255, 0.25);
-	background: #5c636a;
-	color: var(--bs-white);
-}
-
-.alysion-rarity-badge.rarity-u {
-	background: #2f7d5b;
-}
-
-.alysion-rarity-badge.rarity-r {
-	background: #2f6fbf;
-}
-
-.alysion-rarity-badge.rarity-sr {
-	background: linear-gradient(135deg, #c9a227, #f3d77a);
-	color: #111;
-}
-
-.alysion-rarity-badge.rarity-sec {
-	background: linear-gradient(135deg, #8a4fd0, #e05aa8);
-}
-
-.alysion-rarity-badge.rarity-p {
-	background: #b2513a;
-}

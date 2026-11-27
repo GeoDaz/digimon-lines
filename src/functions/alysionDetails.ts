@@ -1,14 +1,13 @@
 export interface AlysionCardDetails {
 	dp?: number;
 	cost?: number;
-	digivolve?: Array<[string, number, number]>;
+	digivolve?: Array<[string | null, number | null, number]>;
 	form?: string;
 	attribute?: string;
 	traits?: string;
 	effect?: string;
 	inherited?: string;
 	security?: string;
-	rarity?: string;
 }
 
 let cache: Promise<Record<string, AlysionCardDetails>> | null = null;

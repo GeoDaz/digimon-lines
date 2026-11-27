@@ -4,11 +4,15 @@ const path = require('path');
 const TAKAOTAKU =
 	'https://raw.githubusercontent.com/TakaOtaku/Digimon-Card-App/main/src/assets/cardlists/PreparedDigimonCardsENG.json';
 const ALYSIONMETA = 'https://alysionmeta.com/api/cards';
+const DIGIMONCARDIO = 'https://digimoncard.io/api-public/search?n=';
+const TYPES = { D: 'Digimon', E: 'Digi-Egg', T: 'Tamer', O: 'Option' };
 const CARDS = path.join(__dirname, '..', 'public', 'json', 'dcg', 'cards.json');
 const DEST = path.join(__dirname, '..', 'public', 'json', 'alysion', 'cards.json');
 
 const POOL_ID =
 	/^(BT[1-4]-\d{3}|ST[1-6]-\d{2}|P-0(0[1-9]|1\d|2[0-7])|BD0[1-4]-\d{2}|SD0[12]-\d{2})$/;
+
+const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 const get = async url => {
 	const response = await fetch(url, { headers: { 'User-Agent': 'DigimonLinesCardList/1.0' } });
@@ -43,7 +47,6 @@ const fromTakaOtaku = card => ({
 	effect: value(card.effect),
 	inherited: value(card.digivolveEffect),
 	security: value(card.securityEffect),
-	rarity: value(card.rarity),
 });
 
 const fromAlysionMeta = card => ({
@@ -57,6 +60,65 @@ const fromAlysionMeta = card => ({
 	:	{ security: value(card.inherited_effect) }),
 });
 
+const INHERITED_PREFIX = /^Inherited Effect\s*/i;
+
+const fromDigimonCardIo = card => {
+	const main = value(card.main_effect);
+	const source = value(card.source_effect);
+	const isDigimon = card.type === 'Digimon' || card.type === 'Digi-Egg';
+	const mainIsInherited = main && INHERITED_PREFIX.test(main);
+	const cost = number(card.evolution_cost);
+	return {
+		dp: number(card.dp),
+		cost: number(card.play_cost),
+		digivolve:
+			cost !== undefined ?
+				[[value(card.evolution_color) ?? null, number(card.evolution_level) ?? null, cost]]
+			:	[],
+		form: value(card.form),
+		attribute: value(card.attribute),
+		traits: [card.digi_type, card.digi_type2, card.digi_type3, card.digi_type4]
+			.map(value)
+			.filter(Boolean)
+			.join('/') || undefined,
+		effect: mainIsInherited ? undefined : main,
+		...(isDigimon ?
+			{ inherited: mainIsInherited ? main.replace(INHERITED_PREFIX, '') : source }
+		:	{ security: source }),
+	};
+};
+
+const textLength = card => `${card.main_effect || ''}${card.source_effect || ''}`.length;
+
+const normalize = name => (name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+const searchDigimonCardIo = async query => {
+	const results = await get(`${DIGIMONCARDIO}${encodeURIComponent(query)}`).catch(() => []);
+	return Array.isArray(results) ? results : [];
+};
+
+const findOnDigimonCardIo = async ([id, name, , colors, type]) => {
+	const set = id.slice(0, 2);
+	const matches = card =>
+		normalize(card.name) === normalize(name) &&
+		card.type === TYPES[type] &&
+		card.color === colors[0] &&
+		(card.digi_type2 === 'ALYSION' || card.id?.startsWith(set));
+	let candidates = (await searchDigimonCardIo(name)).filter(matches);
+	if (!candidates.length) {
+		const word = name.split(/[^A-Za-z0-9]+/).sort((a, b) => b.length - a.length)[0];
+		await wait(800);
+		candidates = (await searchDigimonCardIo(word)).filter(matches);
+	}
+	return (
+		candidates.find(card => card.id === id && textLength(card)) ||
+		candidates
+			.filter(card => card.id?.startsWith(set))
+			.sort((a, b) => textLength(b) - textLength(a))[0] ||
+		null
+	);
+};
+
 const compact = entry =>
 	Object.fromEntries(
 		Object.entries(entry).filter(
@@ -65,9 +127,7 @@ const compact = entry =>
 	);
 
 const main = async () => {
-	const pool = JSON.parse(fs.readFileSync(CARDS, 'utf8'))
-		.map(row => row[0])
-		.filter(id => POOL_ID.test(id));
+	const pool = JSON.parse(fs.readFileSync(CARDS, 'utf8')).filter(row => POOL_ID.test(row[0]));
 
 	const paper = new Map();
 	for (const card of await get(TAKAOTAKU)) {
@@ -83,12 +143,13 @@ const main = async () => {
 	}
 
 	const details = {};
-	let missing = 0;
-	for (const id of pool) {
+	const missing = [];
+	for (const row of pool) {
+		const id = row[0];
 		const fromPaper = paper.get(id);
 		const fromGame = alysion.get(key(id));
 		if (!fromPaper && !fromGame) {
-			missing++;
+			missing.push(row);
 			continue;
 		}
 		details[id] = compact({
@@ -97,10 +158,19 @@ const main = async () => {
 		});
 	}
 
+	const unresolved = [];
+	for (const row of missing) {
+		const card = await findOnDigimonCardIo(row);
+		if (card) details[row[0]] = compact(fromDigimonCardIo(card));
+		else unresolved.push(row[0]);
+		await wait(800);
+	}
+
 	fs.mkdirSync(path.dirname(DEST), { recursive: true });
 	fs.writeFileSync(DEST, JSON.stringify(details));
 	console.log(
-		`${Object.keys(details).length} cards (${missing} without details) -> ${path.relative(process.cwd(), DEST)}`
+		`${Object.keys(details).length} cards -> ${path.relative(process.cwd(), DEST)}` +
+			(unresolved.length ? `, without details: ${unresolved.join(', ')}` : '')
 	);
 };
 
