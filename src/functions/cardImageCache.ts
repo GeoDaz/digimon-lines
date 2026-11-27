@@ -53,39 +53,56 @@ const fetchFirst = async (urls: string[]): Promise<CachedImage | null> => {
 	return null;
 };
 
-export const sendCachedImage = async (
-	res: NextApiResponse,
-	key: string,
-	urls: string[] | (() => Promise<string[]>)
-) => {
-	const bucket = await getBucket();
-	let image: CachedImage | null = null;
+const FALLBACK_CACHE = 'public, max-age=86400';
 
+type ImageUrls = string[] | (() => Promise<string[]>);
+
+interface ImageSource {
+	key: string;
+	urls: ImageUrls;
+}
+
+const loadImage = async (bucket: Bucket | null, { key, urls }: ImageSource) => {
 	if (bucket) {
 		const stored = await bucket.get(key).catch(() => null);
 		if (stored) {
-			image = {
+			return {
 				body: await stored.arrayBuffer(),
 				contentType: stored.httpMetadata?.contentType || 'image/webp',
 			};
 		}
 	}
+	const image = await fetchFirst(typeof urls === 'function' ? await urls().catch(() => []) : urls);
+	if (image && bucket) {
+		await bucket
+			.put(key, image.body, { httpMetadata: { contentType: image.contentType } })
+			.catch(() => null);
+	}
+	return image;
+};
+
+export const sendCachedImage = async (
+	res: NextApiResponse,
+	key: string,
+	urls: ImageUrls,
+	fallback?: ImageSource
+) => {
+	const bucket = await getBucket();
+	let image: CachedImage | null = await loadImage(bucket, { key, urls });
+	let cacheControl = LONG_CACHE;
+
+	if (!image && fallback) {
+		image = await loadImage(bucket, fallback);
+		cacheControl = FALLBACK_CACHE;
+	}
 
 	if (!image) {
-		image = await fetchFirst(typeof urls === 'function' ? await urls().catch(() => []) : urls);
-		if (!image) {
-			res.setHeader('Cache-Control', 'public, max-age=3600');
-			return res.status(404).json({ error: 'Card image not found' });
-		}
-		if (bucket) {
-			await bucket
-				.put(key, image.body, { httpMetadata: { contentType: image.contentType } })
-				.catch(() => null);
-		}
+		res.setHeader('Cache-Control', 'public, max-age=3600');
+		return res.status(404).json({ error: 'Card image not found' });
 	}
 
 	res.setHeader('Content-Type', image.contentType);
-	res.setHeader('Cache-Control', LONG_CACHE);
+	res.setHeader('Cache-Control', cacheControl);
 	res.setHeader('Content-Security-Policy', "default-src 'none'; sandbox");
 	res.setHeader('X-Content-Type-Options', 'nosniff');
 	res.send(Buffer.from(image.body));

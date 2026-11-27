@@ -55,7 +55,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git add public/json/dcg/cards.json public/json/alysion/cards.json public/json/pkm/cards.json public/json/ygo/cards.json src/json/yugioh/top.json public/json/ygo/top-decks.json
+          git add public/json/dcg/cards.json public/json/alysion/cards.json src/json/alysion/game8-images.json public/json/pkm/cards.json public/json/ygo/cards.json src/json/yugioh/top.json public/json/ygo/top-decks.json
           if git diff --cached --quiet; then
             echo "No card list changed."
             exit 0

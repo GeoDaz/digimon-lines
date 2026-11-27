@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { sendCachedImage } from '@/functions/cardImageCache';
+import game8Images from '@/json/alysion/game8-images.json';
 
 const CARD_ID = /^[A-Z]{1,4}\d{0,2}-\d{1,3}(_P\d{1,2})?$/;
 const ALYSION_ID = /^(BD|SD)0(\d)-(\d{2})$/;
@@ -28,9 +29,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 	}
 	const alysion = alysionId(id);
 	if (alysion) {
-		return sendCachedImage(res, `alysion/${alysion}`, [
-			`https://alysionmeta.com/cards/${alysion}.webp`,
-		]);
+		const japanese = (game8Images as Record<string, string>)[id];
+		return sendCachedImage(
+			res,
+			`alysion/${alysion}`,
+			[`https://alysionmeta.com/cards/${alysion}.webp`],
+			japanese ? { key: `alysion-ja/${alysion}`, urls: [japanese] } : undefined
+		);
 	}
 	return sendCachedImage(res, `cards/${id}`, sources(id));
 }

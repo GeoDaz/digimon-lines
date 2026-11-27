@@ -8,6 +8,9 @@ const DIGIMONCARDIO = 'https://digimoncard.io/api-public/search?n=';
 const TYPES = { D: 'Digimon', E: 'Digi-Egg', T: 'Tamer', O: 'Option' };
 const CARDS = path.join(__dirname, '..', 'public', 'json', 'dcg', 'cards.json');
 const DEST = path.join(__dirname, '..', 'public', 'json', 'alysion', 'cards.json');
+const GAME8_LIST = 'https://game8.jp/digimonalysion/727885';
+const GAME8_DEST = path.join(__dirname, '..', 'src', 'json', 'alysion', 'game8-images.json');
+const GAME8_ROW = /data-src='(https:\/\/img\.game8\.jp\/[^']+)'[\s\S]{0,600}?>(BD\d)-0?(\d{2}) /g;
 
 const POOL_ID =
 	/^(BT[1-4]-\d{3}|ST[1-6]-\d{2}|P-0(0[1-9]|1\d|2[0-7])|BD0[1-4]-\d{2}|SD0[12]-\d{2})$/;
@@ -173,6 +176,23 @@ const main = async () => {
 			(unresolved.length ? `, without details: ${unresolved.join(', ')}` : '')
 	);
 };
+
+const game8Images = async () => {
+	const response = await fetch(GAME8_LIST, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+	if (!response.ok) throw new Error(`${GAME8_LIST}: ${response.status}`);
+	const html = await response.text();
+	const images = {};
+	for (const [, url, set, number] of html.matchAll(GAME8_ROW)) {
+		images[`${set.replace(/(\d)$/, '0$1')}-${number}`] = url;
+	}
+	const count = Object.keys(images).length;
+	if (!count) throw new Error('No image found on the Game8 card list');
+	fs.mkdirSync(path.dirname(GAME8_DEST), { recursive: true });
+	fs.writeFileSync(GAME8_DEST, `${JSON.stringify(images, null, '\t')}\n`);
+	console.log(`${count} Game8 images -> ${path.relative(process.cwd(), GAME8_DEST)}`);
+};
+
+game8Images().catch(error => console.warn(`Game8 images unavailable: ${error.message}`));
 
 main().catch(error => {
 	console.error(error);
