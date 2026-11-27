@@ -83,6 +83,11 @@ const pages = [
 		`/appmons/${name}`,
 		json(`appmons/${name}.json`),
 	]),
+	['/alysion', json('alysion/decks.json')],
+	...readJson('alysion/decks.json').decks.map(deck => [
+		`/alysion/decks/${deck.slug}`,
+		json('alysion/decks.json'),
+	]),
 	['/privacy'],
 	['/terms'],
 ];

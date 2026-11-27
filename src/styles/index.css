@@ -3855,3 +3855,257 @@ a.game-digimon-tile:focus,
 		transform: rotate(360deg);
 	}
 }
+
+.alysion-intro,
+.alysion-summary {
+	max-width: 960px;
+	color: var(--bs-gray-300);
+}
+
+.alysion-credits {
+	margin-top: 2rem;
+	font-size: 0.85rem;
+	color: var(--bs-gray-500);
+}
+
+.alysion-panel {
+	margin-top: 1.25rem;
+	padding: 1rem 1.25rem 1.25rem;
+	border: 1px solid #3b424b;
+	border-radius: 0.75rem;
+	background: #2a2f36;
+}
+
+.alysion-panel > :first-child {
+	margin-top: 0;
+}
+
+.alysion-panel .alysion-intro,
+.alysion-panel .alysion-summary {
+	margin-bottom: 0;
+}
+
+.alysion-card-section + .alysion-card-section {
+	margin-top: 1.25rem;
+	padding-top: 1rem;
+	border-top: 1px solid #3b424b;
+}
+
+.alysion-card-section h3 {
+	margin-top: 0;
+}
+
+.alysion-tier-title {
+	display: inline-block;
+	padding: 0.2rem 0.9rem;
+	border-radius: 0.5rem;
+	font-size: 1.25rem;
+	color: #111;
+}
+
+.alysion-tier-1 {
+	background: #ff7a6b !important;
+	color: #111;
+}
+
+.alysion-tier-2 {
+	background: #ffc36b !important;
+	color: #111;
+}
+
+.alysion-tier-3 {
+	background: #ffe98a !important;
+	color: #111;
+}
+
+.alysion-tier-4 {
+	background: #9fd3ff !important;
+	color: #111;
+}
+
+.alysion-deck-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	gap: 1rem;
+	margin-top: 0.75rem;
+}
+
+.alysion-deck-tile {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	padding: 0.5rem;
+	border: 1px solid var(--bs-gray-800);
+	border-radius: 0.6rem;
+	background: var(--bs-gray-900);
+	color: var(--bs-gray-200);
+	text-decoration: none;
+}
+
+.alysion-deck-tile:hover,
+.alysion-deck-tile:focus-visible {
+	border-color: var(--bs-primary);
+	color: var(--bs-white);
+}
+
+.alysion-deck-tile img,
+.alysion-card img {
+	width: 100%;
+	aspect-ratio: 430 / 600;
+	object-fit: cover;
+	border-radius: 0.4rem;
+	background: var(--bs-gray-800);
+}
+
+.alysion-deck-tile-name {
+	font-weight: 600;
+}
+
+.alysion-deck-tile-meta {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	font-size: 0.85rem;
+	color: var(--bs-gray-500);
+}
+
+.alysion-colors {
+	display: inline-flex;
+	gap: 0.2rem;
+}
+
+.alysion-color {
+	display: inline-block;
+	width: 0.85rem;
+	height: 0.85rem;
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	border-radius: 50%;
+}
+
+.alysion-deck-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.75rem;
+	margin-bottom: 0.75rem;
+	color: var(--bs-gray-400);
+}
+
+.alysion-tier-badge {
+	font-size: 0.95rem;
+}
+
+.alysion-section-title {
+	margin: 1.5rem 0 0.75rem;
+	font-size: 1.35rem;
+}
+
+.alysion-section-title small,
+.alysion-card-section h3 small {
+	color: var(--bs-gray-500);
+	font-size: 0.8em;
+}
+
+.alysion-decklist-head {
+	margin-bottom: 0.75rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+}
+
+.alysion-key-cards,
+.alysion-card-grid {
+	display: grid;
+	gap: 0.75rem;
+}
+
+.alysion-key-cards {
+	grid-template-columns: repeat(auto-fill, minmax(120px, 180px));
+}
+
+.alysion-card-grid {
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.alysion-card-section h3 {
+	margin-bottom: 0.6rem;
+	font-size: 1.1rem;
+}
+
+.alysion-card {
+	position: relative;
+	margin: 0;
+}
+
+.alysion-card-count {
+	position: absolute;
+	top: 0.35rem;
+	right: 0.35rem;
+	padding: 0.05rem 0.45rem;
+	border-radius: 0.4rem;
+	background: rgba(0, 0, 0, 0.8);
+	color: var(--bs-white);
+	font-weight: 700;
+}
+
+.alysion-card figcaption {
+	margin-top: 0.25rem;
+	font-size: 0.85rem;
+	line-height: 1.2;
+	color: var(--bs-gray-200);
+}
+
+.alysion-card figcaption small {
+	display: block;
+	color: var(--bs-gray-500);
+}
+
+.card-image-missing {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25rem;
+	width: 100%;
+	aspect-ratio: 430 / 600;
+	padding: 0.5rem;
+	border: 1px dashed var(--bs-gray-600);
+	border-radius: 0.4rem;
+	background: var(--bs-gray-800);
+	text-align: center;
+	color: var(--bs-gray-200);
+}
+
+.card-image-missing small {
+	color: var(--bs-gray-500);
+}
+
+.alysion-decklist-head .alysion-section-title {
+	margin: 0;
+}
+
+.card-image-missing b {
+	overflow-wrap: anywhere;
+	font-size: 0.85rem;
+}
+
+.card-picker-current .card-image-missing {
+	width: 64px;
+	padding: 0.25rem;
+}
+
+.card-picker-current .card-image-missing b {
+	font-size: 0.6rem;
+}
+
+.card-picker-current .card-image-missing small {
+	display: none;
+}
+
+.card-maker-slot-card .card-image-missing {
+	height: 100%;
+	border: none;
+	border-radius: 0;
+}

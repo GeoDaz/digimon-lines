@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Alert, Button, Form, InputGroup, Modal, Spinner } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import CustomImageInput from '@/components/Cards/CustomImageInput';
+import CardImage from '@/components/Cards/CardImage';
 import { CardGame, CardSearch, GameCard, cardTitle } from '@/functions/cardGames';
 
 const PAGE_SIZE = 60;
@@ -158,7 +159,7 @@ const CardPickerModal: React.FC<Props> = ({
 				:	<>
 						{current && !query.trim() && (
 							<figure className="card-picker-current">
-								<img src={current.src} alt={current.title} />
+								<CardImage src={current.src} name={current.title} lazy={false} />
 								<figcaption>
 									<small>Current card</small>
 									{current.title}
@@ -177,7 +178,7 @@ const CardPickerModal: React.FC<Props> = ({
 									onClick={() => onSelect(card)}
 									title={cardTitle(card)}
 								>
-									<img src={card.thumbnail} alt={card.name} loading="lazy" />
+									<CardImage src={card.thumbnail} name={card.name} code={card.code} />
 									<span>
 										{card.code || card.name}
 										{card.version && <small>{card.version}</small>}

@@ -1,0 +1,224 @@
+{
+	"updated": "2026-11-27",
+	"restricted": ["BT2-047", "BT3-103"],
+	"decks": [
+		{
+			"slug": "yellow-wargreymon",
+			"name": "Yellow WarGreymon",
+			"colors": ["Yellow"],
+			"tier": 1,
+			"style": "Midrange",
+			"summary": "Blockers like Piddomon and Unimon slow down early attacks while Salamon and WarGrowlmon build up to WarGreymon, which shrinks opposing Digimon and breaks security. Chaosmon: Valdur Arm closes the game by lowering the DP of two Digimon at once.",
+			"keyCards": ["BT4-048", "BT4-091", "BT4-046", "BT4-042"],
+			"eggs": [["BT4-003", 4], ["BT3-003", 1]],
+			"main": [
+				["ST3-04", 3], ["BT3-033", 3], ["BT2-034", 2], ["BT1-045", 3], ["BT1-049", 4],
+				["BT3-037", 4], ["BT4-042", 4], ["ST3-07", 3], ["BT4-046", 4], ["BT1-057", 3],
+				["BD01-08", 2], ["BT4-048", 4], ["BT1-062", 3], ["BT4-091", 4], ["BT4-104", 4]
+			],
+			"source": "https://game8.jp/digimonalysion/843275"
+		},
+		{
+			"slug": "blue-yukinamon",
+			"name": "Blue Yukinamon",
+			"colors": ["Blue"],
+			"tier": 1,
+			"style": "Control",
+			"summary": "Renamon, Tenkomon and Sekkamon strip the digivolution cards from opposing Digimon. Yukinamon then battles with digivolution card counts instead of DP, which makes it very hard to remove, and Valner Dragnogh keeps the pressure on.",
+			"keyCards": ["BD02-05", "SD02-05", "BD02-08", "BD02-02"],
+			"eggs": [["BD02-01", 4]],
+			"main": [
+				["P-004", 4], ["ST2-02", 1], ["SD02-02", 4], ["BD02-02", 4], ["BD02-03", 2],
+				["SD02-03", 3], ["ST2-07", 2], ["BT4-025", 2], ["BT1-037", 2], ["BD02-04", 4],
+				["SD02-04", 3], ["BT4-032", 2], ["BD02-05", 3], ["SD02-05", 4], ["BT1-084", 2],
+				["SD02-06", 2], ["BD02-08", 2], ["ST2-13", 2], ["ST2-16", 2]
+			],
+			"source": "https://game8.jp/digimonalysion/841334"
+		},
+		{
+			"slug": "green-nidhoggmon",
+			"name": "Green Nidhoggmon",
+			"colors": ["Green"],
+			"tier": 1,
+			"style": "Ramp",
+			"summary": "Mimi sets your memory to 3 to ramp, Argomon lines go wide and Nidhoggmon wrecks aggressive boards. Hidden Potential Discovered! cheats big Digimon into play and Chaosmon: Valdur Arm finishes.",
+			"keyCards": ["BT4-062", "BT1-089", "BT3-103", "BT4-091"],
+			"eggs": [["BT3-004", 4], ["BT2-004", 1]],
+			"main": [
+				["ST4-04", 4], ["BT4-052", 3], ["BT2-042", 3], ["BT1-064", 4], ["BT3-050", 3],
+				["ST4-08", 4], ["BT1-071", 4], ["BT3-054", 3], ["BT4-059", 4], ["BT2-047", 1],
+				["BD01-09", 2], ["BT3-058", 2], ["BT4-062", 4], ["BD04-06", 1], ["BT4-091", 2],
+				["BT1-089", 3], ["ST4-15", 2], ["BT3-103", 1]
+			],
+			"source": "https://game8.jp/digimonalysion/836557"
+		},
+		{
+			"slug": "black-zephagamon",
+			"name": "Black Zephagamon",
+			"colors": ["Black"],
+			"tier": 1,
+			"style": "Control",
+			"summary": "A sturdy black curve built around the Galemon line and Shoto Kazama. Zephagamon and GrandGalemon control the board, while Craniamon, Mugendramon, Omnimon Alter-S and Millenniummon give a strong late game.",
+			"keyCards": ["BD03-07", "BD03-05", "BD03-08", "BT3-075"],
+			"eggs": [["BD03-01", 4]],
+			"main": [
+				["BT2-055", 4], ["BT2-054", 4], ["BD03-03", 4], ["ST5-08", 4], ["P-014", 4],
+				["BD03-04", 4], ["BT2-058", 4], ["BD02-06", 3], ["BD03-06", 2], ["BD03-05", 3],
+				["BD03-07", 4], ["BT3-075", 2], ["BT2-066", 2], ["BT3-112", 1], ["BT2-083", 1],
+				["BD03-08", 3], ["BT3-106", 1]
+			],
+			"source": "https://game8.jp/digimonalysion/843732"
+		},
+		{
+			"slug": "red-rubeusdramon",
+			"name": "Red Rubeusdramon",
+			"colors": ["Red"],
+			"tier": 2,
+			"style": "Aggro",
+			"summary": "A beatdown deck built from the Alysion red cards: Gemmon, Liskmon and Reptilimon climb quickly to Rubeusdramon while Kanata Hondo keeps the hand full. Omnimon and BlitzGreymon add extra reach to finish.",
+			"keyCards": ["BD01-06", "BD01-10", "BD01-05", "BT1-084"],
+			"eggs": [["SD01-01", 4]],
+			"main": [
+				["BD01-02", 4], ["SD01-02", 4], ["ST1-03", 2], ["BT1-009", 3], ["BD01-03", 4],
+				["SD01-03", 2], ["ST1-06", 2], ["BT4-011", 2], ["BT1-019", 2], ["BD01-05", 4],
+				["SD01-04", 3], ["BD01-06", 4], ["SD01-05", 2], ["BT3-018", 2], ["BT1-084", 2],
+				["SD01-06", 2], ["BD01-10", 4], ["SD01-07", 2]
+			],
+			"source": "https://game8.jp/digimonalysion/839962"
+		},
+		{
+			"slug": "green-leomon",
+			"name": "Green Leomon",
+			"colors": ["Green"],
+			"tier": 2,
+			"style": "Midrange",
+			"summary": "Shishiko Sakigake and the Liollmon, Leomon and GrapLeomon line power up into BanchoLeomon. Bancho's Pride and BanchoStingmon protect the board, and the Chaosmon cards provide the finishing blow.",
+			"keyCards": ["BD04-06", "BD04-08", "BT4-057", "BD04-09"],
+			"eggs": [["BD04-01", 4]],
+			"main": [
+				["ST4-04", 4], ["BD04-03", 4], ["BT3-046", 2], ["BT1-064", 3], ["BT4-055", 2],
+				["ST4-08", 2], ["BD04-04", 4], ["BT3-048", 2], ["BT4-057", 4], ["BD04-05", 2],
+				["BT3-054", 2], ["BT2-047", 1], ["BD04-06", 4], ["BT3-058", 3], ["BT4-090", 2],
+				["BT4-091", 1], ["BD04-08", 4], ["BD04-09", 3], ["BT3-103", 1]
+			],
+			"source": "https://game8.jp/digimonalysion/843868"
+		},
+		{
+			"slug": "purple-metalgarurumon-plutomon",
+			"name": "MetalGarurumon & Plutomon",
+			"colors": ["Purple"],
+			"tier": 2,
+			"style": "Midrange",
+			"summary": "A purple deck that uses its trash: Gabumon, Devimon and LadyDevimon fill it, then Plutomon and the purple MetalGarurumon come back stronger. Hell's Gate, Nail Bone and Death Claw handle the opposing board.",
+			"keyCards": ["P-027", "BT4-089", "BT4-112", "BT3-088"],
+			"eggs": [["BT3-006", 4]],
+			"main": [
+				["BT2-070", 4], ["BT2-069", 4], ["BT2-067", 2], ["ST6-03", 4], ["BT2-074", 4],
+				["BT2-073", 4], ["ST6-08", 4], ["BT3-088", 4], ["BT3-085", 4], ["BT4-089", 3],
+				["P-027", 4], ["BT4-112", 4], ["ST6-16", 3], ["ST6-15", 2]
+			],
+			"source": "https://game8.jp/digimonalysion/843740"
+		},
+		{
+			"slug": "blue-omnimon",
+			"name": "Blue Omnimon",
+			"colors": ["Blue"],
+			"tier": 3,
+			"style": "Midrange",
+			"summary": "Blue Rookies and Davis Motomiya set up MachGaogamon, ZeedGarurumon and MetalGarurumon, then Omnimon takes over. Hammer Spark and Cocytus Breath give cheap tempo plays.",
+			"keyCards": ["BT1-084", "BT1-044", "BT4-033", "BT3-093"],
+			"eggs": [["BT1-003", 4], ["BT4-002", 1]],
+			"main": [
+				["BT4-021", 2], ["BT1-029", 3], ["BT1-028", 4], ["BT3-021", 4], ["SD02-03", 2],
+				["ST2-07", 4], ["BT4-025", 2], ["BT1-037", 2], ["BT4-032", 4], ["BD02-04", 3],
+				["BT1-038", 2], ["BT4-033", 3], ["BT1-044", 3], ["BT1-084", 3], ["BT3-093", 3],
+				["ST2-13", 4], ["ST2-16", 2]
+			],
+			"source": "https://game8.jp/digimonalysion/833439"
+		},
+		{
+			"slug": "yellow-shinegreymon",
+			"name": "Yellow ShineGreymon",
+			"colors": ["Yellow"],
+			"tier": 3,
+			"style": "Midrange",
+			"summary": "Tai, Kari and T.K. support a GeoGreymon to RiseGreymon to ShineGreymon line, with Angewomon and Piddomon on the side. WarGreymon and Glorious Burst add late game power.",
+			"keyCards": ["BT2-041", "BT2-038", "BT1-087", "BT3-039"],
+			"eggs": [["BT2-003", 4], ["BT4-003", 1]],
+			"main": [
+				["BT2-033", 3], ["BT3-034", 3], ["BT3-033", 3], ["BT1-049", 2], ["BT2-035", 4],
+				["BT4-042", 4], ["BT1-051", 4], ["BT2-038", 4], ["BT3-039", 4], ["BT2-041", 4],
+				["BT4-048", 2], ["BT4-115", 2], ["BT4-094", 2], ["BT2-087", 3], ["BT1-087", 4],
+				["BT2-099", 2]
+			],
+			"source": "https://game8.jp/digimonalysion/833542"
+		},
+		{
+			"slug": "red-omnimon",
+			"name": "Red Omnimon",
+			"colors": ["Red"],
+			"tier": 3,
+			"style": "Aggro",
+			"summary": "A classic red curve: Agumon, Monodramon and DarkTyrannomon grow into Groundramon, Lavogaritamon and Breakdramon, with Omnimon as the top end. Gaia Force clears the way.",
+			"keyCards": ["BT1-084", "BT1-026", "BT2-016", "ST1-16"],
+			"eggs": [["BT2-001", 4]],
+			"main": [
+				["BT2-010", 3], ["ST1-02", 2], ["ST1-03", 4], ["BT2-009", 2], ["BT1-009", 4],
+				["BT1-019", 4], ["ST1-07", 4], ["ST1-06", 3], ["BT2-016", 4], ["BT1-020", 4],
+				["BT1-023", 1], ["BT2-018", 1], ["ST1-10", 4], ["BT1-026", 2], ["BT1-084", 4],
+				["ST1-16", 4]
+			],
+			"source": "https://game8.jp/digimonalysion/841620"
+		},
+		{
+			"slug": "blue-green-aggro",
+			"name": "Blue-Green Aggro",
+			"colors": ["Blue", "Green"],
+			"tier": 3,
+			"style": "Aggro",
+			"summary": "A Rookie rush that floods the board with cheap Digimon like Gabumon, Elecmon, Veemon and Liollmon, attacks every turn, and uses Puppetmon and Davis Motomiya to keep going. Hammer Spark and Needle Spray push the last points of damage.",
+			"keyCards": ["BT2-049", "BT3-093", "BT4-050", "ST2-13"],
+			"eggs": [["BT1-003", 4]],
+			"main": [
+				["BT1-029", 3], ["BT1-028", 4], ["BT2-049", 4], ["BT3-044", 4], ["BT3-025", 4],
+				["BT3-021", 4], ["BT4-050", 4], ["BT4-036", 3], ["BT4-025", 2], ["BT4-007", 3],
+				["BT3-093", 3], ["BT4-102", 2], ["ST4-15", 2], ["ST2-13", 4], ["ST2-02", 4]
+			],
+			"source": "https://game8.jp/digimonalysion/843739"
+		},
+		{
+			"slug": "black-diaboromon",
+			"name": "Black Diaboromon",
+			"colors": ["Black"],
+			"tier": 4,
+			"style": "Combo",
+			"summary": "Keramon and Kurisarimon lead to Infermon and Diaboromon, which floods the board with tokens. Spreading Despair and Izzy keep the engine running, Mugendramon and Millenniummon add a second threat.",
+			"keyCards": ["BT2-082", "P-016", "BD02-10", "BT2-062"],
+			"eggs": [["BT2-006", 4]],
+			"main": [
+				["P-013", 2], ["BT2-052", 3], ["BT2-053", 4], ["BT2-055", 4], ["BT2-056", 2],
+				["BT2-059", 4], ["BT3-067", 2], ["P-014", 4], ["BT2-062", 4], ["BD02-06", 2],
+				["BD03-05", 3], ["BT2-066", 2], ["BT2-082", 3], ["P-016", 3], ["BT2-083", 2],
+				["BT4-096", 2], ["BD02-10", 4]
+			],
+			"source": "https://game8.jp/digimonalysion/836400"
+		},
+		{
+			"slug": "blue-ancientgarurumon",
+			"name": "Blue AncientGarurumon",
+			"colors": ["Blue"],
+			"tier": 4,
+			"style": "Midrange",
+			"summary": "Matt and Davis support Gabumon, Veemon and Strabimon lines that climb to WereGarurumon and Beowolfmon, with AncientGarurumon as the finisher. The Ray of Victory and River of Power give extra tempo.",
+			"keyCards": ["BT4-114", "BT4-030", "BT1-086", "BT2-096"],
+			"eggs": [["BT1-003", 3], ["BT2-002", 2]],
+			"main": [
+				["BT1-029", 4], ["BT2-021", 4], ["BT4-023", 4], ["BT4-025", 3], ["BT1-115", 2],
+				["P-007", 4], ["BT1-040", 3], ["P-008", 4], ["BT4-030", 3], ["BT1-044", 1],
+				["BT4-114", 4], ["BT1-086", 3], ["BT3-093", 4], ["ST2-13", 2], ["BT2-095", 1],
+				["BT2-096", 4]
+			],
+			"source": "https://game8.jp/digimonalysion/841619"
+		}
+	]
+}

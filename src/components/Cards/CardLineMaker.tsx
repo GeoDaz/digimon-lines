@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Button, ButtonGroup, Form, InputGroup } from 'react-bootstrap';
 import Icon from '@/components/Icon';
 import CardPickerModal from '@/components/Cards/CardPickerModal';
+import CardImage from '@/components/Cards/CardImage';
 import ColorSelect from '@/components/Cards/ColorSelect';
 import CustomImageInput from '@/components/Cards/CustomImageInput';
 import {
@@ -342,9 +343,11 @@ const CardLineMaker: React.FC<{ game: CardGame }> = ({ game }) => {
 								}
 							>
 								{source ?
-									<img
+									<CardImage
 										src={card?.thumbnail || source}
-										alt={card?.name || slot.id || 'Custom card'}
+										name={card?.name || slot.id || 'Custom card'}
+										code={card?.code}
+										lazy={false}
 									/>
 								:	<span>
 										<Icon name="plus-lg" />

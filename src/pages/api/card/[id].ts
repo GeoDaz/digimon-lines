@@ -2,6 +2,14 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { sendCachedImage } from '@/functions/cardImageCache';
 
 const CARD_ID = /^[A-Z]{1,4}\d{0,2}-\d{1,3}(_P\d{1,2})?$/;
+const ALYSION_ID = /^(BD|SD)0(\d)-(\d{2})$/;
+
+const alysionId = (id: string) => {
+	const match = ALYSION_ID.exec(id);
+	if (!match) return null;
+	const [, set, number, card] = match;
+	return `${set}${number}-${set === 'BD' ? card.padStart(3, '0') : card}`;
+};
 
 const sources = (id: string): string[] => [
 	...(id.includes('_P') ? [] : [`https://images.digimoncard.io/images/cards/${id}.webp`]),
@@ -17,6 +25,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 	const id = String(req.query.id || '').toUpperCase().replace(/\.(WEBP|PNG)$/, '');
 	if (!CARD_ID.test(id)) {
 		return res.status(400).json({ error: 'Invalid card id' });
+	}
+	const alysion = alysionId(id);
+	if (alysion) {
+		return sendCachedImage(res, `alysion/${alysion}`, [
+			`https://alysionmeta.com/cards/${alysion}.webp`,
+		]);
 	}
 	return sendCachedImage(res, `cards/${id}`, sources(id));
 }
